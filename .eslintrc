@@ -1,0 +1,130 @@
+{
+  "extends": "airbnb",
+  "overrides": [
+    {
+      "files": "config/**/*.js",
+      "env": {
+        "node": true
+      },
+      "parserOptions": {
+        "ecmaVersion": 2018
+      },
+      "rules": {
+        "global-require": 0
+      }
+    },
+    {
+      "files": [
+        "src/**/*.{js,jsx}",
+      ],
+      "env": {
+        "browser": true
+      },
+      "parser": "babel-eslint",
+      "plugins": [ "babel", "react" ],
+      "rules": {
+        "babel/semi": 2,
+        "import/prefer-default-export": 0,
+        "jsx-a11y/anchor-is-valid": 1,
+        "jsx-a11y/label-has-associated-control": [ 2, {
+          "assert": "either",
+          "controlComponents": [],
+          "depth": 25,
+          "labelAttributes": ["label"],
+          "labelComponents": []
+        }],
+        "jsx-a11y/label-has-for": 0,
+        "no-alert": 0,
+        "react/destructuring-assignment": 0,
+        "react/forbid-prop-types": 0,
+        "react/jsx-no-target-blank": 1,
+        "react/jsx-no-undef": 0,
+        "react/jsx-one-expression-per-line": 0,
+        "react/jsx-sort-props": [2, {
+          "callbacksLast": true,
+          "ignoreCase": true,
+          "noSortAlphabetically": false
+        }],
+        "react/no-unescaped-entities": ["error", { "forbid": [">", "}"] }],
+        "react/prop-types": [2, { "ignore": ["children"] }],
+        "react/react-in-jsx-scope": [0],
+        "react/sort-comp": [2, {
+            "order": [
+              "static-methods",
+              "constructor",
+              "state",
+              "own-properties",
+              "/^handle.+/",
+              "getters",
+              "setters",
+              "everything-else",
+              "lifecycle",
+              "/^render.+/",
+              "render"
+            ],
+            "groups": {
+              "own-properties": [
+                "instance-variables",
+                "instance-methods"
+              ],
+              "react-methods": [
+                "displayName",
+                "propTypes",
+                "contextTypes",
+                "childContextTypes",
+                "mixins",
+                "statics",
+                "defaultProps",
+                "constructor",
+                "getDefaultProps",
+                "getInitialState",
+                "getChildContext",
+                "getDerivedStateFromProps",
+                "componentWillMount",
+                "UNSAFE_componentWillMount",
+                "componentDidMount",
+                "componentWillReceiveProps",
+                "UNSAFE_componentWillReceiveProps",
+                "shouldComponentUpdate",
+                "componentWillUpdate",
+                "UNSAFE_componentWillUpdate",
+                "getSnapshotBeforeUpdate",
+                "componentDidUpdate",
+                "componentDidCatch",
+                "componentWillUnmount"
+              ]
+            }
+          }
+        ],
+        "react/sort-prop-types": [2, {
+          "callbacksLast": true,
+          "ignoreCase": true,
+          "noSortAlphabetically": false,
+          "requiredFirst": false,
+          "sortShapeProp": true
+        }],
+        "semi": 0
+      },
+    }
+  ],
+  "rules": {
+    "class-methods-use-this": 0,
+    "function-paren-newline": ["error", "consistent"],
+    "func-names": ["error", "never"],
+    "implicit-arrow-linebreak": 0,
+    "linebreak-style": 0,
+    "no-case-declarations": "warn",
+    "no-confusing-arrow": 0,
+    "no-loop-func": 1,
+    "no-plusplus": 0,
+    "no-restricted-syntax": 0,
+    "no-undef": 0,
+    "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+    "no-use-before-define": 0,
+    "operator-linebreak": ["error", "after"],
+    "prefer-destructuring": "warn",
+    "quotes": ["error", "single", { "allowTemplateLiterals" : true }],
+    "radix": 0,
+    "symbol-description": 0
+  }
+}
