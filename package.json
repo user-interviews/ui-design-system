@@ -1,8 +1,7 @@
 {
   "name": "ui-design-system",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "dependencies": {
-    "@storybook/addon-knobs": "^5.2.6",
     "bootstrap": "^4.3.1",
     "node-sass": "^4.13.1",
     "polished": "^3.4.2",
@@ -14,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "BABEL_ENV=production babel src -d dist",
+    "build": "react-scripts build",
     "lint": "eslint . --ext .js,.jsx",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -22,11 +21,6 @@
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
     "deploy-storybook": "storybook-to-ghpages"
-  },
-  "babel": {
-    "presets": [
-      "react-app"
-    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -44,10 +38,10 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
     "@storybook/addon-a11y": "^5.2.6",
     "@storybook/addon-actions": "^5.2.6",
     "@storybook/addon-docs": "^5.2.6",
+    "@storybook/addon-knobs": "^5.2.6",
     "@storybook/addon-links": "^5.2.6",
     "@storybook/addon-storysource": "^5.2.6",
     "@storybook/addons": "^5.2.6",
@@ -61,7 +55,7 @@
   "description": "UI Storybook design system",
   "main": "dist/index.js",
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/@user-interviews"
+    "registry": "https://npm.pkg.github.com/@user-interviews"
   },
   "repository": "https://github.com/user-interviews/ui-design-system.git",
   "author": "Dave Ferris <dave@userinterviews.com>",
