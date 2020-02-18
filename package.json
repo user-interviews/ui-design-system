@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "BABEL_ENV=production babel src -d dist",
     "lint": "eslint . --ext .js,.jsx",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -23,6 +23,11 @@
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
     "deploy-storybook": "storybook-to-ghpages"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -40,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
     "@storybook/addon-a11y": "^5.2.6",
     "@storybook/addon-actions": "^5.2.6",
     "@storybook/addon-docs": "^5.2.6",
@@ -52,5 +58,13 @@
     "eslint-import-resolver-webpack": "^0.11.1",
     "eslint-plugin-babel": "^5.3.0",
     "eslint-utils": "^1.4.3"
-  }
+  },
+  "description": "UI Storybook design system",
+  "main": "dist/index.js",
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  },
+  "repository": "https://github.com/user-interviews/ui-design-system.git",
+  "author": "Dave Ferris <dave@userinterviews.com>",
+  "license": "MIT"
 }
