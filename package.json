@@ -1,7 +1,6 @@
 {
   "name": "ui-design-system",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@storybook/addon-knobs": "^5.2.6",
     "bootstrap": "^4.3.1",
@@ -62,7 +61,7 @@
   "description": "UI Storybook design system",
   "main": "dist/index.js",
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/"
+    "registry":"https://npm.pkg.github.com/@user-interviews"
   },
   "repository": "https://github.com/user-interviews/ui-design-system.git",
   "author": "Dave Ferris <dave@userinterviews.com>",
