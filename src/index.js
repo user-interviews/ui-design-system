@@ -1,3 +1,4 @@
-import Card from './Card';
+import Card from './Card/Card';
+import Pill from './Pill/Pill';
 
-export { Card };
+export { Card, Pill };

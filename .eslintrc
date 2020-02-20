@@ -121,6 +121,8 @@
     "prefer-destructuring": "warn",
     "quotes": ["error", "single", { "allowTemplateLiterals" : true }],
     "radix": 0,
-    "symbol-description": 0
+    "symbol-description": 0,
+    "template-curly-spacing": "off",
+    "indent": "off"
   }
 }

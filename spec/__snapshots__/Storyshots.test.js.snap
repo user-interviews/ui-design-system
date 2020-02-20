@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Design System|Card all cards 1`] = `
+exports[`Storyshots Design System/Card all cards 1`] = `
 <div>
   <div
     className="card"
@@ -17,6 +17,70 @@ exports[`Storyshots Design System|Card all cards 1`] = `
         Some quick example text to build on the card title and make up the bulk of the card&#39;s content.
       </div>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Pill Blue 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Pill Pill--blue"
+  >
+    Test pill
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Pill Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Pill"
+  >
+    Test pill
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Pill Orange 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Pill Pill--orange"
+  >
+    Test pill
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Pill Small 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Pill Pill--sm"
+  >
+    Test pill
   </div>
 </div>
 `;
