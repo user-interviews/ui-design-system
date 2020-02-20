@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots Design System|Card all cards 1`] = `
+<div>
+  <div
+    className="card"
+  >
+    <div
+      className="card-body"
+    >
+      <div
+        className="card-title h5"
+      >
+        Test Card
+      </div>
+      <div>
+        Some quick example text to build on the card title and make up the bulk of the card&#39;s content.
+      </div>
+    </div>
+  </div>
+</div>
+`;
