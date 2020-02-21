@@ -2,16 +2,12 @@
   "extends": "airbnb",
   "overrides": [
     {
-      "files": "config/**/*.js",
-      "env": {
-        "node": true
+      "files": [
+        "stories/*.{js,jsx}"
+      ],
+      rules: {
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
       },
-      "parserOptions": {
-        "ecmaVersion": 2018
-      },
-      "rules": {
-        "global-require": 0
-      }
     },
     {
       "files": [
