@@ -1,0 +1,21 @@
+.Form {
+  &--inline {
+    .FormGroup {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+
+      input, textarea {
+        flex-basis: 25%;
+        min-width: 12rem;
+        order: 1;
+      }
+
+      .FormLabel {
+        flex-grow: 1;
+        margin-left: 1rem;
+        order: 2;
+      }
+    }
+  }
+}
