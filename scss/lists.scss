@@ -1,0 +1,10 @@
+// This should be included directly on the ul element
+@mixin ui-remove-list-styles() {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    margin: 0;
+  }
+}

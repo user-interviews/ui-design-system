@@ -1,3 +1,36 @@
 $font-family: Lato, Arial, sans-serif;
+$font-weight-light: 200;
+$font-weight-normal: 300;
 $font-size-base: .875rem;
 $font-weight-bold: 700;
+$headings-font-weight: 400;
+$headings-font-weight-bold: 700;
+
+@mixin font-type-100() {
+  font-family: $font-family;
+  font-size: .75rem;
+  font-weight: $font-weight-normal;
+  line-height: 1rem;
+}
+
+@mixin font-type-200() {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: 1.25rem;
+}
+
+@mixin font-type-300() {
+  font-family: $font-family;
+  // font-size:  $font-size-base; -- should base be changed to 1 rem?
+  font-size: 1rem;
+  font-weight: $font-weight-normal;
+  line-height: 1.5rem;
+}
+
+@mixin font-type-400() {
+  font-family: $font-family;
+  font-size: 1.125rem;
+  font-weight: $font-weight-bold;
+  line-height: 1.75rem;
+}
