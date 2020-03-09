@@ -18,6 +18,7 @@
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
     "deploy-storybook": "storybook-to-ghpages",
+    "prepare": "yarn build",
     "test": "jest"
   },
   "eslintConfig": {
