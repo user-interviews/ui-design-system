@@ -1,6 +1,6 @@
 import React from 'react';
 import { withA11y } from '@storybook/addon-a11y';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 
 import FormGroup from '../src/FormGroup/FormGroup';
 
@@ -25,17 +25,6 @@ export const Required = () => (
     required
   >
     <input className="form-control" type="text" />
-  </FormGroup>
-);
-
-export const WithDescription = () => (
-  <FormGroup
-    description={text('Description text', 'test description')}
-    id="with-description"
-    label="Form Group with description"
-    labelHtmlFor="input"
-  >
-    <input className="form-control" id="input" type="text" />
   </FormGroup>
 );
 

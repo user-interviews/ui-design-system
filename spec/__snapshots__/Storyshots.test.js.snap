@@ -21,138 +21,6 @@ exports[`Storyshots Design System/Card all cards 1`] = `
 </div>
 `;
 
-exports[`Storyshots Design System/Form Control Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="FormControl"
-  >
-    <input
-      className="form-control"
-      type="text"
-    />
-    
-  </div>
-</div>
-`;
-
-exports[`Storyshots Design System/Form Control Disabled 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="FormControl"
-  >
-    <input
-      className="form-control"
-      disabled={true}
-      type="text"
-    />
-    
-  </div>
-</div>
-`;
-
-exports[`Storyshots Design System/Form Control With Description 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="FormControl"
-  >
-    <input
-      className="form-control"
-      name="input"
-      type="text"
-    />
-    <div
-      className="form-input__description"
-    >
-      test description
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Design System/Form Control With Description And Errors 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="FormControl"
-  >
-    <input
-      className="form-control is-invalid"
-      type="text"
-    />
-    <div
-      className="invalid-feedback"
-    >
-      <ol
-        className="invalid-feedback__list"
-      >
-        <li>
-          invalid input!
-        </li>
-      </ol>
-    </div>
-    <div
-      className="form-input__description"
-    >
-      test description
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Design System/Form Control With Errors 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="FormControl"
-  >
-    <input
-      className="form-control is-invalid"
-      type="text"
-    />
-    <div
-      className="invalid-feedback"
-    >
-      <ol
-        className="invalid-feedback__list"
-      >
-        <li>
-          invalid input!
-        </li>
-      </ol>
-    </div>
-    
-  </div>
-</div>
-`;
-
 exports[`Storyshots Design System/Form Default 1`] = `
 <div
   style={
@@ -169,107 +37,76 @@ exports[`Storyshots Design System/Form Default 1`] = `
     <div
       className="FormGroup"
     >
-      <div
+      <label
         className="FormLabel"
+        htmlFor="first-name"
       >
-        <label
-          htmlFor="first-name"
-        >
-          First name
-        </label>
-      </div>
-      <div
-        className="FormControl"
-      >
-        <div
-          className="FormControl"
-        >
-          <input
-            className="form-control"
-            id="first-name"
-            type="text"
-          />
-          <div
-            className="form-input__description"
-          >
-            Enter your first name
-          </div>
-        </div>
-        
-      </div>
+        First name
+      </label>
+      <input
+        className="form-control"
+        id="first-name"
+        type="text"
+      />
     </div>
     <div
       className="FormGroup"
     >
-      <div
+      <label
         className="FormLabel"
+        htmlFor="last-name"
       >
-        <label
-          htmlFor="last-name"
-        >
-          Last name
-        </label>
+        Last name
         <span
           className="helper-text"
         >
            (required)
         </span>
-      </div>
-      <div
-        className="FormControl"
-      >
-        <div
-          className="FormControl"
-        >
-          <input
-            className="form-control"
-            id="last-name"
-            type="text"
-          />
-          <div
-            className="form-input__description"
-          >
-            Enter your last name
-          </div>
-        </div>
-        
-      </div>
+      </label>
+      <input
+        className="form-control"
+        id="last-name"
+        type="text"
+      />
     </div>
     <div
       className="FormGroup"
     >
-      <div
+      <label
         className="FormLabel"
+        htmlFor="email"
       >
-        <label
-          htmlFor="email"
+        Email
+      </label>
+      <input
+        className="form-control"
+        id="email"
+        type="text"
+      />
+    </div>
+    <div
+      className="FormGroup FormGroup--is-invalid"
+    >
+      <label
+        className="FormLabel"
+        htmlFor="phone"
+      >
+        Phone
+        <span
+          className="helper-text"
         >
-          Email
-        </label>
-      </div>
+           (required)
+        </span>
+      </label>
+      <input
+        className="form-control"
+        id="phone"
+        type="text"
+      />
       <div
-        className="FormControl"
+        className="invalid-feedback"
       >
-        <div
-          className="FormControl"
-        >
-          <input
-            className="form-control is-invalid"
-            id="email"
-            type="text"
-          />
-          <div
-            className="invalid-feedback"
-          >
-            invalid email
-          </div>
-          <div
-            className="form-input__description"
-          >
-            Enter your email address
-          </div>
-        </div>
-        
+        Invalid phone number
       </div>
     </div>
     <button
@@ -295,15 +132,10 @@ exports[`Storyshots Design System/Form Group Default 1`] = `
     id="default"
   >
     
-    <div
-      className="FormControl"
-    >
-      <input
-        className="form-control"
-        type="text"
-      />
-      
-    </div>
+    <input
+      className="form-control"
+      type="text"
+    />
   </div>
 </div>
 `;
@@ -320,66 +152,21 @@ exports[`Storyshots Design System/Form Group Required 1`] = `
     className="FormGroup"
     id="with-required"
   >
-    <div
+    <label
       className="FormLabel"
+      htmlFor=""
     >
-      <span>
-        Form Group with label
-      </span>
+      Form Group with label
       <span
         className="helper-text"
       >
          (required)
       </span>
-    </div>
-    <div
-      className="FormControl"
-    >
-      <input
-        className="form-control"
-        type="text"
-      />
-      
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Design System/Form Group With Description 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="FormGroup"
-    id="with-description"
-  >
-    <div
-      className="FormLabel"
-    >
-      <label
-        htmlFor="input"
-      >
-        Form Group with description
-      </label>
-    </div>
-    <div
-      className="FormControl"
-    >
-      <input
-        className="form-control"
-        id="input"
-        type="text"
-      />
-      <div
-        className="form-input__description"
-      >
-        test description
-      </div>
-    </div>
+    </label>
+    <input
+      className="form-control"
+      type="text"
+    />
   </div>
 </div>
 `;
@@ -393,35 +180,29 @@ exports[`Storyshots Design System/Form Group With Errors 1`] = `
   }
 >
   <div
-    className="FormGroup"
+    className="FormGroup FormGroup--is-invalid"
     id="with-errors"
   >
-    <div
+    <label
       className="FormLabel"
+      htmlFor=""
     >
-      <span>
-        Form Group with errors
-      </span>
-    </div>
+      Form Group with errors
+    </label>
+    <input
+      className="form-control"
+      type="text"
+    />
     <div
-      className="FormControl"
+      className="invalid-feedback"
     >
-      <input
-        className="form-control is-invalid"
-        type="text"
-      />
-      <div
-        className="invalid-feedback"
+      <ol
+        className="invalid-feedback__list"
       >
-        <ol
-          className="invalid-feedback__list"
-        >
-          <li>
-            invalid input!
-          </li>
-        </ol>
-      </div>
-      
+        <li>
+          invalid input!
+        </li>
+      </ol>
     </div>
   </div>
 </div>
@@ -439,25 +220,17 @@ exports[`Storyshots Design System/Form Group With Label 1`] = `
     className="FormGroup"
     id="with-label"
   >
-    <div
+    <label
       className="FormLabel"
+      htmlFor="input"
     >
-      <label
-        htmlFor="input"
-      >
-        Form Group with label
-      </label>
-    </div>
-    <div
-      className="FormControl"
-    >
-      <input
-        className="form-control"
-        id="input"
-        type="text"
-      />
-      
-    </div>
+      Form Group with label
+    </label>
+    <input
+      className="form-control"
+      id="input"
+      type="text"
+    />
   </div>
 </div>
 `;
@@ -471,78 +244,59 @@ exports[`Storyshots Design System/Form Inline 1`] = `
   }
 >
   <form
-    className="Form inline"
+    className="Form Form--inline"
     id="form"
     onSubmit={[Function]}
   >
     <div
       className="FormGroup"
     >
-      <div
+      <label
         className="FormLabel"
+        htmlFor="first-name"
       >
-        <label
-          htmlFor="first-name"
-        >
-          First name
-        </label>
-      </div>
-      <div
-        className="FormControl"
-      >
-        <div
-          className="FormControl"
-        >
-          <input
-            className="form-control"
-            id="first-name"
-            type="text"
-          />
-          <div
-            className="form-input__description"
-          >
-            Enter your first name
-          </div>
-        </div>
-        
-      </div>
+        First name
+      </label>
+      <input
+        className="form-control"
+        id="first-name"
+        type="text"
+      />
     </div>
     <div
       className="FormGroup"
     >
-      <div
+      <label
         className="FormLabel"
+        htmlFor="last-name"
       >
-        <label
-          htmlFor="last-name"
-        >
-          Last name
-        </label>
+        Last name
         <span
           className="helper-text"
         >
            (required)
         </span>
-      </div>
-      <div
-        className="FormControl"
+      </label>
+      <input
+        className="form-control"
+        id="last-name"
+        type="text"
+      />
+    </div>
+    <div
+      className="FormGroup"
+    >
+      <label
+        className="FormLabel"
+        htmlFor="description"
       >
-        <div
-          className="FormControl"
-        >
-          <input
-            className="form-control"
-            id="last-name"
-            type="text"
-          />
-          <div
-            className="form-input__description"
-          >
-            Enter your last name
-          </div>
-        </div>
-        
-      </div>
+        Description
+      </label>
+      <textarea
+        className="form-control"
+        id="description"
+        type="text"
+      />
     </div>
     <button
       className="btn btn-primary"

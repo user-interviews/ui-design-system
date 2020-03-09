@@ -7,7 +7,7 @@ import './Form.scss';
 export default function Form(props) {
   return (
     <form
-      className={classNames('Form', props.inline ? 'inline' : '')}
+      className={classNames('Form', { 'Form--inline': props.inline })}
       id={props.id}
       onSubmit={props.onSubmit}
     >

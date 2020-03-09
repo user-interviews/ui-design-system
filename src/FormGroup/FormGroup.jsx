@@ -2,33 +2,47 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import FormControl from '../FormControl/FormControl';
 import FormLabel from '../FormLabel/FormLabel';
 
 import './FormGroup.scss';
 
-export default function FormGroup(props) {
+function renderErrors(errors) {
+  if (typeof errors === 'string') {
+    return errors;
+  }
+
   return (
-    <div className={classNames('FormGroup', props.className)} id={props.id}>
+    <ol className="invalid-feedback__list">
+      {
+        // eslint-disable-next-line react/no-array-index-key
+        errors.map((e, idx) => <li key={idx}>{e}</li>)
+      }
+    </ol>
+  );
+}
+
+export default function FormGroup(props) {
+  const { errors, inputKey } = props;
+  const hasErrors = errors[inputKey] && errors[inputKey].length > 0;
+
+  return (
+    <div className={classNames('FormGroup', props.className, { 'FormGroup--is-invalid': hasErrors })} id={props.id}>
       {props.label && (
         <FormLabel
           className={props.labelClassName}
           labelHtmlFor={props.labelHtmlFor}
-          legend={props.legend}
           required={props.required}
           text={props.label}
         />
       )}
 
-      <FormControl
-        description={props.description}
-        displayErrorText={props.displayErrorText}
-        errors={props.errors}
-        inputClassName={props.inputClassName}
-        inputKey={props.inputKey}
-      >
-        {props.children}
-      </FormControl>
+      {props.children}
+
+      {props.displayErrorText && hasErrors && (
+        <div className="invalid-feedback">
+          {renderErrors(errors[inputKey])}
+        </div>
+      )}
     </div>
   );
 }
@@ -36,30 +50,24 @@ export default function FormGroup(props) {
 FormGroup.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-  description: PropTypes.string,
   displayErrorText: PropTypes.bool,
   errors: PropTypes.object,
   id: PropTypes.string.isRequired,
-  inputClassName: PropTypes.string,
   inputKey: PropTypes.string,
   label: PropTypes.string,
   labelClassName: PropTypes.string,
   labelHtmlFor: PropTypes.string,
-  legend: PropTypes.node,
   required: PropTypes.bool,
 };
 
 FormGroup.defaultProps = {
   children: undefined,
   className: '',
-  description: '',
   displayErrorText: true,
   errors: {},
-  inputClassName: '',
   inputKey: null,
   label: '',
   labelClassName: '',
   labelHtmlFor: '',
-  legend: undefined,
   required: false,
 };

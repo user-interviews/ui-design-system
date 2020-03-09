@@ -1,11 +1,11 @@
 .Form {
-  &.inline {
+  &--inline {
     .FormGroup {
       align-items: center;
       display: flex;
       flex-direction: row;
 
-      .FormControl {
+      input, textarea {
         flex-basis: 25%;
         min-width: 12rem;
         order: 1;
