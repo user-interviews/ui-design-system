@@ -1,6 +1,6 @@
 {
   "name": "ui-design-system",
-  "version": "1.0.0",
+  "version": "1.0.2-beta",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
@@ -18,7 +18,7 @@
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
     "deploy-storybook": "storybook-to-ghpages",
-    "prepare": "yarn build",
+    "prepublishOnly": "yarn build",
     "test": "jest"
   },
   "eslintConfig": {
