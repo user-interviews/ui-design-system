@@ -1,0 +1,11 @@
+@import '../../scss/theme';
+
+.FormLabel {
+  @include font-type-200;
+  font-weight: $headings-font-weight;
+  margin-bottom: 0.5rem;
+
+  &__helper-text {
+    color: $ux-gray-400;
+  }
+}

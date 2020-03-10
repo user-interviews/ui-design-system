@@ -1,0 +1,21 @@
+@import '../../scss/theme';
+
+.FormGroup {
+  margin: 1rem 0 0.5rem;
+
+  &--is-invalid {
+    input, select, textarea {
+      border-color: $ux-red;
+    }
+  }
+
+  .invalid-feedback {
+    color: $ux-red;
+    display: block;
+    font-size: 100%;
+
+    &__list {
+      @include ui-remove-list-styles();
+    }
+  }
+}

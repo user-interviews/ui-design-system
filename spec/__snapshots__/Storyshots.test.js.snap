@@ -21,6 +21,300 @@ exports[`Storyshots Design System/Card all cards 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Form Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <form
+    className="Form"
+    id="form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="FormGroup"
+      id="first-name"
+    >
+      <label
+        className="FormLabel"
+        htmlFor="first-name"
+      >
+        First name
+      </label>
+      <input
+        className="form-control"
+        id="first-name"
+        type="text"
+      />
+    </div>
+    <div
+      className="FormGroup"
+      id="last-name"
+    >
+      <label
+        className="FormLabel"
+        htmlFor="last-name"
+      >
+        Last name
+        <span
+          className="FormLabel__helper-text"
+        >
+           (required)
+        </span>
+      </label>
+      <input
+        className="form-control"
+        id="last-name"
+        type="text"
+      />
+    </div>
+    <div
+      className="FormGroup"
+      id="email"
+    >
+      <label
+        className="FormLabel"
+        htmlFor="email"
+      >
+        Email
+      </label>
+      <input
+        className="form-control"
+        id="email"
+        type="text"
+      />
+    </div>
+    <div
+      className="FormGroup FormGroup--is-invalid"
+      id="phone"
+    >
+      <label
+        className="FormLabel"
+        htmlFor="phone"
+      >
+        Phone
+        <span
+          className="FormLabel__helper-text"
+        >
+           (required)
+        </span>
+      </label>
+      <input
+        className="form-control"
+        id="phone"
+        type="text"
+      />
+      <div
+        className="invalid-feedback"
+      >
+        Invalid phone number
+      </div>
+    </div>
+    <button
+      className="btn btn-primary"
+      type="submit"
+    >
+      Save
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Group Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+    id="default"
+  >
+    
+    <input
+      className="form-control"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Group Required 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+    id="with-required"
+  >
+    <label
+      className="FormLabel"
+      htmlFor=""
+    >
+      Form Group with label
+      <span
+        className="FormLabel__helper-text"
+      >
+         (required)
+      </span>
+    </label>
+    <input
+      className="form-control"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Group With Errors 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup FormGroup--is-invalid"
+    id="with-errors"
+  >
+    <label
+      className="FormLabel"
+      htmlFor=""
+    >
+      Form Group with errors
+    </label>
+    <input
+      className="form-control"
+      type="text"
+    />
+    <div
+      className="invalid-feedback"
+    >
+      <ol
+        className="invalid-feedback__list"
+      >
+        <li>
+          invalid input!
+        </li>
+      </ol>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Group With Label 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+    id="with-label"
+  >
+    <label
+      className="FormLabel"
+      htmlFor="input"
+    >
+      Form Group with label
+    </label>
+    <input
+      className="form-control"
+      id="input"
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Inline 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <form
+    className="Form Form--inline"
+    id="form"
+    onSubmit={[Function]}
+  >
+    <div
+      className="FormGroup"
+      id="first-name"
+    >
+      <label
+        className="FormLabel"
+        htmlFor="first-name"
+      >
+        First name
+      </label>
+      <input
+        className="form-control"
+        id="first-name"
+        type="text"
+      />
+    </div>
+    <div
+      className="FormGroup"
+      id="last-name"
+    >
+      <label
+        className="FormLabel"
+        htmlFor="last-name"
+      >
+        Last name
+        <span
+          className="FormLabel__helper-text"
+        >
+           (required)
+        </span>
+      </label>
+      <input
+        className="form-control"
+        id="last-name"
+        type="text"
+      />
+    </div>
+    <div
+      className="FormGroup"
+      id="description"
+    >
+      <label
+        className="FormLabel"
+        htmlFor="description"
+      >
+        Description
+      </label>
+      <textarea
+        className="form-control"
+        id="description"
+        type="text"
+      />
+    </div>
+    <button
+      className="btn btn-primary"
+      type="submit"
+    >
+      Save
+    </button>
+  </form>
+</div>
+`;
+
 exports[`Storyshots Design System/Pill Blue 1`] = `
 <div
   style={
