@@ -12,9 +12,11 @@ import Pill from './Pill/Pill';
 import Popper from './Popper/Popper';
 import RadioButton from './RadioButton/RadioButton';
 import RadioButtonGroup from './RadioButtonGroup/RadioButtonGroup';
+import AsyncSelect from './Select/AsyncSelect';
 import TrackedButton from './TrackedButton/TrackedButton';
 
 export {
+  AsyncSelect,
   Card,
   CopyToClipboard,
   FadeTransition,
