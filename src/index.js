@@ -13,6 +13,7 @@ import Popper from './Popper/Popper';
 import RadioButton from './RadioButton/RadioButton';
 import RadioButtonGroup from './RadioButtonGroup/RadioButtonGroup';
 import AsyncSelect from './Select/AsyncSelect';
+import SingleSelect from './Select/SingleSelect';
 import TrackedButton from './TrackedButton/TrackedButton';
 
 export {
@@ -30,6 +31,7 @@ export {
   Popper,
   RadioButton,
   RadioButtonGroup,
+  SingleSelect,
   TrackedButton,
   useFlash,
   withFlash,
