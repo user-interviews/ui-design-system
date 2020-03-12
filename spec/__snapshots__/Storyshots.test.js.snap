@@ -1,23 +1,95 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Design System/Buttons/Radio Button Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <input
+    className="RadioButton"
+    disabled={false}
+    id="default"
+    name=""
+    type="radio"
+  />
+</div>
+`;
+
+exports[`Storyshots Design System/Buttons/Radio Button Disabled 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <input
+    className="RadioButton"
+    disabled={true}
+    id="disabled"
+    name=""
+    type="radio"
+  />
+</div>
+`;
+
 exports[`Storyshots Design System/Card all cards 1`] = `
-<div>
-  <div
-    className="card"
-  >
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div>
     <div
-      className="card-body"
+      className="card"
     >
       <div
-        className="card-title h5"
+        className="card-body"
       >
-        Test Card
-      </div>
-      <div>
-        Some quick example text to build on the card title and make up the bulk of the card&#39;s content.
+        <div
+          className="card-title h5"
+        >
+          Test Card
+        </div>
+        <div>
+          Some quick example text to build on the card title and make up the bulk of the card&#39;s content.
+        </div>
       </div>
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Control Label Radio 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <label
+    className="FormControlLabel"
+    htmlFor="radio"
+  >
+    <span
+      className="FormControlLabel__control"
+    >
+      <input
+        className="RadioButton"
+        disabled={false}
+        id="radio"
+        name="radio"
+        type="radio"
+      />
+    </span>
+    Labeled radio button
+  </label>
 </div>
 `;
 
@@ -39,7 +111,7 @@ exports[`Storyshots Design System/Form Default 1`] = `
       id="first-name"
     >
       <label
-        className="FormLabel"
+        className="InputLabel"
         htmlFor="first-name"
       >
         First name
@@ -55,12 +127,12 @@ exports[`Storyshots Design System/Form Default 1`] = `
       id="last-name"
     >
       <label
-        className="FormLabel"
+        className="InputLabel"
         htmlFor="last-name"
       >
         Last name
         <span
-          className="FormLabel__helper-text"
+          className="InputLabel__helper-text"
         >
            (required)
         </span>
@@ -76,7 +148,7 @@ exports[`Storyshots Design System/Form Default 1`] = `
       id="email"
     >
       <label
-        className="FormLabel"
+        className="InputLabel"
         htmlFor="email"
       >
         Email
@@ -92,12 +164,12 @@ exports[`Storyshots Design System/Form Default 1`] = `
       id="phone"
     >
       <label
-        className="FormLabel"
+        className="InputLabel"
         htmlFor="phone"
       >
         Phone
         <span
-          className="FormLabel__helper-text"
+          className="InputLabel__helper-text"
         >
            (required)
         </span>
@@ -112,6 +184,45 @@ exports[`Storyshots Design System/Form Default 1`] = `
       >
         Invalid phone number
       </div>
+    </div>
+    <div
+      className="RadioButtonGroup"
+      name="radio-buttons"
+    >
+      <label
+        className="FormControlLabel"
+        htmlFor=""
+      >
+        <span
+          className="FormControlLabel__control"
+        >
+          <input
+            className="RadioButton"
+            disabled={false}
+            id="first"
+            name="radio-buttons"
+            type="radio"
+          />
+        </span>
+        first choice
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor=""
+      >
+        <span
+          className="FormControlLabel__control"
+        >
+          <input
+            className="RadioButton"
+            disabled={false}
+            id="second"
+            name="radio-buttons"
+            type="radio"
+          />
+        </span>
+        second choice
+      </label>
     </div>
     <button
       className="btn btn-primary"
@@ -157,12 +268,12 @@ exports[`Storyshots Design System/Form Group Required 1`] = `
     id="with-required"
   >
     <label
-      className="FormLabel"
+      className="InputLabel"
       htmlFor=""
     >
       Form Group with label
       <span
-        className="FormLabel__helper-text"
+        className="InputLabel__helper-text"
       >
          (required)
       </span>
@@ -188,7 +299,7 @@ exports[`Storyshots Design System/Form Group With Errors 1`] = `
     id="with-errors"
   >
     <label
-      className="FormLabel"
+      className="InputLabel"
       htmlFor=""
     >
       Form Group with errors
@@ -225,7 +336,7 @@ exports[`Storyshots Design System/Form Group With Label 1`] = `
     id="with-label"
   >
     <label
-      className="FormLabel"
+      className="InputLabel"
       htmlFor="input"
     >
       Form Group with label
@@ -257,7 +368,7 @@ exports[`Storyshots Design System/Form Inline 1`] = `
       id="first-name"
     >
       <label
-        className="FormLabel"
+        className="InputLabel"
         htmlFor="first-name"
       >
         First name
@@ -273,12 +384,12 @@ exports[`Storyshots Design System/Form Inline 1`] = `
       id="last-name"
     >
       <label
-        className="FormLabel"
+        className="InputLabel"
         htmlFor="last-name"
       >
         Last name
         <span
-          className="FormLabel__helper-text"
+          className="InputLabel__helper-text"
         >
            (required)
         </span>
@@ -294,7 +405,7 @@ exports[`Storyshots Design System/Form Inline 1`] = `
       id="description"
     >
       <label
-        className="FormLabel"
+        className="InputLabel"
         htmlFor="description"
       >
         Description

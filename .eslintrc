@@ -33,6 +33,9 @@
         "no-alert": 0,
         "react/destructuring-assignment": 0,
         "react/forbid-prop-types": 0,
+        "react/jsx-props-no-spreading": [2, {
+          "html": "ignore"
+        }],
         "react/jsx-no-target-blank": 1,
         "react/jsx-no-undef": 0,
         "react/jsx-one-expression-per-line": 0,

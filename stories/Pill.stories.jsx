@@ -4,7 +4,7 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 
 import Pill from '../src/Pill/Pill';
 
-const withPadding = (story) => <div style={{ padding: '1rem' }}>{story()}</div>;
+import { withPadding } from './decorators';
 
 export default {
   title: 'Design System/Pill',

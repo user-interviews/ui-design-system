@@ -4,7 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 
 import FormGroup from '../src/FormGroup/FormGroup';
 
-const withPadding = (story) => <div style={{ padding: '1rem' }}>{story()}</div>;
+import { withPadding } from './decorators';
 
 export default {
   title: 'Design System/Form Group',

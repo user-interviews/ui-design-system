@@ -3,9 +3,12 @@ import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions';
 
 import Form from '../src/Form/Form';
+import FormControlLabel from '../src/FormControlLabel/FormControlLabel';
 import FormGroup from '../src/FormGroup/FormGroup';
+import RadioButton from '../src/RadioButton/RadioButton';
+import RadioButtonGroup from '../src/RadioButtonGroup/RadioButtonGroup';
 
-const withPadding = (story) => <div style={{ padding: '1rem' }}>{story()}</div>;
+import { withPadding } from './decorators';
 
 export default {
   title: 'Design System/Form',
@@ -39,6 +42,21 @@ export const Default = () => (
     >
       <input className="form-control" id="phone" type="text" />
     </FormGroup>
+    <RadioButtonGroup name="radio-buttons">
+      <FormControlLabel
+        for="first"
+        text="first choice"
+      >
+        <RadioButton id="first" name="radio-buttons" />
+      </FormControlLabel>
+
+      <FormControlLabel
+        for="second"
+        text="second choice"
+      >
+        <RadioButton id="second" name="radio-buttons" />
+      </FormControlLabel>
+    </RadioButtonGroup>
     <button className="btn btn-primary" type="submit">Save</button>
   </Form>
 );

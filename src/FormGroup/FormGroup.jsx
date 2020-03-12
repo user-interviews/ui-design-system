@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import FormLabel from '../FormLabel/FormLabel';
+import InputLabel from '../InputLabel/InputLabel';
 
 import './FormGroup.scss';
 
@@ -31,7 +31,7 @@ export default function FormGroup(props) {
       id={props.id}
     >
       {props.label && (
-        <FormLabel
+        <InputLabel
           className={props.labelClassName}
           labelHtmlFor={props.labelHtmlFor}
           required={props.required}
