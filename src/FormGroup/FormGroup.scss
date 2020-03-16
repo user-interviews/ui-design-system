@@ -9,7 +9,11 @@
     }
   }
 
-  .invalid-feedback {
+  &__description {
+    padding: .25rem 0;
+  }
+
+  &__invalid-feedback {
     color: $ux-red;
     display: block;
     font-size: 100%;
