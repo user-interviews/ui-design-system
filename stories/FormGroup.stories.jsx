@@ -38,6 +38,17 @@ export const WithLabel = () => (
   </FormGroup>
 );
 
+export const WithDescription = () => (
+  <FormGroup
+    description="test description"
+    id="with-description"
+    label="Form Group with description"
+    labelHtmlFor="input"
+  >
+    <input className="form-control" id="input" type="text" />
+  </FormGroup>
+);
+
 export const WithErrors = () => (
   <FormGroup
     displayErrorText
@@ -45,6 +56,19 @@ export const WithErrors = () => (
     id="with-errors"
     inputKey="test"
     label="Form Group with errors"
+  >
+    <input className="form-control" type="text" />
+  </FormGroup>
+);
+
+export const WithDescriptionAndErrors = () => (
+  <FormGroup
+    description="test description"
+    displayErrorText
+    errors={{ test: ['invalid input!'] }}
+    id="with-description-and-errors"
+    inputKey="test"
+    label="Form Group with description and errors"
   >
     <input className="form-control" type="text" />
   </FormGroup>

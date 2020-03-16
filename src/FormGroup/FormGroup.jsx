@@ -12,7 +12,7 @@ function renderErrors(errors) {
   }
 
   return (
-    <ol className="invalid-feedback__list">
+    <ol className="FormGroup__invalid-feedback__list">
       {
         // eslint-disable-next-line react/no-array-index-key
         errors.map((e, idx) => <li key={idx}>{e}</li>)
@@ -42,10 +42,18 @@ export default function FormGroup(props) {
       {props.children}
 
       {props.displayErrorText && hasErrors && (
-        <div className="invalid-feedback">
+        <div className="FormGroup__invalid-feedback">
           {renderErrors(errors[inputKey])}
         </div>
       )}
+
+      {
+        props.description && (
+          <div className="FormGroup__description">
+            {props.description}
+          </div>
+        )
+      }
     </div>
   );
 }
@@ -53,6 +61,7 @@ export default function FormGroup(props) {
 FormGroup.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  description: PropTypes.string,
   displayErrorText: PropTypes.bool,
   errors: PropTypes.object,
   id: PropTypes.string.isRequired,
@@ -66,6 +75,7 @@ FormGroup.propTypes = {
 FormGroup.defaultProps = {
   children: undefined,
   className: '',
+  description: undefined,
   displayErrorText: true,
   errors: {},
   inputKey: null,
