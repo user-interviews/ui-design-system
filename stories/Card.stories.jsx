@@ -7,10 +7,12 @@ import Card from '../src/Card/Card';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../scss/global.scss';
 
+import { withPadding } from './decorators';
+
 export default {
   title: 'Design System/Card',
   component: Card,
-  decorators: [withA11y, withKnobs],
+  decorators: [withA11y, withPadding, withKnobs],
 };
 
 export const allCards = () => (
