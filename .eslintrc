@@ -17,7 +17,7 @@
         "browser": true
       },
       "parser": "babel-eslint",
-      "plugins": [ "babel", "react" ],
+      "plugins": [ "babel", "react", "react-hooks" ],
       "rules": {
         "babel/semi": 2,
         "import/prefer-default-export": 0,
@@ -102,6 +102,8 @@
           "requiredFirst": false,
           "sortShapeProp": true
         }],
+        "react-hooks/exhaustive-deps": "warn",
+        "react-hooks/rules-of-hooks": "error",
         "semi": 0
       },
     }
