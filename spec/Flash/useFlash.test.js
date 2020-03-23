@@ -66,4 +66,23 @@ describe('useFlash', () => {
       })),
     );
   });
+
+  test('can clear all messages', () => {
+    const messages = ['A new', 'message'].map(
+      (msg, i) => ({
+          id: i,
+          type: MessageTypes.SUCCESS,
+          message: msg,
+        }),
+    );
+
+    const { result } = renderHook(() => useFlash(messages));
+    expect(result.current.messages.length).toEqual(2);
+
+    act(() => {
+      result.current.clearMessages();
+    });
+
+    expect(result.current.messages.length).toEqual(0);
+  });
 });

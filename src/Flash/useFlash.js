@@ -7,8 +7,12 @@ const createMessage = (messageType, messageText) => ({
   type: messageType,
 });
 
-const useFlash = () => {
-  const [messages, setMessages] = useState([]);
+const useFlash = (initialMessages = []) => {
+  const [messages, setMessages] = useState(initialMessages);
+
+  const clearMessages = () => {
+    setMessages([]);
+  };
 
   const setMessage = (messageType, messageText) => {
     setMessages([
@@ -25,6 +29,7 @@ const useFlash = () => {
 
   return {
     messages,
+    clearMessages,
     setMessage,
     dismissMessage,
   };
