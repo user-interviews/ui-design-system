@@ -5,8 +5,7 @@ import { CSSTransition } from 'react-transition-group';
 import './FadeTransition.scss';
 
 const FadeTransition = ({ children, ...props }) => (
-  /* eslint-disable-next-line react/jsx-props-no-spreading */
-  <CSSTransition {...props} classNames="fade-transition" timeout={{ enter: 300, exit: 200 }}>
+  <CSSTransition {...props} classNames="FadeTransition" timeout={{ enter: 300, exit: 200 }}>
     {children}
   </CSSTransition>
 );

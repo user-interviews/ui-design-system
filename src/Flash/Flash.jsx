@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { TransitionGroup } from 'react-transition-group';
 import classNames from 'classnames';
 
-import FadeTransition from './fade_transition/FadeTransition';
+import FadeTransition from '../FadeTransition/FadeTransition';
 import FlashMessage from './FlashMessage';
 
 import './Flash.scss';
@@ -11,8 +11,8 @@ import './Flash.scss';
 export default function Flash(props) {
   const groupClassNames = classNames(
     'container',
-    'flash',
-    { 'flash--no-header': !props.header },
+    'Flash',
+    { 'Flash--no-header': !props.header },
   );
 
   return (

@@ -2,6 +2,7 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 @import '~bootstrap/scss/alert';
+
 @import '../../scss/theme';
 
 $top-padding: 1.25rem;
@@ -9,19 +10,7 @@ $top-padding: 1.25rem;
 $ux-flash-error: $ux-red-100;
 $ux-flash-error-border: $ux-red-200;
 
-$ux-navbar-shadow-color: rgba( 0, 0, 0, 0.26 );
-$ux-box-shadow: 0 2px 5px $ux-navbar-shadow-color;
-$ux-box-shadow-light: 0 1px 1px $ux-navbar-shadow-color;
-
-$ux-box-shadow-card: 0 2px 4px rgba(0,0,0,0.1);
-
-$ux-box-shadow-top: 0 -2px 5px $ux-navbar-shadow-color;
-$ux-box-shadow-top-light: 0 -1px 1px $ux-navbar-shadow-color;
-
-// This zindex is between the header (zindex-fixed) and the modal backdrop (zindex-modal-backdrop)
-$z-index-flash: 1045;
-
-.flash {
+.Flash {
   position: fixed;
   top: $top-padding + $ui-navbar-height;
   left: 50%;

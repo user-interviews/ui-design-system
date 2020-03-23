@@ -28,10 +28,10 @@ const useFlash = (initialMessages = []) => {
   };
 
   return {
-    messages,
     clearMessages,
-    setMessage,
     dismissMessage,
+    messages,
+    setMessage,
   };
 };
 

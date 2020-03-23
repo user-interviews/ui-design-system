@@ -65,6 +65,58 @@ exports[`Storyshots Design System/Card all cards 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Flash Flash Message 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="container Flash"
+  />
+  <div>
+    <p>
+      Click the button to see a flash message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Flash flash message 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="container flash"
+  />
+  <div>
+    <p>
+      Click the button to see a flash message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Form Control Label Radio 1`] = `
 <div
   style={

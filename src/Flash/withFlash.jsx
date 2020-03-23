@@ -8,22 +8,27 @@ export const withFlashPropTypes = {
   setFlashMessage: PropTypes.func,
 };
 
-export default function withFlash(WrappedComponent) {
-  return (props) => {
-    const { messages, setMessage, dismissMessage } = useFlash();
+const WithFlash = ({ WrappedComponent, ...props }) => {
+  const { messages, setMessage, dismissMessage } = useFlash();
 
-    return (
-      <>
-        <Flash
-          messages={messages}
-          onFlashClosed={dismissMessage}
-        />
-        <WrappedComponent
-          setFlashMessage={setMessage}
-          /* eslint-disable-next-line react/jsx-props-no-spreading */
-          {...props}
-        />
-      </>
-    );
-  };
+  return (
+    <>
+      <Flash
+        messages={messages}
+        onFlashClosed={dismissMessage}
+      />
+      <WrappedComponent
+        setFlashMessage={setMessage}
+        {...props}
+      />
+    </>
+  );
+};
+
+WithFlash.propTypes = {
+  WrappedComponent: PropTypes.func.isRequired,
+};
+
+export default function withFlash(WrappedComponent) {
+  return (props) => <WithFlash WrappedComponent={WrappedComponent} {...props} />;
 }

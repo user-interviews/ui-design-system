@@ -18,6 +18,7 @@ const flashMessageClassName = (type) => {
 
 export default function FlashMessage(props) {
   const handleDismissMessage = () => props.onDismiss(props.id);
+
   return (
     <div className={flashMessageClassName(props.type)}>
       <button

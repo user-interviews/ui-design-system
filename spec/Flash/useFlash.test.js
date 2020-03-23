@@ -40,7 +40,7 @@ describe('useFlash', () => {
     }]);
 
     act(() => {
-      result.current.dismissMessage('1234');
+      result.current.dismissMessage(GENERATED_UUID);
     });
 
     expect(result.current.messages).toEqual([]);

@@ -7,9 +7,7 @@
     "node-sass": "^4.13.1",
     "polished": "^3.4.2",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
-    "react-dom": "^16.12.0",
     "react-transition-group": "^4.3.0",
     "uuid": "^7.0.2"
   },
@@ -36,6 +34,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "peerDependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -68,6 +70,8 @@
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.5.1",
     "eslint-utils": "^1.4.3",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-test-renderer": "^16.12.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3"

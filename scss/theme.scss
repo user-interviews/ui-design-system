@@ -1,7 +1,6 @@
+@import './box_shadow';
 @import './lists';
+@import './navbar';
 @import './palette';
 @import './typography';
 @import './z_stack';
-
-$ui-navbar-height: 3rem;
-$ui-navbar-height-mobile: $ui-navbar-height;

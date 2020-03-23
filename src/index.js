@@ -6,10 +6,13 @@ import InputLabel from './InputLabel/InputLabel';
 import Pill from './Pill/Pill';
 import RadioButton from './RadioButton/RadioButton';
 import RadioButtonGroup from './RadioButtonGroup/RadioButtonGroup';
-import { withFlash, MessageTypes, withFlashPropTypes } from './Flash';
+import {
+ Flash, MessageTypes, withFlash, withFlashPropTypes, useFlash,
+} from './Flash';
 
 export {
   Card,
+  Flash,
   Form,
   FormControlLabel,
   FormGroup,
@@ -18,6 +21,7 @@ export {
   Pill,
   RadioButton,
   RadioButtonGroup,
+  useFlash,
   withFlash,
   withFlashPropTypes,
 };

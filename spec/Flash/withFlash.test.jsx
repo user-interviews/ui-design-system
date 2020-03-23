@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { act } from '@testing-library/react-hooks';
 import { create } from 'react-test-renderer';
 
@@ -12,12 +12,7 @@ jest.mock('react-transition-group', () => (
   }
 ));
 
-// eslint-disable-next-line react/prefer-stateless-function
-class WrappedComponent extends Component {
-  render() {
-    return <div />;
-  }
-}
+const WrappedComponent = () => <div />;
 
 describe('test withFlash', () => {
   test('it can create a new flash message', async () => {
@@ -25,7 +20,6 @@ describe('test withFlash', () => {
     const ComponentWithFlash = withFlash(WrappedComponent);
     const flash = create(<ComponentWithFlash />);
     const component = flash.root.findByType(WrappedComponent);
-
 
     act(() => {
       component.props.setFlashMessage(MessageTypes.SUCCESS, newMessage);

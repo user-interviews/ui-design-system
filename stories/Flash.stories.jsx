@@ -3,6 +3,8 @@ import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs, text, radios } from '@storybook/addon-knobs';
 import { withPadding } from './decorators';
 
+import '../scss/global.scss';
+
 import { withFlash, MessageTypes, withFlashPropTypes } from '../src/Flash';
 
 let DummyComponent = ({ type, message, setFlashMessage }) => (
@@ -14,16 +16,12 @@ let DummyComponent = ({ type, message, setFlashMessage }) => (
 DummyComponent.propTypes = withFlashPropTypes;
 DummyComponent = withFlash(DummyComponent);
 
-export const flashStory = () => (
+export const FlashMessage = () => (
   <DummyComponent
     type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
     message={text('Message', 'Your action was a success!')}
   />
 );
-
-flashStory.story = {
-  name: 'flash message',
-};
 
 export default {
   title: 'Design System/Flash',
