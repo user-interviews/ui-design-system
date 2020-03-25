@@ -21,6 +21,9 @@ lib
 .env.test.local
 .env.production.local
 
+# Ignore Jetbrains IDE settings
+/.idea
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
