@@ -1,0 +1,19 @@
+@import '../../scss/theme';
+
+.CopyToClipboard {
+  align-items: center;
+  border: 1px solid $ux-gray-400;
+  border-radius: .25rem;
+  color: $ux-gray-800;
+  display: flex;
+  font-weight: $font-weight-bold;
+  justify-content: space-between;
+  min-height: 2rem;
+  padding: 0 0 0 .375rem;
+
+  &__copy-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}

@@ -1,0 +1,9 @@
+@import './palette';
+
+.btn-link--neutral {
+  color: $ux-gray-500;
+
+  &:hover {
+    color: $ux-gray-700;
+  }
+}

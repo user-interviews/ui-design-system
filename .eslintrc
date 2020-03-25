@@ -17,7 +17,7 @@
         "browser": true
       },
       "parser": "babel-eslint",
-      "plugins": [ "babel", "react" ],
+      "plugins": [ "babel", "react", "react-hooks" ],
       "rules": {
         "babel/semi": 2,
         "import/prefer-default-export": 0,
@@ -33,9 +33,7 @@
         "no-alert": 0,
         "react/destructuring-assignment": 0,
         "react/forbid-prop-types": 0,
-        "react/jsx-props-no-spreading": [2, {
-          "html": "ignore"
-        }],
+        "react/jsx-props-no-spreading": 0,
         "react/jsx-no-target-blank": 1,
         "react/jsx-no-undef": 0,
         "react/jsx-one-expression-per-line": 0,
@@ -102,6 +100,8 @@
           "requiredFirst": false,
           "sortShapeProp": true
         }],
+        "react-hooks/exhaustive-deps": "warn",
+        "react-hooks/rules-of-hooks": "error",
         "semi": 0
       },
     }
