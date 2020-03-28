@@ -1,5 +1,6 @@
 import Card from './Card/Card';
 import CopyToClipboard from './CopyToClipboard/CopyToClipboard';
+import FadeTransition from './FadeTransition/FadeTransition';
 import {
  Flash, MessageTypes, withFlash, withFlashPropTypes, useFlash,
 } from './Flash';
@@ -16,6 +17,7 @@ import TrackedButton from './TrackedButton/TrackedButton';
 export {
   Card,
   CopyToClipboard,
+  FadeTransition,
   Flash,
   Form,
   FormControlLabel,
