@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { withA11y } from '@storybook/addon-a11y';
 
 import SingleSelect from '../src/Select/SingleSelect';
 
-const onChange = () => {};
+import { withPadding } from './decorators';
 
-const withPadding = (story) => <div style={{ padding: '1rem' }}>{story()}</div>;
+const onChange = () => {};
 
 export default {
   title: 'Design System/Selects/Single',
@@ -22,13 +22,25 @@ const options = [
 ];
 
 export const Default = () => (
-  <SingleSelect options={options} onChange={onChange} />
+  <SingleSelect aria-label="Default select" options={options} onChange={onChange} />
 );
 
 export const Searchable = () => (
-  <SingleSelect isSearchable options={options} onChange={onChange} />
+  <SingleSelect aria-label="Searchable select" isSearchable options={options} onChange={onChange} />
 );
 
 export const Loading = () => (
-  <SingleSelect isLoading options={options} onChange={onChange} />
+  <SingleSelect aria-label="Loading select" isLoading options={options} onChange={onChange} />
+);
+
+export const Labeled = () => (
+  <Fragment>
+    <label htmlFor="labeled-select" id="select-label">Labeled select</label>
+    <SingleSelect
+      aria-labelledby="select-label"
+      id="labeled-select"
+      options={options}
+      onChange={onChange}
+    />
+  </Fragment>
 );

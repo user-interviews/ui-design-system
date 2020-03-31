@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { withA11y } from '@storybook/addon-a11y';
 
 import AsyncSelect from '../src/Select/AsyncSelect';
 
-const withPadding = (story) => <div style={{ padding: '1rem' }}>{story()}</div>;
+import { withPadding } from './decorators';
 
 export default {
   title: 'Design System/Selects/Async',
@@ -29,9 +29,24 @@ async function loadOptions(search) {
 
 export const Default = () => (
   <AsyncSelect
+    aria-label="Async select"
     getOptionLabel={({ label }) => label}
     getOptionValue={({ value }) => value}
     loadOptions={loadOptions}
-    noOptionsMessage={(search) => search.length ? 'No results!' : 'Type to search...'}
+    noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
   />
+);
+
+export const Labeled = () => (
+  <Fragment>
+    <label htmlFor="async-select" id="async-label">A labeled select</label>
+    <AsyncSelect
+      aria-labelledby="async-label"
+      getOptionLabel={({ label }) => label}
+      getOptionValue={({ value }) => value}
+      loadOptions={loadOptions}
+      id="async-select"
+      noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+    />
+  </Fragment>
 );

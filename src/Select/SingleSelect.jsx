@@ -2,11 +2,17 @@ import React from 'react';
 import Select from 'react-select';
 import propTypes from 'prop-types';
 
+import zStack from '../Styles/zStack';
+
 import { defaultTheme, defaultStyles } from './styles';
 
 const SingleSelect = ({
+  'aria-label': ariaLabel,
+  'aria-labelledby': ariaLabelledBy,
   className,
   defaultValue,
+  disabled,
+  id,
   isLoading,
   isSearchable,
   modal,
@@ -18,9 +24,12 @@ const SingleSelect = ({
   onChange,
 }) => (
   <Select
+    aria-label={ariaLabel}
+    aria-labelledby={ariaLabelledBy}
     className={`${className || ''} SingleSelect`}
     defaultValue={defaultValue}
-    isDisabled={isLoading}
+    id={id}
+    isDisabled={disabled || isLoading}
     isSearchable={isSearchable}
     menuPortalTarget={modal ? document.body : undefined}
     name={name}
@@ -42,8 +51,12 @@ const SingleSelect = ({
 );
 
 SingleSelect.propTypes = {
+  'aria-label': propTypes.string,
+  'aria-labelledby': propTypes.string,
   className: propTypes.string,
   defaultValue: propTypes.object,
+  disabled: propTypes.bool,
+  id: propTypes.string,
   isLoading: propTypes.bool,
   isSearchable: propTypes.bool,
   modal: propTypes.bool,
@@ -56,8 +69,12 @@ SingleSelect.propTypes = {
 };
 
 SingleSelect.defaultProps = {
+  'aria-label': undefined,
+  'aria-labelledby': undefined,
   className: undefined,
   defaultValue: undefined,
+  disabled: false,
+  id: undefined,
   isLoading: false,
   isSearchable: false,
   modal: false,

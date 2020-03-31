@@ -2,13 +2,19 @@ import React from 'react';
 import propTypes from 'prop-types';
 import Async from 'react-select/async';
 
+import zStack from '../Styles/zStack';
+
 import { defaultStyles, defaultTheme } from './styles';
 
 const AsyncSelect = ({
+  'aria-label': ariaLabel,
+  'aria-labelledby': ariaLabelledBy,
   className,
   defaultOptions,
+  disabled,
   getOptionLabel,
   getOptionValue,
+  id,
   ignoreCase,
   isLoading,
   loadOptions,
@@ -21,11 +27,15 @@ const AsyncSelect = ({
   onChange,
 }) => (
   <Async
+    aria-label={ariaLabel}
+    aria-labelledby={ariaLabelledBy}
     className={`${className || ''} AsyncSelect`}
     defaultOptions={defaultOptions}
     getOptionLabel={getOptionLabel}
     getOptionValue={getOptionValue}
+    id={id}
     ignoreCase={ignoreCase}
+    isDisabled={disabled}
     isLoading={isLoading}
     loadOptions={loadOptions}
     menuPortalTarget={modal ? document.body : undefined}
@@ -51,10 +61,14 @@ const AsyncSelect = ({
 );
 
 AsyncSelect.propTypes = {
+  'aria-label': propTypes.string,
+  'aria-labelledby': propTypes.string,
   className: propTypes.string,
   defaultOptions: propTypes.oneOfType([propTypes.bool, propTypes.array]),
+  disabled: propTypes.bool,
   getOptionLabel: propTypes.func,
   getOptionValue: propTypes.func,
+  id: propTypes.string,
   ignoreCase: propTypes.bool,
   isLoading: propTypes.bool,
   loadOptions: propTypes.func.isRequired,
@@ -68,10 +82,14 @@ AsyncSelect.propTypes = {
 };
 
 AsyncSelect.defaultProps = {
+  'aria-label': undefined,
+  'aria-labelledby': undefined,
   className: undefined,
   defaultOptions: false,
+  disabled: false,
   getOptionLabel: undefined,
   getOptionValue: undefined,
+  id: undefined,
   ignoreCase: undefined,
   isLoading: false,
   modal: false,
