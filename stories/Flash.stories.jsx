@@ -26,5 +26,5 @@ export const FlashMessage = () => (
 export default {
   title: 'Design System/Flash',
   component: withFlash,
-  decorators: [withA11y, withPadding, withKnobs],
+  decorators: [withA11y, withPadding, withKnobs({ escapeHTML: false })],
 };

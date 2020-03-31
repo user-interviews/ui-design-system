@@ -28,7 +28,8 @@ export default function FlashMessage(props) {
       >
         &times;
       </button>
-      {props.message}
+      {/* eslint-disable-next-line react/no-danger */}
+      <div dangerouslySetInnerHTML={{ __html: props.message }} />
     </div>
   );
 }

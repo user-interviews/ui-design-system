@@ -29,6 +29,11 @@ $ux-flash-error-border: $ux-red-200;
 
 .alert {
   font-weight: 500;
+
+  a {
+    color: inherit;
+    text-decoration: underline;
+  }
 }
 
 .alert-info {
@@ -41,3 +46,4 @@ $ux-flash-error-border: $ux-red-200;
   background-color: $ux-flash-error;
   border-color: $ux-flash-error-border;
 }
+

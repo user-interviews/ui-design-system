@@ -5,13 +5,15 @@ import palette from '../src/Styles/palette';
 import { withPadding } from './decorators';
 
 const renderColor = (colorName) => (
-  <div style={{ display: 'flex', height: '20rem', width: '100%' }}>
-    {
+  () => (
+    <div style={{ display: 'flex', height: '20rem', width: '100%' }}>
+      {
       [...Array(9)].map((_, i) => {
         const colorNameKey = `ux${colorName}${i + 1}00`;
 
         return (
           <div
+            key={colorNameKey}
             style={{
               backgroundColor: palette[colorNameKey],
               height: '100%',
@@ -33,7 +35,8 @@ const renderColor = (colorName) => (
         );
       })
     }
-  </div>
+    </div>
+  )
 );
 
 export default {

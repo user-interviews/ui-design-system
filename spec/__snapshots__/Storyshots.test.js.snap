@@ -65,6 +65,1146 @@ exports[`Storyshots Design System/Card all cards 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Color Palette Blue 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "20rem",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "#EBF6FF",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxBlue100
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#C9E5FC",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxBlue200
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#92CBFC",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxBlue300
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#5AA4E5",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxBlue400
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#337AB7",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxBlue500
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#155B99",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxBlue600
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#0D4473",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxBlue700
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#083054",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxBlue800
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#032847",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxBlue900
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Color Palette Gray 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "20rem",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "#F9F9F9",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGray100
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#F1F1F1",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGray200
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#E1E1E1",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGray300
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#D1D1D1",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGray400
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#A1A1A1",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGray500
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#818181",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGray600
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#616161",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGray700
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#444444",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGray800
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#222222",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGray900
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Color Palette Green 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "20rem",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "#F3FFF2",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGreen100
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#E3FDE0",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGreen200
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#BFFEB8",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGreen300
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#85DC7A",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGreen400
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#6DBD63",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGreen500
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#47A13B",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGreen600
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#297021",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGreen700
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#1A5313",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGreen800
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#0E4207",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxGreen900
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Color Palette Orange 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "20rem",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FDEAD2",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxOrange100
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FCDFB9",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxOrange200
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FAC988",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxOrange300
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#F7B258",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxOrange400
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#F59C27",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxOrange500
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#E18C28",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxOrange600
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#AE6608",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxOrange700
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#7D4A06",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxOrange800
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#653B05",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxOrange900
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Color Palette Red 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "20rem",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "#F0D9D9",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxRed100
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#E8C5CB",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxRed200
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#EB7A7A",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxRed300
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#E44E4E",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxRed400
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FF4E00",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxRed500
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#C71F1F",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxRed600
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#B11B1B",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxRed700
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#9B1818",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxRed800
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#851414",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "1rem",
+            "margin": "1rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        uxRed900
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Copy To Clipboard Default 1`] = `
 <div
   style={

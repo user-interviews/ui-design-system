@@ -12,7 +12,13 @@ Array [
     >
       ×
     </button>
-    This is just a test...
+    <div
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "This is just a test...",
+        }
+      }
+    />
   </div>,
   <div />,
 ]
