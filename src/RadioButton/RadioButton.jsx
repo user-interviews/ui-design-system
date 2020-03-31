@@ -23,12 +23,19 @@ export default function RadioButton(props) {
       {props.label && (
         <span className="RadioButton__label">{props.label}</span>
       )}
+
+      {props.children && (
+        <div className="RadioButton__children">
+          {props.children}
+        </div>
+      )}
     </label>
   );
 }
 
 RadioButton.propTypes = {
   bordered: PropTypes.bool,
+  children: PropTypes.node,
   disabled: PropTypes.bool,
   id: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
@@ -38,6 +45,7 @@ RadioButton.propTypes = {
 
 RadioButton.defaultProps = {
   bordered: false,
+  children: null,
   disabled: false,
   name: '',
   radioButtonProps: {},

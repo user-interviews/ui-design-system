@@ -1,11 +1,12 @@
-@import '../../scss/theme';
-@import '../../scss/borders';
+@import 'scss/theme';
+@import 'scss/borders';
 
 .RadioButton {
   display: flex;
   align-items: center;
   padding: 0.5rem;
   border: 1px solid transparent;
+  flex-wrap: wrap;
 
   &--bordered {
     border: 1px solid $ux-gray-400;
@@ -15,5 +16,10 @@
   &__label {
     flex-grow: 1;
     margin-left: 0.5rem;
+  }
+
+  &__children {
+    margin-top: 0.5rem;
+    width: 100%;
   }
 }
