@@ -1,17 +1,17 @@
 import React from 'react';
 
-import palette from '../src/Styles/palette';
+import { palette } from 'src/Styles';
 
-import { withPadding } from './decorators';
-
-const renderColor = (colorName) => (
+/* eslint-disable react/prop-types, react/no-array-index-key */
+const Palette = ({ color }) => (
   <div style={{ display: 'flex', height: '20rem', width: '100%' }}>
     {
       [...Array(9)].map((_, i) => {
-        const colorNameKey = `ux${colorName}${i + 1}00`;
+        const colorNameKey = `ux${color}${i + 1}00`;
 
         return (
           <div
+            key={i}
             style={{
               backgroundColor: palette[colorNameKey],
               height: '100%',
@@ -35,14 +35,15 @@ const renderColor = (colorName) => (
     }
   </div>
 );
+/* eslint-enable react/prop-types, react/no-array-index-key */
 
 export default {
-  title: 'Design System/Color Palette',
-  decorators: [withPadding],
+  title: 'Design System/Styles/Color Palette',
+  component: Palette,
 };
 
-export const Blue = renderColor('Blue');
-export const Gray = renderColor('Gray');
-export const Green = renderColor('Green');
-export const Orange = renderColor('Orange');
-export const Red = renderColor('Red');
+export const Blue = () => <Palette color="Blue" />;
+export const Gray = () => <Palette color="Gray" />;
+export const Green = () => <Palette color="Green" />;
+export const Orange = () => <Palette color="Orange" />;
+export const Red = () => <Palette color="Red" />;

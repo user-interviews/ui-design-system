@@ -1,7 +1,7 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import Flash from '../../src/Flash/Flash';
+import { Flash } from 'src/Flash';
 
 describe('Flash', () => {
   test('no header classes', () => {

@@ -2,8 +2,7 @@ import React from 'react';
 import { act } from '@testing-library/react-hooks';
 import { create } from 'react-test-renderer';
 
-import withFlash from '../../src/Flash/withFlash';
-import { MessageTypes } from '../../src/Flash';
+import { withFlash, MessageTypes } from 'src/Flash';
 
 jest.mock('react-transition-group', () => (
   {

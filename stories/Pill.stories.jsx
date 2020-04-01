@@ -1,15 +1,12 @@
 import React from 'react';
-import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
-import Pill from '../src/Pill/Pill';
-
-import { withPadding } from './decorators';
+import Pill from 'src/Pill';
 
 export default {
   title: 'Design System/Pill',
   component: Pill,
-  decorators: [withA11y, withKnobs, withPadding],
+  decorators: [withKnobs],
 };
 
 export const Default = () => <Pill text={text('Pill Text', 'Test pill')} />;
