@@ -1,0 +1,90 @@
+import React from 'react';
+import Select from 'react-select';
+import propTypes from 'prop-types';
+
+import zStack from 'src/Styles/zStack';
+
+import { defaultTheme, defaultStyles } from './styles';
+
+const SingleSelect = ({
+  'aria-label': ariaLabel,
+  'aria-labelledby': ariaLabelledBy,
+  className,
+  defaultValue,
+  disabled,
+  isClearable,
+  id,
+  isLoading,
+  isSearchable,
+  modal,
+  name,
+  options,
+  placeholder,
+  value,
+
+  onChange,
+}) => (
+  <Select
+    aria-label={ariaLabel}
+    aria-labelledby={ariaLabelledBy}
+    className={`${className || ''} SingleSelect`}
+    defaultValue={defaultValue}
+    isClearable={isClearable}
+    id={id}
+    isDisabled={disabled || isLoading}
+    isSearchable={isSearchable}
+    menuPortalTarget={modal ? document.body : undefined}
+    name={name}
+    options={options}
+    placeholder={placeholder}
+    styles={{
+      ...defaultStyles,
+      menuPortal: (base) => (
+        modal ?
+          base :
+          { ...base, zIndex: zStack.zIndexModalBackdrop + 1 }
+      ),
+    }}
+    theme={defaultTheme}
+    value={value}
+
+    onChange={onChange}
+  />
+);
+
+SingleSelect.propTypes = {
+  'aria-label': propTypes.string,
+  'aria-labelledby': propTypes.string,
+  className: propTypes.string,
+  defaultValue: propTypes.object,
+  disabled: propTypes.bool,
+  id: propTypes.string,
+  isClearable: propTypes.bool,
+  isLoading: propTypes.bool,
+  isSearchable: propTypes.bool,
+  modal: propTypes.bool,
+  name: propTypes.string,
+  options: propTypes.arrayOf(propTypes.object).isRequired,
+  placeholder: propTypes.string,
+  value: propTypes.object,
+
+  onChange: propTypes.func.isRequired,
+};
+
+SingleSelect.defaultProps = {
+  'aria-label': undefined,
+  'aria-labelledby': undefined,
+  className: undefined,
+  defaultValue: undefined,
+  disabled: false,
+  isClearable: false,
+  id: undefined,
+  isLoading: false,
+  isSearchable: false,
+  modal: false,
+  name: undefined,
+  placeholder: undefined,
+  value: undefined,
+};
+
+export default SingleSelect;

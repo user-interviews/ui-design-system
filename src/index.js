@@ -16,9 +16,14 @@ import Pill from 'src/Pill';
 import Popper from 'src/Popper';
 import RadioButton from 'src/RadioButton';
 import RadioButtonGroup from 'src/RadioButtonGroup';
+import {
+  AsyncSelect,
+  SingleSelect,
+} from 'src/Select';
 import TrackedButton from 'src/TrackedButton';
 
 export {
+  AsyncSelect,
   Card,
   CopyToClipboard,
   FadeTransition,
@@ -32,6 +37,7 @@ export {
   Popper,
   RadioButton,
   RadioButtonGroup,
+  SingleSelect,
   TrackedButton,
   useFlash,
   withFlash,
