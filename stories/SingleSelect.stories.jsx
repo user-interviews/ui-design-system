@@ -1,16 +1,12 @@
 import React, { Fragment } from 'react';
-import { withA11y } from '@storybook/addon-a11y';
 
-import SingleSelect from '../src/Select/SingleSelect';
-
-import { withPadding } from './decorators';
+import SingleSelect from 'src/Select/SingleSelect';
 
 const onChange = () => {};
 
 export default {
   title: 'Design System/Selects/Single',
   component: SingleSelect,
-  decorators: [withA11y, withPadding],
 };
 
 const options = [

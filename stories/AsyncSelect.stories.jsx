@@ -1,14 +1,10 @@
 import React, { Fragment } from 'react';
-import { withA11y } from '@storybook/addon-a11y';
 
-import AsyncSelect from '../src/Select/AsyncSelect';
-
-import { withPadding } from './decorators';
+import AsyncSelect from 'src/Select/AsyncSelect';
 
 export default {
   title: 'Design System/Selects/Async',
   component: AsyncSelect,
-  decorators: [withA11y, withPadding],
 };
 
 const options = [
