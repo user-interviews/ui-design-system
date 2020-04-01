@@ -67,6 +67,4 @@ const colorGradients = {
 export default {
   ...baseColors,
   ...colorGradients,
-  inputBorderColor: colorGradients.uxGray400,
-  inputDisabledBg: colorGradients.uxGray300,
 };

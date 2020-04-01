@@ -1,6 +1,6 @@
 import React from 'react';
 
-import palette from '../src/Styles/palette';
+import colors from '../src/Styles/colors';
 
 import { withPadding } from './decorators';
 
@@ -15,7 +15,7 @@ const renderColor = (colorName) => () => (
           <div
             key={index}
             style={{
-              backgroundColor: palette[colorNameKey],
+              backgroundColor: colors[colorNameKey],
               height: '100%',
               flexBasis: '11%',
             }}
