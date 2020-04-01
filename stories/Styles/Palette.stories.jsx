@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { palette } from 'src/Styles';
+import { colors } from 'src/Styles';
 
 /* eslint-disable react/prop-types, react/no-array-index-key */
 const Palette = ({ color }) => (
@@ -13,7 +13,7 @@ const Palette = ({ color }) => (
           <div
             key={i}
             style={{
-              backgroundColor: palette[colorNameKey],
+              backgroundColor: colors[colorNameKey],
               height: '100%',
               flexBasis: '11%',
             }}
