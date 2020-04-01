@@ -2,7 +2,7 @@ import React from 'react';
 import Select from 'react-select';
 import propTypes from 'prop-types';
 
-import zStack from '../Styles/zStack';
+import zStack from 'src/Styles/zStack';
 
 import { defaultTheme, defaultStyles } from './styles';
 

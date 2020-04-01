@@ -1,4 +1,4 @@
-import systemColors from '../Styles/colors';
+import systemColors from 'src/Styles/colors';
 
 /*
  To set styles for your item, make sure your option object has a child `colors` object

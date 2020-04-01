@@ -2,7 +2,7 @@ import React from 'react';
 import propTypes from 'prop-types';
 import Async from 'react-select/async';
 
-import zStack from '../Styles/zStack';
+import zStack from 'src/Styles/zStack';
 
 import { defaultStyles, defaultTheme } from './styles';
 
