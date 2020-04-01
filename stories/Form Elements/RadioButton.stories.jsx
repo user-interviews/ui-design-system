@@ -1,16 +1,13 @@
 import React from 'react';
-import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 
-import RadioButton from 'src/RadioButton/RadioButton';
-
-import { withPadding } from 'stories/decorators';
-import { palette } from 'src/Styles';
+import RadioButton from 'src/RadioButton';
+import { colors } from 'src/Styles';
 
 export default {
   title: 'Design System/Form Elements/Radio Button',
   component: RadioButton,
-  decorators: [withA11y, withPadding, withKnobs],
+  decorators: [withKnobs],
 };
 
 export const Default = () => (
@@ -28,6 +25,6 @@ export const WithChildren = () => (
     bordered
     id="default"
   >
-    <span style={{ color: palette.uxGray500 }}>Some descriptive text for the option above</span>
+    <span style={{ color: colors.uxGray500 }}>Some descriptive text for the option above</span>
   </RadioButton>
 );

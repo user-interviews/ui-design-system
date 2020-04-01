@@ -1,11 +1,9 @@
 import React from 'react';
-import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs, text, radios } from '@storybook/addon-knobs';
-import { withPadding } from './decorators';
 
-import '../scss/global.scss';
+import { withFlash, MessageTypes, withFlashPropTypes } from 'src/Flash';
 
-import { withFlash, MessageTypes, withFlashPropTypes } from '../src/Flash';
+import 'scss/global.scss';
 
 let DummyComponent = ({ type, message, setFlashMessage }) => (
   <div>
@@ -26,5 +24,5 @@ export const FlashMessage = () => (
 export default {
   title: 'Design System/Flash',
   component: withFlash,
-  decorators: [withA11y, withPadding, withKnobs],
+  decorators: [withKnobs],
 };

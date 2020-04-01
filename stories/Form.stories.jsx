@@ -1,19 +1,14 @@
 import React from 'react';
-import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions';
 
-import Form from '../src/Form/Form';
-import FormControlLabel from '../src/FormControlLabel/FormControlLabel';
-import FormGroup from '../src/FormGroup/FormGroup';
-import RadioButton from '../src/RadioButton/RadioButton';
-import RadioButtonGroup from '../src/RadioButtonGroup/RadioButtonGroup';
-
-import { withPadding } from './decorators';
+import Form from 'src/Form';
+import FormGroup from 'src/FormGroup';
+import RadioButton from 'src/RadioButton';
+import RadioButtonGroup from 'src/RadioButtonGroup';
 
 export default {
   title: 'Design System/Form',
   component: Form,
-  decorators: [withA11y, withPadding],
 };
 
 const onSubmit = (event) => {
@@ -43,19 +38,8 @@ export const Default = () => (
       <input className="form-control" id="phone" type="text" />
     </FormGroup>
     <RadioButtonGroup name="radio-buttons">
-      <FormControlLabel
-        for="first"
-        text="first choice"
-      >
-        <RadioButton id="first" name="radio-buttons" />
-      </FormControlLabel>
-
-      <FormControlLabel
-        for="second"
-        text="second choice"
-      >
-        <RadioButton id="second" name="radio-buttons" />
-      </FormControlLabel>
+      <RadioButton id="first-radio" label="first choice" name="radio-buttons" />
+      <RadioButton id="second-radio" label="second choice" name="radio-buttons" />
     </RadioButtonGroup>
     <button className="btn btn-primary" type="submit">Save</button>
   </Form>

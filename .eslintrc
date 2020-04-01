@@ -3,7 +3,7 @@
   "overrides": [
     {
       "files": [
-        "stories/*.{js,jsx}"
+        "stories/**/*.{js,jsx}"
       ],
       "rules": {
         "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
@@ -22,13 +22,6 @@
         "babel/semi": 2,
         "import/prefer-default-export": 0,
         "jsx-a11y/anchor-is-valid": 1,
-        "jsx-a11y/label-has-associated-control": [ 2, {
-          "assert": "either",
-          "controlComponents": [],
-          "depth": 25,
-          "labelAttributes": ["label"],
-          "labelComponents": []
-        }],
         "jsx-a11y/label-has-for": 0,
         "no-alert": 0,
         "react/destructuring-assignment": 0,
@@ -118,6 +111,13 @@
     "function-paren-newline": ["error", "consistent"],
     "func-names": ["error", "never"],
     "implicit-arrow-linebreak": 0,
+    "jsx-a11y/label-has-associated-control": [ 2, {
+      "assert": "either",
+      "controlComponents": ["AsyncSelect", "SingleSelect"],
+      "depth": 25,
+      "labelAttributes": ["label"],
+      "labelComponents": []
+    }],
     "linebreak-style": 0,
     "no-case-declarations": "warn",
     "no-confusing-arrow": 0,
@@ -131,6 +131,7 @@
     "prefer-destructuring": "warn",
     "quotes": ["error", "single", { "allowTemplateLiterals" : true }],
     "radix": 0,
+    "react/jsx-fragments": 0,
     "symbol-description": 0,
     "template-curly-spacing": "off",
     "indent": "off"
