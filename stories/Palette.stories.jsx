@@ -4,14 +4,16 @@ import palette from '../src/Styles/palette';
 
 import { withPadding } from './decorators';
 
-const renderColor = (colorName) => (
+const renderColor = (colorName) => () => (
   <div style={{ display: 'flex', height: '20rem', width: '100%' }}>
     {
-      [...Array(9)].map((_, i) => {
-        const colorNameKey = `ux${colorName}${i + 1}00`;
+      [...Array(9)].map((_, index) => {
+        const colorNameKey = `ux${colorName}${index + 1}00`;
 
         return (
+          /* eslint-disable react/no-array-index-key */
           <div
+            key={index}
             style={{
               backgroundColor: palette[colorNameKey],
               height: '100%',
@@ -30,6 +32,7 @@ const renderColor = (colorName) => (
               {colorNameKey}
             </p>
           </div>
+          /* eslint-enable react/no-array-index-key */
         );
       })
     }
