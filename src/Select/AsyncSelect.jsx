@@ -14,6 +14,7 @@ const AsyncSelect = ({
   disabled,
   getOptionLabel,
   getOptionValue,
+  isClearable,
   id,
   ignoreCase,
   isLoading,
@@ -35,6 +36,7 @@ const AsyncSelect = ({
     getOptionValue={getOptionValue}
     id={id}
     ignoreCase={ignoreCase}
+    isClearable={isClearable}
     isDisabled={disabled}
     isLoading={isLoading}
     loadOptions={loadOptions}
@@ -70,6 +72,7 @@ AsyncSelect.propTypes = {
   getOptionValue: propTypes.func,
   id: propTypes.string,
   ignoreCase: propTypes.bool,
+  isClearable: propTypes.bool,
   isLoading: propTypes.bool,
   loadOptions: propTypes.func.isRequired,
   modal: propTypes.bool,
@@ -91,6 +94,7 @@ AsyncSelect.defaultProps = {
   getOptionValue: undefined,
   id: undefined,
   ignoreCase: undefined,
+  isClearable: false,
   isLoading: false,
   modal: false,
   name: undefined,

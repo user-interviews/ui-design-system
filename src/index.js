@@ -2,7 +2,11 @@ import Card from './Card/Card';
 import CopyToClipboard from './CopyToClipboard/CopyToClipboard';
 import FadeTransition from './FadeTransition/FadeTransition';
 import {
- Flash, MessageTypes, withFlash, withFlashPropTypes, useFlash,
+  Flash,
+  MessageTypes,
+  withFlash,
+  withFlashPropTypes,
+  useFlash,
 } from './Flash';
 import Form from './Form/Form';
 import FormControlLabel from './FormControlLabel/FormControlLabel';
@@ -12,8 +16,10 @@ import Pill from './Pill/Pill';
 import Popper from './Popper/Popper';
 import RadioButton from './RadioButton/RadioButton';
 import RadioButtonGroup from './RadioButtonGroup/RadioButtonGroup';
-import AsyncSelect from './Select/AsyncSelect';
-import SingleSelect from './Select/SingleSelect';
+import {
+  AsyncSelect,
+  SingleSelect,
+} from './Select';
 import TrackedButton from './TrackedButton/TrackedButton';
 
 export {
