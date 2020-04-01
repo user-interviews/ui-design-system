@@ -1,7 +1,7 @@
 // When updating this file, please consider the values in src/Styles/palette.js
 
 $ux-black: #000000;
-$ux-blue: #337ab7;
+$ux-blue: #337AB7;
 $ux-gray: #A1A1A1;
 $ux-green: #6DBD63;
 $ux-light-blue: #7CCBF2;
@@ -66,3 +66,6 @@ $ux-red-600: #C71F1F;
 $ux-red-700: #B11B1B;
 $ux-red-800: #9B1818;
 $ux-red-900: #851414;
+
+$input-border-color: $ux-gray-400; // Override bootstrap default
+$input-disabled-bg: $ux-gray-300; // Override bootstrap default

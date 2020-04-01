@@ -5,10 +5,14 @@ import palette from '../Styles/palette';
  with a text and/or hover key defined to override the defaults
  */
 const defaultStyles = {
+  control: (styles, { isDisabled }) => ({
+    ...styles,
+    backgroundColor: isDisabled ? palette.inputDisabledBg : styles.backgroundColor,
+    borderColor: palette.inputBorderColor,
+  }),
   indicatorSeparator: (styles) => ({ ...styles, display: 'none' }),
   singleValue: (styles, { data }) => ({
     ...styles,
-    backgroundColor: palette.uxWhite,
     color: (data.colors ? data.colors.text : palette.uxGray600) || palette.uxGray600,
   }),
   option: (styles, {
@@ -21,13 +25,14 @@ const defaultStyles = {
 
     return {
       ...styles,
-      backgroundColor: isSelected || isFocused ? colors.hover : palette.uxWhite,
+      backgroundColor: isSelected || isFocused ? colors.hover : styles.backgroundColor,
       color: colors.text,
       cursor: 'pointer',
 
       ':active': {
         ...styles[':active'],
-        backgroundColor: !isDisabled && isSelected ? palette.uxGray200 : palette.uxWhite,
+        backgroundColor:
+          !isDisabled && isSelected ? palette.uxGray200 : styles[':active'].backgroundColor,
       },
 
       ':hover': {
