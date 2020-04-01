@@ -6,7 +6,7 @@ export default {
   uxGray: '#A1A1A1',
   uxGreen: '#6DBD63',
   uxOrange: '#F59C27',
-  uxPurple: '#8B008B',
+  uxPurple: '#874B96',
   uxRed: '#FF4E00',
   uxYellow: '#F6D810',
   uxWhite: '#FFFFFF',
