@@ -3,7 +3,7 @@
   "overrides": [
     {
       "files": [
-        "stories/*.{js,jsx}"
+        "stories/**/*.{js,jsx}"
       ],
       "rules": {
         "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]

@@ -1,15 +1,12 @@
 import React from 'react';
-import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs } from '@storybook/addon-knobs';
 
-import FormGroup from '../src/FormGroup/FormGroup';
-
-import { withPadding } from './decorators';
+import FormGroup from 'src/FormGroup';
 
 export default {
-  title: 'Design System/Form Group',
+  title: 'Design System/Form Elements/Form Group',
   component: FormGroup,
-  decorators: [withA11y, withKnobs, withPadding],
+  decorators: [withKnobs],
 };
 
 export const Default = () => (

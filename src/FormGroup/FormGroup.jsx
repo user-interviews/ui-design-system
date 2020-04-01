@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import InputLabel from '../InputLabel/InputLabel';
+import InputLabel from 'src/InputLabel';
 
 import './FormGroup.scss';
 

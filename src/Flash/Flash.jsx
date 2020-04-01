@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { TransitionGroup } from 'react-transition-group';
 import classNames from 'classnames';
 
-import FadeTransition from '../FadeTransition/FadeTransition';
+import FadeTransition from 'src/FadeTransition';
 import FlashMessage from './FlashMessage';
 
 import './Flash.scss';

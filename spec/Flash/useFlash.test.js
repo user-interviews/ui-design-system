@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import { MessageTypes, useFlash } from '../../src/Flash';
+import { MessageTypes, useFlash } from 'src/Flash';
 
 const GENERATED_UUID = '1234';
 
