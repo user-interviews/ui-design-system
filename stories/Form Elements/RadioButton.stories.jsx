@@ -1,16 +1,13 @@
 import React from 'react';
-import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 
-import RadioButton from 'src/RadioButton/RadioButton';
-
-import { withPadding } from 'stories/decorators';
+import RadioButton from 'src/RadioButton';
 import { palette } from 'src/Styles';
 
 export default {
   title: 'Design System/Form Elements/Radio Button',
   component: RadioButton,
-  decorators: [withA11y, withPadding, withKnobs],
+  decorators: [withKnobs],
 };
 
 export const Default = () => (

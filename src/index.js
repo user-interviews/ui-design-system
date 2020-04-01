@@ -1,18 +1,22 @@
-import Card from './Card/Card';
-import CopyToClipboard from './CopyToClipboard/CopyToClipboard';
-import FadeTransition from './FadeTransition/FadeTransition';
+import Card from 'src/Card';
+import CopyToClipboard from 'src/CopyToClipboard';
+import FadeTransition from 'src/FadeTransition';
 import {
- Flash, MessageTypes, withFlash, withFlashPropTypes, useFlash,
-} from './Flash';
-import Form from './Form/Form';
-import FormControlLabel from './FormControlLabel/FormControlLabel';
-import FormGroup from './FormGroup/FormGroup';
-import InputLabel from './InputLabel/InputLabel';
-import Pill from './Pill/Pill';
-import Popper from './Popper/Popper';
-import RadioButton from './RadioButton/RadioButton';
-import RadioButtonGroup from './RadioButtonGroup/RadioButtonGroup';
-import TrackedButton from './TrackedButton/TrackedButton';
+  Flash,
+  MessageTypes,
+  withFlash,
+  withFlashPropTypes,
+  useFlash,
+} from 'src/Flash';
+import Form from 'src/Form';
+import FormControlLabel from 'src/FormControlLabel';
+import FormGroup from 'src/FormGroup';
+import InputLabel from 'src/InputLabel';
+import Pill from 'src/Pill';
+import Popper from 'src/Popper';
+import RadioButton from 'src/RadioButton';
+import RadioButtonGroup from 'src/RadioButtonGroup';
+import TrackedButton from 'src/TrackedButton';
 
 export {
   Card,

@@ -1,15 +1,12 @@
 import React from 'react';
-import { withA11y } from '@storybook/addon-a11y';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
-import CopyToClipboard from '../src/CopyToClipboard/CopyToClipboard';
-
-import { withPadding } from './decorators';
+import CopyToClipboard from 'src/CopyToClipboard';
 
 export default {
   title: 'Design System/Copy To Clipboard',
   component: CopyToClipboard,
-  decorators: [withA11y, withKnobs({ escapeHTML: false }), withPadding],
+  decorators: [withKnobs({ escapeHTML: false })],
 };
 
 export const Default = () => (
