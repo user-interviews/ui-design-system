@@ -5,13 +5,13 @@
       "files": [
         "stories/*.{js,jsx}"
       ],
-      rules: {
-        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
-      },
+      "rules": {
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+      }
     },
     {
       "files": [
-        "src/**/*.{js,jsx}",
+        "src/**/*.{js,jsx}"
       ],
       "env": {
         "browser": true
@@ -103,9 +103,16 @@
         "react-hooks/exhaustive-deps": "warn",
         "react-hooks/rules-of-hooks": "error",
         "semi": 0
-      },
+      }
     }
   ],
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["./"]
+      }
+    }
+  },
   "rules": {
     "class-methods-use-this": 0,
     "function-paren-newline": ["error", "consistent"],
