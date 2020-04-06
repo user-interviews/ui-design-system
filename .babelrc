@@ -5,6 +5,12 @@
   ],
   "plugins": [
     "@babel/plugin-proposal-object-rest-spread",
+    ["module-resolver", {
+      "alias": {
+        "src": "./src",
+        "scss": "./scss"
+      }
+    }]
   ],
   "env": {
     "production": {
