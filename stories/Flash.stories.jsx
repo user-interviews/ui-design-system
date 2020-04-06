@@ -3,7 +3,7 @@ import { withKnobs, text, radios } from '@storybook/addon-knobs';
 
 import { withFlash, MessageTypes, withFlashPropTypes } from 'src/Flash';
 
-import 'scss/global.scss';
+import '../scss/global.scss';
 
 let DummyComponent = ({ type, message, setFlashMessage }) => (
   <div>

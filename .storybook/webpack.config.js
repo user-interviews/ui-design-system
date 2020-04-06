@@ -7,10 +7,5 @@ module.exports = function({ config }) {
     include: path.resolve(__dirname, '../')
   });
 
-  config.resolve.modules = [
-    ...(config.resolve.modules || []),
-    path.resolve('./'),
-  ];
-
   return config;
 };
