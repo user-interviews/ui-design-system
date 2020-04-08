@@ -1,0 +1,26 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/alert';
+
+@import '../../scss/theme';
+
+// Flash colors
+$ux-flash-error: $ux-red-100;
+$ux-flash-error-border: $ux-red-200;
+
+.alert {
+  font-weight: 500;
+
+  h2 {
+    font-size: .875rem;
+    font-weight: bold;
+  }
+}
+
+.alert-error {
+  @extend .alert-danger;
+
+  background-color: $ux-flash-error;
+  border-color: $ux-flash-error-border;
+}

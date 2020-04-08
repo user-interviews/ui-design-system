@@ -1,5 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Design System/Alert alert message 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div>
+    <div
+      className="alert alert-success"
+    >
+      <h2>
+        Default title
+      </h2>
+      Default message
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Card all cards 1`] = `
 <div
   style={
