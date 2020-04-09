@@ -13,14 +13,12 @@ export default {
 };
 
 export const alertMessage = () => (
-  <div>
-    <AlertMessage
-      message={text('Message', 'Default message')}
-      showDismiss={false}
-      title={text('Title', 'Default title')}
-      type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
-    />
-  </div>
+  <AlertMessage
+    message={text('Message', 'Default message')}
+    showDismiss={false}
+    title={text('Title', 'Default title')}
+    type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
+  />
 );
 
 alertMessage.story = {
