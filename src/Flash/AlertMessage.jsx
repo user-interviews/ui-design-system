@@ -30,7 +30,7 @@ export default function AlertMessage(props) {
             type="button"
             onClick={handleDismissMessage}
           >
-          &times;
+            &times;
           </button>
         )
       }
