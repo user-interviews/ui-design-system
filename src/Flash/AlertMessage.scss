@@ -5,11 +5,7 @@
 
 @import '../../scss/theme';
 
-// Flash colors
-$ux-flash-error: $ux-red-100;
-$ux-flash-error-border: $ux-red-200;
-
-.alert {
+.AlertMessage {
   font-weight: 500;
 
   h2 {
@@ -18,7 +14,7 @@ $ux-flash-error-border: $ux-red-200;
   }
 }
 
-.alert-error {
+.AlertMessage-error {
   @extend .alert-danger;
 
   background-color: $ux-flash-error;

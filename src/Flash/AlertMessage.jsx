@@ -15,7 +15,7 @@ const alertMessageClassName = (type) => {
     throw new TypeError(`Unexpected type ${type} used for a alert message.`);
   }
 
-  return `alert alert-${type}`;
+  return `alert alert-${type} AlertMessage AlertMessage-${type}`;
 };
 
 export default function AlertMessage(props) {
