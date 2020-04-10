@@ -19,16 +19,14 @@ const alertMessageClassName = (type) => {
 };
 
 export default function AlertMessage(props) {
-  const handleDismissMessage = () => props.onDismiss(props.id);
-
   return (
     <div className={alertMessageClassName(props.type)}>
       {
-        props.showDismiss && (
+        props.onDismiss && (
           <button
             className="close"
             type="button"
-            onClick={handleDismissMessage}
+            onClick={() => props.onDismiss(props.id)}
           >
             &times;
           </button>
@@ -47,14 +45,12 @@ export default function AlertMessage(props) {
 AlertMessage.propTypes = {
   id: PropTypes.string.isRequired,
   message: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
-  showDismiss: PropTypes.bool,
   title: PropTypes.string,
   type: PropTypes.string.isRequired,
   onDismiss: PropTypes.func,
 };
 
 AlertMessage.defaultProps = {
-  showDismiss: true,
   title: undefined,
   onDismiss: undefined,
 };

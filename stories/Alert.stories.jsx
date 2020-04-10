@@ -1,5 +1,6 @@
 import React from 'react';
 import { withKnobs, radios, text } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions';
 
 import { MessageTypes, AlertMessage } from 'src/Flash';
 
@@ -12,15 +13,25 @@ export default {
   decorators: [withKnobs],
 };
 
-export const alertMessage = () => (
+export const WithoutDismiss = () => (
   <AlertMessage
     message={text('Message', 'Default message')}
-    showDismiss={false}
+    id={text('ID', '1')}
     title={text('Title', 'Default title')}
     type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
   />
 );
 
-alertMessage.story = {
-  name: 'alert message',
+const onDismiss = (id) => {
+  action('alert dismissed')(id);
 };
+
+export const WithDismiss = () => (
+  <AlertMessage
+    message={text('Message', 'Default message')}
+    id={text('ID', '1')}
+    onDismiss={onDismiss}
+    title={text('Title', 'Default title')}
+    type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
+  />
+);
