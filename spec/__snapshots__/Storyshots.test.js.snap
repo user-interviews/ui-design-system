@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Design System/Alert alert message 1`] = `
+exports[`Storyshots Design System/Alert With Dismiss 1`] = `
 <div
   style={
     Object {
@@ -8,15 +8,39 @@ exports[`Storyshots Design System/Alert alert message 1`] = `
     }
   }
 >
-  <div>
-    <div
-      className="alert alert-success"
+  <div
+    className="alert alert-success AlertMessage AlertMessage-success"
+  >
+    <button
+      className="close"
+      onClick={[Function]}
+      type="button"
     >
-      <h2>
-        Default title
-      </h2>
-      Default message
-    </div>
+      ×
+    </button>
+    <h2>
+      Default title
+    </h2>
+    Default message
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Alert Without Dismiss 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="alert alert-success AlertMessage AlertMessage-success"
+  >
+    <h2>
+      Default title
+    </h2>
+    Default message
   </div>
 </div>
 `;
