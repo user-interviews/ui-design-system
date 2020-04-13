@@ -8,9 +8,10 @@
 .AlertMessage {
   font-weight: 500;
 
-  h2 {
+  &__title {
     font-size: .875rem;
     font-weight: bold;
+    margin-bottom: 0;
   }
 }
 

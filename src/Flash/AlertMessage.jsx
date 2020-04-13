@@ -34,7 +34,7 @@ export default function AlertMessage(props) {
       }
       {
         props.title && (
-          <h2>{props.title}</h2>
+          <p className="AlertMessage__title">{props.title}</p>
         )
       }
       {props.message}

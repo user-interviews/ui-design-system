@@ -18,9 +18,11 @@ exports[`Storyshots Design System/Alert With Dismiss 1`] = `
     >
       ×
     </button>
-    <h2>
+    <p
+      className="AlertMessage__title"
+    >
       Default title
-    </h2>
+    </p>
     Default message
   </div>
 </div>
@@ -37,9 +39,11 @@ exports[`Storyshots Design System/Alert Without Dismiss 1`] = `
   <div
     className="alert alert-success AlertMessage AlertMessage-success"
   >
-    <h2>
+    <p
+      className="AlertMessage__title"
+    >
       Default title
-    </h2>
+    </p>
     Default message
   </div>
 </div>
