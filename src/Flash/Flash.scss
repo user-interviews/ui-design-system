@@ -1,14 +1,10 @@
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
-@import '~bootstrap/scss/alert';
 
 @import '../../scss/theme';
 
 $top-padding: 1.25rem;
-// Flash colors
-$ux-flash-error: $ux-red-100;
-$ux-flash-error-border: $ux-red-200;
 
 .Flash {
   position: fixed;
@@ -25,19 +21,4 @@ $ux-flash-error-border: $ux-red-200;
   &--no-header {
     top: $top-padding;
   }
-}
-
-.alert {
-  font-weight: 500;
-}
-
-.alert-info {
-  @extend .alert-warning;
-}
-
-.alert-error {
-  @extend .alert-danger;
-
-  background-color: $ux-flash-error;
-  border-color: $ux-flash-error-border;
 }

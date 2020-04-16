@@ -1,0 +1,23 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/alert';
+
+@import '../../scss/theme';
+
+.AlertMessage {
+  font-weight: 500;
+
+  &__title {
+    font-size: .875rem;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+}
+
+.AlertMessage-error {
+  @extend .alert-danger;
+
+  background-color: $ux-flash-error;
+  border-color: $ux-flash-error-border;
+}

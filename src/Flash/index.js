@@ -1,9 +1,10 @@
 import Flash from './Flash';
-import { MessageTypes } from './FlashMessage';
+import AlertMessage, { MessageTypes } from './AlertMessage';
 import useFlash from './useFlash';
 import withFlash, { withFlashPropTypes } from './withFlash';
 
 export {
+  AlertMessage,
   Flash,
   MessageTypes,
   useFlash,

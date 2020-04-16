@@ -2,6 +2,7 @@ import Card from 'src/Card';
 import CopyToClipboard from 'src/CopyToClipboard';
 import FadeTransition from 'src/FadeTransition';
 import {
+  AlertMessage,
   Flash,
   MessageTypes,
   withFlash,
@@ -23,6 +24,7 @@ import {
 import TrackedButton from 'src/TrackedButton';
 
 export {
+  AlertMessage,
   AsyncSelect,
   Card,
   CopyToClipboard,

@@ -4,7 +4,7 @@ import { TransitionGroup } from 'react-transition-group';
 import classNames from 'classnames';
 
 import FadeTransition from 'src/FadeTransition';
-import FlashMessage from './FlashMessage';
+import AlertMessage from './AlertMessage';
 
 import './Flash.scss';
 
@@ -20,7 +20,7 @@ export default function Flash(props) {
       {
         props.messages.map((message) => (
           <FadeTransition key={message.id}>
-            <FlashMessage
+            <AlertMessage
               id={message.id}
               message={message.message}
               type={message.type}

@@ -1,5 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Design System/Alert With Dismiss 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="alert alert-success AlertMessage AlertMessage-success"
+  >
+    <button
+      className="close"
+      onClick={[Function]}
+      type="button"
+    >
+      ×
+    </button>
+    <p
+      className="AlertMessage__title"
+    >
+      Default title
+    </p>
+    Default message
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Alert Without Dismiss 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="alert alert-success AlertMessage AlertMessage-success"
+  >
+    <p
+      className="AlertMessage__title"
+    >
+      Default title
+    </p>
+    Default message
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Card all cards 1`] = `
 <div
   style={
