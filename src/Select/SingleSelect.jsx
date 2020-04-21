@@ -12,6 +12,8 @@ const SingleSelect = ({
   className,
   defaultValue,
   disabled,
+  getOptionLabel,
+  getOptionValue,
   isClearable,
   id,
   isLoading,
@@ -29,6 +31,8 @@ const SingleSelect = ({
     aria-labelledby={ariaLabelledBy}
     className={`${className || ''} SingleSelect`}
     defaultValue={defaultValue}
+    getOptionLabel={getOptionLabel}
+    getOptionValue={getOptionValue}
     id={id}
     isClearable={isClearable}
     isDisabled={disabled || isLoading}
@@ -58,6 +62,8 @@ SingleSelect.propTypes = {
   className: propTypes.string,
   defaultValue: propTypes.object,
   disabled: propTypes.bool,
+  getOptionLabel: propTypes.func,
+  getOptionValue: propTypes.func,
   id: propTypes.string,
   isClearable: propTypes.bool,
   isLoading: propTypes.bool,
@@ -77,6 +83,8 @@ SingleSelect.defaultProps = {
   className: undefined,
   defaultValue: undefined,
   disabled: false,
+  getOptionLabel: undefined,
+  getOptionValue: undefined,
   isClearable: false,
   id: undefined,
   isLoading: false,
