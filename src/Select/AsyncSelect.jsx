@@ -27,8 +27,10 @@ const AsyncSelect = ({
   value,
 
   onChange,
+  ...props
 }) => (
   <Async
+    {...props}
     aria-label={ariaLabel}
     aria-labelledby={ariaLabelledBy}
     className={`${className || ''} AsyncSelect`}

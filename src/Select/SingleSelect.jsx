@@ -25,8 +25,10 @@ const SingleSelect = ({
   value,
 
   onChange,
+  ...props
 }) => (
   <Select
+    {...props}
     aria-label={ariaLabel}
     aria-labelledby={ariaLabelledBy}
     className={`${className || ''} SingleSelect`}
