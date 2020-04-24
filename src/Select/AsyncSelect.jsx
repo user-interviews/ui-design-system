@@ -11,6 +11,7 @@ const AsyncSelect = ({
   'aria-labelledby': ariaLabelledBy,
   className,
   defaultOptions,
+  defaultValue,
   disabled,
   getOptionLabel,
   getOptionValue,
@@ -26,12 +27,15 @@ const AsyncSelect = ({
   value,
 
   onChange,
+  ...props
 }) => (
   <Async
+    {...props}
     aria-label={ariaLabel}
     aria-labelledby={ariaLabelledBy}
     className={`${className || ''} AsyncSelect`}
     defaultOptions={defaultOptions}
+    defaultValue={defaultValue}
     getOptionLabel={getOptionLabel}
     getOptionValue={getOptionValue}
     id={id}
@@ -67,6 +71,7 @@ AsyncSelect.propTypes = {
   'aria-labelledby': propTypes.string,
   className: propTypes.string,
   defaultOptions: propTypes.oneOfType([propTypes.bool, propTypes.array]),
+  defaultValue: propTypes.object,
   disabled: propTypes.bool,
   getOptionLabel: propTypes.func,
   getOptionValue: propTypes.func,
@@ -89,6 +94,7 @@ AsyncSelect.defaultProps = {
   'aria-labelledby': undefined,
   className: undefined,
   defaultOptions: false,
+  defaultValue: undefined,
   disabled: false,
   getOptionLabel: undefined,
   getOptionValue: undefined,
