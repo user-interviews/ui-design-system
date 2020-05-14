@@ -4,7 +4,7 @@ import Async from 'react-select/async';
 
 import zStack from 'src/Styles/zStack';
 
-import { defaultStyles, defaultTheme } from './styles';
+import { defaultStyles, defaultTheme, SELECT_SIZES } from './styles';
 
 const AsyncSelect = ({
   'aria-label': ariaLabel,
@@ -24,6 +24,7 @@ const AsyncSelect = ({
   name,
   noOptionsMessage,
   placeholder,
+  size,
   value,
 
   onChange,
@@ -50,7 +51,7 @@ const AsyncSelect = ({
     placeholder={placeholder}
     shouldShowValue
     styles={{
-      ...defaultStyles,
+      ...defaultStyles({ size }),
       menuPortal: (base) => (
         modal ?
           base :
@@ -84,6 +85,7 @@ AsyncSelect.propTypes = {
   name: propTypes.string,
   noOptionsMessage: propTypes.func,
   placeholder: propTypes.string,
+  size: propTypes.oneOf(Object.values(SELECT_SIZES)),
   value: propTypes.object,
 
   onChange: propTypes.func,
@@ -106,6 +108,7 @@ AsyncSelect.defaultProps = {
   name: undefined,
   noOptionsMessage: undefined,
   placeholder: undefined,
+  size: SELECT_SIZES.SMALL,
   value: undefined,
 
   onChange: undefined,

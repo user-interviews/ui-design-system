@@ -11,7 +11,8 @@
     },
     {
       "files": [
-        "src/**/*.{js,jsx}"
+        "src/**/*.{js,jsx}",
+        "spec/**/*.{js,jsx}"
       ],
       "env": {
         "browser": true
