@@ -19,6 +19,7 @@ import RadioButton from 'src/RadioButton';
 import RadioButtonGroup from 'src/RadioButtonGroup';
 import {
   AsyncSelect,
+  SELECT_SIZES,
   SingleSelect,
 } from 'src/Select';
 import TrackedButton from 'src/TrackedButton';
@@ -39,6 +40,7 @@ export {
   Popper,
   RadioButton,
   RadioButtonGroup,
+  SELECT_SIZES,
   SingleSelect,
   TrackedButton,
   useFlash,

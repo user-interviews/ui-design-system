@@ -22,4 +22,8 @@
       @include ui-remove-list-styles();
     }
   }
+
+  .form-control {
+    height: 2.25rem;
+  }
 }

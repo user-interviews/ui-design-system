@@ -4,7 +4,7 @@ import propTypes from 'prop-types';
 
 import zStack from 'src/Styles/zStack';
 
-import { defaultTheme, defaultStyles } from './styles';
+import { defaultTheme, defaultStyles, SELECT_SIZES } from './styles';
 
 const SingleSelect = ({
   'aria-label': ariaLabel,
@@ -22,6 +22,7 @@ const SingleSelect = ({
   name,
   options,
   placeholder,
+  size,
   value,
 
   onChange,
@@ -44,7 +45,7 @@ const SingleSelect = ({
     options={options}
     placeholder={placeholder}
     styles={{
-      ...defaultStyles,
+      ...defaultStyles({ size }),
       menuPortal: (base) => (
         modal ?
           base :
@@ -74,6 +75,7 @@ SingleSelect.propTypes = {
   name: propTypes.string,
   options: propTypes.arrayOf(propTypes.object).isRequired,
   placeholder: propTypes.string,
+  size: propTypes.oneOf(Object.values(SELECT_SIZES)),
   value: propTypes.object,
 
   onChange: propTypes.func.isRequired,
@@ -94,6 +96,7 @@ SingleSelect.defaultProps = {
   modal: false,
   name: undefined,
   placeholder: undefined,
+  size: SELECT_SIZES.SMALL,
   value: undefined,
 };
 
