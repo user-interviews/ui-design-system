@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs, text, select, boolean } from '@storybook/addon-knobs';
 
 import Pill from 'src/Pill';
 
@@ -9,10 +9,14 @@ export default {
   decorators: [withKnobs],
 };
 
-export const Default = () => <Pill text={text('Pill Text', 'Test pill')} />;
+const colors = ['', 'blue', 'orange', 'green'];
+const sizes = ['', 'sm'];
 
-export const Blue = () => <Pill color="blue" text={text('Pill Text', 'Test pill')} />;
-
-export const Orange = () => <Pill color="orange" text={text('Pill Text', 'Test pill')} />;
-
-export const Small = () => <Pill size="sm" text={text('Pill Text', 'Test pill')} />;
+export const Default = () => (
+  <Pill
+    text={text('Pill Text', 'Test pill')}
+    color={select('Color', colors, '')}
+    size={select('Size', sizes, '')}
+    squared={boolean('Squared', false)}
+  />
+);
