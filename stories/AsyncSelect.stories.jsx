@@ -40,8 +40,8 @@ export const Labeled = () => (
       aria-labelledby="async-label"
       getOptionLabel={({ label }) => label}
       getOptionValue={({ value }) => value}
-      loadOptions={loadOptions}
       id="async-select"
+      loadOptions={loadOptions}
       noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
     />
   </Fragment>

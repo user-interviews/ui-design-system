@@ -21,9 +21,9 @@ export const Default = () => (
 
 export const WithChildren = () => (
   <RadioButton
-    label="Option with child"
     bordered
     id="default"
+    label="Option with child"
   >
     <span style={{ color: colors.uxGray500 }}>Some descriptive text for the option above</span>
   </RadioButton>

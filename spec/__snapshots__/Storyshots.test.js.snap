@@ -1338,6 +1338,393 @@ exports[`Storyshots Design System/Selects/Single Searchable 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Styles Typography 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-600"
+      >
+        <p>
+          This is for layout headings.
+        </p>
+        <p>
+          <div
+            className="font-type-600--bold"
+          >
+            This is for layout headings.
+          </div>
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-600
+          </strong>
+        </li>
+        <li>
+          Type:
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size:
+          1.5rem
+        </li>
+        <li>
+          Line-height:
+          1.75rem
+        </li>
+        <li>
+          Weight:
+          300 / Light
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-600
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-600--bold
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-500"
+      >
+        <p>
+          This is for component and layout headings.
+        </p>
+        <p>
+          <div
+            className="font-type-500--bold"
+          >
+            This is for component and layout headings.
+          </div>
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-500
+          </strong>
+        </li>
+        <li>
+          Type:
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size:
+          1.25rem
+        </li>
+        <li>
+          Line-height:
+          1.75rem
+        </li>
+        <li>
+          Weight:
+          300 / Light
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-500
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-500--bold
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-400"
+      >
+        <p>
+          This is for component and layout headings.
+        </p>
+        <p>
+          <div
+            className="font-type-400--bold"
+          >
+            This is for component and layout headings.
+          </div>
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-400
+          </strong>
+        </li>
+        <li>
+          Type:
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size:
+          1.125rem
+        </li>
+        <li>
+          Line-height:
+          1.75rem
+        </li>
+        <li>
+          Weight:
+          300 / Light
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-400
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-400--bold
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-300"
+      >
+        <p>
+          This typically used for subheadings or short component text.
+        </p>
+        <p>
+          <div
+            className="font-type-300--bold"
+          >
+            This typically used for subheadings or short component text.
+          </div>
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-300
+          </strong>
+        </li>
+        <li>
+          Type:
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size:
+          1rem
+        </li>
+        <li>
+          Line-height:
+          1.5rem
+        </li>
+        <li>
+          Weight:
+          300 / Light
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-300
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-300--bold
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-200"
+      >
+        <p>
+          This is commonly used for layout text and paragraphs and in components.
+        </p>
+        <p>
+          <div
+            className="font-type-200--bold"
+          >
+            This is commonly used for layout text and paragraphs and in components.
+          </div>
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-200
+          </strong>
+        </li>
+        <li>
+          Type:
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size:
+          .875rem
+        </li>
+        <li>
+          Line-height:
+          1.25rem
+        </li>
+        <li>
+          Weight:
+          300 / Light
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-200
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-200--bold
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-100"
+      >
+        <p>
+          This is for explanatory helper text.
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-100
+          </strong>
+        </li>
+        <li>
+          Type:
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size:
+          .75rem
+        </li>
+        <li>
+          Line-height:
+          1rem
+        </li>
+        <li>
+          Weight:
+          300 / Light
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-100
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
 <div
   style={

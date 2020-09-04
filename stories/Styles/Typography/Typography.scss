@@ -1,0 +1,79 @@
+@import 'scss/typography';
+
+.TypographyRow {
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem;
+  min-height: 13.5rem;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.TypographyRow__Example {
+  flex: 0 0 62.5%;
+  max-width: 66.7%;
+  padding-right: 15%;
+  padding: 1rem;
+  width: 66.7%;
+}
+
+.TypographyRow__Specs {
+  border-left: 1px solid #e0e0e0;
+  display: block;
+  flex: 0 0 37.5%;
+  max-width: 33.3%;
+  padding: 1rem 1.5rem;
+  width: 33.3%;
+
+  li {
+    min-height: 1.5rem;
+  }
+}
+
+.font-type-100 {
+  @include font-type-100()
+}
+
+.font-type-200 {
+  @include font-type-200()
+}
+
+.font-type-300 {
+  @include font-type-300()
+}
+
+.font-type-400 {
+  @include font-type-400()
+}
+
+.font-type-500 {
+  @include font-type-500()
+}
+
+.font-type-600 {
+  @include font-type-600()
+}
+
+.font-type-200--bold {
+  @include font-type-200--bold()
+}
+
+.font-type-300--bold {
+  @include font-type-300--bold()
+}
+
+.font-type-400--bold {
+  @include font-type-400--bold()
+}
+
+.font-type-500--bold {
+  @include font-type-500--bold()
+}
+
+.font-type-600--bold {
+  @include font-type-600--bold()
+}
+
