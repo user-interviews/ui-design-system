@@ -5,23 +5,24 @@ import Pill from 'src/Pill';
 import './Typography.scss';
 import PropTypes from 'prop-types';
 
-const TypographyExample = ({ description, modifiers, preset }) => (
-  <div className="TypographyRow__Example">
-    <div className={`${preset}`}>
-      <p>
-        {description}
-      </p>
-      {
-        modifiers.map((modifier) => (
-          <p key={modifier}><div className={`${modifier}`}>{description}</div></p>
-        ))
-      }
+const TypographyExample = ({ modifiers, preset }) => {
+  const description = 'The fastest way to recruit research participants';
+
+  return (
+    <div className="TypographyRow__Example">
+      <div className={`${preset}`}>
+        <p>{description}</p>
+        {
+          modifiers.map((modifier) => (
+            <p className={`${modifier}`} key={modifier}>{description}</p>
+          ))
+        }
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 TypographyExample.propTypes = {
-  description: PropTypes.string.isRequired,
   modifiers: PropTypes.array.isRequired,
   preset: PropTypes.string.isRequired,
 };
@@ -52,20 +53,16 @@ const TypographySpecs = ({
         <strong>{preset}</strong>
       </li>
       <li>
-        Type:
-        {font}
+        Type: {font}
       </li>
       <li>
-        Size:
-        {size}
+        Size: {size}
       </li>
       <li>
-        Line-height:
-        {lineHeight}
+        Line-height: {lineHeight}
       </li>
       <li>
-        Weight:
-        {weight}
+        Weight: {weight}
       </li>
     </ul>
     <TypographyTokens tokens={[preset, ...modifiers]} />
@@ -90,61 +87,63 @@ const TypographyStyle = (props) => (
 
 const presets = [
   {
-    preset: 'font-type-600',
+    preset: 'font-type-70',
     font: 'Lato, Arial, sans-serif',
-    description: 'This is for layout headings.',
     size: '1.5rem',
-    weight: '300 / Light',
+    weight: '400 / Regular',
     lineHeight: '1.75rem',
-    modifiers: ['font-type-600--bold'],
+    modifiers: ['font-type-70--bold', 'font-type-70--light'],
   },
   {
-    preset: 'font-type-500',
+    preset: 'font-type-60',
     font: 'Lato, Arial, sans-serif',
-    description: 'This is for component and layout headings.',
     size: '1.25rem',
     weight: '300 / Light',
     lineHeight: '1.75rem',
-    modifiers: ['font-type-500--bold'],
+    modifiers: ['font-type-60--bold', 'font-type-60--light'],
 
   },
   {
-    preset: 'font-type-400',
+    preset: 'font-type-50',
     font: 'Lato, Arial, sans-serif',
-    description: 'This is for component and layout headings.',
     size: '1.125rem',
-    weight: '300 / Light',
+    weight: '400 / Regular',
     lineHeight: '1.75rem',
-    modifiers: ['font-type-400--bold'],
+    modifiers: ['font-type-50--bold', 'font-type-50--light'],
 
   },
   {
-    preset: 'font-type-300',
+    preset: 'font-type-40',
     font: 'Lato, Arial, sans-serif',
-    description: 'This typically used for subheadings or short component text.',
     size: '1rem',
-    weight: '300 / Light',
+    weight: '400 / Regular',
     lineHeight: '1.5rem',
-    modifiers: ['font-type-300--bold'],
+    modifiers: ['font-type-40--bold', 'font-type-40--light'],
 
   },
   {
-    preset: 'font-type-200',
+    preset: 'font-type-30',
     font: 'Lato, Arial, sans-serif',
-    description: 'This is commonly used for layout text and paragraphs and in components.',
-    size: '.875rem',
-    weight: '300 / Light',
+    size: '0.875rem',
+    weight: '400 / Regular',
     lineHeight: '1.25rem',
-    modifiers: ['font-type-200--bold'],
+    modifiers: ['font-type-30--bold', 'font-type-30--light'],
   },
   {
-    preset: 'font-type-100',
+    preset: 'font-type-20',
     font: 'Lato, Arial, sans-serif',
-    description: 'This is for explanatory helper text.',
-    size: '.75rem',
-    weight: '300 / Light',
+    size: '0.75rem',
+    weight: '400 / Regular',
     lineHeight: '1rem',
-    modifiers: [],
+    modifiers: ['font-type-20--bold', 'font-type-20--light'],
+  },
+  {
+    preset: 'font-type-10',
+    font: 'Lato, Arial, sans-serif',
+    size: '0.625rem',
+    weight: '400 / Regular',
+    lineHeight: '1rem',
+    modifiers: ['font-type-10--bold', 'font-type-10--light'],
   },
 ];
 
