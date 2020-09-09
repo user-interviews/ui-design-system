@@ -2,7 +2,7 @@
   on:
     push:
       branches:
-        - master
+        - feature/UIDS-54-typography-story
   jobs:
     gh-pages-deploy:
       name: Deploying to gh-pages

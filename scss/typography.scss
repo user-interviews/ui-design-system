@@ -1,77 +1,121 @@
-@import './colors/palette';
-
 $font-family: Lato, Arial, sans-serif;
-$font-weight-light: 200;
-$font-weight-normal: 300;
-$font-size-base: .875rem;
+//TODO Use font-weight variables in mixins https://github.com/user-interviews/ui-design-system/issues/57
+$font-weight-light: 300;
+$font-weight-normal: 400;
 $font-weight-bold: 700;
-$headings-font-weight: 400;
-$headings-font-weight-bold: 700;
+$font-size-base: 0.875rem;
 
-@mixin font-type-100() {
+@mixin font-type-10() {
+  font-size: .625rem;
+  font-weight: 400;
+  letter-spacing: 0.0625rem;
+  line-height: 0.875rem;
+  text-transform: uppercase;
+}
+
+@mixin font-type-20() {
   font-size: .75rem;
-  font-weight: $font-weight-normal;
+  font-weight: 400;
   line-height: 1rem;
 }
 
-@mixin font-type-200() {
-  font-size: $font-size-base;
-  font-weight: $font-weight-normal;
+@mixin font-type-30() {
+  font-size: 0.875rem;
+  font-weight: 400;
   line-height: 1.25rem;
 }
 
-@mixin font-type-300() {
+@mixin font-type-40() {
   // font-size:  $font-size-base; -- should base be changed to 1 rem?
   font-size: 1rem;
-  font-weight: $font-weight-normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+}
+
+@mixin font-type-50() {
+  font-size: 1.125rem;
+  font-weight: 400;
   line-height: 1.5rem;
 }
 
-@mixin font-type-400() {
-  font-size: 1.125rem;
-  font-weight: $font-weight-normal;
-  line-height: 1.75rem;
-}
-
-@mixin font-type-500() {
+@mixin font-type-60() {
   font-size: 1.25rem;
-  font-weight: $font-weight-normal;
-  line-height: 1.75rem;
+  font-weight: 400;
+  line-height: 1.625rem;
 }
 
-@mixin font-type-600() {
+@mixin font-type-70() {
   font-size: 1.5rem;
-  font-weight: $font-weight-normal;
-  line-height: 1.75rem;
+  font-weight: 400;
+  line-height: 2rem;
 }
 
-@mixin font-type-200--bold() {
-  @include font-type-200;
+@mixin font-type-10--bold() {
+  @include font-type-10;
   font-weight: $font-weight-bold;
 }
 
-@mixin font-type-300--bold() {
-  @include font-type-300;
+@mixin font-type-10--light() {
+  @include font-type-10;
+  font-weight: 300;
+}
+
+@mixin font-type-20--bold() {
+  @include font-type-20;
   font-weight: $font-weight-bold;
 }
 
-@mixin font-type-400--bold() {
-  @include font-type-400;
+@mixin font-type-20--light() {
+  @include font-type-20;
+  font-weight: 300;
+}
+
+@mixin font-type-30--bold() {
+  @include font-type-30;
   font-weight: $font-weight-bold;
 }
 
-@mixin font-type-500--bold() {
-  @include font-type-500;
-  font-weight: $headings-font-weight;
+@mixin font-type-30--light() {
+  @include font-type-30;
+  font-weight: 300;
 }
 
-@mixin font-type-600--bold() {
-  @include font-type-600;
-  font-weight: $headings-font-weight;
+@mixin font-type-40--bold() {
+  @include font-type-40;
+  font-weight: $font-weight-bold;
 }
 
-body {
-  font-family: $font-family;
-  font-size: $font-size-base;
-  color: $ux-gray-900;
+@mixin font-type-40--light() {
+  @include font-type-40;
+  font-weight: 300;
+}
+
+@mixin font-type-50--bold() {
+  @include font-type-50;
+  font-weight: $font-weight-bold;
+}
+
+@mixin font-type-50--light() {
+  @include font-type-50;
+  font-weight: 300;
+}
+
+@mixin font-type-60--bold() {
+  @include font-type-60;
+  font-weight: $font-weight-bold;
+}
+
+@mixin font-type-60--light() {
+  @include font-type-60;
+  font-weight: 300;
+}
+
+@mixin font-type-70--bold() {
+  @include font-type-70;
+  font-weight: $font-weight-bold;
+}
+
+@mixin font-type-70--light() {
+  @include font-type-70;
+  font-weight: 300;
 }

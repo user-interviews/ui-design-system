@@ -49,35 +49,6 @@ exports[`Storyshots Design System/Alert Without Dismiss 1`] = `
 </div>
 `;
 
-exports[`Storyshots Design System/Card all cards 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div>
-    <div
-      className="card"
-    >
-      <div
-        className="card-body"
-      >
-        <div
-          className="card-title h5"
-        >
-          Test Card
-        </div>
-        <div>
-          Some quick example text to build on the card title and make up the bulk of the card&#39;s content.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Design System/Copy To Clipboard Default 1`] = `
 <div
   style={
@@ -1353,17 +1324,20 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-600"
+        className="font-type-70"
       >
         <p>
-          This is for layout headings.
+          The fastest way to recruit research participants
         </p>
-        <p>
-          <div
-            className="font-type-600--bold"
-          >
-            This is for layout headings.
-          </div>
+        <p
+          className="font-type-70--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-70--light"
+        >
+          The fastest way to recruit research participants
         </p>
       </div>
     </div>
@@ -1373,24 +1347,24 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       <ul>
         <li>
           <strong>
-            font-type-600
+            font-type-70
           </strong>
         </li>
         <li>
-          Type:
+          Type: 
           Lato, Arial, sans-serif
         </li>
         <li>
-          Size:
+          Size: 
           1.5rem
         </li>
         <li>
-          Line-height:
+          Line-height: 
           1.75rem
         </li>
         <li>
-          Weight:
-          300 / Light
+          Weight: 
+          400 / Regular
         </li>
       </ul>
       <ul>
@@ -1398,14 +1372,21 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           <div
             className="Pill Pill--blue Pill--sm"
           >
-            font-type-600
+            font-type-70
           </div>
         </li>
         <li>
           <div
             className="Pill Pill--blue Pill--sm"
           >
-            font-type-600--bold
+            font-type-70--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-70--light
           </div>
         </li>
       </ul>
@@ -1418,17 +1399,20 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-500"
+        className="font-type-60"
       >
         <p>
-          This is for component and layout headings.
+          The fastest way to recruit research participants
         </p>
-        <p>
-          <div
-            className="font-type-500--bold"
-          >
-            This is for component and layout headings.
-          </div>
+        <p
+          className="font-type-60--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-60--light"
+        >
+          The fastest way to recruit research participants
         </p>
       </div>
     </div>
@@ -1438,23 +1422,23 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       <ul>
         <li>
           <strong>
-            font-type-500
+            font-type-60
           </strong>
         </li>
         <li>
-          Type:
+          Type: 
           Lato, Arial, sans-serif
         </li>
         <li>
-          Size:
+          Size: 
           1.25rem
         </li>
         <li>
-          Line-height:
+          Line-height: 
           1.75rem
         </li>
         <li>
-          Weight:
+          Weight: 
           300 / Light
         </li>
       </ul>
@@ -1463,14 +1447,21 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           <div
             className="Pill Pill--blue Pill--sm"
           >
-            font-type-500
+            font-type-60
           </div>
         </li>
         <li>
           <div
             className="Pill Pill--blue Pill--sm"
           >
-            font-type-500--bold
+            font-type-60--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-60--light
           </div>
         </li>
       </ul>
@@ -1483,17 +1474,20 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-400"
+        className="font-type-50"
       >
         <p>
-          This is for component and layout headings.
+          The fastest way to recruit research participants
         </p>
-        <p>
-          <div
-            className="font-type-400--bold"
-          >
-            This is for component and layout headings.
-          </div>
+        <p
+          className="font-type-50--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-50--light"
+        >
+          The fastest way to recruit research participants
         </p>
       </div>
     </div>
@@ -1503,24 +1497,24 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       <ul>
         <li>
           <strong>
-            font-type-400
+            font-type-50
           </strong>
         </li>
         <li>
-          Type:
+          Type: 
           Lato, Arial, sans-serif
         </li>
         <li>
-          Size:
+          Size: 
           1.125rem
         </li>
         <li>
-          Line-height:
+          Line-height: 
           1.75rem
         </li>
         <li>
-          Weight:
-          300 / Light
+          Weight: 
+          400 / Regular
         </li>
       </ul>
       <ul>
@@ -1528,14 +1522,21 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           <div
             className="Pill Pill--blue Pill--sm"
           >
-            font-type-400
+            font-type-50
           </div>
         </li>
         <li>
           <div
             className="Pill Pill--blue Pill--sm"
           >
-            font-type-400--bold
+            font-type-50--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-50--light
           </div>
         </li>
       </ul>
@@ -1548,17 +1549,20 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-300"
+        className="font-type-40"
       >
         <p>
-          This typically used for subheadings or short component text.
+          The fastest way to recruit research participants
         </p>
-        <p>
-          <div
-            className="font-type-300--bold"
-          >
-            This typically used for subheadings or short component text.
-          </div>
+        <p
+          className="font-type-40--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-40--light"
+        >
+          The fastest way to recruit research participants
         </p>
       </div>
     </div>
@@ -1568,24 +1572,24 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       <ul>
         <li>
           <strong>
-            font-type-300
+            font-type-40
           </strong>
         </li>
         <li>
-          Type:
+          Type: 
           Lato, Arial, sans-serif
         </li>
         <li>
-          Size:
+          Size: 
           1rem
         </li>
         <li>
-          Line-height:
+          Line-height: 
           1.5rem
         </li>
         <li>
-          Weight:
-          300 / Light
+          Weight: 
+          400 / Regular
         </li>
       </ul>
       <ul>
@@ -1593,14 +1597,21 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           <div
             className="Pill Pill--blue Pill--sm"
           >
-            font-type-300
+            font-type-40
           </div>
         </li>
         <li>
           <div
             className="Pill Pill--blue Pill--sm"
           >
-            font-type-300--bold
+            font-type-40--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-40--light
           </div>
         </li>
       </ul>
@@ -1613,17 +1624,20 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-200"
+        className="font-type-30"
       >
         <p>
-          This is commonly used for layout text and paragraphs and in components.
+          The fastest way to recruit research participants
         </p>
-        <p>
-          <div
-            className="font-type-200--bold"
-          >
-            This is commonly used for layout text and paragraphs and in components.
-          </div>
+        <p
+          className="font-type-30--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-30--light"
+        >
+          The fastest way to recruit research participants
         </p>
       </div>
     </div>
@@ -1633,24 +1647,24 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       <ul>
         <li>
           <strong>
-            font-type-200
+            font-type-30
           </strong>
         </li>
         <li>
-          Type:
+          Type: 
           Lato, Arial, sans-serif
         </li>
         <li>
-          Size:
-          .875rem
+          Size: 
+          0.875rem
         </li>
         <li>
-          Line-height:
+          Line-height: 
           1.25rem
         </li>
         <li>
-          Weight:
-          300 / Light
+          Weight: 
+          400 / Regular
         </li>
       </ul>
       <ul>
@@ -1658,14 +1672,21 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           <div
             className="Pill Pill--blue Pill--sm"
           >
-            font-type-200
+            font-type-30
           </div>
         </li>
         <li>
           <div
             className="Pill Pill--blue Pill--sm"
           >
-            font-type-200--bold
+            font-type-30--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-30--light
           </div>
         </li>
       </ul>
@@ -1678,10 +1699,20 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-100"
+        className="font-type-20"
       >
         <p>
-          This is for explanatory helper text.
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-20--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-20--light"
+        >
+          The fastest way to recruit research participants
         </p>
       </div>
     </div>
@@ -1691,24 +1722,24 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       <ul>
         <li>
           <strong>
-            font-type-100
+            font-type-20
           </strong>
         </li>
         <li>
-          Type:
+          Type: 
           Lato, Arial, sans-serif
         </li>
         <li>
-          Size:
-          .75rem
+          Size: 
+          0.75rem
         </li>
         <li>
-          Line-height:
+          Line-height: 
           1rem
         </li>
         <li>
-          Weight:
-          300 / Light
+          Weight: 
+          400 / Regular
         </li>
       </ul>
       <ul>
@@ -1716,7 +1747,96 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           <div
             className="Pill Pill--blue Pill--sm"
           >
-            font-type-100
+            font-type-20
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-20--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-20--light
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-10"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-10--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-10--light"
+        >
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-10
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size: 
+          0.625rem
+        </li>
+        <li>
+          Line-height: 
+          1rem
+        </li>
+        <li>
+          Weight: 
+          400 / Regular
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-10
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-10--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-10--light
           </div>
         </li>
       </ul>
