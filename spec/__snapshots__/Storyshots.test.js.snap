@@ -49,35 +49,6 @@ exports[`Storyshots Design System/Alert Without Dismiss 1`] = `
 </div>
 `;
 
-exports[`Storyshots Design System/Card all cards 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div>
-    <div
-      className="card"
-    >
-      <div
-        className="card-body"
-      >
-        <div
-          className="card-title h5"
-        >
-          Test Card
-        </div>
-        <div>
-          Some quick example text to build on the card title and make up the bulk of the card&#39;s content.
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Design System/Copy To Clipboard Default 1`] = `
 <div
   style={
@@ -1333,6 +1304,542 @@ exports[`Storyshots Design System/Selects/Single Searchable 1`] = `
           </svg>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Styles Typography 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-70"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-70--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-70--light"
+        >
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-70
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size: 
+          1.5rem
+        </li>
+        <li>
+          Line-height: 
+          1.75rem
+        </li>
+        <li>
+          Weight: 
+          400 / Regular
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-70
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-70--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-70--light
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-60"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-60--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-60--light"
+        >
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-60
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size: 
+          1.25rem
+        </li>
+        <li>
+          Line-height: 
+          1.75rem
+        </li>
+        <li>
+          Weight: 
+          300 / Light
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-60
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-60--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-60--light
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-50"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-50--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-50--light"
+        >
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-50
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size: 
+          1.125rem
+        </li>
+        <li>
+          Line-height: 
+          1.75rem
+        </li>
+        <li>
+          Weight: 
+          400 / Regular
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-50
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-50--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-50--light
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-40"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-40--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-40--light"
+        >
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-40
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size: 
+          1rem
+        </li>
+        <li>
+          Line-height: 
+          1.5rem
+        </li>
+        <li>
+          Weight: 
+          400 / Regular
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-40
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-40--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-40--light
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-30"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-30--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-30--light"
+        >
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-30
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size: 
+          0.875rem
+        </li>
+        <li>
+          Line-height: 
+          1.25rem
+        </li>
+        <li>
+          Weight: 
+          400 / Regular
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-30
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-30--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-30--light
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-20"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-20--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-20--light"
+        >
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-20
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size: 
+          0.75rem
+        </li>
+        <li>
+          Line-height: 
+          1rem
+        </li>
+        <li>
+          Weight: 
+          400 / Regular
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-20
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-20--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-20--light
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-10"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-10--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-10--light"
+        >
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-10
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Lato, Arial, sans-serif
+        </li>
+        <li>
+          Size: 
+          0.625rem
+        </li>
+        <li>
+          Line-height: 
+          1rem
+        </li>
+        <li>
+          Weight: 
+          400 / Regular
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-10
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-10--bold
+          </div>
+        </li>
+        <li>
+          <div
+            className="Pill Pill--blue Pill--sm"
+          >
+            font-type-10--light
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 </div>

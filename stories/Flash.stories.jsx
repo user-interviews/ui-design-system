@@ -16,8 +16,8 @@ DummyComponent = withFlash(DummyComponent);
 
 export const FlashMessage = () => (
   <DummyComponent
-    type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
     message={text('Message', 'Your action was a success!')}
+    type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
   />
 );
 

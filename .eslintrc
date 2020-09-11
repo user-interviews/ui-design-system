@@ -12,7 +12,8 @@
     {
       "files": [
         "src/**/*.{js,jsx}",
-        "spec/**/*.{js,jsx}"
+        "spec/**/*.{js,jsx}",
+        "stories/**/*.{js,jsx}"
       ],
       "env": {
         "browser": true

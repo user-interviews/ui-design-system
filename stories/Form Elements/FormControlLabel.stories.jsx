@@ -12,6 +12,6 @@ export const Checkbox = () => (
     labelHtmlFor="checkbox"
     text="Labeled checkbox"
   >
-    <input type="checkbox" id="checkbox" name="checkbox" />
+    <input id="checkbox" name="checkbox" type="checkbox" />
   </FormControlLabel>
 );

@@ -15,8 +15,8 @@ export default {
 
 export const WithoutDismiss = () => (
   <AlertMessage
-    message={text('Message', 'Default message')}
     id="1"
+    message={text('Message', 'Default message')}
     title={text('Title', 'Default title')}
     type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
   />
@@ -28,10 +28,10 @@ const onDismiss = (id) => {
 
 export const WithDismiss = () => (
   <AlertMessage
-    message={text('Message', 'Default message')}
     id="1"
-    onDismiss={onDismiss}
+    message={text('Message', 'Default message')}
     title={text('Title', 'Default title')}
     type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
+    onDismiss={onDismiss}
   />
 );
