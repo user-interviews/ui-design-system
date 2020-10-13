@@ -67,16 +67,18 @@ const TypographySpecs = ({
         Weight: {weight}
       </li>
       {
-        textTransform &&
-        <li>
-          Text-transform: {textTransform}
-        </li>
+        textTransform && (
+          <li>
+            Text-transform: {textTransform}
+          </li>
+        )
       }
       {
-        letterSpacing &&
+        letterSpacing && (
           <li>
             Letter-spacing: {letterSpacing}
           </li>
+        )
       }
     </ul>
     <TypographyTokens tokens={[preset, ...modifiers]} />
@@ -85,11 +87,18 @@ const TypographySpecs = ({
 
 TypographySpecs.propTypes = {
   font: PropTypes.string.isRequired,
+  letterSpacing: PropTypes.string,
   lineHeight: PropTypes.string.isRequired,
   modifiers: PropTypes.array.isRequired,
   preset: PropTypes.string.isRequired,
   size: PropTypes.string.isRequired,
+  textTransform: PropTypes.string,
   weight: PropTypes.string.isRequired,
+};
+
+TypographySpecs.defaultProps = {
+  letterSpacing: undefined,
+  textTransform: undefined,
 };
 
 const TypographyStyle = (props) => (

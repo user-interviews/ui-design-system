@@ -5,17 +5,26 @@ import { withFlash, MessageTypes, withFlashPropTypes } from 'src/Flash';
 
 import '../scss/global.scss';
 
-let DummyComponent = ({ type, message, setFlashMessage }) => (
+const DummyComponent = ({ type, message, setFlashMessage }) => (
   <div>
     <p>Click the button to see a flash message.  Use the knobs to try different types!</p>
     <button className="btn btn-primary" type="button" onClick={() => setFlashMessage(type, message)}>Submit</button>
   </div>
   );
 DummyComponent.propTypes = withFlashPropTypes;
-DummyComponent = withFlash(DummyComponent);
+const FlashDummyComponent = withFlash(DummyComponent);
 
 export const FlashMessage = () => (
-  <DummyComponent
+  <FlashDummyComponent
+    message={text('Message', 'Your action was a success!')}
+    type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
+  />
+);
+
+const AutoDismissFlashComponent = withFlash(DummyComponent, { autoDismiss: true });
+
+export const AutoDismissFlashMessage = () => (
+  <AutoDismissFlashComponent
     message={text('Message', 'Your action was a success!')}
     type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
   />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import './AlertMessage.scss';
@@ -10,6 +10,8 @@ export const MessageTypes = {
   ERROR: 'error',
 };
 
+const AUTO_DISMISS_TIMEOUT = 3000;
+
 const alertMessageClassName = (type) => {
   if (!Object.values(MessageTypes).includes(type)) {
     throw new TypeError(`Unexpected type ${type} used for a alert message.`);
@@ -18,7 +20,19 @@ const alertMessageClassName = (type) => {
   return `alert alert-${type} AlertMessage AlertMessage-${type}`;
 };
 
-export default function AlertMessage(props) {
+function AlertMessage(props) {
+  const { autoDismiss, id, onDismiss } = props;
+
+  useEffect(() => {
+    let timeout;
+    if (autoDismiss) {
+      timeout = setTimeout(() => (onDismiss(id)), AUTO_DISMISS_TIMEOUT);
+    }
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [autoDismiss, onDismiss, id]);
+
   return (
     <div className={alertMessageClassName(props.type)}>
       {
@@ -43,6 +57,7 @@ export default function AlertMessage(props) {
 }
 
 AlertMessage.propTypes = {
+  autoDismiss: PropTypes.bool,
   id: PropTypes.string.isRequired,
   message: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
   title: PropTypes.string,
@@ -51,6 +66,9 @@ AlertMessage.propTypes = {
 };
 
 AlertMessage.defaultProps = {
+  autoDismiss: false,
   title: undefined,
   onDismiss: undefined,
 };
+
+export default React.memo(AlertMessage);
