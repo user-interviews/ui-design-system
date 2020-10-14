@@ -9,11 +9,11 @@ function Popper(props) {
   return (
     <Manager>
       <Reference>
-        {({ ref }) => <div ref={ref}>{props.children}</div>}
+        {({ ref }) => React.cloneElement(props.children, { ref })}
       </Reference>
       {
         props.visible && (
-          <ReactPopper placement={props.placement}>
+          <ReactPopper placement={props.placement} strategy={props.strategy}>
             {
               ({ placement, ref, style }) => (
                 <div
@@ -22,6 +22,14 @@ function Popper(props) {
                   ref={ref}
                   style={style}
                 >
+                  {
+                    props.header && (
+                      <div className="Popper__header">
+                        {props.header}
+                      </div>
+                    )
+                  }
+
                   {props.text}
                 </div>
               )
@@ -34,15 +42,20 @@ function Popper(props) {
 }
 
 Popper.propTypes = {
+  children: PropTypes.node.isRequired,
   dark: PropTypes.bool,
+  header: PropTypes.string,
   placement: PropTypes.string,
+  strategy: PropTypes.string,
   text: PropTypes.string.isRequired,
   visible: PropTypes.bool,
 };
 
 Popper.defaultProps = {
   dark: false,
+  header: undefined,
   placement: 'top',
+  strategy: undefined,
   visible: false,
 };
 

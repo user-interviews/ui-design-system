@@ -696,16 +696,17 @@ exports[`Storyshots Design System/Popper Dark 1`] = `
     }
   }
 >
-  <div />
+  <p>
+     reference element
+  </p>
   <div
     className="Popper Popper--dark"
+    data-placement="top"
     style={
       Object {
-        "left": 0,
-        "opacity": 0,
-        "pointerEvents": "none",
+        "left": "0",
         "position": "absolute",
-        "top": 0,
+        "top": "0",
       }
     }
   >
@@ -722,16 +723,17 @@ exports[`Storyshots Design System/Popper Default 1`] = `
     }
   }
 >
-  <div />
+  <p>
+    reference element
+  </p>
   <div
     className="Popper"
+    data-placement="top"
     style={
       Object {
-        "left": 0,
-        "opacity": 0,
-        "pointerEvents": "none",
+        "left": "0",
         "position": "absolute",
-        "top": 0,
+        "top": "0",
       }
     }
   >
@@ -1360,7 +1362,7 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
         </li>
         <li>
           Line-height: 
-          1.75rem
+          2rem
         </li>
         <li>
           Weight: 
@@ -1435,11 +1437,11 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
         </li>
         <li>
           Line-height: 
-          1.75rem
+          1.625rem
         </li>
         <li>
           Weight: 
-          300 / Light
+          400 / Regular
         </li>
       </ul>
       <ul>
@@ -1510,7 +1512,7 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
         </li>
         <li>
           Line-height: 
-          1.75rem
+          1.5rem
         </li>
         <li>
           Weight: 
@@ -1585,7 +1587,7 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
         </li>
         <li>
           Line-height: 
-          1.5rem
+          1.375rem
         </li>
         <li>
           Weight: 
@@ -1810,11 +1812,19 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
         </li>
         <li>
           Line-height: 
-          1rem
+          0.875rem
         </li>
         <li>
           Weight: 
           400 / Regular
+        </li>
+        <li>
+          Text-transform: 
+          Uppercase
+        </li>
+        <li>
+          Letter-spacing: 
+          0.0625rem
         </li>
       </ul>
       <ul>
@@ -2982,5 +2992,221 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
       </p>
     </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Tooltip Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    aria-hidden="true"
+    className="Tooltip__icon"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    tabIndex="0"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-question-circle fa-w-16 "
+      data-icon="question-circle"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Design System/Tooltip Gray Icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    aria-hidden="true"
+    className="Tooltip__icon Tooltip__icon--gray"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    tabIndex="0"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-question-circle fa-w-16 "
+      data-icon="question-circle"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Design System/Tooltip Green Icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    aria-hidden="true"
+    className="Tooltip__icon Tooltip__icon--primary"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    tabIndex="0"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-question-circle fa-w-16 "
+      data-icon="question-circle"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Design System/Tooltip Light 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    aria-hidden="true"
+    className="Tooltip__icon"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    tabIndex="0"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-question-circle fa-w-16 "
+      data-icon="question-circle"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Design System/Tooltip With Header 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    aria-hidden="true"
+    className="Tooltip__icon"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    tabIndex="0"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-question-circle fa-w-16 "
+      data-icon="question-circle"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Design System/Tooltip With Tracking 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    aria-hidden="true"
+    className="Tooltip__icon"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    tabIndex="0"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-question-circle fa-w-16 "
+      data-icon="question-circle"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </span>
 </div>
 `;
