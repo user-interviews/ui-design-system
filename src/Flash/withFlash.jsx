@@ -8,12 +8,13 @@ export const withFlashPropTypes = {
   setFlashMessage: PropTypes.func,
 };
 
-const WithFlash = ({ WrappedComponent, ...props }) => {
+const WithFlash = ({ WrappedComponent, autoDismiss, ...props }) => {
   const { messages, setMessage, dismissMessage } = useFlash();
 
   return (
     <>
       <Flash
+        autoDismiss={autoDismiss}
         messages={messages}
         onFlashClosed={dismissMessage}
       />
@@ -26,9 +27,19 @@ const WithFlash = ({ WrappedComponent, ...props }) => {
 };
 
 WithFlash.propTypes = {
+  autoDismiss: PropTypes.bool,
   WrappedComponent: PropTypes.func.isRequired,
 };
 
-export default function withFlash(WrappedComponent) {
-  return (props) => <WithFlash WrappedComponent={WrappedComponent} {...props} />;
+WithFlash.defaultProps = {
+  autoDismiss: false,
+};
+
+export default function withFlash(WrappedComponent, hocProps) {
+  const wrappedComponent = (props) => (
+    <WithFlash WrappedComponent={WrappedComponent} {...hocProps} {...props} />
+  );
+
+  wrappedComponent.displayName = `${WrappedComponent.displayName || WrappedComponent.name}WithFlash`;
+  return wrappedComponent;
 }

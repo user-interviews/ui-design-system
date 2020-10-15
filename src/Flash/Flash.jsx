@@ -21,6 +21,7 @@ export default function Flash(props) {
         props.messages.map((message) => (
           <FadeTransition key={message.id}>
             <AlertMessage
+              autoDismiss={props.autoDismiss}
               id={message.id}
               message={message.message}
               type={message.type}
@@ -34,6 +35,7 @@ export default function Flash(props) {
 }
 
 Flash.propTypes = {
+  autoDismiss: PropTypes.bool,
   header: PropTypes.bool,
   messages: PropTypes.arrayOf(
     PropTypes.shape({
@@ -46,6 +48,7 @@ Flash.propTypes = {
 };
 
 Flash.defaultProps = {
+  autoDismiss: false,
   header: true,
   onFlashClosed: undefined,
 };
