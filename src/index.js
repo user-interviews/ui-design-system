@@ -21,6 +21,7 @@ import {
   SELECT_SIZES,
   SingleSelect,
 } from 'src/Select';
+import Tooltip from 'src/Tooltip';
 import TrackedButton from 'src/TrackedButton';
 
 export {
@@ -40,6 +41,7 @@ export {
   RadioButtonGroup,
   SELECT_SIZES,
   SingleSelect,
+  Tooltip,
   TrackedButton,
   useFlash,
   withFlash,
