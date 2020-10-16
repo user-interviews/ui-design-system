@@ -1,5 +1,5 @@
 {
-  "name": "ui-design-system",
+  "name": "@user-interviews/ui-design-system",
   "version": "1.7.0",
   "dependencies": {
     "react-select": "^3.0.8",
@@ -105,7 +105,7 @@
   ],
   "main": "lib/index.js",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@user-interviews"
+    "registry": "https://npm.pkg.github.com/"
   },
   "repository": "https://github.com/user-interviews/ui-design-system.git",
   "author": "Dave Ferris <dave@userinterviews.com>",
