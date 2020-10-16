@@ -31,7 +31,7 @@ function CopyToClipboard(props) {
             text="Copied!"
             visible={copied}
           >
-            <FontAwesomeIcon icon={faCopy} />
+            <div><FontAwesomeIcon icon={faCopy} /></div>
           </Popper>
         </TrackedButton>
       </ReactCopyToClipboard>

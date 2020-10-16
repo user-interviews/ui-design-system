@@ -1,15 +1,21 @@
-@import '../../scss/borders';
-@import '../../scss/box_shadow';
-@import '../../scss/colors';
-@import '../../scss/typography';
+@import '../../scss/theme';
 
 .Popper {
+  @include font-type-30;
   background-color: $ux-white;
   border-radius: $ux-border-radius;
   border: 1px solid $ux-gray-300;
   box-shadow: $ux-box-shadow-card;
   max-width: 15rem;
-  padding: .25rem .5rem;
+  letter-spacing: normal;
+  padding: 0.75rem;
+  white-space: pre-line;
+  z-index: $z-index-flash;
+
+  &__header {
+    border-bottom: 1px solid $ux-gray-300;
+    margin-bottom: 0.5rem;
+  }
 
   &--dark {
     background-color: $ux-gray-800;

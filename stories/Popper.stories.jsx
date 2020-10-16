@@ -9,6 +9,14 @@ export default {
   decorators: [withKnobs],
 };
 
-export const Default = () => <Popper text={text('Popper Text', 'Default Popper')} visible />;
+export const Default = () => (
+  <Popper text={text('Popper Text', 'Default Popper')} visible>
+    <p>reference element</p>
+  </Popper>
+);
 
-export const Dark = () => <Popper dark text={text('Popper Text', 'Dark Popper')} visible />;
+export const Dark = () => (
+  <Popper dark text={text('Popper Text', 'Dark Popper')} visible>
+    <p>reference element</p>
+  </Popper>
+);

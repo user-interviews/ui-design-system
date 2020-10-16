@@ -1,0 +1,18 @@
+@import '../../scss/colors';
+
+.Tooltip {
+  &__icon {
+    color: $ux-blue-500;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+
+    &--gray {
+      color: $ux-gray-800;
+    }
+
+    &--primary {
+      color: $ux-green;
+    }
+  }
+}
