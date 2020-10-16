@@ -16,6 +16,9 @@
     "production": {
       "plugins": [
         [
+          "@babel/plugin-proposal-class-properties",
+        ],
+        [
           "transform-react-remove-prop-types",
           {
             "removeImport": true
