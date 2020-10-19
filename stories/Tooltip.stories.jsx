@@ -33,6 +33,14 @@ export const WithHeader = () => (
   />
 );
 
+export const WithHtml = () => (
+  <Tooltip
+    header={text('Header Text', 'Default Header')}
+    placement="right"
+    text={<span>I am html <br/> with a linebreak!</span>}
+  />
+);
+
 export const GreenIcon = () => (
   <Tooltip
     iconClasses="Tooltip__icon--primary"
