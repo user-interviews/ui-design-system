@@ -4,11 +4,12 @@ import classNames from 'classnames';
 
 import './Pill.scss';
 
-const Pill = ({ color, size, text }) => (
+const Pill = ({ color, size, squared, text }) => (
   <div
     className={
       classNames(
         'Pill',
+        { 'Pill--squared': squared },
         { [`Pill--${color}`]: !!color },
         { [`Pill--${size}`]: !!size },
       )
@@ -21,12 +22,14 @@ const Pill = ({ color, size, text }) => (
 Pill.propTypes = {
   color: PropTypes.string,
   size: PropTypes.string,
-  text: PropTypes.string.isRequired,
+  squared: PropTypes.bool,
+  text: PropTypes.node.isRequired,
 };
 
 Pill.defaultProps = {
   color: undefined,
   size: undefined,
+  squared: false
 };
 
 export default Pill;
