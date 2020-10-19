@@ -32,7 +32,7 @@ export default class Tooltip extends Component {
     iconClasses: PropTypes.string,
     placement: PropTypes.string.isRequired,
     strategy: PropTypes.string,
-    text: PropTypes.oneOfType([propTypes.string, propTypes.node]).isRequired,
+    text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
     theme: PropTypes.string,
     onShow: PropTypes.func,
   };
