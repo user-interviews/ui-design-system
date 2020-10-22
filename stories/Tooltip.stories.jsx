@@ -37,7 +37,7 @@ export const WithHtml = () => (
   <Tooltip
     header={text('Header Text', 'Default Header')}
     placement="right"
-    text={<span>I am html <br/> with a linebreak!</span>}
+    text={<span>I am html <br /> with a linebreak!</span>}
   />
 );
 

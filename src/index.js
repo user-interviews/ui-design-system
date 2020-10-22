@@ -9,6 +9,7 @@ import {
   useFlash,
 } from 'src/Flash';
 import Form from 'src/Form';
+import ValidatedForm from 'src/Form/ValidatedForm';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
 import InputLabel from 'src/InputLabel';
@@ -44,6 +45,7 @@ export {
   Tooltip,
   TrackedButton,
   useFlash,
+  ValidatedForm,
   withFlash,
   withFlashPropTypes,
 };

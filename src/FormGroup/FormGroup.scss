@@ -4,7 +4,11 @@
   margin: 1rem 0 0.5rem;
 
   &--is-invalid {
-    input, select, textarea {
+    input,
+    select,
+    textarea,
+    .SingleSelect > div,
+    .AsyncSelect > div {
       border-color: $ux-red;
     }
   }

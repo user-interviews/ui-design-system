@@ -21,9 +21,27 @@ function renderErrors(errors) {
   );
 }
 
+function buildErrorMessage(errors, label) {
+  if (errors && errors.type) {
+    switch (errors.type) {
+      case 'required':
+        return `${label} cannot be blank.`;
+      case 'maxLength':
+        return `${label} is too long.`;
+      case 'minLength':
+        return `${label} is too short.`;
+      default:
+        return errors.message;
+    }
+  }
+
+  return errors;
+}
+
 export default function FormGroup(props) {
   const { errors, inputKey } = props;
-  const hasErrors = errors[inputKey] && errors[inputKey].length > 0;
+  const errorMessage = buildErrorMessage(errors[inputKey], props.label);
+  const hasErrors = errorMessage && errorMessage.length > 0;
 
   return (
     <div
@@ -43,7 +61,7 @@ export default function FormGroup(props) {
 
       {props.displayErrorText && hasErrors && (
         <div className="FormGroup__invalid-feedback">
-          {renderErrors(errors[inputKey])}
+          {renderErrors(errorMessage)}
         </div>
       )}
 

@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Fragment, useState } from 'react';
 import { action } from '@storybook/addon-actions';
+import { Controller } from 'react-hook-form';
 
 import Form from 'src/Form';
+import ValidatedForm from 'src/Form/ValidatedForm';
 import FormGroup from 'src/FormGroup';
 import RadioButton from 'src/RadioButton';
 import RadioButtonGroup from 'src/RadioButtonGroup';
+import SingleSelect from '../src/Select/SingleSelect';
 
 export default {
   title: 'Design System/Form',
@@ -59,3 +62,81 @@ export const Inline = () => (
     <button className="btn btn-primary" type="submit">Save</button>
   </Form>
 );
+
+const options = [
+  { label: 'Bob', value: 1 },
+  { label: 'Dennis', value: 2 },
+  { label: 'Basel', value: 3 },
+];
+
+export const Validated = () => {
+  const [serverErrors, setServerErrors] = useState({});
+  const onSubmitValidated = () => {
+    setServerErrors({
+      first_name: ['Server-side validation failed!'],
+    });
+  };
+
+  return (
+    <ValidatedForm
+      errors={serverErrors}
+      id="form"
+      onSubmit={onSubmitValidated}
+    >
+      {(register, errors, control) => (
+        <Fragment>
+          <FormGroup
+            errors={errors}
+            id="first_name"
+            inputKey="first_name"
+            label="First name"
+            labelHtmlFor="first_name"
+            required
+          >
+            <input
+              className="form-control"
+              id="first_name"
+              name="first_name"
+              ref={register({ required: true })}
+              type="text"
+            />
+          </FormGroup>
+          <FormGroup
+            errors={errors}
+            id="last_name"
+            inputKey="last_name"
+            label="Last name"
+            labelHtmlFor="last_name"
+          >
+            <input
+              className="form-control"
+              id="last_name"
+              name="last_name"
+              ref={register({ minLength: 10, required: true })}
+              type="text"
+            />
+          </FormGroup>
+          <FormGroup
+            errors={errors}
+            id="manager"
+            inputKey="manager"
+            label="Manager"
+            labelHtmlFor="manager"
+          >
+            <Controller
+              aria-labelledby="manager"
+              as={SingleSelect}
+              control={control}
+              id="manager"
+              isClearable
+              name="manager"
+              options={options}
+              rules={{ required: true }}
+            />
+          </FormGroup>
+          <button className="btn btn-primary" type="submit">Save</button>
+        </Fragment>
+    )}
+    </ValidatedForm>
+  );
+};
