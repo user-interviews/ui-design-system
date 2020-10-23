@@ -9,7 +9,7 @@ export default {
   decorators: [withKnobs],
 };
 
-const colors = ['', 'blue', 'orange', 'green'];
+const colors = ['', 'blue', 'orange', 'green', 'gray', 'yellow'];
 const sizes = ['', 'sm'];
 
 export const Default = () => (
