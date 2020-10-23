@@ -3,7 +3,7 @@
 
 .Pill {
   display: inline;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-normal;
 
   //////// COLORS!
   // Default color is gray and sadddddd
@@ -21,8 +21,8 @@
   }
 
   &--green {
-    background-color: $ux-green-100;
-    color: $ux-green-700;
+    background-color: $ux-green-200;
+    color: $ux-green-800;
   }
 
   /////// SIZES
