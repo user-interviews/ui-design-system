@@ -87,6 +87,7 @@ export default class Tooltip extends Component {
         <span
           aria-hidden="true"
           className={classNames('Tooltip__icon', this.props.iconClasses)}
+          /* eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex */
           tabIndex="0"
           onClick={this.handleToggleTooltip}
           onKeyPress={this.handleToggleTooltip}

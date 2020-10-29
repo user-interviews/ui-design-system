@@ -4,19 +4,30 @@
   margin: 1rem 0 0.5rem;
 
   &--is-invalid {
-    input, select, textarea {
+    .Input {
+      background-color: $ux-red-100;
+      border-color: $ux-red-600;
+    }
+
+    .InputLabel {
+      color: $ux-red-800;
+    }
+
+    select, textarea {
       border-color: $ux-red;
     }
   }
 
-  &__description {
-    padding: .25rem 0;
+  &__helper-text {
+    @include font-type-20;
+    color: $ux-gray-800;
+    padding: .375rem 0;
   }
 
   &__invalid-feedback {
-    color: $ux-red;
-    display: block;
-    font-size: 100%;
+    @include font-type-20;
+    color: $ux-red-800;
+    padding: .375rem 0;
 
     &__list {
       @include ui-remove-list-styles();

@@ -1,7 +1,9 @@
-import React from 'react';
-import { withKnobs } from '@storybook/addon-knobs';
+import React, { useState } from 'react';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { text, withKnobs } from '@storybook/addon-knobs';
 
 import FormGroup from 'src/FormGroup';
+import Input from 'src/Input';
 
 export default {
   title: 'Design System/Form Elements/Form Group',
@@ -9,9 +11,19 @@ export default {
   decorators: [withKnobs],
 };
 
+
+const InputComponent = (props) => {
+  const [value, setValue] = useState('');
+  const handleChangeValue = (event) => setValue(event.target.value);
+
+  return (
+    <Input value={value} onChange={handleChangeValue} {...props} />
+  );
+};
+
 export const Default = () => (
   <FormGroup id="default">
-    <input className="form-control" type="text" />
+    <InputComponent id="default-input" name="default" placeholder="default" />
   </FormGroup>
 );
 
@@ -21,7 +33,7 @@ export const Required = () => (
     label="Form Group with label"
     required
   >
-    <input className="form-control" type="text" />
+    <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
   </FormGroup>
 );
 
@@ -31,18 +43,29 @@ export const WithLabel = () => (
     label="Form Group with label"
     labelHtmlFor="input"
   >
-    <input className="form-control" id="input" type="text" />
+    <InputComponent id="input" name="with-label" />
   </FormGroup>
 );
 
-export const WithDescription = () => (
+export const WithLabelTooltip = () => (
   <FormGroup
-    description="test description"
-    id="with-description"
-    label="Form Group with description"
+    id="with-label"
+    label="Form Group with label and tooltip"
+    labelHtmlFor="input"
+    labelTooltip={text('Tooltip', 'Some tooltip text')}
+  >
+    <InputComponent id="input" name="with-label" />
+  </FormGroup>
+);
+
+export const WithHelperText = () => (
+  <FormGroup
+    helperText="test helper text"
+    id="with-helper-text"
+    label="Form Group with helper text"
     labelHtmlFor="input"
   >
-    <input className="form-control" id="input" type="text" />
+    <InputComponent id="input" name="with-helper-text" />
   </FormGroup>
 );
 
@@ -53,20 +76,41 @@ export const WithErrors = () => (
     id="with-errors"
     inputKey="test"
     label="Form Group with errors"
+    labelHtmlFor="input"
   >
-    <input className="form-control" type="text" />
+    <InputComponent id="input" name="with-errors" />
   </FormGroup>
 );
 
-export const WithDescriptionAndErrors = () => (
+export const WithLeadingIcon = () => (
   <FormGroup
-    description="test description"
-    displayErrorText
-    errors={{ test: ['invalid input!'] }}
-    id="with-description-and-errors"
-    inputKey="test"
-    label="Form Group with description and errors"
+    helperText="with leading icon"
+    id="with-leading-icon"
+    label="Form Group with input leading icon"
+    labelHtmlFor="input"
   >
-    <input className="form-control" type="text" />
+    <InputComponent id="input" leadingIcon={faSearch} name="with-leading-icon" />
+  </FormGroup>
+);
+
+export const WithTrailingIcon = () => (
+  <FormGroup
+    helperText="with trailing icon"
+    id="with-trailing-icon"
+    label="Form Group with input trailing icon"
+    labelHtmlFor="input"
+  >
+    <InputComponent id="input" name="with-leading-icon" trailingIcon={faSearch} />
+  </FormGroup>
+);
+
+export const WithLeadingAndTrailingIcons = () => (
+  <FormGroup
+    helperText="with leading and trailing icons"
+    id="with-trailing-icon"
+    label="Form Group with input leading and trailing icons"
+    labelHtmlFor="input"
+  >
+    <InputComponent id="input" leadingIcon={faSearch} name="with-leading-and-trailing-icons" trailingIcon={faSearch} />
   </FormGroup>
 );

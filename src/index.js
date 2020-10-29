@@ -11,6 +11,7 @@ import {
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
+import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
 import Pill from 'src/Pill';
 import Popper from 'src/Popper';
@@ -33,6 +34,7 @@ export {
   Form,
   FormControlLabel,
   FormGroup,
+  Input,
   InputLabel,
   MessageTypes,
   Pill,

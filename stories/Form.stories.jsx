@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 
 import Form from 'src/Form';
 import FormGroup from 'src/FormGroup';
+import Input from 'src/Input';
 import RadioButton from 'src/RadioButton';
 import RadioButtonGroup from 'src/RadioButtonGroup';
 
@@ -16,16 +17,25 @@ const onSubmit = (event) => {
   action('form submitted')(event);
 };
 
+const InputComponent = (props) => {
+  const [value, setValue] = useState('');
+  const handleChangeValue = (event) => setValue(event.target.value);
+
+  return (
+    <Input value={value} onChange={handleChangeValue} {...props} />
+  );
+};
+
 export const Default = () => (
   <Form id="form" onSubmit={onSubmit}>
     <FormGroup id="first-name" label="First name" labelHtmlFor="first-name">
-      <input className="form-control" id="first-name" type="text" />
+      <InputComponent id="first-name-input" name="first-name" type="text" />
     </FormGroup>
     <FormGroup id="last-name" label="Last name" labelHtmlFor="last-name" required>
-      <input className="form-control" id="last-name" type="text" />
+      <InputComponent id="last-name-input" name="last-name" type="text" />
     </FormGroup>
     <FormGroup id="email" label="Email" labelHtmlFor="email">
-      <input className="form-control" id="email" type="text" />
+      <InputComponent id="email-input" name="email" type="text" />
     </FormGroup>
     <FormGroup
       errors={{ phone: 'Invalid phone number' }}
@@ -35,7 +45,7 @@ export const Default = () => (
       labelHtmlFor="phone"
       required
     >
-      <input className="form-control" id="phone" type="text" />
+      <InputComponent id="phone-input" name="phone" type="text" />
     </FormGroup>
     <RadioButtonGroup name="radio-buttons">
       <RadioButton id="first-radio" label="first choice" name="radio-buttons" />
@@ -48,10 +58,10 @@ export const Default = () => (
 export const Inline = () => (
   <Form id="form" inline onSubmit={onSubmit}>
     <FormGroup id="first-name" label="First name" labelHtmlFor="first-name">
-      <input className="form-control" id="first-name" type="text" />
+      <InputComponent id="first-name-input" name="first-name" type="text" />
     </FormGroup>
     <FormGroup id="last-name" label="Last name" labelHtmlFor="last-name" required>
-      <input className="form-control" id="last-name" type="text" />
+      <InputComponent id="last-name-input" name="last-name" type="text" />
     </FormGroup>
     <FormGroup id="description" label="Description" labelHtmlFor="description">
       <textarea className="form-control" id="description" type="text" />
