@@ -22,12 +22,8 @@ function renderErrors(errors) {
 }
 
 export default function FormGroup(props) {
-  const { errors, inputKey } = props;
+  const { errors, helperText, inputKey } = props;
   const hasErrors = errors[inputKey] && errors[inputKey].length > 0;
-
-  // TODO: remove props.description after all uses have been updated
-  // to use props.helperText
-  const helperText = props.helperText || props.description;
 
   return (
     <div
@@ -66,7 +62,6 @@ export default function FormGroup(props) {
 FormGroup.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
-  description: PropTypes.string,
   displayErrorText: PropTypes.bool,
   errors: PropTypes.object,
   helperText: PropTypes.string,
@@ -82,7 +77,6 @@ FormGroup.propTypes = {
 FormGroup.defaultProps = {
   children: undefined,
   className: '',
-  description: undefined,
   displayErrorText: true,
   errors: {},
   helperText: undefined,
