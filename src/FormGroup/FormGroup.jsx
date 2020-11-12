@@ -25,6 +25,10 @@ export default function FormGroup(props) {
   const { errors, inputKey } = props;
   const hasErrors = errors[inputKey] && errors[inputKey].length > 0;
 
+  // TODO: remove props.description after all uses have been updated
+  // to use props.helperText
+  const helperText = props.helperText || props.description;
+
   return (
     <div
       className={classNames('FormGroup', props.className, { 'FormGroup--is-invalid': hasErrors })}
@@ -36,6 +40,7 @@ export default function FormGroup(props) {
           labelHtmlFor={props.labelHtmlFor}
           required={props.required}
           text={props.label}
+          tooltipText={props.labelTooltip}
         />
       )}
 
@@ -48,9 +53,9 @@ export default function FormGroup(props) {
       )}
 
       {
-        props.description && (
-          <div className="FormGroup__description">
-            {props.description}
+        helperText && !hasErrors && (
+          <div className="FormGroup__helper-text">
+            {helperText}
           </div>
         )
       }
@@ -64,11 +69,13 @@ FormGroup.propTypes = {
   description: PropTypes.string,
   displayErrorText: PropTypes.bool,
   errors: PropTypes.object,
+  helperText: PropTypes.string,
   id: PropTypes.string.isRequired,
   inputKey: PropTypes.string,
   label: PropTypes.string,
   labelClassName: PropTypes.string,
   labelHtmlFor: PropTypes.string,
+  labelTooltip: PropTypes.string,
   required: PropTypes.bool,
 };
 
@@ -78,9 +85,11 @@ FormGroup.defaultProps = {
   description: undefined,
   displayErrorText: true,
   errors: {},
+  helperText: undefined,
   inputKey: null,
   label: '',
   labelClassName: '',
   labelHtmlFor: '',
+  labelTooltip: undefined,
   required: false,
 };

@@ -175,11 +175,20 @@ exports[`Storyshots Design System/Form Default 1`] = `
       >
         First name
       </label>
-      <input
-        className="form-control"
-        id="first-name"
-        type="text"
-      />
+      <div
+        className="Input input-group"
+      >
+        <input
+          className="Input form-control"
+          disabled={false}
+          id="first-name-input"
+          name="first-name"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
     </div>
     <div
       className="FormGroup"
@@ -193,14 +202,23 @@ exports[`Storyshots Design System/Form Default 1`] = `
         <span
           className="InputLabel__helper-text"
         >
-           (required)
+           (Required)
         </span>
       </label>
-      <input
-        className="form-control"
-        id="last-name"
-        type="text"
-      />
+      <div
+        className="Input input-group"
+      >
+        <input
+          className="Input form-control"
+          disabled={false}
+          id="last-name-input"
+          name="last-name"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
     </div>
     <div
       className="FormGroup"
@@ -212,11 +230,20 @@ exports[`Storyshots Design System/Form Default 1`] = `
       >
         Email
       </label>
-      <input
-        className="form-control"
-        id="email"
-        type="text"
-      />
+      <div
+        className="Input input-group"
+      >
+        <input
+          className="Input form-control"
+          disabled={false}
+          id="email-input"
+          name="email"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
     </div>
     <div
       className="FormGroup FormGroup--is-invalid"
@@ -230,14 +257,23 @@ exports[`Storyshots Design System/Form Default 1`] = `
         <span
           className="InputLabel__helper-text"
         >
-           (required)
+           (Required)
         </span>
       </label>
-      <input
-        className="form-control"
-        id="phone"
-        type="text"
-      />
+      <div
+        className="Input input-group"
+      >
+        <input
+          className="Input form-control"
+          disabled={false}
+          id="phone-input"
+          name="phone"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
       <div
         className="FormGroup__invalid-feedback"
       >
@@ -330,10 +366,20 @@ exports[`Storyshots Design System/Form Elements/Form Group Default 1`] = `
     id="default"
   >
     
-    <input
-      className="form-control"
-      type="text"
-    />
+    <div
+      className="Input input-group"
+    >
+      <input
+        className="Input form-control"
+        disabled={false}
+        id="default-input"
+        name="default"
+        onChange={[Function]}
+        placeholder="default"
+        type="text"
+        value=""
+      />
+    </div>
   </div>
 </div>
 `;
@@ -358,86 +404,22 @@ exports[`Storyshots Design System/Form Elements/Form Group Required 1`] = `
       <span
         className="InputLabel__helper-text"
       >
-         (required)
+         (Required)
       </span>
     </label>
-    <input
-      className="form-control"
-      type="text"
-    />
-  </div>
-</div>
-`;
-
-exports[`Storyshots Design System/Form Elements/Form Group With Description 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="FormGroup"
-    id="with-description"
-  >
-    <label
-      className="InputLabel"
-      htmlFor="input"
-    >
-      Form Group with description
-    </label>
-    <input
-      className="form-control"
-      id="input"
-      type="text"
-    />
     <div
-      className="FormGroup__description"
+      className="Input input-group"
     >
-      test description
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Design System/Form Elements/Form Group With Description And Errors 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="FormGroup FormGroup--is-invalid"
-    id="with-description-and-errors"
-  >
-    <label
-      className="InputLabel"
-      htmlFor=""
-    >
-      Form Group with description and errors
-    </label>
-    <input
-      className="form-control"
-      type="text"
-    />
-    <div
-      className="FormGroup__invalid-feedback"
-    >
-      <ol
-        className="FormGroup__invalid-feedback__list"
-      >
-        <li>
-          invalid input!
-        </li>
-      </ol>
-    </div>
-    <div
-      className="FormGroup__description"
-    >
-      test description
+      <input
+        className="Input form-control"
+        disabled={false}
+        id="with-required-input"
+        name="required"
+        onChange={[Function]}
+        placeholder="Text is required"
+        type="text"
+        value=""
+      />
     </div>
   </div>
 </div>
@@ -457,14 +439,24 @@ exports[`Storyshots Design System/Form Elements/Form Group With Errors 1`] = `
   >
     <label
       className="InputLabel"
-      htmlFor=""
+      htmlFor="input"
     >
       Form Group with errors
     </label>
-    <input
-      className="form-control"
-      type="text"
-    />
+    <div
+      className="Input input-group"
+    >
+      <input
+        className="Input form-control"
+        disabled={false}
+        id="input"
+        name="with-errors"
+        onChange={[Function]}
+        placeholder=""
+        type="text"
+        value=""
+      />
+    </div>
     <div
       className="FormGroup__invalid-feedback"
     >
@@ -475,6 +467,47 @@ exports[`Storyshots Design System/Form Elements/Form Group With Errors 1`] = `
           invalid input!
         </li>
       </ol>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Form Group With Helper Text 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+    id="with-helper-text"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="input"
+    >
+      Form Group with helper text
+    </label>
+    <div
+      className="Input input-group"
+    >
+      <input
+        className="Input form-control"
+        disabled={false}
+        id="input"
+        name="with-helper-text"
+        onChange={[Function]}
+        placeholder=""
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="FormGroup__helper-text"
+    >
+      test helper text
     </div>
   </div>
 </div>
@@ -498,11 +531,304 @@ exports[`Storyshots Design System/Form Elements/Form Group With Label 1`] = `
     >
       Form Group with label
     </label>
-    <input
-      className="form-control"
-      id="input"
-      type="text"
-    />
+    <div
+      className="Input input-group"
+    >
+      <input
+        className="Input form-control"
+        disabled={false}
+        id="input"
+        name="with-label"
+        onChange={[Function]}
+        placeholder=""
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Form Group With Label Tooltip 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+    id="with-label"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="input"
+    >
+      Form Group with label and tooltip
+      <span
+        aria-hidden="true"
+        className="Tooltip__icon Tooltip__icon--gray"
+        onClick={[Function]}
+        onKeyPress={[Function]}
+        tabIndex="0"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-question-circle fa-w-16 "
+          data-icon="question-circle"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </span>
+    </label>
+    <div
+      className="Input input-group"
+    >
+      <input
+        className="Input form-control"
+        disabled={false}
+        id="input"
+        name="with-label"
+        onChange={[Function]}
+        placeholder=""
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Form Group With Leading And Trailing Icons 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+    id="with-trailing-icon"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="input"
+    >
+      Form Group with input leading and trailing icons
+    </label>
+    <div
+      className="Input input-group"
+    >
+      <div
+        className="input-group-prepend"
+      >
+        <div
+          className="input-group-text"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-search fa-w-16 "
+            data-icon="search"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+      <input
+        className="Input form-control Input--with-leading-icon Input--with-trailing-icon"
+        disabled={false}
+        id="input"
+        name="with-leading-and-trailing-icons"
+        onChange={[Function]}
+        placeholder=""
+        type="text"
+        value=""
+      />
+      <div
+        className="input-group-append"
+      >
+        <div
+          className="input-group-text"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-search fa-w-16 "
+            data-icon="search"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="FormGroup__helper-text"
+    >
+      with leading and trailing icons
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Form Group With Leading Icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+    id="with-leading-icon"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="input"
+    >
+      Form Group with input leading icon
+    </label>
+    <div
+      className="Input input-group"
+    >
+      <div
+        className="input-group-prepend"
+      >
+        <div
+          className="input-group-text"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-search fa-w-16 "
+            data-icon="search"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+      <input
+        className="Input form-control Input--with-leading-icon"
+        disabled={false}
+        id="input"
+        name="with-leading-icon"
+        onChange={[Function]}
+        placeholder=""
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="FormGroup__helper-text"
+    >
+      with leading icon
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Form Group With Trailing Icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+    id="with-trailing-icon"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="input"
+    >
+      Form Group with input trailing icon
+    </label>
+    <div
+      className="Input input-group"
+    >
+      <input
+        className="Input form-control Input--with-trailing-icon"
+        disabled={false}
+        id="input"
+        name="with-leading-icon"
+        onChange={[Function]}
+        placeholder=""
+        type="text"
+        value=""
+      />
+      <div
+        className="input-group-append"
+      >
+        <div
+          className="input-group-text"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-search fa-w-16 "
+            data-icon="search"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div
+      className="FormGroup__helper-text"
+    >
+      with trailing icon
+    </div>
   </div>
 </div>
 `;
@@ -597,11 +923,20 @@ exports[`Storyshots Design System/Form Inline 1`] = `
       >
         First name
       </label>
-      <input
-        className="form-control"
-        id="first-name"
-        type="text"
-      />
+      <div
+        className="Input input-group"
+      >
+        <input
+          className="Input form-control"
+          disabled={false}
+          id="first-name-input"
+          name="first-name"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
     </div>
     <div
       className="FormGroup"
@@ -615,14 +950,23 @@ exports[`Storyshots Design System/Form Inline 1`] = `
         <span
           className="InputLabel__helper-text"
         >
-           (required)
+           (Required)
         </span>
       </label>
-      <input
-        className="form-control"
-        id="last-name"
-        type="text"
-      />
+      <div
+        className="Input input-group"
+      >
+        <input
+          className="Input form-control"
+          disabled={false}
+          id="last-name-input"
+          name="last-name"
+          onChange={[Function]}
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
     </div>
     <div
       className="FormGroup"
@@ -650,22 +994,6 @@ exports[`Storyshots Design System/Form Inline 1`] = `
 </div>
 `;
 
-exports[`Storyshots Design System/Pill Blue 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="Pill Pill--blue"
-  >
-    Test pill
-  </div>
-</div>
-`;
-
 exports[`Storyshots Design System/Pill Default 1`] = `
 <div
   style={
@@ -682,38 +1010,6 @@ exports[`Storyshots Design System/Pill Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Design System/Pill Orange 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="Pill Pill--orange"
-  >
-    Test pill
-  </div>
-</div>
-`;
-
-exports[`Storyshots Design System/Pill Small 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="Pill Pill--sm"
-  >
-    Test pill
-  </div>
-</div>
-`;
-
 exports[`Storyshots Design System/Popper Dark 1`] = `
 <div
   style={
@@ -723,7 +1019,7 @@ exports[`Storyshots Design System/Popper Dark 1`] = `
   }
 >
   <p>
-     reference element
+    reference element
   </p>
   <div
     className="Popper Popper--dark"
@@ -3166,6 +3462,42 @@ exports[`Storyshots Design System/Tooltip Light 1`] = `
 `;
 
 exports[`Storyshots Design System/Tooltip With Header 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    aria-hidden="true"
+    className="Tooltip__icon"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    tabIndex="0"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-question-circle fa-w-16 "
+      data-icon="question-circle"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Design System/Tooltip With Html 1`] = `
 <div
   style={
     Object {

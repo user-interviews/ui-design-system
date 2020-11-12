@@ -4,7 +4,12 @@ import classNames from 'classnames';
 
 import './Pill.scss';
 
-const Pill = ({ color, size, squared, text }) => (
+const Pill = ({
+  color,
+  size,
+  squared,
+  text,
+}) => (
   <div
     className={
       classNames(
@@ -29,7 +34,7 @@ Pill.propTypes = {
 Pill.defaultProps = {
   color: undefined,
   size: undefined,
-  squared: false
+  squared: false,
 };
 
 export default Pill;

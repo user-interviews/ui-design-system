@@ -1,0 +1,25 @@
+@import '../../scss/theme';
+
+.Input {
+  @include font-type-30--light;
+  box-shadow: $input-box-shadow;
+
+  ::placeholder {
+    color: $ux-gray-800;
+  }
+
+  &:focus {
+    border: 1px solid #92CBFC;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.075);
+    filter: drop-shadow(0px 0px 8px rgba(102, 175, 233, 0.7));
+  }
+
+  .form-control {
+    color: $ux-black;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .input-group-text {
+    background-color: $ux-gray-100;
+  }
+}
