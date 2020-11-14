@@ -2,7 +2,7 @@
   on:
     push:
       branches:
-        - master
+        - feature/UIDS-77-card-component
   jobs:
     gh-pages-deploy:
       name: Deploying to gh-pages

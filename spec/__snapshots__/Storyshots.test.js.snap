@@ -49,6 +49,34 @@ exports[`Storyshots Design System/Alert Without Dismiss 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Card Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card Card--lg"
+  >
+    <div
+      className="Card__title"
+    >
+      Large card with title
+    </div>
+    <div
+      className="Card__subtitle"
+    >
+      And a subtitle
+    </div>
+    <div>
+      Use knobs to try out the different card sizes
+    </div>
+  </section>
+</div>
+`;
+
 exports[`Storyshots Design System/Copy To Clipboard Button Default 1`] = `
 <div
   style={
@@ -588,7 +616,7 @@ exports[`Storyshots Design System/Form Elements/Form Group Default 1`] = `
     className="FormGroup"
     id="default"
   >
-    
+
     <div
       className="Input input-group"
     >
@@ -1482,7 +1510,7 @@ exports[`Storyshots Design System/Selects/Async Default 1`] = `
                 }
               }
             >
-              
+
             </div>
           </div>
         </div>
@@ -1604,7 +1632,7 @@ exports[`Storyshots Design System/Selects/Async Labeled 1`] = `
                 }
               }
             >
-              
+
             </div>
           </div>
         </div>
@@ -1936,7 +1964,7 @@ exports[`Storyshots Design System/Selects/Single Searchable 1`] = `
                 }
               }
             >
-              
+
             </div>
           </div>
         </div>
@@ -2014,19 +2042,19 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           </strong>
         </li>
         <li>
-          Type: 
+          Type:
           Lato, Arial, sans-serif
         </li>
         <li>
-          Size: 
+          Size:
           1.5rem
         </li>
         <li>
-          Line-height: 
+          Line-height:
           2rem
         </li>
         <li>
-          Weight: 
+          Weight:
           400 / Regular
         </li>
       </ul>
@@ -2089,19 +2117,19 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           </strong>
         </li>
         <li>
-          Type: 
+          Type:
           Lato, Arial, sans-serif
         </li>
         <li>
-          Size: 
+          Size:
           1.25rem
         </li>
         <li>
-          Line-height: 
+          Line-height:
           1.625rem
         </li>
         <li>
-          Weight: 
+          Weight:
           400 / Regular
         </li>
       </ul>
@@ -2164,19 +2192,19 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           </strong>
         </li>
         <li>
-          Type: 
+          Type:
           Lato, Arial, sans-serif
         </li>
         <li>
-          Size: 
+          Size:
           1.125rem
         </li>
         <li>
-          Line-height: 
+          Line-height:
           1.5rem
         </li>
         <li>
-          Weight: 
+          Weight:
           400 / Regular
         </li>
       </ul>
@@ -2239,19 +2267,19 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           </strong>
         </li>
         <li>
-          Type: 
+          Type:
           Lato, Arial, sans-serif
         </li>
         <li>
-          Size: 
+          Size:
           1rem
         </li>
         <li>
-          Line-height: 
+          Line-height:
           1.375rem
         </li>
         <li>
-          Weight: 
+          Weight:
           400 / Regular
         </li>
       </ul>
@@ -2314,19 +2342,19 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           </strong>
         </li>
         <li>
-          Type: 
+          Type:
           Lato, Arial, sans-serif
         </li>
         <li>
-          Size: 
+          Size:
           0.875rem
         </li>
         <li>
-          Line-height: 
+          Line-height:
           1.25rem
         </li>
         <li>
-          Weight: 
+          Weight:
           400 / Regular
         </li>
       </ul>
@@ -2389,19 +2417,19 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           </strong>
         </li>
         <li>
-          Type: 
+          Type:
           Lato, Arial, sans-serif
         </li>
         <li>
-          Size: 
+          Size:
           0.75rem
         </li>
         <li>
-          Line-height: 
+          Line-height:
           1rem
         </li>
         <li>
-          Weight: 
+          Weight:
           400 / Regular
         </li>
       </ul>
@@ -2464,27 +2492,27 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           </strong>
         </li>
         <li>
-          Type: 
+          Type:
           Lato, Arial, sans-serif
         </li>
         <li>
-          Size: 
+          Size:
           0.625rem
         </li>
         <li>
-          Line-height: 
+          Line-height:
           0.875rem
         </li>
         <li>
-          Weight: 
+          Weight:
           400 / Regular
         </li>
         <li>
-          Text-transform: 
+          Text-transform:
           Uppercase
         </li>
         <li>
-          Letter-spacing: 
+          Letter-spacing:
           0.0625rem
         </li>
       </ul>
