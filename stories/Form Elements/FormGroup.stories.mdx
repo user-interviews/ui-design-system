@@ -1,0 +1,29 @@
+import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { text, withKnobs } from '@storybook/addon-knobs';
+
+import Form from 'src/Form';
+import FormGroup from 'src/FormGroup';
+import Input from 'src/Input';
+import InputLabel from 'src/InputLabel';
+
+<Meta title="Design System/Form Elements" component={FormGroup} />
+
+# Input fields
+
+Input fields let users enter and edit text.
+
+<Story name="Input Fields">
+<FormGroup id="default">
+  <InputComponent id="default-input" name="default" placeholder="default" />
+</FormGroup>
+</Story>
+
+<Story name="Required">
+<FormGroup
+id="with-required"
+label="Form Group with label"
+required
+>
+<InputComponent id="with-required-input" name="required" placeholder="Text is required" />
+</FormGroup>
+</Story>
