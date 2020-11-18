@@ -5,12 +5,7 @@
 
   &--is-invalid {
     .Input {
-      background-color: $ux-red-100;
       border-color: $ux-red-600;
-    }
-
-    .InputLabel {
-      color: $ux-red-800;
     }
 
     select, textarea {
