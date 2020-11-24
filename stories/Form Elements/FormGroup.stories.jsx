@@ -4,13 +4,13 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
+import { CheckboxButtonGroup, CheckboxButton } from 'src/CheckboxButtonGroup';
 
 export default {
   title: 'Design System/Form Elements/Form Group',
   component: FormGroup,
   decorators: [withKnobs],
 };
-
 
 const InputComponent = (props) => {
   const [value, setValue] = useState('');
@@ -114,3 +114,26 @@ export const WithLeadingAndTrailingIcons = () => (
     <InputComponent id="input" leadingIcon={faSearch} name="with-leading-and-trailing-icons" trailingIcon={faSearch} />
   </FormGroup>
 );
+
+const CheckboxButtonGroupComponent = () => {
+  const [value, setValue] = useState([]);
+  const handleChangeValue = (values) => setValue(values);
+
+  return (
+    <FormGroup
+      bordered
+      id="with-checkbox-button-group"
+      label="Form Group with checkbox button group"
+      labelHelperText="with some helper text"
+      labelHtmlFor="checkbox-button-group"
+    >
+      <CheckboxButtonGroup id="checkbox-button-group" value={value} onChange={handleChangeValue}>
+        <CheckboxButton id="value-1" label="Value 1" value="1" />
+        <CheckboxButton id="value-2" label="Value 2" value="2" />
+        <CheckboxButton id="value-3" label="Value 3" value="3" />
+      </CheckboxButtonGroup>
+    </FormGroup>
+  );
+};
+
+export const WithCheckboxButtonGroup = () => <CheckboxButtonGroupComponent />;

@@ -425,6 +425,94 @@ exports[`Storyshots Design System/Form Elements/Form Group Required 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Form Elements/Form Group With Checkbox Button Group 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup FormGroup--bordered"
+    id="with-checkbox-button-group"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="checkbox-button-group"
+    >
+      Form Group with checkbox button group
+      <span
+        className="InputLabel__helper-text"
+      >
+         (
+        with some helper text
+        )
+      </span>
+    </label>
+    <div
+      className="CheckboxButtonGroup"
+      id="checkbox-button-group"
+    >
+      <label
+        className="CheckboxButton"
+        htmlFor="value-1"
+      >
+        <input
+          checked={false}
+          className="CheckboxButton__input"
+          id="value-1"
+          onChange={[Function]}
+          type="checkbox"
+          value="1"
+        />
+        <span
+          className="CheckboxButton__label"
+        >
+          Value 1
+        </span>
+      </label>
+      <label
+        className="CheckboxButton"
+        htmlFor="value-2"
+      >
+        <input
+          checked={false}
+          className="CheckboxButton__input"
+          id="value-2"
+          onChange={[Function]}
+          type="checkbox"
+          value="2"
+        />
+        <span
+          className="CheckboxButton__label"
+        >
+          Value 2
+        </span>
+      </label>
+      <label
+        className="CheckboxButton"
+        htmlFor="value-3"
+      >
+        <input
+          checked={false}
+          className="CheckboxButton__input"
+          id="value-3"
+          onChange={[Function]}
+          type="checkbox"
+          value="3"
+        />
+        <span
+          className="CheckboxButton__label"
+        >
+          Value 3
+        </span>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Form Elements/Form Group With Errors 1`] = `
 <div
   style={

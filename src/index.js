@@ -1,3 +1,7 @@
+import {
+  CheckboxButtonGroup,
+  CheckboxButton,
+} from 'src/CheckboxButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import FadeTransition from 'src/FadeTransition';
 import {
@@ -28,6 +32,8 @@ import TrackedButton from 'src/TrackedButton';
 export {
   AlertMessage,
   AsyncSelect,
+  CheckboxButton,
+  CheckboxButtonGroup,
   CopyToClipboard,
   FadeTransition,
   Flash,

@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxButtonGroup sets initial value properly 1`] = `
+<div
+  className="CheckboxButtonGroup"
+  id="checkbox-question"
+>
+  <label
+    className="CheckboxButton CheckboxButton--active"
+    htmlFor="first"
+  >
+    <input
+      checked={true}
+      className="CheckboxButton__input"
+      id="first"
+      onChange={[Function]}
+      type="checkbox"
+      value={1}
+    />
+    <span
+      className="CheckboxButton__label"
+    >
+      First value
+    </span>
+  </label>
+  <label
+    className="CheckboxButton CheckboxButton--active"
+    htmlFor="second"
+  >
+    <input
+      checked={true}
+      className="CheckboxButton__input"
+      id="second"
+      onChange={[Function]}
+      type="checkbox"
+      value={2}
+    />
+    <span
+      className="CheckboxButton__label"
+    >
+      Second value
+    </span>
+  </label>
+</div>
+`;
+
+exports[`CheckboxButtonGroup will update array state to add a new item 1`] = `
+<div
+  className="CheckboxButtonGroup"
+  id="checkbox-question"
+>
+  <label
+    className="CheckboxButton CheckboxButton--active"
+    htmlFor="first"
+  >
+    <input
+      checked={true}
+      className="CheckboxButton__input"
+      id="first"
+      onChange={[Function]}
+      type="checkbox"
+      value={1}
+    />
+    <span
+      className="CheckboxButton__label"
+    >
+      First value
+    </span>
+  </label>
+  <label
+    className="CheckboxButton"
+    htmlFor="second"
+  >
+    <input
+      checked={false}
+      className="CheckboxButton__input"
+      id="second"
+      onChange={[Function]}
+      type="checkbox"
+      value={2}
+    />
+    <span
+      className="CheckboxButton__label"
+    >
+      Second value
+    </span>
+  </label>
+</div>
+`;
+
+exports[`CheckboxButtonGroup will update array state to remove an item 1`] = `
+<div
+  className="CheckboxButtonGroup"
+  id="checkbox-question"
+>
+  <label
+    className="CheckboxButton"
+    htmlFor="first"
+  >
+    <input
+      checked={false}
+      className="CheckboxButton__input"
+      id="first"
+      onChange={[Function]}
+      type="checkbox"
+      value={1}
+    />
+    <span
+      className="CheckboxButton__label"
+    >
+      First value
+    </span>
+  </label>
+  <label
+    className="CheckboxButton"
+    htmlFor="second"
+  >
+    <input
+      checked={false}
+      className="CheckboxButton__input"
+      id="second"
+      onChange={[Function]}
+      type="checkbox"
+      value={2}
+    />
+    <span
+      className="CheckboxButton__label"
+    >
+      Second value
+    </span>
+  </label>
+</div>
+`;

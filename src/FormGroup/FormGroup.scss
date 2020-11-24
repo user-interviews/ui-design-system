@@ -3,9 +3,21 @@
 .FormGroup {
   margin: 1rem 0 0.5rem;
 
+  &--bordered {
+    border: 1px solid $ux-gray-400;
+    border-radius: $ux-border-radius;
+    padding: 1rem;
+
+    .InputLabel {
+      @include font-type-40;
+      margin-bottom: 0.75rem;
+    }
+  }
+
   &--is-invalid {
     .Input {
-      border-color: $ux-red-600;
+      // important because Input.scss focus style also sets this border
+      border-color: $ux-red-600 !important;
     }
 
     select, textarea {
@@ -31,5 +43,9 @@
 
   .form-control {
     height: 2.25rem;
+  }
+
+  textarea.form-control {
+    height: auto;
   }
 }
