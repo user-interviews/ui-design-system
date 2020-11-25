@@ -29,7 +29,7 @@ describe('CheckboxButtonGroup', () => {
     expect(checkboxButtonGroup).toMatchSnapshot();
   });
 
-  test('will update array state to add a new item', async () => {
+  test('will update array state to check a new item', async () => {
     const checkboxButtonGroup = create(
       <CheckboxButtonGroupComponent defaultValues={[]}>
         <CheckboxButton id="first" label="First value" value={1} />
@@ -44,7 +44,7 @@ describe('CheckboxButtonGroup', () => {
     expect(checkboxButtonGroup).toMatchSnapshot();
   });
 
-  test('will update array state to remove an item', async () => {
+  test('will update array state to uncheck an item', async () => {
     const checkboxButtonGroup = create(
       <CheckboxButtonGroupComponent defaultValues={[1]}>
         <CheckboxButton id="first" label="First value" value={1} />

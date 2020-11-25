@@ -2,9 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
+import FormControlLabel from '../FormControlLabel';
+
 import './CheckboxButton.scss';
 
 const CheckboxButton = ({
+  bordered,
   checked,
   className,
   disabled,
@@ -15,15 +18,18 @@ const CheckboxButton = ({
   onChange,
   ...rest
 }) => (
-  <label
+  <FormControlLabel
     className={classnames('CheckboxButton', {
-      'CheckboxButton--active': checked,
+      'CheckboxButton--bordered': bordered,
+      'CheckboxButton--active': bordered && checked,
     })}
     htmlFor={id}
+    labelHtmlFor={id}
+    text={label}
   >
     <input
       checked={checked}
-      className={classnames('CheckboxButton__input', className)}
+      className={className}
       disabled={disabled}
       id={id}
       name={name}
@@ -32,12 +38,11 @@ const CheckboxButton = ({
       onChange={onChange}
       {...rest}
     />
-
-    <span className="CheckboxButton__label">{label}</span>
-  </label>
+  </FormControlLabel>
 );
 
 CheckboxButton.propTypes = {
+  bordered: PropTypes.bool,
   checked: PropTypes.bool,
   className: PropTypes.string,
   disabled: PropTypes.bool,
@@ -47,15 +52,17 @@ CheckboxButton.propTypes = {
   value: PropTypes.oneOfType([
     PropTypes.number,
     PropTypes.string,
-  ]).isRequired,
+  ]),
   onChange: PropTypes.func,
 };
 
 CheckboxButton.defaultProps = {
-  checked: false,
+  bordered: false,
+  checked: undefined,
   className: undefined,
   disabled: undefined,
   name: undefined,
+  value: undefined,
   onChange: undefined,
 };
 

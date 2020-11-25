@@ -128,9 +128,9 @@ const CheckboxButtonGroupComponent = () => {
       labelHtmlFor="checkbox-button-group"
     >
       <CheckboxButtonGroup id="checkbox-button-group" value={value} onChange={handleChangeValue}>
-        <CheckboxButton id="value-1" label="Value 1" value="1" />
-        <CheckboxButton id="value-2" label="Value 2" value="2" />
-        <CheckboxButton id="value-3" label="Value 3" value="3" />
+        <CheckboxButton bordered id="value-1" label="Value 1" value="1" />
+        <CheckboxButton bordered id="value-2" label="Value 2" value="2" />
+        <CheckboxButton bordered id="value-3" label="Value 3" value="3" />
       </CheckboxButtonGroup>
     </FormGroup>
   );

@@ -1,17 +1,18 @@
 import React from 'react';
 
-import FormControlLabel from 'src/FormControlLabel';
+import { CheckboxButton } from 'src/CheckboxButtonGroup';
 
 export default {
   title: 'Design System/Form Elements/Form Control Label',
-  component: FormControlLabel,
+  component: CheckboxButton,
 };
 
 export const Checkbox = () => (
-  <FormControlLabel
-    labelHtmlFor="checkbox"
-    text="Labeled checkbox"
-  >
-    <input id="checkbox" name="checkbox" type="checkbox" />
-  </FormControlLabel>
+  <CheckboxButton
+    defaultValue="1"
+    id="checkbox"
+    label="Labeled checkbox"
+    name="checkbox"
+    type="checkbox"
+  />
 );
