@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import { act, create } from 'react-test-renderer';
 import PropTypes from 'prop-types';
 
-import { CheckboxButtonGroup, CheckboxButton } from 'src/CheckboxButtonGroup';
+import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
+import CheckboxButton from 'src/CheckboxButton';
 
 const CheckboxButtonGroupComponent = ({ children, defaultValues }) => {
   const [value, setValue] = useState(defaultValues);

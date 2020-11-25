@@ -1,7 +1,5 @@
-import {
-  CheckboxButtonGroup,
-  CheckboxButton,
-} from 'src/CheckboxButtonGroup';
+import CheckboxButton from 'src/CheckboxButton';
+import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import FadeTransition from 'src/FadeTransition';
 import {

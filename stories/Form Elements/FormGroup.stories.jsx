@@ -4,7 +4,9 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
-import { CheckboxButtonGroup, CheckboxButton } from 'src/CheckboxButtonGroup';
+import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
+import CheckboxButton from 'src/CheckboxButton';
+import FormControlLabel from 'src/FormControlLabel';
 
 export default {
   title: 'Design System/Form Elements/Form Group',
@@ -128,9 +130,9 @@ const CheckboxButtonGroupComponent = () => {
       labelHtmlFor="checkbox-button-group"
     >
       <CheckboxButtonGroup id="checkbox-button-group" value={value} onChange={handleChangeValue}>
-        <CheckboxButton bordered id="value-1" label="Value 1" value="1" />
-        <CheckboxButton bordered id="value-2" label="Value 2" value="2" />
-        <CheckboxButton bordered id="value-3" label="Value 3" value="3" />
+        <FormControlLabel bordered Control={CheckboxButton} id="value-1" text="Value 1" value="1" />
+        <FormControlLabel bordered Control={CheckboxButton} id="value-2" text="Value 2" value="2" />
+        <FormControlLabel bordered Control={CheckboxButton} id="value-3" text="Value 3" value="3" />
       </CheckboxButtonGroup>
     </FormGroup>
   );

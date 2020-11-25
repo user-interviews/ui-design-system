@@ -5,40 +5,22 @@ exports[`CheckboxButtonGroup sets initial value properly 1`] = `
   className="CheckboxButtonGroup"
   id="checkbox-question"
 >
-  <label
-    className="FormControlLabel CheckboxButton"
-    htmlFor="first"
-  >
-    <span
-      className="FormControlLabel__control"
-    >
-      <input
-        checked={true}
-        id="first"
-        onChange={[Function]}
-        type="checkbox"
-        value={1}
-      />
-    </span>
-    First value
-  </label>
-  <label
-    className="FormControlLabel CheckboxButton"
-    htmlFor="second"
-  >
-    <span
-      className="FormControlLabel__control"
-    >
-      <input
-        checked={true}
-        id="second"
-        onChange={[Function]}
-        type="checkbox"
-        value={2}
-      />
-    </span>
-    Second value
-  </label>
+  <input
+    checked={true}
+    id="first"
+    label="First value"
+    onChange={[Function]}
+    type="checkbox"
+    value={1}
+  />
+  <input
+    checked={true}
+    id="second"
+    label="Second value"
+    onChange={[Function]}
+    type="checkbox"
+    value={2}
+  />
 </div>
 `;
 
@@ -47,40 +29,22 @@ exports[`CheckboxButtonGroup will update array state to check a new item 1`] = `
   className="CheckboxButtonGroup"
   id="checkbox-question"
 >
-  <label
-    className="FormControlLabel CheckboxButton"
-    htmlFor="first"
-  >
-    <span
-      className="FormControlLabel__control"
-    >
-      <input
-        checked={true}
-        id="first"
-        onChange={[Function]}
-        type="checkbox"
-        value={1}
-      />
-    </span>
-    First value
-  </label>
-  <label
-    className="FormControlLabel CheckboxButton"
-    htmlFor="second"
-  >
-    <span
-      className="FormControlLabel__control"
-    >
-      <input
-        checked={false}
-        id="second"
-        onChange={[Function]}
-        type="checkbox"
-        value={2}
-      />
-    </span>
-    Second value
-  </label>
+  <input
+    checked={true}
+    id="first"
+    label="First value"
+    onChange={[Function]}
+    type="checkbox"
+    value={1}
+  />
+  <input
+    checked={false}
+    id="second"
+    label="Second value"
+    onChange={[Function]}
+    type="checkbox"
+    value={2}
+  />
 </div>
 `;
 
@@ -89,39 +53,21 @@ exports[`CheckboxButtonGroup will update array state to uncheck an item 1`] = `
   className="CheckboxButtonGroup"
   id="checkbox-question"
 >
-  <label
-    className="FormControlLabel CheckboxButton"
-    htmlFor="first"
-  >
-    <span
-      className="FormControlLabel__control"
-    >
-      <input
-        checked={false}
-        id="first"
-        onChange={[Function]}
-        type="checkbox"
-        value={1}
-      />
-    </span>
-    First value
-  </label>
-  <label
-    className="FormControlLabel CheckboxButton"
-    htmlFor="second"
-  >
-    <span
-      className="FormControlLabel__control"
-    >
-      <input
-        checked={false}
-        id="second"
-        onChange={[Function]}
-        type="checkbox"
-        value={2}
-      />
-    </span>
-    Second value
-  </label>
+  <input
+    checked={false}
+    id="first"
+    label="First value"
+    onChange={[Function]}
+    type="checkbox"
+    value={1}
+  />
+  <input
+    checked={false}
+    id="second"
+    label="Second value"
+    onChange={[Function]}
+    type="checkbox"
+    value={2}
+  />
 </div>
 `;
