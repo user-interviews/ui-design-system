@@ -2,7 +2,7 @@
   on:
     push:
       branches:
-        - feature/UIDS-81-checkbox-group-component
+        - master
   jobs:
     gh-pages-deploy:
       name: Deploying to gh-pages

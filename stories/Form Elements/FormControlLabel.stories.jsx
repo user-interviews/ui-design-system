@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { action } from '@storybook/addon-actions';
 import { boolean, withKnobs } from '@storybook/addon-knobs';
 
 import FormControlLabel from 'src/FormControlLabel';
@@ -10,14 +11,30 @@ export default {
   decorators: [withKnobs()],
 };
 
+const FormControlLabelCheckboxComponent = (props) => {
+  const [value, setValue] = useState(false);
+  const onChange = (e) => {
+    setValue(e.target.checked);
+    action('Checkbox onChange')(e);
+  };
+
+  return (
+    <FormControlLabel
+      {...props}
+      checked={value}
+      onChange={onChange}
+    />
+  );
+};
+
 export const Checkbox = () => (
-  <FormControlLabel
+  <FormControlLabelCheckboxComponent
     bordered={boolean('Bordered button', false)}
     Control={CheckboxButton}
-    defaultValue="1"
     id="checkbox"
     name="checkbox"
     text="Labeled checkbox"
     type="checkbox"
+    value="1"
   />
 );

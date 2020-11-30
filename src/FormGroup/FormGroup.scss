@@ -9,8 +9,13 @@
     padding: 1rem;
 
     .InputLabel {
-      @include font-type-40;
+      @include font-type-40--bold;
       margin-bottom: 0.75rem;
+
+      &__helper-text {
+        @include font-type-40--light;
+        color: $ux-gray-900;
+      }
     }
   }
 

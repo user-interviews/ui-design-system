@@ -20,6 +20,10 @@
   }
 
   &--active {
+    @include font-type-30--bold;
+
     background-color: $ux-blue-100;
+    color: $ux-blue-700;
+    border-color: $ux-blue-200;
   }
 }
