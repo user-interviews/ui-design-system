@@ -47,7 +47,7 @@ Popper.propTypes = {
   header: PropTypes.string,
   placement: PropTypes.string,
   strategy: PropTypes.string,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.node.isRequired,
   visible: PropTypes.bool,
 };
 

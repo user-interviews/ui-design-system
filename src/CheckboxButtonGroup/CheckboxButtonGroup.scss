@@ -1,0 +1,11 @@
+@import '../../scss/theme';
+@import '../../scss/borders';
+
+.CheckboxButtonGroup {
+  display: flex;
+  flex-direction: row;
+
+  label {
+    margin-bottom: 0;
+  }
+}

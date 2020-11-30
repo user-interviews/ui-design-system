@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './Input.scss';
 
-export default function Input(props) {
+const Input = React.forwardRef((props, ref) => {
   const {
     disabled,
     id,
@@ -40,6 +40,7 @@ export default function Input(props) {
         id={id}
         name={name}
         placeholder={placeholder}
+        ref={ref}
         type={type}
         value={value}
         onChange={onChange}
@@ -55,7 +56,7 @@ export default function Input(props) {
       )}
     </div>
   );
-}
+});
 
 Input.propTypes = {
   disabled: PropTypes.bool,
@@ -75,6 +76,8 @@ Input.defaultProps = {
   placeholder: '',
   trailingIcon: undefined,
   type: 'text',
-  value: '',
+  value: undefined,
   onChange: undefined,
 };
+
+export default Input;

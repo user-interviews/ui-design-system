@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CheckboxButtonGroup sets initial value properly 1`] = `
+<div
+  className="CheckboxButtonGroup"
+  id="checkbox-question"
+>
+  <input
+    checked={true}
+    id="first"
+    label="First value"
+    onChange={[Function]}
+    type="checkbox"
+    value={1}
+  />
+  <input
+    checked={true}
+    id="second"
+    label="Second value"
+    onChange={[Function]}
+    type="checkbox"
+    value={2}
+  />
+</div>
+`;
+
+exports[`CheckboxButtonGroup will update array state to check a new item 1`] = `
+<div
+  className="CheckboxButtonGroup"
+  id="checkbox-question"
+>
+  <input
+    checked={true}
+    id="first"
+    label="First value"
+    onChange={[Function]}
+    type="checkbox"
+    value={1}
+  />
+  <input
+    checked={false}
+    id="second"
+    label="Second value"
+    onChange={[Function]}
+    type="checkbox"
+    value={2}
+  />
+</div>
+`;
+
+exports[`CheckboxButtonGroup will update array state to uncheck an item 1`] = `
+<div
+  className="CheckboxButtonGroup"
+  id="checkbox-question"
+>
+  <input
+    checked={false}
+    id="first"
+    label="First value"
+    onChange={[Function]}
+    type="checkbox"
+    value={1}
+  />
+  <input
+    checked={false}
+    id="second"
+    label="Second value"
+    onChange={[Function]}
+    type="checkbox"
+    value={2}
+  />
+</div>
+`;

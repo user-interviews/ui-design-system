@@ -14,6 +14,7 @@ export default function InputLabel(props) {
     >
       {props.text}
       {props.required && <span className="InputLabel__helper-text">&nbsp;(Required)</span>}
+      {props.labelHelperText && <span className="InputLabel__helper-text">&nbsp;({props.labelHelperText})</span>}
       {props.tooltipText && <Tooltip iconClasses="Tooltip__icon--gray" placement="right" text={props.tooltipText} />}
     </label>
   );
@@ -21,6 +22,7 @@ export default function InputLabel(props) {
 
 InputLabel.propTypes = {
   className: PropTypes.string,
+  labelHelperText: PropTypes.string,
   labelHtmlFor: PropTypes.string,
   required: PropTypes.bool,
   text: PropTypes.string.isRequired,
@@ -29,6 +31,7 @@ InputLabel.propTypes = {
 
 InputLabel.defaultProps = {
   className: '',
+  labelHelperText: undefined,
   labelHtmlFor: '',
   required: false,
   tooltipText: undefined,

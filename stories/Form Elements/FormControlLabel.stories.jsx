@@ -1,17 +1,40 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { action } from '@storybook/addon-actions';
+import { boolean, withKnobs } from '@storybook/addon-knobs';
 
 import FormControlLabel from 'src/FormControlLabel';
+import CheckboxButton from 'src/CheckboxButton';
 
 export default {
   title: 'Design System/Form Elements/Form Control Label',
   component: FormControlLabel,
+  decorators: [withKnobs()],
+};
+
+const FormControlLabelCheckboxComponent = (props) => {
+  const [value, setValue] = useState(false);
+  const onChange = (e) => {
+    setValue(e.target.checked);
+    action('Checkbox onChange')(e);
+  };
+
+  return (
+    <FormControlLabel
+      {...props}
+      checked={value}
+      onChange={onChange}
+    />
+  );
 };
 
 export const Checkbox = () => (
-  <FormControlLabel
-    labelHtmlFor="checkbox"
+  <FormControlLabelCheckboxComponent
+    bordered={boolean('Bordered button', false)}
+    Control={CheckboxButton}
+    id="checkbox"
+    name="checkbox"
     text="Labeled checkbox"
-  >
-    <input id="checkbox" name="checkbox" type="checkbox" />
-  </FormControlLabel>
+    type="checkbox"
+    value="1"
+  />
 );

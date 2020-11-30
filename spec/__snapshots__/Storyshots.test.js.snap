@@ -339,15 +339,13 @@ exports[`Storyshots Design System/Form Elements/Form Control Label Checkbox 1`] 
     className="FormControlLabel"
     htmlFor="checkbox"
   >
-    <span
+    <input
       className="FormControlLabel__control"
-    >
-      <input
-        id="checkbox"
-        name="checkbox"
-        type="checkbox"
-      />
-    </span>
+      defaultValue="1"
+      id="checkbox"
+      name="checkbox"
+      type="checkbox"
+    />
     Labeled checkbox
   </label>
 </div>
@@ -420,6 +418,82 @@ exports[`Storyshots Design System/Form Elements/Form Group Required 1`] = `
         type="text"
         value=""
       />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Form Group With Checkbox Button Group 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup FormGroup--bordered"
+    id="with-checkbox-button-group"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="checkbox-button-group"
+    >
+      Form Group with checkbox button group
+      <span
+        className="InputLabel__helper-text"
+      >
+         (
+        with some helper text
+        )
+      </span>
+    </label>
+    <div
+      className="CheckboxButtonGroup"
+      id="checkbox-button-group"
+    >
+      <label
+        className="FormControlLabel FormControlLabel--bordered"
+        htmlFor="value-1"
+      >
+        <input
+          checked={false}
+          className="FormControlLabel__control"
+          id="value-1"
+          onChange={[Function]}
+          type="checkbox"
+          value="1"
+        />
+        Value 1
+      </label>
+      <label
+        className="FormControlLabel FormControlLabel--bordered"
+        htmlFor="value-2"
+      >
+        <input
+          checked={false}
+          className="FormControlLabel__control"
+          id="value-2"
+          onChange={[Function]}
+          type="checkbox"
+          value="2"
+        />
+        Value 2
+      </label>
+      <label
+        className="FormControlLabel FormControlLabel--bordered"
+        htmlFor="value-3"
+      >
+        <input
+          checked={false}
+          className="FormControlLabel__control"
+          id="value-3"
+          onChange={[Function]}
+          type="checkbox"
+          value="3"
+        />
+        Value 3
+      </label>
     </div>
   </div>
 </div>

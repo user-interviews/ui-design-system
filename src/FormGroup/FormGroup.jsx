@@ -21,18 +21,38 @@ function renderErrors(errors) {
   );
 }
 
+function buildErrorMessage(errors, label) {
+  if (errors) {
+    if (errors.message) {
+      return errors.message;
+    }
+    if (errors.type === 'required') {
+      return `${label} cannot be left blank.`;
+    }
+  }
+  return errors;
+}
+
 export default function FormGroup(props) {
   const { errors, helperText, inputKey } = props;
-  const hasErrors = errors[inputKey] && errors[inputKey].length > 0;
+  const errorMessage = buildErrorMessage(errors[inputKey], props.label);
+  const hasErrors = errorMessage && errorMessage.length > 0;
 
   return (
     <div
-      className={classNames('FormGroup', props.className, { 'FormGroup--is-invalid': hasErrors })}
+      className={classNames(
+        'FormGroup',
+        props.className, {
+          'FormGroup--is-invalid': hasErrors,
+          'FormGroup--bordered': props.bordered,
+        },
+      )}
       id={props.id}
     >
       {props.label && (
         <InputLabel
           className={props.labelClassName}
+          labelHelperText={props.labelHelperText}
           labelHtmlFor={props.labelHtmlFor}
           required={props.required}
           text={props.label}
@@ -44,7 +64,7 @@ export default function FormGroup(props) {
 
       {props.displayErrorText && hasErrors && (
         <div className="FormGroup__invalid-feedback">
-          {renderErrors(errors[inputKey])}
+          {renderErrors(errorMessage)}
         </div>
       )}
 
@@ -60,6 +80,7 @@ export default function FormGroup(props) {
 }
 
 FormGroup.propTypes = {
+  bordered: PropTypes.bool,
   children: PropTypes.node,
   className: PropTypes.string,
   displayErrorText: PropTypes.bool,
@@ -69,12 +90,14 @@ FormGroup.propTypes = {
   inputKey: PropTypes.string,
   label: PropTypes.string,
   labelClassName: PropTypes.string,
+  labelHelperText: PropTypes.string,
   labelHtmlFor: PropTypes.string,
   labelTooltip: PropTypes.string,
   required: PropTypes.bool,
 };
 
 FormGroup.defaultProps = {
+  bordered: undefined,
   children: undefined,
   className: '',
   displayErrorText: true,
@@ -83,6 +106,7 @@ FormGroup.defaultProps = {
   inputKey: null,
   label: '',
   labelClassName: '',
+  labelHelperText: undefined,
   labelHtmlFor: '',
   labelTooltip: undefined,
   required: false,

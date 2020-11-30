@@ -7,7 +7,7 @@ import './Form.scss';
 export default function Form(props) {
   return (
     <form
-      className={classNames('Form', { 'Form--inline': props.inline })}
+      className={classNames('Form', props.className, { 'Form--inline': props.inline })}
       id={props.id}
       onSubmit={props.onSubmit}
     >
@@ -18,12 +18,15 @@ export default function Form(props) {
 
 Form.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
   id: PropTypes.string.isRequired,
   inline: PropTypes.bool,
-  onSubmit: PropTypes.func.isRequired,
+  onSubmit: PropTypes.func,
 };
 
 Form.defaultProps = {
   children: undefined,
+  className: undefined,
   inline: false,
+  onSubmit: undefined,
 };
