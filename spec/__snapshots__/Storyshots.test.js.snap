@@ -340,11 +340,13 @@ exports[`Storyshots Design System/Form Elements/Form Control Label Checkbox 1`] 
     htmlFor="checkbox"
   >
     <input
+      checked={false}
       className="FormControlLabel__control"
-      defaultValue="1"
       id="checkbox"
       name="checkbox"
+      onChange={[Function]}
       type="checkbox"
+      value="1"
     />
     Labeled checkbox
   </label>
