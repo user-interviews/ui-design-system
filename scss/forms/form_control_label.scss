@@ -1,0 +1,51 @@
+@import '../borders';
+@import '../colors';
+@import '../typography';
+
+.FormControlLabel {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+
+  &--with-children {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    > div {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  &__control {
+    display: flex;
+    margin-right: .25rem;
+  }
+
+  &__children {
+    margin-top: 0.5rem;
+    width: 100%;
+  }
+
+  &--bordered {
+    @include font-type-30;
+
+    border: 1px solid $ux-gray-400;
+    border-radius: $ux-border-radius;
+    cursor: pointer;
+    padding: 0.3125rem 0.625rem;
+    margin-right: 0.5rem;
+  }
+
+  &--active {
+    background-color: $ux-blue-100;
+    border-color: $ux-blue-200;
+
+    &__label {
+      @include font-type-30--bold;
+      color: $ux-blue-700;
+    }
+  }
+}

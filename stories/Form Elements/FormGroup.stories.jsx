@@ -7,7 +7,6 @@ import Input from 'src/Input';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CheckboxButton from 'src/CheckboxButton';
 import FormControlLabel from 'src/FormControlLabel';
-import RadioButton from 'src/RadioButton';
 
 export default {
   title: 'Design System/Form Elements/Form Group',

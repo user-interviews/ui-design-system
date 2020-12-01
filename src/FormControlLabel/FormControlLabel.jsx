@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
@@ -14,6 +14,9 @@ export default function FormControlLabel({
   text,
   ...controlProps
 }) {
+  // If the control has additional children, add another wrapping div to support
+  // horizontal and vertical flex alignment
+  const ContainerElement = children ? 'div' : Fragment;
   return (
     <label
       className={classnames(
@@ -22,14 +25,15 @@ export default function FormControlLabel({
         {
           'FormControlLabel--bordered': bordered,
           'FormControlLabel--active': bordered && checked,
+          'FormControlLabel--with-children': children,
         },
       )}
       htmlFor={id}
     >
-      <div className="FormControlLabel__label">
+      <ContainerElement>
         <Control checked={checked} className="FormControlLabel__control" id={id} {...controlProps} />
         {text}
-      </div>
+      </ContainerElement>
       {children && (
         <div className="FormControlLabel__children">
           {children}
