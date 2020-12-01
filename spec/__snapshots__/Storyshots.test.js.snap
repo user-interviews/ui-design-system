@@ -284,38 +284,20 @@ exports[`Storyshots Design System/Form Default 1`] = `
       className="RadioButtonGroup"
       name="radio-buttons"
     >
-      <label
-        className="RadioButton"
-      >
-        <input
-          className="RadioButton__input"
-          disabled={false}
-          id="first-radio"
-          name="radio-buttons"
-          type="radio"
-        />
-        <span
-          className="RadioButton__label"
-        >
-          first choice
-        </span>
-      </label>
-      <label
-        className="RadioButton"
-      >
-        <input
-          className="RadioButton__input"
-          disabled={false}
-          id="second-radio"
-          name="radio-buttons"
-          type="radio"
-        />
-        <span
-          className="RadioButton__label"
-        >
-          second choice
-        </span>
-      </label>
+      <input
+        disabled={false}
+        id="first-radio"
+        label="first choice"
+        name="radio-buttons"
+        type="radio"
+      />
+      <input
+        disabled={false}
+        id="second-radio"
+        label="second choice"
+        name="radio-buttons"
+        type="radio"
+      />
     </div>
     <button
       className="btn btn-primary"
@@ -339,14 +321,93 @@ exports[`Storyshots Design System/Form Elements/Form Control Label Checkbox 1`] 
     className="FormControlLabel"
     htmlFor="checkbox"
   >
-    <input
-      className="FormControlLabel__control"
-      defaultValue="1"
-      id="checkbox"
-      name="checkbox"
-      type="checkbox"
-    />
-    Labeled checkbox
+    <div
+      className="FormControlLabel__label"
+    >
+      <input
+        checked={false}
+        className="FormControlLabel__control"
+        id="checkbox"
+        name="checkbox"
+        onChange={[Function]}
+        type="checkbox"
+        value="1"
+      />
+      Labeled checkbox
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Form Control Label Radio 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <label
+    className="FormControlLabel"
+    htmlFor="default"
+  >
+    <div
+      className="FormControlLabel__label"
+    >
+      <input
+        checked={false}
+        className="FormControlLabel__control"
+        disabled={false}
+        id="default"
+        name=""
+        onChange={[Function]}
+        type="radio"
+      />
+      label
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Form Control Label Radio Button With Children 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <label
+    className="FormControlLabel FormControlLabel--bordered"
+    htmlFor="default"
+  >
+    <div
+      className="FormControlLabel__label"
+    >
+      <input
+        checked={false}
+        className="FormControlLabel__control"
+        disabled={false}
+        id="default"
+        name=""
+        onChange={[Function]}
+        type="radio"
+      />
+      Option with child
+    </div>
+    <div
+      className="FormControlLabel__children"
+    >
+      <span
+        style={
+          Object {
+            "color": "#A1A1A1",
+          }
+        }
+      >
+        Some descriptive text for the option above
+      </span>
+    </div>
   </label>
 </div>
 `;
@@ -456,43 +517,55 @@ exports[`Storyshots Design System/Form Elements/Form Group With Checkbox Button 
         className="FormControlLabel FormControlLabel--bordered"
         htmlFor="value-1"
       >
-        <input
-          checked={false}
-          className="FormControlLabel__control"
-          id="value-1"
-          onChange={[Function]}
-          type="checkbox"
-          value="1"
-        />
-        Value 1
+        <div
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-1"
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          Value 1
+        </div>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered"
         htmlFor="value-2"
       >
-        <input
-          checked={false}
-          className="FormControlLabel__control"
-          id="value-2"
-          onChange={[Function]}
-          type="checkbox"
-          value="2"
-        />
-        Value 2
+        <div
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-2"
+            onChange={[Function]}
+            type="checkbox"
+            value="2"
+          />
+          Value 2
+        </div>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered"
         htmlFor="value-3"
       >
-        <input
-          checked={false}
-          className="FormControlLabel__control"
-          id="value-3"
-          onChange={[Function]}
-          type="checkbox"
-          value="3"
-        />
-        Value 3
+        <div
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-3"
+            onChange={[Function]}
+            type="checkbox"
+            value="3"
+          />
+          Value 3
+        </div>
       </label>
     </div>
   </div>
@@ -904,73 +977,6 @@ exports[`Storyshots Design System/Form Elements/Form Group With Trailing Icon 1`
       with trailing icon
     </div>
   </div>
-</div>
-`;
-
-exports[`Storyshots Design System/Form Elements/Radio Button Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <label
-    className="RadioButton"
-  >
-    <input
-      className="RadioButton__input"
-      disabled={false}
-      id="default"
-      name=""
-      type="radio"
-    />
-    <span
-      className="RadioButton__label"
-    >
-      label
-    </span>
-  </label>
-</div>
-`;
-
-exports[`Storyshots Design System/Form Elements/Radio Button With Children 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <label
-    className="RadioButton RadioButton--bordered"
-  >
-    <input
-      className="RadioButton__input"
-      disabled={false}
-      id="default"
-      name=""
-      type="radio"
-    />
-    <span
-      className="RadioButton__label"
-    >
-      Option with child
-    </span>
-    <div
-      className="RadioButton__children"
-    >
-      <span
-        style={
-          Object {
-            "color": "#A1A1A1",
-          }
-        }
-      >
-        Some descriptive text for the option above
-      </span>
-    </div>
-  </label>
 </div>
 `;
 

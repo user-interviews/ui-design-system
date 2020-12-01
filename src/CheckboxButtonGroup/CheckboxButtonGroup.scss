@@ -4,8 +4,9 @@
 .CheckboxButtonGroup {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 
   label {
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 }
