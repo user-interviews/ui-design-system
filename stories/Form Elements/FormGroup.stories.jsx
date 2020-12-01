@@ -7,6 +7,7 @@ import Input from 'src/Input';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CheckboxButton from 'src/CheckboxButton';
 import FormControlLabel from 'src/FormControlLabel';
+import RadioButton from 'src/RadioButton';
 
 export default {
   title: 'Design System/Form Elements/Form Group',
@@ -117,7 +118,7 @@ export const WithLeadingAndTrailingIcons = () => (
   </FormGroup>
 );
 
-const CheckboxButtonGroupComponent = () => {
+const CheckboxButtonGroupComponent = ({ children }) => {
   const [value, setValue] = useState([]);
   const handleChangeValue = (values) => setValue(values);
 
@@ -130,12 +131,34 @@ const CheckboxButtonGroupComponent = () => {
       labelHtmlFor="checkbox-button-group"
     >
       <CheckboxButtonGroup id="checkbox-button-group" value={value} onChange={handleChangeValue}>
-        <FormControlLabel bordered Control={CheckboxButton} id="value-1" text="Value 1" value="1" />
-        <FormControlLabel bordered Control={CheckboxButton} id="value-2" text="Value 2" value="2" />
-        <FormControlLabel bordered Control={CheckboxButton} id="value-3" text="Value 3" value="3" />
+        { children }
       </CheckboxButtonGroup>
     </FormGroup>
   );
 };
 
-export const WithCheckboxButtonGroup = () => <CheckboxButtonGroupComponent />;
+export const WithCheckboxButtonGroup = () => (
+  <CheckboxButtonGroupComponent>
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      id="value-1"
+      text={text('Label 1', 'Value 1')}
+      value="1"
+    />
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      id="value-2"
+      text={text('Label 2', 'Value 2')}
+      value="2"
+    />
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      id="value-3"
+      text={text('Label 3', 'Value 3')}
+      value="3"
+    />
+  </CheckboxButtonGroupComponent>
+);

@@ -7,6 +7,7 @@ import './FormControlLabel.scss';
 export default function FormControlLabel({
   bordered,
   checked,
+  children,
   className,
   Control,
   id,
@@ -25,8 +26,15 @@ export default function FormControlLabel({
       )}
       htmlFor={id}
     >
-      <Control checked={checked} className="FormControlLabel__control" id={id} {...controlProps} />
-      {text}
+      <div className="FormControlLabel__label">
+        <Control checked={checked} className="FormControlLabel__control" id={id} {...controlProps} />
+        {text}
+      </div>
+      {children && (
+        <div className="FormControlLabel__children">
+          {children}
+        </div>
+      )}
     </label>
   );
 }

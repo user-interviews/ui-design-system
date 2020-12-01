@@ -1,12 +1,23 @@
 @import '../../scss/theme';
 
 .FormControlLabel {
-  align-items: center;
+  flex-direction: column;
   display: flex;
+
+  &__label {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
 
   &__control {
     display: flex;
     margin-right: .25rem;
+  }
+
+  &__children {
+    margin-top: 0.5rem;
+    width: 100%;
   }
 
   &--bordered {
@@ -20,10 +31,12 @@
   }
 
   &--active {
-    @include font-type-30--bold;
-
     background-color: $ux-blue-100;
-    color: $ux-blue-700;
     border-color: $ux-blue-200;
+
+    &__label {
+      @include font-type-30--bold;
+      color: $ux-blue-700;
+    }
   }
 }
