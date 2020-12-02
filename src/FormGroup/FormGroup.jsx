@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import InputLabel from 'src/InputLabel';
 
-import './FormGroup.scss';
+import 'scss/forms/form_group.scss';
 
 function renderErrors(errors) {
   if (typeof errors === 'string') {

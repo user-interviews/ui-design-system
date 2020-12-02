@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import './FormControlLabel.scss';
+import 'scss/forms/form_control_label.scss';
 
 export default function FormControlLabel({
   bordered,
