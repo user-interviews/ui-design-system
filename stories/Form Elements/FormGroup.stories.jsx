@@ -22,7 +22,7 @@ export default {
   decorators: [withKnobs],
 };
 
-const InputComponent = (props) => {
+export const InputComponent = (props) => {
   const [value, setValue] = useState('');
   const handleChangeValue = (event) => setValue(event.target.value);
 

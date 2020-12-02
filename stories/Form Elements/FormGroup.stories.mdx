@@ -1,16 +1,21 @@
 import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { text, withKnobs } from '@storybook/addon-knobs';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 import Form from 'src/Form';
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
+import { InputComponent } from './FormGroup.stories'
 
-<Meta title="Design System/Form Elements" component={FormGroup} />
+<Meta title="Design System/Input Fields" component={FormGroup} />
 
-# Input fields
+# Input Fields Anatomy
 
-Input fields let users enter and edit text.
+Input fields let users enter and edit text.  
+These are the variants available in the design system.
+
+## Naked
 
 <Story name="Input Fields">
 <FormGroup id="default">
@@ -18,12 +23,87 @@ Input fields let users enter and edit text.
 </FormGroup>
 </Story>
 
+## Label
+
+<Story name="With Label">
+<FormGroup
+    id="with-label"
+    label="Label"
+    labelHtmlFor="input"
+  >
+    <InputComponent id="input" name="with-label" placeholder="Placeholder text" />
+  </FormGroup>
+</Story>
+
+## Required
+
 <Story name="Required">
 <FormGroup
 id="with-required"
-label="Form Group with label"
+label="Label"
 required
 >
 <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
 </FormGroup>
+</Story>
+
+## With Tooltip
+
+<Story name="With Tooltip">
+<FormGroup
+    id="with-label"
+    label="Label"
+    labelHtmlFor="input"
+    labelTooltip={text('Tooltip', 'Some tooltip text')}
+  >
+    <InputComponent id="input" name="with-label" placeholder="Placeholder text" />
+  </FormGroup>
+  </Story>
+
+## Leading Icon
+
+<Story name="Leading Icon">
+  <FormGroup
+    id="with-leading-icon"
+    labelHtmlFor="input"
+  >
+    <InputComponent id="input" leadingIcon={faSearch} name="with-leading-icon" />
+  </FormGroup>
+</Story>
+
+## Trailing Icon
+
+<Story name="Trailing Icon">
+<FormGroup
+    id="with-trailing-icon"
+    labelHtmlFor="input"
+  >
+    <InputComponent id="input" name="with-leading-icon" trailingIcon={faSearch} />
+  </FormGroup>
+  </Story>
+
+## Leading & Trailing Icons
+
+<Story name="Leading and Trailing Icons">
+  <FormGroup
+    id="with-trailing-icon"
+    labelHtmlFor="input"
+  >
+    <InputComponent id="input" leadingIcon={faSearch} name="with-leading-and-trailing-icons" trailingIcon={faSearch} />
+  </FormGroup>
+    </Story>
+
+## Error
+
+<Story name="Error">
+  <FormGroup
+    displayErrorText
+    errors={{ test: ['invalid input!'] }}
+    id="with-errors"
+    inputKey="test"
+    label="Form Group with errors"
+    labelHtmlFor="input"
+  >
+    <InputComponent id="input" name="with-errors" />
+  </FormGroup>
 </Story>
