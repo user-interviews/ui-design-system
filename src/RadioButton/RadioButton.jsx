@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 import './RadioButton.scss';
 
-export default function RadioButton(props) {
+const RadioButton = React.forwardRef((props, ref) => {
   const classNames = classnames('RadioButton', {
     'RadioButton--bordered': props.bordered,
   });
@@ -16,6 +16,7 @@ export default function RadioButton(props) {
         disabled={props.disabled}
         id={props.id}
         name={props.name}
+        ref={ref}
         type="radio"
         {...props.radioButtonProps}
       />
@@ -31,7 +32,7 @@ export default function RadioButton(props) {
       )}
     </label>
   );
-}
+});
 
 RadioButton.propTypes = {
   bordered: PropTypes.bool,
@@ -50,3 +51,5 @@ RadioButton.defaultProps = {
   name: '',
   radioButtonProps: {},
 };
+
+export default RadioButton;
