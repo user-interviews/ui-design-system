@@ -1,4 +1,4 @@
-import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Meta, Story, Preview, ArgsTable } from '@storybook/addon-docs/blocks';
 import { text, withKnobs } from '@storybook/addon-knobs';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
@@ -22,6 +22,7 @@ These are the variants available in the design system.
   <InputComponent id="default-input" name="default" placeholder="default" />
 </FormGroup>
 </Story>
+
 
 ## Label
 
@@ -101,7 +102,7 @@ required
     errors={{ test: ['invalid input!'] }}
     id="with-errors"
     inputKey="test"
-    label="Form Group with errors"
+    label="Label"
     labelHtmlFor="input"
   >
     <InputComponent id="input" name="with-errors" />
