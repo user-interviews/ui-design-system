@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const CheckboxButton = ({
+const CheckboxButton = React.forwardRef(({
   checked,
   className,
   disabled,
@@ -11,7 +11,7 @@ const CheckboxButton = ({
   value,
   onChange,
   ...rest
-}) => (
+}, ref) => (
   <input
     checked={checked}
     className={className}
@@ -19,12 +19,13 @@ const CheckboxButton = ({
     id={id}
     indeterminate={indeterminate}
     name={name}
+    ref={ref}
     type="checkbox"
     value={value}
     onChange={onChange}
     {...rest}
   />
-);
+));
 
 CheckboxButton.propTypes = {
   checked: PropTypes.bool,
@@ -36,6 +37,7 @@ CheckboxButton.propTypes = {
   value: PropTypes.oneOfType([
     PropTypes.number,
     PropTypes.string,
+    PropTypes.bool,
   ]),
   onChange: PropTypes.func,
 };
@@ -49,5 +51,7 @@ CheckboxButton.defaultProps = {
   value: undefined,
   onChange: undefined,
 };
+
+CheckboxButton.displayName = 'CheckboxButton';
 
 export default CheckboxButton;

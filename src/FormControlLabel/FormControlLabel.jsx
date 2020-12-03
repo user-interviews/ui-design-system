@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 import 'scss/forms/form_control_label.scss';
 
-export default function FormControlLabel({
+const FormControlLabel = React.forwardRef(({
   bordered,
   checked,
   className,
@@ -12,10 +12,9 @@ export default function FormControlLabel({
   id,
   text,
   ...controlProps
-}) {
-  return (
-    <label
-      className={classnames(
+}, ref) => (
+  <label
+    className={classnames(
         'FormControlLabel',
         className,
         {
@@ -23,19 +22,18 @@ export default function FormControlLabel({
           'FormControlLabel--active': bordered && checked,
         },
       )}
-      htmlFor={id}
-    >
-      <Control checked={checked} className="FormControlLabel__control" id={id} {...controlProps} />
-      {text}
-    </label>
-  );
-}
+    htmlFor={id}
+  >
+    <Control checked={checked} className="FormControlLabel__control" id={id} ref={ref} {...controlProps} />
+    {text}
+  </label>
+  ));
 
 FormControlLabel.propTypes = {
   bordered: PropTypes.bool,
   checked: PropTypes.bool,
   className: PropTypes.string,
-  Control: PropTypes.func.isRequired,
+  Control: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
   id: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
@@ -45,3 +43,7 @@ FormControlLabel.defaultProps = {
   checked: undefined,
   className: undefined,
 };
+
+FormControlLabel.displayName = 'FormControlLabel';
+
+export default FormControlLabel;
