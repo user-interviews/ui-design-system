@@ -340,11 +340,13 @@ exports[`Storyshots Design System/Form Elements/Form Control Label Checkbox 1`] 
     htmlFor="checkbox"
   >
     <input
+      checked={false}
       className="FormControlLabel__control"
-      defaultValue="1"
       id="checkbox"
       name="checkbox"
+      onChange={[Function]}
       type="checkbox"
+      value="1"
     />
     Labeled checkbox
   </label>
@@ -963,7 +965,7 @@ exports[`Storyshots Design System/Form Elements/Radio Button With Children 1`] =
       <span
         style={
           Object {
-            "color": "#A1A1A1",
+            "color": "#444444",
           }
         }
       >
@@ -971,6 +973,80 @@ exports[`Storyshots Design System/Form Elements/Radio Button With Children 1`] =
       </span>
     </div>
   </label>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Radio Button With Radio Button Group 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="RadioButtonGroup"
+    name=""
+  >
+    <label
+      className="RadioButton RadioButton--bordered"
+    >
+      <input
+        className="RadioButton__input"
+        disabled={false}
+        id="radio-1"
+        name=""
+        type="radio"
+      />
+      <span
+        className="RadioButton__label"
+      >
+        First option with child
+      </span>
+      <div
+        className="RadioButton__children"
+      >
+        <span
+          style={
+            Object {
+              "color": "#444444",
+            }
+          }
+        >
+          Some descriptive text for the option above
+        </span>
+      </div>
+    </label>
+    <label
+      className="RadioButton RadioButton--bordered"
+    >
+      <input
+        className="RadioButton__input"
+        disabled={false}
+        id="radio-2"
+        name=""
+        type="radio"
+      />
+      <span
+        className="RadioButton__label"
+      >
+        Second option with child
+      </span>
+      <div
+        className="RadioButton__children"
+      >
+        <span
+          style={
+            Object {
+              "color": "#444444",
+            }
+          }
+        >
+          And another option to choose from
+        </span>
+      </div>
+    </label>
+  </div>
 </div>
 `;
 

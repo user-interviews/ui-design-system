@@ -1,7 +1,14 @@
 import React from 'react';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import {
+  withKnobs,
+  text,
+  boolean,
+  radios,
+} from '@storybook/addon-knobs';
 
+import RadioButtonGroup from 'src/RadioButtonGroup';
 import RadioButton from 'src/RadioButton';
+import { ORIENTATIONS } from 'src/RadioButtonGroup/RadioButtonGroup';
 import { colors } from 'src/Styles';
 
 export default {
@@ -25,6 +32,31 @@ export const WithChildren = () => (
     id="default"
     label="Option with child"
   >
-    <span style={{ color: colors.uxGray500 }}>Some descriptive text for the option above</span>
+    <span style={{ color: colors.uxGray800 }}>Some descriptive text for the option above</span>
   </RadioButton>
+);
+
+export const WithRadioButtonGroup = () => (
+  <RadioButtonGroup
+    orientation={radios(
+      'Orientation',
+      Object.values(ORIENTATIONS),
+      ORIENTATIONS.COLUMN,
+    )}
+  >
+    <RadioButton
+      bordered
+      id="radio-1"
+      label={text('First Label', 'First option with child')}
+    >
+      <span style={{ color: colors.uxGray800 }}>Some descriptive text for the option above</span>
+    </RadioButton>
+    <RadioButton
+      bordered
+      id="radio-2"
+      label={text('Second Label', 'Second option with child')}
+    >
+      <span style={{ color: colors.uxGray800 }}>And another option to choose from</span>
+    </RadioButton>
+  </RadioButtonGroup>
 );

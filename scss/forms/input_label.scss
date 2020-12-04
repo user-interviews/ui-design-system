@@ -1,4 +1,5 @@
-@import '../../scss/theme';
+@import '../colors';
+@import '../typography';
 
 .InputLabel {
   @include font-type-30--bold;
@@ -9,3 +10,4 @@
     color: $ux-gray-800;
   }
 }
+

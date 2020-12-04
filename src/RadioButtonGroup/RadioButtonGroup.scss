@@ -1,0 +1,21 @@
+@import '../../scss/theme';
+
+.RadioButtonGroup {
+  &--row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .RadioButton {
+      margin-right: 0.5rem;
+    }
+   }
+
+  .RadioButton {
+    padding: 1rem;
+
+    &__label {
+      @include font-type-30--bold;
+    }
+  }
+}
