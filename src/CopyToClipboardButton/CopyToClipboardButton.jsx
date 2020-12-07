@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy } from '@fortawesome/free-regular-svg-icons';
-import { CopyToClipboard as ReactCopyToClipboard } from 'react-copy-to-clipboard';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import Popper from 'src/Popper';
 import TrackedButton from 'src/TrackedButton';
@@ -26,7 +26,7 @@ function CopyToClipboardButton(props) {
 
   return (
     <div className="CopyToClipboardButton">
-      <ReactCopyToClipboard text={props.copyText} onCopy={handleClickCopy}>
+      <CopyToClipboard text={props.copyText} onCopy={handleClickCopy}>
         <TrackedButton
           className={classNames(
             'CopyToClipboardButton',
@@ -53,7 +53,7 @@ function CopyToClipboardButton(props) {
             </span>
           </Popper>
         </TrackedButton>
-      </ReactCopyToClipboard>
+      </CopyToClipboard>
     </div>
   );
 }
