@@ -1,0 +1,24 @@
+@import '../../scss/theme';
+
+.CopyToClipboardButton {
+  align-items: center;
+  border-radius: .25rem;
+  color: $ux-blue;
+  display: flex;
+  font-weight: $font-weight-bold;
+  justify-content: space-between;
+  min-height: 2rem;
+  padding: 0 0 0 .375rem;
+
+  &__display-text {
+    color: $ux-blue;
+    margin-left: .5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__icon {
+    color: $ux-blue;
+  }
+}
