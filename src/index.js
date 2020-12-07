@@ -1,6 +1,7 @@
 import CheckboxButton from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
+import CopyToClipboardButton from 'src/CopyToClipboardButton';
 import FadeTransition from 'src/FadeTransition';
 import {
   AlertMessage,
@@ -33,6 +34,7 @@ export {
   CheckboxButton,
   CheckboxButtonGroup,
   CopyToClipboard,
+  CopyToClipboardButton,
   FadeTransition,
   Flash,
   Form,

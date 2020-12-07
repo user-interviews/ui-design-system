@@ -1,4 +1,8 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
 @import './colors';
+@import '~bootstrap/scss/buttons';
 
 .btn-link--neutral {
   color: $ux-gray-500;
@@ -9,29 +13,11 @@
 }
 
 .btn-outline-secondary {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px 116px;
-
-  position: static;
-  width: 351px;
-  height: 36px;
-  left: 0.5px;
-  top: 0px;
-
-  background: $ux-white;
-
-  border: 1px solid $ux-blue;
-  box-sizing: border-box;
-  border-radius: 4px;
-
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0px 8px;
+  color: $ux-blue;
+  border-color: $ux-blue;
 
   &:hover {
     background-color: $ux-blue;
+    color: $ux-white;
   }
 }

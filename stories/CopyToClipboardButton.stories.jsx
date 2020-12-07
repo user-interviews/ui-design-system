@@ -12,7 +12,7 @@ export default {
 export const Default = () => (
   <CopyToClipboardButton
     copyText={text('Copy text', 'Copy me!')}
-    displayText={text('Display text', 'I am displayed')}
+    displayText={text('Display text', 'Click to copy')}
     trackingEvent="copy-text"
   />
 );
