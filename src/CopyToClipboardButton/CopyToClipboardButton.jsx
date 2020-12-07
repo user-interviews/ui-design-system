@@ -12,6 +12,7 @@ import './CopyToClipboardButton.scss';
 import 'scss/buttons.scss';
 
 export const ButtonVariants = {
+  NEUTRAL: '',
   SECONDARY: 'btn-outline-secondary',
 };
 

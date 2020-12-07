@@ -2,6 +2,7 @@
 
 .CopyToClipboardButton {
   &__display-text {
+    font-weight: $font-weight-bold;
     margin-left: .5rem;
   }
 }

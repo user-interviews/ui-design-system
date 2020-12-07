@@ -1,1 +1,1 @@
-export { default } from './CopyToClipboardButton';
+export { default, ButtonVariants } from './CopyToClipboardButton';
