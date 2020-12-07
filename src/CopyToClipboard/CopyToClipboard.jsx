@@ -9,7 +9,6 @@ function CopyToClipboard(props) {
     <div className="CopyToClipboard">
       <span className="CopyToClipboard__copy-text">{props.copyText}</span>
       <CopyToClipboardButton
-        aria-label="Copy to clipboard button"
         copyText={props.copyText}
         trackingEvent={props.trackingEvent}
         variant={ButtonVariants.NEUTRAL}

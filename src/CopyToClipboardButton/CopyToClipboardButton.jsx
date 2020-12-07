@@ -28,6 +28,7 @@ function CopyToClipboardButton(props) {
     <div className="CopyToClipboardButton">
       <CopyToClipboard text={props.copyText} onCopy={handleClickCopy}>
         <TrackedButton
+          aria-label="Copy to clipboard"
           className={classNames(
             'CopyToClipboardButton',
             `btn ${props.variant}`,
