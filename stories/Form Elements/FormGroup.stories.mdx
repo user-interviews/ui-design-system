@@ -15,10 +15,11 @@ import { InputComponent, CheckboxButtonGroupComponent } from './FormGroup.storie
 
 # Input Fields Anatomy
 
-Input fields let users enter and edit text.  
-These are the variants available in the design system.
+Input fields let users enter and edit text. These are the variants available in the design system.
 
-## Naked
+## Placeholder Text
+
+- Used to give the user an idea of what sort text they should include here. Does not carry over as default text if no other text is added, so if left blank will produce an error. 
 
 <Preview>
 <Story name="Input Fields">
@@ -29,13 +30,16 @@ These are the variants available in the design system.
 </Preview>
 
 
-## Label
+## Helper Text
+
+- Information tied to a field that gives suggestions or additional information that might be beneficial to the user
 
 <Preview>
 <Story name="With Label">
 <FormGroup
     id="with-label"
     label="Label"
+    helperText="test helper text"
     labelHtmlFor="input"
   >
     <InputComponent id="input" name="with-label" placeholder="Placeholder text" />
@@ -44,6 +48,10 @@ These are the variants available in the design system.
 </Preview>
 
 ## Required
+
+- To indicate that a field is required, display "(Required)" next to the label
+- If some fields are required, indicate all required ones
+- If most fields are required, indicate optional fields by displaying "(Optional)" next to the label
 
 <Preview>
 <Story name="Required">
@@ -58,6 +66,8 @@ required
 </Preview>
 
 ## With Tooltip
+
+- Information users will typically only reference once (and then it's learned) or here and there. This information is typically more of a recommendation, and not vital for the user to know, but helpful if they do!
 
 <Preview>
 <Story name="With Tooltip">
@@ -112,6 +122,8 @@ required
     </Preview>
 
 ## Error
+
+- Keep the text as short as possible; for complex info, provide a link to more information in a new browser tab
 
 <Preview>
 <Story name="Error">
