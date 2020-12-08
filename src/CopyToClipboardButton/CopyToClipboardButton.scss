@@ -2,7 +2,7 @@
 
 .CopyToClipboardButton {
   &__display-text {
-    font-weight: $font-weight-bold;
+    @include font-type-40--bold;
     margin-left: .5rem;
   }
 }

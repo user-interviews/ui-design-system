@@ -43,7 +43,6 @@ function CopyToClipboardButton(props) {
           >
             <span>
               <FontAwesomeIcon
-                className="CopyToClipboardButton__icon"
                 icon={faCopy}
               />
               {props.displayText && (
@@ -63,7 +62,7 @@ CopyToClipboardButton.propTypes = {
   copyText: PropTypes.string,
   displayText: PropTypes.string,
   trackingEvent: PropTypes.string.isRequired,
-  variant: PropTypes.string,
+  variant: PropTypes.oneOf(Object.values(ButtonVariants)),
 };
 
 CopyToClipboardButton.defaultProps = {
