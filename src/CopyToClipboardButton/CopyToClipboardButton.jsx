@@ -62,7 +62,7 @@ CopyToClipboardButton.propTypes = {
   copyText: PropTypes.string,
   displayText: PropTypes.string,
   trackingEvent: PropTypes.string.isRequired,
-  variant: PropTypes.oneOf(Object.values(ButtonVariants)),
+  variant: PropTypes.oneOf(Object.keys(ButtonVariants)),
 };
 
 CopyToClipboardButton.defaultProps = {
