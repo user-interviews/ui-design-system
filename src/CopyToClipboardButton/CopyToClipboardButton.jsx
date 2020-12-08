@@ -68,7 +68,7 @@ CopyToClipboardButton.propTypes = {
 CopyToClipboardButton.defaultProps = {
   copyText: '',
   displayText: undefined,
-  variant: ButtonVariants.SECONDARY,
+  variant: ButtonVariants.NEUTRAL,
 };
 
 export default CopyToClipboardButton;

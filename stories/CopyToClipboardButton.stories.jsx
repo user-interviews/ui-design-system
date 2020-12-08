@@ -18,11 +18,11 @@ export const Default = () => (
   />
 );
 
-export const Neutral = () => (
+export const Secondary = () => (
   <CopyToClipboardButton
     copyText={text('Copy text', 'Copy me!')}
     displayText={text('Display text', 'Click to copy')}
     trackingEvent="copy-text"
-    variant={ButtonVariants.NEUTRAL}
+    variant={ButtonVariants.SECONDARY}
   />
 );
