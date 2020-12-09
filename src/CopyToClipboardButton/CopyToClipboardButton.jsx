@@ -12,8 +12,8 @@ import './CopyToClipboardButton.scss';
 import 'scss/buttons.scss';
 
 export const ButtonVariants = {
-  NEUTRAL: '',
-  SECONDARY: 'btn-outline-secondary',
+  NEUTRAL: 'neutral',
+  SECONDARY: 'secondary',
 };
 
 function CopyToClipboardButton(props) {
@@ -24,8 +24,6 @@ function CopyToClipboardButton(props) {
     setTimeout(() => setCopied(false), 1000);
   };
 
-  const buttonVariant = ButtonVariants[props.variant];
-
   return (
     <div className="CopyToClipboardButton">
       <CopyToClipboard text={props.copyText} onCopy={handleClickCopy}>
@@ -33,7 +31,9 @@ function CopyToClipboardButton(props) {
           aria-label="Copy to clipboard"
           className={classNames(
             'CopyToClipboardButton',
-            `btn ${buttonVariant}`,
+            'btn', {
+            'btn-outline-secondary': props.variant === ButtonVariants.SECONDARY,
+            },
           )}
           event={props.trackingEvent}
           type="button"
