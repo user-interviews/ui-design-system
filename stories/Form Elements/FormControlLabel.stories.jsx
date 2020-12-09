@@ -38,3 +38,17 @@ export const Checkbox = () => (
     value="1"
   />
 );
+
+export const CheckboxWithChildren = () => (
+  <FormControlLabelCheckboxComponent
+    bordered
+    Control={CheckboxButton}
+    id="checkbox"
+    name="checkbox"
+    text="Labeled checkbox"
+    type="checkbox"
+    value="1"
+  >
+    <div>This checkbox has some helper text too!</div>
+  </FormControlLabelCheckboxComponent>
+);

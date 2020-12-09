@@ -10,12 +10,16 @@
       margin-right: 0.5rem;
       display: block;
     }
+
+    .RadioButton:last-child {
+      margin-right: 0;
+    }
    }
 
-  .RadioButton {
+  .RadioButton--bordered {
     padding: 1rem;
 
-    &__label {
+    .RadioButton__label {
       @include font-type-30--bold;
     }
   }
