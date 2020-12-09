@@ -8,30 +8,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../scss/global.scss';
 
 export default {
-  title: 'Design System/Alert',
+  title: 'Design System/Alerts',
   component: AlertMessage,
   decorators: [withKnobs],
 };
 
-export const WithoutDismiss = () => (
-  <AlertMessage
-    id="1"
-    message={text('Message', 'Default message')}
-    title={text('Title', 'Default title')}
-    type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
-  />
-);
-
-const onDismiss = (id) => {
+export const onDismiss = (id) => {
   action('alert dismissed')(id);
 };
-
-export const WithDismiss = () => (
-  <AlertMessage
-    id="1"
-    message={text('Message', 'Default message')}
-    title={text('Title', 'Default title')}
-    type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
-    onDismiss={onDismiss}
-  />
-);
