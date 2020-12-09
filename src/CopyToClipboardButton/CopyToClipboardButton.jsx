@@ -24,6 +24,8 @@ function CopyToClipboardButton(props) {
     setTimeout(() => setCopied(false), 1000);
   };
 
+  const buttonVariant = ButtonVariants[props.variant];
+
   return (
     <div className="CopyToClipboardButton">
       <CopyToClipboard text={props.copyText} onCopy={handleClickCopy}>
@@ -31,7 +33,7 @@ function CopyToClipboardButton(props) {
           aria-label="Copy to clipboard"
           className={classNames(
             'CopyToClipboardButton',
-            `btn ${props.variant}`,
+            `btn ${buttonVariant}`,
           )}
           event={props.trackingEvent}
           type="button"
