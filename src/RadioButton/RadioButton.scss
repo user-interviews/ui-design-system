@@ -7,6 +7,9 @@
   padding: 0.5rem;
   border: 1px solid transparent;
   flex-wrap: wrap;
+  flex: 1 1 0;
+  cursor: pointer;
+  min-width: 16rem;
 
   &--bordered {
     border: 1px solid $ux-gray-400;
