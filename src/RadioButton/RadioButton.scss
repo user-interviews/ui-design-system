@@ -18,11 +18,18 @@
 
   &__label {
     flex-grow: 1;
-    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+
+  &__input {
+    margin-right: 0.5rem;
+    vertical-align: middle;
   }
 
   &__children {
+    @include font-type-30;
     margin-top: 0.5rem;
     width: 100%;
+    color: $ux-gray-800;
   }
 }

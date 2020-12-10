@@ -9,4 +9,18 @@
   label {
     margin-bottom: 0.5rem;
   }
+
+  .FormControlLabel--bordered {
+    padding: 0.3125rem 0.625rem;
+    margin-right: 0.5rem;
+  }
+
+  .FormControlLabel--active {
+    background-color: $ux-blue-100;
+    border-color: $ux-blue-200;
+
+    &__label {
+      color: $ux-blue-700;
+    }
+  }
 }

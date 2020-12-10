@@ -7,6 +7,7 @@ import 'scss/forms/form_control_label.scss';
 const FormControlLabel = React.forwardRef(({
   bordered,
   checked,
+  children,
   className,
   Control,
   id,
@@ -15,19 +16,33 @@ const FormControlLabel = React.forwardRef(({
 }, ref) => (
   <label
     className={classnames(
-        'FormControlLabel',
-        className,
-        {
-          'FormControlLabel--bordered': bordered,
-          'FormControlLabel--active': bordered && checked,
-        },
-      )}
+      'FormControlLabel',
+      className,
+      {
+        'FormControlLabel--bordered': bordered,
+        'FormControlLabel--active': checked,
+        'FormControlLabel--with-children': !!children,
+      },
+    )}
     htmlFor={id}
   >
-    <Control checked={checked} className="FormControlLabel__control" id={id} ref={ref} {...controlProps} />
-    {text}
+    <div className="FormControlLabel__label">
+      <Control
+        checked={checked}
+        className="FormControlLabel__control"
+        id={id}
+        ref={ref}
+        {...controlProps}
+      />
+      {text}
+    </div>
+    {children && (
+      <div className="FormControlLabel__children">
+        {children}
+      </div>
+    )}
   </label>
-  ));
+));
 
 FormControlLabel.propTypes = {
   bordered: PropTypes.bool,

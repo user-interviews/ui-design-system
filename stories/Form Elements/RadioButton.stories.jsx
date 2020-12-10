@@ -49,14 +49,14 @@ export const WithRadioButtonGroup = () => (
       id="radio-1"
       label={text('First Label', 'First option with child')}
     >
-      <span style={{ color: colors.uxGray800 }}>Some descriptive text for the option above</span>
+      <span>Some descriptive text for the option above</span>
     </RadioButton>
     <RadioButton
       bordered
       id="radio-2"
       label={text('Second Label', 'Second option with child')}
     >
-      <span style={{ color: colors.uxGray800 }}>And another option to choose from</span>
+      <span>And another option to choose from</span>
     </RadioButton>
   </RadioButtonGroup>
 );
