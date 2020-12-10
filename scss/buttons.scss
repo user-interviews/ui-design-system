@@ -1,3 +1,8 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/buttons';
+
 @import './colors';
 
 .btn-link--neutral {
@@ -5,5 +10,15 @@
 
   &:hover {
     color: $ux-gray-700;
+  }
+}
+
+.btn-outline-secondary {
+  color: $ux-blue;
+  border-color: $ux-blue;
+
+  &:hover {
+    background-color: $ux-blue;
+    color: $ux-white;
   }
 }
