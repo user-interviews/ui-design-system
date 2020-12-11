@@ -6,21 +6,23 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    .RadioButton {
+    &--full-width {
+      width: 100%;
+
+      .FormControlLabel {
+        flex: 1 1 0;
+      }
+    }
+
+    .FormControlLabel {
+      flex-wrap: wrap;
       margin-right: 0.5rem;
+      min-width: 16rem;
       display: block;
     }
 
-    .RadioButton:last-child {
+    .FormControlLabel:last-child {
       margin-right: 0;
-    }
-   }
-
-  .RadioButton--bordered {
-    padding: 1rem;
-
-    .RadioButton__label {
-      @include font-type-30--bold;
     }
   }
 }

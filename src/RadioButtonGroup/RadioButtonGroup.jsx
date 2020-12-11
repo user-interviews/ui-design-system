@@ -9,29 +9,39 @@ export const ORIENTATIONS = {
   ROW: 'row',
 };
 
-export default function RadioButtonGroup(props) {
+export default function RadioButtonGroup({
+  children,
+  fullWidth,
+  name,
+  orientation,
+}) {
+  const row = orientation === ORIENTATIONS.ROW;
+
   return (
     <div
       className={classnames(
         'RadioButtonGroup',
         {
-          'RadioButtonGroup--row': (props.orientation === ORIENTATIONS.ROW),
+          'RadioButtonGroup--row': row,
+          'RadioButtonGroup--row--full-width': row && fullWidth,
         },
       )}
-      name={props.name}
+      name={name}
     >
-      {props.children}
+      {children}
     </div>
   );
 }
 
 RadioButtonGroup.propTypes = {
   children: PropTypes.node.isRequired,
+  fullWidth: PropTypes.bool,
   name: PropTypes.string,
   orientation: PropTypes.oneOf(Object.values(ORIENTATIONS)),
 };
 
 RadioButtonGroup.defaultProps = {
+  fullWidth: false,
   name: '',
   orientation: ORIENTATIONS.COLUMN,
 };
