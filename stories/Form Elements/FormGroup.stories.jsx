@@ -1,12 +1,20 @@
 import React, { useState } from 'react';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { text, withKnobs } from '@storybook/addon-knobs';
+import {
+  boolean,
+  radios,
+  text,
+  withKnobs,
+} from '@storybook/addon-knobs';
 
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CheckboxButton from 'src/CheckboxButton';
 import FormControlLabel from 'src/FormControlLabel';
+import RadioButtonGroup from 'src/RadioButtonGroup';
+import { ORIENTATIONS } from 'src/RadioButtonGroup/RadioButtonGroup';
+import RadioButton from 'src/RadioButton';
 
 export default {
   title: 'Design System/Form Elements/Form Group',
@@ -117,27 +125,44 @@ export const WithLeadingAndTrailingIcons = () => (
   </FormGroup>
 );
 
-const CheckboxButtonGroupComponent = ({ children }) => {
+/* eslint-disable react/prop-types */
+const ButtonGroupComponent = ({
+  ButtonGroup,
+  bordered,
+  children,
+  id,
+  label,
+  labelHelperText,
+  labelHtmlFor,
+}) => {
   const [value, setValue] = useState([]);
   const handleChangeValue = (values) => setValue(values);
 
   return (
     <FormGroup
-      bordered
-      id="with-checkbox-button-group"
-      label="Form Group with checkbox button group"
-      labelHelperText="with some helper text"
-      labelHtmlFor="checkbox-button-group"
+      bordered={bordered}
+      id={id}
+      label={label}
+      labelHelperText={labelHelperText}
+      labelHtmlFor={labelHtmlFor}
     >
-      <CheckboxButtonGroup id="checkbox-button-group" value={value} onChange={handleChangeValue}>
+      <ButtonGroup id="button-group" value={value} onChange={handleChangeValue}>
         { children }
-      </CheckboxButtonGroup>
+      </ButtonGroup>
     </FormGroup>
   );
 };
+/* eslint-enable react/prop-types */
 
 export const WithCheckboxButtonGroup = () => (
-  <CheckboxButtonGroupComponent>
+  <ButtonGroupComponent
+    bordered={boolean('Bordered Form Group', true)}
+    ButtonGroup={CheckboxButtonGroup}
+    id="with-checkbox-button-group"
+    label="Form Group with checkbox button group"
+    labelHelperText="with some helper text"
+    labelHtmlFor="checkbox-button-group"
+  >
     <FormControlLabel
       bordered
       Control={CheckboxButton}
@@ -159,5 +184,55 @@ export const WithCheckboxButtonGroup = () => (
       text={text('Label 3', 'Value 3')}
       value="3"
     />
-  </CheckboxButtonGroupComponent>
+  </ButtonGroupComponent>
 );
+
+export const WithRadioButtonGroup = () => {
+  const bordered = boolean('Bordered buttons', false);
+
+  return (
+    <ButtonGroupComponent
+      bordered={boolean('Bordered Form Group', true)}
+      ButtonGroup={(props) => (
+        <RadioButtonGroup
+          fullWidth={boolean('Full width', false)}
+          orientation={radios(
+            'Orientation',
+            Object.values(ORIENTATIONS),
+            ORIENTATIONS.COLUMN,
+          )}
+          {...props}
+        />
+      )}
+      id="with-radio-button-group"
+      label="Form Group with radio button group"
+      labelHelperText="with some helper text"
+      labelHtmlFor="radio-button-group"
+    >
+      <FormControlLabel
+        bordered={bordered}
+        Control={RadioButton}
+        id="value-1"
+        name="choice"
+        text={text('Label 1', 'Value 1')}
+        value="1"
+      />
+      <FormControlLabel
+        bordered={bordered}
+        Control={RadioButton}
+        id="value-2"
+        name="choice"
+        text={text('Label 2', 'Value 2')}
+        value="2"
+      />
+      <FormControlLabel
+        bordered={bordered}
+        Control={RadioButton}
+        id="value-3"
+        name="choice"
+        text={text('Label 3', 'Value 3')}
+        value="3"
+      />
+    </ButtonGroupComponent>
+  );
+};

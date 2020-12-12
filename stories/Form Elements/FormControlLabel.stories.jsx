@@ -4,6 +4,7 @@ import { boolean, withKnobs } from '@storybook/addon-knobs';
 
 import FormControlLabel from 'src/FormControlLabel';
 import CheckboxButton from 'src/CheckboxButton';
+import RadioButton from 'src/RadioButton';
 
 export default {
   title: 'Design System/Form Elements/Form Control Label',
@@ -11,11 +12,11 @@ export default {
   decorators: [withKnobs()],
 };
 
-const FormControlLabelCheckboxComponent = (props) => {
+const FormControlLabelControlComponent = (props) => {
   const [value, setValue] = useState(false);
   const onChange = (e) => {
     setValue(e.target.checked);
-    action('Checkbox onChange')(e);
+    action('Control onChange')(e);
   };
 
   return (
@@ -28,27 +29,49 @@ const FormControlLabelCheckboxComponent = (props) => {
 };
 
 export const Checkbox = () => (
-  <FormControlLabelCheckboxComponent
+  <FormControlLabelControlComponent
     bordered={boolean('Bordered button', false)}
     Control={CheckboxButton}
     id="checkbox"
     name="checkbox"
     text="Labeled checkbox"
-    type="checkbox"
     value="1"
   />
 );
 
 export const CheckboxWithChildren = () => (
-  <FormControlLabelCheckboxComponent
-    bordered
+  <FormControlLabelControlComponent
+    bordered={boolean('Bordered button', true)}
     Control={CheckboxButton}
     id="checkbox"
     name="checkbox"
     text="Labeled checkbox"
-    type="checkbox"
     value="1"
   >
     <div>This checkbox has some helper text too!</div>
-  </FormControlLabelCheckboxComponent>
+  </FormControlLabelControlComponent>
+);
+
+export const Radio = () => (
+  <FormControlLabelControlComponent
+    bordered={boolean('Bordered radio', false)}
+    Control={RadioButton}
+    id="radio"
+    name="radio"
+    text="Labeled radio"
+    value="1"
+  />
+);
+
+export const RadioWithChildren = () => (
+  <FormControlLabelControlComponent
+    bordered={boolean('Bordered radio', true)}
+    Control={RadioButton}
+    id="radio"
+    name="radio"
+    text="Labeled radio"
+    value="1"
+  >
+    <div>This radio button has some helper text too!</div>
+  </FormControlLabelControlComponent>
 );

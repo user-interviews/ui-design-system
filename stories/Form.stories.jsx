@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 
 import Form from 'src/Form';
+import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
 import RadioButton from 'src/RadioButton';
@@ -48,8 +49,18 @@ export const Default = () => (
       <InputComponent id="phone-input" name="phone" type="text" />
     </FormGroup>
     <RadioButtonGroup name="radio-buttons">
-      <RadioButton id="first-radio" label="first choice" name="radio-buttons" />
-      <RadioButton id="second-radio" label="second choice" name="radio-buttons" />
+      <FormControlLabel
+        Control={RadioButton}
+        id="first-radio"
+        name="radio-buttons"
+        text="first choice"
+      />
+      <FormControlLabel
+        Control={RadioButton}
+        id="second-radio"
+        name="radio-buttons"
+        text="second choice"
+      />
     </RadioButtonGroup>
     <button className="btn btn-primary" type="submit">Save</button>
   </Form>
