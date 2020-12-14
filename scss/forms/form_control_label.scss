@@ -39,4 +39,19 @@
     padding: 1rem;
     cursor: pointer;
   }
+
+  &--disabled {
+    background-color: $ux-gray-100;
+    cursor: not-allowed;
+    color: $ux-gray-400;
+
+    .FormControlLabel__children {
+      color: $ux-gray-400;
+    }
+  }
+
+  input[type='checkbox'], input[type='radio'] {
+    min-height: 1rem;
+    min-width: 1rem;
+  }
 }

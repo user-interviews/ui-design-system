@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin-right: -0.5rem;
 
     &--full-width {
       width: 100%;
@@ -19,10 +20,6 @@
       margin-right: 0.5rem;
       min-width: 16rem;
       display: block;
-    }
-
-    .FormControlLabel:last-child {
-      margin-right: 0;
     }
   }
 }
