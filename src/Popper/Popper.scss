@@ -12,6 +12,7 @@
   z-index: $z-index-flash;
 
   &__header {
+    font-weight: $font-weight-bold;
     border-bottom: 1px solid $ux-gray-300;
     margin-bottom: 0.5rem;
   }
@@ -19,6 +20,5 @@
   &--dark {
     background-color: $ux-gray-800;
     color: $ux-gray-100;
-    font-weight: $font-weight-bold;
   }
 }

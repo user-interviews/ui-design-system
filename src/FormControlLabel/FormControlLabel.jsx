@@ -10,6 +10,7 @@ const FormControlLabel = React.forwardRef(({
   children,
   className,
   Control,
+  disabled,
   id,
   text,
   ...controlProps
@@ -22,6 +23,7 @@ const FormControlLabel = React.forwardRef(({
         'FormControlLabel--bordered': bordered,
         'FormControlLabel--active': checked,
         'FormControlLabel--with-children': !!children,
+        'FormControlLabel--disabled': bordered && disabled,
       },
     )}
     htmlFor={id}
@@ -30,6 +32,7 @@ const FormControlLabel = React.forwardRef(({
       <Control
         checked={checked}
         className="FormControlLabel__control"
+        disabled={disabled}
         id={id}
         ref={ref}
         {...controlProps}
@@ -49,6 +52,7 @@ FormControlLabel.propTypes = {
   checked: PropTypes.bool,
   className: PropTypes.string,
   Control: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  disabled: PropTypes.bool,
   id: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
 };
@@ -57,6 +61,7 @@ FormControlLabel.defaultProps = {
   bordered: false,
   checked: undefined,
   className: undefined,
+  disabled: undefined,
 };
 
 FormControlLabel.displayName = 'FormControlLabel';

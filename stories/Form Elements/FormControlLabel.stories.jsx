@@ -32,6 +32,7 @@ export const Checkbox = () => (
   <FormControlLabelControlComponent
     bordered={boolean('Bordered button', false)}
     Control={CheckboxButton}
+    disabled={boolean('Disabled', false)}
     id="checkbox"
     name="checkbox"
     text="Labeled checkbox"
