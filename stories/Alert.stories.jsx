@@ -11,6 +11,7 @@ export default {
   title: 'Design System/Alerts',
   component: AlertMessage,
   decorators: [withKnobs],
+  excludeStories: ['onDismiss']
 };
 
 export const onDismiss = (id) => {
