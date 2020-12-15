@@ -2,7 +2,7 @@
   on:
     push:
       branches:
-        - master
+        - feature/UIDS-116-grouped-radio-button-style
   jobs:
     gh-pages-deploy:
       name: Deploying to gh-pages
