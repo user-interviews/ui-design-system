@@ -54,7 +54,7 @@ FormControlLabel.propTypes = {
   Control: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
   disabled: PropTypes.bool,
   id: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.node.isRequired,
 };
 
 FormControlLabel.defaultProps = {
