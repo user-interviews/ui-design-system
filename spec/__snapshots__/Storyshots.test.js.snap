@@ -272,6 +272,7 @@ exports[`Storyshots Design System/Form Default 1`] = `
   <form
     className="Form"
     id="form"
+    method="POST"
     onSubmit={[Function]}
   >
     <div
@@ -456,6 +457,7 @@ exports[`Storyshots Design System/Form Elements/Form Control Label Checkbox 1`] 
       <input
         checked={false}
         className="FormControlLabel__control"
+        disabled={false}
         id="checkbox"
         name="checkbox"
         onChange={[Function]}
@@ -1241,6 +1243,7 @@ exports[`Storyshots Design System/Form Inline 1`] = `
   <form
     className="Form Form--inline"
     id="form"
+    method="POST"
     onSubmit={[Function]}
   >
     <div
