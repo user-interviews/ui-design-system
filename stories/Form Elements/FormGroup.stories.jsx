@@ -136,6 +136,7 @@ const ButtonGroupComponent = ({
   label,
   labelHelperText,
   orientation,
+  labelHtmlFor,
 }) => {
   const [value, setValue] = useState(defaultValue);
   const handleChangeValue = (values) => setValue(values);
@@ -146,6 +147,7 @@ const ButtonGroupComponent = ({
       id={id}
       label={label}
       labelHelperText={labelHelperText}
+      labelHtmlFor={labelHtmlFor}
     >
       <ButtonGroup
         fullWidth={fullWidth}
@@ -173,6 +175,7 @@ export const WithCheckboxButtonGroup = () => {
       id="with-checkbox-button-group"
       label="Form Group with checkbox button group"
       labelHelperText="with some helper text"
+      labelHtmlFor="checkbox-button-group"
       orientation={radios(
         'Orientation',
         Object.values(ORIENTATIONS),
@@ -216,6 +219,7 @@ export const WithRadioButtonGroup = () => {
       id="with-radio-button-group"
       label="Form Group with radio button group"
       labelHelperText="with some helper text"
+      labelHtmlFor="radio-button-group"
       orientation={radios(
         'Orientation',
         Object.values(ORIENTATIONS),

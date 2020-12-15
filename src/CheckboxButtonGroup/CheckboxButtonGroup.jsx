@@ -82,7 +82,7 @@ CheckboxButtonGroup.propTypes = {
 
 CheckboxButtonGroup.defaultProps = {
   fullWidth: false,
-  orientation: ORIENTATIONS.row,
+  orientation: ORIENTATIONS.ROW,
   parseInput: (i) => i,
   value: [],
   onChange: undefined,

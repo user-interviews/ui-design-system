@@ -488,6 +488,7 @@ exports[`Storyshots Design System/Form Elements/Form Control Label Checkbox With
       <input
         checked={false}
         className="FormControlLabel__control"
+        disabled={false}
         id="checkbox"
         name="checkbox"
         onChange={[Function]}
@@ -678,7 +679,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Checkbox Button 
       id="button-group"
     >
       <label
-        className="FormControlLabel FormControlLabel--bordered"
+        className="FormControlLabel"
         htmlFor="value-1"
       >
         <div
@@ -696,7 +697,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Checkbox Button 
         </div>
       </label>
       <label
-        className="FormControlLabel FormControlLabel--bordered"
+        className="FormControlLabel"
         htmlFor="value-2"
       >
         <div
@@ -714,7 +715,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Checkbox Button 
         </div>
       </label>
       <label
-        className="FormControlLabel FormControlLabel--bordered"
+        className="FormControlLabel"
         htmlFor="value-3"
       >
         <div
@@ -1108,17 +1109,19 @@ exports[`Storyshots Design System/Form Elements/Form Group With Radio Button Gro
       name=""
     >
       <label
-        className="FormControlLabel"
+        className="FormControlLabel FormControlLabel--active"
         htmlFor="value-1"
       >
         <div
           className="FormControlLabel__label"
         >
           <input
+            checked={true}
             className="FormControlLabel__control"
             disabled={false}
             id="value-1"
             name="choice"
+            onChange={[Function]}
             type="radio"
             value="1"
           />
@@ -1133,10 +1136,12 @@ exports[`Storyshots Design System/Form Elements/Form Group With Radio Button Gro
           className="FormControlLabel__label"
         >
           <input
+            checked={false}
             className="FormControlLabel__control"
             disabled={false}
             id="value-2"
             name="choice"
+            onChange={[Function]}
             type="radio"
             value="2"
           />
@@ -1151,10 +1156,12 @@ exports[`Storyshots Design System/Form Elements/Form Group With Radio Button Gro
           className="FormControlLabel__label"
         >
           <input
+            checked={false}
             className="FormControlLabel__control"
             disabled={false}
             id="value-3"
             name="choice"
+            onChange={[Function]}
             type="radio"
             value="3"
           />
