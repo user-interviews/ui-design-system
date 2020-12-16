@@ -1,46 +1,26 @@
-import React, { Children } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import './RadioButtonGroup.scss';
+import ControlButtonGroup, { ORIENTATIONS } from '../ControlButtonGroup';
 
-export const ORIENTATIONS = {
-  COLUMN: 'column',
-  ROW: 'row',
-};
+import './RadioButtonGroup.scss';
 
 export default function RadioButtonGroup({
   children,
   fullWidth,
   name,
   orientation,
-  parseInput,
   value,
   onChange,
 }) {
   const row = orientation === ORIENTATIONS.ROW;
 
-  const handleChangeValues = (event) => {
-    const eventValue = parseInput(event.target.value);
-    onChange(eventValue);
+  const handleChangeValue = (event) => {
+    onChange(event.target.value);
   };
 
-  const renderChildElement = (child) => {
-    const { value: childValue } = child.props;
-    const checked = !!value && value === childValue;
-
-    // Treat children as controlled components only if group is also controlled
-    const childProps = onChange ? {
-      checked,
-      onChange: handleChangeValues,
-    } : {};
-
-    if (row) {
-      childProps.bordered = true;
-    }
-
-    return React.cloneElement(child, childProps);
-  };
+  const childChecked = (childValue) => (value === childValue);
 
   return (
     <div
@@ -54,7 +34,14 @@ export default function RadioButtonGroup({
       )}
       name={name}
     >
-      { Children.toArray(children).map(renderChildElement) }
+      <ControlButtonGroup
+        childChecked={childChecked}
+        handleChangeValue={handleChangeValue}
+        orientation={orientation}
+        onChange={onChange}
+      >
+        {children}
+      </ControlButtonGroup>
     </div>
   );
 }
@@ -64,7 +51,6 @@ RadioButtonGroup.propTypes = {
   fullWidth: PropTypes.bool,
   name: PropTypes.string,
   orientation: PropTypes.oneOf(Object.values(ORIENTATIONS)),
-  parseInput: PropTypes.func,
   value: PropTypes.oneOfType([
     PropTypes.number,
     PropTypes.string,
@@ -77,7 +63,6 @@ RadioButtonGroup.defaultProps = {
   fullWidth: false,
   name: '',
   orientation: ORIENTATIONS.COLUMN,
-  parseInput: (i) => i,
   value: undefined,
   onChange: undefined,
 };

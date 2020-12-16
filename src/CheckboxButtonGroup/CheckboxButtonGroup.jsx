@@ -1,8 +1,8 @@
-import React, { Children } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import { ORIENTATIONS } from '../RadioButtonGroup/RadioButtonGroup';
+import ControlButtonGroup, { ORIENTATIONS } from '../ControlButtonGroup';
 
 import './CheckboxButtonGroup.scss';
 
@@ -17,7 +17,7 @@ export default function CheckboxButtonGroup({
 }) {
   const row = orientation === ORIENTATIONS.ROW;
 
-  const handleChangeValues = (event) => {
+  const handleChangeValue = (event) => {
     const eventValue = parseInput(event.target.value);
     const values = [...value];
 
@@ -32,22 +32,9 @@ export default function CheckboxButtonGroup({
     }
   };
 
-  const renderChildElement = (child) => {
-    const { value: childValue } = child.props;
-    const checked = value && value.includes(childValue);
-
-    // Treat children as controlled components only if group is also controlled
-    const childProps = onChange ? {
-      checked,
-      onChange: handleChangeValues,
-    } : {};
-
-    if (row) {
-      childProps.bordered = true;
-    }
-
-    return React.cloneElement(child, childProps);
-  };
+  const childChecked = (childValue) => (
+    value && value.includes(childValue)
+  );
 
   return (
     <div
@@ -58,9 +45,14 @@ export default function CheckboxButtonGroup({
       })}
       id={id}
     >
-      {
-        Children.toArray(children).map(renderChildElement)
-      }
+      <ControlButtonGroup
+        childChecked={childChecked}
+        handleChangeValue={handleChangeValue}
+        orientation={orientation}
+        onChange={onChange}
+      >
+        {children}
+      </ControlButtonGroup>
     </div>
   );
 }

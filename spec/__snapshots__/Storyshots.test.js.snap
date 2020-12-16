@@ -488,7 +488,6 @@ exports[`Storyshots Design System/Form Elements/Form Control Label Checkbox With
       <input
         checked={false}
         className="FormControlLabel__control"
-        disabled={false}
         id="checkbox"
         name="checkbox"
         onChange={[Function]}

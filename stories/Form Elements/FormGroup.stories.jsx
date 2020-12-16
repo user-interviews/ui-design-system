@@ -13,7 +13,7 @@ import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CheckboxButton from 'src/CheckboxButton';
 import FormControlLabel from 'src/FormControlLabel';
 import RadioButtonGroup from 'src/RadioButtonGroup';
-import { ORIENTATIONS } from 'src/RadioButtonGroup/RadioButtonGroup';
+import { ORIENTATIONS } from 'src/ControlButtonGroup';
 import RadioButton from 'src/RadioButton';
 
 export default {
@@ -164,8 +164,15 @@ const ButtonGroupComponent = ({
 /* eslint-enable react/prop-types */
 
 export const WithCheckboxButtonGroup = () => {
-  const bordered = boolean('Bordered buttons', false);
-
+  const orientation = radios(
+    'Orientation',
+    Object.values(ORIENTATIONS),
+    ORIENTATIONS.COLUMN,
+  );
+  let bordered = true;
+  if (orientation === ORIENTATIONS.COLUMN) {
+    bordered = boolean('Bordered buttons (only applicable on column orientation)', false);
+  }
   return (
     <ButtonGroupComponent
       bordered={boolean('Bordered Form Group', true)}
@@ -176,11 +183,7 @@ export const WithCheckboxButtonGroup = () => {
       label="Form Group with checkbox button group"
       labelHelperText="with some helper text"
       labelHtmlFor="checkbox-button-group"
-      orientation={radios(
-        'Orientation',
-        Object.values(ORIENTATIONS),
-        ORIENTATIONS.COLUMN,
-      )}
+      orientation={orientation}
     >
       <FormControlLabel
         bordered={bordered}
@@ -208,7 +211,15 @@ export const WithCheckboxButtonGroup = () => {
 };
 
 export const WithRadioButtonGroup = () => {
-  const bordered = boolean('Bordered buttons', false);
+  const orientation = radios(
+    'Orientation',
+    Object.values(ORIENTATIONS),
+    ORIENTATIONS.COLUMN,
+  );
+  let bordered = true;
+  if (orientation === ORIENTATIONS.COLUMN) {
+    bordered = boolean('Bordered buttons (only toggleable on column layout)', false);
+  }
 
   return (
     <ButtonGroupComponent
@@ -220,11 +231,7 @@ export const WithRadioButtonGroup = () => {
       label="Form Group with radio button group"
       labelHelperText="with some helper text"
       labelHtmlFor="radio-button-group"
-      orientation={radios(
-        'Orientation',
-        Object.values(ORIENTATIONS),
-        ORIENTATIONS.COLUMN,
-      )}
+      orientation={orientation}
     >
       <FormControlLabel
         bordered={bordered}
