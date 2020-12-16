@@ -1,16 +1,23 @@
-import React, { Children } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
+
+import ControlButtonGroup, { ORIENTATIONS } from '../ControlButtonGroup';
 
 import './CheckboxButtonGroup.scss';
 
 export default function CheckboxButtonGroup({
   children,
+  fullWidth,
   id,
+  orientation,
   parseInput,
   value,
   onChange,
 }) {
-  const handleChangeValues = (event) => {
+  const row = orientation === ORIENTATIONS.ROW;
+
+  const handleChangeValue = (event) => {
     const eventValue = parseInput(event.target.value);
     const values = [...value];
 
@@ -25,30 +32,36 @@ export default function CheckboxButtonGroup({
     }
   };
 
-  const renderChildElement = (child) => {
-    const { value: childValue } = child.props;
-    const checked = value && value.includes(childValue);
-    return React.cloneElement(
-      child,
-      {
-        checked,
-        onChange: handleChangeValues,
-      },
-    );
-  };
+  const childChecked = (childValue) => (
+    value && value.includes(childValue)
+  );
 
   return (
-    <div className="CheckboxButtonGroup" id={id}>
-      {
-        Children.toArray(children).map(renderChildElement)
-      }
+    <div
+      className={classNames('CheckboxButtonGroup', {
+        'CheckboxButtonGroup--row': row,
+        'CheckboxButtonGroup--row--full-width': row && fullWidth,
+        'CheckboxButtonGroup--row--compact': row && !fullWidth,
+      })}
+      id={id}
+    >
+      <ControlButtonGroup
+        childChecked={childChecked}
+        handleChangeValue={handleChangeValue}
+        orientation={orientation}
+        onChange={onChange}
+      >
+        {children}
+      </ControlButtonGroup>
     </div>
   );
 }
 
 CheckboxButtonGroup.propTypes = {
   children: PropTypes.arrayOf(PropTypes.element).isRequired,
+  fullWidth: PropTypes.bool,
   id: PropTypes.string.isRequired,
+  orientation: PropTypes.oneOf(Object.values(ORIENTATIONS)),
   parseInput: PropTypes.func,
   value: PropTypes.arrayOf(
     PropTypes.oneOfType([
@@ -60,6 +73,8 @@ CheckboxButtonGroup.propTypes = {
 };
 
 CheckboxButtonGroup.defaultProps = {
+  fullWidth: false,
+  orientation: ORIENTATIONS.ROW,
   parseInput: (i) => i,
   value: [],
   onChange: undefined,

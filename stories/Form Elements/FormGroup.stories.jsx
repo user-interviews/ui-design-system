@@ -13,7 +13,7 @@ import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CheckboxButton from 'src/CheckboxButton';
 import FormControlLabel from 'src/FormControlLabel';
 import RadioButtonGroup from 'src/RadioButtonGroup';
-import { ORIENTATIONS } from 'src/RadioButtonGroup/RadioButtonGroup';
+import { ORIENTATIONS } from 'src/ControlButtonGroup';
 import RadioButton from 'src/RadioButton';
 
 export default {
@@ -130,12 +130,15 @@ const ButtonGroupComponent = ({
   ButtonGroup,
   bordered,
   children,
+  defaultValue,
+  fullWidth,
   id,
   label,
   labelHelperText,
+  orientation,
   labelHtmlFor,
 }) => {
-  const [value, setValue] = useState([]);
+  const [value, setValue] = useState(defaultValue);
   const handleChangeValue = (values) => setValue(values);
 
   return (
@@ -146,7 +149,13 @@ const ButtonGroupComponent = ({
       labelHelperText={labelHelperText}
       labelHtmlFor={labelHtmlFor}
     >
-      <ButtonGroup id="button-group" value={value} onChange={handleChangeValue}>
+      <ButtonGroup
+        fullWidth={fullWidth}
+        id="button-group"
+        orientation={orientation}
+        value={value}
+        onChange={handleChangeValue}
+      >
         { children }
       </ButtonGroup>
     </FormGroup>
@@ -154,60 +163,75 @@ const ButtonGroupComponent = ({
 };
 /* eslint-enable react/prop-types */
 
-export const WithCheckboxButtonGroup = () => (
-  <ButtonGroupComponent
-    bordered={boolean('Bordered Form Group', true)}
-    ButtonGroup={CheckboxButtonGroup}
-    id="with-checkbox-button-group"
-    label="Form Group with checkbox button group"
-    labelHelperText="with some helper text"
-    labelHtmlFor="checkbox-button-group"
-  >
-    <FormControlLabel
-      bordered
-      Control={CheckboxButton}
-      id="value-1"
-      text={text('Label 1', 'Value 1')}
-      value="1"
-    />
-    <FormControlLabel
-      bordered
-      Control={CheckboxButton}
-      id="value-2"
-      text={text('Label 2', 'Value 2')}
-      value="2"
-    />
-    <FormControlLabel
-      bordered
-      Control={CheckboxButton}
-      id="value-3"
-      text={text('Label 3', 'Value 3')}
-      value="3"
-    />
-  </ButtonGroupComponent>
-);
+export const WithCheckboxButtonGroup = () => {
+  const orientation = radios(
+    'Orientation',
+    Object.values(ORIENTATIONS),
+    ORIENTATIONS.COLUMN,
+  );
+  let bordered = true;
+  if (orientation === ORIENTATIONS.COLUMN) {
+    bordered = boolean('Bordered buttons (only applicable on column orientation)', false);
+  }
+  return (
+    <ButtonGroupComponent
+      bordered={boolean('Bordered Form Group', true)}
+      ButtonGroup={CheckboxButtonGroup}
+      defaultValue={[]}
+      fullWidth={boolean('Full width', false)}
+      id="with-checkbox-button-group"
+      label="Form Group with checkbox button group"
+      labelHelperText="with some helper text"
+      labelHtmlFor="checkbox-button-group"
+      orientation={orientation}
+    >
+      <FormControlLabel
+        bordered={bordered}
+        Control={CheckboxButton}
+        id="value-1"
+        text={text('Label 1', 'Value 1')}
+        value="1"
+      />
+      <FormControlLabel
+        bordered={bordered}
+        Control={CheckboxButton}
+        id="value-2"
+        text={text('Label 2', 'Value 2')}
+        value="2"
+      />
+      <FormControlLabel
+        bordered={bordered}
+        Control={CheckboxButton}
+        id="value-3"
+        text={text('Label 3', 'Value 3')}
+        value="3"
+      />
+    </ButtonGroupComponent>
+  );
+};
 
 export const WithRadioButtonGroup = () => {
-  const bordered = boolean('Bordered buttons', false);
+  const orientation = radios(
+    'Orientation',
+    Object.values(ORIENTATIONS),
+    ORIENTATIONS.COLUMN,
+  );
+  let bordered = true;
+  if (orientation === ORIENTATIONS.COLUMN) {
+    bordered = boolean('Bordered buttons (only toggleable on column layout)', false);
+  }
 
   return (
     <ButtonGroupComponent
       bordered={boolean('Bordered Form Group', true)}
-      ButtonGroup={(props) => (
-        <RadioButtonGroup
-          fullWidth={boolean('Full width', false)}
-          orientation={radios(
-            'Orientation',
-            Object.values(ORIENTATIONS),
-            ORIENTATIONS.COLUMN,
-          )}
-          {...props}
-        />
-      )}
+      ButtonGroup={RadioButtonGroup}
+      defaultValue="1"
+      fullWidth={boolean('Full width', false)}
       id="with-radio-button-group"
       label="Form Group with radio button group"
       labelHelperText="with some helper text"
       labelHtmlFor="radio-button-group"
+      orientation={orientation}
     >
       <FormControlLabel
         bordered={bordered}

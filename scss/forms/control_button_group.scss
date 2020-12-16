@@ -1,0 +1,51 @@
+@mixin row-control-group() {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-right: -0.5rem;
+
+  &--full-width {
+    // This is a min-width because we are using a negative margin-right on the container
+    // (see immediately above). The negative margin makes the container extend beyond 100% on
+    // the rightmost edge, which is counteracted by the postive margin on the child components.
+    // This lets us have a margin-right between child elements that goes away when they wrap
+    // to a vertical alignmnet on mobile. At the time of writing this, flex's gap property is
+    // not supported in all browsers for this layout.
+    min-width: 100%;
+
+    .FormControlLabel {
+      flex: 1 1 0;
+      min-width: 16rem;
+    }
+  }
+
+  &--compact {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    input[type='radio'] {
+      display: none;
+    }
+
+    .FormControlLabel--bordered {
+      padding: 0.3125rem 0.625rem;
+      margin-right: 0.5rem;
+    }
+
+    .FormControlLabel--active {
+      background-color: $ux-blue-100;
+      border-color: $ux-blue-200;
+
+      .FormControlLabel__label {
+        color: $ux-blue-700;
+      }
+    }
+  }
+
+  .FormControlLabel {
+    flex-wrap: wrap;
+    margin-right: 0.5rem;
+    display: block;
+  }
+}
