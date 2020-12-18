@@ -14,7 +14,7 @@
 
   &__header {
     margin-bottom: 0.3rem;
-    font-weight: $font-weight-bold;
+    @include font-type-30--bold;
   }
 
   &--dark {
