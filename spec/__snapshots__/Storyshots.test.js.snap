@@ -9,7 +9,7 @@ exports[`Storyshots Design System/Alert With Dismiss 1`] = `
   }
 >
   <div
-    className="alert alert-success AlertMessage AlertMessage-success"
+    className="AlertMessage AlertMessage-success"
   >
     <button
       className="close"
@@ -37,7 +37,7 @@ exports[`Storyshots Design System/Alert Without Dismiss 1`] = `
   }
 >
   <div
-    className="alert alert-success AlertMessage AlertMessage-success"
+    className="AlertMessage AlertMessage-success"
   >
     <p
       className="AlertMessage__title"
