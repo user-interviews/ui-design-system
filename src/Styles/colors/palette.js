@@ -31,7 +31,7 @@ const colorGradients = {
   uxGray600: '#818181',
   uxGray700: '#616161',
   uxGray800: '#444444',
-  uxGray900: '#222222',
+  uxGray900: '#101010',
 
   uxGreen100: '#F3FFF2',
   uxGreen200: '#E3FDE0',

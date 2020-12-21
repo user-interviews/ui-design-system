@@ -2,10 +2,11 @@
 
 exports[`CheckboxButtonGroup sets initial value properly 1`] = `
 <div
-  className="CheckboxButtonGroup"
+  className="CheckboxButtonGroup CheckboxButtonGroup--row CheckboxButtonGroup--row--compact"
   id="checkbox-question"
 >
   <input
+    bordered={true}
     checked={true}
     id="first"
     label="First value"
@@ -14,6 +15,7 @@ exports[`CheckboxButtonGroup sets initial value properly 1`] = `
     value={1}
   />
   <input
+    bordered={true}
     checked={true}
     id="second"
     label="Second value"
@@ -26,10 +28,11 @@ exports[`CheckboxButtonGroup sets initial value properly 1`] = `
 
 exports[`CheckboxButtonGroup will update array state to check a new item 1`] = `
 <div
-  className="CheckboxButtonGroup"
+  className="CheckboxButtonGroup CheckboxButtonGroup--row CheckboxButtonGroup--row--compact"
   id="checkbox-question"
 >
   <input
+    bordered={true}
     checked={true}
     id="first"
     label="First value"
@@ -38,6 +41,7 @@ exports[`CheckboxButtonGroup will update array state to check a new item 1`] = `
     value={1}
   />
   <input
+    bordered={true}
     checked={false}
     id="second"
     label="Second value"
@@ -50,10 +54,11 @@ exports[`CheckboxButtonGroup will update array state to check a new item 1`] = `
 
 exports[`CheckboxButtonGroup will update array state to uncheck an item 1`] = `
 <div
-  className="CheckboxButtonGroup"
+  className="CheckboxButtonGroup CheckboxButtonGroup--row CheckboxButtonGroup--row--compact"
   id="checkbox-question"
 >
   <input
+    bordered={true}
     checked={false}
     id="first"
     label="First value"
@@ -62,6 +67,7 @@ exports[`CheckboxButtonGroup will update array state to uncheck an item 1`] = `
     value={1}
   />
   <input
+    bordered={true}
     checked={false}
     id="second"
     label="Second value"

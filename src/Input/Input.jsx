@@ -80,4 +80,6 @@ Input.defaultProps = {
   onChange: undefined,
 };
 
+Input.displayName = 'Input';
+
 export default Input;

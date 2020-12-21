@@ -1,7 +1,13 @@
-@import '../../scss/theme';
+@import '../borders';
+@import '../colors';
+@import '../lists';
+@import '../typography';
 
 .FormGroup {
-  margin: 1rem 0 0.5rem;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem 0;
 
   &--bordered {
     border: 1px solid $ux-gray-400;
@@ -10,7 +16,7 @@
 
     .InputLabel {
       @include font-type-40--bold;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
 
       &__helper-text {
         @include font-type-40--light;
@@ -20,13 +26,13 @@
   }
 
   &--is-invalid {
+    input, select, textarea {
+      border-color: $ux-red;
+    }
+
     .Input {
       // important because Input.scss focus style also sets this border
       border-color: $ux-red-600 !important;
-    }
-
-    select, textarea {
-      border-color: $ux-red;
     }
   }
 
@@ -34,12 +40,18 @@
     @include font-type-20;
     color: $ux-gray-800;
     padding: .375rem 0;
+    margin: 0;
+
+    &--pre {
+      white-space: pre-wrap;
+    }
   }
 
   &__invalid-feedback {
     @include font-type-20;
-    color: $ux-red-800;
+    color: $ux-red;
     padding: .375rem 0;
+    margin: 0;
 
     &__list {
       @include ui-remove-list-styles();

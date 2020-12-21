@@ -1,11 +1,16 @@
 @import '../../scss/theme';
 @import '../../scss/borders';
+@import '../../scss/forms/control_button_group';
 
 .CheckboxButtonGroup {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
   label {
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  &--row {
+   @include row-control-group;
   }
 }

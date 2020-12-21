@@ -49,7 +49,7 @@ exports[`Storyshots Design System/Alert Without Dismiss 1`] = `
 </div>
 `;
 
-exports[`Storyshots Design System/Copy To Clipboard Default 1`] = `
+exports[`Storyshots Design System/Copy To Clipboard Button Default 1`] = `
 <div
   style={
     Object {
@@ -58,15 +58,11 @@ exports[`Storyshots Design System/Copy To Clipboard Default 1`] = `
   }
 >
   <div
-    className="CopyToClipboard"
+    className="CopyToClipboardButton"
   >
-    <span
-      className="CopyToClipboard__copy-text"
-    >
-      Copy me!
-    </span>
     <button
-      className="btn btn-link btn-link--neutral"
+      aria-label="Copy to clipboard"
+      className="CopyToClipboardButton btn"
       onClick={[Function]}
       tracking={
         Object {
@@ -76,7 +72,7 @@ exports[`Storyshots Design System/Copy To Clipboard Default 1`] = `
       }
       type="button"
     >
-      <div>
+      <span>
         <svg
           aria-hidden="true"
           className="svg-inline--fa fa-copy fa-w-14 "
@@ -94,8 +90,121 @@ exports[`Storyshots Design System/Copy To Clipboard Default 1`] = `
             style={Object {}}
           />
         </svg>
-      </div>
+        <span
+          className="CopyToClipboardButton__display-text"
+        >
+          Click to copy
+        </span>
+      </span>
     </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Copy To Clipboard Button Secondary 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="CopyToClipboardButton"
+  >
+    <button
+      aria-label="Copy to clipboard"
+      className="CopyToClipboardButton btn btn-outline-secondary"
+      onClick={[Function]}
+      tracking={
+        Object {
+          "getTrackingData": [Function],
+          "trackEvent": [Function],
+        }
+      }
+      type="button"
+    >
+      <span>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-copy fa-w-14 "
+          data-icon="copy"
+          data-prefix="far"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+        <span
+          className="CopyToClipboardButton__display-text"
+        >
+          Click to copy
+        </span>
+      </span>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Copy To Clipboard Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="CopyToClipboard"
+  >
+    <span
+      className="CopyToClipboard__copy-text"
+    >
+      Copy me!
+    </span>
+    <div
+      className="CopyToClipboardButton"
+    >
+      <button
+        aria-label="Copy to clipboard"
+        className="CopyToClipboardButton btn"
+        onClick={[Function]}
+        tracking={
+          Object {
+            "getTrackingData": [Function],
+            "trackEvent": [Function],
+          }
+        }
+        type="button"
+      >
+        <span>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-copy fa-w-14 "
+            data-icon="copy"
+            data-prefix="far"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </span>
+      </button>
+    </div>
   </div>
 </div>
 `;
@@ -163,6 +272,7 @@ exports[`Storyshots Design System/Form Default 1`] = `
   <form
     className="Form"
     id="form"
+    method="POST"
     onSubmit={[Function]}
   >
     <div
@@ -285,36 +395,38 @@ exports[`Storyshots Design System/Form Default 1`] = `
       name="radio-buttons"
     >
       <label
-        className="RadioButton"
+        className="FormControlLabel"
+        htmlFor="first-radio"
       >
-        <input
-          className="RadioButton__input"
-          disabled={false}
-          id="first-radio"
-          name="radio-buttons"
-          type="radio"
-        />
-        <span
-          className="RadioButton__label"
+        <div
+          className="FormControlLabel__label"
         >
+          <input
+            className="FormControlLabel__control"
+            disabled={false}
+            id="first-radio"
+            name="radio-buttons"
+            type="radio"
+          />
           first choice
-        </span>
+        </div>
       </label>
       <label
-        className="RadioButton"
+        className="FormControlLabel"
+        htmlFor="second-radio"
       >
-        <input
-          className="RadioButton__input"
-          disabled={false}
-          id="second-radio"
-          name="radio-buttons"
-          type="radio"
-        />
-        <span
-          className="RadioButton__label"
+        <div
+          className="FormControlLabel__label"
         >
+          <input
+            className="FormControlLabel__control"
+            disabled={false}
+            id="second-radio"
+            name="radio-buttons"
+            type="radio"
+          />
           second choice
-        </span>
+        </div>
       </label>
     </div>
     <button
@@ -339,14 +451,127 @@ exports[`Storyshots Design System/Form Elements/Form Control Label Checkbox 1`] 
     className="FormControlLabel"
     htmlFor="checkbox"
   >
-    <input
-      className="FormControlLabel__control"
-      defaultValue="1"
-      id="checkbox"
-      name="checkbox"
-      type="checkbox"
-    />
-    Labeled checkbox
+    <div
+      className="FormControlLabel__label"
+    >
+      <input
+        checked={false}
+        className="FormControlLabel__control"
+        disabled={false}
+        id="checkbox"
+        name="checkbox"
+        onChange={[Function]}
+        type="checkbox"
+        value="1"
+      />
+      Labeled checkbox
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Form Control Label Checkbox With Children 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <label
+    className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+    htmlFor="checkbox"
+  >
+    <div
+      className="FormControlLabel__label"
+    >
+      <input
+        checked={false}
+        className="FormControlLabel__control"
+        id="checkbox"
+        name="checkbox"
+        onChange={[Function]}
+        type="checkbox"
+        value="1"
+      />
+      Labeled checkbox
+    </div>
+    <div
+      className="FormControlLabel__children"
+    >
+      <div>
+        This checkbox has some helper text too!
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Form Control Label Radio 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <label
+    className="FormControlLabel"
+    htmlFor="radio"
+  >
+    <div
+      className="FormControlLabel__label"
+    >
+      <input
+        checked={false}
+        className="FormControlLabel__control"
+        disabled={false}
+        id="radio"
+        name="radio"
+        onChange={[Function]}
+        type="radio"
+        value="1"
+      />
+      Labeled radio
+    </div>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Form Control Label Radio With Children 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <label
+    className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+    htmlFor="radio"
+  >
+    <div
+      className="FormControlLabel__label"
+    >
+      <input
+        checked={false}
+        className="FormControlLabel__control"
+        disabled={false}
+        id="radio"
+        name="radio"
+        onChange={[Function]}
+        type="radio"
+        value="1"
+      />
+      Labeled radio
+    </div>
+    <div
+      className="FormControlLabel__children"
+    >
+      <div>
+        This radio button has some helper text too!
+      </div>
+    </div>
   </label>
 </div>
 `;
@@ -450,49 +675,61 @@ exports[`Storyshots Design System/Form Elements/Form Group With Checkbox Button 
     </label>
     <div
       className="CheckboxButtonGroup"
-      id="checkbox-button-group"
+      id="button-group"
     >
       <label
-        className="FormControlLabel FormControlLabel--bordered"
+        className="FormControlLabel"
         htmlFor="value-1"
       >
-        <input
-          checked={false}
-          className="FormControlLabel__control"
-          id="value-1"
-          onChange={[Function]}
-          type="checkbox"
-          value="1"
-        />
-        Value 1
+        <div
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-1"
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          Value 1
+        </div>
       </label>
       <label
-        className="FormControlLabel FormControlLabel--bordered"
+        className="FormControlLabel"
         htmlFor="value-2"
       >
-        <input
-          checked={false}
-          className="FormControlLabel__control"
-          id="value-2"
-          onChange={[Function]}
-          type="checkbox"
-          value="2"
-        />
-        Value 2
+        <div
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-2"
+            onChange={[Function]}
+            type="checkbox"
+            value="2"
+          />
+          Value 2
+        </div>
       </label>
       <label
-        className="FormControlLabel FormControlLabel--bordered"
+        className="FormControlLabel"
         htmlFor="value-3"
       >
-        <input
-          checked={false}
-          className="FormControlLabel__control"
-          id="value-3"
-          onChange={[Function]}
-          type="checkbox"
-          value="3"
-        />
-        Value 3
+        <div
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-3"
+            onChange={[Function]}
+            type="checkbox"
+            value="3"
+          />
+          Value 3
+        </div>
       </label>
     </div>
   </div>
@@ -841,6 +1078,100 @@ exports[`Storyshots Design System/Form Elements/Form Group With Leading Icon 1`]
 </div>
 `;
 
+exports[`Storyshots Design System/Form Elements/Form Group With Radio Button Group 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup FormGroup--bordered"
+    id="with-radio-button-group"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="radio-button-group"
+    >
+      Form Group with radio button group
+      <span
+        className="InputLabel__helper-text"
+      >
+         (
+        with some helper text
+        )
+      </span>
+    </label>
+    <div
+      className="RadioButtonGroup"
+      name=""
+    >
+      <label
+        className="FormControlLabel FormControlLabel--active"
+        htmlFor="value-1"
+      >
+        <div
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={true}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-1"
+            name="choice"
+            onChange={[Function]}
+            type="radio"
+            value="1"
+          />
+          Value 1
+        </div>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-2"
+      >
+        <div
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-2"
+            name="choice"
+            onChange={[Function]}
+            type="radio"
+            value="2"
+          />
+          Value 2
+        </div>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-3"
+      >
+        <div
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-3"
+            name="choice"
+            onChange={[Function]}
+            type="radio"
+            value="3"
+          />
+          Value 3
+        </div>
+      </label>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Form Elements/Form Group With Trailing Icon 1`] = `
 <div
   style={
@@ -907,73 +1238,6 @@ exports[`Storyshots Design System/Form Elements/Form Group With Trailing Icon 1`
 </div>
 `;
 
-exports[`Storyshots Design System/Form Elements/Radio Button Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <label
-    className="RadioButton"
-  >
-    <input
-      className="RadioButton__input"
-      disabled={false}
-      id="default"
-      name=""
-      type="radio"
-    />
-    <span
-      className="RadioButton__label"
-    >
-      label
-    </span>
-  </label>
-</div>
-`;
-
-exports[`Storyshots Design System/Form Elements/Radio Button With Children 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <label
-    className="RadioButton RadioButton--bordered"
-  >
-    <input
-      className="RadioButton__input"
-      disabled={false}
-      id="default"
-      name=""
-      type="radio"
-    />
-    <span
-      className="RadioButton__label"
-    >
-      Option with child
-    </span>
-    <div
-      className="RadioButton__children"
-    >
-      <span
-        style={
-          Object {
-            "color": "#A1A1A1",
-          }
-        }
-      >
-        Some descriptive text for the option above
-      </span>
-    </div>
-  </label>
-</div>
-`;
-
 exports[`Storyshots Design System/Form Inline 1`] = `
 <div
   style={
@@ -985,6 +1249,7 @@ exports[`Storyshots Design System/Form Inline 1`] = `
   <form
     className="Form Form--inline"
     id="form"
+    method="POST"
     onSubmit={[Function]}
   >
     <div
@@ -2683,7 +2948,7 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
     <div
       style={
         Object {
-          "backgroundColor": "#222222",
+          "backgroundColor": "#101010",
           "flexBasis": "11%",
           "height": "100%",
         }

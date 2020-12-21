@@ -1,0 +1,8 @@
+@import '../../scss/theme';
+@import '../../scss/forms/control_button_group';
+
+.RadioButtonGroup {
+  &--row {
+    @include row-control-group;
+  }
+}

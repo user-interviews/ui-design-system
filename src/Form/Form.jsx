@@ -1,32 +1,70 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import './Form.scss';
 
-export default function Form(props) {
+const Form = forwardRef(({
+  action,
+  children,
+  className,
+  CSRFParam,
+  CSRFToken,
+  id,
+  inline,
+  method,
+  multipart,
+  name,
+  onSubmit,
+}, ref) => {
+  const hasMethod = method != null;
+  const hasCSRF = CSRFParam && CSRFToken;
+
   return (
     <form
-      className={classNames('Form', props.className, { 'Form--inline': props.inline })}
-      id={props.id}
-      onSubmit={props.onSubmit}
+      action={action}
+      className={classNames('Form', className, { 'Form--inline': inline })}
+      id={id}
+      method="POST"
+      multipart={multipart}
+      name={name}
+      ref={ref}
+      onSubmit={onSubmit}
     >
-      {props.children}
+      { hasCSRF && <input name={CSRFParam} type="hidden" value={CSRFToken} /> }
+      { hasMethod && <input name="_method" type="hidden" value={method} /> }
+      {children}
     </form>
   );
-}
+});
+
+Form.displayName = 'Form';
 
 Form.propTypes = {
+  action: PropTypes.string,
   children: PropTypes.node,
   className: PropTypes.string,
+  CSRFParam: PropTypes.string,
+  CSRFToken: PropTypes.string,
   id: PropTypes.string.isRequired,
   inline: PropTypes.bool,
+  method: PropTypes.string,
+  multipart: PropTypes.string,
+  name: PropTypes.string,
   onSubmit: PropTypes.func,
 };
 
 Form.defaultProps = {
+  action: undefined,
   children: undefined,
   className: undefined,
+  CSRFParam: undefined,
+  CSRFToken: undefined,
   inline: false,
+  method: undefined,
+  multipart: undefined,
+  name: undefined,
   onSubmit: undefined,
 };
+
+export default Form;

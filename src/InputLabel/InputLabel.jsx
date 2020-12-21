@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import Tooltip from 'src/Tooltip';
 
-import './InputLabel.scss';
+import 'scss/forms/input_label.scss';
 
 export default function InputLabel(props) {
   return (

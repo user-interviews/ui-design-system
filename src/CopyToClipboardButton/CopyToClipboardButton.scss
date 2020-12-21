@@ -1,0 +1,8 @@
+@import '../../scss/theme';
+
+.CopyToClipboardButton {
+  &__display-text {
+    @include font-type-40--bold;
+    margin-left: .5rem;
+  }
+}

@@ -2,46 +2,68 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import './FormControlLabel.scss';
+import 'scss/forms/form_control_label.scss';
 
-export default function FormControlLabel({
+const FormControlLabel = React.forwardRef(({
   bordered,
   checked,
+  children,
   className,
   Control,
+  disabled,
   id,
   text,
   ...controlProps
-}) {
-  return (
-    <label
-      className={classnames(
-        'FormControlLabel',
-        className,
-        {
-          'FormControlLabel--bordered': bordered,
-          'FormControlLabel--active': bordered && checked,
-        },
-      )}
-      htmlFor={id}
-    >
-      <Control checked={checked} className="FormControlLabel__control" id={id} {...controlProps} />
+}, ref) => (
+  <label
+    className={classnames(
+      'FormControlLabel',
+      className,
+      {
+        'FormControlLabel--bordered': bordered,
+        'FormControlLabel--active': checked,
+        'FormControlLabel--with-children': !!children,
+        'FormControlLabel--disabled': bordered && disabled,
+      },
+    )}
+    htmlFor={id}
+  >
+    <div className="FormControlLabel__label">
+      <Control
+        checked={checked}
+        className="FormControlLabel__control"
+        disabled={disabled}
+        id={id}
+        ref={ref}
+        {...controlProps}
+      />
       {text}
-    </label>
-  );
-}
+    </div>
+    {children && (
+      <div className="FormControlLabel__children">
+        {children}
+      </div>
+    )}
+  </label>
+));
 
 FormControlLabel.propTypes = {
   bordered: PropTypes.bool,
   checked: PropTypes.bool,
   className: PropTypes.string,
-  Control: PropTypes.func.isRequired,
+  Control: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
+  disabled: PropTypes.bool,
   id: PropTypes.string.isRequired,
-  text: PropTypes.string.isRequired,
+  text: PropTypes.node.isRequired,
 };
 
 FormControlLabel.defaultProps = {
   bordered: false,
   checked: undefined,
   className: undefined,
+  disabled: undefined,
 };
+
+FormControlLabel.displayName = 'FormControlLabel';
+
+export default FormControlLabel;

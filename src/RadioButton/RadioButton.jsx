@@ -1,52 +1,53 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
 
-import './RadioButton.scss';
-
-export default function RadioButton(props) {
-  const classNames = classnames('RadioButton', {
-    'RadioButton--bordered': props.bordered,
-  });
-
-  return (
-    <label className={classNames}>
-      <input
-        className="RadioButton__input"
-        disabled={props.disabled}
-        id={props.id}
-        name={props.name}
-        type="radio"
-        {...props.radioButtonProps}
-      />
-
-      {props.label && (
-        <span className="RadioButton__label">{props.label}</span>
-      )}
-
-      {props.children && (
-        <div className="RadioButton__children">
-          {props.children}
-        </div>
-      )}
-    </label>
-  );
-}
+const RadioButton = React.forwardRef(({
+  checked,
+  className,
+  disabled,
+  id,
+  name,
+  value,
+  onChange,
+  ...rest
+}, ref) => (
+  <input
+    checked={checked}
+    className={className}
+    disabled={disabled}
+    id={id}
+    name={name}
+    ref={ref}
+    type="radio"
+    value={value}
+    onChange={onChange}
+    {...rest}
+  />
+));
 
 RadioButton.propTypes = {
-  bordered: PropTypes.bool,
-  children: PropTypes.node,
+  checked: PropTypes.bool,
+  className: PropTypes.string,
   disabled: PropTypes.bool,
   id: PropTypes.string.isRequired,
-  label: PropTypes.string.isRequired,
   name: PropTypes.string,
-  radioButtonProps: PropTypes.object,
+  value: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string,
+    PropTypes.bool,
+  ]),
+  onChange: PropTypes.func,
 };
 
 RadioButton.defaultProps = {
-  bordered: false,
-  children: null,
+  checked: undefined,
+  className: undefined,
   disabled: false,
   name: '',
-  radioButtonProps: {},
+  value: undefined,
+  onChange: undefined,
 };
+
+RadioButton.displayName = 'RadioButton';
+
+export default RadioButton;
