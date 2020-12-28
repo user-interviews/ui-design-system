@@ -5,6 +5,7 @@
 
 $card-xs-spacing: 1rem;
 $card-sm-spacing: 1.25rem;
+$card-spacing: 1.5rem;
 $card-width: 56rem;
 $card-width-md: 40rem;
 $card-width-sm: 32rem;
@@ -14,19 +15,14 @@ $card-width-xs: 15.625rem;
   background-color: $ux-white;
   border: none;
   box-shadow: 0 .125rem .25rem rgba(0,0,0,0.1);
-  margin: $card-xs-spacing auto;
+  margin: $card-spacing auto;
   outline-color: $ux-green-500;
-  padding: $card-xs-spacing;
+  padding: $card-spacing;
 
   width: calc(100% - #{$card-xs-spacing});
 
   @include media-breakpoint-up(sm) {
     width: calc(100% - 2rem);
-  }
-
-  @include media-breakpoint-up(sm) {
-    margin: $card-sm-spacing auto;
-    padding: $card-sm-spacing;
   }
 
   &__header {
