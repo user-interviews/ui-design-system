@@ -41,7 +41,6 @@ export const Required = () => (
   <FormGroup
     id="with-required"
     label="Form Group with label"
-    labelHtmlFor="input"
     required
   >
     <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
