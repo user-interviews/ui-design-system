@@ -14,6 +14,7 @@ export default {
 export const Default = () => (
   <Card
     active={boolean('Is active', false)}
+    helperText={text('Helper text', '(helper text)')}
     noPadding={boolean('Without padding', false)}
     ruled={boolean('With horizontal rule', false)}
     size={radios('Message Type', CardSizes, CardSizes.LARGE)}

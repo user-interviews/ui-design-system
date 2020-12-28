@@ -29,6 +29,15 @@ $card-width-xs: 15.625rem;
     padding: $card-sm-spacing;
   }
 
+  &__header {
+    display: flex;
+  }
+
+  &__helper-text {
+    @include font-type-50--light;
+    color: $ux-gray-900;
+  }
+
   &__rule {
     border: 1px solid $ux-gray-400;
   }

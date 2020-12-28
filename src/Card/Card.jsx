@@ -16,6 +16,7 @@ const Card = ({
   children,
   className,
   elementType,
+  helperText,
   noPadding,
   ruled,
   size,
@@ -25,12 +26,17 @@ const Card = ({
 }) => {
   const cardChildren = (
     <Fragment>
-      { title && <h2 className="Card__title">{title}</h2> }
+      <div className="Card__header">
+        { title && <h2 className="Card__title">{title}</h2> }
+        { helperText && <span className="Card__helper-text">&nbsp;{helperText}</span>}
+      </div>
+
       { subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }
       { ruled && <hr className="Card__rule" /> }
       { children }
     </Fragment>
   );
+
   return createElement(
     elementType,
     {
@@ -54,6 +60,7 @@ Card.propTypes = {
   active: PropTypes.bool,
   className: PropTypes.string,
   elementType: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
+  helperText: PropTypes.string,
   noPadding: PropTypes.bool,
   ruled: PropTypes.bool,
   size: PropTypes.string,
@@ -65,6 +72,7 @@ Card.defaultProps = {
   active: undefined,
   className: undefined,
   elementType: 'section',
+  helperText: undefined,
   noPadding: false,
   ruled: false,
   size: CardSizes.LARGE,

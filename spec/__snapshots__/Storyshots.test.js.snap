@@ -60,11 +60,21 @@ exports[`Storyshots Design System/Card Default 1`] = `
   <section
     className="Card Card--lg"
   >
-    <h2
-      className="Card__title"
+    <div
+      className="Card__header"
     >
-      Large card with title
-    </h2>
+      <h2
+        className="Card__title"
+      >
+        Large card with title
+      </h2>
+      <span
+        className="Card__helper-text"
+      >
+         
+        (helper text)
+      </span>
+    </div>
     <h3
       className="Card__subtitle"
     >
