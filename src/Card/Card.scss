@@ -44,7 +44,7 @@ $card-width-xs: 15.625rem;
   }
 
   &__title {
-    @include font-type-50;
+    @include font-type-50--bold;
   }
 
   &--active {
