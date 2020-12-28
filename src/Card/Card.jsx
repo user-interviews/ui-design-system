@@ -17,6 +17,7 @@ const Card = ({
   className,
   elementType,
   noPadding,
+  ruled,
   size,
   subTitle,
   title,
@@ -26,6 +27,7 @@ const Card = ({
     <Fragment>
       { title && <h2 className="Card__title">{title}</h2> }
       { subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }
+      { ruled && <hr className="Card__rule" /> }
       { children }
     </Fragment>
   );
@@ -38,8 +40,9 @@ const Card = ({
         `Card--${size}`,
         className,
         {
-          'Card--no-padding': noPadding,
           'Card--active': active,
+          'Card--no-padding': noPadding,
+          'Card--ruled': ruled,
         },
       ),
     },
@@ -52,6 +55,7 @@ Card.propTypes = {
   className: PropTypes.string,
   elementType: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   noPadding: PropTypes.bool,
+  ruled: PropTypes.bool,
   size: PropTypes.string,
   subTitle: PropTypes.string,
   title: PropTypes.string,
@@ -62,6 +66,7 @@ Card.defaultProps = {
   className: undefined,
   elementType: 'section',
   noPadding: false,
+  ruled: false,
   size: CardSizes.LARGE,
   subTitle: undefined,
   title: undefined,
