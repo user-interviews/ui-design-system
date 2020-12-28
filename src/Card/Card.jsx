@@ -25,7 +25,7 @@ const Card = ({
   const cardChildren = (
     <Fragment>
       { title && <h2 className="Card__title">{title}</h2> }
-      { subTitle && <h5 className="Card__subtitle">{subTitle}</h5> }
+      { subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }
       { children }
     </Fragment>
   );
