@@ -27,7 +27,7 @@ const InputComponent = (props) => {
   const handleChangeValue = (event) => setValue(event.target.value);
 
   return (
-    <Input value={value} onChange={handleChangeValue} {...props} />
+    <Input aria-label="input text label goes here" value={value} onChange={handleChangeValue} {...props} />
   );
 };
 
@@ -41,6 +41,7 @@ export const Required = () => (
   <FormGroup
     id="with-required"
     label="Form Group with label"
+    labelHtmlFor="input"
     required
   >
     <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
