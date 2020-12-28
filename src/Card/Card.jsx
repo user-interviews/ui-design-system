@@ -31,8 +31,8 @@ const Card = ({
         { helperText && <span className="Card__helper-text">&nbsp;{helperText}</span>}
       </div>
 
-      { subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }
       { ruled && <hr className="Card__rule" /> }
+      { subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }
       { children }
     </Fragment>
   );
