@@ -25,6 +25,11 @@ $card-width-xs: 15.625rem;
     width: calc(100% - 2rem);
   }
 
+  &__divider {
+    border: 1px solid $ux-gray-400;
+    margin: 0.75rem auto;
+  }
+
   &__header {
     display: flex;
   }
@@ -32,11 +37,7 @@ $card-width-xs: 15.625rem;
   &__helper-text {
     @include font-type-50--light;
     color: $ux-gray-900;
-  }
-
-  &__rule {
-    border: 1px solid $ux-gray-400;
-    margin: 0.75rem auto;
+    margin-left: 0.25rem;
   }
 
   &__subtitle {
@@ -52,14 +53,14 @@ $card-width-xs: 15.625rem;
     outline: $ux-green-500 auto 5px;
   }
 
-  &--no-padding {
-    padding: 0;
-  }
-
-  &--ruled {
+  &--divided {
     .Card__title {
       margin-bottom: 0;
     }
+  }
+
+  &--no-padding {
+    padding: 0;
   }
 
   &--md {

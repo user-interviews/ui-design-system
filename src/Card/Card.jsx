@@ -15,10 +15,10 @@ const Card = ({
   active,
   children,
   className,
+  divided,
   elementType,
   helperText,
   noPadding,
-  ruled,
   size,
   subTitle,
   title,
@@ -28,10 +28,10 @@ const Card = ({
     <Fragment>
       <div className="Card__header">
         { title && <h2 className="Card__title">{title}</h2> }
-        { helperText && <span className="Card__helper-text">&nbsp;{helperText}</span>}
+        { helperText && <span className="Card__helper-text">{helperText}</span>}
       </div>
 
-      { ruled && <hr className="Card__rule" /> }
+      { divided && <hr className="Card__divider" /> }
       { subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }
       { children }
     </Fragment>
@@ -47,8 +47,8 @@ const Card = ({
         className,
         {
           'Card--active': active,
+          'Card--divided': divided,
           'Card--no-padding': noPadding,
-          'Card--ruled': ruled,
         },
       ),
     },
@@ -59,10 +59,10 @@ const Card = ({
 Card.propTypes = {
   active: PropTypes.bool,
   className: PropTypes.string,
+  divided: PropTypes.bool,
   elementType: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   helperText: PropTypes.string,
   noPadding: PropTypes.bool,
-  ruled: PropTypes.bool,
   size: PropTypes.string,
   subTitle: PropTypes.string,
   title: PropTypes.string,
@@ -71,10 +71,10 @@ Card.propTypes = {
 Card.defaultProps = {
   active: undefined,
   className: undefined,
+  divided: false,
   elementType: 'section',
   helperText: undefined,
   noPadding: false,
-  ruled: false,
   size: CardSizes.LARGE,
   subTitle: undefined,
   title: undefined,
