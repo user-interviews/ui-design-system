@@ -36,6 +36,7 @@ $card-width-xs: 15.625rem;
 
   &__rule {
     border: 1px solid $ux-gray-400;
+    margin: 0.75rem auto;
   }
 
   &__subtitle {
@@ -53,6 +54,12 @@ $card-width-xs: 15.625rem;
 
   &--no-padding {
     padding: 0;
+  }
+
+  &--ruled {
+    .Card__title {
+      margin-bottom: 0;
+    }
   }
 
   &--md {
