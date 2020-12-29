@@ -65,18 +65,3 @@ export const Default = () => (
     <button className="btn btn-primary" type="submit">Save</button>
   </Form>
 );
-
-export const Inline = () => (
-  <Form id="form" inline onSubmit={onSubmit}>
-    <FormGroup id="first-name" label="First name" labelHtmlFor="first-name">
-      <InputComponent id="first-name-input" name="first-name" type="text" />
-    </FormGroup>
-    <FormGroup id="last-name" label="Last name" labelHtmlFor="last-name" required>
-      <InputComponent id="last-name-input" name="last-name" type="text" />
-    </FormGroup>
-    <FormGroup id="description" label="Description" labelHtmlFor="description">
-      <textarea className="form-control" id="description" type="text" />
-    </FormGroup>
-    <button className="btn btn-primary" type="submit">Save</button>
-  </Form>
-);
