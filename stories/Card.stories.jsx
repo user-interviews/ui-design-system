@@ -13,7 +13,6 @@ export default {
 
 export const Default = () => (
   <Card
-    active={boolean('Is active', false)}
     divided={boolean('With divider', false)}
     helperText={text('Helper text', '(helper text)')}
     noPadding={boolean('Without padding', false)}

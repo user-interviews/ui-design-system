@@ -12,7 +12,6 @@ export const CardSizes = {
 };
 
 const Card = ({
-  active,
   children,
   className,
   divided,
@@ -46,7 +45,6 @@ const Card = ({
         `Card--${size}`,
         className,
         {
-          'Card--active': active,
           'Card--divided': divided,
           'Card--no-padding': noPadding,
         },
@@ -57,7 +55,6 @@ const Card = ({
 };
 
 Card.propTypes = {
-  active: PropTypes.bool,
   className: PropTypes.string,
   divided: PropTypes.bool,
   elementType: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
@@ -69,7 +66,6 @@ Card.propTypes = {
 };
 
 Card.defaultProps = {
-  active: undefined,
   className: undefined,
   divided: false,
   elementType: 'section',

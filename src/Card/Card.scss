@@ -49,10 +49,6 @@ $card-width-xs: 15.625rem;
     @include font-type-50--bold;
   }
 
-  &--active {
-    outline: $ux-green-500 auto 5px;
-  }
-
   &--divided {
     .Card__title {
       margin-bottom: 0;
