@@ -9,7 +9,7 @@ $card-spacing: 1.5rem;
 $card-width: 56rem;
 $card-width-md: 40rem;
 $card-width-sm: 32rem;
-$card-width-xs: 15.625rem;
+$card-width-xs: 15rem;
 
 .Card {
   background-color: $ux-white;
@@ -27,11 +27,14 @@ $card-width-xs: 15.625rem;
 
   &__divider {
     border: 1px solid $ux-gray-400;
-    margin: 0.75rem auto;
+
+    margin-bottom: 0.5rem;
+    margin-top: 0.25rem;
   }
 
   &__header {
     display: flex;
+    flex-wrap: wrap;
   }
 
   &__helper-text {
@@ -47,6 +50,7 @@ $card-width-xs: 15.625rem;
 
   &__title {
     @include font-type-50--bold;
+    margin-bottom: 0.25rem;
   }
 
   &--divided {
@@ -74,6 +78,11 @@ $card-width-xs: 15.625rem;
   &--xs {
     @include media-breakpoint-up(sm) {
       max-width: $card-width-xs;
+    }
+
+    .Card__helper-text {
+      margin-left: 0;
+      margin-bottom: 0.5rem;
     }
   }
 }
