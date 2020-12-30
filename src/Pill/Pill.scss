@@ -4,35 +4,44 @@
 .Pill {
   display: inline;
   font-weight: $font-weight-normal;
-
-  //////// COLORS!
-  // Default color is gray and sadddddd
   background-color: $ux-gray-200;
   color: $ux-gray-800;
+  border: 1px solid $ux-gray-400;
 
   &--blue {
     background-color: $ux-blue-100;
     color: $ux-blue-700;
+    border: 1px solid $ux-blue-300;
   }
 
   &--orange {
     background-color: $ux-orange-100;
     color: $ux-orange-900;
+    border: 1px solid $ux-orange-400;
   }
 
   &--green {
     background-color: $ux-green-200;
     color: $ux-green-800;
+    border: 1px solid $ux-green-400;
   }
 
   &--yellow {
     background-color: $ux-yellow-100;
-    color: $ux-orange-900;
+    color: $ux-yellow-900;
+    border: 1px solid $ux-yellow-600;
   }
 
   &--gray {
     background-color: $ux-gray-300;
     color: $ux-gray-800;
+    border: 1px solid $ux-gray-400;
+  }
+
+  &--silver {
+    background-color: $ux-gray-200;
+    color: $ux-gray-800;
+    border: 1px solid $ux-gray-400;
   }
 
   /////// SIZES

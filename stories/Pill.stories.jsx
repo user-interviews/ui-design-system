@@ -14,7 +14,7 @@ export default {
   decorators: [withKnobs],
 };
 
-const colors = ['', 'blue', 'orange', 'green', 'gray', 'yellow'];
+const colors = ['', 'blue', 'orange', 'yellow', 'green', 'gray', 'silver' ];
 const sizes = ['', 'sm'];
 
 export const Default = () => (
