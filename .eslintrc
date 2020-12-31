@@ -115,7 +115,7 @@
     "implicit-arrow-linebreak": 0,
     "jsx-a11y/label-has-associated-control": [ 2, {
       "assert": "either",
-      "controlComponents": ["AsyncSelect", "SingleSelect"],
+      "controlComponents": ["AsyncCreatable", "AsyncSelect", "SingleSelect"],
       "depth": 25,
       "labelAttributes": ["label"],
       "labelComponents": []

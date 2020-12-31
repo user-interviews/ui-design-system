@@ -21,6 +21,7 @@ import Popper from 'src/Popper';
 import RadioButton from 'src/RadioButton';
 import RadioButtonGroup from 'src/RadioButtonGroup';
 import {
+  AsyncCreatable,
   AsyncSelect,
   SELECT_SIZES,
   SingleSelect,
@@ -30,6 +31,7 @@ import TrackedButton from 'src/TrackedButton';
 
 export {
   AlertMessage,
+  AsyncCreatable,
   AsyncSelect,
   CheckboxButton,
   CheckboxButtonGroup,

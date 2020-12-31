@@ -1,29 +1,22 @@
 import React from 'react';
 import propTypes from 'prop-types';
-import { AsyncCreatable, components } from 'react-select';
+import AsyncCreatableSelect from 'react-select/async-creatable';
 
 import { defaultStyles, defaultTheme, SELECT_SIZES } from './styles';
 
-const Input = (props) => (
-  <components.Input
-    {...props}
-    isHidden={false}
-  />
-);
-
-const AsyncSelect = ({
+const AsyncCreatable = ({
   'aria-label': ariaLabel,
   'aria-labelledby': ariaLabelledBy,
   className,
   defaultOptions,
   defaultValue,
-  disabled,
   filterOption,
   getOptionLabel,
   getOptionValue,
   isClearable,
   id,
   ignoreCase,
+  inputValue,
   isLoading,
   loadOptions,
   modal,
@@ -37,49 +30,47 @@ const AsyncSelect = ({
   onInputChange,
   ...props
 }) => (
-  <AsyncCreatable
+  <AsyncCreatableSelect
     {...props}
     autoload
-    className="job-title-select"
-    classNamePrefix="react-select"
-    components={{ Input }}
+    classNamePrefix={`${className || ''} AsyncCreatable`}
     controlShouldRenderValue={false}
     defaultOptions
+    defaultValue={defaultValue}
     filterOption={filterOption}
     formatCreateLabel={(label) => label}
     getNewOptionData={(label) => ({ name: label })}
-    getOptionLabel={(option) => option.name}
-    getOptionValue={(option) => option.name}
+    getOptionLabel={getOptionLabel}
+    getOptionValue={getOptionValue}
     ignoreCase
-    inputValue={occupation || ''}
-    isLoading={loading}
+    inputValue={inputValue}
+    isLoading={isLoading}
     isValidNewOption={() => false}
-    loadingMessage={renderNull}
+    loadingMessage={() => 'hi'}
     loadOptions={loadOptions}
-    name={inputName}
-    noOptionsMessage={renderNull}
-    placeholder=""
+    name={name}
+    noOptionsMessage={noOptionsMessage}
+    placeholder={placeholder}
     styles={defaultStyles}
-    tabSelectsValue={false}
     theme={defaultTheme}
-    value={{ name: occupation }}
+    value={value}
     onChange={onChange}
     onInputChange={onInputChange}
   />
 );
 
-AsyncSelect.propTypes = {
+AsyncCreatable.propTypes = {
   'aria-label': propTypes.string,
   'aria-labelledby': propTypes.string,
   className: propTypes.string,
   defaultOptions: propTypes.oneOfType([propTypes.bool, propTypes.array]),
   defaultValue: propTypes.object,
-  disabled: propTypes.bool,
   filterOption: propTypes.func,
   getOptionLabel: propTypes.func,
   getOptionValue: propTypes.func,
   id: propTypes.string,
   ignoreCase: propTypes.bool,
+  inputValue: propTypes.string,
   isClearable: propTypes.bool,
   isLoading: propTypes.bool,
   loadOptions: propTypes.func.isRequired,
@@ -94,18 +85,18 @@ AsyncSelect.propTypes = {
   onInputChange: propTypes.func,
 };
 
-AsyncSelect.defaultProps = {
+AsyncCreatable.defaultProps = {
   'aria-label': undefined,
   'aria-labelledby': undefined,
   className: undefined,
   defaultOptions: false,
   defaultValue: undefined,
-  disabled: false,
   filterOption: undefined,
   getOptionLabel: undefined,
   getOptionValue: undefined,
   id: undefined,
   ignoreCase: undefined,
+  inputValue: '',
   isClearable: false,
   isLoading: false,
   modal: false,
@@ -119,4 +110,4 @@ AsyncSelect.defaultProps = {
   onInputChange: undefined,
 };
 
-export default AsyncCreatableSelect;
+export default AsyncCreatable;
