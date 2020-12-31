@@ -61,6 +61,7 @@ const defaultTheme = (theme) => ({
   colors: {
     ...theme.colors,
     primary: theme.colors.neutral20,
+    neutral50: systemColors.uxGray700,
   },
 });
 

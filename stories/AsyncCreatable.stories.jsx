@@ -10,11 +10,11 @@ export default {
 const onChange = () => {};
 
 const options = [
-  { label: 'Deebee', value: 1 },
-  { label: 'Eebee', value: 2 },
-  { label: 'Ollie', value: 3 },
-  { label: 'Crumpet', value: 4 },
-  { label: 'Venne4', value: 5 },
+  { label: 'red', value: 1 },
+  { label: 'orange', value: 2 },
+  { label: 'yellow', value: 3 },
+  { label: 'green', value: 4 },
+  { label: 'blue', value: 5 },
 ];
 
 async function loadOptions(search) {
