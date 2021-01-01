@@ -23,7 +23,7 @@ const Form = forwardRef(({
   return (
     <form
       action={action}
-      className={classNames('Form', className, { 'Form--inline': inline })}
+      className={classNames('Form', className,)}
       id={id}
       method="POST"
       multipart={multipart}
