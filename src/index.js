@@ -1,3 +1,4 @@
+import Card, { CardSizes } from 'src/Card';
 import CheckboxButton from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
@@ -31,6 +32,8 @@ import TrackedButton from 'src/TrackedButton';
 export {
   AlertMessage,
   AsyncSelect,
+  Card,
+  CardSizes,
   CheckboxButton,
   CheckboxButtonGroup,
   CopyToClipboard,

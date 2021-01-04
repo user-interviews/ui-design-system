@@ -49,6 +49,43 @@ exports[`Storyshots Design System/Alert Without Dismiss 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Card Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card Card--lg"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        Large card with title
+      </h2>
+      <span
+        className="Card__helper-text"
+      >
+        (helper text)
+      </span>
+    </div>
+    <h3
+      className="Card__subtitle"
+    >
+      And a subtitle
+    </h3>
+    <div>
+      Use knobs to try out the different card sizes
+    </div>
+  </section>
+</div>
+`;
+
 exports[`Storyshots Design System/Copy To Clipboard Button Default 1`] = `
 <div
   style={
