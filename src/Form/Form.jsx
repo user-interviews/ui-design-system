@@ -11,7 +11,6 @@ const Form = forwardRef(({
   CSRFParam,
   CSRFToken,
   id,
-  inline,
   method,
   multipart,
   name,
@@ -23,7 +22,7 @@ const Form = forwardRef(({
   return (
     <form
       action={action}
-      className={classNames('Form', className,)}
+      className={classNames('Form', className)}
       id={id}
       method="POST"
       multipart={multipart}
