@@ -11,7 +11,6 @@ const Form = forwardRef(({
   CSRFParam,
   CSRFToken,
   id,
-  inline,
   method,
   multipart,
   name,
@@ -23,7 +22,7 @@ const Form = forwardRef(({
   return (
     <form
       action={action}
-      className={classNames('Form', className, { 'Form--inline': inline })}
+      className={classNames('Form', className)}
       id={id}
       method="POST"
       multipart={multipart}
@@ -47,7 +46,6 @@ Form.propTypes = {
   CSRFParam: PropTypes.string,
   CSRFToken: PropTypes.string,
   id: PropTypes.string.isRequired,
-  inline: PropTypes.bool,
   method: PropTypes.string,
   multipart: PropTypes.string,
   name: PropTypes.string,
@@ -60,7 +58,6 @@ Form.defaultProps = {
   className: undefined,
   CSRFParam: undefined,
   CSRFToken: undefined,
-  inline: false,
   method: undefined,
   multipart: undefined,
   name: undefined,
