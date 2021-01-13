@@ -57,10 +57,51 @@ How do we document what's in each release?
 How do we determine whether it's a major, minor, or patch release?
 
 
-# Available Scripts
+# Developer Resources
 
+## Available Scripts
 In the project directory, you can run:
 
 ### `yarn storybook`
 
 Launches the Storybook server.<br />
+
+### `yarn install`
+
+Installs all yarn dependencies
+
+### `yarn test`
+
+Runs the jest test suite
+
+### `yarn lint`
+
+Runs ESLint to report on any style violations
+
+## Pull requests
+
+Our branch names consist of 3 parts:
+1. The type of task we are working on (one of the list below)
+    * bug
+    * chore
+    * feature
+    * hotfix
+    * research
+1. The Github issue number prefixed with UIDS (e.g. UIDS-123)
+1. A short description of the task to be done (e.g. improve-documentation)
+
+An example of this would be `feature/UIDS-123-improve-documentation`
+
+When you are ready for feedback:
+ * Request a review from at least one senior developer.
+ * Request a review from at least one designer.
+ * Anyone should feel free to leave feedback on any PR, even if your review was not specifically requested.
+ * As the developer who opened the PR, please be sure to respond to all feedback, even if just to say that you had considered it but did not make a corresponding change.
+
+## Merge process
+
+Once your pull request has been approved by all parties, you may begin the merge process:
+* Merge in the latest `master` and resolve any conflicts if needed.
+* Run `yarn lint` to ensure no new styling errors are returned.
+* Run `yarn test` to ensure tests are passing.
+* Click the Squash and merge button on your pull request and edit your commit message to a concise description of your changes.
