@@ -25,30 +25,14 @@ function removeClickOutsideListener(listener) {
   window.removeEventListener('click', listener);
 }
 
-export default class Tooltip extends Component {
-  static propTypes = {
-    header: PropTypes.string,
-    icon: PropTypes.object,
-    iconClasses: PropTypes.string,
-    placement: PropTypes.string.isRequired,
-    strategy: PropTypes.string,
-    text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
-    theme: PropTypes.string,
-    onShow: PropTypes.func,
-  };
+class Tooltip extends Component {
+  constructor(props) {
+    super(props);
 
-  static defaultProps = {
-    icon: faQuestionCircle,
-    iconClasses: undefined,
-    header: undefined,
-    strategy: undefined,
-    theme: 'dark',
-    onShow: undefined,
-  };
-
-  state = {
-    visible: false,
-  };
+    this.state = {
+      visible: false,
+    };
+  }
 
   handleClickOutside = () => {
     if (this.clickOutsideListener) {
@@ -98,3 +82,25 @@ export default class Tooltip extends Component {
     );
   }
 }
+
+Tooltip.propTypes = {
+  header: PropTypes.string,
+  icon: PropTypes.object,
+  iconClasses: PropTypes.string,
+  placement: PropTypes.string.isRequired,
+  strategy: PropTypes.string,
+  text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  theme: PropTypes.string,
+  onShow: PropTypes.func,
+};
+
+Tooltip.defaultProps = {
+  icon: faQuestionCircle,
+  iconClasses: undefined,
+  header: undefined,
+  strategy: undefined,
+  theme: 'dark',
+  onShow: undefined,
+};
+
+export default Tooltip;
