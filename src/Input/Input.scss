@@ -11,11 +11,12 @@
   &:focus {
     border: 1px solid #92CBFC;
     box-shadow: $input-focus-box-shadow;
+    color: $input-focus-color;
     filter: drop-shadow(0px 0px 8px rgba(102, 175, 233, 0.7));
   }
 
   .form-control {
-    color: $ux-black;
+    color: $input-color;
     padding: 0.5rem 0.75rem;
   }
 
