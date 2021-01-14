@@ -105,3 +105,16 @@ Once your pull request has been approved by all parties, you may begin the merge
 * Run `yarn lint` to ensure no new styling errors are returned.
 * Run `yarn test` to ensure tests are passing.
 * Click the Squash and merge button on your pull request and edit your commit message to a concise description of your changes.
+
+## Release steps
+
+This package uses [Semantic versioning](https://semver.org/), which requires version numbers in MAJOR.MINOR.PATCH format. Any breaking changes to the API require an update to the MAJOR version. Backwards compatible changes only require an update to the MINOR version. Hotfixes and patches need only update the PATCH version. Once you have commits ready to bundle you may begin the release process:
+* Update the "version" field in package.json.
+* Run `yarn build` to compile the source files and write out to the lib directory.
+* Run `npm pack` to archive all of the source files. Note: you can run `npm pack --dry-run` to see a list of files that will be included in the package. This is useful to double check a new component is being added or to see the size of the package/individual files.
+* Run `npm publish` to publish the package to Github's registry.
+* Draft a new release in the Github [repo](https://github.com/user-interviews/ui-design-system/releases).
+* Use the version number from package.json in the "Tag version" field.
+* Run `git log $(git describe --tags --abbrev=0)..HEAD --oneline` to get a list of all commits since the latest release and copy these into the "Describe this release" field.
+* Upload the binary that was created from running `npm pack`.
+* Publish release.
