@@ -94,7 +94,7 @@ An example of this would be `feature/UIDS-123-improve-documentation`
 
 When you are ready for feedback:
  * Request a review from at least one senior developer.
- * Request a review from at least one designer.
+ * Request a review from at least one designer if your PR has user-facing changes.
  * Anyone should feel free to leave feedback on any PR, even if your review was not specifically requested.
  * As the developer who opened the PR, please be sure to respond to all feedback, even if just to say that you had considered it but did not make a corresponding change.
 
