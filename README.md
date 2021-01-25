@@ -2,6 +2,12 @@
 
 The goal of the design system is to achieve visual and experiential consistency throughout the app while streamlining the design and implementation process. The design system should contain all reusable components, one-off variations, and guidelines that are used to build up the existing and future screens of our application. It should direct us to be mindful of when we're consciously diverging from the established system. 
 
+## References and inspiration
+- [Carbon IBM](https://www.carbondesignsystem.com/)
+- [Material Design](https://material.io/design) 
+- [Primer - Github](https://primer.style/)
+- [Ant Design](https://ant.design/)
+
 # Updating
 
 ## 🕰️ When do we update the design system?
