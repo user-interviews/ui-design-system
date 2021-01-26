@@ -44,6 +44,8 @@
   }
 
   .FormControlLabel {
+    @include font-type-30;
+
     flex-wrap: wrap;
     margin-right: 0.5rem;
     display: block;
