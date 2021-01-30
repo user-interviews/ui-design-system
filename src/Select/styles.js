@@ -1,4 +1,5 @@
 import systemColors from 'src/Styles/colors';
+import fontWeights from '../Styles/fontWeights';
 
 export const SELECT_SIZES = { SMALL: 'small' };
 
@@ -23,10 +24,12 @@ const defaultStyles = ({ size }) => ({
       backgroundColor: isDisabled ? systemColors.inputDisabledBg : styles.backgroundColor,
       borderColor: systemColors.inputBorderColor,
     }),
+    dropdownIndicator: (styles) => ({ ...styles, color: systemColors.uxGray600 }),
     indicatorSeparator: (styles) => ({ ...styles, display: 'none' }),
     singleValue: (styles, { data }) => ({
       ...styles,
-      color: (data.colors ? data.colors.text : systemColors.uxGray600) || systemColors.uxGray600,
+      color: (data.colors ? data.colors.text : systemColors.uxGray900) || systemColors.uxGray900,
+      fontWeight: fontWeights.light,
     }),
     option: (styles, {
       data,
@@ -40,6 +43,7 @@ const defaultStyles = ({ size }) => ({
         ...styles,
         backgroundColor: isSelected || isFocused ? colors.hover : styles.backgroundColor,
         color: colors.text,
+        fontWeight: fontWeights.light,
         cursor: 'pointer',
 
         ':active': {
