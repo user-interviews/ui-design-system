@@ -33,7 +33,7 @@ const InputComponent = (props) => {
 
 export const Default = () => (
   <FormGroup id="default">
-    <InputComponent id="default-input" name="default" placeholder="default" />
+    <InputComponent aria-label="input text label goes here" id="default-input" name="default" placeholder="default" />
   </FormGroup>
 );
 
@@ -41,6 +41,7 @@ export const Required = () => (
   <FormGroup
     id="with-required"
     label="Form Group with label"
+    labelHtmlFor="with-required-input"
     required
   >
     <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
