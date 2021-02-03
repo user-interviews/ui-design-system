@@ -1,0 +1,38 @@
+@import '../../scss/theme';
+
+.ProfileCell {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 0;
+
+  &__content {
+    &__name {
+      @include font-type-30--bold;
+      color: $ux-gray-900;
+      margin: 0;
+    }
+
+    &__subtitle {
+      @include font-type-20--light;
+      color: $ux-gray-900;
+    }
+  }
+
+  &__image {
+    align-items: center;
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  &--large {
+    .ProfileCell__content {
+      &__name {
+        @include font-type-40--bold;
+      }
+      &__subtitle {
+        @include font-type-30--light;
+      }
+    }
+  }
+}

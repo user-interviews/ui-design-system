@@ -1,0 +1,41 @@
+@mixin mod-rainbow($selector: '', $lighten: 0%, $color: $ux-white) {
+  &.ui-mod #{$selector} {
+    color: $color;
+  }
+
+  &.ui-mod--0 #{$selector} {
+    $ui-mod-gray: lighten($ux-gray, $lighten);
+    background-color: $ui-mod-gray;
+    border-color: $ui-mod-gray;
+  }
+
+  &.ui-mod--1 #{$selector} {
+    $ui-mod-green: lighten($ux-green, $lighten);
+    background-color: $ui-mod-green;
+    border-color: $ui-mod-green;
+  }
+
+  &.ui-mod--2 #{$selector} {
+    $ui-mod-orange: lighten($ux-orange, $lighten);
+    background-color: $ui-mod-orange;
+    border-color: $ui-mod-orange;
+  }
+
+  &.ui-mod--3 #{$selector} {
+    $ui-mod-yellow: lighten($ux-yellow, $lighten);
+    background-color: $ui-mod-yellow;
+    border-color: $ui-mod-yellow;
+  }
+
+  &.ui-mod--4 #{$selector} {
+    $ux-red: lighten($ux-red, $lighten);
+    background-color: $ux-red;
+    border-color: $ux-red;
+  }
+
+  &.ui-mod--5 #{$selector} {
+    $ui-mod-purple: lighten($ux-purple, $lighten);
+    background-color: $ui-mod-purple;
+    border-color: $ui-mod-purple;
+  }
+}
