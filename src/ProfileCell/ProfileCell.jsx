@@ -6,9 +6,7 @@ import Avatar from './Avatar';
 import './ProfileCell.scss';
 
 function ProfileCell(props) {
-  function getProfileImage() {
-    return props.user.imageUrl || props.user.profilePictureUrl;
-  }
+  const profileImage = props.user.imageUrl || props.user.profilePictureUrl;
 
   return (
     <div
@@ -20,7 +18,7 @@ function ProfileCell(props) {
       <div className="ProfileCell__image">
         <Avatar
           colorId={props.colorId}
-          image={getProfileImage()}
+          image={profileImage}
           initials={props.user.initials}
           large={props.large}
           name={props.user.name}

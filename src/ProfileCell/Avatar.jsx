@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import { uiModClassName } from '../Styles/classNames';
+
 import './Avatar.scss';
 
 function Avatar(props) {
@@ -9,10 +11,6 @@ function Avatar(props) {
 
   function onImageLoadError() {
     setImageLoadFailed(true);
-  }
-
-  function displayImage() {
-    return props.image && !imageLoadFailed;
   }
 
   function wrapIfUrlPresent(content) {
@@ -27,11 +25,11 @@ function Avatar(props) {
         </a>
       );
     }
-
     return content;
   }
 
-  const content = displayImage() ? (
+  const displayImage = props.image && !imageLoadFailed;
+  const content = displayImage ? (
     <img
       alt={props.name}
       src={props.image}
@@ -86,10 +84,5 @@ Avatar.defaultProps = {
   showAlert: false,
   url: undefined,
 };
-
-const UI_MOD_OPERAND = 6;
-const uiModClassName = (id) =>
-  Number.isNaN(id) ? null : `ui-mod ui-mod--${window.parseInt(id) % UI_MOD_OPERAND}`;
-
 
 export default Avatar;
