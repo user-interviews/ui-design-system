@@ -4,38 +4,32 @@
   }
 
   &.ui-mod--0 #{$selector} {
-    $ui-mod-gray: lighten($ux-gray, $lighten);
-    background-color: $ui-mod-gray;
-    border-color: $ui-mod-gray;
+    background-color: $ux-gray-300;
+    color: $ux-gray-800;
   }
 
   &.ui-mod--1 #{$selector} {
-    $ui-mod-green: lighten($ux-green, $lighten);
-    background-color: $ui-mod-green;
-    border-color: $ui-mod-green;
+    background-color: $ux-green-300;
+    color: $ux-green-900;
   }
 
   &.ui-mod--2 #{$selector} {
-    $ui-mod-orange: lighten($ux-orange, $lighten);
-    background-color: $ui-mod-orange;
-    border-color: $ui-mod-orange;
+    background-color: $ux-orange-200;
+    color: $ux-orange-900;
   }
 
   &.ui-mod--3 #{$selector} {
-    $ui-mod-yellow: lighten($ux-yellow, $lighten);
-    background-color: $ui-mod-yellow;
-    border-color: $ui-mod-yellow;
+    background-color: $ux-yellow-300;
+    color: $ux-yellow-900;
   }
 
   &.ui-mod--4 #{$selector} {
-    $ux-red: lighten($ux-red, $lighten);
-    background-color: $ux-red;
-    border-color: $ux-red;
+    background-color: $ux-red-200;
+    color: $ux-red-900;
   }
 
   &.ui-mod--5 #{$selector} {
-    $ui-mod-purple: lighten($ux-purple, $lighten);
-    background-color: $ui-mod-purple;
-    border-color: $ui-mod-purple;
+    background-color: $ux-purple-200;
+    color: $ux-purple-900;
   }
 }
