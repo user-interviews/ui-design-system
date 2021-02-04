@@ -2,7 +2,7 @@
   on:
     push:
       branches:
-        - feature/UIDS-149-builder-related-followons
+        - master
   jobs:
     gh-pages-deploy:
       name: Deploying to gh-pages
