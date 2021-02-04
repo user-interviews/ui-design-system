@@ -7,6 +7,10 @@ import './ProfileCell.scss';
 
 function ProfileCell(props) {
   const profileImage = props.user.imageUrl || props.user.profilePictureUrl;
+  const contentStyle = {};
+  if (props.maxWidth) {
+    contentStyle.maxWidth = props.maxWidth;
+  }
 
   return (
     <div
@@ -25,7 +29,7 @@ function ProfileCell(props) {
           showAlert={props.showAlert}
         />
       </div>
-      <div className="ProfileCell__content">
+      <div className="ProfileCell__content" style={contentStyle}>
         <h5 className="ProfileCell__content__name">
           {props.user.name}
         </h5>
@@ -56,6 +60,7 @@ const ProfileUser = PropTypes.shape({
 ProfileCell.propTypes = {
   colorId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   large: PropTypes.bool,
+  maxWidth: PropTypes.string,
   showAlert: PropTypes.bool,
   subtitle: PropTypes.node,
   user: ProfileUser.isRequired,
@@ -64,6 +69,7 @@ ProfileCell.propTypes = {
 ProfileCell.defaultProps = {
   colorId: undefined,
   large: false,
+  maxWidth: undefined,
   showAlert: false,
   subtitle: undefined,
 };

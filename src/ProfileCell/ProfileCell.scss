@@ -7,15 +7,27 @@
   padding: 0;
 
   &__content {
+    @mixin truncate {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
     &__name {
       @include font-type-30--bold;
+      @include truncate;
       color: $ux-gray-900;
       margin: 0;
     }
 
     &__subtitle {
       @include font-type-20--light;
+      @include truncate;
       color: $ux-gray-900;
+
+      * {
+        @include truncate;
+      }
     }
   }
 

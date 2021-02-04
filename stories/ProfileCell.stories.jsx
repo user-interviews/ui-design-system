@@ -37,7 +37,8 @@ const userWithImage = {
 
 export const Small = () => (
   <ProfileCell
-    colorId={number('Color ID', null)}
+    colorId={number('Color ID', undefined)}
+    maxWidth={text('Max Text Width (e.g. 8rem)', '')}
     showAlert={boolean('Show Alert', false)}
     subtitle={text('Subtitle Text', `riley@userinterviews.com`)}
     user={userNoImage}
@@ -46,8 +47,9 @@ export const Small = () => (
 
 export const Large = () => (
   <ProfileCell
-    colorId={number('Color ID', null)}
+    colorId={number('Color ID', undefined)}
     large
+    maxWidth={text('Max Text Width (e.g. 8rem)', '')}
     showAlert={boolean('Show Alert', false)}
     subtitle={largeSubtitle}
     user={userNoImage}
@@ -57,6 +59,7 @@ export const Large = () => (
 export const WithImage = () => (
   <ProfileCell
     large
+    maxWidth={text('Max Text Width (e.g. 8rem)', '')}
     showAlert={boolean('Show Alert', false)}
     subtitle={largeSubtitle}
     user={userWithImage}
