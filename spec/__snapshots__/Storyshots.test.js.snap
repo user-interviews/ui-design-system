@@ -1376,6 +1376,11 @@ exports[`Storyshots Design System/Profile Cell Large 1`] = `
     </div>
     <div
       className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
     >
       <h5
         className="ProfileCell__content__name"
@@ -1431,6 +1436,11 @@ exports[`Storyshots Design System/Profile Cell Small 1`] = `
     </div>
     <div
       className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
     >
       <h5
         className="ProfileCell__content__name"
@@ -1478,6 +1488,11 @@ exports[`Storyshots Design System/Profile Cell With Image 1`] = `
     </div>
     <div
       className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
     >
       <h5
         className="ProfileCell__content__name"

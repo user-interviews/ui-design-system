@@ -7,10 +7,9 @@ import './ProfileCell.scss';
 
 function ProfileCell(props) {
   const profileImage = props.user.imageUrl || props.user.profilePictureUrl;
-  const contentStyle = {};
-  if (props.maxWidth) {
-    contentStyle.maxWidth = props.maxWidth;
-  }
+  const contentStyle = {
+    maxWidth: props.maxWidth ? props.maxWidth : 'none',
+  };
 
   return (
     <div
