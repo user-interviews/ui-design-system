@@ -19,6 +19,7 @@ import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
 import Pill from 'src/Pill';
 import Popper from 'src/Popper';
+import ProfileCell from 'src/ProfileCell';
 import RadioButton from 'src/RadioButton';
 import RadioButtonGroup from 'src/RadioButtonGroup';
 import {
@@ -48,6 +49,7 @@ export {
   MessageTypes,
   Pill,
   Popper,
+  ProfileCell,
   RadioButton,
   RadioButtonGroup,
   SELECT_SIZES,

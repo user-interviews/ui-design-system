@@ -1345,6 +1345,178 @@ exports[`Storyshots Design System/Popper Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Profile Cell Large 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCell ProfileCell--large"
+  >
+    <div
+      className="ProfileCell__image"
+    >
+      <div
+        aria-hidden={false}
+        className="Avatar Avatar--large"
+      >
+        <div
+          className="Avatar__circle"
+        >
+          <span
+            className="Avatar__circle__initials"
+          >
+            RR
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <h5
+        className="ProfileCell__content__name"
+      >
+        Riley Researcher
+      </h5>
+      <div
+        className="ProfileCell__content__subtitle"
+      >
+        <div>
+          riley@userinterviews.com
+        </div>
+        <div>
+          +1 888 888 8888
+        </div>
+        <div>
+          (-5:00) America/New York
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Profile Cell Small 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCell"
+  >
+    <div
+      className="ProfileCell__image"
+    >
+      <div
+        aria-hidden={false}
+        className="Avatar"
+      >
+        <div
+          className="Avatar__circle"
+        >
+          <span
+            className="Avatar__circle__initials"
+          >
+            RR
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <h5
+        className="ProfileCell__content__name"
+      >
+        Riley Researcher
+      </h5>
+      <div
+        className="ProfileCell__content__subtitle"
+      >
+        riley@userinterviews.com
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Profile Cell With Image 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCell ProfileCell--large"
+  >
+    <div
+      className="ProfileCell__image"
+    >
+      <div
+        aria-hidden={false}
+        className="Avatar Avatar--large"
+      >
+        <div
+          className="Avatar__circle"
+        >
+          <img
+            alt="Riley Researcher"
+            onError={[Function]}
+            src="https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <h5
+        className="ProfileCell__content__name"
+      >
+        Riley Researcher
+      </h5>
+      <div
+        className="ProfileCell__content__subtitle"
+      >
+        <div>
+          riley@userinterviews.com
+        </div>
+        <div>
+          +1 888 888 8888
+        </div>
+        <div>
+          (-5:00) America/New York
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Selects/Async Default 1`] = `
 <div
   style={
