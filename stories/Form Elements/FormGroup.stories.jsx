@@ -16,13 +16,20 @@ import RadioButtonGroup from 'src/RadioButtonGroup';
 import { ORIENTATIONS } from 'src/ControlButtonGroup';
 import RadioButton from 'src/RadioButton';
 
+import mdx from './FormGroup.mdx';
+
 export default {
   title: 'Design System/Form Elements/Form Group',
   component: FormGroup,
   decorators: [withKnobs],
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
-export const InputComponent = (props) => {
+const InputComponent = (props) => {
   const [value, setValue] = useState('');
   const handleChangeValue = (event) => setValue(event.target.value);
 
@@ -82,13 +89,13 @@ export const WithHelperText = () => (
 export const WithErrors = () => (
   <FormGroup
     displayErrorText
-    errors={{ test: ['invalid input!'] }}
+    errors={{ test: [<div>Sorry, we’re not able to accept this type of input. For more information, click <a href="http://www.google.com">here</a></div>] }}
     id="with-errors"
     inputKey="test"
     label="Form Group with errors"
     labelHtmlFor="input"
   >
-    <InputComponent id="input" name="with-errors" />
+    <InputComponent id="input" name="with-errors" placeholder="Placeholder text" />
   </FormGroup>
 );
 
