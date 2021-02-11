@@ -698,7 +698,7 @@ exports[`Storyshots Design System/Form Elements/Form Group Default 1`] = `
         id="default-input"
         name="default"
         onChange={[Function]}
-        placeholder="default"
+        placeholder="Placeholder text"
         type="text"
         value=""
       />
@@ -723,7 +723,7 @@ exports[`Storyshots Design System/Form Elements/Form Group Required 1`] = `
       className="InputLabel"
       htmlFor=""
     >
-      Form Group with label
+      Label
       <span
         className="InputLabel__helper-text"
       >
@@ -906,7 +906,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Helper Text 1`] 
       className="InputLabel"
       htmlFor="input"
     >
-      Form Group with helper text
+      Label
     </label>
     <div
       className="Input input-group"
@@ -947,7 +947,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Label 1`] = `
       className="InputLabel"
       htmlFor="input"
     >
-      Form Group with label
+      Label
     </label>
     <div
       className="Input input-group"
@@ -983,7 +983,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Label Tooltip 1`
       className="InputLabel"
       htmlFor="input"
     >
-      Form Group with label and tooltip
+      Label
       <span
         aria-hidden="true"
         className="Tooltip__icon Tooltip__icon--gray"
@@ -1080,7 +1080,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Leading And Trai
         id="input"
         name="with-leading-and-trailing-icons"
         onChange={[Function]}
-        placeholder=""
+        placeholder="Placeholder text"
         type="text"
         value=""
       />
@@ -1171,7 +1171,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Leading Icon 1`]
         id="input"
         name="with-leading-icon"
         onChange={[Function]}
-        placeholder=""
+        placeholder="Placeholder text"
         type="text"
         value=""
       />
@@ -1306,7 +1306,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Trailing Icon 1`
         id="input"
         name="with-leading-icon"
         onChange={[Function]}
-        placeholder=""
+        placeholder="Placeholder text"
         type="text"
         value=""
       />

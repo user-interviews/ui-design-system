@@ -40,38 +40,7 @@ const InputComponent = (props) => {
 
 export const Default = () => (
   <FormGroup id="default">
-    <InputComponent id="default-input" name="default" placeholder="default" />
-  </FormGroup>
-);
-
-export const Required = () => (
-  <FormGroup
-    id="with-required"
-    label="Form Group with label"
-    required
-  >
-    <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
-  </FormGroup>
-);
-
-export const WithLabel = () => (
-  <FormGroup
-    id="with-label"
-    label="Form Group with label"
-    labelHtmlFor="input"
-  >
-    <InputComponent id="input" name="with-label" />
-  </FormGroup>
-);
-
-export const WithLabelTooltip = () => (
-  <FormGroup
-    id="with-label"
-    label="Form Group with label and tooltip"
-    labelHtmlFor="input"
-    labelTooltip={text('Tooltip', 'Some tooltip text')}
-  >
-    <InputComponent id="input" name="with-label" />
+    <InputComponent id="default-input" name="default" placeholder="Placeholder text" />
   </FormGroup>
 );
 
@@ -79,10 +48,80 @@ export const WithHelperText = () => (
   <FormGroup
     helperText="test helper text"
     id="with-helper-text"
-    label="Form Group with helper text"
+    label="Label"
     labelHtmlFor="input"
   >
     <InputComponent id="input" name="with-helper-text" />
+  </FormGroup>
+);
+
+export const Required = () => (
+  <FormGroup
+    id="with-required"
+    label="Label"
+    required
+  >
+    <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
+  </FormGroup>
+);
+
+export const WithLabelTooltip = () => (
+  <FormGroup
+    id="with-label"
+    label="Label"
+    labelHtmlFor="input"
+    labelTooltip={text('Tooltip', 'Some tooltip text')}
+  >
+    <InputComponent id="input" name="with-label" />
+  </FormGroup>
+);
+
+export const WithLeadingIcon = () => (
+  <FormGroup
+    helperText="with leading icon"
+    id="with-leading-icon"
+    label="Form Group with input leading icon"
+    labelHtmlFor="input"
+  >
+    <InputComponent
+      id="input"
+      leadingIcon={faSearch}
+      name="with-leading-icon"
+      placeholder="Placeholder text"
+    />
+  </FormGroup>
+);
+
+export const WithTrailingIcon = () => (
+  <FormGroup
+    helperText="with trailing icon"
+    id="with-trailing-icon"
+    label="Form Group with input trailing icon"
+    labelHtmlFor="input"
+  >
+    <InputComponent
+      id="input"
+      name="with-leading-icon"
+      placeholder="Placeholder text"
+      trailingIcon={faSearch}
+    />
+  </FormGroup>
+);
+
+export const WithLeadingAndTrailingIcons = () => (
+  <FormGroup
+    helperText="with leading and trailing icons"
+    id="with-trailing-icon"
+    label="Form Group with input leading and trailing icons"
+    labelHtmlFor="input"
+  >
+    <InputComponent
+      id="input"
+      leadingIcon={faSearch}
+      name="with-leading-and-trailing-icons"
+      placeholder="Placeholder text"
+      trailingIcon={faSearch}
+    />
   </FormGroup>
 );
 
@@ -96,39 +135,6 @@ export const WithErrors = () => (
     labelHtmlFor="input"
   >
     <InputComponent id="input" name="with-errors" placeholder="Placeholder text" />
-  </FormGroup>
-);
-
-export const WithLeadingIcon = () => (
-  <FormGroup
-    helperText="with leading icon"
-    id="with-leading-icon"
-    label="Form Group with input leading icon"
-    labelHtmlFor="input"
-  >
-    <InputComponent id="input" leadingIcon={faSearch} name="with-leading-icon" />
-  </FormGroup>
-);
-
-export const WithTrailingIcon = () => (
-  <FormGroup
-    helperText="with trailing icon"
-    id="with-trailing-icon"
-    label="Form Group with input trailing icon"
-    labelHtmlFor="input"
-  >
-    <InputComponent id="input" name="with-leading-icon" trailingIcon={faSearch} />
-  </FormGroup>
-);
-
-export const WithLeadingAndTrailingIcons = () => (
-  <FormGroup
-    helperText="with leading and trailing icons"
-    id="with-trailing-icon"
-    label="Form Group with input leading and trailing icons"
-    labelHtmlFor="input"
-  >
-    <InputComponent id="input" leadingIcon={faSearch} name="with-leading-and-trailing-icons" trailingIcon={faSearch} />
   </FormGroup>
 );
 
