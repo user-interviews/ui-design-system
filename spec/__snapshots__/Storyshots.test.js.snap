@@ -1,5 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Design System/Alert Error 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="AlertMessage AlertMessage-error"
+  >
+    <p
+      className="AlertMessage__title"
+    >
+      Default title
+    </p>
+    Default message
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Alert Info 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="AlertMessage AlertMessage-info"
+  >
+    <p
+      className="AlertMessage__title"
+    >
+      Information
+    </p>
+    Default message
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Alert Other 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="AlertMessage AlertMessage-warning"
+  >
+    <p
+      className="AlertMessage__title"
+    >
+      Default title
+    </p>
+    Default message
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Alert Success 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="AlertMessage AlertMessage-success"
+  >
+    <p
+      className="AlertMessage__title"
+    >
+      Default title
+    </p>
+    Default message
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Alert With Dismiss 1`] = `
 <div
   style={
@@ -18,27 +102,6 @@ exports[`Storyshots Design System/Alert With Dismiss 1`] = `
     >
       ×
     </button>
-    <p
-      className="AlertMessage__title"
-    >
-      Default title
-    </p>
-    Default message
-  </div>
-</div>
-`;
-
-exports[`Storyshots Design System/Alert Without Dismiss 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="AlertMessage AlertMessage-success"
-  >
     <p
       className="AlertMessage__title"
     >
@@ -800,7 +863,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Errors 1`] = `
         id="input"
         name="with-errors"
         onChange={[Function]}
-        placeholder=""
+        placeholder="Placeholder text"
         type="text"
         value=""
       />
@@ -812,7 +875,14 @@ exports[`Storyshots Design System/Form Elements/Form Group With Errors 1`] = `
         className="FormGroup__invalid-feedback__list"
       >
         <li>
-          invalid input!
+          <div>
+            Sorry, we’re not able to accept this type of input. For more information, click 
+            <a
+              href="http://www.google.com"
+            >
+              here
+            </a>
+          </div>
         </li>
       </ol>
     </div>
