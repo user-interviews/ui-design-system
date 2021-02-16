@@ -1,23 +1,12 @@
 {
-  "extends": ["airbnb", "plugin:mdx/recommended"],
+  "extends": "airbnb",
   "overrides": [
     {
       "files": [
-        "stories/**/*.{js,jsx,mdx}"
+        "stories/**/*.{js,jsx}"
       ],
       "rules": {
-        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
-        "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".mdx"] }],
-        "semi": 0
-      }
-    },
-    {
-      "files": [
-        "stories/**/*.mdx",
-        "stories/**/*.stories.mdx"
-      ],
-      "rules": {
-        "react/jsx-indent": 0
+        "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
       }
     },
     {
@@ -107,7 +96,8 @@
           "sortShapeProp": true
         }],
         "react-hooks/exhaustive-deps": "warn",
-        "react-hooks/rules-of-hooks": "error"
+        "react-hooks/rules-of-hooks": "error",
+        "semi": 0
       }
     }
   ],
