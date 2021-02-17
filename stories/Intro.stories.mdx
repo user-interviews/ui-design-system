@@ -1,44 +1,53 @@
-import { Meta, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Meta } from '@storybook/addon-docs/blocks';
+import { colors } from 'src/Styles';
 import ImageFile from '../public/ui-design-system.svg';
 import FigmaLogo from '../public/figma-logo.svg';
 import GithubLogo from '../public/github-logo.svg';
-import { colors } from 'src/Styles';
 
-<Meta title="Design System/Intro" />
+<Meta title="Intro" />
 
-<div style={{ width: '50%', margin: '0 auto', textAlign: 'center'}}>
-<img src={ImageFile} />
-
-We aim to create a system that let us build a user experience that is consistent, flexible and scalable.
-This style guide is living documentation that will be updated as we continue to evolve and improve our design system.
-
-<a type="button" style={{
-        background: colors.uxGray200,
-        borderRadius: '60px',
-        fontSize: '14px',
-        fontWeight: 'bold',
-        padding: '10px 20px',
-        margin: '10px',
-        border: '0',
-        color: colors.uxGray600
+<div style={{ width: '50%', margin: '0 auto', textAlign: 'center' }}>
+  <img alt="User Interviews Design System" src={ImageFile} />
+  <div>
+    We aim to create a system that let us build a user experience that is consistent,
+    flexible and scalable.  This style guide is living documentation that will be
+    updated as we continue to evolve and improve our design system.
+  </div>
+  <a
+    type="button"
+    style={{
+      background: colors.uxGray200,
+      borderRadius: '60px',
+      fontSize: '14px',
+      fontWeight: 'bold',
+      padding: '10px 20px',
+      margin: '10px',
+      border: '0',
+      color: colors.uxGray600,
     }}
     href="https://www.figma.com/file/471iS3QrpPtXZpS1xbsJ20/Components"
-    target="_blank">
-    <img src={FigmaLogo} /> Figma Library
-</a>
-
-<a type="button" style={{
-        background: colors.uxGray200,
-        borderRadius: '60px',
-        fontSize: '14px',
-        fontWeight: 'bold',
-        padding: '10px 20px',
-        border: '0',
-        color: colors.uxGray600
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    <img alt="" src={FigmaLogo} />
+    Figma Library
+  </a>
+  <a
+    type="button"
+    style={{
+      background: colors.uxGray200,
+      borderRadius: '60px',
+      fontSize: '14px',
+      fontWeight: 'bold',
+      padding: '10px 20px',
+      border: '0',
+      color: colors.uxGray600,
     }}
     href="https://github.com/user-interviews/ui-design-system"
-    target="_blank">
-    <img src={GithubLogo} /> Github Repo
-</a>
-
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+      <img alt="" src={GithubLogo} />
+      Github Repo
+  </a>
 </div>

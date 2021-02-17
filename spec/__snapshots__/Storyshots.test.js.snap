@@ -1,5 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Design System/Alert Error 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="AlertMessage AlertMessage-error"
+  >
+    <p
+      className="AlertMessage__title"
+    >
+      Default title
+    </p>
+    Default message
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Alert Info 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="AlertMessage AlertMessage-info"
+  >
+    <p
+      className="AlertMessage__title"
+    >
+      Information
+    </p>
+    Default message
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Alert Other 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="AlertMessage AlertMessage-warning"
+  >
+    <p
+      className="AlertMessage__title"
+    >
+      Default title
+    </p>
+    Default message
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Alert Success 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="AlertMessage AlertMessage-success"
+  >
+    <p
+      className="AlertMessage__title"
+    >
+      Default title
+    </p>
+    Default message
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Alert With Dismiss 1`] = `
 <div
   style={
@@ -18,27 +102,6 @@ exports[`Storyshots Design System/Alert With Dismiss 1`] = `
     >
       ×
     </button>
-    <p
-      className="AlertMessage__title"
-    >
-      Default title
-    </p>
-    Default message
-  </div>
-</div>
-`;
-
-exports[`Storyshots Design System/Alert Without Dismiss 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="AlertMessage AlertMessage-success"
-  >
     <p
       className="AlertMessage__title"
     >
@@ -635,7 +698,7 @@ exports[`Storyshots Design System/Form Elements/Form Group Default 1`] = `
         id="default-input"
         name="default"
         onChange={[Function]}
-        placeholder="default"
+        placeholder="Placeholder text"
         type="text"
         value=""
       />
@@ -660,7 +723,7 @@ exports[`Storyshots Design System/Form Elements/Form Group Required 1`] = `
       className="InputLabel"
       htmlFor=""
     >
-      Form Group with label
+      Label
       <span
         className="InputLabel__helper-text"
       >
@@ -800,7 +863,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Errors 1`] = `
         id="input"
         name="with-errors"
         onChange={[Function]}
-        placeholder=""
+        placeholder="Placeholder text"
         type="text"
         value=""
       />
@@ -812,7 +875,14 @@ exports[`Storyshots Design System/Form Elements/Form Group With Errors 1`] = `
         className="FormGroup__invalid-feedback__list"
       >
         <li>
-          invalid input!
+          <div>
+            Sorry, we’re not able to accept this type of input. For more information, click 
+            <a
+              href="http://www.google.com"
+            >
+              here
+            </a>
+          </div>
         </li>
       </ol>
     </div>
@@ -836,7 +906,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Helper Text 1`] 
       className="InputLabel"
       htmlFor="input"
     >
-      Form Group with helper text
+      Label
     </label>
     <div
       className="Input input-group"
@@ -877,7 +947,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Label 1`] = `
       className="InputLabel"
       htmlFor="input"
     >
-      Form Group with label
+      Label
     </label>
     <div
       className="Input input-group"
@@ -913,7 +983,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Label Tooltip 1`
       className="InputLabel"
       htmlFor="input"
     >
-      Form Group with label and tooltip
+      Label
       <span
         aria-hidden="true"
         className="Tooltip__icon Tooltip__icon--gray"
@@ -1010,7 +1080,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Leading And Trai
         id="input"
         name="with-leading-and-trailing-icons"
         onChange={[Function]}
-        placeholder=""
+        placeholder="Placeholder text"
         type="text"
         value=""
       />
@@ -1101,7 +1171,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Leading Icon 1`]
         id="input"
         name="with-leading-icon"
         onChange={[Function]}
-        placeholder=""
+        placeholder="Placeholder text"
         type="text"
         value=""
       />
@@ -1236,7 +1306,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Trailing Icon 1`
         id="input"
         name="with-leading-icon"
         onChange={[Function]}
-        placeholder=""
+        placeholder="Placeholder text"
         type="text"
         value=""
       />

@@ -16,10 +16,17 @@ import RadioButtonGroup from 'src/RadioButtonGroup';
 import { ORIENTATIONS } from 'src/ControlButtonGroup';
 import RadioButton from 'src/RadioButton';
 
+import mdx from './FormGroup.mdx';
+
 export default {
   title: 'Design System/Form Elements/Form Group',
   component: FormGroup,
   decorators: [withKnobs],
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 const InputComponent = (props) => {
@@ -33,38 +40,7 @@ const InputComponent = (props) => {
 
 export const Default = () => (
   <FormGroup id="default">
-    <InputComponent id="default-input" name="default" placeholder="default" />
-  </FormGroup>
-);
-
-export const Required = () => (
-  <FormGroup
-    id="with-required"
-    label="Form Group with label"
-    required
-  >
-    <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
-  </FormGroup>
-);
-
-export const WithLabel = () => (
-  <FormGroup
-    id="with-label"
-    label="Form Group with label"
-    labelHtmlFor="input"
-  >
-    <InputComponent id="input" name="with-label" />
-  </FormGroup>
-);
-
-export const WithLabelTooltip = () => (
-  <FormGroup
-    id="with-label"
-    label="Form Group with label and tooltip"
-    labelHtmlFor="input"
-    labelTooltip={text('Tooltip', 'Some tooltip text')}
-  >
-    <InputComponent id="input" name="with-label" />
+    <InputComponent id="default-input" name="default" placeholder="Placeholder text" />
   </FormGroup>
 );
 
@@ -72,23 +48,31 @@ export const WithHelperText = () => (
   <FormGroup
     helperText="test helper text"
     id="with-helper-text"
-    label="Form Group with helper text"
+    label="Label"
     labelHtmlFor="input"
   >
     <InputComponent id="input" name="with-helper-text" />
   </FormGroup>
 );
 
-export const WithErrors = () => (
+export const Required = () => (
   <FormGroup
-    displayErrorText
-    errors={{ test: ['invalid input!'] }}
-    id="with-errors"
-    inputKey="test"
-    label="Form Group with errors"
-    labelHtmlFor="input"
+    id="with-required"
+    label="Label"
+    required
   >
-    <InputComponent id="input" name="with-errors" />
+    <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
+  </FormGroup>
+);
+
+export const WithLabelTooltip = () => (
+  <FormGroup
+    id="with-label"
+    label="Label"
+    labelHtmlFor="input"
+    labelTooltip={text('Tooltip', 'Some tooltip text')}
+  >
+    <InputComponent id="input" name="with-label" />
   </FormGroup>
 );
 
@@ -99,7 +83,12 @@ export const WithLeadingIcon = () => (
     label="Form Group with input leading icon"
     labelHtmlFor="input"
   >
-    <InputComponent id="input" leadingIcon={faSearch} name="with-leading-icon" />
+    <InputComponent
+      id="input"
+      leadingIcon={faSearch}
+      name="with-leading-icon"
+      placeholder="Placeholder text"
+    />
   </FormGroup>
 );
 
@@ -110,7 +99,12 @@ export const WithTrailingIcon = () => (
     label="Form Group with input trailing icon"
     labelHtmlFor="input"
   >
-    <InputComponent id="input" name="with-leading-icon" trailingIcon={faSearch} />
+    <InputComponent
+      id="input"
+      name="with-leading-icon"
+      placeholder="Placeholder text"
+      trailingIcon={faSearch}
+    />
   </FormGroup>
 );
 
@@ -121,7 +115,26 @@ export const WithLeadingAndTrailingIcons = () => (
     label="Form Group with input leading and trailing icons"
     labelHtmlFor="input"
   >
-    <InputComponent id="input" leadingIcon={faSearch} name="with-leading-and-trailing-icons" trailingIcon={faSearch} />
+    <InputComponent
+      id="input"
+      leadingIcon={faSearch}
+      name="with-leading-and-trailing-icons"
+      placeholder="Placeholder text"
+      trailingIcon={faSearch}
+    />
+  </FormGroup>
+);
+
+export const WithErrors = () => (
+  <FormGroup
+    displayErrorText
+    errors={{ test: [<div>Sorry, we’re not able to accept this type of input. For more information, click <a href="http://www.google.com">here</a></div>] }}
+    id="with-errors"
+    inputKey="test"
+    label="Form Group with errors"
+    labelHtmlFor="input"
+  >
+    <InputComponent id="input" name="with-errors" placeholder="Placeholder text" />
   </FormGroup>
 );
 
