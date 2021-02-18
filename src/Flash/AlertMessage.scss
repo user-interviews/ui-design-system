@@ -11,7 +11,9 @@
   margin-bottom: 1rem;
   padding: .75rem 1.25rem;
   position: relative;
-  border: 1px solid transparent;
+  max-width: 22.5rem;
+  float: right;
+  border: 0.06rem solid transparent;
 
   &__title {
     font-size: .875rem;
@@ -23,39 +25,47 @@
 .AlertMessage-success {
   background-color: $ux-green-200;
   color: $ux-green-800;
-  border: 1px solid $ux-green-400;
+  border-left: 0.5rem solid $ux-green-400;
+  box-shadow: $ux-elevations-02;
 
   .close {
     color: $ux-green-800;
+    margin-left: $ux-spacing-04;
   }
 }
 
 .AlertMessage-info {
   background-color: $ux-blue-100;
   color: $ux-blue-700;
-  border: 1px solid $ux-blue-200;
+  border-left: 0.5rem solid $ux-blue-300;
+  box-shadow: $ux-elevations-02;
 
   .close {
     color: $ux-blue-700;
+    margin-left: $ux-spacing-04;
   }
 }
 
 .AlertMessage-warning {
   background-color: $ux-yellow-100;
   color: $ux-yellow-800;
-  border: 1px solid $ux-yellow-600;
+  border-left: 0.5rem solid $ux-yellow-600;
+  box-shadow: $ux-elevations-02;
 
   .close {
     color: $ux-yellow-800;
+    margin-left: $ux-spacing-04;
   }
 }
 
 .AlertMessage-error {
   background-color: $ux-red-100;
   color: $ux-red-800;
-  border: 1px solid $ux-red-600;
+  border-left: 0.5rem solid $ux-red-400;
+  box-shadow: $ux-elevations-02;
 
   .close {
     color: $ux-red-800;
+    margin-left: $ux-spacing-04;
   }
 }
