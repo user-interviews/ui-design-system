@@ -32,7 +32,7 @@ WithFlash.propTypes = {
 };
 
 WithFlash.defaultProps = {
-  autoDismiss: false,
+  autoDismiss: true,
 };
 
 export default function withFlash(WrappedComponent, hocProps) {
