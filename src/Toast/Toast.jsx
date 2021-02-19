@@ -6,12 +6,12 @@ import classNames from 'classnames';
 import FadeTransition from 'src/FadeTransition';
 import AlertMessage from '../Alert/AlertMessage';
 
-import './Flash.scss';
+import './Toast.scss';
 
-export default function Flash(props) {
+export default function Toast(props) {
   const groupClassNames = classNames(
-    'Flash',
-    { 'Flash--no-header': !props.header },
+    'Toast',
+    { 'Toast--no-header': !props.header },
   );
 
   return (
@@ -24,7 +24,7 @@ export default function Flash(props) {
               id={message.id}
               message={message.message}
               type={message.type}
-              onDismiss={props.onFlashClosed}
+              onDismiss={props.onToastClosed}
             />
           </FadeTransition>
         ))
@@ -33,7 +33,7 @@ export default function Flash(props) {
   );
 }
 
-Flash.propTypes = {
+Toast.propTypes = {
   autoDismiss: PropTypes.bool,
   header: PropTypes.bool,
   messages: PropTypes.arrayOf(
@@ -43,11 +43,11 @@ Flash.propTypes = {
       type: PropTypes.string,
     }),
   ).isRequired,
-  onFlashClosed: PropTypes.func,
+  onToastClosed: PropTypes.func,
 };
 
-Flash.defaultProps = {
+Toast.defaultProps = {
   autoDismiss: false,
   header: true,
-  onFlashClosed: undefined,
+  onToastClosed: undefined,
 };
