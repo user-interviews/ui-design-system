@@ -10,7 +10,6 @@ import './Flash.scss';
 
 export default function Flash(props) {
   const groupClassNames = classNames(
-    'container',
     'Flash',
     { 'Flash--no-header': !props.header },
   );
