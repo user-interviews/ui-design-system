@@ -4,7 +4,7 @@ import { TransitionGroup } from 'react-transition-group';
 import classNames from 'classnames';
 
 import FadeTransition from 'src/FadeTransition';
-import AlertMessage from './AlertMessage';
+import AlertMessage from '../Alert/AlertMessage';
 
 import './Flash.scss';
 
