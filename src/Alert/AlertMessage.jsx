@@ -10,7 +10,7 @@ export const MessageTypes = {
   ERROR: 'error',
 };
 
-const AUTO_DISMISS_TIMEOUT = 3000;
+const AUTO_DISMISS_TIMEOUT = 5000;
 
 const alertMessageClassName = (type) => {
   if (!Object.values(MessageTypes).includes(type)) {
