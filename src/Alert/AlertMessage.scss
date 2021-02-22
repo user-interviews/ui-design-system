@@ -6,12 +6,29 @@
 @import '../../scss/theme';
 
 .AlertMessage {
+  display: grid;
+  grid-template-columns: 2rem auto 2rem;
   font-weight: 500;
   border-radius: .25rem;
   margin-bottom: 1rem;
   padding: .75rem 1.25rem;
   position: relative;
   border: 0.06rem solid transparent;
+
+  &__icon {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  &__content {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
+
+  &__close {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
 
   &__title {
     font-size: .875rem;
@@ -28,7 +45,6 @@
 
   .close {
     color: $ux-green-800;
-    margin-left: $ux-spacing-04;
   }
 }
 
@@ -40,7 +56,17 @@
 
   .close {
     color: $ux-blue-700;
-    margin-left: $ux-spacing-04;
+  }
+}
+
+.AlertMessage-announcement {
+  background-color: $ux-blue-100;
+  color: $ux-blue-700;
+  border-left: 0.5rem solid $ux-blue-300;
+  box-shadow: $ux-elevations-02;
+
+  .close {
+    color: $ux-blue-700;
   }
 }
 
@@ -52,7 +78,6 @@
 
   .close {
     color: $ux-yellow-800;
-    margin-left: $ux-spacing-04;
   }
 }
 
@@ -64,6 +89,5 @@
 
   .close {
     color: $ux-red-800;
-    margin-left: $ux-spacing-04;
   }
 }
