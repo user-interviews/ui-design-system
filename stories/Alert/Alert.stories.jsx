@@ -22,8 +22,8 @@ export default {
 export const Success = () => (
   <AlertMessage
     id="1"
-    message={text('Message', 'Default message')}
-    title={text('Title', 'Default title')}
+    message={text('Message', 'Success message')}
+    title={text('Title', 'Success title')}
     type={MessageTypes.SUCCESS}
   />
 );
@@ -31,26 +31,35 @@ export const Success = () => (
 export const Info = () => (
   <AlertMessage
     id="2"
-    message={text('Message', 'Default message')}
-    title={text('Title', 'Information')}
+    message={text('Message', 'Info message')}
+    title={text('Title', 'Info title')}
     type={MessageTypes.INFO}
+  />
+);
+
+export const Announcement = () => (
+  <AlertMessage
+    id="3"
+    message={text('Message', 'Announcement message')}
+    title={text('Title', 'Announcement title')}
+    type={MessageTypes.ANNOUNCEMENT}
   />
 );
 
 export const Error = () => (
   <AlertMessage
-    id="3"
-    message={text('Message', 'Default message')}
-    title={text('Title', 'Default title')}
+    id="4"
+    message={text('Message', 'Error message')}
+    title={text('Title', 'Error title')}
     type={MessageTypes.ERROR}
   />
 );
 
-export const Other = () => (
+export const Warning = () => (
   <AlertMessage
-    id="4"
-    message={text('Message', 'Default message')}
-    title={text('Title', 'Default title')}
+    id="5"
+    message={text('Message', 'Warning message')}
+    title={text('Title', 'Warning title')}
     type={MessageTypes.WARNING}
   />
 );
@@ -61,7 +70,7 @@ const onDismiss = (id) => {
 
 export const WithDismiss = () => (
   <AlertMessage
-    id="5"
+    id="6"
     message={text('Message', 'Default message')}
     title={text('Title', 'Default title')}
     type={MessageTypes.SUCCESS}

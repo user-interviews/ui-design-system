@@ -3,7 +3,13 @@ import { withKnobs, text, radios } from '@storybook/addon-knobs';
 
 import { withToast, MessageTypes, withToastPropTypes } from 'src/Toast';
 
-import '../scss/global.scss';
+import '../../scss/global.scss';
+
+export default {
+  title: 'Design System/Toast',
+  component: withToast,
+  decorators: [withKnobs],
+};
 
 const DummyComponent = ({ type, message, setToastMessage }) => (
   <div>
@@ -30,8 +36,4 @@ export const AutoDismissToastMessage = () => (
   />
 );
 
-export default {
-  title: 'Design System/Toast',
-  component: withToast,
-  decorators: [withKnobs],
-};
+
