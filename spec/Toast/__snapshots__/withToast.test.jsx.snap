@@ -1,23 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test withFlash it can create a new flash message 1`] = `
-Array [
-  <div
-    className="AlertMessage AlertMessage-success"
-  >
-    <button
-      className="close"
-      onClick={[Function]}
-      type="button"
-    >
-      ×
-    </button>
-    This is just a test...
-  </div>,
-  <div />,
-]
-`;
-
 exports[`test withToast it can create a new Toast message 1`] = `
 Array [
   <div
