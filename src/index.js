@@ -4,14 +4,7 @@ import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
 import FadeTransition from 'src/FadeTransition';
-import {
-  AlertMessage,
-  Flash,
-  MessageTypes,
-  withFlash,
-  withFlashPropTypes,
-  useFlash,
-} from 'src/Flash';
+import AlertMessage, { MessageTypes } from 'src/Alert/AlertMessage';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
@@ -27,6 +20,12 @@ import {
   SELECT_SIZES,
   SingleSelect,
 } from 'src/Select';
+import {
+  Toast,
+  useToast,
+  withToast,
+  withToastPropTypes,
+} from 'src/Toast';
 import Tooltip from 'src/Tooltip';
 import TrackedButton from 'src/TrackedButton';
 
@@ -40,7 +39,6 @@ export {
   CopyToClipboard,
   CopyToClipboardButton,
   FadeTransition,
-  Flash,
   Form,
   FormControlLabel,
   FormGroup,
@@ -54,9 +52,10 @@ export {
   RadioButtonGroup,
   SELECT_SIZES,
   SingleSelect,
+  Toast,
   Tooltip,
   TrackedButton,
-  useFlash,
-  withFlash,
-  withFlashPropTypes,
+  useToast,
+  withToast,
+  withToastPropTypes,
 };

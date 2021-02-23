@@ -2,7 +2,7 @@ import React from 'react';
 import { act } from '@testing-library/react-hooks';
 import { create } from 'react-test-renderer';
 
-import { withFlash, MessageTypes } from 'src/Flash';
+import { withToast, MessageTypes } from 'src/Toast';
 
 jest.mock('react-transition-group', () => (
   {
@@ -13,17 +13,17 @@ jest.mock('react-transition-group', () => (
 
 const WrappedComponent = () => <div />;
 
-describe('test withFlash', () => {
-  test('it can create a new flash message', async () => {
+describe('test withToast', () => {
+  test('it can create a new Toast message', async () => {
     const newMessage = 'This is just a test...';
-    const ComponentWithFlash = withFlash(WrappedComponent);
-    const flash = create(<ComponentWithFlash />);
-    const component = flash.root.findByType(WrappedComponent);
+    const ComponentWithToast = withToast(WrappedComponent);
+    const toast = create(<ComponentWithToast />);
+    const component = toast.root.findByType(WrappedComponent);
 
     act(() => {
-      component.props.setFlashMessage(MessageTypes.SUCCESS, newMessage);
+      component.props.setToastMessage(MessageTypes.SUCCESS, newMessage);
     });
 
-    expect(flash).toMatchSnapshot();
+    expect(toast).toMatchSnapshot();
   });
 });

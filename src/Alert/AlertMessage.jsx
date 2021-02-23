@@ -2,8 +2,11 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faBullhorn, faCheckCircle, faExclamationTriangle, faInfoCircle 
+import {
+  faBullhorn,
+  faCheckCircle,
+  faExclamationTriangle,
+  faInfoCircle,
 } from '@fortawesome/free-solid-svg-icons';
 
 import './AlertMessage.scss';
@@ -27,7 +30,7 @@ const getAlertMessageClassName = (type) => {
 };
 
 const getAlertMessageIcon = (type) => {
-  switch(type) {
+  switch (type) {
     case 'success':
       return faCheckCircle;
     case 'info':
@@ -59,17 +62,17 @@ function AlertMessage(props) {
   return (
     <div className={getAlertMessageClassName(props.type)}>
       <div className="AlertMessage__icon">
-        <FontAwesomeIcon icon={getAlertMessageIcon(props.type)} />  
+        <FontAwesomeIcon icon={getAlertMessageIcon(props.type)} />
       </div>
       <div className="AlertMessage__content">
-      {
-        props.title && (
-          <p className="AlertMessage__title">
-            {props.title}
-          </p>
-        )
-      }
-      {props.message}
+        {
+          props.title && (
+            <p className="AlertMessage__title">
+              {props.title}
+            </p>
+          )
+        }
+        {props.message}
       </div>
       {
         props.onDismiss && (

@@ -1,20 +1,20 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import { Flash } from 'src/Flash';
+import { Toast } from 'src/Toast';
 
-describe('Flash', () => {
+describe('Toast', () => {
   test('no header classes', () => {
-    const { props } = create(<Flash header messages={[]} />).toJSON();
+    const { props } = create(<Toast header messages={[]} />).toJSON();
 
-    expect(props.className).toContain('Flash');
-    expect(props.className).not.toContain('Flash--no-header');
+    expect(props.className).toContain('Toast');
+    expect(props.className).not.toContain('Toast--no-header');
   });
 
   test('header classes', () => {
-    const { props } = create(<Flash header={false} messages={[]} />).toJSON();
+    const { props } = create(<Toast header={false} messages={[]} />).toJSON();
 
-    expect(props.className).toContain('Flash');
-    expect(props.className).toContain('Flash--no-header');
+    expect(props.className).toContain('Toast');
+    expect(props.className).toContain('Toast--no-header');
   });
 });

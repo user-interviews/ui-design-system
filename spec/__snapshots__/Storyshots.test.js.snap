@@ -1,5 +1,51 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots Design System/Alert Announcement 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="AlertMessage AlertMessage-announcement"
+  >
+    <div
+      className="AlertMessage__icon"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-bullhorn fa-w-18 "
+        data-icon="bullhorn"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 576 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <div
+      className="AlertMessage__content"
+    >
+      <p
+        className="AlertMessage__title"
+      >
+        Announcement title
+      </p>
+      Announcement message
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Alert Error 1`] = `
 <div
   style={
@@ -80,6 +126,52 @@ exports[`Storyshots Design System/Alert Success 1`] = `
       Default title
     </p>
     Default message
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Alert Warning 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="AlertMessage AlertMessage-warning"
+  >
+    <div
+      className="AlertMessage__icon"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-exclamation-triangle fa-w-18 "
+        data-icon="exclamation-triangle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 576 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <div
+      className="AlertMessage__content"
+    >
+      <p
+        className="AlertMessage__title"
+      >
+        Warning title
+      </p>
+      Warning message
+    </div>
   </div>
 </div>
 `;
@@ -3836,6 +3928,58 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
         uxRed900
       </p>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Toast Auto Dismiss Toast Message 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Toast Toast Message 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
   </div>
 </div>
 `;

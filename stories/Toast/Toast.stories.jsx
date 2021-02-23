@@ -35,5 +35,3 @@ export const AutoDismissToastMessage = () => (
     type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
   />
 );
-
-

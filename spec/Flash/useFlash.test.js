@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import { MessageTypes, useFlash } from 'src/Flash';
+import { MessageTypes, useToast } from 'src/Toast';
 
 const GENERATED_UUID = '1234';
 
@@ -9,10 +9,10 @@ jest.mock('uuid', () => (
   }
 ));
 
-describe('useFlash', () => {
+describe('useToast', () => {
   test('can set a new message', () => {
     const newMessage = 'I want to say something!';
-    const { result } = renderHook(() => useFlash());
+    const { result } = renderHook(() => useToast());
 
     act(() => {
       result.current.setMessage(MessageTypes.SUCCESS, newMessage);
@@ -27,7 +27,7 @@ describe('useFlash', () => {
 
   test('can dismiss an existing message', () => {
     const newMessage = 'I want to say something else!';
-    const { result } = renderHook(() => useFlash());
+    const { result } = renderHook(() => useToast());
 
     act(() => {
       result.current.setMessage(MessageTypes.SUCCESS, newMessage);
@@ -48,7 +48,7 @@ describe('useFlash', () => {
 
   test('can set two messages', () => {
     const newMessages = ['I want to say', 'so many things'];
-    const { result } = renderHook(() => useFlash());
+    const { result } = renderHook(() => useToast());
 
     newMessages.forEach(
       (message) => {
@@ -76,7 +76,7 @@ describe('useFlash', () => {
         }),
     );
 
-    const { result } = renderHook(() => useFlash(messages));
+    const { result } = renderHook(() => useToast(messages));
     expect(result.current.messages.length).toEqual(2);
 
     act(() => {
