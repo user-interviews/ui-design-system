@@ -4,16 +4,16 @@
   @include font-type-30;
   background-color: $ux-white;
   border-radius: $ux-border-radius;
-  border: 1px solid $ux-gray-300;
+  border: 0.06rem solid $ux-gray-300;
   box-shadow: $ux-box-shadow-card;
   max-width: 15rem;
   letter-spacing: normal;
-  padding: 0.75rem;
+  padding: $ux-spacing-03;
   z-index: $z-index-flash;
   font-weight: $font-weight-light;
 
   &__header {
-    margin-bottom: 0.3rem;
+    margin-bottom: $ux-spacing-01;
     @include font-type-30--bold;
   }
 
