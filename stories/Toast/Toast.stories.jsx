@@ -21,7 +21,7 @@ const DummyComponent = ({ type, message, setToastMessage }) => (
 DummyComponent.propTypes = withToastPropTypes;
 const ToastDummyComponent = withToast(DummyComponent);
 
-export const ToastMessage = () => (
+export const Toast = () => (
   <ToastDummyComponent
     message={text('Message', 'Your action was a success!')}
     type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
@@ -30,7 +30,7 @@ export const ToastMessage = () => (
 
 const ManualDismissToastComponent = withToast(DummyComponent, { autoDismiss: false });
 
-export const ManualDismissToastMessage = () => (
+export const ManualDismissToast = () => (
   <ManualDismissToastComponent
     message={text('Message', 'Your action was a success!')}
     type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
