@@ -28,10 +28,10 @@ export const ToastMessage = () => (
   />
 );
 
-const AutoDismissToastComponent = withToast(DummyComponent, { autoDismiss: true });
+const ManualDismissToastComponent = withToast(DummyComponent, { autoDismiss: false });
 
-export const AutoDismissToastMessage = () => (
-  <AutoDismissToastComponent
+export const ManualDismissToastMessage = () => (
+  <ManualDismissToastComponent
     message={text('Message', 'Your action was a success!')}
     type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
   />
