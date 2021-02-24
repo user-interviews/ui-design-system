@@ -9,7 +9,7 @@
   }
 
   &:focus {
-    border: 1px solid #92CBFC;
+    border: 0.06rem solid #92CBFC;
     box-shadow: $input-focus-box-shadow;
     color: $input-focus-color;
     filter: drop-shadow(0px 0px 3px rgba(102, 175, 233, 0.7));
@@ -17,7 +17,7 @@
 
   .form-control {
     color: $input-color;
-    padding: 0.5rem 0.75rem;
+    padding: $ux-spacing-02 $ux-spacing-03;
   }
 
   .input-group-text {
