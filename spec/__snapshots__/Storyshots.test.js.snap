@@ -9,10 +9,10 @@ exports[`Storyshots Design System/Alert Announcement 1`] = `
   }
 >
   <div
-    className="AlertMessage AlertMessage-announcement"
+    className="Alert Alert-announcement"
   >
     <div
-      className="AlertMessage__icon"
+      className="Alert__icon"
     >
       <svg
         aria-hidden="true"
@@ -33,10 +33,10 @@ exports[`Storyshots Design System/Alert Announcement 1`] = `
       </svg>
     </div>
     <div
-      className="AlertMessage__content"
+      className="Alert__content"
     >
       <p
-        className="AlertMessage__title"
+        className="Alert__title"
       >
         Announcement title
       </p>
@@ -55,10 +55,10 @@ exports[`Storyshots Design System/Alert Error 1`] = `
   }
 >
   <div
-    className="AlertMessage AlertMessage-error"
+    className="Alert Alert-error"
   >
     <div
-      className="AlertMessage__icon"
+      className="Alert__icon"
     >
       <svg
         aria-hidden="true"
@@ -79,10 +79,10 @@ exports[`Storyshots Design System/Alert Error 1`] = `
       </svg>
     </div>
     <div
-      className="AlertMessage__content"
+      className="Alert__content"
     >
       <p
-        className="AlertMessage__title"
+        className="Alert__title"
       >
         Error title
       </p>
@@ -101,10 +101,10 @@ exports[`Storyshots Design System/Alert Info 1`] = `
   }
 >
   <div
-    className="AlertMessage AlertMessage-info"
+    className="Alert Alert-info"
   >
     <div
-      className="AlertMessage__icon"
+      className="Alert__icon"
     >
       <svg
         aria-hidden="true"
@@ -125,10 +125,10 @@ exports[`Storyshots Design System/Alert Info 1`] = `
       </svg>
     </div>
     <div
-      className="AlertMessage__content"
+      className="Alert__content"
     >
       <p
-        className="AlertMessage__title"
+        className="Alert__title"
       >
         Info title
       </p>
@@ -147,10 +147,10 @@ exports[`Storyshots Design System/Alert Success 1`] = `
   }
 >
   <div
-    className="AlertMessage AlertMessage-success"
+    className="Alert Alert-success"
   >
     <div
-      className="AlertMessage__icon"
+      className="Alert__icon"
     >
       <svg
         aria-hidden="true"
@@ -171,10 +171,10 @@ exports[`Storyshots Design System/Alert Success 1`] = `
       </svg>
     </div>
     <div
-      className="AlertMessage__content"
+      className="Alert__content"
     >
       <p
-        className="AlertMessage__title"
+        className="Alert__title"
       >
         Success title
       </p>
@@ -193,10 +193,10 @@ exports[`Storyshots Design System/Alert Warning 1`] = `
   }
 >
   <div
-    className="AlertMessage AlertMessage-warning"
+    className="Alert Alert-warning"
   >
     <div
-      className="AlertMessage__icon"
+      className="Alert__icon"
     >
       <svg
         aria-hidden="true"
@@ -217,10 +217,10 @@ exports[`Storyshots Design System/Alert Warning 1`] = `
       </svg>
     </div>
     <div
-      className="AlertMessage__content"
+      className="Alert__content"
     >
       <p
-        className="AlertMessage__title"
+        className="Alert__title"
       >
         Warning title
       </p>
@@ -239,10 +239,10 @@ exports[`Storyshots Design System/Alert With Dismiss 1`] = `
   }
 >
   <div
-    className="AlertMessage AlertMessage-success"
+    className="Alert Alert-success"
   >
     <div
-      className="AlertMessage__icon"
+      className="Alert__icon"
     >
       <svg
         aria-hidden="true"
@@ -263,17 +263,17 @@ exports[`Storyshots Design System/Alert With Dismiss 1`] = `
       </svg>
     </div>
     <div
-      className="AlertMessage__content"
+      className="Alert__content"
     >
       <p
-        className="AlertMessage__title"
+        className="Alert__title"
       >
         Default title
       </p>
       Default message
     </div>
     <div
-      className="AlertMessage__close"
+      className="Alert__close"
     >
       <button
         className="close"

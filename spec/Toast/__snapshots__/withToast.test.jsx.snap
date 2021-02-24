@@ -3,10 +3,10 @@
 exports[`test withToast it can create a new Toast message 1`] = `
 Array [
   <div
-    className="AlertMessage AlertMessage-success"
+    className="Alert Alert-success"
   >
     <div
-      className="AlertMessage__icon"
+      className="Alert__icon"
     >
       <svg
         aria-hidden="true"
@@ -27,12 +27,12 @@ Array [
       </svg>
     </div>
     <div
-      className="AlertMessage__content"
+      className="Alert__content"
     >
       This is just a test...
     </div>
     <div
-      className="AlertMessage__close"
+      className="Alert__close"
     >
       <button
         className="close"

@@ -4,7 +4,7 @@ import { TransitionGroup } from 'react-transition-group';
 import classNames from 'classnames';
 
 import FadeTransition from 'src/FadeTransition';
-import AlertMessage from '../Alert/AlertMessage';
+import Alert from '../Alert/Alert';
 
 import './Toast.scss';
 
@@ -19,7 +19,7 @@ export default function Toast(props) {
       {
         props.messages.map((message) => (
           <FadeTransition key={message.id}>
-            <AlertMessage
+            <Alert
               autoDismiss={props.autoDismiss}
               id={message.id}
               message={message.message}

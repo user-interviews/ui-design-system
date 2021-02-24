@@ -1,10 +1,10 @@
 import Toast from './Toast';
-import AlertMessage, { MessageTypes } from '../Alert/AlertMessage';
+import Alert, { MessageTypes } from '../Alert/Alert';
 import useToast from './useToast';
 import withToast, { withToastPropTypes } from './withToast';
 
 export {
-  AlertMessage,
+  Alert,
   Toast,
   MessageTypes,
   useToast,

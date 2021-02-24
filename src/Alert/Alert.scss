@@ -5,7 +5,7 @@
 
 @import '../../scss/theme';
 
-.AlertMessage {
+.Alert {
   display: grid;
   grid-template-columns: 2rem auto 2rem;
   font-weight: 500;
@@ -37,7 +37,7 @@
   }
 }
 
-.AlertMessage-success {
+.Alert-success {
   background-color: $ux-green-200;
   color: $ux-green-800;
   border-left: 0.5rem solid $ux-green-400;
@@ -48,7 +48,7 @@
   }
 }
 
-.AlertMessage-info {
+.Alert-info {
   background-color: $ux-blue-100;
   color: $ux-blue-700;
   border-left: 0.5rem solid $ux-blue-300;
@@ -59,7 +59,7 @@
   }
 }
 
-.AlertMessage-announcement {
+.Alert-announcement {
   background-color: $ux-blue-100;
   color: $ux-blue-700;
   border-left: 0.5rem solid $ux-blue-300;
@@ -70,7 +70,7 @@
   }
 }
 
-.AlertMessage-warning {
+.Alert-warning {
   background-color: $ux-yellow-100;
   color: $ux-yellow-800;
   border-left: 0.5rem solid $ux-yellow-600;
@@ -81,7 +81,7 @@
   }
 }
 
-.AlertMessage-error {
+.Alert-error {
   background-color: $ux-red-100;
   color: $ux-red-800;
   border-left: 0.5rem solid $ux-red-400;

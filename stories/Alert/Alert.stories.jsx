@@ -2,7 +2,7 @@ import React from 'react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 
-import AlertMessage, { MessageTypes } from 'src/Alert/AlertMessage';
+import Alert, { MessageTypes } from 'src/Alert/Alert';
 import mdx from './Alert.mdx';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -10,7 +10,7 @@ import '../../scss/global.scss';
 
 export default {
   title: 'Design System/Alert',
-  component: AlertMessage,
+  component: Alert,
   decorators: [withKnobs],
   parameters: {
     docs: {
@@ -20,7 +20,7 @@ export default {
 };
 
 export const Success = () => (
-  <AlertMessage
+  <Alert
     id="1"
     message={text('Message', 'Success message')}
     title={text('Title', 'Success title')}
@@ -29,7 +29,7 @@ export const Success = () => (
 );
 
 export const Info = () => (
-  <AlertMessage
+  <Alert
     id="2"
     message={text('Message', 'Info message')}
     title={text('Title', 'Info title')}
@@ -38,7 +38,7 @@ export const Info = () => (
 );
 
 export const Announcement = () => (
-  <AlertMessage
+  <Alert
     id="3"
     message={text('Message', 'Announcement message')}
     title={text('Title', 'Announcement title')}
@@ -47,7 +47,7 @@ export const Announcement = () => (
 );
 
 export const Error = () => (
-  <AlertMessage
+  <Alert
     id="4"
     message={text('Message', 'Error message')}
     title={text('Title', 'Error title')}
@@ -56,7 +56,7 @@ export const Error = () => (
 );
 
 export const Warning = () => (
-  <AlertMessage
+  <Alert
     id="5"
     message={text('Message', 'Warning message')}
     title={text('Title', 'Warning title')}
@@ -69,7 +69,7 @@ const onDismiss = (id) => {
 };
 
 export const WithDismiss = () => (
-  <AlertMessage
+  <Alert
     id="6"
     message={text('Message', 'Default message')}
     title={text('Title', 'Default title')}

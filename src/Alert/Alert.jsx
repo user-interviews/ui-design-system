@@ -9,7 +9,7 @@ import {
   faInfoCircle,
 } from '@fortawesome/free-solid-svg-icons';
 
-import './AlertMessage.scss';
+import './Alert.scss';
 
 export const MessageTypes = {
   SUCCESS: 'success',
@@ -21,15 +21,15 @@ export const MessageTypes = {
 
 const AUTO_DISMISS_TIMEOUT = 5000;
 
-const getAlertMessageClassName = (type) => {
+const getAlertClassName = (type) => {
   if (!Object.values(MessageTypes).includes(type)) {
-    throw new TypeError(`Unexpected type ${type} used for an alert message.`);
+    throw new TypeError(`Unexpected type ${type} used for an alert.`);
   }
 
-  return `AlertMessage AlertMessage-${type}`;
+  return `Alert Alert-${type}`;
 };
 
-const getAlertMessageIcon = (type) => {
+const getAlertIcon = (type) => {
   switch (type) {
     case 'success':
       return faCheckCircle;
@@ -46,7 +46,7 @@ const getAlertMessageIcon = (type) => {
   }
 };
 
-function AlertMessage(props) {
+function Alert(props) {
   const { autoDismiss, id, onDismiss } = props;
 
   useEffect(() => {
@@ -60,14 +60,14 @@ function AlertMessage(props) {
   }, [autoDismiss, onDismiss, id]);
 
   return (
-    <div className={getAlertMessageClassName(props.type)}>
-      <div className="AlertMessage__icon">
-        <FontAwesomeIcon icon={getAlertMessageIcon(props.type)} />
+    <div className={getAlertClassName(props.type)}>
+      <div className="Alert__icon">
+        <FontAwesomeIcon icon={getAlertIcon(props.type)} />
       </div>
-      <div className="AlertMessage__content">
+      <div className="Alert__content">
         {
           props.title && (
-            <p className="AlertMessage__title">
+            <p className="Alert__title">
               {props.title}
             </p>
           )
@@ -76,7 +76,7 @@ function AlertMessage(props) {
       </div>
       {
         props.onDismiss && (
-          <div className="AlertMessage__close">
+          <div className="Alert__close">
             <button
               className="close"
               type="button"
@@ -91,7 +91,7 @@ function AlertMessage(props) {
   );
 }
 
-AlertMessage.propTypes = {
+Alert.propTypes = {
   autoDismiss: PropTypes.bool,
   id: PropTypes.string.isRequired,
   message: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
@@ -100,10 +100,10 @@ AlertMessage.propTypes = {
   onDismiss: PropTypes.func,
 };
 
-AlertMessage.defaultProps = {
+Alert.defaultProps = {
   autoDismiss: false,
   title: undefined,
   onDismiss: undefined,
 };
 
-export default React.memo(AlertMessage);
+export default React.memo(Alert);

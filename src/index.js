@@ -4,7 +4,7 @@ import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
 import FadeTransition from 'src/FadeTransition';
-import AlertMessage, { MessageTypes } from 'src/Alert/AlertMessage';
+import Alert, { MessageTypes } from 'src/Alert/Alert';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
@@ -30,7 +30,7 @@ import Tooltip from 'src/Tooltip';
 import TrackedButton from 'src/TrackedButton';
 
 export {
-  AlertMessage,
+  Alert,
   AsyncSelect,
   Card,
   CardSizes,
