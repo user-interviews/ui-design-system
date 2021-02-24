@@ -48,12 +48,12 @@
   // Seems like a fine default size
   border-radius: 2rem;
   font-size: $font-size-base;
-  padding: $ux-spacing-01 $ux-spacing-03;
+  padding: $ux-spacing-10 $ux-spacing-30;
 
   &--sm {
     border-radius: 1rem;
     font-size: .625rem;
-    padding: $ux-spacing-01 $ux-spacing-02;
+    padding: $ux-spacing-10 $ux-spacing-20;
   }
 
   &--squared {
