@@ -6,11 +6,12 @@
 
 $top-padding: 1.25rem;
 
-.Flash {
+.Toast {
   position: fixed;
   top: $top-padding + $ui-navbar-height;
-  left: 50%;
+  right: 0rem;
   transform: translateX(-50%);
+  width: 18.75rem;
 
   z-index: $z-index-flash;
 

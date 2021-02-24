@@ -3,16 +3,15 @@ import PropTypes from 'prop-types';
 import { TransitionGroup } from 'react-transition-group';
 import classNames from 'classnames';
 
+import { Alert } from 'src/Alert';
 import FadeTransition from 'src/FadeTransition';
-import AlertMessage from './AlertMessage';
 
-import './Flash.scss';
+import './Toast.scss';
 
-export default function Flash(props) {
+export default function Toast(props) {
   const groupClassNames = classNames(
-    'container',
-    'Flash',
-    { 'Flash--no-header': !props.header },
+    'Toast',
+    { 'Toast--no-header': !props.header },
   );
 
   return (
@@ -20,12 +19,12 @@ export default function Flash(props) {
       {
         props.messages.map((message) => (
           <FadeTransition key={message.id}>
-            <AlertMessage
+            <Alert
               autoDismiss={props.autoDismiss}
               id={message.id}
               message={message.message}
               type={message.type}
-              onDismiss={props.onFlashClosed}
+              onDismiss={props.onToastClosed}
             />
           </FadeTransition>
         ))
@@ -34,7 +33,7 @@ export default function Flash(props) {
   );
 }
 
-Flash.propTypes = {
+Toast.propTypes = {
   autoDismiss: PropTypes.bool,
   header: PropTypes.bool,
   messages: PropTypes.arrayOf(
@@ -44,11 +43,11 @@ Flash.propTypes = {
       type: PropTypes.string,
     }),
   ).isRequired,
-  onFlashClosed: PropTypes.func,
+  onToastClosed: PropTypes.func,
 };
 
-Flash.defaultProps = {
+Toast.defaultProps = {
   autoDismiss: false,
   header: true,
-  onFlashClosed: undefined,
+  onToastClosed: undefined,
 };

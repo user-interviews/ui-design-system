@@ -29,7 +29,7 @@ const messagesReducer = (state, { type, payload }) => {
   }
 };
 
-const useFlash = (initialMessages = []) => {
+const useToast = (initialMessages = []) => {
   const [messages, dispatch] = useReducer(messagesReducer, initialMessages);
 
   const clearMessages = useCallback(() => {
@@ -52,4 +52,4 @@ const useFlash = (initialMessages = []) => {
   };
 };
 
-export default useFlash;
+export default useToast;
