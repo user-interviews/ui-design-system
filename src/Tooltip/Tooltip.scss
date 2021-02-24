@@ -1,11 +1,12 @@
 @import '../../scss/colors';
+@import '../../scss/spacing.scss';
 
 .Tooltip {
   &__icon {
     color: $ux-blue-500;
     cursor: pointer;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+    margin-left: $ux-spacing-02;
+    margin-right: $ux-spacing-02;
     vertical-align: middle;
 
     &--gray {
