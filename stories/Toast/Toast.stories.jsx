@@ -1,7 +1,8 @@
 import React from 'react';
 import { withKnobs, text, radios } from '@storybook/addon-knobs';
 
-import { withToast, MessageTypes, withToastPropTypes } from 'src/Toast';
+import { MessageTypes } from 'src/Alert';
+import { withToast, withToastPropTypes } from 'src/Toast';
 
 import '../../scss/global.scss';
 

@@ -2,7 +2,8 @@ import React from 'react';
 import { act } from '@testing-library/react-hooks';
 import { create } from 'react-test-renderer';
 
-import { withToast, MessageTypes } from 'src/Toast';
+import { MessageTypes } from 'src/Alert';
+import { withToast } from 'src/Toast';
 
 jest.mock('react-transition-group', () => (
   {

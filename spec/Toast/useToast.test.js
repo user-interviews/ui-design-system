@@ -1,5 +1,6 @@
 import { renderHook, act } from '@testing-library/react-hooks';
-import { MessageTypes, useToast } from 'src/Toast';
+import { MessageTypes } from 'src/Alert';
+import { useToast } from 'src/Toast';
 
 const GENERATED_UUID = '1234';
 
