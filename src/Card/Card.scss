@@ -15,7 +15,7 @@ $card-width-xs: 15rem;
   background-color: $ux-white;
   border: none;
   border-radius: 0.25rem;
-  box-shadow: 0 .125rem .25rem rgba(0,0,0,0.1);
+  box-shadow: $ux-elevations-02;
   margin: $card-spacing auto;
   outline-color: $ux-green-500;
   padding: $card-spacing;
@@ -29,8 +29,8 @@ $card-width-xs: 15rem;
   &__divider {
     border-top: 1px solid rgba(0,0,0,.1);
 
-    margin-bottom: 0.5rem;
-    margin-top: 0.25rem;
+    margin-bottom: $ux-spacing-02;
+    margin-top: $ux-spacing-01;
   }
 
   &__header {
@@ -41,7 +41,7 @@ $card-width-xs: 15rem;
   &__helper-text {
     @include font-type-50--light;
     color: $ux-gray-900;
-    margin-left: 0.25rem;
+    margin-left: $ux-spacing-01;
   }
 
   &__subtitle {
@@ -51,7 +51,7 @@ $card-width-xs: 15rem;
 
   &__title {
     @include font-type-50--bold;
-    margin-bottom: 0.25rem;
+    margin-bottom: $ux-spacing-01;
   }
 
   &--divided {
@@ -83,7 +83,7 @@ $card-width-xs: 15rem;
 
     .Card__helper-text {
       margin-left: 0;
-      margin-bottom: 0.5rem;
+      margin-bottom: $ux-spacing-02;
     }
   }
 }
