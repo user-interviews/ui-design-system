@@ -19,6 +19,23 @@ export const MessageTypes = {
   ERROR: 'error',
 };
 
+const getAlertIcon = (type) => {
+  switch (type) {
+    case MessageTypes.SUCCESS:
+      return faCheckCircle;
+    case MessageTypes.INFO:
+      return faInfoCircle;
+    case MessageTypes.ANNOUNCEMENT:
+      return faBullhorn;
+    case MessageTypes.WARNING:
+      return faExclamationTriangle;
+    case MessageTypes.ERROR:
+      return faExclamationTriangle;
+    default:
+      return null;
+  }
+};
+
 const AUTO_DISMISS_TIMEOUT = 5000;
 
 const getAlertClassName = (type) => {
@@ -27,23 +44,6 @@ const getAlertClassName = (type) => {
   }
 
   return `Alert Alert-${type}`;
-};
-
-const getAlertIcon = (type) => {
-  switch (type) {
-    case 'success':
-      return faCheckCircle;
-    case 'info':
-      return faInfoCircle;
-    case 'announcement':
-      return faBullhorn;
-    case 'warning':
-      return faExclamationTriangle;
-    case 'error':
-      return faExclamationTriangle;
-    default:
-      return null;
-  }
 };
 
 function Alert(props) {
