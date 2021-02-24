@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { TransitionGroup } from 'react-transition-group';
 import classNames from 'classnames';
 
+import { Alert } from 'src/Alert';
 import FadeTransition from 'src/FadeTransition';
-import Alert from '../Alert/Alert';
 
 import './Toast.scss';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 
-import Alert, { MessageTypes } from 'src/Alert/Alert';
+import { Alert, MessageTypes } from 'src/Alert';
 import mdx from './Alert.mdx';
 
 import 'bootstrap/dist/css/bootstrap.min.css';

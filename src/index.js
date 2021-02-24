@@ -4,7 +4,7 @@ import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
 import FadeTransition from 'src/FadeTransition';
-import Alert, { MessageTypes } from 'src/Alert/Alert';
+import { Alert, MessageTypes } from 'src/Alert';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
