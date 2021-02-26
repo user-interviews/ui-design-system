@@ -1,0 +1,14 @@
+@import '~common/ui_imports';
+
+.Layout__sidebar-nav {
+  &__mobile-controls {
+    border-top: 1px solid $ux-gray-400;
+    color: $ux-white;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: space-evenly;
+    margin: 0 1rem;
+    padding-top: 1rem;
+  }
+}

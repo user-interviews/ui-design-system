@@ -1,0 +1,6 @@
+@import '~common/ui_imports';
+
+.Layout__sidebar-nav__links {
+  @include ui-remove-list-styles();
+  padding: 1rem 0;
+}

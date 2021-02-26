@@ -1,0 +1,21 @@
+@import '~common/ui_imports';
+
+.Header {
+  align-items: center;
+  background: $ux-gray-900;
+  color: $ux-white;
+  display: flex;
+  height: $ui-header-height;
+  padding: 1rem;
+
+  > div:first-child {
+    @include font-type-60--bold;
+    flex-grow: 1;
+  }
+
+  &__controls {
+    > :not(:last-child) {
+      margin-right: .5rem;
+    }
+  }
+}
