@@ -1,12 +1,11 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { NavLink } from 'common/routing';
 
-import * as propTypes from 'lib/prop_types';
-
-import './sidebar_nav_link.scss';
+import './SidebarNavLink.scss';
 
 const SidebarNavLink = ({
   icon,
@@ -33,10 +32,10 @@ const SidebarNavLink = ({
 );
 
 SidebarNavLink.propTypes = {
-  icon: propTypes.object,
-  iconClass: propTypes.string,
-  text: propTypes.string.isRequired,
-  url: propTypes.string.isRequired,
+  icon: PropTypes.object,
+  iconClass: PropTypes.string,
+  text: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
 };
 
 SidebarNavLink.defaultProps = {

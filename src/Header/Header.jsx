@@ -1,9 +1,9 @@
 import React from 'react';
-import * as propTypes from 'lib/prop_types';
+import PropTypes from 'prop-types';
 
 import Controls from './Controls';
 
-import './header.scss';
+import './Header.scss';
 
 const Header = ({
   controls,
@@ -30,11 +30,11 @@ const Header = ({
 );
 
 Header.propTypes = {
-  controls: propTypes.arrayOf(propTypes.node),
-  isMobileView: propTypes.bool.isRequired,
-  isSidebarOpen: propTypes.bool.isRequired,
-  titleComponent: propTypes.node,
-  onToggleSidebarRequest: propTypes.func.isRequired,
+  controls: PropTypes.arrayOf(PropTypes.node),
+  isMobileView: PropTypes.bool.isRequired,
+  isSidebarOpen: PropTypes.bool.isRequired,
+  titleComponent: PropTypes.node,
+  onToggleSidebarRequest: PropTypes.func.isRequired,
 };
 
 Header.defaultProps = {

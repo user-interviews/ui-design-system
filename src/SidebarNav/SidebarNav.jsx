@@ -1,8 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import * as propTypes from 'lib/prop_types';
-
-import './sidebar_nav.scss';
+import './SidebarNav.scss';
 
 const SidebarNav = ({ controls, isMobileView, content }) => (
   <div className="Layout__sidebar-nav">
@@ -17,9 +16,9 @@ const SidebarNav = ({ controls, isMobileView, content }) => (
 );
 
 SidebarNav.propTypes = {
-  content: propTypes.node.isRequired,
-  controls: propTypes.arrayOf(propTypes.node),
-  isMobileView: propTypes.bool.isRequired,
+  content: PropTypes.node.isRequired,
+  controls: PropTypes.arrayOf(PropTypes.node),
+  isMobileView: PropTypes.bool.isRequired,
 };
 
 SidebarNav.defaultProps = {
