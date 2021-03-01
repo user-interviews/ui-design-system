@@ -1,14 +1,14 @@
-@import '~common/ui_imports';
+@import '../../scss/theme.scss';
 
 .Layout__sidebar-nav {
   &__mobile-controls {
-    border-top: 1px solid $ux-gray-400;
+    border-top: 0.06rem solid $ux-gray-400;
     color: $ux-white;
     display: flex;
     flex-direction: column;
 
     justify-content: space-evenly;
-    margin: 0 1rem;
-    padding-top: 1rem;
+    margin: 0 $ux-spacing-40;
+    padding-top: $ux-spacing-40;
   }
 }

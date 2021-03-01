@@ -1,6 +1,6 @@
-@import '~common/ui_imports';
+@import '../../scss/theme.scss';
 
 .Layout__sidebar-nav__links {
   @include ui-remove-list-styles();
-  padding: 1rem 0;
+  padding: $ux-spacing-40 0;
 }

@@ -1,4 +1,5 @@
-@import '~common/ui_imports';
+@import '../../scss/theme.scss';
+@import '~bootstrap/scss/mixins/breakpoints';
 
 .Layout__sidebar-nav__link {
   @include font-type-30--light;
@@ -7,7 +8,7 @@
   cursor: pointer;
   display: inherit;
   height: 100%;
-  padding: 1rem;
+  padding: $ux-spacing-40;
   text-align: left;
   vertical-align: middle;
   width: 100%;

@@ -1,2 +1,14 @@
+$ui-header-height: 4.5rem;
 $ui-navbar-height: 3rem;
 $ui-navbar-height-mobile: $ui-navbar-height;
+
+// This should be included directly on the a element
+@mixin ui-remove-anchor-styles($color: inherit) {
+  color: $color;
+
+  &:active, &:focus, &:hover {
+    color: $color;
+    outline: none;
+    text-decoration: none;
+  }
+}

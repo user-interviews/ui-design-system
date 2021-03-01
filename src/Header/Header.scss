@@ -1,4 +1,4 @@
-@import '~common/ui_imports';
+@import '../../scss/theme.scss';
 
 .Header {
   align-items: center;
@@ -6,7 +6,7 @@
   color: $ux-white;
   display: flex;
   height: $ui-header-height;
-  padding: 1rem;
+  padding: $ux-spacing-40;
 
   > div:first-child {
     @include font-type-60--bold;
@@ -15,7 +15,7 @@
 
   &__controls {
     > :not(:last-child) {
-      margin-right: .5rem;
+      margin-right: $ux-spacing-20;
     }
   }
 }
