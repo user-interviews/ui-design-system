@@ -1,7 +1,7 @@
-@import '~common/ui_imports';
+@import '../../scss/theme.scss';
 
 .SidebarView {
-  $border-width: 1px;
+  $border-width: 0.06rem;
 
   display: flex;
   height: 100%;
@@ -39,13 +39,13 @@
       overflow: hidden;
       position: absolute;
       top: 0;
-      transition: clip $duration-short $ease-out-circ;
+      transition: clip $ux-duration-short $ux-ease-out-circ; 
       width: calc(100% + #{$border-width});
       z-index: $z-index-2;
 
       &.SidebarView__sidebar--open {
         clip: rect(0 auto auto 0); // IE11, Edge
-        transition-timing-function: $ease-in-circ;
+        transition-timing-function: $ux-ease-in-circ;
       }
 
       // Everybody else: note we need to _not_ have the clip: rect() on, since

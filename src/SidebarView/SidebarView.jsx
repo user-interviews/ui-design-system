@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import findTabbableDescendants from 'react-modal/lib/helpers/tabbable';
 import * as keyCodes from 'lib/keycodes';
 import * as propTypes from 'lib/prop_types';
-import './sidebar_view.scss';
+import './SidebarView.scss';
 
 // A <SidebarView> expects two child nodes: the first will be presented as a
 // sidebar and the second will be presented as the sidebar’s associated content.
