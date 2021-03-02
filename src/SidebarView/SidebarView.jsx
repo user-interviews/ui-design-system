@@ -1,8 +1,8 @@
 import React, { Children, Component, createRef } from 'react';
-import classNames from 'classnames';
 import findTabbableDescendants from 'react-modal/lib/helpers/tabbable';
-import * as keyCodes from 'lib/keycodes';
-import * as propTypes from 'lib/prop_types';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import * as keyCodes from './keycodes';
 import './SidebarView.scss';
 
 // A <SidebarView> expects two child nodes: the first will be presented as a
@@ -40,12 +40,12 @@ import './SidebarView.scss';
 
 export default class SidebarView extends Component {
   static propTypes = {
-    className: propTypes.string,
-    hideSidebar: propTypes.bool,
-    isSidebarOpen: propTypes.bool.isRequired,
-    isSidebarOpenable: propTypes.bool.isRequired,
-    sidebarTitleId: propTypes.string.isRequired,
-    onSidebarCloseRequest: propTypes.func.isRequired,
+    className: PropTypes.string,
+    hideSidebar: PropTypes.bool,
+    isSidebarOpen: PropTypes.bool.isRequired,
+    isSidebarOpenable: PropTypes.bool.isRequired,
+    sidebarTitleId: PropTypes.string.isRequired,
+    onSidebarCloseRequest: PropTypes.func.isRequired,
   };
 
   static defaultProps = {
