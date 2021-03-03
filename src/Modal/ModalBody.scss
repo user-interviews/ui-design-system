@@ -1,0 +1,13 @@
+@import '~common/ui_imports';
+
+.ModalBody {
+  font-weight: $font-weight-normal;
+  padding: 1rem;
+
+  &__title {
+    font-family: $font-family-base;
+    font-size: 0.875rem;
+    font-weight: $headings-font-weight;
+    margin-bottom: .25rem;
+  }
+}
