@@ -1,17 +1,17 @@
-@import '~common/ui_imports';
+@import '../../scss/theme';
 
 .ModalFooter {
   align-items: center;
-  border-top: 1px solid $ux-gray-300;
+  border-top: 0.06rem solid $ux-gray-300;
   display: flex;
   justify-content: flex-end;
-  padding: 1rem;
+  padding: $ux-spacing-40;
 
   > :not(:first-child) {
-    margin-left: 0.25rem;
+    margin-left: $ux-spacing-10;
   }
 
   > :not(:last-child) {
-    margin-right: 0.25rem;
+    margin-right: $ux-spacing-10;
   }
 }

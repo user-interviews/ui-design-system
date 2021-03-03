@@ -1,14 +1,14 @@
-@import '~common/ui_imports';
+@import '../../scss/theme';
 
 .ModalHeader {
   align-items: baseline;
-  border-bottom: 1px solid $ux-gray-300;
+  border-bottom: 0.06rem solid $ux-gray-300;
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: $ux-spacing-40;
 
   &__title {
-    font-family: $font-family-base;
+    font-family: $font-family;
     font-size: 1.25rem;
     font-weight: $font-weight-bold;
     margin-bottom: 0;
@@ -20,15 +20,15 @@
   }
 
   &__subtitle {
-    font-family: $font-family-base;
+    font-family: $font-family;
     font-size: 0.875rem;
     font-weight: $font-weight-normal;
     margin-bottom: 0;
-    margin-top: 0.875rem;
+    margin-top: 0.875rem; // to-do: double check margins for subtitles
   }
 
   &__close-button {
-    padding: 1rem;
+    padding: $ux-spacing-40;
     margin: -1rem -1rem -1rem 0;
   }
 }
