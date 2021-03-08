@@ -1,0 +1,37 @@
+import { Story, Preview } from '@storybook/addon-docs/blocks';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../scss/global.scss';
+
+# Modal
+
+## Anatomy:
+
+- **Header:** Which includes the title, helper text and close icon.
+- **Body:** It contains the information and / or interface elements for the user to complete a task.
+- **Footer:**  It includes the actions to cancel or complete a task. The buttons variants change depending on the modal’s variant. The button group should be right aligned with the main action to complete the task to the utmost right.
+- **Overlay** It obscures and disables the content in the back and allows the modal to stand out more.
+
+## Good practices
+
+- Use sparingly, they can be annoying when used too frequently. They are disruptive.
+- Avoid cases where we go from one modal to another modal. 
+- Use when we want to focus the user’s attention.
+- Use to collect input from user.
+- Use to show relevant info. 
+- Should be initiated by the user: don’t use when user hasn’t triggered the modal.
+- They shouldn’t be bloated with many interactions.
+
+## Base modal
+
+- To use in projects as the foundation of any modal. We might need to detach it to customize it.
+
+
+## Transactional modal
+
+- The user needs to take an action for the modal to be completed and closed. It contains the cancel and primary action buttons.
+
+## Warning modal 
+
+- Used for destructive or irreversible actions.
+

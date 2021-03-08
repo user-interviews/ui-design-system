@@ -2,10 +2,9 @@
 
 .ModalHeader {
   align-items: baseline;
-  border-bottom: 0.06rem solid $ux-gray-300;
   display: flex;
   justify-content: space-between;
-  padding: $ux-spacing-40;
+  padding: $ux-spacing-50;
 
   &__title {
     font-family: $font-family;
