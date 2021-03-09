@@ -1,0 +1,10 @@
+// This should be included directly on the a element
+@mixin ui-remove-anchor-styles($color: inherit) {
+  color: $color;
+
+  &:active, &:focus, &:hover {
+    color: $color;
+    outline: none;
+    text-decoration: none;
+  }
+}
