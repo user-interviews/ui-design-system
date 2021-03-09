@@ -1,12 +1,9 @@
 import React from 'react';
-import { withKnobs, text } from '@storybook/addon-knobs';
-
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'src/Modal';
 import mdx from './Modal.mdx';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/global.scss';
-
 
 export default {
   title: 'Design System/Modal',
@@ -80,7 +77,7 @@ export const WarningModal = () => (
     </ModalBody>
     <ModalFooter >
       <button className="btn btn-secondary">Cancel</button>
-      <button className="btn btn-danger">Invite</button>
+      <button className="btn btn-danger">Delete</button>
     </ModalFooter>
   </Modal>
 );
