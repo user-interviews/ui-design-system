@@ -70,6 +70,30 @@ export const WarningModal = () => (
     <ModalHeader
       title="Warning modal"
       titleId="warning-modal"
+      variant="warning"
+      onRequestClose={true}
+    />
+    <ModalBody>
+      <p>Are you sure you want to do this?</p>
+    </ModalBody>
+    <ModalFooter >
+      <button className="btn btn-secondary">Cancel</button>
+      <button className="btn btn-danger">Delete</button>
+    </ModalFooter>
+  </Modal>
+);
+
+export const DangerModal = () => (
+  <Modal
+    className="DangerModal"
+    contentLabel="Danger Modal"
+    isOpen={true}
+    size="small"
+  >
+    <ModalHeader
+      title="Danger modal"
+      titleId="danger-modal"
+      variant="danger"
       onRequestClose={true}
     />
     <ModalBody>

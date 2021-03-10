@@ -16,6 +16,16 @@
       display: flex;
       align-items: center;
     }
+
+    .warning {
+      color: $ux-yellow-600;
+      margin-right: $ux-spacing-20;
+    }
+
+    .danger {
+      color: $ux-red-400;
+      margin-right: $ux-spacing-20;
+    }
   }
 
   &__subtitle {

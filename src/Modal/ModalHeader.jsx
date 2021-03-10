@@ -3,6 +3,9 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import './ModalHeader.scss';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
+
 export default class ModalHeader extends Component {
   static propTypes = {
     children: PropTypes.node,
@@ -40,6 +43,7 @@ export default class ModalHeader extends Component {
             this.props.children : (
               <Fragment>
                 <h1 className={this.titleClassName} id={this.props.titleId}>
+                  {this.props.variant && (<FontAwesomeIcon className={this.props.variant} icon={faExclamationTriangle}></FontAwesomeIcon>)}
                   {this.props.title}
                 </h1>
                 {this.props.subtitle && (
