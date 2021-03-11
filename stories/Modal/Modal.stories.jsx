@@ -1,4 +1,5 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 import { Modal, ModalBody, ModalFooter, ModalHeader } from 'src/Modal';
 import mdx from './Modal.mdx';
 
@@ -15,17 +16,44 @@ export default {
   },
 };
 
+const handleRequestClose = () => action('Close')
+
 export const BaseModal = () => (
   <Modal
     className="BaseModal"
     contentLabel="Base Modal"
     isOpen={true}
     size="small"
+    ariaHideApp={false}
   >
     <ModalHeader
       title="Base modal"
       titleId="base-modal"
-      onRequestClose={true}
+      onRequestClose={handleRequestClose}
+    />
+    <ModalBody>
+      <p>Some content goes here.</p>
+    </ModalBody>
+    <ModalFooter>
+      <button className="btn btn-light">Cancel</button>
+      <button className="btn btn-success">Save</button>
+    </ModalFooter>
+  </Modal>
+);
+
+export const WithSubtitleModal = () => (
+  <Modal
+    className="WithSubtitleModal"
+    contentLabel="With Subtitle Modal"
+    isOpen={true}
+    size="small"
+    ariaHideApp={false}
+  >
+    <ModalHeader
+      title="With subtitle modal"
+      titleId="with-subtitle-modal"
+      subtitle="A subtitle to provide more information"
+      onRequestClose={handleRequestClose}
     />
     <ModalBody>
       <p>Some content goes here.</p>
@@ -43,11 +71,12 @@ export const TransactionalModal = () => (
     contentLabel="Transactional Modal"
     isOpen={true}
     size="small"
+    ariaHideApp={false}
   >
     <ModalHeader
       title="Transactional modal"
       titleId="transactional-modal"
-      onRequestClose={true}
+      onRequestClose={handleRequestClose}
     />
     <ModalBody>
       <p>The user needs to take action here.</p>
@@ -66,19 +95,20 @@ export const WarningModal = () => (
     contentLabel="Warning Modal"
     isOpen={true}
     size="small"
+    ariaHideApp={false}
   >
     <ModalHeader
       title="Warning modal"
       titleId="warning-modal"
       variant="warning"
-      onRequestClose={true}
+      onRequestClose={handleRequestClose}
     />
     <ModalBody>
       <p>Are you sure you want to do this?</p>
     </ModalBody>
     <ModalFooter >
-      <button className="btn btn-secondary">Cancel</button>
-      <button className="btn btn-danger">Delete</button>
+      <button className="btn btn-light">Cancel</button>
+      <button className="btn btn-outline-danger">Delete</button>
     </ModalFooter>
   </Modal>
 );
@@ -89,20 +119,20 @@ export const DangerModal = () => (
     contentLabel="Danger Modal"
     isOpen={true}
     size="small"
+    ariaHideApp={false}
   >
     <ModalHeader
       title="Danger modal"
       titleId="danger-modal"
       variant="danger"
-      onRequestClose={true}
+      onRequestClose={handleRequestClose}
     />
     <ModalBody>
       <p>Are you sure you want to do this?</p>
     </ModalBody>
     <ModalFooter >
-      <button className="btn btn-secondary">Cancel</button>
-      <button className="btn btn-danger">Delete</button>
+      <button className="btn btn-light">Cancel</button>
+      <button className="btn btn-outline-danger">Delete</button>
     </ModalFooter>
   </Modal>
 );
-
