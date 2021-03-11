@@ -4,22 +4,19 @@
 
 @import '../../scss/theme';
 
-$top-padding: 1.25rem;
-
 .Toast {
   position: fixed;
-  top: $top-padding + $ui-navbar-height;
-  right: 0rem;
-  transform: translateX(-50%);
-  width: 18.75rem;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-10%);
+  width: 19rem;
 
   z-index: $z-index-flash;
 
   @include media-breakpoint-down(sm) {
-    top: $top-padding + $ui-navbar-height-mobile;
-  }
-
-  &--no-header {
-    top: $top-padding;
+    bottom: 0;
+    transform: translateX(0%);
+    padding: $ux-spacing-20;
+    width: 100vw;
   }
 }
