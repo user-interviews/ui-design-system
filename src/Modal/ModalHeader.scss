@@ -8,8 +8,7 @@
 
   &__title {
     font-family: $font-family;
-    font-size: 1.25rem;
-    font-weight: $font-weight-bold;
+    @include font-type-60--bold();
     margin-bottom: 0;
 
     &--has-icon {
@@ -30,10 +29,9 @@
 
   &__subtitle {
     font-family: $font-family;
-    font-size: 0.875rem;
-    font-weight: $font-weight-normal;
+    @include font-type-30();
     margin-bottom: 0;
-    margin-top: 0.875rem; // to-do: double check margins for subtitles
+    margin-top: $ux-spacing-20;
   }
 
   &__close-button {
