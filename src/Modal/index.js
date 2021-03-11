@@ -3,7 +3,7 @@ import ModalBody from './ModalBody';
 import ModalFooter from './ModalFooter';
 import ModalHeader from './ModalHeader';
 
-export { 
+export {
   Modal,
   ModalBody,
   ModalFooter,

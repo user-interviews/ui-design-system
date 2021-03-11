@@ -1,6 +1,8 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { Modal, ModalBody, ModalFooter, ModalHeader } from 'src/Modal';
+import {
+ Modal, ModalBody, ModalFooter, ModalHeader,
+} from 'src/Modal';
 import mdx from './Modal.mdx';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -16,15 +18,15 @@ export default {
   },
 };
 
-const handleRequestClose = () => action('Close')
+const handleRequestClose = () => action('Close');
 
 export const BaseModal = () => (
   <Modal
+    ariaHideApp={false}
     className="BaseModal"
     contentLabel="Base Modal"
-    isOpen={true}
+    isOpen
     size="small"
-    ariaHideApp={false}
   >
     <ModalHeader
       title="Base modal"
@@ -35,43 +37,43 @@ export const BaseModal = () => (
       <p>Some content goes here.</p>
     </ModalBody>
     <ModalFooter>
-      <button className="btn btn-light">Cancel</button>
-      <button className="btn btn-success">Save</button>
+      <button className="btn btn-light" type="button">Cancel</button>
+      <button className="btn btn-success" type="submit">Save</button>
     </ModalFooter>
   </Modal>
 );
 
 export const WithSubtitleModal = () => (
   <Modal
+    ariaHideApp={false}
     className="WithSubtitleModal"
     contentLabel="With Subtitle Modal"
-    isOpen={true}
+    isOpen
     size="small"
-    ariaHideApp={false}
   >
     <ModalHeader
+      subtitle="A subtitle to provide more information"
       title="With subtitle modal"
       titleId="with-subtitle-modal"
-      subtitle="A subtitle to provide more information"
       onRequestClose={handleRequestClose}
     />
     <ModalBody>
       <p>Some content goes here.</p>
     </ModalBody>
     <ModalFooter>
-      <button className="btn btn-light">Cancel</button>
-      <button className="btn btn-success">Save</button>
+      <button className="btn btn-light" type="button">Cancel</button>
+      <button className="btn btn-success" type="submit">Save</button>
     </ModalFooter>
   </Modal>
 );
 
 export const TransactionalModal = () => (
   <Modal
+    ariaHideApp={false}
     className="TransactionalModal"
     contentLabel="Transactional Modal"
-    isOpen={true}
+    isOpen
     size="small"
-    ariaHideApp={false}
   >
     <ModalHeader
       title="Transactional modal"
@@ -80,22 +82,22 @@ export const TransactionalModal = () => (
     />
     <ModalBody>
       <p>The user needs to take action here.</p>
-      <input placeholder="Email"></input>
+      <input placeholder="Email" />
     </ModalBody>
-    <ModalFooter >
-      <button className="btn btn-light">Cancel</button>
-      <button className="btn btn-success">Invite</button>
+    <ModalFooter>
+      <button className="btn btn-light" type="button">Cancel</button>
+      <button className="btn btn-success" type="submit">Invite</button>
     </ModalFooter>
   </Modal>
 );
 
 export const WarningModal = () => (
   <Modal
+    ariaHideApp={false}
     className="WarningModal"
     contentLabel="Warning Modal"
-    isOpen={true}
+    isOpen
     size="small"
-    ariaHideApp={false}
   >
     <ModalHeader
       title="Warning modal"
@@ -106,20 +108,20 @@ export const WarningModal = () => (
     <ModalBody>
       <p>Are you sure you want to do this?</p>
     </ModalBody>
-    <ModalFooter >
-      <button className="btn btn-light">Cancel</button>
-      <button className="btn btn-outline-danger">Delete</button>
+    <ModalFooter>
+      <button className="btn btn-light" type="button">Cancel</button>
+      <button className="btn btn-outline-danger" type="submit">Delete</button>
     </ModalFooter>
   </Modal>
 );
 
 export const DangerModal = () => (
   <Modal
+    ariaHideApp={false}
     className="DangerModal"
     contentLabel="Danger Modal"
-    isOpen={true}
+    isOpen
     size="small"
-    ariaHideApp={false}
   >
     <ModalHeader
       title="Danger modal"
@@ -130,9 +132,9 @@ export const DangerModal = () => (
     <ModalBody>
       <p>Are you sure you want to do this?</p>
     </ModalBody>
-    <ModalFooter >
-      <button className="btn btn-light">Cancel</button>
-      <button className="btn btn-outline-danger">Delete</button>
+    <ModalFooter>
+      <button className="btn btn-light" type="button">Cancel</button>
+      <button className="btn btn-outline-danger" type="submit">Delete</button>
     </ModalFooter>
   </Modal>
 );

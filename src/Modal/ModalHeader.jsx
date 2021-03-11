@@ -7,25 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 
 export default class ModalHeader extends Component {
-  static propTypes = {
-    children: PropTypes.node,
-    closingIsDisabled: PropTypes.bool,
-    subtitle: PropTypes.string,
-    title: PropTypes.string,
-    titleClass: PropTypes.string,
-    titleId: PropTypes.string.isRequired,
-    onRequestClose: PropTypes.func,
-  };
-
-  static defaultProps = {
-    children: undefined,
-    closingIsDisabled: false,
-    title: undefined,
-    titleClass: '',
-    subtitle: undefined,
-    onRequestClose: undefined,
-  };
-
   // Don’t pass event to props callback; the callback is not always called from
   // event listeners:
 
@@ -43,7 +24,9 @@ export default class ModalHeader extends Component {
             this.props.children : (
               <Fragment>
                 <h1 className={this.titleClassName} id={this.props.titleId}>
-                  {this.props.variant && (<FontAwesomeIcon className={this.props.variant} icon={faExclamationTriangle}></FontAwesomeIcon>)}
+                  {this.props.variant && (
+                    <FontAwesomeIcon className={this.props.variant} icon={faExclamationTriangle} />
+                  )}
                   {this.props.title}
                 </h1>
                 {this.props.subtitle && (
@@ -69,3 +52,24 @@ export default class ModalHeader extends Component {
     );
   }
 }
+
+ModalHeader.propTypes = {
+  children: PropTypes.node,
+  closingIsDisabled: PropTypes.bool,
+  subtitle: PropTypes.string,
+  title: PropTypes.string,
+  titleClass: PropTypes.string,
+  titleId: PropTypes.string.isRequired,
+  variant: PropTypes.string,
+  onRequestClose: PropTypes.func,
+};
+
+ModalHeader.defaultProps = {
+  children: undefined,
+  closingIsDisabled: false,
+  title: undefined,
+  titleClass: '',
+  subtitle: undefined,
+  variant: undefined,
+  onRequestClose: undefined,
+};
