@@ -1,9 +1,11 @@
 import React from 'react';
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import './ModalBody.scss';
 
 const ModalBody = ({ children, className }) => (
-  <div className={`ModalBody ${className}`}>
+
+  <div className={classNames('ModalBody', className)}>
     {children}
   </div>
 );
