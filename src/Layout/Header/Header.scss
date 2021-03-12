@@ -1,0 +1,21 @@
+@import '../../scss/theme.scss';
+
+.Header {
+  align-items: center;
+  background: $ux-gray-900;
+  color: $ux-white;
+  display: flex;
+  height: $ui-header-height;
+  padding: $ux-spacing-40;
+
+  > div:first-child {
+    @include font-type-60--bold;
+    flex-grow: 1;
+  }
+
+  &__controls {
+    > :not(:last-child) {
+      margin-right: $ux-spacing-20;
+    }
+  }
+}
