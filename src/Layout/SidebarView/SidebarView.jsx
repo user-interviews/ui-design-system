@@ -39,20 +39,6 @@ import './SidebarView.scss';
 // mismatched, the layout would remain in the ‘unopenable’ state.
 
 export default class SidebarView extends Component {
-  static propTypes = {
-    className: PropTypes.string,
-    hideSidebar: PropTypes.bool,
-    isSidebarOpen: PropTypes.bool.isRequired,
-    isSidebarOpenable: PropTypes.bool.isRequired,
-    sidebarTitleId: PropTypes.string.isRequired,
-    onSidebarCloseRequest: PropTypes.func.isRequired,
-  };
-
-  static defaultProps = {
-    className: undefined,
-    hideSidebar: false,
-  };
-
   contentElementRef = createRef();
 
   sidebarElementRef = createRef();
@@ -189,3 +175,17 @@ export default class SidebarView extends Component {
     );
   }
 }
+
+SidebarView.propTypes = {
+  className: PropTypes.string,
+  hideSidebar: PropTypes.bool,
+  isSidebarOpen: PropTypes.bool.isRequired,
+  isSidebarOpenable: PropTypes.bool.isRequired,
+  sidebarTitleId: PropTypes.string.isRequired,
+  onSidebarCloseRequest: PropTypes.func.isRequired,
+};
+
+SidebarView.defaultProps = {
+  className: undefined,
+  hideSidebar: false,
+};

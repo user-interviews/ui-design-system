@@ -1,0 +1,17 @@
+@import '../../scss/theme';
+
+.ModalFooter {
+  align-items: center;
+  background-color: $ux-gray-100;
+  display: flex;
+  justify-content: flex-end;
+  padding: $ux-spacing-40;
+
+  > :not(:first-child) {
+    margin-left: $ux-spacing-10;
+  }
+
+  > :not(:last-child) {
+    margin-right: $ux-spacing-10;
+  }
+}

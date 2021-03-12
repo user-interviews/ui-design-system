@@ -10,6 +10,12 @@ import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
+import {
+  Modal,
+  ModalBody,
+  ModalFooter,
+  ModalHeader,
+} from 'src/Modal';
 import Pill from 'src/Pill';
 import Popper from 'src/Popper';
 import ProfileCell from 'src/ProfileCell';
@@ -45,6 +51,10 @@ export {
   Input,
   InputLabel,
   MessageTypes,
+  Modal,
+  ModalBody,
+  ModalFooter,
+  ModalHeader,
   Pill,
   Popper,
   ProfileCell,

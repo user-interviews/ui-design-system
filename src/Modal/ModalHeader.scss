@@ -1,0 +1,41 @@
+@import '../../scss/theme';
+
+.ModalHeader {
+  align-items: baseline;
+  display: flex;
+  justify-content: space-between;
+  padding: $ux-spacing-50;
+
+  &__title {
+    font-family: $font-family;
+    @include font-type-60--bold();
+    margin-bottom: 0;
+
+    &--has-icon {
+      display: flex;
+      align-items: center;
+    }
+
+    .warning {
+      color: $ux-yellow-600;
+      margin-right: $ux-spacing-20;
+    }
+
+    .danger {
+      color: $ux-red-400;
+      margin-right: $ux-spacing-20;
+    }
+  }
+
+  &__subtitle {
+    font-family: $font-family;
+    @include font-type-30();
+    margin-bottom: 0;
+    margin-top: $ux-spacing-20;
+  }
+
+  &__close-button {
+    padding: $ux-spacing-40;
+    margin: -1rem -1rem -1rem 0;
+  }
+}

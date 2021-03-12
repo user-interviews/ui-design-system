@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Controls = props => (
+const Controls = (props) => (
   <div className="Header__controls">
     {props.children}
   </div>
