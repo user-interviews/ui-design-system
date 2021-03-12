@@ -25,4 +25,4 @@ SidebarNav.defaultProps = {
   controls: undefined,
 };
 
-export default SidebarNav; 
+export default SidebarNav;

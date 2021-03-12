@@ -1,5 +1,6 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
+import Input from 'src/Input';
 import {
  Modal, ModalBody, ModalFooter, ModalHeader,
 } from 'src/Modal';
@@ -82,7 +83,7 @@ export const TransactionalModal = () => (
     />
     <ModalBody>
       <p>The user needs to take action here.</p>
-      <input placeholder="Email" />
+      <Input name="Email" placeholder="Email" type="text" />
     </ModalBody>
     <ModalFooter>
       <button className="btn btn-light" type="button">Cancel</button>
