@@ -25,7 +25,7 @@ Modal.propTypes = {
 
 Modal.defaultProps = {
   size: MODAL_SIZES.small,
-  className: '',
+  className: undefined,
 };
 
 export default Modal;
