@@ -1,0 +1,39 @@
+@import "~common/ui_imports";
+
+.pagination {
+  font-size: .75rem;
+  margin: 0;
+
+  .page-item {
+    .page-link {
+      padding: .375rem .5rem;
+    }
+
+    &:not(.disabled) .page-link {
+      color: $ux-researcher;
+    }
+
+    &.disabled .page-link {
+      color: $ux-gray-400;
+    }
+
+    &.active .page-link {
+      background-color: $ux-researcher;
+      border-color: $ux-researcher;
+      color: $ux-white;
+    }
+  }
+}
+
+.pagination--participant {
+  .page-item {
+    &:not(.disabled) .page-link {
+      color: $ux-participant;
+    }
+
+    &.active .page-link {
+      background-color: $ux-participant;
+      border-color: $ux-participant;
+    }
+  }
+}

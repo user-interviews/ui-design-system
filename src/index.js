@@ -16,6 +16,7 @@ import {
   ModalFooter,
   ModalHeader,
 } from 'src/Modal';
+import Pagination from 'src/Pagination';
 import Pill from 'src/Pill';
 import Popper from 'src/Popper';
 import ProfileCell from 'src/ProfileCell';
@@ -55,6 +56,7 @@ export {
   ModalBody,
   ModalFooter,
   ModalHeader,
+  Pagination,
   Pill,
   Popper,
   ProfileCell,
