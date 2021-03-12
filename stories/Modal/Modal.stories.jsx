@@ -83,7 +83,7 @@ export const TransactionalModal = () => (
     />
     <ModalBody>
       <p>The user needs to take action here.</p>
-      <Input id='Email' name="Email" placeholder="Email" type="text" />
+      <Input id="Email" name="Email" placeholder="Email" type="text" />
     </ModalBody>
     <ModalFooter>
       <button className="btn btn-light" type="button">Cancel</button>
