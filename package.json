@@ -39,14 +39,14 @@
     "@popperjs/core": "^2.5.3",
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.5",
-    "node-sass": "^4.9.2",
+    "node-sass": "^4.13.0",
     "prop-types": "^15.6.1",
     "react": "^16.12.0",
     "react-copy-to-clipboard": "^5.0.2",
     "react-dom": "^16.12.0",
     "react-modal": "^3.12.1",
     "react-popper": "^2.2.3",
-    "react-tracking": "^7.3.0"
+    "react-tracking": "^8.1.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
@@ -91,7 +91,7 @@
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-react-hooks": "^2.5.1",
     "eslint-utils": "^1.4.3",
-    "node-sass": "^4.9.2",
+    "node-sass": "4.13.0",
     "prop-types": "^15.6.1",
     "react": "^16.12.0",
     "react-copy-to-clipboard": "^5.0.2",
@@ -99,7 +99,7 @@
     "react-modal": "^3.12.1",
     "react-popper": "^2.2.3",
     "react-test-renderer": "^16.12.0",
-    "react-tracking": "^7.3.0",
+    "react-tracking": "8.1.0",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3"
   },
