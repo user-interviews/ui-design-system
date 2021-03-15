@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import ReactPaginate from 'react-paginate';
 import { breakpoints } from './breakpoints';
 import Resize from './resize';
@@ -36,7 +38,9 @@ export default class Pagination extends Component {
     className: PropTypes.string, // eslint-disable-line react/sort-prop-types
     currentPage: PropTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
     disableInitialCallback: PropTypes.bool, // eslint-disable-line react/sort-prop-types
+    nextLabel: PropTypes.node, // eslint-disable-line react/sort-prop-types
     pageQsVar: PropTypes.string, // eslint-disable-line react/sort-prop-types
+    previousLabel: PropTypes.node,  // eslint-disable-line react/sort-prop-types
     totalPages: PropTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
 
     onNavigate: PropTypes.func,
@@ -51,8 +55,10 @@ export default class Pagination extends Component {
     breakpoints,
     className: null,
     disableInitialCallback: true,
+    nextLabel: <span>Next<FontAwesomeIcon style={{marginLeft: '0.25rem'}} icon={faChevronRight}/></span>,
     onNavigate: null,
     pageQsVar: 'page',
+    previousLabel: <span><FontAwesomeIcon style={{marginRight: '0.25rem'}} icon={faChevronLeft}/>Previous</span>,
   };
 
   constructor(props) {
@@ -133,14 +139,14 @@ export default class Pagination extends Component {
 
           marginPagesDisplayed={this.state.size.margin}
           nextClassName="page-item"
-          nextLabel={'>>'} //TO-DO
+          nextLabel={this.props.nextLabel}
           nextLinkClassName="page-link"
           pageClassName="page-item"
           pageCount={this.props.totalPages}
           pageLinkClassName="page-link"
           pageRangeDisplayed={this.state.size.range}
           previousClassName="page-item"
-          previousLabel={'<<'} //TO-DO
+          previousLabel={this.props.previousLabel} 
           previousLinkClassName="page-link"
           onPageChange={this.onNavigate}
         />
