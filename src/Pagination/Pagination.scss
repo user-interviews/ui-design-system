@@ -1,16 +1,18 @@
-@import "~common/ui_imports";
+@import "../../scss/theme.scss";
 
 .pagination {
-  font-size: .75rem;
+  @include font-type-20;
   margin: 0;
 
   .page-item {
+    margin-left: $ux-spacing-10;
+    margin-right: $ux-spacing-10;
     .page-link {
-      padding: .375rem .5rem;
+      padding: .375rem .5rem; // double check this padding
     }
 
     &:not(.disabled) .page-link {
-      color: $ux-researcher;
+      color: $ux-green; // is this right? $ux-researcher
     }
 
     &.disabled .page-link {
@@ -18,8 +20,8 @@
     }
 
     &.active .page-link {
-      background-color: $ux-researcher;
-      border-color: $ux-researcher;
+      background-color: $ux-green; // is this right? 
+      border-color: $ux-green; // is this right?
       color: $ux-white;
     }
   }
@@ -28,12 +30,12 @@
 .pagination--participant {
   .page-item {
     &:not(.disabled) .page-link {
-      color: $ux-participant;
+      color: $ux-blue; // $ux-participant ?
     }
 
     &.active .page-link {
-      background-color: $ux-participant;
-      border-color: $ux-participant;
+      background-color: $ux-blue; // $ux-participant ?
+      border-color: $ux-blue; // $ux-participant ?
     }
   }
 }

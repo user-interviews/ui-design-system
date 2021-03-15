@@ -1,23 +1,23 @@
 import React, { Component } from 'react';
-import * as propTypes from 'lib/prop_types';
+import PropTypes from 'prop-types';
 import ReactPaginate from 'react-paginate';
-import { breakpoints } from 'lib/bootstrap';
-import Resize from 'lib/events/resize';
-import { QueryString } from 'lib/http';
+import { breakpoints } from './breakpoints';
+import Resize from './resize';
+import { QueryString } from './http';
 
-import './pagination.scss';
+import './Pagination.scss';
 
-const sizeBoundsPropType = propTypes.shape({
-  margin: propTypes.number.isRequired, // how many to show at the edge
-  range: propTypes.number.isRequired, // how many to show around current
+const sizeBoundsPropType = PropTypes.shape({
+  margin: PropTypes.number.isRequired, // how many to show at the edge
+  range: PropTypes.number.isRequired, // how many to show around current
 });
 
-const breakPointsPropType = propTypes.shape({
-  xs: propTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
-  sm: propTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
-  md: propTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
-  lg: propTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
-  xl: propTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
+const breakPointsPropType = PropTypes.shape({
+  xs: PropTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
+  sm: PropTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
+  md: PropTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
+  lg: PropTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
+  xl: PropTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
 });
 
 /*
@@ -33,13 +33,13 @@ export default class Pagination extends Component {
     xl: sizeBoundsPropType, // eslint-disable-line react/sort-prop-types
 
     breakpoints: breakPointsPropType, // eslint-disable-line react/sort-prop-types
-    className: propTypes.string, // eslint-disable-line react/sort-prop-types
-    currentPage: propTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
-    disableInitialCallback: propTypes.bool, // eslint-disable-line react/sort-prop-types
-    pageQsVar: propTypes.string, // eslint-disable-line react/sort-prop-types
-    totalPages: propTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
+    className: PropTypes.string, // eslint-disable-line react/sort-prop-types
+    currentPage: PropTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
+    disableInitialCallback: PropTypes.bool, // eslint-disable-line react/sort-prop-types
+    pageQsVar: PropTypes.string, // eslint-disable-line react/sort-prop-types
+    totalPages: PropTypes.number.isRequired, // eslint-disable-line react/sort-prop-types
 
-    onNavigate: propTypes.func,
+    onNavigate: PropTypes.func,
   };
 
   static defaultProps = {
@@ -133,14 +133,14 @@ export default class Pagination extends Component {
 
           marginPagesDisplayed={this.state.size.margin}
           nextClassName="page-item"
-          nextLabel={<i className="fas fa-angle-double-right" />}
+          nextLabel={'>>'} //TO-DO
           nextLinkClassName="page-link"
           pageClassName="page-item"
           pageCount={this.props.totalPages}
           pageLinkClassName="page-link"
           pageRangeDisplayed={this.state.size.range}
           previousClassName="page-item"
-          previousLabel={<i className="fas fa-angle-double-left" />}
+          previousLabel={'<<'} //TO-DO
           previousLinkClassName="page-link"
           onPageChange={this.onNavigate}
         />
