@@ -1,7 +1,106 @@
 @import '../../scss/theme';
 
+@mixin popper-arrow($popper-color: $ux-gray-800, $popper-border-color: $ux-gray-800) {
+  .Popper__arrow {
+    height: 1rem;
+    position: absolute;
+    width: 1rem;
+    pointer-events: none;
+  }
+
+  .Popper__arrow::before {
+    border-style: solid;
+    content: '';
+    display: block;
+    height: 0;
+    margin: auto;
+    width: 0;
+  }
+
+  .Popper__arrow::after {
+    border-style: solid;
+    content: '';
+    display: block;
+    height: 0;
+    margin: auto;
+    position: absolute;
+    width: 0;
+  }
+
+  &[data-placement*='bottom'] .Popper__arrow {
+    left: 0;
+    margin-top: -0.4rem;
+    top: 0;
+  }
+
+  &[data-placement*='bottom'] .Popper__arrow::before {
+    border-color: transparent transparent $popper-border-color transparent;
+    border-width: 0 0.5rem 0.4rem 0.5rem;
+    position: absolute;
+    top: -1px;
+  }
+
+  &[data-placement*='bottom'] .Popper__arrow::after {
+    border-color: transparent transparent $popper-color transparent;
+    border-width: 0 0.5rem 0.4rem 0.5rem;
+  }
+
+  &[data-placement*='top'] .Popper__arrow {
+    bottom: 0;
+    left: 0;
+    margin-bottom: -1rem;
+  }
+
+  &[data-placement*='top'] .Popper__arrow::before {
+    border-color: $popper-border-color transparent transparent transparent;
+    border-width: 0.4rem 0.5rem 0 0.5rem;
+    position: absolute;
+    top: 1px;
+  }
+
+  &[data-placement*='top'] .Popper__arrow::after {
+    border-color: $popper-color transparent transparent transparent;
+    border-width: 0.4rem 0.5rem 0 0.5rem;
+  }
+
+  &[data-placement*='right'] .Popper__arrow {
+    left: 0;
+    margin-left: -0.7rem;
+  }
+
+  &[data-placement*='right'] .Popper__arrow::before {
+    border-color: transparent $popper-border-color transparent transparent;
+    border-width: 0.5rem 0.4rem 0.5rem 0;
+  }
+
+  &[data-placement*='right'] .Popper__arrow::after {
+    border-color: transparent $popper-color transparent transparent;
+    border-width: 0.5rem 0.4rem 0.5rem 0;
+    left: 6px;
+    top: 0;
+  }
+
+  &[data-placement*='left'] .Popper__arrow {
+    margin-right: -0.7rem;
+    right: 0;
+  }
+
+  &[data-placement*='left'] .Popper__arrow::before {
+    border-color: transparent transparent transparent $popper-border-color;
+    border-width: 0.5rem 0 0.5rem 0.4em;
+  }
+
+  &[data-placement*='left'] .Popper__arrow::after {
+    border-color: transparent transparent transparent $popper-color;
+    border-width: 0.5rem 0 0.5rem 0.4em;
+    left: 3px;
+    top: 0;
+  }
+}
+
 .Popper {
   @include font-type-30;
+  @include popper-arrow($popper-color: $ux-white, $popper-border-color: $ux-gray-300);
   background-color: $ux-white;
   border-radius: $ux-border-radius;
   border: 0.06rem solid $ux-gray-300;
@@ -18,7 +117,9 @@
   }
 
   &--dark {
+    @include popper-arrow($popper-color: $ux-gray-800);
     background-color: $ux-gray-800;
     color: $ux-gray-100;
   }
 }
+
