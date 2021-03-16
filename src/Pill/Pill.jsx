@@ -22,12 +22,12 @@ const Pill = ({
       )
     }
   >
-      { icon && (
-        <FontAwesomeIcon icon={icon} style={{marginRight: '0.25rem'}}/>
+    { icon && (
+    <FontAwesomeIcon icon={icon} style={{ marginRight: '0.25rem' }} />
       )}
-      {text}
-      { onClose && (
-        <button className='Pill__close' onClick={() => onClose(id)} type='button'> &times;</button>
+    {text}
+    { onClose && (
+    <button className="Pill__close" type="button" onClick={() => onClose(id)}> &times;</button>
       )}
   </span>
 );
@@ -37,14 +37,16 @@ Pill.propTypes = {
   icon: PropTypes.any,
   id: PropTypes.string,
   size: PropTypes.string,
-  squared: PropTypes.bool,
   text: PropTypes.node.isRequired,
   onClose: PropTypes.func,
 };
 
 Pill.defaultProps = {
   color: undefined,
+  icon: undefined,
+  id: undefined,
   size: undefined,
+  onClose: undefined,
 };
 
 export default Pill;
