@@ -8,6 +8,15 @@
   color: $ux-gray-800;
   border: 0.06rem solid $ux-gray-400;
 
+  &__close {
+    background-color: unset; 
+    border: none;
+    color: inherit;
+    margin-left: $ux-spacing-30;
+    margin-right: 0;
+    padding: 0;
+  }
+
   &--blue {
     background-color: $ux-blue-100;
     color: $ux-blue-700;
@@ -44,19 +53,19 @@
     border: 0.06rem solid $ux-gray-400;
   }
 
-  /////// SIZES
-  // Seems like a fine default size
   border-radius: 2rem;
   font-size: $font-size-base;
-  padding: $ux-spacing-10 $ux-spacing-30;
+  padding: $ux-spacing-10 $ux-spacing-20;
 
   &--sm {
-    border-radius: 1rem;
-    font-size: .625rem;
+    @include font-type-30;
+    border-radius: $ux-border-radius;
     padding: $ux-spacing-10 $ux-spacing-20;
   }
 
-  &--squared {
-    border-radius: $ux-border-radius;
+  &--lg {
+    @include font-type-40;
+    border-radius: 0.5rem;
+    padding: $ux-spacing-10 $ux-spacing-20;
   }
 }
