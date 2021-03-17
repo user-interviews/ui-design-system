@@ -6,7 +6,7 @@ import {
   boolean,
 } from '@storybook/addon-knobs';
 
-import Pill from 'src/Pills';
+import Pill from 'src/Pill';
 import mdx from './Pills.mdx';
 
 export default {
