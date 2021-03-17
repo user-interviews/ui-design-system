@@ -6,12 +6,18 @@ import {
   boolean,
 } from '@storybook/addon-knobs';
 
-import Pill from 'src/Pill';
+import Pill from 'src/Pills';
+import mdx from './Pills.mdx';
 
 export default {
   title: 'Design System/Pill',
   component: Pill,
   decorators: [withKnobs],
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 const colors = ['', 'blue', 'orange', 'yellow', 'green', 'gray', 'silver'];
