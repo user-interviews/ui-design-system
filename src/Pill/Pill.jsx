@@ -23,11 +23,11 @@ const Pill = ({
     }
   >
     { icon && (
-    <FontAwesomeIcon icon={icon} style={{ marginRight: '0.25rem' }} />
+    <FontAwesomeIcon className="icon--lead" icon={icon} style={{ marginRight: '0.25rem' }} />
       )}
     {text}
     { onClose && (
-    <button className="Pill__close" type="button" onClick={() => onClose(id)}> &times;</button>
+    <button className="btn--close" type="button" onClick={() => onClose(id)}> &times;</button>
       )}
   </span>
 );
