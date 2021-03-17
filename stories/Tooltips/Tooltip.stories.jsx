@@ -3,9 +3,10 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
 import Tooltip from 'src/Tooltip';
+import mdx from './Tooltip.mdx';
 
 export default {
-  title: 'Design System/Tooltip',
+  title: 'Design System/Tooltips',
   component: Tooltip,
   decorators: [withKnobs],
   parameters: {
