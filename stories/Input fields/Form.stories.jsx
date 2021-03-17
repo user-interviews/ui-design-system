@@ -9,7 +9,7 @@ import RadioButton from 'src/RadioButton';
 import RadioButtonGroup from 'src/RadioButtonGroup';
 
 export default {
-  title: 'Design System/Form',
+  title: 'Design System/Input fields',
   component: Form,
 };
 

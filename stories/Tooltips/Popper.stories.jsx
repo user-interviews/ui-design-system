@@ -4,7 +4,7 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 import Popper from 'src/Popper';
 
 export default {
-  title: 'Design System/Popper',
+  title: 'Design System/Tooltips/Popper',
   component: Popper,
   decorators: [withKnobs],
 };
