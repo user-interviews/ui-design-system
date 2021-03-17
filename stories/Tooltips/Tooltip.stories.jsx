@@ -8,6 +8,11 @@ export default {
   title: 'Design System/Tooltip',
   component: Tooltip,
   decorators: [withKnobs],
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 export const Default = () => (
