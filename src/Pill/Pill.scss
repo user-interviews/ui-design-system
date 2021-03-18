@@ -15,9 +15,10 @@
 
     .icon--lead {
       color: $ux-blue;
+      margin-right: $ux-spacing-10;
     }
 
-    .btn--close {
+    .button--close {
       background-color: unset; 
       border: none;
       color: $ux-blue;
@@ -34,9 +35,10 @@
 
     .icon--lead {
       color: $ux-orange-700;
+      margin-right: $ux-spacing-10;
     }
 
-    .btn--close {
+    .button--close {
       background-color: unset; 
       border: none;
       color: $ux-orange;
@@ -53,9 +55,10 @@
 
     .icon--lead {
       color: $ux-green-600;
+      margin-right: $ux-spacing-10;
     }
 
-    .btn--close {
+    .button--close {
       background-color: unset; 
       border: none;
       color: $ux-green-500;
@@ -72,9 +75,10 @@
 
     .icon--lead {
       color: $ux-yellow-700;
+      margin-right: $ux-spacing-10;
     }
 
-    .btn--close {
+    .button--close {
       background-color: unset; 
       border: none;
       color: $ux-yellow-600;
@@ -89,7 +93,11 @@
     color: $ux-gray-800;
     border: 0.06rem solid $ux-gray-400;
 
-    .btn--close {
+    .icon--lead {
+      margin-right: $ux-spacing-10;
+    }
+
+    .button--close {
       background-color: unset; 
       border: none;
       color: $ux-gray-500;
@@ -105,10 +113,11 @@
     border: 0.06rem solid $ux-gray-400;
 
     .icon--lead {
-      color: $ux-gray-700
+      color: $ux-gray-700;
+      margin-right: $ux-spacing-10;
     }
 
-    .btn--close {
+    .button--close {
       background-color: unset; 
       border: none;
       color: $ux-gray-500;
