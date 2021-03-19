@@ -1,40 +1,54 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './Pill.scss';
 
+const colors = ['blue', 'orange', 'yellow', 'green', 'gray', 'silver'];
+
 const Pill = ({
   color,
-  size,
-  squared,
+  icon,
+  id,
+  large,
+  onClose,
   text,
 }) => (
-  <div
+  <span
     className={
       classNames(
         'Pill',
-        { 'Pill--squared': squared },
         { [`Pill--${color}`]: !!color },
-        { [`Pill--${size}`]: !!size },
+        { [`Pill--large`]: !!large },
       )
     }
   >
+    { icon && (
+      <FontAwesomeIcon className="Pill__icon--lead" icon={icon} />
+    )}
     {text}
-  </div>
+    { onClose && (
+    <button className="Pill__button--close" type="button" onClick={() => onClose(id)}> &times;</button>
+      )}
+  </span>
 );
 
 Pill.propTypes = {
-  color: PropTypes.string,
-  size: PropTypes.string,
-  squared: PropTypes.bool,
+  color: PropTypes.oneOf(colors),
+  icon: PropTypes.any,
+  id: PropTypes.string,
+  large: PropTypes.bool,
   text: PropTypes.node.isRequired,
+  onClose: PropTypes.func,
 };
 
 Pill.defaultProps = {
-  color: undefined,
-  size: undefined,
-  squared: false,
+  color: 'blue',
+  icon: undefined,
+  id: undefined,
+  large: undefined,
+  onClose: undefined,
 };
 
 export default Pill;
