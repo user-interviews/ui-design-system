@@ -5,7 +5,7 @@ import { Manager, Popper as ReactPopper, Reference } from 'react-popper';
 
 import './Popper.scss';
 
-const ARROW_OFFSET = 5;
+const ARROW_OFFSET = 10;
 
 function Popper(props) {
   const { showArrow } = props;

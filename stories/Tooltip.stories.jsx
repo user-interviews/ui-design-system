@@ -1,18 +1,20 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { withKnobs, radios, text } from '@storybook/addon-knobs';
 
 import Tooltip from 'src/Tooltip';
+
+const withContainer = (story) => <div style={{ padding: '4rem' }}>{story()}</div>;
 
 export default {
   title: 'Design System/Tooltip',
   component: Tooltip,
-  decorators: [withKnobs],
+  decorators: [withKnobs, withContainer],
 };
 
 export const Default = () => (
   <Tooltip
-    placement="right"
+    placement={radios('Placement', ['right', 'top', 'bottom', 'left', 'auto'], 'right')}
     text={text('Tooltip Text', 'Default Tooltip')}
   />
 );

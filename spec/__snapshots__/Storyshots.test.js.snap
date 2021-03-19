@@ -1432,7 +1432,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Trailing Icon 1`
 </div>
 `;
 
-exports[`Storyshots Design System/Pill Default 1`] = `
+exports[`Storyshots Design System/Modal Base Modal 1`] = `
 <div
   style={
     Object {
@@ -1441,10 +1441,567 @@ exports[`Storyshots Design System/Pill Default 1`] = `
   }
 >
   <div
-    className="Pill"
+    className="ReactModal__Overlay ReactModal__Overlay--after-open"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
   >
-    Test pill
+    <div
+      aria-label="Base Modal"
+      aria-modal={true}
+      className="ReactModal__Content ReactModal__Content--after-open BaseModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="base-modal"
+          >
+            Base modal
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-link close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+          >
+            ×
+          </span>
+        </button>
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <p>
+          Some content goes here.
+        </p>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="btn btn-light"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="btn btn-success"
+          type="submit"
+        >
+          Save
+        </button>
+      </div>
+    </div>
   </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Modal Danger Modal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ReactModal__Overlay ReactModal__Overlay--after-open"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="Danger Modal"
+      aria-modal={true}
+      className="ReactModal__Content ReactModal__Content--after-open DangerModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="danger-modal"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-exclamation-triangle fa-w-18 danger"
+              data-icon="exclamation-triangle"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Danger modal
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-link close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+          >
+            ×
+          </span>
+        </button>
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <p>
+          Are you sure you want to do this?
+        </p>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="btn btn-light"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="btn btn-outline-danger"
+          type="submit"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Modal Transactional Modal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ReactModal__Overlay ReactModal__Overlay--after-open"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="Transactional Modal"
+      aria-modal={true}
+      className="ReactModal__Content ReactModal__Content--after-open TransactionalModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="transactional-modal"
+          >
+            Transactional modal
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-link close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+          >
+            ×
+          </span>
+        </button>
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <p>
+          The user needs to take action here.
+        </p>
+        <div
+          className="Input input-group"
+        >
+          <input
+            className="Input form-control"
+            disabled={false}
+            id="Email"
+            name="Email"
+            placeholder="Email"
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="btn btn-light"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="btn btn-success"
+          type="submit"
+        >
+          Invite
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Modal Warning Modal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ReactModal__Overlay ReactModal__Overlay--after-open"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="Warning Modal"
+      aria-modal={true}
+      className="ReactModal__Content ReactModal__Content--after-open WarningModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="warning-modal"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-exclamation-triangle fa-w-18 warning"
+              data-icon="exclamation-triangle"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Warning modal
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-link close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+          >
+            ×
+          </span>
+        </button>
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <p>
+          Are you sure you want to do this?
+        </p>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="btn btn-light"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="btn btn-outline-danger"
+          type="submit"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Modal With Subtitle Modal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ReactModal__Overlay ReactModal__Overlay--after-open"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="With Subtitle Modal"
+      aria-modal={true}
+      className="ReactModal__Content ReactModal__Content--after-open WithSubtitleModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="with-subtitle-modal"
+          >
+            With subtitle modal
+          </h1>
+          <h2
+            className="ModalHeader__subtitle"
+          >
+            A subtitle to provide more information
+          </h2>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-link close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+          >
+            ×
+          </span>
+        </button>
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <p>
+          Some content goes here.
+        </p>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="btn btn-light"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="btn btn-success"
+          type="submit"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Pill Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    className="Pill Pill--blue"
+  >
+    Text
+  </span>
+</div>
+`;
+
+exports[`Storyshots Design System/Pill With Close 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    className="Pill Pill--blue"
+  >
+    Text
+    <button
+      className="Pill__button--close"
+      onClick={[Function]}
+      type="button"
+    >
+       ×
+    </button>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Design System/Pill With Leading Icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    className="Pill Pill--blue"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-users fa-w-20 Pill__icon--lead"
+      data-icon="users"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 640 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Text
+  </span>
 </div>
 `;
 
@@ -2303,25 +2860,25 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       </ul>
       <ul>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-70
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-70--bold
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-70--light
-          </div>
+          </span>
         </li>
       </ul>
     </div>
@@ -2378,25 +2935,25 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       </ul>
       <ul>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-60
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-60--bold
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-60--light
-          </div>
+          </span>
         </li>
       </ul>
     </div>
@@ -2453,25 +3010,25 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       </ul>
       <ul>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-50
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-50--bold
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-50--light
-          </div>
+          </span>
         </li>
       </ul>
     </div>
@@ -2528,25 +3085,25 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       </ul>
       <ul>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-40
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-40--bold
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-40--light
-          </div>
+          </span>
         </li>
       </ul>
     </div>
@@ -2603,25 +3160,25 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       </ul>
       <ul>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-30
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-30--bold
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-30--light
-          </div>
+          </span>
         </li>
       </ul>
     </div>
@@ -2678,25 +3235,25 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       </ul>
       <ul>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-20
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-20--bold
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-20--light
-          </div>
+          </span>
         </li>
       </ul>
     </div>
@@ -2761,25 +3318,25 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       </ul>
       <ul>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-10
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-10--bold
-          </div>
+          </span>
         </li>
         <li>
-          <div
-            className="Pill Pill--blue Pill--sm"
+          <span
+            className="Pill Pill--blue"
           >
             font-type-10--light
-          </div>
+          </span>
         </li>
       </ul>
     </div>
@@ -3987,31 +4544,39 @@ exports[`Storyshots Design System/Tooltip Default 1`] = `
     }
   }
 >
-  <span
-    aria-hidden="true"
-    className="Tooltip__icon"
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    tabIndex="0"
+  <div
+    style={
+      Object {
+        "padding": "4rem",
+      }
+    }
   >
-    <svg
+    <span
       aria-hidden="true"
-      className="svg-inline--fa fa-question-circle fa-w-16 "
-      data-icon="question-circle"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+      className="Tooltip__icon"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
     >
-      <path
-        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
-        fill="currentColor"
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-question-circle fa-w-16 "
+        data-icon="question-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
         style={Object {}}
-      />
-    </svg>
-  </span>
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </span>
+  </div>
 </div>
 `;
 
@@ -4023,31 +4588,39 @@ exports[`Storyshots Design System/Tooltip Gray Icon 1`] = `
     }
   }
 >
-  <span
-    aria-hidden="true"
-    className="Tooltip__icon Tooltip__icon--gray"
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    tabIndex="0"
+  <div
+    style={
+      Object {
+        "padding": "4rem",
+      }
+    }
   >
-    <svg
+    <span
       aria-hidden="true"
-      className="svg-inline--fa fa-question-circle fa-w-16 "
-      data-icon="question-circle"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+      className="Tooltip__icon Tooltip__icon--gray"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
     >
-      <path
-        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
-        fill="currentColor"
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-question-circle fa-w-16 "
+        data-icon="question-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
         style={Object {}}
-      />
-    </svg>
-  </span>
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </span>
+  </div>
 </div>
 `;
 
@@ -4059,31 +4632,39 @@ exports[`Storyshots Design System/Tooltip Green Icon 1`] = `
     }
   }
 >
-  <span
-    aria-hidden="true"
-    className="Tooltip__icon Tooltip__icon--primary"
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    tabIndex="0"
+  <div
+    style={
+      Object {
+        "padding": "4rem",
+      }
+    }
   >
-    <svg
+    <span
       aria-hidden="true"
-      className="svg-inline--fa fa-question-circle fa-w-16 "
-      data-icon="question-circle"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+      className="Tooltip__icon Tooltip__icon--primary"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
     >
-      <path
-        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
-        fill="currentColor"
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-question-circle fa-w-16 "
+        data-icon="question-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
         style={Object {}}
-      />
-    </svg>
-  </span>
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </span>
+  </div>
 </div>
 `;
 
@@ -4095,31 +4676,39 @@ exports[`Storyshots Design System/Tooltip Light 1`] = `
     }
   }
 >
-  <span
-    aria-hidden="true"
-    className="Tooltip__icon"
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    tabIndex="0"
+  <div
+    style={
+      Object {
+        "padding": "4rem",
+      }
+    }
   >
-    <svg
+    <span
       aria-hidden="true"
-      className="svg-inline--fa fa-question-circle fa-w-16 "
-      data-icon="question-circle"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+      className="Tooltip__icon"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
     >
-      <path
-        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
-        fill="currentColor"
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-question-circle fa-w-16 "
+        data-icon="question-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
         style={Object {}}
-      />
-    </svg>
-  </span>
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </span>
+  </div>
 </div>
 `;
 
@@ -4131,31 +4720,39 @@ exports[`Storyshots Design System/Tooltip With Header 1`] = `
     }
   }
 >
-  <span
-    aria-hidden="true"
-    className="Tooltip__icon"
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    tabIndex="0"
+  <div
+    style={
+      Object {
+        "padding": "4rem",
+      }
+    }
   >
-    <svg
+    <span
       aria-hidden="true"
-      className="svg-inline--fa fa-question-circle fa-w-16 "
-      data-icon="question-circle"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+      className="Tooltip__icon"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
     >
-      <path
-        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
-        fill="currentColor"
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-question-circle fa-w-16 "
+        data-icon="question-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
         style={Object {}}
-      />
-    </svg>
-  </span>
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </span>
+  </div>
 </div>
 `;
 
@@ -4167,31 +4764,39 @@ exports[`Storyshots Design System/Tooltip With Html 1`] = `
     }
   }
 >
-  <span
-    aria-hidden="true"
-    className="Tooltip__icon"
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    tabIndex="0"
+  <div
+    style={
+      Object {
+        "padding": "4rem",
+      }
+    }
   >
-    <svg
+    <span
       aria-hidden="true"
-      className="svg-inline--fa fa-question-circle fa-w-16 "
-      data-icon="question-circle"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+      className="Tooltip__icon"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
     >
-      <path
-        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
-        fill="currentColor"
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-question-circle fa-w-16 "
+        data-icon="question-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
         style={Object {}}
-      />
-    </svg>
-  </span>
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </span>
+  </div>
 </div>
 `;
 
@@ -4203,30 +4808,38 @@ exports[`Storyshots Design System/Tooltip With Tracking 1`] = `
     }
   }
 >
-  <span
-    aria-hidden="true"
-    className="Tooltip__icon"
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    tabIndex="0"
+  <div
+    style={
+      Object {
+        "padding": "4rem",
+      }
+    }
   >
-    <svg
+    <span
       aria-hidden="true"
-      className="svg-inline--fa fa-question-circle fa-w-16 "
-      data-icon="question-circle"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+      className="Tooltip__icon"
+      onClick={[Function]}
+      onKeyPress={[Function]}
+      tabIndex="0"
     >
-      <path
-        d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
-        fill="currentColor"
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-question-circle fa-w-16 "
+        data-icon="question-circle"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
         style={Object {}}
-      />
-    </svg>
-  </span>
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M504 256c0 136.997-111.043 248-248 248S8 392.997 8 256C8 119.083 119.043 8 256 8s248 111.083 248 248zM262.655 90c-54.497 0-89.255 22.957-116.549 63.758-3.536 5.286-2.353 12.415 2.715 16.258l34.699 26.31c5.205 3.947 12.621 3.008 16.665-2.122 17.864-22.658 30.113-35.797 57.303-35.797 20.429 0 45.698 13.148 45.698 32.958 0 14.976-12.363 22.667-32.534 33.976C247.128 238.528 216 254.941 216 296v4c0 6.627 5.373 12 12 12h56c6.627 0 12-5.373 12-12v-1.333c0-28.462 83.186-29.647 83.186-106.667 0-58.002-60.165-102-116.531-102zM256 338c-25.365 0-46 20.635-46 46 0 25.364 20.635 46 46 46s46-20.636 46-46c0-25.365-20.635-46-46-46z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </span>
+  </div>
 </div>
 `;
