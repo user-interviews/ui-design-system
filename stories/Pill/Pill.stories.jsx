@@ -4,6 +4,7 @@ import {
   withKnobs,
   text,
   select,
+  boolean,
 } from '@storybook/addon-knobs';
 import { faUsers } from '@fortawesome/free-solid-svg-icons';
 
@@ -15,8 +16,7 @@ export default {
   decorators: [withKnobs],
 };
 
-const colors = ['', 'blue', 'orange', 'yellow', 'green', 'gray', 'silver'];
-const sizes = ['', 'lg', 'sm'];
+const colors = ['blue', 'orange', 'yellow', 'green', 'gray', 'silver'];
 
 const handleClose = (id) => {
   action('handle close')(id);
@@ -24,28 +24,28 @@ const handleClose = (id) => {
 
 export const Default = () => (
   <Pill
-    color={select('Color', colors, '')}
+    color={select('Color', colors, 'blue')}
     id="1"
-    size={select('Size', sizes, '')}
-    text={text('Text', 'Test pill')}
+    large={boolean('Large', false)}
+    text={text('Text', 'Text')}
   />
 );
 
 export const WithLeadingIcon = () => (
   <Pill
-    color={select('Color', colors, 'green')}
+    color={select('Color', colors, 'blue')}
     icon={faUsers}
     id="2"
-    size={select('Size', sizes, 'sm')}
+    large={boolean('Large', false)}
     text={text('Text', 'Text')}
   />
 );
 
 export const WithClose = () => (
   <Pill
-    color={select('Color', colors, 'orange')}
+    color={select('Color', colors, 'blue')}
     id="3"
-    size={select('Size', sizes, 'sm')}
+    large={boolean('Large', false)}
     text={text('Text', 'Text')}
     onClose={handleClose}
   />

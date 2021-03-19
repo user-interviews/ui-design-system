@@ -2,11 +2,14 @@
 @import '../../scss/theme';
 
 .Pill {
-  display: inline;
+  @include font-type-30;
   font-weight: $font-weight-normal;
-  background-color: $ux-gray-200;
-  color: $ux-gray-800;
-  border: 0.06rem solid $ux-gray-400;
+  display: inline;
+  background-color: $ux-blue-100;
+  color: $ux-blue-700;
+  border: 0.06rem solid $ux-blue-300;
+  border-radius: $ux-border-radius;
+  padding: $ux-spacing-10 $ux-spacing-20;
 
   &--blue {
     background-color: $ux-blue-100;
@@ -127,17 +130,7 @@
     }
   }
 
-  border-radius: 2rem;
-  font-size: $font-size-base;
-  padding: $ux-spacing-10 $ux-spacing-20;
-
-  &--sm {
-    @include font-type-30;
-    border-radius: $ux-border-radius;
-    padding: $ux-spacing-10 $ux-spacing-20;
-  }
-
-  &--lg {
+  &--large {
     @include font-type-40;
     border-radius: 0.5rem;
     padding: $ux-spacing-10 $ux-spacing-20;

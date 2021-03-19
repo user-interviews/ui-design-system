@@ -5,12 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './Pill.scss';
 
+const colors = ['blue', 'orange', 'yellow', 'green', 'gray', 'silver'];
+
 const Pill = ({
   color,
   icon,
   id,
+  large,
   onClose,
-  size,
   text,
 }) => (
   <span
@@ -18,7 +20,7 @@ const Pill = ({
       classNames(
         'Pill',
         { [`Pill--${color}`]: !!color },
-        { [`Pill--${size}`]: !!size },
+        { [`Pill--large`]: !!large },
       )
     }
   >
@@ -33,19 +35,19 @@ const Pill = ({
 );
 
 Pill.propTypes = {
-  color: PropTypes.string,
+  color: PropTypes.oneOf(colors),
   icon: PropTypes.any,
   id: PropTypes.string,
-  size: PropTypes.string,
+  large: PropTypes.bool,
   text: PropTypes.node.isRequired,
   onClose: PropTypes.func,
 };
 
 Pill.defaultProps = {
-  color: undefined,
+  color: 'blue',
   icon: undefined,
   id: undefined,
-  size: undefined,
+  large: undefined,
   onClose: undefined,
 };
 
