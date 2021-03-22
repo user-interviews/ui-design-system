@@ -7,7 +7,7 @@ import {
 } from '@storybook/addon-knobs';
 
 import Pill from 'src/Pill';
-import mdx from './Pills.mdx';
+import mdx from './Pill.mdx';
 
 export default {
   title: 'Design System/Pill',

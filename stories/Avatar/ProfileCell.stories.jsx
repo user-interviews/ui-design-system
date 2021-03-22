@@ -4,10 +4,10 @@ import {
 } from '@storybook/addon-knobs';
 
 import ProfileCell from 'src/ProfileCell';
-import mdx from './Avatars.mdx';
+import mdx from './Avatar.mdx';
 
 export default {
-  title: 'Design System/Avatars',
+  title: 'Design System/Avatar',
   component: ProfileCell,
   decorators: [withKnobs],
   parameters: {

@@ -6,7 +6,7 @@ import Tooltip from 'src/Tooltip';
 import mdx from './Tooltip.mdx';
 
 export default {
-  title: 'Design System/Tooltips',
+  title: 'Design System/Tooltip',
   component: Tooltip,
   decorators: [withKnobs],
   parameters: {

@@ -4,10 +4,10 @@ import {
 } from '@storybook/addon-knobs';
 
 import Card, { CardSizes } from 'src/Card';
-import mdx from './Cards.mdx';
+import mdx from './Card.mdx';
 
 export default {
-  title: 'Design System/Cards',
+  title: 'Design System/Card',
   component: Card,
   decorators: [withKnobs({ escapeHTML: false })],
   parameters: {

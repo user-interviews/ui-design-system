@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/global.scss';
 
 export default {
-  title: 'Design System/Alerts',
+  title: 'Design System/Alert',
   component: Alert,
   decorators: [withKnobs],
   parameters: {
