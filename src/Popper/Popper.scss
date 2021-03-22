@@ -120,6 +120,11 @@
     @include popper-arrow($popper-color: $ux-gray-800);
     background-color: $ux-gray-800;
     color: $ux-gray-100;
+
+    a, a:active, a:focus, a:hover, a:visited {
+      color: $ux-blue-300;
+      @include font-type-30;
+    }
   }
 }
 
