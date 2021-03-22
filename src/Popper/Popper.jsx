@@ -5,7 +5,12 @@ import { Manager, Popper as ReactPopper, Reference } from 'react-popper';
 
 import './Popper.scss';
 
+const ARROW_OFFSET = 10;
+
 function Popper(props) {
+  const { showArrow } = props;
+  const offset = showArrow ? ARROW_OFFSET : 0;
+
   return (
     <Manager>
       <Reference>
@@ -13,9 +18,23 @@ function Popper(props) {
       </Reference>
       {
         props.visible && (
-          <ReactPopper placement={props.placement} strategy={props.strategy}>
+          <ReactPopper
+            modifiers={[
+              {
+                name: 'offset',
+                options: { offset: [0, offset] },
+              },
+            ]}
+            placement={props.placement}
+            strategy={props.strategy}
+          >
             {
-              ({ placement, ref, style }) => (
+              ({
+                arrowProps,
+                placement,
+                ref,
+                style,
+              }) => (
                 <div
                   className={classNames('Popper', { 'Popper--dark': props.dark })}
                   data-placement={placement}
@@ -23,14 +42,19 @@ function Popper(props) {
                   style={style}
                 >
                   {
-                    props.header && (
-                      <div className="Popper__header">
-                        {props.header}
-                      </div>
-                    )
-                  }
+                      props.header && (
+                        <div className="Popper__header">
+                          {props.header}
+                        </div>
+                      )
+                    }
 
                   {props.text}
+                  {
+                    props.showArrow && (
+                      <span className="Popper__arrow" ref={arrowProps.ref} style={arrowProps.style} />
+                    )
+                  }
                 </div>
               )
             }
@@ -46,6 +70,7 @@ Popper.propTypes = {
   dark: PropTypes.bool,
   header: PropTypes.string,
   placement: PropTypes.string,
+  showArrow: PropTypes.bool,
   strategy: PropTypes.string,
   text: PropTypes.node.isRequired,
   visible: PropTypes.bool,
@@ -55,6 +80,7 @@ Popper.defaultProps = {
   dark: false,
   header: undefined,
   placement: 'top',
+  showArrow: false,
   strategy: undefined,
   visible: false,
 };

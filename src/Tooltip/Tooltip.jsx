@@ -64,6 +64,7 @@ class Tooltip extends Component {
         dark={this.props.theme !== 'light'}
         header={this.props.header}
         placement={this.props.placement}
+        showArrow
         strategy={this.props.strategy}
         text={this.props.text}
         visible={this.state.visible}

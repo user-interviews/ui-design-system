@@ -17,4 +17,14 @@
       color: $ux-green;
     }
   }
+
+  &__icon:focus {
+    outline: none;
+
+    svg {
+      box-shadow: 0 0 0.25rem 0.167rem;
+      border-radius: 1rem;
+    }
+  }
 }
+
