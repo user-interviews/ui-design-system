@@ -8,6 +8,9 @@ module.exports = {
     '@storybook/addon-storysource/register'
   ],
   stories: [
+    '../stories/Intro.stories.mdx',
+    '../src/**/*.stories.@(js|mdx)',
+    '../src/**/*.stories.js[x]',
     '../stories/**/*.stories.mdx',
     '../stories/**/*.stories.js[x]'
   ]
