@@ -12,6 +12,7 @@ import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
 import {
   Modal,
+  MODAL_SIZES,
   ModalBody,
   ModalFooter,
   ModalHeader,
@@ -52,6 +53,7 @@ export {
   InputLabel,
   MessageTypes,
   Modal,
+  MODAL_SIZES,
   ModalBody,
   ModalFooter,
   ModalHeader,
