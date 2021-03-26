@@ -3,6 +3,8 @@ import classNames from 'classnames';
 import ReactModal from 'react-modal';
 import PropTypes from 'prop-types';
 
+import './Modal.scss';
+
 export const MODAL_SIZES = { SMALL: 'small', LARGE: 'large' };
 
 const Modal = (props) => {
@@ -24,7 +26,7 @@ Modal.propTypes = {
 };
 
 Modal.defaultProps = {
-  size: MODAL_SIZES.small,
+  size: MODAL_SIZES.SMALL,
   className: undefined,
 };
 

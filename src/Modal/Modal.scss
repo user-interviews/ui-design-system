@@ -1,0 +1,75 @@
+@import '../../scss/theme.scss';
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+
+.ReactModal {
+  &__Body--open {
+    overflow: hidden;
+  }
+
+  &__Content {
+    background-color: white;
+    border-radius: $ux-border-radius;
+    box-shadow: $modal-content-box-shadow-xs;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    font-weight: 400;
+    max-height: 100%;
+    overflow: auto;
+    transform: translate(0, -25%);
+    transition: transform $ux-duration-long ease-in;
+    width: $modal-width-default;
+
+    &.ReactModal--large {
+      width: $modal-width-wide;
+    }
+
+    // Bootstrap has the following reset:
+    //
+    //   [tabindex="-1"]:focus { outline: 0 !important; };
+    //
+    // That would cover our needs here, but it’s maybe a surprising default and
+    // I think it ought be made explicit.
+
+    &:focus {
+      outline: none;
+    }
+
+    &--after-open:not(&--before-close) {
+      transform: translate(0, 0);
+      transition-timing-function: $ux-ease-out-circ;
+    }
+
+    // The content children (typically one div) must never be wider than the
+    // parent, since this would always mean overflowing the viewport.
+
+    > * {
+      max-height: 95vh;
+      max-width: 100%;
+      overflow-y: auto;
+    }
+  }
+
+  // The overlay uses the jQuery modal z-index because the layout must remain
+  // compatible with the jQuery modal’s layout expectations. If jQuery modal is
+  // removed, we can isolate #ui-window-root instead and z-index will not be
+  // needed.
+
+  &__Overlay {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    padding: $ux-spacing-50;
+    transition: opacity $ux-duration-short linear;
+    z-index: $z-index-modal-backdrop;
+
+    @media (max-width: 32rem) {
+      padding: $ux-spacing-40;
+    }
+
+    &--after-open:not(&--before-close) {
+      opacity: 1;
+    }
+  }
+}
