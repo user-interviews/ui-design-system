@@ -2,9 +2,6 @@
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
 
-// The react-modal Modal is distinct from the jQuery-Bootstrap modal, though the
-// same classes can be used for the interior content.
-
 .ReactModal {
   &__Body--open {
     overflow: hidden;
