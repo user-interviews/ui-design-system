@@ -1,5 +1,6 @@
 {
   "extends": "airbnb",
+  "ignorePatterns": ["**/*.stories.*"],
   "overrides": [
     {
       "files": [
