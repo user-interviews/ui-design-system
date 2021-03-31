@@ -1,10 +1,11 @@
+import { Alert, MessageTypes } from 'src/Alert';
+import Avatar from 'src/Avatar';
 import Card, { CardSizes } from 'src/Card';
 import CheckboxButton from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
 import FadeTransition from 'src/FadeTransition';
-import { Alert, MessageTypes } from 'src/Alert';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
@@ -38,6 +39,7 @@ import TrackedButton from 'src/TrackedButton';
 
 export {
   Alert,
+  Avatar,
   AsyncSelect,
   Card,
   CardSizes,
