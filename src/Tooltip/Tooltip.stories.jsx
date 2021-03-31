@@ -3,6 +3,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, radios, text } from '@storybook/addon-knobs';
 
 import Tooltip from 'src/Tooltip';
+import mdx from './Tooltip.mdx';
 
 const withContainer = (story) => <div style={{ padding: '4rem' }}>{story()}</div>;
 
@@ -10,6 +11,11 @@ export default {
   title: 'Design System/Tooltip',
   component: Tooltip,
   decorators: [withKnobs, withContainer],
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 export const Default = () => (
