@@ -1,0 +1,36 @@
+import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Card } from './Card';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../scss/global.scss';
+
+# Cards 
+Cards serve as containers to help group content on a page, and should always be placed over a background color of `$ux-gray-100` to maintain contrast against the page. 
+
+<Preview>
+  <Story id="design-system-card--default" />
+</Preview>
+
+<ArgsTable of={Card} />
+
+## Anatomy
+
+- **Header:** Brief descriptor of overall card content
+- **Divider line:** 
+- **Width:** Card width is defined by, informed by the surrounding layout:
+	- `card-width`: 56rem
+	- `card-width-md`: 40rem
+	- `card-width-sm`: 32rem
+	- `card-width-xs`: 15rem 
+- **Padding:** Cards have a 1.5rem padding
+
+## Best practices
+- Content inside cards should be left-aligned. Deviations are left up to designer's discretion. 
+
+## Stories
+
+### Default 
+
+<Preview>
+  <Story id="design-system-card--default" />
+</Preview>
