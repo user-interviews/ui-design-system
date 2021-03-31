@@ -1,0 +1,47 @@
+import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
+import { ProfileCell } from './ProfileCell';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../scss/global.scss';
+
+# Profile Cell
+Displays information about a user which can include and avatar, name, email, phone number, and timezone.
+
+<Preview>
+  <Story id="design-system-profile-cell--small" />
+</Preview>
+
+<ArgsTable of={ProfileCell} />
+
+## Anatomy
+
+- **Avatar:** Displays photo or initials of a user
+- **Name:** First and last name 
+- **Email** 
+- **Phone number** 
+- **Timezone** 
+
+## Best practices
+- Content inside cards should be left-aligned. Deviations are left up to designer's discretion. 
+
+## Stories
+
+### Small
+- Contains only the avatar, first name, last name, and email.
+
+<Preview>
+  <Story id="design-system-profile-cell--small" />
+</Preview>
+
+### Large
+- Contains avatar, first name, last name, email, phone number, and timezone.
+
+<Preview>
+  <Story id="design-system-profile-cell--large" />
+</Preview>
+
+### With Image
+
+<Preview>
+  <Story id="design-system-profile-cell--with-image" />
+</Preview>
