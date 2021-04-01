@@ -287,6 +287,316 @@ exports[`Storyshots Design System/Alert With Dismiss 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Avatar Large 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div>
+    <div
+      aria-hidden={false}
+      className="Avatar Avatar--large"
+    >
+      <div
+        className="Avatar__circle"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar Avatar--large"
+    >
+      <div
+        className="Avatar__circle ui-mod ui-mod--1"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar Avatar--large"
+    >
+      <div
+        className="Avatar__circle ui-mod ui-mod--2"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar Avatar--large"
+    >
+      <div
+        className="Avatar__circle ui-mod ui-mod--3"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar Avatar--large"
+    >
+      <div
+        className="Avatar__circle ui-mod ui-mod--4"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar Avatar--large"
+    >
+      <div
+        className="Avatar__circle ui-mod ui-mod--5"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar Avatar--large"
+    >
+      <div
+        className="Avatar__circle ui-mod ui-mod--0"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Avatar Small 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div>
+    <div
+      aria-hidden={false}
+      className="Avatar"
+    >
+      <div
+        className="Avatar__circle"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar"
+    >
+      <div
+        className="Avatar__circle ui-mod ui-mod--1"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar"
+    >
+      <div
+        className="Avatar__circle ui-mod ui-mod--2"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar"
+    >
+      <div
+        className="Avatar__circle ui-mod ui-mod--3"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar"
+    >
+      <div
+        className="Avatar__circle ui-mod ui-mod--4"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar"
+    >
+      <div
+        className="Avatar__circle ui-mod ui-mod--5"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar"
+    >
+      <div
+        className="Avatar__circle ui-mod ui-mod--0"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Avatar With Alert 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div>
+    <div
+      aria-hidden={false}
+      className="Avatar Avatar--large"
+    >
+      <div
+        className="Avatar__circle"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+      <div
+        className="Avatar__alert"
+      />
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar"
+    >
+      <div
+        className="Avatar__circle"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+          RR
+        </span>
+      </div>
+      <div
+        className="Avatar__alert"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Avatar With Image 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div>
+    <div
+      aria-hidden={false}
+      className="Avatar Avatar--large"
+    >
+      <div
+        className="Avatar__circle"
+      >
+        <img
+          alt=""
+          onError={[Function]}
+          src="https://avatars.dicebear.com/api/avataaars/1234.svg"
+        />
+      </div>
+    </div>
+    <div
+      aria-hidden={false}
+      className="Avatar"
+    >
+      <div
+        className="Avatar__circle"
+      >
+        <img
+          alt=""
+          onError={[Function]}
+          src="https://avatars.dicebear.com/api/avataaars/1234.svg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Card Default 1`] = `
 <div
   style={
@@ -1941,11 +2251,77 @@ exports[`Storyshots Design System/Pill Default 1`] = `
     }
   }
 >
-  <span
-    className="Pill Pill--blue"
-  >
-    Text
-  </span>
+  <div>
+    <h4
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      Test Pill
+    </h4>
+    <span
+      className="Pill Pill--blue"
+    >
+      Text
+    </span>
+    <h4
+      style={
+        Object {
+          "marginBottom": "2rem",
+          "marginTop": "2rem",
+        }
+      }
+    >
+      Large
+    </h4>
+    <span
+      className="Pill Pill--blue Pill--large"
+    >
+      Text
+    </span>
+    <h4
+      style={
+        Object {
+          "marginBottom": "2rem",
+          "marginTop": "2rem",
+        }
+      }
+    >
+      Colors
+    </h4>
+    <span
+      className="Pill Pill--blue"
+    >
+      blue
+    </span>
+    <span
+      className="Pill Pill--orange"
+    >
+      orange
+    </span>
+    <span
+      className="Pill Pill--yellow"
+    >
+      yellow
+    </span>
+    <span
+      className="Pill Pill--green"
+    >
+      green
+    </span>
+    <span
+      className="Pill Pill--gray"
+    >
+      gray
+    </span>
+    <span
+      className="Pill Pill--silver"
+    >
+      silver
+    </span>
+  </div>
 </div>
 `;
 
