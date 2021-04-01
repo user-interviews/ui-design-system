@@ -8,9 +8,16 @@ import Input from 'src/Input';
 import RadioButton from 'src/RadioButton';
 import RadioButtonGroup from 'src/RadioButtonGroup';
 
+import mdx from './Form.mdx';
+
 export default {
   title: 'Design System/Form',
   component: Form,
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 const onSubmit = (event) => {
