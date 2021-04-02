@@ -30,43 +30,43 @@ const handleClose = (id) => {
 
 export const Default = () => (
   <div>
-    <h4 style={{marginBottom: '2rem'}}>Test Pill</h4>
+    <h4 style={{ marginBottom: '2rem' }}>Test Pill</h4>
     <Pill
       color={select('Color', colors, 'blue')}
       id="1"
       large={boolean('Large', false)}
       text={text('Text', 'Text')}
     />
-    <h4 style={{marginBottom: '2rem', marginTop: '2rem'}} >Large</h4>
+    <h4 style={{ marginBottom: '2rem', marginTop: '2rem' }}>Large</h4>
     <Pill
-      color='blue'
+      color="blue"
       large
-      text='Text'
+      text="Text"
     />
-    <h4 style={{marginBottom: '2rem', marginTop: '2rem'}} >Colors</h4>
+    <h4 style={{ marginBottom: '2rem', marginTop: '2rem' }}>Colors</h4>
     <Pill
-      color='blue'
-      text='blue'
+      color="blue"
+      text="blue"
     />
-     <Pill
-      color='orange'
-      text='orange'
+    <Pill
+      color="orange"
+      text="orange"
     />
-     <Pill
-      color='yellow'
-      text='yellow'
+    <Pill
+      color="yellow"
+      text="yellow"
     />
-     <Pill
-      color='green'
-      text='green'
+    <Pill
+      color="green"
+      text="green"
     />
-     <Pill
-      color='gray'
-      text='gray'
+    <Pill
+      color="gray"
+      text="gray"
     />
-     <Pill
-      color='silver'
-      text='silver'
+    <Pill
+      color="silver"
+      text="silver"
     />
   </div>
 );

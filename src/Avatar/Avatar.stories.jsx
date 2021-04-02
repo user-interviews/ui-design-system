@@ -89,13 +89,13 @@ export const Large = () => (
 export const WithAlert = () => (
   <div>
     <Avatar
-      large
       initials="RR"
+      large
       showAlert
     />
     <Avatar
-      showAlert
       initials="RR"
+      showAlert
     />
   </div>
 );
@@ -111,4 +111,3 @@ export const WithImage = () => (
     />
   </div>
 );
-
