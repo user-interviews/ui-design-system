@@ -24,7 +24,6 @@ const SingleSelect = ({
   placeholder,
   size,
   value,
-
   onChange,
   ...props
 }) => (
@@ -54,7 +53,6 @@ const SingleSelect = ({
     }}
     theme={defaultTheme}
     value={value}
-
     onChange={onChange}
   />
 );

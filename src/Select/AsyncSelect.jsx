@@ -60,7 +60,6 @@ const AsyncSelect = ({
     }}
     theme={defaultTheme}
     value={value}
-
     onBlurResetsInput={false}
     onChange={onChange}
     onSelectResetsInput={false}
