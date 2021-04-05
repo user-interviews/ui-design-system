@@ -1,0 +1,43 @@
+import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Pill } from './Pill';
+
+# Pill
+Represents an object that can be viewed with or without an icon
+
+<Preview>
+  <Story id="design-system-pill--default" />
+</Preview>
+
+<ArgsTable of={Pill} />
+
+## Anatomy
+
+- **Text: ** main descriptor of the pill
+- **Icon: ** relevant icon that makes it easier for users to identify (always placed left of the Text)
+- **Close: ** users have the option to clear the pill (provided by default with the presence of the `onClose` function)
+
+## Best practices 
+
+- TBD
+
+## Stories
+
+### Default
+
+<Preview>
+  <Story id="design-system-pill--default" />
+</Preview>
+
+### With Leading Icon
+- Import an icon that is most relevant to the text
+
+<Preview>
+  <Story id="design-system-pill--with-leading-icon" />
+</Preview>
+
+### With Close
+- For Pills that need to option to be closed 
+
+<Preview>
+  <Story id="design-system-pill--with-close" />
+</Preview>

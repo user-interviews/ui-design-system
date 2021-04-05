@@ -2,11 +2,17 @@ import React from 'react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 
 import Popper from 'src/Popper';
+import mdx from './Popper.mdx';
 
 export default {
   title: 'Design System/Popper',
   component: Popper,
   decorators: [withKnobs],
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 export const Default = () => (

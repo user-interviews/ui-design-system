@@ -1,40 +1,91 @@
-import { Story, Preview } from '@storybook/addon-docs/blocks';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../scss/global.scss';
+import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Modal } from './Modal';
 
 # Modal
 
-## Anatomy:
+Modals are large UI elements that sit on top of an application's main window—often with a layer of transparency behind them to give users a peek into the main app. 
+To return to the application's main interface, users must interact with the modal layer.
 
-- **Header:** Which includes the title, helper text and close icon.
-- **Body:** It contains the information and / or interface elements for the user to complete a task.
-- **Footer:**  It includes the actions to cancel or complete a task. The buttons variants change depending on the modal’s variant. The button group should be right aligned with the main action to complete the task to the utmost right.
-- **Overlay** It obscures and disables the content in the back and allows the modal to stand out more.
+<ArgsTable of={Modal} />
 
-## Good practices
+## Anatomy
 
-- Use sparingly, they can be annoying when used too frequently. They are disruptive.
-- Avoid cases where we go from one modal to another modal. 
-- Use when we want to focus the user’s attention.
-- Use to collect input from user.
-- Use to show relevant info. 
-- Should be initiated by the user: don’t use when user hasn’t triggered the modal.
-- They shouldn’t be bloated with many interactions.
+- **Header:** Includes the title, helper text and close icon
+- **Body:** Contains the information and / or interface elements for the user to complete a task
+- **Footer:**  Includes the actions to cancel or complete a task. The buttons variants change depending on the modal’s variant. 
+- **Overlay** Obscures and disables the background content
 
-## Base modal
+## Best practices
+
+- The button group should be right aligned with the main action to complete the task to the utmost right.
+- Use sparingly, they can be annoying when used too frequently. They are disruptive
+- Avoid cases where we go from one modal to another modal
+- Use when we want to focus the user’s attention
+- Use to collect input from user
+- Use to show relevant info
+- Should be initiated by the user: don’t use when user hasn’t triggered the modal
+- Should not include more than 2 interactions
+
+## Guidelines 
+
+### General
+
+### Implementation
+
+`ModalHeader` 
+- Only use the `title` prop to display the title
+- Always use the `onRequestClose` prop to ensure the close button is available for users in the top right-hand corner
+- Don't add a leading icon unless it's `variant` of 'warning' or 'danger'
+
+`ModalBody`
+- Always wrap your content in an element 
+-  `<p>` If the body content of the modal is only text 
+- Sub-headings should be no larger than an `h5`
+- If the content is more complex (e.g. forms, lists, checkboxes, etc.) reach out to the design team for clarification on consistency
+
+```
+DO: 
+
+<ModalBody>
+  <p>Some content goes here.</p>
+</ModalBody>
+
+DON'T:
+
+<ModalBody>
+  Some content goes here.
+</ModalBody>
+
+```
+
+`ModalFooter`
+- Always ensure you are using the proper button 
+- `variant='warning'` should use the primary button and color 
+- `variant='danger'` should use the outlined danger button and color 
+
+### Copy 
+1. **Be clear and concise:** Exercise brevity over personality and use precise language.
+2. **Use active voice:** Active voice = the subject performs the action denoted by the verb.
+3. **Lead with what’s important:** Hit on higher priority information as early on as possible.
+4. **Be as helpful as possible:** Include more recommendations, details, etc over personality.
+5. **Be consistent:** Be mindful to keep terminology, sentence structure, type casing, etc the same
+- For additional Copy information [User Interviews Style Guide for Copy](https://docs.google.com/document/d/1cP9svm0tzM_e5JonUMr1HPEgcnlo__S8t0wd3Xi3i5w/view)
+
+## Stories
+
+### Base modal
 
 - To use in projects as the foundation of any modal. We might need to detach it to customize it.
 
-## Transactional modal
+### Transactional modal
 
 - The user needs to take an action for the modal to be completed and closed. It contains the cancel and primary action buttons.
 
-## Warning modal 
+### Warning modal 
 
 - They appear in anticipation of a significant change. Used mainly to inform but not alarm.
 
-## Danger modal 
+### Danger modal 
 
 - Used for destructive or irreversible actions. We should explain the impact of proceeding with this action.
 

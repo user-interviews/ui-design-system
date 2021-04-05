@@ -1,7 +1,5 @@
-import { Story, Preview } from '@storybook/addon-docs/blocks';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../scss/global.scss';
+import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Alert } from './Alert'
 
 # Alerts
 
@@ -9,23 +7,31 @@ Alerts give users updates or changes to system status. Providing immediate feedb
 building trust.  While alerts are a great way of communicating with users, they are disruptive and
 should be used cautiously.
 
-## Anatomy:
+<Preview>
+  <Story id="design-system-alert--success"/>
+</Preview>
 
-- **Icon:** So users can identify the type of alert at a glance.
-- **Title:** It should be concise and descriptive so it is easy for users to get what the alert is about
-- **Message:** To provide more details so users know the next steps to follow.
+<ArgsTable of={Alert} />
+
+## Anatomy
+
+- **Icon:** Allow users to identify the type of alert at a glance
+- **Title:** Summary of alert topic 
+- **Message:** Provide details or actionable step for user
 - **CTA** ***(currently WIP):*** To provide more details or an escape so users can finish the task they were doing.
-- **Close icon:** Closes the alert.
+- **Close icon:** Closes the alert
 
-## Success
+## Stories
 
-- Used when something went as planned. Ex. When you've saved your progress in the builder.
+### Success
+
+- Used when something went as planned. (e.g. When you've saved your progress in the builder.)
 
 <Preview>
   <Story id="design-system-alert--success" />
 </Preview>
 
-## Info
+### Info
 
 - Information that needs to be referenced often or is very important. These alerts are within the
 page and are not affected by an event, whereas success/error alerts are at the top of the page
@@ -35,20 +41,20 @@ based on an event. These alerts will always be blue!
   <Story id="design-system-alert--info" />
 </Preview>
 
-## Error
+### Error
 
-- Used when something did not go as planned, and action is needed to proceed. Ex. If you leave
-the incentive field blank in the builder and try to launch, you' receive an error. You must
-fill in the field to launch a project.
+- Used when something did not go as planned, and action is needed to proceed. (e.g. If you leave
+the incentive field blank in the builder and try to launch, you receive an error. You must
+fill in the field to launch a project.)
 
 <Preview>
   <Story id="design-system-alert--error" />
 </Preview>
 
-## Warning
+### Warning
 
 - Messages used for general information on a more temporary level, not based on the user
-performing an action. Ex. For Covid, we show a yellow alert to encourage researcher to
+performing an action. (e.g For COVID, we show a yellow alert to encourage researcher to
 consult CDC guidelines for in person sessions.
 
 <Preview>
@@ -56,7 +62,7 @@ consult CDC guidelines for in person sessions.
 </Preview>
 
 
-## With Dismiss
+### With Dismiss
 
 - Used in cases where a user would want to dismiss or remove an alert from view.
 

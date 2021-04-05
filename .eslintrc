@@ -1,6 +1,5 @@
 {
   "extends": "airbnb",
-  "ignorePatterns": ["**/*.stories.*"],
   "overrides": [
     {
       "files": [
@@ -23,6 +22,14 @@
       "plugins": [ "babel", "react", "react-hooks" ],
       "rules": {
         "babel/semi": 2,
+        "import/no-extraneous-dependencies": [
+          "error", {
+            "devDependencies": [
+              "**/*.stories.*",
+              "**/*.test.*"
+            ]
+          }
+        ],
         "import/prefer-default-export": 0,
         "jsx-a11y/anchor-is-valid": 1,
         "jsx-a11y/label-has-for": 0,

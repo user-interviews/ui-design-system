@@ -4,11 +4,17 @@ import {
 } from '@storybook/addon-knobs';
 
 import ProfileCell from 'src/ProfileCell';
+import mdx from './ProfileCell.mdx';
 
 export default {
   title: 'Design System/Profile Cell',
   component: ProfileCell,
   decorators: [withKnobs],
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 const largeSubtitle = (
