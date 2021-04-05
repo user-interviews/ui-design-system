@@ -30,7 +30,7 @@
 
   &__subtitle {
     font-family: $font-family;
-    @include font-type-30();
+    @include font-type-30--light();
     margin-bottom: 0;
     margin-top: $ux-spacing-20;
   }
