@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   padding: $ux-spacing-50;
+  padding-bottom: 0;
 
   &__title {
     font-family: $font-family;
