@@ -17,10 +17,14 @@
     overflow: auto;
     transform: translate(0, -25%);
     transition: transform $ux-duration-long ease-in;
-    width: $modal-width-default;
+    width: $modal-width-small;
+
+    &.ReactModal--medium {
+      width: $modal-width-medium;
+    }
 
     &.ReactModal--large {
-      width: $modal-width-wide;
+      width: $modal-width-large;
     }
 
     // Bootstrap has the following reset:

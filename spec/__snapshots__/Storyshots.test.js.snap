@@ -1742,96 +1742,6 @@ exports[`Storyshots Design System/Form Elements/Form Group With Trailing Icon 1`
 </div>
 `;
 
-exports[`Storyshots Design System/Modal Base Modal 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="ReactModal__Overlay ReactModal__Overlay--after-open"
-    onClick={[Function]}
-    onMouseDown={[Function]}
-    style={
-      Object {
-        "backgroundColor": "rgba(255, 255, 255, 0.75)",
-        "bottom": 0,
-        "left": 0,
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-  >
-    <div
-      aria-label="Base Modal"
-      aria-modal={true}
-      className="ReactModal__Content ReactModal__Content--after-open BaseModal"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-      role="dialog"
-      style={Object {}}
-      tabIndex="-1"
-    >
-      <header
-        className="ModalHeader"
-      >
-        <div
-          className="ModalHeader__heading"
-        >
-          <h1
-            className="ModalHeader__title"
-            id="base-modal"
-          >
-            Base modal
-          </h1>
-        </div>
-        <button
-          aria-label="Close"
-          className="btn btn-sm btn-link close"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          <span
-            aria-hidden="true"
-          >
-            ×
-          </span>
-        </button>
-      </header>
-      <div
-        className="ModalBody"
-      >
-        <p>
-          Some content goes here.
-        </p>
-      </div>
-      <div
-        className="ModalFooter"
-      >
-        <button
-          className="btn btn-light"
-          type="button"
-        >
-          Cancel
-        </button>
-        <button
-          className="btn btn-success"
-          type="submit"
-        >
-          Save
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Design System/Modal Danger Modal 1`] = `
 <div
   style={
@@ -1932,6 +1842,276 @@ exports[`Storyshots Design System/Modal Danger Modal 1`] = `
           type="submit"
         >
           Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Modal Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ReactModal__Overlay ReactModal__Overlay--after-open"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="Default Modal"
+      aria-modal={true}
+      className="ReactModal__Content ReactModal__Content--after-open DefaultModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="default-modal"
+          >
+            Default modal
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-link close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+          >
+            ×
+          </span>
+        </button>
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <p>
+          Some content goes here.
+        </p>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="btn btn-light"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="btn btn-success"
+          type="submit"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Modal Large Modal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ReactModal__Overlay ReactModal__Overlay--after-open"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="Large Modal"
+      aria-modal={true}
+      className="ReactModal__Content ReactModal__Content--after-open LargeModal ReactModal--large"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="large-modal"
+          >
+            Large modal
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-link close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+          >
+            ×
+          </span>
+        </button>
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <p>
+          Some content goes here.
+        </p>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="btn btn-light"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="btn btn-success"
+          type="submit"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Modal Medium Modal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ReactModal__Overlay ReactModal__Overlay--after-open"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="Medium Modal"
+      aria-modal={true}
+      className="ReactModal__Content ReactModal__Content--after-open MediumModal ReactModal--medium"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="medium-modal"
+          >
+            Medium modal
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-link close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <span
+            aria-hidden="true"
+          >
+            ×
+          </span>
+        </button>
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <p>
+          Some content goes here.
+        </p>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="btn btn-light"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="btn btn-success"
+          type="submit"
+        >
+          Save
         </button>
       </div>
     </div>

@@ -1,8 +1,8 @@
 @import '../../scss/theme';
 
 .ModalBody {
-  font-weight: $font-weight-normal;
-  padding: $ux-spacing-50;
+  font-weight: $font-weight-light;
+  padding: $ux-spacing-40 $ux-spacing-50;
 
   &__title {
     font-family: $font-family;

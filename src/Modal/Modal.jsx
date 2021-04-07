@@ -5,13 +5,15 @@ import PropTypes from 'prop-types';
 
 import './Modal.scss';
 
-export const MODAL_SIZES = { SMALL: 'small', LARGE: 'large' };
+export const MODAL_SIZES = { SMALL: 'small', MEDIUM: 'medium', LARGE: 'large' };
 
 const Modal = (props) => {
   const { size } = props;
   let { className } = props;
 
-  if (size === MODAL_SIZES.LARGE) {
+  if (size === MODAL_SIZES.MEDIUM) {
+    className = classNames(className, 'ReactModal--medium');
+  } else if (size === MODAL_SIZES.LARGE) {
     className = classNames(className, 'ReactModal--large');
   }
 
