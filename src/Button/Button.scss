@@ -1,0 +1,35 @@
+@import '../../scss/theme';
+
+.Button {
+  @include font-type-30--bold;
+  color: $ux-white;
+  background-color: $ux-blue;
+  border: 0.06rem solid $ux-blue;
+  border-radius: $ux-border-radius;
+  box-sizing: border-box;
+  padding: $ux-spacing-20 $ux-spacing-40;
+
+  &__startIcon {
+    font-size: 1rem;
+    padding-right: $ux-spacing-20;
+  }
+
+  &__endIcon {
+    font-size: 1rem;
+    padding-left: $ux-spacing-10;
+  }
+  
+  &:hover {
+    background-color: $ux-blue-600;
+    border-color: $ux-blue-600;
+  }
+
+  &:disabled {
+    background-color: $ux-blue-200;
+    border-color: $ux-blue-200;
+  }
+
+  &:focus {
+    background-color: $ux-blue-700;
+  }
+}
