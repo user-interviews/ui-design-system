@@ -2,7 +2,7 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import Input from 'src/Input';
 import {
- Modal, ModalBody, ModalFooter, ModalHeader,
+ Modal, ModalBody, ModalFooter, ModalHeader, MODAL_SIZES,
 } from 'src/Modal';
 import mdx from './Modal.mdx';
 
@@ -27,7 +27,6 @@ export const Default = () => (
     className="DefaultModal"
     contentLabel="Default Modal"
     isOpen
-    size="small"
   >
     <ModalHeader
       title="Default modal"
@@ -50,7 +49,7 @@ export const MediumModal = () => (
     className="MediumModal"
     contentLabel="Medium Modal"
     isOpen
-    size="medium"
+    size={MODAL_SIZES.MEDIUM}
   >
     <ModalHeader
       title="Medium modal"
@@ -73,7 +72,7 @@ export const LargeModal = () => (
     className="LargeModal"
     contentLabel="Large Modal"
     isOpen
-    size="large"
+    size={MODAL_SIZES.LARGE}
   >
     <ModalHeader
       title="Large modal"
@@ -96,7 +95,6 @@ export const WithSubtitleModal = () => (
     className="WithSubtitleModal"
     contentLabel="With Subtitle Modal"
     isOpen
-    size="small"
   >
     <ModalHeader
       subtitle="A subtitle to provide more information"
@@ -120,7 +118,6 @@ export const TransactionalModal = () => (
     className="TransactionalModal"
     contentLabel="Transactional Modal"
     isOpen
-    size="small"
   >
     <ModalHeader
       title="Transactional modal"
@@ -144,7 +141,6 @@ export const WarningModal = () => (
     className="WarningModal"
     contentLabel="Warning Modal"
     isOpen
-    size="small"
   >
     <ModalHeader
       title="Warning modal"
@@ -168,7 +164,6 @@ export const DangerModal = () => (
     className="DangerModal"
     contentLabel="Danger Modal"
     isOpen
-    size="small"
   >
     <ModalHeader
       title="Danger modal"
