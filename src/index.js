@@ -29,6 +29,13 @@ import {
   SingleSelect,
 } from 'src/Select';
 import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
+} from 'src/Table';
+import {
   Toast,
   useToast,
   withToast,
@@ -66,6 +73,11 @@ export {
   RadioButtonGroup,
   SELECT_SIZES,
   SingleSelect,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
   Toast,
   Tooltip,
   TrackedButton,

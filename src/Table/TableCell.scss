@@ -1,0 +1,15 @@
+@import '../../scss/theme.scss';
+
+.TableCell {
+  @include font-type-30--light();
+  padding: $ux-spacing-50;
+  text-align: left;
+
+  &__header {
+    @include font-type-30--bold();
+    background-color: $ux-gray-100;
+    color: $ux-gray-800;
+    padding: $ux-spacing-50;
+    text-align: left;
+  }
+}

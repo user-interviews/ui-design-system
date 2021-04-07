@@ -5040,6 +5040,441 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Table Basic Table 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell__header"
+        >
+          <input
+            type="radio"
+          />
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Email
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          First name
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Last name
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Phone number
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Date added
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Last invited
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Last applied
+        </td>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="radio"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="radio"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="radio"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Design System/Table Table On Card 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card Card--lg Card--divided"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        Email Template Sets
+      </h2>
+    </div>
+    <hr
+      className="Card__divider"
+    />
+    <h3
+      className="Card__subtitle"
+    >
+      Manage a set of templates that can be applied to a project’s automated emails.
+    </h3>
+    <table
+      className="Table"
+    >
+      <thead
+        className="TableHead"
+      >
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell TableCell__header"
+          >
+            <input
+              type="radio"
+            />
+          </td>
+          <td
+            className="TableCell TableCell__header"
+          >
+            Email
+          </td>
+          <td
+            className="TableCell TableCell__header"
+          >
+            First name
+          </td>
+          <td
+            className="TableCell TableCell__header"
+          >
+            Last name
+          </td>
+          <td
+            className="TableCell TableCell__header"
+          >
+            Phone number
+          </td>
+          <td
+            className="TableCell TableCell__header"
+          >
+            Date added
+          </td>
+          <td
+            className="TableCell TableCell__header"
+          >
+            Last invited
+          </td>
+          <td
+            className="TableCell TableCell__header"
+          >
+            Last applied
+          </td>
+        </tr>
+      </thead>
+      <tbody
+        className="TableBody"
+      >
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+          >
+            <input
+              type="radio"
+            />
+          </td>
+          <td
+            className="TableCell"
+          >
+            riley@userinterviews.com
+          </td>
+          <td
+            className="TableCell"
+          >
+            Riley
+          </td>
+          <td
+            className="TableCell"
+          >
+            Researcher
+          </td>
+          <td
+            className="TableCell"
+          >
+            +18888888888
+          </td>
+          <td
+            className="TableCell"
+          >
+            01/21/2021
+          </td>
+          <td
+            className="TableCell"
+          >
+            -
+          </td>
+          <td
+            className="TableCell"
+          >
+            -
+          </td>
+        </tr>
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+          >
+            <input
+              type="radio"
+            />
+          </td>
+          <td
+            className="TableCell"
+          >
+            riley@userinterviews.com
+          </td>
+          <td
+            className="TableCell"
+          >
+            Riley
+          </td>
+          <td
+            className="TableCell"
+          >
+            Researcher
+          </td>
+          <td
+            className="TableCell"
+          >
+            +18888888888
+          </td>
+          <td
+            className="TableCell"
+          >
+            01/21/2021
+          </td>
+          <td
+            className="TableCell"
+          >
+            -
+          </td>
+          <td
+            className="TableCell"
+          >
+            -
+          </td>
+        </tr>
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+          >
+            <input
+              type="radio"
+            />
+          </td>
+          <td
+            className="TableCell"
+          >
+            riley@userinterviews.com
+          </td>
+          <td
+            className="TableCell"
+          >
+            Riley
+          </td>
+          <td
+            className="TableCell"
+          >
+            Researcher
+          </td>
+          <td
+            className="TableCell"
+          >
+            +18888888888
+          </td>
+          <td
+            className="TableCell"
+          >
+            01/21/2021
+          </td>
+          <td
+            className="TableCell"
+          >
+            -
+          </td>
+          <td
+            className="TableCell"
+          >
+            -
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+`;
+
 exports[`Storyshots Design System/Toast Manual Dismiss Toast 1`] = `
 <div
   style={

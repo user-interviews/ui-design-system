@@ -1,0 +1,7 @@
+@import '../../scss/theme.scss';
+
+.TableRow {
+  &:hover {
+    background-color: $ux-blue-100;
+  }
+}
