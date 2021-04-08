@@ -5061,7 +5061,7 @@ exports[`Storyshots Design System/Table Basic Table 1`] = `
           className="TableCell TableCell__header"
         >
           <input
-            type="radio"
+            type="checkbox"
           />
         </td>
         <td
@@ -5111,7 +5111,7 @@ exports[`Storyshots Design System/Table Basic Table 1`] = `
           className="TableCell"
         >
           <input
-            type="radio"
+            type="checkbox"
           />
         </td>
         <td
@@ -5157,7 +5157,7 @@ exports[`Storyshots Design System/Table Basic Table 1`] = `
           className="TableCell"
         >
           <input
-            type="radio"
+            type="checkbox"
           />
         </td>
         <td
@@ -5203,7 +5203,99 @@ exports[`Storyshots Design System/Table Basic Table 1`] = `
           className="TableCell"
         >
           <input
-            type="radio"
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
           />
         </td>
         <td
@@ -5288,7 +5380,7 @@ exports[`Storyshots Design System/Table Table On Card 1`] = `
             className="TableCell TableCell__header"
           >
             <input
-              type="radio"
+              type="checkbox"
             />
           </td>
           <td
@@ -5338,7 +5430,7 @@ exports[`Storyshots Design System/Table Table On Card 1`] = `
             className="TableCell"
           >
             <input
-              type="radio"
+              type="checkbox"
             />
           </td>
           <td
@@ -5384,7 +5476,7 @@ exports[`Storyshots Design System/Table Table On Card 1`] = `
             className="TableCell"
           >
             <input
-              type="radio"
+              type="checkbox"
             />
           </td>
           <td
@@ -5430,7 +5522,99 @@ exports[`Storyshots Design System/Table Table On Card 1`] = `
             className="TableCell"
           >
             <input
-              type="radio"
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="TableCell"
+          >
+            riley@userinterviews.com
+          </td>
+          <td
+            className="TableCell"
+          >
+            Riley
+          </td>
+          <td
+            className="TableCell"
+          >
+            Researcher
+          </td>
+          <td
+            className="TableCell"
+          >
+            +18888888888
+          </td>
+          <td
+            className="TableCell"
+          >
+            01/21/2021
+          </td>
+          <td
+            className="TableCell"
+          >
+            -
+          </td>
+          <td
+            className="TableCell"
+          >
+            -
+          </td>
+        </tr>
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+          >
+            <input
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="TableCell"
+          >
+            riley@userinterviews.com
+          </td>
+          <td
+            className="TableCell"
+          >
+            Riley
+          </td>
+          <td
+            className="TableCell"
+          >
+            Researcher
+          </td>
+          <td
+            className="TableCell"
+          >
+            +18888888888
+          </td>
+          <td
+            className="TableCell"
+          >
+            01/21/2021
+          </td>
+          <td
+            className="TableCell"
+          >
+            -
+          </td>
+          <td
+            className="TableCell"
+          >
+            -
+          </td>
+        </tr>
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+          >
+            <input
+              type="checkbox"
             />
           </td>
           <td
