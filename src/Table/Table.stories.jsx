@@ -1,3 +1,5 @@
+import { faFileAlt, faEllipsisV } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import Card from 'src/Card';
 import CheckboxButton from 'src/CheckboxButton';
@@ -86,4 +88,74 @@ export const TableOnCard = () => (
       </TableBody>
     </Table>
   </Card>
+);
+
+// TODO: placeholder buttons until the Button component is implemented into the DS
+const kebabButton = () => <button style={{background: 'none', border: 'none', color: '#337AB7'}}><FontAwesomeIcon icon={faEllipsisV}/></button>
+const editButton = () => <button style={{background: 'none', border: '1px solid #337AB7', borderRadius: '4px', color: '#337AB7', fontWeight: "700", padding: "4px 8px"}}><FontAwesomeIcon icon={faFileAlt} style={{marginRight: "10px"}}/>Edit</button>
+
+export const TableWithSingleActionColumn = () => (
+  <Table>
+    <TableHead>
+      <TableRow>
+        <TableCell header><CheckboxButton/></TableCell>
+        <TableCell header>Email</TableCell>
+        <TableCell header>First name</TableCell>
+        <TableCell header>Last name</TableCell>
+        <TableCell header>Phone number</TableCell>
+        <TableCell header>Date added</TableCell>
+        <TableCell header>Last invited</TableCell>
+        <TableCell header>Last applied</TableCell>
+        <TableCell header>Edit</TableCell>
+      </TableRow>
+    </TableHead>
+    <TableBody>
+      {data.map((row => (
+        <TableRow key={data.id}>
+          <TableCell><CheckboxButton/></TableCell>
+          <TableCell>{row.email}</TableCell>
+          <TableCell>{row.firstName}</TableCell>
+          <TableCell>{row.lastName}</TableCell>
+          <TableCell>{row.phoneNumber}</TableCell>
+          <TableCell>{row.dateAdded}</TableCell>
+          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+          <TableCell>{editButton()}</TableCell>
+        </TableRow>
+      )))}
+    </TableBody>
+  </Table>
+);
+
+export const TableWithMultipleActionColumn = () => (
+  <Table>
+    <TableHead>
+      <TableRow>
+        <TableCell header><CheckboxButton/></TableCell>
+        <TableCell header>Email</TableCell>
+        <TableCell header>First name</TableCell>
+        <TableCell header>Last name</TableCell>
+        <TableCell header>Phone number</TableCell>
+        <TableCell header>Date added</TableCell>
+        <TableCell header>Last invited</TableCell>
+        <TableCell header>Last applied</TableCell>
+        <TableCell header>Edit</TableCell>
+      </TableRow>
+    </TableHead>
+    <TableBody>
+      {data.map((row => (
+        <TableRow key={data.id}>
+          <TableCell><CheckboxButton/></TableCell>
+          <TableCell>{row.email}</TableCell>
+          <TableCell>{row.firstName}</TableCell>
+          <TableCell>{row.lastName}</TableCell>
+          <TableCell>{row.phoneNumber}</TableCell>
+          <TableCell>{row.dateAdded}</TableCell>
+          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+          <TableCell>{kebabButton()}</TableCell>
+        </TableRow>
+      )))}
+    </TableBody>
+  </Table>
 );

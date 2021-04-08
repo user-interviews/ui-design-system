@@ -5659,6 +5659,964 @@ exports[`Storyshots Design System/Table Table On Card 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell__header"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Email
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          First name
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Last name
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Phone number
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Date added
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Last invited
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Last applied
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Edit
+        </td>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell__header"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Email
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          First name
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Last name
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Phone number
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Date added
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Last invited
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Last applied
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Edit
+        </td>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+        >
+          01/21/2021
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Storyshots Design System/Toast Manual Dismiss Toast 1`] = `
 <div
   style={
