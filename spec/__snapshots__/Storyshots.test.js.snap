@@ -6617,6 +6617,257 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Table Table With Sorting 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell__header"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          First name
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Last name
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Incentives earned 
+          <span
+            className="TableSortLabel"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-sort fa-w-10 "
+              data-icon="sort"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 320 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </span>
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Unsubscribed 
+          <span
+            className="TableSortLabel"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-sort fa-w-10 "
+              data-icon="sort"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 320 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </span>
+        </td>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          Anna
+        </td>
+        <td
+          className="TableCell"
+        >
+          Boston
+        </td>
+        <td
+          className="TableCell"
+        >
+          0
+        </td>
+        <td
+          className="TableCell"
+        >
+          False
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          Carly
+        </td>
+        <td
+          className="TableCell"
+        >
+          Dixon
+        </td>
+        <td
+          className="TableCell"
+        >
+          1
+        </td>
+        <td
+          className="TableCell"
+        >
+          True
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          Erin
+        </td>
+        <td
+          className="TableCell"
+        >
+          Fitzgerald
+        </td>
+        <td
+          className="TableCell"
+        >
+          10
+        </td>
+        <td
+          className="TableCell"
+        >
+          True
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          Gregg
+        </td>
+        <td
+          className="TableCell"
+        >
+          Harris
+        </td>
+        <td
+          className="TableCell"
+        >
+          20
+        </td>
+        <td
+          className="TableCell"
+        >
+          True
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          Izzie
+        </td>
+        <td
+          className="TableCell"
+        >
+          Jackson
+        </td>
+        <td
+          className="TableCell"
+        >
+          100
+        </td>
+        <td
+          className="TableCell"
+        >
+          False
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Storyshots Design System/Toast Manual Dismiss Toast 1`] = `
 <div
   style={

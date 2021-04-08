@@ -34,6 +34,7 @@ import {
   TableCell,
   TableHead,
   TableRow,
+  TableSortLabel,
 } from 'src/Table';
 import {
   Toast,
@@ -78,6 +79,7 @@ export {
   TableCell,
   TableHead,
   TableRow,
+  TableSortLabel,
   Toast,
   Tooltip,
   TrackedButton,

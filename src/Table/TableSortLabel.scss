@@ -1,0 +1,10 @@
+@import '../../scss/theme.scss';
+
+.TableSortLabel {
+  margin-left: $ux-spacing-20;
+  color: $ux-blue;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

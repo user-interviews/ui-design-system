@@ -4,7 +4,7 @@ import React from 'react';
 import Card from 'src/Card';
 import CheckboxButton from 'src/CheckboxButton';
 import {
- Table, TableBody, TableCell, TableHead, TableRow,
+ Table, TableBody, TableCell, TableHead, TableRow, TableSortLabel,
 } from 'src/Table';
 
 export default {
@@ -19,6 +19,14 @@ const data = [
   { id: 3, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null },
   { id: 4, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null },
   { id: 5, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null },
+]
+
+const sortableData = [
+  { id: 1, firstName: 'Anna', lastName: 'Boston', incentivesEarned: 0, unsubscribed: false},
+  { id: 2, firstName: 'Carly', lastName: 'Dixon', incentivesEarned: 1, unsubscribed: true},
+  { id: 3, firstName: 'Erin', lastName: 'Fitzgerald', incentivesEarned: 10, unsubscribed: true},
+  { id: 4, firstName: 'Gregg', lastName: 'Harris', incentivesEarned: 20, unsubscribed: true},
+  { id: 5, firstName: 'Izzie', lastName: 'Jackson', incentivesEarned: 100, unsubscribed: false},
 ]
 /* eslint-disable */
 
@@ -154,6 +162,31 @@ export const TableWithMultipleActionColumn = () => (
           <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
           <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
           <TableCell>{kebabButton()}</TableCell>
+        </TableRow>
+      )))}
+    </TableBody>
+  </Table>
+);
+
+export const TableWithSorting = () => (
+  <Table>
+    <TableHead>
+      <TableRow>
+        <TableCell header><CheckboxButton/></TableCell>
+        <TableCell header>First name</TableCell>
+        <TableCell header>Last name</TableCell>
+        <TableCell header>Incentives earned <TableSortLabel active/></TableCell>
+        <TableCell header>Unsubscribed <TableSortLabel active/></TableCell>
+      </TableRow>
+    </TableHead>
+    <TableBody>
+      {sortableData.map((row => (
+        <TableRow key={data.id}>
+          <TableCell><CheckboxButton/></TableCell>
+          <TableCell>{row.firstName}</TableCell>
+          <TableCell>{row.lastName}</TableCell>
+          <TableCell>{row.incentivesEarned}</TableCell>
+          <TableCell>{row.unsubscribed ? 'True' : 'False'}</TableCell>
         </TableRow>
       )))}
     </TableBody>
