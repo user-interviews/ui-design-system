@@ -5,6 +5,7 @@ import classNames from 'classnames';
 import './TableCell.scss';
 
 const TableCell = ({
+  alignRight,
   children,
   header,
   compact,
@@ -12,6 +13,7 @@ const TableCell = ({
   <td className={classNames(
     'TableCell',
     { [`TableCell__header`]: !!header },
+    { [`TableCell--right`]: !!alignRight },
     { [`TableCell--compact`]: !!compact },
     )}
   >
@@ -22,12 +24,14 @@ const TableCell = ({
 export default TableCell;
 
 TableCell.propTypes = {
+  alignRight: PropTypes.bool,
   children: PropTypes.node,
   compact: PropTypes.bool,
   header: PropTypes.bool,
 };
 
 TableCell.defaultProps = {
+  alignRight: undefined,
   children: undefined,
   compact: undefined,
   header: undefined,

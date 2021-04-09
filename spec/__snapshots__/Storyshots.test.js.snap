@@ -5659,6 +5659,215 @@ exports[`Storyshots Design System/Table Table On Card 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Table Table With Cell Right Alignment 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell__header"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          First name
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Last name
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Incentives earned
+        </td>
+        <td
+          className="TableCell TableCell__header"
+        >
+          Unsubscribed
+        </td>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          Anna
+        </td>
+        <td
+          className="TableCell"
+        >
+          Boston
+        </td>
+        <td
+          className="TableCell TableCell--right"
+        >
+          0
+        </td>
+        <td
+          className="TableCell TableCell--right"
+        >
+          False
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          Carly
+        </td>
+        <td
+          className="TableCell"
+        >
+          Dixon
+        </td>
+        <td
+          className="TableCell TableCell--right"
+        >
+          1
+        </td>
+        <td
+          className="TableCell TableCell--right"
+        >
+          True
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          Erin
+        </td>
+        <td
+          className="TableCell"
+        >
+          Fitzgerald
+        </td>
+        <td
+          className="TableCell TableCell--right"
+        >
+          10
+        </td>
+        <td
+          className="TableCell TableCell--right"
+        >
+          True
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          Gregg
+        </td>
+        <td
+          className="TableCell"
+        >
+          Harris
+        </td>
+        <td
+          className="TableCell TableCell--right"
+        >
+          20
+        </td>
+        <td
+          className="TableCell TableCell--right"
+        >
+          True
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+        >
+          <input
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+        >
+          Izzie
+        </td>
+        <td
+          className="TableCell"
+        >
+          Jackson
+        </td>
+        <td
+          className="TableCell TableCell--right"
+        >
+          100
+        </td>
+        <td
+          className="TableCell TableCell--right"
+        >
+          False
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Storyshots Design System/Table Table With Compact Option 1`] = `
 <div
   style={

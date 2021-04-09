@@ -193,6 +193,31 @@ export const TableWithSorting = () => (
   </Table>
 );
 
+export const TableWithCellRightAlignment = () => (
+  <Table>
+    <TableHead>
+      <TableRow>
+        <TableCell header><CheckboxButton/></TableCell>
+        <TableCell header>First name</TableCell>
+        <TableCell header>Last name</TableCell>
+        <TableCell header>Incentives earned</TableCell>
+        <TableCell header>Unsubscribed</TableCell>
+      </TableRow>
+    </TableHead>
+    <TableBody>
+      {sortableData.map((row => (
+        <TableRow key={row.id}>
+          <TableCell><CheckboxButton/></TableCell>
+          <TableCell>{row.firstName}</TableCell>
+          <TableCell>{row.lastName}</TableCell>
+          <TableCell alignRight>{row.incentivesEarned}</TableCell>
+          <TableCell alignRight>{row.unsubscribed ? 'True' : 'False'}</TableCell>
+        </TableRow>
+      )))}
+    </TableBody>
+  </Table>
+);
+
 const CompactTable = () => {
   const [isCompact, setIsCompact] = useState(true);
   const handleIsCompactClick = () => {
