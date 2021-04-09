@@ -7,10 +7,12 @@ import './TableCell.scss';
 const TableCell = ({
   children,
   header,
+  compact,
 }) => (
   <td className={classNames(
     'TableCell',
     { [`TableCell__header`]: !!header },
+    { [`TableCell--compact`]: !!compact },
     )}
   >
     {children}
@@ -21,10 +23,12 @@ export default TableCell;
 
 TableCell.propTypes = {
   children: PropTypes.node,
+  compact: PropTypes.bool,
   header: PropTypes.bool,
 };
 
 TableCell.defaultProps = {
   children: undefined,
+  compact: undefined,
   header: undefined,
 };

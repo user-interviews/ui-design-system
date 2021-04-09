@@ -12,4 +12,9 @@
     padding: $ux-spacing-50;
     text-align: left;
   }
+
+  &--compact {
+    padding: $ux-spacing-40 $ux-spacing-50;
+    max-height: 3.25rem;
+  }
 }

@@ -1,6 +1,6 @@
 import { faFileAlt, faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useState } from 'react';
 import Card from 'src/Card';
 import CheckboxButton from 'src/CheckboxButton';
 import {
@@ -46,7 +46,7 @@ export const BasicTable = () => (
     </TableHead>
     <TableBody>
       {data.map((row => (
-        <TableRow key={data.id}>
+        <TableRow key={row.id}>
           <TableCell><CheckboxButton/></TableCell>
           <TableCell>{row.email}</TableCell>
           <TableCell>{row.firstName}</TableCell>
@@ -82,7 +82,7 @@ export const TableOnCard = () => (
       </TableHead>
       <TableBody>
         {data.map((row => (
-          <TableRow key={data.id}>
+          <TableRow key={row.id}>
             <TableCell><CheckboxButton/></TableCell>
             <TableCell>{row.email}</TableCell>
             <TableCell>{row.firstName}</TableCell>
@@ -119,7 +119,7 @@ export const TableWithSingleActionColumn = () => (
     </TableHead>
     <TableBody>
       {data.map((row => (
-        <TableRow key={data.id}>
+        <TableRow key={row.id}>
           <TableCell><CheckboxButton/></TableCell>
           <TableCell>{row.email}</TableCell>
           <TableCell>{row.firstName}</TableCell>
@@ -152,7 +152,7 @@ export const TableWithMultipleActionColumn = () => (
     </TableHead>
     <TableBody>
       {data.map((row => (
-        <TableRow key={data.id}>
+        <TableRow key={row.id}>
           <TableCell><CheckboxButton/></TableCell>
           <TableCell>{row.email}</TableCell>
           <TableCell>{row.firstName}</TableCell>
@@ -181,7 +181,7 @@ export const TableWithSorting = () => (
     </TableHead>
     <TableBody>
       {sortableData.map((row => (
-        <TableRow key={data.id}>
+        <TableRow key={row.id}>
           <TableCell><CheckboxButton/></TableCell>
           <TableCell>{row.firstName}</TableCell>
           <TableCell>{row.lastName}</TableCell>
@@ -192,3 +192,51 @@ export const TableWithSorting = () => (
     </TableBody>
   </Table>
 );
+
+const CompactTable = () => {
+  const [isCompact, setIsCompact] = useState(true);
+  const handleIsCompactClick = () => {
+    setIsCompact((prev) => !prev)
+  };
+
+  return (
+    <div>
+    <button onClick={handleIsCompactClick} style={{ background: 'none', border: '1px solid #337AB7', borderRadius: '4px', color: '#337AB7', fontWeight: "700", marginBottom: "16px", padding: "4px 8px"}}>Toggle density</button>
+    <p>{isCompact ? 'Compact' : 'Default'}</p>
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell header><CheckboxButton/></TableCell>
+          <TableCell header>Email</TableCell>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map((row => (
+          <TableRow key={row.id}>
+            <TableCell compact={isCompact}><CheckboxButton/></TableCell>
+            <TableCell compact={isCompact}>{row.email}</TableCell>
+            <TableCell compact={isCompact}>{row.firstName}</TableCell>
+            <TableCell compact={isCompact}>{row.lastName}</TableCell>
+            <TableCell compact={isCompact}>{row.phoneNumber}</TableCell>
+            <TableCell compact={isCompact}>{row.dateAdded}</TableCell>
+            <TableCell compact={isCompact}>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+            <TableCell compact={isCompact}>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+          </TableRow>
+        )))}
+      </TableBody>
+    </Table>
+  </div>
+  )
+};
+
+export const TableWithCompactOption = () => (
+  <CompactTable />
+)
+
+  
