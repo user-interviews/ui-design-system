@@ -5,6 +5,7 @@ on:
       releaseType:
         description: 'Is this release: major, minor or patch?'
         required: true
+        default: 'patch'
 jobs:
   createrelease:
     runs-on: ubuntu-latest
