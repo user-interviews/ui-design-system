@@ -8,17 +8,19 @@ const TableCell = ({
   alignRight,
   children,
   className,
-  header,
   compact,
+  header,
+  sticky,
   ...props
 }) => (
   <td
     className={classNames(
     'TableCell',
     className,
+    { [`TableCell--compact`]: !!compact },
     { [`TableCell__header`]: !!header },
     { [`TableCell--right`]: !!alignRight },
-    { [`TableCell--compact`]: !!compact },
+    { [`TableCell--sticky`]: !!sticky },
     )}
     {...props}
   >
@@ -34,6 +36,7 @@ TableCell.propTypes = {
   className: PropTypes.string,
   compact: PropTypes.bool,
   header: PropTypes.bool,
+  sticky: PropTypes.bool,
 };
 
 TableCell.defaultProps = {
@@ -42,4 +45,5 @@ TableCell.defaultProps = {
   className: undefined,
   compact: undefined,
   header: undefined,
+  sticky: undefined,
 };

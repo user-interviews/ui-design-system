@@ -1,4 +1,4 @@
-import { faFileAlt, faEllipsisV } from '@fortawesome/free-solid-svg-icons';
+import { faFileAlt, faEllipsisV, faThumbtack } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import Card from 'src/Card';
@@ -14,11 +14,16 @@ export default {
 
 /* eslint-disable */
 const data = [
-  { id: 1, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null },
-  { id: 2, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null },
-  { id: 3, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null },
-  { id: 4, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null },
-  { id: 5, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null },
+  { id: 1, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null, date: '03/25/2021', boolean: true, decimal: false, pickAny: false, incentivesEarned: 5 },
+  { id: 2, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null, date: '03/25/2021', boolean: true, decimal: false, pickAny: false, incentivesEarned: 5 },
+  { id: 3, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null, date: '03/25/2021', boolean: true, decimal: false, pickAny: false, incentivesEarned: 5 },
+  { id: 4, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null, date: '03/25/2021', boolean: true, decimal: false, pickAny: false, incentivesEarned: 5 },
+  { id: 5, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null, date: '03/25/2021', boolean: true, decimal: false, pickAny: false, incentivesEarned: 5 },
+  { id: 6, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null, date: '03/25/2021', boolean: true, decimal: false, pickAny: false, incentivesEarned: 5 },
+  { id: 7, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null, date: '03/25/2021', boolean: true, decimal: false, pickAny: false, incentivesEarned: 5 },
+  { id: 8, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null, date: '03/25/2021', boolean: true, decimal: false, pickAny: false, incentivesEarned: 5 },
+  { id: 9, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null, date: '03/25/2021', boolean: true, decimal: false, pickAny: false, incentivesEarned: 5 },
+  { id: 10, firstName: 'Riley', lastName: 'Researcher', email: 'riley@userinterviews.com', phoneNumber: '+18888888888', dateAdded: '01/21/2021', lastInvited: null, lastApplied: null, date: '03/25/2021', boolean: true, decimal: false, pickAny: false, incentivesEarned: 5 },
 ]
 
 const sortableData = [
@@ -264,4 +269,57 @@ export const TableWithCompactOption = () => (
   <CompactTable />
 )
 
+
+
+const StickyColumnTable = () => {
+  const PinButton = ({ ...props}) => <button style={{background: 'none', border: 'none', color: isSticky ? "#337AB7" : "#A1A1A1"}} {...props}><FontAwesomeIcon icon={faThumbtack}/></button>
   
+  const [isSticky, setIsSticky] = useState(true)
+
+  const handlePinClick = () => {
+    setIsSticky((prev) => !prev)
+  }
+
+  return (
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell header sticky={isSticky}>Email <span style={{float: "right"}}><PinButton onClick={handlePinClick}/></span></TableCell>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
+          <TableCell header>Date</TableCell>
+          <TableCell header>Boolean</TableCell>
+          <TableCell header>Decimal</TableCell>
+          <TableCell header>Pick any</TableCell>
+          <TableCell alignRight header>Incentives earned</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map((row => (
+          <TableRow key={row.id}>
+            <TableCell sticky={isSticky}>{row.email}</TableCell>
+            <TableCell>{row.firstName}</TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell>{row.phoneNumber}</TableCell>
+            <TableCell>{row.dateAdded}</TableCell>
+            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+            <TableCell>{row.date}</TableCell>
+            <TableCell>{row.boolean ? "True" : `-`}</TableCell>
+            <TableCell>{row.decimal ? "True" : `-`}</TableCell>
+            <TableCell>{row.pickAny ? "True" : `-`}</TableCell>
+            <TableCell alignRight>{row.incentivesEarned}</TableCell>
+          </TableRow>
+        )))}
+      </TableBody>
+    </Table>
+   )
+};
+
+export const TableWithStickyColumn = () => (
+  <StickyColumnTable />
+)

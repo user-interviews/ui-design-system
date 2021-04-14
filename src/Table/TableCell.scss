@@ -8,7 +8,7 @@
 
   &__header {
     @include font-type-30--bold();
-    background-color: $ux-gray-100;
+    background-color: $ux-gray-100 !important;
     color: $ux-gray-800;
     padding: $ux-spacing-50;
     text-align: left;
@@ -21,5 +21,13 @@
 
   &--right {
     text-align: right;
+  }
+
+  &--sticky {
+    position: sticky; 
+    left: 0;
+    background: $ux-white;
+    box-shadow: $ux-elevations-50;
+    z-index: 1;
   }
 }
