@@ -2,6 +2,7 @@
 
 .TableCell {
   @include font-type-30--light();
+  border-bottom: 0.06rem solid #EDEDED;
   padding: $ux-spacing-50;
   text-align: left;
 
