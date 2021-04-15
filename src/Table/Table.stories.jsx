@@ -271,37 +271,37 @@ export const TableWithCompactOption = () => (
 
 
 
-const StickyColumnTable = () => {
-  const PinButton = ({ ...props}) => <button style={{background: 'none', border: 'none', color: isSticky ? "#337AB7" : "#A1A1A1"}} {...props}><FontAwesomeIcon icon={faThumbtack}/></button>
+const StickyColumnAndHeaderTable = () => {
+  const PinButton = ({ ...props}) => <button style={{background: 'none', border: 'none', color: isStickyColumn ? "#337AB7" : "#A1A1A1"}} {...props}><FontAwesomeIcon icon={faThumbtack}/></button>
   
-  const [isSticky, setIsSticky] = useState(true)
+  const [isStickyColumn, setIsStickyColumn] = useState(true)
 
   const handlePinClick = () => {
-    setIsSticky((prev) => !prev)
+    setIsStickyColumn((prev) => !prev)
   }
 
   return (
     <Table>
       <TableHead>
         <TableRow>
-          <TableCell header sticky={isSticky}>Email <span style={{float: "right"}}><PinButton onClick={handlePinClick}/></span></TableCell>
-          <TableCell header>First name</TableCell>
-          <TableCell header>Last name</TableCell>
-          <TableCell header>Phone number</TableCell>
-          <TableCell header>Date added</TableCell>
-          <TableCell header>Last invited</TableCell>
-          <TableCell header>Last applied</TableCell>
-          <TableCell header>Date</TableCell>
-          <TableCell header>Boolean</TableCell>
-          <TableCell header>Decimal</TableCell>
-          <TableCell header>Pick any</TableCell>
-          <TableCell alignRight header>Incentives earned</TableCell>
+          <TableCell header stickyColumn={isStickyColumn} stickyRow>Email <span style={{float: "right"}}><PinButton onClick={handlePinClick}/></span></TableCell>
+          <TableCell header stickyRow>First name</TableCell>
+          <TableCell header stickyRow>Last name</TableCell>
+          <TableCell header stickyRow>Phone number</TableCell>
+          <TableCell header stickyRow>Date added</TableCell>
+          <TableCell header stickyRow>Last invited</TableCell>
+          <TableCell header stickyRow>Last applied</TableCell>
+          <TableCell header stickyRow>Date</TableCell>
+          <TableCell header stickyRow>Boolean</TableCell>
+          <TableCell header stickyRow>Decimal</TableCell>
+          <TableCell header stickyRow>Pick any</TableCell>
+          <TableCell alignRight header stickyRow>Incentives earned</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
         {data.map((row => (
           <TableRow key={row.id}>
-            <TableCell sticky={isSticky}>{row.email}</TableCell>
+            <TableCell stickyColumn={isStickyColumn}>{row.email}</TableCell>
             <TableCell>{row.firstName}</TableCell>
             <TableCell>{row.lastName}</TableCell>
             <TableCell>{row.phoneNumber}</TableCell>
@@ -320,6 +320,6 @@ const StickyColumnTable = () => {
    )
 };
 
-export const TableWithStickyColumn = () => (
-  <StickyColumnTable />
+export const TableWithStickyColumnAndHeader = () => (
+  <StickyColumnAndHeaderTable />
 )
