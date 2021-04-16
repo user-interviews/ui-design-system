@@ -4,4 +4,8 @@
   &:hover {
     background-color: $ux-gray-100;
   }
+
+  &--selected {
+    background-color: $ux-blue-100 !important;
+  }
 }

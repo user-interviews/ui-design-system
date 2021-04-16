@@ -39,7 +39,6 @@ export const BasicTable = () => (
   <Table>
     <TableHead>
       <TableRow>
-        <TableCell header><CheckboxButton/></TableCell>
         <TableCell header>Email</TableCell>
         <TableCell header>First name</TableCell>
         <TableCell header>Last name</TableCell>
@@ -52,7 +51,6 @@ export const BasicTable = () => (
     <TableBody>
       {data.map((row => (
         <TableRow key={row.id}>
-          <TableCell><CheckboxButton/></TableCell>
           <TableCell>{row.email}</TableCell>
           <TableCell>{row.firstName}</TableCell>
           <TableCell>{row.lastName}</TableCell>
@@ -75,7 +73,6 @@ export const TableOnCard = () => (
     <Table>
       <TableHead>
         <TableRow>
-          <TableCell header><CheckboxButton/></TableCell>
           <TableCell header>Email</TableCell>
           <TableCell header>First name</TableCell>
           <TableCell header>Last name</TableCell>
@@ -88,7 +85,6 @@ export const TableOnCard = () => (
       <TableBody>
         {data.map((row => (
           <TableRow key={row.id}>
-            <TableCell><CheckboxButton/></TableCell>
             <TableCell>{row.email}</TableCell>
             <TableCell>{row.firstName}</TableCell>
             <TableCell>{row.lastName}</TableCell>
@@ -111,7 +107,6 @@ export const TableWithSingleActionColumn = () => (
   <Table>
     <TableHead>
       <TableRow>
-        <TableCell header><CheckboxButton/></TableCell>
         <TableCell header>Email</TableCell>
         <TableCell header>First name</TableCell>
         <TableCell header>Last name</TableCell>
@@ -125,7 +120,6 @@ export const TableWithSingleActionColumn = () => (
     <TableBody>
       {data.map((row => (
         <TableRow key={row.id}>
-          <TableCell><CheckboxButton/></TableCell>
           <TableCell>{row.email}</TableCell>
           <TableCell>{row.firstName}</TableCell>
           <TableCell>{row.lastName}</TableCell>
@@ -144,7 +138,6 @@ export const TableWithMultipleActionColumn = () => (
   <Table>
     <TableHead>
       <TableRow>
-        <TableCell header><CheckboxButton/></TableCell>
         <TableCell header>Email</TableCell>
         <TableCell header>First name</TableCell>
         <TableCell header>Last name</TableCell>
@@ -158,7 +151,6 @@ export const TableWithMultipleActionColumn = () => (
     <TableBody>
       {data.map((row => (
         <TableRow key={row.id}>
-          <TableCell><CheckboxButton/></TableCell>
           <TableCell>{row.email}</TableCell>
           <TableCell>{row.firstName}</TableCell>
           <TableCell>{row.lastName}</TableCell>
@@ -173,11 +165,68 @@ export const TableWithMultipleActionColumn = () => (
   </Table>
 );
 
+const MultipleSelectTable = () => {
+
+  const [selectedRows, setSelectedRows] = useState([]);
+
+  const handleCheckboxSelectSingle = (id) => {
+    if (!selectedRows.includes(id)){
+      setSelectedRows(oldArray => [...oldArray, id])
+    } else if (selectedRows.includes(id)) {
+      setSelectedRows(selectedRows.filter(item => item !== id))
+    }
+  }
+
+  const handleCheckboxSelectAll = (data) => {
+    if (selectedRows.length > 0) {
+      setSelectedRows([])
+    } else {
+      setSelectedRows(data.map((row) => row.id))
+    }
+  }
+
+  const isChecked = (id) => selectedRows.includes(id)
+
+  return(
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell header><CheckboxButton onClick={() => handleCheckboxSelectAll(data)}/></TableCell>
+          <TableCell header>Email</TableCell>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map((row => (
+          <TableRow key={row.id} selected={selectedRows.includes(row.id)}>
+            <TableCell><CheckboxButton checked={isChecked(row.id)} onClick={() => handleCheckboxSelectSingle(row.id)}/></TableCell>
+            <TableCell>{row.email}</TableCell>
+            <TableCell>{row.firstName}</TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell>{row.phoneNumber}</TableCell>
+            <TableCell>{row.dateAdded}</TableCell>
+            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+          </TableRow>
+        )))}
+      </TableBody>
+    </Table>
+  )
+};
+
+export const TableWithMultipleSelect = () => (
+  <MultipleSelectTable />
+)
+
 export const TableWithSorting = () => (
   <Table>
     <TableHead>
       <TableRow>
-        <TableCell header><CheckboxButton/></TableCell>
         <TableCell header>First name</TableCell>
         <TableCell header>Last name</TableCell>
         <TableCell header>Incentives earned <TableSortLabel active/></TableCell>
@@ -187,7 +236,6 @@ export const TableWithSorting = () => (
     <TableBody>
       {sortableData.map((row => (
         <TableRow key={row.id}>
-          <TableCell><CheckboxButton/></TableCell>
           <TableCell>{row.firstName}</TableCell>
           <TableCell>{row.lastName}</TableCell>
           <TableCell>{row.incentivesEarned}</TableCell>
@@ -202,7 +250,6 @@ export const TableWithCellRightAlignment = () => (
   <Table>
     <TableHead>
       <TableRow>
-        <TableCell header><CheckboxButton/></TableCell>
         <TableCell header>First name</TableCell>
         <TableCell header>Last name</TableCell>
         <TableCell header>Incentives earned</TableCell>
@@ -212,7 +259,6 @@ export const TableWithCellRightAlignment = () => (
     <TableBody>
       {sortableData.map((row => (
         <TableRow key={row.id}>
-          <TableCell><CheckboxButton/></TableCell>
           <TableCell>{row.firstName}</TableCell>
           <TableCell>{row.lastName}</TableCell>
           <TableCell alignRight>{row.incentivesEarned}</TableCell>
@@ -236,7 +282,6 @@ const CompactTable = () => {
     <Table>
       <TableHead>
         <TableRow>
-          <TableCell header><CheckboxButton/></TableCell>
           <TableCell header>Email</TableCell>
           <TableCell header>First name</TableCell>
           <TableCell header>Last name</TableCell>
@@ -249,7 +294,6 @@ const CompactTable = () => {
       <TableBody>
         {data.map((row => (
           <TableRow key={row.id}>
-            <TableCell compact={isCompact}><CheckboxButton/></TableCell>
             <TableCell compact={isCompact}>{row.email}</TableCell>
             <TableCell compact={isCompact}>{row.firstName}</TableCell>
             <TableCell compact={isCompact}>{row.lastName}</TableCell>
@@ -268,8 +312,6 @@ const CompactTable = () => {
 export const TableWithCompactOption = () => (
   <CompactTable />
 )
-
-
 
 const StickyColumnAndHeaderTable = () => {
   const PinButton = ({ ...props}) => <button style={{background: 'none', border: 'none', color: isStickyColumn ? "#337AB7" : "#A1A1A1"}} {...props}><FontAwesomeIcon icon={faThumbtack}/></button>
