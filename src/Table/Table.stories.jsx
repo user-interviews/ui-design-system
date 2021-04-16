@@ -168,6 +168,7 @@ export const TableWithMultipleActionColumn = () => (
 const MultipleSelectTable = () => {
 
   const [selectedRows, setSelectedRows] = useState([]);
+  const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] = useState(false)
 
   const handleCheckboxSelectSingle = (id) => {
     if (!selectedRows.includes(id)){
@@ -178,7 +179,9 @@ const MultipleSelectTable = () => {
   }
 
   const handleCheckboxSelectAll = (data) => {
-    if (selectedRows.length > 0) {
+    setIsSelectAllCheckboxChecked(prev => !prev)
+
+    if (selectedRows.length > 0 && isSelectAllCheckboxChecked) {
       setSelectedRows([])
     } else {
       setSelectedRows(data.map((row) => row.id))
@@ -203,7 +206,7 @@ const MultipleSelectTable = () => {
       </TableHead>
       <TableBody>
         {data.map((row => (
-          <TableRow key={row.id} selected={selectedRows.includes(row.id)}>
+          <TableRow key={row.id} onClick={() => handleCheckboxSelectSingle(row.id)} selected={selectedRows.includes(row.id)}>
             <TableCell><CheckboxButton checked={isChecked(row.id)} onClick={() => handleCheckboxSelectSingle(row.id)}/></TableCell>
             <TableCell>{row.email}</TableCell>
             <TableCell>{row.firstName}</TableCell>
