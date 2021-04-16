@@ -12,11 +12,10 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
+      - uses: fregante/setup-git-user@v1
       - run: yarn install
 
       # Update package version
-      - run: git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-      - run: git config --local user.name "github-actions[bot]"
       - run: yarn --new-version version ${{ github.event.inputs.releaseType }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
