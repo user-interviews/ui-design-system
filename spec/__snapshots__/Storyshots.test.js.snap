@@ -2381,6 +2381,23 @@ exports[`Storyshots Design System/Pill With Leading Icon 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Pill With Link 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <a
+    className="Pill Pill--blue"
+    href="https://www.userinterviews.com/"
+  >
+    Visit our site
+  </a>
+</div>
+`;
+
 exports[`Storyshots Design System/Popper Dark 1`] = `
 <div
   style={

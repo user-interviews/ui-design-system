@@ -90,3 +90,13 @@ export const WithClose = () => (
     onClose={handleClose}
   />
 );
+
+export const WithLink = () => (
+  <Pill
+    color={select('Color', colors, 'blue')}
+    href="https://www.userinterviews.com/"
+    id="3"
+    large={boolean('Large', false)}
+    text={text('Text', 'Visit our site')}
+  />
+);
