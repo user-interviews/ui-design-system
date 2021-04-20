@@ -18,12 +18,14 @@ const TableCell = ({
     className={classNames(
     'TableCell',
     className,
-    { [`TableCell--compact`]: !!compact },
-    { [`TableCell__header`]: !!header },
-    { [`TableCell--right`]: !!alignRight },
-    { [`TableCell--sticky-column--corner`]: header && stickyColumn },
-    { [`TableCell--sticky-column`]: !!stickyColumn },
-    { [`TableCell--sticky-row`]: !!stickyRow },
+    {
+      [`TableCell--compact`]: !!compact,
+      [`TableCell__header`]: !!header,
+      [`TableCell--right`]: !!alignRight,
+      [`TableCell--sticky-column--corner`]: header && stickyColumn,
+      [`TableCell--sticky-column`]: !!stickyColumn,
+      [`TableCell--sticky-row`]: !!stickyRow,
+    },
     )}
     {...props}
   >
