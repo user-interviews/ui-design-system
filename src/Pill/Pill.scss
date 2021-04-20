@@ -2,14 +2,14 @@
 @import '../../scss/theme';
 
 .Pill {
-  @include font-type-30;
+  @include font-type-20;
   font-weight: $font-weight-normal;
   display: inline;
   background-color: $ux-blue-100;
   color: $ux-blue-700;
   border: 0.06rem solid $ux-blue-300;
   border-radius: $ux-border-radius;
-  padding: $ux-spacing-10 $ux-spacing-20;
+  padding: $ux-spacing-10 $ux-spacing-30;
 
   &--blue {
     background-color: $ux-blue-100;
