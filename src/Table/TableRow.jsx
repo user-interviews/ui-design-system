@@ -7,6 +7,7 @@ import './TableRow.scss';
 const TableRow = ({
   children,
   className,
+  clickable,
   selected,
   ...props
 }) => (
@@ -14,7 +15,10 @@ const TableRow = ({
     className={classNames(
     'TableRow',
     className,
-    { [`TableRow--selected`]: !!selected },
+    {
+      [`TableRow--selected`]: !!selected,
+      [`TableRow--clickable`]: !!clickable,
+    },
     )}
     {...props}
   >
@@ -27,11 +31,13 @@ export default TableRow;
 TableRow.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
+  clickable: PropTypes.bool,
   selected: PropTypes.bool,
 };
 
 TableRow.defaultProps = {
   children: undefined,
   className: undefined,
+  clickable: undefined,
   selected: undefined,
 };

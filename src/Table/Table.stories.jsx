@@ -216,6 +216,7 @@ const MultipleSelectTable = () => {
       <TableBody>
         {data.map(((row) => (
           <TableRow
+            clickable
             key={row.id}
             selected={selectedRows.includes(row.id)}
             onClick={() => handleCheckboxSelectSingle(row.id)}
