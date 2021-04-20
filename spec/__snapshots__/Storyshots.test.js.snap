@@ -6154,6 +6154,7 @@ exports[`Storyshots Design System/Table Table With Compact Option 1`] = `
           "padding": "4px 8px",
         }
       }
+      type="button"
     >
       Toggle density
     </button>
@@ -6709,6 +6710,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
           className="TableCell"
         >
           <button
+            aria-label="kebab button"
             style={
               Object {
                 "background": "none",
@@ -6716,6 +6718,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
                 "color": "#337AB7",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -6779,6 +6782,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
           className="TableCell"
         >
           <button
+            aria-label="kebab button"
             style={
               Object {
                 "background": "none",
@@ -6786,6 +6790,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
                 "color": "#337AB7",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -6849,6 +6854,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
           className="TableCell"
         >
           <button
+            aria-label="kebab button"
             style={
               Object {
                 "background": "none",
@@ -6856,6 +6862,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
                 "color": "#337AB7",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -6919,6 +6926,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
           className="TableCell"
         >
           <button
+            aria-label="kebab button"
             style={
               Object {
                 "background": "none",
@@ -6926,6 +6934,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
                 "color": "#337AB7",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -6989,6 +6998,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
           className="TableCell"
         >
           <button
+            aria-label="kebab button"
             style={
               Object {
                 "background": "none",
@@ -6996,6 +7006,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
                 "color": "#337AB7",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -7059,6 +7070,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
           className="TableCell"
         >
           <button
+            aria-label="kebab button"
             style={
               Object {
                 "background": "none",
@@ -7066,6 +7078,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
                 "color": "#337AB7",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -7129,6 +7142,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
           className="TableCell"
         >
           <button
+            aria-label="kebab button"
             style={
               Object {
                 "background": "none",
@@ -7136,6 +7150,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
                 "color": "#337AB7",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -7199,6 +7214,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
           className="TableCell"
         >
           <button
+            aria-label="kebab button"
             style={
               Object {
                 "background": "none",
@@ -7206,6 +7222,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
                 "color": "#337AB7",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -7269,6 +7286,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
           className="TableCell"
         >
           <button
+            aria-label="kebab button"
             style={
               Object {
                 "background": "none",
@@ -7276,6 +7294,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
                 "color": "#337AB7",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -7339,6 +7358,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
           className="TableCell"
         >
           <button
+            aria-label="kebab button"
             style={
               Object {
                 "background": "none",
@@ -7346,6 +7366,7 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
                 "color": "#337AB7",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -8046,6 +8067,7 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
                 "padding": "4px 8px",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -8124,6 +8146,7 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
                 "padding": "4px 8px",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -8202,6 +8225,7 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
                 "padding": "4px 8px",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -8280,6 +8304,7 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
                 "padding": "4px 8px",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -8358,6 +8383,7 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
                 "padding": "4px 8px",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -8436,6 +8462,7 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
                 "padding": "4px 8px",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -8514,6 +8541,7 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
                 "padding": "4px 8px",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -8592,6 +8620,7 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
                 "padding": "4px 8px",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -8670,6 +8699,7 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
                 "padding": "4px 8px",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -8748,6 +8778,7 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
                 "padding": "4px 8px",
               }
             }
+            type="button"
           >
             <svg
               aria-hidden="true"
@@ -9025,6 +9056,7 @@ exports[`Storyshots Design System/Table Table With Sticky Column And Header 1`] 
                   "color": "#337AB7",
                 }
               }
+              type="button"
             >
               <svg
                 aria-hidden="true"
