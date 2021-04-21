@@ -70,32 +70,87 @@ export const TableOnCard = () => (
     subTitle="Manage a set of templates that can be applied to a project’s automated emails."
     title="Email Template Sets"
   >
-    <Table>
-      <TableHead>
-        <TableRow>
-          <TableCell header>Email</TableCell>
-          <TableCell header>First name</TableCell>
-          <TableCell header>Last name</TableCell>
-          <TableCell header>Phone number</TableCell>
-          <TableCell header>Date added</TableCell>
-          <TableCell header>Last invited</TableCell>
-          <TableCell header>Last applied</TableCell>
-        </TableRow>
-      </TableHead>
-      <TableBody>
-        {data.map(((row) => (
-          <TableRow key={row.id}>
-            <TableCell>{row.email}</TableCell>
-            <TableCell>{row.firstName}</TableCell>
-            <TableCell>{row.lastName}</TableCell>
-            <TableCell>{row.phoneNumber}</TableCell>
-            <TableCell>{row.dateAdded}</TableCell>
-            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+    <div
+      id="Some table container"
+      style={{
+        display: 'block',
+        maxWidth: 'fit-content',
+        overflowX: 'auto',
+        overflowY: 'auto',
+        whiteSpace: 'nowrap',
+    }}
+    >
+      <Table>
+        <TableHead>
+          <TableRow>
+            <TableCell header>Email</TableCell>
+            <TableCell header>First name</TableCell>
+            <TableCell header>Last name</TableCell>
+            <TableCell header>Phone number</TableCell>
+            <TableCell header>Date added</TableCell>
+            <TableCell header>Last invited</TableCell>
+            <TableCell header>Last applied</TableCell>
           </TableRow>
+        </TableHead>
+        <TableBody>
+          {data.map(((row) => (
+            <TableRow key={row.id}>
+              <TableCell>{row.email}</TableCell>
+              <TableCell>{row.firstName}</TableCell>
+              <TableCell>{row.lastName}</TableCell>
+              <TableCell>{row.phoneNumber}</TableCell>
+              <TableCell>{row.dateAdded}</TableCell>
+              <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+              <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+            </TableRow>
         )))}
-      </TableBody>
-    </Table>
+        </TableBody>
+      </Table>
+    </div>
+  </Card>
+);
+
+export const TableOnCardNoPadding = () => (
+  <Card
+    noPadding
+  >
+    <div
+      id="Some table container"
+      style={{
+        display: 'block',
+        maxWidth: 'fit-content',
+        overflowX: 'auto',
+        overflowY: 'auto',
+        whiteSpace: 'nowrap',
+    }}
+    >
+      <Table>
+        <TableHead>
+          <TableRow>
+            <TableCell header>Email</TableCell>
+            <TableCell header>First name</TableCell>
+            <TableCell header>Last name</TableCell>
+            <TableCell header>Phone number</TableCell>
+            <TableCell header>Date added</TableCell>
+            <TableCell header>Last invited</TableCell>
+            <TableCell header>Last applied</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {data.map(((row) => (
+            <TableRow key={row.id}>
+              <TableCell>{row.email}</TableCell>
+              <TableCell>{row.firstName}</TableCell>
+              <TableCell>{row.lastName}</TableCell>
+              <TableCell>{row.phoneNumber}</TableCell>
+              <TableCell>{row.dateAdded}</TableCell>
+              <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+              <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+            </TableRow>
+        )))}
+        </TableBody>
+      </Table>
+    </div>
   </Card>
 );
 
