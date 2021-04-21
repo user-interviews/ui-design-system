@@ -14,8 +14,10 @@ const TableCell = ({
   stickyRow,
   ...props
 }) => (
-  <td
-    className={classNames(
+  <>
+    { header ? (
+      <th
+        className={classNames(
     'TableCell',
     className,
     {
@@ -27,11 +29,31 @@ const TableCell = ({
       [`TableCell--sticky-row`]: !!stickyRow,
     },
     )}
-    {...props}
-  >
-    {children}
-  </td>
-);
+        {...props}
+      >
+        {children}
+      </th>
+  ) : (
+    <td
+      className={classNames(
+    'TableCell',
+    className,
+    {
+      [`TableCell--compact`]: !!compact,
+      [`TableCell__header`]: !!header,
+      [`TableCell--right`]: !!alignRight,
+      [`TableCell--sticky-column--corner`]: header && stickyColumn,
+      [`TableCell--sticky-column`]: !!stickyColumn,
+      [`TableCell--sticky-row`]: !!stickyRow,
+    },
+    )}
+      {...props}
+    >
+      {children}
+    </td>
+  )}
+  </>
+  );
 
 export default TableCell;
 

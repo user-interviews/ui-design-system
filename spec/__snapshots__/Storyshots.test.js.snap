@@ -5057,41 +5057,41 @@ exports[`Storyshots Design System/Table Basic Table 1`] = `
       <tr
         className="TableRow"
       >
-        <td
+        <th
           className="TableCell TableCell__header"
         >
           Email
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           First name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Phone number
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Date added
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last invited
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last applied
-        </td>
+        </th>
       </tr>
     </thead>
     <tbody
@@ -5529,41 +5529,41 @@ exports[`Storyshots Design System/Table Table On Card 1`] = `
         <tr
           className="TableRow"
         >
-          <td
+          <th
             className="TableCell TableCell__header"
           >
             Email
-          </td>
-          <td
+          </th>
+          <th
             className="TableCell TableCell__header"
           >
             First name
-          </td>
-          <td
+          </th>
+          <th
             className="TableCell TableCell__header"
           >
             Last name
-          </td>
-          <td
+          </th>
+          <th
             className="TableCell TableCell__header"
           >
             Phone number
-          </td>
-          <td
+          </th>
+          <th
             className="TableCell TableCell__header"
           >
             Date added
-          </td>
-          <td
+          </th>
+          <th
             className="TableCell TableCell__header"
           >
             Last invited
-          </td>
-          <td
+          </th>
+          <th
             className="TableCell TableCell__header"
           >
             Last applied
-          </td>
+          </th>
         </tr>
       </thead>
       <tbody
@@ -5982,26 +5982,26 @@ exports[`Storyshots Design System/Table Table With Cell Right Alignment 1`] = `
       <tr
         className="TableRow"
       >
-        <td
+        <th
           className="TableCell TableCell__header"
         >
           First name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Incentives earned
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Unsubscribed
-        </td>
+        </th>
       </tr>
     </thead>
     <tbody
@@ -6170,41 +6170,41 @@ exports[`Storyshots Design System/Table Table With Compact Option 1`] = `
         <tr
           className="TableRow"
         >
-          <td
+          <th
             className="TableCell TableCell__header"
           >
             Email
-          </td>
-          <td
+          </th>
+          <th
             className="TableCell TableCell__header"
           >
             First name
-          </td>
-          <td
+          </th>
+          <th
             className="TableCell TableCell__header"
           >
             Last name
-          </td>
-          <td
+          </th>
+          <th
             className="TableCell TableCell__header"
           >
             Phone number
-          </td>
-          <td
+          </th>
+          <th
             className="TableCell TableCell__header"
           >
             Date added
-          </td>
-          <td
+          </th>
+          <th
             className="TableCell TableCell__header"
           >
             Last invited
-          </td>
-          <td
+          </th>
+          <th
             className="TableCell TableCell__header"
           >
             Last applied
-          </td>
+          </th>
         </tr>
       </thead>
       <tbody
@@ -6623,46 +6623,46 @@ exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = 
       <tr
         className="TableRow"
       >
-        <td
+        <th
           className="TableCell TableCell__header"
         >
           Email
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           First name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Phone number
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Date added
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last invited
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last applied
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Edit
-        </td>
+        </th>
       </tr>
     </thead>
     <tbody
@@ -7410,49 +7410,49 @@ exports[`Storyshots Design System/Table Table With Multiple Select 1`] = `
       <tr
         className="TableRow"
       >
-        <td
+        <th
           className="TableCell TableCell__header"
         >
           <input
             onClick={[Function]}
             type="checkbox"
           />
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Email
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           First name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Phone number
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Date added
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last invited
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last applied
-        </td>
+        </th>
       </tr>
     </thead>
     <tbody
@@ -7970,46 +7970,46 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
       <tr
         className="TableRow"
       >
-        <td
+        <th
           className="TableCell TableCell__header"
         >
           Email
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           First name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Phone number
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Date added
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last invited
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last applied
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Edit
-        </td>
+        </th>
       </tr>
     </thead>
     <tbody
@@ -8827,17 +8827,17 @@ exports[`Storyshots Design System/Table Table With Sorting 1`] = `
       <tr
         className="TableRow"
       >
-        <td
+        <th
           className="TableCell TableCell__header"
         >
           First name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Last name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Incentives earned 
@@ -8862,8 +8862,8 @@ exports[`Storyshots Design System/Table Table With Sorting 1`] = `
               />
             </svg>
           </span>
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header"
         >
           Unsubscribed 
@@ -8888,7 +8888,7 @@ exports[`Storyshots Design System/Table Table With Sorting 1`] = `
               />
             </svg>
           </span>
-        </td>
+        </th>
       </tr>
     </thead>
     <tbody
@@ -9036,7 +9036,7 @@ exports[`Storyshots Design System/Table Table With Sticky Column And Header 1`] 
       <tr
         className="TableRow"
       >
-        <td
+        <th
           className="TableCell TableCell__header TableCell--sticky-column--corner TableCell--sticky-column TableCell--sticky-row"
         >
           Email 
@@ -9077,62 +9077,62 @@ exports[`Storyshots Design System/Table Table With Sticky Column And Header 1`] 
               </svg>
             </button>
           </span>
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header TableCell--sticky-row"
         >
           First name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header TableCell--sticky-row"
         >
           Last name
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header TableCell--sticky-row"
         >
           Phone number
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header TableCell--sticky-row"
         >
           Date added
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header TableCell--sticky-row"
         >
           Last invited
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header TableCell--sticky-row"
         >
           Last applied
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header TableCell--sticky-row"
         >
           Date
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header TableCell--sticky-row"
         >
           Boolean
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header TableCell--sticky-row"
         >
           Decimal
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header TableCell--sticky-row"
         >
           Pick any
-        </td>
-        <td
+        </th>
+        <th
           className="TableCell TableCell__header TableCell--right TableCell--sticky-row"
         >
           Incentives earned
-        </td>
+        </th>
       </tr>
     </thead>
     <tbody
