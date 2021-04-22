@@ -3,8 +3,11 @@
 .TableCell {
   @include font-type-30--light();
   border-bottom: 0.06rem solid $ux-gray-200;
+  overflow: hidden;
   padding: $ux-spacing-50;
   text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 
   &__header {
     @include font-type-30--bold();

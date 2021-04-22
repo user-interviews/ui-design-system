@@ -64,6 +64,37 @@ export const BasicTable = () => (
   </Table>
 );
 
+export const TableWithFixedColumnWidths = () => (
+  <Table style={{ tableLayout: 'fixed' }}>
+    <TableHead>
+      <TableRow>
+        <TableCell header>Email</TableCell>
+        <TableCell header>First name</TableCell>
+        <TableCell header>Last name</TableCell>
+        <TableCell header>Phone number</TableCell>
+        <TableCell header>Date added</TableCell>
+        <TableCell header>Last invited</TableCell>
+        <TableCell header>Last applied</TableCell>
+      </TableRow>
+    </TableHead>
+    <TableBody>
+      {data.map(((row) => (
+        <TableRow key={row.id}>
+          {/* TODO: Wrap this TableCell in a Popover to show overflow text
+              once that component is finished */}
+          <TableCell maxWidth="12rem">{row.email} (with a max-width)</TableCell>
+          <TableCell minWidth="20rem">{row.firstName} (with a min-width)</TableCell>
+          <TableCell>{row.lastName}</TableCell>
+          <TableCell>{row.phoneNumber}</TableCell>
+          <TableCell>{row.dateAdded}</TableCell>
+          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+        </TableRow>
+      )))}
+    </TableBody>
+  </Table>
+);
+
 export const TableOnCard = () => (
   <Card
     divided

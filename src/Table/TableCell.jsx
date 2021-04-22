@@ -10,14 +10,31 @@ const TableCell = ({
   className,
   compact,
   header,
+  maxWidth,
+  minWidth,
   stickyColumn,
   stickyRow,
   ...props
-}) => (
-  <>
-    { header ? (
-      <th
-        className={classNames(
+}) => {
+  const maxWidthObj = { maxWidth };
+  const minWidthObj = { minWidth };
+ 
+  const getWidthStyling = () => {
+    if (maxWidth && minWidth) {
+      return { ...maxWidthObj, ...minWidthObj };
+    } if (maxWidth && !minWidth) {
+      return maxWidthObj;
+    } if (!maxWidth && minWidth) {
+      return minWidthObj;
+    }
+    return null;
+  };
+
+  return (
+    <>
+      { header ? (
+        <th
+          className={classNames(
     'TableCell',
     className,
     {
@@ -29,10 +46,10 @@ const TableCell = ({
       [`TableCell--sticky-row`]: !!stickyRow,
     },
     )}
-        {...props}
-      >
-        {children}
-      </th>
+          {...props}
+        >
+          {children}
+        </th>
   ) : (
     <td
       className={classNames(
@@ -47,13 +64,15 @@ const TableCell = ({
       [`TableCell--sticky-row`]: !!stickyRow,
     },
     )}
+      style={getWidthStyling()}
       {...props}
     >
       {children}
     </td>
   )}
-  </>
+    </>
   );
+};
 
 export default TableCell;
 
@@ -63,6 +82,8 @@ TableCell.propTypes = {
   className: PropTypes.string,
   compact: PropTypes.bool,
   header: PropTypes.bool,
+  maxWidth: PropTypes.string,
+  minWidth: PropTypes.string,
   stickyColumn: PropTypes.bool,
   stickyRow: PropTypes.bool,
 };
@@ -73,6 +94,8 @@ TableCell.defaultProps = {
   className: undefined,
   compact: undefined,
   header: undefined,
+  maxWidth: undefined,
+  minWidth: undefined,
   stickyColumn: undefined,
   stickyRow: undefined,
 };
