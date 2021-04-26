@@ -18,7 +18,7 @@ const TableCell = ({
 }) => {
   const maxWidthObj = { maxWidth };
   const minWidthObj = { minWidth };
- 
+
   const getWidthStyling = () => {
     if (maxWidth && minWidth) {
       return { ...maxWidthObj, ...minWidthObj };

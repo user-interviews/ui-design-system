@@ -288,7 +288,7 @@ const MultipleSelectTable = () => {
       <TableHead>
         <TableRow>
           <TableCell header>
-            <CheckboxButton onClick={() => handleCheckboxSelectAll(data)} />
+            <CheckboxButton id="checkbox" onChange={() => handleCheckboxSelectAll(data)} />
           </TableCell>
           <TableCell header>Email</TableCell>
           <TableCell header>First name</TableCell>
@@ -310,7 +310,8 @@ const MultipleSelectTable = () => {
             <TableCell>
               <CheckboxButton
                 checked={isChecked(row.id)}
-                onClick={() => handleCheckboxSelectSingle(row.id)}
+                id="checkbox"
+                onChange={() => handleCheckboxSelectSingle(row.id)}
               />
             </TableCell>
             <TableCell>{row.email}</TableCell>
@@ -440,19 +441,19 @@ const StickyColumnAndHeaderTable = () => {
   return (
     <Table>
       <TableHead>
-        <TableRow>
-          <TableCell header stickyColumn={isStickyColumn} stickyRow>Email <span style={{ float: 'right' }}><PinButton onClick={handlePinClick} /></span></TableCell>
-          <TableCell header stickyRow>First name</TableCell>
-          <TableCell header stickyRow>Last name</TableCell>
-          <TableCell header stickyRow>Phone number</TableCell>
-          <TableCell header stickyRow>Date added</TableCell>
-          <TableCell header stickyRow>Last invited</TableCell>
-          <TableCell header stickyRow>Last applied</TableCell>
-          <TableCell header stickyRow>Date</TableCell>
-          <TableCell header stickyRow>Boolean</TableCell>
-          <TableCell header stickyRow>Decimal</TableCell>
-          <TableCell header stickyRow>Pick any</TableCell>
-          <TableCell alignRight header stickyRow>Incentives earned</TableCell>
+        <TableRow stickyRow>
+          <TableCell header stickyColumn={isStickyColumn}>Email <span style={{ float: 'right' }}><PinButton onClick={handlePinClick} /></span></TableCell>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
+          <TableCell header>Date</TableCell>
+          <TableCell header>Boolean</TableCell>
+          <TableCell header>Decimal</TableCell>
+          <TableCell header>Pick any</TableCell>
+          <TableCell alignRight header>Incentives earned</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>

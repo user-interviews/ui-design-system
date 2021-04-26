@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Children, cloneElement } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
@@ -9,10 +9,19 @@ const TableRow = ({
   className,
   clickable,
   selected,
+  stickyRow,
   ...props
-}) => (
-  <tr
-    className={classNames(
+}) => {
+  const addStickyRowProp = (child) => {
+    if (!stickyRow) {
+      return child;
+    }
+      return cloneElement(child, { stickyRow });
+  };
+
+  return (
+    <tr
+      className={classNames(
     'TableRow',
     className,
     {
@@ -20,11 +29,12 @@ const TableRow = ({
       [`TableRow--clickable`]: !!clickable,
     },
     )}
-    {...props}
-  >
-    {children}
-  </tr>
+      {...props}
+    >
+      {Children.map(children, addStickyRowProp)}
+    </tr>
 );
+};
 
 export default TableRow;
 
@@ -33,6 +43,7 @@ TableRow.propTypes = {
   className: PropTypes.string,
   clickable: PropTypes.bool,
   selected: PropTypes.bool,
+  stickyRow: PropTypes.bool,
 };
 
 TableRow.defaultProps = {
@@ -40,4 +51,5 @@ TableRow.defaultProps = {
   className: undefined,
   clickable: undefined,
   selected: undefined,
+  stickyRow: undefined,
 };
