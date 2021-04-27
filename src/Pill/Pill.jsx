@@ -14,7 +14,6 @@ const Pill = ({
   href,
   icon,
   id,
-  large,
   onClose,
   text,
 }) => (
@@ -24,7 +23,6 @@ const Pill = ({
         classNames(
           'Pill',
           { [`Pill--${color}`]: !!color },
-          { [`Pill--large`]: !!large },
         )
       }
       href={href}
@@ -43,7 +41,6 @@ const Pill = ({
         classNames(
           'Pill',
           { [`Pill--${color}`]: !!color },
-          { [`Pill--large`]: !!large },
         )
       }
     >
@@ -63,7 +60,6 @@ Pill.propTypes = {
   href: PropTypes.string,
   icon: PropTypes.any,
   id: PropTypes.string,
-  large: PropTypes.bool,
   text: PropTypes.node.isRequired,
   onClose: PropTypes.func,
 };
@@ -73,7 +69,6 @@ Pill.defaultProps = {
   href: undefined,
   icon: undefined,
   id: undefined,
-  large: undefined,
   onClose: undefined,
 };
 

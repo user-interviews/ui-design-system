@@ -129,10 +129,4 @@
       padding: 0;
     }
   }
-
-  &--large {
-    @include font-type-40;
-    border-radius: 0.5rem;
-    padding: $ux-spacing-10 $ux-spacing-20;
-  }
 }
