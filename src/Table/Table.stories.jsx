@@ -7,9 +7,19 @@ import {
  Table, TableBody, TableCell, TableHead, TableRow, TableSortLabel,
 } from 'src/Table';
 
+import mdx from './Table.mdx';
+
 export default {
   title: 'Design System/Table',
   component: Table,
+  subcomponents: {
+ TableBody, TableCell, TableHead, TableRow, TableSortLabel,
+},
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 /* eslint-disable object-curly-newline */
@@ -35,7 +45,7 @@ const sortableData = [
 ];
 /* eslint-enable object-curly-newline */
 
-export const BasicTable = () => (
+export const Default = () => (
   <Table>
     <TableHead>
       <TableRow>
@@ -259,7 +269,7 @@ export const TableWithMultipleActionColumn = () => (
   </Table>
 );
 
-const MultipleSelectTable = () => {
+export const TableWithMultipleSelect = () => {
   const [selectedRows, setSelectedRows] = useState([]);
   const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] = useState(false);
 
@@ -328,10 +338,6 @@ const MultipleSelectTable = () => {
   );
 };
 
-export const TableWithMultipleSelect = () => (
-  <MultipleSelectTable />
-);
-
 export const TableWithSorting = () => (
   <Table>
     <TableHead>
@@ -371,14 +377,14 @@ export const TableWithCellRightAlignment = () => (
           <TableCell>{row.firstName}</TableCell>
           <TableCell>{row.lastName}</TableCell>
           <TableCell alignRight>{row.incentivesEarned}</TableCell>
-          <TableCell alignRight>{row.unsubscribed ? 'True' : 'False'}</TableCell>
+          <TableCell>{row.unsubscribed ? 'True' : 'False'}</TableCell>
         </TableRow>
       )))}
     </TableBody>
   </Table>
 );
 
-const CompactTable = () => {
+export const TableWithCompactOption = () => {
   const [isCompact, setIsCompact] = useState(true);
   const handleIsCompactClick = () => {
     setIsCompact((prev) => !prev);
@@ -425,11 +431,7 @@ const CompactTable = () => {
   );
 };
 
-export const TableWithCompactOption = () => (
-  <CompactTable />
-);
-
-const StickyColumnAndHeaderTable = () => {
+export const TableWithStickyColumnAndHeader = () => {
   const PinButton = ({ ...props }) => <button style={{ background: 'none', border: 'none', color: isStickyColumn ? '#337AB7' : '#A1A1A1' }} type="button" {...props}><FontAwesomeIcon icon={faThumbtack} /></button>;
 
   const [isStickyColumn, setIsStickyColumn] = useState(true);
@@ -477,7 +479,3 @@ const StickyColumnAndHeaderTable = () => {
     </Table>
    );
 };
-
-export const TableWithStickyColumnAndHeader = () => (
-  <StickyColumnAndHeaderTable />
-);

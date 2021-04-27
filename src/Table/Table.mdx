@@ -1,0 +1,207 @@
+import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
+import { Table } from './Table';
+
+# Table
+Displays sets of data. Can be fully customized. 
+
+- Tables display information that is easy to scan, so that users can look for patterns and insights
+- Tables can be embedded in various containers and primary content, such as Cards
+
+<Preview>
+  <Story id="design-system-table--default" />
+</Preview>
+
+<ArgsTable of={Table} />
+
+## Anatomy 
+
+The `Table` component aims to be closely mapped to the native `<table>` elements. As such, do try to use the `Table` and it's subcomponents as if you were building a regular table <br/>
+
+A Table is primarily made up of columns, rows, and cells
+- **Header row:** Made up of cells that act as column labels
+- **Column label:** The cell that acts as a column header and explains what type of data is in the column
+- **Data cell:** The primary component of the table. It can be filled with any type of data or content
+
+Can also have other components for additional functionality such as:
+- **Selecting:** adding a `Checkbox` as a data column for selecting multiple rows
+- **Sorting (currently WIP):** adding a `TableSortLabel` to show which columns are actively being sorted
+
+## Subcomponents
+- `Table`
+- `TableBody`
+- `TableCell`
+- `TableHead`
+- `TableRow`
+- `TableSortLabel`
+
+## Best practices
+
+**Tables should:**
+- Show values across multiple categories
+- Help users visualize and scan multiple values with ease from an entire data set
+- Minimize clutter by only including values that supports the table's purpose
+
+## Guidelines 
+
+### Implementation
+- The `Table` and its subcomponents should closely map a native `<table>`
+
+```
+***Components***
+
+<Table>
+  <TableHead>
+    <TableRow>
+      <TableCell header>Column Header 1</TableCell>
+      <TableCell header>Column Header 2</TableCell>
+    </TableRow>
+  </TableHead>
+  <TableBody>
+    <TableRow>
+      <TableCell>Data Cell 1</TableCell>
+      <TableCell>Data Cell 2</TableCell>
+    </TableRow>
+  </TableBody>
+</Table>
+
+***Native***
+
+<table>
+  <thead>
+    <tr>
+      <th>Column Header 1</th>
+      <th>Column Header 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+    </tr>
+  </tbody>
+</table>
+```
+### Alignment
+- Textual data = Left aligned (default)
+- Numerical data = Right aligned (`alignRight` prop on a `TableCell`) 
+- Align headers with their related data
+- Don't center align 
+
+### Copy 
+
+**Headers should:**
+- Be informative and descriptive
+- Scannable and concise
+- Include units of measurement symbols so they aren't repeated in the columns
+- Use sentence case (first word capitalized, rest lowercase)
+
+**Data cells should:**
+- Be scannable and concise
+- Use sentence case (first word capitalized, rest lowercase)
+
+**Decimals:**
+- Keep decimals consistent. For example, don’t use 3 decimals in one row and 2 in others
+
+**Ellipsis:**
+- Some content may overflow and be given a `text-overflow: ellipsis` property
+- Be sure to wrap these data cells in a `Popover` so that users can view extra long data values
+
+## Stories
+
+### Default
+- A simple example of a `Table`
+- In the `TableHead`, all `TableCell` components should be given a `header` prop to designate it as a column label
+
+<Preview>
+  <Story id="design-system-table--default" />
+</Preview>
+
+### Table With Fixed Column Widths
+- Create a column with a fixed width
+- By default, all content of a `TableCell` will be fully displayed with no line breaks and no set width. Whichever `TableCell` has the longest content, the width of that entire column will be set at that
+- Set `maxWidth` to limit the width of the `TableCell`
+- Set `minWidth` to provide extra space for the `TableCell`
+- `text-overflow: ellipsis` is set by default for content that exceeds the designated width. This would only be seen if `maxWidth` is set
+
+<Preview>
+  <Story id="design-system-table--table-with-fixed-column-widths" />
+</Preview>
+
+### Table On Card
+- Default `Table` on a `Card` component
+
+<Preview>
+  <Story id="design-system-table--table-on-card" />
+</Preview>
+
+### Table On Card No Padding
+- When the `Card` component has the `noPadding` prop set
+
+<Preview>
+  <Story id="design-system-table--table-on-card-no-padding" />
+</Preview>
+
+### Table With Single Action Column
+- When a row has a single action, expose the action directly (usually through a button) with a clear action verb. Otherwise a kebab should be used when multiple actions are available for a rows
+
+<Preview>
+  <Story id="design-system-table--table-with-single-action-column" />
+</Preview>
+
+### Table With Multiple Action Column
+- Kebabs should be used when there’s more than one action per row
+- If any row has one action and others more than one action, kebabs should be displayed on all rows
+
+<Preview>
+  <Story id="design-system-table--table-with-multiple-action-column" />
+</Preview>
+
+### Table With Multiple Select 
+- Checkboxes are displayed on a separate column
+- `TableRow` can be given a `clickable` prop that sets `cursor: pointer`
+- When `TableRow` prop `selected` evaluates to `true`, `background-color` is set to `$ux-blue-100`
+- Clicking the first `Checkbox` located on the header row should select or de-select all current rows displayed on the `Table`
+
+<Preview>
+  <Story id="design-system-table--table-with-multiple-select" />
+</Preview>
+
+### Table With Sorting 
+- **Currently WIP**
+- When implemented, use a `TableSortLabel` to sort the table by a column in ascending or descending order
+- *Inactive state:* Columns that are not sorted have the sort icon in blue
+- *Active state:* When users click the column heading the text turns blue and the icon changes to either an ascending or descending icon
+
+
+<Preview>
+  <Story id="design-system-table--table-with-sorting" />
+</Preview>
+
+### Table With Cell Right Alignment
+- `TableCell` can be given `alignRight` prop to align content to the right
+- Cells with numerical data should be aligned right
+
+<Preview>
+  <Story id="design-system-table--table-with-cell-right-alignment" />
+</Preview>
+
+### Table With Compact Option 
+- `TableCell` can be given a `compact` prop to reduce the size of the cell
+- This allows the `Table` to display more rows on a page
+
+<Preview>
+  <Story id="design-system-table--table-with-compact-option" />
+</Preview>
+
+### Table With Sticky Column And Header
+- A Table's header row can be made sticky to ensure column labels are always visible when the users scrolls down
+- `TableRow` can be given a single `stickyRow` prop (within `TableHead`)
+- A Table column can be made sticky to help a user keep track of which row they're currently looking at. The `TableCell` on the column that is made sticky can be given the `stickyColumn` prop (within `TableBody`)
+- The sticky column should usually be the left-most column of the Table
+- A pin icon should be displayed on a sticky column to let the user toggle between a sticky column state and a default state
+
+<Preview>
+  <Story id="design-system-table--table-with-sticky-column-and-header" />
+</Preview>
+
+

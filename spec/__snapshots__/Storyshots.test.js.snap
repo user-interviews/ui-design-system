@@ -5040,7 +5040,7 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
 </div>
 `;
 
-exports[`Storyshots Design System/Table Basic Table 1`] = `
+exports[`Storyshots Design System/Table Default 1`] = `
 <div
   style={
     Object {
@@ -6724,7 +6724,7 @@ exports[`Storyshots Design System/Table Table With Cell Right Alignment 1`] = `
           0
         </td>
         <td
-          className="TableCell TableCell--right"
+          className="TableCell"
           style={null}
         >
           False
@@ -6752,7 +6752,7 @@ exports[`Storyshots Design System/Table Table With Cell Right Alignment 1`] = `
           1
         </td>
         <td
-          className="TableCell TableCell--right"
+          className="TableCell"
           style={null}
         >
           True
@@ -6780,7 +6780,7 @@ exports[`Storyshots Design System/Table Table With Cell Right Alignment 1`] = `
           10
         </td>
         <td
-          className="TableCell TableCell--right"
+          className="TableCell"
           style={null}
         >
           True
@@ -6808,7 +6808,7 @@ exports[`Storyshots Design System/Table Table With Cell Right Alignment 1`] = `
           20
         </td>
         <td
-          className="TableCell TableCell--right"
+          className="TableCell"
           style={null}
         >
           True
@@ -6836,7 +6836,7 @@ exports[`Storyshots Design System/Table Table With Cell Right Alignment 1`] = `
           100
         </td>
         <td
-          className="TableCell TableCell--right"
+          className="TableCell"
           style={null}
         >
           False
