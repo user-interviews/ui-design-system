@@ -5,7 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './Pill.scss';
 
-const colors = ['blue', 'orange', 'yellow', 'green', 'gray', 'silver'];
+export const PILL_COLORS = {
+ BLUE: 'blue', ORANGE: 'orange', YELLOW: 'yellow', GREEN: 'green', GRAY: 'gray', SILVER: 'silver',
+};
 
 const Pill = ({
   color,
@@ -57,7 +59,7 @@ const Pill = ({
 );
 
 Pill.propTypes = {
-  color: PropTypes.oneOf(colors),
+  color: PropTypes.oneOf(Object.values(PILL_COLORS)),
   href: PropTypes.string,
   icon: PropTypes.any,
   id: PropTypes.string,
@@ -67,7 +69,7 @@ Pill.propTypes = {
 };
 
 Pill.defaultProps = {
-  color: 'blue',
+  color: PILL_COLORS.BLUE,
   href: undefined,
   icon: undefined,
   id: undefined,

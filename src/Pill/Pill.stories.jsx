@@ -8,7 +8,7 @@ import {
 } from '@storybook/addon-knobs';
 import { faUsers } from '@fortawesome/free-solid-svg-icons';
 
-import Pill from 'src/Pill';
+import { Pill, PILL_COLORS } from 'src/Pill';
 import mdx from './Pill.mdx';
 
 export default {
@@ -22,8 +22,6 @@ export default {
   },
 };
 
-const colors = ['blue', 'orange', 'yellow', 'green', 'gray', 'silver'];
-
 const handleClose = (id) => {
   action('handle close')(id);
 };
@@ -32,7 +30,7 @@ export const Default = () => (
   <div>
     <h4 style={{ marginBottom: '2rem' }}>Test Pill</h4>
     <Pill
-      color={select('Color', colors, 'blue')}
+      color={select('Color', Object.values(PILL_COLORS), PILL_COLORS.BLUE)}
       id="1"
       large={boolean('Large', false)}
       text={text('Text', 'Text')}
@@ -73,7 +71,7 @@ export const Default = () => (
 
 export const WithLeadingIcon = () => (
   <Pill
-    color={select('Color', colors, 'blue')}
+    color={select('Color', Object.values(PILL_COLORS), PILL_COLORS.BLUE)}
     icon={faUsers}
     id="2"
     large={boolean('Large', false)}
@@ -83,7 +81,7 @@ export const WithLeadingIcon = () => (
 
 export const WithClose = () => (
   <Pill
-    color={select('Color', colors, 'blue')}
+    color={select('Color', Object.values(PILL_COLORS), PILL_COLORS.BLUE)}
     id="3"
     large={boolean('Large', false)}
     text={text('Text', 'Text')}
@@ -93,7 +91,7 @@ export const WithClose = () => (
 
 export const WithLink = () => (
   <Pill
-    color={select('Color', colors, 'blue')}
+    color={select('Color', Object.values(PILL_COLORS), PILL_COLORS.BLUE)}
     href="https://www.userinterviews.com/"
     id="3"
     large={boolean('Large', false)}
