@@ -16,6 +16,19 @@ const TableCell = ({
   stickyRow,
   ...props
 }) => {
+  const getTableCellClassName = () => classNames(
+      'TableCell',
+      className,
+      {
+        [`TableCell--compact`]: !!compact,
+        [`TableCell__header`]: !!header,
+        [`TableCell--right`]: !!alignRight,
+        [`TableCell--sticky-column--corner`]: header && stickyColumn,
+        [`TableCell--sticky-column`]: !!stickyColumn,
+        [`TableCell--sticky-row`]: !!stickyRow,
+      },
+    );
+
   const maxWidthObj = { maxWidth };
   const minWidthObj = { minWidth };
 
@@ -30,47 +43,25 @@ const TableCell = ({
     return null;
   };
 
+  if (header) {
+    return (
+      <th
+        className={getTableCellClassName()}
+        {...props}
+      >
+        {children}
+      </th>
+    );
+  }
+
   return (
-    <>
-      { header ? (
-        <th
-          className={classNames(
-    'TableCell',
-    className,
-    {
-      [`TableCell--compact`]: !!compact,
-      [`TableCell__header`]: !!header,
-      [`TableCell--right`]: !!alignRight,
-      [`TableCell--sticky-column--corner`]: header && stickyColumn,
-      [`TableCell--sticky-column`]: !!stickyColumn,
-      [`TableCell--sticky-row`]: !!stickyRow,
-    },
-    )}
-          {...props}
-        >
-          {children}
-        </th>
-  ) : (
     <td
-      className={classNames(
-    'TableCell',
-    className,
-    {
-      [`TableCell--compact`]: !!compact,
-      [`TableCell__header`]: !!header,
-      [`TableCell--right`]: !!alignRight,
-      [`TableCell--sticky-column--corner`]: header && stickyColumn,
-      [`TableCell--sticky-column`]: !!stickyColumn,
-      [`TableCell--sticky-row`]: !!stickyRow,
-    },
-    )}
+      className={getTableCellClassName()}
       style={getWidthStyling()}
       {...props}
     >
       {children}
     </td>
-  )}
-    </>
   );
 };
 
