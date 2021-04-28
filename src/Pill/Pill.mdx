@@ -2,7 +2,7 @@ import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
 import { Pill } from './Pill';
 
 # Pill
-Represents an object that can be viewed with or without an icon
+Represents an object that can be viewed with or without an icon. Useful when describing or categorizing a property.
 
 <Preview>
   <Story id="design-system-pill--default" />
@@ -15,14 +15,20 @@ Represents an object that can be viewed with or without an icon
 - **Text: ** main descriptor of the pill
 - **Icon: ** relevant icon that makes it easier for users to identify (always placed left of the Text)
 - **Close: ** users have the option to clear the pill (provided by default with the presence of the `onClose` function)
+- **Link: ** an optional link to more information 
 
 ## Best practices 
 
-- TBD
+- Use to label, categorize, or organize items using keywords that describe them
+- Help users search for and find related content quickly and easily
+- Use to highlight an item's status for quick recognition 
+- Ideal to indicate meanings that users can learn and recognize across the app
 
 ## Stories
 
 ### Default
+- The default Pill and available colors
+- Use the `PILL_COLORS` constant when setting the `color` prop
 
 <Preview>
   <Story id="design-system-pill--default" />
@@ -43,7 +49,7 @@ Represents an object that can be viewed with or without an icon
 </Preview>
 
 ### With Link
-- For Pills that want to link to more information. An `<a>` tag will be rendered instead of a `<span>` if an `href` prop is provided. 
+- For Pills that link to more information. An `<a>` tag will be rendered instead of a `<span>` if an `href` prop is provided. 
 
 <Preview>
   <Story id="design-system-pill--with-link" />
