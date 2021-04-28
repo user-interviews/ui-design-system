@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import Pill from 'src/Pill';
+import { Pill, PILL_COLORS } from 'src/Pill';
 
 import './Typography.scss';
 import PropTypes from 'prop-types';
@@ -30,7 +30,7 @@ TypographyExample.propTypes = {
 const TypographyTokens = ({ tokens }) => (
   <ul>
     {
-      tokens.map((token) => <li key={token}><Pill color="blue" size="sm" text={token} /></li>)
+      tokens.map((token) => <li key={token}><Pill color={PILL_COLORS.BLUE} text={token} /></li>)
     }
   </ul>
 );
