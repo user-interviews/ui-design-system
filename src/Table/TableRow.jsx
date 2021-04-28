@@ -16,7 +16,7 @@ const TableRow = ({
     if (!stickyRow) {
       return child;
     }
-      return cloneElement(child, { stickyRow });
+    return cloneElement(child, { stickyRow });
   };
 
   return (
