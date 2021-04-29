@@ -11,7 +11,7 @@
 
   &__header {
     @include font-type-30--bold();
-    background-color: $ux-gray-100 !important;
+    background-color: $ux-gray-100;
     color: $ux-gray-800;
     padding: $ux-spacing-50;
     text-align: left;
@@ -32,6 +32,7 @@
     left: 0;
     background: $ux-white;
     box-shadow: $ux-elevations-50;
+    box-shadow: 0.5rem 0rem 1rem rgba(0, 0, 0, 0.1);;
     z-index: $z-index-10;
 
     &--corner {
