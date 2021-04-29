@@ -12,10 +12,9 @@ Represents an object that can be viewed with or without an icon. Useful when des
 
 ## Anatomy
 
-- **Text: ** main descriptor of the pill
-- **Icon: ** relevant icon that makes it easier for users to identify (always placed left of the Text)
+- **Content: ** main content area of the Pill. Can be provided plain text or a link (`<a>`) as `children`
+- **Icon: ** relevant icon that makes it easier for users to identify (always placed left of the Content)
 - **Close: ** users have the option to clear the pill (provided by default with the presence of the `onClose` function)
-- **Link: ** an optional link to more information 
 
 ## Best practices 
 
@@ -29,6 +28,7 @@ Represents an object that can be viewed with or without an icon. Useful when des
 ### Default
 - The default Pill and available colors
 - Use the `PILL_COLORS` constant when setting the `color` prop
+- If using plain text as the content, do not wrap in block-level elements (e.g. `<p>` or `div`) 
 
 <Preview>
   <Story id="design-system-pill--default" />
@@ -49,7 +49,8 @@ Represents an object that can be viewed with or without an icon. Useful when des
 </Preview>
 
 ### With Link
-- For Pills that link to more information. An `<a>` tag will be rendered instead of a `<span>` if an `href` prop is provided. 
+- For Pills that link to more information
+- The Pill accepts an `<a>` tag as a child
 
 <Preview>
   <Story id="design-system-pill--with-link" />

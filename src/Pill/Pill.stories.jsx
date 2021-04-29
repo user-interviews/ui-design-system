@@ -31,33 +31,40 @@ export const Default = () => (
     <Pill
       color={select('Color', Object.values(PILL_COLORS), PILL_COLORS.BLUE)}
       id="1"
-      text={text('Text', 'Text')}
-    />
+    >
+      {text('Text', 'Text')}
+    </Pill>
     <h4 style={{ marginBottom: '2rem', marginTop: '2rem' }}>Colors</h4>
     <Pill
       color={PILL_COLORS.BLUE}
-      text="blue"
-    />
+    >
+      blue
+    </Pill>
     <Pill
       color={PILL_COLORS.ORANGE}
-      text="orange"
-    />
+    >
+      orange
+    </Pill>
     <Pill
       color={PILL_COLORS.YELLOW}
-      text="yellow"
-    />
+    >
+      yellow
+    </Pill>
     <Pill
       color={PILL_COLORS.GREEN}
-      text="green"
-    />
+    >
+      green
+    </Pill>
     <Pill
       color={PILL_COLORS.GRAY}
-      text="gray"
-    />
+    >
+      gray
+    </Pill>
     <Pill
       color={PILL_COLORS.SILVER}
-      text="silver"
-    />
+    >
+      silver
+    </Pill>
   </div>
 );
 
@@ -66,24 +73,26 @@ export const WithLeadingIcon = () => (
     color={select('Color', Object.values(PILL_COLORS), PILL_COLORS.BLUE)}
     icon={faUsers}
     id="2"
-    text={text('Text', 'Text')}
-  />
+  >
+    {text('Text', 'Text')}
+  </Pill>
 );
 
 export const WithClose = () => (
   <Pill
     color={select('Color', Object.values(PILL_COLORS), PILL_COLORS.BLUE)}
     id="3"
-    text={text('Text', 'Text')}
     onClose={handleClose}
-  />
+  >
+    {text('Text', 'Text')}
+  </Pill>
 );
 
 export const WithLink = () => (
   <Pill
     color={select('Color', Object.values(PILL_COLORS), PILL_COLORS.BLUE)}
-    href="https://www.userinterviews.com/"
     id="3"
-    text={text('Text', 'Visit our site')}
-  />
+  >
+    <a href="https://www.userinterviews.com/" rel="noreferrer" target="_blank">{text('Link text', 'Visit our site')}</a>
+  </Pill>
 );

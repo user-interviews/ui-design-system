@@ -2374,12 +2374,17 @@ exports[`Storyshots Design System/Pill With Link 1`] = `
     }
   }
 >
-  <a
+  <span
     className="Pill Pill--blue"
-    href="https://www.userinterviews.com/"
   >
-    Visit our site
-  </a>
+    <a
+      href="https://www.userinterviews.com/"
+      rel="noreferrer"
+      target="_blank"
+    >
+      Visit our site
+    </a>
+  </span>
 </div>
 `;
 
@@ -3240,23 +3245,20 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-70
-          </span>
+            text="font-type-70"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-70--bold
-          </span>
+            text="font-type-70--bold"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-70--light
-          </span>
+            text="font-type-70--light"
+          />
         </li>
       </ul>
     </div>
@@ -3315,23 +3317,20 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-60
-          </span>
+            text="font-type-60"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-60--bold
-          </span>
+            text="font-type-60--bold"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-60--light
-          </span>
+            text="font-type-60--light"
+          />
         </li>
       </ul>
     </div>
@@ -3390,23 +3389,20 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-50
-          </span>
+            text="font-type-50"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-50--bold
-          </span>
+            text="font-type-50--bold"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-50--light
-          </span>
+            text="font-type-50--light"
+          />
         </li>
       </ul>
     </div>
@@ -3465,23 +3461,20 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-40
-          </span>
+            text="font-type-40"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-40--bold
-          </span>
+            text="font-type-40--bold"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-40--light
-          </span>
+            text="font-type-40--light"
+          />
         </li>
       </ul>
     </div>
@@ -3540,23 +3533,20 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-30
-          </span>
+            text="font-type-30"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-30--bold
-          </span>
+            text="font-type-30--bold"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-30--light
-          </span>
+            text="font-type-30--light"
+          />
         </li>
       </ul>
     </div>
@@ -3615,23 +3605,20 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-20
-          </span>
+            text="font-type-20"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-20--bold
-          </span>
+            text="font-type-20--bold"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-20--light
-          </span>
+            text="font-type-20--light"
+          />
         </li>
       </ul>
     </div>
@@ -3698,23 +3685,20 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-10
-          </span>
+            text="font-type-10"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-10--bold
-          </span>
+            text="font-type-10--bold"
+          />
         </li>
         <li>
           <span
             className="Pill Pill--blue"
-          >
-            font-type-10--light
-          </span>
+            text="font-type-10--light"
+          />
         </li>
       </ul>
     </div>
