@@ -15,6 +15,7 @@ const Pill = ({
   icon,
   id,
   onClose,
+  text,
   ...props
 }) => (
   <span
@@ -30,6 +31,7 @@ const Pill = ({
     <FontAwesomeIcon className="Pill__icon--lead" icon={icon} />
       )}
     { children }
+    { text }
     { onClose && (
       <button className="Pill__button--close" type="button" onClick={() => onClose(id)}> &times;</button>
         )}
@@ -37,17 +39,20 @@ const Pill = ({
   );
 
 Pill.propTypes = {
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   color: PropTypes.oneOf(Object.values(PILL_COLORS)),
   icon: PropTypes.any,
   id: PropTypes.string,
+  text: PropTypes.node,
   onClose: PropTypes.func,
 };
 
 Pill.defaultProps = {
+  children: undefined,
   color: PILL_COLORS.BLUE,
   icon: undefined,
   id: undefined,
+  text: undefined,
   onClose: undefined,
 };
 
