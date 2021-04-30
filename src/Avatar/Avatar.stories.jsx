@@ -104,10 +104,12 @@ export const WithImage = () => (
   <div>
     <Avatar
       image="https://avatars.dicebear.com/api/avataaars/1234.svg"
+      initials="RR"
       large
     />
     <Avatar
       image="https://avatars.dicebear.com/api/avataaars/1234.svg"
+      initials="RR"
     />
   </div>
 );
