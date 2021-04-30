@@ -5,12 +5,14 @@ import CheckboxButton from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
+import EllipsisIcon from 'src/EllipsisIcon';
 import FadeTransition from 'src/FadeTransition';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
+import KebabDropdown from 'src/KebabDropdown';
 import {
   Modal,
   MODAL_SIZES,
@@ -47,12 +49,14 @@ export {
   CheckboxButtonGroup,
   CopyToClipboard,
   CopyToClipboardButton,
+  EllipsisIcon,
   FadeTransition,
   Form,
   FormControlLabel,
   FormGroup,
   Input,
   InputLabel,
+  KebabDropdown,
   MessageTypes,
   Modal,
   MODAL_SIZES,
