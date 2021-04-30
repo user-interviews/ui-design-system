@@ -5040,6 +5040,6787 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Table Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <th
+          className="TableCell TableCell__header"
+        />
+        <th
+          className="TableCell TableCell__header"
+        >
+          Status
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Email
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          First name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Phone number
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Date added
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last invited
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last applied
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        />
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Approved
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/22/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          3 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            New
+          </span>
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Approved
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          basel123@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Basel
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Fakhoury
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +467234460393409
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          04/08/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        />
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Paid
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          bob456@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Bob
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Saris
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/26/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        />
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Confirmed
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          dennis789@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Dennis
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Meng
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          12/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          6 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          5 days ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            New
+          </span>
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Confirmed
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          erin007@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Erin
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          May
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1499090234
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          23 days ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            New
+          </span>
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Qualified
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          jh247@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          John-Henry
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Forster
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1888938488
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/14/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            New
+          </span>
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Approved
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          jason909085119@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Jason
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Basuil
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/01/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            New
+          </span>
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Qualified
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          rachel777@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Rachel
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Rapollo
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +40988881822329308
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          07/21/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            New
+          </span>
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Approved
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          jojo330@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          JoJo
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Lee
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1898374888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/17/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            New
+          </span>
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Approved
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          faus555@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Faustino
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Gaitan
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +90918394789
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          06/13/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Design System/Table Table On Card 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card Card--lg Card--divided"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        Email Template Sets
+      </h2>
+    </div>
+    <hr
+      className="Card__divider"
+    />
+    <h3
+      className="Card__subtitle"
+    >
+      Manage a set of templates that can be applied to a project’s automated emails.
+    </h3>
+    <div
+      id="Some table container"
+      style={
+        Object {
+          "display": "block",
+          "maxWidth": "fit-content",
+          "overflowX": "auto",
+          "overflowY": "auto",
+          "whiteSpace": "nowrap",
+        }
+      }
+    >
+      <table
+        className="Table"
+      >
+        <thead
+          className="TableHead"
+        >
+          <tr
+            className="TableRow"
+          >
+            <th
+              className="TableCell TableCell__header"
+            >
+              Email
+            </th>
+            <th
+              className="TableCell TableCell__header"
+            >
+              First name
+            </th>
+            <th
+              className="TableCell TableCell__header"
+            >
+              Last name
+            </th>
+            <th
+              className="TableCell TableCell__header"
+            >
+              Phone number
+            </th>
+            <th
+              className="TableCell TableCell__header"
+            >
+              Date added
+            </th>
+            <th
+              className="TableCell TableCell__header"
+            >
+              Last invited
+            </th>
+            <th
+              className="TableCell TableCell__header"
+            >
+              Last applied
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="TableBody"
+        >
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              riley@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Riley
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Researcher
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +18888888888
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              01/22/2021
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              3 days ago
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              1 day ago
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              basel123@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Basel
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Fakhoury
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +467234460393409
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              04/08/2020
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              bob456@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Bob
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Saris
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              01/26/2020
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              2 days ago
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              dennis789@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Dennis
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Meng
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              12/21/2020
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              6 days ago
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              5 days ago
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              erin007@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Erin
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              May
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +1499090234
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              09/21/2020
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              23 days ago
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              jh247@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              John-Henry
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Forster
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +1888938488
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              03/14/2021
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              jason909085119@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Jason
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Basuil
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              01/01/2021
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              rachel777@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Rachel
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Rapollo
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +40988881822329308
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              07/21/2019
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              jojo330@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              JoJo
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Lee
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +1898374888
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              09/17/2020
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              1 day ago
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              2 days ago
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              faus555@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Faustino
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Gaitan
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +90918394789
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              06/13/2019
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Design System/Table Table On Card No Padding 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card Card--lg Card--no-padding"
+  >
+    <div
+      className="Card__header"
+    />
+    <div
+      id="Some table container"
+      style={
+        Object {
+          "display": "block",
+          "maxWidth": "fit-content",
+          "overflowX": "auto",
+          "overflowY": "auto",
+          "whiteSpace": "nowrap",
+        }
+      }
+    >
+      <table
+        className="Table"
+      >
+        <thead
+          className="TableHead"
+        >
+          <tr
+            className="TableRow"
+          >
+            <th
+              className="TableCell TableCell__header"
+            >
+              Email
+            </th>
+            <th
+              className="TableCell TableCell__header"
+            >
+              First name
+            </th>
+            <th
+              className="TableCell TableCell__header"
+            >
+              Last name
+            </th>
+            <th
+              className="TableCell TableCell__header"
+            >
+              Phone number
+            </th>
+            <th
+              className="TableCell TableCell__header"
+            >
+              Date added
+            </th>
+            <th
+              className="TableCell TableCell__header"
+            >
+              Last invited
+            </th>
+            <th
+              className="TableCell TableCell__header"
+            >
+              Last applied
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          className="TableBody"
+        >
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              riley@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Riley
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Researcher
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +18888888888
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              01/22/2021
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              3 days ago
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              1 day ago
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              basel123@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Basel
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Fakhoury
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +467234460393409
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              04/08/2020
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              bob456@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Bob
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Saris
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              01/26/2020
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              2 days ago
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              dennis789@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Dennis
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Meng
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              12/21/2020
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              6 days ago
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              5 days ago
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              erin007@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Erin
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              May
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +1499090234
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              09/21/2020
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              23 days ago
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              jh247@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              John-Henry
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Forster
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +1888938488
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              03/14/2021
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              jason909085119@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Jason
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Basuil
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              01/01/2021
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              rachel777@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Rachel
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Rapollo
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +40988881822329308
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              07/21/2019
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              jojo330@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              JoJo
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Lee
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +1898374888
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              09/17/2020
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              1 day ago
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              2 days ago
+            </td>
+          </tr>
+          <tr
+            className="TableRow"
+          >
+            <td
+              className="TableCell"
+              style={null}
+            >
+              faus555@userinterviews.com
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Faustino
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              Gaitan
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              +90918394789
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              06/13/2019
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+            <td
+              className="TableCell"
+              style={null}
+            >
+              -
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Design System/Table Table With Cell Right Alignment 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <th
+          className="TableCell TableCell__header"
+        >
+          First name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Incentives earned
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Unsubscribed
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Anna
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Boston
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          0
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          False
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Carly
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Dixon
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          1
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Erin
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Fitzgerald
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          10
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Gregg
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Harris
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          20
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Izzie
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Jackson
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          100
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          False
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Design System/Table Table With Compact Option 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div>
+    <button
+      onClick={[Function]}
+      style={
+        Object {
+          "background": "none",
+          "border": "1px solid #337AB7",
+          "borderRadius": "4px",
+          "color": "#337AB7",
+          "fontWeight": "700",
+          "marginBottom": "16px",
+          "padding": "4px 8px",
+        }
+      }
+      type="button"
+    >
+      Toggle density
+    </button>
+    <p>
+      Compact
+    </p>
+    <table
+      className="Table"
+    >
+      <thead
+        className="TableHead"
+      >
+        <tr
+          className="TableRow"
+        >
+          <th
+            className="TableCell TableCell__header"
+          />
+          <th
+            className="TableCell TableCell__header"
+          >
+            Email
+          </th>
+          <th
+            className="TableCell TableCell__header"
+          >
+            First name
+          </th>
+          <th
+            className="TableCell TableCell__header"
+          >
+            Last name
+          </th>
+          <th
+            className="TableCell TableCell__header"
+          >
+            Phone number
+          </th>
+          <th
+            className="TableCell TableCell__header"
+          >
+            Date added
+          </th>
+          <th
+            className="TableCell TableCell__header"
+          >
+            Last invited
+          </th>
+          <th
+            className="TableCell TableCell__header"
+          >
+            Last applied
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className="TableBody"
+      >
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+            style={null}
+          />
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            riley@userinterviews.com
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Riley
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Researcher
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            +18888888888
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            01/22/2021
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            3 days ago
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            1 day ago
+          </td>
+        </tr>
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+            style={null}
+          >
+            <span
+              className="Pill Pill--blue"
+            >
+              New
+            </span>
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            basel123@userinterviews.com
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Basel
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Fakhoury
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            +467234460393409
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            04/08/2020
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            -
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            -
+          </td>
+        </tr>
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+            style={null}
+          />
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            bob456@userinterviews.com
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Bob
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Saris
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            01/26/2020
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            2 days ago
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            -
+          </td>
+        </tr>
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+            style={null}
+          />
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            dennis789@userinterviews.com
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Dennis
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Meng
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            12/21/2020
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            6 days ago
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            5 days ago
+          </td>
+        </tr>
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+            style={null}
+          >
+            <span
+              className="Pill Pill--blue"
+            >
+              New
+            </span>
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            erin007@userinterviews.com
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Erin
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            May
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            +1499090234
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            09/21/2020
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            -
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            23 days ago
+          </td>
+        </tr>
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+            style={null}
+          >
+            <span
+              className="Pill Pill--blue"
+            >
+              New
+            </span>
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            jh247@userinterviews.com
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            John-Henry
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Forster
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            +1888938488
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            03/14/2021
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            -
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            -
+          </td>
+        </tr>
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+            style={null}
+          >
+            <span
+              className="Pill Pill--blue"
+            >
+              New
+            </span>
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            jason909085119@userinterviews.com
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Jason
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Basuil
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            01/01/2021
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            -
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            -
+          </td>
+        </tr>
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+            style={null}
+          >
+            <span
+              className="Pill Pill--blue"
+            >
+              New
+            </span>
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            rachel777@userinterviews.com
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Rachel
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Rapollo
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            +40988881822329308
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            07/21/2019
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            -
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            -
+          </td>
+        </tr>
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+            style={null}
+          >
+            <span
+              className="Pill Pill--blue"
+            >
+              New
+            </span>
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            jojo330@userinterviews.com
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            JoJo
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Lee
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            +1898374888
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            09/17/2020
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            1 day ago
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            2 days ago
+          </td>
+        </tr>
+        <tr
+          className="TableRow"
+        >
+          <td
+            className="TableCell"
+            style={null}
+          >
+            <span
+              className="Pill Pill--blue"
+            >
+              New
+            </span>
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            faus555@userinterviews.com
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Faustino
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            Gaitan
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            +90918394789
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            06/13/2019
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            -
+          </td>
+          <td
+            className="TableCell TableCell--compact"
+            style={null}
+          >
+            -
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Table Table With Fixed Column Widths 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+    style={
+      Object {
+        "tableLayout": "fixed",
+      }
+    }
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <th
+          className="TableCell TableCell__header"
+        >
+          Email
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          First name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Phone number
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Date added
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last invited
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last applied
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "maxWidth": "12rem",
+            }
+          }
+        >
+          riley@userinterviews.com
+           (with a max-width)
+        </td>
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "minWidth": "20rem",
+            }
+          }
+        >
+          Riley
+           (with a min-width)
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/22/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          3 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "maxWidth": "12rem",
+            }
+          }
+        >
+          basel123@userinterviews.com
+           (with a max-width)
+        </td>
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "minWidth": "20rem",
+            }
+          }
+        >
+          Basel
+           (with a min-width)
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Fakhoury
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +467234460393409
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          04/08/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "maxWidth": "12rem",
+            }
+          }
+        >
+          bob456@userinterviews.com
+           (with a max-width)
+        </td>
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "minWidth": "20rem",
+            }
+          }
+        >
+          Bob
+           (with a min-width)
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Saris
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/26/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "maxWidth": "12rem",
+            }
+          }
+        >
+          dennis789@userinterviews.com
+           (with a max-width)
+        </td>
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "minWidth": "20rem",
+            }
+          }
+        >
+          Dennis
+           (with a min-width)
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Meng
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          12/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          6 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          5 days ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "maxWidth": "12rem",
+            }
+          }
+        >
+          erin007@userinterviews.com
+           (with a max-width)
+        </td>
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "minWidth": "20rem",
+            }
+          }
+        >
+          Erin
+           (with a min-width)
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          May
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1499090234
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          23 days ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "maxWidth": "12rem",
+            }
+          }
+        >
+          jh247@userinterviews.com
+           (with a max-width)
+        </td>
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "minWidth": "20rem",
+            }
+          }
+        >
+          John-Henry
+           (with a min-width)
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Forster
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1888938488
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/14/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "maxWidth": "12rem",
+            }
+          }
+        >
+          jason909085119@userinterviews.com
+           (with a max-width)
+        </td>
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "minWidth": "20rem",
+            }
+          }
+        >
+          Jason
+           (with a min-width)
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Basuil
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/01/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "maxWidth": "12rem",
+            }
+          }
+        >
+          rachel777@userinterviews.com
+           (with a max-width)
+        </td>
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "minWidth": "20rem",
+            }
+          }
+        >
+          Rachel
+           (with a min-width)
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Rapollo
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +40988881822329308
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          07/21/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "maxWidth": "12rem",
+            }
+          }
+        >
+          jojo330@userinterviews.com
+           (with a max-width)
+        </td>
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "minWidth": "20rem",
+            }
+          }
+        >
+          JoJo
+           (with a min-width)
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Lee
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1898374888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/17/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "maxWidth": "12rem",
+            }
+          }
+        >
+          faus555@userinterviews.com
+           (with a max-width)
+        </td>
+        <td
+          className="TableCell"
+          style={
+            Object {
+              "minWidth": "20rem",
+            }
+          }
+        >
+          Faustino
+           (with a min-width)
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Gaitan
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +90918394789
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          06/13/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Design System/Table Table With Multiple Action Column 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <th
+          className="TableCell TableCell__header"
+        >
+          Email
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          First name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Phone number
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Date added
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last invited
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last applied
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Edit
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/22/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          3 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            aria-label="kebab button"
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          basel123@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Basel
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Fakhoury
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +467234460393409
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          04/08/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            aria-label="kebab button"
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          bob456@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Bob
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Saris
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/26/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            aria-label="kebab button"
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          dennis789@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Dennis
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Meng
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          12/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          6 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          5 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            aria-label="kebab button"
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          erin007@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Erin
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          May
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1499090234
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          23 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            aria-label="kebab button"
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          jh247@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          John-Henry
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Forster
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1888938488
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/14/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            aria-label="kebab button"
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          jason909085119@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Jason
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Basuil
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/01/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            aria-label="kebab button"
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          rachel777@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Rachel
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Rapollo
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +40988881822329308
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          07/21/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            aria-label="kebab button"
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          jojo330@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          JoJo
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Lee
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1898374888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/17/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            aria-label="kebab button"
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          faus555@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Faustino
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Gaitan
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +90918394789
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          06/13/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            aria-label="kebab button"
+            style={
+              Object {
+                "background": "none",
+                "border": "none",
+                "color": "#337AB7",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+              data-icon="ellipsis-v"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 192 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Design System/Table Table With Multiple Select 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <th
+          className="TableCell TableCell__header"
+        >
+          <input
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Email
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          First name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Phone number
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Date added
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last invited
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last applied
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/22/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          3 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          basel123@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Basel
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Fakhoury
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +467234460393409
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          04/08/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          bob456@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Bob
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Saris
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/26/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          dennis789@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Dennis
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Meng
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          12/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          6 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          5 days ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          erin007@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Erin
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          May
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1499090234
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          23 days ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          jh247@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          John-Henry
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Forster
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1888938488
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/14/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          jason909085119@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Jason
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Basuil
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/01/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          rachel777@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Rachel
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Rapollo
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +40988881822329308
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          07/21/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          jojo330@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          JoJo
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Lee
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1898374888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/17/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          faus555@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Faustino
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Gaitan
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +90918394789
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          06/13/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <th
+          className="TableCell TableCell__header"
+        >
+          Email
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          First name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Phone number
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Date added
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last invited
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last applied
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Edit
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/22/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          3 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          basel123@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Basel
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Fakhoury
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +467234460393409
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          04/08/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          bob456@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Bob
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Saris
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/26/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          dennis789@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Dennis
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Meng
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          12/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          6 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          5 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          erin007@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Erin
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          May
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1499090234
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          23 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          jh247@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          John-Henry
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Forster
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1888938488
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/14/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          jason909085119@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Jason
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Basuil
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/01/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          rachel777@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Rachel
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Rapollo
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +40988881822329308
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          07/21/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          jojo330@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          JoJo
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Lee
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1898374888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/17/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          faus555@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Faustino
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Gaitan
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +90918394789
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          06/13/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Design System/Table Table With Sorting 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <th
+          className="TableCell TableCell__header"
+        >
+          First name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Last name
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Incentives earned 
+          <span
+            className="TableSortLabel"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-sort fa-w-10 "
+              data-icon="sort"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 320 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </span>
+        </th>
+        <th
+          className="TableCell TableCell__header"
+        >
+          Unsubscribed 
+          <span
+            className="TableSortLabel"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-sort fa-w-10 "
+              data-icon="sort"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 320 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41 288h238c21.4 0 32.1 25.9 17 41L177 448c-9.4 9.4-24.6 9.4-33.9 0L24 329c-15.1-15.1-4.4-41 17-41zm255-105L177 64c-9.4-9.4-24.6-9.4-33.9 0L24 183c-15.1 15.1-4.4 41 17 41h238c21.4 0 32.1-25.9 17-41z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+          </span>
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Anna
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Boston
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          0
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          False
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Carly
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Dixon
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Erin
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Fitzgerald
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          10
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Gregg
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Harris
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          20
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Izzie
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Jackson
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          100
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          False
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Design System/Table Table With Sticky Column And Header 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <th
+          className="TableCell TableCell__header TableCell--sticky-column--corner TableCell--sticky-column TableCell--sticky-row"
+        >
+          Email 
+          <span
+            style={
+              Object {
+                "float": "right",
+              }
+            }
+          >
+            <button
+              onClick={[Function]}
+              style={
+                Object {
+                  "background": "none",
+                  "border": "none",
+                  "color": "#337AB7",
+                }
+              }
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-thumbtack fa-w-12 "
+                data-icon="thumbtack"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 384 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </button>
+          </span>
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          First name
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Last name
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Phone number
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Date added
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Last invited
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Last applied
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Date
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Boolean
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Decimal
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Pick any
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--right TableCell--sticky-row"
+        >
+          Incentives earned
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/22/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          3 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          5
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          basel123@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Basel
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Fakhoury
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +467234460393409
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          04/08/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          5
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          bob456@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Bob
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Saris
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/26/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          5
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          dennis789@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Dennis
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Meng
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          12/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          6 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          5 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          5
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          erin007@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Erin
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          May
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1499090234
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          23 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          5
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          jh247@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          John-Henry
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Forster
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1888938488
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/14/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          5
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          jason909085119@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Jason
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Basuil
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/01/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          5
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          rachel777@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Rachel
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Rapollo
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +40988881822329308
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          07/21/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          5
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          jojo330@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          JoJo
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Lee
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1898374888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/17/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          5
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          faus555@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Faustino
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Gaitan
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +90918394789
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          06/13/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right"
+          style={null}
+        >
+          5
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Storyshots Design System/Toast Manual Dismiss Toast 1`] = `
 <div
   style={
