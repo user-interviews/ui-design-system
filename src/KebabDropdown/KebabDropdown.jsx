@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import EllipsisIcon from '../EllipsisIcon';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEllipsisV } from '@fortawesome/free-solid-svg-icons';
 
 const KebabDropdown = ({
   ariaLabel,
@@ -16,7 +17,7 @@ const KebabDropdown = ({
       data-toggle="dropdown"
       type="button"
     >
-      <EllipsisIcon />
+      <FontAwesomeIcon icon={faEllipsisV} />
     </button>
     <span
       aria-label={ariaLabel}

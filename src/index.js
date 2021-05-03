@@ -5,7 +5,6 @@ import CheckboxButton from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
-import EllipsisIcon from 'src/EllipsisIcon';
 import FadeTransition from 'src/FadeTransition';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
@@ -49,7 +48,6 @@ export {
   CheckboxButtonGroup,
   CopyToClipboard,
   CopyToClipboardButton,
-  EllipsisIcon,
   FadeTransition,
   Form,
   FormControlLabel,
