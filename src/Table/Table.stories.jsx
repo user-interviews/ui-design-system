@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import Card from 'src/Card';
 import CheckboxButton from 'src/CheckboxButton';
-import Pill from 'src/Pill';
+import { Pill } from 'src/Pill';
 import {
  Table, TableBody, TableCell, TableHead, TableRow, TableSortLabel,
 } from 'src/Table';
