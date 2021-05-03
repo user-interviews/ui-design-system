@@ -25,12 +25,6 @@ const StyledH3 = styled.h3`
     border-bottom: 1px solid #000;
 `;
 
-const h3Styles = {
-  margin: '2rem 0',
-  paddingBottom: '.5rem',
-  borderBottom: '1px solid #000',
-};
-
 export const Default = () => (
   <>
     <StyledH3>Button Types</StyledH3>
@@ -87,7 +81,7 @@ export const Default = () => (
     <Button variant="ghost-delete">Delete Ghost</Button>
     <Button variant="embedded-delete">Delete Embedded</Button>
 
-    <h3 style={ h3Styles }>Button Styles</h3>
+    <StyledH3>Button Styles</StyledH3>
 
     <h4 style={{ margin: '2rem 0' }}>Default</h4>
 
