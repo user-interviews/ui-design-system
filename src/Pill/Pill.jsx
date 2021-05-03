@@ -2,52 +2,60 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import './Pill.scss';
 
-const colors = ['blue', 'orange', 'yellow', 'green', 'gray', 'silver'];
+export const PILL_COLORS = {
+ BLUE: 'blue', ORANGE: 'orange', YELLOW: 'yellow', GREEN: 'green', GRAY: 'gray', SILVER: 'silver',
+};
 
 const Pill = ({
+  children,
   color,
   icon,
   id,
-  large,
   onClose,
   text,
+  ...props
 }) => (
   <span
     className={
-      classNames(
-        'Pill',
-        { [`Pill--${color}`]: !!color },
-        { [`Pill--large`]: !!large },
-      )
-    }
+        classNames(
+          'Pill',
+          { [`Pill--${color}`]: !!color },
+        )
+      }
+    {...props}
   >
     { icon && (
-      <FontAwesomeIcon className="Pill__icon--lead" icon={icon} />
-    )}
-    {text}
-    { onClose && (
-    <button className="Pill__button--close" type="button" onClick={() => onClose(id)}> &times;</button>
+    <FontAwesomeIcon className="Pill__icon--lead" icon={icon} />
       )}
+    { children }
+    { text }
+    { onClose && (
+      <button className="Pill__button--close" type="button" onClick={() => onClose(id)}>
+        <FontAwesomeIcon icon={faTimes} />
+      </button>
+        )}
   </span>
-);
+  );
 
 Pill.propTypes = {
-  color: PropTypes.oneOf(colors),
+  children: PropTypes.node,
+  color: PropTypes.oneOf(Object.values(PILL_COLORS)),
   icon: PropTypes.any,
   id: PropTypes.string,
-  large: PropTypes.bool,
-  text: PropTypes.node.isRequired,
+  text: PropTypes.node,
   onClose: PropTypes.func,
 };
 
 Pill.defaultProps = {
-  color: 'blue',
+  children: undefined,
+  color: PILL_COLORS.BLUE,
   icon: undefined,
   id: undefined,
-  large: undefined,
+  text: undefined,
   onClose: undefined,
 };
 
