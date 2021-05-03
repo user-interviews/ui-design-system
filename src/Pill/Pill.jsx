@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
 import './Pill.scss';
 
@@ -33,7 +34,9 @@ const Pill = ({
     { children }
     { text }
     { onClose && (
-      <button className="Pill__button--close" type="button" onClick={() => onClose(id)}> &times;</button>
+      <button className="Pill__button--close" type="button" onClick={() => onClose(id)}>
+        <FontAwesomeIcon icon={faTimes} />
+      </button>
         )}
   </span>
   );
