@@ -28,7 +28,8 @@ Represents an object that can be viewed with or without an icon. Useful when des
 ### Default
 - The default Pill and available colors
 - Use the `PILL_COLORS` constant when setting the `color` prop
-- If using plain text as the content, do not wrap in block-level elements (e.g. `<p>` or `div`) 
+- Can use either the `text` prop or provide an element via `children` for content. (Note: the `text` prop is planned to be retired in favor of `children` in a future release)
+- If using plain text or an element as the content via `children`, do not wrap in block-level elements (e.g. `<p>` or `div`) 
 
 <Preview>
   <Story id="design-system-pill--default" />
