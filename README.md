@@ -50,6 +50,12 @@ Development-wise, I think we should always strive for universal changes if compo
 
 Keeping the design system relevant is important for consistency in our app. Core product requirements should still take priority, but we should make the design system updates necessary for each effort before tackling nice-to-haves. 
 
+## ✏️ How do we write stories and documentation?
+
+- For every component, we typically separate each variant out into its own story that gets exported. 
+- Documentation lives in `Component.mdx` which references stories defined in `Component.stories.jsx`. See documentation style here in [Stories with arbitrary MDX](https://github.com/storybookjs/storybook/blob/master/addons/docs/docs/recipes.md#csf-stories-with-arbitrary-mdx).
+- See our [Storybook Notion Doc](https://www.notion.so/userinterviews1/Storybook-9a3585db57514ec783e39c78518ad5e6) for examples. 
+
 # Future additions to this document
 
 ## ⚙️ How do we update the design system?
