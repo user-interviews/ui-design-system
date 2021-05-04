@@ -45,6 +45,7 @@ export default function FormGroup(props) {
         props.className, {
           'FormGroup--is-invalid': hasErrors,
           'FormGroup--bordered': props.bordered,
+          'FormGroup--inline': props.inline,
         },
       )}
       id={props.id}

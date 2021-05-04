@@ -36,6 +36,20 @@
     }
   }
 
+  &--inline {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    .InputLabel {
+      margin-right: 1rem;
+    }
+
+    .FormControlLabel {
+      white-space: nowrap;
+    }
+  }
+
   &__helper-text {
     @include font-type-20;
     color: $ux-gray-800;

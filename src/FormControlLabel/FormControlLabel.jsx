@@ -58,7 +58,7 @@ FormControlLabel.propTypes = {
 };
 
 FormControlLabel.defaultProps = {
-  bordered: false,
+  bordered: undefined,
   checked: undefined,
   className: undefined,
   disabled: undefined,
