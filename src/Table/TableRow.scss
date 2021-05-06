@@ -2,7 +2,9 @@
 
 .TableRow {
   &:hover {
-    background-color: $ux-gray-100;
+    td {
+      background-color: $ux-gray-100;
+    }
   }
 
   &--clickable {
@@ -10,9 +12,13 @@
   }
 
   &--selected {
-    background-color: $ux-blue-100;
+    td {
+      background-color: $ux-blue-100;
+    } 
     &:hover {
-      background-color: $ux-blue-200;
+      td {
+        background-color: $ux-blue-200;
+      }
     }
   }
 }

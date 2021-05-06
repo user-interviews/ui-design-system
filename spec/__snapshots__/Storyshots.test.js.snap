@@ -9794,6 +9794,694 @@ exports[`Storyshots Design System/Table Table With Multiple Select 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Table Table With Multiple Select And Sticky Column And Header 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          <input
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-column--corner TableCell--sticky-column TableCell--sticky-row"
+        >
+          Email 
+          <span
+            style={
+              Object {
+                "float": "right",
+              }
+            }
+          >
+            <button
+              onClick={[Function]}
+              style={
+                Object {
+                  "background": "none",
+                  "border": "none",
+                  "color": "#337AB7",
+                }
+              }
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-thumbtack fa-w-12 "
+                data-icon="thumbtack"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 384 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </button>
+          </span>
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          First name
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Last name
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Phone number
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Date added
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Last invited
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+        >
+          Last applied
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/22/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          3 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          basel123@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Basel
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Fakhoury
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +467234460393409
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          04/08/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          bob456@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Bob
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Saris
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/26/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          dennis789@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Dennis
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Meng
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          12/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          6 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          5 days ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          erin007@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Erin
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          May
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1499090234
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          23 days ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          jh247@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          John-Henry
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Forster
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1888938488
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          03/14/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          jason909085119@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Jason
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Basuil
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          01/01/2021
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          rachel777@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Rachel
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Rapollo
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +40988881822329308
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          07/21/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          jojo330@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          JoJo
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Lee
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +1898374888
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          09/17/2020
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          1 day ago
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          2 days ago
+        </td>
+      </tr>
+      <tr
+        className="TableRow TableRow--clickable"
+        onClick={[Function]}
+      >
+        <td
+          className="TableCell"
+          style={null}
+        >
+          <input
+            checked={false}
+            id="checkbox"
+            onChange={[Function]}
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={null}
+        >
+          faus555@userinterviews.com
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Faustino
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          Gaitan
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          +90918394789
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          06/13/2019
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={null}
+        >
+          -
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
 exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
 <div
   style={

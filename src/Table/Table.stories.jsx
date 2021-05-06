@@ -274,6 +274,55 @@ export const TableWithMultipleActionColumn = () => (
   </Table>
 );
 
+export const TableWithStickyColumnAndHeader = () => {
+  const PinButton = ({ ...props }) => <button style={{ background: 'none', border: 'none', color: isStickyColumn ? '#337AB7' : '#A1A1A1' }} type="button" {...props}><FontAwesomeIcon icon={faThumbtack} /></button>;
+
+  const [isStickyColumn, setIsStickyColumn] = useState(true);
+
+  const handlePinClick = () => {
+    setIsStickyColumn((prev) => !prev);
+  };
+
+  return (
+    <Table>
+      <TableHead>
+        <TableRow stickyRow>
+          <TableCell header stickyColumn={isStickyColumn}>Email <span style={{ float: 'right' }}><PinButton onClick={handlePinClick} /></span></TableCell>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
+          <TableCell header>Date</TableCell>
+          <TableCell header>Boolean</TableCell>
+          <TableCell header>Decimal</TableCell>
+          <TableCell header>Pick any</TableCell>
+          <TableCell alignRight header>Incentives earned</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map(((row) => (
+          <TableRow key={row.id}>
+            <TableCell stickyColumn={isStickyColumn}>{row.email}</TableCell>
+            <TableCell>{row.firstName}</TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell>{row.phoneNumber}</TableCell>
+            <TableCell>{row.dateAdded}</TableCell>
+            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+            <TableCell>{row.date}</TableCell>
+            <TableCell>{row.boolean ? 'True' : `-`}</TableCell>
+            <TableCell>{row.decimal ? 'True' : `-`}</TableCell>
+            <TableCell>{row.pickAny ? 'True' : `-`}</TableCell>
+            <TableCell alignRight>{row.incentivesEarned}</TableCell>
+          </TableRow>
+        )))}
+      </TableBody>
+    </Table>
+   );
+};
+
 export const TableWithMultipleSelect = () => {
   const [selectedRows, setSelectedRows] = useState([]);
   const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] = useState(false);
@@ -330,6 +379,83 @@ export const TableWithMultipleSelect = () => {
               />
             </TableCell>
             <TableCell>{row.email}</TableCell>
+            <TableCell>{row.firstName}</TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell>{row.phoneNumber}</TableCell>
+            <TableCell>{row.dateAdded}</TableCell>
+            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+          </TableRow>
+        )))}
+      </TableBody>
+    </Table>
+  );
+};
+
+export const TableWithMultipleSelectAndStickyColumnAndHeader = () => {
+  const [selectedRows, setSelectedRows] = useState([]);
+  const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] = useState(false);
+
+  const handleCheckboxSelectSingle = (id) => {
+    if (!selectedRows.includes(id)) {
+      setSelectedRows((oldArray) => [...oldArray, id]);
+    } else if (selectedRows.includes(id)) {
+      setSelectedRows(selectedRows.filter((item) => item !== id));
+    }
+  };
+
+  const handleCheckboxSelectAll = (rowData) => {
+    setIsSelectAllCheckboxChecked((prev) => !prev);
+
+    if (selectedRows.length > 0 && isSelectAllCheckboxChecked) {
+      setSelectedRows([]);
+    } else {
+      setSelectedRows(rowData.map((row) => row.id));
+    }
+  };
+
+  const isChecked = (id) => selectedRows.includes(id);
+
+  const PinButton = ({ ...props }) => <button style={{ background: 'none', border: 'none', color: isStickyColumn ? '#337AB7' : '#A1A1A1' }} type="button" {...props}><FontAwesomeIcon icon={faThumbtack} /></button>;
+
+  const [isStickyColumn, setIsStickyColumn] = useState(true);
+
+  const handlePinClick = () => {
+    setIsStickyColumn((prev) => !prev);
+  };
+
+  return (
+    <Table>
+      <TableHead>
+        <TableRow stickyRow>
+          <TableCell header>
+            <CheckboxButton id="checkbox" onChange={() => handleCheckboxSelectAll(data)} />
+          </TableCell>
+          <TableCell header stickyColumn={isStickyColumn}>Email <span style={{ float: 'right' }}><PinButton onClick={handlePinClick} /></span></TableCell>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map(((row) => (
+          <TableRow
+            clickable
+            key={row.id}
+            selected={selectedRows.includes(row.id)}
+            onClick={() => handleCheckboxSelectSingle(row.id)}
+          >
+            <TableCell>
+              <CheckboxButton
+                checked={isChecked(row.id)}
+                id="checkbox"
+                onChange={() => handleCheckboxSelectSingle(row.id)}
+              />
+            </TableCell>
+            <TableCell stickyColumn={isStickyColumn}>{row.email}</TableCell>
             <TableCell>{row.firstName}</TableCell>
             <TableCell>{row.lastName}</TableCell>
             <TableCell>{row.phoneNumber}</TableCell>
@@ -436,53 +562,4 @@ export const TableWithCompactOption = () => {
       </Table>
     </div>
   );
-};
-
-export const TableWithStickyColumnAndHeader = () => {
-  const PinButton = ({ ...props }) => <button style={{ background: 'none', border: 'none', color: isStickyColumn ? '#337AB7' : '#A1A1A1' }} type="button" {...props}><FontAwesomeIcon icon={faThumbtack} /></button>;
-
-  const [isStickyColumn, setIsStickyColumn] = useState(true);
-
-  const handlePinClick = () => {
-    setIsStickyColumn((prev) => !prev);
-  };
-
-  return (
-    <Table>
-      <TableHead>
-        <TableRow stickyRow>
-          <TableCell header stickyColumn={isStickyColumn}>Email <span style={{ float: 'right' }}><PinButton onClick={handlePinClick} /></span></TableCell>
-          <TableCell header>First name</TableCell>
-          <TableCell header>Last name</TableCell>
-          <TableCell header>Phone number</TableCell>
-          <TableCell header>Date added</TableCell>
-          <TableCell header>Last invited</TableCell>
-          <TableCell header>Last applied</TableCell>
-          <TableCell header>Date</TableCell>
-          <TableCell header>Boolean</TableCell>
-          <TableCell header>Decimal</TableCell>
-          <TableCell header>Pick any</TableCell>
-          <TableCell alignRight header>Incentives earned</TableCell>
-        </TableRow>
-      </TableHead>
-      <TableBody>
-        {data.map(((row) => (
-          <TableRow key={row.id}>
-            <TableCell stickyColumn={isStickyColumn}>{row.email}</TableCell>
-            <TableCell>{row.firstName}</TableCell>
-            <TableCell>{row.lastName}</TableCell>
-            <TableCell>{row.phoneNumber}</TableCell>
-            <TableCell>{row.dateAdded}</TableCell>
-            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
-            <TableCell>{row.date}</TableCell>
-            <TableCell>{row.boolean ? 'True' : `-`}</TableCell>
-            <TableCell>{row.decimal ? 'True' : `-`}</TableCell>
-            <TableCell>{row.pickAny ? 'True' : `-`}</TableCell>
-            <TableCell alignRight>{row.incentivesEarned}</TableCell>
-          </TableRow>
-        )))}
-      </TableBody>
-    </Table>
-   );
 };

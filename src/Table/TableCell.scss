@@ -12,6 +12,7 @@
   &__header {
     @include font-type-30--bold();
     background-color: $ux-gray-100;
+    border-bottom: none;
     color: $ux-gray-800;
     padding: $ux-spacing-50;
     text-align: left;
@@ -31,11 +32,11 @@
     position: sticky; 
     left: 0;
     background: $ux-white;
-    box-shadow: $ux-elevations-50;
-    box-shadow: 0.5rem 0rem 1rem rgba(0, 0, 0, 0.1);;
+    box-shadow: $ux-box-shadow-table-sticky-column;
     z-index: $z-index-10;
 
     &--corner {
+      background-color: $ux-gray-100;
       z-index: $z-index-20 !important;
     }
   }
