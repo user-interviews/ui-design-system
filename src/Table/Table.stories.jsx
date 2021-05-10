@@ -211,6 +211,9 @@ const editButton = () => (
   ><FontAwesomeIcon icon={faFileAlt} style={{ marginRight: '10px' }} />Edit
   </button>
 );
+/* eslint-disable react/prop-types */
+const PinButton = ({ isPinActive, ...props }) => <button style={{ background: 'none', border: 'none', color: isPinActive ? '#337AB7' : '#A1A1A1' }} type="button" {...props}><FontAwesomeIcon icon={faThumbtack} /></button>;
+/* eslint-enable react/prop-types */
 
 export const TableWithSingleActionColumn = () => (
   <Table>
@@ -275,8 +278,6 @@ export const TableWithMultipleActionColumn = () => (
 );
 
 export const TableWithStickyColumnAndHeader = () => {
-  const PinButton = ({ ...props }) => <button style={{ background: 'none', border: 'none', color: isStickyColumn ? '#337AB7' : '#A1A1A1' }} type="button" {...props}><FontAwesomeIcon icon={faThumbtack} /></button>;
-
   const [isStickyColumn, setIsStickyColumn] = useState(true);
 
   const handlePinClick = () => {
@@ -287,7 +288,7 @@ export const TableWithStickyColumnAndHeader = () => {
     <Table>
       <TableHead>
         <TableRow stickyRow>
-          <TableCell header stickyColumn={isStickyColumn}>Email <span style={{ float: 'right' }}><PinButton onClick={handlePinClick} /></span></TableCell>
+          <TableCell header stickyColumn={isStickyColumn}>Email <span style={{ float: 'right' }}><PinButton isPinActive={isStickyColumn} onClick={handlePinClick} /></span></TableCell>
           <TableCell header>First name</TableCell>
           <TableCell header>Last name</TableCell>
           <TableCell header>Phone number</TableCell>
@@ -416,8 +417,6 @@ export const TableWithMultipleSelectAndStickyColumnAndHeader = () => {
 
   const isChecked = (id) => selectedRows.includes(id);
 
-  const PinButton = ({ ...props }) => <button style={{ background: 'none', border: 'none', color: isStickyColumn ? '#337AB7' : '#A1A1A1' }} type="button" {...props}><FontAwesomeIcon icon={faThumbtack} /></button>;
-
   const [isStickyColumn, setIsStickyColumn] = useState(true);
 
   const handlePinClick = () => {
@@ -431,7 +430,7 @@ export const TableWithMultipleSelectAndStickyColumnAndHeader = () => {
           <TableCell header>
             <CheckboxButton id="checkbox" onChange={() => handleCheckboxSelectAll(data)} />
           </TableCell>
-          <TableCell header stickyColumn={isStickyColumn}>Email <span style={{ float: 'right' }}><PinButton onClick={handlePinClick} /></span></TableCell>
+          <TableCell header stickyColumn={isStickyColumn}>Email <span style={{ float: 'right' }}><PinButton isPinActive={isStickyColumn} onClick={handlePinClick} /></span></TableCell>
           <TableCell header>First name</TableCell>
           <TableCell header>Last name</TableCell>
           <TableCell header>Phone number</TableCell>
