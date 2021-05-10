@@ -156,6 +156,18 @@ Can also have other components for additional functionality such as:
   <Story id="design-system-table--table-with-multiple-action-column" />
 </Preview>
 
+### Table With Sticky Column And Header
+- A Table's header row can be made sticky to ensure column labels are always visible when the users scrolls down
+- `TableRow` can be given a single `stickyRow` prop (within `TableHead`)
+- A Table column can be made sticky to help a user keep track of which row they're currently looking at. The `TableCell` on the column that is made sticky can be given the `stickyColumn` prop (within `TableBody`)
+- The sticky column should be applied to the left-most column of the Table. Support for multiple sticky columns will come in a future release
+- A pin icon should be displayed on a sticky column to let the user toggle between a sticky column state and a default state
+- *Note: view this story on Canvas instead of Docs to see the sticky header*
+
+<Preview>
+  <Story id="design-system-table--table-with-sticky-column-and-header" />
+</Preview>
+
 ### Table With Multiple Select 
 - Checkboxes are displayed on a separate column
 - `TableRow` can be given a `clickable` prop that sets `cursor: pointer`
@@ -164,6 +176,15 @@ Can also have other components for additional functionality such as:
 
 <Preview>
   <Story id="design-system-table--table-with-multiple-select" />
+</Preview>
+
+### Table With Multiple Select And Sticky Column And Header
+- Combining the sticky columns & headers with multi-select functionality.
+- Creates an easier scrolling and selecting experience for users while searching through table data.
+- *Note: view this story on Canvas instead of Docs to see the sticky header*
+
+<Preview>
+  <Story id="design-system-table--table-with-multiple-select-and-sticky-columns-and-headers" />
 </Preview>
 
 ### Table With Sorting 
@@ -192,16 +213,3 @@ Can also have other components for additional functionality such as:
 <Preview>
   <Story id="design-system-table--table-with-compact-option" />
 </Preview>
-
-### Table With Sticky Column And Header
-- A Table's header row can be made sticky to ensure column labels are always visible when the users scrolls down
-- `TableRow` can be given a single `stickyRow` prop (within `TableHead`)
-- A Table column can be made sticky to help a user keep track of which row they're currently looking at. The `TableCell` on the column that is made sticky can be given the `stickyColumn` prop (within `TableBody`)
-- The sticky column should be applied to the left-most column of the Table. Support for multiple sticky columns will come in a future release
-- A pin icon should be displayed on a sticky column to let the user toggle between a sticky column state and a default state
-
-<Preview>
-  <Story id="design-system-table--table-with-sticky-column-and-header" />
-</Preview>
-
-
