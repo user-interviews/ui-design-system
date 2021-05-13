@@ -157,15 +157,63 @@ Can also have other components for additional functionality such as:
 </Preview>
 
 ### Table With Sticky Column And Header
-- A Table's header row can be made sticky to ensure column labels are always visible when the users scrolls down
+- A Table's header row can be made sticky to ensure column labels are always visible when a user scrolls down
 - `TableRow` can be given a single `stickyRow` prop (within `TableHead`)
-- A Table column can be made sticky to help a user keep track of which row they're currently looking at. The `TableCell` on the column that is made sticky can be given the `stickyColumn` prop (within `TableBody`)
-- The sticky column should be applied to the left-most column of the Table. Support for multiple sticky columns will come in a future release
-- A pin icon should be displayed on a sticky column to let the user toggle between a sticky column state and a default state
+- A Table column can be made sticky to help a user keep track of which row they're currently looking at. The `TableCell` on the column that is made sticky can be given the `stickyColumn` prop. The `TableCell`s both in the `TableHead` and `TableBody` need to `stickyColumn` prop.)
+- A sticky column requires a `stickyLeft` or `stickyRight` prop to designate which end of the Table it will be placed
+- If only a *single* `stickyColumn` is implemented on either left or right side of the Table, `stickyColumnXOffset` should be set to `0`
+- `stickyColumnXOffset` takes a number that translates into a `rem` value. Depending on whether a `TableCell` is provided `stickyLeft` or `stickyRight`, the output becomes a styling value of either `left: ${stickyColumnXOffset}rem` or `right: ${stickyColumnXOffset}rem`
+- A pin icon can optionally be displayed on a sticky column to let the user toggle between a sticky column state and a default state
 - *Note: view this story on Canvas instead of Docs to see the sticky header*
 
 <Preview>
   <Story id="design-system-table--table-with-sticky-column-and-header" />
+</Preview>
+
+### Table With Multiple Sticky Columns (left & right) And Header
+- If *multiple* `stickyColumn`s are needed on either left or right side of the Table (e.g. a Checkbox and Email column on the left-side of the Table), `stickyColumnXOffset` must be set precisely
+- Note: there is currently only support for only a single `stickyRight` column. This column should be reserved for an action or a relevant data column
+```
+// First left-side stickyColumn, 0rem starting position when sticky
+
+<TableCell
+  header
+  stickyColumn={isStickyColumn}
+  stickyColumnXOffset={0}
+  stickyLeft
+>
+  Email
+</TableCell>
+
+// Second left-side stickyColumn, 10rem starting position when sticky
+
+<TableCell
+  header
+  stickyColumn={isStickyColumn}
+  stickyColumnXOffset={10}
+  stickyLeft
+>
+```
+
+- For multiple `stickyColumn`s that may have a variable width, be sure to set a `maxWidth` and `minWidth` on each corresponding `TableCell`s within `TableBody`
+
+```
+// In this example, the Email column has a maxWidth="10rem"
+// The First name column therefore needs stickyColumnXOffset={10} to ensure its sticky position is placed exactly where the first column ends
+
+<TableBody>
+  {data.map(((row) => (
+    <TableRow key={row.id}>
+      <TableCell maxWidth="10rem" stickyColumn={isStickyColumn} stickyColumnXOffset={0} stickyLeft>{row.email}</TableCell>
+      <TableCell minWidth="10rem" stickyColumn={isStickyColumn} stickyColumnXOffset={10} stickyLeft>{row.firstName}</TableCell>
+      ...
+    </TableRow>
+    )))}
+</TableBody>
+```
+
+<Preview>
+  <Story id="design-system-table--table-with-multiple-sticky-columns-and-header" />
 </Preview>
 
 ### Table With Multiple Select 
@@ -178,13 +226,13 @@ Can also have other components for additional functionality such as:
   <Story id="design-system-table--table-with-multiple-select" />
 </Preview>
 
-### Table With Multiple Select And Sticky Column And Header
+### Table With Multiple Select And Multiple Sticky Columns And Header
 - Combining the sticky columns & headers with multi-select functionality.
 - Creates an easier scrolling and selecting experience for users while searching through table data.
 - *Note: view this story on Canvas instead of Docs to see the sticky header*
 
 <Preview>
-  <Story id="design-system-table--table-with-multiple-select-and-sticky-columns-and-headers" />
+  <Story id="design-system-table--table-with-multiple-select-and-multiple-sticky-columns-and-header" />
 </Preview>
 
 ### Table With Sorting 

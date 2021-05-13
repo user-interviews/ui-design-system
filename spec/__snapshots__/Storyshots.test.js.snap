@@ -9852,7 +9852,7 @@ exports[`Storyshots Design System/Table Table With Multiple Select 1`] = `
 </div>
 `;
 
-exports[`Storyshots Design System/Table Table With Multiple Select And Sticky Columns And Header 1`] = `
+exports[`Storyshots Design System/Table Table With Multiple Select And Multiple Sticky Columns And Header 1`] = `
 <div
   style={
     Object {
@@ -10952,6 +10952,1404 @@ exports[`Storyshots Design System/Table Table With Multiple Select And Sticky Co
                 style={Object {}}
               />
             </svg>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Design System/Table Table With Multiple Sticky Columns And Header 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <th
+          className="TableCell TableCell__header TableCell--sticky-column TableCell--sticky-column--corner TableCell--sticky-column--left TableCell--sticky-row"
+          style={
+            Object {
+              "left": "0rem",
+            }
+          }
+        >
+          Email
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-column TableCell--sticky-column--corner TableCell--sticky-column--left TableCell--sticky-row"
+          style={
+            Object {
+              "left": "10rem",
+            }
+          }
+        >
+          First name 
+          <span
+            style={
+              Object {
+                "float": "right",
+              }
+            }
+          >
+            <button
+              onClick={[Function]}
+              style={
+                Object {
+                  "background": "none",
+                  "border": "none",
+                  "color": "#337AB7",
+                }
+              }
+              type="button"
+            >
+              <svg
+                aria-hidden="true"
+                className="svg-inline--fa fa-thumbtack fa-w-12 "
+                data-icon="thumbtack"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                style={Object {}}
+                viewBox="0 0 384 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z"
+                  fill="currentColor"
+                  style={Object {}}
+                />
+              </svg>
+            </button>
+          </span>
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+          style={null}
+        >
+          Last name
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+          style={null}
+        >
+          Phone number
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+          style={null}
+        >
+          Date added
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+          style={null}
+        >
+          Last invited
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+          style={null}
+        >
+          Last applied
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+          style={null}
+        >
+          Date
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+          style={null}
+        >
+          Boolean
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+          style={null}
+        >
+          Decimal
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-column TableCell--sticky-column--corner TableCell--sticky-row"
+          style={null}
+        >
+          Pick any
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-column TableCell--sticky-column--corner TableCell--sticky-column--right TableCell--sticky-row"
+          style={
+            Object {
+              "right": "0rem",
+            }
+          }
+        >
+          Action
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "0rem",
+              "maxWidth": "10rem",
+            }
+          }
+        >
+          riley@userinterviews.com
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "10rem",
+              "minWidth": "10rem",
+            }
+          }
+        >
+          Riley
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Researcher
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          +18888888888
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          01/22/2021
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          3 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          1 day ago
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
+          style={
+            Object {
+              "right": "0rem",
+            }
+          }
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "0rem",
+              "maxWidth": "10rem",
+            }
+          }
+        >
+          basel123@userinterviews.com
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "10rem",
+              "minWidth": "10rem",
+            }
+          }
+        >
+          Basel
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Fakhoury
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          +467234460393409
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          04/08/2020
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
+          style={
+            Object {
+              "right": "0rem",
+            }
+          }
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "0rem",
+              "maxWidth": "10rem",
+            }
+          }
+        >
+          bob456@userinterviews.com
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "10rem",
+              "minWidth": "10rem",
+            }
+          }
+        >
+          Bob
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Saris
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          01/26/2020
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          2 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
+          style={
+            Object {
+              "right": "0rem",
+            }
+          }
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "0rem",
+              "maxWidth": "10rem",
+            }
+          }
+        >
+          dennis789@userinterviews.com
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "10rem",
+              "minWidth": "10rem",
+            }
+          }
+        >
+          Dennis
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Meng
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          12/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          6 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          5 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
+          style={
+            Object {
+              "right": "0rem",
+            }
+          }
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "0rem",
+              "maxWidth": "10rem",
+            }
+          }
+        >
+          erin007@userinterviews.com
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "10rem",
+              "minWidth": "10rem",
+            }
+          }
+        >
+          Erin
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          May
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          +1499090234
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          09/21/2020
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          23 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
+          style={
+            Object {
+              "right": "0rem",
+            }
+          }
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "0rem",
+              "maxWidth": "10rem",
+            }
+          }
+        >
+          jh247@userinterviews.com
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "10rem",
+              "minWidth": "10rem",
+            }
+          }
+        >
+          John-Henry
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Forster
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          +1888938488
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          03/14/2021
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
+          style={
+            Object {
+              "right": "0rem",
+            }
+          }
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "0rem",
+              "maxWidth": "10rem",
+            }
+          }
+        >
+          jason909085119@userinterviews.com
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "10rem",
+              "minWidth": "10rem",
+            }
+          }
+        >
+          Jason
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Basuil
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          01/01/2021
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
+          style={
+            Object {
+              "right": "0rem",
+            }
+          }
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "0rem",
+              "maxWidth": "10rem",
+            }
+          }
+        >
+          rachel777@userinterviews.com
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "10rem",
+              "minWidth": "10rem",
+            }
+          }
+        >
+          Rachel
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Rapollo
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          +40988881822329308
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          07/21/2019
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
+          style={
+            Object {
+              "right": "0rem",
+            }
+          }
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "0rem",
+              "maxWidth": "10rem",
+            }
+          }
+        >
+          jojo330@userinterviews.com
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "10rem",
+              "minWidth": "10rem",
+            }
+          }
+        >
+          JoJo
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Lee
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          +1898374888
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          09/17/2020
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          1 day ago
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          2 days ago
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
+          style={
+            Object {
+              "right": "0rem",
+            }
+          }
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
+          </button>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "0rem",
+              "maxWidth": "10rem",
+            }
+          }
+        >
+          faus555@userinterviews.com
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
+          style={
+            Object {
+              "left": "10rem",
+              "minWidth": "10rem",
+            }
+          }
+        >
+          Faustino
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Gaitan
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          +90918394789
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          06/13/2019
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          03/25/2021
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          True
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--sticky-column"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
+          style={
+            Object {
+              "right": "0rem",
+            }
+          }
+        >
+          <button
+            style={
+              Object {
+                "background": "none",
+                "border": "1px solid #337AB7",
+                "borderRadius": "4px",
+                "color": "#337AB7",
+                "fontWeight": "700",
+                "padding": "4px 8px",
+              }
+            }
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-file-alt fa-w-12 "
+              data-icon="file-alt"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={
+                Object {
+                  "marginRight": "10px",
+                }
+              }
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Edit
           </button>
         </td>
       </tr>
@@ -13071,1404 +14469,6 @@ exports[`Storyshots Design System/Table Table With Sticky Column And Header 1`] 
           style={Object {}}
         >
           5
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-`;
-
-exports[`Storyshots Design System/Table Table With Sticky Columns And Header 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <table
-    className="Table"
-  >
-    <thead
-      className="TableHead"
-    >
-      <tr
-        className="TableRow"
-      >
-        <th
-          className="TableCell TableCell__header TableCell--sticky-column TableCell--sticky-column--corner TableCell--sticky-column--left TableCell--sticky-row"
-          style={
-            Object {
-              "left": "0rem",
-            }
-          }
-        >
-          Email
-        </th>
-        <th
-          className="TableCell TableCell__header TableCell--sticky-column TableCell--sticky-column--corner TableCell--sticky-column--left TableCell--sticky-row"
-          style={
-            Object {
-              "left": "10rem",
-            }
-          }
-        >
-          First name 
-          <span
-            style={
-              Object {
-                "float": "right",
-              }
-            }
-          >
-            <button
-              onClick={[Function]}
-              style={
-                Object {
-                  "background": "none",
-                  "border": "none",
-                  "color": "#337AB7",
-                }
-              }
-              type="button"
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-thumbtack fa-w-12 "
-                data-icon="thumbtack"
-                data-prefix="fas"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 384 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </button>
-          </span>
-        </th>
-        <th
-          className="TableCell TableCell__header TableCell--sticky-row"
-          style={null}
-        >
-          Last name
-        </th>
-        <th
-          className="TableCell TableCell__header TableCell--sticky-row"
-          style={null}
-        >
-          Phone number
-        </th>
-        <th
-          className="TableCell TableCell__header TableCell--sticky-row"
-          style={null}
-        >
-          Date added
-        </th>
-        <th
-          className="TableCell TableCell__header TableCell--sticky-row"
-          style={null}
-        >
-          Last invited
-        </th>
-        <th
-          className="TableCell TableCell__header TableCell--sticky-row"
-          style={null}
-        >
-          Last applied
-        </th>
-        <th
-          className="TableCell TableCell__header TableCell--sticky-row"
-          style={null}
-        >
-          Date
-        </th>
-        <th
-          className="TableCell TableCell__header TableCell--sticky-row"
-          style={null}
-        >
-          Boolean
-        </th>
-        <th
-          className="TableCell TableCell__header TableCell--sticky-row"
-          style={null}
-        >
-          Decimal
-        </th>
-        <th
-          className="TableCell TableCell__header TableCell--sticky-column TableCell--sticky-column--corner TableCell--sticky-row"
-          style={null}
-        >
-          Pick any
-        </th>
-        <th
-          className="TableCell TableCell__header TableCell--sticky-column TableCell--sticky-column--corner TableCell--sticky-column--right TableCell--sticky-row"
-          style={
-            Object {
-              "right": "0rem",
-            }
-          }
-        >
-          Action
-        </th>
-      </tr>
-    </thead>
-    <tbody
-      className="TableBody"
-    >
-      <tr
-        className="TableRow"
-      >
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "0rem",
-              "maxWidth": "10rem",
-            }
-          }
-        >
-          riley@userinterviews.com
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "10rem",
-              "minWidth": "10rem",
-            }
-          }
-        >
-          Riley
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          Researcher
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          +18888888888
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          01/22/2021
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          3 days ago
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          1 day ago
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          03/25/2021
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          True
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
-          style={
-            Object {
-              "right": "0rem",
-            }
-          }
-        >
-          <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
-              data-icon="file-alt"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            Edit
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
-      >
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "0rem",
-              "maxWidth": "10rem",
-            }
-          }
-        >
-          basel123@userinterviews.com
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "10rem",
-              "minWidth": "10rem",
-            }
-          }
-        >
-          Basel
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          Fakhoury
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          +467234460393409
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          04/08/2020
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          03/25/2021
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          True
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
-          style={
-            Object {
-              "right": "0rem",
-            }
-          }
-        >
-          <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
-              data-icon="file-alt"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            Edit
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
-      >
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "0rem",
-              "maxWidth": "10rem",
-            }
-          }
-        >
-          bob456@userinterviews.com
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "10rem",
-              "minWidth": "10rem",
-            }
-          }
-        >
-          Bob
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          Saris
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          01/26/2020
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          2 days ago
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          03/25/2021
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          True
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
-          style={
-            Object {
-              "right": "0rem",
-            }
-          }
-        >
-          <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
-              data-icon="file-alt"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            Edit
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
-      >
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "0rem",
-              "maxWidth": "10rem",
-            }
-          }
-        >
-          dennis789@userinterviews.com
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "10rem",
-              "minWidth": "10rem",
-            }
-          }
-        >
-          Dennis
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          Meng
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          12/21/2020
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          6 days ago
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          5 days ago
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          03/25/2021
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          True
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
-          style={
-            Object {
-              "right": "0rem",
-            }
-          }
-        >
-          <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
-              data-icon="file-alt"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            Edit
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
-      >
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "0rem",
-              "maxWidth": "10rem",
-            }
-          }
-        >
-          erin007@userinterviews.com
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "10rem",
-              "minWidth": "10rem",
-            }
-          }
-        >
-          Erin
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          May
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          +1499090234
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          09/21/2020
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          23 days ago
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          03/25/2021
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          True
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
-          style={
-            Object {
-              "right": "0rem",
-            }
-          }
-        >
-          <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
-              data-icon="file-alt"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            Edit
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
-      >
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "0rem",
-              "maxWidth": "10rem",
-            }
-          }
-        >
-          jh247@userinterviews.com
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "10rem",
-              "minWidth": "10rem",
-            }
-          }
-        >
-          John-Henry
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          Forster
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          +1888938488
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          03/14/2021
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          03/25/2021
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          True
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
-          style={
-            Object {
-              "right": "0rem",
-            }
-          }
-        >
-          <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
-              data-icon="file-alt"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            Edit
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
-      >
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "0rem",
-              "maxWidth": "10rem",
-            }
-          }
-        >
-          jason909085119@userinterviews.com
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "10rem",
-              "minWidth": "10rem",
-            }
-          }
-        >
-          Jason
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          Basuil
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          01/01/2021
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          03/25/2021
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          True
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
-          style={
-            Object {
-              "right": "0rem",
-            }
-          }
-        >
-          <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
-              data-icon="file-alt"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            Edit
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
-      >
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "0rem",
-              "maxWidth": "10rem",
-            }
-          }
-        >
-          rachel777@userinterviews.com
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "10rem",
-              "minWidth": "10rem",
-            }
-          }
-        >
-          Rachel
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          Rapollo
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          +40988881822329308
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          07/21/2019
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          03/25/2021
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          True
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
-          style={
-            Object {
-              "right": "0rem",
-            }
-          }
-        >
-          <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
-              data-icon="file-alt"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            Edit
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
-      >
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "0rem",
-              "maxWidth": "10rem",
-            }
-          }
-        >
-          jojo330@userinterviews.com
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "10rem",
-              "minWidth": "10rem",
-            }
-          }
-        >
-          JoJo
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          Lee
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          +1898374888
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          09/17/2020
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          1 day ago
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          2 days ago
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          03/25/2021
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          True
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
-          style={
-            Object {
-              "right": "0rem",
-            }
-          }
-        >
-          <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
-              data-icon="file-alt"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            Edit
-          </button>
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
-      >
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "0rem",
-              "maxWidth": "10rem",
-            }
-          }
-        >
-          faus555@userinterviews.com
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column TableCell--sticky-column--left"
-          style={
-            Object {
-              "left": "10rem",
-              "minWidth": "10rem",
-            }
-          }
-        >
-          Faustino
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          Gaitan
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          +90918394789
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          06/13/2019
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          03/25/2021
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          True
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--sticky-column"
-          style={Object {}}
-        >
-          -
-        </td>
-        <td
-          className="TableCell TableCell--right TableCell--sticky-column TableCell--sticky-column--right"
-          style={
-            Object {
-              "right": "0rem",
-            }
-          }
-        >
-          <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
-            type="button"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
-              data-icon="file-alt"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
-              viewBox="0 0 384 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            Edit
-          </button>
         </td>
       </tr>
     </tbody>

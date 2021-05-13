@@ -331,7 +331,7 @@ export const TableWithStickyColumnAndHeader = () => {
    );
 };
 
-export const TableWithStickyColumnsAndHeader = () => {
+export const TableWithMultipleStickyColumnsAndHeader = () => {
   const [isStickyColumn, setIsStickyColumn] = useState(true);
 
   const handlePinClick = () => {
@@ -475,7 +475,7 @@ export const TableWithMultipleSelect = () => {
   );
 };
 
-export const TableWithMultipleSelectAndStickyColumnsAndHeader = () => {
+export const TableWithMultipleSelectAndMultipleStickyColumnsAndHeader = () => {
   const [selectedRows, setSelectedRows] = useState([]);
   const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] = useState(false);
 
