@@ -13,6 +13,9 @@ const TableCell = ({
   maxWidth,
   minWidth,
   stickyColumn,
+  stickyColumnXOffset,
+  stickyLeft,
+  stickyRight,
   stickyRow,
   ...props
 }) => {
@@ -23,8 +26,10 @@ const TableCell = ({
         [`TableCell--compact`]: !!compact,
         [`TableCell__header`]: !!header,
         [`TableCell--right`]: !!alignRight,
-        [`TableCell--sticky-column--corner`]: header && stickyColumn,
         [`TableCell--sticky-column`]: !!stickyColumn,
+        [`TableCell--sticky-column--corner`]: header && stickyColumn,
+        [`TableCell--sticky-column--left`]: !!stickyLeft && stickyColumn,
+        [`TableCell--sticky-column--right`]: !!stickyRight && stickyColumn,
         [`TableCell--sticky-row`]: !!stickyRow,
       },
     );
@@ -43,10 +48,21 @@ const TableCell = ({
     return null;
   };
 
+  const getStickyStyling = () => {
+    if (stickyColumn && stickyLeft) {
+      return { left: `${stickyColumnXOffset}rem` };
+    }
+    if (stickyColumn && stickyRight) {
+      return { right: `${stickyColumnXOffset}rem` };
+    }
+    return null;
+  };
+
   if (header) {
     return (
       <th
         className={getTableCellClassName()}
+        style={getStickyStyling()}
         {...props}
       >
         {children}
@@ -57,7 +73,7 @@ const TableCell = ({
   return (
     <td
       className={getTableCellClassName()}
-      style={getWidthStyling()}
+      style={{ ...getWidthStyling(), ...getStickyStyling() }}
       {...props}
     >
       {children}
@@ -76,6 +92,9 @@ TableCell.propTypes = {
   maxWidth: PropTypes.string,
   minWidth: PropTypes.string,
   stickyColumn: PropTypes.bool,
+  stickyColumnXOffset: PropTypes.number,
+  stickyLeft: PropTypes.bool,
+  stickyRight: PropTypes.bool,
   stickyRow: PropTypes.bool,
 };
 
@@ -88,5 +107,8 @@ TableCell.defaultProps = {
   maxWidth: undefined,
   minWidth: undefined,
   stickyColumn: undefined,
+  stickyColumnXOffset: undefined,
+  stickyLeft: undefined,
+  stickyRight: undefined,
   stickyRow: undefined,
 };
