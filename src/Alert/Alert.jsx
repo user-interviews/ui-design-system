@@ -7,7 +7,7 @@ import {
   faCheckCircle,
   faExclamationTriangle,
   faInfoCircle,
-} from '@fortawesome/free-solid-svg-icons';
+} from '@fortawesome/pro-solid-svg-icons';
 
 import './Alert.scss';
 import classNames from 'classnames';

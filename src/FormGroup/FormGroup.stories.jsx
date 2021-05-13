@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch } from '@fortawesome/pro-solid-svg-icons';
 import {
   boolean,
   radios,

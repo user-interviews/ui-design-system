@@ -2,7 +2,6 @@
   "name": "@user-interviews/ui-design-system",
   "version": "1.19.1",
   "dependencies": {
-    "@fortawesome/fontawesome-pro": "^5.15.3",
     "react-router-dom": "^5.2.0",
     "react-select": "^3.0.8",
     "react-transition-group": "^4.3.0",
@@ -35,8 +34,6 @@
   "peerDependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
-    "@fortawesome/free-regular-svg-icons": "^5.13.0",
-    "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@fortawesome/react-fontawesome": "^0.1.9",
     "@popperjs/core": "^2.5.3",
     "bootstrap": "^4.3.1",
