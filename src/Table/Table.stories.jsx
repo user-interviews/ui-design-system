@@ -380,8 +380,20 @@ export const TableWithMultipleStickyColumnsAndHeader = () => {
       <TableBody>
         {data.map(((row) => (
           <TableRow key={row.id}>
-            <TableCell maxWidth={160} stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>{row.email}</TableCell>
-            <TableCell minWidth={160} stickyColumn={isStickyColumn} stickyColumnOffsetX={160} stickyLeft>{row.firstName}</TableCell>
+            <TableCell
+              maxWidth={160}
+              stickyColumn={isStickyColumn}
+              stickyColumnOffsetX={0}
+              stickyLeft
+            >{row.email}
+            </TableCell>
+            <TableCell
+              minWidth={160}
+              stickyColumn={isStickyColumn}
+              stickyColumnOffsetX={160}
+              stickyLeft
+            >{row.firstName}
+            </TableCell>
             <TableCell>{row.lastName}</TableCell>
             <TableCell>{row.phoneNumber}</TableCell>
             <TableCell>{row.dateAdded}</TableCell>
