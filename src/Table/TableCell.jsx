@@ -34,8 +34,8 @@ const TableCell = ({
       },
     );
 
-  const maxWidthObj = { maxWidth };
-  const minWidthObj = { minWidth };
+  const maxWidthObj = { maxWidth: `${maxWidth}px` };
+  const minWidthObj = { minWidth: `${minWidth}px` };
 
   const getWidthStyling = () => {
     if (maxWidth && minWidth) {
@@ -89,8 +89,8 @@ TableCell.propTypes = {
   className: PropTypes.string,
   compact: PropTypes.bool,
   header: PropTypes.bool,
-  maxWidth: PropTypes.string,
-  minWidth: PropTypes.string,
+  maxWidth: PropTypes.number,
+  minWidth: PropTypes.number,
   stickyColumn: PropTypes.bool,
   stickyColumnOffsetX: PropTypes.number,
   stickyLeft: PropTypes.bool,

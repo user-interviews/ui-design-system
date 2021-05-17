@@ -97,8 +97,8 @@ export const TableWithFixedColumnWidths = () => (
         <TableRow key={row.id}>
           {/* TODO: Wrap this TableCell in a Popover to show overflow text
               once that component is finished */}
-          <TableCell maxWidth="12rem">{row.email} (with a max-width)</TableCell>
-          <TableCell minWidth="20rem">{row.firstName} (with a min-width)</TableCell>
+          <TableCell maxWidth={192}>{row.email} (with a max-width)</TableCell>
+          <TableCell minWidth={320}>{row.firstName} (with a min-width)</TableCell>
           <TableCell>{row.lastName}</TableCell>
           <TableCell>{row.phoneNumber}</TableCell>
           <TableCell>{row.dateAdded}</TableCell>
@@ -380,8 +380,8 @@ export const TableWithMultipleStickyColumnsAndHeader = () => {
       <TableBody>
         {data.map(((row) => (
           <TableRow key={row.id}>
-            <TableCell maxWidth="10rem" stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>{row.email}</TableCell>
-            <TableCell minWidth="10rem" stickyColumn={isStickyColumn} stickyColumnOffsetX={160} stickyLeft>{row.firstName}</TableCell>
+            <TableCell maxWidth={160} stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>{row.email}</TableCell>
+            <TableCell minWidth={160} stickyColumn={isStickyColumn} stickyColumnOffsetX={160} stickyLeft>{row.firstName}</TableCell>
             <TableCell>{row.lastName}</TableCell>
             <TableCell>{row.phoneNumber}</TableCell>
             <TableCell>{row.dateAdded}</TableCell>

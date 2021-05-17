@@ -119,8 +119,8 @@ Can also have other components for additional functionality such as:
 ### Table With Fixed Column Widths
 - Create a column with a fixed width
 - By default, all content of a `TableCell` will be fully displayed with no line breaks and no set width. Whichever `TableCell` has the longest content, the width of that entire column will be set at that
-- Set `maxWidth` to limit the width of the `TableCell`
-- Set `minWidth` to provide extra space for the `TableCell`
+- Set `maxWidth` to limit the width in `px` of the `TableCell` 
+- Set `minWidth` to provide extra space in `px` for the `TableCell`
 - `text-overflow: ellipsis` is set by default for content that exceeds the designated width. This would only be seen if `maxWidth` is set
 
 <Preview>
@@ -198,14 +198,14 @@ Can also have other components for additional functionality such as:
 - For multiple `stickyColumn`s that may have a variable width, be sure to set a `maxWidth` and `minWidth` on each corresponding `TableCell`s within `TableBody`
 
 ```
-// In this example, the Email column has a maxWidth="10rem"
+// In this example, the Email column has a maxWidth={160}
 // The First name column therefore needs stickyColumnOffsetX={160} to ensure its sticky position is placed exactly where the first column ends
 
 <TableBody>
   {data.map(((row) => (
     <TableRow key={row.id}>
-      <TableCell maxWidth="10rem" stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>{row.email}</TableCell>
-      <TableCell minWidth="10rem" stickyColumn={isStickyColumn} stickyColumnOffsetX={160} stickyLeft>{row.firstName}</TableCell>
+      <TableCell maxWidth={160} stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>{row.email}</TableCell>
+      <TableCell minWidth={160} stickyColumn={isStickyColumn} stickyColumnOffsetX={160} stickyLeft>{row.firstName}</TableCell>
       ...
     </TableRow>
     )))}
