@@ -97,8 +97,8 @@ export const TableWithFixedColumnWidths = () => (
         <TableRow key={row.id}>
           {/* TODO: Wrap this TableCell in a Popover to show overflow text
               once that component is finished */}
-          <TableCell maxWidth="12rem">{row.email} (with a max-width)</TableCell>
-          <TableCell minWidth="20rem">{row.firstName} (with a min-width)</TableCell>
+          <TableCell maxWidth={192}>{row.email} (with a max-width)</TableCell>
+          <TableCell minWidth={320}>{row.firstName} (with a min-width)</TableCell>
           <TableCell>{row.lastName}</TableCell>
           <TableCell>{row.phoneNumber}</TableCell>
           <TableCell>{row.dateAdded}</TableCell>
@@ -288,7 +288,9 @@ export const TableWithStickyColumnAndHeader = () => {
     <Table>
       <TableHead>
         <TableRow stickyRow>
-          <TableCell header stickyColumn={isStickyColumn}>Email <span style={{ float: 'right' }}><PinButton isPinActive={isStickyColumn} onClick={handlePinClick} /></span></TableCell>
+          <TableCell header stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>
+            Email <span style={{ float: 'right' }}><PinButton isPinActive={isStickyColumn} onClick={handlePinClick} /></span>
+          </TableCell>
           <TableCell header>First name</TableCell>
           <TableCell header>Last name</TableCell>
           <TableCell header>Phone number</TableCell>
@@ -305,7 +307,12 @@ export const TableWithStickyColumnAndHeader = () => {
       <TableBody>
         {data.map(((row) => (
           <TableRow key={row.id}>
-            <TableCell stickyColumn={isStickyColumn}>{row.email}</TableCell>
+            <TableCell
+              stickyColumn={isStickyColumn}
+              stickyColumnOffsetX={0}
+              stickyLeft
+            >{row.email}
+            </TableCell>
             <TableCell>{row.firstName}</TableCell>
             <TableCell>{row.lastName}</TableCell>
             <TableCell>{row.phoneNumber}</TableCell>
@@ -317,6 +324,93 @@ export const TableWithStickyColumnAndHeader = () => {
             <TableCell>{row.decimal ? 'True' : `-`}</TableCell>
             <TableCell>{row.pickAny ? 'True' : `-`}</TableCell>
             <TableCell alignRight>{row.incentivesEarned}</TableCell>
+          </TableRow>
+        )))}
+      </TableBody>
+    </Table>
+   );
+};
+
+export const TableWithMultipleStickyColumnsAndHeader = () => {
+  const [isStickyColumn, setIsStickyColumn] = useState(true);
+
+  const handlePinClick = () => {
+    setIsStickyColumn((prev) => !prev);
+  };
+
+  return (
+    <Table>
+      <TableHead>
+        <TableRow stickyRow>
+          <TableCell
+            header
+            stickyColumn={isStickyColumn}
+            stickyColumnOffsetX={0}
+            stickyLeft
+          >
+            Email
+          </TableCell>
+          <TableCell
+            header
+            stickyColumn={isStickyColumn}
+            stickyColumnOffsetX={160}
+            stickyLeft
+          >
+            First name <span style={{ float: 'right' }}><PinButton isPinActive={isStickyColumn} onClick={handlePinClick} /></span>
+          </TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
+          <TableCell header>Date</TableCell>
+          <TableCell header>Boolean</TableCell>
+          <TableCell header>Decimal</TableCell>
+          <TableCell header stickyColumn={isStickyColumn}>Pick any</TableCell>
+          <TableCell
+            header
+            stickyColumn={isStickyColumn}
+            stickyColumnOffsetX={0}
+            stickyRight
+          >
+            Action
+          </TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map(((row) => (
+          <TableRow key={row.id}>
+            <TableCell
+              maxWidth={160}
+              stickyColumn={isStickyColumn}
+              stickyColumnOffsetX={0}
+              stickyLeft
+            >{row.email}
+            </TableCell>
+            <TableCell
+              minWidth={160}
+              stickyColumn={isStickyColumn}
+              stickyColumnOffsetX={160}
+              stickyLeft
+            >{row.firstName}
+            </TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell>{row.phoneNumber}</TableCell>
+            <TableCell>{row.dateAdded}</TableCell>
+            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+            <TableCell>{row.date}</TableCell>
+            <TableCell>{row.boolean ? 'True' : `-`}</TableCell>
+            <TableCell>{row.decimal ? 'True' : `-`}</TableCell>
+            <TableCell stickyColumn={isStickyColumn}>{row.pickAny ? 'True' : `-`}</TableCell>
+            <TableCell
+              alignRight
+              stickyColumn={isStickyColumn}
+              stickyColumnOffsetX={0}
+              stickyRight
+            >
+              {editButton()}
+            </TableCell>
           </TableRow>
         )))}
       </TableBody>
@@ -393,7 +487,7 @@ export const TableWithMultipleSelect = () => {
   );
 };
 
-export const TableWithMultipleSelectAndStickyColumnAndHeader = () => {
+export const TableWithMultipleSelectAndMultipleStickyColumnsAndHeader = () => {
   const [selectedRows, setSelectedRows] = useState([]);
   const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] = useState(false);
 
@@ -427,16 +521,23 @@ export const TableWithMultipleSelectAndStickyColumnAndHeader = () => {
     <Table>
       <TableHead>
         <TableRow stickyRow>
-          <TableCell header>
+          <TableCell header stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>
             <CheckboxButton id="checkbox" onChange={() => handleCheckboxSelectAll(data)} />
           </TableCell>
-          <TableCell header stickyColumn={isStickyColumn}>Email <span style={{ float: 'right' }}><PinButton isPinActive={isStickyColumn} onClick={handlePinClick} /></span></TableCell>
+          <TableCell header stickyColumn={isStickyColumn} stickyColumnOffsetX={61} stickyLeft>Email <span style={{ float: 'right' }}><PinButton isPinActive={isStickyColumn} onClick={handlePinClick} /></span></TableCell>
           <TableCell header>First name</TableCell>
           <TableCell header>Last name</TableCell>
           <TableCell header>Phone number</TableCell>
           <TableCell header>Date added</TableCell>
           <TableCell header>Last invited</TableCell>
-          <TableCell header>Last applied</TableCell>
+          <TableCell
+            header
+            stickyColumn={isStickyColumn}
+            stickyColumnOffsetX={0}
+            stickyRight
+          >
+            Action
+          </TableCell>
         </TableRow>
       </TableHead>
       <TableBody>
@@ -447,20 +548,30 @@ export const TableWithMultipleSelectAndStickyColumnAndHeader = () => {
             selected={selectedRows.includes(row.id)}
             onClick={() => handleCheckboxSelectSingle(row.id)}
           >
-            <TableCell>
+            <TableCell stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>
               <CheckboxButton
                 checked={isChecked(row.id)}
                 id="checkbox"
                 onChange={() => handleCheckboxSelectSingle(row.id)}
               />
             </TableCell>
-            <TableCell stickyColumn={isStickyColumn}>{row.email}</TableCell>
+            <TableCell
+              stickyColumn={isStickyColumn}
+              stickyColumnOffsetX={61}
+              stickyLeft
+            >{row.email}
+            </TableCell>
             <TableCell>{row.firstName}</TableCell>
             <TableCell>{row.lastName}</TableCell>
             <TableCell>{row.phoneNumber}</TableCell>
             <TableCell>{row.dateAdded}</TableCell>
             <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+            <TableCell
+              stickyColumn={isStickyColumn}
+              stickyColumnOffsetX={0}
+              stickyRight
+            >{kebabButton()}
+            </TableCell>
           </TableRow>
         )))}
       </TableBody>

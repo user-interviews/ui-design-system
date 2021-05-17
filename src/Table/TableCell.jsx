@@ -13,6 +13,9 @@ const TableCell = ({
   maxWidth,
   minWidth,
   stickyColumn,
+  stickyColumnOffsetX,
+  stickyLeft,
+  stickyRight,
   stickyRow,
   ...props
 }) => {
@@ -23,14 +26,16 @@ const TableCell = ({
         [`TableCell--compact`]: !!compact,
         [`TableCell__header`]: !!header,
         [`TableCell--right`]: !!alignRight,
-        [`TableCell--sticky-column--corner`]: header && stickyColumn,
         [`TableCell--sticky-column`]: !!stickyColumn,
+        [`TableCell--sticky-column--corner`]: header && stickyColumn,
+        [`TableCell--sticky-column--left`]: !!stickyLeft && stickyColumn,
+        [`TableCell--sticky-column--right`]: !!stickyRight && stickyColumn,
         [`TableCell--sticky-row`]: !!stickyRow,
       },
     );
 
-  const maxWidthObj = { maxWidth };
-  const minWidthObj = { minWidth };
+  const maxWidthObj = { maxWidth: `${maxWidth}px` };
+  const minWidthObj = { minWidth: `${minWidth}px` };
 
   const getWidthStyling = () => {
     if (maxWidth && minWidth) {
@@ -43,10 +48,21 @@ const TableCell = ({
     return null;
   };
 
+  const getStickyStyling = () => {
+    if (stickyColumn && stickyLeft) {
+      return { left: `${stickyColumnOffsetX}px` };
+    }
+    if (stickyColumn && stickyRight) {
+      return { right: `${stickyColumnOffsetX}px` };
+    }
+    return null;
+  };
+
   if (header) {
     return (
       <th
         className={getTableCellClassName()}
+        style={getStickyStyling()}
         {...props}
       >
         {children}
@@ -57,7 +73,7 @@ const TableCell = ({
   return (
     <td
       className={getTableCellClassName()}
-      style={getWidthStyling()}
+      style={{ ...getWidthStyling(), ...getStickyStyling() }}
       {...props}
     >
       {children}
@@ -73,9 +89,12 @@ TableCell.propTypes = {
   className: PropTypes.string,
   compact: PropTypes.bool,
   header: PropTypes.bool,
-  maxWidth: PropTypes.string,
-  minWidth: PropTypes.string,
+  maxWidth: PropTypes.number,
+  minWidth: PropTypes.number,
   stickyColumn: PropTypes.bool,
+  stickyColumnOffsetX: PropTypes.number,
+  stickyLeft: PropTypes.bool,
+  stickyRight: PropTypes.bool,
   stickyRow: PropTypes.bool,
 };
 
@@ -88,5 +107,8 @@ TableCell.defaultProps = {
   maxWidth: undefined,
   minWidth: undefined,
   stickyColumn: undefined,
+  stickyColumnOffsetX: undefined,
+  stickyLeft: undefined,
+  stickyRight: undefined,
   stickyRow: undefined,
 };
