@@ -161,8 +161,8 @@ Can also have other components for additional functionality such as:
 - `TableRow` can be given a single `stickyRow` prop (within `TableHead`)
 - A Table column can be made sticky to help a user keep track of which row they're currently looking at. The `TableCell` on the column that is made sticky can be given the `stickyColumn` prop. The `TableCell`s both in the `TableHead` and `TableBody` need to `stickyColumn` prop.)
 - A sticky column requires a `stickyLeft` or `stickyRight` prop to designate which end of the Table it will be placed
-- If only a *single* `stickyColumn` is implemented on either left or right side of the Table, `stickyColumnXOffset` should be set to `0`
-- `stickyColumnXOffset` takes a number that translates into a `rem` value. Depending on whether a `TableCell` is provided `stickyLeft` or `stickyRight`, the output becomes a styling value of either `left: ${stickyColumnXOffset}rem` or `right: ${stickyColumnXOffset}rem`
+- If only a *single* `stickyColumn` is implemented on either left or right side of the Table, `stickyColumnOffsetX` should be set to `0`
+- `stickyColumnOffsetX` takes a number that translates into a `px` value. Depending on whether a `TableCell` is provided `stickyLeft` or `stickyRight`, the output becomes a styling value of either `left: ${stickyColumnOffsetX}px` or `right: ${stickyColumnOffsetX}px`
 - A pin icon can optionally be displayed on a sticky column to let the user toggle between a sticky column state and a default state
 - *Note: view this story on Canvas instead of Docs to see the sticky header*
 
@@ -171,26 +171,26 @@ Can also have other components for additional functionality such as:
 </Preview>
 
 ### Table With Multiple Sticky Columns (left & right) And Header
-- If *multiple* `stickyColumn`s are needed on either left or right side of the Table (e.g. a Checkbox and Email column on the left-side of the Table), `stickyColumnXOffset` must be set precisely
+- If *multiple* `stickyColumn`s are needed on either left or right side of the Table (e.g. a Checkbox and Email column on the left-side of the Table), `stickyColumnOffsetX` must be set precisely
 - Note: there is currently only support for only a single `stickyRight` column. This column should be reserved for an action or a relevant data column
 ```
-// First left-side stickyColumn, 0rem starting position when sticky
+// First left-side stickyColumn, 0px starting position when sticky
 
 <TableCell
   header
   stickyColumn={isStickyColumn}
-  stickyColumnXOffset={0}
+  stickyColumnOffsetX={0}
   stickyLeft
 >
   Email
 </TableCell>
 
-// Second left-side stickyColumn, 10rem starting position when sticky
+// Second left-side stickyColumn, 160px starting position when sticky
 
 <TableCell
   header
   stickyColumn={isStickyColumn}
-  stickyColumnXOffset={10}
+  stickyColumnOffsetX={160}
   stickyLeft
 >
 ```
@@ -199,13 +199,13 @@ Can also have other components for additional functionality such as:
 
 ```
 // In this example, the Email column has a maxWidth="10rem"
-// The First name column therefore needs stickyColumnXOffset={10} to ensure its sticky position is placed exactly where the first column ends
+// The First name column therefore needs stickyColumnOffsetX={160} to ensure its sticky position is placed exactly where the first column ends
 
 <TableBody>
   {data.map(((row) => (
     <TableRow key={row.id}>
-      <TableCell maxWidth="10rem" stickyColumn={isStickyColumn} stickyColumnXOffset={0} stickyLeft>{row.email}</TableCell>
-      <TableCell minWidth="10rem" stickyColumn={isStickyColumn} stickyColumnXOffset={10} stickyLeft>{row.firstName}</TableCell>
+      <TableCell maxWidth="10rem" stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>{row.email}</TableCell>
+      <TableCell minWidth="10rem" stickyColumn={isStickyColumn} stickyColumnOffsetX={160} stickyLeft>{row.firstName}</TableCell>
       ...
     </TableRow>
     )))}

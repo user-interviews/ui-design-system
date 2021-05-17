@@ -13,7 +13,7 @@ const TableCell = ({
   maxWidth,
   minWidth,
   stickyColumn,
-  stickyColumnXOffset,
+  stickyColumnOffsetX,
   stickyLeft,
   stickyRight,
   stickyRow,
@@ -50,10 +50,10 @@ const TableCell = ({
 
   const getStickyStyling = () => {
     if (stickyColumn && stickyLeft) {
-      return { left: `${stickyColumnXOffset}rem` };
+      return { left: `${stickyColumnOffsetX}px` };
     }
     if (stickyColumn && stickyRight) {
-      return { right: `${stickyColumnXOffset}rem` };
+      return { right: `${stickyColumnOffsetX}px` };
     }
     return null;
   };
@@ -92,7 +92,7 @@ TableCell.propTypes = {
   maxWidth: PropTypes.string,
   minWidth: PropTypes.string,
   stickyColumn: PropTypes.bool,
-  stickyColumnXOffset: PropTypes.number,
+  stickyColumnOffsetX: PropTypes.number,
   stickyLeft: PropTypes.bool,
   stickyRight: PropTypes.bool,
   stickyRow: PropTypes.bool,
@@ -107,7 +107,7 @@ TableCell.defaultProps = {
   maxWidth: undefined,
   minWidth: undefined,
   stickyColumn: undefined,
-  stickyColumnXOffset: undefined,
+  stickyColumnOffsetX: undefined,
   stickyLeft: undefined,
   stickyRight: undefined,
   stickyRow: undefined,

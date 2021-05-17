@@ -288,7 +288,7 @@ export const TableWithStickyColumnAndHeader = () => {
     <Table>
       <TableHead>
         <TableRow stickyRow>
-          <TableCell header stickyColumn={isStickyColumn} stickyColumnXOffset={0} stickyLeft>
+          <TableCell header stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>
             Email <span style={{ float: 'right' }}><PinButton isPinActive={isStickyColumn} onClick={handlePinClick} /></span>
           </TableCell>
           <TableCell header>First name</TableCell>
@@ -309,7 +309,7 @@ export const TableWithStickyColumnAndHeader = () => {
           <TableRow key={row.id}>
             <TableCell
               stickyColumn={isStickyColumn}
-              stickyColumnXOffset={0}
+              stickyColumnOffsetX={0}
               stickyLeft
             >{row.email}
             </TableCell>
@@ -345,7 +345,7 @@ export const TableWithMultipleStickyColumnsAndHeader = () => {
           <TableCell
             header
             stickyColumn={isStickyColumn}
-            stickyColumnXOffset={0}
+            stickyColumnOffsetX={0}
             stickyLeft
           >
             Email
@@ -353,7 +353,7 @@ export const TableWithMultipleStickyColumnsAndHeader = () => {
           <TableCell
             header
             stickyColumn={isStickyColumn}
-            stickyColumnXOffset={10}
+            stickyColumnOffsetX={160}
             stickyLeft
           >
             First name <span style={{ float: 'right' }}><PinButton isPinActive={isStickyColumn} onClick={handlePinClick} /></span>
@@ -370,7 +370,7 @@ export const TableWithMultipleStickyColumnsAndHeader = () => {
           <TableCell
             header
             stickyColumn={isStickyColumn}
-            stickyColumnXOffset={0}
+            stickyColumnOffsetX={0}
             stickyRight
           >
             Action
@@ -380,8 +380,8 @@ export const TableWithMultipleStickyColumnsAndHeader = () => {
       <TableBody>
         {data.map(((row) => (
           <TableRow key={row.id}>
-            <TableCell maxWidth="10rem" stickyColumn={isStickyColumn} stickyColumnXOffset={0} stickyLeft>{row.email}</TableCell>
-            <TableCell minWidth="10rem" stickyColumn={isStickyColumn} stickyColumnXOffset={10} stickyLeft>{row.firstName}</TableCell>
+            <TableCell maxWidth="10rem" stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>{row.email}</TableCell>
+            <TableCell minWidth="10rem" stickyColumn={isStickyColumn} stickyColumnOffsetX={160} stickyLeft>{row.firstName}</TableCell>
             <TableCell>{row.lastName}</TableCell>
             <TableCell>{row.phoneNumber}</TableCell>
             <TableCell>{row.dateAdded}</TableCell>
@@ -394,7 +394,7 @@ export const TableWithMultipleStickyColumnsAndHeader = () => {
             <TableCell
               alignRight
               stickyColumn={isStickyColumn}
-              stickyColumnXOffset={0}
+              stickyColumnOffsetX={0}
               stickyRight
             >
               {editButton()}
@@ -509,10 +509,10 @@ export const TableWithMultipleSelectAndMultipleStickyColumnsAndHeader = () => {
     <Table>
       <TableHead>
         <TableRow stickyRow>
-          <TableCell header stickyColumn={isStickyColumn} stickyColumnXOffset={0} stickyLeft>
+          <TableCell header stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>
             <CheckboxButton id="checkbox" onChange={() => handleCheckboxSelectAll(data)} />
           </TableCell>
-          <TableCell header stickyColumn={isStickyColumn} stickyColumnXOffset={3.813} stickyLeft>Email <span style={{ float: 'right' }}><PinButton isPinActive={isStickyColumn} onClick={handlePinClick} /></span></TableCell>
+          <TableCell header stickyColumn={isStickyColumn} stickyColumnOffsetX={61} stickyLeft>Email <span style={{ float: 'right' }}><PinButton isPinActive={isStickyColumn} onClick={handlePinClick} /></span></TableCell>
           <TableCell header>First name</TableCell>
           <TableCell header>Last name</TableCell>
           <TableCell header>Phone number</TableCell>
@@ -521,7 +521,7 @@ export const TableWithMultipleSelectAndMultipleStickyColumnsAndHeader = () => {
           <TableCell
             header
             stickyColumn={isStickyColumn}
-            stickyColumnXOffset={0}
+            stickyColumnOffsetX={0}
             stickyRight
           >
             Action
@@ -536,7 +536,7 @@ export const TableWithMultipleSelectAndMultipleStickyColumnsAndHeader = () => {
             selected={selectedRows.includes(row.id)}
             onClick={() => handleCheckboxSelectSingle(row.id)}
           >
-            <TableCell stickyColumn={isStickyColumn} stickyColumnXOffset={0} stickyLeft>
+            <TableCell stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>
               <CheckboxButton
                 checked={isChecked(row.id)}
                 id="checkbox"
@@ -545,7 +545,7 @@ export const TableWithMultipleSelectAndMultipleStickyColumnsAndHeader = () => {
             </TableCell>
             <TableCell
               stickyColumn={isStickyColumn}
-              stickyColumnXOffset={3.813}
+              stickyColumnOffsetX={61}
               stickyLeft
             >{row.email}
             </TableCell>
@@ -556,7 +556,7 @@ export const TableWithMultipleSelectAndMultipleStickyColumnsAndHeader = () => {
             <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
             <TableCell
               stickyColumn={isStickyColumn}
-              stickyColumnXOffset={0}
+              stickyColumnOffsetX={0}
               stickyRight
             >{kebabButton()}
             </TableCell>
