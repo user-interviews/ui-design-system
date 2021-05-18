@@ -9,8 +9,6 @@ import {
 
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
-import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
-import CheckboxButton from 'src/CheckboxButton';
 import FormControlLabel from 'src/FormControlLabel';
 import RadioButtonGroup from 'src/RadioButtonGroup';
 import { ORIENTATIONS } from 'src/ControlButtonGroup';
@@ -175,7 +173,6 @@ const ButtonGroupComponent = ({
   );
 };
 /* eslint-enable react/prop-types */
-
 
 export const WithRadioButtonGroup = () => {
   const orientation = radios(

@@ -1,17 +1,26 @@
-import { boolean, radios, text, withKnobs } from '@storybook/addon-knobs';
 import React, { useState } from 'react';
+import {
+ boolean, radios, text, withKnobs,
+} from '@storybook/addon-knobs';
 import { ORIENTATIONS } from '../ControlButtonGroup';
 import CheckboxButtonGroup from './index';
-import FormControlLabel from '../FormControlLabel';
 import CheckboxButton from '../CheckboxButton';
+import FormControlLabel from '../FormControlLabel';
 import FormGroup from '../FormGroup/FormGroup';
+import mdx from './CheckboxButtonGroup.mdx';
 
 export default {
   title: 'Design System/Form Elements/CheckboxButtonGroup',
   component: CheckboxButtonGroup,
   decorators: [withKnobs()],
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
+/* eslint-disable react/prop-types */
 const CheckboxButtonGroupComponent = ({
   bordered,
   children,
@@ -48,6 +57,7 @@ const CheckboxButtonGroupComponent = ({
     </FormGroup>
   );
 };
+/* eslint-enable react/prop-types */
 
 export const Default = () => {
   const orientation = radios(
@@ -63,7 +73,7 @@ export const Default = () => {
       defaultValue={[]}
       fullWidth={boolean('Full width', false)}
       id="with-checkbox-button-group"
-      label="Form Group with checkbox button group"
+      label="Label"
       labelHelperText="use the knobs to try out different variations"
       labelHtmlFor="checkbox-button-group"
       orientation={orientation}
@@ -93,77 +103,15 @@ export const Default = () => {
   );
 };
 
-export const ColumnCheckboxButtonGroup = () => (
+export const DefaultRow = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
     fullWidth={false}
     id="with-checkbox-button-group"
-    label="Form Group with checkbox button group"
-    labelHelperText="with some helper text"
-    labelHtmlFor="checkbox-button-group"
-    orientation={ORIENTATIONS.COLUMN}
-  >
-    <FormControlLabel
-      Control={CheckboxButton}
-      id="value-1"
-      text="Label 1"
-      value="1"
-    />
-    <FormControlLabel
-      Control={CheckboxButton}
-      id="value-2"
-      text="Label 2"
-      value="2"
-    />
-    <FormControlLabel
-      Control={CheckboxButton}
-      id="value-3"
-      text="Label 3"
-      value="3"
-    />
-  </CheckboxButtonGroupComponent>
-  );
-
-export const BorderedCheckboxButtonGroup = () => (
-  <CheckboxButtonGroupComponent
-    defaultValue={[]}
-    fullWidth
-    id="with-checkbox-button-group"
-    label="Form Group with checkbox button group"
-    labelHelperText="with some helper text"
-    labelHtmlFor="checkbox-button-group"
-    orientation={ORIENTATIONS.ROW}
-  >
-    <FormControlLabel
-      Control={CheckboxButton}
-      id="value-1"
-      text="Label 1"
-      value="1"
-    />
-    <FormControlLabel
-      Control={CheckboxButton}
-      id="value-2"
-      text="Label 2"
-      value="2"
-    />
-    <FormControlLabel
-      Control={CheckboxButton}
-      id="value-3"
-      text="Label 3"
-      value="3"
-    />
-  </CheckboxButtonGroupComponent>
-  );
-
-export const RowCheckboxButtonGroup = () => (
-  <CheckboxButtonGroupComponent
-    bordered={false}
-    defaultValue={[]}
-    fullWidth={false}
-    id="with-checkbox-button-group"
-    inline={true}
-    label="Inline checkbox button group"
+    inline
+    label="Label"
+    labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.ROW}
   >
@@ -183,6 +131,41 @@ export const RowCheckboxButtonGroup = () => (
     />
     <FormControlLabel
       bordered={false}
+      Control={CheckboxButton}
+      id="value-3"
+      text="Label 3"
+      value="3"
+    />
+  </CheckboxButtonGroupComponent>
+  );
+
+export const BorderedRow = () => (
+  <CheckboxButtonGroupComponent
+    bordered={false}
+    defaultValue={[]}
+    fullWidth={false}
+    id="with-checkbox-button-group"
+    label="Label"
+    labelHelperText="helper text"
+    labelHtmlFor="checkbox-button-group"
+    orientation={ORIENTATIONS.ROW}
+  >
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      id="value-1"
+      text="Label 1"
+      value="1"
+    />
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      id="value-2"
+      text="Label 2"
+      value="2"
+    />
+    <FormControlLabel
+      bordered
       Control={CheckboxButton}
       id="value-3"
       text="Label 3"
@@ -191,14 +174,55 @@ export const RowCheckboxButtonGroup = () => (
   </CheckboxButtonGroupComponent>
 );
 
-export const BorderedRowCheckboxButtonGroup = () => (
+export const Description = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
-    fullWidth={false}
+    fullWidth
     id="with-checkbox-button-group"
-    label="Form Group with checkbox button group"
-    labelHelperText="with some helper text"
+    label="Label"
+    labelHelperText="helper text"
+    labelHtmlFor="checkbox-button-group"
+    orientation={ORIENTATIONS.COLUMN}
+  >
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      id="value-1"
+      text="Label 1"
+      value="1"
+    >
+      This is where the description goes
+    </FormControlLabel>
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      id="value-2"
+      text="Label 2"
+      value="2"
+    >
+      This is where the description goes
+    </FormControlLabel>
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      id="value-3"
+      text="Label 3"
+      value="3"
+    >
+      This is where the description goes
+    </FormControlLabel>
+  </CheckboxButtonGroupComponent>
+);
+
+export const DescriptionRow = () => (
+  <CheckboxButtonGroupComponent
+    bordered={false}
+    defaultValue={[]}
+    fullWidth
+    id="with-checkbox-button-group"
+    label="Label"
+    labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.ROW}
   >
@@ -208,20 +232,26 @@ export const BorderedRowCheckboxButtonGroup = () => (
       id="value-1"
       text="Label 1"
       value="1"
-    />
+    >
+      This is where the description goes
+    </FormControlLabel>
     <FormControlLabel
       bordered
       Control={CheckboxButton}
       id="value-2"
       text="Label 2"
       value="2"
-    />
+    >
+      This is where the description goes
+    </FormControlLabel>
     <FormControlLabel
       bordered
       Control={CheckboxButton}
       id="value-3"
       text="Label 3"
       value="3"
-    />
+    >
+      This is where the description goes
+    </FormControlLabel>
   </CheckboxButtonGroupComponent>
 );
