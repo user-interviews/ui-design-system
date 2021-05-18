@@ -3,13 +3,13 @@
 @import '../typography';
 
 .FormControlLabel {
-  @include font-type-30;
+  @include font-type-30--light;
 
   align-items: center;
   display: flex;
 
   &--with-children {
-    @include font-type-30--bold;
+    @include font-type-30;
 
     align-items: flex-start;
     flex-direction: column;
@@ -40,6 +40,16 @@
     border-radius: $ux-border-radius;
     padding: 1rem;
     cursor: pointer;
+
+
+    &.FormControlLabel--active {
+      background-color: $ux-blue-100;
+      border-color: $ux-blue-200;
+
+      .FormControlLabel__label {
+        color: $ux-blue-700;
+      }
+    }
   }
 
   &--disabled {

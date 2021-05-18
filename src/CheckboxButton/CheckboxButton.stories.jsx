@@ -75,3 +75,15 @@ export const Indeterminate = () => {
     </div>
   );
 };
+
+export const WithDescription = () => (
+  <FormControlLabel
+    bordered
+    Control={CheckboxButton}
+    id="value-2"
+    text="Label 2"
+    value="2"
+  >
+    This is where the description goes
+  </FormControlLabel>
+);
