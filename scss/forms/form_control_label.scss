@@ -4,8 +4,8 @@
 
 .FormControlLabel {
   @include font-type-30--light;
-
   align-items: center;
+  color: $ux-gray-900;
   display: flex;
 
   &--with-children {
@@ -22,6 +22,11 @@
     flex-direction: row;
   }
 
+  &__helper-text {
+    @include font-type-30;
+    font-weight: 100;
+  }
+
   &__control {
     display: flex;
     margin-right: .5rem;
@@ -30,7 +35,7 @@
   &__children {
     @include font-type-30;
 
-    color: $ux-gray-800;
+    font-weight: 100;
     margin-top: 0.5rem;
     width: 100%;
   }
@@ -45,10 +50,7 @@
     &.FormControlLabel--active {
       background-color: $ux-blue-100;
       border-color: $ux-blue-200;
-
-      .FormControlLabel__label {
-        color: $ux-blue-700;
-      }
+      color: $ux-blue-700;
     }
   }
 
