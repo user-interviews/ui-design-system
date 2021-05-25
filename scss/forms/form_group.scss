@@ -20,6 +20,7 @@
 
       &__helper-text {
         @include font-type-30--light;
+        font-weight: 100;
         color: $ux-gray-900;
       }
     }
@@ -48,6 +49,7 @@
 
     .FormControlLabel {
       white-space: nowrap;
+      margin-right: 1rem;
     }
 
     .FormControlLabel--active {
@@ -57,7 +59,8 @@
 
   &__helper-text {
     @include font-type-20;
-    color: $ux-gray-800;
+    font-weight: 100;
+    color: $ux-gray-900;
     padding: .375rem 0;
     margin: 0;
 

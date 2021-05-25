@@ -1340,6 +1340,13 @@ exports[`Storyshots Design System/Form Elements/CheckboxButtonGroup Description 
             value="1"
           />
           Label 1
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
         </div>
         <div
           className="FormControlLabel__children"
@@ -1363,6 +1370,13 @@ exports[`Storyshots Design System/Form Elements/CheckboxButtonGroup Description 
             value="2"
           />
           Label 2
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
         </div>
         <div
           className="FormControlLabel__children"
@@ -1386,6 +1400,13 @@ exports[`Storyshots Design System/Form Elements/CheckboxButtonGroup Description 
             value="3"
           />
           Label 3
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
         </div>
         <div
           className="FormControlLabel__children"
@@ -1443,6 +1464,13 @@ exports[`Storyshots Design System/Form Elements/CheckboxButtonGroup Description 
             value="1"
           />
           Label 1
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
         </div>
         <div
           className="FormControlLabel__children"
@@ -1466,6 +1494,13 @@ exports[`Storyshots Design System/Form Elements/CheckboxButtonGroup Description 
             value="2"
           />
           Label 2
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
         </div>
         <div
           className="FormControlLabel__children"
@@ -1489,6 +1524,13 @@ exports[`Storyshots Design System/Form Elements/CheckboxButtonGroup Description 
             value="3"
           />
           Label 3
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
         </div>
         <div
           className="FormControlLabel__children"
@@ -1705,94 +1747,6 @@ exports[`Storyshots Design System/Form Elements/Form Group Required 1`] = `
         type="text"
         value=""
       />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Design System/Form Elements/Form Group With Checkbox Button Group 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="FormGroup FormGroup--bordered"
-    id="with-checkbox-button-group"
-  >
-    <label
-      className="InputLabel"
-      htmlFor="checkbox-button-group"
-    >
-      Form Group with checkbox button group
-      <span
-        className="InputLabel__helper-text"
-      >
-         (
-        with some helper text
-        )
-      </span>
-    </label>
-    <div
-      className="CheckboxButtonGroup"
-      id="button-group"
-    >
-      <label
-        className="FormControlLabel"
-        htmlFor="value-1"
-      >
-        <div
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            id="value-1"
-            onChange={[Function]}
-            type="checkbox"
-            value="1"
-          />
-          Value 1
-        </div>
-      </label>
-      <label
-        className="FormControlLabel"
-        htmlFor="value-2"
-      >
-        <div
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            id="value-2"
-            onChange={[Function]}
-            type="checkbox"
-            value="2"
-          />
-          Value 2
-        </div>
-      </label>
-      <label
-        className="FormControlLabel"
-        htmlFor="value-3"
-      >
-        <div
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            id="value-3"
-            onChange={[Function]}
-            type="checkbox"
-            value="3"
-          />
-          Value 3
-        </div>
-      </label>
     </div>
   </div>
 </div>
