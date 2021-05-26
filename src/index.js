@@ -11,6 +11,7 @@ import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
+import KebabDropdown from 'src/KebabDropdown';
 import {
   Modal,
   MODAL_SIZES,
@@ -61,6 +62,7 @@ export {
   FormGroup,
   Input,
   InputLabel,
+  KebabDropdown,
   MessageTypes,
   Modal,
   MODAL_SIZES,
