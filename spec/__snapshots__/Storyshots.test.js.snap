@@ -988,8 +988,10 @@ exports[`Storyshots Design System/Form Elements/CheckboxButton Default 1`] = `
       className="FormControlLabel__label"
     >
       <input
+        checked={false}
         className="FormControlLabel__control"
         id="value-1"
+        onClick={[Function]}
         type="checkbox"
         value="1"
       />
@@ -1015,8 +1017,10 @@ exports[`Storyshots Design System/Form Elements/CheckboxButton Description 1`] =
       className="FormControlLabel__label"
     >
       <input
+        checked={false}
         className="FormControlLabel__control"
         id="value-2"
+        onClick={[Function]}
         type="checkbox"
         value="2"
       />
