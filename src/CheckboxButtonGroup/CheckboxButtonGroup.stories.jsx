@@ -34,7 +34,6 @@ const CheckboxButtonGroupComponent = ({
   labelHtmlFor,
 }) => {
   const [value, setValue] = useState(defaultValue);
-  const handleChangeValue = (values) => setValue(values);
 
   return (
     <FormGroup
@@ -50,7 +49,7 @@ const CheckboxButtonGroupComponent = ({
         id="button-group"
         orientation={orientation}
         value={value}
-        onChange={handleChangeValue}
+        onChange={setValue}
       >
         { children }
       </CheckboxButtonGroup>
@@ -65,7 +64,7 @@ export const Default = () => {
     Object.values(ORIENTATIONS),
     ORIENTATIONS.COLUMN,
   );
-  const bordered = boolean('Bordered buttons (only applicable on column orientation)', false);
+  const bordered = boolean('Bordered buttons', false);
 
   return (
     <CheckboxButtonGroupComponent

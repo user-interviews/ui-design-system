@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
+import FormControlLabel from 'src/FormControlLabel';
 
 import mdx from './CheckboxButton.mdx';
 
@@ -76,14 +77,23 @@ export const Indeterminate = () => {
   );
 };
 
-export const WithDescription = () => (
-  <FormControlLabel
-    bordered
-    Control={CheckboxButton}
-    id="value-2"
-    text="Label 2"
-    value="2"
-  >
-    This is where the description goes
-  </FormControlLabel>
-);
+export const WithDescription = () => {
+  const [checked, setChecked] = useState(false);
+  const toggleChecked = () => {
+    setChecked(!checked);
+  };
+
+  return (
+    <FormControlLabel
+      bordered
+      checked={checked}
+      Control={CheckboxButton}
+      id="value-2"
+      text="Label 2"
+      value="2"
+      onClick={toggleChecked}
+    >
+      This is where the description goes
+    </FormControlLabel>
+  );
+};
