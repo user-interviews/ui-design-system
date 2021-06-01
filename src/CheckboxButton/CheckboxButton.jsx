@@ -1,5 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+
+export const CHECKED_STATES = {
+  CHECKED: true,
+  UNCHECKED: false,
+  INDETERMINATE: 'indeterminate',
+};
 
 const CheckboxButton = React.forwardRef(({
   checked,
@@ -11,21 +17,31 @@ const CheckboxButton = React.forwardRef(({
   value,
   onChange,
   ...rest
-}, ref) => (
-  <input
-    checked={checked}
-    className={className}
-    disabled={disabled}
-    id={id}
-    indeterminate={indeterminate}
-    name={name}
-    ref={ref}
-    type="checkbox"
-    value={value}
-    onChange={onChange}
-    {...rest}
-  />
-));
+}, ref) => {
+  useEffect(() => {
+    if (ref && ref.current) {
+      /* eslint-disable no-param-reassign */
+      ref.current.indeterminate = indeterminate;
+      /* eslint-enable no-param-reassign */
+    }
+  }, [indeterminate, ref]);
+
+  return (
+    <input
+      checked={checked}
+      className={className}
+      disabled={disabled}
+      id={id}
+      indeterminate={indeterminate}
+      name={name}
+      ref={ref}
+      type="checkbox"
+      value={value}
+      onChange={onChange}
+      {...rest}
+    />
+  );
+});
 
 CheckboxButton.propTypes = {
   checked: PropTypes.bool,
