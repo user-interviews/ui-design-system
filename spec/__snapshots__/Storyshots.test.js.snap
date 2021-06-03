@@ -634,6 +634,75 @@ exports[`Storyshots Design System/Card Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/CheckboxButton Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <input
+    checked={true}
+    className="checkbox"
+    disabled={false}
+    id="1"
+    onChange={[Function]}
+    type="checkbox"
+    value={1}
+  />
+</div>
+`;
+
+exports[`Storyshots Design System/CheckboxButton Indeterminate 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+        "rowGap": "1rem",
+      }
+    }
+  >
+    <input
+      checked={false}
+      id="select-all"
+      indeterminate={false}
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <input
+      checked={false}
+      id="1"
+      onChange={[Function]}
+      type="checkbox"
+      value="1"
+    />
+    <input
+      checked={false}
+      id="2"
+      onChange={[Function]}
+      type="checkbox"
+      value="2"
+    />
+    <input
+      checked={false}
+      id="3"
+      onChange={[Function]}
+      type="checkbox"
+      value="3"
+    />
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Copy To Clipboard Button Default 1`] = `
 <div
   style={
