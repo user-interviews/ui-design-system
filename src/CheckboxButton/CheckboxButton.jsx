@@ -20,9 +20,8 @@ const CheckboxButton = React.forwardRef(({
 }, ref) => {
   useEffect(() => {
     if (ref && ref.current) {
-      /* eslint-disable no-param-reassign */
-      ref.current.indeterminate = indeterminate;
-      /* eslint-enable no-param-reassign */
+      const checkboxRef = ref.current;
+      checkboxRef.indeterminate = indeterminate;
     }
   }, [indeterminate, ref]);
 

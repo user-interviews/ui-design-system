@@ -55,7 +55,7 @@ export const Indeterminate = () => {
   };
 
   return (
-    <div style={{ display: 'flex', flexDirection: 'column' }}>
+    <div style={{ display: 'flex', flexDirection: 'column', rowGap: '1rem' }}>
       <CheckboxButton
         checked={checked.length === 3}
         id="select-all"
