@@ -31,7 +31,6 @@ const CheckboxButton = React.forwardRef(({
       className={className}
       disabled={disabled}
       id={id}
-      indeterminate={indeterminate}
       name={name}
       ref={ref}
       type="checkbox"

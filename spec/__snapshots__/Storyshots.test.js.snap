@@ -674,7 +674,6 @@ exports[`Storyshots Design System/CheckboxButton Indeterminate 1`] = `
     <input
       checked={false}
       id="select-all"
-      indeterminate={false}
       onChange={[Function]}
       type="checkbox"
     />
