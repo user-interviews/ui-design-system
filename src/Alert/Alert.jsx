@@ -94,7 +94,7 @@ function Alert(props) {
 Alert.propTypes = {
   autoDismiss: PropTypes.bool,
   id: PropTypes.string.isRequired,
-  message: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
+  message: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   title: PropTypes.string,
   type: PropTypes.string.isRequired,
   onDismiss: PropTypes.func,
