@@ -1,4 +1,4 @@
-import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Alert from './Alert'
 
 # Alerts
@@ -7,9 +7,9 @@ Alerts give users updates or changes to system status. Providing immediate feedb
 building trust.  While alerts are a great way of communicating with users, they are disruptive and
 should be used cautiously.
 
-<Preview>
+<Canvas>
   <Story id="design-system-alert--success"/>
-</Preview>
+</Canvas>
 
 <ArgsTable of={Alert} />
 
@@ -18,7 +18,7 @@ should be used cautiously.
 - **Icon:** Allow users to identify the type of alert at a glance
 - **Title:** Summary of alert topic 
 - **Message:** Provide details or actionable step for user
-- **CTA** ***(currently WIP):*** To provide more details or an escape so users can finish the task they were doing.
+- **CTA:** To provide more details, an action, or an escape so users can finish the task they were doing
 - **Close icon:** Closes the alert
 
 ## Stories
@@ -27,9 +27,9 @@ should be used cautiously.
 
 - Used when something went as planned. (e.g. When you've saved your progress in the builder.)
 
-<Preview>
+<Canvas>
   <Story id="design-system-alert--success" />
-</Preview>
+</Canvas>
 
 ### Info
 
@@ -37,9 +37,9 @@ should be used cautiously.
 page and are not affected by an event, whereas success/error alerts are at the top of the page
 based on an event. These alerts will always be blue!
 
-<Preview>
+<Canvas>
   <Story id="design-system-alert--info" />
-</Preview>
+</Canvas>
 
 ### Error
 
@@ -47,9 +47,9 @@ based on an event. These alerts will always be blue!
 the incentive field blank in the builder and try to launch, you receive an error. You must
 fill in the field to launch a project.)
 
-<Preview>
+<Canvas>
   <Story id="design-system-alert--error" />
-</Preview>
+</Canvas>
 
 ### Warning
 
@@ -57,15 +57,26 @@ fill in the field to launch a project.)
 performing an action. (e.g For COVID, we show a yellow alert to encourage researcher to
 consult CDC guidelines for in person sessions.
 
-<Preview>
+<Canvas>
   <Story id="design-system-alert--warning" />
-</Preview>
+</Canvas>
 
 
 ### With Dismiss
 
 - Used in cases where a user would want to dismiss or remove an alert from view.
 
-<Preview>
+<Canvas>
   <Story id="design-system-alert--with-dismiss" />
-</Preview>
+</Canvas>
+
+
+### With Call To Action
+
+- Used to provide a call to action for the user. 
+- You can provide the CTA element either through the `message` or `action` prop. 
+- Using the `action` prop creates a 4-column grid versus the default 3-column grid on this component.
+
+<Canvas>
+  <Story id="design-system-alert--with-call-to-action" />
+</Canvas>
