@@ -99,17 +99,32 @@ const GoogleCalendarButton = () => (
 );
 
 export const WithCallToAction = () => (
-  <Alert
-    id="7"
-    message={(
-      <Fragment>
-        <div>When you confirm a session we’ll automatically
-          add an event and reminders to your Google Calendar.
-        </div>
-        <GoogleCalendarButton />
-      </Fragment>
-    )}
-    title={text('Title', 'Connect to Google Calendar to create reminders automatically')}
-    type={MessageTypes.ANNOUNCEMENT}
-  />
+  <>
+    <p>CTA via <code>message</code> prop</p>
+    <Alert
+      id="7"
+      message={(
+        <Fragment>
+          <div>When you confirm a session we’ll automatically
+            add an event and reminders to your Google Calendar.
+          </div>
+          <GoogleCalendarButton />
+        </Fragment>
+      )}
+      title={text('Title', 'Connect to Google Calendar to create reminders automatically')}
+      type={MessageTypes.ANNOUNCEMENT}
+      onDismiss={onDismiss}
+    />
+
+    <p>CTA via <code>action</code> prop</p>
+    <Alert
+      action={<GoogleCalendarButton />}
+      id="8"
+      message={text('Message', `When you confirm a session we’ll automatically
+      add an event and reminders to your Google Calendar.`)}
+      title={text('Title', 'Connect to Google Calendar to create reminders automatically')}
+      type={MessageTypes.ANNOUNCEMENT}
+      onDismiss={onDismiss}
+    />
+  </>
 );

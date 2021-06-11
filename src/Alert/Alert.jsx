@@ -74,6 +74,11 @@ function Alert(props) {
         }
         {props.message}
       </div>
+      {props.action && (
+        <div className="Alert__action">
+          {props.action}
+        </div>
+      )}
       {
         props.onDismiss && (
           <div className="Alert__close">
@@ -92,6 +97,7 @@ function Alert(props) {
 }
 
 Alert.propTypes = {
+  action: PropTypes.node,
   autoDismiss: PropTypes.bool,
   id: PropTypes.string.isRequired,
   message: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
@@ -101,6 +107,7 @@ Alert.propTypes = {
 };
 
 Alert.defaultProps = {
+  action: undefined,
   autoDismiss: false,
   title: undefined,
   onDismiss: undefined,

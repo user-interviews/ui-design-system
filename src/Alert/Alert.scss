@@ -7,7 +7,7 @@
 
 .Alert {
   display: grid;
-  grid-template-columns: 2rem auto 2rem;
+  grid-template-columns: 2rem auto auto 2rem;
   font-weight: 500;
   border-radius: .25rem;
   margin-bottom: 1rem;
@@ -22,11 +22,20 @@
   &__content {
     grid-column-start: 2;
     grid-column-end: 3;
+    margin-right: $ux-spacing-40;
+  }
+
+  &__action {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   &__close {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
   }
 
   &__title {
