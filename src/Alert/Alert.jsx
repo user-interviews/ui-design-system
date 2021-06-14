@@ -10,6 +10,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import './Alert.scss';
+import classNames from 'classnames';
 
 export const MessageTypes = {
   SUCCESS: 'success',
@@ -74,9 +75,19 @@ function Alert(props) {
         }
         {props.message}
       </div>
-      {props.action && (
+      { 
+        props.action && (
         <div className="Alert__action">
-          {props.action}
+          { React.isValidElement(props.action) ?
+            props.action : (
+              <form action={props.action.url}>
+                <input
+                  className={classNames(`${getAlertClassName(props.type)}`, 'primary-action')}
+                  type="submit"
+                  value={props.action.content}
+                />
+              </form>
+          )}
         </div>
       )}
       {
@@ -97,7 +108,7 @@ function Alert(props) {
 }
 
 Alert.propTypes = {
-  action: PropTypes.node,
+  action: PropTypes.oneOfType([PropTypes.object, PropTypes.node]),
   autoDismiss: PropTypes.bool,
   id: PropTypes.string.isRequired,
   message: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,

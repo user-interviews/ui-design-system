@@ -100,7 +100,49 @@ const GoogleCalendarButton = () => (
 
 export const WithCallToAction = () => (
   <>
-    <p>CTA via <code>message</code> prop</p>
+    <p>Default CTA rendered by component</p>
+    <Alert
+      action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+      id="8"
+      message="Success message"
+      title="Success title"
+      type={MessageTypes.SUCCESS}
+      onDismiss={onDismiss}
+    />
+    <Alert
+      action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+      id="9"
+      message="Info message"
+      title="Info title"
+      type={MessageTypes.INFO}
+      onDismiss={onDismiss}
+    />
+    <Alert
+      action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+      id="10"
+      message="Announcement message"
+      title="Announcement title"
+      type={MessageTypes.ANNOUNCEMENT}
+      onDismiss={onDismiss}
+    />
+    <Alert
+      action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+      id="11"
+      message="Error message"
+      title="Error title"
+      type={MessageTypes.ERROR}
+      onDismiss={onDismiss}
+    />
+    <Alert
+      action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+      id="12"
+      message="Warning message"
+      title="Warning title"
+      type={MessageTypes.WARNING}
+      onDismiss={onDismiss}
+    />
+
+    <p>Custom CTA via <code>message</code> prop</p>
     <Alert
       id="7"
       message={(
@@ -116,7 +158,7 @@ export const WithCallToAction = () => (
       onDismiss={onDismiss}
     />
 
-    <p>CTA via <code>action</code> prop</p>
+    <p>Custom CTA via <code>action</code> prop</p>
     <Alert
       action={<GoogleCalendarButton />}
       id="8"

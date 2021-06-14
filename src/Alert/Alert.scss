@@ -53,6 +53,20 @@
   .close {
     color: $ux-green-800;
   }
+
+  .primary-action {
+    @include font-type-30--bold;
+    background-color: $ux-green-300;
+    border: none;
+    border-left: unset;
+    color: $ux-green-700;
+    margin: unset;
+    padding: .5rem 1rem;
+    
+    &:hover {
+      background-color: $ux-green-400;
+    }
+  }
 }
 
 .Alert-info {
@@ -62,6 +76,20 @@
 
   .close {
     color: $ux-blue-700;
+  }
+
+  .primary-action {
+    @include font-type-30--bold;
+    background-color: $ux-blue-200;
+    border: none;
+    border-left: unset;
+    color: $ux-blue-600;
+    margin: unset;
+    padding: .5rem 1rem;
+    
+    &:hover {
+      background-color: $ux-blue-300;
+    }
   }
 }
 
@@ -73,6 +101,20 @@
   .close {
     color: $ux-blue-700;
   }
+
+  .primary-action {
+    @include font-type-30--bold;
+    background-color: $ux-blue-200;
+    border: none;
+    border-left: unset;
+    color: $ux-blue-600;
+    margin: unset;
+    padding: .5rem 1rem;
+    
+    &:hover {
+      background-color: $ux-blue-300;
+    }
+  }
 }
 
 .Alert-warning {
@@ -83,6 +125,20 @@
   .close {
     color: $ux-yellow-800;
   }
+
+  .primary-action {
+    @include font-type-30--bold;
+    background-color: $ux-yellow-300;
+    border: none;
+    border-left: unset;
+    color: $ux-yellow-800;
+    margin: unset;
+    padding: .5rem 1rem;
+    
+    &:hover {
+      background-color: $ux-yellow-400;
+    }
+  }
 }
 
 .Alert-error {
@@ -92,5 +148,19 @@
 
   .close {
     color: $ux-red-800;
+  }
+
+  .primary-action {
+    @include font-type-30--bold;
+    background-color: $ux-red-200;
+    border: none;
+    border-left: unset;
+    color: $ux-red-800;
+    margin: unset;
+    padding: .5rem 1rem;
+    
+    &:hover {
+      background-color: $ux-red-300;
+    }
   }
 }
