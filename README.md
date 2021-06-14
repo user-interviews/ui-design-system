@@ -71,6 +71,10 @@ How do we determine whether it's a major, minor, or patch release?
 
 # Developer Resources
 
+## Initial Setup
+After cloning the repo, obtain a `.npmrc` file from another developer. This file contains authorization tokens for any private 
+node packages.
+
 ## Available Scripts
 In the project directory, you can run:
 
