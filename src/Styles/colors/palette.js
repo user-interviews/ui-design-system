@@ -6,9 +6,9 @@ const baseColors = {
   uxGray: '#A1A1A1',
   uxGreen: '#6DBD63',
   uxOrange: '#F59C27',
-  uxPurple: '#874B96',
+  uxPurple: '#725CCC',
   uxRed: '#FF4E00',
-  uxYellow: '#F6D810',
+  uxYellow: '#F5D427',
   uxWhite: '#FFFFFF',
 };
 
@@ -21,7 +21,7 @@ const colorGradients = {
   uxBlue600: '#155B99',
   uxBlue700: '#0D4473',
   uxBlue800: '#083054',
-  uxBlue900: '#032847',
+  uxBlue900: '#00192E',
 
   uxGray100: '#F9F9F9',
   uxGray200: '#F1F1F1',
@@ -41,7 +41,7 @@ const colorGradients = {
   uxGreen600: '#47A13B',
   uxGreen700: '#297021',
   uxGreen800: '#1A5313',
-  uxGreen900: '#0E4207',
+  uxGreen900: '#062902',
 
   uxOrange100: '#FDEAD2',
   uxOrange200: '#FCDFB9',
@@ -51,7 +51,7 @@ const colorGradients = {
   uxOrange600: '#E18C28',
   uxOrange700: '#AE6608',
   uxOrange800: '#7D4A06',
-  uxOrange900: '#653B05',
+  uxOrange900: '#3D2200',
 
   uxRed100: '#F0D9D9',
   uxRed200: '#E8C5CB',
@@ -61,7 +61,27 @@ const colorGradients = {
   uxRed600: '#C71F1F',
   uxRed700: '#B11B1B',
   uxRed800: '#9B1818',
-  uxRed900: '#851414',
+  uxRed900: '#470404',
+
+  uxYellow100: '#FDF6D2',
+  uxYellow200: '#FCF1B9',
+  uxYellow300: '#FAE788',
+  uxYellow400: '#F7DD58',
+  uxYellow500: baseColors.uxYellow,
+  uxYellow600: '#E1C228',
+  uxYellow700: '#AE9208',
+  uxYellow800: '#7D6906',
+  uxYellow900: '#3D3300',
+
+  uxPurple100: '#EAE6FA',
+  uxPurple200: '#DCD7F1',
+  uxPurple300: '#BDB3E5',
+  uxPurple400: '#9382D9',
+  uxPurple500: baseColors.uxPurple,
+  uxPurple600: '#5642A6',
+  uxPurple700: '#42308C',
+  uxPurple800: '#34227A',
+  uxPurple900: '#120640',
 };
 
 export default {
