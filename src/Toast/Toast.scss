@@ -22,5 +22,16 @@
   
   .Alert {
     box-shadow: $ux-elevations-20;
+
+    // explicitly sets grid template areas based on Alert.scss
+    // the CTA action will always be below the Toast content
+    grid-template-areas: 
+    'icon content content close'
+    'icon action action close';
+
+    &__action {
+      margin-top: 0.25rem;
+      justify-content: flex-start;
+    }
   }
 }

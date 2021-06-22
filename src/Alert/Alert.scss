@@ -8,6 +8,19 @@
 .Alert {
   display: grid;
   grid-template-columns: 2rem auto auto 2rem;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    'icon content content close'
+    'icon action action close'
+    ;
+  
+  @media (min-width: 450px) {
+    grid-template-areas: 
+    'icon content action close'
+    'icon content action close'
+    ;
+  }
+
   font-weight: 500;
   border-radius: .25rem;
   margin-bottom: 1rem;
@@ -15,27 +28,27 @@
   position: relative;
 
   &__icon {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-area: icon;
   }
 
   &__content {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-area: content;
     margin-right: $ux-spacing-40;
   }
 
   &__action {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-area: action;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+    
+    @media (min-width: 450px) {
+      justify-content: center;
+    }
   }
 
   &__close {
-    grid-column-start: 4;
-    grid-column-end: 5;
+    grid-area: close;
   }
 
   &__title {

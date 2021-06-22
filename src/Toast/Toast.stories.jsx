@@ -12,10 +12,12 @@ export default {
   decorators: [withKnobs],
 };
 
-const DummyComponent = ({ type, message, setToastMessage }) => (
+const DummyComponent = ({
+ action, type, message, setToastMessage,
+}) => (
   <div>
     <p>Click the button to see a toast message.  Use the knobs to try different types!</p>
-    <button className="btn btn-primary" type="button" onClick={() => setToastMessage(type, message)}>Submit</button>
+    <button className="btn btn-primary" type="button" onClick={() => setToastMessage(action, type, message)}>Submit</button>
   </div>
   );
 DummyComponent.propTypes = withToastPropTypes;
@@ -32,6 +34,14 @@ const ManualDismissToastComponent = withToast(DummyComponent, { autoDismiss: fal
 
 export const ManualDismissToast = () => (
   <ManualDismissToastComponent
+    message={text('Message', 'Your action was a success!')}
+    type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
+  />
+);
+
+export const ToastWithAction = () => (
+  <ManualDismissToastComponent
+    action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
     message={text('Message', 'Your action was a success!')}
     type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
   />

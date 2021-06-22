@@ -75,7 +75,7 @@ function Alert(props) {
         }
         {props.message}
       </div>
-      { 
+      {
         props.action && (
         <div className="Alert__action">
           { React.isValidElement(props.action) ?
@@ -89,7 +89,8 @@ function Alert(props) {
               </form>
           )}
         </div>
-      )}
+      )
+}
       {
         props.onDismiss && (
           <div className="Alert__close">

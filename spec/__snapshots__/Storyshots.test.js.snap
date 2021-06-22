@@ -15074,6 +15074,32 @@ exports[`Storyshots Design System/Toast Toast 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Toast Toast With Action 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="btn btn-primary"
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Tooltip Default 1`] = `
 <div
   style={
