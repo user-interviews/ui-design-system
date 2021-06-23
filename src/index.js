@@ -28,7 +28,7 @@ import {
   SELECT_SIZES,
   SingleSelect,
 } from 'src/Select';
-import { colors } from 'src/Styles';
+import { colors as COLORS } from 'src/Styles';
 import {
   Table,
   TableBody,
@@ -55,7 +55,7 @@ export {
   CheckboxButton,
   CheckboxButtonGroup,
   CHECKED_STATES,
-  colors,
+  COLORS,
   CopyToClipboard,
   CopyToClipboardButton,
   FadeTransition,
