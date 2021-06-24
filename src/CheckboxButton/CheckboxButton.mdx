@@ -1,0 +1,32 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import CheckboxButton from './CheckboxButton';
+
+# CheckboxButton
+A checkbox control.
+
+<Canvas>
+  <Story id="design-system-checkboxbutton--default" />
+</Canvas>
+
+<ArgsTable of={CheckboxButton} />
+
+## Anatomy 
+- States: checked, unchecked, & indeterminate
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story id="design-system-checkboxbutton--default" />
+</Canvas>
+
+### Indeterminate
+
+- When a checkbox "owns" a number of sub-checkboxes and any one or more of the sub-checkboxes have a different state than the others, the owning checkbox is in the indeterminate state (or "partially" checked)
+- The indeterminate state of a checkbox is visual only.
+- You can’t make a checkbox indeterminate through HTML. There is no indeterminate attribute. It is a property of checkboxes though, which you can change via JavaScript (i.e. we're handling it through refs and `useEffect` on the CheckboxButton component). Please use the `indeterminate` prop to get the desired effect. 
+
+<Canvas>
+  <Story id="design-system-checkboxbutton--indeterminate" />
+</Canvas>

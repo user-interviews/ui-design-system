@@ -1,7 +1,7 @@
 import { Alert, MessageTypes } from 'src/Alert';
 import Avatar from 'src/Avatar';
 import Card, { CardSizes } from 'src/Card';
-import CheckboxButton from 'src/CheckboxButton';
+import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
@@ -53,6 +53,7 @@ export {
   CardSizes,
   CheckboxButton,
   CheckboxButtonGroup,
+  CHECKED_STATES,
   CopyToClipboard,
   CopyToClipboardButton,
   FadeTransition,
