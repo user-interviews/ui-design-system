@@ -9,8 +9,6 @@ import {
 
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
-import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
-import CheckboxButton from 'src/CheckboxButton';
 import FormControlLabel from 'src/FormControlLabel';
 import RadioButtonGroup from 'src/RadioButtonGroup';
 import { ORIENTATIONS } from 'src/ControlButtonGroup';
@@ -175,53 +173,6 @@ const ButtonGroupComponent = ({
   );
 };
 /* eslint-enable react/prop-types */
-
-export const WithCheckboxButtonGroup = () => {
-  const orientation = radios(
-    'Orientation',
-    Object.values(ORIENTATIONS),
-    ORIENTATIONS.COLUMN,
-  );
-  let bordered = true;
-  if (orientation === ORIENTATIONS.COLUMN) {
-    bordered = boolean('Bordered buttons (only applicable on column orientation)', false);
-  }
-  return (
-    <ButtonGroupComponent
-      bordered={boolean('Bordered Form Group', true)}
-      ButtonGroup={CheckboxButtonGroup}
-      defaultValue={[]}
-      fullWidth={boolean('Full width', false)}
-      id="with-checkbox-button-group"
-      label="Form Group with checkbox button group"
-      labelHelperText="with some helper text"
-      labelHtmlFor="checkbox-button-group"
-      orientation={orientation}
-    >
-      <FormControlLabel
-        bordered={bordered}
-        Control={CheckboxButton}
-        id="value-1"
-        text={text('Label 1', 'Value 1')}
-        value="1"
-      />
-      <FormControlLabel
-        bordered={bordered}
-        Control={CheckboxButton}
-        id="value-2"
-        text={text('Label 2', 'Value 2')}
-        value="2"
-      />
-      <FormControlLabel
-        bordered={bordered}
-        Control={CheckboxButton}
-        id="value-3"
-        text={text('Label 3', 'Value 3')}
-        value="3"
-      />
-    </ButtonGroupComponent>
-  );
-};
 
 export const WithRadioButtonGroup = () => {
   const orientation = radios(

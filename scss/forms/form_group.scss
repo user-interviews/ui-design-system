@@ -20,6 +20,7 @@
 
       &__helper-text {
         @include font-type-30--light;
+        font-weight: 100;
         color: $ux-gray-900;
       }
     }
@@ -36,9 +37,30 @@
     }
   }
 
+  &--inline {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    .InputLabel {
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .FormControlLabel {
+      white-space: nowrap;
+      margin-right: 1rem;
+    }
+
+    .FormControlLabel--active {
+      white-space: nowrap;
+    }
+  }
+
   &__helper-text {
     @include font-type-20;
-    color: $ux-gray-800;
+    font-weight: 100;
+    color: $ux-gray-900;
     padding: .375rem 0;
     margin: 0;
 

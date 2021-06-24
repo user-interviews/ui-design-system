@@ -2,7 +2,7 @@
   on:
     push:
       branches:
-        - main
+        - feature/UIDS-272-update-checkbox-groups
   jobs:
     gh-pages-deploy:
       name: Deploying to gh-pages
