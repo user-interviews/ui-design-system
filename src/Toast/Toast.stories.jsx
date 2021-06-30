@@ -17,7 +17,7 @@ const DummyComponent = ({
 }) => (
   <div>
     <p>Click the button to see a toast message.  Use the knobs to try different types!</p>
-    <button className="btn btn-primary" type="button" onClick={() => setToastMessage(action, type, message)}>Submit</button>
+    <button className="btn btn-primary" type="button" onClick={() => setToastMessage(type, message, action)}>Submit</button>
   </div>
   );
 DummyComponent.propTypes = withToastPropTypes;

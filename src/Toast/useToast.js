@@ -1,11 +1,11 @@
 import { useCallback, useReducer } from 'react';
 import { v4 as generateUUID } from 'uuid';
 
-const createMessage = (messageAction, messageType, messageText) => ({
+const createMessage = (messageType, messageText, messageAction) => ({
   id: generateUUID(),
-  action: messageAction,
   message: messageText,
   type: messageType,
+  action: messageAction,
 });
 
 const ACTIONS = {
