@@ -24,11 +24,13 @@ const defaultStyles = ({ size }) => ({
       backgroundColor: isDisabled ? systemColors.inputDisabledBg : styles.backgroundColor,
       borderColor: systemColors.inputBorderColor,
     }),
-    dropdownIndicator: (styles) => ({ ...styles, color: systemColors.uxGray600 }),
+    dropdownIndicator: (styles) => ({ ...styles, color: systemColors.UX_GRAY_600 }),
     indicatorSeparator: (styles) => ({ ...styles, display: 'none' }),
     singleValue: (styles, { data }) => ({
       ...styles,
-      color: (data.colors ? data.colors.text : systemColors.uxGray900) || systemColors.uxGray900,
+      color: (
+        (data.colors ? data.colors.text : systemColors.UX_GRAY_900) || systemColors.UX_GRAY_900
+      ),
       fontWeight: fontWeights.light,
     }),
     option: (styles, {
@@ -49,12 +51,12 @@ const defaultStyles = ({ size }) => ({
         ':active': {
           ...styles[':active'],
           backgroundColor:
-            !isDisabled && isSelected ? systemColors.uxGray200 : styles[':active'].backgroundColor,
+            !isDisabled && isSelected ? systemColors.UX_GRAY_200 : styles[':active'].backgroundColor,
         },
 
         ':hover': {
           ...styles[':hover'],
-          backgroundColor: colors.hover || systemColors.uxGray200,
+          backgroundColor: colors.hover || systemColors.UX_GRAY_200,
         },
       };
     },
