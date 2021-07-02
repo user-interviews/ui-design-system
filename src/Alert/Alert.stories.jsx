@@ -3,8 +3,10 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 
 import { Alert, MessageTypes } from 'src/Alert';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import mdx from './Alert.mdx';
-import GoogleLogo from '../../public/google-logo.svg';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/global.scss';
@@ -89,11 +91,12 @@ const googleButtonStyle = {
   margin: '16px 0',
   padding: '8px 16px',
   color: '#FFFFFF',
+  whiteSpace: 'nowrap',
 };
 
 const GoogleCalendarButton = () => (
   <button style={googleButtonStyle} type="button">
-    <img alt="Google Logo" src={GoogleLogo} style={{ marginRight: '8px', paddingBottom: '2px' }} />
+    <FontAwesomeIcon icon={faGoogle} style={{ height: '1rem', marginRight: '0.5rem' }} />
     Connect Google Calendar
   </button>
 );
