@@ -12,8 +12,8 @@
   border-left: unset;
   border-radius: $ux-border-radius;
   color: $color;
-  margin: unset;
-  padding: .5rem 1rem;
+  margin: $ux-spacing-20 0 $ux-spacing-20 0;
+  padding: $ux-spacing-20 $ux-spacing-40;
   text-decoration: none;
   
   &:hover {
@@ -38,9 +38,9 @@
   }
 
   font-weight: 500;
-  border-radius: .25rem;
-  margin-bottom: 1rem;
-  padding: .75rem 1.25rem;
+  border-radius: $ux-border-radius;
+  margin-bottom: $ux-spacing-40;
+  padding: $ux-spacing-30 1.25rem;
   position: relative;
 
   &__icon {
