@@ -5,6 +5,22 @@
 
 @import '../../scss/theme';
 
+@mixin primary-action($bg-color, $bg-color-hover, $color) {
+  @include font-type-30--bold;
+  background-color: $bg-color;
+  border: none;
+  border-left: unset;
+  border-radius: $ux-border-radius;
+  color: $color;
+  margin: unset;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  
+  &:hover {
+    background-color: $bg-color-hover;
+  }
+}
+
 .Alert {
   display: grid;
   grid-template-columns: 2rem auto auto 2rem;
@@ -68,17 +84,7 @@
   }
 
   .primary-action {
-    @include font-type-30--bold;
-    background-color: $ux-green-300;
-    border: none;
-    border-left: unset;
-    color: $ux-green-700;
-    margin: unset;
-    padding: .5rem 1rem;
-    
-    &:hover {
-      background-color: $ux-green-400;
-    }
+    @include primary-action($ux-green-300, $ux-green-400, $ux-green-700)
   }
 }
 
@@ -92,17 +98,7 @@
   }
 
   .primary-action {
-    @include font-type-30--bold;
-    background-color: $ux-blue-200;
-    border: none;
-    border-left: unset;
-    color: $ux-blue-600;
-    margin: unset;
-    padding: .5rem 1rem;
-    
-    &:hover {
-      background-color: $ux-blue-300;
-    }
+    @include primary-action($ux-blue-200, $ux-blue-300, $ux-blue-600)
   }
 }
 
@@ -116,17 +112,7 @@
   }
 
   .primary-action {
-    @include font-type-30--bold;
-    background-color: $ux-blue-200;
-    border: none;
-    border-left: unset;
-    color: $ux-blue-600;
-    margin: unset;
-    padding: .5rem 1rem;
-    
-    &:hover {
-      background-color: $ux-blue-300;
-    }
+    @include primary-action($ux-blue-200, $ux-blue-300, $ux-blue-600)
   }
 }
 
@@ -140,17 +126,7 @@
   }
 
   .primary-action {
-    @include font-type-30--bold;
-    background-color: $ux-yellow-300;
-    border: none;
-    border-left: unset;
-    color: $ux-yellow-800;
-    margin: unset;
-    padding: .5rem 1rem;
-    
-    &:hover {
-      background-color: $ux-yellow-400;
-    }
+    @include primary-action($ux-yellow-300, $ux-yellow-400, $ux-yellow-800)
   }
 }
 
@@ -164,16 +140,6 @@
   }
 
   .primary-action {
-    @include font-type-30--bold;
-    background-color: $ux-red-200;
-    border: none;
-    border-left: unset;
-    color: $ux-red-800;
-    margin: unset;
-    padding: .5rem 1rem;
-    
-    &:hover {
-      background-color: $ux-red-300;
-    }
+    @include primary-action($ux-red-200, $ux-red-300, $ux-red-800)
   }
 }
