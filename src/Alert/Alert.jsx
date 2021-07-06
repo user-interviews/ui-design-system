@@ -80,13 +80,13 @@ function Alert(props) {
         <div className="Alert__action">
           { React.isValidElement(props.action) ?
             props.action : (
-              <form action={props.action.url}>
-                <input
-                  className={classNames(`${getAlertClassName(props.type)}`, 'primary-action')}
-                  type="submit"
-                  value={props.action.content}
-                />
-              </form>
+              <a
+                className={classNames(`Alert-${(props.type)}`, 'primary-action')}
+                href={props.action.url}
+                rel="noopener noreferrer"
+              >
+                {props.action.content}
+              </a>
           )}
         </div>
       )

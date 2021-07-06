@@ -278,15 +278,13 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
     <div
       className="Alert__action"
     >
-      <form
-        action="https://www.userinterviews.com/"
+      <a
+        className="Alert-success primary-action"
+        href="https://www.userinterviews.com/"
+        rel="noopener noreferrer"
       >
-        <input
-          className="Alert Alert-success primary-action"
-          type="submit"
-          value="Primary action"
-        />
-      </form>
+        Primary action
+      </a>
     </div>
     <div
       className="Alert__close"
@@ -337,15 +335,13 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
     <div
       className="Alert__action"
     >
-      <form
-        action="https://www.userinterviews.com/"
+      <a
+        className="Alert-info primary-action"
+        href="https://www.userinterviews.com/"
+        rel="noopener noreferrer"
       >
-        <input
-          className="Alert Alert-info primary-action"
-          type="submit"
-          value="Primary action"
-        />
-      </form>
+        Primary action
+      </a>
     </div>
     <div
       className="Alert__close"
@@ -396,15 +392,13 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
     <div
       className="Alert__action"
     >
-      <form
-        action="https://www.userinterviews.com/"
+      <a
+        className="Alert-announcement primary-action"
+        href="https://www.userinterviews.com/"
+        rel="noopener noreferrer"
       >
-        <input
-          className="Alert Alert-announcement primary-action"
-          type="submit"
-          value="Primary action"
-        />
-      </form>
+        Primary action
+      </a>
     </div>
     <div
       className="Alert__close"
@@ -455,15 +449,13 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
     <div
       className="Alert__action"
     >
-      <form
-        action="https://www.userinterviews.com/"
+      <a
+        className="Alert-error primary-action"
+        href="https://www.userinterviews.com/"
+        rel="noopener noreferrer"
       >
-        <input
-          className="Alert Alert-error primary-action"
-          type="submit"
-          value="Primary action"
-        />
-      </form>
+        Primary action
+      </a>
     </div>
     <div
       className="Alert__close"
@@ -514,15 +506,13 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
     <div
       className="Alert__action"
     >
-      <form
-        action="https://www.userinterviews.com/"
+      <a
+        className="Alert-warning primary-action"
+        href="https://www.userinterviews.com/"
+        rel="noopener noreferrer"
       >
-        <input
-          className="Alert Alert-warning primary-action"
-          type="submit"
-          value="Primary action"
-        />
-      </form>
+        Primary action
+      </a>
     </div>
     <div
       className="Alert__close"
