@@ -74,9 +74,35 @@ consult CDC guidelines for in person sessions.
 ### With Call To Action
 
 - Used to provide a call to action for the user. 
-- You can provide the CTA element either through the `message` or `action` prop. 
+- You should primarily use the `action` prop to create the CTA.
 - Using the `action` prop creates a 4-column grid versus the default 3-column grid on this component.
+- The `action` prop can take an object `{ content: 'string', url: 'string' }` or a React element (e.g. for cases when you want to use a custom button). See example below.
+```
+<Alert
+  action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+/>
 
+or 
+
+<Alert
+  action={<CustomButton/>}
+/>
+
+```
+- Option: you can place the CTA in the `message` prop for special edge cases when you want the CTA to always be below the Alert message (see code example below). This is only used for custom CTA buttons. Otherwise, please use the `action` prop for all CTAs. 
+```
+Custom CTA via message prop 
+
+ <Alert
+  message={(
+    <Fragment>
+      <div>When you confirm a session we’ll automatically
+        add an event and reminders to your Google Calendar.
+      </div>
+      <GoogleCalendarButton />
+    </Fragment>
+  )}
+```
 <Canvas>
   <Story id="design-system-alert--with-call-to-action" />
 </Canvas>
