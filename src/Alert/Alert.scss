@@ -12,7 +12,7 @@
   border-left: unset;
   border-radius: $ux-border-radius;
   color: $color;
-  margin: $ux-spacing-20 0 $ux-spacing-20 0;
+  margin: $ux-spacing-20 $ux-spacing-40;
   padding: $ux-spacing-20 $ux-spacing-40;
   text-decoration: none;
   white-space: nowrap;
@@ -50,7 +50,6 @@
 
   &__content {
     grid-area: content;
-    margin-right: $ux-spacing-40;
   }
 
   &__action {
