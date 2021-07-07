@@ -5,28 +5,67 @@
 
 @import '../../scss/theme';
 
+@mixin primary-action($bg-color, $bg-color-hover, $color) {
+  @include font-type-30--bold;
+  background-color: $bg-color;
+  border: none;
+  border-left: unset;
+  border-radius: $ux-border-radius;
+  color: $color;
+  margin: $ux-spacing-20 $ux-spacing-40 $ux-spacing-20 0;
+  padding: $ux-spacing-20 $ux-spacing-40;
+  text-decoration: none;
+  white-space: nowrap;
+  
+  &:hover {
+    background-color: $bg-color-hover;
+  }
+}
+
 .Alert {
   display: grid;
-  grid-template-columns: 2rem auto 2rem;
+  grid-template-columns: 2rem auto auto 2rem;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    'icon content content close'
+    'icon action action close'
+    ;
+  
+  @media (min-width: 450px) {
+    grid-template-areas: 
+    'icon content action close'
+    'icon content action close'
+    ;
+  }
+
   font-weight: 500;
-  border-radius: .25rem;
-  margin-bottom: 1rem;
-  padding: .75rem 1.25rem;
+  border-radius: $ux-border-radius;
+  margin-bottom: $ux-spacing-40;
+  padding: $ux-spacing-30 1.25rem;
   position: relative;
 
   &__icon {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-area: icon;
   }
 
   &__content {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-area: content;
+    margin-right: $ux-spacing-40;
+  }
+
+  &__action {
+    grid-area: action;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    @media (min-width: 450px) {
+      justify-content: center;
+    }
   }
 
   &__close {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-area: close;
   }
 
   &__title {
@@ -44,6 +83,10 @@
   .close {
     color: $ux-green-800;
   }
+
+  .primary-action {
+    @include primary-action($ux-green-300, $ux-green-400, $ux-green-700)
+  }
 }
 
 .Alert-info {
@@ -53,6 +96,10 @@
 
   .close {
     color: $ux-blue-700;
+  }
+
+  .primary-action {
+    @include primary-action($ux-blue-200, $ux-blue-300, $ux-blue-600)
   }
 }
 
@@ -64,6 +111,10 @@
   .close {
     color: $ux-blue-700;
   }
+
+  .primary-action {
+    @include primary-action($ux-blue-200, $ux-blue-300, $ux-blue-600)
+  }
 }
 
 .Alert-warning {
@@ -74,6 +125,10 @@
   .close {
     color: $ux-yellow-800;
   }
+
+  .primary-action {
+    @include primary-action($ux-yellow-300, $ux-yellow-400, $ux-yellow-800)
+  }
 }
 
 .Alert-error {
@@ -83,5 +138,9 @@
 
   .close {
     color: $ux-red-800;
+  }
+
+  .primary-action {
+    @include primary-action($ux-red-200, $ux-red-300, $ux-red-800)
   }
 }
