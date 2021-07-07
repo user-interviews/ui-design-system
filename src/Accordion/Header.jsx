@@ -1,7 +1,7 @@
-import * as propTypes from 'lib/prop_types';
+import PropTypes from 'prop-types';
 import pluralize from 'pluralize';
 
-import './header.scss';
+import './Header.scss';
 
 const Header = ({ title, alerts }) => (
   <div className="accordion__header__inner">
@@ -19,8 +19,8 @@ const Header = ({ title, alerts }) => (
 );
 
 Header.propTypes = {
-  alerts: propTypes.number,
-  title: propTypes.string.isRequired,
+  alerts: PropTypes.number,
+  title: PropTypes.string.isRequired,
 };
 
 Header.defaultProps = {

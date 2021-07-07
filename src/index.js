@@ -1,3 +1,9 @@
+import {
+  Accordion,
+  Header,
+  POSITION_LEFT,
+  POSITION_RIGHT,
+} from 'src/Accordion';
 import { Alert, MessageTypes } from 'src/Alert';
 import Avatar from 'src/Avatar';
 import Card, { CardSizes } from 'src/Card';
@@ -47,6 +53,7 @@ import Tooltip from 'src/Tooltip';
 import TrackedButton from 'src/TrackedButton';
 
 export {
+  Accordion,
   Alert,
   Avatar,
   AsyncSelect,
@@ -62,6 +69,7 @@ export {
   Form,
   FormControlLabel,
   FormGroup,
+  Header,
   Input,
   InputLabel,
   MessageTypes,
@@ -73,6 +81,8 @@ export {
   Pill,
   PILL_COLORS,
   Popper,
+  POSITION_LEFT,
+  POSITION_RIGHT,
   ProfileCell,
   RadioButton,
   RadioButtonGroup,

@@ -1,11 +1,11 @@
 import React, { Component, Fragment } from 'react';
+import PropTypes from 'prop-types';
 
 import classNames from 'classnames';
 
-import * as keyCodes from 'lib/keycodes';
-import * as propTypes from 'lib/prop_types';
+import * as keyCodes from '../utils/keycodes';
 
-import './accordion.scss';
+import './Accordion.scss';
 
 export const POSITION_LEFT = 'left';
 export const POSITION_RIGHT = 'right';
@@ -18,22 +18,22 @@ const AccordianTemplate = ({ Header, Content }) => (
 );
 
 AccordianTemplate.propTypes = {
-  Content: propTypes.node.isRequired,
-  Header: propTypes.node.isRequired,
+  Content: PropTypes.node.isRequired,
+  Header: PropTypes.node.isRequired,
 };
 
 export default class Accordion extends Component {
   static propTypes = {
-    accordionClass: propTypes.string,
-    children: propTypes.node.isRequired,
-    collapsedIconClass: propTypes.string,
-    defaultCollapsed: propTypes.bool,
-    expandedIconClass: propTypes.string,
-    header: propTypes.node.isRequired,
-    iconPosition: propTypes.string,
-    id: propTypes.string.isRequired,
-    Layout: propTypes.func,
-    onToggle: propTypes.func,
+    accordionClass: PropTypes.string,
+    children: PropTypes.node.isRequired,
+    collapsedIconClass: PropTypes.string,
+    defaultCollapsed: PropTypes.bool,
+    expandedIconClass: PropTypes.string,
+    header: PropTypes.node.isRequired,
+    iconPosition: PropTypes.string,
+    id: PropTypes.string.isRequired,
+    Layout: PropTypes.func,
+    onToggle: PropTypes.func,
   };
 
   static defaultProps = {
