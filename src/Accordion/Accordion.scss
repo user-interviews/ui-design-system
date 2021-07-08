@@ -44,7 +44,7 @@
   }
 
   &--modern {
-    @include font-type-200;
+    @include font-type-30;
     padding: 0;
 
     .accordion__header {
@@ -52,7 +52,7 @@
       padding: 1rem;
 
       &__title {
-        @include font-type-200;
+        @include font-type-30;
         font-weight: $font-weight-bold;
       }
     }

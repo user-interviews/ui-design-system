@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 
 import classNames from 'classnames';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+
 import * as keyCodes from '../utils/keycodes';
 
 import './Accordion.scss';
@@ -46,7 +49,12 @@ export default class Accordion extends Component {
     onToggle: undefined,
   };
 
-  state = { show: this.defaultCollapsed };
+  constructor() {
+    super();
+    this.state = { 
+      show: this.defaultCollapsed 
+    };
+  }
 
   onKeyboardPress = (event) => {
     if (event.keyCode !== keyCodes.ENTER) return null;
@@ -89,7 +97,7 @@ export default class Accordion extends Component {
     const action = this.state.show ? 'hide' : 'show';
     const { onToggle } = this.props;
 
-    $(`#collapse-${this.id}`).collapse(action);
+    //$(`#collapse-${this.id}`).collapse(action);
 
     if (onToggle) {
       onToggle();
@@ -134,15 +142,16 @@ export default class Accordion extends Component {
               >
                 {this.props.iconPosition === POSITION_LEFT && (
                 <div className="accordion__icons accordion__icons--left">
-                  <i className={`collapsed-icon ${this.collapsedIconClass}`} />
-                  <i className={`expanded-icon ${this.expandedIconClass}`} />
+                  <FontAwesomeIcon icon={faChevronDown} />
+                  <FontAwesomeIcon icon={faChevronUp} />
                 </div>
                 )}
                 {this.props.header}
                 {this.props.iconPosition === POSITION_RIGHT && (
                 <div className="accordion__icons accordion__icons--right">
-                  <i className={`collapsed-icon ${this.collapsedIconClass}`} />
-                  <i className={`expanded-icon ${this.expandedIconClass}`} />
+                  
+                  <FontAwesomeIcon icon={faChevronDown} />
+                  <FontAwesomeIcon icon={faChevronUp} />
                 </div>
                 )}
               </div>
