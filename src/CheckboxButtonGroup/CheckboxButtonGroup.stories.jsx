@@ -46,7 +46,7 @@ const CheckboxButtonGroupComponent = ({
     >
       <CheckboxButtonGroup
         fullWidth={fullWidth}
-        id="button-group"
+        id={`${id}-button-group`}
         orientation={orientation}
         value={value}
         onChange={setValue}
@@ -107,7 +107,7 @@ export const DefaultRow = () => (
     bordered={false}
     defaultValue={[]}
     fullWidth={false}
-    id="with-checkbox-button-group"
+    id="with-checkbox-button-group-1"
     inline
     label="Label"
     labelHelperText="helper text"
@@ -117,21 +117,21 @@ export const DefaultRow = () => (
     <FormControlLabel
       bordered={false}
       Control={CheckboxButton}
-      id="value-1"
+      id="value-1-1"
       text="Label 1"
       value="1"
     />
     <FormControlLabel
       bordered={false}
       Control={CheckboxButton}
-      id="value-2"
+      id="value-2-1"
       text="Label 2"
       value="2"
     />
     <FormControlLabel
       bordered={false}
       Control={CheckboxButton}
-      id="value-3"
+      id="value-3-1"
       text="Label 3"
       value="3"
     />
@@ -143,7 +143,7 @@ export const BorderedRow = () => (
     bordered={false}
     defaultValue={[]}
     fullWidth={false}
-    id="with-checkbox-button-group"
+    id="with-checkbox-button-group-2"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
@@ -152,21 +152,21 @@ export const BorderedRow = () => (
     <FormControlLabel
       bordered
       Control={CheckboxButton}
-      id="value-1"
+      id="value-1-2"
       text="Label 1"
       value="1"
     />
     <FormControlLabel
       bordered
       Control={CheckboxButton}
-      id="value-2"
+      id="value-2-2"
       text="Label 2"
       value="2"
     />
     <FormControlLabel
       bordered
       Control={CheckboxButton}
-      id="value-3"
+      id="value-3-2"
       text="Label 3"
       value="3"
     />
@@ -178,7 +178,7 @@ export const Description = () => (
     bordered={false}
     defaultValue={[]}
     fullWidth
-    id="with-checkbox-button-group"
+    id="with-checkbox-button-group-3"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
@@ -188,7 +188,7 @@ export const Description = () => (
       bordered
       Control={CheckboxButton}
       helperText="helper text"
-      id="value-1"
+      id="value-1-3"
       text="Label 1"
       value="1"
     >
@@ -198,7 +198,7 @@ export const Description = () => (
       bordered
       Control={CheckboxButton}
       helperText="helper text"
-      id="value-2"
+      id="value-2-3"
       text="Label 2"
       value="2"
     >
@@ -208,7 +208,7 @@ export const Description = () => (
       bordered
       Control={CheckboxButton}
       helperText="helper text"
-      id="value-3"
+      id="value-3-3"
       text="Label 3"
       value="3"
     >
@@ -222,7 +222,7 @@ export const DescriptionRow = () => (
     bordered={false}
     defaultValue={[]}
     fullWidth
-    id="with-checkbox-button-group"
+    id="with-checkbox-button-group-4"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
@@ -232,7 +232,7 @@ export const DescriptionRow = () => (
       bordered
       Control={CheckboxButton}
       helperText="helper text"
-      id="value-1"
+      id="value-1-4"
       text="Label 1"
       value="1"
     >
@@ -242,7 +242,7 @@ export const DescriptionRow = () => (
       bordered
       Control={CheckboxButton}
       helperText="helper text"
-      id="value-2"
+      id="value-2-4"
       text="Label 2"
       value="2"
     >
@@ -252,7 +252,7 @@ export const DescriptionRow = () => (
       bordered
       Control={CheckboxButton}
       helperText="helper text"
-      id="value-3"
+      id="value-3-4"
       text="Label 3"
       value="3"
     >

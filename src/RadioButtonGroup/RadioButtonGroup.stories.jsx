@@ -69,7 +69,7 @@ export const Default = () => {
   return (
     <RadioButtonGroupComponent
       bordered={boolean('Bordered Form Group', false)}
-      defaultValue={[]}
+      defaultValue={null}
       fullWidth={boolean('Full width', false)}
       id="with-radio-button-group"
       label="Label"
@@ -105,9 +105,9 @@ export const Default = () => {
 export const DefaultRow = () => (
   <RadioButtonGroupComponent
     bordered={false}
-    defaultValue={[]}
+    defaultValue={null}
     fullWidth={false}
-    id="with-radio-button-group"
+    id="with-radio-button-group-2"
     inline
     label="Label"
     labelHelperText="helper text"
@@ -117,21 +117,21 @@ export const DefaultRow = () => (
     <FormControlLabel
       bordered={false}
       Control={RadioButton}
-      id="value-1"
+      id="value-1-2"
       text="Label 1"
       value="1"
     />
     <FormControlLabel
       bordered={false}
       Control={RadioButton}
-      id="value-2"
+      id="value-2-2"
       text="Label 2"
       value="2"
     />
     <FormControlLabel
       bordered={false}
       Control={RadioButton}
-      id="value-3"
+      id="value-3-2"
       text="Label 3"
       value="3"
     />
@@ -141,9 +141,9 @@ export const DefaultRow = () => (
 export const BorderedRow = () => (
   <RadioButtonGroupComponent
     bordered={false}
-    defaultValue={[]}
+    defaultValue={null}
     fullWidth={false}
-    id="with-radio-button-group"
+    id="with-radio-button-group-3"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="radio-button-group"
@@ -152,21 +152,21 @@ export const BorderedRow = () => (
     <FormControlLabel
       bordered
       Control={RadioButton}
-      id="value-1"
+      id="value-1-3"
       text="Label 1"
       value="1"
     />
     <FormControlLabel
       bordered
       Control={RadioButton}
-      id="value-2"
+      id="value-2-3"
       text="Label 2"
       value="2"
     />
     <FormControlLabel
       bordered
       Control={RadioButton}
-      id="value-3"
+      id="value-3-3"
       text="Label 3"
       value="3"
     />
@@ -176,9 +176,9 @@ export const BorderedRow = () => (
 export const Description = () => (
   <RadioButtonGroupComponent
     bordered={false}
-    defaultValue={[]}
+    defaultValue={null}
     fullWidth
-    id="with-radio-button-group"
+    id="with-radio-button-group-4"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="radio-button-group"
@@ -188,7 +188,7 @@ export const Description = () => (
       bordered
       Control={RadioButton}
       helperText="helper text"
-      id="value-1"
+      id="value-1-4"
       text="Label 1"
       value="1"
     >
@@ -198,7 +198,7 @@ export const Description = () => (
       bordered
       Control={RadioButton}
       helperText="helper text"
-      id="value-2"
+      id="value-2-4"
       text="Label 2"
       value="2"
     >
@@ -208,7 +208,7 @@ export const Description = () => (
       bordered
       Control={RadioButton}
       helperText="helper text"
-      id="value-3"
+      id="value-3-4"
       text="Label 3"
       value="3"
     >
@@ -220,9 +220,9 @@ export const Description = () => (
 export const DescriptionRow = () => (
   <RadioButtonGroupComponent
     bordered={false}
-    defaultValue={[]}
+    defaultValue={null}
     fullWidth
-    id="with-radio-button-group"
+    id="with-radio-button-group-5"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="radio-button-group"
@@ -232,7 +232,7 @@ export const DescriptionRow = () => (
       bordered
       Control={RadioButton}
       helperText="helper text"
-      id="value-1"
+      id="value-1-5"
       text="Label 1"
       value="1"
     >
@@ -242,7 +242,7 @@ export const DescriptionRow = () => (
       bordered
       Control={RadioButton}
       helperText="helper text"
-      id="value-2"
+      id="value-2-5"
       text="Label 2"
       value="2"
     >
@@ -252,7 +252,7 @@ export const DescriptionRow = () => (
       bordered
       Control={RadioButton}
       helperText="helper text"
-      id="value-3"
+      id="value-3-5"
       text="Label 3"
       value="3"
     >
