@@ -3,6 +3,7 @@ import Avatar from 'src/Avatar';
 import Card, { CardSizes } from 'src/Card';
 import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
+import { ORIENTATIONS as BUTTON_GROUP_ORIENTATIONS } from 'src/ControlButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
 import FadeTransition from 'src/FadeTransition';
@@ -50,6 +51,7 @@ export {
   Alert,
   Avatar,
   AsyncSelect,
+  BUTTON_GROUP_ORIENTATIONS,
   Card,
   CardSizes,
   CheckboxButton,

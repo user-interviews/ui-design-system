@@ -24,13 +24,13 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    input[type='radio'] {
-      display: none;
-    }
-
     .FormControlLabel--bordered {
       padding: 0.3125rem 0.625rem;
       margin-right: 0.5rem;
+
+      input[type='radio'] {
+        display: none;
+      }
     }
   }
 
