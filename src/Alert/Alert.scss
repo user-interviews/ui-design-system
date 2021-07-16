@@ -16,7 +16,7 @@
   padding: $ux-spacing-20 $ux-spacing-40;
   text-decoration: none;
   white-space: nowrap;
-  
+
   &:hover {
     background-color: $bg-color-hover;
   }
@@ -26,13 +26,13 @@
   display: grid;
   grid-template-columns: 2rem auto auto 2rem;
   grid-template-rows: auto auto;
-  grid-template-areas: 
+  grid-template-areas:
     'icon content content close'
     'icon action action close'
     ;
-  
+
   @media (min-width: 450px) {
-    grid-template-areas: 
+    grid-template-areas:
     'icon content action close'
     'icon content action close'
     ;
@@ -58,9 +58,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    
+
     @media (min-width: 450px) {
-      justify-content: center;
+      justify-content: flex-end;
     }
   }
 
