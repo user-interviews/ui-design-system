@@ -16,6 +16,7 @@ const SingleSelect = ({
   getOptionValue,
   isClearable,
   id,
+  inputId,
   isLoading,
   isSearchable,
   modal,
@@ -36,6 +37,7 @@ const SingleSelect = ({
     getOptionLabel={getOptionLabel}
     getOptionValue={getOptionValue}
     id={id}
+    inputId={inputId}
     isClearable={isClearable}
     isDisabled={disabled || isLoading}
     isSearchable={isSearchable}
@@ -66,6 +68,7 @@ SingleSelect.propTypes = {
   getOptionLabel: propTypes.func,
   getOptionValue: propTypes.func,
   id: propTypes.string,
+  inputId: propTypes.string,
   isClearable: propTypes.bool,
   isLoading: propTypes.bool,
   isSearchable: propTypes.bool,
@@ -89,6 +92,7 @@ SingleSelect.defaultProps = {
   getOptionValue: undefined,
   isClearable: false,
   id: undefined,
+  inputId: undefined,
   isLoading: false,
   isSearchable: false,
   modal: false,
