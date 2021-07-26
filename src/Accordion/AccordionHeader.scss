@@ -1,0 +1,29 @@
+@import '../../scss/theme';
+
+.Accordion__header {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+
+  &__helper-text {
+    @include font-type-30--light;
+    margin-left: $ux-spacing-10;
+  }
+
+  &__label {
+    @include font-type-10;
+    color: $ux-blue-600;
+  }
+
+  &__leading-icon {
+    margin-right: $ux-spacing-20;
+  }
+
+  &__title {
+    @include font-type-30--bold;
+  }
+
+  &__expand-icon, &__collapse-icon {
+    margin-left: $ux-spacing-40;
+  }
+}

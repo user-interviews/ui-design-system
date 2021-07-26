@@ -1,0 +1,31 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Accordion from './Accordion'
+
+# Accordion
+
+The accordion is a graphical control element comprising a vertically stacked list of items, such as labels or thumbnails. Each item can be "expanded" or "collapsed" to reveal the content associated with that item.
+
+<Canvas>
+  <Story id="design-system-accordion"/>
+</Canvas>
+
+<ArgsTable of={Accordion} />
+
+## Anatomy
+
+- **Icon** (optional): Decorative icon used as visual reinforcement.
+- **Title:** Describes what is contained within the accordion.
+- **Helper text:** Provides context on how to use the accordion (e.g. displays whether it contains required inputs).
+- **Header:** Clicking anywhere within this top container should cause the accordion to expand or collapse.
+- **Label (optional):** Displays secondary information about the accordion (e.g. the # of selections made).
+- **Chevron:** Indicates whether the accordion is expanded or collapsed.
+- **Body:** Where all of the accordion’s content is contained. Only visible when the accordion is expanded.
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story id="design-system-accordion" />
+</Canvas>
+
