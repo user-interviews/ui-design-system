@@ -40,3 +40,16 @@ export const Labeled = () => (
     />
   </Fragment>
 );
+
+export const MultiSelect = () => (
+  <Fragment>
+    <label htmlFor="multi-select" id="select-label">Multi select</label>
+    <SingleSelect
+      aria-labelledby="select-label"
+      id="multi-select"
+      isMulti
+      options={options}
+      onChange={onChange}
+    />
+  </Fragment>
+);

@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import Select from 'react-select';
 import propTypes from 'prop-types';
 
@@ -32,7 +33,7 @@ const SingleSelect = ({
     {...props}
     aria-label={ariaLabel}
     aria-labelledby={ariaLabelledBy}
-    className={`${className || ''} SingleSelect`}
+    className={classNames('SingleSelect', className)}
     defaultValue={defaultValue}
     getOptionLabel={getOptionLabel}
     getOptionValue={getOptionValue}
