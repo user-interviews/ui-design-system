@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import {
- boolean, radios, text, withKnobs,
+  boolean, radios, text, withKnobs,
 } from '@storybook/addon-knobs';
 import { ORIENTATIONS } from '../ControlButtonGroup';
-import CheckboxButtonGroup from './index';
-import CheckboxButton from '../CheckboxButton';
+import RadioButtonGroup from './index';
+import RadioButton from '../RadioButton';
 import FormControlLabel from '../FormControlLabel';
 import FormGroup from '../FormGroup/FormGroup';
-import mdx from './CheckboxButtonGroup.mdx';
+import mdx from './RadioButtonGroup.mdx';
 
 export default {
-  title: 'Design System/Form Elements/CheckboxButtonGroup',
-  component: CheckboxButtonGroup,
+  title: 'Design System/Form Elements/RadioButtonGroup',
+  component: RadioButtonGroup,
   decorators: [withKnobs()],
   parameters: {
     docs: {
@@ -21,7 +21,7 @@ export default {
 };
 
 /* eslint-disable react/prop-types */
-const CheckboxButtonGroupComponent = ({
+const RadioButtonGroupComponent = ({
   bordered,
   children,
   defaultValue,
@@ -44,15 +44,15 @@ const CheckboxButtonGroupComponent = ({
       labelHelperText={labelHelperText}
       labelHtmlFor={labelHtmlFor}
     >
-      <CheckboxButtonGroup
+      <RadioButtonGroup
         fullWidth={fullWidth}
-        id={`${id}-button-group`}
+        id="button-group"
         orientation={orientation}
         value={value}
         onChange={setValue}
       >
         { children }
-      </CheckboxButtonGroup>
+      </RadioButtonGroup>
     </FormGroup>
   );
 };
@@ -67,170 +67,126 @@ export const Default = () => {
   const bordered = boolean('Bordered buttons', false);
 
   return (
-    <CheckboxButtonGroupComponent
+    <RadioButtonGroupComponent
       bordered={boolean('Bordered Form Group', false)}
-      defaultValue={[]}
+      defaultValue={null}
       fullWidth={boolean('Full width', false)}
-      id="with-checkbox-button-group"
+      id="with-radio-button-group"
       label="Label"
       labelHelperText="use the knobs to try out different variations"
-      labelHtmlFor="checkbox-button-group"
+      labelHtmlFor="radio-button-group"
       orientation={orientation}
     >
       <FormControlLabel
         bordered={bordered}
-        Control={CheckboxButton}
+        Control={RadioButton}
         id="value-1"
         text={text('Label 1', 'Value 1')}
         value="1"
       />
       <FormControlLabel
         bordered={bordered}
-        Control={CheckboxButton}
+        Control={RadioButton}
         id="value-2"
         text={text('Label 2', 'Value 2')}
         value="2"
       />
       <FormControlLabel
         bordered={bordered}
-        Control={CheckboxButton}
+        Control={RadioButton}
         id="value-3"
         text={text('Label 3', 'Value 3')}
         value="3"
       />
-    </CheckboxButtonGroupComponent>
+    </RadioButtonGroupComponent>
   );
 };
 
 export const DefaultRow = () => (
-  <CheckboxButtonGroupComponent
+  <RadioButtonGroupComponent
     bordered={false}
-    defaultValue={[]}
+    defaultValue={null}
     fullWidth={false}
-    id="with-checkbox-button-group-1"
+    id="with-radio-button-group-2"
     inline
     label="Label"
     labelHelperText="helper text"
-    labelHtmlFor="checkbox-button-group"
+    labelHtmlFor="radio-button-group"
     orientation={ORIENTATIONS.ROW}
   >
     <FormControlLabel
       bordered={false}
-      Control={CheckboxButton}
-      id="value-1-1"
-      text="Label 1"
-      value="1"
-    />
-    <FormControlLabel
-      bordered={false}
-      Control={CheckboxButton}
-      id="value-2-1"
-      text="Label 2"
-      value="2"
-    />
-    <FormControlLabel
-      bordered={false}
-      Control={CheckboxButton}
-      id="value-3-1"
-      text="Label 3"
-      value="3"
-    />
-  </CheckboxButtonGroupComponent>
-  );
-
-export const BorderedRow = () => (
-  <CheckboxButtonGroupComponent
-    bordered={false}
-    defaultValue={[]}
-    fullWidth={false}
-    id="with-checkbox-button-group-2"
-    label="Label"
-    labelHelperText="helper text"
-    labelHtmlFor="checkbox-button-group"
-    orientation={ORIENTATIONS.ROW}
-  >
-    <FormControlLabel
-      bordered
-      Control={CheckboxButton}
+      Control={RadioButton}
       id="value-1-2"
       text="Label 1"
       value="1"
     />
     <FormControlLabel
-      bordered
-      Control={CheckboxButton}
+      bordered={false}
+      Control={RadioButton}
       id="value-2-2"
       text="Label 2"
       value="2"
     />
     <FormControlLabel
-      bordered
-      Control={CheckboxButton}
+      bordered={false}
+      Control={RadioButton}
       id="value-3-2"
       text="Label 3"
       value="3"
     />
-  </CheckboxButtonGroupComponent>
+  </RadioButtonGroupComponent>
 );
 
-export const Description = () => (
-  <CheckboxButtonGroupComponent
+export const BorderedRow = () => (
+  <RadioButtonGroupComponent
     bordered={false}
-    defaultValue={[]}
-    fullWidth
-    id="with-checkbox-button-group-3"
+    defaultValue={null}
+    fullWidth={false}
+    id="with-radio-button-group-3"
     label="Label"
     labelHelperText="helper text"
-    labelHtmlFor="checkbox-button-group"
-    orientation={ORIENTATIONS.COLUMN}
-  >
-    <FormControlLabel
-      bordered
-      Control={CheckboxButton}
-      helperText="helper text"
-      id="value-1-3"
-      text="Label 1"
-      value="1"
-    >
-      This is where the description goes
-    </FormControlLabel>
-    <FormControlLabel
-      bordered
-      Control={CheckboxButton}
-      helperText="helper text"
-      id="value-2-3"
-      text="Label 2"
-      value="2"
-    >
-      This is where the description goes
-    </FormControlLabel>
-    <FormControlLabel
-      bordered
-      Control={CheckboxButton}
-      helperText="helper text"
-      id="value-3-3"
-      text="Label 3"
-      value="3"
-    >
-      This is where the description goes
-    </FormControlLabel>
-  </CheckboxButtonGroupComponent>
-);
-
-export const DescriptionRow = () => (
-  <CheckboxButtonGroupComponent
-    bordered={false}
-    defaultValue={[]}
-    fullWidth
-    id="with-checkbox-button-group-4"
-    label="Label"
-    labelHelperText="helper text"
-    labelHtmlFor="checkbox-button-group"
+    labelHtmlFor="radio-button-group"
     orientation={ORIENTATIONS.ROW}
   >
     <FormControlLabel
       bordered
-      Control={CheckboxButton}
+      Control={RadioButton}
+      id="value-1-3"
+      text="Label 1"
+      value="1"
+    />
+    <FormControlLabel
+      bordered
+      Control={RadioButton}
+      id="value-2-3"
+      text="Label 2"
+      value="2"
+    />
+    <FormControlLabel
+      bordered
+      Control={RadioButton}
+      id="value-3-3"
+      text="Label 3"
+      value="3"
+    />
+  </RadioButtonGroupComponent>
+);
+
+export const Description = () => (
+  <RadioButtonGroupComponent
+    bordered={false}
+    defaultValue={null}
+    fullWidth
+    id="with-radio-button-group-4"
+    label="Label"
+    labelHelperText="helper text"
+    labelHtmlFor="radio-button-group"
+    orientation={ORIENTATIONS.COLUMN}
+  >
+    <FormControlLabel
+      bordered
+      Control={RadioButton}
       helperText="helper text"
       id="value-1-4"
       text="Label 1"
@@ -240,7 +196,7 @@ export const DescriptionRow = () => (
     </FormControlLabel>
     <FormControlLabel
       bordered
-      Control={CheckboxButton}
+      Control={RadioButton}
       helperText="helper text"
       id="value-2-4"
       text="Label 2"
@@ -250,7 +206,7 @@ export const DescriptionRow = () => (
     </FormControlLabel>
     <FormControlLabel
       bordered
-      Control={CheckboxButton}
+      Control={RadioButton}
       helperText="helper text"
       id="value-3-4"
       text="Label 3"
@@ -258,5 +214,49 @@ export const DescriptionRow = () => (
     >
       This is where the description goes
     </FormControlLabel>
-  </CheckboxButtonGroupComponent>
+  </RadioButtonGroupComponent>
+);
+
+export const DescriptionRow = () => (
+  <RadioButtonGroupComponent
+    bordered={false}
+    defaultValue={null}
+    fullWidth
+    id="with-radio-button-group-5"
+    label="Label"
+    labelHelperText="helper text"
+    labelHtmlFor="radio-button-group"
+    orientation={ORIENTATIONS.ROW}
+  >
+    <FormControlLabel
+      bordered
+      Control={RadioButton}
+      helperText="helper text"
+      id="value-1-5"
+      text="Label 1"
+      value="1"
+    >
+      This is where the description goes
+    </FormControlLabel>
+    <FormControlLabel
+      bordered
+      Control={RadioButton}
+      helperText="helper text"
+      id="value-2-5"
+      text="Label 2"
+      value="2"
+    >
+      This is where the description goes
+    </FormControlLabel>
+    <FormControlLabel
+      bordered
+      Control={RadioButton}
+      helperText="helper text"
+      id="value-3-5"
+      text="Label 3"
+      value="3"
+    >
+      This is where the description goes
+    </FormControlLabel>
+  </RadioButtonGroupComponent>
 );

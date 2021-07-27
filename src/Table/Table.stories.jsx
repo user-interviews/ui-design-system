@@ -1,4 +1,4 @@
-import { faFileAlt, faEllipsisV, faThumbtack } from '@fortawesome/free-solid-svg-icons';
+import { faFileAlt, faEllipsisV, faThumbtack } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 import Card from 'src/Card';

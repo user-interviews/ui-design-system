@@ -20,6 +20,7 @@ export default function Toast(props) {
         props.messages.map((message) => (
           <FadeTransition key={message.id}>
             <Alert
+              action={message.action}
               autoDismiss={props.autoDismiss}
               id={message.id}
               message={message.message}

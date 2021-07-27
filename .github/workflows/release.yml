@@ -9,10 +9,14 @@ on:
 jobs:
   create-release:
     runs-on: ubuntu-latest
+    env:
+      FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
       - uses: fregante/setup-git-user@v1
+      - run: npm config set "@fortawesome:registry" https://npm.fontawesome.com/ &&
+          npm config set "//npm.fontawesome.com/:_authToken" $FONTAWESOME_NPM_AUTH_TOKEN
       - run: yarn install
 
       # Update package version
