@@ -5,7 +5,7 @@ import {
   text,
   select,
 } from '@storybook/addon-knobs';
-import { faUsers } from '@fortawesome/free-solid-svg-icons';
+import { faUsers } from '@fortawesome/pro-solid-svg-icons';
 
 import { Pill, PILL_COLORS } from 'src/Pill';
 import mdx from './Pill.mdx';

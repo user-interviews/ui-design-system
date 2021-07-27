@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './ModalHeader.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
+import { faExclamationTriangle } from '@fortawesome/pro-solid-svg-icons';
 
 export default class ModalHeader extends Component {
   // Don’t pass event to props callback; the callback is not always called from
