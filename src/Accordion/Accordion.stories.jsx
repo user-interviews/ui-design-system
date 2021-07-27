@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Accordion, POSITION_RIGHT } from 'src/Accordion';
 import mdx from './Accordion.mdx';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/pro-solid-svg-icons';
 
 export default {
   title: 'Design System/Accordion',
