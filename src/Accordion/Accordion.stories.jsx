@@ -4,8 +4,8 @@ import { withKnobs } from '@storybook/addon-knobs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Accordion, POSITION_RIGHT } from 'src/Accordion';
-import mdx from './Accordion.mdx';
 import { faChevronDown } from '@fortawesome/pro-solid-svg-icons';
+import mdx from './Accordion.mdx';
 
 export default {
   title: 'Design System/Accordion',
@@ -27,16 +27,18 @@ const AccordionLayout = ({ Header, Content }) => (
 
 export const Default = () => (
   <Accordion
+    accordionClass="accordion--modern accordion--bordered DemographicRuleAccordion"
     defaultCollapsed
-    iconPosition={POSITION_RIGHT}
-    id="show-hub-invite-rules"
     header={(
       <div>
-        Show rules
+        <div>Show rules</div>
+        <div className="Accordion__header__helper__text">Helper text</div>
       </div>
     )}
+    iconPosition={POSITION_RIGHT}
+    id="show-hub-invite-rules"
     Layout={AccordionLayout}
-    >
+  >
     <div>hello</div>
   </Accordion>
-)
+);

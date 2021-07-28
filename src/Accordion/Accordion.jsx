@@ -49,10 +49,10 @@ export default class Accordion extends Component {
     onToggle: undefined,
   };
 
-  constructor() {
-    super();
-    this.state = { 
-      show: this.defaultCollapsed 
+  constructor(props) {
+    super(props);
+    this.state = {
+      show: this.defaultCollapsed,
     };
   }
 
@@ -97,7 +97,7 @@ export default class Accordion extends Component {
     const action = this.state.show ? 'hide' : 'show';
     const { onToggle } = this.props;
 
-    //$(`#collapse-${this.id}`).collapse(action);
+    $(`#collapse-${this.id}`).collapse(action);
 
     if (onToggle) {
       onToggle();
@@ -141,17 +141,16 @@ export default class Accordion extends Component {
                 onKeyUp={this.onKeyboardPress}
               >
                 {this.props.iconPosition === POSITION_LEFT && (
-                <div className="accordion__icons accordion__icons--left">
+                <div className="Accordion__icons Accordion__icons--left">
                   <FontAwesomeIcon icon={faChevronDown} />
                   <FontAwesomeIcon icon={faChevronUp} />
                 </div>
                 )}
                 {this.props.header}
                 {this.props.iconPosition === POSITION_RIGHT && (
-                <div className="accordion__icons accordion__icons--right">
-                  
-                  <FontAwesomeIcon icon={faChevronDown} />
-                  <FontAwesomeIcon icon={faChevronUp} />
+                <div className="Accordion__icons Accordion__icons--right">
+                  <FontAwesomeIcon className={`collapsed-icon ${this.collapsedIconClass}`} icon={faChevronDown} />
+                  <FontAwesomeIcon className={`collapsed-icon ${this.collapsedIconClass}`} icon={faChevronUp} />
                 </div>
                 )}
               </div>
