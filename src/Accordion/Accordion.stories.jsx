@@ -2,8 +2,8 @@ import React from 'react';
 
 import { Accordion, AccordionBody, AccordionHeader } from 'src/Accordion';
 
-import { faCheckCircle } from '@fortawesome/free-regular-svg-icons';
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faCheckCircle } from '@fortawesome/pro-regular-svg-icons';
+import { faChevronDown, faChevronUp } from '@fortawesome/pro-solid-svg-icons';
 import mdx from './Accordion.mdx';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
