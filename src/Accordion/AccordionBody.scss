@@ -1,6 +1,18 @@
 @import '../../scss/theme';
 
 .Accordion__body {
-  cursor: unset;
-  padding: $ux-spacing-40 0;
+  border: 1px solid $ux-gray-400;
+  border-top: none;
+  border-radius: 0 0 $ux-border-radius $ux-border-radius;
+  padding: $ux-spacing-40;
+
+  &--borderless {
+    background-color: inherit;
+    border: unset;
+    border-radius: unset;
+  }
+
+  &--collapsed {
+    display: none;
+  }
 }

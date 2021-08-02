@@ -4,7 +4,6 @@
   background-color: $ux-white;
   border: 1px solid $ux-gray-400;
   border-radius: $ux-border-radius;
-  box-shadow: $ux-elevations-10;
   cursor: pointer;
   padding: $ux-spacing-40;
 
@@ -14,5 +13,9 @@
     border-radius: unset;
     border-bottom: 1px solid $ux-gray-400;
     box-shadow: unset;
+  }
+
+  &--expanded {
+    border-radius: $ux-border-radius $ux-border-radius 0 0;
   }
 }

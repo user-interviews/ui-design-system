@@ -49,7 +49,7 @@ export const Borderless = () => (
       leadingIcon={faCheckCircle}
       title="Title"
     />
-    <AccordionBody>
+    <AccordionBody borderless>
       <ul>
         <li>Item 1</li>
         <li>Item 2</li>
