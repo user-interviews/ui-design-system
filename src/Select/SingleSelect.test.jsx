@@ -3,6 +3,7 @@ import Select from 'react-select';
 import { create } from 'react-test-renderer';
 
 import { SingleSelect, SELECT_SIZES } from 'src/Select';
+import { SIZE_SMALL_HEIGHT } from 'src/Select/styles';
 
 const renderSelect = (props) => create(
   <SingleSelect options={[]} onChange={jest.fn()} {...props} />,
@@ -16,8 +17,8 @@ describe('SingleSelect', () => {
     const { props } = root.findByType(Select);
     const contentStyles = getContentStyles(props);
 
-    expect(contentStyles.height).toBe('2.25rem');
-    expect(contentStyles.minHeight).toBe('2.25rem');
+    expect(contentStyles.height).toBe(SIZE_SMALL_HEIGHT.height);
+    expect(contentStyles.minHeight).toBe(SIZE_SMALL_HEIGHT.minHeight);
   });
 
   test('size prop set to null will not set height of select', () => {

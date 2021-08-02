@@ -3,12 +3,14 @@ import fontWeights from '../Styles/fontWeights';
 
 export const SELECT_SIZES = { SMALL: 'small' };
 
+export const SIZE_SMALL_HEIGHT = {
+  height: 'auto',
+  minHeight: '2.25rem',
+};
+
 const getHeightProps = (size) => {
   if (size === SELECT_SIZES.SMALL) {
-    return {
-      height: 'auto',
-      minHeight: '36px', // rem units don't work for this
-    };
+    return SIZE_SMALL_HEIGHT;
   }
   return null;
 };
@@ -18,8 +20,8 @@ function getBorderStyles(isFocused, isSelected) {
     boxShadow: (isFocused || isSelected) ? 'inset 0 1px 1px rgba(0, 0, 0, 0.08)' : 'none',
     borderColor: (
       (isFocused || isSelected) ? systemColors.UX_BLUE_300 : systemColors.inputBorderColor
-    )
-  }
+    ),
+  };
 }
 
 /*
