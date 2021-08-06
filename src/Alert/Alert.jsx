@@ -7,6 +7,7 @@ import {
   faCheckCircle,
   faExclamationTriangle,
   faInfoCircle,
+  faTimes,
 } from '@fortawesome/pro-solid-svg-icons';
 
 import './Alert.scss';
@@ -99,7 +100,7 @@ function Alert(props) {
               type="button"
               onClick={() => props.onDismiss(props.id)}
             >
-              &times;
+              <FontAwesomeIcon icon={faTimes} />
             </button>
           </div>
         )
