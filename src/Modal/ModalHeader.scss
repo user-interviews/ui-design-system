@@ -36,7 +36,11 @@
   }
 
   &__close-button {
-    padding: $ux-spacing-40;
-    margin: -1rem -1rem -1rem 0;
+    background-color: unset;
+    border: none;
+    color: $ux-gray-600;
+    &:hover {
+      color: $ux-gray-800;
+    }
   }
 }
