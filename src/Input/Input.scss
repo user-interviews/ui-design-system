@@ -20,18 +20,7 @@
     padding: $ux-spacing-20 $ux-spacing-30;
   }
 
-  .input-group-append {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .input-group-prepend {
-    display: flex;
-    flex-direction: column;
-  }
-
   .input-group-text {
     background-color: $ux-gray-100;
-    flex-grow: 1;
   }
 }
