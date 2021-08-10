@@ -1,5 +1,5 @@
 import React from 'react';
-import Creatable from 'react-select';
+import Creatable from 'react-select/creatable';
 import PropTypes from 'prop-types';
 
 import { defaultTheme, defaultStyles, SELECT_SIZES } from './styles';
