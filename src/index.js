@@ -26,6 +26,7 @@ import RadioButton from 'src/RadioButton';
 import RadioButtonGroup from 'src/RadioButtonGroup';
 import {
   AsyncSelect,
+  CreatableSelect,
   SELECT_SIZES,
   SingleSelect,
 } from 'src/Select';
@@ -60,6 +61,7 @@ export {
   COLORS,
   CopyToClipboard,
   CopyToClipboardButton,
+  CreatableSelect,
   FadeTransition,
   Form,
   FormControlLabel,
