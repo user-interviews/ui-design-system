@@ -35,6 +35,7 @@ Array [
       className="Alert__close"
     >
       <button
+        aria-label="close"
         className="close"
         onClick={[Function]}
         type="button"

@@ -96,6 +96,7 @@ function Alert(props) {
         props.onDismiss && (
           <div className="Alert__close">
             <button
+              aria-label="close"
               className="close"
               type="button"
               onClick={() => props.onDismiss(props.id)}
