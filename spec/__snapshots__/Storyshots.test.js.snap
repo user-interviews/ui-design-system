@@ -290,6 +290,7 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       className="Alert__close"
     >
       <button
+        aria-label="close"
         className="close"
         onClick={[Function]}
         type="button"
@@ -363,6 +364,7 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       className="Alert__close"
     >
       <button
+        aria-label="close"
         className="close"
         onClick={[Function]}
         type="button"
@@ -436,6 +438,7 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       className="Alert__close"
     >
       <button
+        aria-label="close"
         className="close"
         onClick={[Function]}
         type="button"
@@ -509,6 +512,7 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       className="Alert__close"
     >
       <button
+        aria-label="close"
         className="close"
         onClick={[Function]}
         type="button"
@@ -582,6 +586,7 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       className="Alert__close"
     >
       <button
+        aria-label="close"
         className="close"
         onClick={[Function]}
         type="button"
@@ -694,6 +699,7 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       className="Alert__close"
     >
       <button
+        aria-label="close"
         className="close"
         onClick={[Function]}
         type="button"
@@ -809,6 +815,7 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       className="Alert__close"
     >
       <button
+        aria-label="close"
         className="close"
         onClick={[Function]}
         type="button"
@@ -882,6 +889,7 @@ exports[`Storyshots Design System/Alert With Dismiss 1`] = `
       className="Alert__close"
     >
       <button
+        aria-label="close"
         className="close"
         onClick={[Function]}
         type="button"
