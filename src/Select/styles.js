@@ -17,7 +17,7 @@ const getHeightProps = (size) => {
 
 function getBorderStyles(isFocused, isSelected) {
   return {
-    boxShadow: (isFocused || isSelected) ? 'inset 0 1px 1px rgba(0, 0, 0, 0.08)' : 'none',
+    boxShadow: (isFocused || isSelected) ? '0px 0px 8px 0px #66AFE9B2;' : 'none',
     borderColor: (
       (isFocused || isSelected) ? systemColors.UX_BLUE_300 : systemColors.inputBorderColor
     ),
@@ -65,6 +65,11 @@ const defaultStyles = ({ size }) => ({
         color: systemColors.UX_BLUE_700,
       },
     }),
+    placeholder: (styles) => ({
+      ...styles,
+      color: systemColors.UX_GRAY_800,
+      fontWeight: '300',
+    }),
     singleValue: (styles, { data }) => ({
       ...styles,
       color: (
@@ -96,7 +101,7 @@ const defaultStyles = ({ size }) => ({
 
         ':hover': {
           ...styles[':hover'],
-          backgroundColor: colors.hover || systemColors.UX_GRAY_200,
+          backgroundColor: colors.hover || systemColors.UX_BLUE_100,
         },
       };
     },
