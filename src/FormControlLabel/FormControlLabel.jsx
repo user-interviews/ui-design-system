@@ -11,6 +11,7 @@ const FormControlLabel = React.forwardRef(({
   className,
   Control,
   disabled,
+  helperText,
   id,
   text,
   ...controlProps
@@ -38,6 +39,7 @@ const FormControlLabel = React.forwardRef(({
         {...controlProps}
       />
       {text}
+      { helperText && <span className="FormControlLabel__helper-text">&nbsp;({helperText})</span> }
     </div>
     {children && (
       <div className="FormControlLabel__children">
@@ -53,15 +55,17 @@ FormControlLabel.propTypes = {
   className: PropTypes.string,
   Control: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
   disabled: PropTypes.bool,
+  helperText: PropTypes.string,
   id: PropTypes.string.isRequired,
   text: PropTypes.node.isRequired,
 };
 
 FormControlLabel.defaultProps = {
-  bordered: false,
+  bordered: undefined,
   checked: undefined,
   className: undefined,
   disabled: undefined,
+  helperText: undefined,
 };
 
 FormControlLabel.displayName = 'FormControlLabel';

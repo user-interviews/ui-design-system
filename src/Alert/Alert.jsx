@@ -7,9 +7,11 @@ import {
   faCheckCircle,
   faExclamationTriangle,
   faInfoCircle,
-} from '@fortawesome/free-solid-svg-icons';
+  faTimes,
+} from '@fortawesome/pro-solid-svg-icons';
 
 import './Alert.scss';
+import classNames from 'classnames';
 
 export const MessageTypes = {
   SUCCESS: 'success',
@@ -75,14 +77,31 @@ function Alert(props) {
         {props.message}
       </div>
       {
+        props.action && (
+        <div className="Alert__action">
+          { React.isValidElement(props.action) ?
+            props.action : (
+              <a
+                className={classNames(`Alert-${(props.type)}`, 'primary-action')}
+                href={props.action.url}
+                rel="noopener noreferrer"
+              >
+                {props.action.content}
+              </a>
+          )}
+        </div>
+      )
+}
+      {
         props.onDismiss && (
           <div className="Alert__close">
             <button
+              aria-label="close"
               className="close"
               type="button"
               onClick={() => props.onDismiss(props.id)}
             >
-              &times;
+              <FontAwesomeIcon icon={faTimes} />
             </button>
           </div>
         )
@@ -92,15 +111,17 @@ function Alert(props) {
 }
 
 Alert.propTypes = {
+  action: PropTypes.oneOfType([PropTypes.object, PropTypes.node]),
   autoDismiss: PropTypes.bool,
   id: PropTypes.string.isRequired,
-  message: PropTypes.oneOfType([PropTypes.string, PropTypes.element]).isRequired,
+  message: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   title: PropTypes.string,
   type: PropTypes.string.isRequired,
   onDismiss: PropTypes.func,
 };
 
 Alert.defaultProps = {
+  action: undefined,
   autoDismiss: false,
   title: undefined,
   onDismiss: undefined,

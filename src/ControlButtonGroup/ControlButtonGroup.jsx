@@ -25,7 +25,7 @@ const ControlButtonGroup = ({
       onChange: handleChangeValue,
     } : {};
 
-    if (row) {
+    if (row && child.props.bordered === undefined) {
       childProps.bordered = true;
     }
 

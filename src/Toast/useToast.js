@@ -1,10 +1,11 @@
 import { useCallback, useReducer } from 'react';
 import { v4 as generateUUID } from 'uuid';
 
-const createMessage = (messageType, messageText) => ({
+const createMessage = (messageType, messageText, messageAction) => ({
   id: generateUUID(),
   message: messageText,
   type: messageType,
+  action: messageAction,
 });
 
 const ACTIONS = {
@@ -18,7 +19,7 @@ const messagesReducer = (state, { type, payload }) => {
     case ACTIONS.SET_MESSAGE:
       return [
         ...state,
-        createMessage(payload.messageType, payload.messageText),
+        createMessage(payload.messageAction, payload.messageType, payload.messageText),
       ];
     case ACTIONS.CLEAR_MESSAGES:
       return [];
@@ -36,8 +37,8 @@ const useToast = (initialMessages = []) => {
     dispatch({ type: ACTIONS.CLEAR_MESSAGES });
   }, []);
 
-  const setMessage = useCallback((messageType, messageText) => {
-    dispatch({ type: ACTIONS.SET_MESSAGE, payload: { messageType, messageText } });
+  const setMessage = useCallback((messageAction, messageType, messageText) => {
+    dispatch({ type: ACTIONS.SET_MESSAGE, payload: { messageAction, messageType, messageText } });
   }, []);
 
   const dismissMessage = useCallback((messageId) => {

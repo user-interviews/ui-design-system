@@ -24,30 +24,19 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    input[type='radio'] {
-      display: none;
-    }
-
     .FormControlLabel--bordered {
       padding: 0.3125rem 0.625rem;
       margin-right: 0.5rem;
-    }
 
-    .FormControlLabel--active {
-      background-color: $ux-blue-100;
-      border-color: $ux-blue-200;
-
-      .FormControlLabel__label {
-        color: $ux-blue-700;
+      input[type='radio'] {
+        display: none;
       }
     }
   }
 
   .FormControlLabel {
-    @include font-type-30;
-
     flex-wrap: wrap;
-    margin-right: 0.5rem;
+    margin: 0 0.5rem 0.5rem 0;
     display: block;
   }
 }

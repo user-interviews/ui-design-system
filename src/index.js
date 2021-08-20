@@ -2,8 +2,9 @@ import { Alert, MessageTypes } from 'src/Alert';
 import Avatar from 'src/Avatar';
 import Button from 'src/Button';
 import Card, { CardSizes } from 'src/Card';
-import CheckboxButton from 'src/CheckboxButton';
+import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
+import { ORIENTATIONS as BUTTON_GROUP_ORIENTATIONS } from 'src/ControlButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
 import FadeTransition from 'src/FadeTransition';
@@ -19,16 +20,26 @@ import {
   ModalFooter,
   ModalHeader,
 } from 'src/Modal';
-import Pill from 'src/Pill';
+import { Pill, PILL_COLORS } from 'src/Pill';
 import Popper from 'src/Popper';
 import ProfileCell from 'src/ProfileCell';
 import RadioButton from 'src/RadioButton';
 import RadioButtonGroup from 'src/RadioButtonGroup';
 import {
   AsyncSelect,
+  CreatableSelect,
   SELECT_SIZES,
   SingleSelect,
 } from 'src/Select';
+import { colors as COLORS } from 'src/Styles';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
+  TableSortLabel,
+} from 'src/Table';
 import {
   Toast,
   useToast,
@@ -43,12 +54,16 @@ export {
   Avatar,
   AsyncSelect,
   Button,
+  BUTTON_GROUP_ORIENTATIONS,
   Card,
   CardSizes,
   CheckboxButton,
   CheckboxButtonGroup,
+  CHECKED_STATES,
+  COLORS,
   CopyToClipboard,
   CopyToClipboardButton,
+  CreatableSelect,
   FadeTransition,
   Form,
   FormControlLabel,
@@ -62,12 +77,19 @@ export {
   ModalFooter,
   ModalHeader,
   Pill,
+  PILL_COLORS,
   Popper,
   ProfileCell,
   RadioButton,
   RadioButtonGroup,
   SELECT_SIZES,
   SingleSelect,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
+  TableSortLabel,
   Toast,
   Tooltip,
   TrackedButton,

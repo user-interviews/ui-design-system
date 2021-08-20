@@ -64,6 +64,12 @@ $card-width-xs: 15rem;
     padding: 0;
   }
 
+  &--lg {
+    @include media-breakpoint-up(sm) {
+      max-width: $card-width;
+    }
+  }
+
   &--md {
     @include media-breakpoint-up(sm) {
       max-width: $card-width-md;

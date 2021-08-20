@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './ModalHeader.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
+import { faExclamationTriangle } from '@fortawesome/pro-solid-svg-icons';
 
 export default class ModalHeader extends Component {
   // Don’t pass event to props callback; the callback is not always called from
@@ -40,13 +40,11 @@ export default class ModalHeader extends Component {
         {this.props.onRequestClose && (
           <button
             aria-label="Close"
-            className="btn btn-sm btn-link close"
+            className="btn btn-sm btn-close"
             disabled={this.props.closingIsDisabled}
             type="button"
             onClick={this.handleCloseClick}
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
+          />
         )}
       </header>
     );

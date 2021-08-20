@@ -1,0 +1,24 @@
+@import '../../scss/theme.scss';
+
+.TableRow {
+  &:hover {
+    td {
+      background-color: $ux-gray-100;
+    }
+  }
+
+  &--clickable {
+    cursor: pointer;
+  }
+
+  &--selected {
+    td {
+      background-color: $ux-blue-100;
+    } 
+    &:hover {
+      td {
+        background-color: $ux-blue-200;
+      }
+    }
+  }
+}

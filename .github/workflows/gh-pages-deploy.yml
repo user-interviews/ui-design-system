@@ -2,14 +2,20 @@
   on:
     push:
       branches:
-        - master
+        - main
   jobs:
     gh-pages-deploy:
       name: Deploying to gh-pages
       runs-on: ubuntu-latest
+      env:
+        FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
       steps:
         - name: Checkout branch
           uses: actions/checkout@v2
+
+        - name: Configure npm
+          run: npm config set "@fortawesome:registry" https://npm.fontawesome.com/ &&
+               npm config set "//npm.fontawesome.com/:_authToken" $FONTAWESOME_NPM_AUTH_TOKEN
 
         - name: Install dependencies
           run: yarn install
