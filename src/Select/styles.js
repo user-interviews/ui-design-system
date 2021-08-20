@@ -3,29 +3,73 @@ import fontWeights from '../Styles/fontWeights';
 
 export const SELECT_SIZES = { SMALL: 'small' };
 
+export const SIZE_SMALL_HEIGHT = {
+  height: 'auto',
+  minHeight: '2.25rem',
+};
+
 const getHeightProps = (size) => {
   if (size === SELECT_SIZES.SMALL) {
-    return {
-      height: '2.25rem',
-      minHeight: '2.25rem',
-    };
+    return SIZE_SMALL_HEIGHT;
   }
   return null;
 };
+
+function getBorderStyles(isFocused, isSelected) {
+  return {
+    boxShadow: (isFocused || isSelected) ? '0px 0px 8px 0px #66AFE9B2;' : 'none',
+    borderColor: (
+      (isFocused || isSelected) ? systemColors.UX_BLUE_300 : systemColors.inputBorderColor
+    ),
+  };
+}
 
 /*
  To set styles for your item, make sure your option object has a child `colors` object
  with a text and/or hover key defined to override the defaults
  */
 const defaultStyles = ({ size }) => ({
-    control: (styles, { isDisabled }) => ({
+    control: (styles, { isDisabled, isFocused, isSelected }) => ({
       ...styles,
       ...getHeightProps(size),
       backgroundColor: isDisabled ? systemColors.inputDisabledBg : styles.backgroundColor,
-      borderColor: systemColors.inputBorderColor,
+      ...getBorderStyles(isFocused, isSelected),
+      ':hover': {
+        ...styles[':hover'],
+        ...getBorderStyles(isFocused, isSelected),
+      },
     }),
     dropdownIndicator: (styles) => ({ ...styles, color: systemColors.UX_GRAY_600 }),
     indicatorSeparator: (styles) => ({ ...styles, display: 'none' }),
+    multiValue: (styles) => ({
+      ...styles,
+      backgroundColor: systemColors.UX_BLUE_100,
+      color: systemColors.UX_BLUE_700,
+      borderRadius: '.25rem',
+    }),
+    multiValueLabel: (styles) => ({
+      ...styles,
+      color: systemColors.UX_BLUE_700,
+      fontSize: '0.875rem',
+      fontWeight: 400,
+      lineHeight: '1.25rem',
+      paddingLeft: '.5rem',
+    }),
+    multiValueRemove: (styles) => ({
+      ...styles,
+      color: systemColors.UX_BLUE,
+      cursor: 'pointer',
+      ':hover': {
+        ...styles[':hover'],
+        backgroundColor: systemColors.selectOptionFocusedBg,
+        color: systemColors.UX_BLUE_700,
+      },
+    }),
+    placeholder: (styles) => ({
+      ...styles,
+      color: systemColors.UX_GRAY_800,
+      fontWeight: '300',
+    }),
     singleValue: (styles, { data }) => ({
       ...styles,
       color: (
@@ -46,6 +90,7 @@ const defaultStyles = ({ size }) => ({
         backgroundColor: isSelected || isFocused ? colors.hover : styles.backgroundColor,
         color: colors.text,
         fontWeight: fontWeights.light,
+        fontSize: '0.875rem',
         cursor: 'pointer',
 
         ':active': {
@@ -56,7 +101,7 @@ const defaultStyles = ({ size }) => ({
 
         ':hover': {
           ...styles[':hover'],
-          backgroundColor: colors.hover || systemColors.UX_GRAY_200,
+          backgroundColor: colors.hover || systemColors.UX_BLUE_100,
         },
       };
     },
