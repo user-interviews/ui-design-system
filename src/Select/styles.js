@@ -39,7 +39,15 @@ const defaultStyles = ({ size }) => ({
         ...getBorderStyles(isFocused, isSelected),
       },
     }),
-    dropdownIndicator: (styles) => ({ ...styles, color: systemColors.UX_GRAY_600 }),
+    clearIndicator: (styles) => ({
+      ...styles,
+      cursor: 'pointer',
+    }),
+    dropdownIndicator: (styles) => ({
+      ...styles,
+      color: systemColors.UX_GRAY_600,
+      cursor: 'pointer',
+    }),
     indicatorSeparator: (styles) => ({ ...styles, display: 'none' }),
     multiValue: (styles) => ({
       ...styles,
