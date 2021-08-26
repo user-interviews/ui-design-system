@@ -1,0 +1,114 @@
+@import '../../scss/theme';
+
+//Testing out new font family
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+.Button {
+  background-color: unset;
+  border: unset;
+
+  //Test font family
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+
+  &__leading-icon {
+    margin-right: $ux-spacing-20;
+  }
+
+  &__trailing-icon {
+    margin-left: $ux-spacing-20;
+  }
+
+
+  @mixin primary {
+    background-color: #158D71;
+
+    &:hover {
+      background-color: #156152;
+    }
+
+    &:focus {
+      background-color: #156152;
+    }
+  }
+
+  @mixin secondary {
+    background-color: #234574;
+
+    &:hover {
+      background-color: #011936;
+    }
+
+    &:focus {
+      background-color: #011936;
+    }
+  }
+
+  @mixin success {
+    background-color: #158D71;
+
+    &:hover {
+      background-color: green;
+    }
+
+    &:focus {
+      background-color: #158D71;
+    }
+  }
+  
+  &--primary {
+   @include primary;
+  }
+
+  &--secondary {
+   @include secondary;
+  }
+
+  &--success {
+    @include success;
+  }
+
+  &--link {
+    color: $ux-black;
+    text-decoration-color: #156152;
+    text-decoration-thickness: 1px;
+    padding-bottom: 2px;
+  }
+
+  &--outline-primary {
+    @include primary;
+    background-color: unset;
+    border: 1px solid #158D71;
+    color: $ux-black;
+
+    &:hover {
+      border: 1px solid  #156152;
+    }
+
+    &:focus {
+      color: $ux-white;
+    }
+  }
+
+  &--outline-secondary {
+    @include secondary;
+    background-color: unset;
+    border: 1px solid #234574;
+    color: $ux-black;
+
+    &:hover {
+      border: 1px solid  #011936;
+    }
+
+    &:focus {
+      color: $ux-white;
+    }
+  }
+}

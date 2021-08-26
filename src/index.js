@@ -1,5 +1,6 @@
 import { Alert, MessageTypes } from 'src/Alert';
 import Avatar from 'src/Avatar';
+import Button from 'src/Button';
 import Card, { CardSizes } from 'src/Card';
 import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
@@ -52,6 +53,7 @@ export {
   Alert,
   Avatar,
   AsyncSelect,
+  Button,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
   CardSizes,
