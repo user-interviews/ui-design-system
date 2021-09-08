@@ -19,32 +19,33 @@ describe('Toast', () => {
     expect(props.className).toContain('Toast--no-header');
   });
 
-  describe('when building alert message props', () => {
-    const setup = (message) => create(
+  describe('when building alert props', () => {
+    const setup = (props) => create(
       <Toast
         messages={[
-          { id: '1', type: 'success', message },
+          { id: '1', type: 'success', ...props },
         ]}
       />,
     );
 
     test('builds props from string message', () => {
-      const { root } = setup('hello');
+      const { root } = setup({ message: 'hello' });
 
       expect(root.findByType(Alert).props.message).toBe('hello');
     });
 
     test('builds props from node message', () => {
-      const { root } = setup(<div>hello</div>);
+      const { root } = setup({ message: <div>hello</div> });
 
       expect(root.findByType(Alert).props.message).toEqual(<div>hello</div>);
     });
 
-    test('builds props from object message', () => {
-      const { root } = setup({ title: 'woohoo', body: 'you did it!' });
+    describe('when title prop is passed', () => {
+      test('builds title prop', () => {
+        const { root } = setup({ title: 'woohoo', message: 'you did it!' });
 
-      expect(root.findByType(Alert).props.message).toBe('you did it!');
-      expect(root.findByType(Alert).props.title).toBe('woohoo');
+        expect(root.findByType(Alert).props.title).toBe('woohoo');
+      });
     });
   });
 });

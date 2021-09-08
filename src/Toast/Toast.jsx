@@ -5,20 +5,8 @@ import classNames from 'classnames';
 
 import { Alert } from 'src/Alert';
 import FadeTransition from 'src/FadeTransition';
-import { isObject } from '../utils';
 
 import './Toast.scss';
-
-function buildAlertMessageProps(message) {
-  if (isObject(message) && !React.isValidElement(message)) {
-    return {
-      title: message.title,
-      message: message.body,
-    };
-  }
-
-  return { message };
-}
 
 export default function Toast(props) {
   const groupClassNames = classNames(
@@ -35,9 +23,10 @@ export default function Toast(props) {
               action={message.action}
               autoDismiss={props.autoDismiss}
               id={message.id}
+              message={message.message}
+              title={message.title}
               type={message.type}
               onDismiss={props.onToastClosed}
-              {...buildAlertMessageProps(message.message)}
             />
           </FadeTransition>
         ))
@@ -52,14 +41,8 @@ Toast.propTypes = {
   messages: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string,
-      message: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.node,
-        PropTypes.shape({
-          body: PropTypes.string,
-          title: PropTypes.string,
-        }),
-      ]),
+      message: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+      title: PropTypes.string,
       type: PropTypes.string,
     }),
   ).isRequired,
