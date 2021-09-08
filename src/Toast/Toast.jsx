@@ -24,6 +24,7 @@ export default function Toast(props) {
               autoDismiss={props.autoDismiss}
               id={message.id}
               message={message.message}
+              title={message.title}
               type={message.type}
               onDismiss={props.onToastClosed}
             />
@@ -41,6 +42,7 @@ Toast.propTypes = {
     PropTypes.shape({
       id: PropTypes.string,
       message: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
+      title: PropTypes.string,
       type: PropTypes.string,
     }),
   ).isRequired,
