@@ -40,11 +40,13 @@ export default class ModalHeader extends Component {
         {this.props.onRequestClose && (
           <button
             aria-label="Close"
-            className="btn btn-sm btn-close"
+            className="btn btn-sm btn-link close"
             disabled={this.props.closingIsDisabled}
             type="button"
             onClick={this.handleCloseClick}
-          />
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
         )}
       </header>
     );

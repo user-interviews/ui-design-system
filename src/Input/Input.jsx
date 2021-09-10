@@ -27,8 +27,10 @@ const Input = React.forwardRef((props, ref) => {
   return (
     <div className="Input input-group">
       {leadingIcon && (
-        <div className="input-group-text">
-          <FontAwesomeIcon icon={leadingIcon} />
+        <div className="input-group-prepend">
+          <div className="input-group-text">
+            <FontAwesomeIcon icon={leadingIcon} />
+          </div>
         </div>
       )}
 
@@ -44,9 +46,12 @@ const Input = React.forwardRef((props, ref) => {
         onChange={onChange}
         {...rest}
       />
+
       {trailingIcon && (
-        <div className="input-group-text">
-          <FontAwesomeIcon icon={trailingIcon} />
+        <div className="input-group-append">
+          <div className="input-group-text">
+            <FontAwesomeIcon icon={trailingIcon} />
+          </div>
         </div>
       )}
     </div>

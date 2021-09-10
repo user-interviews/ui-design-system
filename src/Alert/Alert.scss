@@ -1,3 +1,8 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/alert';
+
 @import '../../scss/theme';
 
 @mixin primary-action($bg-color, $bg-color-hover, $color) {
@@ -14,16 +19,6 @@
 
   &:hover {
     background-color: $bg-color-hover;
-  }
-}
-
-@mixin close-action($color, $color-hover) {
-  background-color: unset;
-  border: none;
-  color: $color;
-
-  &:hover {
-    color: $color-hover
   }
 }
 
@@ -71,9 +66,6 @@
 
   &__close {
     grid-area: close;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-end;
   }
 
   &__title {
@@ -89,7 +81,7 @@
   border-left: 0.5rem solid $ux-green-400;
 
   .close {
-    @include close-action($ux-green-600, $ux-green-800)
+    color: $ux-green-800;
   }
 
   .primary-action {
@@ -103,7 +95,7 @@
   border-left: 0.5rem solid $ux-blue-300;
 
   .close {
-    @include close-action($ux-blue-600, $ux-blue-800)
+    color: $ux-blue-700;
   }
 
   .primary-action {
@@ -117,7 +109,7 @@
   border-left: 0.5rem solid $ux-blue-300;
 
   .close {
-    @include close-action($ux-blue-600, $ux-blue-800)
+    color: $ux-blue-700;
   }
 
   .primary-action {
@@ -131,7 +123,7 @@
   border-left: 0.5rem solid $ux-yellow-600;
 
   .close {
-    @include close-action($ux-yellow-600, $ux-yellow-800)
+    color: $ux-yellow-800;
   }
 
   .primary-action {
@@ -145,7 +137,7 @@
   border-left: 0.5rem solid $ux-red-400;
 
   .close {
-    @include close-action($ux-red-600, $ux-red-800)
+    color: $ux-red-800;
   }
 
   .primary-action {
