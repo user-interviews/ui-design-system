@@ -111,7 +111,7 @@ const TypographyStyle = (props) => (
 const presets = [
   {
     preset: 'font-type-70',
-    font: 'Lato, Arial, sans-serif',
+    font: 'DM Sans, sans-serif',
     size: '1.5rem',
     weight: '400 / Regular',
     lineHeight: '2rem',
@@ -119,7 +119,7 @@ const presets = [
   },
   {
     preset: 'font-type-60',
-    font: 'Lato, Arial, sans-serif',
+    font: 'DM Sans, sans-serif',
     size: '1.25rem',
     weight: '400 / Regular',
     lineHeight: '1.625rem',
@@ -128,7 +128,7 @@ const presets = [
   },
   {
     preset: 'font-type-50',
-    font: 'Lato, Arial, sans-serif',
+    font: 'DM Sans, sans-serif',
     size: '1.125rem',
     weight: '400 / Regular',
     lineHeight: '1.5rem',
@@ -137,7 +137,7 @@ const presets = [
   },
   {
     preset: 'font-type-40',
-    font: 'Lato, Arial, sans-serif',
+    font: 'DM Sans, sans-serif',
     size: '1rem',
     weight: '400 / Regular',
     lineHeight: '1.375rem',
@@ -146,7 +146,7 @@ const presets = [
   },
   {
     preset: 'font-type-30',
-    font: 'Lato, Arial, sans-serif',
+    font: 'DM Sans, sans-serif',
     size: '0.875rem',
     weight: '400 / Regular',
     lineHeight: '1.25rem',
@@ -154,7 +154,7 @@ const presets = [
   },
   {
     preset: 'font-type-20',
-    font: 'Lato, Arial, sans-serif',
+    font: 'DM Sans, sans-serif',
     size: '0.75rem',
     weight: '400 / Regular',
     lineHeight: '1rem',
@@ -162,7 +162,7 @@ const presets = [
   },
   {
     preset: 'font-type-10',
-    font: 'Lato, Arial, sans-serif',
+    font: 'DM Sans, sans-serif',
     size: '0.625rem',
     weight: '400 / Regular',
     lineHeight: '0.875rem',
