@@ -47,3 +47,10 @@ export const Gray = () => <Palette color="GRAY" />;
 export const Green = () => <Palette color="GREEN" />;
 export const Orange = () => <Palette color="ORANGE" />;
 export const Red = () => <Palette color="RED" />;
+
+// New brand color additions (currently skip even number series)
+export const Emerald = () => <Palette color="EMERALD" />;
+export const Navy = () => <Palette color="NAVY" />;
+export const Neutral = () => <Palette color="NEUTRAL" />;
+export const Sand = () => <Palette color="SAND" />;
+export const Teal = () => <Palette color="TEAL" />;
