@@ -12,6 +12,7 @@ import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
+import LoadingOverlay from 'src/LoadingOverlay';
 import {
   Modal,
   MODAL_SIZES,
@@ -68,6 +69,7 @@ export {
   FormGroup,
   Input,
   InputLabel,
+  LoadingOverlay,
   MessageTypes,
   Modal,
   MODAL_SIZES,
