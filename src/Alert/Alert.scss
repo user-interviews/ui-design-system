@@ -93,7 +93,7 @@
   }
 
   .primary-action {
-    @include primary-action($ux-green-300, $ux-green-400, $ux-green-700)
+    @include primary-action($ux-green-300, $ux-green-400, $ux-green-800)
   }
 
   .Alert__icon {
@@ -151,7 +151,7 @@
   }
 
   .primary-action {
-    @include primary-action($ux-yellow-300, $ux-yellow-400, $ux-yellow-800)
+    @include primary-action($ux-yellow-300, $ux-yellow-400, $ux-yellow-900)
   }
 
   .Alert__icon {
@@ -169,7 +169,7 @@
   }
 
   .primary-action {
-    @include primary-action($ux-red-200, $ux-red-300, $ux-red-800)
+    @include primary-action($ux-red-200, $ux-red-300, $ux-red-900)
   }
 
   .Alert__icon {
