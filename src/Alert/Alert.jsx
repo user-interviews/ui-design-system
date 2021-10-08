@@ -4,9 +4,10 @@ import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBullhorn,
-  faCheckCircle,
+  faCircle,
+  faCheck,
   faExclamationTriangle,
-  faInfoCircle,
+  faInfo,
   faTimes,
 } from '@fortawesome/pro-solid-svg-icons';
 
@@ -24,15 +25,25 @@ export const MessageTypes = {
 const getAlertIcon = (type) => {
   switch (type) {
     case MessageTypes.SUCCESS:
-      return faCheckCircle;
+      return (
+        <span className="fa-layers fa-fw">
+          <FontAwesomeIcon icon={faCircle} transform="grow-8" />
+          <FontAwesomeIcon icon={faCheck} transform="shrink-4" />
+        </span>
+);
     case MessageTypes.INFO:
-      return faInfoCircle;
+      return (
+        <span className="fa-layers fa-fw">
+          <FontAwesomeIcon icon={faCircle} transform="grow-8" />
+          <FontAwesomeIcon icon={faInfo} transform="shrink-4" />
+        </span>
+      );
     case MessageTypes.ANNOUNCEMENT:
-      return faBullhorn;
+      return (<FontAwesomeIcon icon={faBullhorn} transform="grow-2" />);
     case MessageTypes.WARNING:
-      return faExclamationTriangle;
+      return (<FontAwesomeIcon icon={faExclamationTriangle} transform="grow-2" />);
     case MessageTypes.ERROR:
-      return faExclamationTriangle;
+      return (<FontAwesomeIcon icon={faExclamationTriangle} transform="grow-2" />);
     default:
       return null;
   }
@@ -64,7 +75,7 @@ function Alert(props) {
   return (
     <div className={getAlertClassName(props.type)}>
       <div className="Alert__icon">
-        <FontAwesomeIcon icon={getAlertIcon(props.type)} />
+        {getAlertIcon(props.type)}
       </div>
       <div className="Alert__content">
         {
