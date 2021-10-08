@@ -5874,13 +5874,19 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_100
+        <div>
+          UX_BLUE_100
+        </div>
+        <div>
+          #F1F5FE
+        </div>
       </p>
     </div>
     <div
@@ -5897,19 +5903,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_200
+        <div>
+          UX_BLUE_200
+        </div>
+        <div>
+          #BDD1FB
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#92CBFC",
+          "backgroundColor": "#A6C0F5",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -5920,19 +5932,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_300
+        <div>
+          UX_BLUE_300
+        </div>
+        <div>
+          #A6C0F5
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#5AA4E5",
+          "backgroundColor": "#7497DF",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -5943,19 +5961,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_400
+        <div>
+          UX_BLUE_400
+        </div>
+        <div>
+          #7497DF
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#337AB7",
+          "backgroundColor": "#3F6DCA",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -5966,19 +5990,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_500
+        <div>
+          UX_BLUE_500
+        </div>
+        <div>
+          #3F6DCA
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#155B99",
+          "backgroundColor": "#2854AF",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -5989,19 +6019,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_600
+        <div>
+          UX_BLUE_600
+        </div>
+        <div>
+          #2854AF
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#0D4473",
+          "backgroundColor": "#143C8D",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6012,19 +6048,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_700
+        <div>
+          UX_BLUE_700
+        </div>
+        <div>
+          #143C8D
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#083054",
+          "backgroundColor": "#0B2D72",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6035,19 +6077,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_800
+        <div>
+          UX_BLUE_800
+        </div>
+        <div>
+          #0B2D72
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#032847",
+          "backgroundColor": "#031D52",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6058,13 +6106,19 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_900
+        <div>
+          UX_BLUE_900
+        </div>
+        <div>
+          #031D52
+        </div>
       </p>
     </div>
   </div>
@@ -6102,13 +6156,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_100
+        <div>
+          UX_EMERALD_100
+        </div>
+        <div>
+          #BFDDD5
+        </div>
       </p>
     </div>
     <div
@@ -6125,13 +6185,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_200
+        <div>
+          UX_EMERALD_200
+        </div>
+        <div>
+          #91CABB
+        </div>
       </p>
     </div>
     <div
@@ -6148,13 +6214,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_300
+        <div>
+          UX_EMERALD_300
+        </div>
+        <div>
+          #65B8A2
+        </div>
       </p>
     </div>
     <div
@@ -6171,13 +6243,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_400
+        <div>
+          UX_EMERALD_400
+        </div>
+        <div>
+          #3EA388
+        </div>
       </p>
     </div>
     <div
@@ -6194,13 +6272,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_500
+        <div>
+          UX_EMERALD_500
+        </div>
+        <div>
+          #158D71
+        </div>
       </p>
     </div>
     <div
@@ -6217,13 +6301,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_600
+        <div>
+          UX_EMERALD_600
+        </div>
+        <div>
+          #177863
+        </div>
       </p>
     </div>
     <div
@@ -6240,13 +6330,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_700
+        <div>
+          UX_EMERALD_700
+        </div>
+        <div>
+          #156152
+        </div>
       </p>
     </div>
     <div
@@ -6263,13 +6359,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_800
+        <div>
+          UX_EMERALD_800
+        </div>
+        <div>
+          #0D4A3E
+        </div>
       </p>
     </div>
     <div
@@ -6286,13 +6388,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_900
+        <div>
+          UX_EMERALD_900
+        </div>
+        <div>
+          #073B31
+        </div>
       </p>
     </div>
   </div>
@@ -6330,13 +6438,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_100
+        <div>
+          UX_GRAY_100
+        </div>
+        <div>
+          #F9F9F9
+        </div>
       </p>
     </div>
     <div
@@ -6353,13 +6467,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_200
+        <div>
+          UX_GRAY_200
+        </div>
+        <div>
+          #F1F1F1
+        </div>
       </p>
     </div>
     <div
@@ -6376,13 +6496,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_300
+        <div>
+          UX_GRAY_300
+        </div>
+        <div>
+          #E1E1E1
+        </div>
       </p>
     </div>
     <div
@@ -6399,13 +6525,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_400
+        <div>
+          UX_GRAY_400
+        </div>
+        <div>
+          #D1D1D1
+        </div>
       </p>
     </div>
     <div
@@ -6422,13 +6554,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_500
+        <div>
+          UX_GRAY_500
+        </div>
+        <div>
+          #A1A1A1
+        </div>
       </p>
     </div>
     <div
@@ -6445,13 +6583,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_600
+        <div>
+          UX_GRAY_600
+        </div>
+        <div>
+          #818181
+        </div>
       </p>
     </div>
     <div
@@ -6468,13 +6612,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_700
+        <div>
+          UX_GRAY_700
+        </div>
+        <div>
+          #616161
+        </div>
       </p>
     </div>
     <div
@@ -6491,13 +6641,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_800
+        <div>
+          UX_GRAY_800
+        </div>
+        <div>
+          #444444
+        </div>
       </p>
     </div>
     <div
@@ -6514,13 +6670,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_900
+        <div>
+          UX_GRAY_900
+        </div>
+        <div>
+          #101010
+        </div>
       </p>
     </div>
   </div>
@@ -6547,7 +6709,7 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
     <div
       style={
         Object {
-          "backgroundColor": "#F3FFF2",
+          "backgroundColor": "#D4F6E5",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6558,19 +6720,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_100
+        <div>
+          UX_GREEN_100
+        </div>
+        <div>
+          #D4F6E5
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#E3FDE0",
+          "backgroundColor": "#A3F9CF",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6581,19 +6749,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_200
+        <div>
+          UX_GREEN_200
+        </div>
+        <div>
+          #A3F9CF
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#BFFEB8",
+          "backgroundColor": "#70E2AB",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6604,19 +6778,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_300
+        <div>
+          UX_GREEN_300
+        </div>
+        <div>
+          #70E2AB
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#85DC7A",
+          "backgroundColor": "#40CC88",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6627,19 +6807,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_400
+        <div>
+          UX_GREEN_400
+        </div>
+        <div>
+          #40CC88
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#6DBD63",
+          "backgroundColor": "#21B36C",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6650,19 +6836,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_500
+        <div>
+          UX_GREEN_500
+        </div>
+        <div>
+          #21B36C
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#47A13B",
+          "backgroundColor": "#09914F",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6673,19 +6865,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_600
+        <div>
+          UX_GREEN_600
+        </div>
+        <div>
+          #09914F
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#297021",
+          "backgroundColor": "#04713C",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6696,19 +6894,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_700
+        <div>
+          UX_GREEN_700
+        </div>
+        <div>
+          #04713C
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#1A5313",
+          "backgroundColor": "#015029",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6719,19 +6923,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_800
+        <div>
+          UX_GREEN_800
+        </div>
+        <div>
+          #015029
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#0E4207",
+          "backgroundColor": "#003119",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6742,13 +6952,19 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_900
+        <div>
+          UX_GREEN_900
+        </div>
+        <div>
+          #003119
+        </div>
       </p>
     </div>
   </div>
@@ -6786,19 +7002,25 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_100
+        <div>
+          UX_NAVY_100
+        </div>
+        <div>
+          #C4D0DF
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#A3BAD2",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6809,13 +7031,19 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_200
+        <div>
+          UX_NAVY_200
+        </div>
+        <div>
+          #A3BAD2
+        </div>
       </p>
     </div>
     <div
@@ -6832,19 +7060,25 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_300
+        <div>
+          UX_NAVY_300
+        </div>
+        <div>
+          #7396BA
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#40669C",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6855,13 +7089,19 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_400
+        <div>
+          UX_NAVY_400
+        </div>
+        <div>
+          #40669C
+        </div>
       </p>
     </div>
     <div
@@ -6878,19 +7118,25 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_500
+        <div>
+          UX_NAVY_500
+        </div>
+        <div>
+          #234574
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#16325A",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6901,13 +7147,19 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_600
+        <div>
+          UX_NAVY_600
+        </div>
+        <div>
+          #16325A
+        </div>
       </p>
     </div>
     <div
@@ -6924,19 +7176,25 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_700
+        <div>
+          UX_NAVY_700
+        </div>
+        <div>
+          #011936
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#01152D",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6947,13 +7205,19 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_800
+        <div>
+          UX_NAVY_800
+        </div>
+        <div>
+          #01152D
+        </div>
       </p>
     </div>
     <div
@@ -6970,13 +7234,19 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_900
+        <div>
+          UX_NAVY_900
+        </div>
+        <div>
+          #021020
+        </div>
       </p>
     </div>
   </div>
@@ -7003,6 +7273,35 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
     <div
       style={
         Object {
+          "backgroundColor": "#FFFFFF",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_NEUTRAL_100
+        </div>
+        <div>
+          #FFFFFF
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
           "backgroundColor": "#F8F4F2",
           "flexBasis": "11%",
           "height": "100%",
@@ -7014,36 +7313,19 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_100
-      </p>
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": undefined,
-          "flexBasis": "11%",
-          "height": "100%",
-        }
-      }
-    >
-      <p
-        style={
-          Object {
-            "backgroundColor": "#FFF",
-            "color": "#000",
-            "fontSize": "1rem",
-            "margin": "1rem",
-            "textAlign": "center",
-          }
-        }
-      >
-        UX_NEUTRAL_200
+        <div>
+          UX_NEUTRAL_200
+        </div>
+        <div>
+          #F8F4F2
+        </div>
       </p>
     </div>
     <div
@@ -7060,19 +7342,25 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_300
+        <div>
+          UX_NEUTRAL_300
+        </div>
+        <div>
+          #E6E2E0
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#CECBC9",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7083,13 +7371,19 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_400
+        <div>
+          UX_NEUTRAL_400
+        </div>
+        <div>
+          #CECBC9
+        </div>
       </p>
     </div>
     <div
@@ -7106,19 +7400,25 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_500
+        <div>
+          UX_NEUTRAL_500
+        </div>
+        <div>
+          #B5B0AB
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#9A938D",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7129,13 +7429,19 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_600
+        <div>
+          UX_NEUTRAL_600
+        </div>
+        <div>
+          #9A938D
+        </div>
       </p>
     </div>
     <div
@@ -7152,36 +7458,19 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_700
-      </p>
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": undefined,
-          "flexBasis": "11%",
-          "height": "100%",
-        }
-      }
-    >
-      <p
-        style={
-          Object {
-            "backgroundColor": "#FFF",
-            "color": "#000",
-            "fontSize": "1rem",
-            "margin": "1rem",
-            "textAlign": "center",
-          }
-        }
-      >
-        UX_NEUTRAL_800
+        <div>
+          UX_NEUTRAL_700
+        </div>
+        <div>
+          #817874
+        </div>
       </p>
     </div>
     <div
@@ -7198,13 +7487,48 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_900
+        <div>
+          UX_NEUTRAL_800
+        </div>
+        <div>
+          #33312F
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_NEUTRAL_900
+        </div>
+        <div>
+          #000000
+        </div>
       </p>
     </div>
   </div>
@@ -7242,13 +7566,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_100
+        <div>
+          UX_ORANGE_100
+        </div>
+        <div>
+          #FDEAD2
+        </div>
       </p>
     </div>
     <div
@@ -7265,13 +7595,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_200
+        <div>
+          UX_ORANGE_200
+        </div>
+        <div>
+          #FCDFB9
+        </div>
       </p>
     </div>
     <div
@@ -7288,13 +7624,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_300
+        <div>
+          UX_ORANGE_300
+        </div>
+        <div>
+          #FAC988
+        </div>
       </p>
     </div>
     <div
@@ -7311,13 +7653,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_400
+        <div>
+          UX_ORANGE_400
+        </div>
+        <div>
+          #F7B258
+        </div>
       </p>
     </div>
     <div
@@ -7334,13 +7682,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_500
+        <div>
+          UX_ORANGE_500
+        </div>
+        <div>
+          #F59C27
+        </div>
       </p>
     </div>
     <div
@@ -7357,13 +7711,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_600
+        <div>
+          UX_ORANGE_600
+        </div>
+        <div>
+          #E18C28
+        </div>
       </p>
     </div>
     <div
@@ -7380,13 +7740,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_700
+        <div>
+          UX_ORANGE_700
+        </div>
+        <div>
+          #AE6608
+        </div>
       </p>
     </div>
     <div
@@ -7403,13 +7769,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_800
+        <div>
+          UX_ORANGE_800
+        </div>
+        <div>
+          #7D4A06
+        </div>
       </p>
     </div>
     <div
@@ -7426,13 +7798,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_900
+        <div>
+          UX_ORANGE_900
+        </div>
+        <div>
+          #653B05
+        </div>
       </p>
     </div>
   </div>
@@ -7459,7 +7837,7 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
     <div
       style={
         Object {
-          "backgroundColor": "#F0D9D9",
+          "backgroundColor": "#FAE1E1",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7470,19 +7848,25 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_100
+        <div>
+          UX_RED_100
+        </div>
+        <div>
+          #FAE1E1
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#E8C5CB",
+          "backgroundColor": "#F3BDBD",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7493,13 +7877,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_200
+        <div>
+          UX_RED_200
+        </div>
+        <div>
+          #F3BDBD
+        </div>
       </p>
     </div>
     <div
@@ -7516,13 +7906,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_300
+        <div>
+          UX_RED_300
+        </div>
+        <div>
+          #EB7A7A
+        </div>
       </p>
     </div>
     <div
@@ -7539,19 +7935,25 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_400
+        <div>
+          UX_RED_400
+        </div>
+        <div>
+          #E44E4E
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#FF4E00",
+          "backgroundColor": "#E03131",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7562,13 +7964,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_500
+        <div>
+          UX_RED_500
+        </div>
+        <div>
+          #E03131
+        </div>
       </p>
     </div>
     <div
@@ -7585,13 +7993,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_600
+        <div>
+          UX_RED_600
+        </div>
+        <div>
+          #C71F1F
+        </div>
       </p>
     </div>
     <div
@@ -7608,13 +8022,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_700
+        <div>
+          UX_RED_700
+        </div>
+        <div>
+          #B11B1B
+        </div>
       </p>
     </div>
     <div
@@ -7631,13 +8051,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_800
+        <div>
+          UX_RED_800
+        </div>
+        <div>
+          #9B1818
+        </div>
       </p>
     </div>
     <div
@@ -7654,13 +8080,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_900
+        <div>
+          UX_RED_900
+        </div>
+        <div>
+          #851414
+        </div>
       </p>
     </div>
   </div>
@@ -7698,19 +8130,25 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_100
+        <div>
+          UX_SAND_100
+        </div>
+        <div>
+          #ECE1D4
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#E8DAC9",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7721,13 +8159,19 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_200
+        <div>
+          UX_SAND_200
+        </div>
+        <div>
+          #E8DAC9
+        </div>
       </p>
     </div>
     <div
@@ -7744,19 +8188,25 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_300
+        <div>
+          UX_SAND_300
+        </div>
+        <div>
+          #E5D2BD
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#DFC7AF",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7767,13 +8217,19 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_400
+        <div>
+          UX_SAND_400
+        </div>
+        <div>
+          #DFC7AF
+        </div>
       </p>
     </div>
     <div
@@ -7790,19 +8246,25 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_500
+        <div>
+          UX_SAND_500
+        </div>
+        <div>
+          #DABDA2
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#D4B191",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7813,13 +8275,19 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_600
+        <div>
+          UX_SAND_600
+        </div>
+        <div>
+          #D4B191
+        </div>
       </p>
     </div>
     <div
@@ -7836,19 +8304,25 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_700
+        <div>
+          UX_SAND_700
+        </div>
+        <div>
+          #CFAA86
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#C59B72",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7859,13 +8333,19 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_800
+        <div>
+          UX_SAND_800
+        </div>
+        <div>
+          #C59B72
+        </div>
       </p>
     </div>
     <div
@@ -7882,13 +8362,19 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_900
+        <div>
+          UX_SAND_900
+        </div>
+        <div>
+          #BA8E5E
+        </div>
       </p>
     </div>
   </div>
@@ -7926,19 +8412,25 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_100
+        <div>
+          UX_TEAL_100
+        </div>
+        <div>
+          #CAE1E2
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#A2CBCD",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7949,13 +8441,19 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_200
+        <div>
+          UX_TEAL_200
+        </div>
+        <div>
+          #A2CBCD
+        </div>
       </p>
     </div>
     <div
@@ -7972,19 +8470,25 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_300
+        <div>
+          UX_TEAL_300
+        </div>
+        <div>
+          #85A9AA
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#408F91",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7995,13 +8499,19 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_400
+        <div>
+          UX_TEAL_400
+        </div>
+        <div>
+          #408F91
+        </div>
       </p>
     </div>
     <div
@@ -8018,19 +8528,25 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_500
+        <div>
+          UX_TEAL_500
+        </div>
+        <div>
+          #2A7779
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#1C5D5F",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -8041,13 +8557,19 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_600
+        <div>
+          UX_TEAL_600
+        </div>
+        <div>
+          #1C5D5F
+        </div>
       </p>
     </div>
     <div
@@ -8064,19 +8586,25 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_700
+        <div>
+          UX_TEAL_700
+        </div>
+        <div>
+          #0E4749
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#093C3F",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -8087,13 +8615,19 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_800
+        <div>
+          UX_TEAL_800
+        </div>
+        <div>
+          #093C3F
+        </div>
       </p>
     </div>
     <div
@@ -8110,13 +8644,301 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_900
+        <div>
+          UX_TEAL_900
+        </div>
+        <div>
+          #083236
+        </div>
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Styles/Color Palette Yellow 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "20rem",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FFF1AB",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_100
+        </div>
+        <div>
+          #FFF1AB
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FFEB85",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_200
+        </div>
+        <div>
+          #FFEB85
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FFE356",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_300
+        </div>
+        <div>
+          #FFE356
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FBDA36",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_400
+        </div>
+        <div>
+          #FBDA36
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#F3CE14",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_500
+        </div>
+        <div>
+          #F3CE14
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#E1BE0C",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_600
+        </div>
+        <div>
+          #E1BE0C
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#CAA900",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_700
+        </div>
+        <div>
+          #CAA900
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#A98D01",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_800
+        </div>
+        <div>
+          #A98D01
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#453A00",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_900
+        </div>
+        <div>
+          #453A00
+        </div>
       </p>
     </div>
   </div>
