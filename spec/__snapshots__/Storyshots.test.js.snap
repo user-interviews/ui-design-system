@@ -55,7 +55,11 @@ exports[`Storyshots Design System/Alert Announcement 1`] = `
       >
         Announcement title
       </p>
-      Announcement message
+      <p
+        className="Alert__message"
+      >
+        Announcement message
+      </p>
     </div>
   </div>
 </div>
@@ -116,7 +120,11 @@ exports[`Storyshots Design System/Alert Error 1`] = `
       >
         Error title
       </p>
-      Error message
+      <p
+        className="Alert__message"
+      >
+        Error message
+      </p>
     </div>
   </div>
 </div>
@@ -213,7 +221,11 @@ exports[`Storyshots Design System/Alert Info 1`] = `
       >
         Info title
       </p>
-      Info message
+      <p
+        className="Alert__message"
+      >
+        Info message
+      </p>
     </div>
   </div>
 </div>
@@ -310,7 +322,11 @@ exports[`Storyshots Design System/Alert Success 1`] = `
       >
         Success title
       </p>
-      Success message
+      <p
+        className="Alert__message"
+      >
+        Success message
+      </p>
     </div>
   </div>
 </div>
@@ -371,7 +387,11 @@ exports[`Storyshots Design System/Alert Warning 1`] = `
       >
         Warning title
       </p>
-      Warning message
+      <p
+        className="Alert__message"
+      >
+        Warning message
+      </p>
     </div>
   </div>
 </div>
@@ -471,7 +491,11 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       >
         Success title
       </p>
-      Success message
+      <p
+        className="Alert__message"
+      >
+        Success message
+      </p>
     </div>
     <div
       className="Alert__action"
@@ -596,7 +620,11 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       >
         Info title
       </p>
-      Info message
+      <p
+        className="Alert__message"
+      >
+        Info message
+      </p>
     </div>
     <div
       className="Alert__action"
@@ -685,7 +713,11 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       >
         Announcement title
       </p>
-      Announcement message
+      <p
+        className="Alert__message"
+      >
+        Announcement message
+      </p>
     </div>
     <div
       className="Alert__action"
@@ -774,7 +806,11 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       >
         Error title
       </p>
-      Error message
+      <p
+        className="Alert__message"
+      >
+        Error message
+      </p>
     </div>
     <div
       className="Alert__action"
@@ -863,7 +899,11 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       >
         Warning title
       </p>
-      Warning message
+      <p
+        className="Alert__message"
+      >
+        Warning message
+      </p>
     </div>
     <div
       className="Alert__action"
@@ -959,50 +999,54 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       >
         Connect to Google Calendar to create reminders automatically
       </p>
-      <div>
-        When you confirm a session we’ll automatically add an event and reminders to your Google Calendar.
-      </div>
-      <button
-        style={
-          Object {
-            "backgroundColor": "#4285F4",
-            "border": "1px solid #4285F4",
-            "borderRadius": "4px",
-            "color": "#FFFFFF",
-            "fontSize": "0.875rem",
-            "fontWeight": "bold",
-            "lineHeight": "1.25rem",
-            "margin": "16px 0",
-            "padding": "8px 16px",
-            "whiteSpace": "nowrap",
-          }
-        }
-        type="button"
+      <p
+        className="Alert__message"
       >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-google fa-w-16 "
-          data-icon="google"
-          data-prefix="fab"
-          focusable="false"
-          role="img"
+        <div>
+          When you confirm a session we’ll automatically add an event and reminders to your Google Calendar.
+        </div>
+        <button
           style={
             Object {
-              "height": "1rem",
-              "marginRight": "0.5rem",
+              "backgroundColor": "#4285F4",
+              "border": "1px solid #4285F4",
+              "borderRadius": "4px",
+              "color": "#FFFFFF",
+              "fontSize": "0.875rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.25rem",
+              "margin": "16px 0",
+              "padding": "8px 16px",
+              "whiteSpace": "nowrap",
             }
           }
-          viewBox="0 0 488 512"
-          xmlns="http://www.w3.org/2000/svg"
+          type="button"
         >
-          <path
-            d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-        Connect Google Calendar
-      </button>
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-google fa-w-16 "
+            data-icon="google"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={
+              Object {
+                "height": "1rem",
+                "marginRight": "0.5rem",
+              }
+            }
+            viewBox="0 0 488 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          Connect Google Calendar
+        </button>
+      </p>
     </div>
     <div
       className="Alert__close"
@@ -1087,8 +1131,12 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
       >
         Connect to Google Calendar to create reminders automatically
       </p>
-      When you confirm a session we’ll automatically
+      <p
+        className="Alert__message"
+      >
+        When you confirm a session we’ll automatically
       add an event and reminders to your Google Calendar.
+      </p>
     </div>
     <div
       className="Alert__action"
@@ -1258,7 +1306,11 @@ exports[`Storyshots Design System/Alert With Dismiss 1`] = `
       >
         Default title
       </p>
-      Default message
+      <p
+        className="Alert__message"
+      >
+        Default message
+      </p>
     </div>
     <div
       className="Alert__close"

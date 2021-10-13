@@ -77,8 +77,12 @@
   }
 
   &__title {
-    font-size: .875rem;
-    font-weight: bold;
+    @include font-type-30--bold;
+    margin-bottom: 0.25rem;
+  }
+
+  &__message {
+    @include font-type-30--regular;
     margin-bottom: 0;
   }
 }

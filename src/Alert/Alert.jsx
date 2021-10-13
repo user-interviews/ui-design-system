@@ -85,7 +85,7 @@ function Alert(props) {
             </p>
           )
         }
-        {props.message}
+        <p className="Alert__message">{props.message}</p>
       </div>
       {
         props.action && (
