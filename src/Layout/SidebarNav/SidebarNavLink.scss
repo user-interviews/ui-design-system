@@ -2,7 +2,7 @@
 @import '~bootstrap/scss/mixins/breakpoints';
 
 .Layout__sidebar-nav__link {
-  @include font-type-30--light;
+  @include font-type-30--regular;
   @include ui-remove-anchor-styles();
 
   cursor: pointer;

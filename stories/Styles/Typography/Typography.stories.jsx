@@ -115,7 +115,7 @@ const presets = [
     size: '1.5rem',
     weight: '400 / Regular',
     lineHeight: '2rem',
-    modifiers: ['font-type-70--bold', 'font-type-70--light'],
+    modifiers: ['font-type-70--bold', 'font-type-70--regular'],
   },
   {
     preset: 'font-type-60',
@@ -123,7 +123,7 @@ const presets = [
     size: '1.25rem',
     weight: '400 / Regular',
     lineHeight: '1.625rem',
-    modifiers: ['font-type-60--bold', 'font-type-60--light'],
+    modifiers: ['font-type-60--bold', 'font-type-60--regular'],
 
   },
   {
@@ -132,7 +132,7 @@ const presets = [
     size: '1.125rem',
     weight: '400 / Regular',
     lineHeight: '1.5rem',
-    modifiers: ['font-type-50--bold', 'font-type-50--light'],
+    modifiers: ['font-type-50--bold', 'font-type-50--regular'],
 
   },
   {
@@ -141,7 +141,7 @@ const presets = [
     size: '1rem',
     weight: '400 / Regular',
     lineHeight: '1.375rem',
-    modifiers: ['font-type-40--bold', 'font-type-40--light'],
+    modifiers: ['font-type-40--bold', 'font-type-40--regular'],
 
   },
   {
@@ -150,7 +150,7 @@ const presets = [
     size: '0.875rem',
     weight: '400 / Regular',
     lineHeight: '1.25rem',
-    modifiers: ['font-type-30--bold', 'font-type-30--light'],
+    modifiers: ['font-type-30--bold', 'font-type-30--regular'],
   },
   {
     preset: 'font-type-20',
@@ -158,7 +158,7 @@ const presets = [
     size: '0.75rem',
     weight: '400 / Regular',
     lineHeight: '1rem',
-    modifiers: ['font-type-20--bold', 'font-type-20--light'],
+    modifiers: ['font-type-20--bold', 'font-type-20--regular'],
   },
   {
     preset: 'font-type-10',
@@ -168,7 +168,7 @@ const presets = [
     lineHeight: '0.875rem',
     textTransform: 'Uppercase',
     letterSpacing: '0.0625rem',
-    modifiers: ['font-type-10--bold', 'font-type-10--light'],
+    modifiers: ['font-type-10--bold', 'font-type-10--regular'],
   },
 ];
 
