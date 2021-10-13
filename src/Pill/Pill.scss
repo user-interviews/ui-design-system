@@ -2,8 +2,7 @@
 @import '../../scss/theme';
 
 .Pill {
-  @include font-type-20;
-  font-weight: $font-weight-medium;
+  @include font-type-20--regular;
   display: inline;
   background-color: $ux-blue-100;
   color: $ux-blue-700;
