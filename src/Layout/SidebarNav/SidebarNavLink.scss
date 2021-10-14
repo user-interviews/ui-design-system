@@ -14,7 +14,7 @@
   width: 100%;
 
   &__icon {
-    @include font-type-40;
+    @include font-type-40--medium;
   }
 
   &--active {

@@ -10,7 +10,7 @@
   margin-bottom: 0.5rem;
 
   &--with-children {
-    @include font-type-30;
+    @include font-type-30--medium;
 
     align-items: flex-start;
     flex-direction: column;
@@ -24,7 +24,7 @@
   }
 
   &__helper-text {
-    @include font-type-30;
+    @include font-type-30--medium;
     font-weight: 100;
   }
 
@@ -34,7 +34,7 @@
   }
 
   &__children {
-    @include font-type-30;
+    @include font-type-30--medium;
 
     font-weight: 100;
     margin-top: 0.5rem;

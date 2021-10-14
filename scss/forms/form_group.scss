@@ -57,7 +57,7 @@
   }
 
   &__helper-text {
-    @include font-type-20;
+    @include font-type-20--medium;
     font-weight: 100;
     color: $ux-gray-900;
     padding: .375rem 0;
@@ -69,7 +69,7 @@
   }
 
   &__invalid-feedback {
-    @include font-type-20;
+    @include font-type-20--medium;
     color: $ux-red;
     padding: .375rem 0;
     margin: 0;

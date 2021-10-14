@@ -99,7 +99,7 @@
 }
 
 .Popper {
-  @include font-type-30;
+  @include font-type-30--medium;
   @include popper-arrow($popper-color: $ux-white, $popper-border-color: $ux-gray-300);
   background-color: $ux-white;
   border-radius: $ux-border-radius;
@@ -123,7 +123,7 @@
 
     a, a:active, a:focus, a:hover, a:visited {
       color: $ux-blue-300;
-      @include font-type-30;
+      @include font-type-30--medium;
     }
   }
 }

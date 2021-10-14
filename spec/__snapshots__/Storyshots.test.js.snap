@@ -5741,18 +5741,18 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-70"
+        className="font-type-70--regular"
       >
         <p>
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-70--bold"
+          className="font-type-70--medium"
         >
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-70--regular"
+          className="font-type-70--bold"
         >
           The fastest way to recruit research participants
         </p>
@@ -5764,7 +5764,7 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       <ul>
         <li>
           <strong>
-            font-type-70
+            font-type-70--regular
           </strong>
         </li>
         <li>
@@ -5789,7 +5789,14 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           <span
             className="Pill Pill--blue"
           >
-            font-type-70
+            font-type-70--regular
+          </span>
+        </li>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-70--medium
           </span>
         </li>
         <li>
@@ -5797,13 +5804,6 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
             className="Pill Pill--blue"
           >
             font-type-70--bold
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-70--regular
           </span>
         </li>
       </ul>
@@ -5816,18 +5816,18 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-60"
+        className="font-type-60--regular"
       >
         <p>
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-60--bold"
+          className="font-type-60--medium"
         >
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-60--regular"
+          className="font-type-60--bold"
         >
           The fastest way to recruit research participants
         </p>
@@ -5839,7 +5839,7 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       <ul>
         <li>
           <strong>
-            font-type-60
+            font-type-60--regular
           </strong>
         </li>
         <li>
@@ -5864,7 +5864,14 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           <span
             className="Pill Pill--blue"
           >
-            font-type-60
+            font-type-60--regular
+          </span>
+        </li>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-60--medium
           </span>
         </li>
         <li>
@@ -5872,13 +5879,6 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
             className="Pill Pill--blue"
           >
             font-type-60--bold
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-60--regular
           </span>
         </li>
       </ul>
@@ -5891,18 +5891,18 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-50"
+        className="font-type-50--regular"
       >
         <p>
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-50--bold"
+          className="font-type-50--medium"
         >
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-50--regular"
+          className="font-type-50--bold"
         >
           The fastest way to recruit research participants
         </p>
@@ -5914,7 +5914,7 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       <ul>
         <li>
           <strong>
-            font-type-50
+            font-type-50--regular
           </strong>
         </li>
         <li>
@@ -5939,7 +5939,14 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           <span
             className="Pill Pill--blue"
           >
-            font-type-50
+            font-type-50--regular
+          </span>
+        </li>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-50--medium
           </span>
         </li>
         <li>
@@ -5947,13 +5954,6 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
             className="Pill Pill--blue"
           >
             font-type-50--bold
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-50--regular
           </span>
         </li>
       </ul>
@@ -5966,18 +5966,18 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-40"
+        className="font-type-40--regular"
       >
         <p>
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-40--bold"
+          className="font-type-40--medium"
         >
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-40--regular"
+          className="font-type-40--bold"
         >
           The fastest way to recruit research participants
         </p>
@@ -5989,7 +5989,7 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       <ul>
         <li>
           <strong>
-            font-type-40
+            font-type-40--regular
           </strong>
         </li>
         <li>
@@ -6014,7 +6014,14 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           <span
             className="Pill Pill--blue"
           >
-            font-type-40
+            font-type-40--regular
+          </span>
+        </li>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-40--medium
           </span>
         </li>
         <li>
@@ -6022,13 +6029,6 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
             className="Pill Pill--blue"
           >
             font-type-40--bold
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-40--regular
           </span>
         </li>
       </ul>
@@ -6041,18 +6041,18 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-30"
+        className="font-type-30--regular"
       >
         <p>
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-30--bold"
+          className="font-type-30--medium"
         >
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-30--regular"
+          className="font-type-30--bold"
         >
           The fastest way to recruit research participants
         </p>
@@ -6064,7 +6064,7 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       <ul>
         <li>
           <strong>
-            font-type-30
+            font-type-30--regular
           </strong>
         </li>
         <li>
@@ -6089,7 +6089,14 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           <span
             className="Pill Pill--blue"
           >
-            font-type-30
+            font-type-30--regular
+          </span>
+        </li>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-30--medium
           </span>
         </li>
         <li>
@@ -6097,13 +6104,6 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
             className="Pill Pill--blue"
           >
             font-type-30--bold
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-30--regular
           </span>
         </li>
       </ul>
@@ -6116,18 +6116,18 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-20"
+        className="font-type-20--regular"
       >
         <p>
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-20--bold"
+          className="font-type-20--medium"
         >
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-20--regular"
+          className="font-type-20--bold"
         >
           The fastest way to recruit research participants
         </p>
@@ -6139,7 +6139,7 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       <ul>
         <li>
           <strong>
-            font-type-20
+            font-type-20--regular
           </strong>
         </li>
         <li>
@@ -6164,7 +6164,14 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           <span
             className="Pill Pill--blue"
           >
-            font-type-20
+            font-type-20--regular
+          </span>
+        </li>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-20--medium
           </span>
         </li>
         <li>
@@ -6172,13 +6179,6 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
             className="Pill Pill--blue"
           >
             font-type-20--bold
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-20--regular
           </span>
         </li>
       </ul>
@@ -6191,18 +6191,18 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-10"
+        className="font-type-10--regular"
       >
         <p>
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-10--bold"
+          className="font-type-10--medium"
         >
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-10--regular"
+          className="font-type-10--bold"
         >
           The fastest way to recruit research participants
         </p>
@@ -6214,7 +6214,7 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
       <ul>
         <li>
           <strong>
-            font-type-10
+            font-type-10--regular
           </strong>
         </li>
         <li>
@@ -6247,7 +6247,14 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           <span
             className="Pill Pill--blue"
           >
-            font-type-10
+            font-type-10--regular
+          </span>
+        </li>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-10--medium
           </span>
         </li>
         <li>
@@ -6255,13 +6262,6 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
             className="Pill Pill--blue"
           >
             font-type-10--bold
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-10--regular
           </span>
         </li>
       </ul>
