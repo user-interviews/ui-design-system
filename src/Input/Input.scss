@@ -23,4 +23,17 @@
   .input-group-text {
     background-color: $ux-gray-100;
   }
+
+  .trailing-icon-button {
+    padding: 0rem;
+    border: none;
+    border-radius: none;
+    background-color: $ux-gray-100;
+  }
+  .trailing-icon-button > .input-group-text {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
 }
