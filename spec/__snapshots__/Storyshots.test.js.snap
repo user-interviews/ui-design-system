@@ -6234,10 +6234,6 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
           400 / Regular
         </li>
         <li>
-          Text-transform: 
-          Uppercase
-        </li>
-        <li>
           Letter-spacing: 
           0.0625rem
         </li>
@@ -6262,6 +6258,89 @@ exports[`Storyshots Design System/Styles Typography 1`] = `
             className="Pill Pill--blue"
           >
             font-type-10--bold
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-10--regular-uppercase"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-10--medium-uppercase"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-10--bold-uppercase"
+        >
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-10--regular-uppercase
+          </strong>
+        </li>
+        <li>
+          Type: 
+          DM Sans, sans-serif
+        </li>
+        <li>
+          Size: 
+          0.625rem
+        </li>
+        <li>
+          Line-height: 
+          0.875rem
+        </li>
+        <li>
+          Weight: 
+          400 / Regular
+        </li>
+        <li>
+          Text-transform: 
+          Uppercase
+        </li>
+        <li>
+          Letter-spacing: 
+          0.0625rem
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-10--regular-uppercase
+          </span>
+        </li>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-10--medium-uppercase
+          </span>
+        </li>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-10--bold-uppercase
           </span>
         </li>
       </ul>

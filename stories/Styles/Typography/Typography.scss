@@ -37,6 +37,10 @@
   @include font-type-10--medium;
 }
 
+.font-type-10--medium-uppercase {
+  @include font-type-10--medium-uppercase;
+}
+
 .font-type-20--medium {
   @include font-type-20--medium;
 }
@@ -65,6 +69,10 @@
   @include font-type-10--bold;
 }
 
+.font-type-10--bold-uppercase {
+  @include font-type-10--bold-uppercase;
+}
+
 .font-type-20--bold {
   @include font-type-20--bold;
 }
@@ -91,6 +99,10 @@
 
 .font-type-10--regular {
   @include font-type-10--regular;
+}
+
+.font-type-10--regular-uppercase {
+  @include font-type-10--regular-uppercase;
 }
 
 .font-type-20--regular {

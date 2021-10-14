@@ -9,7 +9,6 @@ $font-size-base: 0.875rem;
   font-weight: $font-weight-medium;
   letter-spacing: 0.0625rem;
   line-height: 0.875rem;
-  text-transform: uppercase;
 }
 
 @mixin font-type-20--medium() {
@@ -25,7 +24,6 @@ $font-size-base: 0.875rem;
 }
 
 @mixin font-type-40--medium() {
-  // font-size:  $font-size-base; -- should base be changed to 1 rem?
   font-size: 1rem;
   font-weight: $font-weight-medium;
   line-height: 1.375rem;
@@ -56,6 +54,21 @@ $font-size-base: 0.875rem;
 
 @mixin font-type-10--regular() {
   @include font-type-10--medium;
+  font-weight: $font-weight-regular;
+}
+
+@mixin font-type-10--medium-uppercase() {
+  @include font-type-10--medium;
+  text-transform: uppercase;
+}
+
+@mixin font-type-10--bold-uppercase() {
+  @include font-type-10--medium-uppercase;
+  font-weight: $font-weight-bold;
+}
+
+@mixin font-type-10--regular-uppercase() {
+  @include font-type-10--medium-uppercase;
   font-weight: $font-weight-regular;
 }
 

@@ -166,9 +166,18 @@ const presets = [
     size: '0.625rem',
     weight: '400 / Regular',
     lineHeight: '0.875rem',
-    textTransform: 'Uppercase',
     letterSpacing: '0.0625rem',
     modifiers: ['font-type-10--medium', 'font-type-10--bold'],
+  },
+  {
+    preset: 'font-type-10--regular-uppercase',
+    font: 'DM Sans, sans-serif',
+    size: '0.625rem',
+    weight: '400 / Regular',
+    lineHeight: '0.875rem',
+    textTransform: 'Uppercase',
+    letterSpacing: '0.0625rem',
+    modifiers: ['font-type-10--medium-uppercase', 'font-type-10--bold-uppercase'],
   },
 ];
 
