@@ -57,8 +57,13 @@ export const MultiSelect = () => (
   </Fragment>
 );
 
-// Custom option with checkbox example
+// Replaceable Components
+// See: https://react-select.com/components#replaceable-components
+
 /* eslint-disable react/prop-types */
+
+// Option: Component responsible for displaying an option in the menu.
+
 const Option = (props) => (
   <div>
     <components.Option {...props}>
@@ -73,11 +78,30 @@ const Option = (props) => (
     </components.Option>
   </div>
   );
+
+// Value Container: Container responsible for loading the placeholder value and the input.
+
+const ValueContainer = ({ children, ...props }) => {
+  const { getValue, hasValue } = props;
+  const numValues = getValue().length;
+  if (!hasValue) {
+    return (
+      <components.ValueContainer {...props}>
+        {children}
+      </components.ValueContainer>
+    );
+  }
+  return (
+    <components.ValueContainer {...props}>
+      {`${numValues} items selected`}
+    </components.ValueContainer>
+  );
+};
 /* eslint-enable react/prop-types */
 
-export const MultiSelectWithCheckboxOption = () => (
+export const CustomOptionWithCheckbox = () => (
   <Fragment>
-    <label htmlFor="multi-select" id="select-label">Multi select with checkbox option</label>
+    <label htmlFor="multi-select" id="select-label">Custom option with checkbox</label>
     <SingleSelect
       aria-labelledby="select-label"
       closeMenuOnSelect={false}
@@ -86,6 +110,25 @@ export const MultiSelectWithCheckboxOption = () => (
       }}
       hideSelectedOptions={false}
       id="multi-select"
+      isMulti
+      options={options}
+      onChange={onChange}
+    />
+  </Fragment>
+);
+
+export const CustomValueContainer = () => (
+  <Fragment>
+    <label htmlFor="custom-value-container-select" id="select-label">Custom value container</label>
+    <SingleSelect
+      aria-labelledby="select-label"
+      closeMenuOnSelect={false}
+      components={{
+        Option,
+        ValueContainer,
+      }}
+      hideSelectedOptions={false}
+      id="custom-value-container-select"
       isMulti
       options={options}
       onChange={onChange}
