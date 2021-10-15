@@ -113,6 +113,11 @@
     "lib",
     "scss"
   ],
+  "engines": {
+    "node": "^ 14.17.4",
+    "npm": "^ 7.20.3",
+    "yarn": "^ 1.22.5"
+  },
   "main": "lib/index.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
