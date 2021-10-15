@@ -13,9 +13,10 @@ const Input = React.forwardRef((props, ref) => {
     name,
     placeholder,
     trailingIcon,
+    trailingIconOnClick,
+    trailingIconOnClickSubmit,
     type,
     value,
-    trailingIconOnClick,
     onChange,
     ...rest
   } = props;
@@ -48,7 +49,7 @@ const Input = React.forwardRef((props, ref) => {
       {(trailingIcon && trailingIconOnClick) && (
         <button
           className="trailing-icon-button"
-          type="button"
+          type={trailingIconOnClickSubmit ? 'submit' : 'button'}
           onClick={trailingIconOnClick}
         >
           <div className="input-group-text">
@@ -73,6 +74,7 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   trailingIcon: PropTypes.object,
   trailingIconOnClick: PropTypes.func,
+  trailingIconOnClickSubmit: PropTypes.bool,
   type: PropTypes.string,
   value: PropTypes.string,
   onChange: PropTypes.func,
@@ -84,6 +86,7 @@ Input.defaultProps = {
   placeholder: '',
   trailingIcon: undefined,
   trailingIconOnClick: undefined,
+  trailingIconOnClickSubmit: false,
   type: 'text',
   value: undefined,
   onChange: undefined,
