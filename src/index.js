@@ -10,6 +10,7 @@ import FadeTransition from 'src/FadeTransition';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
+import IconCell from 'src/IconCell';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
 import LoadingOverlay from 'src/LoadingOverlay';
@@ -67,6 +68,7 @@ export {
   Form,
   FormControlLabel,
   FormGroup,
+  IconCell,
   Input,
   InputLabel,
   LoadingOverlay,
