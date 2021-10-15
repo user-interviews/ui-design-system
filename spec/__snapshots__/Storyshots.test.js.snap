@@ -21,15 +21,30 @@ exports[`Storyshots Design System/Alert Announcement 1`] = `
         data-prefix="fas"
         focusable="false"
         role="img"
-        style={Object {}}
+        style={
+          Object {
+            "transformOrigin": "0.5625em 0.5em",
+          }
+        }
         viewBox="0 0 576 512"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
-          fill="currentColor"
+        <g
           style={Object {}}
-        />
+          transform="translate(288 256)"
+        >
+          <g
+            style={Object {}}
+            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+          >
+            <path
+              d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
       </svg>
     </div>
     <div
@@ -67,15 +82,30 @@ exports[`Storyshots Design System/Alert Error 1`] = `
         data-prefix="fas"
         focusable="false"
         role="img"
-        style={Object {}}
+        style={
+          Object {
+            "transformOrigin": "0.5625em 0.5em",
+          }
+        }
         viewBox="0 0 576 512"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
-          fill="currentColor"
+        <g
           style={Object {}}
-        />
+          transform="translate(288 256)"
+        >
+          <g
+            style={Object {}}
+            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+          >
+            <path
+              d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
       </svg>
     </div>
     <div
@@ -106,23 +136,74 @@ exports[`Storyshots Design System/Alert Info 1`] = `
     <div
       className="Alert__icon"
     >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-info-circle fa-w-16 "
-        data-icon="info-circle"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 512 512"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        className="fa-layers fa-fw"
       >
-        <path
-          d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-circle fa-w-16 "
+          data-icon="circle"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.5em 0.5em",
+            }
+          }
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(256 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-256 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-info fa-w-6 "
+          data-icon="info"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.1875em 0.5em",
+            }
+          }
+          viewBox="0 0 192 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(96 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
+            >
+              <path
+                d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-96 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+      </span>
     </div>
     <div
       className="Alert__content"
@@ -152,23 +233,74 @@ exports[`Storyshots Design System/Alert Success 1`] = `
     <div
       className="Alert__icon"
     >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-check-circle fa-w-16 "
-        data-icon="check-circle"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 512 512"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        className="fa-layers fa-fw"
       >
-        <path
-          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-circle fa-w-16 "
+          data-icon="circle"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.5em 0.5em",
+            }
+          }
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(256 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-256 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-check fa-w-16 "
+          data-icon="check"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.5em 0.5em",
+            }
+          }
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(256 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
+            >
+              <path
+                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-256 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+      </span>
     </div>
     <div
       className="Alert__content"
@@ -205,15 +337,30 @@ exports[`Storyshots Design System/Alert Warning 1`] = `
         data-prefix="fas"
         focusable="false"
         role="img"
-        style={Object {}}
+        style={
+          Object {
+            "transformOrigin": "0.5625em 0.5em",
+          }
+        }
         viewBox="0 0 576 512"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
-          fill="currentColor"
+        <g
           style={Object {}}
-        />
+          transform="translate(288 256)"
+        >
+          <g
+            style={Object {}}
+            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+          >
+            <path
+              d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
       </svg>
     </div>
     <div
@@ -247,23 +394,74 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
     <div
       className="Alert__icon"
     >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-check-circle fa-w-16 "
-        data-icon="check-circle"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 512 512"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        className="fa-layers fa-fw"
       >
-        <path
-          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-circle fa-w-16 "
+          data-icon="circle"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.5em 0.5em",
+            }
+          }
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(256 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-256 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-check fa-w-16 "
+          data-icon="check"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.5em 0.5em",
+            }
+          }
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(256 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
+            >
+              <path
+                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-256 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+      </span>
     </div>
     <div
       className="Alert__content"
@@ -321,23 +519,74 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
     <div
       className="Alert__icon"
     >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-info-circle fa-w-16 "
-        data-icon="info-circle"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 512 512"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        className="fa-layers fa-fw"
       >
-        <path
-          d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-circle fa-w-16 "
+          data-icon="circle"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.5em 0.5em",
+            }
+          }
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(256 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-256 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-info fa-w-6 "
+          data-icon="info"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.1875em 0.5em",
+            }
+          }
+          viewBox="0 0 192 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(96 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
+            >
+              <path
+                d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-96 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+      </span>
     </div>
     <div
       className="Alert__content"
@@ -402,15 +651,30 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
         data-prefix="fas"
         focusable="false"
         role="img"
-        style={Object {}}
+        style={
+          Object {
+            "transformOrigin": "0.5625em 0.5em",
+          }
+        }
         viewBox="0 0 576 512"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
-          fill="currentColor"
+        <g
           style={Object {}}
-        />
+          transform="translate(288 256)"
+        >
+          <g
+            style={Object {}}
+            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+          >
+            <path
+              d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
       </svg>
     </div>
     <div
@@ -476,15 +740,30 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
         data-prefix="fas"
         focusable="false"
         role="img"
-        style={Object {}}
+        style={
+          Object {
+            "transformOrigin": "0.5625em 0.5em",
+          }
+        }
         viewBox="0 0 576 512"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
-          fill="currentColor"
+        <g
           style={Object {}}
-        />
+          transform="translate(288 256)"
+        >
+          <g
+            style={Object {}}
+            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+          >
+            <path
+              d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
       </svg>
     </div>
     <div
@@ -550,15 +829,30 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
         data-prefix="fas"
         focusable="false"
         role="img"
-        style={Object {}}
+        style={
+          Object {
+            "transformOrigin": "0.5625em 0.5em",
+          }
+        }
         viewBox="0 0 576 512"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
-          fill="currentColor"
+        <g
           style={Object {}}
-        />
+          transform="translate(288 256)"
+        >
+          <g
+            style={Object {}}
+            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+          >
+            <path
+              d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
       </svg>
     </div>
     <div
@@ -631,15 +925,30 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
         data-prefix="fas"
         focusable="false"
         role="img"
-        style={Object {}}
+        style={
+          Object {
+            "transformOrigin": "0.5625em 0.5em",
+          }
+        }
         viewBox="0 0 576 512"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
-          fill="currentColor"
+        <g
           style={Object {}}
-        />
+          transform="translate(288 256)"
+        >
+          <g
+            style={Object {}}
+            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+          >
+            <path
+              d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
       </svg>
     </div>
     <div
@@ -744,15 +1053,30 @@ exports[`Storyshots Design System/Alert With Call To Action 1`] = `
         data-prefix="fas"
         focusable="false"
         role="img"
-        style={Object {}}
+        style={
+          Object {
+            "transformOrigin": "0.5625em 0.5em",
+          }
+        }
         viewBox="0 0 576 512"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <path
-          d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
-          fill="currentColor"
+        <g
           style={Object {}}
-        />
+          transform="translate(288 256)"
+        >
+          <g
+            style={Object {}}
+            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+          >
+            <path
+              d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
       </svg>
     </div>
     <div
@@ -857,23 +1181,74 @@ exports[`Storyshots Design System/Alert With Dismiss 1`] = `
     <div
       className="Alert__icon"
     >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-check-circle fa-w-16 "
-        data-icon="check-circle"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 512 512"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        className="fa-layers fa-fw"
       >
-        <path
-          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-circle fa-w-16 "
+          data-icon="circle"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.5em 0.5em",
+            }
+          }
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(256 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-256 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-check fa-w-16 "
+          data-icon="check"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.5em 0.5em",
+            }
+          }
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(256 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
+            >
+              <path
+                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-256 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+      </span>
     </div>
     <div
       className="Alert__content"
@@ -2591,7 +2966,7 @@ exports[`Storyshots Design System/Form Elements/Form Group With Leading And Trai
 >
   <div
     className="FormGroup"
-    id="with-trailing-icon"
+    id="with-leading-and-trailing-icons"
   >
     <label
       className="InputLabel"
@@ -2877,6 +3252,142 @@ exports[`Storyshots Design System/Form Elements/Form Group With Trailing Icon 1`
       className="FormGroup__helper-text"
     >
       with trailing icon
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Form Group With Trailing Icon And Button 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+    id="with-trailing-icon-and-button"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="input"
+    >
+      Form Group with input trailing icon and button
+    </label>
+    <div
+      className="Input input-group"
+    >
+      <input
+        className="Input form-control Input--with-trailing-icon"
+        disabled={false}
+        id="input"
+        name="with-leading-icon-and-button"
+        onChange={[Function]}
+        placeholder="Placeholder text"
+        type="text"
+        value=""
+      />
+      <button
+        className="trailing-icon-button"
+        onClick={[Function]}
+        type="button"
+      >
+        <div
+          className="input-group-text"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-search fa-w-16 "
+            data-icon="search"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
+    <div
+      className="FormGroup__helper-text"
+    >
+      with trailing icon and button
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Form Elements/Form Group With Trailing Icon And Button With Submit 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+    id="with-trailing-icon-and-button-with-submit"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="input"
+    >
+      Form Group with input trailing icon and button with submit
+    </label>
+    <div
+      className="Input input-group"
+    >
+      <input
+        className="Input form-control Input--with-trailing-icon"
+        disabled={false}
+        id="input"
+        name="with-leading-icon-and-button"
+        onChange={[Function]}
+        placeholder="Placeholder text"
+        type="text"
+        value=""
+      />
+      <button
+        className="trailing-icon-button"
+        onClick={[Function]}
+        type="submit"
+      >
+        <div
+          className="input-group-text"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-search fa-w-16 "
+            data-icon="search"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
+    <div
+      className="FormGroup__helper-text"
+    >
+      with trailing icon and button with submit
     </div>
   </div>
 </div>
@@ -3420,6 +3931,157 @@ exports[`Storyshots Design System/Form Elements/RadioButtonGroup Description Row
         </div>
       </label>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/IconCell Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div>
+    <div
+      className="IconCell"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-globe fa-w-16 "
+        data-icon="globe"
+        data-prefix="far"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 496 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm179.3 160h-67.2c-6.7-36.5-17.5-68.8-31.2-94.7 42.9 19 77.7 52.7 98.4 94.7zM248 56c18.6 0 48.6 41.2 63.2 112H184.8C199.4 97.2 229.4 56 248 56zM48 256c0-13.7 1.4-27.1 4-40h77.7c-1 13.1-1.7 26.3-1.7 40s.7 26.9 1.7 40H52c-2.6-12.9-4-26.3-4-40zm20.7 88h67.2c6.7 36.5 17.5 68.8 31.2 94.7-42.9-19-77.7-52.7-98.4-94.7zm67.2-176H68.7c20.7-42 55.5-75.7 98.4-94.7-13.7 25.9-24.5 58.2-31.2 94.7zM248 456c-18.6 0-48.6-41.2-63.2-112h126.5c-14.7 70.8-44.7 112-63.3 112zm70.1-160H177.9c-1.1-12.8-1.9-26-1.9-40s.8-27.2 1.9-40h140.3c1.1 12.8 1.9 26 1.9 40s-.9 27.2-2 40zm10.8 142.7c13.7-25.9 24.4-58.2 31.2-94.7h67.2c-20.7 42-55.5 75.7-98.4 94.7zM366.3 296c1-13.1 1.7-26.3 1.7-40s-.7-26.9-1.7-40H444c2.6 12.9 4 26.3 4 40s-1.4 27.1-4 40h-77.7z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <div
+      className="IconCell"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-mailbox fa-w-18 "
+        data-icon="mailbox"
+        data-prefix="far"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 576 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M432 64H144A144 144 0 0 0 0 208v208a32 32 0 0 0 32 32h512a32 32 0 0 0 32-32V208A144 144 0 0 0 432 64zM240 400H48V208a96 96 0 0 1 192 0zm288 0H288V208c0-37.05-14.38-70.48-37.37-96H432a96.1 96.1 0 0 1 96 96zm-64-208H344a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h72v32a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm-280 0h-80a8 8 0 0 0-8 8v48a8 8 0 0 0 8 8h80a8 8 0 0 0 8-8v-48a8 8 0 0 0-8-8z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <div
+      className="IconCell"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-user fa-w-14 "
+        data-icon="user"
+        data-prefix="far"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <div
+      className="IconCell"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-paper-plane fa-w-16 "
+        data-icon="paper-plane"
+        data-prefix="far"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M440 6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192 464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+    <div
+      className="IconCell"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-star fa-w-18 "
+        data-icon="star"
+        data-prefix="far"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 576 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/LoadingOverlay Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="overlay"
+    style={Object {}}
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-spinner-third fa-w-16 fa-spinner"
+      data-icon="spinner-third"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M456.433 371.72l-27.79-16.045c-7.192-4.152-10.052-13.136-6.487-20.636 25.82-54.328 23.566-118.602-6.768-171.03-30.265-52.529-84.802-86.621-144.76-91.424C262.35 71.922 256 64.953 256 56.649V24.56c0-9.31 7.916-16.609 17.204-15.96 81.795 5.717 156.412 51.902 197.611 123.408 41.301 71.385 43.99 159.096 8.042 232.792-4.082 8.369-14.361 11.575-22.424 6.92z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
   </div>
 </div>
 `;
@@ -5841,13 +6503,19 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_100
+        <div>
+          UX_BLUE_100
+        </div>
+        <div>
+          #F1F5FE
+        </div>
       </p>
     </div>
     <div
@@ -5864,19 +6532,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_200
+        <div>
+          UX_BLUE_200
+        </div>
+        <div>
+          #BDD1FB
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#92CBFC",
+          "backgroundColor": "#A6C0F5",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -5887,19 +6561,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_300
+        <div>
+          UX_BLUE_300
+        </div>
+        <div>
+          #A6C0F5
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#5AA4E5",
+          "backgroundColor": "#7497DF",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -5910,19 +6590,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_400
+        <div>
+          UX_BLUE_400
+        </div>
+        <div>
+          #7497DF
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#337AB7",
+          "backgroundColor": "#3F6DCA",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -5933,19 +6619,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_500
+        <div>
+          UX_BLUE_500
+        </div>
+        <div>
+          #3F6DCA
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#155B99",
+          "backgroundColor": "#2854AF",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -5956,19 +6648,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_600
+        <div>
+          UX_BLUE_600
+        </div>
+        <div>
+          #2854AF
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#0D4473",
+          "backgroundColor": "#143C8D",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -5979,19 +6677,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_700
+        <div>
+          UX_BLUE_700
+        </div>
+        <div>
+          #143C8D
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#083054",
+          "backgroundColor": "#0B2D72",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6002,19 +6706,25 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_800
+        <div>
+          UX_BLUE_800
+        </div>
+        <div>
+          #0B2D72
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#032847",
+          "backgroundColor": "#031D52",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6025,13 +6735,19 @@ exports[`Storyshots Design System/Styles/Color Palette Blue 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_BLUE_900
+        <div>
+          UX_BLUE_900
+        </div>
+        <div>
+          #031D52
+        </div>
       </p>
     </div>
   </div>
@@ -6069,13 +6785,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_100
+        <div>
+          UX_EMERALD_100
+        </div>
+        <div>
+          #BFDDD5
+        </div>
       </p>
     </div>
     <div
@@ -6092,13 +6814,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_200
+        <div>
+          UX_EMERALD_200
+        </div>
+        <div>
+          #91CABB
+        </div>
       </p>
     </div>
     <div
@@ -6115,13 +6843,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_300
+        <div>
+          UX_EMERALD_300
+        </div>
+        <div>
+          #65B8A2
+        </div>
       </p>
     </div>
     <div
@@ -6138,13 +6872,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_400
+        <div>
+          UX_EMERALD_400
+        </div>
+        <div>
+          #3EA388
+        </div>
       </p>
     </div>
     <div
@@ -6161,13 +6901,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_500
+        <div>
+          UX_EMERALD_500
+        </div>
+        <div>
+          #158D71
+        </div>
       </p>
     </div>
     <div
@@ -6184,13 +6930,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_600
+        <div>
+          UX_EMERALD_600
+        </div>
+        <div>
+          #177863
+        </div>
       </p>
     </div>
     <div
@@ -6207,13 +6959,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_700
+        <div>
+          UX_EMERALD_700
+        </div>
+        <div>
+          #156152
+        </div>
       </p>
     </div>
     <div
@@ -6230,13 +6988,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_800
+        <div>
+          UX_EMERALD_800
+        </div>
+        <div>
+          #0D4A3E
+        </div>
       </p>
     </div>
     <div
@@ -6253,13 +7017,19 @@ exports[`Storyshots Design System/Styles/Color Palette Emerald 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_EMERALD_900
+        <div>
+          UX_EMERALD_900
+        </div>
+        <div>
+          #073B31
+        </div>
       </p>
     </div>
   </div>
@@ -6297,13 +7067,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_100
+        <div>
+          UX_GRAY_100
+        </div>
+        <div>
+          #F9F9F9
+        </div>
       </p>
     </div>
     <div
@@ -6320,13 +7096,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_200
+        <div>
+          UX_GRAY_200
+        </div>
+        <div>
+          #F1F1F1
+        </div>
       </p>
     </div>
     <div
@@ -6343,13 +7125,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_300
+        <div>
+          UX_GRAY_300
+        </div>
+        <div>
+          #E1E1E1
+        </div>
       </p>
     </div>
     <div
@@ -6366,13 +7154,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_400
+        <div>
+          UX_GRAY_400
+        </div>
+        <div>
+          #D1D1D1
+        </div>
       </p>
     </div>
     <div
@@ -6389,13 +7183,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_500
+        <div>
+          UX_GRAY_500
+        </div>
+        <div>
+          #A1A1A1
+        </div>
       </p>
     </div>
     <div
@@ -6412,13 +7212,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_600
+        <div>
+          UX_GRAY_600
+        </div>
+        <div>
+          #818181
+        </div>
       </p>
     </div>
     <div
@@ -6435,13 +7241,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_700
+        <div>
+          UX_GRAY_700
+        </div>
+        <div>
+          #616161
+        </div>
       </p>
     </div>
     <div
@@ -6458,13 +7270,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_800
+        <div>
+          UX_GRAY_800
+        </div>
+        <div>
+          #444444
+        </div>
       </p>
     </div>
     <div
@@ -6481,13 +7299,19 @@ exports[`Storyshots Design System/Styles/Color Palette Gray 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GRAY_900
+        <div>
+          UX_GRAY_900
+        </div>
+        <div>
+          #101010
+        </div>
       </p>
     </div>
   </div>
@@ -6514,7 +7338,7 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
     <div
       style={
         Object {
-          "backgroundColor": "#F3FFF2",
+          "backgroundColor": "#D4F6E5",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6525,19 +7349,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_100
+        <div>
+          UX_GREEN_100
+        </div>
+        <div>
+          #D4F6E5
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#E3FDE0",
+          "backgroundColor": "#A3F9CF",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6548,19 +7378,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_200
+        <div>
+          UX_GREEN_200
+        </div>
+        <div>
+          #A3F9CF
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#BFFEB8",
+          "backgroundColor": "#70E2AB",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6571,19 +7407,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_300
+        <div>
+          UX_GREEN_300
+        </div>
+        <div>
+          #70E2AB
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#85DC7A",
+          "backgroundColor": "#40CC88",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6594,19 +7436,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_400
+        <div>
+          UX_GREEN_400
+        </div>
+        <div>
+          #40CC88
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#6DBD63",
+          "backgroundColor": "#21B36C",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6617,19 +7465,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_500
+        <div>
+          UX_GREEN_500
+        </div>
+        <div>
+          #21B36C
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#47A13B",
+          "backgroundColor": "#09914F",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6640,19 +7494,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_600
+        <div>
+          UX_GREEN_600
+        </div>
+        <div>
+          #09914F
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#297021",
+          "backgroundColor": "#04713C",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6663,19 +7523,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_700
+        <div>
+          UX_GREEN_700
+        </div>
+        <div>
+          #04713C
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#1A5313",
+          "backgroundColor": "#015029",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6686,19 +7552,25 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_800
+        <div>
+          UX_GREEN_800
+        </div>
+        <div>
+          #015029
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#0E4207",
+          "backgroundColor": "#003119",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6709,13 +7581,19 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_GREEN_900
+        <div>
+          UX_GREEN_900
+        </div>
+        <div>
+          #003119
+        </div>
       </p>
     </div>
   </div>
@@ -6753,19 +7631,25 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_100
+        <div>
+          UX_NAVY_100
+        </div>
+        <div>
+          #C4D0DF
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#A3BAD2",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6776,13 +7660,19 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_200
+        <div>
+          UX_NAVY_200
+        </div>
+        <div>
+          #A3BAD2
+        </div>
       </p>
     </div>
     <div
@@ -6799,19 +7689,25 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_300
+        <div>
+          UX_NAVY_300
+        </div>
+        <div>
+          #7396BA
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#40669C",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6822,13 +7718,19 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_400
+        <div>
+          UX_NAVY_400
+        </div>
+        <div>
+          #40669C
+        </div>
       </p>
     </div>
     <div
@@ -6845,19 +7747,25 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_500
+        <div>
+          UX_NAVY_500
+        </div>
+        <div>
+          #234574
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#16325A",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6868,13 +7776,19 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_600
+        <div>
+          UX_NAVY_600
+        </div>
+        <div>
+          #16325A
+        </div>
       </p>
     </div>
     <div
@@ -6891,19 +7805,25 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_700
+        <div>
+          UX_NAVY_700
+        </div>
+        <div>
+          #011936
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#01152D",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -6914,13 +7834,19 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_800
+        <div>
+          UX_NAVY_800
+        </div>
+        <div>
+          #01152D
+        </div>
       </p>
     </div>
     <div
@@ -6937,13 +7863,19 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NAVY_900
+        <div>
+          UX_NAVY_900
+        </div>
+        <div>
+          #021020
+        </div>
       </p>
     </div>
   </div>
@@ -6970,6 +7902,35 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
     <div
       style={
         Object {
+          "backgroundColor": "#FFFFFF",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_NEUTRAL_100
+        </div>
+        <div>
+          #FFFFFF
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
           "backgroundColor": "#F8F4F2",
           "flexBasis": "11%",
           "height": "100%",
@@ -6981,36 +7942,19 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_100
-      </p>
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": undefined,
-          "flexBasis": "11%",
-          "height": "100%",
-        }
-      }
-    >
-      <p
-        style={
-          Object {
-            "backgroundColor": "#FFF",
-            "color": "#000",
-            "fontSize": "1rem",
-            "margin": "1rem",
-            "textAlign": "center",
-          }
-        }
-      >
-        UX_NEUTRAL_200
+        <div>
+          UX_NEUTRAL_200
+        </div>
+        <div>
+          #F8F4F2
+        </div>
       </p>
     </div>
     <div
@@ -7027,19 +7971,25 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_300
+        <div>
+          UX_NEUTRAL_300
+        </div>
+        <div>
+          #E6E2E0
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#CECBC9",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7050,13 +8000,19 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_400
+        <div>
+          UX_NEUTRAL_400
+        </div>
+        <div>
+          #CECBC9
+        </div>
       </p>
     </div>
     <div
@@ -7073,19 +8029,25 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_500
+        <div>
+          UX_NEUTRAL_500
+        </div>
+        <div>
+          #B5B0AB
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#9A938D",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7096,13 +8058,19 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_600
+        <div>
+          UX_NEUTRAL_600
+        </div>
+        <div>
+          #9A938D
+        </div>
       </p>
     </div>
     <div
@@ -7119,36 +8087,19 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_700
-      </p>
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": undefined,
-          "flexBasis": "11%",
-          "height": "100%",
-        }
-      }
-    >
-      <p
-        style={
-          Object {
-            "backgroundColor": "#FFF",
-            "color": "#000",
-            "fontSize": "1rem",
-            "margin": "1rem",
-            "textAlign": "center",
-          }
-        }
-      >
-        UX_NEUTRAL_800
+        <div>
+          UX_NEUTRAL_700
+        </div>
+        <div>
+          #817874
+        </div>
       </p>
     </div>
     <div
@@ -7165,13 +8116,48 @@ exports[`Storyshots Design System/Styles/Color Palette Neutral 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_NEUTRAL_900
+        <div>
+          UX_NEUTRAL_800
+        </div>
+        <div>
+          #33312F
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#000000",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_NEUTRAL_900
+        </div>
+        <div>
+          #000000
+        </div>
       </p>
     </div>
   </div>
@@ -7209,13 +8195,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_100
+        <div>
+          UX_ORANGE_100
+        </div>
+        <div>
+          #FDEAD2
+        </div>
       </p>
     </div>
     <div
@@ -7232,13 +8224,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_200
+        <div>
+          UX_ORANGE_200
+        </div>
+        <div>
+          #FCDFB9
+        </div>
       </p>
     </div>
     <div
@@ -7255,13 +8253,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_300
+        <div>
+          UX_ORANGE_300
+        </div>
+        <div>
+          #FAC988
+        </div>
       </p>
     </div>
     <div
@@ -7278,13 +8282,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_400
+        <div>
+          UX_ORANGE_400
+        </div>
+        <div>
+          #F7B258
+        </div>
       </p>
     </div>
     <div
@@ -7301,13 +8311,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_500
+        <div>
+          UX_ORANGE_500
+        </div>
+        <div>
+          #F59C27
+        </div>
       </p>
     </div>
     <div
@@ -7324,13 +8340,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_600
+        <div>
+          UX_ORANGE_600
+        </div>
+        <div>
+          #E18C28
+        </div>
       </p>
     </div>
     <div
@@ -7347,13 +8369,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_700
+        <div>
+          UX_ORANGE_700
+        </div>
+        <div>
+          #AE6608
+        </div>
       </p>
     </div>
     <div
@@ -7370,13 +8398,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_800
+        <div>
+          UX_ORANGE_800
+        </div>
+        <div>
+          #7D4A06
+        </div>
       </p>
     </div>
     <div
@@ -7393,13 +8427,19 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_ORANGE_900
+        <div>
+          UX_ORANGE_900
+        </div>
+        <div>
+          #653B05
+        </div>
       </p>
     </div>
   </div>
@@ -7426,7 +8466,7 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
     <div
       style={
         Object {
-          "backgroundColor": "#F0D9D9",
+          "backgroundColor": "#FAE1E1",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7437,19 +8477,25 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_100
+        <div>
+          UX_RED_100
+        </div>
+        <div>
+          #FAE1E1
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#E8C5CB",
+          "backgroundColor": "#F3BDBD",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7460,13 +8506,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_200
+        <div>
+          UX_RED_200
+        </div>
+        <div>
+          #F3BDBD
+        </div>
       </p>
     </div>
     <div
@@ -7483,13 +8535,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_300
+        <div>
+          UX_RED_300
+        </div>
+        <div>
+          #EB7A7A
+        </div>
       </p>
     </div>
     <div
@@ -7506,19 +8564,25 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_400
+        <div>
+          UX_RED_400
+        </div>
+        <div>
+          #E44E4E
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": "#FF4E00",
+          "backgroundColor": "#E03131",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7529,13 +8593,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_500
+        <div>
+          UX_RED_500
+        </div>
+        <div>
+          #E03131
+        </div>
       </p>
     </div>
     <div
@@ -7552,13 +8622,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_600
+        <div>
+          UX_RED_600
+        </div>
+        <div>
+          #C71F1F
+        </div>
       </p>
     </div>
     <div
@@ -7575,13 +8651,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_700
+        <div>
+          UX_RED_700
+        </div>
+        <div>
+          #B11B1B
+        </div>
       </p>
     </div>
     <div
@@ -7598,13 +8680,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_800
+        <div>
+          UX_RED_800
+        </div>
+        <div>
+          #9B1818
+        </div>
       </p>
     </div>
     <div
@@ -7621,13 +8709,19 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_RED_900
+        <div>
+          UX_RED_900
+        </div>
+        <div>
+          #851414
+        </div>
       </p>
     </div>
   </div>
@@ -7665,19 +8759,25 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_100
+        <div>
+          UX_SAND_100
+        </div>
+        <div>
+          #ECE1D4
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#E8DAC9",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7688,13 +8788,19 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_200
+        <div>
+          UX_SAND_200
+        </div>
+        <div>
+          #E8DAC9
+        </div>
       </p>
     </div>
     <div
@@ -7711,19 +8817,25 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_300
+        <div>
+          UX_SAND_300
+        </div>
+        <div>
+          #E5D2BD
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#DFC7AF",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7734,13 +8846,19 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_400
+        <div>
+          UX_SAND_400
+        </div>
+        <div>
+          #DFC7AF
+        </div>
       </p>
     </div>
     <div
@@ -7757,19 +8875,25 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_500
+        <div>
+          UX_SAND_500
+        </div>
+        <div>
+          #DABDA2
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#D4B191",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7780,13 +8904,19 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_600
+        <div>
+          UX_SAND_600
+        </div>
+        <div>
+          #D4B191
+        </div>
       </p>
     </div>
     <div
@@ -7803,19 +8933,25 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_700
+        <div>
+          UX_SAND_700
+        </div>
+        <div>
+          #CFAA86
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#C59B72",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7826,13 +8962,19 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_800
+        <div>
+          UX_SAND_800
+        </div>
+        <div>
+          #C59B72
+        </div>
       </p>
     </div>
     <div
@@ -7849,13 +8991,19 @@ exports[`Storyshots Design System/Styles/Color Palette Sand 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_SAND_900
+        <div>
+          UX_SAND_900
+        </div>
+        <div>
+          #BA8E5E
+        </div>
       </p>
     </div>
   </div>
@@ -7893,19 +9041,25 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_100
+        <div>
+          UX_TEAL_100
+        </div>
+        <div>
+          #CAE1E2
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#A2CBCD",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7916,13 +9070,19 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_200
+        <div>
+          UX_TEAL_200
+        </div>
+        <div>
+          #A2CBCD
+        </div>
       </p>
     </div>
     <div
@@ -7939,19 +9099,25 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_300
+        <div>
+          UX_TEAL_300
+        </div>
+        <div>
+          #85A9AA
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#408F91",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -7962,13 +9128,19 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_400
+        <div>
+          UX_TEAL_400
+        </div>
+        <div>
+          #408F91
+        </div>
       </p>
     </div>
     <div
@@ -7985,19 +9157,25 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_500
+        <div>
+          UX_TEAL_500
+        </div>
+        <div>
+          #2A7779
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#1C5D5F",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -8008,13 +9186,19 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_600
+        <div>
+          UX_TEAL_600
+        </div>
+        <div>
+          #1C5D5F
+        </div>
       </p>
     </div>
     <div
@@ -8031,19 +9215,25 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_700
+        <div>
+          UX_TEAL_700
+        </div>
+        <div>
+          #0E4749
+        </div>
       </p>
     </div>
     <div
       style={
         Object {
-          "backgroundColor": undefined,
+          "backgroundColor": "#093C3F",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -8054,13 +9244,19 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_800
+        <div>
+          UX_TEAL_800
+        </div>
+        <div>
+          #093C3F
+        </div>
       </p>
     </div>
     <div
@@ -8077,13 +9273,301 @@ exports[`Storyshots Design System/Styles/Color Palette Teal 1`] = `
           Object {
             "backgroundColor": "#FFF",
             "color": "#000",
-            "fontSize": "1rem",
+            "fontSize": "0.75rem",
             "margin": "1rem",
+            "padding": "0.25rem",
             "textAlign": "center",
           }
         }
       >
-        UX_TEAL_900
+        <div>
+          UX_TEAL_900
+        </div>
+        <div>
+          #083236
+        </div>
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Styles/Color Palette Yellow 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "height": "20rem",
+        "width": "100%",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FFF1AB",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_100
+        </div>
+        <div>
+          #FFF1AB
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FFEB85",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_200
+        </div>
+        <div>
+          #FFEB85
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FFE356",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_300
+        </div>
+        <div>
+          #FFE356
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#FBDA36",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_400
+        </div>
+        <div>
+          #FBDA36
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#F3CE14",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_500
+        </div>
+        <div>
+          #F3CE14
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#E1BE0C",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_600
+        </div>
+        <div>
+          #E1BE0C
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#CAA900",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_700
+        </div>
+        <div>
+          #CAA900
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#A98D01",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_800
+        </div>
+        <div>
+          #A98D01
+        </div>
+      </p>
+    </div>
+    <div
+      style={
+        Object {
+          "backgroundColor": "#453A00",
+          "flexBasis": "11%",
+          "height": "100%",
+        }
+      }
+    >
+      <p
+        style={
+          Object {
+            "backgroundColor": "#FFF",
+            "color": "#000",
+            "fontSize": "0.75rem",
+            "margin": "1rem",
+            "padding": "0.25rem",
+            "textAlign": "center",
+          }
+        }
+      >
+        <div>
+          UX_YELLOW_900
+        </div>
+        <div>
+          #453A00
+        </div>
       </p>
     </div>
   </div>

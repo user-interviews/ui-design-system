@@ -84,7 +84,7 @@
 }
 
 .Alert-success {
-  background-color: $ux-green-200;
+  background-color: $ux-green-100;
   color: $ux-green-800;
   border-left: 0.5rem solid $ux-green-400;
 
@@ -93,13 +93,21 @@
   }
 
   .primary-action {
-    @include primary-action($ux-green-300, $ux-green-400, $ux-green-700)
+    @include primary-action($ux-green-300, $ux-green-400, $ux-green-800)
+  }
+
+  .Alert__icon {
+    color: $ux-green-400;
+    
+    .fa-check {
+      color: $ux-green-800;
+    }
   }
 }
 
 .Alert-info {
   background-color: $ux-blue-100;
-  color: $ux-blue-700;
+  color: $ux-blue-800;
   border-left: 0.5rem solid $ux-blue-300;
 
   .close {
@@ -108,6 +116,14 @@
 
   .primary-action {
     @include primary-action($ux-blue-200, $ux-blue-300, $ux-blue-600)
+  }
+
+  .Alert__icon {
+    color: $ux-blue-300;
+    
+    .fa-info {
+      color: $ux-blue-600;
+    }
   }
 }
 
@@ -127,7 +143,7 @@
 
 .Alert-warning {
   background-color: $ux-yellow-100;
-  color: $ux-yellow-800;
+  color: $ux-yellow-900;
   border-left: 0.5rem solid $ux-yellow-600;
 
   .close {
@@ -135,7 +151,11 @@
   }
 
   .primary-action {
-    @include primary-action($ux-yellow-300, $ux-yellow-400, $ux-yellow-800)
+    @include primary-action($ux-yellow-300, $ux-yellow-400, $ux-yellow-900)
+  }
+
+  .Alert__icon {
+    color: $ux-yellow-700;
   }
 }
 
@@ -149,6 +169,10 @@
   }
 
   .primary-action {
-    @include primary-action($ux-red-200, $ux-red-300, $ux-red-800)
+    @include primary-action($ux-red-200, $ux-red-300, $ux-red-900)
+  }
+
+  .Alert__icon {
+    color: $ux-red;
   }
 }
