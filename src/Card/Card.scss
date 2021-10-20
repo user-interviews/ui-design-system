@@ -39,13 +39,13 @@ $card-width-xs: 15rem;
   }
 
   &__helper-text {
-    @include font-type-50--regular;
+    @include font-type-50;
     color: $ux-gray-900;
     margin-left: $ux-spacing-10;
   }
 
   &__subtitle {
-    @include font-type-30--regular;
+    @include font-type-30;
     color: $ux-gray-800;
   }
 

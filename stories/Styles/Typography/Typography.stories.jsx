@@ -67,16 +67,16 @@ const TypographySpecs = ({
         Weight: {weight}
       </li>
       {
-        textTransform && (
+        letterSpacing && (
           <li>
-            Text-transform: {textTransform}
+            Letter-spacing: {letterSpacing}
           </li>
         )
       }
       {
-        letterSpacing && (
+        textTransform && (
           <li>
-            Letter-spacing: {letterSpacing}
+            Text-transform: {textTransform}
           </li>
         )
       }
@@ -110,7 +110,7 @@ const TypographyStyle = (props) => (
 
 const presets = [
   {
-    preset: 'font-type-70--regular',
+    preset: 'font-type-70',
     font: 'DM Sans, sans-serif',
     size: '1.5rem',
     weight: '400 / Regular',
@@ -118,7 +118,7 @@ const presets = [
     modifiers: ['font-type-70--medium', 'font-type-70--bold'],
   },
   {
-    preset: 'font-type-60--regular',
+    preset: 'font-type-60',
     font: 'DM Sans, sans-serif',
     size: '1.25rem',
     weight: '400 / Regular',
@@ -127,7 +127,7 @@ const presets = [
 
   },
   {
-    preset: 'font-type-50--regular',
+    preset: 'font-type-50',
     font: 'DM Sans, sans-serif',
     size: '1.125rem',
     weight: '400 / Regular',
@@ -136,7 +136,7 @@ const presets = [
 
   },
   {
-    preset: 'font-type-40--regular',
+    preset: 'font-type-40',
     font: 'DM Sans, sans-serif',
     size: '1rem',
     weight: '400 / Regular',
@@ -145,7 +145,7 @@ const presets = [
 
   },
   {
-    preset: 'font-type-30--regular',
+    preset: 'font-type-30',
     font: 'DM Sans, sans-serif',
     size: '0.875rem',
     weight: '400 / Regular',
@@ -153,7 +153,7 @@ const presets = [
     modifiers: ['font-type-30--medium', 'font-type-30--bold'],
   },
   {
-    preset: 'font-type-20--regular',
+    preset: 'font-type-20',
     font: 'DM Sans, sans-serif',
     size: '0.75rem',
     weight: '400 / Regular',
@@ -161,7 +161,7 @@ const presets = [
     modifiers: ['font-type-20--medium', 'font-type-20--bold'],
   },
   {
-    preset: 'font-type-10--regular',
+    preset: 'font-type-10',
     font: 'DM Sans, sans-serif',
     size: '0.625rem',
     weight: '400 / Regular',
@@ -170,7 +170,7 @@ const presets = [
     modifiers: ['font-type-10--medium', 'font-type-10--bold'],
   },
   {
-    preset: 'font-type-10--regular-uppercase',
+    preset: 'font-type-10--uppercase',
     font: 'DM Sans, sans-serif',
     size: '0.625rem',
     weight: '400 / Regular',

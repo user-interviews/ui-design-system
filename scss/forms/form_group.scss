@@ -19,7 +19,7 @@
       margin-bottom: 0.5rem;
 
       &__helper-text {
-        @include font-type-30--regular;
+        @include font-type-30;
         font-weight: 100;
         color: $ux-gray-900;
       }
