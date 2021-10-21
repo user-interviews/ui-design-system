@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
 
-import { components } from 'react-select';
-import CheckboxButton from 'src/CheckboxButton';
 import SingleSelect from 'src/Select/SingleSelect';
+
+import Option from './Option';
+import ValueContainer from './ValueContainer';
 
 const onChange = () => {};
 
@@ -57,51 +58,9 @@ export const MultiSelect = () => (
   </Fragment>
 );
 
-// Replaceable Components
-// See: https://react-select.com/components#replaceable-components
-
-/* eslint-disable react/prop-types */
-
-// Option: Component responsible for displaying an option in the menu.
-
-const Option = (props) => (
-  <div>
-    <components.Option {...props}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <label>{props.label}</label>
-        <CheckboxButton
-          checked={props.isSelected}
-          id={props.label}
-          onChange={() => null}
-        />
-      </div>
-    </components.Option>
-  </div>
-  );
-
-// Value Container: Container responsible for loading the placeholder value and the input.
-
-const ValueContainer = ({ children, ...props }) => {
-  const { getValue, hasValue } = props;
-  const numValues = getValue().length;
-  if (!hasValue) {
-    return (
-      <components.ValueContainer {...props}>
-        {children}
-      </components.ValueContainer>
-    );
-  }
-  return (
-    <components.ValueContainer {...props}>
-      {`${numValues} items selected`}
-    </components.ValueContainer>
-  );
-};
-/* eslint-enable react/prop-types */
-
 export const CustomOptionWithCheckbox = () => (
   <Fragment>
-    <label htmlFor="multi-select" id="select-label">Custom option with checkbox</label>
+    <label htmlFor="multi-select" id="select-label-custom-option">Custom option with checkbox</label>
     <SingleSelect
       aria-labelledby="select-label"
       closeMenuOnSelect={false}
@@ -119,13 +78,22 @@ export const CustomOptionWithCheckbox = () => (
 
 export const CustomValueContainer = () => (
   <Fragment>
-    <label htmlFor="custom-value-container-select" id="select-label">Custom value container</label>
+    <label htmlFor="custom-value-container-select" id="select-label-custom-value-container">
+      Custom value container
+    </label>
     <SingleSelect
       aria-labelledby="select-label"
       closeMenuOnSelect={false}
       components={{
         Option,
-        ValueContainer,
+        ValueContainer: (props) => (
+          <ValueContainer
+            {...props}
+            /* eslint-disable react/prop-types */
+            valueText={`participant${props.getValue().length > 1 ? 's' : ''} selected`}
+            /* eslint-enable react/prop-types */
+          />
+        ),
       }}
       hideSelectedOptions={false}
       id="custom-value-container-select"

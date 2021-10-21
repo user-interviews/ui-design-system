@@ -5275,7 +5275,7 @@ exports[`Storyshots Design System/Selects/Single Custom Option With Checkbox 1`]
 >
   <label
     htmlFor="multi-select"
-    id="select-label"
+    id="select-label-custom-option"
   >
     Custom option with checkbox
   </label>
@@ -5352,7 +5352,7 @@ exports[`Storyshots Design System/Selects/Single Custom Value Container 1`] = `
 >
   <label
     htmlFor="custom-value-container-select"
-    id="select-label"
+    id="select-label-custom-value-container"
   >
     Custom value container
   </label>
