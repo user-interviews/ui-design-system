@@ -36,7 +36,7 @@ jobs:
           git commit --message "Prepare release 1.22.1"
 
           echo "::set-output name=commit::$(git rev-parse HEAD)"
-# #          git commit --message "Prepare release ${{ github.event.inputs.version }}"
+#           git commit --message "Prepare release ${{ github.event.inputs.version }}"
 
       - run: git fetch
 
