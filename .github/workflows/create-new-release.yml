@@ -8,7 +8,7 @@ on:
         required: true
 
 jobs:
-  draft-new-release:
+  create-new-release:
     name: Create new release
     runs-on: ubuntu-latest
     steps:
@@ -27,25 +27,47 @@ jobs:
         id: make-commit
         run: |
           git add package.json
-          git commit --message "Prepare release 1.22.1"
+          git commit --message "Prepare release ${{ github.event.inputs.version }}"
 
           echo "::set-output name=commit::$(git rev-parse HEAD)"
 
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+      - name: Checkout main
+        run: git checkout main
 
-      - name: Merge main into develop branch
-        uses: thomaseizinger/create-pull-request@1.0.0
+      - name: Merge release branch to main
+        run: git merge --no-ff release/1.2.0
+
+      - name: Create tag
+        run: git tag -a ${{ github.event.inputs.version }}
+
+      - name: Checkout develop
+        run: git checkout develop
+
+      - name: Merge release branch to develop
+        run: git merge --no-ff release/1.2.0
+
+      - name: Delete release branch
+        run: git branch -d release/1.2.0
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          head: main
-          base: develop
-          title: Merge main into develop branch
-          body: |
-             This PR merges the main branch back into develop.
-             This happens to ensure that the updates that happend on the release branch, i.e. manifest updates are also present on the develop branch.
+          tag_name: v${{ github.event.inputs.version }}
+          release_name: Release v${{ github.event.inputs.version }}
+          body_path:
+          draft: false
+          prerelease: false
 
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./user-interviews-ui-design-system-${{ github.event.inputs.version }}.tgz
+          asset_name: user-interviews-ui-design-system-${{ github.event.inputs.version }}.tgz
+          asset_content_type: application/tar+gzip
