@@ -1,11 +1,15 @@
 name: "Create new release"
 
 on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'The version you want to release.'
-        required: true
+  push:
+    branches:
+        - chore/update-release-actions
+
+        #  workflow_dispatch:
+#    inputs:
+#      version:
+#        description: 'The version you want to release.'
+#        required: true
 
 jobs:
   create-new-release:
@@ -30,6 +34,8 @@ jobs:
           git commit --message "Prepare release ${{ github.event.inputs.version }}"
 
           echo "::set-output name=commit::$(git rev-parse HEAD)"
+
+      - run: git fetch
 
       - name: Checkout main
         run: git checkout main
