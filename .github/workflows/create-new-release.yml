@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
 
       - name: Create release branch
         run: git checkout -b release/${{ github.event.inputs.version }}
@@ -43,7 +45,7 @@ jobs:
         run: git merge --no-ff release/${{ github.event.inputs.version }}
 
       - name: Create tag
-        run: git tag -a ${{ github.event.inputs.version }}
+        run: git tag -a ${{ github.event.inputs.version }} -m v${{ github.event.inputs.version }}
 
       - name: Checkout develop
         run: git checkout develop
