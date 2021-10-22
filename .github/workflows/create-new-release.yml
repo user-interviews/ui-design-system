@@ -1,0 +1,51 @@
+name: "Create new release"
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'The version you want to release.'
+        required: true
+
+jobs:
+  draft-new-release:
+    name: Create new release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Create release branch
+        run: git checkout -b release/${{ github.event.inputs.version }}
+
+      - name: Initialize mandatory git config
+        uses: fregante/setup-git-user@v1
+
+      - name: Bump version in package.json
+        run: yarn version --new-version ${{ github.event.inputs.version }} --no-git-tag-version
+
+      - name: Commit manifest files
+        id: make-commit
+        run: |
+          git add package.json
+          git commit --message "Prepare release 1.22.1"
+
+          echo "::set-output name=commit::$(git rev-parse HEAD)"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
+
+      - name: Merge main into develop branch
+        uses: thomaseizinger/create-pull-request@1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          head: main
+          base: develop
+          title: Merge main into develop branch
+          body: |
+             This PR merges the main branch back into develop.
+             This happens to ensure that the updates that happend on the release branch, i.e. manifest updates are also present on the develop branch.
+
