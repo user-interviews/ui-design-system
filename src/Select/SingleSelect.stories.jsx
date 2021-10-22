@@ -2,6 +2,9 @@ import React, { Fragment } from 'react';
 
 import SingleSelect from 'src/Select/SingleSelect';
 
+import Option from './Option';
+import ValueContainer from './ValueContainer';
+
 const onChange = () => {};
 
 export default {
@@ -10,11 +13,12 @@ export default {
 };
 
 const options = [
-  { label: 'Bob', value: 1 },
-  { label: 'Dave', value: 2 },
-  { label: 'Jeff', value: 3 },
-  { label: 'Dennis', value: 4 },
-  { label: 'Basel', value: 5 },
+  { label: 'White', value: 1 },
+  { label: 'Black / African American', value: 2 },
+  { label: 'American Indian / Alaska Native', value: 3 },
+  { label: 'Asian', value: 4 },
+  { label: 'Native Hawaiian / Pacific Islander', value: 5 },
+  { label: 'Hispanic / Latinx', value: 6 },
 ];
 
 export const Default = () => (
@@ -47,6 +51,52 @@ export const MultiSelect = () => (
     <SingleSelect
       aria-labelledby="select-label"
       id="multi-select"
+      isMulti
+      options={options}
+      onChange={onChange}
+    />
+  </Fragment>
+);
+
+export const CustomOptionWithCheckbox = () => (
+  <Fragment>
+    <label htmlFor="multi-select" id="select-label-custom-option">Custom option with checkbox</label>
+    <SingleSelect
+      aria-labelledby="select-label"
+      closeMenuOnSelect={false}
+      components={{
+        Option,
+      }}
+      hideSelectedOptions={false}
+      id="multi-select"
+      isMulti
+      options={options}
+      onChange={onChange}
+    />
+  </Fragment>
+);
+
+export const CustomValueContainer = () => (
+  <Fragment>
+    <label htmlFor="custom-value-container-select" id="select-label-custom-value-container">
+      Custom value container
+    </label>
+    <SingleSelect
+      aria-labelledby="select-label"
+      closeMenuOnSelect={false}
+      components={{
+        Option,
+        ValueContainer: (props) => (
+          <ValueContainer
+            {...props}
+            /* eslint-disable react/prop-types */
+            valueText={`participant${props.getValue().length > 1 ? 's' : ''} selected`}
+            /* eslint-enable react/prop-types */
+          />
+        ),
+      }}
+      hideSelectedOptions={false}
+      id="custom-value-container-select"
       isMulti
       options={options}
       onChange={onChange}

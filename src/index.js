@@ -29,8 +29,10 @@ import RadioButtonGroup from 'src/RadioButtonGroup';
 import {
   AsyncSelect,
   CreatableSelect,
+  Option,
   SELECT_SIZES,
   SingleSelect,
+  ValueContainer,
 } from 'src/Select';
 import { colors as COLORS } from 'src/Styles';
 import {
@@ -78,6 +80,7 @@ export {
   ModalBody,
   ModalFooter,
   ModalHeader,
+  Option,
   Pill,
   PILL_COLORS,
   Popper,
@@ -96,6 +99,7 @@ export {
   Tooltip,
   TrackedButton,
   useToast,
+  ValueContainer,
   withToast,
   withToastPropTypes,
 };
