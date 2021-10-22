@@ -31,11 +31,16 @@ jobs:
 
           echo "::set-output name=commit::$(git rev-parse HEAD)"
 
+      - name: Publish release branch
+        run: git push origin release/${{ github.event.inputs.version }}
+
+      - run: git fetch
+
       - name: Checkout main
         run: git checkout main
 
       - name: Merge release branch to main
-        run: git merge --no-ff release/1.2.0
+        run: git merge --no-ff release/${{ github.event.inputs.version }}
 
       - name: Create tag
         run: git tag -a ${{ github.event.inputs.version }}
@@ -44,10 +49,10 @@ jobs:
         run: git checkout develop
 
       - name: Merge release branch to develop
-        run: git merge --no-ff release/1.2.0
+        run: git merge --no-ff release/${{ github.event.inputs.version }}
 
       - name: Delete release branch
-        run: git branch -d release/1.2.0
+        run: git branch -d release/${{ github.event.inputs.version }}
 
       - name: Create Release
         id: create_release
