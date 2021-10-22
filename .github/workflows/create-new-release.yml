@@ -5,7 +5,7 @@ on:
     branches:
         - chore/update-release-actions
 
-        #  workflow_dispatch:
+#  workflow_dispatch:
 #    inputs:
 #      version:
 #        description: 'The version you want to release.'
