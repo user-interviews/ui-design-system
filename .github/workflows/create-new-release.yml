@@ -44,6 +44,9 @@ jobs:
       - name: Merge release branch to main
         run: git merge --no-ff release/${{ github.event.inputs.version }}
 
+      - name: Push main branch
+        run: git push origin main
+
       - name: Create tag
         run: git tag -a ${{ github.event.inputs.version }} -m v${{ github.event.inputs.version }}
 
@@ -53,8 +56,15 @@ jobs:
       - name: Merge release branch to develop
         run: git merge --no-ff release/${{ github.event.inputs.version }}
 
+      - name: Push develop branch
+        run: git push origin develop
+
       - name: Delete release branch
         run: git branch -d release/${{ github.event.inputs.version }}
+
+      - name: Extract Package Version
+        id: extract_version
+        uses: Saionaro/extract-package-version@v1.1.1
 
       - name: Create Release
         id: create_release
@@ -62,12 +72,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: v${{ github.event.inputs.version }}
-          release_name: Release v${{ github.event.inputs.version }}
+          tag_name: v${{ steps.extract_version.outputs.version }}
+          release_name: Release v${{ steps.extract_version.outputs.version }}
           body_path:
           draft: false
           prerelease: false
 
+      # Upload assets to the release
       - name: Upload Release Asset
         id: upload-release-asset
         uses: actions/upload-release-asset@v1
@@ -75,6 +86,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./user-interviews-ui-design-system-${{ github.event.inputs.version }}.tgz
-          asset_name: user-interviews-ui-design-system-${{ github.event.inputs.version }}.tgz
+          asset_path: ./user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz
+          asset_name: user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz
           asset_content_type: application/tar+gzip
