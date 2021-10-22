@@ -38,6 +38,9 @@ jobs:
           echo "::set-output name=commit::$(git rev-parse HEAD)"
 #           git commit --message "Prepare release ${{ github.event.inputs.version }}"
 
+      - name: Publish release branch
+        run: git push origin release/1.22.1
+
       - run: git fetch
 
       - name: Checkout main
