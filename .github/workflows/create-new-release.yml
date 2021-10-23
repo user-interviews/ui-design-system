@@ -1,0 +1,91 @@
+name: "Create new release"
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'The version you want to release.'
+        required: true
+
+jobs:
+  create-new-release:
+    name: Create new release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Create release branch
+        run: git checkout -b release/${{ github.event.inputs.version }}
+
+      - name: Initialize mandatory git config
+        uses: fregante/setup-git-user@v1
+
+      - name: Bump version in package.json
+        run: yarn version --new-version ${{ github.event.inputs.version }} --no-git-tag-version
+
+      - name: Commit manifest files
+        id: make-commit
+        run: |
+          git add package.json
+          git commit --message "Prepare release ${{ github.event.inputs.version }}"
+
+          echo "::set-output name=commit::$(git rev-parse HEAD)"
+
+      - name: Publish release branch
+        run: git push origin release/${{ github.event.inputs.version }}
+
+      - run: git fetch
+
+      - name: Checkout main
+        run: git checkout main
+
+      - name: Merge release branch to main
+        run: git merge --no-ff release/${{ github.event.inputs.version }}
+
+      - name: Push main branch
+        run: git push origin main
+
+      - name: Create tag
+        run: git tag -a ${{ github.event.inputs.version }} -m v${{ github.event.inputs.version }}
+
+      - name: Checkout develop
+        run: git checkout develop
+
+      - name: Merge release branch to develop
+        run: git merge --no-ff release/${{ github.event.inputs.version }}
+
+      - name: Push develop branch
+        run: git push origin develop
+
+      - name: Delete release branch
+        run: git branch -d release/${{ github.event.inputs.version }}
+
+      - name: Extract Package Version
+        id: extract_version
+        uses: Saionaro/extract-package-version@v1.1.1
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.extract_version.outputs.version }}
+          release_name: Release v${{ steps.extract_version.outputs.version }}
+          body_path:
+          draft: false
+          prerelease: false
+
+      # Upload assets to the release
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz
+          asset_name: user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz
+          asset_content_type: application/tar+gzip
