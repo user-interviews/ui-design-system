@@ -1,52 +1,85 @@
 $font-family: DM Sans, sans-serif;
-$font-weight-light: 300;
-$font-weight-normal: 400;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
 $font-weight-bold: 700;
 $font-size-base: 0.875rem;
 
 @mixin font-type-10() {
   font-size: .625rem;
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-regular;
   letter-spacing: 0.0625rem;
   line-height: 0.875rem;
-  text-transform: uppercase;
 }
 
 @mixin font-type-20() {
   font-size: .75rem;
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-regular;
   line-height: 1rem;
 }
 
 @mixin font-type-30() {
-  font-size: 0.875rem;
-  font-weight: $font-weight-normal;
+  font-size: $font-size-base;
+  font-weight: $font-weight-regular;
   line-height: 1.25rem;
 }
 
 @mixin font-type-40() {
-  // font-size:  $font-size-base; -- should base be changed to 1 rem?
   font-size: 1rem;
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-regular;
   line-height: 1.375rem;
 }
 
 @mixin font-type-50() {
   font-size: 1.125rem;
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-regular;
   line-height: 1.5rem;
 }
 
 @mixin font-type-60() {
   font-size: 1.25rem;
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-regular;
   line-height: 1.625rem;
 }
 
 @mixin font-type-70() {
   font-size: 1.5rem;
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-regular;
   line-height: 2rem;
+}
+
+@mixin font-type-10--medium() {
+  @include font-type-10;
+  font-weight: $font-weight-medium;
+}
+
+@mixin font-type-20--medium() {
+  @include font-type-20;
+  font-weight: $font-weight-medium;
+}
+
+@mixin font-type-30--medium() {
+  @include font-type-30;
+  font-weight: $font-weight-medium;
+}
+
+@mixin font-type-40--medium() {
+  @include font-type-40();
+  font-weight: $font-weight-medium;
+}
+
+@mixin font-type-50--medium() {
+  @include font-type-50;
+  font-weight: $font-weight-medium;
+}
+
+@mixin font-type-60--medium() {
+  @include font-type-60();
+  font-weight: $font-weight-medium;
+}
+
+@mixin font-type-70--medium() {
+  @include font-type-70;
+  font-weight: $font-weight-medium;
 }
 
 @mixin font-type-10--bold() {
@@ -54,19 +87,9 @@ $font-size-base: 0.875rem;
   font-weight: $font-weight-bold;
 }
 
-@mixin font-type-10--light() {
-  @include font-type-10;
-  font-weight: $font-weight-light;
-}
-
 @mixin font-type-20--bold() {
   @include font-type-20;
   font-weight: $font-weight-bold;
-}
-
-@mixin font-type-20--light() {
-  @include font-type-20;
-  font-weight: $font-weight-light;
 }
 
 @mixin font-type-30--bold() {
@@ -74,19 +97,9 @@ $font-size-base: 0.875rem;
   font-weight: $font-weight-bold;
 }
 
-@mixin font-type-30--light() {
-  @include font-type-30;
-  font-weight: $font-weight-light;
-}
-
 @mixin font-type-40--bold() {
   @include font-type-40;
   font-weight: $font-weight-bold;
-}
-
-@mixin font-type-40--light() {
-  @include font-type-40;
-  font-weight: $font-weight-light;
 }
 
 @mixin font-type-50--bold() {
@@ -94,19 +107,9 @@ $font-size-base: 0.875rem;
   font-weight: $font-weight-bold;
 }
 
-@mixin font-type-50--light() {
-  @include font-type-50;
-  font-weight: $font-weight-light;
-}
-
 @mixin font-type-60--bold() {
   @include font-type-60;
   font-weight: $font-weight-bold;
-}
-
-@mixin font-type-60--light() {
-  @include font-type-60;
-  font-weight: $font-weight-light;
 }
 
 @mixin font-type-70--bold() {
@@ -114,7 +117,19 @@ $font-size-base: 0.875rem;
   font-weight: $font-weight-bold;
 }
 
-@mixin font-type-70--light() {
-  @include font-type-70;
-  font-weight: $font-weight-light;
+// Uppercase fonts
+
+@mixin font-type-10--uppercase() {
+  @include font-type-10;
+  text-transform: uppercase;
+}
+
+@mixin font-type-10--bold-uppercase() {
+  @include font-type-10--uppercase;
+  font-weight: $font-weight-bold;
+}
+
+@mixin font-type-10--medium-uppercase() {
+  @include font-type-10--uppercase;
+  font-weight: $font-weight-medium
 }

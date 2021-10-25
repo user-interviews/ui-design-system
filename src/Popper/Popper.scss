@@ -99,7 +99,7 @@
 }
 
 .Popper {
-  @include font-type-30;
+  @include font-type-30--medium;
   @include popper-arrow($popper-color: $ux-white, $popper-border-color: $ux-gray-300);
   background-color: $ux-white;
   border-radius: $ux-border-radius;
@@ -109,7 +109,7 @@
   letter-spacing: normal;
   padding: $ux-spacing-30;
   z-index: $z-index-flash;
-  font-weight: $font-weight-light;
+  font-weight: $font-weight-regular;
 
   &__header {
     margin-bottom: $ux-spacing-10;
@@ -123,7 +123,7 @@
 
     a, a:active, a:focus, a:hover, a:visited {
       color: $ux-blue-300;
-      @include font-type-30;
+      @include font-type-30--medium;
     }
   }
 }
