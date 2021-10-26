@@ -37,7 +37,7 @@
   @include font-type-10;
 }
 
-.font-type-20 {
+.font-type-20{
   @include font-type-20;
 }
 
@@ -59,6 +59,34 @@
 
 .font-type-70 {
   @include font-type-70;
+}
+
+.font-type-10--medium {
+  @include font-type-10--medium;
+}
+
+.font-type-20--medium {
+  @include font-type-20--medium;
+}
+
+.font-type-30--medium {
+  @include font-type-30--medium;
+}
+
+.font-type-40--medium {
+  @include font-type-40--medium;
+}
+
+.font-type-50--medium {
+  @include font-type-50--medium;
+}
+
+.font-type-60--medium {
+  @include font-type-60--medium;
+}
+
+.font-type-70--medium {
+  @include font-type-70--medium;
 }
 
 .font-type-10--bold {
@@ -89,30 +117,14 @@
   @include font-type-70--bold;
 }
 
-.font-type-10--light {
-  @include font-type-10--light;
+.font-type-10--uppercase {
+  @include font-type-10--uppercase;
 }
 
-.font-type-20--light {
-  @include font-type-20--light;
+.font-type-10--medium-uppercase {
+  @include font-type-10--medium-uppercase;
 }
 
-.font-type-30--light {
-  @include font-type-30--light;
-}
-
-.font-type-40--light {
-  @include font-type-40--light;
-}
-
-.font-type-50--light {
-  @include font-type-50--light;
-}
-
-.font-type-60--light {
-  @include font-type-60--light;
-}
-
-.font-type-70--light {
-  @include font-type-70--light;
+.font-type-10--bold-uppercase {
+  @include font-type-10--bold-uppercase;
 }

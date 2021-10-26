@@ -3,7 +3,6 @@
 
 .Pill {
   @include font-type-20;
-  font-weight: $font-weight-normal;
   display: inline;
   background-color: $ux-blue-100;
   color: $ux-blue-700;

@@ -11,57 +11,21 @@ jobs:
   create-new-release:
     name: Create new release
     runs-on: ubuntu-latest
+    env:
+      FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
     steps:
       - uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: Create release branch
-        run: git checkout -b release/${{ github.event.inputs.version }}
+      - uses: actions/setup-node@v1
+      - run: npm config set "@fortawesome:registry" https://npm.fontawesome.com/ &&
+          npm config set "//npm.fontawesome.com/:_authToken" $FONTAWESOME_NPM_AUTH_TOKEN
+      - run: yarn install
 
       - name: Initialize mandatory git config
         uses: fregante/setup-git-user@v1
 
-      - name: Bump version in package.json
-        run: yarn version --new-version ${{ github.event.inputs.version }} --no-git-tag-version
-
-      - name: Commit manifest files
-        id: make-commit
-        run: |
-          git add package.json
-          git commit --message "Prepare release ${{ github.event.inputs.version }}"
-
-          echo "::set-output name=commit::$(git rev-parse HEAD)"
-
-      - name: Publish release branch
-        run: git push origin release/${{ github.event.inputs.version }}
-
-      - run: git fetch
-
-      - name: Checkout main
-        run: git checkout main
-
-      - name: Merge release branch to main
-        run: git merge --no-ff release/${{ github.event.inputs.version }}
-
-      - name: Push main branch
-        run: git push origin main
-
-      - name: Create tag
-        run: git tag -a ${{ github.event.inputs.version }} -m v${{ github.event.inputs.version }}
-
-      - name: Checkout develop
-        run: git checkout develop
-
-      - name: Merge release branch to develop
-        run: git merge --no-ff release/${{ github.event.inputs.version }}
-
-      - name: Push develop branch
-        run: git push origin develop
-
-      - name: Delete release branch
-        run: git branch -d release/${{ github.event.inputs.version }}
-
+      # Build assets
+      - run: yarn build
+      - run: npm pack
       - name: Extract Package Version
         id: extract_version
         uses: Saionaro/extract-package-version@v1.1.1
