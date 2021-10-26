@@ -6071,7 +6071,7 @@ exports[`Storyshots Design System/Selects/Async Default 1`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-2-input"
+              id="react-select-3-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -6193,7 +6193,122 @@ exports[`Storyshots Design System/Selects/Async Labeled 1`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-3-input"
+              id="react-select-4-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "boxSizing": "content-box",
+                  "color": "inherit",
+                  "fontSize": "inherit",
+                  "label": "input",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "1px",
+                }
+              }
+              tabIndex="0"
+              type="text"
+              value=""
+            />
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "overflow": "scroll",
+                  "position": "absolute",
+                  "top": 0,
+                  "visibility": "hidden",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className=" css-1hb7zxy-IndicatorsContainer"
+      >
+        <span
+          className=" css-43ykx9-indicatorSeparator"
+        />
+        <div
+          aria-hidden="true"
+          className=" css-7sl878-indicatorContainer"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-6q0nyr-Svg"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Selects/AsyncCreatable Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="AsyncSelect css-2b097c-container"
+    onKeyDown={[Function]}
+  >
+    <div
+      className=" css-15ub2n0-control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className=" css-g1d714-ValueContainer"
+      >
+        <div
+          className=" css-1269n2i-placeholder"
+        >
+          Select...
+        </div>
+        <div
+          className="css-b8ldur-Input"
+        >
+          <div
+            className=""
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              aria-label="Async creatable select"
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              disabled={false}
+              id="react-select-2-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -6307,7 +6422,7 @@ exports[`Storyshots Design System/Selects/Creatable Default 1`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-4-input"
+              id="react-select-5-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -6416,7 +6531,7 @@ exports[`Storyshots Design System/Selects/Single Custom Option With Checkbox 1`]
           aria-labelledby="select-label"
           className="css-62g3xt-dummyInput"
           disabled={false}
-          id="react-select-11-input"
+          id="react-select-12-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -6493,7 +6608,7 @@ exports[`Storyshots Design System/Selects/Single Custom Value Container 1`] = `
           aria-labelledby="select-label"
           className="css-62g3xt-dummyInput"
           disabled={false}
-          id="react-select-12-input"
+          id="react-select-13-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -6563,7 +6678,7 @@ exports[`Storyshots Design System/Selects/Single Default 1`] = `
           aria-label="Default select"
           className="css-62g3xt-dummyInput"
           disabled={false}
-          id="react-select-5-input"
+          id="react-select-6-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -6688,7 +6803,7 @@ exports[`Storyshots Design System/Selects/Single In Modal 1`] = `
                 aria-labelledby="select-label"
                 className="css-62g3xt-dummyInput"
                 disabled={false}
-                id="react-select-10-input"
+                id="react-select-11-input"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
@@ -6784,7 +6899,7 @@ exports[`Storyshots Design System/Selects/Single Labeled 1`] = `
           aria-labelledby="select-label"
           className="css-62g3xt-dummyInput"
           disabled={false}
-          id="react-select-8-input"
+          id="react-select-9-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -6854,7 +6969,7 @@ exports[`Storyshots Design System/Selects/Single Loading 1`] = `
           aria-label="Loading select"
           className="css-62g3xt-dummyInput"
           disabled={true}
-          id="react-select-7-input"
+          id="react-select-8-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -6931,7 +7046,7 @@ exports[`Storyshots Design System/Selects/Single Multi Select 1`] = `
           aria-labelledby="select-label"
           className="css-62g3xt-dummyInput"
           disabled={false}
-          id="react-select-9-input"
+          id="react-select-10-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -7014,7 +7129,7 @@ exports[`Storyshots Design System/Selects/Single Searchable 1`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-6-input"
+              id="react-select-7-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
