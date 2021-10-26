@@ -96,6 +96,7 @@ Runs ESLint to report on any style violations
 ### Visual testing
 
   1. Join BrowserStack (ask Brian for link)
+  1. Navigate to this project in percy [here](https://percy.io/f38ae9b9/ui-design-system)
   1. Define `PERCY_TOKEN` in shell (the one from ui-design-system project)
   1. `npx percy exec -- cypress run`
   1. View results in percy.io / console
