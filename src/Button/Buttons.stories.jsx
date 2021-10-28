@@ -54,3 +54,36 @@ export const Primary = () => (
     </Button>
   </>
 );
+
+export const Danger = () => (
+  <>
+    <Button
+      size="sm"
+      variant="danger"
+    >
+      Delete
+    </Button>
+
+    <Button
+      size="md"
+      variant="danger"
+    >
+      Delete
+    </Button>
+
+    <Button
+      size="md"
+      variant="outline-danger"
+    >
+      Delete
+    </Button>
+
+    <Button
+      disabled
+      size="md"
+      variant="danger"
+    >
+      Delete
+    </Button>
+  </>
+);

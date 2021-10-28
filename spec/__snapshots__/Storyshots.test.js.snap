@@ -1654,6 +1654,45 @@ exports[`Storyshots Design System/Avatar With Image 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Button Danger 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-danger btn-sm"
+    disabled={false}
+    type="button"
+  >
+    Delete
+  </button>
+  <button
+    className="Button btn btn-danger btn-md"
+    disabled={false}
+    type="button"
+  >
+    Delete
+  </button>
+  <button
+    className="Button btn btn-outline-danger btn-md"
+    disabled={false}
+    type="button"
+  >
+    Delete
+  </button>
+  <button
+    className="Button btn btn-danger btn-md"
+    disabled={true}
+    type="button"
+  >
+    Delete
+  </button>
+</div>
+`;
+
 exports[`Storyshots Design System/Button Primary 1`] = `
 <div
   style={
