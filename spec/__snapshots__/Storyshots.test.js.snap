@@ -1868,6 +1868,45 @@ exports[`Storyshots Design System/Button Primary 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Button Warning 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-warning btn-sm"
+    disabled={false}
+    type="button"
+  >
+    Edit
+  </button>
+  <button
+    className="Button btn btn-warning btn-md"
+    disabled={false}
+    type="button"
+  >
+    Edit
+  </button>
+  <button
+    className="Button btn btn-outline-warning btn-md"
+    disabled={false}
+    type="button"
+  >
+    Edit
+  </button>
+  <button
+    className="Button btn btn-warning btn-md"
+    disabled={true}
+    type="button"
+  >
+    Edit
+  </button>
+</div>
+`;
+
 exports[`Storyshots Design System/Card Default 1`] = `
 <div
   style={

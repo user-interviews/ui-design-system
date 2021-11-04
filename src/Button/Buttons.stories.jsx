@@ -87,3 +87,36 @@ export const Danger = () => (
     </Button>
   </>
 );
+
+export const Warning = () => (
+  <>
+    <Button
+      size="sm"
+      variant="warning"
+    >
+      Edit
+    </Button>
+
+    <Button
+      size="md"
+      variant="warning"
+    >
+      Edit
+    </Button>
+
+    <Button
+      size="md"
+      variant="outline-warning"
+    >
+      Edit
+    </Button>
+
+    <Button
+      disabled
+      size="md"
+      variant="warning"
+    >
+      Edit
+    </Button>
+  </>
+);
