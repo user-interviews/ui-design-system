@@ -23,8 +23,7 @@ describe('Avatar', () => {
   avatars.forEach((test) => {
     it(test.name, () => {
       cy.visit(test.path);
-      const match = test.match ? test.match : test.name;
-      cy.get('#storybook-preview-iframe').iframe().find(test.class).should('contain', match);
+      cy.get('#storybook-preview-iframe').iframe().find(test.class).should('contain', test.match);
       cy.percySnapshot(test.path);
     });
   });
