@@ -1,18 +1,3 @@
-const checkboxButtons = [
-  {
-    name: 'Default',
-    path: 'design-system-checkboxbutton--default',
-  },
-  {
-    name: 'Indeterminate',
-    path: 'design-system-checkboxbutton--indeterminate',
-  },
-  {
-    name: 'With Description',
-    path: 'design-system-checkboxbutton--with-description',
-  },
-];
-
 describe('CheckboxButton', () => {
   it('Default', () => {
     cy.visit('design-system-checkboxbutton--default');
