@@ -19,11 +19,6 @@ const formControlLabels = [
     path: 'design-system-form-elements-form-control-label--radio-with-children',
     class: '.FormControlLabel',
   },
-  {
-    name: 'Description Row',
-    path: 'design-system-form-elements-checkboxbuttongroup--description-row',
-    class: '.FormControlLabel',
-  },
 ];
 
 describe('Form Elements -> Form Control Label', () => {
