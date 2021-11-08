@@ -26,6 +26,7 @@ describe('Form Elements -> Form Control Label', () => {
     it(test.name, () => {
       cy.visit(test.path);
       cy.get('#storybook-preview-iframe').iframe().find(test.class).should('contain', 'Label');
+      cy.wait(1000);
       cy.percySnapshot(test.path);
     });
   });

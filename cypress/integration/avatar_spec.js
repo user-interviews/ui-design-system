@@ -24,6 +24,7 @@ describe('Avatar', () => {
     it(test.name, () => {
       cy.visit(test.path);
       cy.get('#storybook-preview-iframe').iframe().find(test.class).should('contain', test.match);
+      cy.wait(1000);
       cy.percySnapshot(test.path);
     });
   });

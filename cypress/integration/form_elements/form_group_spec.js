@@ -61,6 +61,7 @@ describe('Form Elements -> Form Group', () => {
     it(test.name, () => {
       cy.visit(test.path);
       cy.get('#storybook-preview-iframe').iframe().find(test.class).should('exist');
+      cy.wait(1000);
       cy.percySnapshot(test.path);
     });
   });
