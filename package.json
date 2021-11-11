@@ -9,15 +9,15 @@
   },
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir lib --copy-files",
-    "dev:link": "bin/link",
-    "dev:link:watch": "./node_modules/nodemon/bin/nodemon.js",
-    "dev:unlink": "bin/unlink",
     "lint": "eslint . --ext .js,.jsx",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
     "deploy-storybook": "storybook-to-ghpages",
     "prepublishOnly": "yarn build",
+    "rs:link": "bin/link",
+    "rs:link:watch": "./node_modules/nodemon/bin/nodemon.js",
+    "rs:unlink": "bin/unlink",
     "test": "jest"
   },
   "eslintConfig": {
