@@ -1,11 +1,6 @@
 name: "Create new release"
 
-on:
-  workflow_dispatch:
-    inputs:
-      version:
-        description: 'The version you want to release.'
-        required: true
+on: workflow_dispatch
 
 jobs:
   create-new-release:
