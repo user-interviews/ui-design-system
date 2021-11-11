@@ -1,15 +1,27 @@
 import React, { Fragment } from 'react';
+import { action } from '@storybook/addon-actions';
 
+import {
+ Modal, ModalHeader, ModalBody, ModalFooter,
+} from 'src/Modal';
 import SingleSelect from 'src/Select/SingleSelect';
 
 import Option from './Option';
 import ValueContainer from './ValueContainer';
 
-const onChange = () => {};
+import mdx from './SingleSelect.mdx';
+
+const onChange = () => action('Change');
+const handleRequestClose = () => action('Close');
 
 export default {
   title: 'Design System/Selects/Single',
   component: SingleSelect,
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 const options = [
@@ -57,6 +69,35 @@ export const MultiSelect = () => (
     />
   </Fragment>
 );
+
+export const InModal = () => (
+  <Modal
+    ariaHideApp={false}
+    className="SelectInModal"
+    contentLabel="Select in Modal"
+    isOpen
+  >
+    <ModalHeader
+      title="Select in modal"
+      titleId="select-in-modal"
+      onRequestClose={handleRequestClose}
+    />
+    <ModalBody>
+      <span>A select inside a modal</span>
+      <SingleSelect
+        aria-labelledby="select-label"
+        id="select-in-modal"
+        modal
+        options={options}
+        onChange={onChange}
+      />
+    </ModalBody>
+    <ModalFooter>
+      <button className="btn btn-transparent" type="button">Cancel</button>
+      <button className="btn btn-success" type="submit">Save</button>
+    </ModalFooter>
+  </Modal>
+  );
 
 export const CustomOptionWithCheckbox = () => (
   <Fragment>
