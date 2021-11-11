@@ -15,9 +15,9 @@
     "build-storybook-docs": "build-storybook -s public --docs",
     "deploy-storybook": "storybook-to-ghpages",
     "prepublishOnly": "yarn build",
-    "rs:link": "bin/link",
+    "rs:link": "bin/link-rs",
     "rs:link:watch": "./node_modules/nodemon/bin/nodemon.js",
-    "rs:unlink": "bin/unlink",
+    "rs:unlink": "bin/unlink-rs",
     "test": "jest"
   },
   "eslintConfig": {
