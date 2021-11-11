@@ -175,10 +175,10 @@ This package uses [Semantic versioning](https://semver.org/), which requires ver
   yarn unlink '@user-interviews/ui-design-system' react react-dom
   yarn install --force
 ````
-then run these commands inside the root of the DS repo:
+2. run these commands inside the root of the DS repo:
 ````bash
   yarn rs:unlink
 ````
 
-#### 🤔 Quarks
-- you'll have to manually refresh your browser tab after the automatic refresh to see your expected changes.
+#### 🤔 Snags
+- you'll have to manually refresh your browser tab, after the automatic refresh, to see your expected changes.
