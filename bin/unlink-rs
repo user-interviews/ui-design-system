@@ -1,0 +1,17 @@
+#!/bin/bash
+
+unlink()
+{
+  local package_name="${2:-$1}"
+
+  output=$(eval "yarn unlink $1")
+
+  echo "$output"
+  echo "== $package_name unlinked =="
+}
+
+unlink '' 'DS package'
+unlink 'react'
+unlink 'react-dom'
+
+yarn install --force
