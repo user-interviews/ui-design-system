@@ -18,11 +18,11 @@ $theme-colors: (
 
   i, svg {
     &.icon-left {
-      margin-right: .5rem;
+      margin-right: $ux-spacing-20;
     }
   
     &.icon-right {
-      margin-left: .5rem;
+      margin-left: $ux-spacing-20;
     }
   }
 }
