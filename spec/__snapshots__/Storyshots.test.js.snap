@@ -2375,7 +2375,8 @@ exports[`Storyshots Design System/Form Default 1`] = `
       </label>
     </div>
     <button
-      className="btn btn-primary"
+      className="Button btn btn-primary"
+      disabled={false}
       type="submit"
     >
       Save
@@ -4475,14 +4476,17 @@ exports[`Storyshots Design System/Modal Danger Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="btn btn-light"
+          className="btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
           type="button"
         >
           Cancel
         </button>
         <button
-          className="btn btn-outline-danger"
-          type="submit"
+          className="Button btn btn-danger"
+          disabled={false}
+          type="button"
         >
           Delete
         </button>
@@ -4559,16 +4563,19 @@ exports[`Storyshots Design System/Modal Default 1`] = `
         className="ModalFooter"
       >
         <button
-          className="btn btn-light"
+          className="btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
           type="button"
         >
           Cancel
         </button>
         <button
-          className="btn btn-success"
+          className="Button btn btn-primary"
+          disabled={false}
           type="submit"
         >
-          Save
+          Confirm
         </button>
       </div>
     </div>
@@ -4643,16 +4650,19 @@ exports[`Storyshots Design System/Modal Large Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="btn btn-light"
+          className="btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
           type="button"
         >
           Cancel
         </button>
         <button
-          className="btn btn-success"
+          className="Button btn btn-primary"
+          disabled={false}
           type="submit"
         >
-          Save
+          Confirm
         </button>
       </div>
     </div>
@@ -4727,16 +4737,19 @@ exports[`Storyshots Design System/Modal Medium Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="btn btn-light"
+          className="btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
           type="button"
         >
           Cancel
         </button>
         <button
-          className="btn btn-success"
+          className="Button btn btn-primary"
+          disabled={false}
           type="submit"
         >
-          Save
+          Confirm
         </button>
       </div>
     </div>
@@ -4823,13 +4836,16 @@ exports[`Storyshots Design System/Modal Transactional Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="btn btn-light"
+          className="btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
           type="button"
         >
           Cancel
         </button>
         <button
-          className="btn btn-success"
+          className="Button btn btn-primary"
+          disabled={false}
           type="submit"
         >
           Invite
@@ -4924,16 +4940,19 @@ exports[`Storyshots Design System/Modal Warning Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="btn btn-light"
+          className="btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
           type="button"
         >
           Cancel
         </button>
         <button
-          className="btn btn-outline-danger"
-          type="submit"
+          className="Button btn btn-warning btn-md"
+          disabled={false}
+          type="button"
         >
-          Delete
+          Edit
         </button>
       </div>
     </div>
@@ -5013,16 +5032,19 @@ exports[`Storyshots Design System/Modal With Subtitle Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="btn btn-light"
+          className="btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
           type="button"
         >
           Cancel
         </button>
         <button
-          className="btn btn-success"
+          className="Button btn btn-primary"
+          disabled={false}
           type="submit"
         >
-          Save
+          Confirm
         </button>
       </div>
     </div>
@@ -12106,18 +12128,9 @@ exports[`Storyshots Design System/Table Table With Compact Option 1`] = `
 >
   <div>
     <button
+      className="Button btn btn-outline-primary"
+      disabled={false}
       onClick={[Function]}
-      style={
-        Object {
-          "background": "none",
-          "border": "1px solid #337AB7",
-          "borderRadius": "4px",
-          "color": "#337AB7",
-          "fontWeight": "700",
-          "marginBottom": "16px",
-          "padding": "4px 8px",
-        }
-      }
       type="button"
     >
       Toggle density
@@ -16240,30 +16253,18 @@ exports[`Storyshots Design System/Table Table With Multiple Sticky Columns And H
           }
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -16365,30 +16366,18 @@ exports[`Storyshots Design System/Table Table With Multiple Sticky Columns And H
           }
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -16490,30 +16479,18 @@ exports[`Storyshots Design System/Table Table With Multiple Sticky Columns And H
           }
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -16615,30 +16592,18 @@ exports[`Storyshots Design System/Table Table With Multiple Sticky Columns And H
           }
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -16740,30 +16705,18 @@ exports[`Storyshots Design System/Table Table With Multiple Sticky Columns And H
           }
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -16865,30 +16818,18 @@ exports[`Storyshots Design System/Table Table With Multiple Sticky Columns And H
           }
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -16990,30 +16931,18 @@ exports[`Storyshots Design System/Table Table With Multiple Sticky Columns And H
           }
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -17115,30 +17044,18 @@ exports[`Storyshots Design System/Table Table With Multiple Sticky Columns And H
           }
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -17240,30 +17157,18 @@ exports[`Storyshots Design System/Table Table With Multiple Sticky Columns And H
           }
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -17365,30 +17270,18 @@ exports[`Storyshots Design System/Table Table With Multiple Sticky Columns And H
           }
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -17527,30 +17420,18 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -17614,30 +17495,18 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -17701,30 +17570,18 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -17788,30 +17645,18 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -17875,30 +17720,18 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -17962,30 +17795,18 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -18049,30 +17870,18 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -18136,30 +17945,18 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -18223,30 +18020,18 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -18310,30 +18095,18 @@ exports[`Storyshots Design System/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            style={
-              Object {
-                "background": "none",
-                "border": "1px solid #337AB7",
-                "borderRadius": "4px",
-                "color": "#337AB7",
-                "fontWeight": "700",
-                "padding": "4px 8px",
-              }
-            }
+            className="Button btn btn-outline-primary"
+            disabled={false}
             type="button"
           >
             <svg
               aria-hidden="true"
-              className="svg-inline--fa fa-file-alt fa-w-12 "
+              className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
               data-icon="file-alt"
               data-prefix="fas"
               focusable="false"
               role="img"
-              style={
-                Object {
-                  "marginRight": "10px",
-                }
-              }
+              style={Object {}}
               viewBox="0 0 384 512"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -19541,7 +19314,8 @@ exports[`Storyshots Design System/Toast Manual Dismiss Toast 1`] = `
       Click the button to see a toast message.  Use the knobs to try different types!
     </p>
     <button
-      className="btn btn-primary"
+      className="Button btn btn-primary"
+      disabled={false}
       onClick={[Function]}
       type="button"
     >
@@ -19567,7 +19341,8 @@ exports[`Storyshots Design System/Toast Toast 1`] = `
       Click the button to see a toast message.  Use the knobs to try different types!
     </p>
     <button
-      className="btn btn-primary"
+      className="Button btn btn-primary"
+      disabled={false}
       onClick={[Function]}
       type="button"
     >
@@ -19593,7 +19368,8 @@ exports[`Storyshots Design System/Toast Toast With Action 1`] = `
       Click the button to see a toast message.  Use the knobs to try different types!
     </p>
     <button
-      className="btn btn-primary"
+      className="Button btn btn-primary"
+      disabled={false}
       onClick={[Function]}
       type="button"
     >
