@@ -8,34 +8,89 @@ Array [
     <div
       className="Alert__icon"
     >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-check-circle fa-w-16 "
-        data-icon="check-circle"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 512 512"
-        xmlns="http://www.w3.org/2000/svg"
+      <span
+        className="fa-layers fa-fw"
       >
-        <path
-          d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-circle fa-w-16 "
+          data-icon="circle"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.5em 0.5em",
+            }
+          }
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(256 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-256 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-check fa-w-16 "
+          data-icon="check"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.5em 0.5em",
+            }
+          }
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(256 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
+            >
+              <path
+                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-256 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+      </span>
     </div>
     <div
       className="Alert__content"
     >
-      This is just a test...
+      <p
+        className="Alert__message"
+      >
+        This is just a test...
+      </p>
     </div>
     <div
       className="Alert__close"
     >
       <button
-        aria-label="close"
+        aria-label="close success"
         className="close"
         onClick={[Function]}
         type="button"

@@ -11,8 +11,10 @@ import FadeTransition from 'src/FadeTransition';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
+import IconCell from 'src/IconCell';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
+import LoadingOverlay from 'src/LoadingOverlay';
 import {
   Modal,
   MODAL_SIZES,
@@ -28,8 +30,10 @@ import RadioButtonGroup from 'src/RadioButtonGroup';
 import {
   AsyncSelect,
   CreatableSelect,
+  Option,
   SELECT_SIZES,
   SingleSelect,
+  ValueContainer,
 } from 'src/Select';
 import { colors as COLORS } from 'src/Styles';
 import {
@@ -69,14 +73,17 @@ export {
   Form,
   FormControlLabel,
   FormGroup,
+  IconCell,
   Input,
   InputLabel,
+  LoadingOverlay,
   MessageTypes,
   Modal,
   MODAL_SIZES,
   ModalBody,
   ModalFooter,
   ModalHeader,
+  Option,
   Pill,
   PILL_COLORS,
   Popper,
@@ -96,6 +103,7 @@ export {
   Tooltip,
   TrackedButton,
   useToast,
+  ValueContainer,
   withToast,
   withToastPropTypes,
 };

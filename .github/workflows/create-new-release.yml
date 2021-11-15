@@ -1,0 +1,55 @@
+name: "Create new release"
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'The version you want to release.'
+        required: true
+
+jobs:
+  create-new-release:
+    name: Create new release
+    runs-on: ubuntu-latest
+    env:
+      FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm config set "@fortawesome:registry" https://npm.fontawesome.com/ &&
+          npm config set "//npm.fontawesome.com/:_authToken" $FONTAWESOME_NPM_AUTH_TOKEN
+      - run: yarn install
+
+      - name: Initialize mandatory git config
+        uses: fregante/setup-git-user@v1
+
+      # Build assets
+      - run: yarn build
+      - run: npm pack
+      - name: Extract Package Version
+        id: extract_version
+        uses: Saionaro/extract-package-version@v1.1.1
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: v${{ steps.extract_version.outputs.version }}
+          release_name: Release v${{ steps.extract_version.outputs.version }}
+          body_path:
+          draft: false
+          prerelease: false
+
+      # Upload assets to the release
+      - name: Upload Release Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz
+          asset_name: user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz
+          asset_content_type: application/tar+gzip

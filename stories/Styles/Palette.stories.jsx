@@ -22,12 +22,14 @@ const Palette = ({ color }) => (
               style={{
                 backgroundColor: '#FFF',
                 color: '#000',
-                fontSize: '1rem',
+                fontSize: '0.75rem',
                 margin: '1rem',
+                padding: '0.25rem',
                 textAlign: 'center',
               }}
             >
-              {colorNameKey}
+              <div>{colorNameKey}</div>
+              <div>{colors[colorNameKey]}</div>
             </p>
           </div>
         );
@@ -47,3 +49,11 @@ export const Gray = () => <Palette color="GRAY" />;
 export const Green = () => <Palette color="GREEN" />;
 export const Orange = () => <Palette color="ORANGE" />;
 export const Red = () => <Palette color="RED" />;
+export const Yellow = () => <Palette color="YELLOW" />;
+
+// New brand color additions (currently skip even number series)
+export const Emerald = () => <Palette color="EMERALD" />;
+export const Navy = () => <Palette color="NAVY" />;
+export const Neutral = () => <Palette color="NEUTRAL" />;
+export const Sand = () => <Palette color="SAND" />;
+export const Teal = () => <Palette color="TEAL" />;
