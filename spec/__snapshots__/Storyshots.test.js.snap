@@ -2313,7 +2313,7 @@ exports[`Storyshots Design System/Container Responsive Grids 1`] = `
         First, but unordered
       </div>
       <div
-        className="col order-12"
+        className="order-12 col"
         style={
           Object {
             "backgroundColor": "#C9E5FC",
@@ -2325,7 +2325,7 @@ exports[`Storyshots Design System/Container Responsive Grids 1`] = `
         Second, but last
       </div>
       <div
-        className="col order-1"
+        className="order-1 col"
         style={
           Object {
             "backgroundColor": "#C9E5FC",
@@ -2373,7 +2373,7 @@ exports[`Storyshots Design System/Container Responsive Grids 1`] = `
       className="row"
     >
       <div
-        className="col order-last"
+        className="order-last col"
         style={
           Object {
             "backgroundColor": "#C9E5FC",
@@ -2397,7 +2397,7 @@ exports[`Storyshots Design System/Container Responsive Grids 1`] = `
         Second, but unordered
       </div>
       <div
-        className="col order-first"
+        className="order-first col"
         style={
           Object {
             "backgroundColor": "#C9E5FC",
