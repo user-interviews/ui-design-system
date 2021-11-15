@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button } from 'src/Button';
+import Button from 'src/Button';
 import { faFileAlt, faCaretDown } from '@fortawesome/pro-solid-svg-icons';
 import mdx from './Button.mdx';
 
