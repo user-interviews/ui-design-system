@@ -167,13 +167,12 @@ This package uses [Semantic versioning](https://semver.org/), which requires ver
 
 2. run these commands inside the root of the RS repo:
 ````bash
-  yarn link '@user-interviews/ui-design-system' react react-dom
+  bin/link-ds
 ````
 ### Wrapping up development
 1. run these commands inside the root of the RS repo:
 ````bash
-  yarn unlink '@user-interviews/ui-design-system' react react-dom
-  yarn install --force
+  bin/unlink-ds
 ````
 2. run these commands inside the root of the DS repo:
 ````bash
