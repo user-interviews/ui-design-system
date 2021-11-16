@@ -16,6 +16,8 @@ jobs:
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v1
+        with:
+          node-version: '14.17.4'
 
       - name: Create release branch
         run: git checkout -b release/${{ github.event.inputs.version }}
