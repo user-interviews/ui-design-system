@@ -24,7 +24,7 @@ export const Primary = () => (
     >
       Confirm
     </Button>
-
+    {' '}
     <Button
       leadingIcon={faFileAlt}
       size="md"
@@ -33,7 +33,7 @@ export const Primary = () => (
     >
       Confirm
     </Button>
-
+    {' '}
     <Button
       leadingIcon={faFileAlt}
       size="md"
@@ -42,7 +42,7 @@ export const Primary = () => (
     >
       Confirm
     </Button>
-
+    {' '}
     <Button
       disabled
       leadingIcon={faFileAlt}
@@ -63,21 +63,21 @@ export const Danger = () => (
     >
       Delete
     </Button>
-
+    {' '}
     <Button
       size="md"
       variant="danger"
     >
       Delete
     </Button>
-
+    {' '}
     <Button
       size="md"
       variant="outline-danger"
     >
       Delete
     </Button>
-
+    {' '}
     <Button
       disabled
       size="md"
@@ -96,21 +96,21 @@ export const Warning = () => (
     >
       Edit
     </Button>
-
+    {' '}
     <Button
       size="md"
       variant="warning"
     >
       Edit
     </Button>
-
+    {' '}
     <Button
       size="md"
       variant="outline-warning"
     >
       Edit
     </Button>
-
+    {' '}
     <Button
       disabled
       size="md"
