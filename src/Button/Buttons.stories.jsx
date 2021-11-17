@@ -27,6 +27,25 @@ export const Primary = () => (
     {' '}
     <Button
       leadingIcon={faFileAlt}
+      size="sm"
+      trailingIcon={faCaretDown}
+      variant="outline-primary"
+    >
+      Confirm
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="sm"
+      trailingIcon={faCaretDown}
+      variant="primary"
+    >
+      Confirm
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
       size="md"
       trailingIcon={faCaretDown}
       variant="primary"
@@ -58,21 +77,18 @@ export const Primary = () => (
 export const Danger = () => (
   <>
     <Button
+      leadingIcon={faFileAlt}
       size="sm"
+      trailingIcon={faCaretDown}
       variant="danger"
     >
       Delete
     </Button>
     {' '}
     <Button
-      size="md"
-      variant="danger"
-    >
-      Delete
-    </Button>
-    {' '}
-    <Button
-      size="md"
+      leadingIcon={faFileAlt}
+      size="sm"
+      trailingIcon={faCaretDown}
       variant="outline-danger"
     >
       Delete
@@ -80,7 +96,37 @@ export const Danger = () => (
     {' '}
     <Button
       disabled
+      leadingIcon={faFileAlt}
+      size="sm"
+      trailingIcon={faCaretDown}
+      variant="danger"
+    >
+      Delete
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
       size="md"
+      trailingIcon={faCaretDown}
+      variant="danger"
+    >
+      Delete
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
+      size="md"
+      trailingIcon={faCaretDown}
+      variant="outline-danger"
+    >
+      Delete
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="md"
+      trailingIcon={faCaretDown}
       variant="danger"
     >
       Delete
@@ -91,21 +137,18 @@ export const Danger = () => (
 export const Warning = () => (
   <>
     <Button
+      leadingIcon={faFileAlt}
       size="sm"
+      trailingIcon={faCaretDown}
       variant="warning"
     >
       Edit
     </Button>
     {' '}
     <Button
-      size="md"
-      variant="warning"
-    >
-      Edit
-    </Button>
-    {' '}
-    <Button
-      size="md"
+      leadingIcon={faFileAlt}
+      size="sm"
+      trailingIcon={faCaretDown}
       variant="outline-warning"
     >
       Edit
@@ -113,7 +156,37 @@ export const Warning = () => (
     {' '}
     <Button
       disabled
+      leadingIcon={faFileAlt}
+      size="sm"
+      trailingIcon={faCaretDown}
+      variant="warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
       size="md"
+      trailingIcon={faCaretDown}
+      variant="warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
+      size="md"
+      trailingIcon={faCaretDown}
+      variant="outline-warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="md"
+      trailingIcon={faCaretDown}
       variant="warning"
     >
       Edit
