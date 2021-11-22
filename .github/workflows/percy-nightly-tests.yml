@@ -1,0 +1,20 @@
+name: "Run Percy Tests"
+on:
+  schedule:
+    - cron: "0 0 * * *"
+    branches:
+      - develop
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Install
+        run: yarn
+      - name: Percy Test
+        uses: percy/exec-action@v0.x.x
+        with:
+          command: "cypress run"
+        env:
+          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
