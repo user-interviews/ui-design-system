@@ -1,0 +1,57 @@
+name: "Prepare new release"
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'The version you want to release.'
+        required: true
+
+jobs:
+  create-new-release:
+    name: Create new release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v1
+
+      - name: Create release branch
+        run: git checkout -b release/${{ github.event.inputs.version }}
+
+      - name: Initialize mandatory git config
+        uses: fregante/setup-git-user@v1
+
+      - name: Bump version in package.json
+        run: yarn version --new-version ${{ github.event.inputs.version }} --no-git-tag-version
+
+      - name: Commit manifest files
+        id: make-commit
+        run: |
+          git add package.json
+          git commit --message "Prepare release ${{ github.event.inputs.version }}"
+
+          echo "::set-output name=commit::$(git rev-parse HEAD)"
+
+      - name: Publish release branch
+        run: git push origin release/${{ github.event.inputs.version }}
+
+      - name: Merge release into main branch
+        uses: thomaseizinger/create-pull-request@1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          head: release/${{ github.event.inputs.version }}
+          base: main
+          title: Merge release/${{ github.event.inputs.version }} into main branch
+
+      - name: Merge release into develop branch
+        uses: thomaseizinger/create-pull-request@1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          head: release/${{ github.event.inputs.version }}
+          base: develop
+          title: Merge release/${{ github.event.inputs.version }} into develop branch
+
