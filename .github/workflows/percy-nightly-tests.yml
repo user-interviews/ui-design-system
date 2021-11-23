@@ -1,9 +1,7 @@
-name: "Run Percy Tests"
-
-on: [push, pull_request] # Just for testing..
-  # schedule:
-  #   - cron: "0 0 * * *"
-
+name: "Run Nightly Percy Tests"
+on:
+  schedule:
+    - cron: "0 0 * * *"
 jobs:
   build:
     runs-on: ubuntu-latest
