@@ -1,6 +1,6 @@
 name: "Run Percy Tests"
 
-on: [push, pull_request] # Just for testing
+on: [push, pull_request] # Just for testing..
   # schedule:
   #   - cron: "0 0 * * *"
 
