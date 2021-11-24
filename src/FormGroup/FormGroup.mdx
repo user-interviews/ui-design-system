@@ -1,10 +1,20 @@
-import { Story, Preview } from '@storybook/addon-docs/blocks';
+import { Story, ArgsTable, Preview } from '@storybook/addon-docs/blocks';
+import FormGroup from './FormGroup';
 
-# Input Fields Anatomy
+# FormGroup
 
-Input fields let users enter and edit text. These are the variants available in the design system.
+<h4>
+  The FormGroup component wraps a form control with proper spacing, along with support for a label, helper text, and validation state. 
+  Here we use an Input field as the form control.
+</h4>
 
-## Placeholder Text
+<Preview>
+  <Story id="design-system-form-elements-form-group--default" />
+</Preview>
+
+<ArgsTable of={FormGroup} />
+
+### Default with placeholder
 
 - Used to give the user an idea of what sort text they should include here. Does not carry over as
  default text if no other text is added, so if left blank will produce an error.
@@ -13,7 +23,7 @@ Input fields let users enter and edit text. These are the variants available in 
   <Story id="design-system-form-elements-form-group--default" />
 </Preview>
 
-## Helper Text
+## With Helper Text
 
 - Information tied to a field that gives suggestions or additional information that might
 be beneficial to the user
@@ -32,7 +42,7 @@ be beneficial to the user
   <Story id="design-system-form-elements-form-group--required" />
 </Preview>
 
-## With Tooltip
+## With Label Tooltip
 
 - Information users will typically only reference once (and then it's learned) or here and there.
 This information is typically more of a recommendation, and not vital for the user to know, but
