@@ -1806,7 +1806,6 @@
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-<<<<<<< HEAD
 "@react-aria/ssr@^3.0.1":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@react-aria/ssr/-/ssr-3.1.0.tgz#b7163e6224725c30121932a8d1422ef91d1fab22"
@@ -1848,12 +1847,11 @@
     prop-types "^15.7.2"
     uncontrollable "^7.2.1"
     warning "^4.0.3"
-=======
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
->>>>>>> develop
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.2"
@@ -10728,7 +10726,16 @@ raw-loader@^4.0.2:
     loader-utils "^2.0.0"
     schema-utils "^3.0.0"
 
-<<<<<<< HEAD
+rc@^1.2.8:
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
+  integrity sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
+  dependencies:
+    deep-extend "^0.6.0"
+    ini "~1.3.0"
+    minimist "^1.2.0"
+    strip-json-comments "~2.0.1"
+
 react-bootstrap@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-2.0.0.tgz#f0fd0b4638f8d5fc3ee197b5550af619b723632c"
@@ -10751,17 +10758,6 @@ react-bootstrap@^2.0.0:
     react-transition-group "^4.4.1"
     uncontrollable "^7.2.1"
     warning "^4.0.3"
-=======
-rc@^1.2.8:
-  version "1.2.8"
-  resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
-  integrity sha512-y3bGgqKj3QBdxLbLkomlohkvsA8gdAiUQlSBJnBhfn+BPxg4bc62d8TcBW15wavDfgexCgccckhcZvywyQYPOw==
-  dependencies:
-    deep-extend "^0.6.0"
-    ini "~1.3.0"
-    minimist "^1.2.0"
-    strip-json-comments "~2.0.1"
->>>>>>> develop
 
 react-colorful@^5.0.1:
   version "5.1.0"
@@ -12918,7 +12914,6 @@ unbox-primitive@^1.0.0:
     has-symbols "^1.0.2"
     which-boxed-primitive "^1.0.2"
 
-<<<<<<< HEAD
 uncontrollable@^7.2.1:
   version "7.2.1"
   resolved "https://registry.yarnpkg.com/uncontrollable/-/uncontrollable-7.2.1.tgz#1fa70ba0c57a14d5f78905d533cf63916dc75738"
@@ -12928,12 +12923,11 @@ uncontrollable@^7.2.1:
     "@types/react" ">=16.9.11"
     invariant "^2.2.4"
     react-lifecycles-compat "^3.0.4"
-=======
+
 undefsafe@^2.0.5:
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/undefsafe/-/undefsafe-2.0.5.tgz#38733b9327bdcd226db889fb723a6efd162e6e2c"
   integrity sha512-WxONCrssBM8TSPRqN5EmsjVrsv4A8X12J4ArBiiayv3DyyG3ZlIg6yysuuSYdZsVz3TKcTg2fd//Ujd4CHV1iA==
->>>>>>> develop
 
 unfetch@^4.2.0:
   version "4.2.0"
