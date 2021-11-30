@@ -1,0 +1,59 @@
+import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
+import Tabs from './Tabs';
+import Tab from './Tab';
+
+# Tabs
+Create dynamic tabbed interfaces, as described in the [WAI ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices/#tabpanel). Tabs is a higher-level component for quickly creating a Nav matched with a set of TabPanes.
+
+These are wrapped and styled [React Bootstrap](https://react-bootstrap.github.io) `Tabs` and `Tab` components. Refer to [React Bootstrap `Tabs`](https://react-bootstrap.github.io/components/tabs/) documentation as the source of truth.
+
+## Best Practices
+
+There are two ways use the `Tabs` component, controlled or uncontrolled. Uncontrolled `Tabs` simply switch tab content based on user interaction, where as controlled `Tabs` require a function passed in as the `onSelect` prop to set to the `activeKey`.
+
+Since we should always be tracking user interactions it is highly recommended to use controlled `Tabs` so that tracking can be added to the `onSelect` function. This is also very useful when using `Tabs` without `Tab` content.
+
+## Tabs Anatomy
+
+<ArgsTable of={Tabs} />
+
+- **activeKey:** string which matches the `Tab` **eventKey** which should be active on initial load *and* update this prop from the `onSelect` function
+- **defaultActiveKey:** The default active key that is selected on start
+- **id:** HTML id attribute, required
+- **mountOnEnter:** Wait until the first "enter" transition to mount tabs (add them to the DOM)
+- **transition:** Sets a default animation strategy for all children `<TabPane>`s. Not currently used.
+- **unmountOnExit:** Unmount tabs (remove it from the DOM) when it is no longer visible
+- **onSelect:** Callback fired when a Tab is selected.
+
+### Controlled Tabs
+- **activeKey:** Required
+- **defaultActiveKey:** Leave undefined
+- **onSelect:** Required
+
+### Uncontrolled Tabs
+- **activeKey:** Leave undefined
+- **defaultActiveKey:** Required
+- **onSelect:** Leave undefined
+
+## Tab Anatomy
+
+<ArgsTable of={Tab} />
+
+- **disabled:** The disabled state of the tab.
+- **eventKey:** A unique identifier for the Component, the eventKey makes it distinguishable from others in a set. Similar to React's key prop, in that it only needs to be unique amongst the Components siblings, not globally.
+- **tabClassName:** Class to pass to the underlying nav link.
+- **title:** Content for the tab title.
+
+## Stories
+
+### Controlled Tabs
+
+<Preview>
+  <Story id="design-system-tabs--controlled" />
+</Preview>
+
+### Uncontrolled Tabs
+
+<Preview>
+  <Story id="design-system-tabs--uncontrolled" />
+</Preview>
