@@ -19269,6 +19269,326 @@ exports[`Storyshots Design System/Table Table With Sticky Column And Header 1`] 
 </div>
 `;
 
+exports[`Storyshots Design System/Tabs Controlled 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div>
+    <span
+      className="sc-bdvvtL Qvjnk"
+    >
+      <ul
+        className="nav nav-tabs"
+        onKeyDown={[Function]}
+        role="tablist"
+      >
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="controlled-tabpane-one"
+            aria-selected={true}
+            className="nav-link active"
+            data-rr-ui-event-key="one"
+            disabled={false}
+            id="controlled-tab-one"
+            onClick={[Function]}
+            role="tab"
+            type="button"
+          >
+            Tab One
+          </button>
+        </li>
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="controlled-tabpane-two"
+            className="nav-link"
+            data-rr-ui-event-key="two"
+            disabled={false}
+            id="controlled-tab-two"
+            onClick={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            Tab Two
+          </button>
+        </li>
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="controlled-tabpane-three"
+            className="nav-link"
+            data-rr-ui-event-key="three"
+            disabled={false}
+            id="controlled-tab-three"
+            onClick={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            Tab Three
+          </button>
+        </li>
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="controlled-tabpane-four"
+            aria-disabled={true}
+            className="nav-link disabled"
+            data-rr-ui-event-key="four"
+            disabled={true}
+            id="controlled-tab-four"
+            onClick={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            Tab Four (disabled)
+          </button>
+        </li>
+      </ul>
+      <div
+        className="tab-content"
+      >
+        <div
+          aria-labelledby="controlled-tab-one"
+          className="tab-pane active"
+          id="controlled-tabpane-one"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content One
+          </div>
+        </div>
+        <div
+          aria-labelledby="controlled-tab-two"
+          className="tab-pane"
+          id="controlled-tabpane-two"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content Two
+          </div>
+        </div>
+        <div
+          aria-labelledby="controlled-tab-three"
+          className="tab-pane"
+          id="controlled-tabpane-three"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content Three
+          </div>
+        </div>
+        <div
+          aria-labelledby="controlled-tab-four"
+          className="tab-pane"
+          id="controlled-tabpane-four"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content Four
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Tabs Uncontrolled 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div>
+    <span
+      className="sc-bdvvtL Qvjnk"
+    >
+      <ul
+        className="nav nav-tabs"
+        onKeyDown={[Function]}
+        role="tablist"
+      >
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="uncontrolled-tabpane-one"
+            aria-selected={true}
+            className="nav-link active"
+            data-rr-ui-event-key="one"
+            disabled={false}
+            id="uncontrolled-tab-one"
+            onClick={[Function]}
+            role="tab"
+            type="button"
+          >
+            Tab One
+          </button>
+        </li>
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="uncontrolled-tabpane-two"
+            className="nav-link"
+            data-rr-ui-event-key="two"
+            disabled={false}
+            id="uncontrolled-tab-two"
+            onClick={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            Tab Two
+          </button>
+        </li>
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="uncontrolled-tabpane-three"
+            className="nav-link"
+            data-rr-ui-event-key="three"
+            disabled={false}
+            id="uncontrolled-tab-three"
+            onClick={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            Tab Three
+          </button>
+        </li>
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="uncontrolled-tabpane-four"
+            aria-disabled={true}
+            className="nav-link disabled"
+            data-rr-ui-event-key="four"
+            disabled={true}
+            id="uncontrolled-tab-four"
+            onClick={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            Tab Four (disabled)
+          </button>
+        </li>
+      </ul>
+      <div
+        className="tab-content"
+      >
+        <div
+          aria-labelledby="uncontrolled-tab-one"
+          className="tab-pane active"
+          id="uncontrolled-tabpane-one"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content One
+          </div>
+        </div>
+        <div
+          aria-labelledby="uncontrolled-tab-two"
+          className="tab-pane"
+          id="uncontrolled-tabpane-two"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content Two
+          </div>
+        </div>
+        <div
+          aria-labelledby="uncontrolled-tab-three"
+          className="tab-pane"
+          id="uncontrolled-tabpane-three"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content Three
+          </div>
+        </div>
+        <div
+          aria-labelledby="uncontrolled-tab-four"
+          className="tab-pane"
+          id="uncontrolled-tabpane-four"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content Four
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Toast Manual Dismiss Toast 1`] = `
 <div
   style={
