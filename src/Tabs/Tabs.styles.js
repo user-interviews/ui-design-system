@@ -10,7 +10,7 @@ export const StyledTabsWrapper = styled.span`
   }
 
   .nav-tabs .nav-link {
-    color: ${colors.UX_GRAY_600};
+    color: ${colors.UX_GRAY_800};
     font: ${fontType30};
     text-decoration: none;
     border: none;
@@ -26,5 +26,10 @@ export const StyledTabsWrapper = styled.span`
   .nav-tabs .nav-link:focus {
     color: ${colors.UX_BLUE_500};
     border-bottom: ${borderWidth} solid ${colors.UX_BLUE_500};
+  }
+
+  .nav-tabs .nav-link.disabled {
+    color: ${colors.UX_GRAY_600};
+    border-bottom: ${borderWidth} solid ${colors.UX_GRAY_400};
   }
 `;
