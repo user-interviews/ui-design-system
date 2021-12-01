@@ -1,0 +1,7 @@
+#!/bin/bash
+
+yarn link
+cd node_modules/react
+yarn link
+cd ../../node_modules/react-dom
+yarn link

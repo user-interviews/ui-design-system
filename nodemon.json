@@ -1,0 +1,9 @@
+{
+  "exec": "yarn build",
+  "ext": "js,json,jsx,scss",
+  "verbose": true,
+  "watch": [
+    "scss",
+    "src"
+  ]
+}
