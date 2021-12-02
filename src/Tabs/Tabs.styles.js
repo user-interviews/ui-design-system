@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import colors from '../Styles/colors/palette';
 
-const borderWidth = '2px';
+const borderWidth = '0.125rem';
 const fontType30 = '400 0.875rem/1.25rem DM Sans, sans-serif';
 
 export const StyledTabsWrapper = styled.span`
