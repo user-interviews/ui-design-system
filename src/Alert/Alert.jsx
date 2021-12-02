@@ -136,7 +136,7 @@ Alert.propTypes = {
   /**
    One of the MessageTypes
   */
-  type: PropTypes.oneOf(Object.values(MessageTypes)),
+  type: PropTypes.oneOf(Object.values(MessageTypes)).isRequired,
   onDismiss: PropTypes.func,
 };
 
