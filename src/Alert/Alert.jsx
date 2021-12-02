@@ -122,12 +122,21 @@ function Alert(props) {
 }
 
 Alert.propTypes = {
+  /**
+   Creates a CTA button on the Alert
+  */
   action: PropTypes.oneOfType([PropTypes.object, PropTypes.node]),
+  /**
+   Determines whether the Alert will disappear automatically
+  */
   autoDismiss: PropTypes.bool,
   id: PropTypes.string.isRequired,
   message: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   title: PropTypes.string,
-  type: PropTypes.string.isRequired,
+  /**
+   One of the MessageTypes
+  */
+  type: PropTypes.oneOf(Object.values(MessageTypes)),
   onDismiss: PropTypes.func,
 };
 
