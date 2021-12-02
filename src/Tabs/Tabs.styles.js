@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import colors from '../Styles/colors/palette';
 
+// TODO: Add global theming or a border/font object instead of these variables
 const borderWidth = '0.125rem';
 const fontType30 = '400 0.875rem/1.25rem DM Sans, sans-serif';
 
