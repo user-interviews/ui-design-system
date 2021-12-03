@@ -1,4 +1,4 @@
-import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Table from './Table';
 
 # Table
@@ -9,9 +9,9 @@ import Table from './Table';
   Displays sets of data. Can be fully customized. 
 </h4>
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--default" />
-</Preview>
+</Canvas>
 
 ### When to use 
 - Tables display information that is easy to scan, so that users can look for patterns and insights
@@ -32,9 +32,9 @@ import Table from './Table';
 - A simple example of a `Table`
 - In the `TableHead`, all `TableCell` components should be given a `header` prop to designate it as a column label
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--default" />
-</Preview>
+</Canvas>
 
 ### Table With Fixed Column Widths
 - Create a column with a fixed width
@@ -43,38 +43,38 @@ import Table from './Table';
 - Set `minWidth` to provide extra space in `px` for the `TableCell`
 - `text-overflow: ellipsis` is set by default for content that exceeds the designated width. This would only be seen if `maxWidth` is set
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--table-with-fixed-column-widths" />
-</Preview>
+</Canvas>
 
 ### Table On Card
 - Default `Table` on a `Card` component
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--table-on-card" />
-</Preview>
+</Canvas>
 
 ### Table On Card No Padding
 - When the `Card` component has the `noPadding` prop set
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--table-on-card-no-padding" />
-</Preview>
+</Canvas>
 
 ### Table With Single Action Column
 - When a row has a single action, expose the action directly (usually through a button) with a clear action verb. Otherwise a kebab should be used when multiple actions are available for a rows
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--table-with-single-action-column" />
-</Preview>
+</Canvas>
 
 ### Table With Multiple Action Column
 - Kebabs should be used when there’s more than one action per row
 - If any row has one action and others more than one action, kebabs should be displayed on all rows
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--table-with-multiple-action-column" />
-</Preview>
+</Canvas>
 
 ### Table With Sticky Column And Header
 - A Table's header row can be made sticky to ensure column labels are always visible when a user scrolls down
@@ -86,9 +86,9 @@ import Table from './Table';
 - A pin icon can optionally be displayed on a sticky column to let the user toggle between a sticky column state and a default state
 - *Note: view this story on Canvas instead of Docs to see the sticky header*
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--table-with-sticky-column-and-header" />
-</Preview>
+</Canvas>
 
 ### Table With Multiple Sticky Columns (left & right) And Header
 - If *multiple* `stickyColumn`s are needed on either left or right side of the Table (e.g. a Checkbox and Email column on the left-side of the Table), `stickyColumnOffsetX` must be set precisely
@@ -132,9 +132,9 @@ import Table from './Table';
 </TableBody>
 ```
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--table-with-multiple-sticky-columns-and-header" />
-</Preview>
+</Canvas>
 
 ### Table With Multiple Select 
 - Checkboxes are displayed on a separate column
@@ -142,18 +142,18 @@ import Table from './Table';
 - When `TableRow` prop `selected` evaluates to `true`, `background-color` is set to `$ux-blue-100`
 - Clicking the first `Checkbox` located on the header row should select or de-select all current rows displayed on the `Table`
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--table-with-multiple-select" />
-</Preview>
+</Canvas>
 
 ### Table With Multiple Select And Multiple Sticky Columns And Header
 - Combining the sticky columns & headers with multi-select functionality.
 - Creates an easier scrolling and selecting experience for users while searching through table data.
 - *Note: view this story on Canvas instead of Docs to see the sticky header*
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--table-with-multiple-select-and-multiple-sticky-columns-and-header" />
-</Preview>
+</Canvas>
 
 ### Table With Sorting 
 - **Currently WIP**
@@ -162,25 +162,25 @@ import Table from './Table';
 - *Active state:* When users click the column heading the text turns blue and the icon changes to either an ascending or descending icon
 
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--table-with-sorting" />
-</Preview>
+</Canvas>
 
 ### Table With Cell Right Alignment
 - `TableCell` can be given `alignRight` prop to align content to the right
 - Cells with numerical data should be aligned right
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--table-with-cell-right-alignment" />
-</Preview>
+</Canvas>
 
 ### Table With Compact Option 
 - `TableCell` can be given a `compact` prop to reduce the size of the cell
 - This allows the `Table` to display more rows on a page
 
-<Preview>
+<Canvas>
   <Story id="design-system-table--table-with-compact-option" />
-</Preview>
+</Canvas>
 
 
 ## Formatting
