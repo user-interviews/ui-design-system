@@ -36,6 +36,10 @@ import {
 } from 'src/Select';
 import { colors as COLORS } from 'src/Styles';
 import {
+  Tab,
+  Tabs,
+} from 'src/Tabs';
+import {
   Table,
   TableBody,
   TableCell,
@@ -89,6 +93,8 @@ export {
   RadioButtonGroup,
   SELECT_SIZES,
   SingleSelect,
+  Tab,
+  Tabs,
   Table,
   TableBody,
   TableCell,
