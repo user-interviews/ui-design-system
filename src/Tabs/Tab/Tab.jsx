@@ -15,12 +15,11 @@ Tab.propTypes = {
   disabled: PropTypes.bool,
   eventKey: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   tabClassName: PropTypes.string,
-  title: PropTypes.node,
+  title: PropTypes.node.isRequired,
 };
 
 Tab.defaultProps = {
   disabled: false,
   eventKey: undefined,
   tabClassName: undefined,
-  title: undefined,
 };
