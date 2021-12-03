@@ -3,111 +3,28 @@ import Table from './Table';
 
 # Table
 
+##
+
 <h4>
   Displays sets of data. Can be fully customized. 
 </h4>
-
-- Tables display information that is easy to scan, so that users can look for patterns and insights
-- Tables can be embedded in various containers and primary content, such as Cards
 
 <Preview>
   <Story id="design-system-table--default" />
 </Preview>
 
+### When to use 
+- Tables display information that is easy to scan, so that users can look for patterns and insights
+- Tables can be embedded in various containers and primary content, such as Cards
+
+### When to not use
+- Reason 1
+- Reason 2
+
+## Props
+
 <ArgsTable of={Table} />
 
-## Anatomy 
-
-The `Table` component aims to be closely mapped to the native `<table>` elements. As such, do try to use the `Table` and it's subcomponents as if you were building a regular table <br/>
-
-A Table is primarily made up of columns, rows, and cells
-- **Header row:** Made up of cells that act as column labels
-- **Column label:** The cell that acts as a column header and explains what type of data is in the column
-- **Data cell:** The primary component of the table. It can be filled with any type of data or content
-
-Can also have other components for additional functionality such as:
-- **Selecting:** adding a `Checkbox` as a data column for selecting multiple rows
-- **Sorting (currently WIP):** adding a `TableSortLabel` to show which columns are actively being sorted
-
-## Subcomponents
-- `Table`
-- `TableBody`
-- `TableCell`
-- `TableHead`
-- `TableRow`
-- `TableSortLabel`
-
-## Best practices
-
-**Tables should:**
-- Show values across multiple categories
-- Help users visualize and scan multiple values with ease from an entire data set
-- Minimize clutter by only including values that supports the table's purpose
-
-## Guidelines 
-
-### Implementation
-- The `Table` and its subcomponents should closely map a native `<table>`
-
-```
-***Components***
-
-<Table>
-  <TableHead>
-    <TableRow>
-      <TableCell header>Column Header 1</TableCell>
-      <TableCell header>Column Header 2</TableCell>
-    </TableRow>
-  </TableHead>
-  <TableBody>
-    <TableRow>
-      <TableCell>Data Cell 1</TableCell>
-      <TableCell>Data Cell 2</TableCell>
-    </TableRow>
-  </TableBody>
-</Table>
-
-***Native***
-
-<table>
-  <thead>
-    <tr>
-      <th>Column Header 1</th>
-      <th>Column Header 2</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Data Cell 1</td>
-      <td>Data Cell 2</td>
-    </tr>
-  </tbody>
-</table>
-```
-### Alignment
-- Textual data = Left aligned (default)
-- Numerical data = Right aligned (`alignRight` prop on a `TableCell`) 
-- Align headers with their related data
-- Don't center align 
-
-### Copy 
-
-**Headers should:**
-- Be informative and descriptive
-- Scannable and concise
-- Include units of measurement symbols so they aren't repeated in the columns
-- Use sentence case (first word capitalized, rest lowercase)
-
-**Data cells should:**
-- Be scannable and concise
-- Use sentence case (first word capitalized, rest lowercase)
-
-**Decimals:**
-- Keep decimals consistent. For example, don’t use 3 decimals in one row and 2 in others
-
-**Ellipsis:**
-- Some content may overflow and be given a `text-overflow: ellipsis` property
-- Be sure to wrap these data cells in a `Popover` so that users can view extra long data values
 
 ## Stories
 
@@ -264,3 +181,105 @@ Can also have other components for additional functionality such as:
 <Preview>
   <Story id="design-system-table--table-with-compact-option" />
 </Preview>
+
+
+## Formatting
+
+### States
+
+### Anatomy 
+
+The `Table` component aims to be closely mapped to the native `<table>` elements. As such, do try to use the `Table` and it's subcomponents as if you were building a regular table <br/>
+
+A Table is primarily made up of columns, rows, and cells
+- **Header row:** Made up of cells that act as column labels
+- **Column label:** The cell that acts as a column header and explains what type of data is in the column
+- **Data cell:** The primary component of the table. It can be filled with any type of data or content
+
+Can also have other components for additional functionality such as:
+- **Selecting:** adding a `Checkbox` as a data column for selecting multiple rows
+- **Sorting (currently WIP):** adding a `TableSortLabel` to show which columns are actively being sorted
+
+## Subcomponents
+- `Table`
+- `TableBody`
+- `TableCell`
+- `TableHead`
+- `TableRow`
+- `TableSortLabel`
+
+
+### Sizing
+
+### Alignment
+- Textual data = Left aligned (default)
+- Numerical data = Right aligned (`alignRight` prop on a `TableCell`) 
+- Align headers with their related data
+- Don't center align 
+
+
+## Best practices
+
+### General
+- Show values across multiple categories
+- Help users visualize and scan multiple values with ease from an entire data set
+- Minimize clutter by only including values that supports the table's purpose
+
+### Behavior
+
+### Implementation
+- The `Table` and its subcomponents should closely map a native `<table>`
+
+```
+***Components***
+
+<Table>
+  <TableHead>
+    <TableRow>
+      <TableCell header>Column Header 1</TableCell>
+      <TableCell header>Column Header 2</TableCell>
+    </TableRow>
+  </TableHead>
+  <TableBody>
+    <TableRow>
+      <TableCell>Data Cell 1</TableCell>
+      <TableCell>Data Cell 2</TableCell>
+    </TableRow>
+  </TableBody>
+</Table>
+
+***Native***
+
+<table>
+  <thead>
+    <tr>
+      <th>Column Header 1</th>
+      <th>Column Header 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Cell 1</td>
+      <td>Data Cell 2</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+### UX Copy
+**Headers should:**
+- Be informative and descriptive
+- Scannable and concise
+- Include units of measurement symbols so they aren't repeated in the columns
+- Use sentence case (first word capitalized, rest lowercase)
+
+**Data cells should:**
+- Be scannable and concise
+- Use sentence case (first word capitalized, rest lowercase)
+
+**Decimals:**
+- Keep decimals consistent. For example, don’t use 3 decimals in one row and 2 in others
+
+**Ellipsis:**
+- Some content may overflow and be given a `text-overflow: ellipsis` property
+- Be sure to wrap these data cells in a `Popover` so that users can view extra long data values
