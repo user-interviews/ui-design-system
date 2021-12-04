@@ -1,5 +1,6 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
+import Button from 'src/Button';
 import Input from 'src/Input';
 import {
  Modal, ModalBody, ModalFooter, ModalHeader, MODAL_SIZES,
@@ -36,9 +37,11 @@ export const Default = () => (
     <ModalBody>
       <p>Some content goes here.</p>
     </ModalBody>
-    <ModalFooter>
-      <button className="btn btn-light" type="button">Cancel</button>
-      <button className="btn btn-success" type="submit">Save</button>
+    <ModalFooter
+      dismissButtonText="Cancel"
+      onRequestClose={handleRequestClose}
+    >
+      <Button type="submit" variant="primary">Confirm</Button>
     </ModalFooter>
   </Modal>
 );
@@ -59,9 +62,11 @@ export const MediumModal = () => (
     <ModalBody>
       <p>Some content goes here.</p>
     </ModalBody>
-    <ModalFooter>
-      <button className="btn btn-light" type="button">Cancel</button>
-      <button className="btn btn-success" type="submit">Save</button>
+    <ModalFooter
+      dismissButtonText="Cancel"
+      onRequestClose={handleRequestClose}
+    >
+      <Button type="submit" variant="primary">Confirm</Button>
     </ModalFooter>
   </Modal>
 );
@@ -82,9 +87,11 @@ export const LargeModal = () => (
     <ModalBody>
       <p>Some content goes here.</p>
     </ModalBody>
-    <ModalFooter>
-      <button className="btn btn-light" type="button">Cancel</button>
-      <button className="btn btn-success" type="submit">Save</button>
+    <ModalFooter
+      dismissButtonText="Cancel"
+      onRequestClose={handleRequestClose}
+    >
+      <Button type="submit" variant="primary">Confirm</Button>
     </ModalFooter>
   </Modal>
 );
@@ -105,9 +112,11 @@ export const WithSubtitleModal = () => (
     <ModalBody>
       <p>Some content goes here.</p>
     </ModalBody>
-    <ModalFooter>
-      <button className="btn btn-light" type="button">Cancel</button>
-      <button className="btn btn-success" type="submit">Save</button>
+    <ModalFooter
+      dismissButtonText="Cancel"
+      onRequestClose={handleRequestClose}
+    >
+      <Button type="submit" variant="primary">Confirm</Button>
     </ModalFooter>
   </Modal>
 );
@@ -128,9 +137,11 @@ export const TransactionalModal = () => (
       <p>The user needs to take action here.</p>
       <Input id="Email" name="Email" placeholder="Email" type="text" />
     </ModalBody>
-    <ModalFooter>
-      <button className="btn btn-light" type="button">Cancel</button>
-      <button className="btn btn-success" type="submit">Invite</button>
+    <ModalFooter
+      dismissButtonText="Cancel"
+      onRequestClose={handleRequestClose}
+    >
+      <Button type="submit" variant="primary">Invite</Button>
     </ModalFooter>
   </Modal>
 );
@@ -151,9 +162,11 @@ export const WarningModal = () => (
     <ModalBody>
       <p>Are you sure you want to do this?</p>
     </ModalBody>
-    <ModalFooter>
-      <button className="btn btn-light" type="button">Cancel</button>
-      <button className="btn btn-outline-danger" type="submit">Delete</button>
+    <ModalFooter
+      dismissButtonText="Cancel"
+      onRequestClose={handleRequestClose}
+    >
+      <Button size="md" variant="warning">Edit</Button>
     </ModalFooter>
   </Modal>
 );
@@ -174,9 +187,11 @@ export const DangerModal = () => (
     <ModalBody>
       <p>Are you sure you want to do this?</p>
     </ModalBody>
-    <ModalFooter>
-      <button className="btn btn-light" type="button">Cancel</button>
-      <button className="btn btn-outline-danger" type="submit">Delete</button>
+    <ModalFooter
+      dismissButtonText="Cancel"
+      onRequestClose={handleRequestClose}
+    >
+      <Button variant="danger">Delete</Button>
     </ModalFooter>
   </Modal>
 );

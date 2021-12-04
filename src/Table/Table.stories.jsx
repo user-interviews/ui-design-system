@@ -1,6 +1,7 @@
 import { faFileAlt, faEllipsisV, faThumbtack } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
+import Button from 'src/Button';
 import Card from 'src/Card';
 import CheckboxButton from 'src/CheckboxButton';
 import { Pill } from 'src/Pill';
@@ -203,13 +204,7 @@ export const TableOnCardNoPadding = () => (
 // TODO: placeholder buttons until the Button component is implemented into the DS
 const kebabButton = () => <button aria-label="kebab button" style={{ background: 'none', border: 'none', color: '#337AB7' }} type="button"><FontAwesomeIcon icon={faEllipsisV} /></button>;
 const editButton = () => (
-  <button
-    style={{
- background: 'none', border: '1px solid #337AB7', borderRadius: '4px', color: '#337AB7', fontWeight: '700', padding: '4px 8px',
-}}
-    type="button"
-  ><FontAwesomeIcon icon={faFileAlt} style={{ marginRight: '10px' }} />Edit
-  </button>
+  <Button leadingIcon={faFileAlt} variant="outline-primary">Edit</Button>
 );
 /* eslint-disable react/prop-types */
 const PinButton = ({ isPinActive, ...props }) => <button style={{ background: 'none', border: 'none', color: isPinActive ? '#337AB7' : '#A1A1A1' }} type="button" {...props}><FontAwesomeIcon icon={faThumbtack} /></button>;
@@ -633,14 +628,7 @@ export const TableWithCompactOption = () => {
 
   return (
     <div>
-      <button
-        style={{
- background: 'none', border: '1px solid #337AB7', borderRadius: '4px', color: '#337AB7', fontWeight: '700', marginBottom: '16px', padding: '4px 8px',
-}}
-        type="button"
-        onClick={handleIsCompactClick}
-      >Toggle density
-      </button>
+      <Button variant="outline-primary" onClick={handleIsCompactClick}>Toggle density</Button>
       <p>{isCompact ? 'Compact' : 'Default'}</p>
       <Table>
         <TableHead>

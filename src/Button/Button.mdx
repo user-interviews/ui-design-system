@@ -3,12 +3,14 @@ import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
 # Button
 
 ## Anatomy:
-**Leading icon:** Convey what type of action the button triggers
-**Label:** Short descriptor of button function 
+- **Leading icon (optional):** Should be included when the button has a clear action verb (e.g. Edit, Save, Delete)
+- **Label:** Utilizes sentence-casing (e.g. “New project”)
+- **Container:** Indicates the button's touch target
+- **Trailing icon (optional):** Typically used as a dropdown arrow
 
 ## Best practices
 - A layout should have one prominent button, the others should clearly be secondary 
-- Use sentence casing for all buttons 
+- Use sentence casing for all buttons (e.g. “New project”)
 - Maintain `verb` + `noun` syntax for labels (e.g. "Save profile" vs "save") 
 - Avoid generic messaging such as "Ok" 
 - Use 3 or fewer words for each button 
@@ -28,6 +30,28 @@ import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
 ## Stories 
 
 ### Primary
+
+- Very important actions that usually trigger a longer workflow.
+
+<Preview>
+  <Story id="design-system-button--primary" />
+</Preview>
+
+### Danger
+
+- Used to indicate destructive actions.
+
+<Preview>
+  <Story id="design-system-button--danger" />
+</Preview>
+
+### Warning
+
+- Currently only used for managing project drafts, but could potentially be used to indicate actions that need require special attention.
+
+<Preview>
+  <Story id="design-system-button--warning" />
+</Preview>
 
 ### Secondary
 
