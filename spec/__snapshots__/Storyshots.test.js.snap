@@ -6416,7 +6416,7 @@ exports[`Storyshots Design System/Selects/Single Custom Option With Checkbox 1`]
           aria-labelledby="select-label"
           className="css-62g3xt-dummyInput"
           disabled={false}
-          id="react-select-10-input"
+          id="react-select-11-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -6493,7 +6493,7 @@ exports[`Storyshots Design System/Selects/Single Custom Value Container 1`] = `
           aria-labelledby="select-label"
           className="css-62g3xt-dummyInput"
           disabled={false}
-          id="react-select-11-input"
+          id="react-select-12-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -6597,6 +6597,150 @@ exports[`Storyshots Design System/Selects/Single Default 1`] = `
             />
           </svg>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Selects/Single In Modal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ReactModal__Overlay ReactModal__Overlay--after-open"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="Select in Modal"
+      aria-modal={true}
+      className="ReactModal__Content ReactModal__Content--after-open SelectInModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="select-in-modal"
+          >
+            Select in modal
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        />
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <span>
+          A select inside a modal
+        </span>
+        <div
+          className="SingleSelect css-2b097c-container"
+          id="select-in-modal"
+          onKeyDown={[Function]}
+        >
+          <div
+            className=" css-15ub2n0-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <div
+              className=" css-g1d714-ValueContainer"
+            >
+              <div
+                className=" css-1269n2i-placeholder"
+              >
+                Select...
+              </div>
+              <input
+                aria-autocomplete="list"
+                aria-labelledby="select-label"
+                className="css-62g3xt-dummyInput"
+                disabled={false}
+                id="react-select-10-input"
+                onBlur={[Function]}
+                onChange={[Function]}
+                onFocus={[Function]}
+                readOnly={true}
+                tabIndex="0"
+                value=""
+              />
+            </div>
+            <div
+              className=" css-1hb7zxy-IndicatorsContainer"
+            >
+              <span
+                className=" css-43ykx9-indicatorSeparator"
+              />
+              <div
+                aria-hidden="true"
+                className=" css-7sl878-indicatorContainer"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="css-6q0nyr-Svg"
+                  focusable="false"
+                  height={20}
+                  viewBox="0 0 20 20"
+                  width={20}
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="btn btn-transparent"
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="btn btn-success"
+          type="submit"
+        >
+          Save
+        </button>
       </div>
     </div>
   </div>
@@ -19825,6 +19969,326 @@ exports[`Storyshots Design System/Table Table With Sticky Column And Header 1`] 
       </tr>
     </tbody>
   </table>
+</div>
+`;
+
+exports[`Storyshots Design System/Tabs Controlled 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div>
+    <span
+      className="sc-bdvvtL eGviLc"
+    >
+      <ul
+        className="nav nav-tabs"
+        onKeyDown={[Function]}
+        role="tablist"
+      >
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="controlled-tabpane-one"
+            aria-selected={true}
+            className="nav-link active"
+            data-rr-ui-event-key="one"
+            disabled={false}
+            id="controlled-tab-one"
+            onClick={[Function]}
+            role="tab"
+            type="button"
+          >
+            Tab One
+          </button>
+        </li>
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="controlled-tabpane-two"
+            className="nav-link"
+            data-rr-ui-event-key="two"
+            disabled={false}
+            id="controlled-tab-two"
+            onClick={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            Tab Two
+          </button>
+        </li>
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="controlled-tabpane-three"
+            className="nav-link"
+            data-rr-ui-event-key="three"
+            disabled={false}
+            id="controlled-tab-three"
+            onClick={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            Tab Three
+          </button>
+        </li>
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="controlled-tabpane-four"
+            aria-disabled={true}
+            className="nav-link disabled"
+            data-rr-ui-event-key="four"
+            disabled={true}
+            id="controlled-tab-four"
+            onClick={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            Tab Four (disabled)
+          </button>
+        </li>
+      </ul>
+      <div
+        className="tab-content"
+      >
+        <div
+          aria-labelledby="controlled-tab-one"
+          className="tab-pane active"
+          id="controlled-tabpane-one"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content One
+          </div>
+        </div>
+        <div
+          aria-labelledby="controlled-tab-two"
+          className="tab-pane"
+          id="controlled-tabpane-two"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content Two
+          </div>
+        </div>
+        <div
+          aria-labelledby="controlled-tab-three"
+          className="tab-pane"
+          id="controlled-tabpane-three"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content Three
+          </div>
+        </div>
+        <div
+          aria-labelledby="controlled-tab-four"
+          className="tab-pane"
+          id="controlled-tabpane-four"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content Four
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Tabs Uncontrolled 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div>
+    <span
+      className="sc-bdvvtL eGviLc"
+    >
+      <ul
+        className="nav nav-tabs"
+        onKeyDown={[Function]}
+        role="tablist"
+      >
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="uncontrolled-tabpane-one"
+            aria-selected={true}
+            className="nav-link active"
+            data-rr-ui-event-key="one"
+            disabled={false}
+            id="uncontrolled-tab-one"
+            onClick={[Function]}
+            role="tab"
+            type="button"
+          >
+            Tab One
+          </button>
+        </li>
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="uncontrolled-tabpane-two"
+            className="nav-link"
+            data-rr-ui-event-key="two"
+            disabled={false}
+            id="uncontrolled-tab-two"
+            onClick={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            Tab Two
+          </button>
+        </li>
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="uncontrolled-tabpane-three"
+            className="nav-link"
+            data-rr-ui-event-key="three"
+            disabled={false}
+            id="uncontrolled-tab-three"
+            onClick={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            Tab Three
+          </button>
+        </li>
+        <li
+          className="nav-item"
+          role="presentation"
+        >
+          <button
+            aria-controls="uncontrolled-tabpane-four"
+            aria-disabled={true}
+            className="nav-link disabled"
+            data-rr-ui-event-key="four"
+            disabled={true}
+            id="uncontrolled-tab-four"
+            onClick={[Function]}
+            role="tab"
+            tabIndex={-1}
+            type="button"
+          >
+            Tab Four (disabled)
+          </button>
+        </li>
+      </ul>
+      <div
+        className="tab-content"
+      >
+        <div
+          aria-labelledby="uncontrolled-tab-one"
+          className="tab-pane active"
+          id="uncontrolled-tabpane-one"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content One
+          </div>
+        </div>
+        <div
+          aria-labelledby="uncontrolled-tab-two"
+          className="tab-pane"
+          id="uncontrolled-tabpane-two"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content Two
+          </div>
+        </div>
+        <div
+          aria-labelledby="uncontrolled-tab-three"
+          className="tab-pane"
+          id="uncontrolled-tabpane-three"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content Three
+          </div>
+        </div>
+        <div
+          aria-labelledby="uncontrolled-tab-four"
+          className="tab-pane"
+          id="uncontrolled-tabpane-four"
+        >
+          <div
+            style={
+              Object {
+                "paddingTop": "20px",
+              }
+            }
+          >
+            Tab Content Four
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>
 </div>
 `;
 

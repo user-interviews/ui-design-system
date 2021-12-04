@@ -93,6 +93,15 @@ Runs the jest test suite
 ### `yarn lint`
 
 Runs ESLint to report on any style violations
+### Visual testing
+
+  1. Join BrowserStack (ask Brian for link)
+  1. Navigate to this project in percy [here](https://percy.io/f38ae9b9/ui-design-system)
+  1. Define `PERCY_TOKEN` in shell (the one from ui-design-system project)
+  1. `npx percy exec -- cypress run`
+  1. View results in percy.io / console
+
+> Note- we are on the free plan (5k images/month) so be mindful of the limit
 
 ### `yarn rs:link`
 
@@ -107,13 +116,16 @@ Trigger a production build when files are changed.
 Remove symlinked packages.
 ### Visual testing
 
-  1. Join BrowserStack (ask Brian for link)
-  1. Navigate to this project in percy [here](https://percy.io/f38ae9b9/ui-design-system)
-  1. Define `PERCY_TOKEN` in shell (the one from ui-design-system project)
-  1. `npx percy exec -- cypress run`
-  1. View results in percy.io / console
+  1. Join BrowserStack team (ask Brian/Bob for link)
+  1. Navigate to this project in [Percy](https://percy.io/f38ae9b9/ui-design-system)
 
-> Note- we are on the free plan (5k images/month) so be mindful of the limit
+  ## Local setup
+  1. Define `PERCY_TOKEN` ENV (the one from ui-design-system project found above)
+  1. Run `yarn storybook` in one tab
+  1. Run `npx percy exec -- cypress run` in another
+  1. View results in percy.io & console
+
+> Note- we are running this once a day via github actions.
 
 ## Pull requests
 
@@ -143,9 +155,33 @@ Once your pull request has been approved by all parties, you may begin the merge
 * Run `yarn test` to ensure tests are passing.
 * Click the Squash and merge button on your pull request and edit your commit message to a concise description of your changes.
 
-## Release steps
+## Release process
 
-This package uses [Semantic versioning](https://semver.org/), which requires version numbers in MAJOR.MINOR.PATCH format. Any breaking changes to the API require an update to the MAJOR version. Backwards compatible changes only require an update to the MINOR version. Hotfixes and patches need only update the PATCH version. Once you have commits ready to bundle you may begin the release process:
+This repository follows the [git flow release process](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
+* Each new feature branch uses develop as its parent branch and is merged back into develop upon completion.
+* Each new hotfix branch uses main as its parent branch and is merged directly into main.
+
+This package uses [Semantic versioning](https://semver.org/), which requires version numbers in MAJOR.MINOR.PATCH format. Any breaking changes to the API require an update to the MAJOR version. Backwards compatible changes only require an update to the MINOR version. Hotfixes and patches need only update the PATCH version.
+
+To create a new release off of the current develop:
+* Run the "Prepare release" github action which will
+  * Create a new release branch off of the latest develop and increment package.json
+  * Create a pull request of the release branch against main
+  * Create a pull request of the release branch against develop
+  * From there the developer can merge the PRs via github
+* Run the "Create new release" github action which will build the project and create a new release off of the latest main
+
+To create a patch release for a hotfix off the current main:
+* Run the "Prepare hotfix" github action which will
+  * Create a hotfix off the latest main and increment package.json
+  * Create a pull request of the hotfix branch against main
+  * Create a pull request of the release branch against develop
+  * From there the developer can merge the PRs via github
+* Run the "Create new release" github action which will build the project and create a new release off of the latest main
+
+## Manual Release steps
+
+If you are not able to or choose not to use the github actions described above, the following is the process to manually create a new release. Once you have commits ready to bundle you may begin the release process:
 * Update the "version" field in package.json.
 * Run `yarn build` to compile the source files and write out to the lib directory.
 * Run `npm pack` to archive all of the source files. Note: you can run `npm pack --dry-run` to see a list of files that will be included in the package. This is useful to double check a new component is being added or to see the size of the package/individual files.
