@@ -1,35 +1,70 @@
-import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Card from './Card';
 
-# Cards 
-Cards serve as containers to help group content on a page, and should always be placed over a background color of `$ux-gray-100` to maintain contrast against the page. 
+# Card
 
-<Preview>
+##
+
+<h4>
+	Cards serve as containers to help group content on a page.
+</h4>
+
+<Canvas>
   <Story id="design-system-card--default" />
-</Preview>
+</Canvas>
+
+### When to use 
+- Reason 1
+- Reason 2
+
+### When to not use
+- Reason 1
+- Reason 2
+
+## Props
 
 <ArgsTable of={Card} />
-
-## Anatomy
-
-- **Title:** Brief descriptor of overall card content
-- **Helper text:** Provided to the right of the header
-- **Subtitle:** Additional context for card content
-- **Divider line:** Creates visual separation between title and content 
-- **Width:** Card width is defined by, informed by the surrounding layout:
-	- `card-width`: 56rem
-	- `card-width-md`: 40rem
-	- `card-width-sm`: 32rem
-	- `card-width-xs`: 15rem 
-- **Padding:** Cards have a `padding`: 1.5rem by default 
-
-## Best practices
-- Content inside cards should be left-aligned. Deviations are left up to the designer's discretion. 
 
 ## Stories
 
 ### Default 
 
-<Preview>
+<Canvas>
   <Story id="design-system-card--default" />
-</Preview>
+</Canvas>
+
+## Formatting
+
+### States
+
+### Anatomy 
+
+- **Title:** Brief descriptor of overall card content
+- **Helper text:** Provided to the right of the header
+- **Subtitle:** Additional context for card content
+- **Divider line:** Creates visual separation between title and content 
+- **Padding:** Cards have a `padding`: 1.5rem by default 
+
+### Sizing
+
+- **Width:** Card width is defined by, informed by the surrounding layout:
+	- `card-width`: 56rem
+	- `card-width-md`: 40rem
+	- `card-width-sm`: 32rem
+	- `card-width-xs`: 15rem 
+
+### Alignment
+
+
+## Best practices
+
+### General
+
+- Content inside cards should generally be left-aligned. Deviations are left up to the designer's discretion.
+- Avoid using custom HTML elements for the Title, Subtitle, or Helper text unless explicitly told by a designer. Use designated props for these.
+
+### Behavior
+
+### Implementation
+
+### UX Copy

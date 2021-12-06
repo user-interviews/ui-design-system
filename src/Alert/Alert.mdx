@@ -1,31 +1,37 @@
 import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Alert from './Alert'
 
-# Alerts
+# Alert
 
-Alerts give users updates or changes to system status. Providing immediate feedback is important for
-building trust.  While alerts are a great way of communicating with users, they are disruptive and
-should be used cautiously.
+## 
+
+<h4>
+  Alerts give users updates or changes to system status. Providing immediate feedback is important for
+  building trust.  While alerts are a great way of communicating with users, they are disruptive and
+  should be used cautiously.
+</h4>
 
 <Canvas>
   <Story id="design-system-alert--success"/>
 </Canvas>
 
+### When to use 
+- Reason 1
+- Reason 2
+
+### When to not use
+- Reason 1
+- Reason 2
+
+## Props
+
 <ArgsTable of={Alert} />
-
-## Anatomy
-
-- **Icon:** Allow users to identify the type of alert at a glance
-- **Title:** Summary of alert topic 
-- **Message:** Provide details or actionable step for user
-- **CTA:** To provide more details, an action, or an escape so users can finish the task they were doing
-- **Close icon:** Closes the alert
 
 ## Stories
 
 ### Success
 
-- Used when something went as planned. (e.g. When you've saved your progress in the builder.)
+- Used when something went as planned.
 
 <Canvas>
   <Story id="design-system-alert--success" />
@@ -34,8 +40,7 @@ should be used cautiously.
 ### Info
 
 - Information that needs to be referenced often or is very important. These alerts are within the
-page and are not affected by an event, whereas success/error alerts are at the top of the page
-based on an event. These alerts will always be blue!
+page and are not affected by an event.
 
 <Canvas>
   <Story id="design-system-alert--info" />
@@ -43,9 +48,7 @@ based on an event. These alerts will always be blue!
 
 ### Error
 
-- Used when something did not go as planned, and action is needed to proceed. (e.g. If you leave
-the incentive field blank in the builder and try to launch, you receive an error. You must
-fill in the field to launch a project.)
+- Used when something did not go as planned, and action is needed to proceed.
 
 <Canvas>
   <Story id="design-system-alert--error" />
@@ -54,8 +57,7 @@ fill in the field to launch a project.)
 ### Warning
 
 - Messages used for general information on a more temporary level, not based on the user
-performing an action. (e.g For COVID, we show a yellow alert to encourage researcher to
-consult CDC guidelines for in person sessions.
+performing an action. 
 
 <Canvas>
   <Story id="design-system-alert--warning" />
@@ -106,3 +108,33 @@ Custom CTA via message prop
 <Canvas>
   <Story id="design-system-alert--with-call-to-action" />
 </Canvas>
+
+## Formatting
+
+### States
+
+### Anatomy 
+- **Icon:** Allow users to identify the type of alert at a glance
+- **Title:** Summary of alert topic 
+- **Message:** Provide details or actionable step for user
+- **CTA:** To provide more details, an action, or an escape so users can finish the task they were doing
+- **Close icon:** Closes the alert
+
+### Sizing
+
+### Alignment
+
+
+## Best practices
+
+### General
+
+- Alerts should be placed near their related items and embedded in the app. 
+- They should expand within their container. 
+- The width of inline alerts can vary depending on the content and layout.
+
+### Behavior
+
+### Implementation
+
+### UX Copy
