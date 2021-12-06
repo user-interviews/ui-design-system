@@ -108,7 +108,7 @@ In the project directory, you can run:
 
 ### `yarn storybook`
 
-Launches the Storybook server.<br />
+Launches the Storybook server.
 
 ### `yarn install`
 
