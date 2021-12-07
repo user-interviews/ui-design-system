@@ -21,6 +21,7 @@ const CreatableSelect = ({
   options,
   placeholder,
   size,
+  styles,
   value,
   onChange,
   ...props
@@ -43,6 +44,7 @@ const CreatableSelect = ({
     options={options}
     placeholder={placeholder}
     styles={{
+        ...styles,
         ...defaultStyles({ size }),
         menuPortal: (base) => (
           modal ?
@@ -73,6 +75,7 @@ CreatableSelect.propTypes = {
   options: PropTypes.arrayOf(PropTypes.object).isRequired,
   placeholder: PropTypes.string,
   size: PropTypes.oneOf(Object.values(SELECT_SIZES)),
+  styles: PropTypes.object,
   value: PropTypes.object,
 
   onChange: PropTypes.func.isRequired,
@@ -94,6 +97,7 @@ CreatableSelect.defaultProps = {
   name: undefined,
   placeholder: undefined,
   size: SELECT_SIZES.SMALL,
+  styles: {},
   value: undefined,
 };
 

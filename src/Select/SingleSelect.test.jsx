@@ -29,4 +29,21 @@ describe('SingleSelect', () => {
     expect(contentStyles).not.toContain('height');
     expect(contentStyles).not.toContain('minHeight');
   });
+
+  test('passing custom styles', () => {
+    const { root } = renderSelect({
+      styles: {
+        menu: (provided) => ({
+          ...provided,
+          minWidth: '8rem',
+        }),
+      },
+      size: null,
+    });
+
+    const { props } = root.findByType(Select);
+    const menuStyles = props.styles.menu();
+
+    expect(menuStyles).toMatchObject({ minWidth: '8rem' });
+  });
 });

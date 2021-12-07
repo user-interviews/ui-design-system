@@ -26,6 +26,7 @@ const AsyncSelect = ({
   noOptionsMessage,
   placeholder,
   size,
+  styles,
   value,
 
   onChange,
@@ -53,6 +54,7 @@ const AsyncSelect = ({
     placeholder={placeholder}
     shouldShowValue
     styles={{
+      ...styles,
       ...defaultStyles({ size }),
       menuPortal: (base) => (
         modal ?
@@ -88,6 +90,7 @@ AsyncSelect.propTypes = {
   noOptionsMessage: propTypes.func,
   placeholder: propTypes.string,
   size: propTypes.oneOf(Object.values(SELECT_SIZES)),
+  styles: propTypes.object,
   value: propTypes.object,
 
   onChange: propTypes.func,
@@ -112,6 +115,7 @@ AsyncSelect.defaultProps = {
   noOptionsMessage: undefined,
   placeholder: undefined,
   size: SELECT_SIZES.SMALL,
+  styles: {},
   value: undefined,
 
   onChange: undefined,

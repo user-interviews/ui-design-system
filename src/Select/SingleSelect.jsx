@@ -27,6 +27,7 @@ const SingleSelect = ({
   options,
   placeholder,
   size,
+  styles,
   value,
   onChange,
   ...props
@@ -51,6 +52,7 @@ const SingleSelect = ({
     options={options}
     placeholder={placeholder}
     styles={{
+      ...styles,
       ...defaultStyles({ size }),
       menuPortal: (base) => (
         modal ?
@@ -84,6 +86,7 @@ SingleSelect.propTypes = {
   options: propTypes.arrayOf(propTypes.object).isRequired,
   placeholder: propTypes.string,
   size: propTypes.oneOf(Object.values(SELECT_SIZES)),
+  styles: propTypes.object,
   value: propTypes.object,
 
   onChange: propTypes.func.isRequired,
@@ -108,6 +111,7 @@ SingleSelect.defaultProps = {
   name: undefined,
   placeholder: undefined,
   size: SELECT_SIZES.SMALL,
+  styles: {},
   value: undefined,
 };
 

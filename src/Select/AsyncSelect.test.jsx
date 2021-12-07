@@ -29,4 +29,21 @@ describe('AsyncSelect', () => {
     expect(contentStyles).not.toContain('height');
     expect(contentStyles).not.toContain('minHeight');
   });
+
+  test('passing custom styles', () => {
+    const { root } = renderAsync({
+      styles: {
+        menu: (provided) => ({
+          ...provided,
+          minWidth: '8rem',
+        }),
+      },
+      size: null,
+    });
+
+    const { props } = root.findByType(Async);
+    const menuStyles = props.styles.menu();
+
+    expect(menuStyles).toMatchObject({ minWidth: '8rem' });
+  });
 });
