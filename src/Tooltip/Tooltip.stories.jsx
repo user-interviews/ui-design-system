@@ -70,6 +70,14 @@ export const GrayIcon = () => (
   />
 );
 
+export const WithHover = () => (
+  <Tooltip
+    placement={radios('Placement', ['right', 'top', 'bottom', 'left', 'auto'], 'right')}
+    text={text('Tooltip Text', 'Default Tooltip')}
+    withHover
+  />
+);
+
 const trackingEvent = {
   event: 'test tracking event',
   eventData: { userId: 1 },
