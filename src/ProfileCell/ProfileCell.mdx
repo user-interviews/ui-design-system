@@ -1,44 +1,79 @@
-import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import ProfileCell from './ProfileCell';
 
 # Profile Cell
-Displays information about a user which can include an avatar, name, email, phone number, timezone (or other relevant pieces of information).
 
-<Preview>
+##
+
+<h4>
+  Displays information about a user which can include an avatar, name, email, phone number, timezone (or other relevant pieces of information).
+</h4>
+
+<Canvas>
   <Story id="design-system-profile-cell--small" />
-</Preview>
+</Canvas>
+
+### When to use 
+- Reason 1
+- Reason 2
+
+### When to not use
+- Reason 1
+- Reason 2
+
+
+## Props
 
 <ArgsTable of={ProfileCell} />
 
-## Anatomy
 
+## Stories 
+
+### Small
+- Typically contains one or two lines of information (e.g. name and email).
+
+<Canvas>
+  <Story id="design-system-profile-cell--small" />
+</Canvas>
+
+### Large
+- Can contain multiple lines of information (e.g. name, email, phone number, and timezone).
+
+<Canvas>
+  <Story id="design-system-profile-cell--large" />
+</Canvas>
+
+### With Image
+
+<Canvas>
+  <Story id="design-system-profile-cell--with-image" />
+</Canvas>
+
+
+## Formatting
+
+### States
+
+### Anatomy 
 - **Avatar:** Displays photo or initials of a user
 - **Name:** First and last name 
 - **Email** 
 - **Phone number** 
 - **Timezone** 
 
+### Sizing
+
+### Alignment
+
+
 ## Best practices
-- Content inside cards should be left-aligned. Deviations are left up to designer's discretion. 
 
-## Stories
+### General
 
-### Small
-- Typically contains one or two lines of information (e.g. name and email).
+### Behavior
 
-<Preview>
-  <Story id="design-system-profile-cell--small" />
-</Preview>
+### Implementation
 
-### Large
-- Can contain multiple lines of information (e.g. name, email, phone number, and timezone).
+### UX Copy
 
-<Preview>
-  <Story id="design-system-profile-cell--large" />
-</Preview>
-
-### With Image
-
-<Preview>
-  <Story id="design-system-profile-cell--with-image" />
-</Preview>
+## Anatomy

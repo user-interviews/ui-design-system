@@ -1,58 +1,88 @@
-import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Pill from './Pill';
 
 # Pill
-Represents an object that can be viewed with or without an icon. Useful when describing or categorizing a property.
 
-<Preview>
+##
+
+<h4>
+  Represents an object that can be viewed with or without an icon. Useful when describing or categorizing a property.
+</h4>
+
+<Canvas>
   <Story id="design-system-pill--default" />
-</Preview>
+</Canvas>
+
+### When to use 
+- Use to label, categorize, or organize items using keywords that describe them
+- Use to highlight an item's status for quick recognition 
+- Help users search for and find related content quickly and easily
+- Ideal to indicate meanings that users can learn and recognize across the app
+
+### When to not use
+- Reason 1
+- Reason 2
+
+## Props
 
 <ArgsTable of={Pill} />
 
-## Anatomy
-
-- **Content: ** main content area of the Pill. Can be provided plain text or a link (`<a>`) as `children`
-- **Icon: ** relevant icon that makes it easier for users to identify (always placed left of the Content)
-- **Close: ** users have the option to clear the pill (provided by default with the presence of the `onClose` function)
-
-## Best practices 
-
-- Use to label, categorize, or organize items using keywords that describe them
-- Help users search for and find related content quickly and easily
-- Use to highlight an item's status for quick recognition 
-- Ideal to indicate meanings that users can learn and recognize across the app
 
 ## Stories
 
 ### Default
 - The default Pill and available colors
-- Use the `PILL_COLORS` constant when setting the `color` prop
-- Can use either the `text` prop or provide an element via `children` for content. (Note: the `text` prop is planned to be retired in favor of `children` in a future release)
-- If using plain text or an element as the content via `children`, do not wrap in block-level elements (e.g. `<p>` or `div`) 
 
-<Preview>
+<Canvas>
   <Story id="design-system-pill--default" />
-</Preview>
+</Canvas>
 
 ### With Leading Icon
 - Import an icon that is most relevant to the text
 
-<Preview>
+<Canvas>
   <Story id="design-system-pill--with-leading-icon" />
-</Preview>
+</Canvas>
 
 ### With Close
 - For Pills that need to option to be closed 
 
-<Preview>
+<Canvas>
   <Story id="design-system-pill--with-close" />
-</Preview>
+</Canvas>
 
 ### With Link
 - For Pills that link to more information
 - The Pill accepts an `<a>` tag as a child
 
-<Preview>
+<Canvas>
   <Story id="design-system-pill--with-link" />
-</Preview>
+</Canvas>
+
+
+## Formatting
+
+### States
+
+### Anatomy 
+- **Content: ** main content area of the Pill. Can be provided plain text or a link (`<a>`) as `children`
+- **Icon: ** relevant icon that makes it easier for users to identify (always placed left of the Content)
+- **Close: ** users have the option to clear the pill (provided by default with the presence of the `onClose` function)
+
+### Sizing
+
+### Alignment
+
+
+## Best practices
+
+### General
+
+### Behavior
+
+### Implementation
+- Use the `PILL_COLORS` constant when setting the `color` prop
+- Can use either the `text` prop or provide an element via `children` for content. (Note: the `text` prop is planned to be retired in favor of `children` in a future release)
+- If using plain text or an element as the content via `children`, do not wrap in block-level elements (e.g. `<p>` or `div`) 
+
+### UX Copy

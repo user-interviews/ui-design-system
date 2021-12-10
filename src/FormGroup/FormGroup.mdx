@@ -1,78 +1,123 @@
-import { Story, Preview } from '@storybook/addon-docs/blocks';
+import { Story, ArgsTable, Canvas } from '@storybook/addon-docs/blocks';
+import FormGroup from './FormGroup';
 
-# Input Fields Anatomy
+# FormGroup
 
-Input fields let users enter and edit text. These are the variants available in the design system.
+##
 
-## Placeholder Text
+<h4>
+  The FormGroup component wraps a form control with proper spacing, along with support for a label, helper text, and validation state. 
+  Here we use an Input field as the form control.
+</h4>
+
+<Canvas>
+  <Story id="design-system-form-elements-form-group--default" />
+</Canvas>
+
+### When to use 
+- Reason 1
+- Reason 2
+
+### When to not use
+- Reason 1
+- Reason 2
+
+## Props
+
+<ArgsTable of={FormGroup} />
+
+## Stories
+
+### Default with placeholder
 
 - Used to give the user an idea of what sort text they should include here. Does not carry over as
  default text if no other text is added, so if left blank will produce an error.
 
-<Preview>
+<Canvas>
   <Story id="design-system-form-elements-form-group--default" />
-</Preview>
+</Canvas>
 
-## Helper Text
+### With Helper Text
 
 - Information tied to a field that gives suggestions or additional information that might
 be beneficial to the user
 
-<Preview>
+<Canvas>
   <Story id="design-system-form-elements-form-group--with-helper-text" />
-</Preview>
+</Canvas>
 
-## Required
+### Required
 
 - To indicate that a field is required, display "(Required)" next to the label
 - If some fields are required, indicate all required ones
 - If most fields are required, indicate optional fields by displaying "(Optional)" next to the label
 
-<Preview>
+<Canvas>
   <Story id="design-system-form-elements-form-group--required" />
-</Preview>
+</Canvas>
 
-## With Tooltip
+### With Label Tooltip
 
 - Information users will typically only reference once (and then it's learned) or here and there.
 This information is typically more of a recommendation, and not vital for the user to know, but
 helpful if they do!
 
-<Preview>
+<Canvas>
   <Story id="design-system-form-elements-form-group--with-label-tooltip" />
-</Preview>
+</Canvas>
 
-## Leading Icon
+### Leading Icon
 
-<Preview>
+<Canvas>
   <Story id="design-system-form-elements-form-group--with-leading-icon" />
-</Preview>
+</Canvas>
 
-## Trailing Icon
+### Trailing Icon
 
-<Preview>
+<Canvas>
   <Story id="design-system-form-elements-form-group--with-trailing-icon" />
-</Preview>
+</Canvas>
 
-## Trailing Icon with Button
+### Trailing Icon with Button
 
 - This has a trailing icon wrapped in a button you can pass an onClick function to.
 
-<Preview>
+<Canvas>
   <Story id="design-system-form-elements-form-group--with-trailing-icon-and-button" />
-</Preview>
+</Canvas>
 
-## Leading & Trailing Icons
+### Leading & Trailing Icons
 
-<Preview>
+<Canvas>
   <Story id="design-system-form-elements-form-group--with-leading-and-trailing-icons" />
-</Preview>
+</Canvas>
 
-## Error
+### Error
 
 - Keep the text as short as possible; for complex info, provide a link to more information
 in a new browser tab
 
-<Preview>
+<Canvas>
   <Story id="design-system-form-elements-form-group--with-errors" />
-</Preview>
+</Canvas>
+
+## Formatting
+
+### States
+
+### Anatomy 
+
+### Sizing
+
+### Alignment
+
+
+## Best practices
+
+### General
+
+### Behavior
+
+### Implementation
+
+### UX Copy

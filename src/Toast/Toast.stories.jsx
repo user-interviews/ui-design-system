@@ -2,6 +2,7 @@ import React from 'react';
 import { withKnobs, text, radios } from '@storybook/addon-knobs';
 
 import { MessageTypes } from 'src/Alert';
+import Button from 'src/Button';
 import { withToast, withToastPropTypes } from 'src/Toast';
 
 import '../../scss/global.scss';
@@ -17,7 +18,7 @@ const DummyComponent = ({
 }) => (
   <div>
     <p>Click the button to see a toast message.  Use the knobs to try different types!</p>
-    <button className="btn btn-primary" type="button" onClick={() => setToastMessage(type, message, action)}>Submit</button>
+    <Button variant="primary" onClick={() => setToastMessage(type, message, action)}>Submit</Button>
   </div>
   );
 DummyComponent.propTypes = withToastPropTypes;

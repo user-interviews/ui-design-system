@@ -1,0 +1,198 @@
+@import '../../scss/theme';
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+$primary: $ux-emerald-600;
+$danger: $ux-red;
+$warning: $ux-yellow-400; 
+
+.Button {
+  @include font-type-30--bold;
+
+  i, svg {
+    &.icon-left {
+      margin-right: $ux-spacing-20;
+    }
+  
+    &.icon-right {
+      margin-left: $ux-spacing-20;
+    }
+  }
+
+  &.btn-sm {
+    border-radius: $ux-border-radius;
+  }
+
+  &.btn-primary {
+    $btn-primary-background: $primary;
+    $btn-primary-border: $primary;
+    $btn-primary-color: $ux-white;
+    
+    $btn-primary-hover-background: $ux-emerald-700;
+    $btn-primary-hover-border: $ux-emerald-700;
+    $btn-primary-hover-color: $ux-white;
+    
+    $btn-primary-active-background: $ux-emerald-800;
+    $btn-primary-active-border: $ux-emerald-800;
+    $btn-primary-active-color: $ux-white;
+  
+    @include button-variant(
+      $btn-primary-background, 
+      $btn-primary-border,
+      $btn-primary-color,
+      
+      $btn-primary-hover-background,
+      $btn-primary-hover-border,
+      $btn-primary-hover-color,
+      
+      $btn-primary-active-background,
+      $btn-primary-active-border,
+      $btn-primary-active-color,
+    );
+  }
+
+  &.btn-outline-primary {
+    $btn-outline-primary-color: $primary;
+    $btn-outline-primary-color-hover: $ux-white;
+
+    $btn-outline-primary-hover-background: $ux-emerald-700;
+    $btn-outline-primary-hover-border: $ux-emerald-700;
+    $btn-outline-primary-hover-color: $ux-white;
+  
+    $btn-outline-primary-border: $primary;
+
+    $btn-outline-primary-active-background: $ux-emerald-800;
+    $btn-outline-primary-active-border-color: $ux-emerald-800;
+  
+    @include button-outline-variant(
+      $btn-outline-primary-color, 
+      $btn-outline-primary-color-hover,
+
+      $btn-outline-primary-hover-background,
+      $btn-outline-primary-hover-border,
+      $btn-outline-primary-hover-color,
+    );
+    border-color: $btn-outline-primary-border;
+
+    &:active {
+      background-color: $btn-outline-primary-active-background;
+      border-color: $btn-outline-primary-active-border-color;
+    }
+  }
+
+  &.btn-danger {
+    $btn-danger-background: $danger;
+    $btn-danger-border: $danger;
+    $btn-danger-color: $ux-white;
+    
+    $btn-danger-hover-background: $ux-red-600;
+    $btn-danger-hover-border: $ux-red-600;
+    $btn-danger-hover-color: $ux-white;
+    
+    $btn-danger-active-background: $ux-red-700;
+    $btn-danger-active-border: $ux-red-700;
+    $btn-danger-active-color: $ux-white;
+  
+    @include button-variant(
+      $btn-danger-background, 
+      $btn-danger-border,
+      $btn-danger-color,
+      
+      $btn-danger-hover-background,
+      $btn-danger-hover-border,
+      $btn-danger-hover-color,
+      
+      $btn-danger-active-background,
+      $btn-danger-active-border,
+      $btn-danger-active-color,
+    );
+  }
+  
+  &.btn-outline-danger {
+    $btn-outline-danger-color: $danger;
+    $btn-outline-danger-color-hover: $ux-white;
+
+    $btn-outline-danger-hover-background: $ux-red-600;
+    $btn-outline-danger-hover-border: $ux-red-600;
+    $btn-outline-danger-hover-color: $ux-white;
+  
+    $btn-outline-danger-border: $danger;
+
+    $btn-outline-danger-active-background: $ux-red-700;
+    $btn-outline-danger-active-border-color: $ux-red-700;
+  
+    @include button-outline-variant(
+      $btn-outline-danger-color, 
+      $btn-outline-danger-color-hover,
+
+      $btn-outline-danger-hover-background,
+      $btn-outline-danger-hover-border,
+      $btn-outline-danger-hover-color,
+    );
+    border-color: $btn-outline-danger-border;
+
+    &:active {
+      background-color: $btn-outline-danger-active-background;
+      border-color: $btn-outline-danger-active-border-color;
+    }
+  }
+  
+  &.btn-warning {
+    $btn-warning-background: $warning;
+    $btn-warning-border: $warning;
+    $btn-warning-color: $ux-yellow-900;
+    
+    $btn-warning-hover-background: $ux-yellow-500;
+    $btn-warning-hover-border: $ux-yellow-500;
+    $btn-warning-hover-color: $ux-yellow-900;
+    
+    $btn-warning-active-background: $ux-yellow-600;
+    $btn-warning-active-border: $ux-yellow-600;
+    $btn-warning-active-color: $ux-yellow-900;
+  
+    @include button-variant(
+      $btn-warning-background, 
+      $btn-warning-border,
+      $btn-warning-color,
+      
+      $btn-warning-hover-background,
+      $btn-warning-hover-border,
+      $btn-warning-hover-color,
+      
+      $btn-warning-active-background,
+      $btn-warning-active-border,
+      $btn-warning-active-color,
+    );
+  }
+  
+  &.btn-outline-warning {
+    $btn-outline-warning-color: $ux-yellow-900;
+    $btn-outline-warning-color-hover: $ux-yellow-900;
+
+    $btn-outline-warning-hover-background: $warning;
+    $btn-outline-warning-hover-border: $warning;
+    $btn-outline-warning-hover-color: $ux-yellow-900;
+  
+    $btn-outline-warning-border: $ux-yellow-500;
+
+    $btn-outline-warning-active-background: $ux-yellow-500;
+    $btn-outline-warning-active-border-color: $ux-yellow-500;
+  
+    @include button-outline-variant(
+      $btn-outline-warning-color, 
+      $btn-outline-warning-color-hover,
+
+      $btn-outline-warning-hover-background,
+      $btn-outline-warning-hover-border,
+      $btn-outline-warning-hover-color,
+    );
+    border-color: $btn-outline-warning-border;
+
+    &:active {
+      background-color: $btn-outline-warning-active-background;
+      border-color: $btn-outline-warning-active-border-color;
+    }
+  }
+}

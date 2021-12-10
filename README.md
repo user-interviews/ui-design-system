@@ -54,7 +54,35 @@ Keeping the design system relevant is important for consistency in our app. Core
 
 - For every component, we typically separate each variant out into its own story that gets exported.
 - Documentation lives in `Component.mdx` which references stories defined in `Component.stories.jsx`. See documentation style here in [Stories with arbitrary MDX](https://github.com/storybookjs/storybook/blob/master/addons/docs/docs/recipes.md#csf-stories-with-arbitrary-mdx).
-- See our [Storybook Notion Doc](https://www.notion.so/userinterviews1/Storybook-9a3585db57514ec783e39c78518ad5e6) for examples.
+- See our [Storybook Notion Doc](https://www.notion.so/userinterviews1/Storybook-9a3585db57514ec783e39c78518ad5e6) for examples. You can find our current documentation template that we try to follow for all of our `mdx` files in that Notion doc. 
+
+## Who can update documentation?
+
+- Anyone! We encourage all contributors to the Design System (engineers, designers, product) to add to our documentation. 
+
+## Steps to update any documentation file
+
+After cloning the repo, obtain a `.npmrc` file from another developer. This file contains authorization tokens for any private
+node packages.
+
+### `git checkout -b chore/UIDS-###-update-some-component-documentation`
+
+In your terminal, check out a new branch locally for you to make changes. You should have a Github issue to track that corresponds to the branch name. 
+
+### `yarn install`
+
+Installs all yarn dependencies
+
+### `yarn storybook`
+
+Launches the Storybook server.<br />
+
+- In the code editor of your choice, navigate to the Component library found under src `ui-design-system/src` 
+- Open any `Component.mdx` file (e.g. `Alert.mdx`) that you want to edit. These are markdown files. See [markdown docs](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for additional how-to.
+- While Storybook is running, you should be able to view any changes you make to the `mdx` file after saving your changes. 
+- Push your changes to Github and submit for a review / pull request. 
+
+If you need any help with setup or have questions about the process of writing documentation, feel free to reach out to a developer or a member of the Design System team. 
 
 # Future additions to this document
 
@@ -80,7 +108,7 @@ In the project directory, you can run:
 
 ### `yarn storybook`
 
-Launches the Storybook server.<br />
+Launches the Storybook server.
 
 ### `yarn install`
 

@@ -1,46 +1,84 @@
-import { ArgsTable, Story, Preview } from '@storybook/addon-docs/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Avatar from './Avatar';
 
 # Avatar
-Displays a user's initials or profile photo.
 
-<Preview>
+##
+
+<h4>
+  Displays a user's initials or profile photo.
+</h4>
+
+<Canvas>
   <Story id="design-system-avatar--small" />
-</Preview>
+</Canvas>
+
+### When to use 
+- Reason 1
+- Reason 2
+
+### When to not use
+- Reason 1
+- Reason 2
+
+## Props
 
 <ArgsTable of={Avatar} />
-
-## Anatomy
-
-- **Initials: ** first name and last name 
-- **Image: ** profile photo
-
-## Best practices 
-
-- TBD
 
 ## Stories
 
 ### Small
 
-<Preview>
+- The most common size for the Avatar.
+
+<Canvas>
   <Story id="design-system-avatar--small" />
-</Preview>
+</Canvas>
 
 ### Large
 
-<Preview>
+- Use when more space allows in a layout, especially to provide more emphasis -- for example, a profile page.
+
+<Canvas>
   <Story id="design-system-avatar--large" />
-</Preview>
+</Canvas>
 
 ### With Alert
 
-<Preview>
+- Usually used within the context of a new message.
+- Helps instruct the user to click the Avatar to reveal some new information about that specific user.
+
+<Canvas>
   <Story id="design-system-avatar--with-alert" />
-</Preview>
+</Canvas>
 
 ### With Image
 
-<Preview>
+- Typically used when an image url is provided from a social media profile (e.g. LinkedIn or Facebook)
+
+<Canvas>
   <Story id="design-system-avatar--with-image" />
-</Preview>
+</Canvas>
+
+## Formatting
+
+### States
+
+### Anatomy 
+- **Initials: ** First name and Last name 
+- **Image: ** profile photo
+
+### Sizing
+
+### Alignment
+
+
+## Best practices
+
+### General
+
+### Behavior
+
+### Implementation
+
+### UX Copy

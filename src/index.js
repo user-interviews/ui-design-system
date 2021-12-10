@@ -1,4 +1,5 @@
 import { Alert, MessageTypes } from 'src/Alert';
+import Button from 'src/Button';
 import Avatar from 'src/Avatar';
 import Card, { CardSizes } from 'src/Card';
 import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
@@ -36,6 +37,10 @@ import {
 } from 'src/Select';
 import { colors as COLORS } from 'src/Styles';
 import {
+  Tab,
+  Tabs,
+} from 'src/Tabs';
+import {
   Table,
   TableBody,
   TableCell,
@@ -56,6 +61,7 @@ export {
   Alert,
   Avatar,
   AsyncSelect,
+  Button,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
   CardSizes,
@@ -89,6 +95,8 @@ export {
   RadioButtonGroup,
   SELECT_SIZES,
   SingleSelect,
+  Tab,
+  Tabs,
   Table,
   TableBody,
   TableCell,
