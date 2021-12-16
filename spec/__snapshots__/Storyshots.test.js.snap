@@ -2739,6 +2739,86 @@ exports[`Storyshots Design System/Copy To Clipboard Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Dropdown Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      className="DropdownToggle dropdown-toggle btn btn-primary"
+      disabled={false}
+      id="react-aria3260709500-1"
+      onClick={[Function]}
+      type="button"
+    >
+      Dropdown toggle
+    </button>
+  </div>
+  <br />
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      className="DropdownToggle dropdown-toggle btn btn-outline-primary"
+      disabled={false}
+      id="react-aria3260709500-2"
+      onClick={[Function]}
+      type="button"
+    >
+      Dropdown toggle
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Dropdown Sizes 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      className="DropdownToggle dropdown-toggle btn btn-outline-primary btn-sm"
+      disabled={false}
+      id="react-aria3260709500-3"
+      onClick={[Function]}
+      type="button"
+    >
+      Small toggle
+    </button>
+  </div>
+  <br />
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      className="DropdownToggle dropdown-toggle btn btn-outline-primary btn-md"
+      disabled={false}
+      id="react-aria3260709500-4"
+      onClick={[Function]}
+      type="button"
+    >
+      Medium toggle
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Form Default 1`] = `
 <div
   style={
