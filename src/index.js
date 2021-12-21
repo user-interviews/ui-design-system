@@ -29,9 +29,11 @@ import RadioButton from 'src/RadioButton';
 import RadioButtonGroup from 'src/RadioButtonGroup';
 import {
   AsyncSelect,
+  AsyncCreatableSelect,
   CreatableSelect,
   Option,
   SELECT_SIZES,
+  SelectComponents,
   SingleSelect,
   ValueContainer,
 } from 'src/Select';
@@ -61,6 +63,7 @@ export {
   Alert,
   Avatar,
   AsyncSelect,
+  AsyncCreatableSelect,
   Button,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
@@ -94,6 +97,7 @@ export {
   RadioButton,
   RadioButtonGroup,
   SELECT_SIZES,
+  SelectComponents,
   SingleSelect,
   Tab,
   Tabs,
