@@ -1,0 +1,10 @@
+@import '../../scss/theme';
+
+.DropdownIconToggle {
+  all: unset;
+  color: $ux-blue-500;
+  
+  &:hover {
+    color: $ux-blue-600;
+  }
+}

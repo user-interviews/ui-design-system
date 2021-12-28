@@ -1,8 +1,9 @@
 import React from 'react';
 
 import {
- Dropdown, DropdownToggle, DropdownItem, DropdownMenu,
+ Dropdown, DropdownToggle, DropdownItem, DropdownMenu, DropdownIconToggle,
 } from 'src/Dropdown';
+import { faFileAlt } from '@fortawesome/pro-regular-svg-icons';
 
 import mdx from './Dropdown.mdx';
 
@@ -22,7 +23,7 @@ export default {
 export const Default = () => (
   <>
     <Dropdown>
-      <DropdownToggle variant="primary">
+      <DropdownToggle leadingIcon={faFileAlt} variant="primary">
         Dropdown toggle
       </DropdownToggle>
       <DropdownMenu>
@@ -33,7 +34,7 @@ export const Default = () => (
     </Dropdown>
     <br />
     <Dropdown>
-      <DropdownToggle variant="outline-primary">
+      <DropdownToggle leadingIcon={faFileAlt} variant="outline-primary">
         Dropdown toggle
       </DropdownToggle>
       <DropdownMenu>
@@ -62,6 +63,19 @@ export const Sizes = () => (
       <DropdownToggle size="md" variant="outline-primary">
         Medium toggle
       </DropdownToggle>
+      <DropdownMenu>
+        <DropdownItem href="#">Action</DropdownItem>
+        <DropdownItem href="#">Another action</DropdownItem>
+        <DropdownItem href="#">Click me</DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </>
+);
+
+export const Icon = () => (
+  <>
+    <Dropdown>
+      <DropdownToggle as={DropdownIconToggle} />
       <DropdownMenu>
         <DropdownItem href="#">Action</DropdownItem>
         <DropdownItem href="#">Another action</DropdownItem>

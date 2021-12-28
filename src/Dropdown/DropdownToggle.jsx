@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { Dropdown as RBDropdown } from 'react-bootstrap';
 
 import './DropdownToggle.scss';
@@ -12,6 +14,7 @@ const DropdownToggle = ({
   children,
   className,
   id,
+  leadingIcon,
   ...props
 }) => (
   <RBDropdown.Toggle
@@ -21,6 +24,7 @@ const DropdownToggle = ({
     id={id}
     {...props}
   >
+    { leadingIcon && (<FontAwesomeIcon className="icon-left" icon={leadingIcon} />)}
     { children }
   </RBDropdown.Toggle>
   );
@@ -45,6 +49,7 @@ DropdownToggle.propTypes = {
     An html id attribute, necessary for assistive technologies, such as screen readers.
   */
   id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  leadingIcon: PropTypes.object,
 };
 
 DropdownToggle.defaultProps = {
@@ -54,6 +59,7 @@ DropdownToggle.defaultProps = {
   childBsPrefix: undefined,
   children: undefined,
   id: undefined,
+  leadingIcon: undefined,
 };
 
 export default DropdownToggle;
