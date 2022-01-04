@@ -18,20 +18,21 @@ const Form = forwardRef(({
 }, ref) => {
   const hasMethod = method != null;
   const hasCSRF = CSRFParam && CSRFToken;
+  const isGetFormMethod = method === 'GET';
 
   return (
     <form
       action={action}
       className={classNames('Form', className)}
       id={id}
-      method="POST"
+      method={isGetFormMethod ? 'GET' : 'POST'}
       multipart={multipart}
       name={name}
       ref={ref}
       onSubmit={onSubmit}
     >
-      { hasCSRF && <input name={CSRFParam} type="hidden" value={CSRFToken} /> }
-      { hasMethod && <input name="_method" type="hidden" value={method} /> }
+      { hasCSRF && !isGetFormMethod && <input name={CSRFParam} type="hidden" value={CSRFToken} /> }
+      { hasMethod && !isGetFormMethod && <input name="_method" type="hidden" value={method} /> }
       {children}
     </form>
   );
