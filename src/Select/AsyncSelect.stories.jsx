@@ -5,6 +5,9 @@ import AsyncSelect from 'src/Select/AsyncSelect';
 export default {
   title: 'Design System/Selects/Async',
   component: AsyncSelect,
+  parameters: {
+    a11y: {},
+  },
 };
 
 const options = [

@@ -5,6 +5,9 @@ import CreatableSelect from 'src/Select/CreatableSelect';
 export default {
   title: 'Design System/Selects/Creatable',
   component: CreatableSelect,
+  parameters: {
+    a11y: {},
+  }
 };
 
 const options = [

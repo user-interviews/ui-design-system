@@ -10,6 +10,9 @@ export default {
   title: 'Design System/Form Elements/Form Control Label',
   component: FormControlLabel,
   decorators: [withKnobs()],
+  parameters: {
+    a11y: {},
+  },
 };
 
 const FormControlLabelControlComponent = (props) => {

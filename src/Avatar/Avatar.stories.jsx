@@ -12,6 +12,7 @@ export default {
     docs: {
       page: mdx,
     },
+    a11y: {},
   },
 };
 

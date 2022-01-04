@@ -7,6 +7,9 @@ export default {
   title: 'Design System/Copy To Clipboard Button',
   component: CopyToClipboardButton,
   decorators: [withKnobs({ escapeHTML: false })],
+  parameters: {
+    a11y: {},
+  },
 };
 
 export const Default = () => (

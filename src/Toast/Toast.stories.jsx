@@ -11,6 +11,9 @@ export default {
   title: 'Design System/Toast',
   component: withToast,
   decorators: [withKnobs],
+  parameters: {
+    a11y: {},
+  },
 };
 
 const DummyComponent = ({
