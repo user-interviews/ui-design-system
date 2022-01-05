@@ -32,7 +32,6 @@ const DropdownIconToggle = React.forwardRef(({
 DropdownIconToggle.propTypes = {
   ariaLabel: PropTypes.string,
   ariaLabelledBy: PropTypes.string,
-  children: PropTypes.node,
   icon: PropTypes.object,
   onClick: PropTypes.func,
 };
@@ -40,7 +39,6 @@ DropdownIconToggle.propTypes = {
 DropdownIconToggle.defaultProps = {
   ariaLabel: undefined,
   ariaLabelledBy: undefined,
-  children: undefined,
   icon: faEllipsisV,
   onClick: undefined,
 };

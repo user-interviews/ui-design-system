@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import { Dropdown as RBDropdown } from 'react-bootstrap';
-import {
-  DROPDOWN_MENU_ALIGN_TYPE,
-  DROPDOWN_MENU_ROOT_CLOSE_EVENT,
-} from './DropdownMenu.types';
+import { DROPDOWN_ALIGN_PROP_TYPE } from './Dropdown.types';
 
 const DropdownMenu = ({
   align,
@@ -48,7 +45,7 @@ DropdownMenu.propTypes = {
     The alignment direction will affect the specified breakpoint or larger.
     Note: Using responsive alignment will disable Popper usage for positioning.
    */
-  align: PropTypes.oneOf(DROPDOWN_MENU_ALIGN_TYPE),
+  align: DROPDOWN_ALIGN_PROP_TYPE,
   /**
     You can use a custom element type for this component.
    */
@@ -58,7 +55,6 @@ DropdownMenu.propTypes = {
    This is an escape hatch for working with heavily customized bootstrap css.
    */
   bsPrefix: PropTypes.string,
-  children: PropTypes.node,
   className: PropTypes.string,
   /**
     Have the dropdown switch to it's opposite placement when necessary to stay on screen.
@@ -78,7 +74,9 @@ DropdownMenu.propTypes = {
    <RootCloseWrapper> in your custom dropdown menu component (similarly to how it is implemented in
     <Dropdown.Menu>).
     */
-  rootCloseEvent: PropTypes.oneOf(DROPDOWN_MENU_ROOT_CLOSE_EVENT),
+  rootCloseEvent: PropTypes.oneOf([
+    'click', 'mousedown',
+  ]),
    /**
     Controls the visibility of the Dropdown menu.
     */
@@ -94,7 +92,6 @@ DropdownMenu.defaultProps = {
   align: undefined,
   as: undefined,
   className: undefined,
-  children: undefined,
   flip: true,
   onSelect: undefined,
   popperConfig: undefined,

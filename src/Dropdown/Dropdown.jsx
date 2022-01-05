@@ -3,10 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Dropdown as RBDropdown } from 'react-bootstrap';
 import {
-  DROPDOWN_ALIGN_TYPE,
-  DROPDOWN_AUTO_CLOSE_TYPE,
-  DROPDOWN_DROP_TYPE,
-  DROPDOWN_FOCUS_FIRST_ITEM_ON_SHOW_TYPE,
+  DROPDOWN_ALIGN_PROP_TYPE,
 } from './Dropdown.types';
 
 const Dropdown = ({
@@ -51,7 +48,7 @@ Dropdown.propTypes = {
     The alignment direction will affect the specified breakpoint or larger.
     Note: Using responsive alignment will disable Popper usage for positioning.
    */
-  align: PropTypes.oneOf(DROPDOWN_ALIGN_TYPE),
+  align: DROPDOWN_ALIGN_PROP_TYPE,
   /**
     You can use a custom element type for this component.
    */
@@ -60,18 +57,21 @@ Dropdown.propTypes = {
     Controls the auto close behaviour of the dropdown when clicking
     outside of the button or the list.
    */
-  autoClose: PropTypes.oneOf(DROPDOWN_AUTO_CLOSE_TYPE),
+  autoClose: PropTypes.oneOf([
+    true, false, 'outside', 'inside',
+  ]),
   /**
    Change the underlying component CSS base class name and modifier class names prefix.
    This is an escape hatch for working with heavily customized bootstrap css.
    */
   bsPrefix: PropTypes.string,
-  children: PropTypes.node,
   /**
    Determines the direction and location of the Menu in relation to it's Toggle.
    */
   className: PropTypes.string,
-  drop: PropTypes.oneOf(DROPDOWN_DROP_TYPE),
+  drop: PropTypes.oneOf([
+    'up', 'start', 'end', 'down',
+  ]),
   /**
     Allow Dropdown to flip in case of an overlapping on the reference element.
     For more information refer to Popper.js's flip docs.
@@ -85,7 +85,9 @@ Dropdown.propTypes = {
     The Default behavior is false unless the Menu has a role="menu" where it will default to
     keyboard to match the recommended ARIA Authoring practices.
    */
-  focusFirstItemOnShow: PropTypes.oneOf(DROPDOWN_FOCUS_FIRST_ITEM_ON_SHOW_TYPE),
+  focusFirstItemOnShow: PropTypes.oneOf([
+    false, true, 'keyboard',
+  ]),
   navbar: PropTypes.bool,
   /**
    Whether or not the Dropdown is visible.
@@ -110,7 +112,6 @@ Dropdown.defaultProps = {
   autoClose: true,
   bsPrefix: 'dropdown',
   className: undefined,
-  children: undefined,
   drop: undefined,
   flip: undefined,
   focusFirstItemOnShow: undefined,

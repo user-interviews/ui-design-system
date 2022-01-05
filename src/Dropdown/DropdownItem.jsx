@@ -47,7 +47,6 @@ DropdownItem.propTypes = {
    This is an escape hatch for working with heavily customized bootstrap css.
    */
   bsPrefix: PropTypes.string,
-  children: PropTypes.node,
   className: PropTypes.string,
   /**
     Disable the menu item, making it unselectable.
@@ -72,7 +71,6 @@ DropdownItem.defaultProps = {
   as: undefined,
   bsPrefix: 'dropdown-item',
   className: undefined,
-  children: undefined,
   disabled: false,
   eventKey: undefined,
   href: undefined,

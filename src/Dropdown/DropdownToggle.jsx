@@ -43,7 +43,6 @@ DropdownToggle.propTypes = {
     To pass through to the underlying button or whatever from DropdownButton
   */
   childBsPrefix: PropTypes.string,
-  children: PropTypes.node,
   className: PropTypes.string,
   /**
     An html id attribute, necessary for assistive technologies, such as screen readers.
@@ -57,7 +56,6 @@ DropdownToggle.defaultProps = {
   bsPrefix: 'dropdown-toggle',
   className: undefined,
   childBsPrefix: undefined,
-  children: undefined,
   id: undefined,
   leadingIcon: undefined,
 };

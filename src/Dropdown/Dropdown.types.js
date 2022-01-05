@@ -1,20 +1,13 @@
-export const DROPDOWN_ALIGN_TYPE = [
-  'start', 'end',
-  { sm: 'start' || 'end' },
-  { md: 'start' || 'end' },
-  { lg: 'start' || 'end' },
-  { xl: 'start' || 'end' },
-  { xxl: 'start' || 'end' },
-];
+import PropTypes from 'prop-types';
 
-export const DROPDOWN_AUTO_CLOSE_TYPE = [
-  true, false, 'outside', 'inside',
-];
+const alignDirection = PropTypes.oneOf(['start', 'end']);
 
-export const DROPDOWN_DROP_TYPE = [
-  'up', 'start', 'end', 'down',
-];
-
-export const DROPDOWN_FOCUS_FIRST_ITEM_ON_SHOW_TYPE = [
-  false, true, 'keyboard',
-];
+// PropType for 'align' prop can be reused for both Dropdown and DropdownMenu components
+export const DROPDOWN_ALIGN_PROP_TYPE = PropTypes.oneOfType([
+  alignDirection,
+  PropTypes.shape({ sm: alignDirection }),
+  PropTypes.shape({ md: alignDirection }),
+  PropTypes.shape({ lg: alignDirection }),
+  PropTypes.shape({ xl: alignDirection }),
+  PropTypes.shape({ xxl: alignDirection }),
+]);
