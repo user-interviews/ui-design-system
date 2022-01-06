@@ -78,7 +78,7 @@ module.exports = {
   // A map from regular expressions to module names that allow to stub out resources with a single module
   moduleNameMapper: {
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|mdx)$": "<rootDir>/spec/__mocks__/fileMock.js",
-    '\\.(css|less|scss)$': '<rootDir>/spec/__mocks__/styleMock.js',
+    '\\.(?:(?!variables).)+.(css|less|scss)$': '<rootDir>/spec/__mocks__/styleMock.js',
     '^src/([^\\.]*)$': "<rootDir>/src/$1",
   },
 
@@ -136,7 +136,7 @@ module.exports = {
   // snapshotSerializers: [],
 
   // The test environment that will be used for testing
-  // testEnvironment: "jest-environment-jsdom",
+   testEnvironment: "jest-environment-jsdom",
 
   // Options that will be passed to the testEnvironment
   // testEnvironmentOptions: {},
@@ -171,6 +171,11 @@ module.exports = {
 
   // A map from regular expressions to paths to transformers
   // transform: null,
+  "transform": {
+    "^.+\\.(js|jsx|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
+    // transform exported scss variables for use in javascript
+    "variables.scss$": "<rootDir>/node_modules/jest-css-modules-transform"
+  },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   // transformIgnorePatterns: [

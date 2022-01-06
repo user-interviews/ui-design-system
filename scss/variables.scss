@@ -1,0 +1,127 @@
+@import './colors/palette';
+
+:export {
+  UX_BLACK: $ux-black;
+  UX_BLUE: $ux-blue;
+  UX_CREAM: $ux-cream;
+  UX_EMERALD: $ux-emerald;
+  UX_GRAY: $ux-gray;
+  UX_GREEN: $ux-green;
+  UX_NAVY: $ux-navy;
+  UX_ORANGE: $ux-orange;
+  UX_PURPLE: $ux-purple;
+  UX_RED: $ux-red;
+  UX_SAND: $ux-sand;
+  UX_TEAL: $ux-teal;
+  UX_YELLOW: $ux-yellow;
+  UX_WHITE: $ux-white;
+  UX_BLUE_100: $ux-blue-100;
+  UX_BLUE_200: $ux-blue-200;
+  UX_BLUE_300: $ux-blue-300;
+  UX_BLUE_400: $ux-blue-400;
+  UX_BLUE_500: $ux-blue;
+  UX_BLUE_600: $ux-blue-600;
+  UX_BLUE_700: $ux-blue-700;
+  UX_BLUE_800: $ux-blue-800;
+  UX_BLUE_900: $ux-blue-900;
+
+  UX_EMERALD_100: $ux-emerald-100;
+  UX_EMERALD_200: $ux-emerald-200;
+  UX_EMERALD_300: $ux-emerald-300;
+  UX_EMERALD_400: $ux-emerald-400;
+  UX_EMERALD_500: $ux-emerald;
+  UX_EMERALD_600: $ux-emerald-600;
+  UX_EMERALD_700: $ux-emerald-700;
+  UX_EMERALD_800: $ux-emerald-800;
+  UX_EMERALD_900: $ux-emerald-900;
+
+  UX_GRAY_100: $ux-gray-100;
+  UX_GRAY_200: $ux-gray-200;
+  UX_GRAY_300: $ux-gray-300;
+  UX_GRAY_400: $ux-gray-400;
+  UX_GRAY_500: $ux-gray;
+  UX_GRAY_600: $ux-gray-600;
+  UX_GRAY_700: $ux-gray-700;
+  UX_GRAY_800: $ux-gray-800;
+  UX_GRAY_900: $ux-gray-900;
+
+  UX_GREEN_100: $ux-green-100;
+  UX_GREEN_200: $ux-green-200;
+  UX_GREEN_300: $ux-green-300;
+  UX_GREEN_400: $ux-green-400;
+  UX_GREEN_500: $ux-green;
+  UX_GREEN_600: $ux-green-600;
+  UX_GREEN_700: $ux-green-700;
+  UX_GREEN_800: $ux-green-800;
+  UX_GREEN_900: $ux-green-900;
+
+  UX_NAVY_100: $ux-navy-100;
+  UX_NAVY_200: $ux-navy-200;
+  UX_NAVY_300: $ux-navy-300;
+  UX_NAVY_400: $ux-navy-400;
+  UX_NAVY_500: $ux-navy;
+  UX_NAVY_600: $ux-navy-600;
+  UX_NAVY_700: $ux-navy-700;
+  UX_NAVY_800: $ux-navy-800;
+  UX_NAVY_900: $ux-navy-900;
+
+  UX_NEUTRAL_100: $ux-white;
+  UX_NEUTRAL_200: $ux-cream;
+  UX_NEUTRAL_300: $ux-neutral-300;
+  UX_NEUTRAL_400: $ux-neutral-400;
+  UX_NEUTRAL_500: $ux-neutral-500;
+  UX_NEUTRAL_600: $ux-neutral-600;
+  UX_NEUTRAL_700: $ux-neutral-700;
+  UX_NEUTRAL_800: $ux-neutral-800;
+  UX_NEUTRAL_900: $ux-black;
+
+  UX_ORANGE_100: $ux-orange-100;
+  UX_ORANGE_200: $ux-orange-200;
+  UX_ORANGE_300: $ux-orange-300;
+  UX_ORANGE_400: $ux-orange-400;
+  UX_ORANGE_500: $ux-orange;
+  UX_ORANGE_600: $ux-orange-600;
+  UX_ORANGE_700: $ux-orange-700;
+  UX_ORANGE_800: $ux-orange-800;
+  UX_ORANGE_900: $ux-orange-900;
+
+  UX_RED_100: $ux-red-100;
+  UX_RED_200: $ux-red-200;
+  UX_RED_300: $ux-red-300;
+  UX_RED_400: $ux-red-400;
+  UX_RED_500: $ux-red;
+  UX_RED_600: $ux-red-600;
+  UX_RED_700: $ux-red-700;
+  UX_RED_800: $ux-red-800;
+  UX_RED_900: $ux-red-900;
+
+  UX_SAND_100: $ux-sand-100;
+  UX_SAND_200: $ux-sand-200;
+  UX_SAND_300: $ux-sand-300;
+  UX_SAND_400: $ux-sand-400;
+  UX_SAND_500: $ux-sand;
+  UX_SAND_600: $ux-sand-600;
+  UX_SAND_700: $ux-sand-700;
+  UX_SAND_800: $ux-sand-800;
+  UX_SAND_900: $ux-sand-900;
+
+  UX_TEAL_100: $ux-teal-100;
+  UX_TEAL_200: $ux-teal-200;
+  UX_TEAL_300: $ux-teal-300;
+  UX_TEAL_400: $ux-teal-400;
+  UX_TEAL_500: $ux-teal-500;
+  UX_TEAL_600: $ux-teal-600;
+  UX_TEAL_700: $ux-teal;
+  UX_TEAL_800: $ux-teal-800;
+  UX_TEAL_900: $ux-teal-900;
+
+  UX_YELLOW_100: $ux-yellow-100;
+  UX_YELLOW_200: $ux-yellow-200;
+  UX_YELLOW_300: $ux-yellow-300;
+  UX_YELLOW_400: $ux-yellow-400;
+  UX_YELLOW_500: $ux-yellow;
+  UX_YELLOW_600: $ux-yellow-600;
+  UX_YELLOW_700: $ux-yellow-700;
+  UX_YELLOW_800: $ux-yellow-800;
+  UX_YELLOW_900: $ux-yellow-900;
+}
