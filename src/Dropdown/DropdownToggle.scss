@@ -1,15 +1,15 @@
 @import '../../scss/theme';
 
-.Button {
+$primary: $ux-emerald-600;
+$danger: $ux-red;
+$warning: $ux-yellow-400; 
+
+.DropdownToggle {
   @include font-type-30--bold;
 
   i, svg {
     &.icon-left {
       margin-right: $ux-spacing-20;
-    }
-  
-    &.icon-right {
-      margin-left: $ux-spacing-20;
     }
   }
 

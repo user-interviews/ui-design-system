@@ -7,6 +7,13 @@ import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import { ORIENTATIONS as BUTTON_GROUP_ORIENTATIONS } from 'src/ControlButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
+import {
+  Dropdown,
+  DropdownToggle,
+  DropdownIconToggle,
+  DropdownItem,
+  DropdownMenu,
+} from 'src/Dropdown';
 import FadeTransition from 'src/FadeTransition';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
@@ -75,6 +82,11 @@ export {
   CopyToClipboard,
   CopyToClipboardButton,
   CreatableSelect,
+  Dropdown,
+  DropdownToggle,
+  DropdownIconToggle,
+  DropdownItem,
+  DropdownMenu,
   FadeTransition,
   Form,
   FormControlLabel,
