@@ -2739,6 +2739,154 @@ exports[`Storyshots Design System/Copy To Clipboard Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Dropdown Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      className="DropdownToggle dropdown-toggle btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+        data-icon="file-alt"
+        data-prefix="far"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      Dropdown toggle
+    </button>
+  </div>
+  <br />
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      className="DropdownToggle dropdown-toggle btn btn-outline-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+        data-icon="file-alt"
+        data-prefix="far"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      Dropdown toggle
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Dropdown Icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      className="DropdownIconToggle"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+        data-icon="ellipsis-v"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 192 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Dropdown Sizes 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      className="DropdownToggle dropdown-toggle btn btn-outline-primary btn-sm"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Small toggle
+    </button>
+  </div>
+  <br />
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      className="DropdownToggle dropdown-toggle btn btn-outline-primary btn-md"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Medium toggle
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Form Default 1`] = `
 <div
   style={
@@ -6071,7 +6219,7 @@ exports[`Storyshots Design System/Selects/Async Default 1`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-2-input"
+              id="react-select-3-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -6193,7 +6341,122 @@ exports[`Storyshots Design System/Selects/Async Labeled 1`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-3-input"
+              id="react-select-4-input"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "boxSizing": "content-box",
+                  "color": "inherit",
+                  "fontSize": "inherit",
+                  "label": "input",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "1px",
+                }
+              }
+              tabIndex="0"
+              type="text"
+              value=""
+            />
+            <div
+              style={
+                Object {
+                  "height": 0,
+                  "left": 0,
+                  "overflow": "scroll",
+                  "position": "absolute",
+                  "top": 0,
+                  "visibility": "hidden",
+                  "whiteSpace": "pre",
+                }
+              }
+            >
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className=" css-1hb7zxy-IndicatorsContainer"
+      >
+        <span
+          className=" css-43ykx9-indicatorSeparator"
+        />
+        <div
+          aria-hidden="true"
+          className=" css-7sl878-indicatorContainer"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-6q0nyr-Svg"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Selects/AsyncCreatable Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="AsyncSelect css-2b097c-container"
+    onKeyDown={[Function]}
+  >
+    <div
+      className=" css-15ub2n0-control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className=" css-g1d714-ValueContainer"
+      >
+        <div
+          className=" css-1269n2i-placeholder"
+        >
+          Select...
+        </div>
+        <div
+          className="css-b8ldur-Input"
+        >
+          <div
+            className=""
+            style={
+              Object {
+                "display": "inline-block",
+              }
+            }
+          >
+            <input
+              aria-autocomplete="list"
+              aria-label="Async creatable select"
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              disabled={false}
+              id="react-select-2-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -6307,7 +6570,7 @@ exports[`Storyshots Design System/Selects/Creatable Default 1`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-4-input"
+              id="react-select-5-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
@@ -6416,7 +6679,7 @@ exports[`Storyshots Design System/Selects/Single Custom Option With Checkbox 1`]
           aria-labelledby="select-label"
           className="css-62g3xt-dummyInput"
           disabled={false}
-          id="react-select-11-input"
+          id="react-select-12-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -6493,7 +6756,7 @@ exports[`Storyshots Design System/Selects/Single Custom Value Container 1`] = `
           aria-labelledby="select-label"
           className="css-62g3xt-dummyInput"
           disabled={false}
-          id="react-select-12-input"
+          id="react-select-13-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -6563,7 +6826,7 @@ exports[`Storyshots Design System/Selects/Single Default 1`] = `
           aria-label="Default select"
           className="css-62g3xt-dummyInput"
           disabled={false}
-          id="react-select-5-input"
+          id="react-select-6-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -6688,7 +6951,7 @@ exports[`Storyshots Design System/Selects/Single In Modal 1`] = `
                 aria-labelledby="select-label"
                 className="css-62g3xt-dummyInput"
                 disabled={false}
-                id="react-select-10-input"
+                id="react-select-11-input"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
@@ -6784,7 +7047,7 @@ exports[`Storyshots Design System/Selects/Single Labeled 1`] = `
           aria-labelledby="select-label"
           className="css-62g3xt-dummyInput"
           disabled={false}
-          id="react-select-8-input"
+          id="react-select-9-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -6854,7 +7117,7 @@ exports[`Storyshots Design System/Selects/Single Loading 1`] = `
           aria-label="Loading select"
           className="css-62g3xt-dummyInput"
           disabled={true}
-          id="react-select-7-input"
+          id="react-select-8-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -6931,7 +7194,7 @@ exports[`Storyshots Design System/Selects/Single Multi Select 1`] = `
           aria-labelledby="select-label"
           className="css-62g3xt-dummyInput"
           disabled={false}
-          id="react-select-9-input"
+          id="react-select-10-input"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
@@ -7014,7 +7277,7 @@ exports[`Storyshots Design System/Selects/Single Searchable 1`] = `
               autoComplete="off"
               autoCorrect="off"
               disabled={false}
-              id="react-select-6-input"
+              id="react-select-7-input"
               onBlur={[Function]}
               onChange={[Function]}
               onFocus={[Function]}
