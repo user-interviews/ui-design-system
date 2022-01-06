@@ -14,8 +14,8 @@
           uses: actions/checkout@v2
         - name: Setup node
           uses: actions/setup-node@v1
-            with:
-              node-version: '14.17.4'
+          with:
+            node-version: '14.17.4'
 
         - name: Configure npm
           run: npm config set "@fortawesome:registry" https://npm.fontawesome.com/ &&
