@@ -2887,6 +2887,154 @@ exports[`Storyshots Design System/Dropdown Sizes 1`] = `
 </div>
 `;
 
+exports[`Storyshots Design System/Dropdown Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      className="DropdownToggle dropdown-toggle btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+        data-icon="file-alt"
+        data-prefix="far"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      Dropdown toggle
+    </button>
+  </div>
+  <br />
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      className="DropdownToggle dropdown-toggle btn btn-outline-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+        data-icon="file-alt"
+        data-prefix="far"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      Dropdown toggle
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Dropdown Icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      className="DropdownIconToggle"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+        data-icon="ellipsis-v"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 192 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Design System/Dropdown Sizes 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      className="DropdownToggle dropdown-toggle btn btn-outline-primary btn-sm"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Small toggle
+    </button>
+  </div>
+  <br />
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      className="DropdownToggle dropdown-toggle btn btn-outline-primary btn-md"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Medium toggle
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Design System/Form Default 1`] = `
 <div
   style={
@@ -8954,7 +9102,7 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
     <div
       style={
         Object {
-          "backgroundColor": "#21B36C",
+          "backgroundColor": "#04713C",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -8976,7 +9124,7 @@ exports[`Storyshots Design System/Styles/Color Palette Green 1`] = `
           UX_GREEN_500
         </div>
         <div>
-          #21B36C
+          #04713C
         </div>
       </p>
     </div>
@@ -9236,7 +9384,7 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
     <div
       style={
         Object {
-          "backgroundColor": "#234574",
+          "backgroundColor": "#011936",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -9258,7 +9406,7 @@ exports[`Storyshots Design System/Styles/Color Palette Navy 1`] = `
           UX_NAVY_500
         </div>
         <div>
-          #234574
+          #011936
         </div>
       </p>
     </div>
@@ -9916,7 +10064,7 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
     <div
       style={
         Object {
-          "backgroundColor": "#653B05",
+          "backgroundColor": "#3D2200",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -9938,7 +10086,7 @@ exports[`Storyshots Design System/Styles/Color Palette Orange 1`] = `
           UX_ORANGE_900
         </div>
         <div>
-          #653B05
+          #3D2200
         </div>
       </p>
     </div>
@@ -10198,7 +10346,7 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
     <div
       style={
         Object {
-          "backgroundColor": "#851414",
+          "backgroundColor": "#470404",
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -10220,7 +10368,7 @@ exports[`Storyshots Design System/Styles/Color Palette Red 1`] = `
           UX_RED_900
         </div>
         <div>
-          #851414
+          #470404
         </div>
       </p>
     </div>
