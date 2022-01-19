@@ -22,5 +22,8 @@ Cypress.Commands.add('takePercySnapshot', (name) => {
   // Check for accessibility tests to finish first
   cy.get('body').should('contain', 'Tests completed');
 
+  // Also wait for the nav to load
+  cy.get('body').should('contain', 'Design System');
+
   cy.percySnapshot(name);
 });
