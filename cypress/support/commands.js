@@ -20,8 +20,7 @@ Cypress.Commands.add('iframe', { prevSubject: 'element' }, ($iframe) => {
 
 Cypress.Commands.add('takePercySnapshot', (name) => {
   // Check for accessibility tests to finish first
-  // This css selector will change for each storybook release I am guessing
-  cy.get('.css-1imo1gr').should('contain', 'Tests completed');
+  cy.get('body').should('contain', 'Tests completed');
 
   cy.percySnapshot(name);
 });
