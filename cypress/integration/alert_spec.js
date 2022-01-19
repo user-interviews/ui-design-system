@@ -44,7 +44,7 @@ describe('Alert', () => {
       cy.visit(test.path);
       const match = test.match ? test.match : test.name;
       cy.get('#storybook-preview-iframe').iframe().find(test.class).should('contain', match);
-      cy.percySnapshot(test.path);
+      cy.takePercySnapshot(test.path);
     });
   });
 });

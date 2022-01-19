@@ -34,8 +34,7 @@ describe('Tooltip', () => {
     it(test.name, () => {
       cy.visit(test.path);
       cy.get('#storybook-preview-iframe').iframe().find('.Tooltip__icon').click();
-      cy.wait(2000);
-      cy.percySnapshot(test.path);
+      cy.takePercySnapshot(test.path);
     });
   });
 });
