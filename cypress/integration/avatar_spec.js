@@ -24,8 +24,7 @@ describe('Avatar', () => {
     it(test.name, () => {
       cy.visit(test.path);
       cy.get('#storybook-preview-iframe').iframe().find(test.class).should('contain', test.match);
-      cy.wait(1000);
-      cy.percySnapshot(test.path);
+      cy.takePercySnapshot(test.path);
     });
   });
 
@@ -34,6 +33,6 @@ describe('Avatar', () => {
     cy.get('#storybook-preview-iframe').iframe().find('.Avatar__circle')
       .find('img')
       .should('be.visible');
-    cy.percySnapshot('design-system-alert--with-image');
+    cy.takePercySnapshot('design-system-alert--with-image');
   });
 });
