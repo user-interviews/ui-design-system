@@ -7,7 +7,7 @@ import ProfileCell from 'src/ProfileCell';
 import mdx from './ProfileCell.mdx';
 
 export default {
-  title: 'Design System/Profile Cell',
+  title: 'Components/Profile Cell',
   component: ProfileCell,
   decorators: [withKnobs],
   parameters: {

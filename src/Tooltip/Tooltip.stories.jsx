@@ -8,7 +8,7 @@ import mdx from './Tooltip.mdx';
 const withContainer = (story) => <div style={{ padding: '4rem' }}>{story()}</div>;
 
 export default {
-  title: 'Design System/Tooltip',
+  title: 'Components/Tooltip',
   component: Tooltip,
   decorators: [withKnobs, withContainer],
   parameters: {

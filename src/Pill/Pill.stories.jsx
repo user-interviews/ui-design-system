@@ -11,7 +11,7 @@ import { Pill, PILL_COLORS } from 'src/Pill';
 import mdx from './Pill.mdx';
 
 export default {
-  title: 'Design System/Pill',
+  title: 'Components/Pill',
   component: Pill,
   decorators: [withKnobs],
   parameters: {

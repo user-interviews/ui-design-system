@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../scss/global.scss';
 
 export default {
-  title: 'Design System/Modal',
+  title: 'Components/Modal',
   component: Modal,
   parameters: {
     docs: {

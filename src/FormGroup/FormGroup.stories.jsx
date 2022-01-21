@@ -17,7 +17,7 @@ import RadioButton from 'src/RadioButton';
 import mdx from './FormGroup.mdx';
 
 export default {
-  title: 'Design System/Form Elements/Form Group',
+  title: 'Components/Form Elements/Form Group',
   component: FormGroup,
   decorators: [withKnobs],
   parameters: {

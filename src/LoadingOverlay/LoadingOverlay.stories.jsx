@@ -5,7 +5,7 @@ import LoadingOverlay from 'src/LoadingOverlay';
 import mdx from './LoadingOverlay.mdx';
 
 export default {
-  title: 'Design System/LoadingOverlay',
+  title: 'Components/LoadingOverlay',
   component: LoadingOverlay,
   parameters: {
     docs: {

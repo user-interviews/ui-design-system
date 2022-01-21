@@ -5,7 +5,7 @@ import FormControlLabel from 'src/FormControlLabel';
 import mdx from './RadioButton.mdx';
 
 export default {
-  title: 'Design System/RadioButton',
+  title: 'Components/RadioButton',
   component: RadioButton,
   parameters: {
     docs: {

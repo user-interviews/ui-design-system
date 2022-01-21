@@ -5,7 +5,7 @@ import Avatar from 'src/Avatar';
 import mdx from './Avatar.mdx';
 
 export default {
-  title: 'Design System/Avatar',
+  title: 'Components/Avatar',
   component: Avatar,
   decorators: [withKnobs],
   parameters: {
