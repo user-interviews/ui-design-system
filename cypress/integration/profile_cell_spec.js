@@ -1,15 +1,15 @@
 const profileCells = [
   {
     name: 'Small',
-    path: 'design-system-profile-cell--small',
+    path: 'components-profile-cell--small',
   },
   {
     name: 'Large',
-    path: 'design-system-profile-cell--large',
+    path: 'components-profile-cell--large',
   },
   {
     name: 'With Image',
-    path: 'design-system-profile-cell--with-image',
+    path: 'components-profile-cell--with-image',
   },
 ];
 

@@ -1,31 +1,31 @@
 const modals = [
   {
     name: 'Default',
-    path: 'design-system-modal--default',
+    path: 'components-modal--default',
   },
   {
     name: 'Medium Modal',
-    path: 'design-system-modal--medium-modal',
+    path: 'components-modal--medium-modal',
   },
   {
     name: 'Large Modal',
-    path: 'design-system-modal--large-modal',
+    path: 'components-modal--large-modal',
   },
   {
     name: 'With Subtitle Modal',
-    path: 'design-system-modal--with-subtitle-modal',
+    path: 'components-modal--with-subtitle-modal',
   },
   {
     name: 'Transactional Modal',
-    path: 'design-system-modal--transactional-modal',
+    path: 'components-modal--transactional-modal',
   },
   {
     name: 'Warning Modal',
-    path: 'design-system-modal--warning-modal',
+    path: 'components-modal--warning-modal',
   },
   {
     name: 'Danger Modal',
-    path: 'design-system-modal--danger-modal',
+    path: 'components-modal--danger-modal',
   },
 ];
 

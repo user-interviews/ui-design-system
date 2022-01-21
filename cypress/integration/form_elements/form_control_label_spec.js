@@ -1,22 +1,22 @@
 const formControlLabels = [
   {
     name: 'Checkbox',
-    path: 'design-system-form-elements-form-control-label--checkbox',
+    path: 'components-form-elements-form-control-label--checkbox',
     class: '.FormControlLabel',
   },
   {
     name: 'Default Row',
-    path: 'design-system-form-elements-form-control-label--checkbox-with-children',
+    path: 'components-form-elements-form-control-label--checkbox-with-children',
     class: '.FormControlLabel',
   },
   {
     name: 'Radio',
-    path: 'design-system-form-elements-form-control-label--radio',
+    path: 'components-form-elements-form-control-label--radio',
     class: '.FormControlLabel',
   },
   {
     name: 'Radio With Children',
-    path: 'design-system-form-elements-form-control-label--radio-with-children',
+    path: 'components-form-elements-form-control-label--radio-with-children',
     class: '.FormControlLabel',
   },
 ];

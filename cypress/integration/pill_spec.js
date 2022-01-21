@@ -1,19 +1,19 @@
 const pills = [
   {
     name: 'Default',
-    path: 'design-system-pill--default',
+    path: 'components-pill--default',
   },
   {
     name: 'With Leading Icon',
-    path: 'design-system-pill--with-leading-icon',
+    path: 'components-pill--with-leading-icon',
   },
   {
     name: 'With Close',
-    path: 'design-system-pill--with-close',
+    path: 'components-pill--with-close',
   },
   {
     name: 'With Link',
-    path: 'design-system-pill--with-link',
+    path: 'components-pill--with-link',
   },
 ];
 

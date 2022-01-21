@@ -1,11 +1,11 @@
 const radioButtons = [
   {
     name: 'Defaut',
-    path: 'design-system-radiobutton--default',
+    path: 'components-radiobutton--default',
   },
   {
     name: 'With Description',
-    path: 'design-system-radiobutton--with-description',
+    path: 'components-radiobutton--with-description',
   },
 ];
 
