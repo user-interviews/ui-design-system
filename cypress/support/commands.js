@@ -23,7 +23,7 @@ Cypress.Commands.add('takePercySnapshot', (name) => {
   cy.get('body').should('contain', 'Tests completed');
 
   // Also wait for the nav to load
-  cy.get('body').should('contain', 'Design System');
+  cy.get('body').should('contain', 'Components');
 
   cy.percySnapshot(name);
 });

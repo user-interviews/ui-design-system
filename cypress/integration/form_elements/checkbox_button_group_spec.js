@@ -1,27 +1,27 @@
 const checkboxButtonGroups = [
   {
     name: 'Default',
-    path: 'design-system-form-elements-checkboxbuttongroup--default',
+    path: 'components-form-elements-checkboxbuttongroup--default',
     class: '.InputLabel',
   },
   {
     name: 'Default Row',
-    path: 'design-system-form-elements-checkboxbuttongroup--default-row',
+    path: 'components-form-elements-checkboxbuttongroup--default-row',
     class: '.InputLabel',
   },
   {
     name: 'Bordered Row',
-    path: 'design-system-form-elements-checkboxbuttongroup--bordered-row',
+    path: 'components-form-elements-checkboxbuttongroup--bordered-row',
     class: '.InputLabel',
   },
   {
     name: 'Description',
-    path: 'design-system-form-elements-checkboxbuttongroup--description',
+    path: 'components-form-elements-checkboxbuttongroup--description',
     class: '.InputLabel',
   },
   {
     name: 'Description Row',
-    path: 'design-system-form-elements-checkboxbuttongroup--description-row',
+    path: 'components-form-elements-checkboxbuttongroup--description-row',
     class: '.InputLabel',
   },
 ];

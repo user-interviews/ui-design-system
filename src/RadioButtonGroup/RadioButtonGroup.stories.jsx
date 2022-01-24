@@ -10,7 +10,7 @@ import FormGroup from '../FormGroup/FormGroup';
 import mdx from './RadioButtonGroup.mdx';
 
 export default {
-  title: 'Design System/Form Elements/RadioButtonGroup',
+  title: 'Components/Form Elements/RadioButtonGroup',
   component: RadioButtonGroup,
   decorators: [withKnobs()],
   parameters: {

@@ -5,7 +5,7 @@ import { faFileAlt, faCaretDown } from '@fortawesome/pro-solid-svg-icons';
 import mdx from './Button.mdx';
 
 export default {
-  title: 'Design System/Button',
+  title: 'Components/Button',
   component: Button,
   parameters: {
     docs: {

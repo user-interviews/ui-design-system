@@ -3,7 +3,7 @@ import React from 'react';
 import CreatableSelect from 'src/Select/CreatableSelect';
 
 export default {
-  title: 'Design System/Selects/Creatable',
+  title: 'Components/Selects/Creatable',
   component: CreatableSelect,
 };
 

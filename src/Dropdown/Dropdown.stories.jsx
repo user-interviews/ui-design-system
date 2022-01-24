@@ -8,7 +8,7 @@ import { faFileAlt } from '@fortawesome/pro-regular-svg-icons';
 import mdx from './Dropdown.mdx';
 
 export default {
-  title: 'Design System/Dropdown',
+  title: 'Components/Dropdown',
   component: Dropdown,
   subcomponents: {
     DropdownToggle, DropdownItem, DropdownMenu,

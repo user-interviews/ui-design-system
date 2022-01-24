@@ -12,7 +12,7 @@ import {
 import mdx from './Table.mdx';
 
 export default {
-  title: 'Design System/Table',
+  title: 'Components/Table',
   component: Table,
   subcomponents: {
  TableBody, TableCell, TableHead, TableRow, TableSortLabel,

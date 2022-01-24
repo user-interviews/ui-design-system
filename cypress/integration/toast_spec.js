@@ -1,15 +1,15 @@
 const toasts = [
   {
     name: 'Toast',
-    path: 'design-system-toast--toast',
+    path: 'components-toast--toast',
   },
   {
     name: 'Manual Dismiss Toast',
-    path: 'design-system-toast--manual-dismiss-toast',
+    path: 'components-toast--manual-dismiss-toast',
   },
   {
     name: 'Toast With Action',
-    path: 'design-system-toast--toast-with-action',
+    path: 'components-toast--toast-with-action',
   },
 ];
 

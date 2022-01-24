@@ -1,7 +1,7 @@
 const selects = [
   {
     name: 'Default',
-    path: 'design-system-selects-creatable--default',
+    path: 'components-selects-creatable--default',
   },
 ];
 

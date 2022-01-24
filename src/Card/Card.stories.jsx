@@ -7,7 +7,7 @@ import Card, { CardSizes } from 'src/Card';
 import mdx from './Card.mdx';
 
 export default {
-  title: 'Design System/Card',
+  title: 'Components/Card',
   component: Card,
   decorators: [withKnobs({ escapeHTML: false })],
   parameters: {

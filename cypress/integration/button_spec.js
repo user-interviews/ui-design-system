@@ -1,19 +1,19 @@
 const buttons = [
   {
     name: 'Primary',
-    path: 'design-system-button--primary',
+    path: 'components-button--primary',
     class: '.Button',
     match: 'Confirm',
   },
   {
     name: 'Danger',
-    path: 'design-system-button--danger',
+    path: 'components-button--danger',
     class: '.Button',
     match: 'Delete',
   },
   {
     name: 'Warning',
-    path: 'design-system-button--warning',
+    path: 'components-button--warning',
     class: '.Button',
     match: 'Edit',
   },
