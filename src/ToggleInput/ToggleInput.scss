@@ -1,0 +1,40 @@
+// @import 'react-toggle/style.css';
+@import '../../scss/theme';
+
+.ToggleInput {
+  &__label {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 0;
+
+    font-weight: $font-weight-bold;
+    color: $ux-gray-900;
+
+    :last-child {
+      margin-left: 0.5rem;
+    }
+
+    .react-toggle--checked .react-toggle-track {
+      background-color: $ux-green-600;
+
+      &:hover {
+        background-color: $ux-green;
+      }
+    }
+
+    .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+      background-color: $ux-green;
+    }
+
+    .react-toggle--checked .react-toggle-thumb {
+      border-color: $ux-green-600;
+
+      &:hover {
+        border-color: $ux-green;
+      }
+    }
+  }
+}

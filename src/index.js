@@ -63,6 +63,7 @@ import {
   withToast,
   withToastPropTypes,
 } from 'src/Toast';
+import ToggleInput from 'src/ToggleInput';
 import Tooltip from 'src/Tooltip';
 import TrackedButton from 'src/TrackedButton';
 
@@ -120,6 +121,7 @@ export {
   TableRow,
   TableSortLabel,
   Toast,
+  ToggleInput,
   Tooltip,
   TrackedButton,
   useToast,
