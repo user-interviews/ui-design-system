@@ -20367,6 +20367,93 @@ exports[`Storyshots Foundations/Color Palette Yellow 1`] = `
 </div>
 `;
 
+exports[`Storyshots Foundations/Elevation Elevations 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Elevations"
+  >
+    <div
+      className="Elevations__card"
+      style={
+        Object {
+          "boxShadow": "0rem 0rem 0rem rgba(0, 0, 0, 0.1)",
+        }
+      }
+    >
+      <span>
+        UX_ELEVATIONS_00
+      </span>
+    </div>
+    <div
+      className="Elevations__card"
+      style={
+        Object {
+          "boxShadow": "0rem 0.06rem 0.12rem rgba(0, 0, 0, 0.1)",
+        }
+      }
+    >
+      <span>
+        UX_ELEVATIONS_10
+      </span>
+    </div>
+    <div
+      className="Elevations__card"
+      style={
+        Object {
+          "boxShadow": "0rem 0.13rem 0.3rem rgba(0, 0, 0, 0.1)",
+        }
+      }
+    >
+      <span>
+        UX_ELEVATIONS_20
+      </span>
+    </div>
+    <div
+      className="Elevations__card"
+      style={
+        Object {
+          "boxShadow": "0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.1)",
+        }
+      }
+    >
+      <span>
+        UX_ELEVATIONS_30
+      </span>
+    </div>
+    <div
+      className="Elevations__card"
+      style={
+        Object {
+          "boxShadow": "0rem 0.4rem 0.8rem rgba(0, 0, 0, 0.1)",
+        }
+      }
+    >
+      <span>
+        UX_ELEVATIONS_40
+      </span>
+    </div>
+    <div
+      className="Elevations__card"
+      style={
+        Object {
+          "boxShadow": "0rem 0.5rem 1rem rgba(0, 0, 0, 0.1)",
+        }
+      }
+    >
+      <span>
+        UX_ELEVATIONS_50
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Foundations/Typography Typography 1`] = `
 <div
   style={

@@ -1,0 +1,23 @@
+@import '../../scss/theme';
+
+.Elevations {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  background-color: $ux-gray-100;
+
+  &__card {
+    display: flex;
+    margin: $ux-spacing-30;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: $ux-white;
+    
+    height: 160px;
+    width: 160px;
+
+    border-radius: $ux-border-radius;
+  }
+}

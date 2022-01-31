@@ -14,6 +14,7 @@ import {
   DropdownItem,
   DropdownMenu,
 } from 'src/Dropdown';
+import { elevations as ELEVATIONS, colors as COLORS } from 'src/Styles';
 import FadeTransition from 'src/FadeTransition';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
@@ -44,7 +45,7 @@ import {
   SingleSelect,
   ValueContainer,
 } from 'src/Select';
-import { colors as COLORS } from 'src/Styles';
+
 import {
   Tab,
   Tabs,
@@ -87,6 +88,7 @@ export {
   DropdownIconToggle,
   DropdownItem,
   DropdownMenu,
+  ELEVATIONS,
   FadeTransition,
   Form,
   FormControlLabel,

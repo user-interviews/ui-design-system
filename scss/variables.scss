@@ -1,4 +1,5 @@
 @import './colors/palette';
+@import './elevations';
 
 :export {
   UX_BLACK: $ux-black;
@@ -124,4 +125,13 @@
   UX_YELLOW_700: $ux-yellow-700;
   UX_YELLOW_800: $ux-yellow-800;
   UX_YELLOW_900: $ux-yellow-900;
+}
+
+:export {
+  UX_ELEVATIONS_00: $ux-elevations-00;
+  UX_ELEVATIONS_10: $ux-elevations-10;
+  UX_ELEVATIONS_20: $ux-elevations-20;
+  UX_ELEVATIONS_30: $ux-elevations-30;
+  UX_ELEVATIONS_40: $ux-elevations-40;
+  UX_ELEVATIONS_50: $ux-elevations-50;
 }
