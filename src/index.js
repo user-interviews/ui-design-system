@@ -14,7 +14,11 @@ import {
   DropdownItem,
   DropdownMenu,
 } from 'src/Dropdown';
-import { elevations as ELEVATIONS, colors as COLORS } from 'src/Styles';
+import {
+  colors as COLORS,
+  elevations as ELEVATIONS,
+  spacing as SPACING,
+} from 'src/Styles';
 import FadeTransition from 'src/FadeTransition';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
@@ -113,6 +117,7 @@ export {
   SELECT_SIZES,
   SelectComponents,
   SingleSelect,
+  SPACING,
   Tab,
   Tabs,
   Table,

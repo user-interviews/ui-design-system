@@ -1,5 +1,6 @@
 @import './colors/palette';
 @import './elevations';
+@import './spacing';
 
 :export {
   UX_BLACK: $ux-black;
@@ -134,4 +135,14 @@
   UX_ELEVATIONS_30: $ux-elevations-30;
   UX_ELEVATIONS_40: $ux-elevations-40;
   UX_ELEVATIONS_50: $ux-elevations-50;
+}
+
+:export {
+  UX_SPACING_10: $ux-spacing-10;
+  UX_SPACING_20: $ux-spacing-20;
+  UX_SPACING_30: $ux-spacing-30;
+  UX_SPACING_40: $ux-spacing-40;
+  UX_SPACING_50: $ux-spacing-50;
+  UX_SPACING_60: $ux-spacing-60;
+  UX_SPACING_70: $ux-spacing-70;
 }

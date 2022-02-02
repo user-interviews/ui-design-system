@@ -1,0 +1,24 @@
+@import '../../scss/theme';
+
+.Spacing {
+  display: flex;
+  flex-direction: column;
+
+  background-color: $ux-gray-200;
+
+  &__card {
+    display: flex;
+    margin: $ux-spacing-30;
+    align-items: center;
+    justify-content: center;
+    
+    background-image: 
+    linear-gradient(0deg, $ux-blue-200, $ux-blue-200), 
+    linear-gradient(0deg, $ux-emerald-200, $ux-emerald-200);
+
+    background-clip: content-box, padding-box;
+    
+    height: 130px;
+    width: auto;
+  }
+}

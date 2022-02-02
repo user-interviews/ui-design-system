@@ -20454,6 +20454,204 @@ exports[`Storyshots Foundations/Elevation Elevations 1`] = `
 </div>
 `;
 
+exports[`Storyshots Foundations/Spacing Margin 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Spacing"
+  >
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "margin": "0.25rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_10
+      </span>
+    </span>
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "margin": "0.5rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_20
+      </span>
+    </span>
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "margin": "0.75rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_30
+      </span>
+    </span>
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "margin": "1rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_40
+      </span>
+    </span>
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "margin": "1.5rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_50
+      </span>
+    </span>
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "margin": "2rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_60
+      </span>
+    </span>
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "margin": "3rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_70
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Foundations/Spacing Padding 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Spacing"
+  >
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "padding": "0.25rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_10
+      </span>
+    </span>
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "padding": "0.5rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_20
+      </span>
+    </span>
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "padding": "0.75rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_30
+      </span>
+    </span>
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "padding": "1rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_40
+      </span>
+    </span>
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "padding": "1.5rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_50
+      </span>
+    </span>
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "padding": "2rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_60
+      </span>
+    </span>
+    <span
+      className="Spacing__card"
+      style={
+        Object {
+          "padding": "3rem",
+        }
+      }
+    >
+      <span>
+        UX_SPACING_70
+      </span>
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Foundations/Typography Typography 1`] = `
 <div
   style={
