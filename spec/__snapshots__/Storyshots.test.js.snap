@@ -7349,6 +7349,126 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Steps Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Steps"
+  >
+    <div
+      className="Step Step--1"
+    >
+      <div
+        className="Step__circle"
+        style={
+          Object {
+            "border": "1px solid #158D71",
+          }
+        }
+      >
+        <span
+          className="Step__circle__number"
+          style={
+            Object {
+              "color": "#158D71",
+            }
+          }
+        >
+          1
+        </span>
+      </div>
+      <span
+        className="Step__text-container"
+      >
+        <span
+          className="Step__text-container__text"
+        >
+          <b>
+            Create
+          </b>
+           a profile and browse studies that interest you.
+        </span>
+      </span>
+    </div>
+    <div
+      className="Step Step--2"
+    >
+      <div
+        className="Step__circle"
+        style={
+          Object {
+            "border": "1px solid #158D71",
+          }
+        }
+      >
+        <span
+          className="Step__circle__number"
+          style={
+            Object {
+              "color": "#158D71",
+            }
+          }
+        >
+          2
+        </span>
+      </div>
+      <span
+        className="Step__text-container"
+      >
+        <span
+          className="Step__text-container__text"
+        >
+          <b>
+            Apply
+          </b>
+           to studies. We'll notify you if you qualify!
+        </span>
+      </span>
+    </div>
+    <div
+      className="Step Step--3"
+    >
+      <div
+        className="Step__circle"
+        style={
+          Object {
+            "border": "1px solid #158D71",
+          }
+        }
+      >
+        <span
+          className="Step__circle__number"
+          style={
+            Object {
+              "color": "#158D71",
+            }
+          }
+        >
+          3
+        </span>
+      </div>
+      <span
+        className="Step__text-container"
+      >
+        <span
+          className="Step__text-container__text"
+        >
+          <b>
+            Confirm
+          </b>
+           your time slot, participate, and get paid!
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Table Default 1`] = `
 <div
   style={
