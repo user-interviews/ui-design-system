@@ -29,10 +29,8 @@
       text-align: center;
       width: 100%;
     }
-  }
 
-  &__circle{
-    &:before {
+    &::before {
       content: "";
       display: block;
       position: absolute;
@@ -43,18 +41,14 @@
       border-width: 0 0 0 1px;
       height: 1.75rem;
     }
-    &:last-child {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 0;
-      top: 100%;
-      left: 50%;
-      border: 1px solid $ux-red;
-      border-width: 0 0 0 11px;
-      height: 1.75rem;
-    }
+  }
 
+   // removes last vertical line 
+   &:last-of-type {
+    .Step__circle::before {
+      content: "";
+      display: none;
+    }
   }
 
   &__text-container {
