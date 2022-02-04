@@ -1,8 +1,10 @@
 @import '../../scss/theme';
 
+$step-circle-size: 2.5rem;
+
 .Step {
   display: grid;
-  grid-template-columns: 2.5rem auto;
+  grid-template-columns: $step-circle-size auto;
 
   margin: $ux-spacing-30;
 
@@ -24,7 +26,7 @@
       color: $ux-blue;
       float: left;
       line-height: 1;
-      margin-top: -0.5em;
+      margin-top: -0.5rem;
       padding-top: 50%;
       text-align: center;
       width: 100%;
