@@ -45,6 +45,7 @@ import {
   ValueContainer,
 } from 'src/Select';
 import { colors as COLORS } from 'src/Styles';
+import { Step, Steps } from 'src/Steps';
 import {
   Tab,
   Tabs,
@@ -111,6 +112,8 @@ export {
   SELECT_SIZES,
   SelectComponents,
   SingleSelect,
+  Step,
+  Steps,
   Tab,
   Tabs,
   Table,
