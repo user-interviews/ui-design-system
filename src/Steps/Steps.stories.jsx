@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Steps, Step } from 'src/Steps';
 
-import colors from '../Styles/colors/palette';
 import mdx from './Steps.mdx';
 
 export default {
@@ -19,9 +18,7 @@ export default {
 export const Default = () => (
   <Steps>
     <Step
-      circleBorderColor={colors.UX_EMERALD_600}
       circleText="1"
-      circleTextColor={colors.UX_EMERALD_600}
       text={(
         <>
           <b>Create</b> a profile and browse studies that interest you.
@@ -29,9 +26,7 @@ export const Default = () => (
       )}
     />
     <Step
-      circleBorderColor={colors.UX_EMERALD_600}
       circleText="2"
-      circleTextColor={colors.UX_EMERALD_600}
       text={(
         <>
           <b>Confirm</b> your time slot, participate, and get paid!
@@ -39,9 +34,7 @@ export const Default = () => (
       )}
     />
     <Step
-      circleBorderColor={colors.UX_EMERALD_600}
       circleText="3"
-      circleTextColor={colors.UX_EMERALD_600}
       text={(
         <>
           <b>Something</b> else...
@@ -54,9 +47,7 @@ export const Default = () => (
 export const VaryingContentLength = () => (
   <Steps>
     <Step
-      circleBorderColor={colors.UX_EMERALD_600}
       circleText="1"
-      circleTextColor={colors.UX_EMERALD_600}
       text={(
         <>
           <b>Create</b> a profile and browse studies that interest you.
@@ -64,9 +55,7 @@ export const VaryingContentLength = () => (
       )}
     />
     <Step
-      circleBorderColor={colors.UX_EMERALD_600}
       circleText="2"
-      circleTextColor={colors.UX_EMERALD_600}
       text={(
         <>
           <b>Lorem</b> ipsum dolor sit amet, consectetur adipiscing elit. Vivamus posuere
@@ -81,9 +70,7 @@ export const VaryingContentLength = () => (
       )}
     />
     <Step
-      circleBorderColor={colors.UX_EMERALD_600}
       circleText="3"
-      circleTextColor={colors.UX_EMERALD_600}
       text={(
         <>
           <b>Confirm</b> your time slot, participate, and get paid!
@@ -91,9 +78,7 @@ export const VaryingContentLength = () => (
       )}
     />
     <Step
-      circleBorderColor={colors.UX_EMERALD_600}
       circleText="4"
-      circleTextColor={colors.UX_EMERALD_600}
       text={(
         <>
           <b>Something</b> else...

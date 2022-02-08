@@ -13,7 +13,7 @@ $text-container-margin-top: 0.625rem;
     grid-row-start: 1;
     
     background: $ux-white;
-    border: 1px solid $ux-blue;
+    border: 1px solid $ux-emerald-600;
     border-radius: 50%;
     
     height: 0;
@@ -26,7 +26,7 @@ $text-container-margin-top: 0.625rem;
 
     &__number {
       @include font-type-40--bold;
-      color: $ux-blue;
+      color: $ux-emerald-600;
       float: left;
       line-height: 1;
       margin-top: -0.5rem;
