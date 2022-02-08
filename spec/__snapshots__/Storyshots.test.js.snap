@@ -7424,9 +7424,129 @@ exports[`Storyshots Components/Steps Default 1`] = `
           className="Step__text-container__text"
         >
           <b>
-            Apply
+            Confirm
           </b>
-           to studies. We'll notify you if you qualify!
+           your time slot, participate, and get paid!
+        </span>
+      </span>
+    </div>
+    <div
+      className="Step Step--3"
+    >
+      <div
+        className="Step__circle"
+        style={
+          Object {
+            "border": "1px solid #158D71",
+          }
+        }
+      >
+        <span
+          className="Step__circle__number"
+          style={
+            Object {
+              "color": "#158D71",
+            }
+          }
+        >
+          3
+        </span>
+      </div>
+      <span
+        className="Step__text-container"
+      >
+        <span
+          className="Step__text-container__text"
+        >
+          <b>
+            Something
+          </b>
+           else...
+        </span>
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Steps Varying Content Length 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Steps"
+  >
+    <div
+      className="Step Step--1"
+    >
+      <div
+        className="Step__circle"
+        style={
+          Object {
+            "border": "1px solid #158D71",
+          }
+        }
+      >
+        <span
+          className="Step__circle__number"
+          style={
+            Object {
+              "color": "#158D71",
+            }
+          }
+        >
+          1
+        </span>
+      </div>
+      <span
+        className="Step__text-container"
+      >
+        <span
+          className="Step__text-container__text"
+        >
+          <b>
+            Create
+          </b>
+           a profile and browse studies that interest you.
+        </span>
+      </span>
+    </div>
+    <div
+      className="Step Step--2"
+    >
+      <div
+        className="Step__circle"
+        style={
+          Object {
+            "border": "1px solid #158D71",
+          }
+        }
+      >
+        <span
+          className="Step__circle__number"
+          style={
+            Object {
+              "color": "#158D71",
+            }
+          }
+        >
+          2
+        </span>
+      </div>
+      <span
+        className="Step__text-container"
+      >
+        <span
+          className="Step__text-container__text"
+        >
+          <b>
+            Lorem
+          </b>
+           ipsum dolor sit amet, consectetur adipiscing elit. Vivamus posuere vestibulum velit, interdum lacinia quam tincidunt eget. Fusce sagittis luctus massa, vitae posuere odio imperdiet ac. Nam sem leo, blandit a orci vel, lacinia volutpat libero. Etiam maximus nulla sed eleifend molestie. Aliquam et posuere justo, id suscipit mauris. Sed luctus tortor nec accumsan commodo. Nunc in lacus pretium, condimentum lorem sit amet, hendrerit arcu. Quisque gravida ullamcorper magna, at hendrerit purus viverra vel. Donec tempor purus dui, nec pulvinar est vestibulum a. Nam condimentum facilisis orci, nec elementum justo semper sit amet.
         </span>
       </span>
     </div>
@@ -7462,6 +7582,41 @@ exports[`Storyshots Components/Steps Default 1`] = `
             Confirm
           </b>
            your time slot, participate, and get paid!
+        </span>
+      </span>
+    </div>
+    <div
+      className="Step Step--4"
+    >
+      <div
+        className="Step__circle"
+        style={
+          Object {
+            "border": "1px solid #158D71",
+          }
+        }
+      >
+        <span
+          className="Step__circle__number"
+          style={
+            Object {
+              "color": "#158D71",
+            }
+          }
+        >
+          4
+        </span>
+      </div>
+      <span
+        className="Step__text-container"
+      >
+        <span
+          className="Step__text-container__text"
+        >
+          <b>
+            Something
+          </b>
+           else...
         </span>
       </span>
     </div>

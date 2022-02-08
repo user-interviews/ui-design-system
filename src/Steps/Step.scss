@@ -5,11 +5,11 @@ $step-circle-size: 2.5rem;
 .Step {
   display: grid;
   grid-template-columns: $step-circle-size auto;
-
-  margin: $ux-spacing-30;
+  grid-template-rows: auto auto;
 
   &__circle {
     grid-column-start: 1;
+    grid-row-start: 1;
     
     background: $ux-white;
     border: 1px solid $ux-blue;
@@ -21,6 +21,8 @@ $step-circle-size: 2.5rem;
 
     position: relative;
 
+    z-index: 1;
+
     &__number {
       @include font-type-40--bold;
       color: $ux-blue;
@@ -31,36 +33,34 @@ $step-circle-size: 2.5rem;
       text-align: center;
       width: 100%;
     }
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      z-index: 0;
-      top: 100%;
-      left: 50%;
-      border: 1px solid $ux-emerald;
-      border-width: 0 0 0 1px;
-      height: 1.75rem;
-    }
   }
 
-   // removes last vertical line 
-   &:last-of-type {
-    .Step__circle::before {
-      content: "";
-      display: none;
+  // removes last line
+  &:last-of-type {
+    .Step__text-container {
+      border-left: none;
     }
   }
 
   &__text-container {
     grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 
     display: flex;
-    align-items: center;
+    position: relative;
+    // translates the text-container so that border is centered with circle
+    right: 1.25rem;
+
+    min-height: ($step-circle-size * 2) - $ux-spacing-30;
+
+    border-left: 1px solid $ux-emerald-600;
+
+    padding-bottom: $ux-spacing-30;
 
     &__text {
-      margin-left: $ux-spacing-30;
+      margin-left: $ux-spacing-60;
     }
   }
 }
