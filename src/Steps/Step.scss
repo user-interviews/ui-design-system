@@ -1,6 +1,7 @@
 @import '../../scss/theme';
 
 $step-circle-size: 2.5rem;
+$text-container-margin-top: 0.625rem;
 
 .Step {
   display: grid;
@@ -57,6 +58,10 @@ $step-circle-size: 2.5rem;
 
     border-left: 1px solid $ux-emerald-600;
 
+    // centers text container with step circle
+    margin-top: $text-container-margin-top;
+    
+    // provides padding bottom between steps
     padding-bottom: $ux-spacing-30;
 
     &__text {
