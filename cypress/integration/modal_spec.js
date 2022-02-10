@@ -33,8 +33,12 @@ describe('Modal', () => {
   modals.forEach((test) => {
     it(test.name, () => {
       cy.visit(test.path);
-      cy.get('#storybook-preview-iframe').iframe().find('.ModalHeader').should('contain', 'modal')
-                                                  .find('button.btn-close').should('exist');
+      cy.get('#storybook-preview-iframe')
+        .iframe()
+        .find('.ModalHeader')
+        .should('contain', 'modal')
+        .find('button.btn-close')
+        .should('exist');
       cy.takePercySnapshot(test.path);
     });
   });
