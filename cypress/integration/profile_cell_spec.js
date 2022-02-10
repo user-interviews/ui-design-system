@@ -17,7 +17,7 @@ describe('Profile Cell', () => {
   profileCells.forEach((test) => {
     it(test.name, () => {
       cy.visit(test.path);
-      cy.get('#storybook-preview-iframe').iframe().find('.ProfileCell').should('exist');
+      cy.get('#storybook-preview-iframe').iframe().find('.Avatar__circle').should('exist');
       cy.takePercySnapshot(test.path);
     });
   });
