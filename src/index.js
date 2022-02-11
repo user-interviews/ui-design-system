@@ -51,10 +51,6 @@ import {
   Tabs,
 } from 'src/Tabs';
 import {
-  Tab,
-  Tabs,
-} from 'src/Tabs';
-import {
   Table,
   TableBody,
   TableCell,
