@@ -190,5 +190,6 @@ export const Typography = () => (
 );
 
 export default {
-  title: 'Design System/Styles',
+  title: 'Foundations/Typography',
+  component: Typography,
 };

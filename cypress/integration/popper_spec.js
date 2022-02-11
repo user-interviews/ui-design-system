@@ -1,11 +1,11 @@
 const poppers = [
   {
     name: 'Default',
-    path: 'design-system-popper--default',
+    path: 'components-popper--default',
   },
   {
     name: 'Dark',
-    path: 'design-system-popper--dark',
+    path: 'components-popper--dark',
   },
 ];
 
@@ -14,8 +14,7 @@ describe('Popper', () => {
     it(test.name, () => {
       cy.visit(test.path);
       cy.get('#storybook-preview-iframe').iframe().find('.Popper').should('exist');
-      cy.wait(1000);
-      cy.percySnapshot(test.path);
+      cy.takePercySnapshot(test.path);
     });
   });
 });

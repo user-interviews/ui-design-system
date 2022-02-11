@@ -1,38 +1,38 @@
 const alerts = [
   {
     name: 'Success',
-    path: 'design-system-alert--success',
+    path: 'components-alert--success',
     class: '.Alert__title',
   },
   {
     name: 'Info',
-    path: 'design-system-alert--info',
+    path: 'components-alert--info',
     class: '.Alert__title',
   },
   {
     name: 'Announcement',
-    path: 'design-system-alert--announcement',
+    path: 'components-alert--announcement',
     class: '.Alert__title',
   },
   {
     name: 'Error',
-    path: 'design-system-alert--error',
+    path: 'components-alert--error',
     class: '.Alert__title',
   },
   {
     name: 'Warning',
-    path: 'design-system-alert--warning',
+    path: 'components-alert--warning',
     class: '.Alert__title',
   },
   {
     name: 'With Dismiss',
-    path: 'design-system-alert--with-dismiss',
+    path: 'components-alert--with-dismiss',
     class: '.Alert__title',
     match: 'Default title',
   },
   {
     name: 'With Call To Action',
-    path: 'design-system-alert--with-call-to-action',
+    path: 'components-alert--with-call-to-action',
     class: '.Alert__title',
     match: 'Success title',
   },
@@ -44,7 +44,7 @@ describe('Alert', () => {
       cy.visit(test.path);
       const match = test.match ? test.match : test.name;
       cy.get('#storybook-preview-iframe').iframe().find(test.class).should('contain', match);
-      cy.percySnapshot(test.path);
+      cy.takePercySnapshot(test.path);
     });
   });
 });

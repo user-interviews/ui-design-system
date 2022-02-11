@@ -1,11 +1,11 @@
 const selects = [
   {
     name: 'Default',
-    path: 'design-system-selects-async--default',
+    path: 'components-selects-async--default',
   },
   {
     name: 'Labeled',
-    path: 'design-system-selects-async--labeled',
+    path: 'components-selects-async--labeled',
   },
 ];
 
@@ -14,8 +14,7 @@ describe('Selects -> Async', () => {
     it(test.name, () => {
       cy.visit(test.path);
       cy.get('#storybook-preview-iframe').iframe().find('.AsyncSelect').should('exist');
-      cy.wait(1000);
-      cy.percySnapshot(test.path);
+      cy.takePercySnapshot(test.path);
     });
   });
 });

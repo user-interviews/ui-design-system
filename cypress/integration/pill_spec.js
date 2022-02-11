@@ -1,19 +1,19 @@
 const pills = [
   {
     name: 'Default',
-    path: 'design-system-pill--default',
+    path: 'components-pill--default',
   },
   {
     name: 'With Leading Icon',
-    path: 'design-system-pill--with-leading-icon',
+    path: 'components-pill--with-leading-icon',
   },
   {
     name: 'With Close',
-    path: 'design-system-pill--with-close',
+    path: 'components-pill--with-close',
   },
   {
     name: 'With Link',
-    path: 'design-system-pill--with-link',
+    path: 'components-pill--with-link',
   },
 ];
 
@@ -22,8 +22,7 @@ describe('Pill', () => {
     it(test.name, () => {
       cy.visit(test.path);
       cy.get('#storybook-preview-iframe').iframe().find('.Pill').should('exist');
-      cy.wait(1000);
-      cy.percySnapshot(test.path);
+      cy.takePercySnapshot(test.path);
     });
   });
 });

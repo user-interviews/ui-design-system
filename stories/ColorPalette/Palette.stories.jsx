@@ -40,7 +40,7 @@ const Palette = ({ color }) => (
 /* eslint-enable react/prop-types, react/no-array-index-key */
 
 export default {
-  title: 'Design System/Styles/Color Palette',
+  title: 'Foundations/Color Palette',
   component: Palette,
 };
 

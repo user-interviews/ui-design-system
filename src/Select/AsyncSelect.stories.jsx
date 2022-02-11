@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import AsyncSelect from 'src/Select/AsyncSelect';
 
 export default {
-  title: 'Design System/Selects/Async',
+  title: 'Components/Selects/Async',
   component: AsyncSelect,
 };
 

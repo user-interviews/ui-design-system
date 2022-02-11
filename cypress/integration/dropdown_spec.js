@@ -1,17 +1,17 @@
 const dropdowns = [
   {
     name: 'Default',
-    path: 'design-system-dropdown--default',
+    path: 'components-dropdown--default',
     class: '.Dropdown',
   },
   {
     name: 'Sizes',
-    path: 'design-system-dropdown--sizes',
+    path: 'components-dropdown--sizes',
     class: '.Dropdown',
   },
   {
     name: 'Icon',
-    path: 'design-system-dropdown--icon',
+    path: 'components-dropdown--icon',
     class: '.Dropdown',
   },
 ];
@@ -21,8 +21,7 @@ describe('Dropdown', () => {
     it(test.name, () => {
       cy.visit(test.path);
       cy.get('#storybook-preview-iframe').iframe().find(test.class).should('exist');
-      cy.wait(1000);
-      cy.percySnapshot(test.path);
+      cy.takePercySnapshot(test.path);
     });
   });
 });

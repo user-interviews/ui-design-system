@@ -1,19 +1,19 @@
 const buttons = [
   {
     name: 'Primary',
-    path: 'design-system-button--primary',
+    path: 'components-button--primary',
     class: '.Button',
     match: 'Confirm',
   },
   {
     name: 'Danger',
-    path: 'design-system-button--danger',
+    path: 'components-button--danger',
     class: '.Button',
     match: 'Delete',
   },
   {
     name: 'Warning',
-    path: 'design-system-button--warning',
+    path: 'components-button--warning',
     class: '.Button',
     match: 'Edit',
   },
@@ -24,8 +24,7 @@ describe('Button', () => {
     it(test.name, () => {
       cy.visit(test.path);
       cy.get('#storybook-preview-iframe').iframe().find(test.class).should('contain', test.match);
-      cy.wait(1000);
-      cy.percySnapshot(test.path);
+      cy.takePercySnapshot(test.path);
     });
   });
 });

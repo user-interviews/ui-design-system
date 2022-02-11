@@ -10,7 +10,7 @@ import FormGroup from '../FormGroup/FormGroup';
 import mdx from './CheckboxButtonGroup.mdx';
 
 export default {
-  title: 'Design System/Form Elements/CheckboxButtonGroup',
+  title: 'Components/Form Elements/CheckboxButtonGroup',
   component: CheckboxButtonGroup,
   decorators: [withKnobs()],
   parameters: {

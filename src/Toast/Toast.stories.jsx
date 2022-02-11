@@ -8,7 +8,7 @@ import { withToast, withToastPropTypes } from 'src/Toast';
 import '../../scss/global.scss';
 
 export default {
-  title: 'Design System/Toast',
+  title: 'Components/Toast',
   component: withToast,
   decorators: [withKnobs],
 };

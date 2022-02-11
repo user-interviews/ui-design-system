@@ -1,31 +1,31 @@
 const selects = [
   {
     name: 'Default',
-    path: 'design-system-selects-single--default',
+    path: 'components-selects-single--default',
   },
   {
     name: 'Searchable',
-    path: 'design-system-selects-single--searchable',
+    path: 'components-selects-single--searchable',
   },
   {
     name: 'Loading',
-    path: 'design-system-selects-single--loading',
+    path: 'components-selects-single--loading',
   },
   {
     name: 'Labeled',
-    path: 'design-system-selects-single--labeled',
+    path: 'components-selects-single--labeled',
   },
   {
     name: 'Multi Select',
-    path: 'design-system-selects-single--multi-select',
+    path: 'components-selects-single--multi-select',
   },
   {
     name: 'Custom Option With Checkbox',
-    path: 'design-system-selects-single--custom-option-with-checkbox',
+    path: 'components-selects-single--custom-option-with-checkbox',
   },
   {
     name: 'Custom Value Container',
-    path: 'design-system-selects-single--custom-value-container',
+    path: 'components-selects-single--custom-value-container',
   },
 ];
 
@@ -34,8 +34,7 @@ describe('Selects -> Single', () => {
     it(test.name, () => {
       cy.visit(test.path);
       cy.get('#storybook-preview-iframe').iframe().find('.SingleSelect').should('exist');
-      cy.wait(1000);
-      cy.percySnapshot(test.path);
+      cy.takePercySnapshot(test.path);
     });
   });
 });
