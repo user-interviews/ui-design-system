@@ -6,14 +6,14 @@ import Table from './Table';
 ##
 
 <h4>
-  Displays sets of data. Can be fully customized. 
+  Displays sets of data. Can be fully customized.
 </h4>
 
 <Canvas>
   <Story id="components-table--default" />
 </Canvas>
 
-### When to use 
+### When to use
 - Tables display information that is easy to scan, so that users can look for patterns and insights
 - Tables can be embedded in various containers and primary content, such as Cards
 
@@ -39,7 +39,7 @@ import Table from './Table';
 ### Table With Fixed Column Widths
 - Create a column with a fixed width
 - By default, all content of a `TableCell` will be fully displayed with no line breaks and no set width. Whichever `TableCell` has the longest content, the width of that entire column will be set at that
-- Set `maxWidth` to limit the width in `px` of the `TableCell` 
+- Set `maxWidth` to limit the width in `px` of the `TableCell`
 - Set `minWidth` to provide extra space in `px` for the `TableCell`
 - `text-overflow: ellipsis` is set by default for content that exceeds the designated width. This would only be seen if `maxWidth` is set
 
@@ -136,7 +136,7 @@ import Table from './Table';
   <Story id="components-table--table-with-multiple-sticky-columns-and-header" />
 </Canvas>
 
-### Table With Multiple Select 
+### Table With Multiple Select
 - Checkboxes are displayed on a separate column
 - `TableRow` can be given a `clickable` prop that sets `cursor: pointer`
 - When `TableRow` prop `selected` evaluates to `true`, `background-color` is set to `$ux-blue-100`
@@ -155,7 +155,7 @@ import Table from './Table';
   <Story id="components-table--table-with-multiple-select-and-multiple-sticky-columns-and-header" />
 </Canvas>
 
-### Table With Sorting 
+### Table With Sorting
 - **Currently WIP**
 - When implemented, use a `TableSortLabel` to sort the table by a column in ascending or descending order
 - *Inactive state:* Columns that are not sorted have the sort icon in blue
@@ -174,7 +174,7 @@ import Table from './Table';
   <Story id="components-table--table-with-cell-right-alignment" />
 </Canvas>
 
-### Table With Compact Option 
+### Table With Compact Option
 - `TableCell` can be given a `compact` prop to reduce the size of the cell
 - This allows the `Table` to display more rows on a page
 
@@ -187,7 +187,7 @@ import Table from './Table';
 
 ### States
 
-### Anatomy 
+### Anatomy
 
 The `Table` component aims to be closely mapped to the native `<table>` elements. As such, do try to use the `Table` and it's subcomponents as if you were building a regular table <br/>
 
@@ -213,9 +213,9 @@ Can also have other components for additional functionality such as:
 
 ### Alignment
 - Textual data = Left aligned (default)
-- Numerical data = Right aligned (`alignRight` prop on a `TableCell`) 
+- Numerical data = Right aligned (`alignRight` prop on a `TableCell`)
 - Align headers with their related data
-- Don't center align 
+- Don't center align
 
 
 ## Best practices

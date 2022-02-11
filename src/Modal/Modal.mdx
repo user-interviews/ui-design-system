@@ -6,11 +6,11 @@ import Modal from './Modal';
 ##
 
 <h4>
-  Modals are large UI elements that sit on top of an application's main window—often with a layer of transparency behind them to give users a peek into the main app. 
+  Modals are large UI elements that sit on top of an application's main window—often with a layer of transparency behind them to give users a peek into the main app.
   To return to the application's main interface, users must interact with the modal layer.
 </h4>
 
-### When to use 
+### When to use
 - Use when we want to focus the user’s attention
 - Use to collect input from user
 - Use to show relevant info
@@ -19,7 +19,7 @@ import Modal from './Modal';
 - Reason 1
 - Reason 2
 
-## Props 
+## Props
 
 <ArgsTable of={Modal} />
 
@@ -30,23 +30,23 @@ import Modal from './Modal';
 
 - The most common modal that will be used.
 
-### Medium Modal 
+### Medium Modal
 
-- For a wider content area. 
+- For a wider content area.
 
 ### Large Modal
 
-- For a large content area. 
+- For a large content area.
 
 ### Transactional modal
 
 - The user needs to take an action for the modal to be completed and closed. It contains the cancel and primary action buttons.
 
-### Warning modal 
+### Warning modal
 
 - They appear in anticipation of a significant change. Used mainly to inform but not alarm.
 
-### Danger modal 
+### Danger modal
 
 - Used for a destructive or irreversible action. The impact of taking this action should be explained clearly to the user.
 
@@ -55,10 +55,10 @@ import Modal from './Modal';
 
 ### States
 
-### Anatomy 
+### Anatomy
 - **Header:** Includes the title, helper text and close icon
 - **Body:** Contains the information and / or interface elements for the user to complete a task
-- **Footer:**  Includes the actions to cancel or complete a task. The buttons variants change depending on the modal’s variant. 
+- **Footer:**  Includes the actions to cancel or complete a task. The buttons variants change depending on the modal’s variant.
 - **Overlay** Obscures and disables the background content
 
 ### Sizing
@@ -83,19 +83,19 @@ import Modal from './Modal';
 
 - Should not include more than 2 interactions
 
-`ModalHeader` 
+`ModalHeader`
 - Only use the `title` prop to display the title
 - Always use the `onRequestClose` prop to ensure the close button is available for users in the top right-hand corner
 - Don't add a leading icon unless it's `variant` of 'warning' or 'danger'
 
 `ModalBody`
-- Always wrap your content in an element 
--  `<p>` If the body content of the modal is only text 
+- Always wrap your content in an element
+-  `<p>` If the body content of the modal is only text
 - Sub-headings should be no larger than an `h5`
 - If the content is more complex (e.g. forms, lists, checkboxes, etc.) reach out to the design team for clarification on consistency
 
 ```
-DO: 
+DO:
 
 <ModalBody>
   <p>Some content goes here.</p>
@@ -110,9 +110,9 @@ DON'T:
 ```
 
 `ModalFooter`
-- Always ensure you are using the proper button 
-- `variant='warning'` should use the primary button and color 
-- `variant='danger'` should use the danger button and color 
+- Always ensure you are using the proper button
+- `variant='warning'` should use the primary button and color
+- `variant='danger'` should use the danger button and color
 
 ### UX Copy
 1. **Be clear and concise:** Exercise brevity over personality and use precise language.
