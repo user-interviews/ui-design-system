@@ -18,6 +18,7 @@ import FadeTransition from 'src/FadeTransition';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
+import Grid from 'src/Grid';
 import IconCell from 'src/IconCell';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
@@ -92,6 +93,7 @@ export {
   Form,
   FormControlLabel,
   FormGroup,
+  Grid,
   IconCell,
   Input,
   InputLabel,

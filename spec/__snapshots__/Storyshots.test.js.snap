@@ -4922,6 +4922,57 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Row 1`
 </div>
 `;
 
+exports[`Storyshots Components/Grid Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-2 css-12n0uxm-MuiGrid-root"
+  >
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+    >
+      <section
+        className="Card Card--md"
+      >
+        <div
+          className="Card__header"
+        >
+          <h2
+            className="Card__title"
+          >
+            Grid Card 1
+          </h2>
+        </div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut cursus sem id metus tincidunt sodales. Aenean elit felis, pharetra eu condimentum vitae, efficitur vel lorem. Fusce ac risus id ante pellentesque tristique. Morbi consequat tincidunt erat ac pretium. Nullam ullamcorper tortor nulla. Maecenas sit amet arcu vitae mi euismod suscipit. Fusce finibus faucibus dictum.
+      </section>
+    </div>
+    <div
+      className="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-md-6 css-1fyyp8j-MuiGrid-root"
+    >
+      <section
+        className="Card Card--md"
+      >
+        <div
+          className="Card__header"
+        >
+          <h2
+            className="Card__title"
+          >
+            Grid Card 2
+          </h2>
+        </div>
+        Phasellus quis pulvinar ligula. Pellentesque turpis mauris, vehicula sed venenatis sed, aliquet feugiat felis. Ut nisl lorem, ullamcorper id suscipit fermentum, tempus eu ex. Quisque a posuere nisl. Donec vitae risus vel eros ornare tempus. Nullam a venenatis tortor, id pharetra lacus. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+      </section>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/IconCell Default 1`] = `
 <div
   style={
