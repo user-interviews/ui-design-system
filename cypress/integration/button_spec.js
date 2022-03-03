@@ -17,6 +17,12 @@ const buttons = [
     class: '.Button',
     match: 'Edit',
   },
+  {
+    name: 'Transparent',
+    path: 'components-button--transparent',
+    class: '.Button',
+    match: 'Skip',
+  },
 ];
 
 describe('Button', () => {
