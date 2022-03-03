@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Button from 'src/Button';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEllipsisV } from '@fortawesome/pro-solid-svg-icons';
-
-import './DropdownIconToggle.scss';
 
 const DropdownIconToggle = React.forwardRef(({
   ariaLabel,
@@ -13,20 +13,21 @@ const DropdownIconToggle = React.forwardRef(({
   icon,
   onClick,
 }, ref) => (
-  <button
+  <Button
     aria-label={ariaLabel}
     aria-labelledby={ariaLabelledBy}
     className="DropdownIconToggle"
     ref={ref}
     type="button"
+    variant="transparent"
     onClick={(e) => {
       e.preventDefault();
       onClick(e);
     }}
   >
-    <FontAwesomeIcon icon={icon} />
+    <FontAwesomeIcon icon={icon} size="lg" />
     {children}
-  </button>
+  </Button>
 ));
 
 DropdownIconToggle.propTypes = {
@@ -37,7 +38,7 @@ DropdownIconToggle.propTypes = {
 };
 
 DropdownIconToggle.defaultProps = {
-  ariaLabel: undefined,
+  ariaLabel: 'icon toggle dropdown',
   ariaLabelledBy: undefined,
   icon: faEllipsisV,
   onClick: undefined,

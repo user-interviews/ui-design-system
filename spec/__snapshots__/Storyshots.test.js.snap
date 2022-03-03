@@ -3085,7 +3085,9 @@ exports[`Storyshots Components/Dropdown Icon 1`] = `
     className="Dropdown dropdown"
   >
     <button
-      className="DropdownIconToggle"
+      aria-label="icon toggle dropdown"
+      className="Button DropdownIconToggle btn btn-transparent"
+      disabled={false}
       onClick={[Function]}
       type="button"
     >
