@@ -1,4 +1,5 @@
 import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Figma } from "storybook-addon-designs/blocks"
 import Dropdown from './Dropdown';
 
 # Dropdown
@@ -6,21 +7,20 @@ import Dropdown from './Dropdown';
 ##
 
 <h4>
-  Dropdowns are toggleable, contextual overlays for displaying lists of links and more. 
-  Dropdowns are built using a third-party library Popper.js, which provides dynamic positioning and viewport detection.
+  A Dropdown displays a list of actions or selectable options that a user can take.
+  Typically contained within a button, an action is initiated based on the selection.
 </h4>
 
 <Canvas>
   <Story id="components-dropdown--default" />
 </Canvas>
 
-### When to use 
-- Reason 1
-- Reason 2
 
 ### When to not use
-- Reason 1
-- Reason 2
+Avoid the Dropdown component if:
+
+- Users can select one or many from the options
+- There are more than 15 options
 
 ## Props
 
@@ -52,23 +52,40 @@ import Dropdown from './Dropdown';
 
 ## Formatting
 
-### States
-
 ### Anatomy 
 - **Toggle: ** A button to open the dropdown menu.
-
-
-### Sizing
-
-### Alignment
 
 
 ## Best practices
 
 ### General
+The Dropdown component should:
 
-### Behavior
-
-### Implementation
+- Be used for secondary actions or information
+- Contain actions or options that are related to each other
+- Be used when the action need not be frequently taken
+- Display actions as disabled when they can only be used sometimes (instead of removing them)
 
 ### UX Copy
+
+The labels should:
+
+- Be clear and predictable.
+- Lead with a strong verb that encourages action.
+    - To provide enough context, use {verb} + {noun} format unless the action is clear with a single verb
+- Be concise.
+
+### To Label, or Not To Label
+
+Use a label if:
+
+- The label needs to be displayed at all times
+- The action(s) taken is more frequent
+
+Use the icon if:
+
+- Space is an issue
+- It is already placed within context (i.e. at the end of a `Card`)
+
+<Figma url="https://www.figma.com/file/471iS3QrpPtXZpS1xbsJ20/Components?node-id=8699%3A42280" />
+
