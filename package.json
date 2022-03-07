@@ -106,7 +106,7 @@
     "eslint-utils": "^1.4.3",
     "jest": "^27.4.6",
     "jest-css-modules-transform": "^4.3.0",
-    "node-sass": "^4.14.1",
+    "sass": "^1.49.9",
     "nodemon": "^2.0.15",
     "prop-types": "^15.6.1",
     "react": "16.14.0",
@@ -129,9 +129,9 @@
     "scss"
   ],
   "engines": {
-    "node": ">= 16",
-    "npm": ">= 8",
-    "yarn": ">= 1.22"
+    "node": "^16.x",
+    "npm": "^8.x",
+    "yarn": "^1.22.x"
   },
   "main": "lib/index.js",
   "publishConfig": {
