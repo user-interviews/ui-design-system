@@ -129,15 +129,15 @@
     "scss"
   ],
   "engines": {
-    "node": "^ 14.17.4",
-    "npm": "^ 7.20.3",
-    "yarn": "^ 1.22.5"
+    "node": ">= 16",
+    "npm": ">= 8",
+    "yarn": ">= 1.22"
   },
   "main": "lib/index.js",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
   "repository": "https://github.com/user-interviews/ui-design-system.git",
-  "author": "Dave Ferris <dave@userinterviews.com>",
+  "author": "Bob Saris <bob@userinterviews.com>",
   "license": "MIT"
 }
