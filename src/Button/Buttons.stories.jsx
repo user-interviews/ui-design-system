@@ -193,3 +193,63 @@ export const Warning = () => (
     </Button>
   </>
 );
+
+export const Transparent = () => (
+  <>
+    <Button
+      leadingIcon={faFileAlt}
+      size="sm"
+      trailingIcon={faCaretDown}
+      variant="transparent"
+    >
+      Skip
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
+      size="sm"
+      trailingIcon={faCaretDown}
+      variant="outline-transparent"
+    >
+      Skip
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="sm"
+      trailingIcon={faCaretDown}
+      variant="transparent"
+    >
+      Skip
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
+      size="md"
+      trailingIcon={faCaretDown}
+      variant="transparent"
+    >
+      Skip
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
+      size="md"
+      trailingIcon={faCaretDown}
+      variant="outline-transparent"
+    >
+      Skip
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="md"
+      trailingIcon={faCaretDown}
+      variant="transparent"
+    >
+      Skip
+    </Button>
+  </>
+);

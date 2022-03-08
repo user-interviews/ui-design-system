@@ -192,3 +192,65 @@ $warning: $ux-yellow-400;
     border-color: $btn-outline-warning-active-border-color;
   }
 }
+
+@mixin btn-transparent {
+  $btn-transparent-background: transparent;
+  $btn-transparent-border: transparent;
+  $btn-transparent-color: $ux-gray-700;
+  
+  $btn-transparent-hover-background: $ux-gray-300;
+  $btn-transparent-hover-border: transparent;
+  $btn-transparent-hover-color: $ux-gray-900;
+  
+  $btn-transparent-active-background: transparent;
+  $btn-transparent-active-border: $ux-gray-400;
+  $btn-transparent-active-color: $ux-gray-900;
+
+  @include button-variant(
+    $btn-transparent-background, 
+    $btn-transparent-border,
+    $btn-transparent-color,
+    
+    $btn-transparent-hover-background,
+    $btn-transparent-hover-border,
+    $btn-transparent-hover-color,
+    
+    $btn-transparent-active-background,
+    $btn-transparent-active-border,
+    $btn-transparent-active-color,
+  );
+
+  &:disabled {
+    color: $ux-gray-500;
+  }
+}
+
+@mixin btn-outline-transparent {
+  $btn-outline-transparent-color: $ux-gray-900;
+  $btn-outline-transparent-color-hover: $ux-gray-900;
+
+  $btn-outline-transparent-hover-background: $ux-gray-300;
+  $btn-outline-transparent-hover-border: $ux-gray-300;
+  $btn-outline-transparent-hover-color: $ux-gray-900;
+
+  $btn-outline-transparent-border: $ux-gray-400;
+
+  $btn-outline-transparent-active-background: $ux-gray-400;
+  $btn-outline-transparent-active-border-color: $ux-gray-400;
+  
+  @include button-outline-variant(
+    $btn-outline-transparent-color, 
+    $btn-outline-transparent-color-hover,
+
+    $btn-outline-transparent-hover-background,
+    $btn-outline-transparent-hover-border,
+    $btn-outline-transparent-hover-color,
+  );
+  border-color: $btn-outline-transparent-border;
+
+  &:active {
+    background-color: $btn-outline-transparent-active-background;
+    border-color: $btn-outline-transparent-active-border-color;
+  }
+}
+
