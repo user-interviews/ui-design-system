@@ -13,11 +13,11 @@ $card-width-xs: 15rem;
   border: none;
   border-radius: 0.25rem;
   box-shadow: $ux-elevations-20;
-  margin: $card-spacing auto;
+  //margin: $card-spacing auto;
   outline-color: $ux-green-500;
   padding: $card-spacing;
 
-  width: calc(100% - #{$card-xs-spacing});
+  //width: calc(100% - #{$card-xs-spacing});
 
   @include media-breakpoint-up(sm) {
     width: calc(100% - 2rem);

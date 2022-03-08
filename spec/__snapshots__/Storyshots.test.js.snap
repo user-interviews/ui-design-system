@@ -2841,6 +2841,85 @@ exports[`Storyshots Components/CheckboxButton With Description 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Container Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Container Container__flex Container__direction--row Container__justifyContent--center Container__alignItems--center Container__spacing--8"
+  >
+    <section
+      className="Card Card--xs"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card--xs
+        </h2>
+      </div>
+    </section>
+  </div>
+  <div
+    className="Container Container__flex Container__direction--row Container__justifyContent--center Container__alignItems--center Container__spacing--8"
+  >
+    <section
+      className="Card Card--sm"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card--sm
+        </h2>
+      </div>
+    </section>
+  </div>
+  <div
+    className="Container Container__flex Container__direction--row Container__justifyContent--center Container__alignItems--center Container__spacing--8"
+  >
+    <section
+      className="Card Card--md"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card--md
+        </h2>
+      </div>
+    </section>
+  </div>
+  <div
+    className="Container Container__flex Container__direction--row Container__justifyContent--center Container__alignItems--center Container__spacing--8"
+  >
+    <section
+      className="Card Card--lg"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card--lg
+        </h2>
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Copy To Clipboard Button Default 1`] = `
 <div
   style={

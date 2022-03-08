@@ -1,0 +1,101 @@
+@import '../../scss/theme';
+
+.Container {
+  
+  &__flex {
+    display: flex;
+  }
+
+  &__direction {
+    &--row {
+      flex-direction: row;
+    }
+    &--row-reverse {
+      flex-direction: row-reverse;
+    }
+    &--column {
+      flex-direction: column;
+    }
+    &--column-reverse {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__justifyContent {
+    &--flex-start{
+      justify-content: flex-start;
+    }
+
+    &--center {
+      justify-content: center;
+    }
+
+    &--flex-start{
+      justify-content: flex-end;
+    }
+
+    &--space-between {
+      justify-content: space-between;
+    }
+
+    &--space-around {
+      justify-content: space-around;
+    }
+
+    &--space-evenly {
+      justify-content: space-evenly;
+    }
+  }
+
+  &__alignItems {
+    &--flex-start {
+      align-items: flex-start;
+    }
+
+    &--center {
+      align-items: center;
+    }
+
+    &--flex-end {
+      align-items: flex-end;
+    }
+
+    &--stretch {
+      align-items: stretch;
+    }
+
+    &--baseline {
+      align-items: baseline;
+    }
+  }
+
+  &__spacing {
+    &--4 {
+      margin: $ux-spacing-10;
+    }
+
+    &--8 {
+      margin: $ux-spacing-20;
+    }
+
+    &--12 {
+      margin: $ux-spacing-30;
+    }
+
+    &--16 {
+      margin: $ux-spacing-40;
+    }
+
+    &--24 {
+      margin: $ux-spacing-50;
+    }
+
+    &--32 {
+      margin: $ux-spacing-60;
+    }
+    
+    &--48 {
+      margin: $ux-spacing-70;
+    }
+  }
+}
