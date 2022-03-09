@@ -32,8 +32,6 @@ const Container = ({
   </div>
   );
 
-export default Container;
-
 Container.propTypes = {
   alignItems: PropTypes.string,
   className: PropTypes.string,
@@ -51,3 +49,5 @@ Container.defaultProps = {
   justifyContent: 'center',
   spacing: 8,
 };
+
+export default Container;
