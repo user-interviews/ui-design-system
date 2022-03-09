@@ -30,3 +30,29 @@ export const Default = () => (
     </Container>
   </>
 );
+
+export const JustifyContent = () => (
+  <>
+    <Container justifyContent="flex-end">
+      <Card size={CardSizes.EXTRA_SMALL} title="flex-end" />
+    </Container>
+    <Container justifyContent="center">
+      <Card size={CardSizes.EXTRA_SMALL} title="center" />
+    </Container>
+    <Container justifyContent="flex-start">
+      <Card size={CardSizes.EXTRA_SMALL} title="flex-start" />
+    </Container>
+    <Container justifyContent="space-around">
+      <Card size={CardSizes.EXTRA_SMALL} title="space-around" />
+      <Card size={CardSizes.EXTRA_SMALL} title="space-around" />
+    </Container>
+    <Container justifyContent="space-between">
+      <Card size={CardSizes.EXTRA_SMALL} title="space-between" />
+      <Card size={CardSizes.EXTRA_SMALL} title="space-between" />
+    </Container>
+    <Container justifyContent="space-evenly">
+      <Card size={CardSizes.EXTRA_SMALL} title="space-evenly" />
+      <Card size={CardSizes.EXTRA_SMALL} title="space-evenly" />
+    </Container>
+  </>
+);

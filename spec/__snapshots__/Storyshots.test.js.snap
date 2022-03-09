@@ -2920,6 +2920,158 @@ exports[`Storyshots Components/Container Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Container Justify Content 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Container Container__flex Container__direction--row Container__justifyContent--flex-end Container__alignItems--center Container__spacing--8"
+  >
+    <section
+      className="Card Card--xs"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          flex-end
+        </h2>
+      </div>
+    </section>
+  </div>
+  <div
+    className="Container Container__flex Container__direction--row Container__justifyContent--center Container__alignItems--center Container__spacing--8"
+  >
+    <section
+      className="Card Card--xs"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          center
+        </h2>
+      </div>
+    </section>
+  </div>
+  <div
+    className="Container Container__flex Container__direction--row Container__justifyContent--flex-start Container__alignItems--center Container__spacing--8"
+  >
+    <section
+      className="Card Card--xs"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          flex-start
+        </h2>
+      </div>
+    </section>
+  </div>
+  <div
+    className="Container Container__flex Container__direction--row Container__justifyContent--space-around Container__alignItems--center Container__spacing--8"
+  >
+    <section
+      className="Card Card--xs"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          space-around
+        </h2>
+      </div>
+    </section>
+    <section
+      className="Card Card--xs"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          space-around
+        </h2>
+      </div>
+    </section>
+  </div>
+  <div
+    className="Container Container__flex Container__direction--row Container__justifyContent--space-between Container__alignItems--center Container__spacing--8"
+  >
+    <section
+      className="Card Card--xs"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          space-between
+        </h2>
+      </div>
+    </section>
+    <section
+      className="Card Card--xs"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          space-between
+        </h2>
+      </div>
+    </section>
+  </div>
+  <div
+    className="Container Container__flex Container__direction--row Container__justifyContent--space-evenly Container__alignItems--center Container__spacing--8"
+  >
+    <section
+      className="Card Card--xs"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          space-evenly
+        </h2>
+      </div>
+    </section>
+    <section
+      className="Card Card--xs"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          space-evenly
+        </h2>
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Copy To Clipboard Button Default 1`] = `
 <div
   style={
