@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import Button from 'src/Button';
 import './ModalFooter.scss';
 
 export default class ModalFooter extends Component {
@@ -12,14 +13,14 @@ export default class ModalFooter extends Component {
     return (
       <div className="ModalFooter">
         {this.props.onRequestClose && (
-          <button
-            className="btn btn-transparent"
+          <Button
             disabled={this.props.closingIsDisabled}
             type="button"
+            variant="transparent"
             onClick={this.handleCloseClick}
           >
             {this.props.dismissButtonText}
-          </button>
+          </Button>
         )}
         {this.props.children}
       </div>

@@ -10,15 +10,20 @@ import './DropdownToggle.scss';
 
 const DropdownToggle = ({
   as,
+  ariaLabel,
+  bsPrefix,
   childBsPrefix,
   children,
   className,
   id,
   leadingIcon,
+  removeCaret,
   ...props
 }) => (
   <RBDropdown.Toggle
+    aria-label={ariaLabel}
     as={as}
+    bsPrefix={removeCaret ? 'DropdownToggle--no-caret' : bsPrefix}
     childBsPrefix={childBsPrefix}
     className={classNames('DropdownToggle', className)}
     id={id}
@@ -30,6 +35,11 @@ const DropdownToggle = ({
   );
 
 DropdownToggle.propTypes = {
+   /**
+    Be sure to include an appropriate aria-label when using only an icon
+    for the DropdownToggle.
+   */
+  ariaLabel: PropTypes.string,
   /**
     You can use a custom element type for this component.
    */
@@ -49,15 +59,22 @@ DropdownToggle.propTypes = {
   */
   id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
   leadingIcon: PropTypes.object,
+  /**
+    Conditionally changes the bsPrefix in order to remove the default caret icon.
+    This allows you to use a different icon of your choice.
+  */
+  removeCaret: PropTypes.bool,
 };
 
 DropdownToggle.defaultProps = {
   as: undefined,
+  ariaLabel: 'dropdown-toggle',
   bsPrefix: 'dropdown-toggle',
   className: undefined,
   childBsPrefix: undefined,
   id: undefined,
   leadingIcon: undefined,
+  removeCaret: undefined,
 };
 
 export default DropdownToggle;

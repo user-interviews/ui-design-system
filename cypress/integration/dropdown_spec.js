@@ -10,8 +10,13 @@ const dropdowns = [
     class: '.Dropdown',
   },
   {
-    name: 'Icon',
-    path: 'components-dropdown--icon',
+    name: 'Icon Default',
+    path: 'components-dropdown--icon-default',
+    class: '.Dropdown',
+  },
+  {
+    name: 'Icon Swap',
+    path: 'components-dropdown--icon-swap',
     class: '.Dropdown',
   },
 ];

@@ -1,10 +1,11 @@
 import React from 'react';
 
 import {
- Dropdown, DropdownToggle, DropdownItem, DropdownMenu, DropdownIconToggle,
+ Dropdown, DropdownToggle, DropdownItem, DropdownMenu,
 } from 'src/Dropdown';
-import { faFileAlt } from '@fortawesome/pro-regular-svg-icons';
+import { faEllipsisV, faFileAlt } from '@fortawesome/pro-solid-svg-icons';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import mdx from './Dropdown.mdx';
 
 export default {
@@ -73,10 +74,25 @@ export const Sizes = () => (
   </>
 );
 
-export const Icon = () => (
+export const IconDefault = () => (
   <>
     <Dropdown>
-      <DropdownToggle as={DropdownIconToggle} />
+      <DropdownToggle ariaLabel="dropdown toggle" variant="transparent" />
+      <DropdownMenu>
+        <DropdownItem href="#">Action</DropdownItem>
+        <DropdownItem href="#">Another action</DropdownItem>
+        <DropdownItem href="#">Click me</DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </>
+);
+
+export const IconSwap = () => (
+  <>
+    <Dropdown>
+      <DropdownToggle ariaLabel="dropdown toggle ellipsis" removeCaret variant="transparent">
+        <FontAwesomeIcon icon={faEllipsisV} size="lg" />
+      </DropdownToggle>
       <DropdownMenu>
         <DropdownItem href="#">Action</DropdownItem>
         <DropdownItem href="#">Another action</DropdownItem>

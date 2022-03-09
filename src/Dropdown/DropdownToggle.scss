@@ -40,4 +40,12 @@ $warning: $ux-yellow-400;
   &.btn-outline-warning {
     @include btn-outline-warning;
   }
+
+  &.btn-transparent {
+    @include btn-transparent;
+  }
+
+  &.btn-outline-transparent {
+    @include btn-outline-transparent;
+  }
 }
