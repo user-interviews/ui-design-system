@@ -2,10 +2,12 @@ import React from 'react';
 
 import Card, { CardSizes } from 'src/Card';
 import CardList from 'src/CardList';
+import { withKnobs, select } from '@storybook/addon-knobs';
 import mdx from './CardList.mdx';
 
 export default {
   title: 'Components/CardList',
+  decorators: [withKnobs],
   component: CardList,
   parameters: {
     docs: {
@@ -18,7 +20,7 @@ export const Default = () => (
   <>
     <CardList>
       <Card
-        size={CardSizes.SMALL}
+        size={select('Card Size', Object.values(CardSizes), CardSizes.SMALL)}
         subTitle="The fastest way to recruit research participants.
         Source from a pool of more than 850,000 participants to reach nearly any target audience."
         title="Card 1"
@@ -30,7 +32,7 @@ export const Default = () => (
         </ul>
       </Card>
       <Card
-        size={CardSizes.SMALL}
+        size={select('Card Size', Object.values(CardSizes), CardSizes.SMALL)}
         subTitle="The fastest way to recruit research participants.
         Source from a pool of more than 850,000 participants to reach nearly any target audience."
         title="Card 2"
@@ -42,7 +44,7 @@ export const Default = () => (
         </ul>
       </Card>
       <Card
-        size={CardSizes.SMALL}
+        size={select('Card Size', Object.values(CardSizes), CardSizes.SMALL)}
         subTitle="The fastest way to recruit research participants.
         Source from a pool of more than 850,000 participants to reach nearly any target audience."
         title="Card 3"
