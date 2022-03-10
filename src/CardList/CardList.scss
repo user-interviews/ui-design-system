@@ -1,11 +1,16 @@
 @import '../../scss/theme';
 
+$card-list-spacing: 1.5rem;
+$card-list-child-card-spacing: 0.75rem;
+
 .CardList {
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  margin: $card-list-spacing 0;
+  
   .Card {
-    margin: 1.5rem;
+    margin: $card-list-child-card-spacing;
   }
 }
