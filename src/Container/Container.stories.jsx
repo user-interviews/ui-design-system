@@ -33,14 +33,14 @@ export const Default = () => (
 
 export const JustifyContent = () => (
   <>
-    <Container justifyContent="flex-end">
-      <Card size={CardSizes.EXTRA_SMALL} title="flex-end" />
+    <Container justifyContent="flex-start">
+      <Card size={CardSizes.EXTRA_SMALL} title="flex-start" />
     </Container>
     <Container justifyContent="center">
       <Card size={CardSizes.EXTRA_SMALL} title="center" />
     </Container>
-    <Container justifyContent="flex-start">
-      <Card size={CardSizes.EXTRA_SMALL} title="flex-start" />
+    <Container justifyContent="flex-end">
+      <Card size={CardSizes.EXTRA_SMALL} title="flex-end" />
     </Container>
     <Container justifyContent="space-around">
       <Card size={CardSizes.EXTRA_SMALL} title="space-around" />

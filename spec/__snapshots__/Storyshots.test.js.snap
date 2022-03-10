@@ -2929,7 +2929,7 @@ exports[`Storyshots Components/Container Justify Content 1`] = `
   }
 >
   <div
-    className="Container Container__flex Container__direction--row Container__justifyContent--flex-end Container__alignItems--center Container__spacing--8"
+    className="Container Container__flex Container__direction--row Container__justifyContent--flex-start Container__alignItems--center Container__spacing--8"
   >
     <section
       className="Card Card--xs"
@@ -2940,7 +2940,7 @@ exports[`Storyshots Components/Container Justify Content 1`] = `
         <h2
           className="Card__title"
         >
-          flex-end
+          flex-start
         </h2>
       </div>
     </section>
@@ -2963,7 +2963,7 @@ exports[`Storyshots Components/Container Justify Content 1`] = `
     </section>
   </div>
   <div
-    className="Container Container__flex Container__direction--row Container__justifyContent--flex-start Container__alignItems--center Container__spacing--8"
+    className="Container Container__flex Container__direction--row Container__justifyContent--flex-end Container__alignItems--center Container__spacing--8"
   >
     <section
       className="Card Card--xs"
@@ -2974,7 +2974,7 @@ exports[`Storyshots Components/Container Justify Content 1`] = `
         <h2
           className="Card__title"
         >
-          flex-start
+          flex-end
         </h2>
       </div>
     </section>
