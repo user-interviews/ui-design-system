@@ -2748,7 +2748,7 @@ exports[`Storyshots Components/CardList Default 1`] = `
   }
 >
   <div
-    className="CardList"
+    className="CardList CardList__alignItems--center"
   >
     <section
       className="Card Card--sm"

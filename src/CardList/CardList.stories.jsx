@@ -16,9 +16,11 @@ export default {
   },
 };
 
+const CardListAlignItemsOptions = ['center', 'flex-start', 'flex-end'];
+
 export const Default = () => (
   <>
-    <CardList>
+    <CardList alignItems={select('alignItems', CardListAlignItemsOptions, 'center')}>
       <Card
         size={select('Card Size', Object.values(CardSizes), CardSizes.SMALL)}
         subTitle="The fastest way to recruit research participants.
