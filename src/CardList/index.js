@@ -1,3 +1,3 @@
-import CardList from './CardList';
+import CardList, { CardListAlignItemsOptions } from './CardList';
 
-export default CardList;
+export { CardList as default, CardListAlignItemsOptions };

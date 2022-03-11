@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 
 import './CardList.scss';
 
+export const CardListAlignItemsOptions = ['center', 'flex-start', 'flex-end'];
+
 const CardList = ({
   alignItems,
   className,
@@ -25,7 +27,7 @@ const CardList = ({
   );
 
 CardList.propTypes = {
-  alignItems: PropTypes.oneOf(['center', 'flex-start', 'flex-end']),
+  alignItems: PropTypes.oneOf(CardListAlignItemsOptions),
   className: PropTypes.string,
 };
 
