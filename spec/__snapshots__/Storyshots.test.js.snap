@@ -6101,7 +6101,7 @@ exports[`Storyshots Components/Pill With Close 1`] = `
   }
 >
   <span
-    className="Pill Pill--blue"
+    className="Pill Pill--blue Pill--closeable"
   >
     Text
     <button
