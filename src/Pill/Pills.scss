@@ -1,0 +1,13 @@
+@import '../../scss/theme';
+
+$pills-spacing: 0.25rem;
+
+.Pills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .Pill {
+    margin: $pills-spacing;
+  }
+}
