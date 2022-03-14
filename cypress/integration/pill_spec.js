@@ -4,6 +4,10 @@ const pills = [
     path: 'components-pill--default',
   },
   {
+    name: 'With Container',
+    path: 'components-pill--with-container',
+  },
+  {
     name: 'With Leading Icon',
     path: 'components-pill--with-leading-icon',
   },

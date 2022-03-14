@@ -2,6 +2,7 @@ import { Alert, MessageTypes } from 'src/Alert';
 import Button from 'src/Button';
 import Avatar from 'src/Avatar';
 import Card, { CardSizes } from 'src/Card';
+import CardList from 'src/CardList';
 import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import { ORIENTATIONS as BUTTON_GROUP_ORIENTATIONS } from 'src/ControlButtonGroup';
@@ -28,7 +29,7 @@ import {
   ModalFooter,
   ModalHeader,
 } from 'src/Modal';
-import { Pill, PILL_COLORS } from 'src/Pill';
+import { Pill, Pills, PILL_COLORS } from 'src/Pill';
 import Popper from 'src/Popper';
 import ProfileCell from 'src/ProfileCell';
 import RadioButton from 'src/RadioButton';
@@ -74,6 +75,7 @@ export {
   Button,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
+  CardList,
   CardSizes,
   CheckboxButton,
   CheckboxButtonGroup,
@@ -102,6 +104,7 @@ export {
   ModalHeader,
   Option,
   Pill,
+  Pills,
   PILL_COLORS,
   Popper,
   ProfileCell,
