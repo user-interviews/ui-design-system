@@ -8,6 +8,7 @@
   color: $ux-blue-700;
   border-radius: $ux-border-radius;
   padding: $ux-spacing-10 $ux-spacing-30;
+  white-space: nowrap;
 
   &--blue {
     background-color: $ux-blue-100;
