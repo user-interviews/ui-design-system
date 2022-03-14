@@ -2,6 +2,7 @@ import { Alert, MessageTypes } from 'src/Alert';
 import Button from 'src/Button';
 import Avatar from 'src/Avatar';
 import Card, { CardSizes } from 'src/Card';
+import CardList from 'src/CardList';
 import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import { ORIENTATIONS as BUTTON_GROUP_ORIENTATIONS } from 'src/ControlButtonGroup';
@@ -74,6 +75,7 @@ export {
   Button,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
+  CardList,
   CardSizes,
   CheckboxButton,
   CheckboxButtonGroup,
