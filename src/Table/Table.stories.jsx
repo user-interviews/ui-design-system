@@ -9,7 +9,317 @@ import {
  Table, TableBody, TableCell, TableHead, TableRow, TableSortLabel,
 } from 'src/Table';
 
+import styled from 'styled-components';
+
+import { useTable, useAbsoluteLayout, useColumnOrder } from "react-table";
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+
+import makeData from './makeData';
+
 import mdx from './Table.mdx';
+
+const Stylesx = styled.div`
+  padding: 1rem;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .table {
+    border: 1px solid #000;
+    max-width: 700px;
+    overflow-x: auto;
+  }
+
+  .header {
+    font-weight: bold;
+  }
+
+  .rows {
+    overflow-y: auto;
+  }
+
+  .row {
+    border-bottom: 1px solid #000;
+    height: 32px;
+
+    &.body {
+      :last-child {
+        border: 0;
+      }
+    }
+  }
+
+  .cell {
+    height: 100%;
+    line-height: 31px;
+    border-right: 1px solid #000;
+    /* padding-left: 5px; */
+
+    :last-child {
+      border: 0;
+    }
+  }
+`;
+
+const getItemStyle = ({ isDragging, isDropAnimating }, draggableStyle) => ({
+  ...draggableStyle,
+  // some basic styles to make the items look a bit nicer
+  userSelect: "none",
+
+  // change background colour if dragging
+  background: isDragging ? "lightgreen" : "grey",
+
+  ...(!isDragging && { transform: "translate(0,0)" }),
+  ...(isDropAnimating && { transitionDuration: "0.001s" })
+
+  // styles we need to apply on draggables
+});
+
+function Tabley({ columns, data }) {
+  // Use the state and functions returned from useTable to build your UI
+
+  console.log('what is the data??? ', data)
+
+  const defaultColumn = React.useMemo(
+    () => ({
+      width: 150,
+    }),
+    [],
+  );
+
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    rows,
+    prepareRow,
+    allColumns,
+    setColumnOrder,
+
+    state,
+  } = useTable(
+    {
+      columns,
+      data,
+      defaultColumn,
+    },
+    useColumnOrder,
+    useAbsoluteLayout,
+  );
+
+  const currentColOrder = React.useRef();
+
+  console.log('allColumns before it gets to the table', allColumns)
+  console.log('setColumnOrder before it gets to the table', setColumnOrder)
+  console.log('rows before it gets to the table', rows)
+  console.log('headerGroups before it gets to the table', headerGroups)
+  console.log('columns before it gets to the table', columns)
+  console.log('state before it gets to the table', state)
+
+  // Render the UI for your table
+  return (
+    <>
+      <div {...getTableProps()} className="table">
+        <div>
+          {headerGroups.map((headerGroup) => (
+            <DragDropContext
+              onDragStart={() => {
+                console.log('allColumns onDragStart', allColumns)
+                currentColOrder.current = allColumns.map((o) => o.id);
+              }}
+              onDragUpdate={(dragUpdateObj, b) => {
+                // console.log("onDragUpdate", dragUpdateObj, b);
+
+                const colOrder = [...currentColOrder.current];
+                const sIndex = dragUpdateObj.source.index;
+                const dIndex =
+                  dragUpdateObj.destination && dragUpdateObj.destination.index;
+
+                if (typeof sIndex === 'number' && typeof dIndex === 'number') {
+                  colOrder.splice(sIndex, 1);
+                  colOrder.splice(dIndex, 0, dragUpdateObj.draggableId);
+                  setColumnOrder(colOrder);
+
+                  // console.log(
+                  //   "onDragUpdate",
+                  //   dragUpdateObj.destination.index,
+                  //   dragUpdateObj.source.index
+                  // );
+                  // console.log(temp);
+                }
+              }}
+            >
+              <Droppable direction="horizontal" droppableId="droppable">
+                {(droppableProvided, snapshot) => (
+                  <div
+                    {...headerGroup.getHeaderGroupProps()}
+                    className="row header-group"
+                    ref={droppableProvided.innerRef}
+                  >
+                    {headerGroup.headers.map((column, index) => (
+                      <Draggable
+                        draggableId={column.id}
+                        index={index}
+                        isDragDisabled={!column.accessor}
+                        key={column.id}
+                      >
+                        {(provided, snapshot) =>
+                          // console.log(column.getHeaderProps());
+
+                          // const {
+                          //   style,
+                          //   ...extraProps
+                          // } = column.getHeaderProps();
+
+                          // console.log(style, extraProps);
+
+                           (
+                             <div
+                               {...column.getHeaderProps()}
+                               className="cell header"
+                             >
+                               <div
+                                 {...provided.draggableProps}
+                                 {...provided.dragHandleProps}
+                                // {...extraProps}
+                                 ref={provided.innerRef}
+                                 style={{
+                                  ...getItemStyle(
+                                    snapshot,
+                                    provided.draggableProps.style,
+                                  ),
+                                  // ...style
+                                }}
+                               >
+                                 {column.render('Header')}
+                               </div>
+                             </div>
+                          )}
+                      </Draggable>
+                    ))}
+                    {/* {droppableProvided.placeholder} */}
+                  </div>
+                )}
+              </Droppable>
+            </DragDropContext>
+          ))}
+        </div>
+
+        <div className="rows" {...getTableBodyProps()}>
+          {rows.map(
+            (row, i) =>
+              prepareRow(row) || (
+                <div {...row.getRowProps()} className="row body">
+                  {row.cells.map((cell) => (
+                    <div {...cell.getCellProps()} className="cell">
+                      {cell.render('Cell')}
+                    </div>
+                    ))}
+                </div>
+              ),
+          )}
+        </div>
+      </div>
+      <pre>
+        <code>{JSON.stringify(state, null, 2)}</code>
+      </pre>
+    </>
+  );
+}
+
+const Styles = styled.div`
+  padding: 1rem;
+
+  table {
+    border-spacing: 0;
+    border: 1px solid black;
+
+    tr {
+      :last-child {
+        td {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    th,
+    td {
+      margin: 0;
+      padding: 0.5rem;
+      border-bottom: 1px solid black;
+      border-right: 1px solid black;
+      background: white;
+
+      :last-child {
+        border-right: 0;
+      }
+    }
+  }
+`;
+
+function shuffle(arr) {
+  arr = [...arr];
+  const shuffled = [];
+  while (arr.length) {
+    const rand = Math.floor(Math.random() * arr.length);
+    shuffled.push(arr.splice(rand, 1)[0]);
+  }
+  return shuffled;
+}
+
+function Tablex({ columns, data }) {
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    rows,
+    visibleColumns,
+    prepareRow,
+    setColumnOrder,
+    state,
+  } = useTable(
+    {
+      columns,
+      data,
+    },
+    useColumnOrder,
+  );
+
+  const randomizeColumns = () => {
+    setColumnOrder(shuffle(visibleColumns.map((d) => d.id)));
+  };
+
+  return (
+    <>
+      <button onClick={() => randomizeColumns({})}>Randomize Columns</button>
+      <table {...getTableProps()}>
+        <thead>
+          {headerGroups.map((headerGroup, i) => (
+            <tr {...headerGroup.getHeaderGroupProps()}>
+              {headerGroup.headers.map((column) => (
+                <th {...column.getHeaderProps()}>{column.render('Header')}</th>
+              ))}
+            </tr>
+          ))}
+        </thead>
+        <tbody {...getTableBodyProps()}>
+          {rows.slice(0, 10).map((row, i) => {
+            prepareRow(row);
+            return (
+              <tr {...row.getRowProps()}>
+                {row.cells.map((cell, i) => <td {...cell.getCellProps()}>{cell.render('Cell')}</td>)}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      <pre>
+        <code>{JSON.stringify(state, null, 2)}</code>
+      </pre>
+    </>
+  );
+}
 
 export default {
   title: 'Components/Table',
@@ -80,6 +390,159 @@ export const Default = () => (
   </Table>
 );
 
+export const TableWithDnd = () => {
+  const columns = React.useMemo(
+    () => [
+
+          {
+            Header: "First Name",
+            accessor: "firstName"
+          },
+          {
+            Header: "Last Name",
+            accessor: "lastName"
+          },
+
+          {
+            Header: "Age",
+            accessor: "age",
+            width: 50
+          },
+          {
+            Header: "Visits",
+            accessor: "visits",
+            width: 60
+          },
+          {
+            Header: "Status",
+            accessor: "status"
+          },
+          {
+            Header: "Profile Progress",
+            accessor: "progress"
+          },
+    ],
+    []
+  );
+
+  const datam = React.useMemo(() => makeData(10), []);
+
+  return (
+    <Stylesx>
+      <h1>hello world</h1>
+      <Tabley columns={columns} data={datam} />
+    </Stylesx>
+  );
+};
+
+export const TableWithReactTable = () => {
+  const data = React.useMemo(
+    () => [
+      {
+        col1: 'Hello',
+        col2: 'World',
+        col3: 'Time',
+        col4: 'More Time',
+      },
+      {
+        col1: 'react-table',
+        col2: 'rocks',
+        col3: 'Another',
+        col4: 'More Time',
+      },
+      {
+        col1: 'whatever',
+        col2: 'you want',
+        col3: 'Something',
+        col4: 'More Time',
+      },
+      {
+        col1: 'huh',
+        col2: 'so whatever',
+        col3: 'A moment',
+        col4: 'More Time',
+      },
+    ],
+    [],
+  );
+
+  const columns = React.useMemo(
+    () => [
+      {
+        Header: 'Column 1',
+        accessor: 'col1', // accessor is the "key" in the data
+      },
+      {
+        Header: 'Column 2',
+        accessor: 'col2',
+      },
+      {
+        Header: 'Column 3',
+        accessor: 'col3',
+      },
+      {
+        Header: 'Column 4',
+        accessor: 'col4',
+      },
+    ],
+    [],
+  );
+
+  const visibleColumns = [
+    'col4',
+    'col1',
+    'col2',
+    'col3',
+  ];
+
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    rows,
+    prepareRow,
+    setColumnOrder,
+  } = useTable({ columns, data }, useColumnOrder);
+
+  const randomizeColumns = () => {
+    setColumnOrder(shuffle(visibleColumns.map((d) => d.id)));
+  };
+
+  return (
+    <div>
+      <button onClick={() => randomizeColumns({})}>Randomize Columns</button>
+
+      <Table>
+        <TableHead>
+          {headerGroups.map((headerGroup) => (
+            <TableRow>
+              {headerGroup.headers.map((column) => (
+                <TableCell header>
+                  {column.render('Header')}
+                </TableCell>
+            ))}
+            </TableRow>
+        ))}
+        </TableHead>
+        <TableBody>
+          {rows.map((row) => {
+          prepareRow(row);
+          return (
+            <TableRow>
+              {row.cells.map((cell) => (
+                <TableCell>
+                  {cell.render('Cell')}
+                </TableCell>
+                ))}
+            </TableRow>
+          );
+        })}
+        </TableBody>
+      </Table>
+    </div>
+  );
+};
+
 export const TableWithFixedColumnWidths = () => (
   <Table style={{ tableLayout: 'fixed' }}>
     <TableHead>
@@ -110,6 +573,68 @@ export const TableWithFixedColumnWidths = () => (
     </TableBody>
   </Table>
 );
+
+export const TableOnStuff = () => {
+  const columns = React.useMemo(
+    () => [
+
+          {
+            Header: 'First Name',
+            accessor: 'col1',
+          },
+          {
+            Header: 'Last Name',
+            accessor: 'col2',
+          },
+          {
+            Header: 'Age',
+            accessor: 'col3',
+          },
+          {
+            Header: 'Visits',
+            accessor: 'col4',
+          },
+
+    ],
+    [],
+  );
+
+  const data = React.useMemo(
+    () => [
+      {
+        col1: 'Hello',
+        col2: 'World',
+        col3: 'Time',
+        col4: 'More Time',
+      },
+      {
+        col1: 'react-table',
+        col2: 'rocks',
+        col3: 'Another',
+        col4: 'More Time',
+      },
+      {
+        col1: 'whatever',
+        col2: 'you want',
+        col3: 'Something',
+        col4: 'More Time',
+      },
+      {
+        col1: 'huh',
+        col2: 'so whatever',
+        col3: 'A moment',
+        col4: 'More Time',
+      },
+    ],
+    [],
+  );
+
+  return (
+    <Styles>
+      <Tablex columns={columns} data={data} />
+    </Styles>
+  );
+};
 
 export const TableOnCard = () => (
   <Card
