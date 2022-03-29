@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Card, { CardSizes } from 'src/Card';
-import CardList, { CardListAlignItemsOptions } from 'src/CardList';
+import CardContainer, { CardContainerAlignItemsOptions } from 'src/CardContainer';
 import { withKnobs, select } from '@storybook/addon-knobs';
-import mdx from './CardList.mdx';
+import mdx from './CardContainer.mdx';
 
 export default {
-  title: 'Components/CardList',
+  title: 'Components/CardContainer',
   decorators: [withKnobs],
-  component: CardList,
+  component: CardContainer,
   parameters: {
     docs: {
       page: mdx,
@@ -17,7 +17,7 @@ export default {
 };
 
 export const Default = () => (
-  <CardList alignItems={select('alignItems', CardListAlignItemsOptions, 'center')}>
+  <CardContainer alignItems={select('alignItems', CardContainerAlignItemsOptions, 'center')}>
     <Card
       size={select('Card Size', Object.values(CardSizes), CardSizes.SMALL)}
       subTitle="The fastest way to recruit research participants.
@@ -54,5 +54,5 @@ export const Default = () => (
         <li>3 hours median time to 1st matched participant</li>
       </ul>
     </Card>
-  </CardList>
+  </CardContainer>
 );

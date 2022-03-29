@@ -1,16 +1,16 @@
 @import '../../scss/theme';
 
-$card-list-spacing: 1.5rem;
-$card-list-child-card-spacing: 0.75rem;
+$card-container-spacing: 1.5rem;
+$card-container-child-card-spacing: 0.75rem;
 
-.CardList {
+.CardContainer {
   display: flex;
   flex-direction: column;
 
-  margin: $card-list-spacing 0;
+  margin: $card-container-spacing 0;
   
   .Card {
-    margin: $card-list-child-card-spacing;
+    margin: $card-container-child-card-spacing;
   }
 
   &__alignItems {
