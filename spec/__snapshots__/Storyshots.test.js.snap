@@ -2739,7 +2739,7 @@ exports[`Storyshots Components/Card Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/CardList Default 1`] = `
+exports[`Storyshots Components/CardContainer Default 1`] = `
 <div
   style={
     Object {
@@ -2748,7 +2748,7 @@ exports[`Storyshots Components/CardList Default 1`] = `
   }
 >
   <div
-    className="CardList CardList__alignItems--center"
+    className="CardContainer CardContainer__alignItems--center"
   >
     <section
       className="Card Card--sm"

@@ -1,0 +1,29 @@
+@import '../../scss/theme';
+
+$card-container-spacing: 1.5rem;
+$card-container-child-card-spacing: 0.75rem;
+
+.CardContainer {
+  display: flex;
+  flex-direction: column;
+
+  margin: $card-container-spacing 0;
+  
+  .Card {
+    margin: $card-container-child-card-spacing;
+  }
+
+  &__alignItems {
+    &--center {
+      align-items: center;
+    }
+
+    &--flex-start {
+      align-items: flex-start;
+    }
+
+    &--flex-end {
+      align-items: flex-end;
+    }
+  }
+}
