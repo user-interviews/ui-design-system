@@ -2,36 +2,57 @@ import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 
 # Button
 
+##
+
+<h4>
+	Buttons allow users to take actions and make choices.
+</h4>
+
+<Canvas>
+  <Story id="components-button--primary" />
+</Canvas>
+
 ## Anatomy:
 - **Leading icon (optional):** Should be included when the button has a clear action verb (e.g. Edit, Save, Delete)
 - **Label:** Utilizes sentence-casing (e.g. “New project”)
 - **Container:** Indicates the button's touch target
 - **Trailing icon (optional):** Typically used as a dropdown arrow
 
-## Best practices
+
+## Guidelines
+
+### Implementation
 - A layout should have one prominent button, the others should clearly be secondary
+
+### Copy
 - Use sentence casing for all buttons (e.g. “New project”)
 - Maintain `verb` + `noun` syntax for labels (e.g. "Save profile" vs "save")
 - Avoid generic messaging such as "Ok"
 - Use 3 or fewer words for each button
+
+### Iconography
+- Font Awesome library
+  - We utilize the Regular and Solid Font Awesome icons
+  - Only use Solid icons on icon-only buttons. import `@fortawesome/pro-solid-svg-icons`
+  - Use Regular icons for all other buttons. import `@fortawesome/pro-regular-svg-icons`
 - Use a leading icon alongside a label if there is a primary action verb (e.g. Edit, Share, Copy)
 - Icon-only buttons should only be permitted if
 	- Space is limited (e.g. too small for text alone)
-	- The icon is standardized or represents an object with a strong physical analog or visual attribute (e.g. floppy disk, pencil)
+	- The icon is standardized or represents an object with a strong physical analog or visual attribute (e.g. floppy disk (Save), pencil (Edit))
 
-## Guidelines
+## Button vs. Link distinction
 
-### General
+- Buttons are used for actions that affect the application. Clicking them causes changes on the frontend or backend.
+- Links are used for navigation.
 
-### Implementation
+**For accessibility purposes, it’s important to style buttons as buttons and links as links. So if the app’s CTA only takes the user to a new page, use a link instead.**
 
-### Copy
 
 ## Stories
 
 ### Primary
 
-- Very important actions that usually trigger a longer workflow.
+- Important actions that usually trigger a longer workflow.
 
 <Preview>
   <Story id="components-button--primary" />
@@ -59,6 +80,3 @@ import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
   <Story id="components-button--transparent" />
 </Preview>
 
-### Secondary
-
-### Tertiary
