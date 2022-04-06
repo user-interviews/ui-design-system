@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Button from 'src/Button';
-import { faFileAlt, faCaretDown } from '@fortawesome/pro-solid-svg-icons';
+import { faFileAlt, faCaretDown } from '@fortawesome/pro-regular-svg-icons';
 import mdx from './Button.mdx';
 
 export default {
