@@ -23,6 +23,12 @@ const buttons = [
     class: '.Button',
     match: 'Skip',
   },
+  {
+    name: 'Brands',
+    path: 'components-button--brands',
+    class: '.Button',
+    match: 'Google',
+  },
 ];
 
 describe('Button', () => {
