@@ -48,4 +48,20 @@
   &.btn-outline-transparent {
     @include btn-outline-transparent;
   }
+
+  &.btn-brand-google {
+    @include btn-brand-google;
+  }
+
+  &.btn-brand-facebook {
+    @include btn-brand-facebook;
+  }
+
+  &.btn-brand-linkedin {
+    @include btn-brand-linkedin;
+  }
+
+  &.btn-brand-twitter {
+    @include btn-brand-twitter;
+  }
 }

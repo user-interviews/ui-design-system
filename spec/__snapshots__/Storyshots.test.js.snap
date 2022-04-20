@@ -1654,6 +1654,435 @@ exports[`Storyshots Components/Avatar With Image 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Button Brands 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-brand-google btn-sm"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-google fa-w-16 icon-left"
+      data-icon="google"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 488 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Google
+  </button>
+   
+  <button
+    className="Button btn btn-brand-google btn-sm"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-google fa-w-16 icon-left"
+      data-icon="google"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 488 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Google
+  </button>
+   
+  <button
+    className="Button btn btn-brand-google btn-md"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-google fa-w-16 icon-left"
+      data-icon="google"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 488 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Google
+  </button>
+   
+  <button
+    className="Button btn btn-brand-google btn-md"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-google fa-w-16 icon-left"
+      data-icon="google"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 488 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Google
+  </button>
+  <div
+    style={
+      Object {
+        "margin": ".5rem",
+      }
+    }
+  />
+  <button
+    className="Button btn btn-brand-facebook btn-sm"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-facebook fa-w-16 icon-left"
+      data-icon="facebook"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Facebook
+  </button>
+   
+  <button
+    className="Button btn btn-brand-facebook btn-sm"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-facebook fa-w-16 icon-left"
+      data-icon="facebook"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Facebook
+  </button>
+   
+  <button
+    className="Button btn btn-brand-facebook btn-md"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-facebook fa-w-16 icon-left"
+      data-icon="facebook"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Facebook
+  </button>
+   
+  <button
+    className="Button btn btn-brand-facebook btn-md"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-facebook fa-w-16 icon-left"
+      data-icon="facebook"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Facebook
+  </button>
+   
+  <div
+    style={
+      Object {
+        "margin": ".5rem",
+      }
+    }
+  />
+  <button
+    className="Button btn btn-brand-linkedin btn-sm"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-linkedin fa-w-14 icon-left"
+      data-icon="linkedin"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    LinkedIn
+  </button>
+   
+  <button
+    className="Button btn btn-brand-linkedin btn-sm"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-linkedin fa-w-14 icon-left"
+      data-icon="linkedin"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    LinkedIn
+  </button>
+   
+  <button
+    className="Button btn btn-brand-linkedin btn-md"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-linkedin fa-w-14 icon-left"
+      data-icon="linkedin"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    LinkedIn
+  </button>
+   
+  <button
+    className="Button btn btn-brand-linkedin btn-md"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-linkedin fa-w-14 icon-left"
+      data-icon="linkedin"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    LinkedIn
+  </button>
+  <div
+    style={
+      Object {
+        "margin": ".5rem",
+      }
+    }
+  />
+  <button
+    className="Button btn btn-brand-twitter btn-sm"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-twitter fa-w-16 icon-left"
+      data-icon="twitter"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Twitter
+  </button>
+   
+  <button
+    className="Button btn btn-brand-twitter btn-sm"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-twitter fa-w-16 icon-left"
+      data-icon="twitter"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Twitter
+  </button>
+   
+  <button
+    className="Button btn btn-brand-twitter btn-md"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-twitter fa-w-16 icon-left"
+      data-icon="twitter"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Twitter
+  </button>
+   
+  <button
+    className="Button btn btn-brand-twitter btn-md"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-twitter fa-w-16 icon-left"
+      data-icon="twitter"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Twitter
+  </button>
+</div>
+`;
+
 exports[`Storyshots Components/Button Danger 1`] = `
 <div
   style={
@@ -1671,7 +2100,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1679,7 +2108,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1689,7 +2118,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1697,7 +2126,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1713,7 +2142,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1721,7 +2150,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1731,7 +2160,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1739,7 +2168,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1755,7 +2184,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1763,7 +2192,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1773,7 +2202,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1781,7 +2210,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1797,7 +2226,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1805,7 +2234,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1815,7 +2244,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1823,7 +2252,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1839,7 +2268,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1847,7 +2276,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1857,7 +2286,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1865,7 +2294,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1881,7 +2310,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1889,7 +2318,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1899,7 +2328,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1907,7 +2336,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1933,7 +2362,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1941,7 +2370,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1951,7 +2380,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1959,7 +2388,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1975,7 +2404,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -1983,7 +2412,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -1993,7 +2422,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2001,7 +2430,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2017,7 +2446,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2025,7 +2454,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2035,7 +2464,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2043,7 +2472,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2059,7 +2488,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2067,7 +2496,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2077,7 +2506,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2085,7 +2514,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2101,7 +2530,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2109,7 +2538,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2119,7 +2548,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2127,7 +2556,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2143,7 +2572,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2151,7 +2580,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2161,7 +2590,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2169,7 +2598,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2195,7 +2624,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2203,7 +2632,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2213,7 +2642,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2221,7 +2650,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2237,7 +2666,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2245,7 +2674,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2255,7 +2684,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2263,7 +2692,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2279,7 +2708,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2287,7 +2716,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2297,7 +2726,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2305,7 +2734,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2321,7 +2750,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2329,7 +2758,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2339,7 +2768,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2347,7 +2776,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2363,7 +2792,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2371,7 +2800,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2381,7 +2810,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2389,7 +2818,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2405,7 +2834,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2413,7 +2842,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2423,7 +2852,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2431,7 +2860,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2457,7 +2886,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2465,7 +2894,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2475,7 +2904,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2483,7 +2912,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2499,7 +2928,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2507,7 +2936,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2517,7 +2946,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2525,7 +2954,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2541,7 +2970,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2549,7 +2978,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2559,7 +2988,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2567,7 +2996,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2583,7 +3012,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2591,7 +3020,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2601,7 +3030,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2609,7 +3038,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2625,7 +3054,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2633,7 +3062,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2643,7 +3072,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2651,7 +3080,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2667,7 +3096,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
       data-icon="file-alt"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2675,7 +3104,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2685,7 +3114,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
-      data-prefix="fas"
+      data-prefix="far"
       focusable="false"
       role="img"
       style={Object {}}
@@ -2693,7 +3122,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M31.3 192h257.3c17.8 0 26.7 21.5 14.1 34.1L174.1 354.8c-7.8 7.8-20.5 7.8-28.3 0L17.2 226.1C4.6 213.5 13.5 192 31.3 192z"
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
         fill="currentColor"
         style={Object {}}
       />
@@ -2749,6 +3178,108 @@ exports[`Storyshots Components/CardContainer Default 1`] = `
 >
   <div
     className="CardContainer CardContainer__alignItems--center"
+  >
+    <section
+      className="Card Card--sm"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 1
+        </h2>
+      </div>
+      <h3
+        className="Card__subtitle"
+      >
+        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
+      </h3>
+      <ul>
+        <li>
+          500,000+ sessions completed
+        </li>
+        <li>
+          $19 million+ incentives distributed
+        </li>
+        <li>
+          3 hours median time to 1st matched participant
+        </li>
+      </ul>
+    </section>
+    <section
+      className="Card Card--sm"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 2
+        </h2>
+      </div>
+      <h3
+        className="Card__subtitle"
+      >
+        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
+      </h3>
+      <ul>
+        <li>
+          500,000+ sessions completed
+        </li>
+        <li>
+          $19 million+ incentives distributed
+        </li>
+        <li>
+          3 hours median time to 1st matched participant
+        </li>
+      </ul>
+    </section>
+    <section
+      className="Card Card--sm"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 3
+        </h2>
+      </div>
+      <h3
+        className="Card__subtitle"
+      >
+        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
+      </h3>
+      <ul>
+        <li>
+          500,000+ sessions completed
+        </li>
+        <li>
+          $19 million+ incentives distributed
+        </li>
+        <li>
+          3 hours median time to 1st matched participant
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/CardList Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="CardList CardList__alignItems--center"
   >
     <section
       className="Card Card--sm"
