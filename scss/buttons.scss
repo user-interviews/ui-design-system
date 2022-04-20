@@ -254,3 +254,131 @@ $warning: $ux-yellow-400;
   }
 }
 
+@mixin btn-brand-google {
+  $btn-brand-google-background: $brand-color-google-alt;
+  $btn-brand-google-border: $brand-color-google-alt;
+  $btn-brand-google-color: $ux-white;
+  
+  $btn-brand-google-hover-background: #2069cf;
+  $btn-brand-google-hover-border: #2069cf;
+  $btn-brand-google-hover-color: $ux-white;
+  
+  $btn-brand-google-active-background: #2069cf;
+  $btn-brand-google-active-border: #2069cf;
+  $btn-brand-google-active-color: $ux-white;
+
+  @include button-variant(
+    $btn-brand-google-background, 
+    $btn-brand-google-border,
+    $btn-brand-google-color,
+    
+    $btn-brand-google-hover-background,
+    $btn-brand-google-hover-border,
+    $btn-brand-google-hover-color,
+    
+    $btn-brand-google-active-background,
+    $btn-brand-google-active-border,
+    $btn-brand-google-active-color,
+  );
+
+  &:disabled {
+    color: $ux-white;
+  }
+}
+
+@mixin btn-brand-facebook {
+  $btn-brand-facebook-background: $brand-color-facebook;
+  $btn-brand-facebook-border: $brand-color-facebook;
+  $btn-brand-facebook-color: $ux-white;
+  
+  $btn-brand-facebook-hover-background: darken($brand-color-facebook, 5%);
+  $btn-brand-facebook-hover-border: darken($brand-color-facebook, 5%);
+  $btn-brand-facebook-hover-color: $ux-white;
+  
+  $btn-brand-facebook-active-background: darken($brand-color-facebook, 5%);
+  $btn-brand-facebook-active-border: darken($brand-color-facebook, 5%);
+  $btn-brand-facebook-active-color: $ux-white;
+
+  @include button-variant(
+    $btn-brand-facebook-background, 
+    $btn-brand-facebook-border,
+    $btn-brand-facebook-color,
+    
+    $btn-brand-facebook-hover-background,
+    $btn-brand-facebook-hover-border,
+    $btn-brand-facebook-hover-color,
+    
+    $btn-brand-facebook-active-background,
+    $btn-brand-facebook-active-border,
+    $btn-brand-facebook-active-color,
+  );
+
+  &:disabled {
+    color: $ux-white;
+  }
+}
+
+  @mixin btn-brand-linkedin {
+    $btn-brand-linkedin-background: $brand-color-linkedin;
+    $btn-brand-linkedin-border: $brand-color-linkedin;
+    $btn-brand-linkedin-color: $ux-white;
+    
+    $btn-brand-linkedin-hover-background: darken($brand-color-linkedin, 5%);
+    $btn-brand-linkedin-hover-border: darken($brand-color-linkedin, 5%);
+    $btn-brand-linkedin-hover-color: $ux-white;
+    
+    $btn-brand-linkedin-active-background: darken($brand-color-linkedin, 5%);
+    $btn-brand-linkedin-active-border: darken($brand-color-linkedin, 5%);
+    $btn-brand-linkedin-active-color: $ux-white;
+  
+    @include button-variant(
+      $btn-brand-linkedin-background, 
+      $btn-brand-linkedin-border,
+      $btn-brand-linkedin-color,
+      
+      $btn-brand-linkedin-hover-background,
+      $btn-brand-linkedin-hover-border,
+      $btn-brand-linkedin-hover-color,
+      
+      $btn-brand-linkedin-active-background,
+      $btn-brand-linkedin-active-border,
+      $btn-brand-linkedin-active-color,
+    );
+  
+    &:disabled {
+      color: $ux-white;
+    }
+  }
+
+  @mixin btn-brand-twitter {
+    $btn-brand-twitter-background: $brand-color-twitter;
+    $btn-brand-twitter-border: $brand-color-twitter;
+    $btn-brand-twitter-color: $ux-white;
+    
+    $btn-brand-twitter-hover-background: darken($brand-color-twitter, 5%);
+    $btn-brand-twitter-hover-border: darken($brand-color-twitter, 5%);
+    $btn-brand-twitter-hover-color: $ux-white;
+    
+    $btn-brand-twitter-active-background: darken($brand-color-twitter, 5%);
+    $btn-brand-twitter-active-border: darken($brand-color-twitter, 5%);
+    $btn-brand-twitter-active-color: $ux-white;
+  
+    @include button-variant(
+      $btn-brand-twitter-background, 
+      $btn-brand-twitter-border,
+      $btn-brand-twitter-color,
+      
+      $btn-brand-twitter-hover-background,
+      $btn-brand-twitter-hover-border,
+      $btn-brand-twitter-hover-color,
+      
+      $btn-brand-twitter-active-background,
+      $btn-brand-twitter-active-border,
+      $btn-brand-twitter-active-color,
+    );
+  
+    &:disabled {
+      color: $ux-white;
+    }
+  }
+
