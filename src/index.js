@@ -65,7 +65,6 @@ import {
   withToastPropTypes,
 } from 'src/Toast';
 import Tooltip from 'src/Tooltip';
-import TrackedButton from 'src/TrackedButton';
 
 export {
   Alert,
@@ -125,7 +124,6 @@ export {
   TableSortLabel,
   Toast,
   Tooltip,
-  TrackedButton,
   useToast,
   ValueContainer,
   withToast,
