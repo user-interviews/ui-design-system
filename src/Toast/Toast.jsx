@@ -15,7 +15,10 @@ export default function Toast(props) {
   );
 
   return (
-    <TransitionGroup className={groupClassNames}>
+    <TransitionGroup
+      aria-live="polite"
+      className={groupClassNames}
+    >
       {
         props.messages.map((message) => (
           <FadeTransition key={message.id}>

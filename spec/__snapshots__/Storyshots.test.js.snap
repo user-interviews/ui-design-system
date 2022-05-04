@@ -18072,6 +18072,7 @@ exports[`Storyshots Components/Toast Manual Dismiss Toast 1`] = `
   }
 >
   <div
+    aria-live="polite"
     className="Toast"
   />
   <div>
@@ -18099,6 +18100,7 @@ exports[`Storyshots Components/Toast Toast 1`] = `
   }
 >
   <div
+    aria-live="polite"
     className="Toast"
   />
   <div>
@@ -18126,6 +18128,7 @@ exports[`Storyshots Components/Toast Toast With Action 1`] = `
   }
 >
   <div
+    aria-live="polite"
     className="Toast"
   />
   <div>
