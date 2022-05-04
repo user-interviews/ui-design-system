@@ -18128,6 +18128,7 @@ exports[`Storyshots Components/Toast Toast Custom Message 1`] = `
   }
 >
   <div
+    aria-live="polite"
     className="Toast"
   />
   <div>
