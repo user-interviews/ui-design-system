@@ -20,7 +20,13 @@
 
 $primary: $ux-emerald-600;
 $danger: $ux-red;
-$warning: $ux-yellow-400; 
+$warning: $ux-yellow-400;
+
+@mixin btn-focus-outline {
+  box-shadow: none !important;
+  outline: 0.125rem solid $ux-blue-500;
+  outline-offset: 0.125rem;
+}
 
 @mixin btn-primary {
   $btn-primary-background: $primary;
@@ -48,6 +54,10 @@ $warning: $ux-yellow-400;
     $btn-primary-active-border,
     $btn-primary-active-color,
   );
+
+  &:focus, &:active {
+    @include btn-focus-outline;
+  }
 }
 
 @mixin btn-outline-primary {
@@ -77,6 +87,10 @@ $warning: $ux-yellow-400;
     background-color: $btn-outline-primary-active-background;
     border-color: $btn-outline-primary-active-border-color;
   }
+
+  &:focus, &:active {
+    @include btn-focus-outline;
+  }
 }
 
 @mixin btn-danger {
@@ -105,6 +119,10 @@ $warning: $ux-yellow-400;
     $btn-danger-active-border,
     $btn-danger-active-color,
   );
+
+  &:focus, &:active {
+    @include btn-focus-outline;
+  }
 }
 
 @mixin btn-outline-danger {
@@ -134,6 +152,10 @@ $warning: $ux-yellow-400;
     background-color: $btn-outline-danger-active-background;
     border-color: $btn-outline-danger-active-border-color;
   }
+
+  &:focus, &:active {
+    @include btn-focus-outline;
+  }
 }
 
 @mixin btn-warning {
@@ -162,6 +184,10 @@ $warning: $ux-yellow-400;
     $btn-warning-active-border,
     $btn-warning-active-color,
   );
+
+  &:focus, &:active {
+    @include btn-focus-outline;
+  }
 }
 
 @mixin btn-outline-warning {
@@ -190,6 +216,10 @@ $warning: $ux-yellow-400;
   &:active {
     background-color: $btn-outline-warning-active-background;
     border-color: $btn-outline-warning-active-border-color;
+  }
+
+  &:focus, &:active {
+    @include btn-focus-outline;
   }
 }
 
@@ -223,6 +253,10 @@ $warning: $ux-yellow-400;
   &:disabled {
     color: $ux-gray-500;
   }
+
+  &:focus, &:active {
+    @include btn-focus-outline;
+  }
 }
 
 @mixin btn-outline-transparent {
@@ -251,6 +285,10 @@ $warning: $ux-yellow-400;
   &:active {
     background-color: $btn-outline-transparent-active-background;
     border-color: $btn-outline-transparent-active-border-color;
+  }
+
+  &:focus, &:active {
+    @include btn-focus-outline;
   }
 }
 
@@ -284,6 +322,10 @@ $warning: $ux-yellow-400;
   &:disabled {
     color: $ux-white;
   }
+
+  &:focus, &:active {
+    @include btn-focus-outline;
+  }
 }
 
 @mixin btn-brand-facebook {
@@ -315,6 +357,10 @@ $warning: $ux-yellow-400;
 
   &:disabled {
     color: $ux-white;
+  }
+
+  &:focus, &:active {
+    @include btn-focus-outline;
   }
 }
 
@@ -348,6 +394,10 @@ $warning: $ux-yellow-400;
     &:disabled {
       color: $ux-white;
     }
+
+    &:focus, &:active {
+      @include btn-focus-outline;
+    }
   }
 
   @mixin btn-brand-twitter {
@@ -379,6 +429,10 @@ $warning: $ux-yellow-400;
   
     &:disabled {
       color: $ux-white;
+    }
+
+    &:focus, &:active {
+      @include btn-focus-outline;
     }
   }
 

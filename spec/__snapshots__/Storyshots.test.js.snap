@@ -50,16 +50,16 @@ exports[`Storyshots Components/Alert Announcement 1`] = `
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__title"
       >
         Announcement title
-      </p>
-      <p
+      </div>
+      <div
         className="Alert__message"
       >
         Announcement message
-      </p>
+      </div>
     </div>
   </div>
 </div>
@@ -115,16 +115,16 @@ exports[`Storyshots Components/Alert Error 1`] = `
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__title"
       >
         Error title
-      </p>
-      <p
+      </div>
+      <div
         className="Alert__message"
       >
         Error message
-      </p>
+      </div>
     </div>
   </div>
 </div>
@@ -216,16 +216,16 @@ exports[`Storyshots Components/Alert Info 1`] = `
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__title"
       >
         Info title
-      </p>
-      <p
+      </div>
+      <div
         className="Alert__message"
       >
         Info message
-      </p>
+      </div>
     </div>
   </div>
 </div>
@@ -317,16 +317,16 @@ exports[`Storyshots Components/Alert Success 1`] = `
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__title"
       >
         Success title
-      </p>
-      <p
+      </div>
+      <div
         className="Alert__message"
       >
         Success message
-      </p>
+      </div>
     </div>
   </div>
 </div>
@@ -382,16 +382,16 @@ exports[`Storyshots Components/Alert Warning 1`] = `
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__title"
       >
         Warning title
-      </p>
-      <p
+      </div>
+      <div
         className="Alert__message"
       >
         Warning message
-      </p>
+      </div>
     </div>
   </div>
 </div>
@@ -486,16 +486,16 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__title"
       >
         Success title
-      </p>
-      <p
+      </div>
+      <div
         className="Alert__message"
       >
         Success message
-      </p>
+      </div>
     </div>
     <div
       className="Alert__action"
@@ -615,16 +615,16 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__title"
       >
         Info title
-      </p>
-      <p
+      </div>
+      <div
         className="Alert__message"
       >
         Info message
-      </p>
+      </div>
     </div>
     <div
       className="Alert__action"
@@ -708,16 +708,16 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__title"
       >
         Announcement title
-      </p>
-      <p
+      </div>
+      <div
         className="Alert__message"
       >
         Announcement message
-      </p>
+      </div>
     </div>
     <div
       className="Alert__action"
@@ -801,16 +801,16 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__title"
       >
         Error title
-      </p>
-      <p
+      </div>
+      <div
         className="Alert__message"
       >
         Error message
-      </p>
+      </div>
     </div>
     <div
       className="Alert__action"
@@ -894,16 +894,16 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__title"
       >
         Warning title
-      </p>
-      <p
+      </div>
+      <div
         className="Alert__message"
       >
         Warning message
-      </p>
+      </div>
     </div>
     <div
       className="Alert__action"
@@ -994,12 +994,12 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__title"
       >
         Connect to Google Calendar to create reminders automatically
-      </p>
-      <p
+      </div>
+      <div
         className="Alert__message"
       >
         <div>
@@ -1046,7 +1046,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
           </svg>
           Connect Google Calendar
         </button>
-      </p>
+      </div>
     </div>
     <div
       className="Alert__close"
@@ -1126,17 +1126,17 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__title"
       >
         Connect to Google Calendar to create reminders automatically
-      </p>
-      <p
+      </div>
+      <div
         className="Alert__message"
       >
         When you confirm a session we’ll automatically
       add an event and reminders to your Google Calendar.
-      </p>
+      </div>
     </div>
     <div
       className="Alert__action"
@@ -1301,16 +1301,16 @@ exports[`Storyshots Components/Alert With Dismiss 1`] = `
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__title"
       >
         Default title
-      </p>
-      <p
+      </div>
+      <div
         className="Alert__message"
       >
         Default message
-      </p>
+      </div>
     </div>
     <div
       className="Alert__close"
@@ -18072,6 +18072,7 @@ exports[`Storyshots Components/Toast Manual Dismiss Toast 1`] = `
   }
 >
   <div
+    aria-live="polite"
     className="Toast"
   />
   <div>
@@ -18099,6 +18100,35 @@ exports[`Storyshots Components/Toast Toast 1`] = `
   }
 >
   <div
+    aria-live="polite"
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Toast Toast Custom Message 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    aria-live="polite"
     className="Toast"
   />
   <div>
@@ -18126,6 +18156,7 @@ exports[`Storyshots Components/Toast Toast With Action 1`] = `
   }
 >
   <div
+    aria-live="polite"
     className="Toast"
   />
   <div>

@@ -80,12 +80,12 @@ function Alert(props) {
       <div className="Alert__content">
         {
           props.title && (
-            <p className="Alert__title">
+            <div className="Alert__title">
               {props.title}
-            </p>
+            </div>
           )
         }
-        <p className="Alert__message">{props.message}</p>
+        <div className="Alert__message">{props.message}</div>
       </div>
       {
         props.action && (
