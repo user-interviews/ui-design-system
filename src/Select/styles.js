@@ -86,17 +86,12 @@ const defaultStyles = ({ size }) => ({
       fontWeight: fontWeights.light,
     }),
     option: (styles, {
-      data,
       isDisabled,
-      isFocused,
       isSelected,
-    }) => {
-      const colors = data.colors || {};
-
-      return {
+    }) => ({
         ...styles,
-        backgroundColor: isSelected || isFocused ? colors.hover : styles.backgroundColor,
-        color: colors.text,
+        backgroundColor: isSelected ? systemColors.UX_BLUE_200 : styles.backgroundColor,
+        color: systemColors.UX_BLACK,
         fontWeight: fontWeights.light,
         fontSize: '0.875rem',
         cursor: 'pointer',
@@ -109,10 +104,9 @@ const defaultStyles = ({ size }) => ({
 
         ':hover': {
           ...styles[':hover'],
-          backgroundColor: colors.hover || systemColors.UX_BLUE_100,
+          backgroundColor: isSelected ? systemColors.UX_BLUE_200 : systemColors.UX_BLUE_100,
         },
-      };
-    },
+      }),
 });
 
 const defaultTheme = (theme) => ({
