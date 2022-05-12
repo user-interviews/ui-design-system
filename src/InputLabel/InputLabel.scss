@@ -1,0 +1,5 @@
+legend {
+  // Ensure <legend> does not default to width: 100% 
+  // when creating inline FormGroup
+  width: unset;
+}

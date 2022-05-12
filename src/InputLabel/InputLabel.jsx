@@ -5,10 +5,11 @@ import classNames from 'classnames';
 import Tooltip from 'src/Tooltip';
 
 import 'scss/forms/input_label.scss';
+import './InputLabel.scss';
 
 export default function InputLabel(props) {
   return (
-    <label
+    <legend
       className={classNames('InputLabel', props.className)}
       htmlFor={props.labelHtmlFor}
     >
@@ -16,7 +17,7 @@ export default function InputLabel(props) {
       {props.required && <span className="InputLabel__helper-text">&nbsp;(Required)</span>}
       {props.labelHelperText && <span className="InputLabel__helper-text">&nbsp;({props.labelHelperText})</span>}
       {props.tooltipText && <Tooltip iconClasses="Tooltip__icon--gray" placement="right" text={props.tooltipText} />}
-    </label>
+    </legend>
   );
 }
 

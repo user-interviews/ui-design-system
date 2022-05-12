@@ -39,7 +39,7 @@ export default function FormGroup(props) {
   const hasErrors = errorMessage && errorMessage.length > 0;
 
   return (
-    <div
+    <fieldset
       className={classNames(
         'FormGroup',
         props.className, {
@@ -76,7 +76,7 @@ export default function FormGroup(props) {
           </div>
         )
       }
-    </div>
+    </fieldset>
   );
 }
 

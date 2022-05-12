@@ -3826,16 +3826,16 @@ exports[`Storyshots Components/Form Default 1`] = `
     method="POST"
     onSubmit={[Function]}
   >
-    <div
+    <fieldset
       className="FormGroup"
       id="first-name"
     >
-      <label
+      <legend
         className="InputLabel"
         htmlFor="first-name"
       >
         First name
-      </label>
+      </legend>
       <div
         className="Input input-group"
       >
@@ -3850,12 +3850,12 @@ exports[`Storyshots Components/Form Default 1`] = `
           value=""
         />
       </div>
-    </div>
-    <div
+    </fieldset>
+    <fieldset
       className="FormGroup"
       id="last-name"
     >
-      <label
+      <legend
         className="InputLabel"
         htmlFor="last-name"
       >
@@ -3865,7 +3865,7 @@ exports[`Storyshots Components/Form Default 1`] = `
         >
            (Required)
         </span>
-      </label>
+      </legend>
       <div
         className="Input input-group"
       >
@@ -3880,17 +3880,17 @@ exports[`Storyshots Components/Form Default 1`] = `
           value=""
         />
       </div>
-    </div>
-    <div
+    </fieldset>
+    <fieldset
       className="FormGroup"
       id="email"
     >
-      <label
+      <legend
         className="InputLabel"
         htmlFor="email"
       >
         Email
-      </label>
+      </legend>
       <div
         className="Input input-group"
       >
@@ -3905,12 +3905,12 @@ exports[`Storyshots Components/Form Default 1`] = `
           value=""
         />
       </div>
-    </div>
-    <div
+    </fieldset>
+    <fieldset
       className="FormGroup FormGroup--is-invalid"
       id="phone"
     >
-      <label
+      <legend
         className="InputLabel"
         htmlFor="phone"
       >
@@ -3920,7 +3920,7 @@ exports[`Storyshots Components/Form Default 1`] = `
         >
            (Required)
         </span>
-      </label>
+      </legend>
       <div
         className="Input input-group"
       >
@@ -3940,7 +3940,7 @@ exports[`Storyshots Components/Form Default 1`] = `
       >
         Invalid phone number
       </div>
-    </div>
+    </fieldset>
     <div
       className="RadioButtonGroup"
       name="radio-buttons"
@@ -3999,11 +3999,11 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-checkbox-button-group-2"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="checkbox-button-group"
     >
@@ -4015,7 +4015,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`
         helper text
         )
       </span>
-    </label>
+    </legend>
     <div
       className="CheckboxButtonGroup CheckboxButtonGroup--row CheckboxButtonGroup--row--compact"
       id="with-checkbox-button-group-2-button-group"
@@ -4075,7 +4075,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`
         </div>
       </label>
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -4087,11 +4087,11 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-checkbox-button-group"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="checkbox-button-group"
     >
@@ -4103,7 +4103,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
         use the knobs to try out different variations
         )
       </span>
-    </label>
+    </legend>
     <div
       className="CheckboxButtonGroup"
       id="with-checkbox-button-group-button-group"
@@ -4163,7 +4163,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
         </div>
       </label>
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -4175,11 +4175,11 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default Row 1`]
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup FormGroup--inline"
     id="with-checkbox-button-group-1"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="checkbox-button-group"
     >
@@ -4191,7 +4191,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default Row 1`]
         helper text
         )
       </span>
-    </label>
+    </legend>
     <div
       className="CheckboxButtonGroup CheckboxButtonGroup--row CheckboxButtonGroup--row--compact"
       id="with-checkbox-button-group-1-button-group"
@@ -4251,7 +4251,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default Row 1`]
         </div>
       </label>
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -4263,11 +4263,11 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description 1`]
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-checkbox-button-group-3"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="checkbox-button-group"
     >
@@ -4279,7 +4279,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description 1`]
         helper text
         )
       </span>
-    </label>
+    </legend>
     <div
       className="CheckboxButtonGroup"
       id="with-checkbox-button-group-3-button-group"
@@ -4375,7 +4375,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description 1`]
         </div>
       </label>
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -4387,11 +4387,11 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Row
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-checkbox-button-group-4"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="checkbox-button-group"
     >
@@ -4403,7 +4403,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Row
         helper text
         )
       </span>
-    </label>
+    </legend>
     <div
       className="CheckboxButtonGroup CheckboxButtonGroup--row CheckboxButtonGroup--row--full-width"
       id="with-checkbox-button-group-4-button-group"
@@ -4499,7 +4499,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Row
         </div>
       </label>
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -4648,7 +4648,7 @@ exports[`Storyshots Components/Form Elements/Form Group Default 1`] = `
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="default"
   >
@@ -4667,7 +4667,7 @@ exports[`Storyshots Components/Form Elements/Form Group Default 1`] = `
         value=""
       />
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -4679,11 +4679,11 @@ exports[`Storyshots Components/Form Elements/Form Group Required 1`] = `
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-required"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor=""
     >
@@ -4693,7 +4693,7 @@ exports[`Storyshots Components/Form Elements/Form Group Required 1`] = `
       >
          (Required)
       </span>
-    </label>
+    </legend>
     <div
       className="Input input-group"
     >
@@ -4708,7 +4708,7 @@ exports[`Storyshots Components/Form Elements/Form Group Required 1`] = `
         value=""
       />
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -4720,16 +4720,16 @@ exports[`Storyshots Components/Form Elements/Form Group With Errors 1`] = `
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup FormGroup--is-invalid"
     id="with-errors"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="input"
     >
       Form Group with errors
-    </label>
+    </legend>
     <div
       className="Input input-group"
     >
@@ -4762,7 +4762,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Errors 1`] = `
         </li>
       </ol>
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -4774,16 +4774,16 @@ exports[`Storyshots Components/Form Elements/Form Group With Helper Text 1`] = `
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-helper-text"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="input"
     >
       Label
-    </label>
+    </legend>
     <div
       className="Input input-group"
     >
@@ -4803,7 +4803,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Helper Text 1`] = `
     >
       test helper text
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -4815,11 +4815,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Label Tooltip 1`] =
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-label"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="input"
     >
@@ -4849,7 +4849,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Label Tooltip 1`] =
           />
         </svg>
       </span>
-    </label>
+    </legend>
     <div
       className="Input input-group"
     >
@@ -4864,7 +4864,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Label Tooltip 1`] =
         value=""
       />
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -4876,16 +4876,16 @@ exports[`Storyshots Components/Form Elements/Form Group With Leading And Trailin
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-leading-and-trailing-icons"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="input"
     >
       Form Group with input leading and trailing icons
-    </label>
+    </legend>
     <div
       className="Input input-group"
     >
@@ -4947,7 +4947,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Leading And Trailin
     >
       with leading and trailing icons
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -4959,16 +4959,16 @@ exports[`Storyshots Components/Form Elements/Form Group With Leading Icon 1`] = 
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-leading-icon"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="input"
     >
       Form Group with input leading icon
-    </label>
+    </legend>
     <div
       className="Input input-group"
     >
@@ -5009,7 +5009,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Leading Icon 1`] = 
     >
       with leading icon
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -5021,11 +5021,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Radio Button Group 
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup FormGroup--bordered"
     id="with-radio-button-group"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="radio-button-group"
     >
@@ -5037,7 +5037,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Radio Button Group 
         with some helper text
         )
       </span>
-    </label>
+    </legend>
     <div
       className="RadioButtonGroup"
       name=""
@@ -5103,7 +5103,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Radio Button Group 
         </div>
       </label>
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -5115,16 +5115,16 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon 1`] =
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-trailing-icon"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="input"
     >
       Form Group with input trailing icon
-    </label>
+    </legend>
     <div
       className="Input input-group"
     >
@@ -5165,7 +5165,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon 1`] =
     >
       with trailing icon
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -5177,16 +5177,16 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-trailing-icon-and-button"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="input"
     >
       Form Group with input trailing icon and button
-    </label>
+    </legend>
     <div
       className="Input input-group"
     >
@@ -5233,7 +5233,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
     >
       with trailing icon and button
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -5245,16 +5245,16 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-trailing-icon-and-button-with-submit"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="input"
     >
       Form Group with input trailing icon and button with submit
-    </label>
+    </legend>
     <div
       className="Input input-group"
     >
@@ -5301,7 +5301,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
     >
       with trailing icon and button with submit
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -5313,11 +5313,11 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-radio-button-group-3"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="radio-button-group"
     >
@@ -5329,7 +5329,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
         helper text
         )
       </span>
-    </label>
+    </legend>
     <div
       className="RadioButtonGroup RadioButtonGroup--row RadioButtonGroup--row--compact"
       name=""
@@ -5395,7 +5395,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
         </div>
       </label>
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -5407,11 +5407,11 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-radio-button-group"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="radio-button-group"
     >
@@ -5423,7 +5423,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
         use the knobs to try out different variations
         )
       </span>
-    </label>
+    </legend>
     <div
       className="RadioButtonGroup"
       name=""
@@ -5489,7 +5489,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
         </div>
       </label>
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -5501,11 +5501,11 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default Row 1`] = 
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup FormGroup--inline"
     id="with-radio-button-group-2"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="radio-button-group"
     >
@@ -5517,7 +5517,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default Row 1`] = 
         helper text
         )
       </span>
-    </label>
+    </legend>
     <div
       className="RadioButtonGroup RadioButtonGroup--row RadioButtonGroup--row--compact"
       name=""
@@ -5583,7 +5583,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default Row 1`] = 
         </div>
       </label>
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -5595,11 +5595,11 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description 1`] = 
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-radio-button-group-4"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="radio-button-group"
     >
@@ -5611,7 +5611,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description 1`] = 
         helper text
         )
       </span>
-    </label>
+    </legend>
     <div
       className="RadioButtonGroup"
       name=""
@@ -5713,7 +5713,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description 1`] = 
         </div>
       </label>
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
@@ -5725,11 +5725,11 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Row 1`
     }
   }
 >
-  <div
+  <fieldset
     className="FormGroup"
     id="with-radio-button-group-5"
   >
-    <label
+    <legend
       className="InputLabel"
       htmlFor="radio-button-group"
     >
@@ -5741,7 +5741,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Row 1`
         helper text
         )
       </span>
-    </label>
+    </legend>
     <div
       className="RadioButtonGroup RadioButtonGroup--row RadioButtonGroup--row--full-width"
       name=""
@@ -5843,7 +5843,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Row 1`
         </div>
       </label>
     </div>
-  </div>
+  </fieldset>
 </div>
 `;
 
