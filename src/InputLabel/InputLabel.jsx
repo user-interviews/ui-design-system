@@ -6,19 +6,26 @@ import Tooltip from 'src/Tooltip';
 
 import 'scss/forms/input_label.scss';
 
-export default function InputLabel(props) {
-  return (
-    <label
-      className={classNames('InputLabel', props.className)}
-      htmlFor={props.labelHtmlFor}
-    >
-      {props.text}
-      {props.required && <span className="InputLabel__helper-text">&nbsp;(Required)</span>}
-      {props.labelHelperText && <span className="InputLabel__helper-text">&nbsp;({props.labelHelperText})</span>}
-      {props.tooltipText && <Tooltip iconClasses="Tooltip__icon--gray" placement="right" text={props.tooltipText} />}
-    </label>
+const InputLabel = ({
+  className,
+  labelHtmlFor,
+  text,
+  required,
+  labelHelperText,
+  tooltipText,
+  ...props
+}) => (
+  <label
+    className={classNames('InputLabel', className)}
+    htmlFor={labelHtmlFor}
+    {...props}
+  >
+    {text}
+    {required && <span className="InputLabel__helper-text">&nbsp;(Required)</span>}
+    {labelHelperText && <span className="InputLabel__helper-text">&nbsp;({labelHelperText})</span>}
+    {tooltipText && <Tooltip iconClasses="Tooltip__icon--gray" placement="right" text={tooltipText} />}
+  </label>
   );
-}
 
 InputLabel.propTypes = {
   className: PropTypes.string,
@@ -36,3 +43,5 @@ InputLabel.defaultProps = {
   required: false,
   tooltipText: undefined,
 };
+
+export default InputLabel;
