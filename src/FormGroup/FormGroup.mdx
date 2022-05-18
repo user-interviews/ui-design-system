@@ -96,6 +96,9 @@ helpful if they do!
 
 - Keep the text as short as possible; for complex info, provide a link to more information
 in a new browser tab
+- **Accessibility:**
+  - When `displayErrorText` is true, be sure to set an `aria-invalid` and `aria-describedby='form-errors-${inputKey}'` 
+on the invalid input when there is an error so that screen readers will read the error message.
 
 <Canvas>
   <Story id="components-form-elements-form-group--with-errors" />
