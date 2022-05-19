@@ -3937,6 +3937,7 @@ exports[`Storyshots Components/Form Default 1`] = `
       </div>
       <div
         className="FormGroup__invalid-feedback"
+        id="form-errors-phone"
       >
         Invalid phone number
       </div>
@@ -4734,6 +4735,8 @@ exports[`Storyshots Components/Form Elements/Form Group With Errors 1`] = `
       className="Input input-group"
     >
       <input
+        aria-describedby="form-errors-test"
+        aria-invalid={true}
         className="Input form-control"
         disabled={false}
         id="input"
@@ -4746,6 +4749,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Errors 1`] = `
     </div>
     <div
       className="FormGroup__invalid-feedback"
+      id="form-errors-test"
     >
       <ol
         className="FormGroup__invalid-feedback__list"
