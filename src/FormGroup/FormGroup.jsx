@@ -64,7 +64,10 @@ export default function FormGroup(props) {
       {props.children}
 
       {props.displayErrorText && hasErrors && (
-        <div className="FormGroup__invalid-feedback">
+        <div
+          className="FormGroup__invalid-feedback"
+          id={`form-errors-${inputKey}`}
+        >
           {renderErrors(errorMessage)}
         </div>
       )}

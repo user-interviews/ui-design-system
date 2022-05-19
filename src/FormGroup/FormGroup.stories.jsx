@@ -167,7 +167,13 @@ export const WithErrors = () => (
     label="Form Group with errors"
     labelHtmlFor="input"
   >
-    <InputComponent id="input" name="with-errors" placeholder="Placeholder text" />
+    <InputComponent
+      aria-describedby="form-errors-test"
+      aria-invalid
+      id="input"
+      name="with-errors"
+      placeholder="Placeholder text"
+    />
   </FormGroup>
 );
 
