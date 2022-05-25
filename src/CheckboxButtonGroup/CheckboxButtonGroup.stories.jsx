@@ -28,6 +28,7 @@ const CheckboxButtonGroupComponent = ({
   fullWidth,
   id,
   inline,
+  inputType,
   label,
   labelHelperText,
   orientation,
@@ -40,6 +41,7 @@ const CheckboxButtonGroupComponent = ({
       bordered={bordered}
       id={id}
       inline={inline}
+      inputType={inputType}
       label={label}
       labelHelperText={labelHelperText}
       labelHtmlFor={labelHtmlFor}
@@ -72,6 +74,7 @@ export const Default = () => {
       defaultValue={[]}
       fullWidth={boolean('Full width', false)}
       id="with-checkbox-button-group"
+      inputType="checkbox"
       label="Label"
       labelHelperText="use the knobs to try out different variations"
       labelHtmlFor="checkbox-button-group"
@@ -109,6 +112,7 @@ export const DefaultRow = () => (
     fullWidth={false}
     id="with-checkbox-button-group-1"
     inline
+    inputType="checkbox"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
@@ -144,6 +148,7 @@ export const BorderedRow = () => (
     defaultValue={[]}
     fullWidth={false}
     id="with-checkbox-button-group-2"
+    inputType="checkbox"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
@@ -179,6 +184,7 @@ export const Description = () => (
     defaultValue={[]}
     fullWidth
     id="with-checkbox-button-group-3"
+    inputType="checkbox"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
@@ -223,6 +229,7 @@ export const DescriptionRow = () => (
     defaultValue={[]}
     fullWidth
     id="with-checkbox-button-group-4"
+    inputType="checkbox"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"

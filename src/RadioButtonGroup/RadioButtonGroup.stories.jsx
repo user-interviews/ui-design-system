@@ -27,6 +27,7 @@ const RadioButtonGroupComponent = ({
   defaultValue,
   fullWidth,
   id,
+  inputType,
   inline,
   label,
   labelHelperText,
@@ -40,6 +41,7 @@ const RadioButtonGroupComponent = ({
       bordered={bordered}
       id={id}
       inline={inline}
+      inputType={inputType}
       label={label}
       labelHelperText={labelHelperText}
       labelHtmlFor={labelHtmlFor}
@@ -72,6 +74,7 @@ export const Default = () => {
       defaultValue={null}
       fullWidth={boolean('Full width', false)}
       id="with-radio-button-group"
+      inputType="radio"
       label="Label"
       labelHelperText="use the knobs to try out different variations"
       labelHtmlFor="radio-button-group"
@@ -109,6 +112,7 @@ export const DefaultRow = () => (
     fullWidth={false}
     id="with-radio-button-group-2"
     inline
+    inputType="radio"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="radio-button-group"
@@ -144,6 +148,7 @@ export const BorderedRow = () => (
     defaultValue={null}
     fullWidth={false}
     id="with-radio-button-group-3"
+    inputType="radio"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="radio-button-group"
@@ -179,6 +184,7 @@ export const Description = () => (
     defaultValue={null}
     fullWidth
     id="with-radio-button-group-4"
+    inputType="radio"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="radio-button-group"
@@ -223,6 +229,7 @@ export const DescriptionRow = () => (
     defaultValue={null}
     fullWidth
     id="with-radio-button-group-5"
+    inputType="radio"
     label="Label"
     labelHelperText="helper text"
     labelHtmlFor="radio-button-group"

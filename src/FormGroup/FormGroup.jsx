@@ -6,6 +6,8 @@ import InputLabel from 'src/InputLabel';
 
 import 'scss/forms/form_group.scss';
 
+const FORM_GROUP_INPUT_TYPES = ['input', 'radio', 'checkbox'];
+
 function renderErrors(errors) {
   if (typeof errors === 'string') {
     return errors;
@@ -38,7 +40,28 @@ export default function FormGroup(props) {
   const errorMessage = buildErrorMessage(errors[inputKey], props.label);
   const hasErrors = errorMessage && errorMessage.length > 0;
 
-  return (
+  const isCheckboxOrRadioInputType = props.inputType === 'radio' || props.inputType === 'checkbox';
+
+  // For accessibility purposes, FormGroups with radio or checkbox groups
+  // will be rendered as a <fieldset>
+  const renderFieldset = () => (
+    <fieldset
+      className={classNames(
+        'FormGroup',
+        props.className, {
+          'FormGroup--is-invalid': hasErrors,
+          'FormGroup--bordered': props.bordered,
+          'FormGroup--inline': props.inline,
+        },
+      )}
+      id={props.id}
+    >
+      {renderFormGroupChildren()}
+    </fieldset>
+  );
+
+  // All other FormGroups will be rendered in a normal div
+  const renderDiv = () => (
     <div
       className={classNames(
         'FormGroup',
@@ -50,9 +73,16 @@ export default function FormGroup(props) {
       )}
       id={props.id}
     >
+      {renderFormGroupChildren()}
+    </div>
+  );
+
+  const renderFormGroupChildren = () => (
+    <>
       {props.label && (
         <InputLabel
           className={props.labelClassName}
+          elementType={props.inputType}
           labelHelperText={props.labelHelperText}
           labelHtmlFor={props.labelHtmlFor}
           required={props.required}
@@ -79,8 +109,13 @@ export default function FormGroup(props) {
           </div>
         )
       }
-    </div>
+    </>
   );
+
+  if (isCheckboxOrRadioInputType) {
+    return renderFieldset();
+  }
+    return renderDiv();
 }
 
 FormGroup.propTypes = {
@@ -93,6 +128,7 @@ FormGroup.propTypes = {
   id: PropTypes.string.isRequired,
   inline: PropTypes.bool,
   inputKey: PropTypes.string,
+  inputType: PropTypes.oneOf(FORM_GROUP_INPUT_TYPES),
   label: PropTypes.string,
   labelClassName: PropTypes.string,
   labelHelperText: PropTypes.string,
@@ -110,6 +146,7 @@ FormGroup.defaultProps = {
   helperText: undefined,
   inline: false,
   inputKey: null,
+  inputType: undefined,
   label: '',
   labelClassName: '',
   labelHelperText: undefined,
