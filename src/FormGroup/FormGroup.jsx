@@ -56,7 +56,7 @@ export default function FormGroup(props) {
       )}
       id={props.id}
     >
-      {renderFormGroupChildren()}
+      {formGroupChildren}
     </fieldset>
   );
 
@@ -73,11 +73,11 @@ export default function FormGroup(props) {
       )}
       id={props.id}
     >
-      {renderFormGroupChildren()}
+      {formGroupChildren}
     </div>
   );
 
-  const renderFormGroupChildren = () => (
+  const formGroupChildren = (
     <>
       {props.label && (
         <InputLabel
