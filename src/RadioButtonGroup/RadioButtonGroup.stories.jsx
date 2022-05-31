@@ -25,9 +25,9 @@ const RadioButtonGroupComponent = ({
   bordered,
   children,
   defaultValue,
+  elementType,
   fullWidth,
   id,
-  inputType,
   inline,
   label,
   labelHelperText,
@@ -39,9 +39,9 @@ const RadioButtonGroupComponent = ({
   return (
     <FormGroup
       bordered={bordered}
+      elementType={elementType}
       id={id}
       inline={inline}
-      inputType={inputType}
       label={label}
       labelHelperText={labelHelperText}
       labelHtmlFor={labelHtmlFor}
@@ -72,10 +72,10 @@ export const Default = () => {
     <RadioButtonGroupComponent
       bordered={boolean('Bordered Form Group', false)}
       defaultValue={null}
+      elementType="fieldset"
       fullWidth={boolean('Full width', false)}
       id="with-radio-button-group"
-      inputType="radio"
-      label="Label"
+      label="Legend"
       labelHelperText="use the knobs to try out different variations"
       labelHtmlFor="radio-button-group"
       orientation={orientation}
@@ -109,11 +109,11 @@ export const DefaultRow = () => (
   <RadioButtonGroupComponent
     bordered={false}
     defaultValue={null}
+    elementType="fieldset"
     fullWidth={false}
     id="with-radio-button-group-2"
     inline
-    inputType="radio"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="radio-button-group"
     orientation={ORIENTATIONS.ROW}
@@ -146,10 +146,10 @@ export const BorderedRow = () => (
   <RadioButtonGroupComponent
     bordered={false}
     defaultValue={null}
+    elementType="fieldset"
     fullWidth={false}
     id="with-radio-button-group-3"
-    inputType="radio"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="radio-button-group"
     orientation={ORIENTATIONS.ROW}
@@ -182,10 +182,10 @@ export const Description = () => (
   <RadioButtonGroupComponent
     bordered={false}
     defaultValue={null}
+    elementType="fieldset"
     fullWidth
     id="with-radio-button-group-4"
-    inputType="radio"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="radio-button-group"
     orientation={ORIENTATIONS.COLUMN}
@@ -227,10 +227,10 @@ export const DescriptionRow = () => (
   <RadioButtonGroupComponent
     bordered={false}
     defaultValue={null}
+    elementType="fieldset"
     fullWidth
     id="with-radio-button-group-5"
-    inputType="radio"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="radio-button-group"
     orientation={ORIENTATIONS.ROW}

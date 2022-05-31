@@ -4005,12 +4005,12 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`
     id="with-checkbox-button-group-2"
   >
     <legend
-      className="InputLabel"
+      className="InputLegend"
       htmlFor="checkbox-button-group"
     >
-      Label
+      Legend
       <span
-        className="InputLabel__helper-text"
+        className="InputLegend__helper-text"
       >
          (
         helper text
@@ -4093,12 +4093,12 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
     id="with-checkbox-button-group"
   >
     <legend
-      className="InputLabel"
+      className="InputLegend"
       htmlFor="checkbox-button-group"
     >
-      Label
+      Legend
       <span
-        className="InputLabel__helper-text"
+        className="InputLegend__helper-text"
       >
          (
         use the knobs to try out different variations
@@ -4181,12 +4181,12 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default Row 1`]
     id="with-checkbox-button-group-1"
   >
     <legend
-      className="InputLabel"
+      className="InputLegend"
       htmlFor="checkbox-button-group"
     >
-      Label
+      Legend
       <span
-        className="InputLabel__helper-text"
+        className="InputLegend__helper-text"
       >
          (
         helper text
@@ -4269,12 +4269,12 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description 1`]
     id="with-checkbox-button-group-3"
   >
     <legend
-      className="InputLabel"
+      className="InputLegend"
       htmlFor="checkbox-button-group"
     >
-      Label
+      Legend
       <span
-        className="InputLabel__helper-text"
+        className="InputLegend__helper-text"
       >
          (
         helper text
@@ -4393,12 +4393,12 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Row
     id="with-checkbox-button-group-4"
   >
     <legend
-      className="InputLabel"
+      className="InputLegend"
       htmlFor="checkbox-button-group"
     >
-      Label
+      Legend
       <span
-        className="InputLabel__helper-text"
+        className="InputLegend__helper-text"
       >
          (
         helper text
@@ -5030,12 +5030,12 @@ exports[`Storyshots Components/Form Elements/Form Group With Radio Button Group 
     id="with-radio-button-group"
   >
     <legend
-      className="InputLabel"
+      className="InputLegend"
       htmlFor="radio-button-group"
     >
       Form Group with radio button group
       <span
-        className="InputLabel__helper-text"
+        className="InputLegend__helper-text"
       >
          (
         with some helper text
@@ -5322,12 +5322,12 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
     id="with-radio-button-group-3"
   >
     <legend
-      className="InputLabel"
+      className="InputLegend"
       htmlFor="radio-button-group"
     >
-      Label
+      Legend
       <span
-        className="InputLabel__helper-text"
+        className="InputLegend__helper-text"
       >
          (
         helper text
@@ -5416,12 +5416,12 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
     id="with-radio-button-group"
   >
     <legend
-      className="InputLabel"
+      className="InputLegend"
       htmlFor="radio-button-group"
     >
-      Label
+      Legend
       <span
-        className="InputLabel__helper-text"
+        className="InputLegend__helper-text"
       >
          (
         use the knobs to try out different variations
@@ -5510,12 +5510,12 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default Row 1`] = 
     id="with-radio-button-group-2"
   >
     <legend
-      className="InputLabel"
+      className="InputLegend"
       htmlFor="radio-button-group"
     >
-      Label
+      Legend
       <span
-        className="InputLabel__helper-text"
+        className="InputLegend__helper-text"
       >
          (
         helper text
@@ -5604,12 +5604,12 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description 1`] = 
     id="with-radio-button-group-4"
   >
     <legend
-      className="InputLabel"
+      className="InputLegend"
       htmlFor="radio-button-group"
     >
-      Label
+      Legend
       <span
-        className="InputLabel__helper-text"
+        className="InputLegend__helper-text"
       >
          (
         helper text
@@ -5734,12 +5734,12 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Row 1`
     id="with-radio-button-group-5"
   >
     <legend
-      className="InputLabel"
+      className="InputLegend"
       htmlFor="radio-button-group"
     >
-      Label
+      Legend
       <span
-        className="InputLabel__helper-text"
+        className="InputLegend__helper-text"
       >
          (
         helper text

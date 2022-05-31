@@ -25,10 +25,10 @@ const CheckboxButtonGroupComponent = ({
   bordered,
   children,
   defaultValue,
+  elementType,
   fullWidth,
   id,
   inline,
-  inputType,
   label,
   labelHelperText,
   orientation,
@@ -39,9 +39,9 @@ const CheckboxButtonGroupComponent = ({
   return (
     <FormGroup
       bordered={bordered}
+      elementType={elementType}
       id={id}
       inline={inline}
-      inputType={inputType}
       label={label}
       labelHelperText={labelHelperText}
       labelHtmlFor={labelHtmlFor}
@@ -72,10 +72,10 @@ export const Default = () => {
     <CheckboxButtonGroupComponent
       bordered={boolean('Bordered Form Group', false)}
       defaultValue={[]}
+      elementType="fieldset"
       fullWidth={boolean('Full width', false)}
       id="with-checkbox-button-group"
-      inputType="checkbox"
-      label="Label"
+      label="Legend"
       labelHelperText="use the knobs to try out different variations"
       labelHtmlFor="checkbox-button-group"
       orientation={orientation}
@@ -109,11 +109,11 @@ export const DefaultRow = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
+    elementType="fieldset"
     fullWidth={false}
     id="with-checkbox-button-group-1"
     inline
-    inputType="checkbox"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.ROW}
@@ -146,10 +146,10 @@ export const BorderedRow = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
+    elementType="fieldset"
     fullWidth={false}
     id="with-checkbox-button-group-2"
-    inputType="checkbox"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.ROW}
@@ -182,10 +182,10 @@ export const Description = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
+    elementType="fieldset"
     fullWidth
     id="with-checkbox-button-group-3"
-    inputType="checkbox"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.COLUMN}
@@ -227,10 +227,10 @@ export const DescriptionRow = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
+    elementType="fieldset"
     fullWidth
     id="with-checkbox-button-group-4"
-    inputType="checkbox"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.ROW}
