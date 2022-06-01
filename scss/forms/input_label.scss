@@ -1,7 +1,7 @@
 @import '../colors';
 @import '../typography';
 
-.InputLabel {
+.InputLabel, .InputLegend {
   @include font-type-30--bold;
   display: flex;
   flex-wrap: wrap;

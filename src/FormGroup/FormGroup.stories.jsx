@@ -183,6 +183,7 @@ const ButtonGroupComponent = ({
   bordered,
   children,
   defaultValue,
+  elementType,
   fullWidth,
   id,
   label,
@@ -196,6 +197,7 @@ const ButtonGroupComponent = ({
   return (
     <FormGroup
       bordered={bordered}
+      elementType={elementType}
       id={id}
       label={label}
       labelHelperText={labelHelperText}
@@ -231,6 +233,7 @@ export const WithRadioButtonGroup = () => {
       bordered={boolean('Bordered Form Group', true)}
       ButtonGroup={RadioButtonGroup}
       defaultValue="1"
+      elementType="fieldset"
       fullWidth={boolean('Full width', false)}
       id="with-radio-button-group"
       label="Form Group with radio button group"

@@ -25,6 +25,7 @@ const CheckboxButtonGroupComponent = ({
   bordered,
   children,
   defaultValue,
+  elementType,
   fullWidth,
   id,
   inline,
@@ -38,6 +39,7 @@ const CheckboxButtonGroupComponent = ({
   return (
     <FormGroup
       bordered={bordered}
+      elementType={elementType}
       id={id}
       inline={inline}
       label={label}
@@ -70,9 +72,10 @@ export const Default = () => {
     <CheckboxButtonGroupComponent
       bordered={boolean('Bordered Form Group', false)}
       defaultValue={[]}
+      elementType="fieldset"
       fullWidth={boolean('Full width', false)}
       id="with-checkbox-button-group"
-      label="Label"
+      label="Legend"
       labelHelperText="use the knobs to try out different variations"
       labelHtmlFor="checkbox-button-group"
       orientation={orientation}
@@ -106,10 +109,11 @@ export const DefaultRow = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
+    elementType="fieldset"
     fullWidth={false}
     id="with-checkbox-button-group-1"
     inline
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.ROW}
@@ -142,9 +146,10 @@ export const BorderedRow = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
+    elementType="fieldset"
     fullWidth={false}
     id="with-checkbox-button-group-2"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.ROW}
@@ -177,9 +182,10 @@ export const Description = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
+    elementType="fieldset"
     fullWidth
     id="with-checkbox-button-group-3"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.COLUMN}
@@ -221,9 +227,10 @@ export const DescriptionRow = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
+    elementType="fieldset"
     fullWidth
     id="with-checkbox-button-group-4"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.ROW}
