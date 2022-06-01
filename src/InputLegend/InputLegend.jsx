@@ -4,9 +4,10 @@ import classNames from 'classnames';
 
 import Tooltip from 'src/Tooltip';
 
+import './InputLegend.scss';
 import 'scss/forms/input_label.scss';
 
-const InputLabel = ({
+const InputLegend = ({
   className,
   elementType,
   labelHtmlFor,
@@ -16,27 +17,27 @@ const InputLabel = ({
   tooltipText,
   ...props
 }) => {
-  const inputLabelChildren = (
+  const inputLegendChildren = (
     <>
       {text}
-      {required && <span className="InputLabel__helper-text">&nbsp;(Required)</span>}
-      {labelHelperText && <span className="InputLabel__helper-text">&nbsp;({labelHelperText})</span>}
+      {required && <span className="InputLegend__helper-text">&nbsp;(Required)</span>}
+      {labelHelperText && <span className="InputLegend__helper-text">&nbsp;({labelHelperText})</span>}
       {tooltipText && <Tooltip iconClasses="Tooltip__icon--gray" placement="right" text={tooltipText} />}
     </>
   );
 
   return (
-    <label
-      className={classNames('InputLabel', className)}
+    <legend
+      className={classNames('InputLegend', className)}
       htmlFor={labelHtmlFor}
       {...props}
     >
-      {inputLabelChildren}
-    </label>
+      {inputLegendChildren}
+    </legend>
   );
 };
 
-InputLabel.propTypes = {
+InputLegend.propTypes = {
   className: PropTypes.string,
   elementType: PropTypes.string,
   labelHelperText: PropTypes.string,
@@ -46,7 +47,7 @@ InputLabel.propTypes = {
   tooltipText: PropTypes.string,
 };
 
-InputLabel.defaultProps = {
+InputLegend.defaultProps = {
   className: '',
   elementType: undefined,
   labelHelperText: undefined,
@@ -55,4 +56,4 @@ InputLabel.defaultProps = {
   tooltipText: undefined,
 };
 
-export default InputLabel;
+export default InputLegend;

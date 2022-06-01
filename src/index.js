@@ -21,6 +21,7 @@ import FormGroup from 'src/FormGroup';
 import IconCell from 'src/IconCell';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
+import InputLegend from 'src/InputLegend';
 import LoadingOverlay from 'src/LoadingOverlay';
 import {
   Modal,
@@ -94,6 +95,7 @@ export {
   IconCell,
   Input,
   InputLabel,
+  InputLegend,
   LoadingOverlay,
   MessageTypes,
   Modal,

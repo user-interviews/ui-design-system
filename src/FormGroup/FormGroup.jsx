@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { createElement } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import InputLabel from 'src/InputLabel';
+import InputLegend from 'src/InputLegend';
 
 import 'scss/forms/form_group.scss';
+
+// For accessibility purposes, FormGroups with radio or checkbox groups
+// should be rendered as a <fieldset> element.
+// All other FormGroups will be rendered as a normal <div> by default.
+const FORM_GROUP_ELEMENT_TYPES = ['div', 'fieldset'];
 
 function renderErrors(errors) {
   if (typeof errors === 'string') {
@@ -38,21 +44,27 @@ export default function FormGroup(props) {
   const errorMessage = buildErrorMessage(errors[inputKey], props.label);
   const hasErrors = errorMessage && errorMessage.length > 0;
 
-  return (
-    <div
-      className={classNames(
-        'FormGroup',
-        props.className, {
-          'FormGroup--is-invalid': hasErrors,
-          'FormGroup--bordered': props.bordered,
-          'FormGroup--inline': props.inline,
-        },
+  const isElementTypeFieldset = props.elementType === 'fieldset';
+  const isElementTypeDiv = props.elementType === 'div';
+
+  const formGroupChildren = (
+    <>
+      {isElementTypeFieldset && props.label && (
+        <InputLegend
+          className={props.labelClassName}
+          elementType={props.elementType}
+          labelHelperText={props.labelHelperText}
+          labelHtmlFor={props.labelHtmlFor}
+          required={props.required}
+          text={props.label}
+          tooltipText={props.labelTooltip}
+        />
       )}
-      id={props.id}
-    >
-      {props.label && (
+
+      {isElementTypeDiv && props.label && (
         <InputLabel
           className={props.labelClassName}
+          elementType={props.elementType}
           labelHelperText={props.labelHelperText}
           labelHtmlFor={props.labelHtmlFor}
           required={props.required}
@@ -79,8 +91,24 @@ export default function FormGroup(props) {
           </div>
         )
       }
-    </div>
+    </>
   );
+
+  return createElement(
+    props.elementType,
+     {
+       className: classNames(
+         'FormGroup',
+         props.className, {
+           'FormGroup--is-invalid': hasErrors,
+           'FormGroup--bordered': props.bordered,
+           'FormGroup--inline': props.inline,
+         },
+       ),
+       id: props.id,
+     },
+     formGroupChildren,
+   );
 }
 
 FormGroup.propTypes = {
@@ -88,6 +116,7 @@ FormGroup.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   displayErrorText: PropTypes.bool,
+  elementType: PropTypes.oneOf(FORM_GROUP_ELEMENT_TYPES),
   errors: PropTypes.object,
   helperText: PropTypes.string,
   id: PropTypes.string.isRequired,
@@ -106,6 +135,7 @@ FormGroup.defaultProps = {
   children: undefined,
   className: '',
   displayErrorText: true,
+  elementType: 'div',
   errors: {},
   helperText: undefined,
   inline: false,
