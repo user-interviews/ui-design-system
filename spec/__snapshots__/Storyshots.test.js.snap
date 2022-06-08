@@ -3372,210 +3372,6 @@ exports[`Storyshots Components/CardList Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/CardContainer Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="CardContainer CardContainer__alignItems--center"
-  >
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 1
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 2
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 3
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/CardList Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="CardList CardList__alignItems--center"
-  >
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 1
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 2
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 3
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Components/CheckboxButton Default 1`] = `
 <div
   style={
@@ -3656,7 +3452,7 @@ exports[`Storyshots Components/CheckboxButton With Description 1`] = `
     className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
     htmlFor="value-2"
   >
-    <div
+    <span
       className="FormControlLabel__label"
     >
       <input
@@ -3668,12 +3464,12 @@ exports[`Storyshots Components/CheckboxButton With Description 1`] = `
         value="2"
       />
       Label 2
-    </div>
-    <div
+    </span>
+    <span
       className="FormControlLabel__children"
     >
       This is where the description goes
-    </div>
+    </span>
   </label>
 </div>
 `;
@@ -4154,7 +3950,7 @@ exports[`Storyshots Components/Form Default 1`] = `
         className="FormControlLabel"
         htmlFor="first-radio"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4165,13 +3961,13 @@ exports[`Storyshots Components/Form Default 1`] = `
             type="radio"
           />
           first choice
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel"
         htmlFor="second-radio"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4182,7 +3978,7 @@ exports[`Storyshots Components/Form Default 1`] = `
             type="radio"
           />
           second choice
-        </div>
+        </span>
       </label>
     </div>
     <button
@@ -4229,7 +4025,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`
         className="FormControlLabel FormControlLabel--bordered"
         htmlFor="value-1-2"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4241,13 +4037,13 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`
             value="1"
           />
           Label 1
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered"
         htmlFor="value-2-2"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4259,13 +4055,13 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`
             value="2"
           />
           Label 2
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered"
         htmlFor="value-3-2"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4277,7 +4073,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`
             value="3"
           />
           Label 3
-        </div>
+        </span>
       </label>
     </div>
   </fieldset>
@@ -4317,7 +4113,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
         className="FormControlLabel"
         htmlFor="value-1"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4329,13 +4125,13 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
             value="1"
           />
           Value 1
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel"
         htmlFor="value-2"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4347,13 +4143,13 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
             value="2"
           />
           Value 2
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel"
         htmlFor="value-3"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4365,7 +4161,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
             value="3"
           />
           Value 3
-        </div>
+        </span>
       </label>
     </div>
   </fieldset>
@@ -4405,7 +4201,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default Row 1`]
         className="FormControlLabel"
         htmlFor="value-1-1"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4417,13 +4213,13 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default Row 1`]
             value="1"
           />
           Label 1
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel"
         htmlFor="value-2-1"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4435,13 +4231,13 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default Row 1`]
             value="2"
           />
           Label 2
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel"
         htmlFor="value-3-1"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4453,7 +4249,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default Row 1`]
             value="3"
           />
           Label 3
-        </div>
+        </span>
       </label>
     </div>
   </fieldset>
@@ -4493,7 +4289,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description 1`]
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-1-3"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4512,18 +4308,18 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description 1`]
             helper text
             )
           </span>
-        </div>
-        <div
+        </span>
+        <span
           className="FormControlLabel__children"
         >
           This is where the description goes
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-2-3"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4542,18 +4338,18 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description 1`]
             helper text
             )
           </span>
-        </div>
-        <div
+        </span>
+        <span
           className="FormControlLabel__children"
         >
           This is where the description goes
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-3-3"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4572,12 +4368,12 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description 1`]
             helper text
             )
           </span>
-        </div>
-        <div
+        </span>
+        <span
           className="FormControlLabel__children"
         >
           This is where the description goes
-        </div>
+        </span>
       </label>
     </div>
   </fieldset>
@@ -4617,7 +4413,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Row
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-1-4"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4636,18 +4432,18 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Row
             helper text
             )
           </span>
-        </div>
-        <div
+        </span>
+        <span
           className="FormControlLabel__children"
         >
           This is where the description goes
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-2-4"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4666,18 +4462,18 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Row
             helper text
             )
           </span>
-        </div>
-        <div
+        </span>
+        <span
           className="FormControlLabel__children"
         >
           This is where the description goes
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-3-4"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -4696,12 +4492,12 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Row
             helper text
             )
           </span>
-        </div>
-        <div
+        </span>
+        <span
           className="FormControlLabel__children"
         >
           This is where the description goes
-        </div>
+        </span>
       </label>
     </div>
   </fieldset>
@@ -4720,7 +4516,7 @@ exports[`Storyshots Components/Form Elements/Form Control Label Checkbox 1`] = `
     className="FormControlLabel"
     htmlFor="checkbox"
   >
-    <div
+    <span
       className="FormControlLabel__label"
     >
       <input
@@ -4734,7 +4530,7 @@ exports[`Storyshots Components/Form Elements/Form Control Label Checkbox 1`] = `
         value="1"
       />
       Labeled checkbox
-    </div>
+    </span>
   </label>
 </div>
 `;
@@ -4751,7 +4547,7 @@ exports[`Storyshots Components/Form Elements/Form Control Label Checkbox With Ch
     className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
     htmlFor="checkbox"
   >
-    <div
+    <span
       className="FormControlLabel__label"
     >
       <input
@@ -4764,14 +4560,14 @@ exports[`Storyshots Components/Form Elements/Form Control Label Checkbox With Ch
         value="1"
       />
       Labeled checkbox
-    </div>
-    <div
+    </span>
+    <span
       className="FormControlLabel__children"
     >
       <div>
         This checkbox has some helper text too!
       </div>
-    </div>
+    </span>
   </label>
 </div>
 `;
@@ -4788,7 +4584,7 @@ exports[`Storyshots Components/Form Elements/Form Control Label Radio 1`] = `
     className="FormControlLabel"
     htmlFor="radio"
   >
-    <div
+    <span
       className="FormControlLabel__label"
     >
       <input
@@ -4802,7 +4598,7 @@ exports[`Storyshots Components/Form Elements/Form Control Label Radio 1`] = `
         value="1"
       />
       Labeled radio
-    </div>
+    </span>
   </label>
 </div>
 `;
@@ -4819,7 +4615,7 @@ exports[`Storyshots Components/Form Elements/Form Control Label Radio With Child
     className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
     htmlFor="radio"
   >
-    <div
+    <span
       className="FormControlLabel__label"
     >
       <input
@@ -4833,14 +4629,14 @@ exports[`Storyshots Components/Form Elements/Form Control Label Radio With Child
         value="1"
       />
       Labeled radio
-    </div>
-    <div
+    </span>
+    <span
       className="FormControlLabel__children"
     >
       <div>
         This radio button has some helper text too!
       </div>
-    </div>
+    </span>
   </label>
 </div>
 `;
@@ -5254,7 +5050,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Radio Button Group 
         className="FormControlLabel FormControlLabel--active"
         htmlFor="value-1"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5268,13 +5064,13 @@ exports[`Storyshots Components/Form Elements/Form Group With Radio Button Group 
             value="1"
           />
           Value 1
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel"
         htmlFor="value-2"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5288,13 +5084,13 @@ exports[`Storyshots Components/Form Elements/Form Group With Radio Button Group 
             value="2"
           />
           Value 2
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel"
         htmlFor="value-3"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5308,7 +5104,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Radio Button Group 
             value="3"
           />
           Value 3
-        </div>
+        </span>
       </label>
     </div>
   </fieldset>
@@ -5546,7 +5342,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
         className="FormControlLabel FormControlLabel--bordered"
         htmlFor="value-1-3"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5560,13 +5356,13 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
             value="1"
           />
           Label 1
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered"
         htmlFor="value-2-3"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5580,13 +5376,13 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
             value="2"
           />
           Label 2
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered"
         htmlFor="value-3-3"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5600,7 +5396,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
             value="3"
           />
           Label 3
-        </div>
+        </span>
       </label>
     </div>
   </fieldset>
@@ -5640,7 +5436,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
         className="FormControlLabel"
         htmlFor="value-1"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5654,13 +5450,13 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
             value="1"
           />
           Value 1
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel"
         htmlFor="value-2"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5674,13 +5470,13 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
             value="2"
           />
           Value 2
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel"
         htmlFor="value-3"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5694,7 +5490,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
             value="3"
           />
           Value 3
-        </div>
+        </span>
       </label>
     </div>
   </fieldset>
@@ -5734,7 +5530,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default Row 1`] = 
         className="FormControlLabel"
         htmlFor="value-1-2"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5748,13 +5544,13 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default Row 1`] = 
             value="1"
           />
           Label 1
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel"
         htmlFor="value-2-2"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5768,13 +5564,13 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default Row 1`] = 
             value="2"
           />
           Label 2
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel"
         htmlFor="value-3-2"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5788,7 +5584,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default Row 1`] = 
             value="3"
           />
           Label 3
-        </div>
+        </span>
       </label>
     </div>
   </fieldset>
@@ -5828,7 +5624,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description 1`] = 
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-1-4"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5849,18 +5645,18 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description 1`] = 
             helper text
             )
           </span>
-        </div>
-        <div
+        </span>
+        <span
           className="FormControlLabel__children"
         >
           This is where the description goes
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-2-4"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5881,18 +5677,18 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description 1`] = 
             helper text
             )
           </span>
-        </div>
-        <div
+        </span>
+        <span
           className="FormControlLabel__children"
         >
           This is where the description goes
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-3-4"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5913,12 +5709,12 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description 1`] = 
             helper text
             )
           </span>
-        </div>
-        <div
+        </span>
+        <span
           className="FormControlLabel__children"
         >
           This is where the description goes
-        </div>
+        </span>
       </label>
     </div>
   </fieldset>
@@ -5958,7 +5754,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Row 1`
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-1-5"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -5979,18 +5775,18 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Row 1`
             helper text
             )
           </span>
-        </div>
-        <div
+        </span>
+        <span
           className="FormControlLabel__children"
         >
           This is where the description goes
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-2-5"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -6011,18 +5807,18 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Row 1`
             helper text
             )
           </span>
-        </div>
-        <div
+        </span>
+        <span
           className="FormControlLabel__children"
         >
           This is where the description goes
-        </div>
+        </span>
       </label>
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-3-5"
       >
-        <div
+        <span
           className="FormControlLabel__label"
         >
           <input
@@ -6043,12 +5839,12 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Row 1`
             helper text
             )
           </span>
-        </div>
-        <div
+        </span>
+        <span
           className="FormControlLabel__children"
         >
           This is where the description goes
-        </div>
+        </span>
       </label>
     </div>
   </fieldset>
@@ -7388,7 +7184,7 @@ exports[`Storyshots Components/RadioButton With Description 1`] = `
     className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
     htmlFor="value-2"
   >
-    <div
+    <span
       className="FormControlLabel__label"
     >
       <input
@@ -7402,12 +7198,12 @@ exports[`Storyshots Components/RadioButton With Description 1`] = `
         value="2"
       />
       Label 2
-    </div>
-    <div
+    </span>
+    <span
       className="FormControlLabel__children"
     >
       This is where the description goes
-    </div>
+    </span>
   </label>
 </div>
 `;
