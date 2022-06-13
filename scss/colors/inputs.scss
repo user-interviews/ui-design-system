@@ -1,7 +1,7 @@
 @import './palette';
 
 $input-border-color: $ux-gray-400; // Override bootstrap default
-$input-box-shadow: inset 0px 2px 2px rgb(225 228 232 / 65%);
+$input-box-shadow: inset 0px 2px 2px rgba(225, 228, 232, 0.65);
 $input-disabled-bg: $ux-gray-300; // Override bootstrap default
 $input-focus-border-color: $ux-blue-500;
 $input-btn-focus-color: $ux-blue-300;
