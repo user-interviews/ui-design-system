@@ -5979,6 +5979,7 @@ exports[`Storyshots Components/LoadingOverlay Default 1`] = `
 >
   <div
     className="overlay"
+    data-testid="LoadingOverlay"
     style={Object {}}
   >
     <svg
