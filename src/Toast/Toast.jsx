@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { TransitionGroup } from 'react-transition-group';
 import classNames from 'classnames';
@@ -13,6 +13,16 @@ export default function Toast(props) {
     'Toast',
     { 'Toast--no-header': !props.header },
   );
+
+  useEffect(() => {
+    // For a11y on Safari browsers:
+    // if any Toast errors are present, then use Javascript to set focus
+    // to ensure the screen reader reads it first
+    const alertElements = document.getElementsByClassName('Alert__message');
+    if (alertElements.length) {
+      alertElements[0].focus();
+    }
+  }, []);
 
   return (
     <TransitionGroup
