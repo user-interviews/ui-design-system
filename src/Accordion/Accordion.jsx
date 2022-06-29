@@ -2,8 +2,8 @@ import React from 'react';
 
 import RBAccordion from 'react-bootstrap/Accordion';
 
-const Accordion = ({ children }) => (
-  <RBAccordion>
+const Accordion = ({ children, ...props }) => (
+  <RBAccordion {...props}>
     { children }
   </RBAccordion>
   );

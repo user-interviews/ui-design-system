@@ -2,8 +2,8 @@ import React from 'react';
 
 import RBAccordionBody from 'react-bootstrap/AccordionBody';
 
-const AccordionBody = ({ children }) => (
-  <RBAccordionBody>
+const AccordionBody = ({ children, ...props }) => (
+  <RBAccordionBody {...props} >
     { children }
   </RBAccordionBody>
   );
