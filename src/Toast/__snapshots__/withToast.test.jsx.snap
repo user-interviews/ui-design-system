@@ -82,6 +82,7 @@ Array [
     >
       <div
         className="Alert__message"
+        tabIndex={null}
       >
         This is just a test...
       </div>

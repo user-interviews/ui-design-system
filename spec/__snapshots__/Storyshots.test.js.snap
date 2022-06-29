@@ -57,6 +57,7 @@ exports[`Storyshots Components/Alert Announcement 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={null}
       >
         Announcement message
       </div>
@@ -122,6 +123,7 @@ exports[`Storyshots Components/Alert Error 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={-1}
       >
         Error message
       </div>
@@ -223,6 +225,7 @@ exports[`Storyshots Components/Alert Info 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={null}
       >
         Info message
       </div>
@@ -324,6 +327,7 @@ exports[`Storyshots Components/Alert Success 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={null}
       >
         Success message
       </div>
@@ -389,6 +393,7 @@ exports[`Storyshots Components/Alert Warning 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={null}
       >
         Warning message
       </div>
@@ -493,6 +498,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={null}
       >
         Success message
       </div>
@@ -622,6 +628,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={null}
       >
         Info message
       </div>
@@ -715,6 +722,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={null}
       >
         Announcement message
       </div>
@@ -808,6 +816,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={-1}
       >
         Error message
       </div>
@@ -901,6 +910,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={null}
       >
         Warning message
       </div>
@@ -1001,6 +1011,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={null}
       >
         <div>
           When you confirm a session we’ll automatically add an event and reminders to your Google Calendar.
@@ -1133,6 +1144,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={null}
       >
         When you confirm a session we’ll automatically
       add an event and reminders to your Google Calendar.
@@ -1308,6 +1320,7 @@ exports[`Storyshots Components/Alert With Dismiss 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={null}
       >
         Default message
       </div>
