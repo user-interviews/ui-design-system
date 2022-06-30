@@ -51,4 +51,8 @@
     @include font-type-10--uppercase;
     color: $ux-blue-600;
   }
+
+  &--disabled {
+    opacity: 0.5;
+  }
 }

@@ -138,3 +138,39 @@ export const Separate = () => (
     </Accordion>
   </>
 );
+
+export const Disabled = () => (
+  <Accordion>
+    <AccordionItem>
+      <AccordionCustomToggle
+        disabled
+        eventKey="0"
+        helperText="helper text"
+        label="3 Items Selected"
+        title="Accordion Custom Toggle #1"
+      />
+      <AccordionCollapse eventKey="0">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </AccordionCollapse>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionCustomToggle
+        eventKey="1"
+        helperText="helper text"
+        label="3 Items Selected"
+        title="Accordion Custom Toggle #2"
+      />
+      <AccordionCollapse eventKey="1">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </AccordionCollapse>
+    </AccordionItem>
+  </Accordion>
+);

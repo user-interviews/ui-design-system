@@ -14,6 +14,7 @@ const AccordionCustomToggle = ({
   chevronLeft,
   chevronRight,
   className,
+  disabled,
   eventKey,
   helperText,
   label,
@@ -33,8 +34,10 @@ const AccordionCustomToggle = ({
           className,
           'AccordionCustomToggle',
           isCollapsed && 'collapsed',
+          disabled && 'AccordionCustomToggle--disabled',
         )
       }
+      disabled={disabled}
       type="button"
       onClick={decoratedOnClick}
     >
@@ -86,6 +89,7 @@ AccordionCustomToggle.propTypes = {
    /**
   A unique key used to control this item's collapse/expand.
   */
+  disabled: PropTypes.bool,
   eventKey: PropTypes.string.isRequired,
   helperText: PropTypes.string,
   label: PropTypes.string,
@@ -97,6 +101,7 @@ AccordionCustomToggle.defaultProps = {
   chevronLeft: false,
   chevronRight: true,
   className: undefined,
+  disabled: undefined,
   helperText: undefined,
   label: undefined,
   leadingIcon: undefined,
