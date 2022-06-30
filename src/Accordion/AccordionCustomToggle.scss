@@ -12,17 +12,23 @@
     border-bottom: 1px solid $ux-gray-400;
   }
 
+  &:focus {
+    border-radius: $ux-border-radius;
+    box-shadow: 0 0 0 2px $ux-blue-500;
+    transition: $focus-state-transition-time;
+  }
+
   &:not(.collapsed) .AccordionCustomToggle__chevron-right {
     svg {
       transform: rotate(-180deg);
-      transition: 200ms ease all;
+      transition: $chevron-rotation-transition-time ease all;
     }
   }
 
   &:not(.collapsed) .AccordionCustomToggle__chevron-left {
     svg {
       transform: rotate(180deg);
-      transition: 200ms ease all;
+      transition: $chevron-rotation-transition-time ease all;
     }
   }
 
@@ -30,7 +36,7 @@
   &.collapsed .AccordionCustomToggle__chevron-left 
     {
       svg {
-        transition: 200ms ease all;
+        transition: $chevron-rotation-transition-time ease all;
       }
     }
 
