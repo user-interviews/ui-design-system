@@ -9,6 +9,8 @@ import {
   AccordionCollapse,
 } from 'src/Accordion';
 
+import { faCreditCard } from '@fortawesome/pro-regular-svg-icons';
+
 import mdx from './Accordion.mdx';
 
 export default {
@@ -31,6 +33,7 @@ export const Default = () => (
         eventKey="0"
         helperText="helper text"
         label="3 Items Selected"
+        leadingIcon={faCreditCard}
         title="Accordion Custom Toggle #1"
       />
       <AccordionCollapse eventKey="0">
@@ -46,6 +49,7 @@ export const Default = () => (
         eventKey="1"
         helperText="helper text"
         label="3 Items Selected"
+        leadingIcon={faCreditCard}
         title="Accordion Custom Toggle #2"
       />
       <AccordionCollapse eventKey="1">

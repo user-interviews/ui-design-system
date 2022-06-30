@@ -17,6 +17,7 @@ const AccordionCustomToggle = ({
   eventKey,
   helperText,
   label,
+  leadingIcon,
   title,
 }) => {
   const decoratedOnClick = useAccordionButton(eventKey, () => {
@@ -42,6 +43,11 @@ const AccordionCustomToggle = ({
           {chevronLeft && (
             <span className="AccordionCustomToggle__chevron-left">
               <FontAwesomeIcon icon={faChevronUp} />
+            </span>
+          )}
+          {leadingIcon && (
+            <span className="AccordionCustomToggle__leading-icon">
+              <FontAwesomeIcon icon={leadingIcon} />
             </span>
           )}
           {title && (
@@ -83,6 +89,7 @@ AccordionCustomToggle.propTypes = {
   eventKey: PropTypes.string.isRequired,
   helperText: PropTypes.string,
   label: PropTypes.string,
+  leadingIcon: PropTypes.object,
   title: PropTypes.string,
 };
 
@@ -92,6 +99,7 @@ AccordionCustomToggle.defaultProps = {
   className: undefined,
   helperText: undefined,
   label: undefined,
+  leadingIcon: undefined,
   title: undefined,
 };
 
