@@ -13,5 +13,5 @@ export {
   AccordionHeader,
   AccordionBody,
   AccordionCustomToggle,
-  AccordionCollapse
+  AccordionCollapse,
 };

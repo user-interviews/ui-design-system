@@ -1,23 +1,25 @@
-import React from "react";
-import classNames from "classnames";
+import React from 'react';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { useAccordionButton } from "react-bootstrap";
+import { useAccordionButton } from 'react-bootstrap';
 
 import './AccordionCustomToggle.scss';
-import { faChevronUp } from "@fortawesome/pro-solid-svg-icons";
+import { faChevronUp } from '@fortawesome/pro-solid-svg-icons';
 
-const AccordionCustomToggle = ({ 
+const AccordionCustomToggle = ({
   children,
-  chevronLeft, 
-  className, 
+  chevronLeft,
+  chevronRight,
+  className,
   eventKey,
+  helperText,
+  label,
+  title,
 }) => {
-  
-  const decoratedOnClick = useAccordionButton(eventKey, () =>
-    console.log('totally custom!'),
-  );
+  const decoratedOnClick = useAccordionButton(eventKey, () => {});
 
   return (
     <button
@@ -26,13 +28,59 @@ const AccordionCustomToggle = ({
       onClick={decoratedOnClick}
     >
       <div className="AccordionCustomToggle__container">
-      {chevronLeft && (
-        <FontAwesomeIcon icon={faChevronUp}/>
-      )}
-      {children}
+        <span className="AccordionCustomToggle__container--left">
+          {chevronLeft && (
+            <FontAwesomeIcon className="AccordionCustomToggle__chevron-left" icon={faChevronUp} />
+          )}
+          {title && (
+            <span className="AccordionCustomToggle__title">{title}</span>
+          )}
+          {helperText && (
+            <span className="AccordionCustomToggle__helper-text">({helperText})</span>
+          )}
+        </span>
+        <span className="AccordionCustomToggle__container--right">
+          {label && (
+            <span className="AccordionCustomToggle__label">{label}</span>
+          )}
+          {chevronRight && (
+            <span className="AccordionCustomToggle__chevron-right">
+              <FontAwesomeIcon icon={faChevronUp} />
+            </span>
+          )}
+        </span>
+        {children}
       </div>
     </button>
-  )
-}
+  );
+};
+
+AccordionCustomToggle.propTypes = {
+  /**
+   Aligns the Chevron icon to the left
+  */
+  chevronLeft: PropTypes.bool,
+  /**
+   Aligns the Chevron icon to the right
+  */
+  chevronRight: PropTypes.bool,
+  className: PropTypes.string,
+   /**
+  A unique key used to control this item's collapse/expand.
+  */
+  eventKey: PropTypes.string.isRequired,
+  helperText: PropTypes.string,
+  label: PropTypes.string,
+  title: PropTypes.string,
+};
+
+AccordionCustomToggle.defaultProps = {
+  chevronLeft: false,
+  chevronRight: true,
+  className: undefined,
+  helperText: undefined,
+  label: undefined,
+  title: undefined,
+};
 
 export default AccordionCustomToggle;
