@@ -28,7 +28,6 @@ export const Default = () => (
   <Accordion>
     <AccordionItem>
       <AccordionCustomToggle
-        chevronRight
         eventKey="0"
         helperText="helper text"
         label="3 Items Selected"
@@ -44,7 +43,6 @@ export const Default = () => (
     </AccordionItem>
     <AccordionItem>
       <AccordionCustomToggle
-        chevronRight
         eventKey="1"
         helperText="helper text"
         label="3 Items Selected"
@@ -103,7 +101,6 @@ export const Separate = () => (
     <Accordion>
       <AccordionItem>
         <AccordionCustomToggle
-          chevronLeft
           eventKey="0"
           helperText="helper text"
           label="3 Items Selected"
@@ -121,7 +118,6 @@ export const Separate = () => (
     <Accordion>
       <AccordionItem>
         <AccordionCustomToggle
-          chevronLeft
           eventKey="1"
           helperText="helper text"
           label="3 Items Selected"

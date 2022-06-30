@@ -12,12 +12,30 @@
     border-bottom: 1px solid $ux-gray-400;
   }
 
+  &:not(.collapsed) .AccordionCustomToggle__chevron-right {
+    svg {
+      transform: rotate(-180deg);
+      transition: 200ms ease all;
+    }
+  }
+
+  &:not(.collapsed) .AccordionCustomToggle__chevron-left {
+    svg {
+      transform: rotate(180deg);
+      transition: 200ms ease all;
+    }
+  }
+
+  &.collapsed .AccordionCustomToggle__chevron-right,
+  &.collapsed .AccordionCustomToggle__chevron-left 
+    {
+      svg {
+        transition: 200ms ease all;
+      }
+    }
+
   &__chevron-right {
     margin-left: 2rem;
-    transform: rotate(-180deg);
-    + .show {
-      transform: rotate(-180deg);
-    }
   }
 
   &__title {

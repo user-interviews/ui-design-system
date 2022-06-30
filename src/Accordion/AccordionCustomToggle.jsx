@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
@@ -19,18 +19,30 @@ const AccordionCustomToggle = ({
   label,
   title,
 }) => {
-  const decoratedOnClick = useAccordionButton(eventKey, () => {});
+  const decoratedOnClick = useAccordionButton(eventKey, () => {
+    setIsCollapsed((prev) => !prev);
+  });
+
+  const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
     <button
-      className={classNames(className, 'AccordionCustomToggle')}
+      className={
+        classNames(
+          className,
+          'AccordionCustomToggle',
+          isCollapsed && 'collapsed',
+        )
+      }
       type="button"
       onClick={decoratedOnClick}
     >
       <div className="AccordionCustomToggle__container">
         <span className="AccordionCustomToggle__container--left">
           {chevronLeft && (
-            <FontAwesomeIcon className="AccordionCustomToggle__chevron-left" icon={faChevronUp} />
+            <span className="AccordionCustomToggle__chevron-left">
+              <FontAwesomeIcon icon={faChevronUp} />
+            </span>
           )}
           {title && (
             <span className="AccordionCustomToggle__title">{title}</span>
@@ -43,7 +55,7 @@ const AccordionCustomToggle = ({
           {label && (
             <span className="AccordionCustomToggle__label">{label}</span>
           )}
-          {chevronRight && (
+          {chevronRight && !chevronLeft && (
             <span className="AccordionCustomToggle__chevron-right">
               <FontAwesomeIcon icon={faChevronUp} />
             </span>
@@ -61,7 +73,7 @@ AccordionCustomToggle.propTypes = {
   */
   chevronLeft: PropTypes.bool,
   /**
-   Aligns the Chevron icon to the right
+   Aligns the Chevron icon to the right (default)
   */
   chevronRight: PropTypes.bool,
   className: PropTypes.string,
