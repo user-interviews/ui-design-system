@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { useAccordionButton } from 'react-bootstrap';
+import { useAccordionButton } from 'react-bootstrap/AccordionButton';
+import AccordionContext from 'react-bootstrap/AccordionContext';
 
 import './AccordionCustomToggle.scss';
 import { faChevronUp } from '@fortawesome/pro-solid-svg-icons';
@@ -21,9 +22,28 @@ const AccordionCustomToggle = ({
   leadingIcon,
   title,
 }) => {
+  const { activeEventKey } = React.useContext(AccordionContext);
+
   const decoratedOnClick = useAccordionButton(eventKey, () => {
+    if (eventKey !== activeEventKey) {
+      setIsCollapsed(false);
+    }
     setIsCollapsed((prev) => !prev);
   });
+
+  const handleCloseInactiveToggle = () => {
+    setIsCollapsed(true);
+  };
+
+  useEffect(() => {
+    if (activeEventKey && eventKey !== activeEventKey) {
+      handleCloseInactiveToggle();
+    }
+
+    if (activeEventKey && eventKey === activeEventKey) {
+      setIsCollapsed(((prev) => !prev));
+    }
+  }, [activeEventKey, eventKey]);
 
   const [isCollapsed, setIsCollapsed] = useState(true);
 

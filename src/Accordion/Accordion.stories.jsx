@@ -63,6 +63,41 @@ export const Default = () => (
   </Accordion>
 );
 
+export const DefaultOpen = () => (
+  <Accordion defaultActiveKey="1">
+    <AccordionItem>
+      <AccordionCustomToggle
+        eventKey="0"
+        helperText="helper text"
+        label="3 Items Selected"
+        leadingIcon={faCreditCard}
+        title="Accordion Custom Toggle #1"
+      />
+      <AccordionCollapse eventKey="0">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </AccordionCollapse>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionCustomToggle
+        eventKey="1"
+        helperText="helper text"
+        label="3 Items Selected"
+        leadingIcon={faCreditCard}
+        title="Accordion Custom Toggle #2"
+      />
+      <AccordionCollapse eventKey="1">
+        <ul>
+          <li>I was opened by default!</li>
+        </ul>
+      </AccordionCollapse>
+    </AccordionItem>
+  </Accordion>
+);
+
 export const ChevronLeft = () => (
   <Accordion>
     <AccordionItem>
@@ -112,13 +147,12 @@ export const Separate = () => (
         />
         <AccordionCollapse eventKey="0">
           <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+            <li>I'm inside my own Accordion parent element</li>
           </ul>
         </AccordionCollapse>
       </AccordionItem>
     </Accordion>
+    <br />
     <Accordion>
       <AccordionItem>
         <AccordionCustomToggle
@@ -129,9 +163,7 @@ export const Separate = () => (
         />
         <AccordionCollapse eventKey="1">
           <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+            <li>I'm inside my own Accordion parent element</li>
           </ul>
         </AccordionCollapse>
       </AccordionItem>
@@ -147,7 +179,7 @@ export const Disabled = () => (
         eventKey="0"
         helperText="helper text"
         label="3 Items Selected"
-        title="Accordion Custom Toggle #1"
+        title="Accordion Custom Toggle -- Disabled"
       />
       <AccordionCollapse eventKey="0">
         <ul>
