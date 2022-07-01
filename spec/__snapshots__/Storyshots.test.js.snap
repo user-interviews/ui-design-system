@@ -9,24 +9,24 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
   }
 >
   <div
-    className="accordion"
+    className="Accordion accordion"
   >
     <div
       className="AccordionItem accordion-item"
     >
       <button
-        className="AccordionCustomToggle collapsed"
+        className="AccordionToggle collapsed"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="AccordionCustomToggle__container"
+          className="AccordionToggle__container"
         >
           <span
-            className="AccordionCustomToggle__container--left"
+            className="AccordionToggle__container--left"
           >
             <span
-              className="AccordionCustomToggle__chevron-left"
+              className="AccordionToggle__chevron-left"
             >
               <svg
                 aria-hidden="true"
@@ -47,12 +47,12 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
               </svg>
             </span>
             <span
-              className="AccordionCustomToggle__title"
+              className="AccordionToggle__title"
             >
-              Accordion Custom Toggle #1
+              Accordion Toggle #1
             </span>
             <span
-              className="AccordionCustomToggle__helper-text"
+              className="AccordionToggle__helper-text"
             >
               (
               helper text
@@ -60,10 +60,10 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
             </span>
           </span>
           <span
-            className="AccordionCustomToggle__container--right"
+            className="AccordionToggle__container--right"
           >
             <span
-              className="AccordionCustomToggle__label"
+              className="AccordionToggle__label"
             >
               3 Items Selected
             </span>
@@ -95,18 +95,18 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
       className="AccordionItem accordion-item"
     >
       <button
-        className="AccordionCustomToggle collapsed"
+        className="AccordionToggle collapsed"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="AccordionCustomToggle__container"
+          className="AccordionToggle__container"
         >
           <span
-            className="AccordionCustomToggle__container--left"
+            className="AccordionToggle__container--left"
           >
             <span
-              className="AccordionCustomToggle__chevron-left"
+              className="AccordionToggle__chevron-left"
             >
               <svg
                 aria-hidden="true"
@@ -127,12 +127,12 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
               </svg>
             </span>
             <span
-              className="AccordionCustomToggle__title"
+              className="AccordionToggle__title"
             >
-              Accordion Custom Toggle #2
+              Accordion Toggle #2
             </span>
             <span
-              className="AccordionCustomToggle__helper-text"
+              className="AccordionToggle__helper-text"
             >
               (
               helper text
@@ -140,10 +140,10 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
             </span>
           </span>
           <span
-            className="AccordionCustomToggle__container--right"
+            className="AccordionToggle__container--right"
           >
             <span
-              className="AccordionCustomToggle__label"
+              className="AccordionToggle__label"
             >
               3 Items Selected
             </span>
@@ -184,24 +184,24 @@ exports[`Storyshots Components/Accordion Default 1`] = `
   }
 >
   <div
-    className="accordion"
+    className="Accordion accordion"
   >
     <div
       className="AccordionItem accordion-item"
     >
       <button
-        className="AccordionCustomToggle collapsed"
+        className="AccordionToggle collapsed"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="AccordionCustomToggle__container"
+          className="AccordionToggle__container"
         >
           <span
-            className="AccordionCustomToggle__container--left"
+            className="AccordionToggle__container--left"
           >
             <span
-              className="AccordionCustomToggle__leading-icon"
+              className="AccordionToggle__leading-icon"
             >
               <svg
                 aria-hidden="true"
@@ -222,12 +222,12 @@ exports[`Storyshots Components/Accordion Default 1`] = `
               </svg>
             </span>
             <span
-              className="AccordionCustomToggle__title"
+              className="AccordionToggle__title"
             >
-              Accordion Custom Toggle #1
+              Accordion Toggle #1
             </span>
             <span
-              className="AccordionCustomToggle__helper-text"
+              className="AccordionToggle__helper-text"
             >
               (
               helper text
@@ -235,15 +235,15 @@ exports[`Storyshots Components/Accordion Default 1`] = `
             </span>
           </span>
           <span
-            className="AccordionCustomToggle__container--right"
+            className="AccordionToggle__container--right"
           >
             <span
-              className="AccordionCustomToggle__label"
+              className="AccordionToggle__label"
             >
               3 Items Selected
             </span>
             <span
-              className="AccordionCustomToggle__chevron-right"
+              className="AccordionToggle__chevron-right"
             >
               <svg
                 aria-hidden="true"
@@ -291,18 +291,18 @@ exports[`Storyshots Components/Accordion Default 1`] = `
       className="AccordionItem accordion-item"
     >
       <button
-        className="AccordionCustomToggle collapsed"
+        className="AccordionToggle collapsed"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="AccordionCustomToggle__container"
+          className="AccordionToggle__container"
         >
           <span
-            className="AccordionCustomToggle__container--left"
+            className="AccordionToggle__container--left"
           >
             <span
-              className="AccordionCustomToggle__leading-icon"
+              className="AccordionToggle__leading-icon"
             >
               <svg
                 aria-hidden="true"
@@ -323,12 +323,12 @@ exports[`Storyshots Components/Accordion Default 1`] = `
               </svg>
             </span>
             <span
-              className="AccordionCustomToggle__title"
+              className="AccordionToggle__title"
             >
-              Accordion Custom Toggle #2
+              Accordion Toggle #2
             </span>
             <span
-              className="AccordionCustomToggle__helper-text"
+              className="AccordionToggle__helper-text"
             >
               (
               helper text
@@ -336,15 +336,15 @@ exports[`Storyshots Components/Accordion Default 1`] = `
             </span>
           </span>
           <span
-            className="AccordionCustomToggle__container--right"
+            className="AccordionToggle__container--right"
           >
             <span
-              className="AccordionCustomToggle__label"
+              className="AccordionToggle__label"
             >
               3 Items Selected
             </span>
             <span
-              className="AccordionCustomToggle__chevron-right"
+              className="AccordionToggle__chevron-right"
             >
               <svg
                 aria-hidden="true"
@@ -401,24 +401,24 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
   }
 >
   <div
-    className="accordion"
+    className="Accordion accordion"
   >
     <div
       className="AccordionItem accordion-item"
     >
       <button
-        className="AccordionCustomToggle collapsed"
+        className="AccordionToggle collapsed"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="AccordionCustomToggle__container"
+          className="AccordionToggle__container"
         >
           <span
-            className="AccordionCustomToggle__container--left"
+            className="AccordionToggle__container--left"
           >
             <span
-              className="AccordionCustomToggle__leading-icon"
+              className="AccordionToggle__leading-icon"
             >
               <svg
                 aria-hidden="true"
@@ -439,12 +439,12 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
               </svg>
             </span>
             <span
-              className="AccordionCustomToggle__title"
+              className="AccordionToggle__title"
             >
-              Accordion Custom Toggle #1
+              Accordion Toggle #1
             </span>
             <span
-              className="AccordionCustomToggle__helper-text"
+              className="AccordionToggle__helper-text"
             >
               (
               helper text
@@ -452,15 +452,15 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
             </span>
           </span>
           <span
-            className="AccordionCustomToggle__container--right"
+            className="AccordionToggle__container--right"
           >
             <span
-              className="AccordionCustomToggle__label"
+              className="AccordionToggle__label"
             >
               3 Items Selected
             </span>
             <span
-              className="AccordionCustomToggle__chevron-right"
+              className="AccordionToggle__chevron-right"
             >
               <svg
                 aria-hidden="true"
@@ -508,18 +508,18 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
       className="AccordionItem accordion-item"
     >
       <button
-        className="AccordionCustomToggle collapsed"
+        className="AccordionToggle collapsed"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="AccordionCustomToggle__container"
+          className="AccordionToggle__container"
         >
           <span
-            className="AccordionCustomToggle__container--left"
+            className="AccordionToggle__container--left"
           >
             <span
-              className="AccordionCustomToggle__leading-icon"
+              className="AccordionToggle__leading-icon"
             >
               <svg
                 aria-hidden="true"
@@ -540,12 +540,12 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
               </svg>
             </span>
             <span
-              className="AccordionCustomToggle__title"
+              className="AccordionToggle__title"
             >
-              Accordion Custom Toggle #2
+              Accordion Toggle #2
             </span>
             <span
-              className="AccordionCustomToggle__helper-text"
+              className="AccordionToggle__helper-text"
             >
               (
               helper text
@@ -553,15 +553,15 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
             </span>
           </span>
           <span
-            className="AccordionCustomToggle__container--right"
+            className="AccordionToggle__container--right"
           >
             <span
-              className="AccordionCustomToggle__label"
+              className="AccordionToggle__label"
             >
               3 Items Selected
             </span>
             <span
-              className="AccordionCustomToggle__chevron-right"
+              className="AccordionToggle__chevron-right"
             >
               <svg
                 aria-hidden="true"
@@ -612,30 +612,30 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
   }
 >
   <div
-    className="accordion"
+    className="Accordion accordion"
   >
     <div
       className="AccordionItem accordion-item"
     >
       <button
-        className="AccordionCustomToggle collapsed AccordionCustomToggle--disabled"
+        className="AccordionToggle collapsed AccordionToggle--disabled"
         disabled={true}
         onClick={[Function]}
         type="button"
       >
         <div
-          className="AccordionCustomToggle__container"
+          className="AccordionToggle__container"
         >
           <span
-            className="AccordionCustomToggle__container--left"
+            className="AccordionToggle__container--left"
           >
             <span
-              className="AccordionCustomToggle__title"
+              className="AccordionToggle__title"
             >
-              Accordion Custom Toggle -- Disabled
+              Accordion Toggle -- Disabled
             </span>
             <span
-              className="AccordionCustomToggle__helper-text"
+              className="AccordionToggle__helper-text"
             >
               (
               helper text
@@ -643,15 +643,15 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
             </span>
           </span>
           <span
-            className="AccordionCustomToggle__container--right"
+            className="AccordionToggle__container--right"
           >
             <span
-              className="AccordionCustomToggle__label"
+              className="AccordionToggle__label"
             >
               3 Items Selected
             </span>
             <span
-              className="AccordionCustomToggle__chevron-right"
+              className="AccordionToggle__chevron-right"
             >
               <svg
                 aria-hidden="true"
@@ -699,23 +699,23 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
       className="AccordionItem accordion-item"
     >
       <button
-        className="AccordionCustomToggle collapsed"
+        className="AccordionToggle collapsed"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="AccordionCustomToggle__container"
+          className="AccordionToggle__container"
         >
           <span
-            className="AccordionCustomToggle__container--left"
+            className="AccordionToggle__container--left"
           >
             <span
-              className="AccordionCustomToggle__title"
+              className="AccordionToggle__title"
             >
-              Accordion Custom Toggle #2
+              Accordion Toggle #2
             </span>
             <span
-              className="AccordionCustomToggle__helper-text"
+              className="AccordionToggle__helper-text"
             >
               (
               helper text
@@ -723,15 +723,15 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
             </span>
           </span>
           <span
-            className="AccordionCustomToggle__container--right"
+            className="AccordionToggle__container--right"
           >
             <span
-              className="AccordionCustomToggle__label"
+              className="AccordionToggle__label"
             >
               3 Items Selected
             </span>
             <span
-              className="AccordionCustomToggle__chevron-right"
+              className="AccordionToggle__chevron-right"
             >
               <svg
                 aria-hidden="true"
@@ -788,24 +788,24 @@ exports[`Storyshots Components/Accordion Flush 1`] = `
   }
 >
   <div
-    className="accordion accordion-flush"
+    className="Accordion accordion accordion-flush"
   >
     <div
       className="AccordionItem accordion-item"
     >
       <button
-        className="AccordionCustomToggle collapsed"
+        className="AccordionToggle collapsed"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="AccordionCustomToggle__container"
+          className="AccordionToggle__container"
         >
           <span
-            className="AccordionCustomToggle__container--left"
+            className="AccordionToggle__container--left"
           >
             <span
-              className="AccordionCustomToggle__leading-icon"
+              className="AccordionToggle__leading-icon"
             >
               <svg
                 aria-hidden="true"
@@ -826,12 +826,12 @@ exports[`Storyshots Components/Accordion Flush 1`] = `
               </svg>
             </span>
             <span
-              className="AccordionCustomToggle__title"
+              className="AccordionToggle__title"
             >
-              Accordion Custom Toggle #1
+              Accordion Toggle #1
             </span>
             <span
-              className="AccordionCustomToggle__helper-text"
+              className="AccordionToggle__helper-text"
             >
               (
               helper text
@@ -839,15 +839,15 @@ exports[`Storyshots Components/Accordion Flush 1`] = `
             </span>
           </span>
           <span
-            className="AccordionCustomToggle__container--right"
+            className="AccordionToggle__container--right"
           >
             <span
-              className="AccordionCustomToggle__label"
+              className="AccordionToggle__label"
             >
               3 Items Selected
             </span>
             <span
-              className="AccordionCustomToggle__chevron-right"
+              className="AccordionToggle__chevron-right"
             >
               <svg
                 aria-hidden="true"
@@ -895,18 +895,18 @@ exports[`Storyshots Components/Accordion Flush 1`] = `
       className="AccordionItem accordion-item"
     >
       <button
-        className="AccordionCustomToggle collapsed"
+        className="AccordionToggle collapsed"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="AccordionCustomToggle__container"
+          className="AccordionToggle__container"
         >
           <span
-            className="AccordionCustomToggle__container--left"
+            className="AccordionToggle__container--left"
           >
             <span
-              className="AccordionCustomToggle__leading-icon"
+              className="AccordionToggle__leading-icon"
             >
               <svg
                 aria-hidden="true"
@@ -927,12 +927,12 @@ exports[`Storyshots Components/Accordion Flush 1`] = `
               </svg>
             </span>
             <span
-              className="AccordionCustomToggle__title"
+              className="AccordionToggle__title"
             >
-              Accordion Custom Toggle #2
+              Accordion Toggle #2
             </span>
             <span
-              className="AccordionCustomToggle__helper-text"
+              className="AccordionToggle__helper-text"
             >
               (
               helper text
@@ -940,15 +940,15 @@ exports[`Storyshots Components/Accordion Flush 1`] = `
             </span>
           </span>
           <span
-            className="AccordionCustomToggle__container--right"
+            className="AccordionToggle__container--right"
           >
             <span
-              className="AccordionCustomToggle__label"
+              className="AccordionToggle__label"
             >
               3 Items Selected
             </span>
             <span
-              className="AccordionCustomToggle__chevron-right"
+              className="AccordionToggle__chevron-right"
             >
               <svg
                 aria-hidden="true"
@@ -1005,29 +1005,29 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
   }
 >
   <div
-    className="accordion"
+    className="Accordion accordion"
   >
     <div
       className="AccordionItem accordion-item"
     >
       <button
-        className="AccordionCustomToggle collapsed"
+        className="AccordionToggle collapsed"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="AccordionCustomToggle__container"
+          className="AccordionToggle__container"
         >
           <span
-            className="AccordionCustomToggle__container--left"
+            className="AccordionToggle__container--left"
           >
             <span
-              className="AccordionCustomToggle__title"
+              className="AccordionToggle__title"
             >
-              Accordion Custom Toggle #1
+              Accordion Toggle #1
             </span>
             <span
-              className="AccordionCustomToggle__helper-text"
+              className="AccordionToggle__helper-text"
             >
               (
               helper text
@@ -1035,15 +1035,15 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
             </span>
           </span>
           <span
-            className="AccordionCustomToggle__container--right"
+            className="AccordionToggle__container--right"
           >
             <span
-              className="AccordionCustomToggle__label"
+              className="AccordionToggle__label"
             >
               3 Items Selected
             </span>
             <span
-              className="AccordionCustomToggle__chevron-right"
+              className="AccordionToggle__chevron-right"
             >
               <svg
                 aria-hidden="true"
@@ -1084,29 +1084,29 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
   </div>
   <br />
   <div
-    className="accordion"
+    className="Accordion accordion"
   >
     <div
       className="AccordionItem accordion-item"
     >
       <button
-        className="AccordionCustomToggle collapsed"
+        className="AccordionToggle collapsed"
         onClick={[Function]}
         type="button"
       >
         <div
-          className="AccordionCustomToggle__container"
+          className="AccordionToggle__container"
         >
           <span
-            className="AccordionCustomToggle__container--left"
+            className="AccordionToggle__container--left"
           >
             <span
-              className="AccordionCustomToggle__title"
+              className="AccordionToggle__title"
             >
-              Accordion Custom Toggle #2
+              Accordion Toggle #2
             </span>
             <span
-              className="AccordionCustomToggle__helper-text"
+              className="AccordionToggle__helper-text"
             >
               (
               helper text
@@ -1114,15 +1114,15 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
             </span>
           </span>
           <span
-            className="AccordionCustomToggle__container--right"
+            className="AccordionToggle__container--right"
           >
             <span
-              className="AccordionCustomToggle__label"
+              className="AccordionToggle__label"
             >
               3 Items Selected
             </span>
             <span
-              className="AccordionCustomToggle__chevron-right"
+              className="AccordionToggle__chevron-right"
             >
               <svg
                 aria-hidden="true"

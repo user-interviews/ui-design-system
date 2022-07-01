@@ -1,6 +1,6 @@
 @import '../../scss/theme';
 
-.AccordionCustomToggle {
+.AccordionToggle {
   all: unset;
   width: 100%;
 
@@ -18,22 +18,22 @@
     transition: $focus-state-transition-time;
   }
 
-  &:not(.collapsed) .AccordionCustomToggle__chevron-right {
+  &:not(.collapsed) .AccordionToggle__chevron-right {
     svg {
       transform: rotate(-180deg);
       transition: $chevron-rotation-transition-time ease all;
     }
   }
 
-  &:not(.collapsed) .AccordionCustomToggle__chevron-left {
+  &:not(.collapsed) .AccordionToggle__chevron-left {
     svg {
       transform: rotate(180deg);
       transition: $chevron-rotation-transition-time ease all;
     }
   }
 
-  &.collapsed .AccordionCustomToggle__chevron-right,
-  &.collapsed .AccordionCustomToggle__chevron-left 
+  &.collapsed .AccordionToggle__chevron-right,
+  &.collapsed .AccordionToggle__chevron-left 
     {
       svg {
         transition: $chevron-rotation-transition-time ease all;

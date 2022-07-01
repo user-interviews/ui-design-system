@@ -3,7 +3,7 @@ import AccordionItem from './AccordionItem';
 import AccordionButton from './AccordionButton';
 import AccordionHeader from './AccordionHeader';
 import AccordionBody from './AccordionBody';
-import AccordionCustomToggle from './AccordionCustomToggle';
+import AccordionToggle from './AccordionToggle';
 import AccordionCollapse from './AccordionCollapse';
 
 export {
@@ -12,6 +12,6 @@ export {
   AccordionButton,
   AccordionHeader,
   AccordionBody,
-  AccordionCustomToggle,
+  AccordionToggle,
   AccordionCollapse,
 };

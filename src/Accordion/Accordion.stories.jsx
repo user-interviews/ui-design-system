@@ -3,7 +3,7 @@ import React from 'react';
 import {
   Accordion,
   AccordionItem,
-  AccordionCustomToggle,
+  AccordionToggle,
   AccordionCollapse,
 } from 'src/Accordion';
 
@@ -15,7 +15,7 @@ export default {
   title: 'Components/Accordion',
   component: Accordion,
   subcomponents: {
-    AccordionItem, AccordionCustomToggle, AccordionCollapse,
+    AccordionItem, AccordionToggle, AccordionCollapse,
   },
   parameters: {
     docs: {
@@ -27,12 +27,12 @@ export default {
 export const Default = () => (
   <Accordion>
     <AccordionItem>
-      <AccordionCustomToggle
+      <AccordionToggle
         eventKey="0"
         helperText="helper text"
         label="3 Items Selected"
         leadingIcon={faCreditCard}
-        title="Accordion Custom Toggle #1"
+        title="Accordion Toggle #1"
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -43,12 +43,12 @@ export const Default = () => (
       </AccordionCollapse>
     </AccordionItem>
     <AccordionItem>
-      <AccordionCustomToggle
+      <AccordionToggle
         eventKey="1"
         helperText="helper text"
         label="3 Items Selected"
         leadingIcon={faCreditCard}
-        title="Accordion Custom Toggle #2"
+        title="Accordion Toggle #2"
       />
       <AccordionCollapse eventKey="1">
         <ul>
@@ -64,12 +64,12 @@ export const Default = () => (
 export const DefaultOpen = () => (
   <Accordion defaultActiveKey="1">
     <AccordionItem>
-      <AccordionCustomToggle
+      <AccordionToggle
         eventKey="0"
         helperText="helper text"
         label="3 Items Selected"
         leadingIcon={faCreditCard}
-        title="Accordion Custom Toggle #1"
+        title="Accordion Toggle #1"
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -80,12 +80,12 @@ export const DefaultOpen = () => (
       </AccordionCollapse>
     </AccordionItem>
     <AccordionItem>
-      <AccordionCustomToggle
+      <AccordionToggle
         eventKey="1"
         helperText="helper text"
         label="3 Items Selected"
         leadingIcon={faCreditCard}
-        title="Accordion Custom Toggle #2"
+        title="Accordion Toggle #2"
       />
       <AccordionCollapse eventKey="1">
         <ul>
@@ -99,12 +99,12 @@ export const DefaultOpen = () => (
 export const ChevronLeft = () => (
   <Accordion>
     <AccordionItem>
-      <AccordionCustomToggle
+      <AccordionToggle
         chevronLeft
         eventKey="0"
         helperText="helper text"
         label="3 Items Selected"
-        title="Accordion Custom Toggle #1"
+        title="Accordion Toggle #1"
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -115,12 +115,12 @@ export const ChevronLeft = () => (
       </AccordionCollapse>
     </AccordionItem>
     <AccordionItem>
-      <AccordionCustomToggle
+      <AccordionToggle
         chevronLeft
         eventKey="1"
         helperText="helper text"
         label="3 Items Selected"
-        title="Accordion Custom Toggle #2"
+        title="Accordion Toggle #2"
       />
       <AccordionCollapse eventKey="1">
         <ul>
@@ -136,12 +136,12 @@ export const ChevronLeft = () => (
 export const Flush = () => (
   <Accordion flush>
     <AccordionItem>
-      <AccordionCustomToggle
+      <AccordionToggle
         eventKey="0"
         helperText="helper text"
         label="3 Items Selected"
         leadingIcon={faCreditCard}
-        title="Accordion Custom Toggle #1"
+        title="Accordion Toggle #1"
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -152,12 +152,12 @@ export const Flush = () => (
       </AccordionCollapse>
     </AccordionItem>
     <AccordionItem>
-      <AccordionCustomToggle
+      <AccordionToggle
         eventKey="1"
         helperText="helper text"
         label="3 Items Selected"
         leadingIcon={faCreditCard}
-        title="Accordion Custom Toggle #2"
+        title="Accordion Toggle #2"
       />
       <AccordionCollapse eventKey="1">
         <ul>
@@ -174,11 +174,11 @@ export const Separate = () => (
   <>
     <Accordion>
       <AccordionItem>
-        <AccordionCustomToggle
+        <AccordionToggle
           eventKey="0"
           helperText="helper text"
           label="3 Items Selected"
-          title="Accordion Custom Toggle #1"
+          title="Accordion Toggle #1"
         />
         <AccordionCollapse eventKey="0">
           <ul>
@@ -190,11 +190,11 @@ export const Separate = () => (
     <br />
     <Accordion>
       <AccordionItem>
-        <AccordionCustomToggle
+        <AccordionToggle
           eventKey="1"
           helperText="helper text"
           label="3 Items Selected"
-          title="Accordion Custom Toggle #2"
+          title="Accordion Toggle #2"
         />
         <AccordionCollapse eventKey="1">
           <ul>
@@ -209,12 +209,12 @@ export const Separate = () => (
 export const Disabled = () => (
   <Accordion>
     <AccordionItem>
-      <AccordionCustomToggle
+      <AccordionToggle
         disabled
         eventKey="0"
         helperText="helper text"
         label="3 Items Selected"
-        title="Accordion Custom Toggle -- Disabled"
+        title="Accordion Toggle -- Disabled"
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -225,11 +225,11 @@ export const Disabled = () => (
       </AccordionCollapse>
     </AccordionItem>
     <AccordionItem>
-      <AccordionCustomToggle
+      <AccordionToggle
         eventKey="1"
         helperText="helper text"
         label="3 Items Selected"
-        title="Accordion Custom Toggle #2"
+        title="Accordion Toggle #2"
       />
       <AccordionCollapse eventKey="1">
         <ul>
