@@ -21,11 +21,12 @@ const AccordionToggle = ({
   label,
   leadingIcon,
   title,
+  ...props
 }) => {
   const { activeEventKey } = React.useContext(AccordionContext);
 
   const [isCollapsed, setIsCollapsed] = useState(true);
-  
+
   const decoratedOnClick = useAccordionButton(eventKey, () => {
     if (eventKey !== activeEventKey) {
       setIsCollapsed(false);
@@ -60,6 +61,7 @@ const AccordionToggle = ({
       disabled={disabled}
       type="button"
       onClick={decoratedOnClick}
+      {...props}
     >
       <div className="AccordionToggle__container">
         <span className="AccordionToggle__container--left">

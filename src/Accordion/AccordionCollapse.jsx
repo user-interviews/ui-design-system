@@ -10,10 +10,12 @@ const AccordionCollapse = ({
   children,
   className,
   eventKey,
+  ...props
 }) => (
   <RBAccordionCollapse
     className={classNames(className, 'AccordionCollapse')}
     eventKey={eventKey}
+    {...props}
   >
     <div className="AccordionCollapse__container">
       {children}
