@@ -3,8 +3,6 @@ import React from 'react';
 import {
   Accordion,
   AccordionItem,
-  AccordionHeader,
-  AccordionBody,
   AccordionCustomToggle,
   AccordionCollapse,
 } from 'src/Accordion';
@@ -17,7 +15,7 @@ export default {
   title: 'Components/Accordion',
   component: Accordion,
   subcomponents: {
-    AccordionItem, AccordionHeader, AccordionBody,
+    AccordionItem, AccordionCustomToggle, AccordionCollapse,
   },
   parameters: {
     docs: {
