@@ -24,6 +24,8 @@ const AccordionToggle = ({
 }) => {
   const { activeEventKey } = React.useContext(AccordionContext);
 
+  const [isCollapsed, setIsCollapsed] = useState(true);
+  
   const decoratedOnClick = useAccordionButton(eventKey, () => {
     if (eventKey !== activeEventKey) {
       setIsCollapsed(false);
@@ -44,8 +46,6 @@ const AccordionToggle = ({
       setIsCollapsed(((prev) => !prev));
     }
   }, [activeEventKey, eventKey]);
-
-  const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
     <button
