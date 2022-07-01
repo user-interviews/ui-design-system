@@ -1,8 +1,8 @@
 import {
   Accordion,
+  AccordionCollapse,
   AccordionItem,
-  AccordionHeader,
-  AccordionBody,
+  AccordionToggle,
 } from 'src/Accordion';
 import { Alert, MessageTypes } from 'src/Alert';
 import Button from 'src/Button';
@@ -75,9 +75,9 @@ import Tooltip from 'src/Tooltip';
 
 export {
   Accordion,
+  AccordionCollapse,
   AccordionItem,
-  AccordionHeader,
-  AccordionBody,
+  AccordionToggle,
   Alert,
   Avatar,
   AsyncSelect,
