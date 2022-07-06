@@ -64,4 +64,8 @@
   &.btn-brand-twitter {
     @include btn-brand-twitter;
   }
+
+  &.btn-link {
+    @include btn-link;
+  }
 }

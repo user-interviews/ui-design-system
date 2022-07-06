@@ -24,6 +24,12 @@ const buttons = [
     match: 'Skip',
   },
   {
+    name: 'Link',
+    path: 'components-button--link',
+    class: '.Button',
+    match: 'Send',
+  },
+  {
     name: 'Brands',
     path: 'components-button--brands',
     class: '.Button',
