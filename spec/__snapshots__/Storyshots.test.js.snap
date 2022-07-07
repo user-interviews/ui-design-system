@@ -7269,79 +7269,74 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
   }
 >
   <div
-    className="AsyncSelect css-2b097c-container"
+    className="AsyncSelect css-b62m3t-container"
     onKeyDown={[Function]}
   >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-3-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
     <div
       className=" css-15ub2n0-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-g1d714-ValueContainer"
+        className=" css-319lph-ValueContainer"
       >
         <div
-          className=" css-1269n2i-placeholder"
+          className=" css-858797-placeholder"
+          id="react-select-3-placeholder"
         >
           Select...
         </div>
         <div
-          className="css-b8ldur-Input"
+          className=" css-6j8wv5-Input"
+          data-value=""
         >
-          <div
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-3-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-label="Async select"
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect="off"
             className=""
+            disabled={false}
+            id="react-select-3-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            spellCheck="false"
             style={
               Object {
-                "display": "inline-block",
+                "background": 0,
+                "border": 0,
+                "color": "inherit",
+                "font": "inherit",
+                "gridArea": "1 / 2",
+                "label": "input",
+                "margin": 0,
+                "minWidth": "2px",
+                "opacity": 1,
+                "outline": 0,
+                "padding": 0,
+                "width": "100%",
               }
             }
-          >
-            <input
-              aria-autocomplete="list"
-              aria-label="Async select"
-              autoCapitalize="none"
-              autoComplete="off"
-              autoCorrect="off"
-              disabled={false}
-              id="react-select-3-input"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              spellCheck="false"
-              style={
-                Object {
-                  "background": 0,
-                  "border": 0,
-                  "boxSizing": "content-box",
-                  "color": "inherit",
-                  "fontSize": "inherit",
-                  "label": "input",
-                  "opacity": 1,
-                  "outline": 0,
-                  "padding": 0,
-                  "width": "1px",
-                }
-              }
-              tabIndex="0"
-              type="text"
-              value=""
-            />
-            <div
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "overflow": "scroll",
-                  "position": "absolute",
-                  "top": 0,
-                  "visibility": "hidden",
-                  "whiteSpace": "pre",
-                }
-              }
-            >
-              
-            </div>
-          </div>
+            tabIndex={0}
+            type="text"
+            value=""
+          />
         </div>
       </div>
       <div
@@ -7358,7 +7353,7 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="css-6q0nyr-Svg"
+            className="css-tj5bde-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -7390,80 +7385,75 @@ exports[`Storyshots Components/Selects/Async Labeled 1`] = `
     A labeled select
   </label>
   <div
-    className="AsyncSelect css-2b097c-container"
+    className="AsyncSelect css-b62m3t-container"
     id="async-select"
     onKeyDown={[Function]}
   >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-4-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
     <div
       className=" css-15ub2n0-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-g1d714-ValueContainer"
+        className=" css-319lph-ValueContainer"
       >
         <div
-          className=" css-1269n2i-placeholder"
+          className=" css-858797-placeholder"
+          id="react-select-4-placeholder"
         >
           Select...
         </div>
         <div
-          className="css-b8ldur-Input"
+          className=" css-6j8wv5-Input"
+          data-value=""
         >
-          <div
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-4-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-labelledby="async-label"
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect="off"
             className=""
+            disabled={false}
+            id="react-select-4-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            spellCheck="false"
             style={
               Object {
-                "display": "inline-block",
+                "background": 0,
+                "border": 0,
+                "color": "inherit",
+                "font": "inherit",
+                "gridArea": "1 / 2",
+                "label": "input",
+                "margin": 0,
+                "minWidth": "2px",
+                "opacity": 1,
+                "outline": 0,
+                "padding": 0,
+                "width": "100%",
               }
             }
-          >
-            <input
-              aria-autocomplete="list"
-              aria-labelledby="async-label"
-              autoCapitalize="none"
-              autoComplete="off"
-              autoCorrect="off"
-              disabled={false}
-              id="react-select-4-input"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              spellCheck="false"
-              style={
-                Object {
-                  "background": 0,
-                  "border": 0,
-                  "boxSizing": "content-box",
-                  "color": "inherit",
-                  "fontSize": "inherit",
-                  "label": "input",
-                  "opacity": 1,
-                  "outline": 0,
-                  "padding": 0,
-                  "width": "1px",
-                }
-              }
-              tabIndex="0"
-              type="text"
-              value=""
-            />
-            <div
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "overflow": "scroll",
-                  "position": "absolute",
-                  "top": 0,
-                  "visibility": "hidden",
-                  "whiteSpace": "pre",
-                }
-              }
-            >
-              
-            </div>
-          </div>
+            tabIndex={0}
+            type="text"
+            value=""
+          />
         </div>
       </div>
       <div
@@ -7480,7 +7470,7 @@ exports[`Storyshots Components/Selects/Async Labeled 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="css-6q0nyr-Svg"
+            className="css-tj5bde-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -7506,79 +7496,74 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
   }
 >
   <div
-    className="AsyncSelect css-2b097c-container"
+    className="AsyncSelect css-b62m3t-container"
     onKeyDown={[Function]}
   >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-2-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
     <div
       className=" css-15ub2n0-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-g1d714-ValueContainer"
+        className=" css-319lph-ValueContainer"
       >
         <div
-          className=" css-1269n2i-placeholder"
+          className=" css-858797-placeholder"
+          id="react-select-2-placeholder"
         >
           Select...
         </div>
         <div
-          className="css-b8ldur-Input"
+          className=" css-6j8wv5-Input"
+          data-value=""
         >
-          <div
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-2-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-label="Async creatable select"
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect="off"
             className=""
+            disabled={false}
+            id="react-select-2-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            spellCheck="false"
             style={
               Object {
-                "display": "inline-block",
+                "background": 0,
+                "border": 0,
+                "color": "inherit",
+                "font": "inherit",
+                "gridArea": "1 / 2",
+                "label": "input",
+                "margin": 0,
+                "minWidth": "2px",
+                "opacity": 1,
+                "outline": 0,
+                "padding": 0,
+                "width": "100%",
               }
             }
-          >
-            <input
-              aria-autocomplete="list"
-              aria-label="Async creatable select"
-              autoCapitalize="none"
-              autoComplete="off"
-              autoCorrect="off"
-              disabled={false}
-              id="react-select-2-input"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              spellCheck="false"
-              style={
-                Object {
-                  "background": 0,
-                  "border": 0,
-                  "boxSizing": "content-box",
-                  "color": "inherit",
-                  "fontSize": "inherit",
-                  "label": "input",
-                  "opacity": 1,
-                  "outline": 0,
-                  "padding": 0,
-                  "width": "1px",
-                }
-              }
-              tabIndex="0"
-              type="text"
-              value=""
-            />
-            <div
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "overflow": "scroll",
-                  "position": "absolute",
-                  "top": 0,
-                  "visibility": "hidden",
-                  "whiteSpace": "pre",
-                }
-              }
-            >
-              
-            </div>
-          </div>
+            tabIndex={0}
+            type="text"
+            value=""
+          />
         </div>
       </div>
       <div
@@ -7595,7 +7580,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="css-6q0nyr-Svg"
+            className="css-tj5bde-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -7621,78 +7606,73 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
   }
 >
   <div
-    className="CreatableSelect css-2b097c-container"
+    className="CreatableSelect css-b62m3t-container"
     onKeyDown={[Function]}
   >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-5-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
     <div
       className=" css-15ub2n0-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-g1d714-ValueContainer"
+        className=" css-319lph-ValueContainer"
       >
         <div
-          className=" css-1269n2i-placeholder"
+          className=" css-858797-placeholder"
+          id="react-select-5-placeholder"
         >
           Select...
         </div>
         <div
-          className="css-b8ldur-Input"
+          className=" css-6j8wv5-Input"
+          data-value=""
         >
-          <div
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-5-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect="off"
             className=""
+            disabled={false}
+            id="react-select-5-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            spellCheck="false"
             style={
               Object {
-                "display": "inline-block",
+                "background": 0,
+                "border": 0,
+                "color": "inherit",
+                "font": "inherit",
+                "gridArea": "1 / 2",
+                "label": "input",
+                "margin": 0,
+                "minWidth": "2px",
+                "opacity": 1,
+                "outline": 0,
+                "padding": 0,
+                "width": "100%",
               }
             }
-          >
-            <input
-              aria-autocomplete="list"
-              autoCapitalize="none"
-              autoComplete="off"
-              autoCorrect="off"
-              disabled={false}
-              id="react-select-5-input"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              spellCheck="false"
-              style={
-                Object {
-                  "background": 0,
-                  "border": 0,
-                  "boxSizing": "content-box",
-                  "color": "inherit",
-                  "fontSize": "inherit",
-                  "label": "input",
-                  "opacity": 1,
-                  "outline": 0,
-                  "padding": 0,
-                  "width": "1px",
-                }
-              }
-              tabIndex="0"
-              type="text"
-              value=""
-            />
-            <div
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "overflow": "scroll",
-                  "position": "absolute",
-                  "top": 0,
-                  "visibility": "hidden",
-                  "whiteSpace": "pre",
-                }
-              }
-            >
-              
-            </div>
-          </div>
+            tabIndex={0}
+            type="text"
+            value=""
+          />
         </div>
       </div>
       <div
@@ -7709,7 +7689,7 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="css-6q0nyr-Svg"
+            className="css-tj5bde-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -7741,34 +7721,50 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
     Custom option with checkbox
   </label>
   <div
-    className="SingleSelect css-2b097c-container"
+    className="SingleSelect css-b62m3t-container"
     id="multi-select"
     onKeyDown={[Function]}
   >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-12-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
     <div
       className=" css-15ub2n0-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-g1d714-ValueContainer"
+        className=" css-319lph-ValueContainer"
       >
         <div
-          className=" css-1269n2i-placeholder"
+          className=" css-858797-placeholder"
+          id="react-select-12-placeholder"
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+          aria-describedby="react-select-12-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
           aria-labelledby="select-label"
-          className="css-62g3xt-dummyInput"
+          aria-readonly={true}
+          className="css-mohuvp-dummyInput-DummyInput"
           disabled={false}
           id="react-select-12-input"
+          inputMode="none"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          readOnly={true}
-          tabIndex="0"
+          role="combobox"
+          tabIndex={0}
           value=""
         />
       </div>
@@ -7786,7 +7782,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
         >
           <svg
             aria-hidden="true"
-            className="css-6q0nyr-Svg"
+            className="css-tj5bde-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -7818,34 +7814,50 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
     Custom value container
   </label>
   <div
-    className="SingleSelect css-2b097c-container"
+    className="SingleSelect css-b62m3t-container"
     id="custom-value-container-select"
     onKeyDown={[Function]}
   >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-13-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
     <div
       className=" css-15ub2n0-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-g1d714-ValueContainer"
+        className=" css-319lph-ValueContainer"
       >
         <div
-          className=" css-1269n2i-placeholder"
+          className=" css-858797-placeholder"
+          id="react-select-13-placeholder"
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+          aria-describedby="react-select-13-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
           aria-labelledby="select-label"
-          className="css-62g3xt-dummyInput"
+          aria-readonly={true}
+          className="css-mohuvp-dummyInput-DummyInput"
           disabled={false}
           id="react-select-13-input"
+          inputMode="none"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          readOnly={true}
-          tabIndex="0"
+          role="combobox"
+          tabIndex={0}
           value=""
         />
       </div>
@@ -7863,7 +7875,7 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="css-6q0nyr-Svg"
+            className="css-tj5bde-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -7889,33 +7901,49 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
   }
 >
   <div
-    className="SingleSelect css-2b097c-container"
+    className="SingleSelect css-b62m3t-container"
     onKeyDown={[Function]}
   >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-6-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
     <div
       className=" css-15ub2n0-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-g1d714-ValueContainer"
+        className=" css-319lph-ValueContainer"
       >
         <div
-          className=" css-1269n2i-placeholder"
+          className=" css-858797-placeholder"
+          id="react-select-6-placeholder"
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+          aria-describedby="react-select-6-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
           aria-label="Default select"
-          className="css-62g3xt-dummyInput"
+          aria-readonly={true}
+          className="css-mohuvp-dummyInput-DummyInput"
           disabled={false}
           id="react-select-6-input"
+          inputMode="none"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          readOnly={true}
-          tabIndex="0"
+          role="combobox"
+          tabIndex={0}
           value=""
         />
       </div>
@@ -7933,7 +7961,7 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="css-6q0nyr-Svg"
+            className="css-tj5bde-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -8013,34 +8041,50 @@ exports[`Storyshots Components/Selects/Single In Modal 1`] = `
           A select inside a modal
         </span>
         <div
-          className="SingleSelect css-2b097c-container"
+          className="SingleSelect css-b62m3t-container"
           id="select-in-modal"
           onKeyDown={[Function]}
         >
+          <span
+            className="css-1f43avz-a11yText-A11yText"
+            id="react-select-11-live-region"
+          />
+          <span
+            aria-atomic="false"
+            aria-live="polite"
+            aria-relevant="additions text"
+            className="css-1f43avz-a11yText-A11yText"
+          />
           <div
             className=" css-15ub2n0-control"
             onMouseDown={[Function]}
             onTouchEnd={[Function]}
           >
             <div
-              className=" css-g1d714-ValueContainer"
+              className=" css-319lph-ValueContainer"
             >
               <div
-                className=" css-1269n2i-placeholder"
+                className=" css-858797-placeholder"
+                id="react-select-11-placeholder"
               >
                 Select...
               </div>
               <input
                 aria-autocomplete="list"
+                aria-describedby="react-select-11-placeholder"
+                aria-expanded={false}
+                aria-haspopup={true}
                 aria-labelledby="select-label"
-                className="css-62g3xt-dummyInput"
+                aria-readonly={true}
+                className="css-mohuvp-dummyInput-DummyInput"
                 disabled={false}
                 id="react-select-11-input"
+                inputMode="none"
                 onBlur={[Function]}
                 onChange={[Function]}
                 onFocus={[Function]}
-                readOnly={true}
-                tabIndex="0"
+                role="combobox"
+                tabIndex={0}
                 value=""
               />
             </div>
@@ -8058,7 +8102,7 @@ exports[`Storyshots Components/Selects/Single In Modal 1`] = `
               >
                 <svg
                   aria-hidden="true"
-                  className="css-6q0nyr-Svg"
+                  className="css-tj5bde-Svg"
                   focusable="false"
                   height={20}
                   viewBox="0 0 20 20"
@@ -8109,34 +8153,50 @@ exports[`Storyshots Components/Selects/Single Labeled 1`] = `
     Labeled select
   </label>
   <div
-    className="SingleSelect css-2b097c-container"
+    className="SingleSelect css-b62m3t-container"
     id="labeled-select"
     onKeyDown={[Function]}
   >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-9-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
     <div
       className=" css-15ub2n0-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-g1d714-ValueContainer"
+        className=" css-319lph-ValueContainer"
       >
         <div
-          className=" css-1269n2i-placeholder"
+          className=" css-858797-placeholder"
+          id="react-select-9-placeholder"
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+          aria-describedby="react-select-9-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
           aria-labelledby="select-label"
-          className="css-62g3xt-dummyInput"
+          aria-readonly={true}
+          className="css-mohuvp-dummyInput-DummyInput"
           disabled={false}
           id="react-select-9-input"
+          inputMode="none"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          readOnly={true}
-          tabIndex="0"
+          role="combobox"
+          tabIndex={0}
           value=""
         />
       </div>
@@ -8154,7 +8214,7 @@ exports[`Storyshots Components/Selects/Single Labeled 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="css-6q0nyr-Svg"
+            className="css-tj5bde-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -8180,33 +8240,49 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
   }
 >
   <div
-    className="SingleSelect css-14jk2my-container"
+    className="SingleSelect css-3iigni-container"
     onKeyDown={[Function]}
   >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-8-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
     <div
       className=" css-1930729-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-g1d714-ValueContainer"
+        className=" css-319lph-ValueContainer"
       >
         <div
-          className=" css-1269n2i-placeholder"
+          className=" css-858797-placeholder"
+          id="react-select-8-placeholder"
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+          aria-describedby="react-select-8-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
           aria-label="Loading select"
-          className="css-62g3xt-dummyInput"
+          aria-readonly={true}
+          className="css-mohuvp-dummyInput-DummyInput"
           disabled={true}
           id="react-select-8-input"
+          inputMode="none"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          readOnly={true}
-          tabIndex="0"
+          role="combobox"
+          tabIndex={0}
           value=""
         />
       </div>
@@ -8224,7 +8300,7 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="css-6q0nyr-Svg"
+            className="css-tj5bde-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -8256,34 +8332,50 @@ exports[`Storyshots Components/Selects/Single Multi Select 1`] = `
     Multi select
   </label>
   <div
-    className="SingleSelect css-2b097c-container"
+    className="SingleSelect css-b62m3t-container"
     id="multi-select"
     onKeyDown={[Function]}
   >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-10-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
     <div
       className=" css-15ub2n0-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-g1d714-ValueContainer"
+        className=" css-319lph-ValueContainer"
       >
         <div
-          className=" css-1269n2i-placeholder"
+          className=" css-858797-placeholder"
+          id="react-select-10-placeholder"
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+          aria-describedby="react-select-10-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
           aria-labelledby="select-label"
-          className="css-62g3xt-dummyInput"
+          aria-readonly={true}
+          className="css-mohuvp-dummyInput-DummyInput"
           disabled={false}
           id="react-select-10-input"
+          inputMode="none"
           onBlur={[Function]}
           onChange={[Function]}
           onFocus={[Function]}
-          readOnly={true}
-          tabIndex="0"
+          role="combobox"
+          tabIndex={0}
           value=""
         />
       </div>
@@ -8301,7 +8393,7 @@ exports[`Storyshots Components/Selects/Single Multi Select 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="css-6q0nyr-Svg"
+            className="css-tj5bde-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
@@ -8327,79 +8419,74 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
   }
 >
   <div
-    className="SingleSelect css-2b097c-container"
+    className="SingleSelect css-b62m3t-container"
     onKeyDown={[Function]}
   >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-7-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
     <div
       className=" css-15ub2n0-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-g1d714-ValueContainer"
+        className=" css-319lph-ValueContainer"
       >
         <div
-          className=" css-1269n2i-placeholder"
+          className=" css-858797-placeholder"
+          id="react-select-7-placeholder"
         >
           Select...
         </div>
         <div
-          className="css-b8ldur-Input"
+          className=" css-6j8wv5-Input"
+          data-value=""
         >
-          <div
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-7-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-label="Searchable select"
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect="off"
             className=""
+            disabled={false}
+            id="react-select-7-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            spellCheck="false"
             style={
               Object {
-                "display": "inline-block",
+                "background": 0,
+                "border": 0,
+                "color": "inherit",
+                "font": "inherit",
+                "gridArea": "1 / 2",
+                "label": "input",
+                "margin": 0,
+                "minWidth": "2px",
+                "opacity": 1,
+                "outline": 0,
+                "padding": 0,
+                "width": "100%",
               }
             }
-          >
-            <input
-              aria-autocomplete="list"
-              aria-label="Searchable select"
-              autoCapitalize="none"
-              autoComplete="off"
-              autoCorrect="off"
-              disabled={false}
-              id="react-select-7-input"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              spellCheck="false"
-              style={
-                Object {
-                  "background": 0,
-                  "border": 0,
-                  "boxSizing": "content-box",
-                  "color": "inherit",
-                  "fontSize": "inherit",
-                  "label": "input",
-                  "opacity": 1,
-                  "outline": 0,
-                  "padding": 0,
-                  "width": "1px",
-                }
-              }
-              tabIndex="0"
-              type="text"
-              value=""
-            />
-            <div
-              style={
-                Object {
-                  "height": 0,
-                  "left": 0,
-                  "overflow": "scroll",
-                  "position": "absolute",
-                  "top": 0,
-                  "visibility": "hidden",
-                  "whiteSpace": "pre",
-                }
-              }
-            >
-              
-            </div>
-          </div>
+            tabIndex={0}
+            type="text"
+            value=""
+          />
         </div>
       </div>
       <div
@@ -8416,7 +8503,7 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
         >
           <svg
             aria-hidden="true"
-            className="css-6q0nyr-Svg"
+            className="css-tj5bde-Svg"
             focusable="false"
             height={20}
             viewBox="0 0 20 20"
