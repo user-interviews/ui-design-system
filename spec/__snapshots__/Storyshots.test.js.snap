@@ -25,6 +25,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
           <div
             className="AccordionToggle__container--left"
           >
+<<<<<<< release/1.32.0
             <span
               className="AccordionToggle__chevron-left"
             >
@@ -89,6 +90,30 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
             </li>
           </ul>
         </div>
+=======
+            <path
+              d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div
+      className="Alert__content"
+    >
+      <div
+        className="Alert__title"
+      >
+        Announcement title
+      </div>
+      <div
+        className="Alert__message"
+      >
+        Announcement message
+>>>>>>> main
       </div>
     </div>
     <div
@@ -105,6 +130,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
           <div
             className="AccordionToggle__container--left"
           >
+<<<<<<< release/1.32.0
             <span
               className="AccordionToggle__chevron-left"
             >
@@ -169,6 +195,30 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
             </li>
           </ul>
         </div>
+=======
+            <path
+              d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div
+      className="Alert__content"
+    >
+      <div
+        className="Alert__title"
+      >
+        Error title
+      </div>
+      <div
+        className="Alert__message"
+      >
+        Error message
+>>>>>>> main
       </div>
     </div>
   </div>
@@ -290,6 +340,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
     <div
       className="AccordionItem accordion-item"
     >
+<<<<<<< release/1.32.0
       <button
         className="AccordionToggle collapsed"
         onClick={[Function]}
@@ -386,6 +437,17 @@ exports[`Storyshots Components/Accordion Default 1`] = `
             </li>
           </ul>
         </div>
+=======
+      <div
+        className="Alert__title"
+      >
+        Info title
+      </div>
+      <div
+        className="Alert__message"
+      >
+        Info message
+>>>>>>> main
       </div>
     </div>
   </div>
@@ -470,6 +532,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
                 focusable="false"
                 role="img"
                 style={Object {}}
+<<<<<<< release/1.32.0
                 viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -502,6 +565,27 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
             </li>
           </ul>
         </div>
+=======
+                transform="translate(-256 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+      </span>
+    </div>
+    <div
+      className="Alert__content"
+    >
+      <div
+        className="Alert__title"
+      >
+        Success title
+      </div>
+      <div
+        className="Alert__message"
+      >
+        Success message
+>>>>>>> main
       </div>
     </div>
     <div
@@ -518,6 +602,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
           <div
             className="AccordionToggle__container--left"
           >
+<<<<<<< release/1.32.0
             <span
               className="AccordionToggle__leading-icon"
             >
@@ -597,6 +682,30 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
             </li>
           </ul>
         </div>
+=======
+            <path
+              d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div
+      className="Alert__content"
+    >
+      <div
+        className="Alert__title"
+      >
+        Warning title
+      </div>
+      <div
+        className="Alert__message"
+      >
+        Warning message
+>>>>>>> main
       </div>
     </div>
   </div>
@@ -661,6 +770,7 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
                 focusable="false"
                 role="img"
                 style={Object {}}
+<<<<<<< release/1.32.0
                 viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -677,6 +787,36 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
       <div
         aria-expanded={null}
         className="AccordionCollapse accordion-collapse collapse"
+=======
+                transform="translate(-256 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+      </span>
+    </div>
+    <div
+      className="Alert__content"
+    >
+      <div
+        className="Alert__title"
+      >
+        Success title
+      </div>
+      <div
+        className="Alert__message"
+      >
+        Success message
+      </div>
+    </div>
+    <div
+      className="Alert__action"
+    >
+      <a
+        className="Alert-success primary-action"
+        href="https://www.userinterviews.com/"
+        rel="noopener noreferrer"
+>>>>>>> main
       >
         <div
           className="AccordionCollapse__container"
@@ -741,6 +881,7 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
                 focusable="false"
                 role="img"
                 style={Object {}}
+<<<<<<< release/1.32.0
                 viewBox="0 0 448 512"
                 xmlns="http://www.w3.org/2000/svg"
               >
@@ -757,6 +898,36 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
       <div
         aria-expanded={null}
         className="AccordionCollapse accordion-collapse collapse"
+=======
+                transform="translate(-96 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+      </span>
+    </div>
+    <div
+      className="Alert__content"
+    >
+      <div
+        className="Alert__title"
+      >
+        Info title
+      </div>
+      <div
+        className="Alert__message"
+      >
+        Info message
+      </div>
+    </div>
+    <div
+      className="Alert__action"
+    >
+      <a
+        className="Alert-info primary-action"
+        href="https://www.userinterviews.com/"
+        rel="noopener noreferrer"
+>>>>>>> main
       >
         <div
           className="AccordionCollapse__container"
@@ -905,6 +1076,7 @@ exports[`Storyshots Components/Accordion Flush 1`] = `
           <div
             className="AccordionToggle__container--left"
           >
+<<<<<<< release/1.32.0
             <span
               className="AccordionToggle__leading-icon"
             >
@@ -1009,6 +1181,34 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
   >
     <div
       className="AccordionItem accordion-item"
+=======
+            <path
+              d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div
+      className="Alert__content"
+    >
+      <div
+        className="Alert__title"
+      >
+        Announcement title
+      </div>
+      <div
+        className="Alert__message"
+      >
+        Announcement message
+      </div>
+    </div>
+    <div
+      className="Alert__action"
+>>>>>>> main
     >
       <button
         className="AccordionToggle collapsed"
@@ -1217,12 +1417,20 @@ exports[`Storyshots Components/Alert Announcement 1`] = `
       <div
         className="Alert__title"
       >
+<<<<<<< release/1.32.0
         Announcement title
+=======
+        Error title
+>>>>>>> main
       </div>
       <div
         className="Alert__message"
       >
+<<<<<<< release/1.32.0
         Announcement message
+=======
+        Error message
+>>>>>>> main
       </div>
     </div>
   </div>
@@ -1875,11 +2083,16 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
       <div
         className="Alert__title"
       >
+<<<<<<< release/1.32.0
         Announcement title
+=======
+        Connect to Google Calendar to create reminders automatically
+>>>>>>> main
       </div>
       <div
         className="Alert__message"
       >
+<<<<<<< release/1.32.0
         Announcement message
       </div>
     </div>
@@ -1893,6 +2106,53 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
       >
         Primary action
       </a>
+=======
+        <div>
+          When you confirm a session we’ll automatically add an event and reminders to your Google Calendar.
+        </div>
+        <button
+          style={
+            Object {
+              "backgroundColor": "#4285F4",
+              "border": "1px solid #4285F4",
+              "borderRadius": "4px",
+              "color": "#FFFFFF",
+              "fontSize": "0.875rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.25rem",
+              "margin": "16px 0",
+              "padding": "8px 16px",
+              "whiteSpace": "nowrap",
+            }
+          }
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-google fa-w-16 "
+            data-icon="google"
+            data-prefix="fab"
+            focusable="false"
+            role="img"
+            style={
+              Object {
+                "height": "1rem",
+                "marginRight": "0.5rem",
+              }
+            }
+            viewBox="0 0 488 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          Connect Google Calendar
+        </button>
+      </div>
+>>>>>>> main
     </div>
     <div
       className="Alert__close"
@@ -1968,12 +2228,21 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
       <div
         className="Alert__title"
       >
+<<<<<<< release/1.32.0
         Error title
+=======
+        Connect to Google Calendar to create reminders automatically
+>>>>>>> main
       </div>
       <div
         className="Alert__message"
       >
+<<<<<<< release/1.32.0
         Error message
+=======
+        When you confirm a session we’ll automatically
+      add an event and reminders to your Google Calendar.
+>>>>>>> main
       </div>
     </div>
     <div
@@ -2061,11 +2330,16 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
       <div
         className="Alert__title"
       >
+<<<<<<< release/1.32.0
         Warning title
+=======
+        Default title
+>>>>>>> main
       </div>
       <div
         className="Alert__message"
       >
+<<<<<<< release/1.32.0
         Warning message
       </div>
     </div>
@@ -2079,6 +2353,10 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
       >
         Primary action
       </a>
+=======
+        Default message
+      </div>
+>>>>>>> main
     </div>
     <div
       className="Alert__close"
@@ -3560,6 +3838,906 @@ exports[`Storyshots Components/Button Link 1`] = `
 </div>
 `;
 
+<<<<<<< release/1.32.0
+exports[`Storyshots Components/Button Primary 1`] = `
+=======
+exports[`Storyshots Components/Button Brands 1`] = `
+>>>>>>> main
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+<<<<<<< release/1.32.0
+    className="Button btn btn-primary btn-sm"
+=======
+    className="Button btn btn-brand-google btn-sm"
+>>>>>>> main
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+<<<<<<< release/1.32.0
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+=======
+      className="svg-inline--fa fa-google fa-w-16 icon-left"
+      data-icon="google"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 488 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+=======
+        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+<<<<<<< release/1.32.0
+    Confirm
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+=======
+    Google
+  </button>
+   
+  <button
+    className="Button btn btn-brand-google btn-sm"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-google fa-w-16 icon-left"
+      data-icon="google"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 488 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+=======
+        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Google
+  </button>
+   
+  <button
+<<<<<<< release/1.32.0
+    className="Button btn btn-outline-primary btn-sm"
+=======
+    className="Button btn btn-brand-google btn-md"
+>>>>>>> main
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+<<<<<<< release/1.32.0
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+=======
+      className="svg-inline--fa fa-google fa-w-16 icon-left"
+      data-icon="google"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 488 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+=======
+        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+<<<<<<< release/1.32.0
+    Confirm
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+=======
+    Google
+  </button>
+   
+  <button
+    className="Button btn btn-brand-google btn-md"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-google fa-w-16 icon-left"
+      data-icon="google"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 488 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+=======
+        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Google
+  </button>
+  <div
+    style={
+      Object {
+        "margin": ".5rem",
+      }
+    }
+  />
+  <button
+<<<<<<< release/1.32.0
+    className="Button btn btn-primary btn-sm"
+    disabled={true}
+=======
+    className="Button btn btn-brand-facebook btn-sm"
+    disabled={false}
+>>>>>>> main
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+<<<<<<< release/1.32.0
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+=======
+      className="svg-inline--fa fa-facebook fa-w-16 icon-left"
+      data-icon="facebook"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+=======
+        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+<<<<<<< release/1.32.0
+    Confirm
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+=======
+    Facebook
+  </button>
+   
+  <button
+    className="Button btn btn-brand-facebook btn-sm"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-facebook fa-w-16 icon-left"
+      data-icon="facebook"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+=======
+        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Facebook
+  </button>
+   
+  <button
+<<<<<<< release/1.32.0
+    className="Button btn btn-primary btn-md"
+=======
+    className="Button btn btn-brand-facebook btn-md"
+>>>>>>> main
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+<<<<<<< release/1.32.0
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+=======
+      className="svg-inline--fa fa-facebook fa-w-16 icon-left"
+      data-icon="facebook"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+=======
+        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+<<<<<<< release/1.32.0
+    Confirm
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+=======
+    Facebook
+  </button>
+   
+  <button
+    className="Button btn btn-brand-facebook btn-md"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-facebook fa-w-16 icon-left"
+      data-icon="facebook"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+=======
+        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Facebook
+  </button>
+   
+  <div
+    style={
+      Object {
+        "margin": ".5rem",
+      }
+    }
+  />
+  <button
+<<<<<<< release/1.32.0
+    className="Button btn btn-outline-primary btn-md"
+=======
+    className="Button btn btn-brand-linkedin btn-sm"
+>>>>>>> main
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+<<<<<<< release/1.32.0
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+=======
+      className="svg-inline--fa fa-linkedin fa-w-14 icon-left"
+      data-icon="linkedin"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+=======
+        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+<<<<<<< release/1.32.0
+    Confirm
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+=======
+    LinkedIn
+  </button>
+   
+  <button
+    className="Button btn btn-brand-linkedin btn-sm"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-linkedin fa-w-14 icon-left"
+      data-icon="linkedin"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+=======
+        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    LinkedIn
+  </button>
+   
+  <button
+<<<<<<< release/1.32.0
+    className="Button btn btn-primary btn-md"
+    disabled={true}
+=======
+    className="Button btn btn-brand-linkedin btn-md"
+    disabled={false}
+>>>>>>> main
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+<<<<<<< release/1.32.0
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+=======
+      className="svg-inline--fa fa-linkedin fa-w-14 icon-left"
+      data-icon="linkedin"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+=======
+        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+<<<<<<< release/1.32.0
+    Confirm
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+=======
+    LinkedIn
+  </button>
+   
+  <button
+    className="Button btn btn-brand-linkedin btn-md"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-linkedin fa-w-14 icon-left"
+      data-icon="linkedin"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+=======
+        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    LinkedIn
+  </button>
+<<<<<<< release/1.32.0
+</div>
+`;
+
+exports[`Storyshots Components/Button Transparent 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+=======
+  <div
+    style={
+      Object {
+        "margin": ".5rem",
+      }
+>>>>>>> main
+    }
+  />
+  <button
+<<<<<<< release/1.32.0
+    className="Button btn btn-transparent btn-sm"
+=======
+    className="Button btn btn-brand-twitter btn-sm"
+>>>>>>> main
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+<<<<<<< release/1.32.0
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+=======
+      className="svg-inline--fa fa-twitter fa-w-16 icon-left"
+      data-icon="twitter"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+=======
+        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+<<<<<<< release/1.32.0
+    Skip
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+=======
+    Twitter
+  </button>
+   
+  <button
+    className="Button btn btn-brand-twitter btn-sm"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-twitter fa-w-16 icon-left"
+      data-icon="twitter"
+      data-prefix="fab"
+>>>>>>> main
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+<<<<<<< release/1.32.0
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+=======
+        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+>>>>>>> main
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Twitter
+  </button>
+   
+  <button
+<<<<<<< release/1.32.0
+    className="Button btn btn-outline-transparent btn-sm"
+=======
+    className="Button btn btn-brand-twitter btn-md"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-twitter fa-w-16 icon-left"
+      data-icon="twitter"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Twitter
+  </button>
+   
+  <button
+    className="Button btn btn-brand-twitter btn-md"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-twitter fa-w-16 icon-left"
+      data-icon="twitter"
+      data-prefix="fab"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Twitter
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button Danger 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-danger btn-sm"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Delete
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+   
+  <button
+    className="Button btn btn-outline-danger btn-sm"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Delete
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+   
+  <button
+    className="Button btn btn-danger btn-sm"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Delete
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+   
+  <button
+    className="Button btn btn-danger btn-md"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Delete
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+   
+  <button
+    className="Button btn btn-outline-danger btn-md"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Delete
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+   
+  <button
+    className="Button btn btn-danger btn-md"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Delete
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+</div>
+`;
+
 exports[`Storyshots Components/Button Primary 1`] = `
 <div
   style={
@@ -3738,6 +4916,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
    
   <button
     className="Button btn btn-outline-primary btn-md"
+>>>>>>> main
     disabled={false}
     type="button"
   >
@@ -3758,7 +4937,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
         style={Object {}}
       />
     </svg>
-    Confirm
+    Skip
     <svg
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
@@ -3779,7 +4958,11 @@ exports[`Storyshots Components/Button Primary 1`] = `
   </button>
    
   <button
+<<<<<<< release/1.32.0
+    className="Button btn btn-transparent btn-sm"
+=======
     className="Button btn btn-primary btn-md"
+>>>>>>> main
     disabled={true}
     type="button"
   >
@@ -3800,12 +4983,14 @@ exports[`Storyshots Components/Button Primary 1`] = `
         style={Object {}}
       />
     </svg>
-    Confirm
+    Skip
     <svg
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
       data-prefix="far"
+<<<<<<< release/1.32.0
+=======
       focusable="false"
       role="img"
       style={Object {}}
@@ -3858,6 +5043,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
       data-icon="caret-down"
       data-prefix="far"
+>>>>>>> main
       focusable="false"
       role="img"
       style={Object {}}
@@ -3873,7 +5059,11 @@ exports[`Storyshots Components/Button Transparent 1`] = `
   </button>
    
   <button
+<<<<<<< release/1.32.0
+    className="Button btn btn-transparent btn-md"
+=======
     className="Button btn btn-outline-transparent btn-sm"
+>>>>>>> main
     disabled={false}
     type="button"
   >
@@ -3915,6 +5105,9 @@ exports[`Storyshots Components/Button Transparent 1`] = `
   </button>
    
   <button
+<<<<<<< release/1.32.0
+    className="Button btn btn-outline-transparent btn-md"
+=======
     className="Button btn btn-transparent btn-sm"
     disabled={true}
     type="button"
@@ -3958,6 +5151,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
    
   <button
     className="Button btn btn-transparent btn-md"
+>>>>>>> main
     disabled={false}
     type="button"
   >
@@ -3999,6 +5193,8 @@ exports[`Storyshots Components/Button Transparent 1`] = `
   </button>
    
   <button
+<<<<<<< release/1.32.0
+=======
     className="Button btn btn-outline-transparent btn-md"
     disabled={false}
     type="button"
@@ -4041,6 +5237,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
   </button>
    
   <button
+>>>>>>> main
     className="Button btn btn-transparent btn-md"
     disabled={true}
     type="button"
@@ -4343,6 +5540,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
       />
     </svg>
   </button>
+<<<<<<< release/1.32.0
 </div>
 `;
 
@@ -4485,6 +5683,150 @@ exports[`Storyshots Components/CardContainer Default 1`] = `
 </div>
 `;
 
+=======
+</div>
+`;
+
+exports[`Storyshots Components/Card Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card Card--lg"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        Large card with title
+      </h2>
+      <span
+        className="Card__helper-text"
+      >
+        (helper text)
+      </span>
+    </div>
+    <h3
+      className="Card__subtitle"
+    >
+      And a subtitle
+    </h3>
+    <div>
+      Use knobs to try out the different card sizes
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Components/CardContainer Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="CardContainer CardContainer__alignItems--center"
+  >
+    <section
+      className="Card Card--sm"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 1
+        </h2>
+      </div>
+      <h3
+        className="Card__subtitle"
+      >
+        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
+      </h3>
+      <ul>
+        <li>
+          500,000+ sessions completed
+        </li>
+        <li>
+          $19 million+ incentives distributed
+        </li>
+        <li>
+          3 hours median time to 1st matched participant
+        </li>
+      </ul>
+    </section>
+    <section
+      className="Card Card--sm"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 2
+        </h2>
+      </div>
+      <h3
+        className="Card__subtitle"
+      >
+        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
+      </h3>
+      <ul>
+        <li>
+          500,000+ sessions completed
+        </li>
+        <li>
+          $19 million+ incentives distributed
+        </li>
+        <li>
+          3 hours median time to 1st matched participant
+        </li>
+      </ul>
+    </section>
+    <section
+      className="Card Card--sm"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 3
+        </h2>
+      </div>
+      <h3
+        className="Card__subtitle"
+      >
+        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
+      </h3>
+      <ul>
+        <li>
+          500,000+ sessions completed
+        </li>
+        <li>
+          $19 million+ incentives distributed
+        </li>
+        <li>
+          3 hours median time to 1st matched participant
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>
+`;
+
+>>>>>>> main
 exports[`Storyshots Components/CardList Default 1`] = `
 <div
   style={
@@ -7981,6 +9323,136 @@ exports[`Storyshots Components/Pill With Close 1`] = `
       </svg>
     </button>
   </span>
+</div>
+`;
+
+exports[`Storyshots Components/Pill With Container 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Pills"
+  >
+    <span
+      className="Pill Pill--gray"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-microphone fa-w-11 Pill__icon--lead"
+        data-icon="microphone"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 352 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M176 352c53.02 0 96-42.98 96-96V96c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96zm160-160h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      1-on-1 Interview
+    </span>
+    <span
+      className="Pill Pill--gray"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-globe fa-w-16 Pill__icon--lead"
+        data-icon="globe"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 496 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      Online
+    </span>
+    <span
+      className="Pill Pill--gray"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-gift-card fa-w-18 Pill__icon--lead"
+        data-icon="gift-card"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 576 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M528 128h-58.07c6.22-12.06 10.07-25.52 10.07-40 0-48.52-39.48-88-88-88-41.6 0-68.51 21.34-103.04 68.33C254.44 21.33 227.53 0 185.93 0c-48.52 0-88 39.48-88 88 0 14.48 3.85 27.94 10.07 40H48c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h480c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zM392 48c22.06 0 40 17.94 40 40 0 22.05-17.94 40-40 40h-86.07c51.36-76.47 65.72-80 86.07-80zM145.93 88c0-22.06 17.94-40 40-40 19.94 0 34.58 3.27 86.07 80h-86.07c-22.06 0-40-17.95-40-40zm60.13 104l-35.72 35.72c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0L273.94 192h28.13l69.65 69.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L369.94 192H512v128H64V192h142.06zM64 448v-64h448v64H64z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      $120 choice of dozens of digital gift cards
+    </span>
+    <span
+<<<<<<< release/1.32.0
+      className="Pill Pill--gray"
+=======
+      className="Pill Pill--silver"
+    >
+      silver
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Pill With Close 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    className="Pill Pill--blue Pill--closeable"
+  >
+    Text
+    <button
+      className="Pill__button--close"
+      onClick={[Function]}
+      type="button"
+>>>>>>> main
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-clock fa-w-16 Pill__icon--lead"
+        data-icon="clock"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      1 hour
+    </span>
+  </div>
 </div>
 `;
 
