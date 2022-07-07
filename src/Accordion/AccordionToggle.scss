@@ -1,0 +1,86 @@
+@import '../../scss/theme';
+
+.AccordionToggle {
+  all: unset;
+  width: 100%;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+   
+    padding: 1rem;
+    border-bottom: 1px solid $ux-gray-400;
+
+    &--right {
+      display: flex;
+      align-items: center;
+
+      .AccordionToggle__chevron-right {
+        float: right;
+      }
+    }
+
+    &--left {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &:focus {
+    border-radius: $ux-border-radius;
+    box-shadow: 0 0 0 2px $ux-blue-500;
+    transition: $focus-state-transition-time;
+  }
+
+  &:not(.collapsed) .AccordionToggle__chevron-right {
+    svg {
+      transform: rotate(-180deg);
+      transition: $chevron-rotation-transition-time ease all;
+    }
+  }
+
+  &:not(.collapsed) .AccordionToggle__chevron-left {
+    svg {
+      transform: rotate(180deg);
+      transition: $chevron-rotation-transition-time ease all;
+    }
+  }
+
+  &.collapsed .AccordionToggle__chevron-right,
+  &.collapsed .AccordionToggle__chevron-left 
+    {
+      svg {
+        transition: $chevron-rotation-transition-time ease all;
+      }
+    }
+
+  &__chevron-left {
+    margin-right: 1rem;
+  }
+
+  &__chevron-right {
+    margin-left: 2rem;
+  }
+
+  &__leading-icon {
+    margin-right: .5rem;
+  }
+
+  &__title {
+    @include font-type-30--bold;
+    margin-right: .5rem;
+  }
+
+  &__helper-text {
+    @include font-type-30;
+  }
+
+  &__label {
+    @include font-type-10--uppercase;
+    color: $ux-blue-600;
+  }
+
+  &--disabled {
+    opacity: 0.5;
+  }
+}

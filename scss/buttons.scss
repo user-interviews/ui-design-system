@@ -436,3 +436,46 @@ $warning: $ux-yellow-400;
     }
   }
 
+  @mixin btn-link {
+    $btn-link-background: transparent;
+    $btn-link-border: transparent;
+    $btn-link-color: $ux-blue;
+    
+    $btn-link-hover-background: transparent;
+    $btn-link-hover-border: transparent;
+    $btn-link-hover-color: $ux-blue-600;
+    
+    $btn-link-active-background: transparent;
+    $btn-link-active-border: transparent;
+    $btn-link-active-color: $ux-blue-600;
+  
+    @include button-variant(
+      $btn-link-background, 
+      $btn-link-border,
+      $btn-link-color,
+      
+      $btn-link-hover-background,
+      $btn-link-hover-border,
+      $btn-link-hover-color,
+      
+      $btn-link-active-background,
+      $btn-link-active-border,
+      $btn-link-active-color,
+    );
+
+    text-decoration: none;
+
+    &:disabled {
+      color: $ux-blue;
+      opacity: 0.5;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &:focus, &:active {
+      @include btn-focus-outline;
+    }
+  }
+

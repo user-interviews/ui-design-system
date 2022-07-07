@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Button from 'src/Button';
-import { faFileAlt, faCaretDown } from '@fortawesome/pro-regular-svg-icons';
+import { faFileAlt, faCaretDown, faPaperPlane } from '@fortawesome/pro-regular-svg-icons';
 import {
  faGoogle, faFacebook, faLinkedin, faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
@@ -253,6 +253,33 @@ export const Transparent = () => (
       variant="transparent"
     >
       Skip
+    </Button>
+  </>
+);
+
+export const Link = () => (
+  <>
+    <Button
+      size="sm"
+      variant="link"
+    >
+      Send
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faPaperPlane}
+      size="sm"
+      variant="link"
+    >
+      Send
+    </Button>
+    {' '}
+    <Button
+      disabled
+      size="sm"
+      variant="link"
+    >
+      Send
     </Button>
   </>
 );
