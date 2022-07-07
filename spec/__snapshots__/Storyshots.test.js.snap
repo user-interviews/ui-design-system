@@ -46,17 +46,19 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
                 />
               </svg>
             </span>
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle #1
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
+            <span>
+              <span
+                className="AccordionToggle__title"
+              >
+                Accordion Toggle #1
+              </span>
+              <span
+                className="AccordionToggle__helper-text"
+              >
+                (
+                helper text
+                )
+              </span>
             </span>
           </span>
           <span
@@ -126,17 +128,19 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
                 />
               </svg>
             </span>
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle #2
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
+            <span>
+              <span
+                className="AccordionToggle__title"
+              >
+                Accordion Toggle #2
+              </span>
+              <span
+                className="AccordionToggle__helper-text"
+              >
+                (
+                helper text
+                )
+              </span>
             </span>
           </span>
           <span
@@ -200,38 +204,40 @@ exports[`Storyshots Components/Accordion Default 1`] = `
           <span
             className="AccordionToggle__container--left"
           >
-            <span
-              className="AccordionToggle__leading-icon"
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-credit-card fa-w-18 "
-                data-icon="credit-card"
-                data-prefix="far"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 576 512"
-                xmlns="http://www.w3.org/2000/svg"
+            <span>
+              <span
+                className="AccordionToggle__leading-icon"
               >
-                <path
-                  d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
-                  fill="currentColor"
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-credit-card fa-w-18 "
+                  data-icon="credit-card"
+                  data-prefix="far"
+                  focusable="false"
+                  role="img"
                   style={Object {}}
-                />
-              </svg>
-            </span>
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle #1
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </span>
+              <span
+                className="AccordionToggle__title"
+              >
+                Accordion Toggle #1
+              </span>
+              <span
+                className="AccordionToggle__helper-text"
+              >
+                (
+                helper text
+                )
+              </span>
             </span>
           </span>
           <span
@@ -301,38 +307,40 @@ exports[`Storyshots Components/Accordion Default 1`] = `
           <span
             className="AccordionToggle__container--left"
           >
-            <span
-              className="AccordionToggle__leading-icon"
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-credit-card fa-w-18 "
-                data-icon="credit-card"
-                data-prefix="far"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 576 512"
-                xmlns="http://www.w3.org/2000/svg"
+            <span>
+              <span
+                className="AccordionToggle__leading-icon"
               >
-                <path
-                  d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
-                  fill="currentColor"
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-credit-card fa-w-18 "
+                  data-icon="credit-card"
+                  data-prefix="far"
+                  focusable="false"
+                  role="img"
                   style={Object {}}
-                />
-              </svg>
-            </span>
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle #2
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </span>
+              <span
+                className="AccordionToggle__title"
+              >
+                Accordion Toggle #2
+              </span>
+              <span
+                className="AccordionToggle__helper-text"
+              >
+                (
+                helper text
+                )
+              </span>
             </span>
           </span>
           <span
@@ -417,38 +425,40 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
           <span
             className="AccordionToggle__container--left"
           >
-            <span
-              className="AccordionToggle__leading-icon"
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-credit-card fa-w-18 "
-                data-icon="credit-card"
-                data-prefix="far"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 576 512"
-                xmlns="http://www.w3.org/2000/svg"
+            <span>
+              <span
+                className="AccordionToggle__leading-icon"
               >
-                <path
-                  d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
-                  fill="currentColor"
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-credit-card fa-w-18 "
+                  data-icon="credit-card"
+                  data-prefix="far"
+                  focusable="false"
+                  role="img"
                   style={Object {}}
-                />
-              </svg>
-            </span>
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle #1
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </span>
+              <span
+                className="AccordionToggle__title"
+              >
+                Accordion Toggle #1
+              </span>
+              <span
+                className="AccordionToggle__helper-text"
+              >
+                (
+                helper text
+                )
+              </span>
             </span>
           </span>
           <span
@@ -518,38 +528,40 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
           <span
             className="AccordionToggle__container--left"
           >
-            <span
-              className="AccordionToggle__leading-icon"
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-credit-card fa-w-18 "
-                data-icon="credit-card"
-                data-prefix="far"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 576 512"
-                xmlns="http://www.w3.org/2000/svg"
+            <span>
+              <span
+                className="AccordionToggle__leading-icon"
               >
-                <path
-                  d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
-                  fill="currentColor"
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-credit-card fa-w-18 "
+                  data-icon="credit-card"
+                  data-prefix="far"
+                  focusable="false"
+                  role="img"
                   style={Object {}}
-                />
-              </svg>
-            </span>
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle #2
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </span>
+              <span
+                className="AccordionToggle__title"
+              >
+                Accordion Toggle #2
+              </span>
+              <span
+                className="AccordionToggle__helper-text"
+              >
+                (
+                helper text
+                )
+              </span>
             </span>
           </span>
           <span
@@ -629,17 +641,19 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
           <span
             className="AccordionToggle__container--left"
           >
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle -- Disabled
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
+            <span>
+              <span
+                className="AccordionToggle__title"
+              >
+                Accordion Toggle -- Disabled
+              </span>
+              <span
+                className="AccordionToggle__helper-text"
+              >
+                (
+                helper text
+                )
+              </span>
             </span>
           </span>
           <span
@@ -709,17 +723,19 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
           <span
             className="AccordionToggle__container--left"
           >
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle #2
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
+            <span>
+              <span
+                className="AccordionToggle__title"
+              >
+                Accordion Toggle #2
+              </span>
+              <span
+                className="AccordionToggle__helper-text"
+              >
+                (
+                helper text
+                )
+              </span>
             </span>
           </span>
           <span
@@ -804,38 +820,40 @@ exports[`Storyshots Components/Accordion Flush 1`] = `
           <span
             className="AccordionToggle__container--left"
           >
-            <span
-              className="AccordionToggle__leading-icon"
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-credit-card fa-w-18 "
-                data-icon="credit-card"
-                data-prefix="far"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 576 512"
-                xmlns="http://www.w3.org/2000/svg"
+            <span>
+              <span
+                className="AccordionToggle__leading-icon"
               >
-                <path
-                  d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
-                  fill="currentColor"
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-credit-card fa-w-18 "
+                  data-icon="credit-card"
+                  data-prefix="far"
+                  focusable="false"
+                  role="img"
                   style={Object {}}
-                />
-              </svg>
-            </span>
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle #1
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </span>
+              <span
+                className="AccordionToggle__title"
+              >
+                Accordion Toggle #1
+              </span>
+              <span
+                className="AccordionToggle__helper-text"
+              >
+                (
+                helper text
+                )
+              </span>
             </span>
           </span>
           <span
@@ -905,38 +923,40 @@ exports[`Storyshots Components/Accordion Flush 1`] = `
           <span
             className="AccordionToggle__container--left"
           >
-            <span
-              className="AccordionToggle__leading-icon"
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-credit-card fa-w-18 "
-                data-icon="credit-card"
-                data-prefix="far"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 576 512"
-                xmlns="http://www.w3.org/2000/svg"
+            <span>
+              <span
+                className="AccordionToggle__leading-icon"
               >
-                <path
-                  d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
-                  fill="currentColor"
+                <svg
+                  aria-hidden="true"
+                  className="svg-inline--fa fa-credit-card fa-w-18 "
+                  data-icon="credit-card"
+                  data-prefix="far"
+                  focusable="false"
+                  role="img"
                   style={Object {}}
-                />
-              </svg>
-            </span>
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle #2
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
+                  viewBox="0 0 576 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
+                    fill="currentColor"
+                    style={Object {}}
+                  />
+                </svg>
+              </span>
+              <span
+                className="AccordionToggle__title"
+              >
+                Accordion Toggle #2
+              </span>
+              <span
+                className="AccordionToggle__helper-text"
+              >
+                (
+                helper text
+                )
+              </span>
             </span>
           </span>
           <span
@@ -1021,17 +1041,19 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
           <span
             className="AccordionToggle__container--left"
           >
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle #1
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
+            <span>
+              <span
+                className="AccordionToggle__title"
+              >
+                Accordion Toggle #1
+              </span>
+              <span
+                className="AccordionToggle__helper-text"
+              >
+                (
+                helper text
+                )
+              </span>
             </span>
           </span>
           <span
@@ -1100,17 +1122,19 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
           <span
             className="AccordionToggle__container--left"
           >
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle #2
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
+            <span>
+              <span
+                className="AccordionToggle__title"
+              >
+                Accordion Toggle #2
+              </span>
+              <span
+                className="AccordionToggle__helper-text"
+              >
+                (
+                helper text
+                )
+              </span>
             </span>
           </span>
           <span

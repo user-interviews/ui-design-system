@@ -10,6 +10,20 @@
    
     padding: 1rem;
     border-bottom: 1px solid $ux-gray-400;
+
+    &--right {
+      display: flex;
+      align-items: center;
+
+      .AccordionToggle__chevron-right {
+        float: right;
+      }
+    }
+
+    &--left {
+      display: flex;
+      align-items: center;
+    }
   }
 
   &:focus {
@@ -40,13 +54,21 @@
       }
     }
 
+  &__chevron-left {
+    margin-right: 1rem;
+  }
+
   &__chevron-right {
     margin-left: 2rem;
   }
 
+  &__leading-icon {
+    margin-right: .5rem;
+  }
+
   &__title {
     @include font-type-30--bold;
-    margin: 0 0.25rem 0 0.5rem;
+    margin-right: .5rem;
   }
 
   &__helper-text {

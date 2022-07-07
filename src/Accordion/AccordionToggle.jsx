@@ -70,17 +70,19 @@ const AccordionToggle = ({
               <FontAwesomeIcon icon={faChevronUp} />
             </span>
           )}
-          {leadingIcon && (
+          <span>
+            {leadingIcon && (
             <span className="AccordionToggle__leading-icon">
               <FontAwesomeIcon icon={leadingIcon} />
             </span>
           )}
-          {title && (
+            {title && (
             <span className="AccordionToggle__title">{title}</span>
           )}
-          {helperText && (
+            {helperText && (
             <span className="AccordionToggle__helper-text">({helperText})</span>
           )}
+          </span>
         </span>
         <span className="AccordionToggle__container--right">
           {label && (
