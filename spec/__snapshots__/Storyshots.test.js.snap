@@ -216,6 +216,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={-1}
       >
         Error message
 >>>>>>> main
@@ -1425,6 +1426,7 @@ exports[`Storyshots Components/Alert Announcement 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={-1}
       >
 <<<<<<< release/1.32.0
         Announcement message
