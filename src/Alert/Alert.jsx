@@ -88,7 +88,7 @@ function Alert(props) {
         <div
           className="Alert__message"
           // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
-          tabIndex={props.type === MessageTypes.ERROR ? -1 : null}
+          tabIndex={props.type === MessageTypes.ERROR ? -1 : undefined}
         >
           {props.message}
         </div>
