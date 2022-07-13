@@ -15,6 +15,7 @@
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
     "deploy-storybook": "storybook-to-ghpages",
+    "heroku-prebuild": "npm config set \"@fortawesome:registry\" https://npm.fontawesome.com/ && npm config set \"//npm.fontawesome.com/:_authToken\" $FONTAWESOME_NPM_AUTH_TOKEN",
     "prepublishOnly": "yarn build",
     "rs:link": "bin/link-rs",
     "rs:link:watch": "./node_modules/nodemon/bin/nodemon.js",
