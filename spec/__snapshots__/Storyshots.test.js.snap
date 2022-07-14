@@ -1286,6 +1286,7 @@ exports[`Storyshots Components/Alert Error 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={-1}
       >
         Error message
       </div>
@@ -1972,6 +1973,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
       </div>
       <div
         className="Alert__message"
+        tabIndex={-1}
       >
         Error message
       </div>
