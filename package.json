@@ -10,15 +10,16 @@
   },
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir lib --copy-files",
-    "lint": "eslint . --ext .js,.jsx",
-    "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "build-storybook-docs": "build-storybook -s public --docs",
+    "chromatic": "npx chromatic",
     "deploy-storybook": "storybook-to-ghpages",
+    "lint": "eslint . --ext .js,.jsx",
     "prepublishOnly": "yarn build",
     "rs:link": "bin/link-rs",
     "rs:link:watch": "./node_modules/nodemon/bin/nodemon.js",
     "rs:unlink": "bin/unlink-rs",
+    "storybook": "start-storybook -p 9009 -s public",
     "test": "jest"
   },
   "eslintConfig": {
@@ -139,7 +140,19 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "repository": "https://github.com/user-interviews/ui-design-system.git",
-  "author": "Dave Ferris <dave@userinterviews.com>",
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/user-interviews/ui-design-system.git"
+  },
+  "author": {
+    "name": "Dave Ferris",
+    "email": "dave@userinterviews.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/user-interviews/ui-design-system/issues"
+  },
+  "readme": "ERROR: No README data found!",
+  "homepage": "https://github.com/user-interviews/ui-design-system#readme",
+  "_id": "@user-interviews/ui-design-system@1.32.0"
 }
