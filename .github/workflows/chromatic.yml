@@ -14,6 +14,8 @@ jobs:
       FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # 👈 Required to retrieve git history
       - uses: actions/setup-node@v1
         with:
           node-version: '14.17.4'
