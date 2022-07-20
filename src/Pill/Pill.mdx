@@ -10,12 +10,12 @@ import Pill from './Pill';
 </h4>
 
 <Canvas>
-  <Story id="design-system-pill--default" />
+  <Story id="components-pill--default" />
 </Canvas>
 
-### When to use 
+### When to use
 - Use to label, categorize, or organize items using keywords that describe them
-- Use to highlight an item's status for quick recognition 
+- Use to highlight an item's status for quick recognition
 - Help users search for and find related content quickly and easily
 - Ideal to indicate meanings that users can learn and recognize across the app
 
@@ -34,21 +34,28 @@ import Pill from './Pill';
 - The default Pill and available colors
 
 <Canvas>
-  <Story id="design-system-pill--default" />
+  <Story id="components-pill--default" />
+</Canvas>
+
+### With Container
+- The `Pills` container should be used when a collection of `Pill` components are displayed
+
+<Canvas>
+  <Story id="components-pill--with-container" />
 </Canvas>
 
 ### With Leading Icon
 - Import an icon that is most relevant to the text
 
 <Canvas>
-  <Story id="design-system-pill--with-leading-icon" />
+  <Story id="components-pill--with-leading-icon" />
 </Canvas>
 
 ### With Close
-- For Pills that need to option to be closed 
+- For Pills that need to option to be closed
 
 <Canvas>
-  <Story id="design-system-pill--with-close" />
+  <Story id="components-pill--with-close" />
 </Canvas>
 
 ### With Link
@@ -56,7 +63,7 @@ import Pill from './Pill';
 - The Pill accepts an `<a>` tag as a child
 
 <Canvas>
-  <Story id="design-system-pill--with-link" />
+  <Story id="components-pill--with-link" />
 </Canvas>
 
 
@@ -64,7 +71,7 @@ import Pill from './Pill';
 
 ### States
 
-### Anatomy 
+### Anatomy
 - **Content: ** main content area of the Pill. Can be provided plain text or a link (`<a>`) as `children`
 - **Icon: ** relevant icon that makes it easier for users to identify (always placed left of the Content)
 - **Close: ** users have the option to clear the pill (provided by default with the presence of the `onClose` function)
@@ -83,6 +90,6 @@ import Pill from './Pill';
 ### Implementation
 - Use the `PILL_COLORS` constant when setting the `color` prop
 - Can use either the `text` prop or provide an element via `children` for content. (Note: the `text` prop is planned to be retired in favor of `children` in a future release)
-- If using plain text or an element as the content via `children`, do not wrap in block-level elements (e.g. `<p>` or `div`) 
+- If using plain text or an element as the content via `children`, do not wrap in block-level elements (e.g. `<p>` or `div`)
 
 ### UX Copy

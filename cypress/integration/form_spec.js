@@ -1,7 +1,7 @@
 describe('Form', () => {
   it('Default', () => {
-    cy.visit('design-system-form--default');
+    cy.visit('components-form--default');
     cy.get('#storybook-preview-iframe').iframe().find('.Input').should('exist');
-    cy.takePercySnapshot('design-system-form--default');
+    cy.takePercySnapshot('components-form--default');
   });
 });

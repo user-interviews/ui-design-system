@@ -19,11 +19,16 @@ Cypress.Commands.add('iframe', { prevSubject: 'element' }, ($iframe) => {
 });
 
 Cypress.Commands.add('takePercySnapshot', (name) => {
-  // Check for accessibility tests to finish first
   cy.get('body').should('contain', 'Tests completed');
+  cy.get('body').type('f'); // Fullscreen component
 
-  // Also wait for the nav to load
-  cy.get('body').should('contain', 'Design System');
+  // Close the storybook update popup if it is there
+  cy.get('body').then((body) => {
+    if (body.find('button[title="Dismiss notification"]').length > 0) {
+      cy.get('button[title="Dismiss notification"]').click();
+    }
+  });
 
   cy.percySnapshot(name);
+  cy.get('body').type('f'); // Un-fullscreen component
 });

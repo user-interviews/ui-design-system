@@ -1,31 +1,31 @@
 const tooltips = [
   {
     name: 'Defaut',
-    path: 'design-system-tooltip--default',
+    path: 'components-tooltip--default',
   },
   {
     name: 'Light',
-    path: 'design-system-tooltip--light',
+    path: 'components-tooltip--light',
   },
   {
     name: 'With Header',
-    path: 'design-system-tooltip--with-header',
+    path: 'components-tooltip--with-header',
   },
   {
     name: 'With Html',
-    path: 'design-system-tooltip--with-html',
+    path: 'components-tooltip--with-html',
   },
   {
     name: 'Green Icon',
-    path: 'design-system-tooltip--green-icon',
+    path: 'components-tooltip--green-icon',
   },
   {
     name: 'Gray Icon',
-    path: 'design-system-tooltip--gray-icon',
+    path: 'components-tooltip--gray-icon',
   },
   {
     name: 'With Tracking',
-    path: 'design-system-tooltip--with-tracking',
+    path: 'components-tooltip--with-tracking',
   },
 ];
 

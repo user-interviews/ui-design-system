@@ -1,7 +1,14 @@
+import {
+  Accordion,
+  AccordionCollapse,
+  AccordionItem,
+  AccordionToggle,
+} from 'src/Accordion';
 import { Alert, MessageTypes } from 'src/Alert';
 import Button from 'src/Button';
 import Avatar from 'src/Avatar';
 import Card, { CardSizes } from 'src/Card';
+import CardContainer from 'src/CardContainer';
 import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import { ORIENTATIONS as BUTTON_GROUP_ORIENTATIONS } from 'src/ControlButtonGroup';
@@ -10,7 +17,6 @@ import CopyToClipboardButton from 'src/CopyToClipboardButton';
 import {
   Dropdown,
   DropdownToggle,
-  DropdownIconToggle,
   DropdownItem,
   DropdownMenu,
 } from 'src/Dropdown';
@@ -21,6 +27,7 @@ import FormGroup from 'src/FormGroup';
 import IconCell from 'src/IconCell';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
+import InputLegend from 'src/InputLegend';
 import LoadingOverlay from 'src/LoadingOverlay';
 import {
   Modal,
@@ -29,7 +36,7 @@ import {
   ModalFooter,
   ModalHeader,
 } from 'src/Modal';
-import { Pill, PILL_COLORS } from 'src/Pill';
+import { Pill, Pills, PILL_COLORS } from 'src/Pill';
 import Popper from 'src/Popper';
 import ProfileCell from 'src/ProfileCell';
 import RadioButton from 'src/RadioButton';
@@ -45,6 +52,7 @@ import {
   ValueContainer,
 } from 'src/Select';
 import { colors as COLORS } from 'src/Styles';
+import { Step, Steps } from 'src/Steps';
 import {
   Tab,
   Tabs,
@@ -65,9 +73,12 @@ import {
 } from 'src/Toast';
 import ToggleInput from 'src/ToggleInput';
 import Tooltip from 'src/Tooltip';
-import TrackedButton from 'src/TrackedButton';
 
 export {
+  Accordion,
+  AccordionCollapse,
+  AccordionItem,
+  AccordionToggle,
   Alert,
   Avatar,
   AsyncSelect,
@@ -75,6 +86,7 @@ export {
   Button,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
+  CardContainer,
   CardSizes,
   CheckboxButton,
   CheckboxButtonGroup,
@@ -85,7 +97,6 @@ export {
   CreatableSelect,
   Dropdown,
   DropdownToggle,
-  DropdownIconToggle,
   DropdownItem,
   DropdownMenu,
   FadeTransition,
@@ -95,6 +106,7 @@ export {
   IconCell,
   Input,
   InputLabel,
+  InputLegend,
   LoadingOverlay,
   MessageTypes,
   Modal,
@@ -104,6 +116,7 @@ export {
   ModalHeader,
   Option,
   Pill,
+  Pills,
   PILL_COLORS,
   Popper,
   ProfileCell,
@@ -112,6 +125,8 @@ export {
   SELECT_SIZES,
   SelectComponents,
   SingleSelect,
+  Step,
+  Steps,
   Tab,
   Tabs,
   Table,
@@ -123,7 +138,6 @@ export {
   Toast,
   ToggleInput,
   Tooltip,
-  TrackedButton,
   useToast,
   ValueContainer,
   withToast,

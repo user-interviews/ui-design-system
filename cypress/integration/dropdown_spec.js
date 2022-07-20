@@ -1,17 +1,22 @@
 const dropdowns = [
   {
     name: 'Default',
-    path: 'design-system-dropdown--default',
+    path: 'components-dropdown--default',
     class: '.Dropdown',
   },
   {
     name: 'Sizes',
-    path: 'design-system-dropdown--sizes',
+    path: 'components-dropdown--sizes',
     class: '.Dropdown',
   },
   {
-    name: 'Icon',
-    path: 'design-system-dropdown--icon',
+    name: 'Icon Default',
+    path: 'components-dropdown--icon-default',
+    class: '.Dropdown',
+  },
+  {
+    name: 'Icon Swap',
+    path: 'components-dropdown--icon-swap',
     class: '.Dropdown',
   },
 ];

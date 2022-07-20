@@ -23,7 +23,10 @@ const Pill = ({
     className={
         classNames(
           'Pill',
-          { [`Pill--${color}`]: !!color },
+          {
+            [`Pill--${color}`]: !!color,
+            [`Pill--closeable`]: !!onClose,
+          },
         )
       }
     {...props}

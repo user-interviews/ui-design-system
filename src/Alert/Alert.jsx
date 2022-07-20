@@ -80,12 +80,18 @@ function Alert(props) {
       <div className="Alert__content">
         {
           props.title && (
-            <p className="Alert__title">
+            <div className="Alert__title">
               {props.title}
-            </p>
+            </div>
           )
         }
-        <p className="Alert__message">{props.message}</p>
+        <div
+          className="Alert__message"
+          // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
+          tabIndex={props.type === MessageTypes.ERROR ? -1 : undefined}
+        >
+          {props.message}
+        </div>
       </div>
       {
         props.action && (

@@ -5,13 +5,15 @@ import {
   text,
   select,
 } from '@storybook/addon-knobs';
-import { faUsers } from '@fortawesome/pro-solid-svg-icons';
+import {
+ faClock, faGiftCard, faGlobe, faMicrophone, faUsers,
+} from '@fortawesome/pro-solid-svg-icons';
 
-import { Pill, PILL_COLORS } from 'src/Pill';
+import { Pill, Pills, PILL_COLORS } from 'src/Pill';
 import mdx from './Pill.mdx';
 
 export default {
-  title: 'Design System/Pill',
+  title: 'Components/Pill',
   component: Pill,
   decorators: [withKnobs],
   parameters: {
@@ -66,6 +68,35 @@ export const Default = () => (
       silver
     </Pill>
   </div>
+);
+
+export const WithContainer = () => (
+  <Pills>
+    <Pill
+      color={PILL_COLORS.GRAY}
+      icon={faMicrophone}
+    >
+      1-on-1 Interview
+    </Pill>
+    <Pill
+      color={PILL_COLORS.GRAY}
+      icon={faGlobe}
+    >
+      Online
+    </Pill>
+    <Pill
+      color={PILL_COLORS.GRAY}
+      icon={faGiftCard}
+    >
+      $120 choice of dozens of digital gift cards
+    </Pill>
+    <Pill
+      color={PILL_COLORS.GRAY}
+      icon={faClock}
+    >
+      1 hour
+    </Pill>
+  </Pills>
 );
 
 export const WithLeadingIcon = () => (

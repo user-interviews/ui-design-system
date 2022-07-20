@@ -3,7 +3,7 @@ import React from 'react';
 import AsyncCreatableSelect from 'src/Select/AsyncCreatableSelect';
 
 export default {
-  title: 'Design System/Selects/AsyncCreatable',
+  title: 'Components/Selects/AsyncCreatable',
   component: AsyncCreatableSelect,
 };
 

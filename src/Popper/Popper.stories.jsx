@@ -5,7 +5,7 @@ import Popper from 'src/Popper';
 import mdx from './Popper.mdx';
 
 export default {
-  title: 'Design System/Popper',
+  title: 'Components/Popper',
   component: Popper,
   decorators: [withKnobs],
   parameters: {

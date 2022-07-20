@@ -1,11 +1,11 @@
 const poppers = [
   {
     name: 'Default',
-    path: 'design-system-popper--default',
+    path: 'components-popper--default',
   },
   {
     name: 'Dark',
-    path: 'design-system-popper--dark',
+    path: 'components-popper--dark',
   },
 ];
 

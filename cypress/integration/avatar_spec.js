@@ -1,19 +1,19 @@
 const avatars = [
   {
     name: 'Small',
-    path: 'design-system-avatar--small',
+    path: 'components-avatar--small',
     class: '.Avatar__circle__initials',
     match: 'RR',
   },
   {
     name: 'Large',
-    path: 'design-system-avatar--large',
+    path: 'components-avatar--large',
     class: '.Avatar__circle__initials',
     match: 'RR',
   },
   {
     name: 'With Alert',
-    path: 'design-system-avatar--with-alert',
+    path: 'components-avatar--with-alert',
     class: '.Avatar__circle__initials',
     match: 'RR',
   },
@@ -29,10 +29,10 @@ describe('Avatar', () => {
   });
 
   it('With Image', () => {
-    cy.visit('design-system-avatar--with-image');
+    cy.visit('components-avatar--with-image');
     cy.get('#storybook-preview-iframe').iframe().find('.Avatar__circle')
       .find('img')
       .should('be.visible');
-    cy.takePercySnapshot('design-system-alert--with-image');
+    cy.takePercySnapshot('components-alert--with-image');
   });
 });

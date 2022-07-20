@@ -15,7 +15,7 @@ const onChange = () => action('Change');
 const handleRequestClose = () => action('Close');
 
 export default {
-  title: 'Design System/Selects/Single',
+  title: 'Components/Selects/Single',
   component: SingleSelect,
   parameters: {
     docs: {

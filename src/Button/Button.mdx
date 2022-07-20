@@ -2,39 +2,60 @@ import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 
 # Button
 
+##
+
+<h4>
+	Buttons allow users to take actions and make choices.
+</h4>
+
+<Canvas>
+  <Story id="components-button--primary" />
+</Canvas>
+
 ## Anatomy:
 - **Leading icon (optional):** Should be included when the button has a clear action verb (e.g. Edit, Save, Delete)
 - **Label:** Utilizes sentence-casing (e.g. “New project”)
 - **Container:** Indicates the button's touch target
 - **Trailing icon (optional):** Typically used as a dropdown arrow
 
-## Best practices
-- A layout should have one prominent button, the others should clearly be secondary 
-- Use sentence casing for all buttons (e.g. “New project”)
-- Maintain `verb` + `noun` syntax for labels (e.g. "Save profile" vs "save") 
-- Avoid generic messaging such as "Ok" 
-- Use 3 or fewer words for each button 
-- Use a leading icon alongside a label if there is a primary action verb (e.g. Edit, Share, Copy) 
-- Icon-only buttons should only be permitted if
-	- Space is limited (e.g. too small for text alone)
-	- The icon is standardized or represents an object with a strong physical analog or visual attribute (e.g. floppy disk, pencil)
 
-## Guidelines 
+## Guidelines
 
-### General
-
-### Implementation 
+### Implementation
+- A layout should have one prominent button, the others should clearly be secondary
 
 ### Copy
+- Use sentence casing for all buttons (e.g. “New project”)
+- Maintain `verb` + `noun` syntax for labels (e.g. "Save profile" vs "save")
+- Avoid generic messaging such as "Ok"
+- Use 3 or fewer words for each button
 
-## Stories 
+### Iconography
+- Font Awesome library
+  - We utilize the Regular and Solid Font Awesome icons
+  - Only use Solid icons on icon-only buttons. import `@fortawesome/pro-solid-svg-icons`
+  - Use Regular icons for all other buttons. import `@fortawesome/pro-regular-svg-icons`
+- Use a leading icon alongside a label if there is a primary action verb (e.g. Edit, Share, Copy)
+- Icon-only buttons should only be permitted if
+	- Space is limited (e.g. too small for text alone)
+	- The icon is standardized or represents an object with a strong physical analog or visual attribute (e.g. floppy disk (Save), pencil (Edit))
+
+## Button vs. Link distinction
+
+- Buttons are used for actions that affect the application. Clicking them causes changes on the frontend or backend.
+- Links are used for navigation.
+
+**For accessibility purposes, it’s important to style buttons as buttons and links as links. So if the app’s CTA only takes the user to a new page, use a link instead.**
+
+
+## Stories
 
 ### Primary
 
-- Very important actions that usually trigger a longer workflow.
+- Important actions that usually trigger a longer workflow.
 
 <Preview>
-  <Story id="design-system-button--primary" />
+  <Story id="components-button--primary" />
 </Preview>
 
 ### Danger
@@ -42,7 +63,7 @@ import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 - Used to indicate destructive actions.
 
 <Preview>
-  <Story id="design-system-button--danger" />
+  <Story id="components-button--danger" />
 </Preview>
 
 ### Warning
@@ -50,9 +71,26 @@ import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 - Currently only used for managing project drafts, but could potentially be used to indicate actions that need require special attention.
 
 <Preview>
-  <Story id="design-system-button--warning" />
+  <Story id="components-button--warning" />
 </Preview>
 
-### Secondary
+### Transparent
 
-### Tertiary 
+<Preview>
+  <Story id="components-button--transparent" />
+</Preview>
+
+### Link
+- A button that is styled like a link
+
+<Preview>
+  <Story id="components-button--link" />
+</Preview>
+
+### Brands
+- Usually used for authentication purposes with different brands
+
+<Preview>
+  <Story id="components-button--brands" />
+</Preview>
+
