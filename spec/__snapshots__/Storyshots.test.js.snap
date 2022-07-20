@@ -19484,6 +19484,57 @@ exports[`Storyshots Components/Toast Toast With Action 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/ToggleInput Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <label
+    className="ToggleInput__label"
+    htmlFor="1"
+  >
+    <div
+      className="react-toggle"
+      onClick={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <div
+        className="react-toggle-track"
+      >
+        <div
+          className="react-toggle-track-check"
+        />
+        <div
+          className="react-toggle-track-x"
+        />
+      </div>
+      <div
+        className="react-toggle-thumb"
+      />
+      <input
+        checked={false}
+        className="react-toggle-screenreader-only"
+        disabled={false}
+        id="1"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="checkbox"
+        value="false"
+      />
+    </div>
+    <span>
+      Label
+    </span>
+  </label>
+</div>
+`;
+
 exports[`Storyshots Components/Tooltip Default 1`] = `
 <div
   style={
