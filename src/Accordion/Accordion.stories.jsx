@@ -7,6 +7,8 @@ import {
   AccordionCollapse,
 } from 'src/Accordion';
 
+import Card from 'src/Card';
+
 import { faCreditCard } from '@fortawesome/pro-regular-svg-icons';
 
 import mdx from './Accordion.mdx';
@@ -168,6 +170,90 @@ export const Flush = () => (
       </AccordionCollapse>
     </AccordionItem>
   </Accordion>
+);
+
+export const InCard = () => (
+  <>
+    <p>This Accordion is wrapped in a <code>noPadding</code> Card</p>
+    <p>The Accordion has borders by default</p>
+    <Card noPadding>
+      <Accordion>
+        <AccordionItem>
+          <AccordionToggle
+            eventKey="0"
+            helperText="helper text"
+            label="3 Items Selected"
+            leadingIcon={faCreditCard}
+            title="Accordion Toggle #1"
+          />
+          <AccordionCollapse eventKey="0">
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </AccordionCollapse>
+        </AccordionItem>
+        <AccordionItem>
+          <AccordionToggle
+            eventKey="1"
+            helperText="helper text"
+            label="3 Items Selected"
+            leadingIcon={faCreditCard}
+            title="Accordion Toggle #2"
+          />
+          <AccordionCollapse eventKey="1">
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </AccordionCollapse>
+        </AccordionItem>
+      </Accordion>
+    </Card>
+    <br />
+    <p>This Accordion is wrapped in a <code>noPadding</code> Card</p>
+    <p>The Accordion has a <code>flush</code> prop,
+      so no borders and is edge to edge with the parent Card
+    </p>
+    <Card noPadding>
+      <Accordion flush>
+        <AccordionItem>
+          <AccordionToggle
+            eventKey="0"
+            helperText="helper text"
+            label="3 Items Selected"
+            leadingIcon={faCreditCard}
+            title="Accordion Toggle #1"
+          />
+          <AccordionCollapse eventKey="0">
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </AccordionCollapse>
+        </AccordionItem>
+        <AccordionItem>
+          <AccordionToggle
+            eventKey="1"
+            helperText="helper text"
+            label="3 Items Selected"
+            leadingIcon={faCreditCard}
+            title="Accordion Toggle #2"
+          />
+          <AccordionCollapse eventKey="1">
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </AccordionCollapse>
+        </AccordionItem>
+      </Accordion>
+    </Card>
+  </>
 );
 
 export const Separate = () => (
