@@ -13,4 +13,8 @@
     border-bottom-left-radius: $ux-border-radius;
     border-bottom-right-radius: $ux-border-radius;
   }
+
+  &--borderless {
+    border: none;
+  }
 }
