@@ -1,0 +1,16 @@
+@import '../../scss/theme';
+
+.AccordionItem {
+  background-color: $ux-white;
+  border: 1px solid $ux-gray-400;
+
+  &:first-of-type {
+    border-top-left-radius: $ux-border-radius;
+    border-top-right-radius: $ux-border-radius;
+  }
+
+  &:last-of-type {
+    border-bottom-left-radius: $ux-border-radius;
+    border-bottom-right-radius: $ux-border-radius;
+  }
+}
