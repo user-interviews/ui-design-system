@@ -9,7 +9,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
   }
 >
   <div
-    className="Accordion accordion"
+    className="Accordion accordion accordion-flush"
   >
     <div
       className="AccordionItem AccordionItem--borderless accordion-item"
@@ -1008,7 +1008,7 @@ exports[`Storyshots Components/Accordion In Card 1`] = `
     className="Card Card--lg Card--no-padding"
   >
     <div
-      className="Accordion accordion"
+      className="Accordion accordion accordion-flush"
     >
       <div
         className="AccordionItem AccordionItem--borderless accordion-item"

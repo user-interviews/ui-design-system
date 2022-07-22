@@ -136,7 +136,7 @@ export const ChevronLeft = () => (
 );
 
 export const Borderless = () => (
-  <Accordion>
+  <Accordion flush>
     <AccordionItem borderless>
       <AccordionToggle
         eventKey="0"
@@ -174,7 +174,7 @@ export const Borderless = () => (
 
 export const InCard = () => (
   <Card noPadding>
-    <Accordion>
+    <Accordion flush>
       <AccordionItem borderless>
         <AccordionToggle
           eventKey="0"
