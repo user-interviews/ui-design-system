@@ -4,9 +4,17 @@ import PropTypes from 'prop-types';
 
 import RBAccordionItem from 'react-bootstrap/AccordionItem';
 
-const AccordionItem = ({ children, className, ...props }) => (
+import './AccordionItem.scss';
+
+const AccordionItem = ({
+ borderless, children, className, ...props
+}) => (
   <RBAccordionItem
-    className={classNames(className, 'AccordionItem')}
+    className={classNames(
+      className,
+      'AccordionItem',
+      borderless && 'AccordionItem--borderless',
+    )}
     {...props}
   >
     { children }
@@ -14,10 +22,12 @@ const AccordionItem = ({ children, className, ...props }) => (
 );
 
 AccordionItem.propTypes = {
+  borderless: PropTypes.bool,
   className: PropTypes.string,
 };
 
 AccordionItem.defaultProps = {
+  borderless: undefined,
   className: undefined,
 };
 export default AccordionItem;

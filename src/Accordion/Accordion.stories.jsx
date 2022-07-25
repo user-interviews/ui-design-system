@@ -7,6 +7,8 @@ import {
   AccordionCollapse,
 } from 'src/Accordion';
 
+import Card from 'src/Card';
+
 import { faCreditCard } from '@fortawesome/pro-regular-svg-icons';
 
 import mdx from './Accordion.mdx';
@@ -133,9 +135,9 @@ export const ChevronLeft = () => (
   </Accordion>
 );
 
-export const Flush = () => (
+export const Borderless = () => (
   <Accordion flush>
-    <AccordionItem>
+    <AccordionItem borderless>
       <AccordionToggle
         eventKey="0"
         helperText="helper text"
@@ -151,7 +153,7 @@ export const Flush = () => (
         </ul>
       </AccordionCollapse>
     </AccordionItem>
-    <AccordionItem>
+    <AccordionItem borderless>
       <AccordionToggle
         eventKey="1"
         helperText="helper text"
@@ -168,6 +170,29 @@ export const Flush = () => (
       </AccordionCollapse>
     </AccordionItem>
   </Accordion>
+);
+
+export const InCard = () => (
+  <Card noPadding>
+    <Accordion flush>
+      <AccordionItem borderless>
+        <AccordionToggle
+          eventKey="0"
+          helperText="helper text"
+          label="3 Items Selected"
+          leadingIcon={faCreditCard}
+          title="Accordion Toggle #1"
+        />
+        <AccordionCollapse eventKey="0">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </AccordionCollapse>
+      </AccordionItem>
+    </Accordion>
+  </Card>
 );
 
 export const Separate = () => (
