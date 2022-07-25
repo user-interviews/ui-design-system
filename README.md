@@ -155,6 +155,18 @@ Remove symlinked packages.
 
 > Note- we are running this once a day via github actions.
 
+## Chromatic visual testing & live feedback
+We use [Chromatic](https://www.chromatic.com/) for visual testing and gathering UI feedback. 
+
+To join Chromatic for 'ui-design-system', ask Jason for the join link.
+
+If you are a Product Designer or wanting to view changes on a particular feature branch, a developer can provide a link to that specific Chromatic build. 
+
+If you are a Developer and want to trigger a Chromatic build,
+  1. Join Chromatic for the 'ui-design-system' (ask Jason for the join link).
+  2. Go to the Manage tab for 'ui-design-system' > Configure > Find the project token.
+  3. In your terminal, run `npx chromatic --project-token <projectToken>`. Use this command when you want to create a build and share with a stakeholder to gather UI feedback. You will be able to find the build on the Chromatic builds dashboard. We currently run automatic nightly builds for Chromatic via Github Actions. 
+
 ## Pull requests
 
 Our branch names consist of 3 parts:
