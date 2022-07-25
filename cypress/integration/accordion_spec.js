@@ -18,8 +18,14 @@ const accordions = [
     match: 'Accordion Toggle #1',
   },
   {
-    name: 'Flush',
-    path: 'components-accordion--flush',
+    name: 'Borderless',
+    path: 'components-accordion--borderless',
+    class: '.AccordionToggle__title',
+    match: 'Accordion Toggle #1',
+  },
+  {
+    name: 'In Card',
+    path: 'components-accordion--in-card',
     class: '.AccordionToggle__title',
     match: 'Accordion Toggle #1',
   },
