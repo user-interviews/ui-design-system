@@ -26,7 +26,7 @@ export const Default = () => {
   return (
     <ToggleInput
       id="1"
-      isChecked={boolean('Checked', isChecked)}
+      isChecked={isChecked}
       labelLeft={boolean('Label left', false)}
       labelText={text('Label text', 'Label')}
       onToggle={handleChange}
