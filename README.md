@@ -121,15 +121,6 @@ Runs the jest test suite
 ### `yarn lint`
 
 Runs ESLint to report on any style violations
-### Visual testing
-
-  1. Join BrowserStack (ask Brian for link)
-  1. Navigate to this project in percy [here](https://percy.io/f38ae9b9/ui-design-system)
-  1. Define `PERCY_TOKEN` in shell (the one from ui-design-system project)
-  1. `npx percy exec -- cypress run`
-  1. View results in percy.io / console
-
-> Note- we are on the free plan (5k images/month) so be mindful of the limit
 
 ### `yarn rs:link`
 
@@ -142,18 +133,6 @@ Trigger a production build when files are changed.
 ### `yarn rs:unlink`
 
 Remove symlinked packages.
-### Visual testing
-
-  1. Join BrowserStack team (ask Brian/Bob for link)
-  1. Navigate to this project in [Percy](https://percy.io/f38ae9b9/ui-design-system)
-
-  ## Local setup
-  1. Define `PERCY_TOKEN` ENV (the one from ui-design-system project found above)
-  1. Run `yarn storybook` in one tab
-  1. Run `npx percy exec -- cypress run` in another
-  1. View results in percy.io & console
-
-> Note- we are running this once a day via github actions.
 
 ## Chromatic visual testing & live feedback
 We use [Chromatic](https://www.chromatic.com/) for visual testing and gathering UI feedback. 
