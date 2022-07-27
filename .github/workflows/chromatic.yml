@@ -1,12 +1,13 @@
 # .github/workflows/chromatic.yml
 
 # Workflow name
-name: 'Chromatic nightly build'
+name: 'Chromatic build on develop'
 
 # Event for the workflow
-on: 
-  schedule:
-    - cron: "0 0 * * *"
+on:
+  push:
+    branches:
+      - develop
 
 # List of jobs
 jobs:
