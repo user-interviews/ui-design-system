@@ -11346,6 +11346,13 @@ react-textarea-autosize@^8.3.0:
     use-composed-ref "^1.0.0"
     use-latest "^1.0.0"
 
+react-toggle@4.1.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/react-toggle/-/react-toggle-4.1.1.tgz#2317f67bf918ea3508a96b09dd383efd9da572af"
+  integrity sha512-+wXlMcSpg8SmnIXauMaZiKpR+r2wp2gMUteroejp2UTSqGTVvZLN+m9EhMzFARBKEw7KpQOwzCyfzeHeAndQGw==
+  dependencies:
+    classnames "^2.2.5"
+
 react-tracking@8.1.0:
   version "8.1.0"
   resolved "https://registry.yarnpkg.com/react-tracking/-/react-tracking-8.1.0.tgz#6c2c69db7aa1e741f2c14c97477f5725ccf29ce5"

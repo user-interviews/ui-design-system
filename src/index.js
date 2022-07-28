@@ -71,6 +71,7 @@ import {
   withToast,
   withToastPropTypes,
 } from 'src/Toast';
+import { ToggleInput } from 'src/ToggleInput';
 import Tooltip from 'src/Tooltip';
 
 export {
@@ -135,6 +136,7 @@ export {
   TableRow,
   TableSortLabel,
   Toast,
+  ToggleInput,
   Tooltip,
   useToast,
   ValueContainer,
