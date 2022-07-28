@@ -33,3 +33,39 @@ export const Default = () => {
     />
   );
 };
+
+export const Checked = () => {
+  const [isChecked, setIsChecked] = useState(true);
+
+  const handleChange = () => {
+    setIsChecked((prev) => !prev);
+  };
+
+  return (
+    <ToggleInput
+      id="1"
+      isChecked={isChecked}
+      labelLeft={boolean('Label left', false)}
+      labelText={text('Label text', 'Label')}
+      onToggle={handleChange}
+    />
+  );
+};
+
+export const LabelLeft = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleChange = () => {
+    setIsChecked((prev) => !prev);
+  };
+
+  return (
+    <ToggleInput
+      id="1"
+      isChecked={isChecked}
+      labelLeft
+      labelText={text('Label text', 'Label')}
+      onToggle={handleChange}
+    />
+  );
+};
