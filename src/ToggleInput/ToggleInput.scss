@@ -30,14 +30,18 @@
       border: none;
     }
 
-    .react-toggle--focus .react-toggle-thumb {
-      box-shadow: none;
+    .react-toggle--focus {
+      border-radius: $ux-border-radius;
       outline: 0.125rem solid $ux-blue-500;
+      outline-offset: 0.125rem;
+
+      .react-toggle-thumb {
+        box-shadow: none;
+      }
     }
 
     .react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb {
       box-shadow: none;
-      outline: 0.125rem solid $ux-blue-500;
     }
 
     .react-toggle--checked .react-toggle-track {
