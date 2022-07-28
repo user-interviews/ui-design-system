@@ -31,7 +31,7 @@
     }
 
     .react-toggle--focus {
-      border-radius: $ux-border-radius;
+      border-radius: 0.75rem;
       outline: 0.125rem solid $ux-blue-500;
       outline-offset: 0.125rem;
 
@@ -50,6 +50,14 @@
       &:hover {
         background-color: $ux-green;
       }
+    }
+
+    .react-toggle-track-check {
+      left: -0.125rem;
+    }
+
+    .react-toggle-track-x {
+      right: 0.875rem;
     }
 
     .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
