@@ -121,15 +121,6 @@ Runs the jest test suite
 ### `yarn lint`
 
 Runs ESLint to report on any style violations
-### Visual testing
-
-  1. Join BrowserStack (ask Brian for link)
-  1. Navigate to this project in percy [here](https://percy.io/f38ae9b9/ui-design-system)
-  1. Define `PERCY_TOKEN` in shell (the one from ui-design-system project)
-  1. `npx percy exec -- cypress run`
-  1. View results in percy.io / console
-
-> Note- we are on the free plan (5k images/month) so be mindful of the limit
 
 ### `yarn rs:link`
 
@@ -142,18 +133,18 @@ Trigger a production build when files are changed.
 ### `yarn rs:unlink`
 
 Remove symlinked packages.
-### Visual testing
 
-  1. Join BrowserStack team (ask Brian/Bob for link)
-  1. Navigate to this project in [Percy](https://percy.io/f38ae9b9/ui-design-system)
+## Chromatic visual testing & live feedback
+We use [Chromatic](https://www.chromatic.com/) for visual testing and gathering UI feedback. 
 
-  ## Local setup
-  1. Define `PERCY_TOKEN` ENV (the one from ui-design-system project found above)
-  1. Run `yarn storybook` in one tab
-  1. Run `npx percy exec -- cypress run` in another
-  1. View results in percy.io & console
+To join Chromatic for 'ui-design-system', ask Jason for the join link.
 
-> Note- we are running this once a day via github actions.
+If you are a Product Designer or wanting to view changes on a particular feature branch, a developer can provide a link to that specific Chromatic build. 
+
+If you are a Developer and want to trigger a Chromatic build,
+  1. Join Chromatic for the 'ui-design-system' (ask Jason for the join link).
+  2. Go to the Manage tab for 'ui-design-system' > Configure > Find the project token.
+  3. In your terminal, run `npx chromatic --project-token <projectToken>`. Use this command when you want to create a build and share with a stakeholder to gather UI feedback. You will be able to find the build on the Chromatic builds dashboard. We currently run automatic nightly builds for Chromatic via Github Actions. 
 
 ## Pull requests
 
