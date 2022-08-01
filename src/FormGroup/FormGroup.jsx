@@ -126,7 +126,7 @@ FormGroup.propTypes = {
   labelClassName: PropTypes.string,
   labelHelperText: PropTypes.string,
   labelHtmlFor: PropTypes.string,
-  labelTooltip: PropTypes.string,
+  labelTooltip: PropTypes.node,
   required: PropTypes.bool,
 };
 
