@@ -19,6 +19,7 @@ import {
   DropdownToggle,
   DropdownItem,
   DropdownMenu,
+  DropdownCard,
 } from 'src/Dropdown';
 import FadeTransition from 'src/FadeTransition';
 import Form from 'src/Form';
@@ -99,6 +100,7 @@ export {
   DropdownToggle,
   DropdownItem,
   DropdownMenu,
+  DropdownCard,
   FadeTransition,
   Form,
   FormControlLabel,

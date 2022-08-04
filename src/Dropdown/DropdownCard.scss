@@ -3,4 +3,9 @@
 .DropdownCard {
   padding: 1.5rem;
   white-space: nowrap;
+
+  &__title {
+    @include font-type-60--bold;
+    margin-bottom: 0.5rem;
+  }
 }

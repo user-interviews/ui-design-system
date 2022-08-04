@@ -122,7 +122,6 @@ const DropdownMenuCustomContent = () => {
 
   return (
     <div style={{ minWidth: '450px' }}>
-      <p style={{ fontWeight: 700 }}>Filter on participants</p>
       <SingleSelect options={options1} />
       <div style={{ marginTop: '16px' }}>
         <SingleSelect options={options2} placeholder="Before" style={{ marginTop: '8px' }} />
@@ -152,7 +151,7 @@ export const DropdownMenuCard = () => (
         align={select('align', ['start', 'end'], 'end')}
         noPadding
       >
-        <DropdownCard>
+        <DropdownCard title="Filter on participants">
           {DropdownMenuCustomContent()}
         </DropdownCard>
       </DropdownMenu>
