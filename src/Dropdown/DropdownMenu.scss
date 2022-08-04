@@ -1,0 +1,10 @@
+@import '../../scss/theme.scss';
+
+.DropdownMenu {
+  border: 1px solid $ux-gray-300;
+  box-shadow: $ux-elevations-30;
+
+  &--no-padding {
+    padding: 0;
+  }
+}

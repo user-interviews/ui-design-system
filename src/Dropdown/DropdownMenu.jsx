@@ -5,12 +5,15 @@ import classNames from 'classnames';
 import { Dropdown as RBDropdown } from 'react-bootstrap';
 import { DROPDOWN_ALIGN_PROP_TYPE } from './Dropdown.types';
 
+import './DropdownMenu.scss';
+
 const DropdownMenu = ({
   align,
   as,
   children,
   className,
   flip,
+  noPadding,
   onSelect,
   popperConfig,
   renderOnMount,
@@ -24,7 +27,11 @@ const DropdownMenu = ({
     align={align}
     as={as}
     bsPrefix={bsPrefix}
-    className={classNames('DropdownMenu', className)}
+    className={classNames(
+      'DropdownMenu',
+      className,
+      noPadding && 'DropdownMenu--no-padding',
+    )}
     flip={flip}
     popperConfig={popperConfig}
     renderOnMount={renderOnMount}
@@ -61,6 +68,10 @@ DropdownMenu.propTypes = {
    */
   flip: PropTypes.bool,
   /**
+    If true, removes default padding on DropdownMenu.
+   */
+  noPadding: PropTypes.bool,
+  /**
    A set of popper options and props passed directly to Popper.
    */
   popperConfig: PropTypes.object,
@@ -93,6 +104,7 @@ DropdownMenu.defaultProps = {
   as: undefined,
   className: undefined,
   flip: true,
+  noPadding: undefined,
   onSelect: undefined,
   popperConfig: undefined,
   renderOnMount: undefined,
