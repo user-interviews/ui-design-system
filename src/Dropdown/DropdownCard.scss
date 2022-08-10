@@ -2,10 +2,29 @@
 
 .DropdownCard {
   padding: 1.5rem;
-  white-space: nowrap;
 
+  @include media-breakpoint-down(sm) {
+    max-width: calc(100vw - 2rem);
+  }
+  
   &__title {
     @include font-type-60--bold;
     margin-bottom: 0.5rem;
+  }
+
+  &--xs {
+    width: $card-width-xs;
+  }
+
+  &--sm {
+   width: $card-width-sm;
+  }
+
+  &--md {
+    width: $card-width-md;
+  }
+
+  &--lg {
+    width: $card-width;
   }
 }

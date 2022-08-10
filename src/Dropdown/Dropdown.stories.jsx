@@ -2,11 +2,10 @@ import React from 'react';
 
 import { boolean, select, withKnobs } from '@storybook/addon-knobs';
 
-import Button from 'src/Button';
+import { CardSizes } from 'src/Card';
 import {
  Dropdown, DropdownToggle, DropdownItem, DropdownMenu, DropdownCard,
 } from 'src/Dropdown';
-import { SingleSelect } from 'src/Select';
 
 import { faEllipsisV, faFileAlt } from '@fortawesome/pro-solid-svg-icons';
 
@@ -109,34 +108,6 @@ export const IconSwap = () => (
   </>
 );
 
-const DropdownMenuCustomContent = () => {
-  const options1 = [
-    { label: 'First project launched', value: 1 },
-    { label: 'Last project launched', value: 2 },
-  ];
-
-  const options2 = [
-    { label: 'Before', value: 1 },
-    { label: 'After', value: 2 },
-  ];
-
-  return (
-    <div style={{ minWidth: '450px' }}>
-      <SingleSelect options={options1} />
-      <div style={{ marginTop: '16px' }}>
-        <SingleSelect options={options2} placeholder="Before" style={{ marginTop: '8px' }} />
-        <div style={{
- display: 'flex', flexDirection: 'row', float: 'right', padding: '16px 0',
-}}
-        >
-          <Button variant="transparent">Cancel</Button>
-          <Button style={{ marginLeft: '8px' }} variant="primary">Apply</Button>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 export const DropdownMenuCard = () => (
   <div style={{ display: 'flex', justifyContent: 'center' }}>
     <Dropdown autoClose={boolean('autoClose', true)}>
@@ -151,8 +122,21 @@ export const DropdownMenuCard = () => (
         align={select('align', ['start', 'end'], 'end')}
         noPadding
       >
-        <DropdownCard title="Filter on participants">
-          {DropdownMenuCustomContent()}
+        <DropdownCard
+          size={select('size', Object.values(CardSizes), 'sm')}
+          title="DropdownCard title"
+        >
+          <div style={{ fontSize: '0.875rem' }}>
+            <b>
+              Our all-in-one research platform is your source of
+              truth for participant management and replaces 5+ tools.
+            </b>
+            <ul>
+              <li>Automate scheduling, messages, and annoying logistics</li>
+              <li>Build your own panel to recruit for user research projects</li>
+              <li>Track participant research activity in one place</li>
+            </ul>
+          </div>
         </DropdownCard>
       </DropdownMenu>
     </Dropdown>
