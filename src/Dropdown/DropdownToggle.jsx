@@ -75,6 +75,10 @@ DropdownToggle.propTypes = {
   childBsPrefix: PropTypes.string,
   className: PropTypes.string,
   /**
+    If true, it removes all styling from toggle button. Use for full custom DropdownToggle styling.
+  */
+  custom: PropTypes.bool,
+  /**
     An html id attribute, necessary for assistive technologies, such as screen readers.
   */
   id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
@@ -92,6 +96,7 @@ DropdownToggle.defaultProps = {
   bsPrefix: 'dropdown-toggle',
   className: undefined,
   childBsPrefix: undefined,
+  custom: undefined,
   id: undefined,
   leadingIcon: undefined,
   removeCaret: undefined,
