@@ -20,39 +20,24 @@ const DropdownToggle = ({
   leadingIcon,
   removeCaret,
   ...props
-}) => {
-  if (!custom) {
- return (
-   <RBDropdown.Toggle
-     aria-label={ariaLabel}
-     as={as}
-     bsPrefix={removeCaret ? 'DropdownToggle--no-caret' : bsPrefix}
-     childBsPrefix={childBsPrefix}
-     className={classNames('DropdownToggle', className)}
-     id={id}
-     {...props}
-   >
-     { leadingIcon && (<FontAwesomeIcon className="icon-left" icon={leadingIcon} />)}
-     { children }
-   </RBDropdown.Toggle>
-  );
-}
-
-  return (
-    <RBDropdown.Toggle
-      aria-label={ariaLabel}
-      as={as}
-      bsPrefix={removeCaret ? 'DropdownToggle--no-caret' : bsPrefix}
-      childBsPrefix={childBsPrefix}
-      className={classNames('DropdownToggle', 'DropdownToggle--custom', className)}
-      id={id}
-      {...props}
-    >
-      { leadingIcon && (<FontAwesomeIcon className="icon-left" icon={leadingIcon} />)}
-      { children }
-    </RBDropdown.Toggle>
-  );
-};
+}) => (
+  <RBDropdown.Toggle
+    aria-label={ariaLabel}
+    as={as}
+    bsPrefix={removeCaret ? 'DropdownToggle--no-caret' : bsPrefix}
+    childBsPrefix={childBsPrefix}
+    className={classNames(
+        'DropdownToggle',
+        className,
+        { 'DropdownToggle--custom': custom },
+      )}
+    id={id}
+    {...props}
+  >
+    { leadingIcon && (<FontAwesomeIcon className="icon-left" icon={leadingIcon} />)}
+    { children }
+  </RBDropdown.Toggle>
+);
 
 DropdownToggle.propTypes = {
    /**
