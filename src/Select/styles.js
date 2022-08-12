@@ -91,7 +91,7 @@ const defaultStyles = ({ size }) => ({
     }) => ({
         ...styles,
         backgroundColor: isSelected ? systemColors.UX_BLUE_200 : styles.backgroundColor,
-        color: systemColors.UX_BLACK,
+        color: systemColors.UX_GRAY_900,
         fontWeight: fontWeights.light,
         fontSize: '0.875rem',
         cursor: 'pointer',
