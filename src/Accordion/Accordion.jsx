@@ -4,9 +4,17 @@ import PropTypes from 'prop-types';
 
 import RBAccordion from 'react-bootstrap/Accordion';
 
-const Accordion = ({ children, className, ...props }) => (
+import './Accordion.scss';
+
+const Accordion = ({
+ children, className, variant, ...props
+}) => (
   <RBAccordion
-    className={classNames(className, 'Accordion')}
+    className={classNames(
+      className,
+      'Accordion',
+      { 'Accordion--card': variant === 'card' },
+    )}
     {...props}
   >
     { children }
@@ -15,10 +23,12 @@ const Accordion = ({ children, className, ...props }) => (
 
 Accordion.propTypes = {
   className: PropTypes.string,
+  variant: PropTypes.oneOf(['card']),
 };
 
 Accordion.defaultProps = {
   className: undefined,
+  variant: undefined,
 };
 
 export default Accordion;

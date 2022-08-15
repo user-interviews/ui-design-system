@@ -1,0 +1,18 @@
+@import '../../scss//theme.scss';
+
+.Accordion {
+
+  &--card {
+    background-color: $ux-white;
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: $ux-elevations-20;
+    outline-color: $ux-green-500;
+
+    width: calc(100% - 1rem);
+
+    @include media-breakpoint-up(sm) {
+      width: calc(100% - 2rem);
+    }
+  }
+}
