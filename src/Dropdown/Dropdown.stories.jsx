@@ -3,6 +3,7 @@ import React from 'react';
 import {
  Dropdown, DropdownToggle, DropdownItem, DropdownMenu,
 } from 'src/Dropdown';
+
 import { faEllipsisV, faFileAlt, faChevronDown } from '@fortawesome/pro-solid-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
