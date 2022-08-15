@@ -102,9 +102,9 @@ export const IconSwap = () => (
   </>
 );
 
-export const CustomToggle = () => (
+export const UnstyledToggle = () => (
   <Dropdown>
-    <DropdownToggle custom removeCaret>
+    <DropdownToggle removeCaret unstyled>
       <div style={{
         padding: '12px',
         backgroundColor: '#444444',

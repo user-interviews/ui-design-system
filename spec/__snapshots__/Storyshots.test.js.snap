@@ -4971,92 +4971,6 @@ exports[`Storyshots Components/Copy To Clipboard Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Dropdown Custom Toggle 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="Dropdown dropdown"
-  >
-    <button
-      aria-expanded={false}
-      aria-label="dropdown-toggle"
-      className="DropdownToggle DropdownToggle--custom DropdownToggle--no-caret btn btn-primary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#444444",
-            "display": "flex",
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "padding": "12px",
-            "width": "200px",
-          }
-        }
-      >
-        <div>
-          <div
-            style={
-              Object {
-                "fontSize": "18px",
-                "fontWeight": "700",
-              }
-            }
-          >
-            Team A
-          </div>
-          <div
-            style={
-              Object {
-                "backgroundColor": "#444444",
-                "fontSize": "12px",
-                "fontWeight": "400",
-              }
-            }
-          >
-            Organization
-          </div>
-        </div>
-        <div
-          style={
-            Object {
-              "marginRight": "4px",
-            }
-          }
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-chevron-down fa-w-14 "
-            data-icon="chevron-down"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </div>
-      </div>
-    </button>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Components/Dropdown Default 1`] = `
 <div
   style={
@@ -5230,6 +5144,92 @@ exports[`Storyshots Components/Dropdown Sizes 1`] = `
       type="button"
     >
       Medium toggle
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown Unstyled Toggle 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      aria-label="dropdown-toggle"
+      className="DropdownToggle DropdownToggle--unstyled DropdownToggle--no-caret btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#444444",
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "padding": "12px",
+            "width": "200px",
+          }
+        }
+      >
+        <div>
+          <div
+            style={
+              Object {
+                "fontSize": "18px",
+                "fontWeight": "700",
+              }
+            }
+          >
+            Team A
+          </div>
+          <div
+            style={
+              Object {
+                "backgroundColor": "#444444",
+                "fontSize": "12px",
+                "fontWeight": "400",
+              }
+            }
+          >
+            Organization
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "marginRight": "4px",
+            }
+          }
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-down fa-w-14 "
+            data-icon="chevron-down"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
     </button>
   </div>
 </div>
