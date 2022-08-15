@@ -3,7 +3,8 @@ import React from 'react';
 import {
  Dropdown, DropdownToggle, DropdownItem, DropdownMenu,
 } from 'src/Dropdown';
-import { faEllipsisV, faFileAlt } from '@fortawesome/pro-solid-svg-icons';
+
+import { faEllipsisV, faFileAlt, faChevronDown } from '@fortawesome/pro-solid-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import mdx from './Dropdown.mdx';
@@ -100,4 +101,34 @@ export const IconSwap = () => (
       </DropdownMenu>
     </Dropdown>
   </>
+);
+
+export const UnstyledToggle = () => (
+  <Dropdown>
+    <DropdownToggle removeCaret unstyled>
+      <div style={{
+        padding: '12px',
+        backgroundColor: '#444444',
+        width: '200px',
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        }}
+      >
+        <div>
+          <div style={{ fontSize: '18px', fontWeight: '700' }}>Team A</div>
+          <div style={{ fontSize: '12px', fontWeight: '400', backgroundColor: '#444444' }}>Organization</div>
+        </div>
+        <div style={{ marginRight: '4px' }}>
+          <FontAwesomeIcon icon={faChevronDown} />
+        </div>
+      </div>
+    </DropdownToggle>
+    <DropdownMenu>
+      <DropdownItem href="#">Team A</DropdownItem>
+      <DropdownItem href="#">Team B</DropdownItem>
+      <DropdownItem href="#">Team C</DropdownItem>
+    </DropdownMenu>
+  </Dropdown>
 );

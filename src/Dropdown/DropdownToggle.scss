@@ -7,6 +7,10 @@ $warning: $ux-yellow-400;
 .DropdownToggle {
   @include font-type-30--bold;
 
+  &--unstyled {
+    all: unset;
+  }
+
   i, svg {
     &.icon-left {
       margin-right: $ux-spacing-20;
