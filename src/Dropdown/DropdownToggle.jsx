@@ -18,6 +18,7 @@ const DropdownToggle = ({
   id,
   leadingIcon,
   removeCaret,
+  unstyled,
   ...props
 }) => (
   <RBDropdown.Toggle
@@ -25,14 +26,18 @@ const DropdownToggle = ({
     as={as}
     bsPrefix={removeCaret ? 'DropdownToggle--no-caret' : bsPrefix}
     childBsPrefix={childBsPrefix}
-    className={classNames('DropdownToggle', className)}
+    className={classNames(
+        'DropdownToggle',
+        className,
+        { 'DropdownToggle--unstyled': unstyled },
+      )}
     id={id}
     {...props}
   >
     { leadingIcon && (<FontAwesomeIcon className="icon-left" icon={leadingIcon} />)}
     { children }
   </RBDropdown.Toggle>
-  );
+);
 
 DropdownToggle.propTypes = {
    /**
@@ -64,6 +69,10 @@ DropdownToggle.propTypes = {
     This allows you to use a different icon of your choice.
   */
   removeCaret: PropTypes.bool,
+  /**
+    If true, it removes all styling from toggle button. Use for full custom DropdownToggle styling.
+  */
+  unstyled: PropTypes.bool,
 };
 
 DropdownToggle.defaultProps = {
@@ -75,6 +84,7 @@ DropdownToggle.defaultProps = {
   id: undefined,
   leadingIcon: undefined,
   removeCaret: undefined,
+  unstyled: undefined,
 };
 
 export default DropdownToggle;
