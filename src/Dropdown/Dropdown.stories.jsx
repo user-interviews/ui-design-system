@@ -103,21 +103,6 @@ export const IconSwap = () => (
   </>
 );
 
-export const IconSwap = () => (
-  <>
-    <Dropdown>
-      <DropdownToggle ariaLabel="dropdown toggle ellipsis" removeCaret variant="transparent">
-        <FontAwesomeIcon icon={faEllipsisV} size="lg" />
-      </DropdownToggle>
-      <DropdownMenu>
-        <DropdownItem href="#">Action</DropdownItem>
-        <DropdownItem href="#">Another action</DropdownItem>
-        <DropdownItem href="#">Click me</DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
-  </>
-);
-
 export const UnstyledToggle = () => (
   <Dropdown>
     <DropdownToggle removeCaret unstyled>
