@@ -80,7 +80,7 @@ export const Disabled = () => {
   return (
     <ToggleInput
       disabled
-      id="1"
+      id="2"
       isChecked={isChecked}
       labelLeft={boolean('Label left', false)}
       labelText={text('Label text', 'Label')}

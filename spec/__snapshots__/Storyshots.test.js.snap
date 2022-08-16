@@ -19862,7 +19862,7 @@ exports[`Storyshots Components/ToggleInput Disabled 1`] = `
 >
   <label
     className="ToggleInput__label"
-    htmlFor="1"
+    htmlFor="2"
   >
     <div
       className="react-toggle react-toggle--disabled"
@@ -19918,7 +19918,7 @@ exports[`Storyshots Components/ToggleInput Disabled 1`] = `
         checked={false}
         className="react-toggle-screenreader-only"
         disabled={true}
-        id="1"
+        id="2"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}
