@@ -19861,7 +19861,7 @@ exports[`Storyshots Components/ToggleInput Disabled 1`] = `
   }
 >
   <label
-    className="ToggleInput__label"
+    className="ToggleInput__label ToggleInput__label--disabled"
     htmlFor="2"
   >
     <div
