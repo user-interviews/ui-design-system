@@ -5149,6 +5149,92 @@ exports[`Storyshots Components/Dropdown Sizes 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Dropdown Unstyled Toggle 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      aria-label="dropdown-toggle"
+      className="DropdownToggle DropdownToggle--unstyled DropdownToggle--no-caret btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "backgroundColor": "#444444",
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "padding": "12px",
+            "width": "200px",
+          }
+        }
+      >
+        <div>
+          <div
+            style={
+              Object {
+                "fontSize": "18px",
+                "fontWeight": "700",
+              }
+            }
+          >
+            Team A
+          </div>
+          <div
+            style={
+              Object {
+                "backgroundColor": "#444444",
+                "fontSize": "12px",
+                "fontWeight": "400",
+              }
+            }
+          >
+            Organization
+          </div>
+        </div>
+        <div
+          style={
+            Object {
+              "marginRight": "4px",
+            }
+          }
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-down fa-w-14 "
+            data-icon="chevron-down"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </div>
+    </button>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Form Default 1`] = `
 <div
   style={
@@ -19601,6 +19687,249 @@ exports[`Storyshots Components/Toast Toast With Action 1`] = `
       Submit
     </button>
   </div>
+</div>
+`;
+
+exports[`Storyshots Components/ToggleInput Checked 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <label
+    className="ToggleInput__label"
+    htmlFor="1"
+  >
+    <div
+      className="react-toggle react-toggle--checked"
+      onClick={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <div
+        className="react-toggle-track"
+      >
+        <div
+          className="react-toggle-track-check"
+        >
+          <svg
+            height="11"
+            viewBox="0 0 14 11"
+            width="14"
+          >
+            <title>
+              switch-check
+            </title>
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          className="react-toggle-track-x"
+        >
+          <svg
+            height="10"
+            viewBox="0 0 10 10"
+            width="10"
+          >
+            <title>
+              switch-x
+            </title>
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="react-toggle-thumb"
+      />
+      <input
+        checked={true}
+        className="react-toggle-screenreader-only"
+        disabled={false}
+        id="1"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="checkbox"
+        value="true"
+      />
+    </div>
+    <span>
+      Label
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/ToggleInput Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <label
+    className="ToggleInput__label"
+    htmlFor="1"
+  >
+    <div
+      className="react-toggle"
+      onClick={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <div
+        className="react-toggle-track"
+      >
+        <div
+          className="react-toggle-track-check"
+        >
+          <svg
+            height="11"
+            viewBox="0 0 14 11"
+            width="14"
+          >
+            <title>
+              switch-check
+            </title>
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          className="react-toggle-track-x"
+        >
+          <svg
+            height="10"
+            viewBox="0 0 10 10"
+            width="10"
+          >
+            <title>
+              switch-x
+            </title>
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="react-toggle-thumb"
+      />
+      <input
+        checked={false}
+        className="react-toggle-screenreader-only"
+        disabled={false}
+        id="1"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="checkbox"
+        value="false"
+      />
+    </div>
+    <span>
+      Label
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/ToggleInput Label Left 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <label
+    className="ToggleInput__label"
+    htmlFor="1"
+  >
+    <span>
+      Label
+    </span>
+    <div
+      className="react-toggle"
+      onClick={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <div
+        className="react-toggle-track"
+      >
+        <div
+          className="react-toggle-track-check"
+        >
+          <svg
+            height="11"
+            viewBox="0 0 14 11"
+            width="14"
+          >
+            <title>
+              switch-check
+            </title>
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          className="react-toggle-track-x"
+        >
+          <svg
+            height="10"
+            viewBox="0 0 10 10"
+            width="10"
+          >
+            <title>
+              switch-x
+            </title>
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="react-toggle-thumb"
+      />
+      <input
+        checked={false}
+        className="react-toggle-screenreader-only"
+        disabled={false}
+        id="1"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="checkbox"
+        value="false"
+      />
+    </div>
+  </label>
 </div>
 `;
 
