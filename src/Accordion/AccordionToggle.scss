@@ -74,11 +74,6 @@
     @include font-type-30;
   }
 
-  &__label {
-    @include font-type-10--uppercase;
-    color: $ux-blue-600;
-  }
-
   &--disabled {
     opacity: 0.5;
   }

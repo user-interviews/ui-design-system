@@ -18,7 +18,6 @@ const AccordionToggle = ({
   disabled,
   eventKey,
   helperText,
-  label,
   leadingIcon,
   title,
   ...props
@@ -84,9 +83,6 @@ const AccordionToggle = ({
           {children}
         </div>
         <div className="AccordionToggle__container--right">
-          {label && (
-            <span className="AccordionToggle__label">{label}</span>
-          )}
           {chevronRight && !chevronLeft && (
             <span className="AccordionToggle__chevron-right">
               <FontAwesomeIcon icon={faChevronUp} />
@@ -114,7 +110,6 @@ AccordionToggle.propTypes = {
   disabled: PropTypes.bool,
   eventKey: PropTypes.string.isRequired,
   helperText: PropTypes.string,
-  label: PropTypes.string,
   leadingIcon: PropTypes.object,
   title: PropTypes.string,
 };
@@ -125,7 +120,6 @@ AccordionToggle.defaultProps = {
   className: undefined,
   disabled: undefined,
   helperText: undefined,
-  label: undefined,
   leadingIcon: undefined,
   title: undefined,
 };

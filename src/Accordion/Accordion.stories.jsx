@@ -33,7 +33,6 @@ export const Default = () => (
       <AccordionToggle
         eventKey="0"
         helperText="helper text"
-        label="3 Items Selected"
         leadingIcon={faCreditCard}
         title="Accordion Toggle #1"
       />
@@ -49,7 +48,6 @@ export const Default = () => (
       <AccordionToggle
         eventKey="1"
         helperText="helper text"
-        label="3 Items Selected"
         leadingIcon={faCreditCard}
         title="Accordion Toggle #2"
       />
@@ -70,7 +68,6 @@ export const DefaultOpen = () => (
       <AccordionToggle
         eventKey="0"
         helperText="helper text"
-        label="3 Items Selected"
         leadingIcon={faCreditCard}
         title="Accordion Toggle #1"
       />
@@ -86,7 +83,6 @@ export const DefaultOpen = () => (
       <AccordionToggle
         eventKey="1"
         helperText="helper text"
-        label="3 Items Selected"
         leadingIcon={faCreditCard}
         title="Accordion Toggle #2"
       />
@@ -106,7 +102,6 @@ export const ChevronLeft = () => (
         chevronLeft
         eventKey="0"
         helperText="helper text"
-        label="3 Items Selected"
         title="Accordion Toggle #1"
       />
       <AccordionCollapse eventKey="0">
@@ -122,7 +117,6 @@ export const ChevronLeft = () => (
         chevronLeft
         eventKey="1"
         helperText="helper text"
-        label="3 Items Selected"
         title="Accordion Toggle #2"
       />
       <AccordionCollapse eventKey="1">
@@ -142,7 +136,6 @@ export const Borderless = () => (
       <AccordionToggle
         eventKey="0"
         helperText="helper text"
-        label="3 Items Selected"
         leadingIcon={faCreditCard}
         title="Accordion Toggle #1"
       />
@@ -158,7 +151,6 @@ export const Borderless = () => (
       <AccordionToggle
         eventKey="1"
         helperText="helper text"
-        label="3 Items Selected"
         leadingIcon={faCreditCard}
         title="Accordion Toggle #2"
       />
@@ -180,7 +172,6 @@ export const CardAccordion = () => (
         <AccordionToggle
           eventKey="0"
           helperText="helper text"
-          label="3 Items Selected"
           leadingIcon={faCreditCard}
           title="Accordion Toggle #1"
         />
@@ -205,7 +196,6 @@ export const Separate = () => (
         <AccordionToggle
           eventKey="0"
           helperText="helper text"
-          label="3 Items Selected"
           title="Accordion Toggle #1"
         />
         <AccordionCollapse eventKey="0">
@@ -221,7 +211,6 @@ export const Separate = () => (
         <AccordionToggle
           eventKey="1"
           helperText="helper text"
-          label="3 Items Selected"
           title="Accordion Toggle #2"
         />
         <AccordionCollapse eventKey="1">
@@ -241,7 +230,6 @@ export const Disabled = () => (
         disabled
         eventKey="0"
         helperText="helper text"
-        label="3 Items Selected"
         title="Accordion Toggle -- Disabled"
       />
       <AccordionCollapse eventKey="0">
@@ -256,7 +244,6 @@ export const Disabled = () => (
       <AccordionToggle
         eventKey="1"
         helperText="helper text"
-        label="3 Items Selected"
         title="Accordion Toggle #2"
       />
       <AccordionCollapse eventKey="1">
