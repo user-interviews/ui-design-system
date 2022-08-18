@@ -11,6 +11,7 @@ import './AccordionToggle.scss';
 import { faChevronUp } from '@fortawesome/pro-solid-svg-icons';
 
 const AccordionToggle = ({
+  cardPadding,
   children,
   chevronLeft,
   chevronRight,
@@ -53,8 +54,8 @@ const AccordionToggle = ({
         classNames(
           className,
           'AccordionToggle',
-          isCollapsed && 'collapsed',
-          disabled && 'AccordionToggle--disabled',
+          { collapsed: isCollapsed },
+          { 'AccordionToggle--disabled': disabled },
         )
       }
       disabled={disabled}
@@ -62,7 +63,11 @@ const AccordionToggle = ({
       onClick={decoratedOnClick}
       {...props}
     >
-      <div className="AccordionToggle__container">
+      <div className={classNames(
+        'AccordionToggle__container',
+        { 'AccordionToggle__container--card-padding': cardPadding },
+      )}
+      >
         <div className="AccordionToggle__container--content">
           {chevronLeft && (
             <span className="AccordionToggle__chevron-left">
@@ -96,6 +101,10 @@ const AccordionToggle = ({
 
 AccordionToggle.propTypes = {
   /**
+   Adds default Card padding. Use to align content with other Cards.
+  */
+  cardPadding: PropTypes.bool,
+  /**
    Aligns the Chevron icon to the left
   */
   chevronLeft: PropTypes.bool,
@@ -115,6 +124,7 @@ AccordionToggle.propTypes = {
 };
 
 AccordionToggle.defaultProps = {
+  cardPadding: undefined,
   chevronLeft: false,
   chevronRight: true,
   className: undefined,

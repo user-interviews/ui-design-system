@@ -50,7 +50,10 @@ import Accordion from './Accordion';
 </Canvas>
 
 ### In Card
-- When wrapping `Accordion` in `Card`, make sure to provide a `borderless` prop to every `AccordionItem`
+When multiple Cards are stacked, you want to ensure there is proper content alignment with padding. When wrapping `Accordion` in `Card`:
+1. Use `<Card noPadding>`
+2. Use `<AccordionItem borderless>`
+2. Use `<AccordionToggle cardPadding>` and `<AccordionCollapse cardPadding>`
 
 <Canvas>
   <Story id="components-accordion--in-card" />

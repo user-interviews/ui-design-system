@@ -1,6 +1,5 @@
 import {
   Accordion,
-  AccordionCard,
   AccordionCollapse,
   AccordionItem,
   AccordionToggle,
@@ -77,7 +76,6 @@ import Tooltip from 'src/Tooltip';
 
 export {
   Accordion,
-  AccordionCard,
   AccordionCollapse,
   AccordionItem,
   AccordionToggle,

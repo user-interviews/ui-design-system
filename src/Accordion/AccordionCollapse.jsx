@@ -7,6 +7,7 @@ import RBAccordionCollapse from 'react-bootstrap/AccordionCollapse';
 import './AccordionCollapse.scss';
 
 const AccordionCollapse = ({
+  cardPadding,
   children,
   className,
   eventKey,
@@ -17,13 +18,21 @@ const AccordionCollapse = ({
     eventKey={eventKey}
     {...props}
   >
-    <div className="AccordionCollapse__container">
+    <div className={classNames(
+      'AccordionCollapse__container',
+      { 'AccordionCollapse__container--card-padding': cardPadding },
+    )}
+    >
       {children}
     </div>
   </RBAccordionCollapse>
 );
 
 AccordionCollapse.propTypes = {
+  /**
+   Adds default Card padding. Use to align content with other Cards.
+  */
+  cardPadding: PropTypes.bool,
   className: PropTypes.string,
    /**
   A unique key used to control this item's collapse/expand.
@@ -32,6 +41,7 @@ AccordionCollapse.propTypes = {
 };
 
 AccordionCollapse.defaultProps = {
+  cardPadding: undefined,
   className: undefined,
 };
 

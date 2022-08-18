@@ -10,6 +10,10 @@
     grid-template-areas: 'content chevron-right';
     padding: 1rem;
 
+    &--card-padding {
+      padding: 1rem 1.5rem;
+    }
+
     &--right {
       grid-area: chevron-right;
       

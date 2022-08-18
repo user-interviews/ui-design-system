@@ -5,7 +5,6 @@ import {
   AccordionItem,
   AccordionToggle,
   AccordionCollapse,
-  AccordionCard,
 } from 'src/Accordion';
 
 import Card from 'src/Card';
@@ -18,7 +17,7 @@ export default {
   title: 'Components/Accordion',
   component: Accordion,
   subcomponents: {
-    AccordionItem, AccordionToggle, AccordionCollapse, AccordionCard,
+    AccordionItem, AccordionToggle, AccordionCollapse,
   },
   parameters: {
     docs: {
@@ -165,25 +164,31 @@ export const Borderless = () => (
   </Accordion>
 );
 
-export const CardAccordion = () => (
+export const InCard = () => (
   <>
-    <Accordion flush variant="card">
-      <AccordionItem borderless>
-        <AccordionToggle
-          eventKey="0"
-          helperText="helper text"
-          leadingIcon={faCreditCard}
-          title="Accordion Toggle #1"
-        />
-        <AccordionCollapse eventKey="0">
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
-        </AccordionCollapse>
-      </AccordionItem>
-    </Accordion>
+    <Card noPadding>
+      <Accordion defaultActiveKey="0" flush>
+        <AccordionItem borderless>
+          <AccordionToggle
+            cardPadding
+            eventKey="0"
+            helperText="with cardPadding"
+            title="Accordion Toggle"
+          />
+          <AccordionCollapse
+            cardPadding
+            eventKey="0"
+          >
+            <p>This text is aligned with the content of other Card components</p>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </AccordionCollapse>
+        </AccordionItem>
+      </Accordion>
+    </Card>
     <br />
     <Card title="Card title" />
   </>
