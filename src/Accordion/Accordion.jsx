@@ -4,8 +4,6 @@ import PropTypes from 'prop-types';
 
 import RBAccordion from 'react-bootstrap/Accordion';
 
-import './Accordion.scss';
-
 const Accordion = ({ children, className, ...props }) => (
   <RBAccordion
     className={classNames(className, 'Accordion')}
