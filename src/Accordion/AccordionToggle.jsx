@@ -63,7 +63,7 @@ const AccordionToggle = ({
       {...props}
     >
       <div className="AccordionToggle__container">
-        <div className="AccordionToggle__container--left">
+        <div className="AccordionToggle__container--content">
           {chevronLeft && (
             <span className="AccordionToggle__chevron-left">
               <FontAwesomeIcon icon={faChevronUp} />
@@ -82,13 +82,13 @@ const AccordionToggle = ({
           )}
           {children}
         </div>
-        <div className="AccordionToggle__container--right">
-          {chevronRight && !chevronLeft && (
+        {chevronRight && !chevronLeft && (
+          <div className="AccordionToggle__container--right">
             <span className="AccordionToggle__chevron-right">
               <FontAwesomeIcon icon={faChevronUp} />
             </span>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </button>
   );

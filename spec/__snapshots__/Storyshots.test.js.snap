@@ -23,7 +23,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -119,7 +119,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -230,7 +230,7 @@ exports[`Storyshots Components/Accordion Card Accordion 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -355,7 +355,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__chevron-left"
@@ -391,9 +391,6 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
               )
             </span>
           </div>
-          <div
-            className="AccordionToggle__container--right"
-          />
         </div>
       </button>
       <div
@@ -429,7 +426,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__chevron-left"
@@ -465,9 +462,6 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
               )
             </span>
           </div>
-          <div
-            className="AccordionToggle__container--right"
-          />
         </div>
       </button>
       <div
@@ -518,7 +512,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -614,7 +608,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -725,7 +719,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -821,7 +815,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -927,7 +921,7 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__title"
@@ -1002,7 +996,7 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__title"
@@ -1092,7 +1086,7 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__title"
@@ -1166,7 +1160,7 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__title"
