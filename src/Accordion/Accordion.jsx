@@ -10,11 +10,7 @@ const Accordion = ({
  children, className, variant, ...props
 }) => (
   <RBAccordion
-    className={classNames(
-      className,
-      'Accordion',
-      { 'Accordion--card': variant === 'card' },
-    )}
+    className={classNames(className, 'Accordion')}
     {...props}
   >
     { children }
