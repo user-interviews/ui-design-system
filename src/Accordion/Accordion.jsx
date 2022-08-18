@@ -6,9 +6,7 @@ import RBAccordion from 'react-bootstrap/Accordion';
 
 import './Accordion.scss';
 
-const Accordion = ({
- children, className, variant, ...props
-}) => (
+const Accordion = ({ children, className, ...props }) => (
   <RBAccordion
     className={classNames(className, 'Accordion')}
     {...props}
@@ -19,12 +17,10 @@ const Accordion = ({
 
 Accordion.propTypes = {
   className: PropTypes.string,
-  variant: PropTypes.oneOf(['card']),
 };
 
 Accordion.defaultProps = {
   className: undefined,
-  variant: undefined,
 };
 
 export default Accordion;
