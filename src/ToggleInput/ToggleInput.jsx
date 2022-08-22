@@ -16,13 +16,13 @@ const ToggleInput = ({
   name,
   onToggle,
   // eslint-disable-next-line camelcase
-  UNSAFE__className,
+  UNSAFE_className,
   ...props
 }) => (
   <label
     className={classNames(
       'ToggleInput__label',
-      UNSAFE__className,
+      UNSAFE_className,
       { 'ToggleInput__label--disabled': disabled },
     )}
     htmlFor={id}
@@ -75,7 +75,7 @@ ToggleInput.propTypes = {
    The value of the name attribute of the wrapped `<input>` element.
   */
   name: PropTypes.string,
-  UNSAFE__className: PropTypes.string,
+  UNSAFE_className: PropTypes.string,
   /**
    Callback function to invoke when the user clicks on the toggle.
    The function signature should be the following: function(e) { }.
@@ -91,7 +91,7 @@ ToggleInput.defaultProps = {
   isChecked: false,
   labelLeft: false,
   name: undefined,
-  UNSAFE__className: undefined,
+  UNSAFE_className: undefined,
   onToggle: undefined,
 };
 
