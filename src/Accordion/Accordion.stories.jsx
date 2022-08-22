@@ -186,14 +186,13 @@ export const InCard = () => (
       <Accordion defaultActiveKey="0" flush>
         <AccordionItem borderless>
           <AccordionToggle
-            cardPadding
+            chevronLeft={boolean('chevronLeft', false)}
             disabled={boolean('disabled', false)}
             eventKey="0"
             helperText={text('helperText', 'with cardPadding')}
             title={text('title', 'Accordion Toggle')}
           />
           <AccordionCollapse
-            cardPadding
             eventKey="0"
           >
             <p>This text is aligned with the content of other Card components</p>

@@ -895,7 +895,7 @@ exports[`Storyshots Components/Accordion In Card 1`] = `
           type="button"
         >
           <div
-            className="AccordionToggle__container AccordionToggle__container--card-padding"
+            className="AccordionToggle__container"
           >
             <div
               className="AccordionToggle__container--content"
@@ -945,7 +945,7 @@ exports[`Storyshots Components/Accordion In Card 1`] = `
           className="AccordionCollapse accordion-collapse collapse show"
         >
           <div
-            className="AccordionCollapse__container AccordionCollapse__container--card-padding"
+            className="AccordionCollapse__container"
           >
             <p>
               This text is aligned with the content of other Card components
