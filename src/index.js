@@ -37,6 +37,7 @@ import {
   ModalHeader,
 } from 'src/Modal';
 import { Pill, Pills, PILL_COLORS } from 'src/Pill';
+import { Popover, PopoverBody } from 'src/Popover';
 import Popper from 'src/Popper';
 import ProfileCell from 'src/ProfileCell';
 import RadioButton from 'src/RadioButton';
@@ -118,6 +119,8 @@ export {
   Pill,
   Pills,
   PILL_COLORS,
+  Popover,
+  PopoverBody,
   Popper,
   ProfileCell,
   RadioButton,
