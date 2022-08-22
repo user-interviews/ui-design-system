@@ -14,12 +14,13 @@ const AccordionToggle = ({
   children,
   chevronLeft,
   chevronRight,
-  className,
   disabled,
   eventKey,
   helperText,
   leadingIcon,
   title,
+  // eslint-disable-next-line camelcase
+  UNSAFE_className,
   ...props
 }) => {
   const { activeEventKey } = React.useContext(AccordionContext);
@@ -51,7 +52,7 @@ const AccordionToggle = ({
     <button
       className={
         classNames(
-          className,
+          UNSAFE_className,
           'AccordionToggle',
           { collapsed: isCollapsed },
           { 'AccordionToggle--disabled': disabled },
@@ -103,25 +104,25 @@ AccordionToggle.propTypes = {
    Aligns the Chevron icon to the right (default)
   */
   chevronRight: PropTypes.bool,
-  className: PropTypes.string,
-   /**
-  A unique key used to control this item's collapse/expand.
-  */
+  /**
+   A unique key used to control this item's collapse/expand.
+   */
   disabled: PropTypes.bool,
   eventKey: PropTypes.string.isRequired,
   helperText: PropTypes.string,
   leadingIcon: PropTypes.object,
   title: PropTypes.string,
+  UNSAFE_className: PropTypes.string,
 };
 
 AccordionToggle.defaultProps = {
   chevronLeft: false,
   chevronRight: true,
-  className: undefined,
   disabled: undefined,
   helperText: undefined,
   leadingIcon: undefined,
   title: undefined,
+  UNSAFE_className: undefined,
 };
 
 export default AccordionToggle;

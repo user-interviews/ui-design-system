@@ -4,9 +4,14 @@ import PropTypes from 'prop-types';
 
 import RBAccordion from 'react-bootstrap/Accordion';
 
-const Accordion = ({ children, className, ...props }) => (
+const Accordion = ({
+  children,
+  // eslint-disable-next-line camelcase
+  UNSAFE_className,
+  ...props
+}) => (
   <RBAccordion
-    className={classNames(className, 'Accordion')}
+    className={classNames(UNSAFE_className, 'Accordion')}
     {...props}
   >
     { children }
@@ -14,11 +19,11 @@ const Accordion = ({ children, className, ...props }) => (
   );
 
 Accordion.propTypes = {
-  className: PropTypes.string,
+  UNSAFE_className: PropTypes.string,
 };
 
 Accordion.defaultProps = {
-  className: undefined,
+  UNSAFE_className: undefined,
 };
 
 export default Accordion;
