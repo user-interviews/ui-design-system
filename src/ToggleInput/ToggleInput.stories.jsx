@@ -69,3 +69,22 @@ export const LabelLeft = () => {
     />
   );
 };
+
+export const Disabled = () => {
+  const [isChecked, setIsChecked] = useState(false);
+
+  const handleChange = () => {
+    setIsChecked((prev) => !prev);
+  };
+
+  return (
+    <ToggleInput
+      disabled
+      id="2"
+      isChecked={isChecked}
+      labelLeft={boolean('Label left', false)}
+      labelText={text('Label text', 'Label')}
+      onToggle={handleChange}
+    />
+  );
+};
