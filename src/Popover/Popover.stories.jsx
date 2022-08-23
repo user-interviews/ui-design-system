@@ -1,11 +1,8 @@
 import React from 'react';
 
-import { Button as BSButton } from 'react-bootstrap';
 import Button from 'src/Button';
 
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-// import Popover from 'react-bootstrap/Popover';
-
+import { OverlayTrigger } from 'src/OverlayTrigger';
 import { Popover, PopoverBody } from 'src/Popover';
 
 export default {
@@ -22,19 +19,7 @@ const popover = (props) => (
   </Popover>
 );
 
-// export const Default = () => (
-//   <>
-//     <OverlayTrigger trigger="click" placement="bottom" overlay={popover()}>
-//       <Button variant="primary" >Click me to see</Button>
-//     </OverlayTrigger>
-//     <br></br>
-//     <OverlayTrigger trigger="click" placement="bottom" overlay={popover()}>
-//       <BSButton variant="success">Click me to see</BSButton>
-//     </OverlayTrigger>
-//   </>
-// );
-
-export const Test = () => (
+export const Default = () => (
   <OverlayTrigger overlay={popover} placement="bottom" trigger="click">
     <Button variant="primary">Click me to see</Button>
   </OverlayTrigger>
