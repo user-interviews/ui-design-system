@@ -11,6 +11,10 @@
     font-weight: $font-weight-bold;
     color: $ux-gray-900;
 
+    &--disabled {
+      opacity: 0.5;
+    }
+
     :last-child {
       margin-left: 0.5rem;
     }
@@ -112,7 +116,6 @@
 
 .react-toggle--disabled {
   cursor: not-allowed;
-  opacity: 0.5;
   -webkit-transition: opacity 0.25s;
   transition: opacity 0.25s;
 }

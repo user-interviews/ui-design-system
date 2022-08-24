@@ -16,6 +16,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
+        disabled={false}
         onClick={[Function]}
         type="button"
       >
@@ -23,7 +24,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -49,7 +50,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
             <span
               className="AccordionToggle__title"
             >
-              Accordion Toggle #1
+              Accordion Toggle
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -62,11 +63,6 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
           <div
             className="AccordionToggle__container--right"
           >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
             <span
               className="AccordionToggle__chevron-right"
             >
@@ -117,6 +113,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
+        disabled={false}
         onClick={[Function]}
         type="button"
       >
@@ -124,7 +121,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -150,7 +147,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
             <span
               className="AccordionToggle__title"
             >
-              Accordion Toggle #2
+              Accordion Toggle
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -163,11 +160,6 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
           <div
             className="AccordionToggle__container--right"
           >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
             <span
               className="AccordionToggle__chevron-right"
             >
@@ -233,6 +225,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
+        disabled={false}
         onClick={[Function]}
         type="button"
       >
@@ -240,7 +233,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__chevron-left"
@@ -266,7 +259,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
             <span
               className="AccordionToggle__title"
             >
-              Accordion Toggle #1
+              Accordion Toggle
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -274,15 +267,6 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
               (
               helper text
               )
-            </span>
-          </div>
-          <div
-            className="AccordionToggle__container--right"
-          >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
             </span>
           </div>
         </div>
@@ -313,6 +297,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
+        disabled={false}
         onClick={[Function]}
         type="button"
       >
@@ -320,7 +305,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__chevron-left"
@@ -346,7 +331,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
             <span
               className="AccordionToggle__title"
             >
-              Accordion Toggle #2
+              Accordion Toggle
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -354,15 +339,6 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
               (
               helper text
               )
-            </span>
-          </div>
-          <div
-            className="AccordionToggle__container--right"
-          >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
             </span>
           </div>
         </div>
@@ -408,6 +384,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
+        disabled={false}
         onClick={[Function]}
         type="button"
       >
@@ -415,7 +392,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -441,7 +418,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
             <span
               className="AccordionToggle__title"
             >
-              Accordion Toggle #1
+              Accordion Toggle
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -454,11 +431,6 @@ exports[`Storyshots Components/Accordion Default 1`] = `
           <div
             className="AccordionToggle__container--right"
           >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
             <span
               className="AccordionToggle__chevron-right"
             >
@@ -509,6 +481,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
+        disabled={false}
         onClick={[Function]}
         type="button"
       >
@@ -516,7 +489,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -542,7 +515,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
             <span
               className="AccordionToggle__title"
             >
-              Accordion Toggle #2
+              Accordion Toggle
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -555,11 +528,6 @@ exports[`Storyshots Components/Accordion Default 1`] = `
           <div
             className="AccordionToggle__container--right"
           >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
             <span
               className="AccordionToggle__chevron-right"
             >
@@ -625,6 +593,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
+        disabled={false}
         onClick={[Function]}
         type="button"
       >
@@ -632,7 +601,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -658,7 +627,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
             <span
               className="AccordionToggle__title"
             >
-              Accordion Toggle #1
+              Accordion Toggle
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -671,11 +640,6 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
           <div
             className="AccordionToggle__container--right"
           >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
             <span
               className="AccordionToggle__chevron-right"
             >
@@ -726,6 +690,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
+        disabled={false}
         onClick={[Function]}
         type="button"
       >
@@ -733,7 +698,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -759,7 +724,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
             <span
               className="AccordionToggle__title"
             >
-              Accordion Toggle #2
+              Accordion Toggle
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -772,11 +737,6 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
           <div
             className="AccordionToggle__container--right"
           >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
             <span
               className="AccordionToggle__chevron-right"
             >
@@ -844,12 +804,12 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__title"
             >
-              Accordion Toggle -- Disabled
+              Accordion Toggle -- disabled
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -862,91 +822,6 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
           <div
             className="AccordionToggle__container--right"
           >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
-            <span
-              className="AccordionToggle__chevron-right"
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-chevron-up fa-w-14 "
-                data-icon="chevron-up"
-                data-prefix="fas"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 448 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-      </button>
-      <div
-        aria-expanded={null}
-        className="AccordionCollapse accordion-collapse collapse"
-      >
-        <div
-          className="AccordionCollapse__container"
-        >
-          <ul>
-            <li>
-              Item 1
-            </li>
-            <li>
-              Item 2
-            </li>
-            <li>
-              Item 3
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div
-      className="AccordionItem accordion-item"
-    >
-      <button
-        className="AccordionToggle collapsed"
-        onClick={[Function]}
-        type="button"
-      >
-        <div
-          className="AccordionToggle__container"
-        >
-          <div
-            className="AccordionToggle__container--left"
-          >
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle #2
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
-            </span>
-          </div>
-          <div
-            className="AccordionToggle__container--right"
-          >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
             <span
               className="AccordionToggle__chevron-right"
             >
@@ -1015,6 +890,7 @@ exports[`Storyshots Components/Accordion In Card 1`] = `
       >
         <button
           className="AccordionToggle collapsed"
+          disabled={false}
           onClick={[Function]}
           type="button"
         >
@@ -1022,50 +898,24 @@ exports[`Storyshots Components/Accordion In Card 1`] = `
             className="AccordionToggle__container"
           >
             <div
-              className="AccordionToggle__container--left"
+              className="AccordionToggle__container--content"
             >
-              <span
-                className="AccordionToggle__leading-icon"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="svg-inline--fa fa-credit-card fa-w-18 "
-                  data-icon="credit-card"
-                  data-prefix="far"
-                  focusable="false"
-                  role="img"
-                  style={Object {}}
-                  viewBox="0 0 576 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
-                    fill="currentColor"
-                    style={Object {}}
-                  />
-                </svg>
-              </span>
               <span
                 className="AccordionToggle__title"
               >
-                Accordion Toggle #1
+                Accordion Toggle
               </span>
               <span
                 className="AccordionToggle__helper-text"
               >
                 (
-                helper text
+                with cardPadding
                 )
               </span>
             </div>
             <div
               className="AccordionToggle__container--right"
             >
-              <span
-                className="AccordionToggle__label"
-              >
-                3 Items Selected
-              </span>
               <span
                 className="AccordionToggle__chevron-right"
               >
@@ -1092,11 +942,14 @@ exports[`Storyshots Components/Accordion In Card 1`] = `
         </button>
         <div
           aria-expanded={null}
-          className="AccordionCollapse accordion-collapse collapse"
+          className="AccordionCollapse accordion-collapse collapse show"
         >
           <div
             className="AccordionCollapse__container"
           >
+            <p>
+              This text is aligned with the content of other Card components
+            </p>
             <ul>
               <li>
                 Item 1
@@ -1111,6 +964,20 @@ exports[`Storyshots Components/Accordion In Card 1`] = `
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <br />
+  <section
+    className="Card Card--lg"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        Card title
+      </h2>
     </div>
   </section>
 </div>
@@ -1132,6 +999,7 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
+        disabled={false}
         onClick={[Function]}
         type="button"
       >
@@ -1139,12 +1007,12 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__title"
             >
-              Accordion Toggle #1
+              Accordion Toggle
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -1157,11 +1025,6 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
           <div
             className="AccordionToggle__container--right"
           >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
             <span
               className="AccordionToggle__chevron-right"
             >
@@ -1211,6 +1074,7 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
+        disabled={false}
         onClick={[Function]}
         type="button"
       >
@@ -1218,12 +1082,12 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
           className="AccordionToggle__container"
         >
           <div
-            className="AccordionToggle__container--left"
+            className="AccordionToggle__container--content"
           >
             <span
               className="AccordionToggle__title"
             >
-              Accordion Toggle #2
+              Accordion Toggle
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -1236,11 +1100,6 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
           <div
             className="AccordionToggle__container--right"
           >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
             <span
               className="AccordionToggle__chevron-right"
             >
@@ -19838,6 +19697,87 @@ exports[`Storyshots Components/ToggleInput Default 1`] = `
         className="react-toggle-screenreader-only"
         disabled={false}
         id="1"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        type="checkbox"
+        value="false"
+      />
+    </div>
+    <span>
+      Label
+    </span>
+  </label>
+</div>
+`;
+
+exports[`Storyshots Components/ToggleInput Disabled 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <label
+    className="ToggleInput__label ToggleInput__label--disabled"
+    htmlFor="2"
+  >
+    <div
+      className="react-toggle react-toggle--disabled"
+      onClick={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+    >
+      <div
+        className="react-toggle-track"
+      >
+        <div
+          className="react-toggle-track-check"
+        >
+          <svg
+            height="11"
+            viewBox="0 0 14 11"
+            width="14"
+          >
+            <title>
+              switch-check
+            </title>
+            <path
+              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+        <div
+          className="react-toggle-track-x"
+        >
+          <svg
+            height="10"
+            viewBox="0 0 10 10"
+            width="10"
+          >
+            <title>
+              switch-x
+            </title>
+            <path
+              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
+              fill="#fff"
+              fillRule="evenodd"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        className="react-toggle-thumb"
+      />
+      <input
+        checked={false}
+        className="react-toggle-screenreader-only"
+        disabled={true}
+        id="2"
         onBlur={[Function]}
         onChange={[Function]}
         onFocus={[Function]}

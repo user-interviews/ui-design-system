@@ -7,11 +7,15 @@ import RBAccordionItem from 'react-bootstrap/AccordionItem';
 import './AccordionItem.scss';
 
 const AccordionItem = ({
- borderless, children, className, ...props
+  borderless,
+  children,
+  // eslint-disable-next-line camelcase
+  UNSAFE_className,
+  ...props
 }) => (
   <RBAccordionItem
     className={classNames(
-      className,
+      UNSAFE_className,
       'AccordionItem',
       borderless && 'AccordionItem--borderless',
     )}
@@ -23,11 +27,11 @@ const AccordionItem = ({
 
 AccordionItem.propTypes = {
   borderless: PropTypes.bool,
-  className: PropTypes.string,
+  UNSAFE_className: PropTypes.string,
 };
 
 AccordionItem.defaultProps = {
   borderless: undefined,
-  className: undefined,
+  UNSAFE_className: undefined,
 };
 export default AccordionItem;
