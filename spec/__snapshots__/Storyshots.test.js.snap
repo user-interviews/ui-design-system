@@ -16,10 +16,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
-<<<<<<< release/1.34.0
         disabled={false}
-=======
->>>>>>> main
         onClick={[Function]}
         type="button"
       >
@@ -27,11 +24,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
           className="AccordionToggle__container"
         >
           <div
-<<<<<<< release/1.34.0
             className="AccordionToggle__container--content"
-=======
-            className="AccordionToggle__container--left"
->>>>>>> main
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -57,11 +50,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
             <span
               className="AccordionToggle__title"
             >
-<<<<<<< release/1.34.0
               Accordion Toggle
-=======
-              Accordion Toggle #1
->>>>>>> main
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -75,14 +64,6 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
             className="AccordionToggle__container--right"
           >
             <span
-<<<<<<< release/1.34.0
-=======
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
-            <span
->>>>>>> main
               className="AccordionToggle__chevron-right"
             >
               <svg
@@ -132,10 +113,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
-<<<<<<< release/1.34.0
         disabled={false}
-=======
->>>>>>> main
         onClick={[Function]}
         type="button"
       >
@@ -143,11 +121,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
           className="AccordionToggle__container"
         >
           <div
-<<<<<<< release/1.34.0
             className="AccordionToggle__container--content"
-=======
-            className="AccordionToggle__container--left"
->>>>>>> main
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -173,11 +147,7 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
             <span
               className="AccordionToggle__title"
             >
-<<<<<<< release/1.34.0
               Accordion Toggle
-=======
-              Accordion Toggle #2
->>>>>>> main
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -191,14 +161,6 @@ exports[`Storyshots Components/Accordion Borderless 1`] = `
             className="AccordionToggle__container--right"
           >
             <span
-<<<<<<< release/1.34.0
-=======
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
-            <span
->>>>>>> main
               className="AccordionToggle__chevron-right"
             >
               <svg
@@ -263,10 +225,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
-<<<<<<< release/1.34.0
         disabled={false}
-=======
->>>>>>> main
         onClick={[Function]}
         type="button"
       >
@@ -274,11 +233,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
           className="AccordionToggle__container"
         >
           <div
-<<<<<<< release/1.34.0
             className="AccordionToggle__container--content"
-=======
-            className="AccordionToggle__container--left"
->>>>>>> main
           >
             <span
               className="AccordionToggle__chevron-left"
@@ -303,7 +258,6 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
             </span>
             <span
               className="AccordionToggle__title"
-<<<<<<< release/1.34.0
             >
               Accordion Toggle
             </span>
@@ -313,26 +267,6 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
               (
               helper text
               )
-=======
-            >
-              Accordion Toggle #1
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
-            </span>
-          </div>
-          <div
-            className="AccordionToggle__container--right"
-          >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
->>>>>>> main
             </span>
           </div>
         </div>
@@ -363,10 +297,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
-<<<<<<< release/1.34.0
         disabled={false}
-=======
->>>>>>> main
         onClick={[Function]}
         type="button"
       >
@@ -374,11 +305,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
           className="AccordionToggle__container"
         >
           <div
-<<<<<<< release/1.34.0
             className="AccordionToggle__container--content"
-=======
-            className="AccordionToggle__container--left"
->>>>>>> main
           >
             <span
               className="AccordionToggle__chevron-left"
@@ -404,11 +331,7 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
             <span
               className="AccordionToggle__title"
             >
-<<<<<<< release/1.34.0
               Accordion Toggle
-=======
-              Accordion Toggle #2
->>>>>>> main
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -418,18 +341,6 @@ exports[`Storyshots Components/Accordion Chevron Left 1`] = `
               )
             </span>
           </div>
-<<<<<<< release/1.34.0
-=======
-          <div
-            className="AccordionToggle__container--right"
-          >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
-          </div>
->>>>>>> main
         </div>
       </button>
       <div
@@ -473,10 +384,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
-<<<<<<< release/1.34.0
         disabled={false}
-=======
->>>>>>> main
         onClick={[Function]}
         type="button"
       >
@@ -484,11 +392,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
           className="AccordionToggle__container"
         >
           <div
-<<<<<<< release/1.34.0
             className="AccordionToggle__container--content"
-=======
-            className="AccordionToggle__container--left"
->>>>>>> main
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -514,11 +418,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
             <span
               className="AccordionToggle__title"
             >
-<<<<<<< release/1.34.0
               Accordion Toggle
-=======
-              Accordion Toggle #1
->>>>>>> main
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -532,18 +432,8 @@ exports[`Storyshots Components/Accordion Default 1`] = `
             className="AccordionToggle__container--right"
           >
             <span
-<<<<<<< release/1.34.0
               className="AccordionToggle__chevron-right"
             >
-=======
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
-            <span
-              className="AccordionToggle__chevron-right"
-            >
->>>>>>> main
               <svg
                 aria-hidden="true"
                 className="svg-inline--fa fa-chevron-up fa-w-14 "
@@ -591,10 +481,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
-<<<<<<< release/1.34.0
         disabled={false}
-=======
->>>>>>> main
         onClick={[Function]}
         type="button"
       >
@@ -602,11 +489,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
           className="AccordionToggle__container"
         >
           <div
-<<<<<<< release/1.34.0
             className="AccordionToggle__container--content"
-=======
-            className="AccordionToggle__container--left"
->>>>>>> main
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -632,11 +515,7 @@ exports[`Storyshots Components/Accordion Default 1`] = `
             <span
               className="AccordionToggle__title"
             >
-<<<<<<< release/1.34.0
               Accordion Toggle
-=======
-              Accordion Toggle #2
->>>>>>> main
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -650,14 +529,6 @@ exports[`Storyshots Components/Accordion Default 1`] = `
             className="AccordionToggle__container--right"
           >
             <span
-<<<<<<< release/1.34.0
-=======
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
-            <span
->>>>>>> main
               className="AccordionToggle__chevron-right"
             >
               <svg
@@ -722,10 +593,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
-<<<<<<< release/1.34.0
         disabled={false}
-=======
->>>>>>> main
         onClick={[Function]}
         type="button"
       >
@@ -733,11 +601,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
           className="AccordionToggle__container"
         >
           <div
-<<<<<<< release/1.34.0
             className="AccordionToggle__container--content"
-=======
-            className="AccordionToggle__container--left"
->>>>>>> main
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -763,11 +627,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
             <span
               className="AccordionToggle__title"
             >
-<<<<<<< release/1.34.0
               Accordion Toggle
-=======
-              Accordion Toggle #1
->>>>>>> main
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -781,18 +641,8 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
             className="AccordionToggle__container--right"
           >
             <span
-<<<<<<< release/1.34.0
               className="AccordionToggle__chevron-right"
             >
-=======
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
-            <span
-              className="AccordionToggle__chevron-right"
-            >
->>>>>>> main
               <svg
                 aria-hidden="true"
                 className="svg-inline--fa fa-chevron-up fa-w-14 "
@@ -840,10 +690,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
-<<<<<<< release/1.34.0
         disabled={false}
-=======
->>>>>>> main
         onClick={[Function]}
         type="button"
       >
@@ -851,11 +698,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
           className="AccordionToggle__container"
         >
           <div
-<<<<<<< release/1.34.0
             className="AccordionToggle__container--content"
-=======
-            className="AccordionToggle__container--left"
->>>>>>> main
           >
             <span
               className="AccordionToggle__leading-icon"
@@ -881,11 +724,7 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
             <span
               className="AccordionToggle__title"
             >
-<<<<<<< release/1.34.0
               Accordion Toggle
-=======
-              Accordion Toggle #2
->>>>>>> main
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -899,18 +738,8 @@ exports[`Storyshots Components/Accordion Default Open 1`] = `
             className="AccordionToggle__container--right"
           >
             <span
-<<<<<<< release/1.34.0
               className="AccordionToggle__chevron-right"
             >
-=======
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
-            <span
-              className="AccordionToggle__chevron-right"
-            >
->>>>>>> main
               <svg
                 aria-hidden="true"
                 className="svg-inline--fa fa-chevron-up fa-w-14 "
@@ -975,20 +804,12 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
           className="AccordionToggle__container"
         >
           <div
-<<<<<<< release/1.34.0
             className="AccordionToggle__container--content"
-=======
-            className="AccordionToggle__container--left"
->>>>>>> main
           >
             <span
               className="AccordionToggle__title"
             >
-<<<<<<< release/1.34.0
               Accordion Toggle -- disabled
-=======
-              Accordion Toggle -- Disabled
->>>>>>> main
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -1002,14 +823,6 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
             className="AccordionToggle__container--right"
           >
             <span
-<<<<<<< release/1.34.0
-=======
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
-            <span
->>>>>>> main
               className="AccordionToggle__chevron-right"
             >
               <svg
@@ -1054,7 +867,6 @@ exports[`Storyshots Components/Accordion Disabled 1`] = `
         </div>
       </div>
     </div>
-<<<<<<< release/1.34.0
   </div>
 </div>
 `;
@@ -1166,207 +978,6 @@ exports[`Storyshots Components/Accordion In Card 1`] = `
       >
         Card title
       </h2>
-=======
-    <div
-      className="AccordionItem accordion-item"
-    >
-      <button
-        className="AccordionToggle collapsed"
-        onClick={[Function]}
-        type="button"
-      >
-        <div
-          className="AccordionToggle__container"
-        >
-          <div
-            className="AccordionToggle__container--left"
-          >
-            <span
-              className="AccordionToggle__title"
-            >
-              Accordion Toggle #2
-            </span>
-            <span
-              className="AccordionToggle__helper-text"
-            >
-              (
-              helper text
-              )
-            </span>
-          </div>
-          <div
-            className="AccordionToggle__container--right"
-          >
-            <span
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
-            <span
-              className="AccordionToggle__chevron-right"
-            >
-              <svg
-                aria-hidden="true"
-                className="svg-inline--fa fa-chevron-up fa-w-14 "
-                data-icon="chevron-up"
-                data-prefix="fas"
-                focusable="false"
-                role="img"
-                style={Object {}}
-                viewBox="0 0 448 512"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"
-                  fill="currentColor"
-                  style={Object {}}
-                />
-              </svg>
-            </span>
-          </div>
-        </div>
-      </button>
-      <div
-        aria-expanded={null}
-        className="AccordionCollapse accordion-collapse collapse"
-      >
-        <div
-          className="AccordionCollapse__container"
-        >
-          <ul>
-            <li>
-              Item 1
-            </li>
-            <li>
-              Item 2
-            </li>
-            <li>
-              Item 3
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Accordion In Card 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <section
-    className="Card Card--lg Card--no-padding"
-  >
-    <div
-      className="Accordion accordion accordion-flush"
-    >
-      <div
-        className="AccordionItem AccordionItem--borderless accordion-item"
-      >
-        <button
-          className="AccordionToggle collapsed"
-          onClick={[Function]}
-          type="button"
-        >
-          <div
-            className="AccordionToggle__container"
-          >
-            <div
-              className="AccordionToggle__container--left"
-            >
-              <span
-                className="AccordionToggle__leading-icon"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="svg-inline--fa fa-credit-card fa-w-18 "
-                  data-icon="credit-card"
-                  data-prefix="far"
-                  focusable="false"
-                  role="img"
-                  style={Object {}}
-                  viewBox="0 0 576 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M527.9 32H48.1C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48.1 48h479.8c26.6 0 48.1-21.5 48.1-48V80c0-26.5-21.5-48-48.1-48zM54.1 80h467.8c3.3 0 6 2.7 6 6v42H48.1V86c0-3.3 2.7-6 6-6zm467.8 352H54.1c-3.3 0-6-2.7-6-6V256h479.8v170c0 3.3-2.7 6-6 6zM192 332v40c0 6.6-5.4 12-12 12h-72c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12zm192 0v40c0 6.6-5.4 12-12 12H236c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12z"
-                    fill="currentColor"
-                    style={Object {}}
-                  />
-                </svg>
-              </span>
-              <span
-                className="AccordionToggle__title"
-              >
-                Accordion Toggle #1
-              </span>
-              <span
-                className="AccordionToggle__helper-text"
-              >
-                (
-                helper text
-                )
-              </span>
-            </div>
-            <div
-              className="AccordionToggle__container--right"
-            >
-              <span
-                className="AccordionToggle__label"
-              >
-                3 Items Selected
-              </span>
-              <span
-                className="AccordionToggle__chevron-right"
-              >
-                <svg
-                  aria-hidden="true"
-                  className="svg-inline--fa fa-chevron-up fa-w-14 "
-                  data-icon="chevron-up"
-                  data-prefix="fas"
-                  focusable="false"
-                  role="img"
-                  style={Object {}}
-                  viewBox="0 0 448 512"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M240.971 130.524l194.343 194.343c9.373 9.373 9.373 24.569 0 33.941l-22.667 22.667c-9.357 9.357-24.522 9.375-33.901.04L224 227.495 69.255 381.516c-9.379 9.335-24.544 9.317-33.901-.04l-22.667-22.667c-9.373-9.373-9.373-24.569 0-33.941L207.03 130.525c9.372-9.373 24.568-9.373 33.941-.001z"
-                    fill="currentColor"
-                    style={Object {}}
-                  />
-                </svg>
-              </span>
-            </div>
-          </div>
-        </button>
-        <div
-          aria-expanded={null}
-          className="AccordionCollapse accordion-collapse collapse"
-        >
-          <div
-            className="AccordionCollapse__container"
-          >
-            <ul>
-              <li>
-                Item 1
-              </li>
-              <li>
-                Item 2
-              </li>
-              <li>
-                Item 3
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
->>>>>>> main
     </div>
   </section>
 </div>
@@ -1388,10 +999,7 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
-<<<<<<< release/1.34.0
         disabled={false}
-=======
->>>>>>> main
         onClick={[Function]}
         type="button"
       >
@@ -1399,20 +1007,12 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
           className="AccordionToggle__container"
         >
           <div
-<<<<<<< release/1.34.0
             className="AccordionToggle__container--content"
-=======
-            className="AccordionToggle__container--left"
->>>>>>> main
           >
             <span
               className="AccordionToggle__title"
             >
-<<<<<<< release/1.34.0
               Accordion Toggle
-=======
-              Accordion Toggle #1
->>>>>>> main
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -1426,14 +1026,6 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
             className="AccordionToggle__container--right"
           >
             <span
-<<<<<<< release/1.34.0
-=======
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
-            <span
->>>>>>> main
               className="AccordionToggle__chevron-right"
             >
               <svg
@@ -1482,10 +1074,7 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
     >
       <button
         className="AccordionToggle collapsed"
-<<<<<<< release/1.34.0
         disabled={false}
-=======
->>>>>>> main
         onClick={[Function]}
         type="button"
       >
@@ -1493,20 +1082,12 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
           className="AccordionToggle__container"
         >
           <div
-<<<<<<< release/1.34.0
             className="AccordionToggle__container--content"
-=======
-            className="AccordionToggle__container--left"
->>>>>>> main
           >
             <span
               className="AccordionToggle__title"
             >
-<<<<<<< release/1.34.0
               Accordion Toggle
-=======
-              Accordion Toggle #2
->>>>>>> main
             </span>
             <span
               className="AccordionToggle__helper-text"
@@ -1520,14 +1101,6 @@ exports[`Storyshots Components/Accordion Separate 1`] = `
             className="AccordionToggle__container--right"
           >
             <span
-<<<<<<< release/1.34.0
-=======
-              className="AccordionToggle__label"
-            >
-              3 Items Selected
-            </span>
-            <span
->>>>>>> main
               className="AccordionToggle__chevron-right"
             >
               <svg
@@ -1696,7 +1269,6 @@ exports[`Storyshots Components/Alert Error 1`] = `
       >
         Error message
       </div>
-<<<<<<< release/1.34.0
     </div>
   </div>
 </div>
@@ -1784,26 +1356,8 @@ exports[`Storyshots Components/Alert Info 1`] = `
           </g>
         </svg>
       </span>
-=======
->>>>>>> main
     </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Alert Info 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="Alert Alert-info"
-  >
     <div
-<<<<<<< release/1.34.0
       className="Alert__content"
     >
       <div
@@ -1835,10 +1389,6 @@ exports[`Storyshots Components/Alert Success 1`] = `
     <div
       className="Alert__icon"
     >
-=======
-      className="Alert__icon"
-    >
->>>>>>> main
       <span
         className="fa-layers fa-fw"
       >
@@ -1876,19 +1426,13 @@ exports[`Storyshots Components/Alert Success 1`] = `
         </svg>
         <svg
           aria-hidden="true"
-<<<<<<< release/1.34.0
           className="svg-inline--fa fa-check fa-w-16 "
           data-icon="check"
-=======
-          className="svg-inline--fa fa-info fa-w-6 "
-          data-icon="info"
->>>>>>> main
           data-prefix="fas"
           focusable="false"
           role="img"
           style={
             Object {
-<<<<<<< release/1.34.0
               "transformOrigin": "0.5em 0.5em",
             }
           }
@@ -1956,317 +1500,40 @@ exports[`Storyshots Components/Alert Warning 1`] = `
         style={
           Object {
             "transformOrigin": "0.5625em 0.5em",
-=======
-              "transformOrigin": "0.1875em 0.5em",
-            }
->>>>>>> main
           }
-          viewBox="0 0 192 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            style={Object {}}
-            transform="translate(96 256)"
-          >
-<<<<<<< release/1.34.0
-            <path
-              d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
-              fill="currentColor"
-=======
-            <g
->>>>>>> main
-              style={Object {}}
-              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
-            >
-              <path
-                d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"
-                fill="currentColor"
-                style={Object {}}
-                transform="translate(-96 -256)"
-              />
-            </g>
-          </g>
-        </svg>
-      </span>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
+        }
+        viewBox="0 0 576 512"
+        xmlns="http://www.w3.org/2000/svg"
       >
-<<<<<<< release/1.34.0
-        Warning title
-=======
-        Info title
->>>>>>> main
-      </div>
-      <div
-        className="Alert__message"
-      >
-<<<<<<< release/1.34.0
-        Warning message
-=======
-        Info message
->>>>>>> main
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-<<<<<<< release/1.34.0
-exports[`Storyshots Components/Alert With Call To Action 1`] = `
-=======
-exports[`Storyshots Components/Alert Success 1`] = `
->>>>>>> main
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-<<<<<<< release/1.34.0
-  <p>
-    Default CTA rendered by component
-  </p>
-=======
->>>>>>> main
-  <div
-    className="Alert Alert-success"
-  >
-    <div
-      className="Alert__icon"
-    >
-      <span
-        className="fa-layers fa-fw"
-      >
-<<<<<<< release/1.34.0
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-circle fa-w-16 "
-          data-icon="circle"
-=======
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-circle fa-w-16 "
-          data-icon="circle"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "transformOrigin": "0.5em 0.5em",
-            }
-          }
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            style={Object {}}
-            transform="translate(256 256)"
-          >
-            <g
-              style={Object {}}
-              transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
-            >
-              <path
-                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
-                fill="currentColor"
-                style={Object {}}
-                transform="translate(-256 -256)"
-              />
-            </g>
-          </g>
-        </svg>
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-check fa-w-16 "
-          data-icon="check"
->>>>>>> main
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "transformOrigin": "0.5em 0.5em",
-            }
-          }
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            style={Object {}}
-            transform="translate(256 256)"
-          >
-            <g
-              style={Object {}}
-<<<<<<< release/1.34.0
-              transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
-            >
-              <path
-                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
-=======
-              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
-            >
-              <path
-                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
->>>>>>> main
-                fill="currentColor"
-                style={Object {}}
-                transform="translate(-256 -256)"
-              />
-            </g>
-          </g>
-        </svg>
-<<<<<<< release/1.34.0
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-check fa-w-16 "
-          data-icon="check"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "transformOrigin": "0.5em 0.5em",
-            }
-=======
-      </span>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-        Success title
-      </div>
-      <div
-        className="Alert__message"
-      >
-        Success message
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Alert Warning 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="Alert Alert-warning"
-  >
-    <div
-      className="Alert__icon"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-exclamation-triangle fa-w-18 "
-        data-icon="exclamation-triangle"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={
-          Object {
-            "transformOrigin": "0.5625em 0.5em",
->>>>>>> main
-          }
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            style={Object {}}
-            transform="translate(256 256)"
-          >
-<<<<<<< release/1.34.0
-            <g
-=======
-            <path
-              d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
-              fill="currentColor"
->>>>>>> main
-              style={Object {}}
-              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
-            >
-              <path
-                d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"
-                fill="currentColor"
-                style={Object {}}
-                transform="translate(-256 -256)"
-              />
-            </g>
-          </g>
-        </svg>
-      </span>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-<<<<<<< release/1.34.0
-        Success title
-=======
-        Warning title
->>>>>>> main
-      </div>
-      <div
-        className="Alert__message"
-      >
-<<<<<<< release/1.34.0
-        Success message
-      </div>
-    </div>
-    <div
-      className="Alert__action"
-    >
-      <a
-        className="Alert-success primary-action"
-        href="https://www.userinterviews.com/"
-        rel="noopener noreferrer"
-      >
-        Primary action
-      </a>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-        aria-label="close success"
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-11 "
-          data-icon="times"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
+        <g
           style={Object {}}
-          viewBox="0 0 352 512"
-          xmlns="http://www.w3.org/2000/svg"
+          transform="translate(288 256)"
         >
-          <path
-            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-            fill="currentColor"
+          <g
             style={Object {}}
-          />
-        </svg>
-      </button>
+            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+          >
+            <path
+              d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
+      </svg>
     </div>
-  </div>
-=======
+    <div
+      className="Alert__content"
+    >
+      <div
+        className="Alert__title"
+      >
+        Warning title
+      </div>
+      <div
+        className="Alert__message"
+      >
         Warning message
       </div>
     </div>
@@ -2285,835 +1552,6 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   <p>
     Default CTA rendered by component
   </p>
->>>>>>> main
-  <div
-    className="Alert Alert-info"
-  >
-    <div
-      className="Alert__icon"
-    >
-      <span
-        className="fa-layers fa-fw"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-circle fa-w-16 "
-          data-icon="circle"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "transformOrigin": "0.5em 0.5em",
-            }
-          }
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            style={Object {}}
-            transform="translate(256 256)"
-          >
-            <g
-              style={Object {}}
-              transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
-            >
-              <path
-                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
-                fill="currentColor"
-                style={Object {}}
-                transform="translate(-256 -256)"
-              />
-            </g>
-          </g>
-        </svg>
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-info fa-w-6 "
-          data-icon="info"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "transformOrigin": "0.1875em 0.5em",
-            }
-          }
-          viewBox="0 0 192 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            style={Object {}}
-            transform="translate(96 256)"
-          >
-            <g
-              style={Object {}}
-              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
-            >
-              <path
-                d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"
-                fill="currentColor"
-                style={Object {}}
-                transform="translate(-96 -256)"
-              />
-            </g>
-          </g>
-        </svg>
-      </span>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-<<<<<<< release/1.34.0
-        Info title
-=======
-        Success title
->>>>>>> main
-      </div>
-      <div
-        className="Alert__message"
-      >
-<<<<<<< release/1.34.0
-        Info message
-=======
-        Success message
->>>>>>> main
-      </div>
-    </div>
-    <div
-      className="Alert__action"
-    >
-      <a
-<<<<<<< release/1.34.0
-        className="Alert-info primary-action"
-=======
-        className="Alert-success primary-action"
->>>>>>> main
-        href="https://www.userinterviews.com/"
-        rel="noopener noreferrer"
-      >
-        Primary action
-      </a>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-        aria-label="close info"
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-11 "
-          data-icon="times"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 352 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-    </div>
-  </div>
-  <div
-<<<<<<< release/1.34.0
-    className="Alert Alert-announcement"
-=======
-    className="Alert Alert-info"
->>>>>>> main
-  >
-    <div
-      className="Alert__icon"
-    >
-<<<<<<< release/1.34.0
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-bullhorn fa-w-18 "
-        data-icon="bullhorn"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={
-          Object {
-            "transformOrigin": "0.5625em 0.5em",
-          }
-        }
-        viewBox="0 0 576 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          style={Object {}}
-          transform="translate(288 256)"
-        >
-          <g
-            style={Object {}}
-            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
-          >
-            <path
-              d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
-              fill="currentColor"
-              style={Object {}}
-              transform="translate(-288 -256)"
-            />
-          </g>
-        </g>
-      </svg>
-=======
-      <span
-        className="fa-layers fa-fw"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-circle fa-w-16 "
-          data-icon="circle"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "transformOrigin": "0.5em 0.5em",
-            }
-          }
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            style={Object {}}
-            transform="translate(256 256)"
-          >
-            <g
-              style={Object {}}
-              transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
-            >
-              <path
-                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
-                fill="currentColor"
-                style={Object {}}
-                transform="translate(-256 -256)"
-              />
-            </g>
-          </g>
-        </svg>
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-info fa-w-6 "
-          data-icon="info"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "transformOrigin": "0.1875em 0.5em",
-            }
-          }
-          viewBox="0 0 192 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            style={Object {}}
-            transform="translate(96 256)"
-          >
-            <g
-              style={Object {}}
-              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
-            >
-              <path
-                d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"
-                fill="currentColor"
-                style={Object {}}
-                transform="translate(-96 -256)"
-              />
-            </g>
-          </g>
-        </svg>
-      </span>
->>>>>>> main
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-<<<<<<< release/1.34.0
-        Announcement title
-=======
-        Info title
->>>>>>> main
-      </div>
-      <div
-        className="Alert__message"
-      >
-<<<<<<< release/1.34.0
-        Announcement message
-=======
-        Info message
->>>>>>> main
-      </div>
-    </div>
-    <div
-      className="Alert__action"
-    >
-      <a
-<<<<<<< release/1.34.0
-        className="Alert-announcement primary-action"
-=======
-        className="Alert-info primary-action"
->>>>>>> main
-        href="https://www.userinterviews.com/"
-        rel="noopener noreferrer"
-      >
-        Primary action
-      </a>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-<<<<<<< release/1.34.0
-        aria-label="close announcement"
-=======
-        aria-label="close info"
->>>>>>> main
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-11 "
-          data-icon="times"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 352 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-    </div>
-  </div>
-  <div
-<<<<<<< release/1.34.0
-    className="Alert Alert-error"
-=======
-    className="Alert Alert-announcement"
->>>>>>> main
-  >
-    <div
-      className="Alert__icon"
-    >
-      <svg
-        aria-hidden="true"
-<<<<<<< release/1.34.0
-        className="svg-inline--fa fa-exclamation-triangle fa-w-18 "
-        data-icon="exclamation-triangle"
-=======
-        className="svg-inline--fa fa-bullhorn fa-w-18 "
-        data-icon="bullhorn"
->>>>>>> main
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={
-          Object {
-            "transformOrigin": "0.5625em 0.5em",
-          }
-        }
-        viewBox="0 0 576 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          style={Object {}}
-          transform="translate(288 256)"
-        >
-          <g
-            style={Object {}}
-            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
-          >
-            <path
-<<<<<<< release/1.34.0
-              d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
-=======
-              d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
->>>>>>> main
-              fill="currentColor"
-              style={Object {}}
-              transform="translate(-288 -256)"
-            />
-          </g>
-        </g>
-      </svg>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-<<<<<<< release/1.34.0
-        Error title
-      </div>
-      <div
-        className="Alert__message"
-        tabIndex={-1}
-      >
-        Error message
-=======
-        Announcement title
-      </div>
-      <div
-        className="Alert__message"
-      >
-        Announcement message
->>>>>>> main
-      </div>
-    </div>
-    <div
-      className="Alert__action"
-    >
-      <a
-<<<<<<< release/1.34.0
-        className="Alert-error primary-action"
-=======
-        className="Alert-announcement primary-action"
->>>>>>> main
-        href="https://www.userinterviews.com/"
-        rel="noopener noreferrer"
-      >
-        Primary action
-      </a>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-<<<<<<< release/1.34.0
-        aria-label="close error"
-=======
-        aria-label="close announcement"
->>>>>>> main
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-11 "
-          data-icon="times"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 352 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-<<<<<<< release/1.34.0
-    </div>
-  </div>
-  <div
-    className="Alert Alert-warning"
-  >
-    <div
-      className="Alert__icon"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-exclamation-triangle fa-w-18 "
-        data-icon="exclamation-triangle"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={
-          Object {
-            "transformOrigin": "0.5625em 0.5em",
-          }
-        }
-        viewBox="0 0 576 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          style={Object {}}
-          transform="translate(288 256)"
-        >
-          <g
-            style={Object {}}
-            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
-          >
-            <path
-              d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
-              fill="currentColor"
-              style={Object {}}
-              transform="translate(-288 -256)"
-            />
-          </g>
-        </g>
-      </svg>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-        Warning title
-      </div>
-      <div
-        className="Alert__message"
-      >
-        Warning message
-      </div>
-=======
->>>>>>> main
-    </div>
-  </div>
-  <div
-    className="Alert Alert-error"
-  >
-    <div
-<<<<<<< release/1.34.0
-      className="Alert__action"
-    >
-      <a
-        className="Alert-warning primary-action"
-        href="https://www.userinterviews.com/"
-        rel="noopener noreferrer"
-      >
-        Primary action
-      </a>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-        aria-label="close warning"
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-11 "
-          data-icon="times"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 352 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-    </div>
-  </div>
-  <p>
-    Custom CTA via 
-    <code>
-      message
-    </code>
-     prop
-  </p>
-  <div
-    className="Alert Alert-announcement"
-  >
-    <div
-      className="Alert__icon"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-bullhorn fa-w-18 "
-        data-icon="bullhorn"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={
-          Object {
-            "transformOrigin": "0.5625em 0.5em",
-          }
-        }
-        viewBox="0 0 576 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          style={Object {}}
-          transform="translate(288 256)"
-        >
-          <g
-            style={Object {}}
-            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
-          >
-            <path
-              d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
-              fill="currentColor"
-              style={Object {}}
-              transform="translate(-288 -256)"
-            />
-          </g>
-        </g>
-      </svg>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-        Connect to Google Calendar to create reminders automatically
-      </div>
-      <div
-        className="Alert__message"
-      >
-        <div>
-          When you confirm a session we’ll automatically add an event and reminders to your Google Calendar.
-        </div>
-        <button
-          style={
-            Object {
-              "backgroundColor": "#4285F4",
-              "border": "1px solid #4285F4",
-              "borderRadius": "4px",
-              "color": "#FFFFFF",
-              "fontSize": "0.875rem",
-              "fontWeight": "bold",
-              "lineHeight": "1.25rem",
-              "margin": "16px 0",
-              "padding": "8px 16px",
-              "whiteSpace": "nowrap",
-            }
-          }
-          type="button"
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-google fa-w-16 "
-            data-icon="google"
-            data-prefix="fab"
-            focusable="false"
-            role="img"
-            style={
-              Object {
-                "height": "1rem",
-                "marginRight": "0.5rem",
-              }
-            }
-            viewBox="0 0 488 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-          Connect Google Calendar
-        </button>
-      </div>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-        aria-label="close announcement"
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-11 "
-          data-icon="times"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 352 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-    </div>
-  </div>
-  <p>
-    Custom CTA via 
-    <code>
-      action
-    </code>
-     prop
-  </p>
-  <div
-    className="Alert Alert-announcement"
-  >
-    <div
-      className="Alert__icon"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-bullhorn fa-w-18 "
-        data-icon="bullhorn"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={
-          Object {
-            "transformOrigin": "0.5625em 0.5em",
-          }
-        }
-        viewBox="0 0 576 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          style={Object {}}
-          transform="translate(288 256)"
-        >
-          <g
-            style={Object {}}
-            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
-          >
-            <path
-              d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
-              fill="currentColor"
-              style={Object {}}
-              transform="translate(-288 -256)"
-            />
-          </g>
-        </g>
-      </svg>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-        Connect to Google Calendar to create reminders automatically
-      </div>
-      <div
-        className="Alert__message"
-      >
-        When you confirm a session we’ll automatically
-      add an event and reminders to your Google Calendar.
-      </div>
-    </div>
-    <div
-      className="Alert__action"
-    >
-      <button
-        style={
-          Object {
-            "backgroundColor": "#4285F4",
-            "border": "1px solid #4285F4",
-            "borderRadius": "4px",
-            "color": "#FFFFFF",
-            "fontSize": "0.875rem",
-            "fontWeight": "bold",
-            "lineHeight": "1.25rem",
-            "margin": "16px 0",
-            "padding": "8px 16px",
-            "whiteSpace": "nowrap",
-          }
-        }
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-google fa-w-16 "
-          data-icon="google"
-          data-prefix="fab"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "height": "1rem",
-              "marginRight": "0.5rem",
-            }
-          }
-          viewBox="0 0 488 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-        Connect Google Calendar
-      </button>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-        aria-label="close announcement"
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-times fa-w-11 "
-          data-icon="times"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 352 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Alert With Dismiss 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
   <div
     className="Alert Alert-success"
   >
@@ -3195,13 +1633,24 @@ exports[`Storyshots Components/Alert With Dismiss 1`] = `
       <div
         className="Alert__title"
       >
-        Default title
+        Success title
       </div>
       <div
         className="Alert__message"
       >
-        Default message
+        Success message
       </div>
+    </div>
+    <div
+      className="Alert__action"
+    >
+      <a
+        className="Alert-success primary-action"
+        href="https://www.userinterviews.com/"
+        rel="noopener noreferrer"
+      >
+        Primary action
+      </a>
     </div>
     <div
       className="Alert__close"
@@ -3232,1043 +1681,232 @@ exports[`Storyshots Components/Alert With Dismiss 1`] = `
       </button>
     </div>
   </div>
-</div>
-`;
-
-exports[`Storyshots Components/Avatar Large 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div>
-    <div
-      aria-hidden={false}
-      className="Avatar Avatar--large"
-    >
-      <div
-        className="Avatar__circle"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar Avatar--large"
-    >
-      <div
-        className="Avatar__circle ui-mod ui-mod--1"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar Avatar--large"
-    >
-      <div
-        className="Avatar__circle ui-mod ui-mod--2"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar Avatar--large"
-    >
-      <div
-        className="Avatar__circle ui-mod ui-mod--3"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar Avatar--large"
-    >
-      <div
-        className="Avatar__circle ui-mod ui-mod--4"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar Avatar--large"
-    >
-      <div
-        className="Avatar__circle ui-mod ui-mod--5"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar Avatar--large"
-    >
-      <div
-        className="Avatar__circle ui-mod ui-mod--0"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Avatar Small 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div>
-    <div
-      aria-hidden={false}
-      className="Avatar"
-    >
-      <div
-        className="Avatar__circle"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar"
-    >
-      <div
-        className="Avatar__circle ui-mod ui-mod--1"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar"
-    >
-      <div
-        className="Avatar__circle ui-mod ui-mod--2"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar"
-    >
-      <div
-        className="Avatar__circle ui-mod ui-mod--3"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar"
-    >
-      <div
-        className="Avatar__circle ui-mod ui-mod--4"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar"
-    >
-      <div
-        className="Avatar__circle ui-mod ui-mod--5"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar"
-    >
-      <div
-        className="Avatar__circle ui-mod ui-mod--0"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Avatar With Alert 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div>
-    <div
-      aria-hidden={false}
-      className="Avatar Avatar--large"
-    >
-      <div
-        className="Avatar__circle"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-      <div
-        className="Avatar__alert"
-      />
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar"
-    >
-      <div
-        className="Avatar__circle"
-      >
-        <span
-          className="Avatar__circle__initials"
-        >
-          RR
-        </span>
-      </div>
-      <div
-        className="Avatar__alert"
-      />
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Avatar With Image 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div>
-    <div
-      aria-hidden={false}
-      className="Avatar Avatar--large"
-    >
-      <div
-        className="Avatar__circle"
-      >
-        <img
-          alt=""
-          onError={[Function]}
-          src="https://avatars.dicebear.com/api/avataaars/1234.svg"
-        />
-      </div>
-    </div>
-    <div
-      aria-hidden={false}
-      className="Avatar"
-    >
-      <div
-        className="Avatar__circle"
-      >
-        <img
-          alt=""
-          onError={[Function]}
-          src="https://avatars.dicebear.com/api/avataaars/1234.svg"
-        />
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Button Brands 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <button
-    className="Button btn btn-brand-google btn-sm"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-google fa-w-16 icon-left"
-      data-icon="google"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 488 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Google
-  </button>
-   
-  <button
-    className="Button btn btn-brand-google btn-sm"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-google fa-w-16 icon-left"
-      data-icon="google"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 488 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Google
-  </button>
-   
-  <button
-    className="Button btn btn-brand-google btn-md"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-google fa-w-16 icon-left"
-      data-icon="google"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 488 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Google
-  </button>
-   
-  <button
-    className="Button btn btn-brand-google btn-md"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-google fa-w-16 icon-left"
-      data-icon="google"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 488 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Google
-  </button>
   <div
-    style={
-      Object {
-        "margin": ".5rem",
-      }
-    }
-  />
-  <button
-    className="Button btn btn-brand-facebook btn-sm"
-    disabled={false}
-    type="button"
+    className="Alert Alert-info"
   >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-facebook fa-w-16 icon-left"
-      data-icon="facebook"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      className="Alert__icon"
     >
-      <path
-        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Facebook
-  </button>
-   
-  <button
-    className="Button btn btn-brand-facebook btn-sm"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-facebook fa-w-16 icon-left"
-      data-icon="facebook"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+      <span
+        className="fa-layers fa-fw"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-circle fa-w-16 "
+          data-icon="circle"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.5em 0.5em",
+            }
+          }
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(256 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
+            >
+              <path
+                d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-256 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-info fa-w-6 "
+          data-icon="info"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={
+            Object {
+              "transformOrigin": "0.1875em 0.5em",
+            }
+          }
+          viewBox="0 0 192 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g
+            style={Object {}}
+            transform="translate(96 256)"
+          >
+            <g
+              style={Object {}}
+              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
+            >
+              <path
+                d="M20 424.229h20V279.771H20c-11.046 0-20-8.954-20-20V212c0-11.046 8.954-20 20-20h112c11.046 0 20 8.954 20 20v212.229h20c11.046 0 20 8.954 20 20V492c0 11.046-8.954 20-20 20H20c-11.046 0-20-8.954-20-20v-47.771c0-11.046 8.954-20 20-20zM96 0C56.235 0 24 32.235 24 72s32.235 72 72 72 72-32.235 72-72S135.764 0 96 0z"
+                fill="currentColor"
+                style={Object {}}
+                transform="translate(-96 -256)"
+              />
+            </g>
+          </g>
+        </svg>
+      </span>
+    </div>
+    <div
+      className="Alert__content"
     >
-      <path
-        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Facebook
-  </button>
-   
-  <button
-    className="Button btn btn-brand-facebook btn-md"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-facebook fa-w-16 icon-left"
-      data-icon="facebook"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+      <div
+        className="Alert__title"
+      >
+        Info title
+      </div>
+      <div
+        className="Alert__message"
+      >
+        Info message
+      </div>
+    </div>
+    <div
+      className="Alert__action"
     >
-      <path
-        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Facebook
-  </button>
-   
-  <button
-    className="Button btn btn-brand-facebook btn-md"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-facebook fa-w-16 icon-left"
-      data-icon="facebook"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
+      <a
+        className="Alert-info primary-action"
+        href="https://www.userinterviews.com/"
+        rel="noopener noreferrer"
+      >
+        Primary action
+      </a>
+    </div>
+    <div
+      className="Alert__close"
     >
-      <path
-        d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Facebook
-  </button>
-   
+      <button
+        aria-label="close info"
+        className="close"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-times fa-w-11 "
+          data-icon="times"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 352 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
   <div
-    style={
-      Object {
-        "margin": ".5rem",
-      }
-    }
-  />
-  <button
-    className="Button btn btn-brand-linkedin btn-sm"
-    disabled={false}
-    type="button"
+    className="Alert Alert-announcement"
   >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-linkedin fa-w-14 icon-left"
-      data-icon="linkedin"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 448 512"
-      xmlns="http://www.w3.org/2000/svg"
+    <div
+      className="Alert__icon"
     >
-      <path
-        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    LinkedIn
-  </button>
-   
-  <button
-    className="Button btn btn-brand-linkedin btn-sm"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-linkedin fa-w-14 icon-left"
-      data-icon="linkedin"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 448 512"
-      xmlns="http://www.w3.org/2000/svg"
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-bullhorn fa-w-18 "
+        data-icon="bullhorn"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={
+          Object {
+            "transformOrigin": "0.5625em 0.5em",
+          }
+        }
+        viewBox="0 0 576 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          style={Object {}}
+          transform="translate(288 256)"
+        >
+          <g
+            style={Object {}}
+            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+          >
+            <path
+              d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div
+      className="Alert__content"
     >
-      <path
-        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    LinkedIn
-  </button>
-   
-  <button
-    className="Button btn btn-brand-linkedin btn-md"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-linkedin fa-w-14 icon-left"
-      data-icon="linkedin"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 448 512"
-      xmlns="http://www.w3.org/2000/svg"
+      <div
+        className="Alert__title"
+      >
+        Announcement title
+      </div>
+      <div
+        className="Alert__message"
+      >
+        Announcement message
+      </div>
+    </div>
+    <div
+      className="Alert__action"
     >
-      <path
-        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    LinkedIn
-  </button>
-   
-  <button
-    className="Button btn btn-brand-linkedin btn-md"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-linkedin fa-w-14 icon-left"
-      data-icon="linkedin"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 448 512"
-      xmlns="http://www.w3.org/2000/svg"
+      <a
+        className="Alert-announcement primary-action"
+        href="https://www.userinterviews.com/"
+        rel="noopener noreferrer"
+      >
+        Primary action
+      </a>
+    </div>
+    <div
+      className="Alert__close"
     >
-      <path
-        d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    LinkedIn
-  </button>
+      <button
+        aria-label="close announcement"
+        className="close"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-times fa-w-11 "
+          data-icon="times"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 352 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+    </div>
+  </div>
   <div
-    style={
-      Object {
-        "margin": ".5rem",
-      }
-    }
-  />
-  <button
-    className="Button btn btn-brand-twitter btn-sm"
-    disabled={false}
-    type="button"
+    className="Alert Alert-error"
   >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-twitter fa-w-16 icon-left"
-      data-icon="twitter"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Twitter
-  </button>
-   
-  <button
-    className="Button btn btn-brand-twitter btn-sm"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-twitter fa-w-16 icon-left"
-      data-icon="twitter"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Twitter
-  </button>
-   
-  <button
-    className="Button btn btn-brand-twitter btn-md"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-twitter fa-w-16 icon-left"
-      data-icon="twitter"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Twitter
-  </button>
-   
-  <button
-    className="Button btn btn-brand-twitter btn-md"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-twitter fa-w-16 icon-left"
-      data-icon="twitter"
-      data-prefix="fab"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Twitter
-  </button>
-</div>
-`;
-
-exports[`Storyshots Components/Button Danger 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <button
-    className="Button btn btn-danger btn-sm"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Delete
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    className="Button btn btn-outline-danger btn-sm"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Delete
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    className="Button btn btn-danger btn-sm"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Delete
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    className="Button btn btn-danger btn-md"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Delete
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    className="Button btn btn-outline-danger btn-md"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Delete
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    className="Button btn btn-danger btn-md"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Delete
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Components/Button Link 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <button
-    className="Button btn btn-link btn-sm"
-    disabled={false}
-    type="button"
-  >
-    Send
-  </button>
-   
-  <button
-    className="Button btn btn-link btn-sm"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-paper-plane fa-w-16 icon-left"
-      data-icon="paper-plane"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-=======
+    <div
       className="Alert__icon"
     >
       <svg
@@ -5884,7 +3522,6 @@ exports[`Storyshots Components/Button Link 1`] = `
       viewBox="0 0 512 512"
       xmlns="http://www.w3.org/2000/svg"
     >
->>>>>>> main
       <path
         d="M440 6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192 464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z"
         fill="currentColor"
@@ -7361,100 +4998,11 @@ exports[`Storyshots Components/Dropdown Sizes 1`] = `
       aria-expanded={false}
       aria-label="dropdown-toggle"
       className="DropdownToggle dropdown-toggle btn btn-outline-primary btn-md"
-<<<<<<< release/1.34.0
-=======
       disabled={false}
       onClick={[Function]}
       type="button"
     >
       Medium toggle
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Dropdown Unstyled Toggle 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="Dropdown dropdown"
-  >
-    <button
-      aria-expanded={false}
-      aria-label="dropdown-toggle"
-      className="DropdownToggle DropdownToggle--unstyled DropdownToggle--no-caret btn btn-primary"
->>>>>>> main
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      <div
-        style={
-          Object {
-            "alignItems": "center",
-            "backgroundColor": "#444444",
-            "display": "flex",
-            "flexDirection": "row",
-            "justifyContent": "space-between",
-            "padding": "12px",
-            "width": "200px",
-          }
-        }
-      >
-        <div>
-          <div
-            style={
-              Object {
-                "fontSize": "18px",
-                "fontWeight": "700",
-              }
-            }
-          >
-            Team A
-          </div>
-          <div
-            style={
-              Object {
-                "backgroundColor": "#444444",
-                "fontSize": "12px",
-                "fontWeight": "400",
-              }
-            }
-          >
-            Organization
-          </div>
-        </div>
-        <div
-          style={
-            Object {
-              "marginRight": "4px",
-            }
-          }
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-chevron-down fa-w-14 "
-            data-icon="chevron-down"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 448 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </div>
-      </div>
     </button>
   </div>
 </div>
@@ -22163,7 +19711,6 @@ exports[`Storyshots Components/ToggleInput Default 1`] = `
 </div>
 `;
 
-<<<<<<< release/1.34.0
 exports[`Storyshots Components/ToggleInput Disabled 1`] = `
 <div
   style={
@@ -22245,8 +19792,6 @@ exports[`Storyshots Components/ToggleInput Disabled 1`] = `
 </div>
 `;
 
-=======
->>>>>>> main
 exports[`Storyshots Components/ToggleInput Label Left 1`] = `
 <div
   style={
