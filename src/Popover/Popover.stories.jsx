@@ -13,7 +13,7 @@ export default {
   title: 'Components/Popover',
   component: Popover,
   subcomponents: {
-    PopoverBody,
+    PopoverBody, OverlayTrigger,
   },
   parameters: {
     docs: {
