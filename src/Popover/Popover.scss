@@ -2,6 +2,10 @@
 
 .Popover {
   box-shadow: $ux-elevations-20;
-
+  border: none;
   max-width: unset;
+
+  .popover-arrow {
+    display: none;
+  }
 }
