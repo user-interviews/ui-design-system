@@ -15,6 +15,15 @@
 
   &.btn-sm {
     border-radius: $ux-border-radius;
+    height: $btn-sm-height;
+  }
+
+  &.btn-md {
+    height: $btn-md-height;
+  }
+
+  &.btn-lg {
+    height: $btn-lg-height;
   }
 
   &.btn-primary {

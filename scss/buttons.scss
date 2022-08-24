@@ -22,6 +22,11 @@ $primary: $ux-emerald-600;
 $danger: $ux-red;
 $warning: $ux-yellow-400;
 
+// Default height adjustments - divisible by 4
+$btn-sm-height: 2rem;
+$btn-md-height: 2.25rem;
+$btn-lg-height: 2.5rem;
+
 @mixin btn-focus-outline {
   box-shadow: none !important;
   outline: 0.125rem solid $ux-blue-500;
