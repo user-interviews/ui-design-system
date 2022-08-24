@@ -74,6 +74,34 @@ export const Primary = () => (
     >
       Confirm
     </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
+      size="lg"
+      trailingIcon={faCaretDown}
+      variant="primary"
+    >
+      Confirm
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
+      size="lg"
+      trailingIcon={faCaretDown}
+      variant="outline-primary"
+    >
+      Confirm
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="lg"
+      trailingIcon={faCaretDown}
+      variant="primary"
+    >
+      Confirm
+    </Button>
   </>
 );
 
@@ -129,6 +157,34 @@ export const Danger = () => (
       disabled
       leadingIcon={faFileAlt}
       size="md"
+      trailingIcon={faCaretDown}
+      variant="danger"
+    >
+      Delete
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
+      size="lg"
+      trailingIcon={faCaretDown}
+      variant="danger"
+    >
+      Delete
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
+      size="lg"
+      trailingIcon={faCaretDown}
+      variant="outline-danger"
+    >
+      Delete
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="lg"
       trailingIcon={faCaretDown}
       variant="danger"
     >
@@ -194,6 +250,34 @@ export const Warning = () => (
     >
       Edit
     </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
+      size="lg"
+      trailingIcon={faCaretDown}
+      variant="warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
+      size="lg"
+      trailingIcon={faCaretDown}
+      variant="outline-warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="lg"
+      trailingIcon={faCaretDown}
+      variant="warning"
+    >
+      Edit
+    </Button>
   </>
 );
 
@@ -249,6 +333,34 @@ export const Transparent = () => (
       disabled
       leadingIcon={faFileAlt}
       size="md"
+      trailingIcon={faCaretDown}
+      variant="transparent"
+    >
+      Skip
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
+      size="lg"
+      trailingIcon={faCaretDown}
+      variant="transparent"
+    >
+      Skip
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt}
+      size="lg"
+      trailingIcon={faCaretDown}
+      variant="outline-transparent"
+    >
+      Skip
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="lg"
       trailingIcon={faCaretDown}
       variant="transparent"
     >
