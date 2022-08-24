@@ -14,13 +14,13 @@ const AccordionToggle = ({
   children,
   chevronLeft,
   chevronRight,
-  className,
   disabled,
   eventKey,
   helperText,
-  label,
   leadingIcon,
   title,
+  // eslint-disable-next-line camelcase
+  UNSAFE_className,
   ...props
 }) => {
   const { activeEventKey } = React.useContext(AccordionContext);
@@ -52,10 +52,10 @@ const AccordionToggle = ({
     <button
       className={
         classNames(
-          className,
+          UNSAFE_className,
           'AccordionToggle',
-          isCollapsed && 'collapsed',
-          disabled && 'AccordionToggle--disabled',
+          { collapsed: isCollapsed },
+          { 'AccordionToggle--disabled': disabled },
         )
       }
       disabled={disabled}
@@ -64,7 +64,7 @@ const AccordionToggle = ({
       {...props}
     >
       <div className="AccordionToggle__container">
-        <div className="AccordionToggle__container--left">
+        <div className="AccordionToggle__container--content">
           {chevronLeft && (
             <span className="AccordionToggle__chevron-left">
               <FontAwesomeIcon icon={faChevronUp} />
@@ -83,16 +83,13 @@ const AccordionToggle = ({
           )}
           {children}
         </div>
-        <div className="AccordionToggle__container--right">
-          {label && (
-            <span className="AccordionToggle__label">{label}</span>
-          )}
-          {chevronRight && !chevronLeft && (
+        {chevronRight && !chevronLeft && (
+          <div className="AccordionToggle__container--right">
             <span className="AccordionToggle__chevron-right">
               <FontAwesomeIcon icon={faChevronUp} />
             </span>
-          )}
-        </div>
+          </div>
+        )}
       </div>
     </button>
   );
@@ -107,27 +104,25 @@ AccordionToggle.propTypes = {
    Aligns the Chevron icon to the right (default)
   */
   chevronRight: PropTypes.bool,
-  className: PropTypes.string,
-   /**
-  A unique key used to control this item's collapse/expand.
-  */
+  /**
+   A unique key used to control this item's collapse/expand.
+   */
   disabled: PropTypes.bool,
   eventKey: PropTypes.string.isRequired,
   helperText: PropTypes.string,
-  label: PropTypes.string,
   leadingIcon: PropTypes.object,
   title: PropTypes.string,
+  UNSAFE_className: PropTypes.string,
 };
 
 AccordionToggle.defaultProps = {
   chevronLeft: false,
   chevronRight: true,
-  className: undefined,
   disabled: undefined,
   helperText: undefined,
-  label: undefined,
   leadingIcon: undefined,
   title: undefined,
+  UNSAFE_className: undefined,
 };
 
 export default AccordionToggle;

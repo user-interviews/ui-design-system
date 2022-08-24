@@ -8,12 +8,13 @@ import './AccordionCollapse.scss';
 
 const AccordionCollapse = ({
   children,
-  className,
   eventKey,
+  // eslint-disable-next-line camelcase
+  UNSAFE_className,
   ...props
 }) => (
   <RBAccordionCollapse
-    className={classNames(className, 'AccordionCollapse')}
+    className={classNames(UNSAFE_className, 'AccordionCollapse')}
     eventKey={eventKey}
     {...props}
   >
@@ -24,15 +25,15 @@ const AccordionCollapse = ({
 );
 
 AccordionCollapse.propTypes = {
-  className: PropTypes.string,
-   /**
-  A unique key used to control this item's collapse/expand.
-  */
+  /**
+   A unique key used to control this item's collapse/expand.
+   */
   eventKey: PropTypes.string.isRequired,
+  UNSAFE_className: PropTypes.string,
 };
 
 AccordionCollapse.defaultProps = {
-  className: undefined,
+  UNSAFE_className: undefined,
 };
 
 export default AccordionCollapse;
