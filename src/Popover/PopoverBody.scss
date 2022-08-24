@@ -1,0 +1,8 @@
+@import '../../scss/theme.scss';
+
+.PopoverBody {
+
+  &--card {
+    padding: $card-spacing;
+  }
+}
