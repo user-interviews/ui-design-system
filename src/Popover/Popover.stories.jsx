@@ -11,16 +11,22 @@ export default {
 };
 
 const popover = (props) => (
-  <Popover id="popover-basic" style={{ boxShadow: '0rem 0.13rem 0.3rem rgba(0, 0, 0, 0.1)' }} {...props}>
+  <Popover id="popover-basic" {...props}>
     <PopoverBody>
-      And here's some <strong>amazing</strong> content. It's very engaging.
-      right?
+      <div style={{ fontSize: '0.875rem' }}>
+        <div style={{ fontSize: '1rem', fontWeight: '700' }}>Filter on participants</div>
+        <ul>
+          <li>Automate scheduling, messages, and annoying logistics</li>
+          <li>Build your own panel to recruit for user research projects</li>
+          <li>Track participant research activity in one place</li>
+        </ul>
+      </div>
     </PopoverBody>
   </Popover>
 );
 
 export const Default = () => (
   <OverlayTrigger overlay={popover} placement="bottom" trigger="click">
-    <Button variant="primary">Click me to see</Button>
+    <Button variant="primary">Filter</Button>
   </OverlayTrigger>
 );
