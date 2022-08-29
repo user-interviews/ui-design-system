@@ -21,7 +21,6 @@ const AccordionToggle = ({
   title,
   // eslint-disable-next-line camelcase
   UNSAFE_className,
-  ...props
 }) => {
   const { activeEventKey } = React.useContext(AccordionContext);
 
@@ -61,7 +60,6 @@ const AccordionToggle = ({
       disabled={disabled}
       type="button"
       onClick={decoratedOnClick}
-      {...props}
     >
       <div className="AccordionToggle__container">
         <div className="AccordionToggle__container--content">

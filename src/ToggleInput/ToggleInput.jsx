@@ -17,7 +17,6 @@ const ToggleInput = ({
   onToggle,
   // eslint-disable-next-line camelcase
   UNSAFE_className,
-  ...props
 }) => (
   <label
     className={classNames(
@@ -38,7 +37,6 @@ const ToggleInput = ({
       name={name}
       value={String(isChecked)}
       onChange={onToggle}
-      {...props}
     />
     {!labelLeft ? <span>{labelText}</span> : null}
   </label>
