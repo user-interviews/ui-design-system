@@ -8025,6 +8025,7 @@ exports[`Storyshots Components/Pill With Close 1`] = `
   >
     Text
     <button
+      aria-label="Remove undefined"
       className="Pill__button--close"
       onClick={[Function]}
       type="button"
