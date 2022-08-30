@@ -118,11 +118,24 @@ export const CustomOptionWithCheckbox = () => (
 );
 
 export const CustomOptionWithIndeterminateCheckbox = () => {
-  const inputEl = useRef(null);
+  const optionsArr = [
+    { label: 'Riley Researcher', value: 1 },
+    { label: 'Patty Participant', value: 2 },
+    { label: 'Patrick Participant (indeterminate)', value: 3 },
+    { label: 'Polly Participant (indeterminate)', value: 4 },
+  ];
+
+  let inputRef;
+
+  const createInputRef = () => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    inputRef = useRef();
+    return inputRef;
+  };
 
   return (
     <Fragment>
-      <label htmlFor="multi-select" id="select-label-custom-option">Custom option with indeterminate checkbox</label>
+      <label htmlFor="multi-select" id="select-label-custom-option-indeterminate">Custom option with indeterminate checkbox</label>
       <SingleSelect
         aria-labelledby="select-label"
         closeMenuOnSelect={false}
@@ -130,15 +143,16 @@ export const CustomOptionWithIndeterminateCheckbox = () => {
           Option: (props) => (
             <Option
               {...props}
-              indeterminate
-              ref={inputEl}
+              // eslint-disable-next-line react/prop-types
+              indeterminate={props.value > 2}
+              ref={createInputRef()}
             />
           ),
         }}
         hideSelectedOptions={false}
         id="multi-select"
         isMulti
-        options={options}
+        options={optionsArr}
         onChange={onChange}
       />
     </Fragment>
