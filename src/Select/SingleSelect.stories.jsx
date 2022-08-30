@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useRef } from 'react';
 import { action } from '@storybook/addon-actions';
 
 import {
@@ -116,6 +116,34 @@ export const CustomOptionWithCheckbox = () => (
     />
   </Fragment>
 );
+
+export const CustomOptionWithIndeterminateCheckbox = () => {
+  const inputEl = useRef(null);
+
+  return (
+    <Fragment>
+      <label htmlFor="multi-select" id="select-label-custom-option">Custom option with indeterminate checkbox</label>
+      <SingleSelect
+        aria-labelledby="select-label"
+        closeMenuOnSelect={false}
+        components={{
+          Option: (props) => (
+            <Option
+              {...props}
+              indeterminate
+              ref={inputEl}
+            />
+          ),
+        }}
+        hideSelectedOptions={false}
+        id="multi-select"
+        isMulti
+        options={options}
+        onChange={onChange}
+      />
+    </Fragment>
+  );
+};
 
 export const CustomValueContainer = () => (
   <Fragment>

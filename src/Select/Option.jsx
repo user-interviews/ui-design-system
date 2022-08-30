@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { components } from 'react-select';
 
 import CheckboxButton from 'src/CheckboxButton';
@@ -13,18 +13,20 @@ import './Option.scss';
 // See: https://react-select.com/components#replaceable-components
 
 /* eslint-disable react/prop-types */
-const Option = ({ ...props }) => (
+const Option = forwardRef(({ indeterminate, ...props }, ref) => (
   <components.Option {...props}>
     <div className="Option">
       <label>{props.label}</label>
       <CheckboxButton
         checked={props.isSelected}
         id={props.label}
+        indeterminate={indeterminate}
+        ref={ref}
         onChange={() => null}
       />
     </div>
   </components.Option>
-);
+  ));
 /* eslint-enable react/prop-types */
 
 export default Option;
