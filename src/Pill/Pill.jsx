@@ -37,7 +37,12 @@ const Pill = ({
     { children }
     { text }
     { onClose && (
-      <button className="Pill__button--close" type="button" onClick={() => onClose(id)}>
+      <button
+        aria-label={`Remove ${text}`}
+        className="Pill__button--close"
+        type="button"
+        onClick={() => onClose(id)}
+      >
         <FontAwesomeIcon icon={faTimes} />
       </button>
         )}
