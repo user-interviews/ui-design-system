@@ -276,7 +276,6 @@ export const BorderedColumnFullWidth = () => (
     id="with-checkbox-button-group-5"
     label="Legend"
     labelHelperText="helper text"
-    style={{ width: "100%" }}
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.COLUMN}
   >

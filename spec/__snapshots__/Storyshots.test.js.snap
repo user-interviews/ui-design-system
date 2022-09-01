@@ -5274,6 +5274,130 @@ exports[`Storyshots Components/Form Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Column Full Width 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <fieldset
+    className="FormGroup"
+    id="with-checkbox-button-group-5"
+  >
+    <legend
+      className="InputLegend"
+      htmlFor="checkbox-button-group"
+    >
+      Legend
+      <span
+        className="InputLegend__helper-text"
+      >
+         (
+        helper text
+        )
+      </span>
+    </legend>
+    <div
+      className="CheckboxButtonGroup CheckboxButtonGroup--column--full-width"
+      id="with-checkbox-button-group-5-button-group"
+    >
+      <label
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-1-5"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-1-5"
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          Label 1
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+        </span>
+      </label>
+      <label
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-2-5"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-2-5"
+            onChange={[Function]}
+            type="checkbox"
+            value="2"
+          />
+          Label 2
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+        </span>
+      </label>
+      <label
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-3-5"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-3-5"
+            onChange={[Function]}
+            type="checkbox"
+            value="3"
+          />
+          Label 3
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+        </span>
+      </label>
+    </div>
+  </fieldset>
+</div>
+`;
+
 exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`] = `
 <div
   style={
@@ -5450,95 +5574,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default Row 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <fieldset
-    className="FormGroup FormGroup--inline"
-    id="with-checkbox-button-group-1"
-  >
-    <legend
-      className="InputLegend"
-      htmlFor="checkbox-button-group"
-    >
-      Legend
-      <span
-        className="InputLegend__helper-text"
-      >
-         (
-        helper text
-        )
-      </span>
-    </legend>
-    <div
-      className="CheckboxButtonGroup CheckboxButtonGroup--row CheckboxButtonGroup--row--compact"
-      id="with-checkbox-button-group-1-button-group"
-    >
-      <label
-        className="FormControlLabel"
-        htmlFor="value-1-1"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            id="value-1-1"
-            onChange={[Function]}
-            type="checkbox"
-            value="1"
-          />
-          Label 1
-        </span>
-      </label>
-      <label
-        className="FormControlLabel"
-        htmlFor="value-2-1"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            id="value-2-1"
-            onChange={[Function]}
-            type="checkbox"
-            value="2"
-          />
-          Label 2
-        </span>
-      </label>
-      <label
-        className="FormControlLabel"
-        htmlFor="value-3-1"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            id="value-3-1"
-            onChange={[Function]}
-            type="checkbox"
-            value="3"
-          />
-          Label 3
-        </span>
-      </label>
-    </div>
-  </fieldset>
-</div>
-`;
-
-exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description 1`] = `
+exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Column 1`] = `
 <div
   style={
     Object {
@@ -5779,6 +5815,94 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Row
           className="FormControlLabel__children"
         >
           This is where the description goes
+        </span>
+      </label>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Row 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <fieldset
+    className="FormGroup FormGroup--inline"
+    id="with-checkbox-button-group-1"
+  >
+    <legend
+      className="InputLegend"
+      htmlFor="checkbox-button-group"
+    >
+      Legend
+      <span
+        className="InputLegend__helper-text"
+      >
+         (
+        helper text
+        )
+      </span>
+    </legend>
+    <div
+      className="CheckboxButtonGroup CheckboxButtonGroup--row CheckboxButtonGroup--row--compact"
+      id="with-checkbox-button-group-1-button-group"
+    >
+      <label
+        className="FormControlLabel"
+        htmlFor="value-1-1"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-1-1"
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          Label 1
+        </span>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-2-1"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-2-1"
+            onChange={[Function]}
+            type="checkbox"
+            value="2"
+          />
+          Label 2
+        </span>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-3-1"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-3-1"
+            onChange={[Function]}
+            type="checkbox"
+            value="3"
+          />
+          Label 3
         </span>
       </label>
     </div>
@@ -6591,6 +6715,136 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
 </div>
 `;
 
+exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Column Full Width 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <fieldset
+    className="FormGroup"
+    id="with-radio-button-group-5"
+  >
+    <legend
+      className="InputLegend"
+      htmlFor="radio-button-group"
+    >
+      Legend
+      <span
+        className="InputLegend__helper-text"
+      >
+         (
+        helper text
+        )
+      </span>
+    </legend>
+    <div
+      className="RadioButtonGroup RadioButtonGroup--column--full-width"
+      name=""
+    >
+      <label
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-1-6"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-1-6"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="1"
+          />
+          Label 1
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+        </span>
+      </label>
+      <label
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-2-6"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-2-6"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="2"
+          />
+          Label 2
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+        </span>
+      </label>
+      <label
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-3-6"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-3-6"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="3"
+          />
+          Label 3
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+        </span>
+      </label>
+    </div>
+  </fieldset>
+</div>
+`;
+
 exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] = `
 <div
   style={
@@ -6779,101 +7033,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Form Elements/RadioButtonGroup Default Row 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <fieldset
-    className="FormGroup FormGroup--inline"
-    id="with-radio-button-group-2"
-  >
-    <legend
-      className="InputLegend"
-      htmlFor="radio-button-group"
-    >
-      Legend
-      <span
-        className="InputLegend__helper-text"
-      >
-         (
-        helper text
-        )
-      </span>
-    </legend>
-    <div
-      className="RadioButtonGroup RadioButtonGroup--row RadioButtonGroup--row--compact"
-      name=""
-    >
-      <label
-        className="FormControlLabel"
-        htmlFor="value-1-2"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            disabled={false}
-            id="value-1-2"
-            name=""
-            onChange={[Function]}
-            type="radio"
-            value="1"
-          />
-          Label 1
-        </span>
-      </label>
-      <label
-        className="FormControlLabel"
-        htmlFor="value-2-2"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            disabled={false}
-            id="value-2-2"
-            name=""
-            onChange={[Function]}
-            type="radio"
-            value="2"
-          />
-          Label 2
-        </span>
-      </label>
-      <label
-        className="FormControlLabel"
-        htmlFor="value-3-2"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            disabled={false}
-            id="value-3-2"
-            name=""
-            onChange={[Function]}
-            type="radio"
-            value="3"
-          />
-          Label 3
-        </span>
-      </label>
-    </div>
-  </fieldset>
-</div>
-`;
-
-exports[`Storyshots Components/Form Elements/RadioButtonGroup Description 1`] = `
+exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Column 1`] = `
 <div
   style={
     Object {
@@ -7126,6 +7286,100 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Row 1`
           className="FormControlLabel__children"
         >
           This is where the description goes
+        </span>
+      </label>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Storyshots Components/Form Elements/RadioButtonGroup Row 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <fieldset
+    className="FormGroup FormGroup--inline"
+    id="with-radio-button-group-2"
+  >
+    <legend
+      className="InputLegend"
+      htmlFor="radio-button-group"
+    >
+      Legend
+      <span
+        className="InputLegend__helper-text"
+      >
+         (
+        helper text
+        )
+      </span>
+    </legend>
+    <div
+      className="RadioButtonGroup RadioButtonGroup--row RadioButtonGroup--row--compact"
+      name=""
+    >
+      <label
+        className="FormControlLabel"
+        htmlFor="value-1-2"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-1-2"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="1"
+          />
+          Label 1
+        </span>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-2-2"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-2-2"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="2"
+          />
+          Label 2
+        </span>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-3-2"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-3-2"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="3"
+          />
+          Label 3
         </span>
       </label>
     </div>
