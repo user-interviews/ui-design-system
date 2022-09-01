@@ -105,7 +105,7 @@ export const Default = () => {
   );
 };
 
-export const DefaultRow = () => (
+export const Row = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
@@ -178,12 +178,11 @@ export const BorderedRow = () => (
   </CheckboxButtonGroupComponent>
 );
 
-export const Description = () => (
+export const DescriptionColumn = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
     elementType="fieldset"
-    fullWidth
     id="with-checkbox-button-group-3"
     label="Legend"
     labelHelperText="helper text"
@@ -260,6 +259,52 @@ export const DescriptionRow = () => (
       Control={CheckboxButton}
       helperText="helper text"
       id="value-3-4"
+      text="Label 3"
+      value="3"
+    >
+      This is where the description goes
+    </FormControlLabel>
+  </CheckboxButtonGroupComponent>
+);
+
+export const BorderedColumnFullWidth = () => (
+  <CheckboxButtonGroupComponent
+    bordered={false}
+    defaultValue={[]}
+    elementType="fieldset"
+    fullWidth
+    id="with-checkbox-button-group-5"
+    label="Legend"
+    labelHelperText="helper text"
+    style={{ width: "100%" }}
+    labelHtmlFor="checkbox-button-group"
+    orientation={ORIENTATIONS.COLUMN}
+  >
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      helperText="helper text"
+      id="value-1-5"
+      text="Label 1"
+      value="1"
+    >
+      This is where the description goes
+    </FormControlLabel>
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      helperText="helper text"
+      id="value-2-5"
+      text="Label 2"
+      value="2"
+    >
+      This is where the description goes
+    </FormControlLabel>
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      helperText="helper text"
+      id="value-3-5"
       text="Label 3"
       value="3"
     >

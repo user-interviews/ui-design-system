@@ -1,6 +1,7 @@
 import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import CheckboxButtonGroup from './CheckboxButtonGroup';
 
-# Checkbox Button Group
+# CheckboxButtonGroup
 
 ##
 
@@ -12,16 +13,10 @@ import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
   <Story id="components-form-elements-checkboxbuttongroup--default"/>
 </Canvas>
 
-### When to use
-- Reason 1
-- Reason 2
-
-### When to not use
-- Reason 1
-- Reason 2
 
 ## Props
-- WIP
+
+<ArgsTable of={CheckboxButtonGroup} />
 
 ## Stories
 
@@ -33,7 +28,13 @@ import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
   <Story id="components-form-elements-checkboxbuttongroup--default"/>
 </Canvas>
 
-### Bordered
+### Row
+
+<Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--row"/>
+</Canvas>
+
+### Bordered Row
 
 - Multi-selection button. Only used in the context of Checkbox FormGroups.
 
@@ -41,12 +42,24 @@ import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
   <Story id="components-form-elements-checkboxbuttongroup--bordered-row"/>
 </Canvas>
 
-### Description
+### Description Column
 
 - Multi-selection button. Includes helper text and/or a description in addition to the default label.
 
 <Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--description-column"/>
+</Canvas>
+
+### Description Row
+
+<Canvas>
   <Story id="components-form-elements-checkboxbuttongroup--description-row"/>
+</Canvas>
+
+### Bordered Column Full Width
+
+<Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--bordered-column-full-width"/>
 </Canvas>
 
 ## Formatting
