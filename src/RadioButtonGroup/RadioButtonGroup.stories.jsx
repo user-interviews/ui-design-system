@@ -105,7 +105,7 @@ export const Default = () => {
   );
 };
 
-export const DefaultRow = () => (
+export const Row = () => (
   <RadioButtonGroupComponent
     bordered={false}
     defaultValue={null}
@@ -178,12 +178,11 @@ export const BorderedRow = () => (
   </RadioButtonGroupComponent>
 );
 
-export const Description = () => (
+export const DescriptionColumn = () => (
   <RadioButtonGroupComponent
     bordered={false}
     defaultValue={null}
     elementType="fieldset"
-    fullWidth
     id="with-radio-button-group-4"
     label="Legend"
     labelHelperText="helper text"
@@ -260,6 +259,51 @@ export const DescriptionRow = () => (
       Control={RadioButton}
       helperText="helper text"
       id="value-3-5"
+      text="Label 3"
+      value="3"
+    >
+      This is where the description goes
+    </FormControlLabel>
+  </RadioButtonGroupComponent>
+);
+
+export const BorderedColumnFullWidth = () => (
+  <RadioButtonGroupComponent
+    bordered={false}
+    defaultValue={null}
+    elementType="fieldset"
+    fullWidth
+    id="with-radio-button-group-5"
+    label="Legend"
+    labelHelperText="helper text"
+    labelHtmlFor="radio-button-group"
+    orientation={ORIENTATIONS.COLUMN}
+  >
+    <FormControlLabel
+      bordered
+      Control={RadioButton}
+      helperText="helper text"
+      id="value-1-6"
+      text="Label 1"
+      value="1"
+    >
+      This is where the description goes
+    </FormControlLabel>
+    <FormControlLabel
+      bordered
+      Control={RadioButton}
+      helperText="helper text"
+      id="value-2-6"
+      text="Label 2"
+      value="2"
+    >
+      This is where the description goes
+    </FormControlLabel>
+    <FormControlLabel
+      bordered
+      Control={RadioButton}
+      helperText="helper text"
+      id="value-3-6"
       text="Label 3"
       value="3"
     >
