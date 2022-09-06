@@ -15,6 +15,7 @@ export default function RadioButtonGroup({
   onChange,
 }) {
   const row = orientation === ORIENTATIONS.ROW;
+  const column = orientation === ORIENTATIONS.COLUMN;
 
   const handleChangeValue = (event) => {
     onChange(event.target.value);
@@ -30,6 +31,7 @@ export default function RadioButtonGroup({
           'RadioButtonGroup--row': row,
           'RadioButtonGroup--row--full-width': row && fullWidth,
           'RadioButtonGroup--row--compact': row && !fullWidth,
+          'RadioButtonGroup--column--full-width': column && fullWidth,
         },
       )}
       name={name}
