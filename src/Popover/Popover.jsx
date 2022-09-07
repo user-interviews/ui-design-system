@@ -9,10 +9,15 @@ import './Popover.scss';
 const Popover = React.forwardRef(({
   children,
   className,
+  size,
   ...props
 }, ref) => (
   <RBPopover
-    className={classNames(className, 'Popover')}
+    className={classNames(
+      className,
+      'Popover',
+      { [`Popover--${size}`]: size },
+    )}
     ref={ref}
     {...props}
   >
@@ -22,10 +27,12 @@ const Popover = React.forwardRef(({
 
 Popover.propTypes = {
   className: PropTypes.string,
+  size: PropTypes.oneOf(['sm', 'md']),
 };
 
 Popover.defaultProps = {
   className: undefined,
+  size: undefined,
 };
 
 export default Popover;

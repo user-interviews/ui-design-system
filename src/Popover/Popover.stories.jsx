@@ -66,7 +66,10 @@ export const Card = () => {
   return (
     <OverlayTrigger
       overlay={(
-        <Popover id="popover-basic" style={{ minWidth: '30rem' }}>
+        <Popover
+          id="popover-basic"
+          size={select('size', ['sm', 'md'], 'sm')}
+        >
           <PopoverBody variant="card">
             <h3 style={{ fontSize: '1rem', fontWeight: '700', marginBottom: '1.5rem' }}>Popover with Card styling</h3>
             <FormGroup

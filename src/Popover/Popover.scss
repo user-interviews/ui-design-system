@@ -12,4 +12,12 @@
   .popover-arrow {
     display: none;
   }
+
+  &--sm {
+    min-width: $card-width-sm;
+  }
+
+  &--md {
+    min-width: $card-width-md;
+  }
 }
