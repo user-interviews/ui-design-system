@@ -8473,7 +8473,7 @@ exports[`Storyshots Components/Popover Card 1`] = `
   }
 >
   <button
-    className="Button btn btn-outline-primary"
+    className="Button btn btn-primary"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -8498,6 +8498,25 @@ exports[`Storyshots Components/Popover Default 1`] = `
     type="button"
   >
     Filter
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Popover Placement 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Try different placements
   </button>
 </div>
 `;
@@ -19629,6 +19648,7 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
         >
           <button
             aria-controls="controlled-tabpane-two"
+            aria-selected={false}
             className="nav-link"
             data-rr-ui-event-key="two"
             disabled={false}
@@ -19647,6 +19667,7 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
         >
           <button
             aria-controls="controlled-tabpane-three"
+            aria-selected={false}
             className="nav-link"
             data-rr-ui-event-key="three"
             disabled={false}
@@ -19666,6 +19687,7 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
           <button
             aria-controls="controlled-tabpane-four"
             aria-disabled={true}
+            aria-selected={false}
             className="nav-link disabled"
             data-rr-ui-event-key="four"
             disabled={true}
@@ -19684,8 +19706,9 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
       >
         <div
           aria-labelledby="controlled-tab-one"
-          className="tab-pane active"
+          className="fade tab-pane active show"
           id="controlled-tabpane-one"
+          role="tabpanel"
         >
           <div
             style={
@@ -19699,8 +19722,9 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
         </div>
         <div
           aria-labelledby="controlled-tab-two"
-          className="tab-pane"
+          className="fade tab-pane"
           id="controlled-tabpane-two"
+          role="tabpanel"
         >
           <div
             style={
@@ -19714,8 +19738,9 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
         </div>
         <div
           aria-labelledby="controlled-tab-three"
-          className="tab-pane"
+          className="fade tab-pane"
           id="controlled-tabpane-three"
+          role="tabpanel"
         >
           <div
             style={
@@ -19729,8 +19754,9 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
         </div>
         <div
           aria-labelledby="controlled-tab-four"
-          className="tab-pane"
+          className="fade tab-pane"
           id="controlled-tabpane-four"
+          role="tabpanel"
         >
           <div
             style={
@@ -19789,6 +19815,7 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
         >
           <button
             aria-controls="uncontrolled-tabpane-two"
+            aria-selected={false}
             className="nav-link"
             data-rr-ui-event-key="two"
             disabled={false}
@@ -19807,6 +19834,7 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
         >
           <button
             aria-controls="uncontrolled-tabpane-three"
+            aria-selected={false}
             className="nav-link"
             data-rr-ui-event-key="three"
             disabled={false}
@@ -19826,6 +19854,7 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
           <button
             aria-controls="uncontrolled-tabpane-four"
             aria-disabled={true}
+            aria-selected={false}
             className="nav-link disabled"
             data-rr-ui-event-key="four"
             disabled={true}
@@ -19844,8 +19873,9 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
       >
         <div
           aria-labelledby="uncontrolled-tab-one"
-          className="tab-pane active"
+          className="fade tab-pane active show"
           id="uncontrolled-tabpane-one"
+          role="tabpanel"
         >
           <div
             style={
@@ -19859,8 +19889,9 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
         </div>
         <div
           aria-labelledby="uncontrolled-tab-two"
-          className="tab-pane"
+          className="fade tab-pane"
           id="uncontrolled-tabpane-two"
+          role="tabpanel"
         >
           <div
             style={
@@ -19874,8 +19905,9 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
         </div>
         <div
           aria-labelledby="uncontrolled-tab-three"
-          className="tab-pane"
+          className="fade tab-pane"
           id="uncontrolled-tabpane-three"
+          role="tabpanel"
         >
           <div
             style={
@@ -19889,8 +19921,9 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
         </div>
         <div
           aria-labelledby="uncontrolled-tab-four"
-          className="tab-pane"
+          className="fade tab-pane"
           id="uncontrolled-tabpane-four"
+          role="tabpanel"
         >
           <div
             style={
