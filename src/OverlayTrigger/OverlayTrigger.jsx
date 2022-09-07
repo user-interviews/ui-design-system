@@ -3,6 +3,24 @@ import PropTypes from 'prop-types';
 
 import { OverlayTrigger as RBOverlayTrigger } from 'react-bootstrap';
 
+export const OVERLAY_TRIGGER_PLACEMENT = [
+  'auto-start',
+  'auto',
+  'auto-end',
+  'top-start',
+  'top',
+  'top-end',
+  'right-start',
+  'right',
+  'right-end',
+  'bottom-end',
+  'bottom',
+  'bottom-start',
+  'left-end',
+  'left',
+  'left-start',
+];
+
 const OverlayTrigger = ({
   children,
   defaultShow,
@@ -53,23 +71,7 @@ OverlayTrigger.propTypes = {
   /**
    * The placement of the Overlay in relation to it's `target`.
    */
-  placement: PropTypes.oneOf([
-    'auto-start',
-    'auto',
-    'auto-end',
-    'top-start',
-    'top',
-    'top-end',
-    'right-start',
-    'right',
-    'right-end',
-    'bottom-end',
-    'bottom',
-    'bottom-start',
-    'left-end',
-    'left',
-    'left-start',
-  ]),
+  placement: PropTypes.oneOf(OVERLAY_TRIGGER_PLACEMENT),
    /**
    * The visibility of the Overlay. `show` is a _controlled_ prop so should be paired
    * with `onToggle` to avoid breaking user interactions.

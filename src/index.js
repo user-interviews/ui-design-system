@@ -36,7 +36,7 @@ import {
   ModalFooter,
   ModalHeader,
 } from 'src/Modal';
-import { OverlayTrigger } from 'src/OverlayTrigger';
+import { OverlayTrigger, OVERLAY_TRIGGER_PLACEMENT } from 'src/OverlayTrigger';
 import { Pill, Pills, PILL_COLORS } from 'src/Pill';
 import { Popover, PopoverBody } from 'src/Popover';
 import Popper from 'src/Popper';
@@ -118,6 +118,7 @@ export {
   ModalHeader,
   Option,
   OverlayTrigger,
+  OVERLAY_TRIGGER_PLACEMENT,
   Pill,
   Pills,
   PILL_COLORS,

@@ -1,3 +1,6 @@
-import OverlayTrigger from './OverlayTrigger';
+import OverlayTrigger, { OVERLAY_TRIGGER_PLACEMENT } from './OverlayTrigger';
 
-export { OverlayTrigger };
+export {
+  OverlayTrigger,
+  OVERLAY_TRIGGER_PLACEMENT,
+};

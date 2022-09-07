@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
+import { withKnobs, select } from '@storybook/addon-knobs';
 
 import Button from 'src/Button';
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
 
-import { OverlayTrigger } from 'src/OverlayTrigger';
+import { OverlayTrigger, OVERLAY_TRIGGER_PLACEMENT } from 'src/OverlayTrigger';
 import { Popover, PopoverBody } from 'src/Popover';
 
 import mdx from './Popover.mdx';
@@ -12,6 +13,7 @@ import mdx from './Popover.mdx';
 export default {
   title: 'Components/Popover',
   component: Popover,
+  decorators: [withKnobs],
   subcomponents: {
     PopoverBody, OverlayTrigger,
   },
@@ -31,10 +33,26 @@ export const Default = () => (
         </PopoverBody>
       </Popover>
     )}
-    placement="bottom"
+    placement={select('placement', OVERLAY_TRIGGER_PLACEMENT, 'auto')}
     trigger="click"
   >
     <Button variant="primary">Filter</Button>
+  </OverlayTrigger>
+);
+
+export const Placement = () => (
+  <OverlayTrigger
+    overlay={(
+      <Popover id="popover-basic">
+        <PopoverBody>
+          The is the default Popover body.
+        </PopoverBody>
+      </Popover>
+    )}
+    placement={select('placement', OVERLAY_TRIGGER_PLACEMENT, 'bottom')}
+    trigger="click"
+  >
+    <Button variant="primary">Try different placements</Button>
   </OverlayTrigger>
 );
 
