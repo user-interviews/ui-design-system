@@ -8,8 +8,8 @@ import './Popover.scss';
 
 const Popover = React.forwardRef(({
   children,
-  className,
   size,
+  className,
   ...props
 }, ref) => (
   <RBPopover
@@ -27,6 +27,9 @@ const Popover = React.forwardRef(({
 
 Popover.propTypes = {
   className: PropTypes.string,
+  /**
+   Sets the size of the Popover. The sizes map to the small and medium CardSizes
+   */
   size: PropTypes.oneOf(['sm', 'md']),
 };
 

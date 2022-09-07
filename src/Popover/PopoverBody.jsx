@@ -26,6 +26,9 @@ const PopoverBody = ({
 
 PopoverBody.propTypes = {
   className: PropTypes.string,
+  /**
+    Sets the PopoverBody to the same padding as Card
+  */
   variant: PropTypes.oneOf(['card']),
 };
 

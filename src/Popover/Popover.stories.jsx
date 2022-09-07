@@ -29,7 +29,7 @@ export const Default = () => (
     overlay={(
       <Popover id="popover-basic">
         <PopoverBody>
-          The is the default Popover body.
+          This is the default Popover body.
         </PopoverBody>
       </Popover>
     )}
@@ -45,7 +45,7 @@ export const Placement = () => (
     overlay={(
       <Popover id="popover-basic">
         <PopoverBody>
-          The is the default Popover body.
+          This is the default Popover body.
         </PopoverBody>
       </Popover>
     )}
@@ -102,7 +102,7 @@ export const Card = () => {
       show={isOpen}
       trigger="click"
     >
-      <Button variant="outline-primary" onClick={handleOpen}>Filter</Button>
+      <Button variant="primary" onClick={handleOpen}>Filter</Button>
     </OverlayTrigger>
   );
 };
