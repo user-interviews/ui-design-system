@@ -2,7 +2,7 @@ import React from 'react';
 import {
  withKnobs, text, number, boolean,
 } from '@storybook/addon-knobs';
-import { faShieldCheck } from "@fortawesome/pro-solid-svg-icons";
+import { faShieldCheck } from '@fortawesome/pro-solid-svg-icons';
 import ProfileCell from 'src/ProfileCell';
 import mdx from './ProfileCell.mdx';
 
