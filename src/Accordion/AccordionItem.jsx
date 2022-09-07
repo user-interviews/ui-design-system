@@ -7,27 +7,39 @@ import RBAccordionItem from 'react-bootstrap/AccordionItem';
 import './AccordionItem.scss';
 
 const AccordionItem = ({
- borderless, children, className, ...props
+  as,
+  borderless,
+  children,
+  // eslint-disable-next-line camelcase
+  UNSAFE_className,
 }) => (
   <RBAccordionItem
+    as={as}
     className={classNames(
-      className,
+      UNSAFE_className,
       'AccordionItem',
       borderless && 'AccordionItem--borderless',
     )}
-    {...props}
   >
     { children }
   </RBAccordionItem>
 );
 
 AccordionItem.propTypes = {
+  /**
+    Sets a custom element for this component
+  */
+  as: PropTypes.elementType,
+  /**
+    Removes border from accordion item
+  */
   borderless: PropTypes.bool,
-  className: PropTypes.string,
+  UNSAFE_className: PropTypes.string,
 };
 
 AccordionItem.defaultProps = {
+  as: undefined,
   borderless: undefined,
-  className: undefined,
+  UNSAFE_className: undefined,
 };
 export default AccordionItem;

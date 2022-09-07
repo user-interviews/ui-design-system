@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useRef } from 'react';
 import { action } from '@storybook/addon-actions';
 
 import {
@@ -116,6 +116,48 @@ export const CustomOptionWithCheckbox = () => (
     />
   </Fragment>
 );
+
+export const CustomOptionWithIndeterminateCheckbox = () => {
+  const optionsArr = [
+    { label: 'Riley Researcher', value: 1 },
+    { label: 'Patty Participant', value: 2 },
+    { label: 'Patrick Participant (indeterminate)', value: 3 },
+    { label: 'Polly Participant (indeterminate)', value: 4 },
+  ];
+
+  let inputRef;
+
+  const createInputRef = () => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    inputRef = useRef();
+    return inputRef;
+  };
+
+  return (
+    <Fragment>
+      <label htmlFor="multi-select" id="select-label-custom-option-indeterminate">Custom option with indeterminate checkbox</label>
+      <SingleSelect
+        aria-labelledby="select-label"
+        closeMenuOnSelect={false}
+        components={{
+          Option: (props) => (
+            <Option
+              {...props}
+              // eslint-disable-next-line react/prop-types
+              indeterminate={props.value > 2}
+              ref={createInputRef()}
+            />
+          ),
+        }}
+        hideSelectedOptions={false}
+        id="multi-select"
+        isMulti
+        options={optionsArr}
+        onChange={onChange}
+      />
+    </Fragment>
+  );
+};
 
 export const CustomValueContainer = () => (
   <Fragment>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 
 import {
   Accordion,
@@ -16,6 +17,7 @@ import mdx from './Accordion.mdx';
 export default {
   title: 'Components/Accordion',
   component: Accordion,
+  decorators: [withKnobs],
   subcomponents: {
     AccordionItem, AccordionToggle, AccordionCollapse,
   },
@@ -30,11 +32,12 @@ export const Default = () => (
   <Accordion>
     <AccordionItem>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', false)}
         eventKey="0"
-        helperText="helper text"
-        label="3 Items Selected"
+        helperText={text('helperText', 'helper text')}
         leadingIcon={faCreditCard}
-        title="Accordion Toggle #1"
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -46,11 +49,12 @@ export const Default = () => (
     </AccordionItem>
     <AccordionItem>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', false)}
         eventKey="1"
-        helperText="helper text"
-        label="3 Items Selected"
+        helperText={text('helperText', 'helper text')}
         leadingIcon={faCreditCard}
-        title="Accordion Toggle #2"
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="1">
         <ul>
@@ -67,11 +71,12 @@ export const DefaultOpen = () => (
   <Accordion defaultActiveKey="1">
     <AccordionItem>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', false)}
         eventKey="0"
-        helperText="helper text"
-        label="3 Items Selected"
+        helperText={text('helperText', 'helper text')}
         leadingIcon={faCreditCard}
-        title="Accordion Toggle #1"
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -83,11 +88,12 @@ export const DefaultOpen = () => (
     </AccordionItem>
     <AccordionItem>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', false)}
         eventKey="1"
-        helperText="helper text"
-        label="3 Items Selected"
+        helperText={text('helperText', 'helper text')}
         leadingIcon={faCreditCard}
-        title="Accordion Toggle #2"
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="1">
         <ul>
@@ -102,11 +108,11 @@ export const ChevronLeft = () => (
   <Accordion>
     <AccordionItem>
       <AccordionToggle
-        chevronLeft
+        chevronLeft={boolean('chevronLeft', true)}
+        disabled={boolean('disabled', false)}
         eventKey="0"
-        helperText="helper text"
-        label="3 Items Selected"
-        title="Accordion Toggle #1"
+        helperText={text('helperText', 'helper text')}
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -118,11 +124,11 @@ export const ChevronLeft = () => (
     </AccordionItem>
     <AccordionItem>
       <AccordionToggle
-        chevronLeft
+        chevronLeft={boolean('chevronLeft', true)}
+        disabled={boolean('disabled', false)}
         eventKey="1"
-        helperText="helper text"
-        label="3 Items Selected"
-        title="Accordion Toggle #2"
+        helperText={text('helperText', 'helper text')}
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="1">
         <ul>
@@ -139,11 +145,12 @@ export const Borderless = () => (
   <Accordion flush>
     <AccordionItem borderless>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', false)}
         eventKey="0"
-        helperText="helper text"
-        label="3 Items Selected"
+        helperText={text('helperText', 'helper text')}
         leadingIcon={faCreditCard}
-        title="Accordion Toggle #1"
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -155,11 +162,12 @@ export const Borderless = () => (
     </AccordionItem>
     <AccordionItem borderless>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', false)}
         eventKey="1"
-        helperText="helper text"
-        label="3 Items Selected"
+        helperText={text('helperText', 'helper text')}
         leadingIcon={faCreditCard}
-        title="Accordion Toggle #2"
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="1">
         <ul>
@@ -173,26 +181,33 @@ export const Borderless = () => (
 );
 
 export const InCard = () => (
-  <Card noPadding>
-    <Accordion flush>
-      <AccordionItem borderless>
-        <AccordionToggle
-          eventKey="0"
-          helperText="helper text"
-          label="3 Items Selected"
-          leadingIcon={faCreditCard}
-          title="Accordion Toggle #1"
-        />
-        <AccordionCollapse eventKey="0">
-          <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
-          </ul>
-        </AccordionCollapse>
-      </AccordionItem>
-    </Accordion>
-  </Card>
+  <>
+    <Card noPadding>
+      <Accordion defaultActiveKey="0" flush>
+        <AccordionItem borderless>
+          <AccordionToggle
+            chevronLeft={boolean('chevronLeft', false)}
+            disabled={boolean('disabled', false)}
+            eventKey="0"
+            helperText={text('helperText', 'with cardPadding')}
+            title={text('title', 'Accordion Toggle')}
+          />
+          <AccordionCollapse
+            eventKey="0"
+          >
+            <p>This text is aligned with the content of other Card components</p>
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <li>Item 3</li>
+            </ul>
+          </AccordionCollapse>
+        </AccordionItem>
+      </Accordion>
+    </Card>
+    <br />
+    <Card title="Card title" />
+  </>
 );
 
 export const Separate = () => (
@@ -200,10 +215,11 @@ export const Separate = () => (
     <Accordion>
       <AccordionItem>
         <AccordionToggle
+          chevronLeft={boolean('chevronLeft', false)}
+          disabled={boolean('disabled', false)}
           eventKey="0"
-          helperText="helper text"
-          label="3 Items Selected"
-          title="Accordion Toggle #1"
+          helperText={text('helperText', 'helper text')}
+          title={text('title', 'Accordion Toggle')}
         />
         <AccordionCollapse eventKey="0">
           <ul>
@@ -216,10 +232,11 @@ export const Separate = () => (
     <Accordion>
       <AccordionItem>
         <AccordionToggle
+          chevronLeft={boolean('chevronLeft', false)}
+          disabled={boolean('disabled', false)}
           eventKey="1"
-          helperText="helper text"
-          label="3 Items Selected"
-          title="Accordion Toggle #2"
+          helperText={text('helperText', 'helper text')}
+          title={text('title', 'Accordion Toggle')}
         />
         <AccordionCollapse eventKey="1">
           <ul>
@@ -235,28 +252,13 @@ export const Disabled = () => (
   <Accordion>
     <AccordionItem>
       <AccordionToggle
-        disabled
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', true)}
         eventKey="0"
-        helperText="helper text"
-        label="3 Items Selected"
-        title="Accordion Toggle -- Disabled"
+        helperText={text('helperText', 'helper text')}
+        title={text('title', 'Accordion Toggle -- disabled')}
       />
       <AccordionCollapse eventKey="0">
-        <ul>
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-        </ul>
-      </AccordionCollapse>
-    </AccordionItem>
-    <AccordionItem>
-      <AccordionToggle
-        eventKey="1"
-        helperText="helper text"
-        label="3 Items Selected"
-        title="Accordion Toggle #2"
-      />
-      <AccordionCollapse eventKey="1">
         <ul>
           <li>Item 1</li>
           <li>Item 2</li>

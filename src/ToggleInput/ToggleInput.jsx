@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import Toggle from 'react-toggle';
 
@@ -14,9 +15,17 @@ const ToggleInput = ({
   labelText,
   name,
   onToggle,
-  ...props
+  // eslint-disable-next-line camelcase
+  UNSAFE_className,
 }) => (
-  <label className="ToggleInput__label" htmlFor={id}>
+  <label
+    className={classNames(
+      'ToggleInput__label',
+      UNSAFE_className,
+      { 'ToggleInput__label--disabled': disabled },
+    )}
+    htmlFor={id}
+  >
     {labelLeft ? <span>{labelText}</span> : null}
     <Toggle
       aria-label={ariaLabel}
@@ -28,7 +37,6 @@ const ToggleInput = ({
       name={name}
       value={String(isChecked)}
       onChange={onToggle}
-      {...props}
     />
     {!labelLeft ? <span>{labelText}</span> : null}
   </label>
@@ -65,6 +73,7 @@ ToggleInput.propTypes = {
    The value of the name attribute of the wrapped `<input>` element.
   */
   name: PropTypes.string,
+  UNSAFE_className: PropTypes.string,
   /**
    Callback function to invoke when the user clicks on the toggle.
    The function signature should be the following: function(e) { }.
@@ -80,6 +89,7 @@ ToggleInput.defaultProps = {
   isChecked: false,
   labelLeft: false,
   name: undefined,
+  UNSAFE_className: undefined,
   onToggle: undefined,
 };
 
