@@ -6,7 +6,7 @@ import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
 
 import { OverlayTrigger, OVERLAY_TRIGGER_PLACEMENT } from 'src/OverlayTrigger';
-import { Popover, PopoverBody } from 'src/Popover';
+import { Popover, PopoverBody, PopoverCard } from 'src/Popover';
 
 import mdx from './Popover.mdx';
 
@@ -15,7 +15,7 @@ export default {
   component: Popover,
   decorators: [withKnobs],
   subcomponents: {
-    PopoverBody, OverlayTrigger,
+    PopoverBody, PopoverCard, OverlayTrigger,
   },
   parameters: {
     docs: {
@@ -56,7 +56,7 @@ export const Placement = () => (
   </OverlayTrigger>
 );
 
-export const Card = () => {
+export const CardPopover = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => {
@@ -68,9 +68,10 @@ export const Card = () => {
       overlay={(
         <Popover
           id="popover-basic"
-          size={select('size', ['sm', 'md'], 'sm')}
         >
-          <PopoverBody variant="card">
+          <PopoverCard
+            size={select('size', ['sm', 'md'], 'sm')}
+          >
             <h3 style={{ fontSize: '1rem', fontWeight: '700', marginBottom: '1.5rem' }}>Popover with Card styling</h3>
             <FormGroup
               label="Last project launched"
@@ -95,7 +96,7 @@ export const Card = () => {
             <div style={{ display: 'flex', justifyContent: 'right', marginTop: '1rem' }}>
               <Button variant="primary" onClick={handleOpen}>Apply</Button>
             </div>
-          </PopoverBody>
+          </PopoverCard>
         </Popover>
       )}
       placement="bottom"

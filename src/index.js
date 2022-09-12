@@ -38,7 +38,7 @@ import {
 } from 'src/Modal';
 import { OverlayTrigger, OVERLAY_TRIGGER_PLACEMENT } from 'src/OverlayTrigger';
 import { Pill, Pills, PILL_COLORS } from 'src/Pill';
-import { Popover, PopoverBody } from 'src/Popover';
+import { Popover, PopoverBody, PopoverCard } from 'src/Popover';
 import Popper from 'src/Popper';
 import ProfileCell from 'src/ProfileCell';
 import RadioButton from 'src/RadioButton';
@@ -124,6 +124,7 @@ export {
   PILL_COLORS,
   Popover,
   PopoverBody,
+  PopoverCard,
   Popper,
   ProfileCell,
   RadioButton,

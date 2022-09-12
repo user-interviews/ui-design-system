@@ -9,15 +9,10 @@ import './PopoverBody.scss';
 const PopoverBody = ({
   children,
   className,
-  variant,
   ...props
 }) => (
   <RBPopover.Body
-    className={classNames(
-      className,
-      'PopoverBody',
-      { 'PopoverBody--card': variant === 'card' },
-    )}
+    className={classNames(className, 'PopoverBody')}
     {...props}
   >
     { children }
@@ -26,15 +21,10 @@ const PopoverBody = ({
 
 PopoverBody.propTypes = {
   className: PropTypes.string,
-  /**
-    Sets the PopoverBody to the same padding as Card
-  */
-  variant: PropTypes.oneOf(['card']),
 };
 
 PopoverBody.defaultProps = {
   className: undefined,
-  variant: undefined,
 };
 
 export default PopoverBody;
