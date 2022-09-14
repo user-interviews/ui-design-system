@@ -56,8 +56,8 @@ const AsyncSelect = ({
       ...defaultStyles({ size }),
       menuPortal: (base) => (
         modal ?
-          base :
-          { ...base, zIndex: zStack.zIndexModalBackdrop + 1 }
+        { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } :
+          base
       ),
     }}
     theme={defaultTheme}

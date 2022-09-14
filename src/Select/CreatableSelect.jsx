@@ -2,6 +2,8 @@ import React from 'react';
 import Creatable from 'react-select/creatable';
 import PropTypes from 'prop-types';
 
+import zStack from 'src/Styles/zStack';
+
 import { defaultTheme, defaultStyles, SELECT_SIZES } from './styles';
 
 const CreatableSelect = ({
@@ -43,13 +45,13 @@ const CreatableSelect = ({
     options={options}
     placeholder={placeholder}
     styles={{
-        ...defaultStyles({ size }),
-        menuPortal: (base) => (
-          modal ?
-            base :
-            { ...base, zIndex: zStack.zIndexModalBackdrop + 1 }
-        ),
-      }}
+      ...defaultStyles({ size }),
+      menuPortal: (base) => (
+        modal ?
+        { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } :
+          base
+      ),
+    }}
     theme={defaultTheme}
     value={value}
     onChange={onChange}
