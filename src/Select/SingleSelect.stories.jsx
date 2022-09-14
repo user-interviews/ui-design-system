@@ -1,6 +1,7 @@
 import React, { Fragment, useRef } from 'react';
 import { action } from '@storybook/addon-actions';
 
+import Button from 'src/Button';
 import {
  Modal, ModalHeader, ModalBody, ModalFooter,
 } from 'src/Modal';
@@ -83,7 +84,6 @@ export const InModal = () => (
       onRequestClose={handleRequestClose}
     />
     <ModalBody>
-      <span>A select inside a modal</span>
       <SingleSelect
         aria-labelledby="select-label"
         id="select-in-modal"
@@ -92,9 +92,11 @@ export const InModal = () => (
         onChange={onChange}
       />
     </ModalBody>
-    <ModalFooter>
-      <button className="btn btn-transparent" type="button">Cancel</button>
-      <button className="btn btn-success" type="submit">Save</button>
+    <ModalFooter
+      dismissButtonText="Cancel"
+      onRequestClose={handleRequestClose}
+    >
+      <Button type="submit" variant="primary">Confirm</Button>
     </ModalFooter>
   </Modal>
   );

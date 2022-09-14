@@ -1,6 +1,11 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 
 import AsyncCreatableSelect from 'src/Select/AsyncCreatableSelect';
+import Button from 'src/Button';
+import {
+  Modal, ModalHeader, ModalBody, ModalFooter,
+ } from 'src/Modal';
 
 export default {
   title: 'Components/Selects/AsyncCreatable',
@@ -12,6 +17,8 @@ const options = [
   { label: 'Green', value: 2 },
   { label: 'Blue', value: 3 },
 ];
+
+const handleRequestClose = () => action('Close');
 
 async function loadOptions(search) {
   await new Promise((resolve) => setTimeout(resolve, 2000));
@@ -37,3 +44,35 @@ export const Default = () => {
     />
   );
 };
+
+export const InModal = () => (
+  <Modal
+    ariaHideApp={false}
+    className="AsyncCreatableSelectInModal"
+    contentLabel="AsyncCreatableSelect in Modal"
+    isOpen
+  >
+    <ModalHeader
+      title="AsyncCreatableSelect in modal"
+      titleId="async-creatable-select-in-modal"
+      onRequestClose={handleRequestClose}
+    />
+    <ModalBody>
+      <AsyncCreatableSelect
+        aria-labelledby="async-label"
+        getOptionLabel={({ label }) => label}
+        getOptionValue={({ value }) => value}
+        id="async-creatable-select"
+        loadOptions={loadOptions}
+        modal
+        noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+      />
+    </ModalBody>
+    <ModalFooter
+      dismissButtonText="Cancel"
+      onRequestClose={handleRequestClose}
+    >
+      <Button type="submit" variant="primary">Confirm</Button>
+    </ModalFooter>
+  </Modal>
+  );
