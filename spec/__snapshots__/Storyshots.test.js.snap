@@ -4480,6 +4480,45 @@ exports[`Storyshots Components/CardList Default 1`] = `
     <section
       className="Card Card--sm"
     >
+<<<<<<< release/1.35.0
+=======
+      <h2
+        className="Card__title"
+      >
+        Large card with title
+      </h2>
+      <span
+        className="Card__helper-text"
+      >
+        (helper text)
+      </span>
+    </div>
+    <h3
+      className="Card__subtitle"
+    >
+      And a subtitle
+    </h3>
+    <div>
+      Use knobs to try out the different card sizes
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Components/CardContainer Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="CardContainer CardContainer__alignItems--center"
+  >
+    <section
+      className="Card Card--sm"
+    >
       <div
         className="Card__header"
       >
@@ -4544,6 +4583,145 @@ exports[`Storyshots Components/CardList Default 1`] = `
         <h2
           className="Card__title"
         >
+          Card 3
+        </h2>
+      </div>
+      <h3
+        className="Card__subtitle"
+      >
+        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
+      </h3>
+      <ul>
+        <li>
+          500,000+ sessions completed
+        </li>
+        <li>
+          $19 million+ incentives distributed
+        </li>
+        <li>
+          3 hours median time to 1st matched participant
+        </li>
+      </ul>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/CardList Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="CardList CardList__alignItems--center"
+  >
+    <section
+      className="Card Card--sm"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 1
+        </h2>
+      </div>
+      <h3
+        className="Card__subtitle"
+      >
+        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
+      </h3>
+      <ul>
+        <li>
+          500,000+ sessions completed
+        </li>
+        <li>
+          $19 million+ incentives distributed
+        </li>
+        <li>
+          3 hours median time to 1st matched participant
+        </li>
+      </ul>
+    </section>
+    <section
+      className="Card Card--sm"
+    >
+>>>>>>> main
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+<<<<<<< release/1.35.0
+          Card 1
+=======
+          Card 2
+>>>>>>> main
+        </h2>
+      </div>
+      <h3
+        className="Card__subtitle"
+      >
+        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
+      </h3>
+      <ul>
+        <li>
+          500,000+ sessions completed
+        </li>
+        <li>
+          $19 million+ incentives distributed
+        </li>
+        <li>
+          3 hours median time to 1st matched participant
+        </li>
+      </ul>
+    </section>
+    <section
+      className="Card Card--sm"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+<<<<<<< release/1.35.0
+          Card 2
+        </h2>
+      </div>
+      <h3
+        className="Card__subtitle"
+      >
+        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
+      </h3>
+      <ul>
+        <li>
+          500,000+ sessions completed
+        </li>
+        <li>
+          $19 million+ incentives distributed
+        </li>
+        <li>
+          3 hours median time to 1st matched participant
+        </li>
+      </ul>
+    </section>
+    <section
+      className="Card Card--sm"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+=======
+>>>>>>> main
           Card 3
         </h2>
       </div>
@@ -5348,6 +5526,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Column
             type="checkbox"
             value="2"
           />
+<<<<<<< release/1.35.0
           Label 2
           <span
             className="FormControlLabel__helper-text"
@@ -5361,6 +5540,143 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Column
           className="FormControlLabel__children"
         >
           This is where the description goes
+=======
+          first choice
+>>>>>>> main
+        </span>
+      </label>
+      <label
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-3-5"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-3-5"
+            onChange={[Function]}
+            type="checkbox"
+            value="3"
+          />
+<<<<<<< release/1.35.0
+          Label 3
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+=======
+          second choice
+>>>>>>> main
+        </span>
+      </label>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Column Full Width 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <fieldset
+    className="FormGroup"
+    id="with-checkbox-button-group-5"
+  >
+    <legend
+      className="InputLegend"
+      htmlFor="checkbox-button-group"
+    >
+      Legend
+      <span
+        className="InputLegend__helper-text"
+      >
+         (
+        helper text
+        )
+      </span>
+    </legend>
+    <div
+      className="CheckboxButtonGroup CheckboxButtonGroup--column--full-width"
+      id="with-checkbox-button-group-5-button-group"
+    >
+      <label
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-1-5"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-1-5"
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          Label 1
+<<<<<<< release/1.35.0
+=======
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+>>>>>>> main
+        </span>
+      </label>
+      <label
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-2-5"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-2-5"
+            onChange={[Function]}
+            type="checkbox"
+            value="2"
+          />
+          Label 2
+<<<<<<< release/1.35.0
+=======
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+>>>>>>> main
         </span>
       </label>
       <label
@@ -5379,6 +5695,8 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Column
             value="3"
           />
           Label 3
+<<<<<<< release/1.35.0
+=======
           <span
             className="FormControlLabel__helper-text"
           >
@@ -5391,6 +5709,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Column
           className="FormControlLabel__children"
         >
           This is where the description goes
+>>>>>>> main
         </span>
       </label>
     </div>
@@ -5442,7 +5761,11 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`
             type="checkbox"
             value="1"
           />
+<<<<<<< release/1.35.0
+          Value 1
+=======
           Label 1
+>>>>>>> main
         </span>
       </label>
       <label
@@ -5460,7 +5783,11 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`
             type="checkbox"
             value="2"
           />
+<<<<<<< release/1.35.0
+          Value 2
+=======
           Label 2
+>>>>>>> main
         </span>
       </label>
       <label
@@ -5478,7 +5805,11 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`
             type="checkbox"
             value="3"
           />
+<<<<<<< release/1.35.0
+          Value 3
+=======
           Label 3
+>>>>>>> main
         </span>
       </label>
     </div>
@@ -5486,7 +5817,11 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`
 </div>
 `;
 
+<<<<<<< release/1.35.0
+exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Column 1`] = `
+=======
 exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
+>>>>>>> main
 <div
   style={
     Object {
@@ -5496,7 +5831,11 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
 >
   <fieldset
     className="FormGroup"
+<<<<<<< release/1.35.0
+    id="with-checkbox-button-group-3"
+=======
     id="with-checkbox-button-group"
+>>>>>>> main
   >
     <legend
       className="InputLegend"
@@ -5513,99 +5852,19 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
     </legend>
     <div
       className="CheckboxButtonGroup"
-      id="with-checkbox-button-group-button-group"
-    >
-      <label
-        className="FormControlLabel"
-        htmlFor="value-1"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            id="value-1"
-            onChange={[Function]}
-            type="checkbox"
-            value="1"
-          />
-          Value 1
-        </span>
-      </label>
-      <label
-        className="FormControlLabel"
-        htmlFor="value-2"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            id="value-2"
-            onChange={[Function]}
-            type="checkbox"
-            value="2"
-          />
-          Value 2
-        </span>
-      </label>
-      <label
-        className="FormControlLabel"
-        htmlFor="value-3"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            id="value-3"
-            onChange={[Function]}
-            type="checkbox"
-            value="3"
-          />
-          Value 3
-        </span>
-      </label>
-    </div>
-  </fieldset>
-</div>
-`;
-
-exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Column 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <fieldset
-    className="FormGroup"
-    id="with-checkbox-button-group-3"
-  >
-    <legend
-      className="InputLegend"
-      htmlFor="checkbox-button-group"
-    >
-      Legend
-      <span
-        className="InputLegend__helper-text"
-      >
-         (
-        helper text
-        )
-      </span>
-    </legend>
-    <div
-      className="CheckboxButtonGroup"
+<<<<<<< release/1.35.0
       id="with-checkbox-button-group-3-button-group"
     >
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-1-3"
+=======
+      id="with-checkbox-button-group-button-group"
+    >
+      <label
+        className="FormControlLabel"
+        htmlFor="value-1"
+>>>>>>> main
       >
         <span
           className="FormControlLabel__label"
@@ -5613,11 +5872,16 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Col
           <input
             checked={false}
             className="FormControlLabel__control"
+<<<<<<< release/1.35.0
             id="value-1-3"
+=======
+            id="value-1"
+>>>>>>> main
             onChange={[Function]}
             type="checkbox"
             value="1"
           />
+<<<<<<< release/1.35.0
           Label 1
           <span
             className="FormControlLabel__helper-text"
@@ -5636,6 +5900,14 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Col
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-2-3"
+=======
+          Value 1
+        </span>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-2"
+>>>>>>> main
       >
         <span
           className="FormControlLabel__label"
@@ -5643,11 +5915,16 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Col
           <input
             checked={false}
             className="FormControlLabel__control"
+<<<<<<< release/1.35.0
             id="value-2-3"
+=======
+            id="value-2"
+>>>>>>> main
             onChange={[Function]}
             type="checkbox"
             value="2"
           />
+<<<<<<< release/1.35.0
           Label 2
           <span
             className="FormControlLabel__helper-text"
@@ -5666,6 +5943,14 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Col
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-3-3"
+=======
+          Value 2
+        </span>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-3"
+>>>>>>> main
       >
         <span
           className="FormControlLabel__label"
@@ -5673,11 +5958,16 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Col
           <input
             checked={false}
             className="FormControlLabel__control"
+<<<<<<< release/1.35.0
             id="value-3-3"
+=======
+            id="value-3"
+>>>>>>> main
             onChange={[Function]}
             type="checkbox"
             value="3"
           />
+<<<<<<< release/1.35.0
           Label 3
           <span
             className="FormControlLabel__helper-text"
@@ -5691,6 +5981,9 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Col
           className="FormControlLabel__children"
         >
           This is where the description goes
+=======
+          Value 3
+>>>>>>> main
         </span>
       </label>
     </div>
@@ -5698,7 +5991,11 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Col
 </div>
 `;
 
+<<<<<<< release/1.35.0
 exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Row 1`] = `
+=======
+exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Column 1`] = `
+>>>>>>> main
 <div
   style={
     Object {
@@ -5831,6 +6128,146 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Row 1`] = `
   }
 >
   <fieldset
+<<<<<<< release/1.35.0
+    className="FormGroup FormGroup--inline"
+    id="with-checkbox-button-group-1"
+=======
+    className="FormGroup"
+    id="with-checkbox-button-group-4"
+>>>>>>> main
+  >
+    <legend
+      className="InputLegend"
+      htmlFor="checkbox-button-group"
+    >
+      Legend
+      <span
+        className="InputLegend__helper-text"
+      >
+         (
+        helper text
+        )
+      </span>
+    </legend>
+    <div
+      className="CheckboxButtonGroup CheckboxButtonGroup--row CheckboxButtonGroup--row--compact"
+      id="with-checkbox-button-group-1-button-group"
+    >
+      <label
+        className="FormControlLabel"
+        htmlFor="value-1-1"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-1-1"
+            onChange={[Function]}
+            type="checkbox"
+            value="1"
+          />
+          Label 1
+<<<<<<< release/1.35.0
+=======
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+>>>>>>> main
+        </span>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-2-1"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-2-1"
+            onChange={[Function]}
+            type="checkbox"
+            value="2"
+          />
+          Label 2
+<<<<<<< release/1.35.0
+=======
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+>>>>>>> main
+        </span>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-3-1"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            id="value-3-1"
+            onChange={[Function]}
+            type="checkbox"
+            value="3"
+          />
+          Label 3
+<<<<<<< release/1.35.0
+=======
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+>>>>>>> main
+        </span>
+      </label>
+    </div>
+  </fieldset>
+<<<<<<< release/1.35.0
+=======
+</div>
+`;
+
+exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Row 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <fieldset
     className="FormGroup FormGroup--inline"
     id="with-checkbox-button-group-1"
   >
@@ -5907,6 +6344,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Row 1`] = `
       </label>
     </div>
   </fieldset>
+>>>>>>> main
 </div>
 `;
 
@@ -6716,6 +7154,8 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
 `;
 
 exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Column Full Width 1`] = `
+<<<<<<< release/1.35.0
+=======
 <div
   style={
     Object {
@@ -6846,6 +7286,146 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Column Fu
 `;
 
 exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] = `
+>>>>>>> main
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <fieldset
+    className="FormGroup"
+    id="with-radio-button-group-5"
+  >
+    <legend
+      className="InputLegend"
+      htmlFor="radio-button-group"
+    >
+      Legend
+      <span
+        className="InputLegend__helper-text"
+      >
+         (
+        helper text
+        )
+      </span>
+    </legend>
+    <div
+      className="RadioButtonGroup RadioButtonGroup--column--full-width"
+      name=""
+    >
+      <label
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-1-6"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-1-6"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="1"
+          />
+          Label 1
+<<<<<<< release/1.35.0
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+=======
+>>>>>>> main
+        </span>
+      </label>
+      <label
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-2-6"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-2-6"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="2"
+          />
+          Label 2
+<<<<<<< release/1.35.0
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+=======
+>>>>>>> main
+        </span>
+      </label>
+      <label
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-3-6"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-3-6"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="3"
+          />
+          Label 3
+<<<<<<< release/1.35.0
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+=======
+>>>>>>> main
+        </span>
+      </label>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] = `
 <div
   style={
     Object {
@@ -6891,7 +7471,11 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
             type="radio"
             value="1"
           />
+<<<<<<< release/1.35.0
           Label 1
+=======
+          Value 1
+>>>>>>> main
         </span>
       </label>
       <label
@@ -6911,7 +7495,11 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
             type="radio"
             value="2"
           />
+<<<<<<< release/1.35.0
           Label 2
+=======
+          Value 2
+>>>>>>> main
         </span>
       </label>
       <label
@@ -6931,7 +7519,11 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
             type="radio"
             value="3"
           />
+<<<<<<< release/1.35.0
           Label 3
+=======
+          Value 3
+>>>>>>> main
         </span>
       </label>
     </div>
@@ -6939,7 +7531,11 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
 </div>
 `;
 
+<<<<<<< release/1.35.0
 exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
+=======
+exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Column 1`] = `
+>>>>>>> main
 <div
   style={
     Object {
@@ -6949,7 +7545,11 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
 >
   <fieldset
     className="FormGroup"
+<<<<<<< release/1.35.0
     id="with-radio-button-group"
+=======
+    id="with-radio-button-group-4"
+>>>>>>> main
   >
     <legend
       className="InputLegend"
@@ -6969,8 +7569,13 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
       name=""
     >
       <label
+<<<<<<< release/1.35.0
         className="FormControlLabel"
         htmlFor="value-1"
+=======
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-1-4"
+>>>>>>> main
       >
         <span
           className="FormControlLabel__label"
@@ -6979,106 +7584,24 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
             checked={false}
             className="FormControlLabel__control"
             disabled={false}
+<<<<<<< release/1.35.0
             id="value-1"
+=======
+            id="value-1-4"
+>>>>>>> main
             name=""
             onChange={[Function]}
             type="radio"
             value="1"
           />
+<<<<<<< release/1.35.0
           Value 1
         </span>
       </label>
       <label
         className="FormControlLabel"
         htmlFor="value-2"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            disabled={false}
-            id="value-2"
-            name=""
-            onChange={[Function]}
-            type="radio"
-            value="2"
-          />
-          Value 2
-        </span>
-      </label>
-      <label
-        className="FormControlLabel"
-        htmlFor="value-3"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            disabled={false}
-            id="value-3"
-            name=""
-            onChange={[Function]}
-            type="radio"
-            value="3"
-          />
-          Value 3
-        </span>
-      </label>
-    </div>
-  </fieldset>
-</div>
-`;
-
-exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Column 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <fieldset
-    className="FormGroup"
-    id="with-radio-button-group-4"
-  >
-    <legend
-      className="InputLegend"
-      htmlFor="radio-button-group"
-    >
-      Legend
-      <span
-        className="InputLegend__helper-text"
-      >
-         (
-        helper text
-        )
-      </span>
-    </legend>
-    <div
-      className="RadioButtonGroup"
-      name=""
-    >
-      <label
-        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
-        htmlFor="value-1-4"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            disabled={false}
-            id="value-1-4"
-            name=""
-            onChange={[Function]}
-            type="radio"
-            value="1"
-          />
+=======
           Label 1
           <span
             className="FormControlLabel__helper-text"
@@ -7097,6 +7620,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Column
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-2-4"
+>>>>>>> main
       >
         <span
           className="FormControlLabel__label"
@@ -7105,12 +7629,24 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Column
             checked={false}
             className="FormControlLabel__control"
             disabled={false}
+<<<<<<< release/1.35.0
+            id="value-2"
+=======
             id="value-2-4"
+>>>>>>> main
             name=""
             onChange={[Function]}
             type="radio"
             value="2"
           />
+<<<<<<< release/1.35.0
+          Value 2
+        </span>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-3"
+=======
           Label 2
           <span
             className="FormControlLabel__helper-text"
@@ -7129,6 +7665,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Column
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-3-4"
+>>>>>>> main
       >
         <span
           className="FormControlLabel__label"
@@ -7137,12 +7674,19 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Column
             checked={false}
             className="FormControlLabel__control"
             disabled={false}
+<<<<<<< release/1.35.0
+            id="value-3"
+=======
             id="value-3-4"
+>>>>>>> main
             name=""
             onChange={[Function]}
             type="radio"
             value="3"
           />
+<<<<<<< release/1.35.0
+          Value 3
+=======
           Label 3
           <span
             className="FormControlLabel__helper-text"
@@ -7156,6 +7700,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Column
           className="FormControlLabel__children"
         >
           This is where the description goes
+>>>>>>> main
         </span>
       </label>
     </div>
@@ -7163,7 +7708,11 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Column
 </div>
 `;
 
+<<<<<<< release/1.35.0
+exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Column 1`] = `
+=======
 exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Row 1`] = `
+>>>>>>> main
 <div
   style={
     Object {
@@ -7302,6 +7851,151 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Row 1`] = `
   }
 >
   <fieldset
+<<<<<<< release/1.35.0
+    className="FormGroup"
+    id="with-radio-button-group-5"
+=======
+    className="FormGroup FormGroup--inline"
+    id="with-radio-button-group-2"
+>>>>>>> main
+  >
+    <legend
+      className="InputLegend"
+      htmlFor="radio-button-group"
+    >
+      Legend
+      <span
+        className="InputLegend__helper-text"
+      >
+         (
+        helper text
+        )
+      </span>
+    </legend>
+    <div
+      className="RadioButtonGroup RadioButtonGroup--row RadioButtonGroup--row--compact"
+      name=""
+    >
+      <label
+        className="FormControlLabel"
+        htmlFor="value-1-2"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-1-2"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="1"
+          />
+          Label 1
+<<<<<<< release/1.35.0
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+=======
+>>>>>>> main
+        </span>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-2-2"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-2-2"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="2"
+          />
+          Label 2
+<<<<<<< release/1.35.0
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+=======
+>>>>>>> main
+        </span>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-3-2"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-3-2"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="3"
+          />
+          Label 3
+<<<<<<< release/1.35.0
+          <span
+            className="FormControlLabel__helper-text"
+          >
+             (
+            helper text
+            )
+          </span>
+        </span>
+        <span
+          className="FormControlLabel__children"
+        >
+          This is where the description goes
+=======
+>>>>>>> main
+        </span>
+      </label>
+    </div>
+  </fieldset>
+<<<<<<< release/1.35.0
+</div>
+`;
+
+exports[`Storyshots Components/Form Elements/RadioButtonGroup Row 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <fieldset
     className="FormGroup FormGroup--inline"
     id="with-radio-button-group-2"
   >
@@ -7384,6 +8078,8 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Row 1`] = `
       </label>
     </div>
   </fieldset>
+=======
+>>>>>>> main
 </div>
 `;
 
@@ -8825,6 +9521,7 @@ exports[`Storyshots Components/RadioButton With Description 1`] = `
     <span
       className="FormControlLabel__children"
     >
+<<<<<<< release/1.35.0
       This is where the description goes
     </span>
   </label>
@@ -8832,6 +9529,35 @@ exports[`Storyshots Components/RadioButton With Description 1`] = `
 `;
 
 exports[`Storyshots Components/Selects/Async Default 1`] = `
+=======
+      <div
+        className="ProfileCell__content__name__container"
+      >
+        <h5
+          className="ProfileCell__content__name"
+        >
+          Riley Researcher
+        </h5>
+      </div>
+      <div
+        className="ProfileCell__content__subtitle"
+      >
+        <div>
+          riley@userinterviews.com
+        </div>
+        <div>
+          +1 888 888 8888
+        </div>
+        <div>
+          (-5:00) America/New York
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Profile Cell Small 1`] = `
 <div
   style={
     Object {
@@ -8840,8 +9566,69 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
   }
 >
   <div
+    className="ProfileCell"
+  >
+    <div
+      className="ProfileCell__image"
+    >
+      <div
+        aria-hidden={false}
+        className="Avatar"
+      >
+        <div
+          className="Avatar__circle"
+        >
+          <span
+            className="Avatar__circle__initials"
+          >
+            RR
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <div
+        className="ProfileCell__content__name__container"
+      >
+        <h5
+          className="ProfileCell__content__name"
+        >
+          Riley Researcher
+        </h5>
+      </div>
+      <div
+        className="ProfileCell__content__subtitle"
+      >
+        riley@userinterviews.com
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Profile Cell With Image 1`] = `
+>>>>>>> main
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+<<<<<<< release/1.35.0
     className="AsyncSelect css-b62m3t-container"
     onKeyDown={[Function]}
+=======
+    className="ProfileCell ProfileCell--large"
+>>>>>>> main
   >
     <span
       className="css-1f43avz-a11yText-A11yText"
@@ -8859,12 +9646,18 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
       onTouchEnd={[Function]}
     >
       <div
+<<<<<<< release/1.35.0
         className=" css-319lph-ValueContainer"
+=======
+        aria-hidden={false}
+        className="Avatar Avatar--large"
+>>>>>>> main
       >
         <div
           className=" css-858797-placeholder"
           id="react-select-4-placeholder"
         >
+<<<<<<< release/1.35.0
           Select...
         </div>
         <div
@@ -8910,9 +9703,37 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
           />
         </div>
       </div>
+=======
+          <img
+            alt="Riley Researcher"
+            onError={[Function]}
+            src="https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <div
+        className="ProfileCell__content__name__container"
+      >
+        <h5
+          className="ProfileCell__content__name"
+        >
+          Riley Researcher
+        </h5>
+      </div>
+>>>>>>> main
       <div
         className=" css-1hb7zxy-IndicatorsContainer"
       >
+<<<<<<< release/1.35.0
         <span
           className=" css-43ykx9-indicatorSeparator"
         />
@@ -8934,6 +9755,16 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
               d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
             />
           </svg>
+=======
+        <div>
+          riley@userinterviews.com
+        </div>
+        <div>
+          +1 888 888 8888
+        </div>
+        <div>
+          (-5:00) America/New York
+>>>>>>> main
         </div>
       </div>
     </div>
@@ -8941,7 +9772,11 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
 </div>
 `;
 
+<<<<<<< release/1.35.0
 exports[`Storyshots Components/Selects/Async In Modal 1`] = `
+=======
+exports[`Storyshots Components/Profile Cell With Trailing Icon 1`] = `
+>>>>>>> main
 <div
   style={
     Object {
@@ -8950,6 +9785,7 @@ exports[`Storyshots Components/Selects/Async In Modal 1`] = `
   }
 >
   <div
+<<<<<<< release/1.35.0
     className="ReactModal__Overlay ReactModal__Overlay--after-open"
     onClick={[Function]}
     onMouseDown={[Function]}
@@ -8963,6 +9799,9 @@ exports[`Storyshots Components/Selects/Async In Modal 1`] = `
         "top": 0,
       }
     }
+=======
+    className="ProfileCell"
+>>>>>>> main
   >
     <div
       aria-label="AsyncSelect in Modal"
@@ -8998,7 +9837,12 @@ exports[`Storyshots Components/Selects/Async In Modal 1`] = `
         />
       </header>
       <div
+<<<<<<< release/1.35.0
         className="ModalBody"
+=======
+        aria-hidden={false}
+        className="Avatar"
+>>>>>>> main
       >
         <div
           className="AsyncSelect css-b62m3t-container"
@@ -9101,9 +9945,48 @@ exports[`Storyshots Components/Selects/Async In Modal 1`] = `
           </div>
         </div>
       </div>
+<<<<<<< release/1.35.0
+=======
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <div
+        className="ProfileCell__content__name__container"
+      >
+        <h5
+          className="ProfileCell__content__name"
+        >
+          Riley Researcher
+        </h5>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-shield-check fa-w-16 ProfileCell__content__trailing_icon"
+          data-icon="shield-check"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zm-47.2 114.2l-184 184c-6.2 6.2-16.4 6.2-22.6 0l-104-104c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l70.1 70.1 150.1-150.1c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.3 6.3 6.3 16.4 0 22.6z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </div>
+>>>>>>> main
       <div
         className="ModalFooter"
       >
+<<<<<<< release/1.35.0
         <button
           className="Button btn btn-transparent"
           disabled={false}
@@ -9119,6 +10002,9 @@ exports[`Storyshots Components/Selects/Async In Modal 1`] = `
         >
           Confirm
         </button>
+=======
+        riley@userinterviews.com
+>>>>>>> main
       </div>
     </div>
   </div>
@@ -9137,6 +10023,7 @@ exports[`Storyshots Components/Selects/Async Labeled 1`] = `
     htmlFor="async-select"
     id="async-label"
   >
+<<<<<<< release/1.35.0
     A labeled select
   </label>
   <div
@@ -9239,6 +10126,29 @@ exports[`Storyshots Components/Selects/Async Labeled 1`] = `
       </div>
     </div>
   </div>
+=======
+    <span
+      className="FormControlLabel__label"
+    >
+      <input
+        checked={false}
+        className="FormControlLabel__control"
+        disabled={false}
+        id="value-2"
+        name=""
+        onChange={[Function]}
+        type="radio"
+        value="2"
+      />
+      Label 2
+    </span>
+    <span
+      className="FormControlLabel__children"
+    >
+      This is where the description goes
+    </span>
+  </label>
+>>>>>>> main
 </div>
 `;
 
@@ -9256,7 +10166,11 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
   >
     <span
       className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.35.0
       id="react-select-2-live-region"
+=======
+      id="react-select-3-live-region"
+>>>>>>> main
     />
     <span
       aria-atomic="false"
@@ -9274,7 +10188,11 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
       >
         <div
           className=" css-858797-placeholder"
+<<<<<<< release/1.35.0
           id="react-select-2-placeholder"
+=======
+          id="react-select-3-placeholder"
+>>>>>>> main
         >
           Select...
         </div>
@@ -9284,16 +10202,27 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
         >
           <input
             aria-autocomplete="list"
+<<<<<<< release/1.35.0
             aria-describedby="react-select-2-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-label="Async creatable select"
+=======
+            aria-describedby="react-select-3-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-label="Async select"
+>>>>>>> main
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect="off"
             className=""
             disabled={false}
+<<<<<<< release/1.35.0
             id="react-select-2-input"
+=======
+            id="react-select-3-input"
+>>>>>>> main
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -9545,12 +10474,21 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
   }
 >
   <div
+<<<<<<< release/1.35.0
     className="CreatableSelect css-b62m3t-container"
+=======
+    className="AsyncSelect css-b62m3t-container"
+    id="async-select"
+>>>>>>> main
     onKeyDown={[Function]}
   >
     <span
       className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.35.0
       id="react-select-7-live-region"
+=======
+      id="react-select-4-live-region"
+>>>>>>> main
     />
     <span
       aria-atomic="false"
@@ -9568,7 +10506,11 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
       >
         <div
           className=" css-858797-placeholder"
+<<<<<<< release/1.35.0
           id="react-select-7-placeholder"
+=======
+          id="react-select-4-placeholder"
+>>>>>>> main
         >
           Select...
         </div>
@@ -9578,15 +10520,26 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
         >
           <input
             aria-autocomplete="list"
+<<<<<<< release/1.35.0
             aria-describedby="react-select-7-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
+=======
+            aria-describedby="react-select-4-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-labelledby="async-label"
+>>>>>>> main
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect="off"
             className=""
             disabled={false}
+<<<<<<< release/1.35.0
             id="react-select-7-input"
+=======
+            id="react-select-4-input"
+>>>>>>> main
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
@@ -9654,6 +10607,7 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
   }
 >
   <div
+<<<<<<< release/1.35.0
     className="ReactModal__Overlay ReactModal__Overlay--after-open"
     onClick={[Function]}
     onMouseDown={[Function]}
@@ -9667,7 +10621,21 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
         "top": 0,
       }
     }
+=======
+    className="AsyncSelect css-b62m3t-container"
+    onKeyDown={[Function]}
+>>>>>>> main
   >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-2-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
     <div
       aria-label="CreatableSelect in Modal"
       aria-modal={true}
@@ -9680,11 +10648,20 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
       style={Object {}}
       tabIndex="-1"
     >
+<<<<<<< release/1.35.0
       <header
         className="ModalHeader"
       >
         <div
           className="ModalHeader__heading"
+=======
+      <div
+        className=" css-319lph-ValueContainer"
+      >
+        <div
+          className=" css-858797-placeholder"
+          id="react-select-2-placeholder"
+>>>>>>> main
         >
           <h1
             className="ModalHeader__title"
@@ -9705,6 +10682,7 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
         className="ModalBody"
       >
         <div
+<<<<<<< release/1.35.0
           className="CreatableSelect css-b62m3t-container"
           onKeyDown={[Function]}
         >
@@ -9801,6 +10779,48 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
               </div>
             </div>
           </div>
+=======
+          className=" css-6j8wv5-Input"
+          data-value=""
+        >
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-2-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-label="Async creatable select"
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect="off"
+            className=""
+            disabled={false}
+            id="react-select-2-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            spellCheck="false"
+            style={
+              Object {
+                "background": 0,
+                "border": 0,
+                "color": "inherit",
+                "font": "inherit",
+                "gridArea": "1 / 2",
+                "label": "input",
+                "margin": 0,
+                "minWidth": "2px",
+                "opacity": 1,
+                "outline": 0,
+                "padding": 0,
+                "width": "100%",
+              }
+            }
+            tabIndex={0}
+            type="text"
+            value=""
+          />
+>>>>>>> main
         </div>
       </div>
       <div
@@ -9812,6 +10832,7 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
           onClick={[Function]}
           type="button"
         >
+<<<<<<< release/1.35.0
           Cancel
         </button>
         <button
@@ -9821,6 +10842,21 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
         >
           Confirm
         </button>
+=======
+          <svg
+            aria-hidden="true"
+            className="css-tj5bde-Svg"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+>>>>>>> main
       </div>
     </div>
   </div>
@@ -9842,13 +10878,21 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
     Custom option with checkbox
   </label>
   <div
+<<<<<<< release/1.35.0
     className="SingleSelect css-b62m3t-container"
     id="multi-select"
+=======
+    className="CreatableSelect css-b62m3t-container"
+>>>>>>> main
     onKeyDown={[Function]}
   >
     <span
       className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.35.0
       id="react-select-15-live-region"
+=======
+      id="react-select-5-live-region"
+>>>>>>> main
     />
     <span
       aria-atomic="false"
@@ -9866,6 +10910,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
       >
         <div
           className=" css-858797-placeholder"
+<<<<<<< release/1.35.0
           id="react-select-15-placeholder"
         >
           Select...
@@ -9880,6 +10925,161 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
           className="css-mohuvp-dummyInput-DummyInput"
           disabled={false}
           id="react-select-15-input"
+          inputMode="none"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          role="combobox"
+          tabIndex={0}
+          value=""
+        />
+=======
+          id="react-select-5-placeholder"
+        >
+          Select...
+        </div>
+        <div
+          className=" css-6j8wv5-Input"
+          data-value=""
+        >
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-5-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect="off"
+            className=""
+            disabled={false}
+            id="react-select-5-input"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            spellCheck="false"
+            style={
+              Object {
+                "background": 0,
+                "border": 0,
+                "color": "inherit",
+                "font": "inherit",
+                "gridArea": "1 / 2",
+                "label": "input",
+                "margin": 0,
+                "minWidth": "2px",
+                "opacity": 1,
+                "outline": 0,
+                "padding": 0,
+                "width": "100%",
+              }
+            }
+            tabIndex={0}
+            type="text"
+            value=""
+          />
+        </div>
+>>>>>>> main
+      </div>
+      <div
+        className=" css-1hb7zxy-IndicatorsContainer"
+      >
+        <span
+          className=" css-43ykx9-indicatorSeparator"
+        />
+        <div
+          aria-hidden="true"
+          className=" css-7sl878-indicatorContainer"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-tj5bde-Svg"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate Checkbox 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <label
+    htmlFor="multi-select"
+    id="select-label-custom-option-indeterminate"
+  >
+    Custom option with indeterminate checkbox
+  </label>
+  <div
+    className="SingleSelect css-b62m3t-container"
+    id="multi-select"
+    onKeyDown={[Function]}
+  >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.35.0
+      id="react-select-16-live-region"
+=======
+      id="react-select-12-live-region"
+>>>>>>> main
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
+    <div
+      className=" css-15ub2n0-control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className=" css-319lph-ValueContainer"
+      >
+        <div
+          className=" css-858797-placeholder"
+<<<<<<< release/1.35.0
+          id="react-select-16-placeholder"
+=======
+          id="react-select-12-placeholder"
+>>>>>>> main
+        >
+          Select...
+        </div>
+        <input
+          aria-autocomplete="list"
+<<<<<<< release/1.35.0
+          aria-describedby="react-select-16-placeholder"
+=======
+          aria-describedby="react-select-12-placeholder"
+>>>>>>> main
+          aria-expanded={false}
+          aria-haspopup={true}
+          aria-labelledby="select-label"
+          aria-readonly={true}
+          className="css-mohuvp-dummyInput-DummyInput"
+          disabled={false}
+<<<<<<< release/1.35.0
+          id="react-select-16-input"
+=======
+          id="react-select-12-input"
           inputMode="none"
           onBlur={[Function]}
           onChange={[Function]}
@@ -9941,7 +11141,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
   >
     <span
       className="css-1f43avz-a11yText-A11yText"
-      id="react-select-16-live-region"
+      id="react-select-13-live-region"
     />
     <span
       aria-atomic="false"
@@ -9959,20 +11159,21 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
       >
         <div
           className=" css-858797-placeholder"
-          id="react-select-16-placeholder"
+          id="react-select-13-placeholder"
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
-          aria-describedby="react-select-16-placeholder"
+          aria-describedby="react-select-13-placeholder"
           aria-expanded={false}
           aria-haspopup={true}
           aria-labelledby="select-label"
           aria-readonly={true}
           className="css-mohuvp-dummyInput-DummyInput"
           disabled={false}
-          id="react-select-16-input"
+          id="react-select-13-input"
+>>>>>>> main
           inputMode="none"
           onBlur={[Function]}
           onChange={[Function]}
@@ -10034,7 +11235,11 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
   >
     <span
       className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.35.0
       id="react-select-17-live-region"
+=======
+      id="react-select-14-live-region"
+>>>>>>> main
     />
     <span
       aria-atomic="false"
@@ -10052,20 +11257,32 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
       >
         <div
           className=" css-858797-placeholder"
+<<<<<<< release/1.35.0
           id="react-select-17-placeholder"
+=======
+          id="react-select-14-placeholder"
+>>>>>>> main
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+<<<<<<< release/1.35.0
           aria-describedby="react-select-17-placeholder"
+=======
+          aria-describedby="react-select-14-placeholder"
+>>>>>>> main
           aria-expanded={false}
           aria-haspopup={true}
           aria-labelledby="select-label"
           aria-readonly={true}
           className="css-mohuvp-dummyInput-DummyInput"
           disabled={false}
+<<<<<<< release/1.35.0
           id="react-select-17-input"
+=======
+          id="react-select-14-input"
+>>>>>>> main
           inputMode="none"
           onBlur={[Function]}
           onChange={[Function]}
@@ -10120,7 +11337,11 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
   >
     <span
       className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.35.0
       id="react-select-9-live-region"
+=======
+      id="react-select-6-live-region"
+>>>>>>> main
     />
     <span
       aria-atomic="false"
@@ -10138,20 +11359,32 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
       >
         <div
           className=" css-858797-placeholder"
+<<<<<<< release/1.35.0
           id="react-select-9-placeholder"
+=======
+          id="react-select-6-placeholder"
+>>>>>>> main
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+<<<<<<< release/1.35.0
           aria-describedby="react-select-9-placeholder"
+=======
+          aria-describedby="react-select-6-placeholder"
+>>>>>>> main
           aria-expanded={false}
           aria-haspopup={true}
           aria-label="Default select"
           aria-readonly={true}
           className="css-mohuvp-dummyInput-DummyInput"
           disabled={false}
+<<<<<<< release/1.35.0
           id="react-select-9-input"
+=======
+          id="react-select-6-input"
+>>>>>>> main
           inputMode="none"
           onBlur={[Function]}
           onChange={[Function]}
@@ -10258,7 +11491,11 @@ exports[`Storyshots Components/Selects/Single In Modal 1`] = `
         >
           <span
             className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.35.0
             id="react-select-14-live-region"
+=======
+            id="react-select-11-live-region"
+>>>>>>> main
           />
           <span
             aria-atomic="false"
@@ -10276,20 +11513,32 @@ exports[`Storyshots Components/Selects/Single In Modal 1`] = `
             >
               <div
                 className=" css-858797-placeholder"
+<<<<<<< release/1.35.0
                 id="react-select-14-placeholder"
+=======
+                id="react-select-11-placeholder"
+>>>>>>> main
               >
                 Select...
               </div>
               <input
                 aria-autocomplete="list"
+<<<<<<< release/1.35.0
                 aria-describedby="react-select-14-placeholder"
+=======
+                aria-describedby="react-select-11-placeholder"
+>>>>>>> main
                 aria-expanded={false}
                 aria-haspopup={true}
                 aria-labelledby="select-label"
                 aria-readonly={true}
                 className="css-mohuvp-dummyInput-DummyInput"
                 disabled={false}
+<<<<<<< release/1.35.0
                 id="react-select-14-input"
+=======
+                id="react-select-11-input"
+>>>>>>> main
                 inputMode="none"
                 onBlur={[Function]}
                 onChange={[Function]}
@@ -10373,7 +11622,11 @@ exports[`Storyshots Components/Selects/Single Labeled 1`] = `
   >
     <span
       className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.35.0
       id="react-select-12-live-region"
+=======
+      id="react-select-9-live-region"
+>>>>>>> main
     />
     <span
       aria-atomic="false"
@@ -10391,20 +11644,32 @@ exports[`Storyshots Components/Selects/Single Labeled 1`] = `
       >
         <div
           className=" css-858797-placeholder"
+<<<<<<< release/1.35.0
           id="react-select-12-placeholder"
+=======
+          id="react-select-9-placeholder"
+>>>>>>> main
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+<<<<<<< release/1.35.0
           aria-describedby="react-select-12-placeholder"
+=======
+          aria-describedby="react-select-9-placeholder"
+>>>>>>> main
           aria-expanded={false}
           aria-haspopup={true}
           aria-labelledby="select-label"
           aria-readonly={true}
           className="css-mohuvp-dummyInput-DummyInput"
           disabled={false}
+<<<<<<< release/1.35.0
           id="react-select-12-input"
+=======
+          id="react-select-9-input"
+>>>>>>> main
           inputMode="none"
           onBlur={[Function]}
           onChange={[Function]}
@@ -10459,7 +11724,11 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
   >
     <span
       className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.35.0
       id="react-select-11-live-region"
+=======
+      id="react-select-8-live-region"
+>>>>>>> main
     />
     <span
       aria-atomic="false"
@@ -10477,20 +11746,32 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
       >
         <div
           className=" css-858797-placeholder"
+<<<<<<< release/1.35.0
           id="react-select-11-placeholder"
+=======
+          id="react-select-8-placeholder"
+>>>>>>> main
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+<<<<<<< release/1.35.0
           aria-describedby="react-select-11-placeholder"
+=======
+          aria-describedby="react-select-8-placeholder"
+>>>>>>> main
           aria-expanded={false}
           aria-haspopup={true}
           aria-label="Loading select"
           aria-readonly={true}
           className="css-mohuvp-dummyInput-DummyInput"
           disabled={true}
+<<<<<<< release/1.35.0
           id="react-select-11-input"
+=======
+          id="react-select-8-input"
+>>>>>>> main
           inputMode="none"
           onBlur={[Function]}
           onChange={[Function]}
@@ -10552,7 +11833,11 @@ exports[`Storyshots Components/Selects/Single Multi Select 1`] = `
   >
     <span
       className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.35.0
       id="react-select-13-live-region"
+=======
+      id="react-select-10-live-region"
+>>>>>>> main
     />
     <span
       aria-atomic="false"
@@ -10570,20 +11855,32 @@ exports[`Storyshots Components/Selects/Single Multi Select 1`] = `
       >
         <div
           className=" css-858797-placeholder"
+<<<<<<< release/1.35.0
           id="react-select-13-placeholder"
+=======
+          id="react-select-10-placeholder"
+>>>>>>> main
         >
           Select...
         </div>
         <input
           aria-autocomplete="list"
+<<<<<<< release/1.35.0
           aria-describedby="react-select-13-placeholder"
+=======
+          aria-describedby="react-select-10-placeholder"
+>>>>>>> main
           aria-expanded={false}
           aria-haspopup={true}
           aria-labelledby="select-label"
           aria-readonly={true}
           className="css-mohuvp-dummyInput-DummyInput"
           disabled={false}
+<<<<<<< release/1.35.0
           id="react-select-13-input"
+=======
+          id="react-select-10-input"
+>>>>>>> main
           inputMode="none"
           onBlur={[Function]}
           onChange={[Function]}
@@ -10638,7 +11935,11 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
   >
     <span
       className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.35.0
       id="react-select-10-live-region"
+=======
+      id="react-select-7-live-region"
+>>>>>>> main
     />
     <span
       aria-atomic="false"
@@ -10656,7 +11957,11 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
       >
         <div
           className=" css-858797-placeholder"
+<<<<<<< release/1.35.0
           id="react-select-10-placeholder"
+=======
+          id="react-select-7-placeholder"
+>>>>>>> main
         >
           Select...
         </div>
@@ -10666,7 +11971,11 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
         >
           <input
             aria-autocomplete="list"
+<<<<<<< release/1.35.0
             aria-describedby="react-select-10-placeholder"
+=======
+            aria-describedby="react-select-7-placeholder"
+>>>>>>> main
             aria-expanded={false}
             aria-haspopup={true}
             aria-label="Searchable select"
@@ -10675,7 +11984,11 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
             autoCorrect="off"
             className=""
             disabled={false}
+<<<<<<< release/1.35.0
             id="react-select-10-input"
+=======
+            id="react-select-7-input"
+>>>>>>> main
             onBlur={[Function]}
             onChange={[Function]}
             onFocus={[Function]}
