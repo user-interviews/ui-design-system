@@ -1,6 +1,11 @@
 import React, { Fragment } from 'react';
+import { action } from '@storybook/addon-actions';
 
 import AsyncSelect from 'src/Select/AsyncSelect';
+import Button from 'src/Button';
+import {
+  Modal, ModalHeader, ModalBody, ModalFooter,
+ } from 'src/Modal';
 
 export default {
   title: 'Components/Selects/Async',
@@ -22,6 +27,8 @@ async function loadOptions(search) {
 
   return options.filter(({ label }) => label.toLowerCase().includes(search.toLowerCase()));
 }
+
+const handleRequestClose = () => action('Close');
 
 export const Default = () => (
   <AsyncSelect
@@ -46,3 +53,35 @@ export const Labeled = () => (
     />
   </Fragment>
 );
+
+export const InModal = () => (
+  <Modal
+    ariaHideApp={false}
+    className="AsyncSelectInModal"
+    contentLabel="AsyncSelect in Modal"
+    isOpen
+  >
+    <ModalHeader
+      title="AsyncSelect in modal"
+      titleId="async-select-in-modal"
+      onRequestClose={handleRequestClose}
+    />
+    <ModalBody>
+      <AsyncSelect
+        aria-labelledby="async-label"
+        getOptionLabel={({ label }) => label}
+        getOptionValue={({ value }) => value}
+        id="async-select"
+        loadOptions={loadOptions}
+        modal
+        noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+      />
+    </ModalBody>
+    <ModalFooter
+      dismissButtonText="Cancel"
+      onRequestClose={handleRequestClose}
+    >
+      <Button type="submit" variant="primary">Confirm</Button>
+    </ModalFooter>
+  </Modal>
+  );

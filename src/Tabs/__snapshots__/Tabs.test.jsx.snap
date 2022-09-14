@@ -34,6 +34,7 @@ Object {
           >
             <button
               aria-controls="tabID-tabpane-two"
+              aria-selected="false"
               class="nav-link"
               data-rr-ui-event-key="two"
               id="tabID-tab-two"
@@ -51,6 +52,7 @@ Object {
             <button
               aria-controls="tabID-tabpane-three"
               aria-disabled="true"
+              aria-selected="false"
               class="nav-link disabled"
               data-rr-ui-event-key="three"
               disabled=""
@@ -70,6 +72,7 @@ Object {
             aria-labelledby="tabID-tab-one"
             class="tab-pane active"
             id="tabID-tabpane-one"
+            role="tabpanel"
           >
             Tab Content One
           </div>
@@ -77,6 +80,7 @@ Object {
             aria-labelledby="tabID-tab-two"
             class="tab-pane"
             id="tabID-tabpane-two"
+            role="tabpanel"
           >
             Tab Content Two
           </div>
@@ -84,6 +88,7 @@ Object {
             aria-labelledby="tabID-tab-three"
             class="tab-pane"
             id="tabID-tabpane-three"
+            role="tabpanel"
           >
             Tab Content Three
           </div>
@@ -121,6 +126,7 @@ Object {
         >
           <button
             aria-controls="tabID-tabpane-two"
+            aria-selected="false"
             class="nav-link"
             data-rr-ui-event-key="two"
             id="tabID-tab-two"
@@ -138,6 +144,7 @@ Object {
           <button
             aria-controls="tabID-tabpane-three"
             aria-disabled="true"
+            aria-selected="false"
             class="nav-link disabled"
             data-rr-ui-event-key="three"
             disabled=""
@@ -157,6 +164,7 @@ Object {
           aria-labelledby="tabID-tab-one"
           class="tab-pane active"
           id="tabID-tabpane-one"
+          role="tabpanel"
         >
           Tab Content One
         </div>
@@ -164,6 +172,7 @@ Object {
           aria-labelledby="tabID-tab-two"
           class="tab-pane"
           id="tabID-tabpane-two"
+          role="tabpanel"
         >
           Tab Content Two
         </div>
@@ -171,6 +180,7 @@ Object {
           aria-labelledby="tabID-tab-three"
           class="tab-pane"
           id="tabID-tabpane-three"
+          role="tabpanel"
         >
           Tab Content Three
         </div>
@@ -265,6 +275,7 @@ Object {
           >
             <button
               aria-controls="tabID-tabpane-two"
+              aria-selected="false"
               class="nav-link"
               data-rr-ui-event-key="two"
               id="tabID-tab-two"
@@ -282,6 +293,7 @@ Object {
             <button
               aria-controls="tabID-tabpane-three"
               aria-disabled="true"
+              aria-selected="false"
               class="nav-link disabled"
               data-rr-ui-event-key="three"
               disabled=""
@@ -301,6 +313,7 @@ Object {
             aria-labelledby="tabID-tab-one"
             class="tab-pane active"
             id="tabID-tabpane-one"
+            role="tabpanel"
           >
             Tab Content One
           </div>
@@ -308,6 +321,7 @@ Object {
             aria-labelledby="tabID-tab-two"
             class="tab-pane"
             id="tabID-tabpane-two"
+            role="tabpanel"
           >
             Tab Content Two
           </div>
@@ -315,6 +329,7 @@ Object {
             aria-labelledby="tabID-tab-three"
             class="tab-pane"
             id="tabID-tabpane-three"
+            role="tabpanel"
           >
             Tab Content Three
           </div>
@@ -352,6 +367,7 @@ Object {
         >
           <button
             aria-controls="tabID-tabpane-two"
+            aria-selected="false"
             class="nav-link"
             data-rr-ui-event-key="two"
             id="tabID-tab-two"
@@ -369,6 +385,7 @@ Object {
           <button
             aria-controls="tabID-tabpane-three"
             aria-disabled="true"
+            aria-selected="false"
             class="nav-link disabled"
             data-rr-ui-event-key="three"
             disabled=""
@@ -388,6 +405,7 @@ Object {
           aria-labelledby="tabID-tab-one"
           class="tab-pane active"
           id="tabID-tabpane-one"
+          role="tabpanel"
         >
           Tab Content One
         </div>
@@ -395,6 +413,7 @@ Object {
           aria-labelledby="tabID-tab-two"
           class="tab-pane"
           id="tabID-tabpane-two"
+          role="tabpanel"
         >
           Tab Content Two
         </div>
@@ -402,6 +421,7 @@ Object {
           aria-labelledby="tabID-tab-three"
           class="tab-pane"
           id="tabID-tabpane-three"
+          role="tabpanel"
         >
           Tab Content Three
         </div>
