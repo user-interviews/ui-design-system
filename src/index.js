@@ -73,6 +73,7 @@ import {
 } from 'src/Toast';
 import { ToggleInput } from 'src/ToggleInput';
 import Tooltip from 'src/Tooltip';
+import { NavTabs, NavTab } from './NavTabs';
 
 export {
   Accordion,
@@ -114,6 +115,8 @@ export {
   ModalBody,
   ModalFooter,
   ModalHeader,
+  NavTab,
+  NavTabs,
   Option,
   Pill,
   Pills,

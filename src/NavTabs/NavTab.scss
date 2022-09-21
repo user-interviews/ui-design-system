@@ -1,0 +1,27 @@
+@import '../../scss/theme';
+
+.NavTab {
+  border-bottom: 2px solid $ux-gray-400;
+  cursor: pointer;
+  
+  padding: 0.5rem;
+  text-decoration: none;
+
+  &--selected {
+    color: $ux-blue-500;
+    font-weight: $font-weight-bold;
+  }
+
+  &--selected.NavTab--row {
+    border-bottom: 2px solid $ux-blue-500;
+  }
+
+  &--column {
+    border-bottom: none;
+    border-left: 2px solid $ux-gray-400;
+  }
+
+  &--selected.NavTab--column {
+    border-left: 2px solid $ux-blue-500;
+  }
+}
