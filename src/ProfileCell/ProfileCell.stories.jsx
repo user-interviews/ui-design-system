@@ -2,12 +2,12 @@ import React from 'react';
 import {
  withKnobs, text, number, boolean,
 } from '@storybook/addon-knobs';
-
+import { faShieldCheck } from '@fortawesome/pro-solid-svg-icons';
 import ProfileCell from 'src/ProfileCell';
 import mdx from './ProfileCell.mdx';
 
 export default {
-  title: 'Design System/Profile Cell',
+  title: 'Components/Profile Cell',
   component: ProfileCell,
   decorators: [withKnobs],
   parameters: {
@@ -68,6 +68,17 @@ export const WithImage = () => (
     maxWidth={text('Max Text Width (e.g. 8rem)', '')}
     showAlert={boolean('Show Alert', false)}
     subtitle={largeSubtitle}
+    user={userWithImage}
+  />
+);
+
+export const WithTrailingIcon = () => (
+  <ProfileCell
+    colorId={number('Color ID', undefined)}
+    maxWidth={text('Max Text Width (e.g. 8rem)', '')}
+    showAlert={boolean('Show Alert', false)}
+    subtitle={text('Subtitle Text', `riley@userinterviews.com`)}
+    trailingIcon={faShieldCheck}
     user={userWithImage}
   />
 );

@@ -1,0 +1,35 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import CardContainer from './CardContainer';
+
+# CardContainer
+
+##
+
+<h4>
+	A simple layout container for positioning Cards.
+</h4>
+
+<Canvas>
+  <Story id="components-cardcontainer--default" />
+</Canvas>
+
+### When to use 
+- Use `CardContainer` to wrap one or more `Card` components.
+- `CardContainer` centers `Card` components by default and should handle the most common page layouts that use `Card`.
+
+## Props
+
+<ArgsTable of={CardContainer} />
+
+## Stories
+
+### Default 
+
+<Canvas>
+  <Story id="components-cardcontainer--default" />
+</Canvas>
+
+## Formatting
+
+### Alignment
+- `Card`s within `CardContainer` are centered by default

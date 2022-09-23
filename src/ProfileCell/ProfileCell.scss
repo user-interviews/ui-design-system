@@ -13,6 +13,17 @@
       white-space: nowrap;
     }
 
+    &__name__container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__trailing_icon {
+      color: $ux-gray-800;
+      margin-left: 0.25rem;
+    }
+
     &__name {
       @include font-type-30--bold;
       @include truncate;

@@ -10,7 +10,7 @@ import FormGroup from '../FormGroup/FormGroup';
 import mdx from './CheckboxButtonGroup.mdx';
 
 export default {
-  title: 'Design System/Form Elements/CheckboxButtonGroup',
+  title: 'Components/Form Elements/CheckboxButtonGroup',
   component: CheckboxButtonGroup,
   decorators: [withKnobs()],
   parameters: {
@@ -25,6 +25,7 @@ const CheckboxButtonGroupComponent = ({
   bordered,
   children,
   defaultValue,
+  elementType,
   fullWidth,
   id,
   inline,
@@ -38,6 +39,7 @@ const CheckboxButtonGroupComponent = ({
   return (
     <FormGroup
       bordered={bordered}
+      elementType={elementType}
       id={id}
       inline={inline}
       label={label}
@@ -70,9 +72,10 @@ export const Default = () => {
     <CheckboxButtonGroupComponent
       bordered={boolean('Bordered Form Group', false)}
       defaultValue={[]}
+      elementType="fieldset"
       fullWidth={boolean('Full width', false)}
       id="with-checkbox-button-group"
-      label="Label"
+      label="Legend"
       labelHelperText="use the knobs to try out different variations"
       labelHtmlFor="checkbox-button-group"
       orientation={orientation}
@@ -102,14 +105,15 @@ export const Default = () => {
   );
 };
 
-export const DefaultRow = () => (
+export const Row = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
+    elementType="fieldset"
     fullWidth={false}
     id="with-checkbox-button-group-1"
     inline
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.ROW}
@@ -142,9 +146,10 @@ export const BorderedRow = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
+    elementType="fieldset"
     fullWidth={false}
     id="with-checkbox-button-group-2"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.ROW}
@@ -173,13 +178,13 @@ export const BorderedRow = () => (
   </CheckboxButtonGroupComponent>
 );
 
-export const Description = () => (
+export const DescriptionColumn = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
-    fullWidth
+    elementType="fieldset"
     id="with-checkbox-button-group-3"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.COLUMN}
@@ -221,9 +226,10 @@ export const DescriptionRow = () => (
   <CheckboxButtonGroupComponent
     bordered={false}
     defaultValue={[]}
+    elementType="fieldset"
     fullWidth
     id="with-checkbox-button-group-4"
-    label="Label"
+    label="Legend"
     labelHelperText="helper text"
     labelHtmlFor="checkbox-button-group"
     orientation={ORIENTATIONS.ROW}
@@ -253,6 +259,51 @@ export const DescriptionRow = () => (
       Control={CheckboxButton}
       helperText="helper text"
       id="value-3-4"
+      text="Label 3"
+      value="3"
+    >
+      This is where the description goes
+    </FormControlLabel>
+  </CheckboxButtonGroupComponent>
+);
+
+export const BorderedColumnFullWidth = () => (
+  <CheckboxButtonGroupComponent
+    bordered={false}
+    defaultValue={[]}
+    elementType="fieldset"
+    fullWidth
+    id="with-checkbox-button-group-5"
+    label="Legend"
+    labelHelperText="helper text"
+    labelHtmlFor="checkbox-button-group"
+    orientation={ORIENTATIONS.COLUMN}
+  >
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      helperText="helper text"
+      id="value-1-5"
+      text="Label 1"
+      value="1"
+    >
+      This is where the description goes
+    </FormControlLabel>
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      helperText="helper text"
+      id="value-2-5"
+      text="Label 2"
+      value="2"
+    >
+      This is where the description goes
+    </FormControlLabel>
+    <FormControlLabel
+      bordered
+      Control={CheckboxButton}
+      helperText="helper text"
+      id="value-3-5"
       text="Label 3"
       value="3"
     >

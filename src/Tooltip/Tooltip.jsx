@@ -48,13 +48,19 @@ class Tooltip extends Component {
     }
   };
 
-  handleToggleTooltip = (event) => {
+  handleToggleTooltipClick = (event) => {
+    if (this.props.withHover) return;
+
     event.preventDefault();
     this.clickOutsideListener = addClickOutsideListener(
       event.target.parentNode,
       this.handleClickOutside,
     );
 
+    this.setState((state) => ({ visible: !state.visible }), this.handleShow);
+  };
+
+  handleToggleTooltipHover = () => {
     this.setState((state) => ({ visible: !state.visible }), this.handleShow);
   };
 
@@ -74,8 +80,10 @@ class Tooltip extends Component {
           className={classNames('Tooltip__icon', this.props.iconClasses)}
           /* eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex */
           tabIndex="0"
-          onClick={this.handleToggleTooltip}
-          onKeyPress={this.handleToggleTooltip}
+          onClick={this.handleToggleTooltipClick}
+          onKeyPress={this.handleToggleTooltipClick}
+          onMouseEnter={this.props.withHover && this.handleToggleTooltipHover}
+          onMouseLeave={this.props.withHover && this.handleToggleTooltipHover}
         >
           <FontAwesomeIcon icon={this.props.icon} />
         </span>
@@ -92,6 +100,7 @@ Tooltip.propTypes = {
   strategy: PropTypes.string,
   text: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   theme: PropTypes.string,
+  withHover: PropTypes.bool,
   onShow: PropTypes.func,
 };
 
@@ -101,6 +110,7 @@ Tooltip.defaultProps = {
   header: undefined,
   strategy: undefined,
   theme: 'dark',
+  withHover: undefined,
   onShow: undefined,
 };
 

@@ -20,6 +20,7 @@ const LoadingOverlay = (props) => {
   return (
     <div
       className={classes}
+      data-testid={props.dataTestid}
       style={props.visible ? {} : { display: 'none' }}
     >
       { props.header && (
@@ -36,6 +37,7 @@ const LoadingOverlay = (props) => {
 
 LoadingOverlay.propTypes = {
   contentTop: PropTypes.bool,
+  dataTestid: PropTypes.string,
   header: PropTypes.string,
   text: PropTypes.string,
   textClassName: PropTypes.string,
@@ -44,6 +46,7 @@ LoadingOverlay.propTypes = {
 
 LoadingOverlay.defaultProps = {
   contentTop: false,
+  dataTestid: 'LoadingOverlay',
   header: undefined,
   text: undefined,
   textClassName: undefined,

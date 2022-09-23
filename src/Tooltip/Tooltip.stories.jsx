@@ -8,7 +8,7 @@ import mdx from './Tooltip.mdx';
 const withContainer = (story) => <div style={{ padding: '4rem' }}>{story()}</div>;
 
 export default {
-  title: 'Design System/Tooltip',
+  title: 'Components/Tooltip',
   component: Tooltip,
   decorators: [withKnobs, withContainer],
   parameters: {
@@ -67,6 +67,14 @@ export const GrayIcon = () => (
     iconClasses="Tooltip__icon--gray"
     placement="right"
     text={text('Tooltip Text', 'Gray Icon')}
+  />
+);
+
+export const WithHover = () => (
+  <Tooltip
+    placement={radios('Placement', ['right', 'top', 'bottom', 'left', 'auto'], 'right')}
+    text={text('Tooltip Text', 'Default Tooltip')}
+    withHover
   />
 );
 

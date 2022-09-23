@@ -6,22 +6,39 @@ import Tooltip from 'src/Tooltip';
 
 import 'scss/forms/input_label.scss';
 
-export default function InputLabel(props) {
+const InputLabel = ({
+  className,
+  elementType,
+  labelHtmlFor,
+  text,
+  required,
+  labelHelperText,
+  tooltipText,
+  ...props
+}) => {
+  const inputLabelChildren = (
+    <>
+      {text}
+      {required && <span className="InputLabel__helper-text">&nbsp;(Required)</span>}
+      {labelHelperText && <span className="InputLabel__helper-text">&nbsp;({labelHelperText})</span>}
+      {tooltipText && <Tooltip iconClasses="Tooltip__icon--gray" placement="right" text={tooltipText} />}
+    </>
+  );
+
   return (
     <label
-      className={classNames('InputLabel', props.className)}
-      htmlFor={props.labelHtmlFor}
+      className={classNames('InputLabel', className)}
+      htmlFor={labelHtmlFor}
+      {...props}
     >
-      {props.text}
-      {props.required && <span className="InputLabel__helper-text">&nbsp;(Required)</span>}
-      {props.labelHelperText && <span className="InputLabel__helper-text">&nbsp;({props.labelHelperText})</span>}
-      {props.tooltipText && <Tooltip iconClasses="Tooltip__icon--gray" placement="right" text={props.tooltipText} />}
+      {inputLabelChildren}
     </label>
   );
-}
+};
 
 InputLabel.propTypes = {
   className: PropTypes.string,
+  elementType: PropTypes.string,
   labelHelperText: PropTypes.string,
   labelHtmlFor: PropTypes.string,
   required: PropTypes.bool,
@@ -31,8 +48,11 @@ InputLabel.propTypes = {
 
 InputLabel.defaultProps = {
   className: '',
+  elementType: undefined,
   labelHelperText: undefined,
   labelHtmlFor: '',
   required: false,
   tooltipText: undefined,
 };
+
+export default InputLabel;

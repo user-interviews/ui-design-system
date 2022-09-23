@@ -80,11 +80,11 @@ Array [
     <div
       className="Alert__content"
     >
-      <p
+      <div
         className="Alert__message"
       >
         This is just a test...
-      </p>
+      </div>
     </div>
     <div
       className="Alert__close"

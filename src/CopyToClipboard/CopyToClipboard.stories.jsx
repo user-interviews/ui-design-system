@@ -4,7 +4,7 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 import CopyToClipboard from 'src/CopyToClipboard';
 
 export default {
-  title: 'Design System/Copy To Clipboard',
+  title: 'Components/Copy To Clipboard',
   component: CopyToClipboard,
   decorators: [withKnobs({ escapeHTML: false })],
 };

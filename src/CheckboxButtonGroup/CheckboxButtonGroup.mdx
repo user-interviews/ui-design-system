@@ -1,35 +1,87 @@
 import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import CheckboxButtonGroup from './CheckboxButtonGroup';
 
-# Checkbox Button Groups
+# CheckboxButtonGroup
 
-## Variants
+##
+
+<h4>
+  A FormGroup that utilizes Checkboxes. Supports borders, row/column orientations, and descriptions.
+</h4>
+
+<Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--default"/>
+</Canvas>
+
+
+## Props
+
+<ArgsTable of={CheckboxButtonGroup} />
+
+## Stories
 
 ### Default
 
-Multi-selection button. Can be toggled on/off by clicking.
+- Multi-selection button. Can be toggled on/off by clicking.
 
 <Canvas>
-  <Story id="design-system-form-elements-checkboxbuttongroup--default"/>
+  <Story id="components-form-elements-checkboxbuttongroup--default"/>
 </Canvas>
 
-### Bordered
-
-Multi-selection button. Only used in the context of Checkbox FormGroups.
+### Row
 
 <Canvas>
-  <Story id="design-system-form-elements-checkboxbuttongroup--bordered-row"/>
+  <Story id="components-form-elements-checkboxbuttongroup--row"/>
 </Canvas>
 
-### Description
+### Bordered Row
 
-Multi-selection button. Includes helper text and/or a description in addition to the default label.
+- Multi-selection button. Only used in the context of Checkbox FormGroups.
 
 <Canvas>
-  <Story id="design-system-form-elements-checkboxbuttongroup--description-row"/>
+  <Story id="components-form-elements-checkboxbuttongroup--bordered-row"/>
 </Canvas>
 
-## Good practices
+### Description Column
 
-* Required checkboxes (e.g. Terms of Service agreement, phone verification) should be unselected by default
+- Multi-selection button. Includes helper text and/or a description in addition to the default label.
 
-* When using Default checkbox buttons, the options should always be stacked vertically (except when used in the context of Inline FormGroups)
+<Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--description-column"/>
+</Canvas>
+
+### Description Row
+
+<Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--description-row"/>
+</Canvas>
+
+### Bordered Column Full Width
+
+<Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--bordered-column-full-width"/>
+</Canvas>
+
+## Formatting
+
+### States
+
+### Anatomy
+
+### Sizing
+
+### Alignment
+
+
+## Best practices
+
+### General
+
+- Required checkboxes (e.g. Terms of Service agreement, phone verification) should be unselected by default
+- When using Default checkbox buttons, the options should always be stacked vertically (except when used in the context of Inline FormGroups)
+
+### Behavior
+
+### Implementation
+
+### UX Copy

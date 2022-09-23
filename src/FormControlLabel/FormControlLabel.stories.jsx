@@ -7,7 +7,7 @@ import CheckboxButton from 'src/CheckboxButton';
 import RadioButton from 'src/RadioButton';
 
 export default {
-  title: 'Design System/Form Elements/Form Control Label',
+  title: 'Components/Form Elements/Form Control Label',
   component: FormControlLabel,
   decorators: [withKnobs()],
 };

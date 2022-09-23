@@ -25,10 +25,12 @@ const Card = ({
 }) => {
   const cardChildren = (
     <Fragment>
-      <div className="Card__header">
-        { title && <h2 className="Card__title">{title}</h2> }
-        { helperText && <span className="Card__helper-text">{helperText}</span>}
-      </div>
+      { title && (
+        <div className="Card__header">
+          <h2 className="Card__title">{title}</h2>
+          { helperText && <span className="Card__helper-text">{helperText}</span>}
+        </div>
+      )}
 
       { divided && <hr className="Card__divider" /> }
       { subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }

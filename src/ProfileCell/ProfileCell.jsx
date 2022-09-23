@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Avatar from 'src/Avatar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './ProfileCell.scss';
 
@@ -29,9 +30,14 @@ function ProfileCell(props) {
         />
       </div>
       <div className="ProfileCell__content" style={contentStyle}>
-        <h5 className="ProfileCell__content__name">
-          {props.user.name}
-        </h5>
+        <div className="ProfileCell__content__name__container">
+          <h5 className="ProfileCell__content__name">
+            {props.user.name}
+          </h5>
+          {props.trailingIcon && (
+            <FontAwesomeIcon className="ProfileCell__content__trailing_icon" icon={props.trailingIcon} />
+          )}
+        </div>
         <div className="ProfileCell__content__subtitle">
           {props.subtitle || ' '}
         </div>
@@ -62,6 +68,7 @@ ProfileCell.propTypes = {
   maxWidth: PropTypes.string,
   showAlert: PropTypes.bool,
   subtitle: PropTypes.node,
+  trailingIcon: PropTypes.object,
   user: ProfileUser.isRequired,
 };
 
@@ -71,6 +78,7 @@ ProfileCell.defaultProps = {
   maxWidth: undefined,
   showAlert: false,
   subtitle: undefined,
+  trailingIcon: undefined,
 };
 
 export default ProfileCell;

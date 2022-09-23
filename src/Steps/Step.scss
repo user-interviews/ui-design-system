@@ -1,0 +1,72 @@
+@import '../../scss/theme';
+
+$step-circle-size: 2.5rem;
+$text-container-margin-top: 0.625rem;
+
+.Step {
+  display: grid;
+  grid-template-columns: $step-circle-size auto;
+  grid-template-rows: auto auto;
+
+  &__circle {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    
+    background: $ux-white;
+    border: 1px solid $ux-emerald-600;
+    border-radius: 50%;
+    
+    height: 0;
+    width: 100%;
+    padding-bottom: 95%;
+
+    position: relative;
+
+    z-index: 1;
+
+    &__number {
+      @include font-type-40--bold;
+      color: $ux-emerald-600;
+      float: left;
+      line-height: 1;
+      margin-top: -0.5rem;
+      padding-top: 50%;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  // removes last line
+  &:last-of-type {
+    .Step__text-container {
+      border-left: none;
+    }
+  }
+
+  &__text-container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    display: flex;
+    position: relative;
+    // translates the text-container so that border is centered with circle
+    right: 1.25rem;
+
+    min-height: ($step-circle-size * 2) - $ux-spacing-30;
+
+    border-left: 1px solid $ux-emerald-600;
+
+    // centers text container with step circle
+    margin-top: $text-container-margin-top;
+    
+    // provides padding bottom between steps
+    padding-bottom: $ux-spacing-30;
+
+    &__text {
+      margin-left: $ux-spacing-60;
+    }
+  }
+}
+

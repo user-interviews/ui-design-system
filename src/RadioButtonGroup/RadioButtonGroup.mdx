@@ -1,33 +1,87 @@
 import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import RadioButtonGroup from './RadioButtonGroup';
 
-# Radio Button Groups
+# RadioButtonGroup
 
-## Variants
+##
+
+<h4>
+  A collections of radio buttons describing a set of related options. Only one option selected at a time.
+</h4>
+
+<Canvas>
+  <Story id="components-form-elements-radiobuttongroup--default"/>
+</Canvas>
+
+## Props
+
+<ArgsTable of={RadioButtonGroup} />
+
+## Stories
 
 ### Default
 
 Single-selection button.
 
 <Canvas>
-  <Story id="design-system-form-elements-radiobuttongroup--default"/>
+  <Story id="components-form-elements-radiobuttongroup--default"/>
 </Canvas>
 
-### Bordered
+### Row
+
+<Canvas>
+  <Story id="components-form-elements-radiobuttongroup--row"/>
+</Canvas>
+
+### Bordered Row
 
 Single-selection button. Only used in the context of Radio FormGroups.
 
 <Canvas>
-  <Story id="design-system-form-elements-radiobuttongroup--bordered-row"/>
+  <Story id="components-form-elements-radiobuttongroup--bordered-row"/>
 </Canvas>
 
-### Description
+### Description Column
+
+<Canvas>
+  <Story id="components-form-elements-radiobuttongroup--description-column"/>
+</Canvas>
+
+### Description Row
 
 Single-selection button. Includes helper text and/or a description in addition to the default label.
 
 <Canvas>
-  <Story id="design-system-form-elements-radiobuttongroup--description-row"/>
+  <Story id="components-form-elements-radiobuttongroup--description-row"/>
 </Canvas>
 
-## Good practices
+### Bordered Column Full Width
 
-* When using Default radio buttons, the options should always be stacked vertically (except when used in the context of Inline FormGroups)
+Single-selection button. Includes helper text and/or a description in addition to the default label.
+
+<Canvas>
+  <Story id="components-form-elements-radiobuttongroup--bordered-column-full-width"/>
+</Canvas>
+
+
+## Formatting
+
+### States
+
+### Anatomy 
+
+### Sizing
+
+### Alignment
+
+
+## Best practices
+
+### General
+
+### Behavior
+
+### Implementation
+- When using Default radio buttons, the options should always be stacked vertically (except when used in the context of Inline FormGroups)
+
+### UX Copy

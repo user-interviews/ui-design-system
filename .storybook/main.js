@@ -4,7 +4,7 @@ module.exports = {
       name: '@storybook/addon-docs',
       options: { mdxBabelOptions: { babelrc: true, configFile: true } },
     },
-    '@storybook/addon-a11y/register',
+    '@storybook/addon-a11y',
     '@storybook/addon-actions/register',
     '@storybook/addon-knobs/register',
     '@storybook/addon-links/register',

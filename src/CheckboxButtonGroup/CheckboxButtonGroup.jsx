@@ -16,6 +16,7 @@ export default function CheckboxButtonGroup({
   onChange,
 }) {
   const row = orientation === ORIENTATIONS.ROW;
+  const column = orientation === ORIENTATIONS.COLUMN;
 
   const handleChangeValue = (event) => {
     const eventValue = parseInput(event.target.value);
@@ -42,6 +43,7 @@ export default function CheckboxButtonGroup({
         'CheckboxButtonGroup--row': row,
         'CheckboxButtonGroup--row--full-width': row && fullWidth,
         'CheckboxButtonGroup--row--compact': row && !fullWidth,
+        'CheckboxButtonGroup--column--full-width': column && fullWidth,
       })}
       id={id}
     >

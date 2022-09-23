@@ -5,7 +5,7 @@ import FormControlLabel from 'src/FormControlLabel';
 import mdx from './CheckboxButton.mdx';
 
 export default {
-  title: 'Design System/CheckboxButton',
+  title: 'Components/CheckboxButton',
   component: CheckboxButton,
   parameters: {
     docs: {

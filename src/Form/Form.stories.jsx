@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 
+import Button from 'src/Button';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
@@ -11,7 +12,7 @@ import RadioButtonGroup from 'src/RadioButtonGroup';
 import mdx from './Form.mdx';
 
 export default {
-  title: 'Design System/Form',
+  title: 'Components/Form',
   component: Form,
   parameters: {
     docs: {
@@ -69,6 +70,6 @@ export const Default = () => (
         text="second choice"
       />
     </RadioButtonGroup>
-    <button className="btn btn-primary" type="submit">Save</button>
+    <Button type="submit" variant="primary">Save</Button>
   </Form>
 );

@@ -1,15 +1,28 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useRef } from 'react';
+import { action } from '@storybook/addon-actions';
 
+import Button from 'src/Button';
+import {
+ Modal, ModalHeader, ModalBody, ModalFooter,
+} from 'src/Modal';
 import SingleSelect from 'src/Select/SingleSelect';
 
 import Option from './Option';
 import ValueContainer from './ValueContainer';
 
-const onChange = () => {};
+import mdx from './SingleSelect.mdx';
+
+const onChange = () => action('Change');
+const handleRequestClose = () => action('Close');
 
 export default {
-  title: 'Design System/Selects/Single',
+  title: 'Components/Selects/Single',
   component: SingleSelect,
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 const options = [
@@ -58,6 +71,36 @@ export const MultiSelect = () => (
   </Fragment>
 );
 
+export const InModal = () => (
+  <Modal
+    ariaHideApp={false}
+    className="SelectInModal"
+    contentLabel="Select in Modal"
+    isOpen
+  >
+    <ModalHeader
+      title="Select in modal"
+      titleId="select-in-modal"
+      onRequestClose={handleRequestClose}
+    />
+    <ModalBody>
+      <SingleSelect
+        aria-labelledby="select-label"
+        id="select-in-modal"
+        modal
+        options={options}
+        onChange={onChange}
+      />
+    </ModalBody>
+    <ModalFooter
+      dismissButtonText="Cancel"
+      onRequestClose={handleRequestClose}
+    >
+      <Button type="submit" variant="primary">Confirm</Button>
+    </ModalFooter>
+  </Modal>
+  );
+
 export const CustomOptionWithCheckbox = () => (
   <Fragment>
     <label htmlFor="multi-select" id="select-label-custom-option">Custom option with checkbox</label>
@@ -75,6 +118,48 @@ export const CustomOptionWithCheckbox = () => (
     />
   </Fragment>
 );
+
+export const CustomOptionWithIndeterminateCheckbox = () => {
+  const optionsArr = [
+    { label: 'Riley Researcher', value: 1 },
+    { label: 'Patty Participant', value: 2 },
+    { label: 'Patrick Participant (indeterminate)', value: 3 },
+    { label: 'Polly Participant (indeterminate)', value: 4 },
+  ];
+
+  let inputRef;
+
+  const createInputRef = () => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
+    inputRef = useRef();
+    return inputRef;
+  };
+
+  return (
+    <Fragment>
+      <label htmlFor="multi-select" id="select-label-custom-option-indeterminate">Custom option with indeterminate checkbox</label>
+      <SingleSelect
+        aria-labelledby="select-label"
+        closeMenuOnSelect={false}
+        components={{
+          Option: (props) => (
+            <Option
+              {...props}
+              // eslint-disable-next-line react/prop-types
+              indeterminate={props.value > 2}
+              ref={createInputRef()}
+            />
+          ),
+        }}
+        hideSelectedOptions={false}
+        id="multi-select"
+        isMulti
+        options={optionsArr}
+        onChange={onChange}
+      />
+    </Fragment>
+  );
+};
 
 export const CustomValueContainer = () => (
   <Fragment>

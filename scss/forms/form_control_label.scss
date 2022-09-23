@@ -47,10 +47,13 @@
     padding: 1rem;
     cursor: pointer;
 
-
+    &:hover {
+      background-color: $ux-blue-100;
+    }
+    
     &.FormControlLabel--active {
       background-color: $ux-blue-100;
-      border-color: $ux-blue-200;
+      border-color: $ux-blue-400;
       color: $ux-blue-700;
     }
   }

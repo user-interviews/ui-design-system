@@ -5,4 +5,8 @@
   &--row {
     @include row-control-group;
   }
+
+  &--column--full-width {
+    width: 100%;
+  }
 }

@@ -1,0 +1,107 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Figma } from "storybook-addon-designs/blocks"
+import Dropdown from './Dropdown';
+
+# Dropdown
+
+##
+
+<h4>
+  A Dropdown displays a list of actions or selectable options that a user can take.
+  Typically contained within a button, an action is initiated based on the selection.
+</h4>
+
+<Canvas>
+  <Story id="components-dropdown--default" />
+</Canvas>
+
+
+### When to not use
+Avoid the Dropdown component if:
+
+- Users can select one or many from the options
+- There are more than 15 options
+
+## Props
+
+<ArgsTable of={Dropdown} />
+
+## Stories
+
+### Default
+
+- The basic Dropdown is composed of a wrapping Dropdown and inner `<DropdownMenu>`, and `<DropdownToggle>`. By default the `<DropdownToggle>` will render a Button component and accepts all the same props.
+
+<Canvas>
+  <Story id="components-dropdown--default" />
+</Canvas>
+
+### Sizes
+
+<Canvas>
+  <Story id="components-dropdown--sizes" />
+</Canvas>
+
+### Icon Default
+- A single icon button that opens a `<DropdownMenu>`.
+
+<Canvas>
+  <Story id="components-dropdown--icon-default" />
+</Canvas>
+
+### Icon Swap
+- To use a different icon, add the `removeCaret` prop to remove the default icon.
+- Be sure to include an appropriate `ariaLabel`
+
+<Canvas>
+  <Story id="components-dropdown--icon-swap" />
+</Canvas>
+
+### Unstyled Toggle
+- Use the `unstyled` and `removeCaret` prop on `DropdownToggle` to remove default styling.
+
+<Canvas>
+  <Story id="components-dropdown--unstyled-toggle" />
+</Canvas>
+
+
+## Formatting
+
+### Anatomy
+- **Toggle: ** A button to open the dropdown menu.
+
+
+## Best practices
+
+
+### General
+The Dropdown component should:
+
+- Be used for secondary actions or information
+- Contain actions or options that are related to each other
+- Be used when the action need not be frequently taken
+- Display actions as disabled when they can only be used sometimes (instead of removing them)
+
+### UX Copy
+
+The labels should:
+
+- Be clear and predictable.
+- Lead with a strong verb that encourages action.
+    - To provide enough context, use {verb} + {noun} format unless the action is clear with a single verb
+- Be concise.
+
+### To Label, or Not To Label
+
+Use a label if:
+
+- The label needs to be displayed at all times
+- The action(s) taken is more frequent
+
+Use the icon if:
+
+- Space is an issue
+- It is already placed within context (i.e. at the end of a `Card`)
+
+<Figma url="https://www.figma.com/file/471iS3QrpPtXZpS1xbsJ20/Components?node-id=8699%3A42280" />
+

@@ -1,0 +1,6 @@
+.InputLegend {
+    // Ensure <legend> does not default to width: 100% 
+    // when creating inline FormGroup
+    width: unset;
+    margin-right: 0.75rem;
+}

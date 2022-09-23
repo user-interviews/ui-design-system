@@ -80,10 +80,12 @@
   }
 
   .form-control {
+    @include font-type-30;
     height: 2.25rem;
   }
 
   textarea.form-control {
+    @include font-type-30;
     height: auto;
   }
 }

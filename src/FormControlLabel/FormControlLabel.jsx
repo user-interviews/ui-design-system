@@ -29,7 +29,7 @@ const FormControlLabel = React.forwardRef(({
     )}
     htmlFor={id}
   >
-    <div className="FormControlLabel__label">
+    <span className="FormControlLabel__label">
       <Control
         checked={checked}
         className="FormControlLabel__control"
@@ -40,11 +40,11 @@ const FormControlLabel = React.forwardRef(({
       />
       {text}
       { helperText && <span className="FormControlLabel__helper-text">&nbsp;({helperText})</span> }
-    </div>
+    </span>
     {children && (
-      <div className="FormControlLabel__children">
+      <span className="FormControlLabel__children">
         {children}
-      </div>
+      </span>
     )}
   </label>
 ));

@@ -17,7 +17,7 @@ import RadioButton from 'src/RadioButton';
 import mdx from './FormGroup.mdx';
 
 export default {
-  title: 'Design System/Form Elements/Form Group',
+  title: 'Components/Form Elements/Form Group',
   component: FormGroup,
   decorators: [withKnobs],
   parameters: {
@@ -167,7 +167,13 @@ export const WithErrors = () => (
     label="Form Group with errors"
     labelHtmlFor="input"
   >
-    <InputComponent id="input" name="with-errors" placeholder="Placeholder text" />
+    <InputComponent
+      aria-describedby="form-errors-test"
+      aria-invalid
+      id="input"
+      name="with-errors"
+      placeholder="Placeholder text"
+    />
   </FormGroup>
 );
 
@@ -177,6 +183,7 @@ const ButtonGroupComponent = ({
   bordered,
   children,
   defaultValue,
+  elementType,
   fullWidth,
   id,
   label,
@@ -190,6 +197,7 @@ const ButtonGroupComponent = ({
   return (
     <FormGroup
       bordered={bordered}
+      elementType={elementType}
       id={id}
       label={label}
       labelHelperText={labelHelperText}
@@ -225,6 +233,7 @@ export const WithRadioButtonGroup = () => {
       bordered={boolean('Bordered Form Group', true)}
       ButtonGroup={RadioButtonGroup}
       defaultValue="1"
+      elementType="fieldset"
       fullWidth={boolean('Full width', false)}
       id="with-radio-button-group"
       label="Form Group with radio button group"

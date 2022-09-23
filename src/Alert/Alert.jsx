@@ -80,12 +80,18 @@ function Alert(props) {
       <div className="Alert__content">
         {
           props.title && (
-            <p className="Alert__title">
+            <div className="Alert__title">
               {props.title}
-            </p>
+            </div>
           )
         }
-        <p className="Alert__message">{props.message}</p>
+        <div
+          className="Alert__message"
+          // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
+          tabIndex={props.type === MessageTypes.ERROR ? -1 : undefined}
+        >
+          {props.message}
+        </div>
       </div>
       {
         props.action && (
@@ -122,12 +128,21 @@ function Alert(props) {
 }
 
 Alert.propTypes = {
+  /**
+   Creates a CTA button on the Alert
+  */
   action: PropTypes.oneOfType([PropTypes.object, PropTypes.node]),
+  /**
+   Determines whether the Alert will disappear automatically
+  */
   autoDismiss: PropTypes.bool,
   id: PropTypes.string.isRequired,
   message: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
   title: PropTypes.string,
-  type: PropTypes.string.isRequired,
+  /**
+   One of the MessageTypes
+  */
+  type: PropTypes.oneOf(Object.values(MessageTypes)).isRequired,
   onDismiss: PropTypes.func,
 };
 

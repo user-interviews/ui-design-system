@@ -2,23 +2,35 @@ import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import CheckboxButton from './CheckboxButton';
 
 # CheckboxButton
-A checkbox control.
+
+##
+
+<h4>
+  A checkbox control. It is shown as a square box that is ticked (checked) when activated.
+</h4>
 
 <Canvas>
-  <Story id="design-system-checkboxbutton--default" />
+  <Story id="components-checkboxbutton--default" />
 </Canvas>
 
-<ArgsTable of={CheckboxButton} />
+### When to use 
+- Reason 1
+- Reason 2
 
-## Anatomy 
-- States: checked, unchecked, & indeterminate
+### When to not use
+- Reason 1
+- Reason 2
+
+## Props
+
+<ArgsTable of={CheckboxButton} />
 
 ## Stories
 
 ### Default
 
 <Canvas>
-  <Story id="design-system-checkboxbutton--default" />
+  <Story id="components-checkboxbutton--default" />
 </Canvas>
 
 ### Indeterminate
@@ -28,5 +40,28 @@ A checkbox control.
 - You can’t make a checkbox indeterminate through HTML. There is no indeterminate attribute. It is a property of checkboxes though, which you can change via JavaScript (i.e. we're handling it through refs and `useEffect` on the CheckboxButton component). Please use the `indeterminate` prop to get the desired effect. 
 
 <Canvas>
-  <Story id="design-system-checkboxbutton--indeterminate" />
+  <Story id="components-checkboxbutton--indeterminate" />
 </Canvas>
+
+## Formatting
+
+### States
+
+- checked, unchecked, & indeterminate
+
+### Anatomy 
+
+### Sizing
+
+### Alignment
+
+
+## Best practices
+
+### General
+
+### Behavior
+
+### Implementation
+
+### UX Copy
