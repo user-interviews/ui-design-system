@@ -1,6 +1,7 @@
 import React from 'react';
 
 import {
+  boolean,
   select,
   withKnobs,
 } from '@storybook/addon-knobs';
@@ -37,7 +38,7 @@ export const Default = () => (
 );
 
 export const FluidContainer = () => (
-  <Container fluid>
+  <Container fluid={boolean('fluid', true)}>
     <Row>
       <Col>
         <Card title="Fluid container">
@@ -93,46 +94,49 @@ export const AutoLayoutColumns = () => (
   </>
 );
 
-export const SettingOneColumnWidth = () => (
-  <>
-    <p>
-      Auto-layout for flexbox grid columns also means you can set the width of one column and
-      have the sibling columns automatically resize around it.
-      You may use predefined grid classes (as shown below), grid mixins, or inline widths.
-      Note that the other columns will resize no matter the width of the center column.
-    </p>
-    <Container>
-      <Row>
-        <Col>
-          <Card title="1 of 3" />
-        </Col>
-        <Col xs={8}>
-          <Card title="2 of 3">
-            <code>xs={8}</code>
+export const SettingOneColumnWidth = () => {
+  const xs = select('column width', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 8);
 
-          </Card>
-        </Col>
-        <Col>
-          <Card title="3 of 3" />
-        </Col>
-      </Row>
-      <br />
-      <Row>
-        <Col>
-          <Card title="1 of 3" />
-        </Col>
-        <Col xs={4}>
-          <Card title="2 of 3">
-            <code>xs={4}</code>
-          </Card>
-        </Col>
-        <Col>
-          <Card title="3 of 3" />
-        </Col>
-      </Row>
-    </Container>
-  </>
+  return (
+    <>
+      <p>
+        Auto-layout for flexbox grid columns also means you can set the width of one column and
+        have the sibling columns automatically resize around it.
+        You may use predefined grid classes (as shown below), grid mixins, or inline widths.
+        Note that the other columns will resize no matter the width of the center column.
+      </p>
+      <Container>
+        <Row>
+          <Col>
+            <Card title="1 of 3" />
+          </Col>
+          <Col xs={xs}>
+            <Card title="2 of 3 (adjust me!)">
+              <code>{`xs={${xs}}`}</code>
+            </Card>
+          </Col>
+          <Col>
+            <Card title="3 of 3" />
+          </Col>
+        </Row>
+        <br />
+        <Row>
+          <Col>
+            <Card title="1 of 3" />
+          </Col>
+          <Col xs={4}>
+            <Card title="2 of 3">
+              <code>xs={4}</code>
+            </Card>
+          </Col>
+          <Col>
+            <Card title="3 of 3" />
+          </Col>
+        </Row>
+      </Container>
+    </>
 );
+};
 
 export const ResponsiveGrids = () => (
   <>

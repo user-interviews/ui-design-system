@@ -25688,12 +25688,11 @@ exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
             <h2
               className="Card__title"
             >
-              2 of 3
+              2 of 3 (adjust me!)
             </h2>
           </div>
           <code>
-            xs=
-            8
+            xs={8}
           </code>
         </section>
       </div>
