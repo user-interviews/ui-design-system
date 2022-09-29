@@ -16,11 +16,7 @@ $card-width-xs: 15rem;
   outline-color: $ux-green-500;
   padding: $card-spacing;
 
-  width: calc(100% - #{$card-xs-spacing});
-
-  @include media-breakpoint-up(sm) {
-    width: calc(100% - 2rem);
-  }
+  width: 100%;
 
   &__divider {
     border-top: 1px solid rgba(0,0,0,.1);
