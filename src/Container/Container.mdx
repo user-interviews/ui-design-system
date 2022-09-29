@@ -1,0 +1,82 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Container from './Container'
+
+# Container
+
+Utilizing Bootstrap's grid system makes use of a series of containers, rows, and columns to layout and align content. 
+It's built with flexbox and is fully responsive.
+
+For official documentation, visit [React Bootstrap Grid system](https://react-bootstrap.github.io/layout/grid/)
+
+There are six default breakpoints, sometimes referred to as grid tiers, for building responsively.
+
+| Breakpoint        | Class infix | Dimensions |
+|-------------------|-------------|------------|
+| x-small           | none        | <576px     |
+| small             | sm          | ≥576px     |
+| medium            | md          | ≥768px     |
+| large             | lg          | ≥992px     |
+| extra large       | xl          | ≥1200px    |
+| extra extra large | xxl         | ≥1400px    |
+
+<Canvas>
+  <Story id="layouts-container--default"/>
+</Canvas>
+
+<ArgsTable of={Container} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story id="layouts-container--default" />
+</Canvas>
+
+### Fluid Container
+
+<Canvas>
+  <Story id="layouts-container--fluid-container" />
+</Canvas>
+
+### Fluid Container With Breakpoints
+
+<Canvas>
+  <Story id="layouts-container--fluid-container-with-breakpoints" />
+</Canvas>
+
+### Auto Layout Columns
+
+<Canvas>
+  <Story id="layouts-container--auto-layout-columns" />
+</Canvas>
+
+### Setting One Column Width
+
+<Canvas>
+  <Story id="layouts-container--setting-one-column-width" />
+</Canvas>
+
+### Responsive Grids
+
+<Canvas>
+  <Story id="layouts-container--responsive-grids" />
+</Canvas>
+
+### Mixing Breakpoints
+
+<Canvas>
+  <Story id="layouts-container--mixing-breakpoints" />
+</Canvas>
+
+### Offsetting Columns
+
+<Canvas>
+  <Story id="layouts-container--offsetting-columns" />
+</Canvas>
+
+### Setting Column Widths In Row
+
+<Canvas>
+  <Story id="layouts-container--setting-column-widths-in-row" />
+</Canvas>

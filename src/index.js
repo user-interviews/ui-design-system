@@ -11,6 +11,7 @@ import Card, { CardSizes } from 'src/Card';
 import CardContainer from 'src/CardContainer';
 import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
+import { Col, Container, Row } from 'src/Container';
 import { ORIENTATIONS as BUTTON_GROUP_ORIENTATIONS } from 'src/ControlButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
@@ -91,7 +92,9 @@ export {
   CheckboxButton,
   CheckboxButtonGroup,
   CHECKED_STATES,
+  Col,
   COLORS,
+  Container,
   CopyToClipboard,
   CopyToClipboardButton,
   CreatableSelect,
@@ -122,6 +125,7 @@ export {
   ProfileCell,
   RadioButton,
   RadioButtonGroup,
+  Row,
   SELECT_SIZES,
   SelectComponents,
   SingleSelect,
