@@ -5,6 +5,7 @@ import { Col as ReactBootstrapCol } from 'react-bootstrap';
 const Col = ({
   as,
   children,
+  className,
   lg,
   md,
   sm,
@@ -17,6 +18,7 @@ const Col = ({
   <ReactBootstrapCol
     as={as}
     bsPrefix={bsPrefix}
+    className={className}
     lg={lg}
     md={md}
     sm={sm}
@@ -60,6 +62,7 @@ Col.propTypes = {
    This is an escape hatch for working with heavily customized bootstrap css.
   */
   bsPrefix: PropTypes.string,
+  className: PropTypes.string,
   /**
    The number of columns to span on large devices (≥992px)
    `boolean | "auto" | number | { span: boolean | "auto" | number,
@@ -101,6 +104,7 @@ Col.propTypes = {
 Col.defaultProps = {
   as: undefined,
   bsPrefix: 'col',
+  className: undefined,
   lg: undefined,
   md: undefined,
   sm: undefined,

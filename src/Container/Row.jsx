@@ -5,6 +5,7 @@ import { Row as ReactBootstrapRow } from 'react-bootstrap';
 const Row = ({
   as,
   children,
+  className,
   lg,
   md,
   sm,
@@ -17,6 +18,7 @@ const Row = ({
   <ReactBootstrapRow
     as={as}
     bsPrefix={bsPrefix}
+    className={className}
     lg={lg}
     md={md}
     sm={sm}
@@ -48,6 +50,7 @@ Row.propTypes = {
    This is an escape hatch for working with heavily customized bootstrap css.
   */
   bsPrefix: PropTypes.string,
+  className: PropTypes.string,
   /**
    The number of columns that will fit next to each other on large devices (≥992px).
    Use auto to give columns their natural widths.
@@ -89,6 +92,7 @@ Row.propTypes = {
 Row.defaultProps = {
   as: undefined,
   bsPrefix: 'row',
+  className: undefined,
   lg: undefined,
   md: undefined,
   sm: undefined,

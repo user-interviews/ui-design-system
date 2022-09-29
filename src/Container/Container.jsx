@@ -5,6 +5,7 @@ import { Container as ReactBootstrapContainer } from 'react-bootstrap';
 const Container = ({
   as,
   children,
+  className,
   fluid,
   bsPrefix,
   ...props
@@ -12,6 +13,7 @@ const Container = ({
   <ReactBootstrapContainer
     as={as}
     bsPrefix={bsPrefix}
+    className={className}
     fluid={fluid}
     {...props}
   >
@@ -34,6 +36,7 @@ Container.propTypes = {
    This is an escape hatch for working with heavily customized bootstrap css.
   */
   bsPrefix: PropTypes.string,
+  className: PropTypes.string,
   /**
    Allow the Container to fill all of its available horizontal space.
    `bool | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'`
@@ -44,6 +47,7 @@ Container.propTypes = {
 Container.defaultProps = {
   as: undefined,
   bsPrefix: 'container',
+  className: undefined,
   fluid: false,
 };
 
