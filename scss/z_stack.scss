@@ -9,6 +9,7 @@
 // Note look to update `z_stack.js` when changing these
 
 // By Level
+$z-index-1050: 1050;
 $z-index-1045: 1045;
 $z-index-1040: 1040;
 $z-index-1030: 1030;
@@ -26,6 +27,7 @@ $z-index-2: 2;
 $z-index-1: 1;
 
 // By Purpose
+$z-index-popover: $z-index-1050;
 $z-index-flash: $z-index-1045;
 $z-index-drawer: $z-index-1040;
 $z-index-modal-backdrop: $z-index-1040; // Matches bootstrap $zindex-modal-backdrop

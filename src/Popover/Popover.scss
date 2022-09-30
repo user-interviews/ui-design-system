@@ -1,0 +1,23 @@
+@import '../../scss/theme.scss';
+
+.Popover {
+  box-shadow: $ux-elevations-20;
+  border: 1px solid $ux-gray-400;
+  border-radius: $ux-border-radius;
+
+  max-width: unset;
+
+  z-index: $z-index-popover;
+
+  .popover-arrow {
+    display: none;
+  }
+
+  &--sm {
+    min-width: $card-width-sm;
+  }
+
+  &--md {
+    min-width: $card-width-md;
+  }
+}
