@@ -64,18 +64,56 @@ export const FluidContainerWithBreakpoints = () => (
 );
 
 export const AutoLayoutColumns = () => (
-  <>
+  <Container>
     <p>
       When no column widths are specified the <code>{`<Col> `}</code>
       component will render equal width columns.
     </p>
+    <Row>
+      <Col>
+        <Card title="1 of 2" />
+      </Col>
+      <Col>
+        <Card title="2 of 2" />
+      </Col>
+    </Row>
+    <br />
+    <Row>
+      <Col>
+        <Card title="1 of 3" />
+      </Col>
+      <Col>
+        <Card title="2 of 3" />
+      </Col>
+      <Col>
+        <Card title="3 of 3" />
+      </Col>
+    </Row>
+  </Container>
+);
+
+export const SettingOneColumnWidth = () => {
+  const xs = select('column width', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 8);
+
+  return (
     <Container>
+      <p>
+        Auto-layout for flexbox grid columns also means you can set the width of one column and
+        have the sibling columns automatically resize around it.
+        You may use predefined grid classes (as shown below), grid mixins, or inline widths.
+        Note that the other columns will resize no matter the width of the center column.
+      </p>
       <Row>
         <Col>
-          <Card title="1 of 2" />
+          <Card title="1 of 3" />
+        </Col>
+        <Col xs={xs}>
+          <Card title="2 of 3 (adjust me!)">
+            <code>{`xs={${xs}}`}</code>
+          </Card>
         </Col>
         <Col>
-          <Card title="2 of 2" />
+          <Card title="3 of 3" />
         </Col>
       </Row>
       <br />
@@ -83,59 +121,17 @@ export const AutoLayoutColumns = () => (
         <Col>
           <Card title="1 of 3" />
         </Col>
-        <Col>
-          <Card title="2 of 3" />
+        <Col xs={4}>
+          <Card title="2 of 3">
+            <code>xs={4}</code>
+          </Card>
         </Col>
         <Col>
           <Card title="3 of 3" />
         </Col>
       </Row>
     </Container>
-  </>
-);
-
-export const SettingOneColumnWidth = () => {
-  const xs = select('column width', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 8);
-
-  return (
-    <>
-      <p>
-        Auto-layout for flexbox grid columns also means you can set the width of one column and
-        have the sibling columns automatically resize around it.
-        You may use predefined grid classes (as shown below), grid mixins, or inline widths.
-        Note that the other columns will resize no matter the width of the center column.
-      </p>
-      <Container>
-        <Row>
-          <Col>
-            <Card title="1 of 3" />
-          </Col>
-          <Col xs={xs}>
-            <Card title="2 of 3 (adjust me!)">
-              <code>{`xs={${xs}}`}</code>
-            </Card>
-          </Col>
-          <Col>
-            <Card title="3 of 3" />
-          </Col>
-        </Row>
-        <br />
-        <Row>
-          <Col>
-            <Card title="1 of 3" />
-          </Col>
-          <Col xs={4}>
-            <Card title="2 of 3">
-              <code>xs={4}</code>
-            </Card>
-          </Col>
-          <Col>
-            <Card title="3 of 3" />
-          </Col>
-        </Row>
-      </Container>
-    </>
-);
+  );
 };
 
 export const ResponsiveGrids = () => (
@@ -274,7 +270,7 @@ export const OffsettingColumns = () => (
 );
 
 export const SettingColumnWidthsInRow = () => (
-  <>
+  <Container>
     <p>
       The <code>Row</code> lets you specify column widths across
       5 breakpoint sizes (xs, sm, md, lg, xl and xxl).
@@ -287,18 +283,16 @@ export const SettingColumnWidthsInRow = () => (
       The <code>{`<Col xs={6} />`}</code> size will be overriden by
       <code>{`<Row md={4} />`}</code> on medium and larger screens.
     </p>
-    <Container>
-      <Row lg={3} md={2} sm={1} xs={1}>
-        <Col>
-          <Card title="1 of 3" />
-        </Col>
-        <Col>
-          <Card title="2 of 3" />
-        </Col>
-        <Col>
-          <Card title="3 of 3" />
-        </Col>
-      </Row>
-    </Container>
-  </>
+    <Row lg={3} md={2} sm={1} xs={1}>
+      <Col>
+        <Card title="1 of 3" />
+      </Col>
+      <Col>
+        <Card title="2 of 3" />
+      </Col>
+      <Col>
+        <Card title="3 of 3" />
+      </Col>
+    </Row>
+  </Container>
 );

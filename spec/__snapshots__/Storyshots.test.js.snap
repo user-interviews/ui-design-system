@@ -24943,16 +24943,16 @@ exports[`Storyshots Layouts/Container Auto Layout Columns 1`] = `
     }
   }
 >
-  <p>
-    When no column widths are specified the 
-    <code>
-      &lt;Col&gt; 
-    </code>
-    component will render equal width columns.
-  </p>
   <div
     className="container"
   >
+    <p>
+      When no column widths are specified the 
+      <code>
+        &lt;Col&gt; 
+      </code>
+      component will render equal width columns.
+    </p>
     <div
       className="row"
     >
@@ -25554,35 +25554,35 @@ exports[`Storyshots Layouts/Container Setting Column Widths In Row 1`] = `
     }
   }
 >
-  <p>
-    The 
-    <code>
-      Row
-    </code>
-     lets you specify column widths across 5 breakpoint sizes (xs, sm, md, lg, xl and xxl). For every breakpoint, you can specify the amount of columns that will fit next to each other. You can also specify auto to set the columns to their natural widths.
-  </p>
-  <p>
-    Note that 
-    <code>
-      Row
-    </code>
-     column widths will override 
-    <code>
-      Col
-    </code>
-    widths set on lower breakpoints when viewed on larger screens. The 
-    <code>
-      &lt;Col xs={6} /&gt;
-    </code>
-     size will be overriden by
-    <code>
-      &lt;Row md={4} /&gt;
-    </code>
-     on medium and larger screens.
-  </p>
   <div
     className="container"
   >
+    <p>
+      The 
+      <code>
+        Row
+      </code>
+       lets you specify column widths across 5 breakpoint sizes (xs, sm, md, lg, xl and xxl). For every breakpoint, you can specify the amount of columns that will fit next to each other. You can also specify auto to set the columns to their natural widths.
+    </p>
+    <p>
+      Note that 
+      <code>
+        Row
+      </code>
+       column widths will override 
+      <code>
+        Col
+      </code>
+      widths set on lower breakpoints when viewed on larger screens. The 
+      <code>
+        &lt;Col xs={6} /&gt;
+      </code>
+       size will be overriden by
+      <code>
+        &lt;Row md={4} /&gt;
+      </code>
+       on medium and larger screens.
+    </p>
     <div
       className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1"
     >
@@ -25650,12 +25650,12 @@ exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
     }
   }
 >
-  <p>
-    Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.
-  </p>
   <div
     className="container"
   >
+    <p>
+      Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.
+    </p>
     <div
       className="row"
     >
