@@ -1,0 +1,41 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Popover from './Popover';
+
+# Popover
+
+##
+
+<h4>
+  Popovers are small overlays that open on demand. They allow users to access additional content and actions without cluttering the page.
+</h4>
+
+<Canvas>
+  <Story id="components-popover--default" />
+</Canvas>
+
+
+## Props
+
+<ArgsTable of={Popover} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story id="components-popover--default" />
+</Canvas>
+
+### Placement
+
+<Canvas>
+  <Story id="components-popover--placement" />
+</Canvas>
+
+### Card Popover
+- A `PopoverBody` styled with the padding and size similar to a `Card` component
+- Set `<PopoverCard size='sm' />` or `<Popover size='md' />` to set the appropriate width
+
+<Canvas>
+  <Story id="components-popover--card" />
+</Canvas>

@@ -141,6 +141,25 @@ export const WithTrailingIconAndButtonWithSubmit = () => (
   </FormGroup>
 );
 
+export const WithTrailingIconAndButtonWithSubmitAndLabel = () => (
+  <FormGroup
+    helperText="with trailing icon and button with submit and label"
+    id="with-trailing-icon-and-button-with-submit-and-label"
+    label="Form Group with input trailing icon and button with submit and label"
+    labelHtmlFor="input"
+  >
+    <InputComponent
+      id="input"
+      name="with-leading-icon-and-button"
+      placeholder="Placeholder text"
+      trailingIcon={faSearch}
+      trailingIconLabel="label"
+      trailingIconOnClick={() => alert('Great job!')}
+      trailingIconOnClickSubmit
+    />
+  </FormGroup>
+);
+
 export const WithLeadingAndTrailingIcons = () => (
   <FormGroup
     helperText="with leading and trailing icons"

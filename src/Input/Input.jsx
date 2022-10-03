@@ -13,6 +13,7 @@ const Input = React.forwardRef((props, ref) => {
     name,
     placeholder,
     trailingIcon,
+    trailingIconLabel,
     trailingIconOnClick,
     trailingIconOnClickSubmit,
     type,
@@ -48,6 +49,7 @@ const Input = React.forwardRef((props, ref) => {
       />
       {(trailingIcon && trailingIconOnClick) && (
         <button
+          aria-label={trailingIconLabel}
           className="trailing-icon-button"
           type={trailingIconOnClickSubmit ? 'submit' : 'button'}
           onClick={trailingIconOnClick}
@@ -73,6 +75,7 @@ Input.propTypes = {
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
   trailingIcon: PropTypes.object,
+  trailingIconLabel: PropTypes.string,
   trailingIconOnClick: PropTypes.func,
   trailingIconOnClickSubmit: PropTypes.bool,
   type: PropTypes.string,
@@ -85,6 +88,7 @@ Input.defaultProps = {
   leadingIcon: undefined,
   placeholder: '',
   trailingIcon: undefined,
+  trailingIconLabel: '',
   trailingIconOnClick: undefined,
   trailingIconOnClickSubmit: false,
   type: 'text',

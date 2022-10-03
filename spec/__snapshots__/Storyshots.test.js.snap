@@ -880,7 +880,7 @@ exports[`Storyshots Components/Accordion In Card 1`] = `
   }
 >
   <section
-    className="Card Card--lg Card--no-padding"
+    className="Card Card--no-padding"
   >
     <div
       className="Accordion accordion accordion-flush"
@@ -968,7 +968,7 @@ exports[`Storyshots Components/Accordion In Card 1`] = `
   </section>
   <br />
   <section
-    className="Card Card--lg"
+    className="Card"
   >
     <div
       className="Card__header"
@@ -6611,6 +6611,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
         value=""
       />
       <button
+        aria-label=""
         className="trailing-icon-button"
         onClick={[Function]}
         type="button"
@@ -6679,6 +6680,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
         value=""
       />
       <button
+        aria-label=""
         className="trailing-icon-button"
         onClick={[Function]}
         type="submit"
@@ -6710,6 +6712,75 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
       className="FormGroup__helper-text"
     >
       with trailing icon and button with submit
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And Button With Submit And Label 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+    id="with-trailing-icon-and-button-with-submit-and-label"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="input"
+    >
+      Form Group with input trailing icon and button with submit and label
+    </label>
+    <div
+      className="Input input-group"
+    >
+      <input
+        className="Input form-control Input--with-trailing-icon"
+        disabled={false}
+        id="input"
+        name="with-leading-icon-and-button"
+        onChange={[Function]}
+        placeholder="Placeholder text"
+        type="text"
+        value=""
+      />
+      <button
+        aria-label="label"
+        className="trailing-icon-button"
+        onClick={[Function]}
+        type="submit"
+      >
+        <div
+          className="input-group-text"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-search fa-w-16 "
+            data-icon="search"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </div>
+      </button>
+    </div>
+    <div
+      className="FormGroup__helper-text"
+    >
+      with trailing icon and button with submit and label
     </div>
   </div>
 </div>
@@ -8461,6 +8532,63 @@ exports[`Storyshots Components/Pill With Link 1`] = `
       Visit our site
     </a>
   </span>
+</div>
+`;
+
+exports[`Storyshots Components/Popover Card Popover 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Filter
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Popover Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Filter
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Popover Placement 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Try different placements
+  </button>
 </div>
 `;
 
@@ -11629,7 +11757,7 @@ exports[`Storyshots Components/Table Table On Card 1`] = `
   }
 >
   <section
-    className="Card Card--lg Card--divided"
+    className="Card Card--divided"
   >
     <div
       className="Card__header"
@@ -12192,7 +12320,7 @@ exports[`Storyshots Components/Table Table On Card No Padding 1`] = `
   }
 >
   <section
-    className="Card Card--lg Card--no-padding"
+    className="Card Card--no-padding"
   >
     <div
       id="Some table container"
@@ -20110,7 +20238,7 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
 >
   <div>
     <span
-      className="sc-bdvvtL eGviLc"
+      className="sc-gsDKAQ ldHumd"
     >
       <ul
         className="nav nav-tabs"
@@ -20141,6 +20269,7 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
         >
           <button
             aria-controls="controlled-tabpane-two"
+            aria-selected={false}
             className="nav-link"
             data-rr-ui-event-key="two"
             disabled={false}
@@ -20159,6 +20288,7 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
         >
           <button
             aria-controls="controlled-tabpane-three"
+            aria-selected={false}
             className="nav-link"
             data-rr-ui-event-key="three"
             disabled={false}
@@ -20178,6 +20308,7 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
           <button
             aria-controls="controlled-tabpane-four"
             aria-disabled={true}
+            aria-selected={false}
             className="nav-link disabled"
             data-rr-ui-event-key="four"
             disabled={true}
@@ -20196,8 +20327,9 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
       >
         <div
           aria-labelledby="controlled-tab-one"
-          className="tab-pane active"
+          className="fade tab-pane active show"
           id="controlled-tabpane-one"
+          role="tabpanel"
         >
           <div
             style={
@@ -20211,8 +20343,9 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
         </div>
         <div
           aria-labelledby="controlled-tab-two"
-          className="tab-pane"
+          className="fade tab-pane"
           id="controlled-tabpane-two"
+          role="tabpanel"
         >
           <div
             style={
@@ -20226,8 +20359,9 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
         </div>
         <div
           aria-labelledby="controlled-tab-three"
-          className="tab-pane"
+          className="fade tab-pane"
           id="controlled-tabpane-three"
+          role="tabpanel"
         >
           <div
             style={
@@ -20241,8 +20375,9 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
         </div>
         <div
           aria-labelledby="controlled-tab-four"
-          className="tab-pane"
+          className="fade tab-pane"
           id="controlled-tabpane-four"
+          role="tabpanel"
         >
           <div
             style={
@@ -20270,7 +20405,7 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
 >
   <div>
     <span
-      className="sc-bdvvtL eGviLc"
+      className="sc-gsDKAQ ldHumd"
     >
       <ul
         className="nav nav-tabs"
@@ -20301,6 +20436,7 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
         >
           <button
             aria-controls="uncontrolled-tabpane-two"
+            aria-selected={false}
             className="nav-link"
             data-rr-ui-event-key="two"
             disabled={false}
@@ -20319,6 +20455,7 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
         >
           <button
             aria-controls="uncontrolled-tabpane-three"
+            aria-selected={false}
             className="nav-link"
             data-rr-ui-event-key="three"
             disabled={false}
@@ -20338,6 +20475,7 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
           <button
             aria-controls="uncontrolled-tabpane-four"
             aria-disabled={true}
+            aria-selected={false}
             className="nav-link disabled"
             data-rr-ui-event-key="four"
             disabled={true}
@@ -20356,8 +20494,9 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
       >
         <div
           aria-labelledby="uncontrolled-tab-one"
-          className="tab-pane active"
+          className="fade tab-pane active show"
           id="uncontrolled-tabpane-one"
+          role="tabpanel"
         >
           <div
             style={
@@ -20371,8 +20510,9 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
         </div>
         <div
           aria-labelledby="uncontrolled-tab-two"
-          className="tab-pane"
+          className="fade tab-pane"
           id="uncontrolled-tabpane-two"
+          role="tabpanel"
         >
           <div
             style={
@@ -20386,8 +20526,9 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
         </div>
         <div
           aria-labelledby="uncontrolled-tab-three"
-          className="tab-pane"
+          className="fade tab-pane"
           id="uncontrolled-tabpane-three"
+          role="tabpanel"
         >
           <div
             style={
@@ -20401,8 +20542,9 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
         </div>
         <div
           aria-labelledby="uncontrolled-tab-four"
-          className="tab-pane"
+          className="fade tab-pane"
           id="uncontrolled-tabpane-four"
+          role="tabpanel"
         >
           <div
             style={
@@ -24930,6 +25072,849 @@ exports[`Storyshots Foundations/Typography Typography 1`] = `
           </span>
         </li>
       </ul>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/Container Auto Layout Columns 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <p>
+      When no column widths are specified the 
+      <code>
+        &lt;Col&gt; 
+      </code>
+      component will render equal width columns.
+    </p>
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              1 of 2
+            </h2>
+          </div>
+        </section>
+      </div>
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              2 of 2
+            </h2>
+          </div>
+        </section>
+      </div>
+    </div>
+    <br />
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              1 of 3
+            </h2>
+          </div>
+        </section>
+      </div>
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              2 of 3
+            </h2>
+          </div>
+        </section>
+      </div>
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              3 of 3
+            </h2>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/Container Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              Default container
+            </h2>
+          </div>
+          <code>
+            &lt;Container&gt;
+          </code>
+           provides a means to center and horizontally pad your site's contents. Use Container for a responsive pixel width.
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/Container Fluid Container 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="container-fluid"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              Fluid container
+            </h2>
+          </div>
+          You can use 
+          <code>
+            &lt;Container fluid /&gt;
+          </code>
+           for width: 100% across all viewport and device sizes.
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/Container Fluid Container With Breakpoints 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="container-md"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              Fluid container with breakpoints
+            </h2>
+          </div>
+          You can set breakpoints for the 
+          <code>
+            fluid
+          </code>
+           prop. Setting it to a breakpoint 
+          <code>
+            ['sm', 'md', 'lg', 'xl', 'xxl']
+          </code>
+           will set the Container as fluid until the specified breakpoint.
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/Container Mixing Breakpoints 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-8 col-12"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              1 of 2
+            </h2>
+          </div>
+          <p>
+            <code>
+              md={8} xs={12}
+            </code>
+          </p>
+          <p>
+            You can also mix and match breakpoints to create different grids depending on the screen size.
+          </p>
+        </section>
+      </div>
+      <div
+        className="col-md-4 col-6"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              2 of 2
+            </h2>
+          </div>
+          <p>
+            <code>
+              md={4} xs={6}
+            </code>
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-4 col-3"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              1 of 3
+            </h2>
+          </div>
+          <p>
+            <code>
+              md={4} xs={3}
+            </code>
+          </p>
+        </section>
+      </div>
+      <div
+        className="col-md-4 col-3"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              2 of 3
+            </h2>
+          </div>
+          <p>
+            <code>
+              md={4} xs={3}
+            </code>
+          </p>
+        </section>
+      </div>
+      <div
+        className="col-md-4 col-3"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              3 of 3
+            </h2>
+          </div>
+          <p>
+            <code>
+              md={4} xs={3}
+            </code>
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/Container Offsetting Columns 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-md-4"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              1 of 2
+            </h2>
+          </div>
+          <p>
+            <code>
+              md={4}
+            </code>
+          </p>
+        </section>
+      </div>
+      <div
+        className="col-md-6 offset-md-2"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              2 of 2
+            </h2>
+          </div>
+          <p>
+            <code>
+              md={{ span: 6, offset: 2 }}
+            </code>
+          </p>
+          <p>
+            For offsetting grid columns you can set an 
+            <code>
+              offset
+            </code>
+             value.
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/Container Responsive Grids 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm-8"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              1 of 2
+            </h2>
+          </div>
+          <p>
+            <code>
+              sm=
+              8
+            </code>
+          </p>
+          <p>
+            The 
+            <code>
+              Col
+            </code>
+             lets you specify column widths across 6 breakpoint sizes (xs, sm, md, lg, xl and xxl). For every breakpoint, you can specify the amount of columns to span, or set the prop to 
+            <code>
+              &lt;Col lg={true} /&gt;
+            </code>
+             for auto layout widths.
+          </p>
+        </section>
+      </div>
+      <div
+        className="col-sm-4"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              2 of 2
+            </h2>
+          </div>
+          <p>
+            <code>
+              sm=
+              4
+            </code>
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+  <br />
+  <div
+    className="container"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col-sm"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              1 of 3
+            </h2>
+          </div>
+          <p>
+            <code>
+              sm={true}
+            </code>
+          </p>
+          <p>
+            Or set the prop to 
+            <code>
+              &lt;Col lg={true}/&gt;
+            </code>
+             for auto layout widths.
+          </p>
+        </section>
+      </div>
+      <div
+        className="col-sm"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              2 of 3
+            </h2>
+          </div>
+          <p>
+            <code>
+              sm={true}
+            </code>
+          </p>
+        </section>
+      </div>
+      <div
+        className="col-sm"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              3 of 3
+            </h2>
+          </div>
+          <p>
+            <code>
+              sm={true}
+            </code>
+          </p>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/Container Setting Column Widths In Row 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <p>
+      The 
+      <code>
+        Row
+      </code>
+       lets you specify column widths across 5 breakpoint sizes (xs, sm, md, lg, xl and xxl). For every breakpoint, you can specify the amount of columns that will fit next to each other. You can also specify auto to set the columns to their natural widths.
+    </p>
+    <p>
+      Note that 
+      <code>
+        Row
+      </code>
+       column widths will override 
+      <code>
+        Col
+      </code>
+      widths set on lower breakpoints when viewed on larger screens. The 
+      <code>
+        &lt;Col xs={6} /&gt;
+      </code>
+       size will be overriden by
+      <code>
+        &lt;Row md={4} /&gt;
+      </code>
+       on medium and larger screens.
+    </p>
+    <div
+      className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1"
+    >
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              1 of 3
+            </h2>
+          </div>
+        </section>
+      </div>
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              2 of 3
+            </h2>
+          </div>
+        </section>
+      </div>
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              3 of 3
+            </h2>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <p>
+      Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.
+    </p>
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              1 of 3
+            </h2>
+          </div>
+        </section>
+      </div>
+      <div
+        className="col-8"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              2 of 3 (adjust me!)
+            </h2>
+          </div>
+          <code>
+            xs={8}
+          </code>
+        </section>
+      </div>
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              3 of 3
+            </h2>
+          </div>
+        </section>
+      </div>
+    </div>
+    <br />
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              1 of 3
+            </h2>
+          </div>
+        </section>
+      </div>
+      <div
+        className="col-4"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              2 of 3
+            </h2>
+          </div>
+          <code>
+            xs=
+            4
+          </code>
+        </section>
+      </div>
+      <div
+        className="col"
+      >
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              3 of 3
+            </h2>
+          </div>
+        </section>
+      </div>
     </div>
   </div>
 </div>

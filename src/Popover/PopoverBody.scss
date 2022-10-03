@@ -1,0 +1,11 @@
+@import '../../scss/theme.scss';
+
+.PopoverBody {
+  background-color: $ux-white;
+  border-radius: $ux-border-radius;
+  padding: $ux-spacing-40;
+
+  &--card {
+    padding: $card-spacing;
+  }
+}

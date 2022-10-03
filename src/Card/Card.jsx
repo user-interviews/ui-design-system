@@ -44,7 +44,7 @@ const Card = ({
       ...props,
       className: classNames(
         'Card',
-        `Card--${size}`,
+        { [`Card--${size}`]: size },
         className,
         {
           'Card--divided': divided,
@@ -73,7 +73,7 @@ Card.defaultProps = {
   elementType: 'section',
   helperText: undefined,
   noPadding: false,
-  size: CardSizes.LARGE,
+  size: undefined,
   subTitle: undefined,
   title: undefined,
 };

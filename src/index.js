@@ -11,6 +11,7 @@ import Card, { CardSizes } from 'src/Card';
 import CardContainer from 'src/CardContainer';
 import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
+import { Col, Container, Row } from 'src/Container';
 import { ORIENTATIONS as BUTTON_GROUP_ORIENTATIONS } from 'src/ControlButtonGroup';
 import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
@@ -36,7 +37,9 @@ import {
   ModalFooter,
   ModalHeader,
 } from 'src/Modal';
+import { OverlayTrigger, OVERLAY_TRIGGER_PLACEMENT } from 'src/OverlayTrigger';
 import { Pill, Pills, PILL_COLORS } from 'src/Pill';
+import { Popover, PopoverBody, PopoverCard } from 'src/Popover';
 import Popper from 'src/Popper';
 import ProfileCell from 'src/ProfileCell';
 import RadioButton from 'src/RadioButton';
@@ -91,7 +94,9 @@ export {
   CheckboxButton,
   CheckboxButtonGroup,
   CHECKED_STATES,
+  Col,
   COLORS,
+  Container,
   CopyToClipboard,
   CopyToClipboardButton,
   CreatableSelect,
@@ -115,13 +120,19 @@ export {
   ModalFooter,
   ModalHeader,
   Option,
+  OverlayTrigger,
+  OVERLAY_TRIGGER_PLACEMENT,
   Pill,
   Pills,
   PILL_COLORS,
+  Popover,
+  PopoverBody,
+  PopoverCard,
   Popper,
   ProfileCell,
   RadioButton,
   RadioButtonGroup,
+  Row,
   SELECT_SIZES,
   SelectComponents,
   SingleSelect,
