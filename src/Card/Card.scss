@@ -8,7 +8,7 @@
   outline-color: $ux-green-500;
   padding: $card-spacing;
 
-  width: 100%;
+  max-width: 100%;
 
   &__divider {
     border-top: 1px solid rgba(0,0,0,.1);

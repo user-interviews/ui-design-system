@@ -4336,7 +4336,7 @@ exports[`Storyshots Components/Card Default 1`] = `
   }
 >
   <section
-    className="Card Card--lg"
+    className="Card"
   >
     <div
       className="Card__header"
@@ -4344,7 +4344,7 @@ exports[`Storyshots Components/Card Default 1`] = `
       <h2
         className="Card__title"
       >
-        Large card with title
+        Default card title
       </h2>
       <span
         className="Card__helper-text"
@@ -4355,11 +4355,100 @@ exports[`Storyshots Components/Card Default 1`] = `
     <h3
       className="Card__subtitle"
     >
-      And a subtitle
+      Subtitle
     </h3>
     <div>
       Use knobs to try out the different card sizes
     </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Components/Card Sizes 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card Card--xs"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        xs
+      </h2>
+    </div>
+    <code>
+      CardSizes.EXTRA_SMALL
+    </code>
+  </section>
+  <section
+    className="Card Card--sm"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        sm
+      </h2>
+    </div>
+    <code>
+      CardSizes.SMALL
+    </code>
+  </section>
+  <section
+    className="Card Card--md"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        md
+      </h2>
+    </div>
+    <code>
+      CardSizes.MEDIUM
+    </code>
+  </section>
+  <section
+    className="Card Card--lg"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        lg
+      </h2>
+    </div>
+    <code>
+      CardSizes.LARGE
+    </code>
+  </section>
+  <section
+    className="Card"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        default
+      </h2>
+    </div>
+    When no size is given, the Card takes up the full width of its parent container.
   </section>
 </div>
 `;
