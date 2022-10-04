@@ -3853,6 +3853,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
     </svg>
   </button>
    
+<<<<<<< release/1.36.1
   <button
     className="Button btn btn-outline-transparent btn-sm"
     disabled={false}
@@ -4117,6 +4118,9 @@ exports[`Storyshots Components/Button Warning 1`] = `
    
   <button
     className="Button btn btn-outline-warning btn-sm"
+=======
+  <button
+    className="Button btn btn-outline-transparent btn-sm"
     disabled={false}
     type="button"
   >
@@ -4137,7 +4141,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
         style={Object {}}
       />
     </svg>
-    Edit
+    Skip
     <svg
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
@@ -4158,7 +4162,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
   </button>
    
   <button
-    className="Button btn btn-warning btn-sm"
+    className="Button btn btn-transparent btn-sm"
     disabled={true}
     type="button"
   >
@@ -4179,7 +4183,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
         style={Object {}}
       />
     </svg>
-    Edit
+    Skip
     <svg
       aria-hidden="true"
       className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
@@ -4200,7 +4204,144 @@ exports[`Storyshots Components/Button Warning 1`] = `
   </button>
    
   <button
-    className="Button btn btn-warning btn-md"
+    className="Button btn btn-transparent btn-md"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Skip
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+   
+  <button
+    className="Button btn btn-outline-transparent btn-md"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Skip
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+   
+  <button
+    className="Button btn btn-transparent btn-md"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Skip
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Button Warning 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-warning btn-sm"
+>>>>>>> main
     disabled={false}
     type="button"
   >
@@ -4242,6 +4383,148 @@ exports[`Storyshots Components/Button Warning 1`] = `
   </button>
    
   <button
+<<<<<<< release/1.36.1
+    className="Button btn btn-warning btn-sm"
+    disabled={true}
+=======
+    className="Button btn btn-outline-warning btn-sm"
+    disabled={false}
+>>>>>>> main
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Edit
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+   
+  <button
+<<<<<<< release/1.36.1
+    className="Button btn btn-warning btn-md"
+    disabled={false}
+=======
+    className="Button btn btn-warning btn-sm"
+    disabled={true}
+>>>>>>> main
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Edit
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+   
+  <button
+<<<<<<< release/1.36.1
+    className="Button btn btn-outline-warning btn-md"
+=======
+    className="Button btn btn-warning btn-md"
+>>>>>>> main
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt fa-w-12 icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Edit
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down fa-w-10 icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+   
+  <button
+<<<<<<< release/1.36.1
+=======
     className="Button btn btn-outline-warning btn-md"
     disabled={false}
     type="button"
@@ -4284,6 +4567,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
   </button>
    
   <button
+>>>>>>> main
     className="Button btn btn-warning btn-md"
     disabled={true}
     type="button"
@@ -4336,7 +4620,11 @@ exports[`Storyshots Components/Card Default 1`] = `
   }
 >
   <section
+<<<<<<< release/1.36.1
     className="Card"
+=======
+    className="Card Card--lg"
+>>>>>>> main
   >
     <div
       className="Card__header"
@@ -4344,7 +4632,11 @@ exports[`Storyshots Components/Card Default 1`] = `
       <h2
         className="Card__title"
       >
+<<<<<<< release/1.36.1
         Default card title
+=======
+        Large card with title
+>>>>>>> main
       </h2>
       <span
         className="Card__helper-text"
@@ -4355,7 +4647,11 @@ exports[`Storyshots Components/Card Default 1`] = `
     <h3
       className="Card__subtitle"
     >
+<<<<<<< release/1.36.1
       Subtitle
+=======
+      And a subtitle
+>>>>>>> main
     </h3>
     <div>
       Use knobs to try out the different card sizes
@@ -4364,6 +4660,7 @@ exports[`Storyshots Components/Card Default 1`] = `
 </div>
 `;
 
+<<<<<<< release/1.36.1
 exports[`Storyshots Components/Card Sizes 1`] = `
 <div
   style={
@@ -4453,6 +4750,8 @@ exports[`Storyshots Components/Card Sizes 1`] = `
 </div>
 `;
 
+=======
+>>>>>>> main
 exports[`Storyshots Components/CardContainer Default 1`] = `
 <div
   style={
