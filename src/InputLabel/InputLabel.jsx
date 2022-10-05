@@ -21,7 +21,7 @@ const InputLabel = ({
       {text}
       {required && <span className="InputLabel__helper-text">&nbsp;(Required)</span>}
       {labelHelperText && <span className="InputLabel__helper-text">&nbsp;({labelHelperText})</span>}
-      {tooltipText && <Tooltip iconClasses="Tooltip__icon--gray" placement="right" text={tooltipText} />}
+      {tooltipText && <Tooltip iconClasses="Tooltip__icon" placement="right" text={tooltipText} />}
     </>
   );
 
