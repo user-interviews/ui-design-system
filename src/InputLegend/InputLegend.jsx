@@ -22,7 +22,7 @@ const InputLegend = ({
       {text}
       {required && <span className="InputLegend__helper-text">&nbsp;(Required)</span>}
       {labelHelperText && <span className="InputLegend__helper-text">&nbsp;({labelHelperText})</span>}
-      {tooltipText && <Tooltip iconClasses="Tooltip__icon--gray" placement="right" text={tooltipText} />}
+      {tooltipText && <Tooltip iconClasses="Tooltip__icon" placement="right" text={tooltipText} />}
     </>
   );
 
