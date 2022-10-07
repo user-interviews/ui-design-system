@@ -37,6 +37,7 @@ const defaultStyles = ({ size }) => ({
       ':hover': {
         ...styles[':hover'],
         ...getBorderStyles(isFocused, isSelected),
+        cursor: 'pointer',
       },
     }),
     clearIndicator: (styles) => ({
