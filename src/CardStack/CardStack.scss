@@ -1,0 +1,12 @@
+@import '../../scss/theme';
+
+$card-stack-child-card-margin-bottom: 1.5rem;
+
+.CardStack {
+  display: flex;
+  flex-direction: column;
+  
+  .Card {
+    margin-bottom: $card-stack-child-card-margin-bottom;
+  }
+}

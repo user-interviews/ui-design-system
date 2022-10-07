@@ -4555,108 +4555,6 @@ exports[`Storyshots Components/CardContainer Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/CardList Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="CardList CardList__alignItems--center"
-  >
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 1
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 2
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 3
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Components/CheckboxButton Default 1`] = `
 <div
   style={
@@ -25162,6 +25060,208 @@ exports[`Storyshots Foundations/Typography Typography 1`] = `
         </li>
       </ul>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/CardStack Alignment 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="container-fluid"
+  >
+    <div
+      className="row"
+    >
+      <div
+        className="col"
+      />
+      <div
+        className="col-xxl-6 col-xl-6 col-lg-8 col-md-10 col-sm-12 col-12"
+      >
+        <div
+          className="CardStack"
+        >
+          <h1
+            style={
+              Object {
+                "fontWeight": 700,
+              }
+            }
+          >
+            CardStackContainer
+          </h1>
+          <section
+            className="Card"
+          >
+            <div
+              className="Card__header"
+            >
+              <h2
+                className="Card__title"
+              >
+                Card 1
+              </h2>
+            </div>
+            <p>
+              Use 
+              <code>
+                CardStackContainer
+              </code>
+               to wrap 
+              <code>
+                CardStack 
+              </code>
+              when creating a horizontally centered, vertical stack of Cards.
+            </p>
+          </section>
+          <p>
+            You can place elements above, below, and between 
+            <code>
+              Card
+            </code>
+             components.
+          </p>
+          <p>
+            They fall edge to edge with its container.
+          </p>
+          <section
+            className="Card"
+          >
+            <div
+              className="Card__header"
+            >
+              <h2
+                className="Card__title"
+              >
+                Card 2
+              </h2>
+            </div>
+            <p>
+              <code>
+                CardStackContainer
+              </code>
+               creates a single 
+              <code>
+                Row 
+              </code>
+              and 3 
+              <code>
+                Col 
+              </code>
+              grid layout by default.
+            </p>
+            <p>
+              It will horizontally center your 
+              <code>
+                CardStack
+              </code>
+            </p>
+          </section>
+          <section
+            className="Card"
+          >
+            <div
+              className="Card__header"
+            >
+              <h2
+                className="Card__title"
+              >
+                Card 3
+              </h2>
+            </div>
+            <p>
+              Use the knobs to adjust the 
+              <code>
+                Col
+              </code>
+              width for any breakpoint on 
+              <code>
+                CardStackContainer
+              </code>
+            </p>
+          </section>
+        </div>
+      </div>
+      <div
+        className="col"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/CardStack Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="CardStack"
+  >
+    <h1
+      style={
+        Object {
+          "fontWeight": 700,
+        }
+      }
+    >
+      CardStack
+    </h1>
+    <section
+      className="Card Card--sm"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 1
+        </h2>
+      </div>
+      <p>
+        A layout container for a vertical stack of 
+        <code>
+          Card
+        </code>
+         components
+      </p>
+    </section>
+    <section
+      className="Card Card--sm"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 2
+        </h2>
+      </div>
+    </section>
+    <section
+      className="Card Card--sm"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 3
+        </h2>
+      </div>
+    </section>
   </div>
 </div>
 `;
