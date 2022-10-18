@@ -25064,7 +25064,174 @@ exports[`Storyshots Foundations/Typography Typography 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layouts/CardStack Alignment 1`] = `
+exports[`Storyshots Layouts/CardStack Centered 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <div
+      className="CardStack CardStack--sm"
+    >
+      <h1
+        style={
+          Object {
+            "fontSize": "1.5rem",
+            "fontWeight": 700,
+          }
+        }
+      >
+        CardStack
+      </h1>
+      <section
+        className="Card"
+      >
+        <div
+          className="Card__header"
+        >
+          <h2
+            className="Card__title"
+          >
+            Card 1
+          </h2>
+        </div>
+        <p>
+          Many pages consist of 
+          <code>
+            CardStack
+          </code>
+           containers centered on the page.
+        </p>
+        <p>
+          <code>
+            CardStack
+          </code>
+           can be placed in any container and aligned as needed. This example is in a container with 
+          <code>
+            display: flex; justify-content: center;
+          </code>
+        </p>
+      </section>
+      <section
+        className="Card"
+      >
+        <div
+          className="Card__header"
+        >
+          <h2
+            className="Card__title"
+          >
+            Card 2
+          </h2>
+        </div>
+      </section>
+      <section
+        className="Card"
+      >
+        <div
+          className="Card__header"
+        >
+          <h2
+            className="Card__title"
+          >
+            Card 3
+          </h2>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/CardStack Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="CardStack CardStack--sm"
+  >
+    <h1
+      style={
+        Object {
+          "fontSize": "1.5rem",
+          "fontWeight": 700,
+        }
+      }
+    >
+      CardStack
+    </h1>
+    <section
+      className="Card"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 1
+        </h2>
+      </div>
+      <p>
+        A layout container for a vertical stack of 
+        <code>
+          Card
+        </code>
+         components
+      </p>
+      <p>
+        Adjust the 
+        <code>
+          size
+        </code>
+         knob below
+      </p>
+    </section>
+    <section
+      className="Card"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 2
+        </h2>
+      </div>
+    </section>
+    <section
+      className="Card"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 3
+        </h2>
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/CardStack Responsive 1`] = `
 <div
   style={
     Object {
@@ -25090,6 +25257,7 @@ exports[`Storyshots Layouts/CardStack Alignment 1`] = `
           <h1
             style={
               Object {
+                "fontSize": "1.5rem",
                 "fontWeight": 700,
               }
             }
@@ -25117,7 +25285,7 @@ exports[`Storyshots Layouts/CardStack Alignment 1`] = `
               <code>
                 CardStack 
               </code>
-              when creating a horizontally centered, vertical stack of Cards.
+              when creating a horizontally centered, responsive, vertical stack of Cards.
             </p>
           </section>
           <p>
@@ -25192,76 +25360,6 @@ exports[`Storyshots Layouts/CardStack Alignment 1`] = `
         className="col"
       />
     </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layouts/CardStack Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="CardStack"
-  >
-    <h1
-      style={
-        Object {
-          "fontWeight": 700,
-        }
-      }
-    >
-      CardStack
-    </h1>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 1
-        </h2>
-      </div>
-      <p>
-        A layout container for a vertical stack of 
-        <code>
-          Card
-        </code>
-         components
-      </p>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 2
-        </h2>
-      </div>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 3
-        </h2>
-      </div>
-    </section>
   </div>
 </div>
 `;

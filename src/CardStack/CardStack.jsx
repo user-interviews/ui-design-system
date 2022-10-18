@@ -8,12 +8,14 @@ const CardStack = ({
   children,
   // eslint-disable-next-line camelcase
   UNSAFE_className,
+  size,
   ...props
 }) => (
   <div
     className={classNames(
       UNSAFE_className,
       'CardStack',
+      { [`CardStack--${size}`]: size },
     )}
     {...props}
   >
@@ -22,10 +24,12 @@ const CardStack = ({
 );
 
 CardStack.propTypes = {
+  size: PropTypes.string,
   UNSAFE_className: PropTypes.string,
 };
 
 CardStack.defaultProps = {
+  size: undefined,
   UNSAFE_className: undefined,
 };
 

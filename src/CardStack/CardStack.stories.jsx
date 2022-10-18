@@ -22,37 +22,55 @@ export default {
 };
 
 export const Default = () => (
-  <CardStack>
-    <h1 style={{ fontWeight: 700 }}>CardStack</h1>
-    <Card size={select('Card Size', Object.values(CardSizes), CardSizes.SMALL)} title="Card 1">
+  <CardStack size={select('size', Object.values(CardSizes), CardSizes.SMALL)}>
+    <h1 style={{ fontSize: '1.5rem', fontWeight: 700 }}>CardStack</h1>
+    <Card title="Card 1">
       <p>A layout container for a vertical stack of <code>Card</code> components</p>
+      <p>Adjust the <code>size</code> knob below</p>
     </Card>
-    <Card size={select('Card Size', Object.values(CardSizes), CardSizes.SMALL)} title="Card 2" />
-    <Card size={select('Card Size', Object.values(CardSizes), CardSizes.SMALL)} title="Card 3" />
+    <Card title="Card 2" />
+    <Card title="Card 3" />
   </CardStack>
 );
 
-const colWidth = (breakpoint, defaultColWidth) => (
+export const Centered = () => (
+  <div style={{ display: 'flex', justifyContent: 'center' }}>
+    <CardStack size={select('size', Object.values(CardSizes), CardSizes.SMALL)}>
+      <h1 style={{ fontSize: '1.5rem', fontWeight: 700 }}>CardStack</h1>
+      <Card title="Card 1">
+        <p>Many pages consist of <code>CardStack</code> containers centered on the page.</p>
+        <p>
+          <code>CardStack</code> can be placed in any container and aligned as needed.
+          This example is in a container with <code>display: flex; justify-content: center;</code>
+        </p>
+      </Card>
+      <Card title="Card 2" />
+      <Card title="Card 3" />
+    </CardStack>
+  </div>
+);
+
+const selectColWidth = (breakpoint, defaultColWidth) => (
   select(breakpoint, [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], defaultColWidth)
 );
 
-export const Alignment = () => (
+export const Responsive = () => (
   <CardStackContainer
-    lg={colWidth('lg', 8)}
-    md={colWidth('md', 10)}
-    sm={colWidth('sm', 12)}
-    xl={colWidth('xl', 6)}
-    xs={colWidth('xs', 12)}
-    xxl={colWidth('xxl', 6)}
+    lg={selectColWidth('lg', 8)}
+    md={selectColWidth('md', 10)}
+    sm={selectColWidth('sm', 12)}
+    xl={selectColWidth('xl', 6)}
+    xs={selectColWidth('xs', 12)}
+    xxl={selectColWidth('xxl', 6)}
   >
     <CardStack>
-      <h1 style={{ fontWeight: 700 }}>CardStackContainer</h1>
+      <h1 style={{ fontSize: '1.5rem', fontWeight: 700 }}>CardStackContainer</h1>
       <Card
         title="Card 1"
       >
         <p>
           Use <code>CardStackContainer</code> to wrap <code>CardStack </code>
-          when creating a horizontally centered, vertical stack of Cards.
+          when creating a horizontally centered, responsive, vertical stack of Cards.
         </p>
       </Card>
       <p>You can place elements above, below, and between <code>Card</code> components.</p>

@@ -1,12 +1,28 @@
 @import '../../scss/theme';
 
-$card-stack-child-card-margin-bottom: 1.5rem;
+$card-stack-child-card-vertical-margin: $card-spacing / 2;
 
 .CardStack {
   display: flex;
   flex-direction: column;
   
   .Card {
-    margin-bottom: $card-stack-child-card-margin-bottom;
+    margin: $card-stack-child-card-vertical-margin 0;
+  }
+
+  &--xs {
+    width: $card-width-xs
+  }
+
+  &--sm {
+    width: $card-width-sm;
+  }
+
+  &--md {
+    width: $card-width-md;
+  }
+
+  &--lg {
+    width: $card-width;
   }
 }
