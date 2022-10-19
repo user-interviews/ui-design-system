@@ -1,10 +1,13 @@
 @import '../../scss/theme';
 
 $card-stack-child-card-vertical-margin: $card-spacing / 2;
+$card-stack-horizontal-padding: $card-spacing / 2;
 
 .CardStack {
   display: flex;
   flex-direction: column;
+
+  padding: $card-stack-horizontal-padding;
   
   .Card {
     margin: $card-stack-child-card-vertical-margin 0;
