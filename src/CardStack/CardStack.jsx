@@ -2,6 +2,8 @@ import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
+import { CardSizes } from 'src/Card';
+
 import './CardStack.scss';
 
 const CardStack = ({
@@ -24,7 +26,7 @@ const CardStack = ({
 );
 
 CardStack.propTypes = {
-  size: PropTypes.string,
+  size: PropTypes.oneOf(Object.values(CardSizes)),
   UNSAFE_className: PropTypes.string,
 };
 
