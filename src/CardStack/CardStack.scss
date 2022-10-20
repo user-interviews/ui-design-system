@@ -6,26 +6,30 @@ $card-stack-horizontal-padding: $card-spacing / 2;
 .CardStack {
   display: flex;
   flex-direction: column;
-
-  padding: $card-stack-horizontal-padding;
   
+  width: 100%;
+  
+  @include media-breakpoint-down(sm) {
+    padding: 0 $card-stack-horizontal-padding;
+  }
+
   .Card {
     margin: $card-stack-child-card-vertical-margin 0;
   }
 
   &--xs {
-    width: $card-width-xs
+   max-width: $card-width-xs
   }
 
   &--sm {
-    width: $card-width-sm;
+    max-width: $card-width-sm;
   }
 
   &--md {
-    width: $card-width-md;
+    max-width: $card-width-md;
   }
 
   &--lg {
-    width: $card-width;
+    max-width: $card-width;
   }
 }
