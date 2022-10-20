@@ -9,7 +9,7 @@ import Button from 'src/Button';
 import Avatar from 'src/Avatar';
 import Card, { CardSizes } from 'src/Card';
 import CardContainer from 'src/CardContainer';
-import { CardStack, CardStackContainer } from 'src/CardStack';
+import { CardStack } from 'src/CardStack';
 import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import { Col, Container, Row } from 'src/Container';
@@ -93,7 +93,6 @@ export {
   CardContainer,
   CardSizes,
   CardStack,
-  CardStackContainer,
   CheckboxButton,
   CheckboxButtonGroup,
   CHECKED_STATES,
