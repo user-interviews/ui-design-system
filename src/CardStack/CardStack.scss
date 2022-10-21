@@ -1,0 +1,34 @@
+@import '../../scss/theme';
+
+$card-stack-horizontal-padding: .75rem;
+
+.CardStack {
+  display: flex;
+  flex-direction: column;
+  
+  width: 100%;
+  
+  @include media-breakpoint-down(sm) {
+    padding: 0 $card-stack-horizontal-padding;
+  }
+
+  > *:not(:first-child) {
+    margin: $card-spacing 0 0;
+  }
+
+  &--xs {
+   max-width: $card-width-xs
+  }
+
+  &--sm {
+    max-width: $card-width-sm;
+  }
+
+  &--md {
+    max-width: $card-width-md;
+  }
+
+  &--lg {
+    max-width: $card-width;
+  }
+}

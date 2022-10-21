@@ -4555,108 +4555,6 @@ exports[`Storyshots Components/CardContainer Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/CardList Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="CardList CardList__alignItems--center"
-  >
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 1
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 2
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 3
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Components/CheckboxButton Default 1`] = `
 <div
   style={
@@ -25162,6 +25060,173 @@ exports[`Storyshots Foundations/Typography Typography 1`] = `
         </li>
       </ul>
     </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/CardStack Centered 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "display": "flex",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <div
+      className="CardStack CardStack--sm"
+    >
+      <h1
+        style={
+          Object {
+            "fontSize": "1.5rem",
+            "fontWeight": 700,
+          }
+        }
+      >
+        CardStack
+      </h1>
+      <section
+        className="Card"
+      >
+        <div
+          className="Card__header"
+        >
+          <h2
+            className="Card__title"
+          >
+            Card 1
+          </h2>
+        </div>
+        <p>
+          Many pages consist of 
+          <code>
+            CardStack
+          </code>
+           containers centered on the page.
+        </p>
+        <p>
+          <code>
+            CardStack
+          </code>
+           can be placed in any container and aligned as needed. This example is in a container with 
+          <code>
+            display: flex; justify-content: center;
+          </code>
+        </p>
+      </section>
+      <section
+        className="Card"
+      >
+        <div
+          className="Card__header"
+        >
+          <h2
+            className="Card__title"
+          >
+            Card 2
+          </h2>
+        </div>
+      </section>
+      <section
+        className="Card"
+      >
+        <div
+          className="Card__header"
+        >
+          <h2
+            className="Card__title"
+          >
+            Card 3
+          </h2>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/CardStack Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="CardStack CardStack--sm"
+  >
+    <h1
+      style={
+        Object {
+          "fontSize": "1.5rem",
+          "fontWeight": 700,
+        }
+      }
+    >
+      CardStack
+    </h1>
+    <section
+      className="Card"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 1
+        </h2>
+      </div>
+      <p>
+        A layout container for a vertical stack of 
+        <code>
+          Card
+        </code>
+         components
+      </p>
+      <p>
+        Adjust the 
+        <code>
+          size
+        </code>
+         knob below
+      </p>
+    </section>
+    <section
+      className="Card"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 2
+        </h2>
+      </div>
+    </section>
+    <section
+      className="Card"
+    >
+      <div
+        className="Card__header"
+      >
+        <h2
+          className="Card__title"
+        >
+          Card 3
+        </h2>
+      </div>
+    </section>
   </div>
 </div>
 `;

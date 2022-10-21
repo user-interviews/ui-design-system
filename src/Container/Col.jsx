@@ -31,24 +31,24 @@ const Col = ({
   </ReactBootstrapCol>
   );
 
-const colSize = PropTypes.oneOfType([
+const colSizePropTypes = PropTypes.oneOfType([
   PropTypes.bool,
   PropTypes.number,
   PropTypes.string,
   PropTypes.oneOf(['auto']),
 ]);
 
-const stringOrNumber = PropTypes.oneOfType([
+const stringOrNumberPropTypes = PropTypes.oneOfType([
   PropTypes.number,
   PropTypes.string,
 ]);
 
-const column = PropTypes.oneOfType([
-  colSize,
+const columnPropTypes = PropTypes.oneOfType([
+  colSizePropTypes,
   PropTypes.shape({
-    offset: stringOrNumber,
-    order: stringOrNumber,
-    size: colSize,
+    offset: stringOrNumberPropTypes,
+    order: stringOrNumberPropTypes,
+    size: colSizePropTypes,
   }),
 ]);
 
@@ -68,37 +68,37 @@ Col.propTypes = {
    `boolean | "auto" | number | { span: boolean | "auto" | number,
    offset: number, order: "first" | "last" | number }`
   */
-  lg: column,
+  lg: columnPropTypes,
   /**
    The number of columns to span on medium devices (≥768px)
    `boolean | "auto" | number | { span: boolean | "auto" | number,
    offset: number, order: "first" | "last" | number }`
   */
-  md: column,
+  md: columnPropTypes,
   /**
    The number of columns to span on small devices (≥576px)
    `boolean | "auto" | number | { span: boolean | "auto" | number,
    offset: number, order: "first" | "last" | number }`
   */
-  sm: column,
+  sm: columnPropTypes,
   /**
    The number of columns to span on extra large devices (≥1200px)
    `boolean | "auto" | number | { span: boolean | "auto" | number,
    offset: number, order: "first" | "last" | number }`
   */
-  xl: column,
+  xl: columnPropTypes,
   /**
    The number of columns to span on extra small devices (<576px)
    `boolean | "auto" | number | { span: boolean | "auto" | number,
    offset: number, order: "first" | "last" | number }`
   */
-  xs: column,
+  xs: columnPropTypes,
   /**
    The number of columns to span on extra extra large devices (≥1400px)
    `boolean | "auto" | number | { span: boolean | "auto" | number,
    offset: number, order: "first" | "last" | number }`
   */
-  xxl: column,
+  xxl: columnPropTypes,
 };
 
 Col.defaultProps = {
