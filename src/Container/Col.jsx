@@ -31,19 +31,19 @@ const Col = ({
   </ReactBootstrapCol>
   );
 
-export const colSizePropTypes = PropTypes.oneOfType([
+const colSizePropTypes = PropTypes.oneOfType([
   PropTypes.bool,
   PropTypes.number,
   PropTypes.string,
   PropTypes.oneOf(['auto']),
 ]);
 
-export const stringOrNumberPropTypes = PropTypes.oneOfType([
+const stringOrNumberPropTypes = PropTypes.oneOfType([
   PropTypes.number,
   PropTypes.string,
 ]);
 
-export const columnPropTypes = PropTypes.oneOfType([
+const columnPropTypes = PropTypes.oneOfType([
   colSizePropTypes,
   PropTypes.shape({
     offset: stringOrNumberPropTypes,

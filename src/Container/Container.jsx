@@ -21,7 +21,7 @@ const Container = ({
   </ReactBootstrapContainer>
   );
 
-export const containerSizes = PropTypes.oneOfType([
+const containerSizes = PropTypes.oneOfType([
   PropTypes.bool,
   PropTypes.oneOf(['sm', 'md', 'lg', 'xl', 'xxl']),
 ]);
