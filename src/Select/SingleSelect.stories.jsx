@@ -8,6 +8,7 @@ import {
 import SingleSelect from 'src/Select/SingleSelect';
 
 import Option from './Option';
+import OptionWithDescription from './OptionWithDescription';
 import ValueContainer from './ValueContainer';
 
 import mdx from './SingleSelect.mdx';
@@ -100,6 +101,33 @@ export const InModal = () => (
     </ModalFooter>
   </Modal>
   );
+
+export const CustomOptionWithDescription = () => {
+  const optionsWithDescriptions = [
+    { label: 'Org Admin', value: 1, description: 'Short description of role capabilities' },
+    { label: 'Administrator', value: 2, description: 'Short description of role capabilities' },
+    { label: 'Researcher', value: 3, description: 'Short description of role capabilities' },
+    { label: 'Teammate', value: 4, description: 'Short description of role capabilities' },
+  ];
+
+  return (
+    <>
+      <label htmlFor="custom-option-with-description">Custom option with description</label>
+      <SingleSelect
+        components={{
+          Option: (props) => (
+            <OptionWithDescription
+              {...props}
+            />
+          ),
+        }}
+        id="custom-option-with-description"
+        options={optionsWithDescriptions}
+        onChange={onChange}
+      />
+    </>
+  );
+};
 
 export const CustomOptionWithCheckbox = () => (
   <Fragment>
