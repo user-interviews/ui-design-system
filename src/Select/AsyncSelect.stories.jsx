@@ -1,8 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { action } from '@storybook/addon-actions';
 
 import AsyncSelect from 'src/Select/AsyncSelect';
 import Button from 'src/Button';
+import FormGroup from 'src/FormGroup';
 import {
   Modal, ModalHeader, ModalBody, ModalFooter,
  } from 'src/Modal';
@@ -31,27 +32,18 @@ async function loadOptions(search) {
 const handleRequestClose = () => action('Close');
 
 export const Default = () => (
-  <AsyncSelect
-    aria-label="Async select"
-    getOptionLabel={({ label }) => label}
-    getOptionValue={({ value }) => value}
-    loadOptions={loadOptions}
-    noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
-  />
-);
-
-export const Labeled = () => (
-  <Fragment>
-    <label htmlFor="async-select" id="async-label">A labeled select</label>
+  <FormGroup
+    label="Default AsyncSelect"
+    labelHtmlFor="default-async-select"
+  >
     <AsyncSelect
-      aria-labelledby="async-label"
       getOptionLabel={({ label }) => label}
       getOptionValue={({ value }) => value}
-      id="async-select"
+      inputId="default-async-select"
       loadOptions={loadOptions}
       noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
     />
-  </Fragment>
+  </FormGroup>
 );
 
 export const InModal = () => (
@@ -62,20 +54,25 @@ export const InModal = () => (
     isOpen
   >
     <ModalHeader
-      title="AsyncSelect in modal"
-      titleId="async-select-in-modal"
+      title="In Modal AsyncSelect"
+      titleId="in-modal-async-select"
       onRequestClose={handleRequestClose}
     />
     <ModalBody>
-      <AsyncSelect
-        aria-labelledby="async-label"
-        getOptionLabel={({ label }) => label}
-        getOptionValue={({ value }) => value}
-        id="async-select"
-        loadOptions={loadOptions}
-        modal
-        noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
-      />
+      <FormGroup
+        helperText="Select menu is able to overflow the Modal container"
+        label="In Modal async select"
+        labelHtmlFor="in-modal-async-select"
+      >
+        <AsyncSelect
+          getOptionLabel={({ label }) => label}
+          getOptionValue={({ value }) => value}
+          inputId="in-modal-async-select"
+          loadOptions={loadOptions}
+          modal
+          noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+        />
+      </FormGroup>
     </ModalBody>
     <ModalFooter
       dismissButtonText="Cancel"

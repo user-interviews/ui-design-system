@@ -1,7 +1,8 @@
-import React, { Fragment, useRef } from 'react';
+import React, { useRef } from 'react';
 import { action } from '@storybook/addon-actions';
 
 import Button from 'src/Button';
+import FormGroup from 'src/FormGroup';
 import {
  Modal, ModalHeader, ModalBody, ModalFooter,
 } from 'src/Modal';
@@ -36,40 +37,44 @@ const options = [
 ];
 
 export const Default = () => (
-  <SingleSelect aria-label="Default select" options={options} onChange={onChange} />
+  <FormGroup
+    label="Default select"
+    labelHtmlFor="default-select"
+  >
+    <SingleSelect inputId="default-select" options={options} onChange={onChange} />
+  </FormGroup>
 );
 
 export const Searchable = () => (
-  <SingleSelect aria-label="Searchable select" isSearchable options={options} onChange={onChange} />
+  <FormGroup
+    label="Searchable select"
+    labelHtmlFor="searchable-select"
+  >
+    <SingleSelect inputId="searchable-select" isSearchable options={options} onChange={onChange} />
+  </FormGroup>
 );
 
 export const Loading = () => (
-  <SingleSelect aria-label="Loading select" isLoading options={options} onChange={onChange} />
+  <FormGroup
+    label="Loading select"
+    labelHtmlFor="loading-select"
+  >
+    <SingleSelect inputId="loading-select" isLoading options={options} onChange={onChange} />
+  </FormGroup>
 );
 
-export const Labeled = () => (
-  <Fragment>
-    <label htmlFor="labeled-select" id="select-label">Labeled select</label>
+export const MultipleSelect = () => (
+  <FormGroup
+    label="Multiple select"
+    labelHtmlFor="multi-select"
+  >
     <SingleSelect
-      aria-labelledby="select-label"
-      id="labeled-select"
-      options={options}
-      onChange={onChange}
-    />
-  </Fragment>
-);
-
-export const MultiSelect = () => (
-  <Fragment>
-    <label htmlFor="multi-select" id="select-label">Multi select</label>
-    <SingleSelect
-      aria-labelledby="select-label"
-      id="multi-select"
+      inputId="multi-select"
       isMulti
       options={options}
       onChange={onChange}
     />
-  </Fragment>
+  </FormGroup>
 );
 
 export const InModal = () => (
@@ -85,13 +90,18 @@ export const InModal = () => (
       onRequestClose={handleRequestClose}
     />
     <ModalBody>
-      <SingleSelect
-        aria-labelledby="select-label"
-        id="select-in-modal"
-        modal
-        options={options}
-        onChange={onChange}
-      />
+      <FormGroup
+        helperText="Select menu is able to overflow the Modal container"
+        label="In Modal select"
+        labelHtmlFor="in-modal-select"
+      >
+        <SingleSelect
+          inputId="in-modal-select"
+          modal
+          options={options}
+          onChange={onChange}
+        />
+      </FormGroup>
     </ModalBody>
     <ModalFooter
       dismissButtonText="Cancel"
@@ -111,8 +121,10 @@ export const CustomOptionWithDescription = () => {
   ];
 
   return (
-    <>
-      <label htmlFor="custom-option-with-description">Custom option with description</label>
+    <FormGroup
+      label="Custom Option with Description"
+      labelHtmlFor="custom-option-with-description-select"
+    >
       <SingleSelect
         components={{
           Option: (props) => (
@@ -121,30 +133,31 @@ export const CustomOptionWithDescription = () => {
             />
           ),
         }}
-        id="custom-option-with-description"
+        inputId="custom-option-with-description-select"
         options={optionsWithDescriptions}
         onChange={onChange}
       />
-    </>
+    </FormGroup>
   );
 };
 
 export const CustomOptionWithCheckbox = () => (
-  <Fragment>
-    <label htmlFor="multi-select" id="select-label-custom-option">Custom option with checkbox</label>
+  <FormGroup
+    label="Custom Option with Checkbox"
+    labelHtmlFor="custom-option-with-checkbox-select"
+  >
     <SingleSelect
-      aria-labelledby="select-label"
       closeMenuOnSelect={false}
       components={{
         Option,
       }}
       hideSelectedOptions={false}
-      id="multi-select"
+      inputId="custom-option-with-checkbox-select"
       isMulti
       options={options}
       onChange={onChange}
     />
-  </Fragment>
+  </FormGroup>
 );
 
 export const CustomOptionWithIndeterminateCheckbox = () => {
@@ -164,10 +177,11 @@ export const CustomOptionWithIndeterminateCheckbox = () => {
   };
 
   return (
-    <Fragment>
-      <label htmlFor="multi-select" id="select-label-custom-option-indeterminate">Custom option with indeterminate checkbox</label>
+    <FormGroup
+      label="Custom Option with Indeterminate Checkbox"
+      labelHtmlFor="custom-option-with-indeterminate-checkbox"
+    >
       <SingleSelect
-        aria-labelledby="select-label"
         closeMenuOnSelect={false}
         components={{
           Option: (props) => (
@@ -180,22 +194,21 @@ export const CustomOptionWithIndeterminateCheckbox = () => {
           ),
         }}
         hideSelectedOptions={false}
-        id="multi-select"
+        inputId="custom-option-with-indeterminate-checkbox"
         isMulti
         options={optionsArr}
         onChange={onChange}
       />
-    </Fragment>
+    </FormGroup>
   );
 };
 
 export const CustomValueContainer = () => (
-  <Fragment>
-    <label htmlFor="custom-value-container-select" id="select-label-custom-value-container">
-      Custom value container
-    </label>
+  <FormGroup
+    label="Custom Value Container"
+    labelHtmlFor="custom-value-container-select"
+  >
     <SingleSelect
-      aria-labelledby="select-label"
       closeMenuOnSelect={false}
       components={{
         Option,
@@ -209,10 +222,10 @@ export const CustomValueContainer = () => (
         ),
       }}
       hideSelectedOptions={false}
-      id="custom-value-container-select"
+      inputId="custom-value-container-select"
       isMulti
       options={options}
       onChange={onChange}
     />
-  </Fragment>
+  </FormGroup>
 );
