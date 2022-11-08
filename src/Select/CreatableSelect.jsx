@@ -18,6 +18,7 @@ const CreatableSelect = ({
   inputId,
   isClearable,
   isLoading,
+  menuWidth,
   modal,
   name,
   options,
@@ -45,7 +46,7 @@ const CreatableSelect = ({
     options={options}
     placeholder={placeholder}
     styles={{
-      ...defaultStyles({ size }),
+      ...defaultStyles({ menuWidth, size }),
       menuPortal: (base) => (
         modal ?
         { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } :
@@ -70,6 +71,7 @@ CreatableSelect.propTypes = {
   inputId: PropTypes.string,
   isClearable: PropTypes.bool,
   isLoading: PropTypes.bool,
+  menuWidth: PropTypes.string,
   modal: PropTypes.bool,
   name: PropTypes.string,
   options: PropTypes.arrayOf(PropTypes.object).isRequired,
@@ -92,6 +94,7 @@ CreatableSelect.defaultProps = {
   id: undefined,
   inputId: undefined,
   isLoading: undefined,
+  menuWidth: undefined,
   modal: undefined,
   name: undefined,
   placeholder: undefined,

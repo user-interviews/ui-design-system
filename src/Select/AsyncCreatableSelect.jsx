@@ -21,6 +21,7 @@ const AsyncCreatableSelect = ({
   inputId,
   isLoading,
   loadOptions,
+  menuWidth,
   modal,
   name,
   noOptionsMessage,
@@ -53,7 +54,7 @@ const AsyncCreatableSelect = ({
     placeholder={placeholder}
     shouldShowValue
     styles={{
-      ...defaultStyles({ size }),
+      ...defaultStyles({ menuWidth, size }),
       menuPortal: (base) => (
         modal ?
         { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } :
@@ -83,6 +84,7 @@ AsyncCreatableSelect.propTypes = {
   isClearable: propTypes.bool,
   isLoading: propTypes.bool,
   loadOptions: propTypes.func.isRequired,
+  menuWidth: propTypes.string,
   modal: propTypes.bool,
   name: propTypes.string,
   noOptionsMessage: propTypes.func,
@@ -107,6 +109,7 @@ AsyncCreatableSelect.defaultProps = {
   inputId: undefined,
   isClearable: false,
   isLoading: false,
+  menuWidth: undefined,
   modal: false,
   name: undefined,
   noOptionsMessage: undefined,
