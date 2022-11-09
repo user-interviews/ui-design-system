@@ -10,6 +10,7 @@ const AsyncCreatableSelect = ({
   'aria-label': ariaLabel,
   'aria-labelledby': ariaLabelledBy,
   className,
+  components,
   defaultOptions,
   defaultValue,
   disabled,
@@ -37,6 +38,7 @@ const AsyncCreatableSelect = ({
     aria-label={ariaLabel}
     aria-labelledby={ariaLabelledBy}
     className={`${className || ''} AsyncSelect`}
+    components={components}
     defaultOptions={defaultOptions}
     defaultValue={defaultValue}
     getOptionLabel={getOptionLabel}
@@ -73,6 +75,7 @@ AsyncCreatableSelect.propTypes = {
   'aria-label': propTypes.string,
   'aria-labelledby': propTypes.string,
   className: propTypes.string,
+  components: propTypes.any,
   defaultOptions: propTypes.oneOfType([propTypes.bool, propTypes.array]),
   defaultValue: propTypes.object,
   disabled: propTypes.bool,
@@ -99,6 +102,7 @@ AsyncCreatableSelect.defaultProps = {
   'aria-label': undefined,
   'aria-labelledby': undefined,
   className: undefined,
+  components: undefined,
   defaultOptions: false,
   defaultValue: undefined,
   disabled: false,

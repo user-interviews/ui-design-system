@@ -12,6 +12,7 @@ const SingleSelect = ({
   'aria-labelledby': ariaLabelledBy,
   className,
   closeMenuOnSelect,
+  components,
   defaultValue,
   disabled,
   getOptionLabel,
@@ -38,6 +39,7 @@ const SingleSelect = ({
     aria-labelledby={ariaLabelledBy}
     className={classNames('SingleSelect', className)}
     closeMenuOnSelect={closeMenuOnSelect}
+    components={components}
     defaultValue={defaultValue}
     getOptionLabel={getOptionLabel}
     getOptionValue={getOptionValue}
@@ -70,6 +72,7 @@ SingleSelect.propTypes = {
   'aria-labelledby': propTypes.string,
   className: propTypes.string,
   closeMenuOnSelect: propTypes.bool,
+  components: propTypes.any,
   defaultValue: propTypes.object,
   disabled: propTypes.bool,
   getOptionLabel: propTypes.func,
@@ -96,6 +99,7 @@ SingleSelect.defaultProps = {
   'aria-labelledby': undefined,
   className: undefined,
   closeMenuOnSelect: true,
+  components: undefined,
   defaultValue: undefined,
   disabled: false,
   getOptionLabel: undefined,

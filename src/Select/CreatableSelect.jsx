@@ -10,6 +10,7 @@ const CreatableSelect = ({
   'aria-label': ariaLabel,
   'aria-labelledby': ariaLabelledBy,
   className,
+  components,
   defaultValue,
   disabled,
   getOptionValue,
@@ -33,6 +34,7 @@ const CreatableSelect = ({
     ariaLabel={ariaLabel}
     ariaLabelledBy={ariaLabelledBy}
     className={`${className || ''} CreatableSelect`}
+    components={components}
     defaultValue={defaultValue}
     disabled={disabled}
     getOptionLabel={getOptionLabel}
@@ -63,6 +65,7 @@ CreatableSelect.propTypes = {
   'aria-label': PropTypes.string,
   'aria-labelledby': PropTypes.string,
   className: PropTypes.string,
+  components: PropTypes.any,
   defaultValue: PropTypes.object,
   disabled: PropTypes.bool,
   getOptionLabel: PropTypes.func,
@@ -86,6 +89,7 @@ CreatableSelect.defaultProps = {
   'aria-label': undefined,
   'aria-labelledby': undefined,
   className: undefined,
+  components: undefined,
   defaultValue: undefined,
   disabled: false,
   getOptionLabel: undefined,
