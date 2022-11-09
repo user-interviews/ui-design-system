@@ -15,16 +15,37 @@ export default {
   },
 };
 
-const navStyle = {
- height: '4.5rem', width: '100%', backgroundColor: '#177863', display: 'flex', alignItems: 'center', padding: '1rem',
+const styles = {
+  nav: {
+    display: 'flex',
+    justifyContent: 'flex-end',
+  },
+  navLink: {
+    color: '#101010',
+    padding: '.5rem',
+  },
+  header: {
+    alignItems: 'center',
+    backgroundColor: '#177863',
+    display: 'flex',
+    height: '4.5rem',
+    padding: '1rem',
+    width: '100%',
+  },
+  h1: {
+    color: '#FFFFFF',
+    fontSize: '1.25rem',
+    fontWeight: '700',
+  },
+  h2: {
+    fontSize: '1rem',
+    fontWeight: '700',
+  },
+   main: {
+    backgroundColor: '#F8F4F2',
+    height: '350px',
+  },
 };
-const header1Style = { fontSize: '1.25rem', fontWeight: '700', color: '#FFFFFF' };
-const header2Style = { fontSize: '1rem', fontWeight: '700' };
-const flexContainerStyle = { display: 'flex', flexDirection: 'row' };
-const sidebarStyle = {
- height: '100vh', width: '200px', backgroundColor: '#33312F', color: 'white', padding: '1rem',
-};
-const mainStyle = { backgroundColor: '#F8F4F2' };
 
 export const Default = () => (
   <Main>
@@ -35,32 +56,65 @@ export const Default = () => (
 
 export const PageExample = () => (
   <div className="App">
-    <nav className="Nav" style={navStyle}>
-      <h1 style={header1Style}>Some page title</h1>
+    <nav className="Nav" style={styles.nav}>
+      <a href="https://www.userinterviews.com" style={styles.navLink}>Nav item 1</a>
+      <a href="https://www.userinterviews.com" style={styles.navLink}>Nav item 2</a>
+      <a href="https://www.userinterviews.com" style={styles.navLink}>Nav item 3</a>
     </nav>
-    <div style={flexContainerStyle}>
-      <div className="Sidebar" style={sidebarStyle}>
-        Some sidebar
-      </div>
-      <Main style={mainStyle}>
-        <h2 style={header2Style}>Main content area of this page</h2>
-        <p>
-          Having at least one main landmark on a page helps with accessibility and allows
-          assistive technology (AT) users orient themselves to a page.
-        </p>
-      </Main>
-    </div>
+    <header className="Header" style={styles.header}>
+      <h1 style={styles.h1}>Some header</h1>
+    </header>
+    <Main style={styles.main}>
+      <h2 style={styles.h2}>Main content area of this page</h2>
+      <p>
+        Having at least one main landmark on a page helps with accessibility and allows
+        assistive technology (AT) users to orient themselves on a page.
+      </p>
+    </Main>
   </div>
 );
 
-export const AnotherExample = () => (
+export const Accessibility = () => (
   <Main>
     <div style={{ display: 'flex', justifyContent: 'center' }}>
       <CardStack size={CardSizes.SMALL}>
-        <Card title="This is a Card" />
-        <Card title="And another Card" />
-        <Card title="All contained in a Main">
-          <p>Always make sure every page has a Main landmark</p>
+        <h1 style={{ fontSize: '1.5rem', fontWeight: '700' }}>Accessibility information</h1>
+        <Card title="Why is it important to use Main?">
+          <p>
+            Any document needs to have a navigation point to the primary content of the page.
+            Ensure all content is contained within a landmark region, designated with HTML5
+            landmark elements and/or ARIA landmark regions.
+          </p>
+          <p>
+            It is a best practice to use both HTML 5 and ARIA landmarks to ensure all content
+            is contained within a navigational region.
+            In HTML5, you should use elements like header, nav, main, and footer.
+            Their ARIA counterparts are role="banner", role="navigation", role="main",
+            and role="contentinfo", in that order.
+            By using both HTML5 and ARIA markup, you make the webpage more robust and functional
+            no matter what screen reader technology is used.
+          </p>
+          <p>
+            Once added, screen reader users can navigate to a section based on its ARIA landmark
+            or HTML element.
+            Landmarks provide a simple replacement for a skip navigation link,
+            though the replacement is only useful for users of screen readers.
+            Sighted users or users of screen enlargers wouldn’t get much benefit from
+            the addition, so it can’t replace skip navigation links altogether.
+          </p>
+          <span>
+            Source:
+            <a href="https://dequeuniversity.com/rules/axe/4.2/landmark-one-main">
+              Source: Deque University - Landmark one main
+            </a>
+          </span>
+          <br />
+          <span>
+            Interactive example:
+            <a href="https://www.w3.org/WAI/ARIA/apg/example-index/landmarks/main.html">
+              W3C: ARIA Landmarks Example
+            </a>
+          </span>
         </Card>
       </CardStack>
     </div>
