@@ -90,6 +90,7 @@ export {
   Button,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
+  CardContainer,
   CardSizes,
   CardStack,
   CheckboxButton,

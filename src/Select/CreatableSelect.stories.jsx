@@ -81,3 +81,39 @@ export const InModal = () => {
     </Modal>
   );
 };
+
+export const InModal = () => {
+  const handleChange = () => {};
+  const handleInputChange = () => {};
+  const handleRequestClose = () => action('Close');
+
+  return (
+    <Modal
+      ariaHideApp={false}
+      className="CreatableSelectInModal"
+      contentLabel="CreatableSelect in Modal"
+      isOpen
+    >
+      <ModalHeader
+        title="CreatableSelect in modal"
+        titleId="creatable-select-in-modal"
+        onRequestClose={handleRequestClose}
+      />
+      <ModalBody>
+        <CreatableSelect
+          isClearable
+          modal
+          options={options}
+          onChange={handleChange}
+          onInputChange={handleInputChange}
+        />
+      </ModalBody>
+      <ModalFooter
+        dismissButtonText="Cancel"
+        onRequestClose={handleRequestClose}
+      >
+        <Button type="submit" variant="primary">Confirm</Button>
+      </ModalFooter>
+    </Modal>
+  );
+};
