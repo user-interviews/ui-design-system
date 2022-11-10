@@ -4453,210 +4453,6 @@ exports[`Storyshots Components/Card Sizes 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/CardContainer Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="CardContainer CardContainer__alignItems--center"
-  >
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 1
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 2
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 3
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/CardList Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="CardList CardList__alignItems--center"
-  >
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 1
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 2
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-    <section
-      className="Card Card--sm"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 3
-        </h2>
-      </div>
-      <h3
-        className="Card__subtitle"
-      >
-        The fastest way to recruit research participants. Source from a pool of more than 850,000 participants to reach nearly any target audience.
-      </h3>
-      <ul>
-        <li>
-          500,000+ sessions completed
-        </li>
-        <li>
-          $19 million+ incentives distributed
-        </li>
-        <li>
-          3 hours median time to 1st matched participant
-        </li>
-      </ul>
-    </section>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Components/CheckboxButton Default 1`] = `
 <div
   style={
@@ -9680,6 +9476,322 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Selects/Creatable Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="default-creatable-select"
+    >
+      Default creatable select
+    </label>
+    <div
+      className="CreatableSelect css-b62m3t-container"
+      onKeyDown={[Function]}
+    >
+      <span
+        className="css-1f43avz-a11yText-A11yText"
+        id="react-select-6-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="css-1f43avz-a11yText-A11yText"
+      />
+      <div
+        className=" css-cijnja-control"
+        onMouseDown={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div
+          className=" css-319lph-ValueContainer"
+        >
+          <div
+            className=" css-858797-placeholder"
+            id="react-select-6-placeholder"
+          >
+            Select...
+          </div>
+          <div
+            className=" css-6j8wv5-Input"
+            data-value=""
+          >
+            <input
+              aria-autocomplete="list"
+              aria-describedby="react-select-6-placeholder"
+              aria-expanded={false}
+              aria-haspopup={true}
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              className=""
+              disabled={false}
+              id="default-creatable-select"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              role="combobox"
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "color": "inherit",
+                  "font": "inherit",
+                  "gridArea": "1 / 2",
+                  "label": "input",
+                  "margin": 0,
+                  "minWidth": "2px",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "100%",
+                }
+              }
+              tabIndex={0}
+              type="text"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          className=" css-1hb7zxy-IndicatorsContainer"
+        >
+          <span
+            className=" css-43ykx9-indicatorSeparator"
+          />
+          <div
+            aria-hidden="true"
+            className=" css-7sl878-indicatorContainer"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="css-tj5bde-Svg"
+              focusable="false"
+              height={20}
+              viewBox="0 0 20 20"
+              width={20}
+            >
+              <path
+                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ReactModal__Overlay ReactModal__Overlay--after-open"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="CreatableSelect in Modal"
+      aria-modal={true}
+      className="ReactModal__Content ReactModal__Content--after-open CreatableSelectInModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="in-modal-creatable-select"
+          >
+            In Modal creatable select
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        />
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <div
+          className="FormGroup"
+        >
+          <label
+            className="InputLabel"
+            htmlFor="in-modal-creatable-select"
+          >
+            In Modal creatable select
+          </label>
+          <div
+            className="CreatableSelect css-b62m3t-container"
+            onKeyDown={[Function]}
+          >
+            <span
+              className="css-1f43avz-a11yText-A11yText"
+              id="react-select-7-live-region"
+            />
+            <span
+              aria-atomic="false"
+              aria-live="polite"
+              aria-relevant="additions text"
+              className="css-1f43avz-a11yText-A11yText"
+            />
+            <div
+              className=" css-cijnja-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-319lph-ValueContainer"
+              >
+                <div
+                  className=" css-858797-placeholder"
+                  id="react-select-7-placeholder"
+                >
+                  Select...
+                </div>
+                <div
+                  className=" css-6j8wv5-Input"
+                  data-value=""
+                >
+                  <input
+                    aria-autocomplete="list"
+                    aria-describedby="react-select-7-placeholder"
+                    aria-expanded={false}
+                    aria-haspopup={true}
+                    autoCapitalize="none"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    className=""
+                    disabled={false}
+                    id="in-modal-creatable-select"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    role="combobox"
+                    spellCheck="false"
+                    style={
+                      Object {
+                        "background": 0,
+                        "border": 0,
+                        "color": "inherit",
+                        "font": "inherit",
+                        "gridArea": "1 / 2",
+                        "label": "input",
+                        "margin": 0,
+                        "minWidth": "2px",
+                        "opacity": 1,
+                        "outline": 0,
+                        "padding": 0,
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={0}
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-43ykx9-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-7sl878-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-tj5bde-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="FormGroup__helper-text"
+          >
+            Select menu is able to overflow the Modal container
+          </div>
+        </div>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          type="submit"
+        >
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = `
 <div
   style={
@@ -9703,7 +9815,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-12-live-region"
+        id="react-select-14-live-region"
       />
       <span
         aria-atomic="false"
@@ -9721,13 +9833,13 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-12-placeholder"
+            id="react-select-14-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-12-placeholder"
+            aria-describedby="react-select-14-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -9798,7 +9910,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-11-live-region"
+        id="react-select-13-live-region"
       />
       <span
         aria-atomic="false"
@@ -9816,13 +9928,13 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-11-placeholder"
+            id="react-select-13-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-11-placeholder"
+            aria-describedby="react-select-13-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -9893,7 +10005,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-13-live-region"
+        id="react-select-15-live-region"
       />
       <span
         aria-atomic="false"
@@ -9911,13 +10023,13 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-13-placeholder"
+            id="react-select-15-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-13-placeholder"
+            aria-describedby="react-select-15-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -9988,7 +10100,7 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-14-live-region"
+        id="react-select-16-live-region"
       />
       <span
         aria-atomic="false"
@@ -10006,13 +10118,13 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-14-placeholder"
+            id="react-select-16-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-14-placeholder"
+            aria-describedby="react-select-16-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10083,7 +10195,7 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-6-live-region"
+        id="react-select-8-live-region"
       />
       <span
         aria-atomic="false"
@@ -10101,13 +10213,13 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-6-placeholder"
+            id="react-select-8-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-6-placeholder"
+            aria-describedby="react-select-8-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10229,7 +10341,7 @@ exports[`Storyshots Components/Selects/Single In Modal 1`] = `
           >
             <span
               className="css-1f43avz-a11yText-A11yText"
-              id="react-select-10-live-region"
+              id="react-select-12-live-region"
             />
             <span
               aria-atomic="false"
@@ -10247,13 +10359,13 @@ exports[`Storyshots Components/Selects/Single In Modal 1`] = `
               >
                 <div
                   className=" css-858797-placeholder"
-                  id="react-select-10-placeholder"
+                  id="react-select-12-placeholder"
                 >
                   Select...
                 </div>
                 <input
                   aria-autocomplete="list"
-                  aria-describedby="react-select-10-placeholder"
+                  aria-describedby="react-select-12-placeholder"
                   aria-expanded={false}
                   aria-haspopup={true}
                   aria-readonly={true}
@@ -10351,7 +10463,7 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-8-live-region"
+        id="react-select-10-live-region"
       />
       <span
         aria-atomic="false"
@@ -10369,13 +10481,13 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-8-placeholder"
+            id="react-select-10-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-8-placeholder"
+            aria-describedby="react-select-10-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10446,7 +10558,7 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-9-live-region"
+        id="react-select-11-live-region"
       />
       <span
         aria-atomic="false"
@@ -10464,13 +10576,13 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-9-placeholder"
+            id="react-select-11-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-9-placeholder"
+            aria-describedby="react-select-11-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10541,7 +10653,7 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-7-live-region"
+        id="react-select-9-live-region"
       />
       <span
         aria-atomic="false"
@@ -10559,7 +10671,7 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-7-placeholder"
+            id="react-select-9-placeholder"
           >
             Select...
           </div>
@@ -10569,7 +10681,7 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
           >
             <input
               aria-autocomplete="list"
-              aria-describedby="react-select-7-placeholder"
+              aria-describedby="react-select-9-placeholder"
               aria-expanded={false}
               aria-haspopup={true}
               autoCapitalize="none"
