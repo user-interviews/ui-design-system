@@ -3,6 +3,7 @@ import { action } from '@storybook/addon-actions';
 
 import AsyncCreatableSelect from 'src/Select/AsyncCreatableSelect';
 import Button from 'src/Button';
+import FormGroup from 'src/FormGroup';
 import {
   Modal, ModalHeader, ModalBody, ModalFooter,
  } from 'src/Modal';
@@ -33,15 +34,20 @@ export const Default = () => {
   const handleInputChange = () => {};
 
   return (
-    <AsyncCreatableSelect
-      aria-label="Async creatable select"
-      getOptionLabel={({ label }) => label}
-      getOptionValue={({ value }) => value}
-      isClearable
-      loadOptions={loadOptions}
-      onChange={handleChange}
-      onInputChange={handleInputChange}
-    />
+    <FormGroup
+      label="Default async creatable select"
+      labelHtmlFor="default-async-creatable-select"
+    >
+      <AsyncCreatableSelect
+        getOptionLabel={({ label }) => label}
+        getOptionValue={({ value }) => value}
+        inputId="default-async-creatable-select"
+        isClearable
+        loadOptions={loadOptions}
+        onChange={handleChange}
+        onInputChange={handleInputChange}
+      />
+    </FormGroup>
   );
 };
 
@@ -53,20 +59,25 @@ export const InModal = () => (
     isOpen
   >
     <ModalHeader
-      title="AsyncCreatableSelect in modal"
-      titleId="async-creatable-select-in-modal"
+      title="In Modal AsyncCreatable select"
+      titleId="in-modal-async-creatable-select"
       onRequestClose={handleRequestClose}
     />
     <ModalBody>
-      <AsyncCreatableSelect
-        aria-labelledby="async-label"
-        getOptionLabel={({ label }) => label}
-        getOptionValue={({ value }) => value}
-        id="async-creatable-select"
-        loadOptions={loadOptions}
-        modal
-        noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
-      />
+      <FormGroup
+        helperText="Select menu is able to overflow the Modal container"
+        label="In Modal AsyncCreatable select"
+        labelHtmlFor="in-modal-creatable-select"
+      >
+        <AsyncCreatableSelect
+          getOptionLabel={({ label }) => label}
+          getOptionValue={({ value }) => value}
+          inputId="in-modal-creatable-select"
+          loadOptions={loadOptions}
+          modal
+          noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+        />
+      </FormGroup>
     </ModalBody>
     <ModalFooter
       dismissButtonText="Cancel"

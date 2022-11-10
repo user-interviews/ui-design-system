@@ -1,0 +1,12 @@
+@import '../../scss/theme.scss';
+
+.OptionWithDescription {
+  &__label {
+    @include font-type-30--bold;
+  }
+
+  &__description {
+    @include font-type-30;
+    color: $ux-gray-700;
+  }
+}

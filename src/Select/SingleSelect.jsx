@@ -12,6 +12,7 @@ const SingleSelect = ({
   'aria-labelledby': ariaLabelledBy,
   className,
   closeMenuOnSelect,
+  components,
   defaultValue,
   disabled,
   getOptionLabel,
@@ -22,6 +23,7 @@ const SingleSelect = ({
   isLoading,
   isMulti,
   isSearchable,
+  menuWidth,
   modal,
   name,
   options,
@@ -37,6 +39,7 @@ const SingleSelect = ({
     aria-labelledby={ariaLabelledBy}
     className={classNames('SingleSelect', className)}
     closeMenuOnSelect={closeMenuOnSelect}
+    components={components}
     defaultValue={defaultValue}
     getOptionLabel={getOptionLabel}
     getOptionValue={getOptionValue}
@@ -51,7 +54,7 @@ const SingleSelect = ({
     options={options}
     placeholder={placeholder}
     styles={{
-      ...defaultStyles({ size }),
+      ...defaultStyles({ menuWidth, size }),
       menuPortal: (base) => (
         modal ?
         { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } :
@@ -69,6 +72,7 @@ SingleSelect.propTypes = {
   'aria-labelledby': propTypes.string,
   className: propTypes.string,
   closeMenuOnSelect: propTypes.bool,
+  components: propTypes.any,
   defaultValue: propTypes.object,
   disabled: propTypes.bool,
   getOptionLabel: propTypes.func,
@@ -79,6 +83,7 @@ SingleSelect.propTypes = {
   isLoading: propTypes.bool,
   isMulti: propTypes.bool,
   isSearchable: propTypes.bool,
+  menuWidth: propTypes.string,
   modal: propTypes.bool,
   name: propTypes.string,
   options: propTypes.arrayOf(propTypes.object).isRequired,
@@ -94,6 +99,7 @@ SingleSelect.defaultProps = {
   'aria-labelledby': undefined,
   className: undefined,
   closeMenuOnSelect: true,
+  components: undefined,
   defaultValue: undefined,
   disabled: false,
   getOptionLabel: undefined,
@@ -104,6 +110,7 @@ SingleSelect.defaultProps = {
   isLoading: false,
   isMulti: undefined,
   isSearchable: false,
+  menuWidth: undefined,
   modal: false,
   name: undefined,
   placeholder: undefined,

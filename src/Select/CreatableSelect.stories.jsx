@@ -3,6 +3,7 @@ import { action } from '@storybook/addon-actions';
 
 import Button from 'src/Button';
 import CreatableSelect from 'src/Select/CreatableSelect';
+import FormGroup from 'src/FormGroup';
 import {
   Modal, ModalHeader, ModalBody, ModalFooter,
  } from 'src/Modal';
@@ -23,12 +24,18 @@ export const Default = () => {
   const handleInputChange = () => {};
 
   return (
-    <CreatableSelect
-      isClearable
-      options={options}
-      onChange={handleChange}
-      onInputChange={handleInputChange}
-    />
+    <FormGroup
+      label="Default creatable select"
+      labelHtmlFor="default-creatable-select"
+    >
+      <CreatableSelect
+        inputId="default-creatable-select"
+        isClearable
+        options={options}
+        onChange={handleChange}
+        onInputChange={handleInputChange}
+      />
+    </FormGroup>
   );
 };
 
@@ -45,18 +52,25 @@ export const InModal = () => {
       isOpen
     >
       <ModalHeader
-        title="CreatableSelect in modal"
-        titleId="creatable-select-in-modal"
+        title="In Modal creatable select"
+        titleId="in-modal-creatable-select"
         onRequestClose={handleRequestClose}
       />
       <ModalBody>
-        <CreatableSelect
-          isClearable
-          modal
-          options={options}
-          onChange={handleChange}
-          onInputChange={handleInputChange}
-        />
+        <FormGroup
+          helperText="Select menu is able to overflow the Modal container"
+          label="In Modal creatable select"
+          labelHtmlFor="in-modal-creatable-select"
+        >
+          <CreatableSelect
+            inputId="in-modal-creatable-select"
+            isClearable
+            modal
+            options={options}
+            onChange={handleChange}
+            onInputChange={handleInputChange}
+          />
+        </FormGroup>
       </ModalBody>
       <ModalFooter
         dismissButtonText="Cancel"

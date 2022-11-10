@@ -28,7 +28,7 @@ function getBorderStyles(isFocused, isSelected) {
  To set styles for your item, make sure your option object has a child `colors` object
  with a text and/or hover key defined to override the defaults
  */
-const defaultStyles = ({ size }) => ({
+const defaultStyles = ({ menuWidth, size }) => ({
     control: (styles, { isDisabled, isFocused, isSelected }) => ({
       ...styles,
       ...getHeightProps(size),
@@ -55,6 +55,10 @@ const defaultStyles = ({ size }) => ({
       backgroundColor: systemColors.UX_BLUE_100,
       color: systemColors.UX_BLUE_700,
       borderRadius: '.25rem',
+    }),
+    menu: (styles) => ({
+      ...styles,
+      width: !menuWidth ? '100%' : menuWidth,
     }),
     multiValueLabel: (styles) => ({
       ...styles,

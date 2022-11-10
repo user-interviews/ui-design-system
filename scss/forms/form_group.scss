@@ -88,4 +88,9 @@
     @include font-type-30;
     height: auto;
   }
+
+  .AsyncSelect, .CreatableSelect, .SingleSelect {
+    min-width: 0;
+    width: 100%;
+  }
 }

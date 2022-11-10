@@ -10,6 +10,7 @@ const CreatableSelect = ({
   'aria-label': ariaLabel,
   'aria-labelledby': ariaLabelledBy,
   className,
+  components,
   defaultValue,
   disabled,
   getOptionValue,
@@ -18,6 +19,7 @@ const CreatableSelect = ({
   inputId,
   isClearable,
   isLoading,
+  menuWidth,
   modal,
   name,
   options,
@@ -32,6 +34,7 @@ const CreatableSelect = ({
     ariaLabel={ariaLabel}
     ariaLabelledBy={ariaLabelledBy}
     className={`${className || ''} CreatableSelect`}
+    components={components}
     defaultValue={defaultValue}
     disabled={disabled}
     getOptionLabel={getOptionLabel}
@@ -45,7 +48,7 @@ const CreatableSelect = ({
     options={options}
     placeholder={placeholder}
     styles={{
-      ...defaultStyles({ size }),
+      ...defaultStyles({ menuWidth, size }),
       menuPortal: (base) => (
         modal ?
         { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } :
@@ -62,6 +65,7 @@ CreatableSelect.propTypes = {
   'aria-label': PropTypes.string,
   'aria-labelledby': PropTypes.string,
   className: PropTypes.string,
+  components: PropTypes.any,
   defaultValue: PropTypes.object,
   disabled: PropTypes.bool,
   getOptionLabel: PropTypes.func,
@@ -70,6 +74,7 @@ CreatableSelect.propTypes = {
   inputId: PropTypes.string,
   isClearable: PropTypes.bool,
   isLoading: PropTypes.bool,
+  menuWidth: PropTypes.string,
   modal: PropTypes.bool,
   name: PropTypes.string,
   options: PropTypes.arrayOf(PropTypes.object).isRequired,
@@ -84,6 +89,7 @@ CreatableSelect.defaultProps = {
   'aria-label': undefined,
   'aria-labelledby': undefined,
   className: undefined,
+  components: undefined,
   defaultValue: undefined,
   disabled: false,
   getOptionLabel: undefined,
@@ -92,6 +98,7 @@ CreatableSelect.defaultProps = {
   id: undefined,
   inputId: undefined,
   isLoading: undefined,
+  menuWidth: undefined,
   modal: undefined,
   name: undefined,
   placeholder: undefined,
