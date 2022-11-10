@@ -8,7 +8,6 @@ import { Alert, MessageTypes } from 'src/Alert';
 import Button from 'src/Button';
 import Avatar from 'src/Avatar';
 import Card, { CardSizes } from 'src/Card';
-import CardContainer from 'src/CardContainer';
 import { CardStack } from 'src/CardStack';
 import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
@@ -50,6 +49,7 @@ import {
   AsyncCreatableSelect,
   CreatableSelect,
   Option,
+  OptionWithDescription,
   SELECT_SIZES,
   SelectComponents,
   SingleSelect,
@@ -90,7 +90,6 @@ export {
   Button,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
-  CardContainer,
   CardSizes,
   CardStack,
   CheckboxButton,
@@ -122,6 +121,7 @@ export {
   ModalFooter,
   ModalHeader,
   Option,
+  OptionWithDescription,
   OverlayTrigger,
   OVERLAY_TRIGGER_PLACEMENT,
   Pill,

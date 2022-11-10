@@ -10,6 +10,7 @@ const AsyncCreatableSelect = ({
   'aria-label': ariaLabel,
   'aria-labelledby': ariaLabelledBy,
   className,
+  components,
   defaultOptions,
   defaultValue,
   disabled,
@@ -21,6 +22,7 @@ const AsyncCreatableSelect = ({
   inputId,
   isLoading,
   loadOptions,
+  menuWidth,
   modal,
   name,
   noOptionsMessage,
@@ -36,6 +38,7 @@ const AsyncCreatableSelect = ({
     aria-label={ariaLabel}
     aria-labelledby={ariaLabelledBy}
     className={`${className || ''} AsyncSelect`}
+    components={components}
     defaultOptions={defaultOptions}
     defaultValue={defaultValue}
     getOptionLabel={getOptionLabel}
@@ -53,7 +56,7 @@ const AsyncCreatableSelect = ({
     placeholder={placeholder}
     shouldShowValue
     styles={{
-      ...defaultStyles({ size }),
+      ...defaultStyles({ menuWidth, size }),
       menuPortal: (base) => (
         modal ?
         { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } :
@@ -72,6 +75,7 @@ AsyncCreatableSelect.propTypes = {
   'aria-label': propTypes.string,
   'aria-labelledby': propTypes.string,
   className: propTypes.string,
+  components: propTypes.any,
   defaultOptions: propTypes.oneOfType([propTypes.bool, propTypes.array]),
   defaultValue: propTypes.object,
   disabled: propTypes.bool,
@@ -83,6 +87,7 @@ AsyncCreatableSelect.propTypes = {
   isClearable: propTypes.bool,
   isLoading: propTypes.bool,
   loadOptions: propTypes.func.isRequired,
+  menuWidth: propTypes.string,
   modal: propTypes.bool,
   name: propTypes.string,
   noOptionsMessage: propTypes.func,
@@ -97,6 +102,7 @@ AsyncCreatableSelect.defaultProps = {
   'aria-label': undefined,
   'aria-labelledby': undefined,
   className: undefined,
+  components: undefined,
   defaultOptions: false,
   defaultValue: undefined,
   disabled: false,
@@ -107,6 +113,7 @@ AsyncCreatableSelect.defaultProps = {
   inputId: undefined,
   isClearable: false,
   isLoading: false,
+  menuWidth: undefined,
   modal: false,
   name: undefined,
   noOptionsMessage: undefined,
