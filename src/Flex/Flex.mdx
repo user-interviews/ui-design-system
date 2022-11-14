@@ -1,0 +1,46 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Flex from './Flex';
+
+# Flex
+
+##
+
+<h4>
+  Flex provides a layout container using CSS Flexbox.
+</h4>
+
+The <code>Flex</code> component provides a Flexbox container. Learn more about some of the available 
+Flexbox CSS properties in the following documentation:
+
+<ul>
+  <li><a href='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox'>Flex layout - MDN</a></li>
+  <li><a href='https://css-tricks.com/snippets/css/a-guide-to-flexbox/'>A Complete Guide to Flex - CSS Tricks</a></li>
+</ul>
+
+<Canvas>
+  <Story id="layouts-flex--default" />
+</Canvas>
+
+## Props
+
+<ArgsTable of={Flex} />
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story id="layouts-flex--default" />
+</Canvas>
+
+### Flex Container
+
+<Canvas>
+  <Story id="layouts-flex--flex-container" />
+</Canvas>
+
+### Flex Item
+
+<Canvas>
+  <Story id="layouts-flex--flex-item" />
+</Canvas>

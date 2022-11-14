@@ -22,6 +22,7 @@ import {
   DropdownMenu,
 } from 'src/Dropdown';
 import FadeTransition from 'src/FadeTransition';
+import Flex from 'src/Flex';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
@@ -106,6 +107,7 @@ export {
   DropdownItem,
   DropdownMenu,
   FadeTransition,
+  Flex,
   Form,
   FormControlLabel,
   FormGroup,
