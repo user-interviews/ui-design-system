@@ -53,7 +53,6 @@ export const Default = () => (
     flexGrow={text('flexGrow')}
     flexShrink={text('flexShrink')}
     flexWrap={radios('flexWrap', Object.values(FLEX_PROPS.flexWrap))}
-    gap={text('gap')}
     height={text('height')}
     justifyContent={radios('justifyContent', Object.values(FLEX_PROPS.justifyContent))}
     justifySelf={radios('justifySelf', Object.values(FLEX_PROPS.justifySelf))}
@@ -75,7 +74,6 @@ export const FlexContainer = () => (
       container
       direction={radios('direction', Object.values(FLEX_PROPS.direction))}
       flexWrap={radios('flexWrap', Object.values(FLEX_PROPS.flexWrap))}
-      gap={text('gap')}
       justifyContent={radios('justifyContent', Object.values(FLEX_PROPS.justifyContent))}
     >
       <Box>Box 1</Box>

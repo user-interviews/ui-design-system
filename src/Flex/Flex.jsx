@@ -25,10 +25,6 @@ Flex.propTypes = {
   flexShrink: PropTypes.number,
   flexWrap: PropTypes.oneOf(Object.values(FLEX_PROPS.flexWrap)),
   /**
-    row-gap column-gap (e.g. '10px 20px' => `gap: 10px 20px;`)
-  */
-  gap: PropTypes.string,
-  /**
     rem or px
   */
   height: PropTypes.string,
@@ -59,7 +55,6 @@ Flex.defaultProps = {
   flexGrow: undefined,
   flexShrink: undefined,
   flexWrap: undefined,
-  gap: undefined,
   height: undefined,
   justifyContent: undefined,
   justifySelf: undefined,

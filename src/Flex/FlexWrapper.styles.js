@@ -6,7 +6,6 @@ export const FlexWrapper = styled.div`
     direction,
     flexWrap,
     alignItems,
-    gap,
     justifyContent,
     height,
     maxHeight,
@@ -42,12 +41,6 @@ export const FlexWrapper = styled.div`
     css`
       align-items: ${alignItems};
     `}
-
-    ${gap &&
-    css`
-      gap: ${gap};
-    `
-    }
 
     ${height &&
     css`
