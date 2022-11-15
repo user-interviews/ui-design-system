@@ -67,6 +67,7 @@ export const Default = () => (
     flexGrow={text('flexGrow')}
     flexShrink={text('flexShrink')}
     flexWrap={radios('flexWrap', ['wrap', 'nowrap', 'reverse'])}
+    gap={text('gap')}
     height={text('height')}
     justifyContent={radios('justifyContent',
       [
@@ -112,6 +113,7 @@ export const FlexContainer = () => (
       container
       direction={radios('direction', ['row', 'column'], 'row')}
       flexWrap={radios('flexWrap', ['wrap', 'nowrap', 'reverse'])}
+      gap={text('gap')}
       justifyContent={radios('justifyContent',
       [
         'flex-start',
