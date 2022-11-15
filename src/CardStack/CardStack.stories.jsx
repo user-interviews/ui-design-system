@@ -2,7 +2,7 @@ import React from 'react';
 
 import Card, { CardSizes } from 'src/Card';
 import { withKnobs, select } from '@storybook/addon-knobs';
-import Flex from 'src/Flex';
+import { Flex } from 'src/Flex';
 import CardStack from './CardStack';
 
 import mdx from './CardStack.mdx';
