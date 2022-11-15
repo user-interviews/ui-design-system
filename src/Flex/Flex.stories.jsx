@@ -9,6 +9,7 @@ import {
 
 import { colors } from 'src/Styles';
 import Flex from './Flex';
+import { FLEX_PROPS } from './Flex.types';
 
 import mdx from './Flex.mdx';
 
@@ -43,49 +44,19 @@ const Box = ({ children }) => (
 
 export const Default = () => (
   <Flex
-    alignItems={radios('alignItems',
-      [
-        'stretch',
-        'center',
-        'flex-start',
-        'flex-end',
-        'baseline',
-        'initial',
-        'inherit',
-      ])}
-    alignSelf={radios('alignSelf',
-      [
-        'stretch',
-        'center',
-        'start',
-        'end',
-      ])}
+    alignItems={radios('alignItems', Object.values(FLEX_PROPS.alignItems))}
+    alignSelf={radios('alignSelf', Object.values(FLEX_PROPS.alignSelf))}
     container={boolean('container', true)}
-    direction={radios('direction', ['row', 'column'])}
+    direction={radios('direction', Object.values(FLEX_PROPS.direction))}
     flex={text('flex')}
     flexBasis={text('flexBasis')}
     flexGrow={text('flexGrow')}
     flexShrink={text('flexShrink')}
-    flexWrap={radios('flexWrap', ['wrap', 'nowrap', 'reverse'])}
+    flexWrap={radios('flexWrap', Object.values(FLEX_PROPS.flexWrap))}
     gap={text('gap')}
     height={text('height')}
-    justifyContent={radios('justifyContent',
-      [
-        'flex-start',
-        'flex-end',
-        'space-between',
-        'space-around',
-        'center',
-        'initial',
-        'inherit',
-      ])}
-    justifySelf={radios('justifySelf',
-      [
-        'stretch',
-        'center',
-        'start',
-        'end',
-      ])}
+    justifyContent={radios('justifyContent', Object.values(FLEX_PROPS.justifyContent))}
+    justifySelf={radios('justifySelf', Object.values(FLEX_PROPS.justifySelf))}
     maxHeight={text('maxHeight')}
     maxWidth={text('maxWidth')}
     width={text('width')}
@@ -100,30 +71,12 @@ export const FlexContainer = () => (
   <>
     <h1 style={{ fontSize: '1.5rem', fontWeight: '700' }}>Properties for the parent (flex container)</h1>
     <Flex
-      alignItems={radios('alignItems',
-      [
-        'stretch',
-        'center',
-        'flex-start',
-        'flex-end',
-        'baseline',
-        'initial',
-        'inherit',
-      ])}
+      alignItems={radios('alignItems', Object.values(FLEX_PROPS.alignItems))}
       container
-      direction={radios('direction', ['row', 'column'], 'row')}
-      flexWrap={radios('flexWrap', ['wrap', 'nowrap', 'reverse'])}
+      direction={radios('direction', Object.values(FLEX_PROPS.direction))}
+      flexWrap={radios('flexWrap', Object.values(FLEX_PROPS.flexWrap))}
       gap={text('gap')}
-      justifyContent={radios('justifyContent',
-      [
-        'flex-start',
-        'flex-end',
-        'space-between',
-        'space-around',
-        'center',
-        'initial',
-        'inherit',
-      ])}
+      justifyContent={radios('justifyContent', Object.values(FLEX_PROPS.justifyContent))}
     >
       <Box>Box 1</Box>
       <Box>Box 2</Box>
@@ -139,24 +92,12 @@ export const FlexItem = () => (
     <h1 style={{ fontSize: '1.5rem', fontWeight: '700' }}>Properties for the children (flex item)</h1>
     <Flex container>
       <Flex
-        alignSelf={radios('alignSelf',
-          [
-            'stretch',
-            'center',
-            'start',
-            'end',
-          ])}
+        alignSelf={radios('alignSelf', Object.values(FLEX_PROPS.alignSelf))}
         flex={text('flex')}
         flexBasis={text('flexBasis')}
         flexGrow={text('flexGrow')}
         flexShrink={text('flexShrink')}
-        justifySelf={radios('justifySelf',
-          [
-            'stretch',
-            'center',
-            'start',
-            'end',
-          ])}
+        justifySelf={radios('justifySelf', Object.values(FLEX_PROPS.justifySelf))}
       >
         <Box>Adjust me</Box>
       </Flex>

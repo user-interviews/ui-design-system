@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { FLEX_PROPS } from './Flex.types';
 import { FlexWrapper } from './FlexWrapper.styles';
 
 const Flex = ({ className, children, ...props }) => (
@@ -10,32 +11,19 @@ const Flex = ({ className, children, ...props }) => (
 );
 
 Flex.propTypes = {
-  alignItems: PropTypes.oneOf([
-    'stretch',
-    'center',
-    'flex-start',
-    'flex-end',
-    'baseline',
-    'initial',
-    'inherit',
-  ]),
-  alignSelf: PropTypes.oneOf([
-    'stretch',
-    'center',
-    'start',
-    'end',
-  ]),
+  alignItems: PropTypes.oneOf(Object.values(FLEX_PROPS.alignItems)),
+  alignSelf: PropTypes.oneOf(Object.values(FLEX_PROPS.alignSelf)),
   className: PropTypes.string,
   /**
     If `true`, `display: flex;` otherwise `display: block;`
   */
   container: PropTypes.bool,
-  direction: PropTypes.oneOf(['column', 'row']),
+  direction: PropTypes.oneOf(Object.values(FLEX_PROPS.direction)),
   flex: PropTypes.string,
   flexBasis: PropTypes.string,
   flexGrow: PropTypes.number,
   flexShrink: PropTypes.number,
-  flexWrap: PropTypes.oneOf(['wrap', 'nowrap', 'reverse']),
+  flexWrap: PropTypes.oneOf(Object.values(FLEX_PROPS.flexWrap)),
   /**
     row-gap column-gap (e.g. '10px 20px' => `gap: 10px 20px;`)
   */
@@ -44,21 +32,8 @@ Flex.propTypes = {
     rem or px
   */
   height: PropTypes.string,
-  justifyContent: PropTypes.oneOf([
-    'flex-start',
-    'flex-end',
-    'space-between',
-    'space-around',
-    'center',
-    'initial',
-    'inherit',
-  ]),
-  justifySelf: PropTypes.oneOf([
-    'stretch',
-    'center',
-    'start',
-    'end',
-  ]),
+  justifyContent: PropTypes.oneOf(Object.values(FLEX_PROPS.justifyContent)),
+  justifySelf: PropTypes.oneOf(Object.values(FLEX_PROPS.justifySelf)),
   /**
     rem or px
   */
