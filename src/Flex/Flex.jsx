@@ -19,7 +19,7 @@ Flex.propTypes = {
   */
   container: PropTypes.bool,
   direction: PropTypes.oneOf(Object.values(FLEX_PROPS.direction)),
-  flex: PropTypes.string,
+  flex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   flexBasis: PropTypes.string,
   flexGrow: PropTypes.number,
   flexShrink: PropTypes.number,
