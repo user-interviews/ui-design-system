@@ -26026,7 +26026,7 @@ exports[`Storyshots Layouts/Main Accessibility 1`] = `
             Once added, screen reader users can navigate to a section based on its ARIA landmark or HTML element. Landmarks provide a simple replacement for a skip navigation link, though the replacement is only useful for users of screen readers. Sighted users or users of screen enlargers wouldn’t get much benefit from the addition, so it can’t replace skip navigation links altogether.
           </p>
           <span>
-            Source:
+            Source: 
             <a
               href="https://dequeuniversity.com/rules/axe/4.2/landmark-one-main"
             >
@@ -26035,7 +26035,7 @@ exports[`Storyshots Layouts/Main Accessibility 1`] = `
           </span>
           <br />
           <span>
-            Interactive example:
+            Interactive example: 
             <a
               href="https://www.w3.org/WAI/ARIA/apg/example-index/landmarks/main.html"
             >

@@ -103,14 +103,14 @@ export const Accessibility = () => (
             the addition, so it can’t replace skip navigation links altogether.
           </p>
           <span>
-            Source:
+            Source:&nbsp;
             <a href="https://dequeuniversity.com/rules/axe/4.2/landmark-one-main">
               Source: Deque University - Landmark one main
             </a>
           </span>
           <br />
           <span>
-            Interactive example:
+            Interactive example:&nbsp;
             <a href="https://www.w3.org/WAI/ARIA/apg/example-index/landmarks/main.html">
               W3C: ARIA Landmarks Example
             </a>
