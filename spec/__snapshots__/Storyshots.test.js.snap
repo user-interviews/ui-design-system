@@ -25973,3 +25973,217 @@ exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
   </div>
 </div>
 `;
+
+exports[`Storyshots Layouts/Main Accessibility 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <main
+    className="Main container-fluid"
+  >
+    <div
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <div
+        className="CardStack CardStack--sm"
+      >
+        <h1
+          style={
+            Object {
+              "fontSize": "1.5rem",
+              "fontWeight": "700",
+            }
+          }
+        >
+          Accessibility information
+        </h1>
+        <section
+          className="Card"
+        >
+          <div
+            className="Card__header"
+          >
+            <h2
+              className="Card__title"
+            >
+              Why is it important to use Main?
+            </h2>
+          </div>
+          <p>
+            Any document needs to have a navigation point to the primary content of the page. Ensure all content is contained within a landmark region, designated with HTML5 landmark elements and/or ARIA landmark regions.
+          </p>
+          <p>
+            It is a best practice to use both HTML 5 and ARIA landmarks to ensure all content is contained within a navigational region. In HTML5, you should use elements like header, nav, main, and footer. Their ARIA counterparts are role="banner", role="navigation", role="main", and role="contentinfo", in that order. By using both HTML5 and ARIA markup, you make the webpage more robust and functional no matter what screen reader technology is used.
+          </p>
+          <p>
+            Once added, screen reader users can navigate to a section based on its ARIA landmark or HTML element. Landmarks provide a simple replacement for a skip navigation link, though the replacement is only useful for users of screen readers. Sighted users or users of screen enlargers wouldn’t get much benefit from the addition, so it can’t replace skip navigation links altogether.
+          </p>
+          <span>
+            Source: 
+            <a
+              href="https://dequeuniversity.com/rules/axe/4.2/landmark-one-main"
+            >
+              Source: Deque University - Landmark one main
+            </a>
+          </span>
+          <br />
+          <span>
+            Interactive example: 
+            <a
+              href="https://www.w3.org/WAI/ARIA/apg/example-index/landmarks/main.html"
+            >
+              W3C: ARIA Landmarks Example
+            </a>
+          </span>
+        </section>
+      </div>
+    </div>
+  </main>
+</div>
+`;
+
+exports[`Storyshots Layouts/Main Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <main
+    className="Main container-fluid"
+  >
+    <h1
+      style={
+        Object {
+          "fontSize": "1.5rem",
+          "fontWeight": "700",
+        }
+      }
+    >
+      This is a header
+    </h1>
+    <p>
+      With some paragraph text all wrapped in a 
+      <code>
+        &lt;Main&gt;
+      </code>
+    </p>
+  </main>
+</div>
+`;
+
+exports[`Storyshots Layouts/Main Page Example 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="App"
+  >
+    <nav
+      className="Nav"
+      style={
+        Object {
+          "display": "flex",
+          "justifyContent": "flex-end",
+        }
+      }
+    >
+      <a
+        href="https://www.userinterviews.com"
+        style={
+          Object {
+            "color": "#101010",
+            "padding": ".5rem",
+          }
+        }
+      >
+        Nav item 1
+      </a>
+      <a
+        href="https://www.userinterviews.com"
+        style={
+          Object {
+            "color": "#101010",
+            "padding": ".5rem",
+          }
+        }
+      >
+        Nav item 2
+      </a>
+      <a
+        href="https://www.userinterviews.com"
+        style={
+          Object {
+            "color": "#101010",
+            "padding": ".5rem",
+          }
+        }
+      >
+        Nav item 3
+      </a>
+    </nav>
+    <header
+      className="Header"
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "#177863",
+          "display": "flex",
+          "height": "4.5rem",
+          "padding": "1rem",
+          "width": "100%",
+        }
+      }
+    >
+      <h1
+        style={
+          Object {
+            "color": "#FFFFFF",
+            "fontSize": "1.25rem",
+            "fontWeight": "700",
+          }
+        }
+      >
+        Some header
+      </h1>
+    </header>
+    <main
+      className="Main container-fluid"
+      style={
+        Object {
+          "backgroundColor": "#F8F4F2",
+          "height": "350px",
+        }
+      }
+    >
+      <h2
+        style={
+          Object {
+            "fontSize": "1rem",
+            "fontWeight": "700",
+          }
+        }
+      >
+        Main content area of this page
+      </h2>
+      <p>
+        Having at least one main landmark on a page helps with accessibility and allows assistive technology (AT) users to orient themselves on a page.
+      </p>
+    </main>
+  </div>
+</div>
+`;

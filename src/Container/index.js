@@ -1,9 +1,10 @@
 import Col from './Col';
-import Container from './Container';
+import Container, { containerSizes } from './Container';
 import Row from './Row';
 
 export {
   Col,
   Container,
+  containerSizes,
   Row,
 };

@@ -1,0 +1,56 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Main from './Main'
+
+# Main
+
+##
+
+<h4>
+  The dominant content of the body of a document. The main content area consists of 
+  content that is directly related to or expands upon the central topic of a document, 
+  or the central functionality of an an application page.
+</h4>
+
+<p>
+  <code>Main</code> is built off of the <code>Container</code> component.
+</p>
+
+<Canvas>
+  <Story id="layouts-main--page-example"/>
+</Canvas>
+
+<ArgsTable of={Main} />
+
+## When should you use Main?
+
+* Every document page needs at least one HTML `<main>` landmark to ensure there is a navigation point to the primary content of the page
+
+## Accessibility guidance
+
+* Content inside `<Main>` should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, etc.
+* There must not be more than one `<Main>` element in a document.
+* The `<Main>` element must NOT be a descendant of an `<article>`, `<aside>`, `<footer>`, `<header>`, or `<nav>` element.
+* Use Main in order to avoid the following moderate accessibility errors: 
+  * [axe-core-4.3: All page content must be contained by landmarks](https://dequeuniversity.com/rules/axe/4.3/region)
+  * [axe-core-4.4: Page must have one main landmark](https://dequeuniversity.com/rules/axe/4.4/landmark-one-main?application=AxeChrome)
+
+## Stories
+
+### Default
+
+<Canvas>
+  <Story id="layouts-main--default" />
+</Canvas>
+
+### Page Example
+
+<Canvas>
+  <Story id="layouts-main--page-example" />
+</Canvas>
+
+### Accessibility
+
+<Canvas>
+  <Story id="layouts-main--accessibility" />
+</Canvas>
+
