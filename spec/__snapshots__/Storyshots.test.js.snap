@@ -25978,7 +25978,8 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
   }
 >
   <div
-    className="sc-bdvvtL kAfiPy"
+    className="sc-bdvvtL bDYoDh"
+    height="100px"
   >
     <div
       style={
@@ -25990,7 +25991,7 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
           "color": "#FFFFFF",
           "display": "flex",
           "fontSize": "1rem",
-          "height": "100px",
+          "height": "100%",
           "justifyContent": "center",
           "width": "100px",
         }
@@ -26008,7 +26009,7 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
           "color": "#FFFFFF",
           "display": "flex",
           "fontSize": "1rem",
-          "height": "100px",
+          "height": "100%",
           "justifyContent": "center",
           "width": "100px",
         }
@@ -26026,7 +26027,7 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
           "color": "#FFFFFF",
           "display": "flex",
           "fontSize": "1rem",
-          "height": "100px",
+          "height": "100%",
           "justifyContent": "center",
           "width": "100px",
         }
@@ -26057,7 +26058,8 @@ exports[`Storyshots Layouts/Flex Flex Container 1`] = `
     Properties for the parent (flex container)
   </h1>
   <div
-    className="sc-bdvvtL kAfiPy"
+    className="sc-bdvvtL bDYoDh"
+    height="100px"
   >
     <div
       style={
@@ -26069,7 +26071,7 @@ exports[`Storyshots Layouts/Flex Flex Container 1`] = `
           "color": "#FFFFFF",
           "display": "flex",
           "fontSize": "1rem",
-          "height": "100px",
+          "height": "100%",
           "justifyContent": "center",
           "width": "100px",
         }
@@ -26087,7 +26089,7 @@ exports[`Storyshots Layouts/Flex Flex Container 1`] = `
           "color": "#FFFFFF",
           "display": "flex",
           "fontSize": "1rem",
-          "height": "100px",
+          "height": "100%",
           "justifyContent": "center",
           "width": "100px",
         }
@@ -26105,7 +26107,7 @@ exports[`Storyshots Layouts/Flex Flex Container 1`] = `
           "color": "#FFFFFF",
           "display": "flex",
           "fontSize": "1rem",
-          "height": "100px",
+          "height": "100%",
           "justifyContent": "center",
           "width": "100px",
         }
@@ -26123,7 +26125,7 @@ exports[`Storyshots Layouts/Flex Flex Container 1`] = `
           "color": "#FFFFFF",
           "display": "flex",
           "fontSize": "1rem",
-          "height": "100px",
+          "height": "100%",
           "justifyContent": "center",
           "width": "100px",
         }
@@ -26141,7 +26143,7 @@ exports[`Storyshots Layouts/Flex Flex Container 1`] = `
           "color": "#FFFFFF",
           "display": "flex",
           "fontSize": "1rem",
-          "height": "100px",
+          "height": "100%",
           "justifyContent": "center",
           "width": "100px",
         }
@@ -26175,7 +26177,8 @@ exports[`Storyshots Layouts/Flex Flex Item 1`] = `
     className="sc-bdvvtL kAfiPy"
   >
     <div
-      className="sc-bdvvtL ctgHMk"
+      className="sc-bdvvtL gXfMQT"
+      height="100px"
     >
       <div
         style={
@@ -26187,7 +26190,7 @@ exports[`Storyshots Layouts/Flex Flex Item 1`] = `
             "color": "#FFFFFF",
             "display": "flex",
             "fontSize": "1rem",
-            "height": "100px",
+            "height": "100%",
             "justifyContent": "center",
             "width": "100px",
           }
@@ -26209,7 +26212,7 @@ exports[`Storyshots Layouts/Flex Flex Item 1`] = `
             "color": "#FFFFFF",
             "display": "flex",
             "fontSize": "1rem",
-            "height": "100px",
+            "height": "100%",
             "justifyContent": "center",
             "width": "100px",
           }
@@ -26231,7 +26234,7 @@ exports[`Storyshots Layouts/Flex Flex Item 1`] = `
             "color": "#FFFFFF",
             "display": "flex",
             "fontSize": "1rem",
-            "height": "100px",
+            "height": "100%",
             "justifyContent": "center",
             "width": "100px",
           }

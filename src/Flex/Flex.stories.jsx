@@ -26,7 +26,7 @@ export default {
 
 const Box = ({ children }) => (
   <div style={{
-    height: '100px',
+    height: '100%',
     width: '100px',
     backgroundColor: colors.UX_EMERALD_600,
     borderRadius: '4px',
@@ -53,7 +53,7 @@ export const Default = () => (
     flexGrow={text('flexGrow')}
     flexShrink={text('flexShrink')}
     flexWrap={radios('flexWrap', Object.values(FLEX_PROPS.flexWrap))}
-    height={text('height')}
+    height={text('height', '100px')}
     justifyContent={radios('justifyContent', Object.values(FLEX_PROPS.justifyContent))}
     justifySelf={radios('justifySelf', Object.values(FLEX_PROPS.justifySelf))}
     maxHeight={text('maxHeight')}
@@ -74,6 +74,7 @@ export const FlexContainer = () => (
       container
       direction={radios('direction', Object.values(FLEX_PROPS.direction))}
       flexWrap={radios('flexWrap', Object.values(FLEX_PROPS.flexWrap))}
+      height="100px"
       justifyContent={radios('justifyContent', Object.values(FLEX_PROPS.justifyContent))}
     >
       <Box>Box 1</Box>
@@ -95,6 +96,7 @@ export const FlexItem = () => (
         flexBasis={text('flexBasis')}
         flexGrow={text('flexGrow')}
         flexShrink={text('flexShrink')}
+        height="100px"
         justifySelf={radios('justifySelf', Object.values(FLEX_PROPS.justifySelf))}
       >
         <Box>Adjust me</Box>
