@@ -19,7 +19,8 @@ const OptionWithDescription = ({ ...props }) => (
   >
     <div className="OptionWithDescription">
       <label className="OptionWithDescription__label">
-        {props.label}
+        {props.label}&nbsp;
+        {props.data.labelDescription}
       </label>
       <div className="OptionWithDescription__description">
         {props.data.description}
