@@ -12,7 +12,7 @@ import './OptionWithDescription.scss';
 // See: https://react-select.com/components#replaceable-components
 
 /* eslint-disable react/prop-types */
-const OptionWithDescription = ({ ...props }) => (
+const OptionWithDescription = ({ hideDescription, ...props }) => (
   <components.Option
     innerProps={{ 'aria-label': `${props.label}. ${props.data.description}` }}
     {...props}
@@ -22,7 +22,7 @@ const OptionWithDescription = ({ ...props }) => (
         {props.label}&nbsp;
         {props.data.labelDescription}
       </label>
-      {!props.data.hideDescription && (
+      {!hideDescription && (
         <div className="OptionWithDescription__description">
           {props.data.description}
         </div>
