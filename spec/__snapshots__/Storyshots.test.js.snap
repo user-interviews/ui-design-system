@@ -3482,8 +3482,6 @@ exports[`Storyshots Components/Button Danger 1`] = `
     >
       <path
         d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-<<<<<<< release/1.37.0
-=======
         fill="currentColor"
         style={Object {}}
       />
@@ -3526,51 +3524,6 @@ exports[`Storyshots Components/Button Link 1`] = `
     >
       <path
         d="M440 6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192 464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z"
->>>>>>> main
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Send
-  </button>
-</div>
-`;
-
-exports[`Storyshots Components/Button Link 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <button
-    className="Button btn btn-link btn-sm"
-    disabled={false}
-    type="button"
-  >
-    Send
-  </button>
-   
-  <button
-    className="Button btn btn-link btn-sm"
-<<<<<<< release/1.37.0
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-paper-plane fa-w-16 icon-left"
-      data-icon="paper-plane"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M440 6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192 464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z"
         fill="currentColor"
         style={Object {}}
       />
@@ -3580,8 +3533,6 @@ exports[`Storyshots Components/Button Link 1`] = `
    
   <button
     className="Button btn btn-link btn-sm"
-=======
->>>>>>> main
     disabled={true}
     type="button"
   >
@@ -4422,46 +4373,6 @@ exports[`Storyshots Components/Card Sizes 1`] = `
   }
 >
   <section
-<<<<<<< release/1.37.0
-    className="Card Card--xs"
-=======
-    className="Card"
-  >
-    <div
-      className="Card__header"
-    >
-      <h2
-        className="Card__title"
-      >
-        Default card title
-      </h2>
-      <span
-        className="Card__helper-text"
-      >
-        (helper text)
-      </span>
-    </div>
-    <h3
-      className="Card__subtitle"
-    >
-      Subtitle
-    </h3>
-    <div>
-      Use knobs to try out the different card sizes
-    </div>
-  </section>
-</div>
-`;
-
-exports[`Storyshots Components/Card Sizes 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <section
     className="Card Card--xs"
   >
     <div
@@ -4495,7 +4406,6 @@ exports[`Storyshots Components/Card Sizes 1`] = `
   </section>
   <section
     className="Card Card--md"
->>>>>>> main
   >
     <div
       className="Card__header"
@@ -4503,63 +4413,6 @@ exports[`Storyshots Components/Card Sizes 1`] = `
       <h2
         className="Card__title"
       >
-<<<<<<< release/1.37.0
-        xs
-      </h2>
-    </div>
-    <code>
-      CardSizes.EXTRA_SMALL
-    </code>
-  </section>
-  <section
-    className="Card Card--sm"
-=======
-        md
-      </h2>
-    </div>
-    <code>
-      CardSizes.MEDIUM
-    </code>
-  </section>
-  <section
-    className="Card Card--lg"
->>>>>>> main
-  >
-    <div
-      className="Card__header"
-    >
-      <h2
-        className="Card__title"
-      >
-<<<<<<< release/1.37.0
-        sm
-      </h2>
-    </div>
-    <code>
-      CardSizes.SMALL
-    </code>
-  </section>
-  <section
-    className="Card Card--md"
-=======
-        lg
-      </h2>
-    </div>
-    <code>
-      CardSizes.LARGE
-    </code>
-  </section>
-  <section
-    className="Card"
->>>>>>> main
-  >
-    <div
-      className="Card__header"
-    >
-      <h2
-        className="Card__title"
-      >
-<<<<<<< release/1.37.0
         md
       </h2>
     </div>
@@ -4592,8 +4445,6 @@ exports[`Storyshots Components/Card Sizes 1`] = `
       <h2
         className="Card__title"
       >
-=======
->>>>>>> main
         default
       </h2>
     </div>
@@ -5382,131 +5233,6 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Column
             type="checkbox"
             value="2"
           />
-<<<<<<< release/1.37.0
-          Label 2
-          <span
-            className="FormControlLabel__helper-text"
-          >
-             (
-            helper text
-            )
-          </span>
-        </span>
-        <span
-          className="FormControlLabel__children"
-        >
-          This is where the description goes
-=======
-          first choice
->>>>>>> main
-        </span>
-      </label>
-      <label
-        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
-        htmlFor="value-3-5"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            id="value-3-5"
-            onChange={[Function]}
-            type="checkbox"
-            value="3"
-          />
-<<<<<<< release/1.37.0
-=======
-          second choice
-        </span>
-      </label>
-    </div>
-    <button
-      className="Button btn btn-primary"
-      disabled={false}
-      type="submit"
-    >
-      Save
-    </button>
-  </form>
-</div>
-`;
-
-exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Column Full Width 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <fieldset
-    className="FormGroup"
-    id="with-checkbox-button-group-5"
-  >
-    <legend
-      className="InputLegend"
-      htmlFor="checkbox-button-group"
-    >
-      Legend
-      <span
-        className="InputLegend__helper-text"
-      >
-         (
-        helper text
-        )
-      </span>
-    </legend>
-    <div
-      className="CheckboxButtonGroup CheckboxButtonGroup--column--full-width"
-      id="with-checkbox-button-group-5-button-group"
-    >
-      <label
-        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
-        htmlFor="value-1-5"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            id="value-1-5"
-            onChange={[Function]}
-            type="checkbox"
-            value="1"
-          />
-          Label 1
-          <span
-            className="FormControlLabel__helper-text"
-          >
-             (
-            helper text
-            )
-          </span>
-        </span>
-        <span
-          className="FormControlLabel__children"
-        >
-          This is where the description goes
-        </span>
-      </label>
-      <label
-        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
-        htmlFor="value-2-5"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            id="value-2-5"
-            onChange={[Function]}
-            type="checkbox"
-            value="2"
-          />
           Label 2
           <span
             className="FormControlLabel__helper-text"
@@ -5537,7 +5263,6 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Column
             type="checkbox"
             value="3"
           />
->>>>>>> main
           Label 3
           <span
             className="FormControlLabel__helper-text"
@@ -6841,7 +6566,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
       />
       <button
         aria-label=""
-<<<<<<< release/1.37.0
         className="trailing-icon-button"
         onClick={[Function]}
         type="submit"
@@ -6911,8 +6635,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
       />
       <button
         aria-label="label"
-=======
->>>>>>> main
         className="trailing-icon-button"
         onClick={[Function]}
         type="submit"
@@ -7072,217 +6794,6 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Column Fu
           className="FormControlLabel__children"
         >
           This is where the description goes
-        </span>
-      </label>
-    </div>
-  </fieldset>
-</div>
-`;
-
-exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And Button With Submit And Label 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <fieldset
-    className="FormGroup"
-    id="with-trailing-icon-and-button-with-submit-and-label"
-  >
-<<<<<<< release/1.37.0
-=======
-    <label
-      className="InputLabel"
-      htmlFor="input"
-    >
-      Form Group with input trailing icon and button with submit and label
-    </label>
-    <div
-      className="Input input-group"
-    >
-      <input
-        className="Input form-control Input--with-trailing-icon"
-        disabled={false}
-        id="input"
-        name="with-leading-icon-and-button"
-        onChange={[Function]}
-        placeholder="Placeholder text"
-        type="text"
-        value=""
-      />
-      <button
-        aria-label="label"
-        className="trailing-icon-button"
-        onClick={[Function]}
-        type="submit"
-      >
-        <div
-          className="input-group-text"
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-search fa-w-16 "
-            data-icon="search"
-            data-prefix="fas"
-            focusable="false"
-            role="img"
-            style={Object {}}
-            viewBox="0 0 512 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-        </div>
-      </button>
-    </div>
-    <div
-      className="FormGroup__helper-text"
-    >
-      with trailing icon and button with submit and label
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Column Full Width 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <fieldset
-    className="FormGroup"
-    id="with-radio-button-group-5"
-  >
->>>>>>> main
-    <legend
-      className="InputLegend"
-      htmlFor="radio-button-group"
-    >
-      Legend
-      <span
-        className="InputLegend__helper-text"
-      >
-         (
-        helper text
-        )
-      </span>
-    </legend>
-    <div
-      className="RadioButtonGroup RadioButtonGroup--column--full-width"
-      name=""
-    >
-      <label
-        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
-        htmlFor="value-1-6"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            disabled={false}
-            id="value-1-6"
-            name=""
-            onChange={[Function]}
-            type="radio"
-            value="1"
-          />
-          Label 1
-<<<<<<< release/1.37.0
-=======
-          <span
-            className="FormControlLabel__helper-text"
-          >
-             (
-            helper text
-            )
-          </span>
-        </span>
-        <span
-          className="FormControlLabel__children"
-        >
-          This is where the description goes
->>>>>>> main
-        </span>
-      </label>
-      <label
-        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
-        htmlFor="value-2-6"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            disabled={false}
-            id="value-2-6"
-            name=""
-            onChange={[Function]}
-            type="radio"
-            value="2"
-          />
-          Label 2
-<<<<<<< release/1.37.0
-=======
-          <span
-            className="FormControlLabel__helper-text"
-          >
-             (
-            helper text
-            )
-          </span>
-        </span>
-        <span
-          className="FormControlLabel__children"
-        >
-          This is where the description goes
->>>>>>> main
-        </span>
-      </label>
-      <label
-        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
-        htmlFor="value-3-6"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            disabled={false}
-            id="value-3-6"
-            name=""
-            onChange={[Function]}
-            type="radio"
-            value="3"
-          />
-          Label 3
-<<<<<<< release/1.37.0
-=======
-          <span
-            className="FormControlLabel__helper-text"
-          >
-             (
-            helper text
-            )
-          </span>
-        </span>
-        <span
-          className="FormControlLabel__children"
-        >
-          This is where the description goes
->>>>>>> main
         </span>
       </label>
     </div>
@@ -7336,11 +6847,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
             type="radio"
             value="1"
           />
-<<<<<<< release/1.37.0
-          Value 1
-=======
           Label 1
->>>>>>> main
         </span>
       </label>
       <label
@@ -7360,11 +6867,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
             type="radio"
             value="2"
           />
-<<<<<<< release/1.37.0
-          Value 2
-=======
           Label 2
->>>>>>> main
         </span>
       </label>
       <label
@@ -7384,11 +6887,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
             type="radio"
             value="3"
           />
-<<<<<<< release/1.37.0
-          Value 3
-=======
           Label 3
->>>>>>> main
         </span>
       </label>
     </div>
@@ -7396,11 +6895,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Row 1`] =
 </div>
 `;
 
-<<<<<<< release/1.37.0
-exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Column 1`] = `
-=======
 exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -7410,11 +6905,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
 >
   <fieldset
     className="FormGroup"
-<<<<<<< release/1.37.0
-    id="with-radio-button-group-4"
-=======
     id="with-radio-button-group"
->>>>>>> main
   >
     <legend
       className="InputLegend"
@@ -7434,13 +6925,8 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
       name=""
     >
       <label
-<<<<<<< release/1.37.0
-        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
-        htmlFor="value-1-4"
-=======
         className="FormControlLabel"
         htmlFor="value-1"
->>>>>>> main
       >
         <span
           className="FormControlLabel__label"
@@ -7449,17 +6935,106 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
             checked={false}
             className="FormControlLabel__control"
             disabled={false}
-<<<<<<< release/1.37.0
-            id="value-1-4"
-=======
             id="value-1"
->>>>>>> main
             name=""
             onChange={[Function]}
             type="radio"
             value="1"
           />
-<<<<<<< release/1.37.0
+          Value 1
+        </span>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-2"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-2"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="2"
+          />
+          Value 2
+        </span>
+      </label>
+      <label
+        className="FormControlLabel"
+        htmlFor="value-3"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-3"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="3"
+          />
+          Value 3
+        </span>
+      </label>
+    </div>
+  </fieldset>
+</div>
+`;
+
+exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Column 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <fieldset
+    className="FormGroup"
+    id="with-radio-button-group-4"
+  >
+    <legend
+      className="InputLegend"
+      htmlFor="radio-button-group"
+    >
+      Legend
+      <span
+        className="InputLegend__helper-text"
+      >
+         (
+        helper text
+        )
+      </span>
+    </legend>
+    <div
+      className="RadioButtonGroup"
+      name=""
+    >
+      <label
+        className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+        htmlFor="value-1-4"
+      >
+        <span
+          className="FormControlLabel__label"
+        >
+          <input
+            checked={false}
+            className="FormControlLabel__control"
+            disabled={false}
+            id="value-1-4"
+            name=""
+            onChange={[Function]}
+            type="radio"
+            value="1"
+          />
           Label 1
           <span
             className="FormControlLabel__helper-text"
@@ -7478,14 +7053,6 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-2-4"
-=======
-          Value 1
-        </span>
-      </label>
-      <label
-        className="FormControlLabel"
-        htmlFor="value-2"
->>>>>>> main
       >
         <span
           className="FormControlLabel__label"
@@ -7494,17 +7061,12 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
             checked={false}
             className="FormControlLabel__control"
             disabled={false}
-<<<<<<< release/1.37.0
             id="value-2-4"
-=======
-            id="value-2"
->>>>>>> main
             name=""
             onChange={[Function]}
             type="radio"
             value="2"
           />
-<<<<<<< release/1.37.0
           Label 2
           <span
             className="FormControlLabel__helper-text"
@@ -7523,14 +7085,6 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
       <label
         className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
         htmlFor="value-3-4"
-=======
-          Value 2
-        </span>
-      </label>
-      <label
-        className="FormControlLabel"
-        htmlFor="value-3"
->>>>>>> main
       >
         <span
           className="FormControlLabel__label"
@@ -7539,17 +7093,12 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
             checked={false}
             className="FormControlLabel__control"
             disabled={false}
-<<<<<<< release/1.37.0
             id="value-3-4"
-=======
-            id="value-3"
->>>>>>> main
             name=""
             onChange={[Function]}
             type="radio"
             value="3"
           />
-<<<<<<< release/1.37.0
           Label 3
           <span
             className="FormControlLabel__helper-text"
@@ -7563,9 +7112,6 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
           className="FormControlLabel__children"
         >
           This is where the description goes
-=======
-          Value 3
->>>>>>> main
         </span>
       </label>
     </div>
@@ -7573,11 +7119,7 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
 </div>
 `;
 
-<<<<<<< release/1.37.0
 exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Row 1`] = `
-=======
-exports[`Storyshots Components/Form Elements/RadioButtonGroup Description Column 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -7716,13 +7258,8 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Row 1`] = `
   }
 >
   <fieldset
-<<<<<<< release/1.37.0
     className="FormGroup FormGroup--inline"
     id="with-radio-button-group-2"
-=======
-    className="FormGroup"
-    id="with-radio-button-group-5"
->>>>>>> main
   >
     <legend
       className="InputLegend"
@@ -7759,21 +7296,6 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Row 1`] = `
             value="1"
           />
           Label 1
-<<<<<<< release/1.37.0
-=======
-          <span
-            className="FormControlLabel__helper-text"
-          >
-             (
-            helper text
-            )
-          </span>
-        </span>
-        <span
-          className="FormControlLabel__children"
-        >
-          This is where the description goes
->>>>>>> main
         </span>
       </label>
       <label
@@ -7794,21 +7316,6 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Row 1`] = `
             value="2"
           />
           Label 2
-<<<<<<< release/1.37.0
-=======
-          <span
-            className="FormControlLabel__helper-text"
-          >
-             (
-            helper text
-            )
-          </span>
-        </span>
-        <span
-          className="FormControlLabel__children"
-        >
-          This is where the description goes
->>>>>>> main
         </span>
       </label>
       <label
@@ -7911,434 +7418,6 @@ exports[`Storyshots Components/IconCell Default 1`] = `
     <div
       className="IconCell"
     >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-paper-plane fa-w-16 "
-        data-icon="paper-plane"
-        data-prefix="far"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 512 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M440 6.5L24 246.4c-34.4 19.9-31.1 70.8 5.7 85.9L144 379.6V464c0 46.4 59.2 65.5 86.6 28.6l43.8-59.1 111.9 46.2c5.9 2.4 12.1 3.6 18.3 3.6 8.2 0 16.3-2.1 23.6-6.2 12.8-7.2 21.6-20 23.9-34.5l59.4-387.2c6.1-40.1-36.9-68.8-71.5-48.9zM192 464v-64.6l36.6 15.1L192 464zm212.6-28.7l-153.8-63.5L391 169.5c10.7-15.5-9.5-33.5-23.7-21.2L155.8 332.6 48 288 464 48l-59.4 387.3z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-    </div>
-    <div
-      className="IconCell"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-star fa-w-18 "
-        data-icon="star"
-        data-prefix="far"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 576 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M528.1 171.5L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6zM388.6 312.3l23.7 138.4L288 385.4l-124.3 65.3 23.7-138.4-100.6-98 139-20.2 62.2-126 62.2 126 139 20.2-100.6 98z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/LoadingOverlay Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="overlay"
-    data-testid="LoadingOverlay"
-    style={Object {}}
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-spinner-third fa-w-16 fa-spinner"
-      data-icon="spinner-third"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M456.433 371.72l-27.79-16.045c-7.192-4.152-10.052-13.136-6.487-20.636 25.82-54.328 23.566-118.602-6.768-171.03-30.265-52.529-84.802-86.621-144.76-91.424C262.35 71.922 256 64.953 256 56.649V24.56c0-9.31 7.916-16.609 17.204-15.96 81.795 5.717 156.412 51.902 197.611 123.408 41.301 71.385 43.99 159.096 8.042 232.792-4.082 8.369-14.361 11.575-22.424 6.92z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Modal Danger Modal 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="ReactModal__Overlay ReactModal__Overlay--after-open"
-    onClick={[Function]}
-    onMouseDown={[Function]}
-    style={
-      Object {
-        "backgroundColor": "rgba(255, 255, 255, 0.75)",
-        "bottom": 0,
-        "left": 0,
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-  >
-    <div
-      aria-label="Danger Modal"
-      aria-modal={true}
-      className="ReactModal__Content ReactModal__Content--after-open DangerModal"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-      role="dialog"
-      style={Object {}}
-      tabIndex="-1"
-    >
-      <header
-        className="ModalHeader"
-      >
-<<<<<<< release/1.37.0
-        <div
-          className="ModalHeader__heading"
-=======
-        <span
-          className="FormControlLabel__label"
->>>>>>> main
-        >
-          <h1
-            className="ModalHeader__title"
-            id="danger-modal"
-          >
-<<<<<<< release/1.37.0
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-exclamation-triangle fa-w-18 danger"
-              data-icon="exclamation-triangle"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 576 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            Danger modal
-          </h1>
-        </div>
-        <button
-          aria-label="Close"
-          className="btn btn-sm btn-close"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        />
-      </header>
-      <div
-        className="ModalBody"
-      >
-        <p>
-          Are you sure you want to do this?
-        </p>
-      </div>
-      <div
-        className="ModalFooter"
-      >
-        <button
-          className="Button btn btn-transparent"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          Cancel
-        </button>
-        <button
-          className="Button btn btn-danger"
-          disabled={false}
-          type="button"
-        >
-          Delete
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Modal Default 1`] = `
-=======
-             (
-            helper text
-            )
-          </span>
-        </span>
-        <span
-          className="FormControlLabel__children"
-        >
-          This is where the description goes
-        </span>
-      </label>
-    </div>
-  </fieldset>
-</div>
-`;
-
-exports[`Storyshots Components/Form Elements/RadioButtonGroup Row 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <fieldset
-    className="FormGroup FormGroup--inline"
-    id="with-radio-button-group-2"
-  >
-    <legend
-      className="InputLegend"
-      htmlFor="radio-button-group"
-    >
-      Legend
-      <span
-        className="InputLegend__helper-text"
-      >
-         (
-        helper text
-        )
-      </span>
-    </legend>
-    <div
-      className="RadioButtonGroup RadioButtonGroup--row RadioButtonGroup--row--compact"
-      name=""
-    >
-      <label
-        className="FormControlLabel"
-        htmlFor="value-1-2"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            disabled={false}
-            id="value-1-2"
-            name=""
-            onChange={[Function]}
-            type="radio"
-            value="1"
-          />
-          Label 1
-        </span>
-      </label>
-      <label
-        className="FormControlLabel"
-        htmlFor="value-2-2"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            disabled={false}
-            id="value-2-2"
-            name=""
-            onChange={[Function]}
-            type="radio"
-            value="2"
-          />
-          Label 2
-        </span>
-      </label>
-      <label
-        className="FormControlLabel"
-        htmlFor="value-3-2"
-      >
-        <span
-          className="FormControlLabel__label"
-        >
-          <input
-            checked={false}
-            className="FormControlLabel__control"
-            disabled={false}
-            id="value-3-2"
-            name=""
-            onChange={[Function]}
-            type="radio"
-            value="3"
-          />
-          Label 3
-        </span>
-      </label>
-    </div>
-  </fieldset>
-</div>
-`;
-
-exports[`Storyshots Components/IconCell Default 1`] = `
->>>>>>> main
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-<<<<<<< release/1.37.0
-  <div
-    className="ReactModal__Overlay ReactModal__Overlay--after-open"
-    onClick={[Function]}
-    onMouseDown={[Function]}
-    style={
-      Object {
-        "backgroundColor": "rgba(255, 255, 255, 0.75)",
-        "bottom": 0,
-        "left": 0,
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-  >
-=======
-  <div>
-    <div
-      className="IconCell"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-globe fa-w-16 "
-        data-icon="globe"
-        data-prefix="far"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 496 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm179.3 160h-67.2c-6.7-36.5-17.5-68.8-31.2-94.7 42.9 19 77.7 52.7 98.4 94.7zM248 56c18.6 0 48.6 41.2 63.2 112H184.8C199.4 97.2 229.4 56 248 56zM48 256c0-13.7 1.4-27.1 4-40h77.7c-1 13.1-1.7 26.3-1.7 40s.7 26.9 1.7 40H52c-2.6-12.9-4-26.3-4-40zm20.7 88h67.2c6.7 36.5 17.5 68.8 31.2 94.7-42.9-19-77.7-52.7-98.4-94.7zm67.2-176H68.7c20.7-42 55.5-75.7 98.4-94.7-13.7 25.9-24.5 58.2-31.2 94.7zM248 456c-18.6 0-48.6-41.2-63.2-112h126.5c-14.7 70.8-44.7 112-63.3 112zm70.1-160H177.9c-1.1-12.8-1.9-26-1.9-40s.8-27.2 1.9-40h140.3c1.1 12.8 1.9 26 1.9 40s-.9 27.2-2 40zm10.8 142.7c13.7-25.9 24.4-58.2 31.2-94.7h67.2c-20.7 42-55.5 75.7-98.4 94.7zM366.3 296c1-13.1 1.7-26.3 1.7-40s-.7-26.9-1.7-40H444c2.6 12.9 4 26.3 4 40s-1.4 27.1-4 40h-77.7z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-    </div>
-    <div
-      className="IconCell"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-mailbox fa-w-18 "
-        data-icon="mailbox"
-        data-prefix="far"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 576 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M432 64H144A144 144 0 0 0 0 208v208a32 32 0 0 0 32 32h512a32 32 0 0 0 32-32V208A144 144 0 0 0 432 64zM240 400H48V208a96 96 0 0 1 192 0zm288 0H288V208c0-37.05-14.38-70.48-37.37-96H432a96.1 96.1 0 0 1 96 96zm-64-208H344a8 8 0 0 0-8 8v32a8 8 0 0 0 8 8h72v32a16 16 0 0 0 16 16h32a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm-280 0h-80a8 8 0 0 0-8 8v48a8 8 0 0 0 8 8h80a8 8 0 0 0 8-8v-48a8 8 0 0 0-8-8z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-    </div>
-    <div
-      className="IconCell"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-user fa-w-14 "
-        data-icon="user"
-        data-prefix="far"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 448 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-    </div>
->>>>>>> main
-    <div
-      aria-label="Default Modal"
-      aria-modal={true}
-      className="ReactModal__Content ReactModal__Content--after-open DefaultModal"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-      role="dialog"
-      style={Object {}}
-      tabIndex="-1"
-    >
-<<<<<<< release/1.37.0
-      <header
-        className="ModalHeader"
-      >
-        <div
-          className="ModalHeader__heading"
-        >
-          <h1
-            className="ModalHeader__title"
-            id="default-modal"
-          >
-            Default modal
-          </h1>
-        </div>
-        <button
-          aria-label="Close"
-          className="btn btn-sm btn-close"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        />
-      </header>
-      <div
-        className="ModalBody"
-      >
-=======
       <svg
         aria-hidden="true"
         className="svg-inline--fa fa-paper-plane fa-w-16 "
@@ -8579,14 +7658,12 @@ exports[`Storyshots Components/Modal Default 1`] = `
       <div
         className="ModalBody"
       >
->>>>>>> main
         <p>
           Some content goes here.
         </p>
       </div>
       <div
         className="ModalFooter"
-<<<<<<< release/1.37.0
       >
         <button
           className="Button btn btn-transparent"
@@ -8668,96 +7745,12 @@ exports[`Storyshots Components/Modal Large Modal 1`] = `
       <div
         className="ModalBody"
       >
-=======
-      >
-        <button
-          className="Button btn btn-transparent"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          Cancel
-        </button>
-        <button
-          className="Button btn btn-primary"
-          disabled={false}
-          type="submit"
-        >
-          Confirm
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Modal Large Modal 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="ReactModal__Overlay ReactModal__Overlay--after-open"
-    onClick={[Function]}
-    onMouseDown={[Function]}
-    style={
-      Object {
-        "backgroundColor": "rgba(255, 255, 255, 0.75)",
-        "bottom": 0,
-        "left": 0,
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-  >
-    <div
-      aria-label="Large Modal"
-      aria-modal={true}
-      className="ReactModal__Content ReactModal__Content--after-open LargeModal ReactModal--large"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-      role="dialog"
-      style={Object {}}
-      tabIndex="-1"
-    >
-      <header
-        className="ModalHeader"
-      >
-        <div
-          className="ModalHeader__heading"
-        >
-          <h1
-            className="ModalHeader__title"
-            id="large-modal"
-          >
-            Large modal
-          </h1>
-        </div>
-        <button
-          aria-label="Close"
-          className="btn btn-sm btn-close"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        />
-      </header>
-      <div
-        className="ModalBody"
-      >
->>>>>>> main
         <p>
           Some content goes here.
         </p>
       </div>
       <div
         className="ModalFooter"
-<<<<<<< release/1.37.0
       >
         <button
           className="Button btn btn-transparent"
@@ -8846,9 +7839,6 @@ exports[`Storyshots Components/Modal Medium Modal 1`] = `
       <div
         className="ModalFooter"
       >
-=======
-      >
->>>>>>> main
         <button
           className="Button btn btn-transparent"
           disabled={false}
@@ -8870,11 +7860,7 @@ exports[`Storyshots Components/Modal Medium Modal 1`] = `
 </div>
 `;
 
-<<<<<<< release/1.37.0
 exports[`Storyshots Components/Modal Transactional Modal 1`] = `
-=======
-exports[`Storyshots Components/Modal Medium Modal 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -8898,15 +7884,9 @@ exports[`Storyshots Components/Modal Medium Modal 1`] = `
     }
   >
     <div
-<<<<<<< release/1.37.0
       aria-label="Transactional Modal"
       aria-modal={true}
       className="ReactModal__Content ReactModal__Content--after-open TransactionalModal"
-=======
-      aria-label="Medium Modal"
-      aria-modal={true}
-      className="ReactModal__Content ReactModal__Content--after-open MediumModal ReactModal--medium"
->>>>>>> main
       onClick={[Function]}
       onKeyDown={[Function]}
       onMouseDown={[Function]}
@@ -8923,15 +7903,9 @@ exports[`Storyshots Components/Modal Medium Modal 1`] = `
         >
           <h1
             className="ModalHeader__title"
-<<<<<<< release/1.37.0
             id="transactional-modal"
           >
             Transactional modal
-=======
-            id="medium-modal"
-          >
-            Medium modal
->>>>>>> main
           </h1>
         </div>
         <button
@@ -8946,7 +7920,6 @@ exports[`Storyshots Components/Modal Medium Modal 1`] = `
         className="ModalBody"
       >
         <p>
-<<<<<<< release/1.37.0
           The user needs to take action here.
         </p>
         <div
@@ -8961,10 +7934,6 @@ exports[`Storyshots Components/Modal Medium Modal 1`] = `
             type="text"
           />
         </div>
-=======
-          Some content goes here.
-        </p>
->>>>>>> main
       </div>
       <div
         className="ModalFooter"
@@ -8982,11 +7951,7 @@ exports[`Storyshots Components/Modal Medium Modal 1`] = `
           disabled={false}
           type="submit"
         >
-<<<<<<< release/1.37.0
           Invite
-=======
-          Confirm
->>>>>>> main
         </button>
       </div>
     </div>
@@ -8994,11 +7959,7 @@ exports[`Storyshots Components/Modal Medium Modal 1`] = `
 </div>
 `;
 
-<<<<<<< release/1.37.0
 exports[`Storyshots Components/Modal Warning Modal 1`] = `
-=======
-exports[`Storyshots Components/Modal Transactional Modal 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -9022,15 +7983,9 @@ exports[`Storyshots Components/Modal Transactional Modal 1`] = `
     }
   >
     <div
-<<<<<<< release/1.37.0
       aria-label="Warning Modal"
       aria-modal={true}
       className="ReactModal__Content ReactModal__Content--after-open WarningModal"
-=======
-      aria-label="Transactional Modal"
-      aria-modal={true}
-      className="ReactModal__Content ReactModal__Content--after-open TransactionalModal"
->>>>>>> main
       onClick={[Function]}
       onKeyDown={[Function]}
       onMouseDown={[Function]}
@@ -9047,7 +8002,6 @@ exports[`Storyshots Components/Modal Transactional Modal 1`] = `
         >
           <h1
             className="ModalHeader__title"
-<<<<<<< release/1.37.0
             id="warning-modal"
           >
             <svg
@@ -9068,11 +8022,6 @@ exports[`Storyshots Components/Modal Transactional Modal 1`] = `
               />
             </svg>
             Warning modal
-=======
-            id="transactional-modal"
-          >
-            Transactional modal
->>>>>>> main
           </h1>
         </div>
         <button
@@ -9087,20 +8036,8 @@ exports[`Storyshots Components/Modal Transactional Modal 1`] = `
         className="ModalBody"
       >
         <p>
-          The user needs to take action here.
+          Are you sure you want to do this?
         </p>
-        <div
-          className="Input input-group"
-        >
-          <input
-            className="Input form-control"
-            disabled={false}
-            id="Email"
-            name="Email"
-            placeholder="Email"
-            type="text"
-          />
-        </div>
       </div>
       <div
         className="ModalFooter"
@@ -9114,19 +8051,11 @@ exports[`Storyshots Components/Modal Transactional Modal 1`] = `
           Cancel
         </button>
         <button
-<<<<<<< release/1.37.0
           className="Button btn btn-warning btn-md"
-=======
-          className="Button btn btn-primary"
->>>>>>> main
           disabled={false}
-          type="submit"
+          type="button"
         >
-<<<<<<< release/1.37.0
           Edit
-=======
-          Invite
->>>>>>> main
         </button>
       </div>
     </div>
@@ -9134,11 +8063,7 @@ exports[`Storyshots Components/Modal Transactional Modal 1`] = `
 </div>
 `;
 
-<<<<<<< release/1.37.0
 exports[`Storyshots Components/Modal With Subtitle Modal 1`] = `
-=======
-exports[`Storyshots Components/Modal Warning Modal 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -9162,15 +8087,9 @@ exports[`Storyshots Components/Modal Warning Modal 1`] = `
     }
   >
     <div
-<<<<<<< release/1.37.0
       aria-label="With Subtitle Modal"
       aria-modal={true}
       className="ReactModal__Content ReactModal__Content--after-open WithSubtitleModal"
-=======
-      aria-label="Warning Modal"
-      aria-modal={true}
-      className="ReactModal__Content ReactModal__Content--after-open WarningModal"
->>>>>>> main
       onClick={[Function]}
       onKeyDown={[Function]}
       onMouseDown={[Function]}
@@ -9187,32 +8106,9 @@ exports[`Storyshots Components/Modal Warning Modal 1`] = `
         >
           <h1
             className="ModalHeader__title"
-<<<<<<< release/1.37.0
             id="with-subtitle-modal"
           >
             With subtitle modal
-=======
-            id="warning-modal"
-          >
-            <svg
-              aria-hidden="true"
-              className="svg-inline--fa fa-exclamation-triangle fa-w-18 warning"
-              data-icon="exclamation-triangle"
-              data-prefix="fas"
-              focusable="false"
-              role="img"
-              style={Object {}}
-              viewBox="0 0 576 512"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
-                fill="currentColor"
-                style={Object {}}
-              />
-            </svg>
-            Warning modal
->>>>>>> main
           </h1>
           <h2
             className="ModalHeader__subtitle"
@@ -9232,7 +8128,7 @@ exports[`Storyshots Components/Modal Warning Modal 1`] = `
         className="ModalBody"
       >
         <p>
-          Are you sure you want to do this?
+          Some content goes here.
         </p>
       </div>
       <div
@@ -9247,11 +8143,11 @@ exports[`Storyshots Components/Modal Warning Modal 1`] = `
           Cancel
         </button>
         <button
-          className="Button btn btn-warning btn-md"
+          className="Button btn btn-primary"
           disabled={false}
-          type="button"
+          type="submit"
         >
-          Edit
+          Confirm
         </button>
       </div>
     </div>
@@ -9259,7 +8155,6 @@ exports[`Storyshots Components/Modal Warning Modal 1`] = `
 </div>
 `;
 
-<<<<<<< release/1.37.0
 exports[`Storyshots Components/Pill Default 1`] = `
 <div
   style={
@@ -9504,9 +8399,6 @@ exports[`Storyshots Components/Pill With Leading Icon 1`] = `
 `;
 
 exports[`Storyshots Components/Pill With Link 1`] = `
-=======
-exports[`Storyshots Components/Modal With Subtitle Modal 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -9517,7 +8409,6 @@ exports[`Storyshots Components/Modal With Subtitle Modal 1`] = `
   <span
     className="Pill Pill--blue"
   >
-<<<<<<< release/1.37.0
     <a
       href="https://www.userinterviews.com/"
       rel="noreferrer"
@@ -9530,78 +8421,6 @@ exports[`Storyshots Components/Modal With Subtitle Modal 1`] = `
 `;
 
 exports[`Storyshots Components/Popover Card Popover 1`] = `
-=======
-    <div
-      aria-label="With Subtitle Modal"
-      aria-modal={true}
-      className="ReactModal__Content ReactModal__Content--after-open WithSubtitleModal"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-      role="dialog"
-      style={Object {}}
-      tabIndex="-1"
-    >
-      <header
-        className="ModalHeader"
-      >
-        <div
-          className="ModalHeader__heading"
-        >
-          <h1
-            className="ModalHeader__title"
-            id="with-subtitle-modal"
-          >
-            With subtitle modal
-          </h1>
-          <h2
-            className="ModalHeader__subtitle"
-          >
-            A subtitle to provide more information
-          </h2>
-        </div>
-        <button
-          aria-label="Close"
-          className="btn btn-sm btn-close"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        />
-      </header>
-      <div
-        className="ModalBody"
-      >
-        <p>
-          Some content goes here.
-        </p>
-      </div>
-      <div
-        className="ModalFooter"
-      >
-        <button
-          className="Button btn btn-transparent"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          Cancel
-        </button>
-        <button
-          className="Button btn btn-primary"
-          disabled={false}
-          type="submit"
-        >
-          Confirm
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Pill Default 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -9609,7 +8428,6 @@ exports[`Storyshots Components/Pill Default 1`] = `
     }
   }
 >
-<<<<<<< release/1.37.0
   <button
     className="Button btn btn-primary"
     disabled={false}
@@ -9622,67 +8440,6 @@ exports[`Storyshots Components/Pill Default 1`] = `
 `;
 
 exports[`Storyshots Components/Popover Default 1`] = `
-=======
-  <div>
-    <h4
-      style={
-        Object {
-          "marginBottom": "2rem",
-        }
-      }
-    >
-      Test Pill
-    </h4>
-    <span
-      className="Pill Pill--blue"
-    >
-      Text
-    </span>
-    <h4
-      style={
-        Object {
-          "marginBottom": "2rem",
-          "marginTop": "2rem",
-        }
-      }
-    >
-      Colors
-    </h4>
-    <span
-      className="Pill Pill--blue"
-    >
-      blue
-    </span>
-    <span
-      className="Pill Pill--orange"
-    >
-      orange
-    </span>
-    <span
-      className="Pill Pill--yellow"
-    >
-      yellow
-    </span>
-    <span
-      className="Pill Pill--green"
-    >
-      green
-    </span>
-    <span
-      className="Pill Pill--gray"
-    >
-      gray
-    </span>
-    <span
-      className="Pill Pill--silver"
-    >
-      silver
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Pill With Close 1`] = `
 <div
   style={
     Object {
@@ -9690,151 +8447,6 @@ exports[`Storyshots Components/Pill With Close 1`] = `
     }
   }
 >
-  <span
-    className="Pill Pill--blue Pill--closeable"
-  >
-    Text
-    <button
-      aria-label="Remove undefined"
-      className="Pill__button--close"
-      onClick={[Function]}
-      type="button"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-times fa-w-11 "
-        data-icon="times"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 352 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-    </button>
-  </span>
-</div>
-`;
-
-exports[`Storyshots Components/Pill With Container 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="Pills"
-  >
-    <span
-      className="Pill Pill--gray"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-microphone fa-w-11 Pill__icon--lead"
-        data-icon="microphone"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 352 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M176 352c53.02 0 96-42.98 96-96V96c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96zm160-160h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      1-on-1 Interview
-    </span>
-    <span
-      className="Pill Pill--gray"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-globe fa-w-16 Pill__icon--lead"
-        data-icon="globe"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 496 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      Online
-    </span>
-    <span
-      className="Pill Pill--gray"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-gift-card fa-w-18 Pill__icon--lead"
-        data-icon="gift-card"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 576 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M528 128h-58.07c6.22-12.06 10.07-25.52 10.07-40 0-48.52-39.48-88-88-88-41.6 0-68.51 21.34-103.04 68.33C254.44 21.33 227.53 0 185.93 0c-48.52 0-88 39.48-88 88 0 14.48 3.85 27.94 10.07 40H48c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h480c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zM392 48c22.06 0 40 17.94 40 40 0 22.05-17.94 40-40 40h-86.07c51.36-76.47 65.72-80 86.07-80zM145.93 88c0-22.06 17.94-40 40-40 19.94 0 34.58 3.27 86.07 80h-86.07c-22.06 0-40-17.95-40-40zm60.13 104l-35.72 35.72c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0L273.94 192h28.13l69.65 69.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L369.94 192H512v128H64V192h142.06zM64 448v-64h448v64H64z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      $120 choice of dozens of digital gift cards
-    </span>
-    <span
-      className="Pill Pill--gray"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-clock fa-w-16 Pill__icon--lead"
-        data-icon="clock"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 512 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      1 hour
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Pill With Leading Icon 1`] = `
->>>>>>> main
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-<<<<<<< release/1.37.0
   <button
     className="Button btn btn-primary"
     disabled={false}
@@ -9866,34 +8478,6 @@ exports[`Storyshots Components/Popover Placement 1`] = `
 `;
 
 exports[`Storyshots Components/Popper Dark 1`] = `
-=======
-  <span
-    className="Pill Pill--blue"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-users fa-w-20 Pill__icon--lead"
-      data-icon="users"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 640 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Text
-  </span>
-</div>
-`;
-
-exports[`Storyshots Components/Pill With Link 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -9901,7 +8485,6 @@ exports[`Storyshots Components/Pill With Link 1`] = `
     }
   }
 >
-<<<<<<< release/1.37.0
   <p>
     reference element
   </p>
@@ -9922,22 +8505,6 @@ exports[`Storyshots Components/Pill With Link 1`] = `
 `;
 
 exports[`Storyshots Components/Popper Default 1`] = `
-=======
-  <span
-    className="Pill Pill--blue"
-  >
-    <a
-      href="https://www.userinterviews.com/"
-      rel="noreferrer"
-      target="_blank"
-    >
-      Visit our site
-    </a>
-  </span>
-</div>
-`;
-
-exports[`Storyshots Components/Popover Card Popover 1`] = `
 <div
   style={
     Object {
@@ -9945,76 +8512,11 @@ exports[`Storyshots Components/Popover Card Popover 1`] = `
     }
   }
 >
-  <button
-    className="Button btn btn-primary"
-    disabled={false}
-    onClick={[Function]}
-    type="button"
-  >
-    Filter
-  </button>
-</div>
-`;
-
-exports[`Storyshots Components/Popover Default 1`] = `
->>>>>>> main
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-<<<<<<< release/1.37.0
-=======
-  <button
-    className="Button btn btn-primary"
-    disabled={false}
-    onClick={[Function]}
-    type="button"
-  >
-    Filter
-  </button>
-</div>
-`;
-
-exports[`Storyshots Components/Popover Placement 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <button
-    className="Button btn btn-primary"
-    disabled={false}
-    onClick={[Function]}
-    type="button"
-  >
-    Try different placements
-  </button>
-</div>
-`;
-
-exports[`Storyshots Components/Popper Dark 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
->>>>>>> main
   <p>
     reference element
   </p>
   <div
-<<<<<<< release/1.37.0
     className="Popper"
-=======
-    className="Popper Popper--dark"
->>>>>>> main
     data-placement="top"
     style={
       Object {
@@ -10024,7 +8526,6 @@ exports[`Storyshots Components/Popper Dark 1`] = `
       }
     }
   >
-<<<<<<< release/1.37.0
     Default Popper
   </div>
 </div>
@@ -10090,18 +8591,11 @@ exports[`Storyshots Components/Profile Cell Large 1`] = `
         </div>
       </div>
     </div>
-=======
-    Dark Popper
->>>>>>> main
   </div>
 </div>
 `;
 
-<<<<<<< release/1.37.0
 exports[`Storyshots Components/Profile Cell Small 1`] = `
-=======
-exports[`Storyshots Components/Popper Default 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -10109,7 +8603,6 @@ exports[`Storyshots Components/Popper Default 1`] = `
     }
   }
 >
-<<<<<<< release/1.37.0
   <div
     className="ProfileCell"
   >
@@ -10154,32 +8647,11 @@ exports[`Storyshots Components/Popper Default 1`] = `
         riley@userinterviews.com
       </div>
     </div>
-=======
-  <p>
-    reference element
-  </p>
-  <div
-    className="Popper"
-    data-placement="top"
-    style={
-      Object {
-        "left": "0",
-        "position": "absolute",
-        "top": "0",
-      }
-    }
-  >
-    Default Popper
->>>>>>> main
   </div>
 </div>
 `;
 
-<<<<<<< release/1.37.0
 exports[`Storyshots Components/Profile Cell With Image 1`] = `
-=======
-exports[`Storyshots Components/Profile Cell Large 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -10200,19 +8672,11 @@ exports[`Storyshots Components/Profile Cell Large 1`] = `
         <div
           className="Avatar__circle"
         >
-<<<<<<< release/1.37.0
           <img
             alt="Riley Researcher"
             onError={[Function]}
             src="https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg"
           />
-=======
-          <span
-            className="Avatar__circle__initials"
-          >
-            RR
-          </span>
->>>>>>> main
         </div>
       </div>
     </div>
@@ -10251,11 +8715,7 @@ exports[`Storyshots Components/Profile Cell Large 1`] = `
 </div>
 `;
 
-<<<<<<< release/1.37.0
 exports[`Storyshots Components/Profile Cell With Trailing Icon 1`] = `
-=======
-exports[`Storyshots Components/Profile Cell Small 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -10276,19 +8736,11 @@ exports[`Storyshots Components/Profile Cell Small 1`] = `
         <div
           className="Avatar__circle"
         >
-<<<<<<< release/1.37.0
           <img
             alt="Riley Researcher"
             onError={[Function]}
             src="https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg"
           />
-=======
-          <span
-            className="Avatar__circle__initials"
-          >
-            RR
-          </span>
->>>>>>> main
         </div>
       </div>
     </div>
@@ -10308,7 +8760,6 @@ exports[`Storyshots Components/Profile Cell Small 1`] = `
         >
           Riley Researcher
         </h5>
-<<<<<<< release/1.37.0
         <svg
           aria-hidden="true"
           className="svg-inline--fa fa-shield-check fa-w-16 ProfileCell__content__trailing_icon"
@@ -10326,8 +8777,6 @@ exports[`Storyshots Components/Profile Cell Small 1`] = `
             style={Object {}}
           />
         </svg>
-=======
->>>>>>> main
       </div>
       <div
         className="ProfileCell__content__subtitle"
@@ -10339,11 +8788,7 @@ exports[`Storyshots Components/Profile Cell Small 1`] = `
 </div>
 `;
 
-<<<<<<< release/1.37.0
 exports[`Storyshots Components/RadioButton Default 1`] = `
-=======
-exports[`Storyshots Components/Profile Cell With Image 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -10351,7 +8796,6 @@ exports[`Storyshots Components/Profile Cell With Image 1`] = `
     }
   }
 >
-<<<<<<< release/1.37.0
   <input
     checked={false}
     disabled={false}
@@ -10365,65 +8809,6 @@ exports[`Storyshots Components/Profile Cell With Image 1`] = `
 `;
 
 exports[`Storyshots Components/RadioButton With Description 1`] = `
-=======
-  <div
-    className="ProfileCell ProfileCell--large"
-  >
-    <div
-      className="ProfileCell__image"
-    >
-      <div
-        aria-hidden={false}
-        className="Avatar Avatar--large"
-      >
-        <div
-          className="Avatar__circle"
-        >
-          <img
-            alt="Riley Researcher"
-            onError={[Function]}
-            src="https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      className="ProfileCell__content"
-      style={
-        Object {
-          "maxWidth": "none",
-        }
-      }
-    >
-      <div
-        className="ProfileCell__content__name__container"
-      >
-        <h5
-          className="ProfileCell__content__name"
-        >
-          Riley Researcher
-        </h5>
-      </div>
-      <div
-        className="ProfileCell__content__subtitle"
-      >
-        <div>
-          riley@userinterviews.com
-        </div>
-        <div>
-          +1 888 888 8888
-        </div>
-        <div>
-          (-5:00) America/New York
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Profile Cell With Trailing Icon 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -10431,7 +8816,6 @@ exports[`Storyshots Components/Profile Cell With Trailing Icon 1`] = `
     }
   }
 >
-<<<<<<< release/1.37.0
   <label
     className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
     htmlFor="value-2"
@@ -10461,74 +8845,6 @@ exports[`Storyshots Components/Profile Cell With Trailing Icon 1`] = `
 `;
 
 exports[`Storyshots Components/Selects/Async Default 1`] = `
-=======
-  <div
-    className="ProfileCell"
-  >
-    <div
-      className="ProfileCell__image"
-    >
-      <div
-        aria-hidden={false}
-        className="Avatar"
-      >
-        <div
-          className="Avatar__circle"
-        >
-          <img
-            alt="Riley Researcher"
-            onError={[Function]}
-            src="https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg"
-          />
-        </div>
-      </div>
-    </div>
-    <div
-      className="ProfileCell__content"
-      style={
-        Object {
-          "maxWidth": "none",
-        }
-      }
-    >
-      <div
-        className="ProfileCell__content__name__container"
-      >
-        <h5
-          className="ProfileCell__content__name"
-        >
-          Riley Researcher
-        </h5>
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-shield-check fa-w-16 ProfileCell__content__trailing_icon"
-          data-icon="shield-check"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zm-47.2 114.2l-184 184c-6.2 6.2-16.4 6.2-22.6 0l-104-104c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l70.1 70.1 150.1-150.1c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.3 6.3 6.3 16.4 0 22.6z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </div>
-      <div
-        className="ProfileCell__content__subtitle"
-      >
-        riley@userinterviews.com
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/RadioButton Default 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -10536,7 +8852,6 @@ exports[`Storyshots Components/RadioButton Default 1`] = `
     }
   }
 >
-<<<<<<< release/1.37.0
   <div
     className="FormGroup"
   >
@@ -10649,57 +8964,6 @@ exports[`Storyshots Components/RadioButton Default 1`] = `
 `;
 
 exports[`Storyshots Components/Selects/Async In Modal 1`] = `
-=======
-  <input
-    checked={false}
-    disabled={false}
-    id="1"
-    name=""
-    onChange={[Function]}
-    type="radio"
-    value={1}
-  />
-</div>
-`;
-
-exports[`Storyshots Components/RadioButton With Description 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <label
-    className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
-    htmlFor="value-2"
-  >
-    <span
-      className="FormControlLabel__label"
-    >
-      <input
-        checked={false}
-        className="FormControlLabel__control"
-        disabled={false}
-        id="value-2"
-        name=""
-        onChange={[Function]}
-        type="radio"
-        value="2"
-      />
-      Label 2
-    </span>
-    <span
-      className="FormControlLabel__children"
-    >
-      This is where the description goes
-    </span>
-  </label>
-</div>
-`;
-
-exports[`Storyshots Components/Selects/Async Default 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -10708,7 +8972,6 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
   }
 >
   <div
-<<<<<<< release/1.37.0
     className="ReactModal__Overlay ReactModal__Overlay--after-open"
     onClick={[Function]}
     onMouseDown={[Function]}
@@ -10722,424 +8985,8 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
         "top": 0,
       }
     }
-=======
-    className="FormGroup"
->>>>>>> main
   >
-    <label
-      className="InputLabel"
-      htmlFor="default-async-select"
-    >
-      Default AsyncSelect
-    </label>
     <div
-<<<<<<< release/1.37.0
-      aria-label="AsyncSelect in Modal"
-      aria-modal={true}
-      className="ReactModal__Content ReactModal__Content--after-open AsyncSelectInModal"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-      role="dialog"
-      style={Object {}}
-      tabIndex="-1"
-    >
-      <header
-        className="ModalHeader"
-      >
-        <div
-          className="ModalHeader__heading"
-        >
-          <h1
-            className="ModalHeader__title"
-            id="in-modal-async-select"
-          >
-            In Modal AsyncSelect
-          </h1>
-        </div>
-        <button
-          aria-label="Close"
-          className="btn btn-sm btn-close"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        />
-      </header>
-      <div
-        className="ModalBody"
-      >
-        <div
-          className="FormGroup"
-        >
-          <label
-            className="InputLabel"
-            htmlFor="in-modal-async-select"
-          >
-            In Modal async select
-          </label>
-          <div
-            className="AsyncSelect css-b62m3t-container"
-            onKeyDown={[Function]}
-          >
-            <span
-              className="css-1f43avz-a11yText-A11yText"
-              id="react-select-5-live-region"
-            />
-            <span
-              aria-atomic="false"
-              aria-live="polite"
-              aria-relevant="additions text"
-              className="css-1f43avz-a11yText-A11yText"
-            />
-            <div
-              className=" css-cijnja-control"
-              onMouseDown={[Function]}
-              onTouchEnd={[Function]}
-            >
-              <div
-                className=" css-319lph-ValueContainer"
-              >
-                <div
-                  className=" css-858797-placeholder"
-                  id="react-select-5-placeholder"
-                >
-                  Select...
-                </div>
-                <div
-                  className=" css-6j8wv5-Input"
-                  data-value=""
-                >
-                  <input
-                    aria-autocomplete="list"
-                    aria-describedby="react-select-5-placeholder"
-                    aria-expanded={false}
-                    aria-haspopup={true}
-                    autoCapitalize="none"
-                    autoComplete="off"
-                    autoCorrect="off"
-                    className=""
-                    disabled={false}
-                    id="in-modal-async-select"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    role="combobox"
-                    spellCheck="false"
-                    style={
-                      Object {
-                        "background": 0,
-                        "border": 0,
-                        "color": "inherit",
-                        "font": "inherit",
-                        "gridArea": "1 / 2",
-                        "label": "input",
-                        "margin": 0,
-                        "minWidth": "2px",
-                        "opacity": 1,
-                        "outline": 0,
-                        "padding": 0,
-                        "width": "100%",
-                      }
-                    }
-                    tabIndex={0}
-                    type="text"
-                    value=""
-                  />
-                </div>
-              </div>
-              <div
-                className=" css-1hb7zxy-IndicatorsContainer"
-              >
-                <span
-                  className=" css-43ykx9-indicatorSeparator"
-                />
-                <div
-                  aria-hidden="true"
-                  className=" css-7sl878-indicatorContainer"
-                  onMouseDown={[Function]}
-                  onTouchEnd={[Function]}
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="css-tj5bde-Svg"
-                    focusable="false"
-                    height={20}
-                    viewBox="0 0 20 20"
-                    width={20}
-                  >
-                    <path
-                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="FormGroup__helper-text"
-          >
-            Select menu is able to overflow the Modal container
-          </div>
-        </div>
-      </div>
-      <div
-        className="ModalFooter"
-      >
-        <button
-          className="Button btn btn-transparent"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          Cancel
-        </button>
-        <button
-          className="Button btn btn-primary"
-          disabled={false}
-          type="submit"
-        >
-          Confirm
-        </button>
-=======
-      className="AsyncSelect css-b62m3t-container"
-      onKeyDown={[Function]}
-    >
-      <span
-        className="css-1f43avz-a11yText-A11yText"
-        id="react-select-4-live-region"
-      />
-      <span
-        aria-atomic="false"
-        aria-live="polite"
-        aria-relevant="additions text"
-        className="css-1f43avz-a11yText-A11yText"
-      />
-      <div
-        className=" css-cijnja-control"
-        onMouseDown={[Function]}
-        onTouchEnd={[Function]}
-      >
-        <div
-          className=" css-319lph-ValueContainer"
-        >
-          <div
-            className=" css-858797-placeholder"
-            id="react-select-4-placeholder"
-          >
-            Select...
-          </div>
-          <div
-            className=" css-6j8wv5-Input"
-            data-value=""
-          >
-            <input
-              aria-autocomplete="list"
-              aria-describedby="react-select-4-placeholder"
-              aria-expanded={false}
-              aria-haspopup={true}
-              autoCapitalize="none"
-              autoComplete="off"
-              autoCorrect="off"
-              className=""
-              disabled={false}
-              id="default-async-select"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              role="combobox"
-              spellCheck="false"
-              style={
-                Object {
-                  "background": 0,
-                  "border": 0,
-                  "color": "inherit",
-                  "font": "inherit",
-                  "gridArea": "1 / 2",
-                  "label": "input",
-                  "margin": 0,
-                  "minWidth": "2px",
-                  "opacity": 1,
-                  "outline": 0,
-                  "padding": 0,
-                  "width": "100%",
-                }
-              }
-              tabIndex={0}
-              type="text"
-              value=""
-            />
-          </div>
-        </div>
-        <div
-          className=" css-1hb7zxy-IndicatorsContainer"
-        >
-          <span
-            className=" css-43ykx9-indicatorSeparator"
-          />
-          <div
-            aria-hidden="true"
-            className=" css-7sl878-indicatorContainer"
-            onMouseDown={[Function]}
-            onTouchEnd={[Function]}
-          >
-            <svg
-              aria-hidden="true"
-              className="css-tj5bde-Svg"
-              focusable="false"
-              height={20}
-              viewBox="0 0 20 20"
-              width={20}
-            >
-              <path
-                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-              />
-            </svg>
-          </div>
-        </div>
->>>>>>> main
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-<<<<<<< release/1.37.0
-exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
-=======
-exports[`Storyshots Components/Selects/Async In Modal 1`] = `
->>>>>>> main
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-<<<<<<< release/1.37.0
-    className="FormGroup"
-=======
-    className="ReactModal__Overlay ReactModal__Overlay--after-open"
-    onClick={[Function]}
-    onMouseDown={[Function]}
-    style={
-      Object {
-        "backgroundColor": "rgba(255, 255, 255, 0.75)",
-        "bottom": 0,
-        "left": 0,
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
->>>>>>> main
-  >
-    <label
-      className="InputLabel"
-      htmlFor="default-async-creatable-select"
-    >
-      Default async creatable select
-    </label>
-    <div
-<<<<<<< release/1.37.0
-      className="AsyncSelect css-b62m3t-container"
-      onKeyDown={[Function]}
-    >
-      <span
-        className="css-1f43avz-a11yText-A11yText"
-        id="react-select-2-live-region"
-      />
-      <span
-        aria-atomic="false"
-        aria-live="polite"
-        aria-relevant="additions text"
-        className="css-1f43avz-a11yText-A11yText"
-      />
-      <div
-        className=" css-cijnja-control"
-        onMouseDown={[Function]}
-        onTouchEnd={[Function]}
-      >
-        <div
-          className=" css-319lph-ValueContainer"
-        >
-          <div
-            className=" css-858797-placeholder"
-            id="react-select-2-placeholder"
-          >
-            Select...
-          </div>
-          <div
-            className=" css-6j8wv5-Input"
-            data-value=""
-          >
-            <input
-              aria-autocomplete="list"
-              aria-describedby="react-select-2-placeholder"
-              aria-expanded={false}
-              aria-haspopup={true}
-              autoCapitalize="none"
-              autoComplete="off"
-              autoCorrect="off"
-              className=""
-              disabled={false}
-              id="default-async-creatable-select"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onFocus={[Function]}
-              role="combobox"
-              spellCheck="false"
-              style={
-                Object {
-                  "background": 0,
-                  "border": 0,
-                  "color": "inherit",
-                  "font": "inherit",
-                  "gridArea": "1 / 2",
-                  "label": "input",
-                  "margin": 0,
-                  "minWidth": "2px",
-                  "opacity": 1,
-                  "outline": 0,
-                  "padding": 0,
-                  "width": "100%",
-                }
-              }
-              tabIndex={0}
-              type="text"
-              value=""
-            />
-          </div>
-        </div>
-        <div
-          className=" css-1hb7zxy-IndicatorsContainer"
-        >
-          <span
-            className=" css-43ykx9-indicatorSeparator"
-          />
-          <div
-            aria-hidden="true"
-            className=" css-7sl878-indicatorContainer"
-            onMouseDown={[Function]}
-            onTouchEnd={[Function]}
-          >
-            <svg
-              aria-hidden="true"
-              className="css-tj5bde-Svg"
-              focusable="false"
-              height={20}
-              viewBox="0 0 20 20"
-              width={20}
-            >
-              <path
-                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-              />
-            </svg>
-          </div>
-        </div>
-      </div>
-=======
       aria-label="AsyncSelect in Modal"
       aria-modal={true}
       className="ReactModal__Content ReactModal__Content--after-open AsyncSelectInModal"
@@ -11308,17 +9155,12 @@ exports[`Storyshots Components/Selects/Async In Modal 1`] = `
           Confirm
         </button>
       </div>
->>>>>>> main
     </div>
   </div>
 </div>
 `;
 
-<<<<<<< release/1.37.0
-exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
-=======
 exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -11327,23 +9169,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
   }
 >
   <div
-<<<<<<< release/1.37.0
-    className="ReactModal__Overlay ReactModal__Overlay--after-open"
-    onClick={[Function]}
-    onMouseDown={[Function]}
-    style={
-      Object {
-        "backgroundColor": "rgba(255, 255, 255, 0.75)",
-        "bottom": 0,
-        "left": 0,
-        "position": "fixed",
-        "right": 0,
-        "top": 0,
-      }
-    }
-=======
     className="FormGroup"
->>>>>>> main
   >
     <label
       className="InputLabel"
@@ -11352,175 +9178,6 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
       Default async creatable select
     </label>
     <div
-<<<<<<< release/1.37.0
-      aria-label="AsyncCreatableSelect in Modal"
-      aria-modal={true}
-      className="ReactModal__Content ReactModal__Content--after-open AsyncCreatableSelectInModal"
-      onClick={[Function]}
-      onKeyDown={[Function]}
-      onMouseDown={[Function]}
-      onMouseUp={[Function]}
-      role="dialog"
-      style={Object {}}
-      tabIndex="-1"
-    >
-      <header
-        className="ModalHeader"
-      >
-        <div
-          className="ModalHeader__heading"
-        >
-          <h1
-            className="ModalHeader__title"
-            id="in-modal-async-creatable-select"
-          >
-            In Modal AsyncCreatable select
-          </h1>
-        </div>
-        <button
-          aria-label="Close"
-          className="btn btn-sm btn-close"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        />
-      </header>
-      <div
-        className="ModalBody"
-      >
-        <div
-          className="FormGroup"
-        >
-          <label
-            className="InputLabel"
-            htmlFor="in-modal-creatable-select"
-          >
-            In Modal AsyncCreatable select
-          </label>
-          <div
-            className="AsyncSelect css-b62m3t-container"
-            onKeyDown={[Function]}
-          >
-            <span
-              className="css-1f43avz-a11yText-A11yText"
-              id="react-select-3-live-region"
-            />
-            <span
-              aria-atomic="false"
-              aria-live="polite"
-              aria-relevant="additions text"
-              className="css-1f43avz-a11yText-A11yText"
-            />
-            <div
-              className=" css-cijnja-control"
-              onMouseDown={[Function]}
-              onTouchEnd={[Function]}
-            >
-              <div
-                className=" css-319lph-ValueContainer"
-              >
-                <div
-                  className=" css-858797-placeholder"
-                  id="react-select-3-placeholder"
-                >
-                  Select...
-                </div>
-                <div
-                  className=" css-6j8wv5-Input"
-                  data-value=""
-                >
-                  <input
-                    aria-autocomplete="list"
-                    aria-describedby="react-select-3-placeholder"
-                    aria-expanded={false}
-                    aria-haspopup={true}
-                    autoCapitalize="none"
-                    autoComplete="off"
-                    autoCorrect="off"
-                    className=""
-                    disabled={false}
-                    id="in-modal-creatable-select"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onFocus={[Function]}
-                    role="combobox"
-                    spellCheck="false"
-                    style={
-                      Object {
-                        "background": 0,
-                        "border": 0,
-                        "color": "inherit",
-                        "font": "inherit",
-                        "gridArea": "1 / 2",
-                        "label": "input",
-                        "margin": 0,
-                        "minWidth": "2px",
-                        "opacity": 1,
-                        "outline": 0,
-                        "padding": 0,
-                        "width": "100%",
-                      }
-                    }
-                    tabIndex={0}
-                    type="text"
-                    value=""
-                  />
-                </div>
-              </div>
-              <div
-                className=" css-1hb7zxy-IndicatorsContainer"
-              >
-                <span
-                  className=" css-43ykx9-indicatorSeparator"
-                />
-                <div
-                  aria-hidden="true"
-                  className=" css-7sl878-indicatorContainer"
-                  onMouseDown={[Function]}
-                  onTouchEnd={[Function]}
-                >
-                  <svg
-                    aria-hidden="true"
-                    className="css-tj5bde-Svg"
-                    focusable="false"
-                    height={20}
-                    viewBox="0 0 20 20"
-                    width={20}
-                  >
-                    <path
-                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="FormGroup__helper-text"
-          >
-            Select menu is able to overflow the Modal container
-          </div>
-        </div>
-      </div>
-      <div
-        className="ModalFooter"
-      >
-        <button
-          className="Button btn btn-transparent"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          Cancel
-        </button>
-        <button
-          className="Button btn btn-primary"
-          disabled={false}
-          type="submit"
-        >
-          Confirm
-        </button>
-=======
       className="AsyncSelect css-b62m3t-container"
       onKeyDown={[Function]}
     >
@@ -11616,15 +9273,12 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
             </svg>
           </div>
         </div>
->>>>>>> main
       </div>
     </div>
   </div>
 </div>
 `;
 
-<<<<<<< release/1.37.0
-=======
 exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
 <div
   style={
@@ -11822,7 +9476,6 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
 </div>
 `;
 
->>>>>>> main
 exports[`Storyshots Components/Selects/Creatable Default 1`] = `
 <div
   style={
@@ -11979,7 +9632,6 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
     >
       <header
         className="ModalHeader"
-<<<<<<< release/1.37.0
       >
         <div
           className="ModalHeader__heading"
@@ -12003,31 +9655,6 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
         className="ModalBody"
       >
         <div
-=======
-      >
-        <div
-          className="ModalHeader__heading"
-        >
-          <h1
-            className="ModalHeader__title"
-            id="in-modal-creatable-select"
-          >
-            In Modal creatable select
-          </h1>
-        </div>
-        <button
-          aria-label="Close"
-          className="btn btn-sm btn-close"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        />
-      </header>
-      <div
-        className="ModalBody"
-      >
-        <div
->>>>>>> main
           className="FormGroup"
         >
           <label
@@ -23620,7 +21247,6 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
     }
   }
 >
-<<<<<<< release/1.37.0
   <div
     style={
       Object {
@@ -23638,11 +21264,6 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
           "height": "100%",
         }
       }
-=======
-  <div>
-    <span
-      className="sc-gsDKAQ ldHumd"
->>>>>>> main
     >
       <p
         style={
@@ -23656,7 +21277,6 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
           }
         }
       >
-<<<<<<< release/1.37.0
         <div>
           UX_BLUE_100
         </div>
@@ -23902,158 +21522,6 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
 `;
 
 exports[`Storyshots Foundations/Color Palette Emerald 1`] = `
-=======
-        <li
-          className="nav-item"
-          role="presentation"
-        >
-          <button
-            aria-controls="controlled-tabpane-one"
-            aria-selected={true}
-            className="nav-link active"
-            data-rr-ui-event-key="one"
-            disabled={false}
-            id="controlled-tab-one"
-            onClick={[Function]}
-            role="tab"
-            type="button"
-          >
-            Tab One
-          </button>
-        </li>
-        <li
-          className="nav-item"
-          role="presentation"
-        >
-          <button
-            aria-controls="controlled-tabpane-two"
-            aria-selected={false}
-            className="nav-link"
-            data-rr-ui-event-key="two"
-            disabled={false}
-            id="controlled-tab-two"
-            onClick={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
-          >
-            Tab Two
-          </button>
-        </li>
-        <li
-          className="nav-item"
-          role="presentation"
-        >
-          <button
-            aria-controls="controlled-tabpane-three"
-            aria-selected={false}
-            className="nav-link"
-            data-rr-ui-event-key="three"
-            disabled={false}
-            id="controlled-tab-three"
-            onClick={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
-          >
-            Tab Three
-          </button>
-        </li>
-        <li
-          className="nav-item"
-          role="presentation"
-        >
-          <button
-            aria-controls="controlled-tabpane-four"
-            aria-disabled={true}
-            aria-selected={false}
-            className="nav-link disabled"
-            data-rr-ui-event-key="four"
-            disabled={true}
-            id="controlled-tab-four"
-            onClick={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
-          >
-            Tab Four (disabled)
-          </button>
-        </li>
-      </ul>
-      <div
-        className="tab-content"
-      >
-        <div
-          aria-labelledby="controlled-tab-one"
-          className="fade tab-pane active show"
-          id="controlled-tabpane-one"
-          role="tabpanel"
-        >
-          <div
-            style={
-              Object {
-                "paddingTop": "20px",
-              }
-            }
-          >
-            Tab Content One
-          </div>
-        </div>
-        <div
-          aria-labelledby="controlled-tab-two"
-          className="fade tab-pane"
-          id="controlled-tabpane-two"
-          role="tabpanel"
-        >
-          <div
-            style={
-              Object {
-                "paddingTop": "20px",
-              }
-            }
-          >
-            Tab Content Two
-          </div>
-        </div>
-        <div
-          aria-labelledby="controlled-tab-three"
-          className="fade tab-pane"
-          id="controlled-tabpane-three"
-          role="tabpanel"
-        >
-          <div
-            style={
-              Object {
-                "paddingTop": "20px",
-              }
-            }
-          >
-            Tab Content Three
-          </div>
-        </div>
-        <div
-          aria-labelledby="controlled-tab-four"
-          className="fade tab-pane"
-          id="controlled-tabpane-four"
-          role="tabpanel"
-        >
-          <div
-            style={
-              Object {
-                "paddingTop": "20px",
-              }
-            }
-          >
-            Tab Content Four
-          </div>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
 <div
   style={
     Object {
@@ -24061,368 +21529,6 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
     }
   }
 >
-  <div>
-    <span
-      className="sc-gsDKAQ ldHumd"
-    >
-      <ul
-        className="nav nav-tabs"
-        onKeyDown={[Function]}
-        role="tablist"
-      >
-        <li
-          className="nav-item"
-          role="presentation"
-        >
-          <button
-            aria-controls="uncontrolled-tabpane-one"
-            aria-selected={true}
-            className="nav-link active"
-            data-rr-ui-event-key="one"
-            disabled={false}
-            id="uncontrolled-tab-one"
-            onClick={[Function]}
-            role="tab"
-            type="button"
-          >
-            Tab One
-          </button>
-        </li>
-        <li
-          className="nav-item"
-          role="presentation"
-        >
-          <button
-            aria-controls="uncontrolled-tabpane-two"
-            aria-selected={false}
-            className="nav-link"
-            data-rr-ui-event-key="two"
-            disabled={false}
-            id="uncontrolled-tab-two"
-            onClick={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
-          >
-            Tab Two
-          </button>
-        </li>
-        <li
-          className="nav-item"
-          role="presentation"
-        >
-          <button
-            aria-controls="uncontrolled-tabpane-three"
-            aria-selected={false}
-            className="nav-link"
-            data-rr-ui-event-key="three"
-            disabled={false}
-            id="uncontrolled-tab-three"
-            onClick={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
-          >
-            Tab Three
-          </button>
-        </li>
-        <li
-          className="nav-item"
-          role="presentation"
-        >
-          <button
-            aria-controls="uncontrolled-tabpane-four"
-            aria-disabled={true}
-            aria-selected={false}
-            className="nav-link disabled"
-            data-rr-ui-event-key="four"
-            disabled={true}
-            id="uncontrolled-tab-four"
-            onClick={[Function]}
-            role="tab"
-            tabIndex={-1}
-            type="button"
-          >
-            Tab Four (disabled)
-          </button>
-        </li>
-      </ul>
-      <div
-        className="tab-content"
-      >
-        <div
-          aria-labelledby="uncontrolled-tab-one"
-          className="fade tab-pane active show"
-          id="uncontrolled-tabpane-one"
-          role="tabpanel"
-        >
-          <div
-            style={
-              Object {
-                "paddingTop": "20px",
-              }
-            }
-          >
-            Tab Content One
-          </div>
-        </div>
-        <div
-          aria-labelledby="uncontrolled-tab-two"
-          className="fade tab-pane"
-          id="uncontrolled-tabpane-two"
-          role="tabpanel"
-        >
-          <div
-            style={
-              Object {
-                "paddingTop": "20px",
-              }
-            }
-          >
-            Tab Content Two
-          </div>
-        </div>
-        <div
-          aria-labelledby="uncontrolled-tab-three"
-          className="fade tab-pane"
-          id="uncontrolled-tabpane-three"
-          role="tabpanel"
-        >
-          <div
-            style={
-              Object {
-                "paddingTop": "20px",
-              }
-            }
-          >
-            Tab Content Three
-          </div>
-        </div>
-        <div
-          aria-labelledby="uncontrolled-tab-four"
-          className="fade tab-pane"
-          id="uncontrolled-tabpane-four"
-          role="tabpanel"
-        >
-          <div
-            style={
-              Object {
-                "paddingTop": "20px",
-              }
-            }
-          >
-            Tab Content Four
-          </div>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Toast Manual Dismiss Toast 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    aria-live="polite"
-    className="Toast"
-  />
-  <div>
-    <p>
-      Click the button to see a toast message.  Use the knobs to try different types!
-    </p>
-    <button
-      className="Button btn btn-primary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      Submit
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Toast Toast 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    aria-live="polite"
-    className="Toast"
-  />
-  <div>
-    <p>
-      Click the button to see a toast message.  Use the knobs to try different types!
-    </p>
-    <button
-      className="Button btn btn-primary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      Submit
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Toast Toast Custom Message 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    aria-live="polite"
-    className="Toast"
-  />
-  <div>
-    <p>
-      Click the button to see a toast message.  Use the knobs to try different types!
-    </p>
-    <button
-      className="Button btn btn-primary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      Submit
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Toast Toast With Action 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    aria-live="polite"
-    className="Toast"
-  />
-  <div>
-    <p>
-      Click the button to see a toast message.  Use the knobs to try different types!
-    </p>
-    <button
-      className="Button btn btn-primary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      Submit
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/ToggleInput Checked 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <label
-    className="ToggleInput__label"
-    htmlFor="1"
-  >
-    <div
-      className="react-toggle react-toggle--checked"
-      onClick={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-    >
-      <div
-        className="react-toggle-track"
-      >
-        <div
-          className="react-toggle-track-check"
-        >
-          <svg
-            height="11"
-            viewBox="0 0 14 11"
-            width="14"
-          >
-            <title>
-              switch-check
-            </title>
-            <path
-              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
-              fill="#fff"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-        <div
-          className="react-toggle-track-x"
-        >
-          <svg
-            height="10"
-            viewBox="0 0 10 10"
-            width="10"
-          >
-            <title>
-              switch-x
-            </title>
-            <path
-              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
-              fill="#fff"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-      <div
-        className="react-toggle-thumb"
-      />
-      <input
-        checked={true}
-        className="react-toggle-screenreader-only"
-        disabled={false}
-        id="1"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="checkbox"
-        value="true"
-      />
-    </div>
-    <span>
-      Label
-    </span>
-  </label>
-</div>
-`;
-
-exports[`Storyshots Components/ToggleInput Default 1`] = `
->>>>>>> main
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-<<<<<<< release/1.37.0
   <div
     style={
       Object {
@@ -24584,255 +21690,6 @@ exports[`Storyshots Components/ToggleInput Default 1`] = `
           "flexBasis": "11%",
           "height": "100%",
         }
-=======
-  <label
-    className="ToggleInput__label"
-    htmlFor="1"
-  >
-    <div
-      className="react-toggle"
-      onClick={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-    >
-      <div
-        className="react-toggle-track"
-      >
-        <div
-          className="react-toggle-track-check"
-        >
-          <svg
-            height="11"
-            viewBox="0 0 14 11"
-            width="14"
-          >
-            <title>
-              switch-check
-            </title>
-            <path
-              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
-              fill="#fff"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-        <div
-          className="react-toggle-track-x"
-        >
-          <svg
-            height="10"
-            viewBox="0 0 10 10"
-            width="10"
-          >
-            <title>
-              switch-x
-            </title>
-            <path
-              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
-              fill="#fff"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-      <div
-        className="react-toggle-thumb"
-      />
-      <input
-        checked={false}
-        className="react-toggle-screenreader-only"
-        disabled={false}
-        id="1"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="checkbox"
-        value="false"
-      />
-    </div>
-    <span>
-      Label
-    </span>
-  </label>
-</div>
-`;
-
-exports[`Storyshots Components/ToggleInput Disabled 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <label
-    className="ToggleInput__label ToggleInput__label--disabled"
-    htmlFor="2"
-  >
-    <div
-      className="react-toggle react-toggle--disabled"
-      onClick={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-    >
-      <div
-        className="react-toggle-track"
-      >
-        <div
-          className="react-toggle-track-check"
-        >
-          <svg
-            height="11"
-            viewBox="0 0 14 11"
-            width="14"
-          >
-            <title>
-              switch-check
-            </title>
-            <path
-              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
-              fill="#fff"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-        <div
-          className="react-toggle-track-x"
-        >
-          <svg
-            height="10"
-            viewBox="0 0 10 10"
-            width="10"
-          >
-            <title>
-              switch-x
-            </title>
-            <path
-              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
-              fill="#fff"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-      <div
-        className="react-toggle-thumb"
-      />
-      <input
-        checked={false}
-        className="react-toggle-screenreader-only"
-        disabled={true}
-        id="2"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="checkbox"
-        value="false"
-      />
-    </div>
-    <span>
-      Label
-    </span>
-  </label>
-</div>
-`;
-
-exports[`Storyshots Components/ToggleInput Label Left 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <label
-    className="ToggleInput__label"
-    htmlFor="1"
-  >
-    <span>
-      Label
-    </span>
-    <div
-      className="react-toggle"
-      onClick={[Function]}
-      onTouchEnd={[Function]}
-      onTouchMove={[Function]}
-      onTouchStart={[Function]}
-    >
-      <div
-        className="react-toggle-track"
-      >
-        <div
-          className="react-toggle-track-check"
-        >
-          <svg
-            height="11"
-            viewBox="0 0 14 11"
-            width="14"
-          >
-            <title>
-              switch-check
-            </title>
-            <path
-              d="M11.264 0L5.26 6.004 2.103 2.847 0 4.95l5.26 5.26 8.108-8.107L11.264 0"
-              fill="#fff"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-        <div
-          className="react-toggle-track-x"
-        >
-          <svg
-            height="10"
-            viewBox="0 0 10 10"
-            width="10"
-          >
-            <title>
-              switch-x
-            </title>
-            <path
-              d="M9.9 2.12L7.78 0 4.95 2.828 2.12 0 0 2.12l2.83 2.83L0 7.776 2.123 9.9 4.95 7.07 7.78 9.9 9.9 7.776 7.072 4.95 9.9 2.12"
-              fill="#fff"
-              fillRule="evenodd"
-            />
-          </svg>
-        </div>
-      </div>
-      <div
-        className="react-toggle-thumb"
-      />
-      <input
-        checked={false}
-        className="react-toggle-screenreader-only"
-        disabled={false}
-        id="1"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onFocus={[Function]}
-        type="checkbox"
-        value="false"
-      />
-    </div>
-  </label>
-</div>
-`;
-
-exports[`Storyshots Components/Tooltip Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "padding": "4rem",
->>>>>>> main
       }
     >
       <p
@@ -26210,11 +23067,7 @@ exports[`Storyshots Foundations/Color Palette Orange 1`] = `
     <div
       style={
         Object {
-<<<<<<< release/1.37.0
           "backgroundColor": "#F59C27",
-=======
-          "backgroundColor": "#21B36C",
->>>>>>> main
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -26236,11 +23089,7 @@ exports[`Storyshots Foundations/Color Palette Orange 1`] = `
           UX_ORANGE_500
         </div>
         <div>
-<<<<<<< release/1.37.0
           #F59C27
-=======
-          #21B36C
->>>>>>> main
         </div>
       </p>
     </div>
@@ -26500,11 +23349,7 @@ exports[`Storyshots Foundations/Color Palette Red 1`] = `
     <div
       style={
         Object {
-<<<<<<< release/1.37.0
           "backgroundColor": "#E03131",
-=======
-          "backgroundColor": "#234574",
->>>>>>> main
           "flexBasis": "11%",
           "height": "100%",
         }
@@ -26526,11 +23371,7 @@ exports[`Storyshots Foundations/Color Palette Red 1`] = `
           UX_RED_500
         </div>
         <div>
-<<<<<<< release/1.37.0
           #E03131
-=======
-          #234574
->>>>>>> main
         </div>
       </p>
     </div>
@@ -28304,22 +25145,11 @@ exports[`Storyshots Layouts/Container Auto Layout Columns 1`] = `
       component will render equal width columns.
     </p>
     <div
-<<<<<<< release/1.37.0
       className="row"
-=======
-      style={
-        Object {
-          "backgroundColor": "#2A7779",
-          "flexBasis": "11%",
-          "height": "100%",
-        }
-      }
->>>>>>> main
     >
       <div
         className="col"
       >
-<<<<<<< release/1.37.0
         <section
           className="Card"
         >
@@ -28351,15 +25181,6 @@ exports[`Storyshots Layouts/Container Auto Layout Columns 1`] = `
           </div>
         </section>
       </div>
-=======
-        <div>
-          UX_TEAL_700
-        </div>
-        <div>
-          #2A7779
-        </div>
-      </p>
->>>>>>> main
     </div>
     <br />
     <div
@@ -28836,109 +25657,11 @@ exports[`Storyshots Layouts/Container Responsive Grids 1`] = `
     className="container"
   >
     <div
-<<<<<<< release/1.37.0
       className="row"
-=======
-      style={
-        Object {
-          "backgroundColor": "#E1BE0C",
-          "flexBasis": "11%",
-          "height": "100%",
-        }
-      }
-    >
-      <p
-        style={
-          Object {
-            "backgroundColor": "#FFF",
-            "color": "#000",
-            "fontSize": "0.75rem",
-            "margin": "1rem",
-            "padding": "0.25rem",
-            "textAlign": "center",
-          }
-        }
-      >
-        <div>
-          UX_YELLOW_600
-        </div>
-        <div>
-          #E1BE0C
-        </div>
-      </p>
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#CAA900",
-          "flexBasis": "11%",
-          "height": "100%",
-        }
-      }
-    >
-      <p
-        style={
-          Object {
-            "backgroundColor": "#FFF",
-            "color": "#000",
-            "fontSize": "0.75rem",
-            "margin": "1rem",
-            "padding": "0.25rem",
-            "textAlign": "center",
-          }
-        }
-      >
-        <div>
-          UX_YELLOW_700
-        </div>
-        <div>
-          #CAA900
-        </div>
-      </p>
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#A98D01",
-          "flexBasis": "11%",
-          "height": "100%",
-        }
-      }
-    >
-      <p
-        style={
-          Object {
-            "backgroundColor": "#FFF",
-            "color": "#000",
-            "fontSize": "0.75rem",
-            "margin": "1rem",
-            "padding": "0.25rem",
-            "textAlign": "center",
-          }
-        }
-      >
-        <div>
-          UX_YELLOW_800
-        </div>
-        <div>
-          #A98D01
-        </div>
-      </p>
-    </div>
-    <div
-      style={
-        Object {
-          "backgroundColor": "#453A00",
-          "flexBasis": "11%",
-          "height": "100%",
-        }
-      }
->>>>>>> main
     >
       <div
         className="col-sm"
       >
-<<<<<<< release/1.37.0
         <section
           className="Card"
         >
@@ -29008,275 +25731,6 @@ exports[`Storyshots Layouts/Container Responsive Grids 1`] = `
             </code>
           </p>
         </section>
-=======
-        <div>
-          UX_YELLOW_900
-        </div>
-        <div>
-          #453A00
-        </div>
-      </p>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Foundations/Typography Typography 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="TypographyRow"
-  >
-    <div
-      className="TypographyRow__Example"
-    >
-      <div
-        className="font-type-70"
-      >
-        <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-70--medium"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-70--bold"
-        >
-          The fastest way to recruit research participants
-        </p>
-      </div>
-    </div>
-    <div
-      className="TypographyRow__Specs"
-    >
-      <ul>
-        <li>
-          <strong>
-            font-type-70
-          </strong>
-        </li>
-        <li>
-          Type: 
-          DM Sans, sans-serif
-        </li>
-        <li>
-          Size: 
-          1.5rem
-        </li>
-        <li>
-          Line-height: 
-          2rem
-        </li>
-        <li>
-          Weight: 
-          400 / Regular
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-70
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-70--medium
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-70--bold
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div
-    className="TypographyRow"
-  >
-    <div
-      className="TypographyRow__Example"
-    >
-      <div
-        className="font-type-60"
-      >
-        <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-60--medium"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-60--bold"
-        >
-          The fastest way to recruit research participants
-        </p>
-      </div>
-    </div>
-    <div
-      className="TypographyRow__Specs"
-    >
-      <ul>
-        <li>
-          <strong>
-            font-type-60
-          </strong>
-        </li>
-        <li>
-          Type: 
-          DM Sans, sans-serif
-        </li>
-        <li>
-          Size: 
-          1.25rem
-        </li>
-        <li>
-          Line-height: 
-          1.625rem
-        </li>
-        <li>
-          Weight: 
-          400 / Regular
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-60
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-60--medium
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-60--bold
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div
-    className="TypographyRow"
-  >
-    <div
-      className="TypographyRow__Example"
-    >
-      <div
-        className="font-type-50"
-      >
-        <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-50--medium"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-50--bold"
-        >
-          The fastest way to recruit research participants
-        </p>
-      </div>
-    </div>
-    <div
-      className="TypographyRow__Specs"
-    >
-      <ul>
-        <li>
-          <strong>
-            font-type-50
-          </strong>
-        </li>
-        <li>
-          Type: 
-          DM Sans, sans-serif
-        </li>
-        <li>
-          Size: 
-          1.125rem
-        </li>
-        <li>
-          Line-height: 
-          1.5rem
-        </li>
-        <li>
-          Weight: 
-          400 / Regular
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-50
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-50--medium
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-50--bold
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div
-    className="TypographyRow"
-  >
-    <div
-      className="TypographyRow__Example"
-    >
-      <div
-        className="font-type-40"
-      >
-        <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-40--medium"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-40--bold"
-        >
-          The fastest way to recruit research participants
-        </p>
->>>>>>> main
       </div>
     </div>
   </div>
@@ -29321,7 +25775,6 @@ exports[`Storyshots Layouts/Container Setting Column Widths In Row 1`] = `
        on medium and larger screens.
     </p>
     <div
-<<<<<<< release/1.37.0
       className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1"
     >
       <div
@@ -29450,85 +25903,10 @@ exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
             </h2>
           </div>
         </section>
-=======
-      className="TypographyRow__Specs"
-    >
-      <ul>
-        <li>
-          <strong>
-            font-type-40
-          </strong>
-        </li>
-        <li>
-          Type: 
-          DM Sans, sans-serif
-        </li>
-        <li>
-          Size: 
-          1rem
-        </li>
-        <li>
-          Line-height: 
-          1.375rem
-        </li>
-        <li>
-          Weight: 
-          400 / Regular
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-40
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-40--medium
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-40--bold
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <div
-    className="TypographyRow"
-  >
-    <div
-      className="TypographyRow__Example"
-    >
-      <div
-        className="font-type-30"
-      >
-        <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-30--medium"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-30--bold"
-        >
-          The fastest way to recruit research participants
-        </p>
->>>>>>> main
       </div>
     </div>
     <br />
     <div
-<<<<<<< release/1.37.0
       className="row"
     >
       <div
@@ -29599,58 +25977,6 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
     }
   }
 >
-=======
-      className="TypographyRow__Specs"
-    >
-      <ul>
-        <li>
-          <strong>
-            font-type-30
-          </strong>
-        </li>
-        <li>
-          Type: 
-          DM Sans, sans-serif
-        </li>
-        <li>
-          Size: 
-          0.875rem
-        </li>
-        <li>
-          Line-height: 
-          1.25rem
-        </li>
-        <li>
-          Weight: 
-          400 / Regular
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-30
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-30--medium
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-30--bold
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>
->>>>>>> main
   <div
     className="sc-bdvvtL kHhtyn"
     height="100%"
@@ -29659,7 +25985,6 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
       className="ProfileCell"
     >
       <div
-<<<<<<< release/1.37.0
         className="ProfileCell__image"
       >
         <div
@@ -29687,20 +26012,6 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
       >
         <div
           className="ProfileCell__content__name__container"
-=======
-        className="font-type-20"
-      >
-        <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-20--medium"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-20--bold"
->>>>>>> main
         >
           <h5
             className="ProfileCell__content__name"
@@ -29718,7 +26029,6 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
     <div
       className="ProfileCell"
     >
-<<<<<<< release/1.37.0
       <div
         className="ProfileCell__image"
       >
@@ -29805,60 +26115,11 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
           riley+3@userinterviews.com
         </div>
       </div>
-=======
-      <ul>
-        <li>
-          <strong>
-            font-type-20
-          </strong>
-        </li>
-        <li>
-          Type: 
-          DM Sans, sans-serif
-        </li>
-        <li>
-          Size: 
-          0.75rem
-        </li>
-        <li>
-          Line-height: 
-          1rem
-        </li>
-        <li>
-          Weight: 
-          400 / Regular
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-20
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-20--medium
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-20--bold
-          </span>
-        </li>
-      </ul>
->>>>>>> main
     </div>
     <div
       className="ProfileCell"
     >
       <div
-<<<<<<< release/1.37.0
         className="ProfileCell__image"
       >
         <div
@@ -29886,20 +26147,6 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
       >
         <div
           className="ProfileCell__content__name__container"
-=======
-        className="font-type-10"
-      >
-        <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-10--medium"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-10--bold"
->>>>>>> main
         >
           <h5
             className="ProfileCell__content__name"
@@ -29917,7 +26164,6 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
     <div
       className="ProfileCell"
     >
-<<<<<<< release/1.37.0
       <div
         className="ProfileCell__image"
       >
@@ -30004,58 +26250,6 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
           riley+6@userinterviews.com
         </div>
       </div>
-=======
-      <ul>
-        <li>
-          <strong>
-            font-type-10
-          </strong>
-        </li>
-        <li>
-          Type: 
-          DM Sans, sans-serif
-        </li>
-        <li>
-          Size: 
-          0.625rem
-        </li>
-        <li>
-          Line-height: 
-          0.875rem
-        </li>
-        <li>
-          Weight: 
-          400 / Regular
-        </li>
-        <li>
-          Letter-spacing: 
-          0.0625rem
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-10
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-10--medium
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-10--bold
-          </span>
-        </li>
-      </ul>
->>>>>>> main
     </div>
   </div>
 </div>
@@ -30087,7 +26281,6 @@ exports[`Storyshots Layouts/Flex Flex Container 1`] = `
       className="ProfileCell"
     >
       <div
-<<<<<<< release/1.37.0
         className="ProfileCell__image"
       >
         <div
@@ -30115,20 +26308,6 @@ exports[`Storyshots Layouts/Flex Flex Container 1`] = `
       >
         <div
           className="ProfileCell__content__name__container"
-=======
-        className="font-type-10--uppercase"
-      >
-        <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-10--medium-uppercase"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-10--bold-uppercase"
->>>>>>> main
         >
           <h5
             className="ProfileCell__content__name"
@@ -30146,7 +26325,6 @@ exports[`Storyshots Layouts/Flex Flex Container 1`] = `
     <div
       className="ProfileCell"
     >
-<<<<<<< release/1.37.0
       <div
         className="ProfileCell__image"
       >
@@ -30367,622 +26545,13 @@ exports[`Storyshots Layouts/Flex Flex Container 1`] = `
         >
           riley+6@userinterviews.com
         </div>
-=======
-      <ul>
-        <li>
-          <strong>
-            font-type-10--uppercase
-          </strong>
-        </li>
-        <li>
-          Type: 
-          DM Sans, sans-serif
-        </li>
-        <li>
-          Size: 
-          0.625rem
-        </li>
-        <li>
-          Line-height: 
-          0.875rem
-        </li>
-        <li>
-          Weight: 
-          400 / Regular
-        </li>
-        <li>
-          Letter-spacing: 
-          0.0625rem
-        </li>
-        <li>
-          Text-transform: 
-          Uppercase
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-10--uppercase
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-10--medium-uppercase
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-10--bold-uppercase
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layouts/CardStack Centered 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    style={
-      Object {
-        "display": "flex",
-        "justifyContent": "center",
-      }
-    }
-  >
-    <div
-      className="CardStack CardStack--sm"
-    >
-      <h1
-        style={
-          Object {
-            "fontSize": "1.5rem",
-            "fontWeight": 700,
-          }
-        }
-      >
-        CardStack
-      </h1>
-      <section
-        className="Card"
-      >
-        <div
-          className="Card__header"
-        >
-          <h2
-            className="Card__title"
-          >
-            Card 1
-          </h2>
-        </div>
-        <p>
-          Many pages consist of 
-          <code>
-            CardStack
-          </code>
-           containers centered on the page.
-        </p>
-        <p>
-          <code>
-            CardStack
-          </code>
-           can be placed in any container and aligned as needed. This example is in a container with 
-          <code>
-            display: flex; justify-content: center;
-          </code>
-        </p>
-      </section>
-      <section
-        className="Card"
-      >
-        <div
-          className="Card__header"
-        >
-          <h2
-            className="Card__title"
-          >
-            Card 2
-          </h2>
-        </div>
-      </section>
-      <section
-        className="Card"
-      >
-        <div
-          className="Card__header"
-        >
-          <h2
-            className="Card__title"
-          >
-            Card 3
-          </h2>
-        </div>
-      </section>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layouts/CardStack Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="CardStack CardStack--sm"
-  >
-    <h1
-      style={
-        Object {
-          "fontSize": "1.5rem",
-          "fontWeight": 700,
-        }
-      }
-    >
-      CardStack
-    </h1>
-    <section
-      className="Card"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 1
-        </h2>
-      </div>
-      <p>
-        A layout container for a vertical stack of 
-        <code>
-          Card
-        </code>
-         components
-      </p>
-      <p>
-        Adjust the 
-        <code>
-          size
-        </code>
-         knob below
-      </p>
-    </section>
-    <section
-      className="Card"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 2
-        </h2>
-      </div>
-    </section>
-    <section
-      className="Card"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 3
-        </h2>
-      </div>
-    </section>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layouts/Container Auto Layout Columns 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="container"
-  >
-    <p>
-      When no column widths are specified the 
-      <code>
-        &lt;Col&gt; 
-      </code>
-      component will render equal width columns.
-    </p>
-    <div
-      className="row"
-    >
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              1 of 2
-            </h2>
-          </div>
-        </section>
-      </div>
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              2 of 2
-            </h2>
-          </div>
-        </section>
-      </div>
-    </div>
-    <br />
-    <div
-      className="row"
-    >
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              1 of 3
-            </h2>
-          </div>
-        </section>
-      </div>
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              2 of 3
-            </h2>
-          </div>
-        </section>
-      </div>
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              3 of 3
-            </h2>
-          </div>
-        </section>
       </div>
     </div>
   </div>
 </div>
 `;
 
-exports[`Storyshots Layouts/Container Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="container"
-  >
-    <div
-      className="row"
-    >
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              Default container
-            </h2>
-          </div>
-          <code>
-            &lt;Container&gt;
-          </code>
-           provides a means to center and horizontally pad your site's contents. Use Container for a responsive pixel width.
-        </section>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layouts/Container Fluid Container 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="container-fluid"
-  >
-    <div
-      className="row"
-    >
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              Fluid container
-            </h2>
-          </div>
-          You can use 
-          <code>
-            &lt;Container fluid /&gt;
-          </code>
-           for width: 100% across all viewport and device sizes.
-        </section>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layouts/Container Fluid Container With Breakpoints 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="container-md"
-  >
-    <div
-      className="row"
-    >
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              Fluid container with breakpoints
-            </h2>
-          </div>
-          You can set breakpoints for the 
-          <code>
-            fluid
-          </code>
-           prop. Setting it to a breakpoint 
-          <code>
-            ['sm', 'md', 'lg', 'xl', 'xxl']
-          </code>
-           will set the Container as fluid until the specified breakpoint.
-        </section>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layouts/Container Mixing Breakpoints 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="container"
-  >
-    <div
-      className="row"
-    >
-      <div
-        className="col-md-8 col-12"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              1 of 2
-            </h2>
-          </div>
-          <p>
-            <code>
-              md={8} xs={12}
-            </code>
-          </p>
-          <p>
-            You can also mix and match breakpoints to create different grids depending on the screen size.
-          </p>
-        </section>
-      </div>
-      <div
-        className="col-md-4 col-6"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              2 of 2
-            </h2>
-          </div>
-          <p>
-            <code>
-              md={4} xs={6}
-            </code>
-          </p>
-        </section>
-      </div>
-    </div>
-  </div>
-  <br />
-  <div
-    className="container"
-  >
-    <div
-      className="row"
-    >
-      <div
-        className="col-md-4 col-3"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              1 of 3
-            </h2>
-          </div>
-          <p>
-            <code>
-              md={4} xs={3}
-            </code>
-          </p>
-        </section>
-      </div>
-      <div
-        className="col-md-4 col-3"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              2 of 3
-            </h2>
-          </div>
-          <p>
-            <code>
-              md={4} xs={3}
-            </code>
-          </p>
-        </section>
-      </div>
-      <div
-        className="col-md-4 col-3"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              3 of 3
-            </h2>
-          </div>
-          <p>
-            <code>
-              md={4} xs={3}
-            </code>
-          </p>
-        </section>
->>>>>>> main
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-<<<<<<< release/1.37.0
 exports[`Storyshots Layouts/Flex Flex Item 1`] = `
-=======
-exports[`Storyshots Layouts/Container Offsetting Columns 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -30990,7 +26559,6 @@ exports[`Storyshots Layouts/Container Offsetting Columns 1`] = `
     }
   }
 >
-<<<<<<< release/1.37.0
   <h1
     style={
       Object {
@@ -31100,267 +26668,9 @@ exports[`Storyshots Layouts/Container Offsetting Columns 1`] = `
             riley+2@userinterviews.com
           </div>
         </div>
-=======
-  <div
-    className="container"
-  >
-    <div
-      className="row"
-    >
-      <div
-        className="col-md-4"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              1 of 2
-            </h2>
-          </div>
-          <p>
-            <code>
-              md={4}
-            </code>
-          </p>
-        </section>
-      </div>
-      <div
-        className="col-md-6 offset-md-2"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              2 of 2
-            </h2>
-          </div>
-          <p>
-            <code>
-              md={{ span: 6, offset: 2 }}
-            </code>
-          </p>
-          <p>
-            For offsetting grid columns you can set an 
-            <code>
-              offset
-            </code>
-             value.
-          </p>
-        </section>
       </div>
     </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layouts/Container Responsive Grids 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="container"
-  >
     <div
-      className="row"
-    >
-      <div
-        className="col-sm-8"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              1 of 2
-            </h2>
-          </div>
-          <p>
-            <code>
-              sm=
-              8
-            </code>
-          </p>
-          <p>
-            The 
-            <code>
-              Col
-            </code>
-             lets you specify column widths across 6 breakpoint sizes (xs, sm, md, lg, xl and xxl). For every breakpoint, you can specify the amount of columns to span, or set the prop to 
-            <code>
-              &lt;Col lg={true} /&gt;
-            </code>
-             for auto layout widths.
-          </p>
-        </section>
-      </div>
-      <div
-        className="col-sm-4"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              2 of 2
-            </h2>
-          </div>
-          <p>
-            <code>
-              sm=
-              4
-            </code>
-          </p>
-        </section>
-      </div>
-    </div>
-  </div>
-  <br />
-  <div
-    className="container"
-  >
-    <div
-      className="row"
-    >
-      <div
-        className="col-sm"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              1 of 3
-            </h2>
-          </div>
-          <p>
-            <code>
-              sm={true}
-            </code>
-          </p>
-          <p>
-            Or set the prop to 
-            <code>
-              &lt;Col lg={true}/&gt;
-            </code>
-             for auto layout widths.
-          </p>
-        </section>
-      </div>
-      <div
-        className="col-sm"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              2 of 3
-            </h2>
-          </div>
-          <p>
-            <code>
-              sm={true}
-            </code>
-          </p>
-        </section>
-      </div>
-      <div
-        className="col-sm"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              3 of 3
-            </h2>
-          </div>
-          <p>
-            <code>
-              sm={true}
-            </code>
-          </p>
-        </section>
->>>>>>> main
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Layouts/Container Setting Column Widths In Row 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    className="container"
-  >
-    <p>
-      The 
-      <code>
-        Row
-      </code>
-       lets you specify column widths across 5 breakpoint sizes (xs, sm, md, lg, xl and xxl). For every breakpoint, you can specify the amount of columns that will fit next to each other. You can also specify auto to set the columns to their natural widths.
-    </p>
-    <p>
-      Note that 
-      <code>
-        Row
-      </code>
-       column widths will override 
-      <code>
-        Col
-      </code>
-      widths set on lower breakpoints when viewed on larger screens. The 
-      <code>
-        &lt;Col xs={6} /&gt;
-      </code>
-       size will be overriden by
-      <code>
-        &lt;Row md={4} /&gt;
-      </code>
-       on medium and larger screens.
-    </p>
-    <div
-<<<<<<< release/1.37.0
       className="sc-bdvvtL gZrZHX"
     >
       <div
@@ -31407,71 +26717,13 @@ exports[`Storyshots Layouts/Container Setting Column Widths In Row 1`] = `
             riley+3@userinterviews.com
           </div>
         </div>
-=======
-      className="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-1"
-    >
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              1 of 3
-            </h2>
-          </div>
-        </section>
-      </div>
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              2 of 3
-            </h2>
-          </div>
-        </section>
-      </div>
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              3 of 3
-            </h2>
-          </div>
-        </section>
->>>>>>> main
       </div>
     </div>
   </div>
 </div>
 `;
 
-<<<<<<< release/1.37.0
 exports[`Storyshots Layouts/Main Accessibility 1`] = `
-=======
-exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
->>>>>>> main
 <div
   style={
     Object {
@@ -31479,19 +26731,10 @@ exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
     }
   }
 >
-<<<<<<< release/1.37.0
   <main
     className="Main container-fluid"
-=======
-  <div
-    className="container"
->>>>>>> main
   >
-    <p>
-      Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.
-    </p>
     <div
-<<<<<<< release/1.37.0
       style={
         Object {
           "display": "flex",
@@ -31512,12 +26755,6 @@ exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
         >
           Accessibility information
         </h1>
-=======
-      className="row"
-    >
-      <div
-        className="col"
-      >
         <section
           className="Card"
         >
@@ -31527,87 +26764,6 @@ exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
             <h2
               className="Card__title"
             >
-              1 of 3
-            </h2>
-          </div>
-        </section>
-      </div>
-      <div
-        className="col-8"
-      >
->>>>>>> main
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-<<<<<<< release/1.37.0
-=======
-          >
-            <h2
-              className="Card__title"
-            >
-              2 of 3 (adjust me!)
-            </h2>
-          </div>
-          <code>
-            xs={8}
-          </code>
-        </section>
-      </div>
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              3 of 3
-            </h2>
-          </div>
-        </section>
-      </div>
-    </div>
-    <br />
-    <div
-      className="row"
-    >
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              1 of 3
-            </h2>
-          </div>
-        </section>
-      </div>
-      <div
-        className="col-4"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
->>>>>>> main
-          >
-            <h2
-              className="Card__title"
-            >
-<<<<<<< release/1.37.0
               Why is it important to use Main?
             </h2>
           </div>
@@ -31637,32 +26793,6 @@ exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
               W3C: ARIA Landmarks Example
             </a>
           </span>
-=======
-              2 of 3
-            </h2>
-          </div>
-          <code>
-            xs=
-            4
-          </code>
-        </section>
-      </div>
-      <div
-        className="col"
-      >
-        <section
-          className="Card"
-        >
-          <div
-            className="Card__header"
-          >
-            <h2
-              className="Card__title"
-            >
-              3 of 3
-            </h2>
-          </div>
->>>>>>> main
         </section>
       </div>
     </div>
