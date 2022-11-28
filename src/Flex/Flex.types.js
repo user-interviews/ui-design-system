@@ -23,7 +23,7 @@ export const FLEX_PROPS = {
   flexWrap: {
     wrap: 'wrap',
     noWrap: 'no-wrap',
-    reverse: 'reverse',
+    wrapReverse: 'wrap-reverse',
   },
   justifyContent: {
     flexStart: 'flex-start',
