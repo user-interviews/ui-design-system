@@ -14,9 +14,11 @@ export const FLEX_PROPS = {
     start: 'start',
     end: 'end',
   },
-  direction: {
+  flexDirection: {
     column: 'column',
+    columnReverse: 'column-reverse',
     row: 'row',
+    rowReverse: 'row-reverse',
   },
   flexWrap: {
     wrap: 'wrap',

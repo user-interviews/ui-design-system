@@ -47,9 +47,9 @@ export const Default = () => (
     alignItems={radios('alignItems', Object.values(FLEX_PROPS.alignItems))}
     alignSelf={radios('alignSelf', Object.values(FLEX_PROPS.alignSelf))}
     container={boolean('container', true)}
-    direction={radios('direction', Object.values(FLEX_PROPS.direction))}
     flex={text('flex')}
     flexBasis={text('flexBasis')}
+    flexDirection={radios('flexDirection', Object.values(FLEX_PROPS.flexDirection))}
     flexGrow={text('flexGrow')}
     flexShrink={text('flexShrink')}
     flexWrap={radios('flexWrap', Object.values(FLEX_PROPS.flexWrap))}
@@ -72,7 +72,7 @@ export const FlexContainer = () => (
     <Flex
       alignItems={radios('alignItems', Object.values(FLEX_PROPS.alignItems))}
       container
-      direction={radios('direction', Object.values(FLEX_PROPS.direction))}
+      flexDirection={radios('flexDirection', Object.values(FLEX_PROPS.flexDirection))}
       flexWrap={radios('flexWrap', Object.values(FLEX_PROPS.flexWrap))}
       height="100px"
       justifyContent={radios('justifyContent', Object.values(FLEX_PROPS.justifyContent))}

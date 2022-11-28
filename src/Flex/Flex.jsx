@@ -18,9 +18,9 @@ Flex.propTypes = {
     If `true`, `display: flex;` otherwise `display: block;`
   */
   container: PropTypes.bool,
-  direction: PropTypes.oneOf(Object.values(FLEX_PROPS.direction)),
   flex: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   flexBasis: PropTypes.string,
+  flexDirection: PropTypes.oneOf(Object.values(FLEX_PROPS.flexDirection)),
   flexGrow: PropTypes.number,
   flexShrink: PropTypes.number,
   flexWrap: PropTypes.oneOf(Object.values(FLEX_PROPS.flexWrap)),
@@ -49,9 +49,9 @@ Flex.defaultProps = {
   alignSelf: undefined,
   className: undefined,
   container: undefined,
-  direction: undefined,
   flex: undefined,
   flexBasis: undefined,
+  flexDirection: undefined,
   flexGrow: undefined,
   flexShrink: undefined,
   flexWrap: undefined,

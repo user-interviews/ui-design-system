@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 export const FlexWrapper = styled.div`
   ${({
     container,
-    direction,
+    flexDirection,
     flexWrap,
     alignItems,
     justifyContent,
@@ -22,9 +22,9 @@ export const FlexWrapper = styled.div`
     css`
     display: ${container ? 'flex' : 'block'};
 
-    ${direction &&
+    ${flexDirection &&
     css`
-      flex-direction: ${direction};
+      flex-direction: ${flexDirection};
     `}
 
     ${flexWrap &&
