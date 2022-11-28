@@ -7,9 +7,9 @@ import {
   withKnobs,
 } from '@storybook/addon-knobs';
 
-import { colors } from 'src/Styles';
 import Flex from './Flex';
 import { FLEX_PROPS } from './Flex.types';
+import ProfileCell from '../ProfileCell';
 
 import mdx from './Flex.mdx';
 
@@ -24,23 +24,10 @@ export default {
   },
 };
 
-const Box = ({ children }) => (
-  <div style={{
-    height: '100%',
-    width: '100px',
-    backgroundColor: colors.UX_EMERALD_600,
-    borderRadius: '4px',
-    color: colors.UX_WHITE,
-    fontSize: '1rem',
-    border: `2px solid ${colors.UX_NAVY}`,
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-  }}
-  >
-    {children}
-  </div>
-);
+const userNoImage = {
+  initials: 'RR',
+  name: 'Riley Researcher',
+};
 
 export const Default = () => (
   <Flex
@@ -52,17 +39,44 @@ export const Default = () => (
     flexDirection={radios('flexDirection', Object.values(FLEX_PROPS.flexDirection))}
     flexGrow={text('flexGrow')}
     flexShrink={text('flexShrink')}
-    flexWrap={radios('flexWrap', Object.values(FLEX_PROPS.flexWrap))}
-    height={text('height', '100px')}
+    flexWrap={radios('flexWrap', Object.values(FLEX_PROPS.flexWrap), 'wrap')}
+    height={text('height', '100%')}
     justifyContent={radios('justifyContent', Object.values(FLEX_PROPS.justifyContent))}
     justifySelf={radios('justifySelf', Object.values(FLEX_PROPS.justifySelf))}
     maxHeight={text('maxHeight')}
     maxWidth={text('maxWidth')}
     width={text('width')}
   >
-    <Box>Box 1</Box>
-    <Box>Box 2</Box>
-    <Box>Box 3</Box>
+    <ProfileCell
+      colorId={1}
+      subtitle="riley+1@userinterviews.com"
+      user={userNoImage}
+    />
+    <ProfileCell
+      colorId={2}
+      subtitle="riley+2@userinterviews.com"
+      user={userNoImage}
+    />
+    <ProfileCell
+      colorId={3}
+      subtitle="riley+3@userinterviews.com"
+      user={userNoImage}
+    />
+    <ProfileCell
+      colorId={4}
+      subtitle="riley+4@userinterviews.com"
+      user={userNoImage}
+    />
+    <ProfileCell
+      colorId={5}
+      subtitle="riley+5@userinterviews.com"
+      user={userNoImage}
+    />
+    <ProfileCell
+      colorId={6}
+      subtitle="riley+6@userinterviews.com"
+      user={userNoImage}
+    />
   </Flex>
   );
 
@@ -73,15 +87,40 @@ export const FlexContainer = () => (
       alignItems={radios('alignItems', Object.values(FLEX_PROPS.alignItems))}
       container
       flexDirection={radios('flexDirection', Object.values(FLEX_PROPS.flexDirection))}
-      flexWrap={radios('flexWrap', Object.values(FLEX_PROPS.flexWrap))}
-      height="100px"
+      flexWrap={radios('flexWrap', Object.values(FLEX_PROPS.flexWrap), 'wrap')}
+      height="100%"
       justifyContent={radios('justifyContent', Object.values(FLEX_PROPS.justifyContent))}
     >
-      <Box>Box 1</Box>
-      <Box>Box 2</Box>
-      <Box>Box 3</Box>
-      <Box>Box 4</Box>
-      <Box>Box 5</Box>
+      <ProfileCell
+        colorId={1}
+        subtitle="riley+1@userinterviews.com"
+        user={userNoImage}
+      />
+      <ProfileCell
+        colorId={2}
+        subtitle="riley+2@userinterviews.com"
+        user={userNoImage}
+      />
+      <ProfileCell
+        colorId={3}
+        subtitle="riley+3@userinterviews.com"
+        user={userNoImage}
+      />
+      <ProfileCell
+        colorId={4}
+        subtitle="riley+4@userinterviews.com"
+        user={userNoImage}
+      />
+      <ProfileCell
+        colorId={5}
+        subtitle="riley+5@userinterviews.com"
+        user={userNoImage}
+      />
+      <ProfileCell
+        colorId={6}
+        subtitle="riley+6@userinterviews.com"
+        user={userNoImage}
+      />
     </Flex>
   </>
 );
@@ -92,20 +131,31 @@ export const FlexItem = () => (
     <Flex container>
       <Flex
         alignSelf={radios('alignSelf', Object.values(FLEX_PROPS.alignSelf))}
-        flex={text('flex')}
+        flex={text('flex', '2')}
         flexBasis={text('flexBasis')}
         flexGrow={text('flexGrow')}
         flexShrink={text('flexShrink')}
-        height="100px"
         justifySelf={radios('justifySelf', Object.values(FLEX_PROPS.justifySelf))}
       >
-        <Box>Adjust me</Box>
+        <ProfileCell
+          colorId={1}
+          subtitle="change@userinterviews.com"
+          user={{ name: 'Change Me', initials: 'CM' }}
+        />
       </Flex>
-      <Flex>
-        <Box>Box 2</Box>
+      <Flex flex={1}>
+        <ProfileCell
+          colorId={2}
+          subtitle="riley+2@userinterviews.com"
+          user={userNoImage}
+        />
       </Flex>
-      <Flex>
-        <Box>Box 3</Box>
+      <Flex flex={1}>
+        <ProfileCell
+          colorId={3}
+          subtitle="riley+3@userinterviews.com"
+          user={userNoImage}
+        />
       </Flex>
     </Flex>
   </>
