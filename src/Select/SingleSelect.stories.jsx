@@ -114,10 +114,18 @@ export const InModal = () => (
 
 export const CustomOptionWithDescription = () => {
   const optionsWithDescriptions = [
-    { label: 'Org Admin', value: 1, description: 'Short description of role capabilities' },
-    { label: 'Administrator', value: 2, description: 'Short description of role capabilities' },
-    { label: 'Researcher', value: 3, description: 'Short description of role capabilities' },
-    { label: 'Teammate', value: 4, description: 'Short description of role capabilities' },
+    {
+ label: 'Org Admin', value: 1, description: 'Short description of role capabilities', labelDescription: '(Full access)',
+},
+    {
+ label: 'Administrator', value: 2, description: 'Short description of role capabilities', labelDescription: '(Full access)',
+},
+    {
+ label: 'Researcher', value: 3, description: 'Short description of role capabilities', labelDescription: '(Standard access)',
+},
+    {
+ label: 'Teammate', value: 4, description: 'Short description of role capabilities', labelDescription: '(Limited access)',
+},
   ];
 
   return (
