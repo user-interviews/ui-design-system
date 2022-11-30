@@ -21239,6 +21239,757 @@ exports[`Storyshots Components/Tooltip With Tracking 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Typography Alignment 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <p
+    className="Typography Typography--bodyMd Typography--regular"
+    style={
+      Object {
+        "textAlign": "start",
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Typography Typography--bodyMd Typography--regular"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Typography Typography--bodyMd Typography--regular"
+    style={
+      Object {
+        "textAlign": "end",
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Components/Typography Body 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <p
+    className="Typography Typography--bodyLg Typography--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Typography Typography--bodyMd Typography--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Typography Typography--bodySm Typography--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Components/Typography Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <th
+          className="TableCell TableCell__header"
+          style={null}
+        >
+          as
+        </th>
+        <th
+          className="TableCell TableCell__header"
+          style={null}
+        >
+          variant
+        </th>
+        <th
+          className="TableCell TableCell__header"
+          style={null}
+        >
+          fontWeight
+        </th>
+        <th
+          className="TableCell TableCell__header"
+          style={null}
+        >
+          fontSize
+        </th>
+        <th
+          className="TableCell TableCell__header"
+          style={null}
+        >
+          scss mixin
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <h1
+            className="Typography Typography--heading3xl Typography--regular"
+            style={
+              Object {
+                "textAlign": undefined,
+              }
+            }
+          >
+            h1
+          </h1>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <code>
+            heading3xl
+          </code>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          regular
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          1.5rem
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-70
+          </span>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <h2
+            className="Typography Typography--heading2xl Typography--regular"
+            style={
+              Object {
+                "textAlign": undefined,
+              }
+            }
+          >
+            h2
+          </h2>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <code>
+            heading2xl
+          </code>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          regular
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          1.25rem
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-60
+          </span>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <h3
+            className="Typography Typography--headingXl Typography--regular"
+            style={
+              Object {
+                "textAlign": undefined,
+              }
+            }
+          >
+            h3
+          </h3>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <code>
+            headingXl
+          </code>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          regular
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          1.125rem
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-50
+          </span>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <h4
+            className="Typography Typography--headingLg Typography--regular"
+            style={
+              Object {
+                "textAlign": undefined,
+              }
+            }
+          >
+            h4
+          </h4>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <code>
+            headingLg
+          </code>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          regular
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          1rem
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-40
+          </span>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <h5
+            className="Typography Typography--headingMd Typography--regular"
+            style={
+              Object {
+                "textAlign": undefined,
+              }
+            }
+          >
+            h5
+          </h5>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <code>
+            headingMd
+          </code>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          regular
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          .875rem
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-30
+          </span>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <h6
+            className="Typography Typography--headingSm Typography--regular"
+            style={
+              Object {
+                "textAlign": undefined,
+              }
+            }
+          >
+            h6
+          </h6>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <code>
+            headingSm
+          </code>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          regular
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          .75rem
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-20
+          </span>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <h6
+            className="Typography Typography--headingXs Typography--regular"
+            style={
+              Object {
+                "textAlign": undefined,
+              }
+            }
+          >
+            h6
+          </h6>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <code>
+            headingXs
+          </code>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          regular
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          .625rem
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-10
+          </span>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <p
+            className="Typography Typography--bodyLg Typography--regular"
+            style={
+              Object {
+                "textAlign": undefined,
+              }
+            }
+          >
+            p
+          </p>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <code>
+            bodyLg
+          </code>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          regular
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          1rem
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-40
+          </span>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <p
+            className="Typography Typography--bodyMd Typography--regular"
+            style={
+              Object {
+                "textAlign": undefined,
+              }
+            }
+          >
+            p
+          </p>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <code>
+            bodyMd
+          </code>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          regular
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          .875rem
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-30
+          </span>
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <p
+            className="Typography Typography--bodySm Typography--regular"
+            style={
+              Object {
+                "textAlign": undefined,
+              }
+            }
+          >
+            p
+          </p>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <code>
+            bodySm
+          </code>
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          regular
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          .75rem
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          <span
+            className="Pill Pill--blue"
+          >
+            font-type-20
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`Storyshots Components/Typography Heading 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <h1
+    className="Typography Typography--heading3xl Typography--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h1>
+  <h2
+    className="Typography Typography--heading2xl Typography--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+  <h3
+    className="Typography Typography--headingXl Typography--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h3>
+  <h4
+    className="Typography Typography--headingLg Typography--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h4>
+  <h5
+    className="Typography Typography--headingMd Typography--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h5>
+  <h6
+    className="Typography Typography--headingSm Typography--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h6>
+  <h6
+    className="Typography Typography--headingXs Typography--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h6>
+</div>
+`;
+
+exports[`Storyshots Components/Typography Weight 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <p
+    className="Typography Typography--bodyMd Typography--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Typography Typography--bodyMd Typography--medium"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Typography Typography--bodyMd Typography--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+</div>
+`;
+
 exports[`Storyshots Foundations/Color Palette Blue 1`] = `
 <div
   style={

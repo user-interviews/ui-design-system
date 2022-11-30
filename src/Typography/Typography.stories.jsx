@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { Pill } from '../Pill';
 import {
  Table, TableHead, TableRow, TableBody, TableCell,
 } from '../Table';
@@ -17,16 +18,36 @@ export default {
 };
 
 const typographyData = [
-  { as: 'h1', variant: 'heading3xl', fontWeight: 'regular' },
-  { as: 'h2', variant: 'heading2xl', fontWeight: 'regular' },
-  { as: 'h3', variant: 'headingXl', fontWeight: 'regular' },
-  { as: 'h4', variant: 'headingLg', fontWeight: 'regular' },
-  { as: 'h5', variant: 'headingMd', fontWeight: 'regular' },
-  { as: 'h6', variant: 'headingSm', fontWeight: 'regular' },
-  { as: 'h6', variant: 'headingXs', fontWeight: 'regular' },
-  { as: 'p', variant: 'bodyLg', fontWeight: 'regular' },
-  { as: 'p', variant: 'bodyMd', fontWeight: 'regular' },
-  { as: 'p', variant: 'bodySm', fontWeight: 'regular' },
+  {
+ as: 'h1', variant: 'heading3xl', fontWeight: 'regular', fontSize: '1.5rem', mixin: 'font-type-70',
+},
+  {
+ as: 'h2', variant: 'heading2xl', fontWeight: 'regular', fontSize: '1.25rem', mixin: 'font-type-60',
+},
+  {
+ as: 'h3', variant: 'headingXl', fontWeight: 'regular', fontSize: '1.125rem', mixin: 'font-type-50',
+},
+  {
+ as: 'h4', variant: 'headingLg', fontWeight: 'regular', fontSize: '1rem', mixin: 'font-type-40',
+},
+  {
+ as: 'h5', variant: 'headingMd', fontWeight: 'regular', fontSize: '.875rem', mixin: 'font-type-30',
+},
+  {
+ as: 'h6', variant: 'headingSm', fontWeight: 'regular', fontSize: '.75rem', mixin: 'font-type-20',
+},
+  {
+ as: 'h6', variant: 'headingXs', fontWeight: 'regular', fontSize: '.625rem', mixin: 'font-type-10',
+},
+  {
+ as: 'p', variant: 'bodyLg', fontWeight: 'regular', fontSize: '1rem', mixin: 'font-type-40',
+},
+  {
+ as: 'p', variant: 'bodyMd', fontWeight: 'regular', fontSize: '.875rem', mixin: 'font-type-30',
+},
+  {
+ as: 'p', variant: 'bodySm', fontWeight: 'regular', fontSize: '.75rem', mixin: 'font-type-20',
+},
 ];
 
 export const Default = () => (
@@ -36,6 +57,8 @@ export const Default = () => (
         <TableCell header>as</TableCell>
         <TableCell header>variant</TableCell>
         <TableCell header>fontWeight</TableCell>
+        <TableCell header>fontSize</TableCell>
+        <TableCell header>scss mixin</TableCell>
       </TableRow>
     </TableHead>
     <TableBody>
@@ -52,6 +75,8 @@ export const Default = () => (
           </TableCell>
           <TableCell><code>{typography.variant}</code></TableCell>
           <TableCell>{typography.fontWeight}</TableCell>
+          <TableCell>{typography.fontSize}</TableCell>
+          <TableCell><Pill color="blue">{typography.mixin}</Pill></TableCell>
         </TableRow>
       )))}
     </TableBody>
