@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 
 import classNames from 'classnames';
 
+import { TYPOGRAPHY_PROPS } from './Typography.types';
 import './Typography.scss';
 
 const Typography = ({
@@ -38,11 +39,11 @@ Typography.propTypes = {
 };
 
 Typography.defaultProps = {
-  as: 'p',
+  as: TYPOGRAPHY_PROPS.as.p,
   className: undefined,
-  fontWeight: 'regular',
+  fontWeight: TYPOGRAPHY_PROPS.fontWeight.regular,
   textAlign: undefined,
-  variant: 'bodyMd',
+  variant: TYPOGRAPHY_PROPS.variant.bodyMd,
 };
 
 export default Typography;

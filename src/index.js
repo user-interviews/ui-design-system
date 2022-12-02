@@ -77,6 +77,7 @@ import {
 } from 'src/Toast';
 import { ToggleInput } from 'src/ToggleInput';
 import Tooltip from 'src/Tooltip';
+import { Typography, TYPOGRAPHY_PROPS } from 'src/Typography';
 
 export {
   Accordion,
@@ -151,6 +152,8 @@ export {
   Toast,
   ToggleInput,
   Tooltip,
+  Typography,
+  TYPOGRAPHY_PROPS,
   useToast,
   ValueContainer,
   withToast,
