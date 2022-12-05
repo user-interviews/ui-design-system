@@ -7,7 +7,7 @@ import { faTimes } from '@fortawesome/pro-solid-svg-icons';
 import './Pill.scss';
 
 export const PILL_COLORS = {
- BLUE: 'blue', ORANGE: 'orange', YELLOW: 'yellow', GREEN: 'green', GRAY: 'gray', SILVER: 'silver',
+ BLUE: 'blue', ORANGE: 'orange', YELLOW: 'yellow', RED: 'red', GREEN: 'green', GRAY: 'gray', SILVER: 'silver',
 };
 
 const Pill = ({

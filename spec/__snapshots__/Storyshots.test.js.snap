@@ -8204,6 +8204,11 @@ exports[`Storyshots Components/Pill Default 1`] = `
       yellow
     </span>
     <span
+      className="Pill Pill--red"
+    >
+      red
+    </span>
+    <span
       className="Pill Pill--green"
     >
       green

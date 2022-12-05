@@ -110,6 +110,31 @@
     }
   }
 
+  &--red {
+    background-color: $ux-red-100;
+    color: $ux-red-900;
+
+    .Pill__icon--lead {
+      color: $ux-red-900;
+      margin-right: $ux-spacing-10;
+    }
+
+    .Pill__button--close {
+      background-color: unset; 
+      border: none;
+      color: $ux-red-900;
+      margin-left: $ux-spacing-20;
+      margin-right: 0;
+      padding: 0;
+    }
+
+    &.Pill--closeable {
+      &:hover {
+        background-color: $ux-red-200;
+      }
+    }
+  }
+
   &--gray {
     background-color: $ux-gray-300;
     color: $ux-gray-800;

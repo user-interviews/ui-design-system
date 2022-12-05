@@ -53,6 +53,11 @@ export const Default = () => (
       yellow
     </Pill>
     <Pill
+      color={PILL_COLORS.RED}
+    >
+      red
+    </Pill>
+    <Pill
       color={PILL_COLORS.GREEN}
     >
       green
