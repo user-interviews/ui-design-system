@@ -75,28 +75,68 @@ export const Default = () => (
   </div>
 );
 
+export const Statuses = () => (
+  <Pills>
+    <Pill
+      color={PILL_COLORS.BLUE}
+    >
+      Informational
+    </Pill>
+    <Pill
+      color={PILL_COLORS.SILVER}
+    >
+      Informational
+    </Pill>
+    <Pill
+      color={PILL_COLORS.ORANGE}
+    >
+      Partially complete
+    </Pill>
+    <Pill
+      color={PILL_COLORS.YELLOW}
+    >
+      Incomplete
+    </Pill>
+    <Pill
+      color={PILL_COLORS.RED}
+    >
+      Attention
+    </Pill>
+    <Pill
+      color={PILL_COLORS.GREEN}
+    >
+      Active
+    </Pill>
+    <Pill
+      color={PILL_COLORS.GRAY}
+    >
+      Inactive
+    </Pill>
+  </Pills>
+);
+
 export const WithContainer = () => (
   <Pills>
     <Pill
-      color={PILL_COLORS.GRAY}
+      color={PILL_COLORS.SILVER}
       icon={faMicrophone}
     >
       1-on-1 Interview
     </Pill>
     <Pill
-      color={PILL_COLORS.GRAY}
+      color={PILL_COLORS.SILVER}
       icon={faGlobe}
     >
       Online
     </Pill>
     <Pill
-      color={PILL_COLORS.GRAY}
+      color={PILL_COLORS.SILVER}
       icon={faGiftCard}
     >
       $120 choice of dozens of digital gift cards
     </Pill>
     <Pill
-      color={PILL_COLORS.GRAY}
+      color={PILL_COLORS.SILVER}
       icon={faClock}
     >
       1 hour
