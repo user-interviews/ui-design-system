@@ -8204,6 +8204,11 @@ exports[`Storyshots Components/Pill Default 1`] = `
       yellow
     </span>
     <span
+      className="Pill Pill--red"
+    >
+      red
+    </span>
+    <span
       className="Pill Pill--green"
     >
       green
@@ -8217,6 +8222,56 @@ exports[`Storyshots Components/Pill Default 1`] = `
       className="Pill Pill--silver"
     >
       silver
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Pill Statuses 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Pills"
+  >
+    <span
+      className="Pill Pill--blue"
+    >
+      Informational
+    </span>
+    <span
+      className="Pill Pill--silver"
+    >
+      Informational
+    </span>
+    <span
+      className="Pill Pill--orange"
+    >
+      Partially complete
+    </span>
+    <span
+      className="Pill Pill--yellow"
+    >
+      Incomplete
+    </span>
+    <span
+      className="Pill Pill--red"
+    >
+      Attention
+    </span>
+    <span
+      className="Pill Pill--green"
+    >
+      Active
+    </span>
+    <span
+      className="Pill Pill--gray"
+    >
+      Inactive
     </span>
   </div>
 </div>
@@ -8274,7 +8329,7 @@ exports[`Storyshots Components/Pill With Container 1`] = `
     className="Pills"
   >
     <span
-      className="Pill Pill--gray"
+      className="Pill Pill--silver"
     >
       <svg
         aria-hidden="true"
@@ -8296,7 +8351,7 @@ exports[`Storyshots Components/Pill With Container 1`] = `
       1-on-1 Interview
     </span>
     <span
-      className="Pill Pill--gray"
+      className="Pill Pill--silver"
     >
       <svg
         aria-hidden="true"
@@ -8318,7 +8373,7 @@ exports[`Storyshots Components/Pill With Container 1`] = `
       Online
     </span>
     <span
-      className="Pill Pill--gray"
+      className="Pill Pill--silver"
     >
       <svg
         aria-hidden="true"
@@ -8340,7 +8395,7 @@ exports[`Storyshots Components/Pill With Container 1`] = `
       $120 choice of dozens of digital gift cards
     </span>
     <span
-      className="Pill Pill--gray"
+      className="Pill Pill--silver"
     >
       <svg
         aria-hidden="true"
