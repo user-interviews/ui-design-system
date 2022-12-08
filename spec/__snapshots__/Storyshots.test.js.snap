@@ -7343,6 +7343,190 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Row 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Heading Alignment 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": "left",
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": "right",
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Components/Heading Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Components/Heading Levels 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <h1
+    className="Heading Heading--xxxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h1>
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+  <h3
+    className="Heading Heading--xl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h3>
+  <h4
+    className="Heading Heading--lg Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h4>
+  <h5
+    className="Heading Heading--md Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h5>
+  <h6
+    className="Heading Heading--sm Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h6>
+  <h6
+    className="Heading Heading--xs Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h6>
+</div>
+`;
+
+exports[`Storyshots Components/Heading Weights 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+  <h2
+    className="Heading Heading--xxl Heading--medium"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+  <h2
+    className="Heading Heading--xxl Heading--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+</div>
+`;
+
 exports[`Storyshots Components/IconCell Default 1`] = `
 <div
   style={
@@ -20501,6 +20685,150 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
       </div>
     </span>
   </div>
+</div>
+`;
+
+exports[`Storyshots Components/Text Alignment 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <p
+    className="Text Text--md Text--regular"
+    style={
+      Object {
+        "textAlign": "left",
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Text Text--md Text--regular"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Text Text--md Text--regular"
+    style={
+      Object {
+        "textAlign": "right",
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Components/Text Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <p
+    className="Text Text--md Text--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Components/Text Sizes 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <p
+    className="Text Text--lg Text--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Text Text--md Text--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Text Text--sm Text--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Components/Text Weight 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <p
+    className="Text Text--md Text--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Text Text--md Text--medium"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Text Text--md Text--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
 </div>
 `;
 

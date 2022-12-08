@@ -1,0 +1,63 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Text from './Text';
+
+# Text
+
+##
+
+<h4>
+	Text communicates important content using clear visual patterns.
+</h4>
+
+<Canvas>
+  <Story id="components-text--default" />
+</Canvas>
+
+
+## Props
+
+<ArgsTable of={Text} />
+
+## Stories
+
+### Default 
+
+- By default `<Text>`, will render a `p` with size `md` and weight `regular`
+- You can use the `as` prop to swap out for an appropriate text element
+
+<Canvas>
+  <Story id="components-text--default" />
+</Canvas>
+
+### Sizes
+
+Adjust the font `size` with the available sizes:
+
+`lg`, `md`, `sm`
+
+<Canvas>
+  <Story id="components-text--default" />
+</Canvas>
+
+
+### Weight
+
+Use to give text one of the supported font weights: 
+
+`bold`, `medium`, or `regular`
+
+<Canvas>
+  <Story id="components-text--weight" />
+</Canvas>
+
+
+### Alignment
+
+Use to set text alignment: 
+
+`left`, `center`, or `right`
+
+<Canvas>
+  <Story id="components-text--alignment" />
+</Canvas>
+
