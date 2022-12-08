@@ -1,0 +1,32 @@
+@import '../../scss/theme.scss';
+
+.Text {
+
+  // Size
+
+  &--lg {
+    @include font-type-40;
+  }
+
+  &--md {
+    @include font-type-30;
+  }
+
+  &--sm {
+    @include font-type-20;
+  }
+
+  // Weight 
+
+  &--bold {
+    font-weight: $font-weight-bold;
+  }
+
+  &--medium {
+    font-weight: $font-weight-medium;
+  }
+
+  &--regular {
+    font-weight: $font-weight-regular;
+  }
+}

@@ -70,6 +70,7 @@ import {
   TableRow,
   TableSortLabel,
 } from 'src/Table';
+import { Text, TEXT_PROPS } from 'src/Text';
 import {
   Toast,
   useToast,
@@ -78,7 +79,6 @@ import {
 } from 'src/Toast';
 import { ToggleInput } from 'src/ToggleInput';
 import Tooltip from 'src/Tooltip';
-import { Typography, TYPOGRAPHY_PROPS } from 'src/Typography';
 
 export {
   Accordion,
@@ -152,11 +152,11 @@ export {
   TableHead,
   TableRow,
   TableSortLabel,
+  Text,
+  TEXT_PROPS,
   Toast,
   ToggleInput,
   Tooltip,
-  Typography,
-  TYPOGRAPHY_PROPS,
   useToast,
   ValueContainer,
   withToast,
