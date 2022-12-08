@@ -1,0 +1,87 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Heading from './Heading';
+
+# Heading
+
+##
+
+<h4>
+  Headings are used as the titles of each major section of a page in the interface. 
+</h4>
+
+<Canvas>
+  <Story id="components-heading--default" />
+</Canvas>
+
+
+## Props
+
+<ArgsTable of={Heading} />
+
+## Stories
+
+
+### Default
+
+A default `Heading` as a level `2` with size `xxl` and weight `bold`
+
+<Canvas>
+  <Story id="components-heading--default" />
+</Canvas>
+
+
+### Levels
+
+Use the appropriate heading level to create hierarchy on the page.
+
+Adjust the font `size` with the available sizes:
+
+`xxxl`, `xxl`, `xl`, `lg`, `md`, `sm`, `xs`
+
+<Canvas>
+  <Story id="components-heading--levels" />
+</Canvas>
+
+#### Best practices:
+
+**DO**
+- Use one unique `h1` per page that describes what that page is about, preferably starts just above the main content.
+
+**DON'T**
+- Do not choose a heading by its size, but by its level in the context of the content.
+- Do not skip a heading level from the top down. 
+
+#### Accessibility
+
+**Summary:** 
+- Use headings to describe content and use them consistently and semantically. This will help all users to better find the content they are looking for.
+- Font weight and size may be changed from `Heading` defaults as long as the semantic hierarchy is correct.
+
+
+**WCAG2 AA success criteria:**
+
+- [Success Criterion: 2.4.6 Headings and labels.](https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels) Provide ways to help users navigate, find content, and determine where they are. Headings and labels describe topic or purpose.
+- [Success Criterion: 3.2.3 Consistent Navigation Level.](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=246#consistent-navigation) Navigational mechanisms that are repeated on multiple Web pages within a set of Web pages occur in the same relative order each time they are repeated, unless a change is initiated by the user.
+- [Success Criterion: 1.3.1 Info and Relationships.](https://www.w3.org/WAI/WCAG21/quickref/?showtechniques=246#info-and-relationships) Information, structure, and relationships conveyed through presentation can be programmatically determined or are available in text. In other words: if it looks like a heading, it should be a heading in the HTML (and not for example text made bold).
+
+
+### Weights
+
+Use to give text a one of the supported font weights:
+
+`bold`, `medium`, or `regular`
+
+<Canvas>
+  <Story id="components-heading--weight" />
+</Canvas>
+
+
+### Alignment
+
+Use to set heading alignment:
+
+`left`, `center`, or `right`
+
+<Canvas>
+  <Story id="components-heading--alignment" />
+</Canvas>

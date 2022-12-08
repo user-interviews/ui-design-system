@@ -1,0 +1,47 @@
+@import '../../scss/theme.scss';
+
+.Heading {
+
+  &--xxxl {
+    @include font-type-70--bold;
+  }
+
+  &--xxl {
+    @include font-type-60--bold;
+  }
+
+  &--xl {
+    @include font-type-50--bold;
+  }
+
+  &--lg {
+    @include font-type-40--bold;
+  }
+
+  &--md {
+    @include font-type-30--bold;
+  }
+
+  &--sm {
+    @include font-type-20--bold;
+  }
+
+  &--xs {
+    @include font-type-10--bold;
+  }
+
+
+  // Weight 
+
+  &--bold {
+    font-weight: $font-weight-bold;
+  }
+
+  &--medium {
+    font-weight: $font-weight-medium;
+  }
+
+  &--regular {
+    font-weight: $font-weight-regular;
+  }
+}

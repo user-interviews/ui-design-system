@@ -25,6 +25,7 @@ import FadeTransition from 'src/FadeTransition';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
+import { Heading, HEADING_PROPS } from 'src/Heading';
 import IconCell from 'src/IconCell';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
@@ -110,6 +111,8 @@ export {
   Form,
   FormControlLabel,
   FormGroup,
+  Heading,
+  HEADING_PROPS,
   IconCell,
   Input,
   InputLabel,
