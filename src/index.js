@@ -26,6 +26,7 @@ import { Flex, FLEX_PROPS } from 'src/Flex';
 import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
+import { Heading, HEADING_PROPS } from 'src/Heading';
 import IconCell from 'src/IconCell';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
@@ -70,6 +71,7 @@ import {
   TableRow,
   TableSortLabel,
 } from 'src/Table';
+import { Text, TEXT_PROPS } from 'src/Text';
 import {
   Toast,
   useToast,
@@ -112,6 +114,8 @@ export {
   Form,
   FormControlLabel,
   FormGroup,
+  Heading,
+  HEADING_PROPS,
   IconCell,
   Input,
   InputLabel,
@@ -151,6 +155,8 @@ export {
   TableHead,
   TableRow,
   TableSortLabel,
+  Text,
+  TEXT_PROPS,
   Toast,
   ToggleInput,
   Tooltip,

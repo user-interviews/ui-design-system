@@ -7343,6 +7343,190 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Row 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Heading Alignment 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": "left",
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": "right",
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Components/Heading Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Components/Heading Levels 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <h1
+    className="Heading Heading--xxxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h1>
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+  <h3
+    className="Heading Heading--xl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h3>
+  <h4
+    className="Heading Heading--lg Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h4>
+  <h5
+    className="Heading Heading--md Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h5>
+  <h6
+    className="Heading Heading--sm Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h6>
+  <h6
+    className="Heading Heading--xs Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h6>
+</div>
+`;
+
+exports[`Storyshots Components/Heading Weights 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+  <h2
+    className="Heading Heading--xxl Heading--medium"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+  <h2
+    className="Heading Heading--xxl Heading--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+  </h2>
+</div>
+`;
+
 exports[`Storyshots Components/IconCell Default 1`] = `
 <div
   style={
@@ -8204,6 +8388,11 @@ exports[`Storyshots Components/Pill Default 1`] = `
       yellow
     </span>
     <span
+      className="Pill Pill--red"
+    >
+      red
+    </span>
+    <span
       className="Pill Pill--green"
     >
       green
@@ -8217,6 +8406,56 @@ exports[`Storyshots Components/Pill Default 1`] = `
       className="Pill Pill--silver"
     >
       silver
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Pill Statuses 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Pills"
+  >
+    <span
+      className="Pill Pill--blue"
+    >
+      Informational
+    </span>
+    <span
+      className="Pill Pill--silver"
+    >
+      Informational
+    </span>
+    <span
+      className="Pill Pill--orange"
+    >
+      Partially complete
+    </span>
+    <span
+      className="Pill Pill--yellow"
+    >
+      Incomplete
+    </span>
+    <span
+      className="Pill Pill--red"
+    >
+      Attention
+    </span>
+    <span
+      className="Pill Pill--green"
+    >
+      Active
+    </span>
+    <span
+      className="Pill Pill--gray"
+    >
+      Inactive
     </span>
   </div>
 </div>
@@ -8274,7 +8513,7 @@ exports[`Storyshots Components/Pill With Container 1`] = `
     className="Pills"
   >
     <span
-      className="Pill Pill--gray"
+      className="Pill Pill--silver"
     >
       <svg
         aria-hidden="true"
@@ -8296,7 +8535,7 @@ exports[`Storyshots Components/Pill With Container 1`] = `
       1-on-1 Interview
     </span>
     <span
-      className="Pill Pill--gray"
+      className="Pill Pill--silver"
     >
       <svg
         aria-hidden="true"
@@ -8318,7 +8557,7 @@ exports[`Storyshots Components/Pill With Container 1`] = `
       Online
     </span>
     <span
-      className="Pill Pill--gray"
+      className="Pill Pill--silver"
     >
       <svg
         aria-hidden="true"
@@ -8340,7 +8579,7 @@ exports[`Storyshots Components/Pill With Container 1`] = `
       $120 choice of dozens of digital gift cards
     </span>
     <span
-      className="Pill Pill--gray"
+      className="Pill Pill--silver"
     >
       <svg
         aria-hidden="true"
@@ -20446,6 +20685,150 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
       </div>
     </span>
   </div>
+</div>
+`;
+
+exports[`Storyshots Components/Text Alignment 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <p
+    className="Text Text--md Text--regular"
+    style={
+      Object {
+        "textAlign": "left",
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Text Text--md Text--regular"
+    style={
+      Object {
+        "textAlign": "center",
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Text Text--md Text--regular"
+    style={
+      Object {
+        "textAlign": "right",
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Components/Text Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <p
+    className="Text Text--md Text--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Components/Text Sizes 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <p
+    className="Text Text--lg Text--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Text Text--md Text--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Text Text--sm Text--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+</div>
+`;
+
+exports[`Storyshots Components/Text Weight 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <p
+    className="Text Text--md Text--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Text Text--md Text--medium"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
+  <p
+    className="Text Text--md Text--regular"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Source from a pool of more than 2.1 million participants to reach nearly any target audience.
+  </p>
 </div>
 `;
 
