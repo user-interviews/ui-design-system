@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-  withKnobs, boolean, number,
+  withKnobs, boolean, number, text,
 } from '@storybook/addon-knobs';
 
 import Card from 'src/Card';
@@ -29,7 +29,7 @@ export const MultiLine = () => (
 );
 
 export const HeightAndWidth = () => (
-  <LoadingSkeleton height={number('height', 44)} width={number('width', 200)} />
+  <LoadingSkeleton height={text('height', '44px')} width={text('width', '200px')} />
 );
 
 export const Circle = () => (

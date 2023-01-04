@@ -8,27 +8,82 @@ import 'react-loading-skeleton/dist/skeleton.css';
 import colors from '../Styles/colors/palette';
 
 const LoadingSkeleton = ({
- className, count, height, ...props
+ borderRadius,
+ circle,
+ className,
+ containerClassName,
+ containerTestId,
+ count,
+ height,
+ inline,
+ width,
+ ...props
 }) => (
   <SkeletonTheme baseColor={colors.UX_GRAY_300}>
     <Skeleton
+      borderRadius={borderRadius}
+      circle={circle}
       className={classNames('LoadingSkeleton', className)}
+      containerClassName={containerClassName}
+      containerTestId={containerTestId}
       count={count}
       height={height}
+      inline={inline}
+      width={width}
       {...props}
     />
   </SkeletonTheme>
 );
 
 LoadingSkeleton.propTypes = {
+  /**
+  The border radius of the skeleton.
+  */
+  borderRadius: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  /**
+  Makes the skeleton circular by setting border-radius to 50%.
+  */
+  circle: PropTypes.bool,
   className: PropTypes.string,
+  /**
+  A custom class name for the <span> that wraps the individual skeleton elements.
+  */
+  containerClassName: PropTypes.string,
+  /**
+  A string that is added to the container element as a data-testid attribute.
+  Use it with screen.getByTestId('...') from React Testing Library.
+  */
+  containerTestId: PropTypes.string,
+  /**
+  The number of lines of skeletons to render. If count is a decimal number like 3.5,
+  three full skeletons and one half-width skeleton will be rendered.
+  */
   count: PropTypes.number,
-  height: PropTypes.number,
+  /**
+  The height of the skeleton.
+  */
+  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  /**
+  By default, a <br /> is inserted after each skeleton so that each skeleton gets its own line.
+  When inline is true, no line breaks are inserted.
+  */
+  inline: PropTypes.bool,
+  /**
+  The width of the skeleton.
+  */
+  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
 };
 
 LoadingSkeleton.defaultProps = {
+  borderRadius: undefined,
   className: undefined,
-  count: 1,
+  circle: undefined,
+  containerClassName: undefined,
+  containerTestId: undefined,
+  count: undefined,
   height: 20,
+  inline: undefined,
+  width: undefined,
 };
+
 export default LoadingSkeleton;
