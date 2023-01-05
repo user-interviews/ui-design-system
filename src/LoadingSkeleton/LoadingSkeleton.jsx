@@ -7,29 +7,10 @@ import 'react-loading-skeleton/dist/skeleton.css';
 
 import colors from '../Styles/colors/palette';
 
-const LoadingSkeleton = ({
- borderRadius,
- circle,
- className,
- containerClassName,
- containerTestId,
- count,
- height,
- inline,
- width,
- ...props
-}) => (
+const LoadingSkeleton = ({ className, ...props }) => (
   <SkeletonTheme baseColor={colors.UX_GRAY_300}>
     <Skeleton
-      borderRadius={borderRadius}
-      circle={circle}
       className={classNames('LoadingSkeleton', className)}
-      containerClassName={containerClassName}
-      containerTestId={containerTestId}
-      count={count}
-      height={height}
-      inline={inline}
-      width={width}
       {...props}
     />
   </SkeletonTheme>
@@ -46,7 +27,7 @@ LoadingSkeleton.propTypes = {
   circle: PropTypes.bool,
   className: PropTypes.string,
   /**
-  A custom class name for the <span> that wraps the individual skeleton elements.
+  A custom class name for the `<span>` that wraps the individual skeleton elements.
   */
   containerClassName: PropTypes.string,
   /**
@@ -64,7 +45,7 @@ LoadingSkeleton.propTypes = {
   */
   height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
   /**
-  By default, a <br /> is inserted after each skeleton so that each skeleton gets its own line.
+  By default, a `<br />` is inserted after each skeleton so that each skeleton gets its own line.
   When inline is true, no line breaks are inserted.
   */
   inline: PropTypes.bool,
@@ -75,15 +56,15 @@ LoadingSkeleton.propTypes = {
 };
 
 LoadingSkeleton.defaultProps = {
-  borderRadius: undefined,
+  borderRadius: '0.25rem',
   className: undefined,
-  circle: undefined,
+  circle: false,
   containerClassName: undefined,
   containerTestId: undefined,
-  count: undefined,
-  height: 20,
-  inline: undefined,
-  width: undefined,
+  count: 1,
+  height: undefined,
+  inline: false,
+  width: '100%',
 };
 
 export default LoadingSkeleton;
