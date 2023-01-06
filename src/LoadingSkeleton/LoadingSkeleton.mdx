@@ -1,0 +1,77 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import LoadingSkeleton from './LoadingSkeleton';
+
+# LoadingSkeleton
+
+## 
+
+<h4>
+  A LoadingSkeleton is used to provide a low fidelity representation of content before it 
+  renders on the page. It improves load time perception for users.
+</h4>
+
+<Canvas>
+  <Story id="components-loadingskeleton--default" />
+</Canvas>
+
+### When to use 
+- For representing all content on initial page load 
+- For representing large or multiple content elements on a page (avoiding multiple LoadingOverlays at one time)
+- For components that are data-intesive and may take a few seconds to fully load 
+- Offering a simplified preview of loading content
+
+### When not to use
+- Do not use a LoadingSkeleton and LoadingOverlay together. Use the one that best fits the context.
+
+### LoadingSkeleton vs. LoadingOverlay?
+
+| Scenario                                                               | LoadingSkeleton                                   | LoadingOverlay                                                        |
+|------------------------------------------------------------------------|---------------------------------------------------|-----------------------------------------------------------------------|
+| Initial page load                                                      | ✅ Yes                                            | No                                                                    |
+| Dynamic data that requires loading                                     | ✅ Yes                                            | No                                                                    |
+| Static data that never changes (e.g. body text, copy, titles)          | ✅ Yes (helpful with large amount of content)     | No                                                                    |
+| User caused action (e.g. button press that causes UI change on screen) | No                                                | ✅ Yes (this indicates application processing)                        |
+| Form elements                                                          | ✅ Yes (to represent different form elements)     | No                                                                    |
+| Form submission                                                        | No                                                | ✅ Yes (typically full-screen, possibly with page refresh)            |
+| Page saving                                                            | No                                                | ✅ Yes (typically full-screen)                                        |
+| Card                                                                   | ✅ Yes (for Card content, not the container itself| No (unless there is a user action that changes that data in the card) |
+| Table                                                                  | ✅ Yes (for initial page load)                    | No                                                                    |
+| Avatar or ProfileCell                                                  | ✅ Yes                                            | No                                                                    |
+| Alert or Toast                                                         | No                                                | No
+
+## Props
+
+<ArgsTable of={LoadingSkeleton} />
+
+
+## Stories 
+
+### Default
+
+<Canvas>
+  <Story id="components-loadingskeleton--default" />
+</Canvas>
+
+### Multi-line
+
+<Canvas>
+  <Story id="components-loadingskeleton--multi-line" />
+</Canvas>
+
+### Height and Width
+
+<Canvas>
+  <Story id="components-loadingskeleton--height-and-width" />
+</Canvas>
+
+### Circle
+
+<Canvas>
+  <Story id="components-loadingskeleton--circle" />
+</Canvas>
+
+### Card Content
+
+<Canvas>
+  <Story id="components-loadingskeleton--card-content" />
+</Canvas>

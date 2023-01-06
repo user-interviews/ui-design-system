@@ -31,6 +31,7 @@ import IconCell from 'src/IconCell';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
 import InputLegend from 'src/InputLegend';
+import { LoadingSkeleton } from 'src/LoadingSkeleton';
 import LoadingOverlay from 'src/LoadingOverlay';
 import {
   Modal,
@@ -121,6 +122,7 @@ export {
   InputLabel,
   InputLegend,
   LoadingOverlay,
+  LoadingSkeleton,
   MessageTypes,
   Modal,
   MODAL_SIZES,
