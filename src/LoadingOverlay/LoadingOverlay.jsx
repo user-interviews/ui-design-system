@@ -14,6 +14,7 @@ const LoadingOverlay = (props) => {
     {
       'overlay--text': !!props.text,
       'overlay--content-top': props.contentTop,
+      'overlay--content-center-overflow': props.contentCenterOverflow,
     },
   );
 
@@ -36,6 +37,7 @@ const LoadingOverlay = (props) => {
 };
 
 LoadingOverlay.propTypes = {
+  contentCenterOverflow: PropTypes.bool,
   contentTop: PropTypes.bool,
   dataTestid: PropTypes.string,
   header: PropTypes.string,
@@ -45,6 +47,7 @@ LoadingOverlay.propTypes = {
 };
 
 LoadingOverlay.defaultProps = {
+  contentCenterOverflow: false,
   contentTop: false,
   dataTestid: 'LoadingOverlay',
   header: undefined,
