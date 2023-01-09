@@ -7679,6 +7679,268 @@ exports[`Storyshots Components/LoadingOverlay Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/LoadingSkeleton Card Content 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card Card--md"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        Invite Team members
+      </h2>
+    </div>
+    <h3
+      className="Card__subtitle"
+    >
+      Research is better together 🕵️🕵. Invite as many team members as you'd like so they can view and copy any project.
+    </h3>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <br />
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "calc(100% * 0.5)",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Components/LoadingSkeleton Circle 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    aria-busy={true}
+    aria-live="polite"
+  >
+    <span
+      className="react-loading-skeleton LoadingSkeleton"
+      style={
+        Object {
+          "--base-color": "#E1E1E1",
+          "borderRadius": "50%",
+          "height": 44,
+          "width": 44,
+        }
+      }
+    >
+      ‌
+    </span>
+    <br />
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/LoadingSkeleton Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    aria-busy={true}
+    aria-live="polite"
+  >
+    <span
+      className="react-loading-skeleton LoadingSkeleton"
+      style={
+        Object {
+          "--base-color": "#E1E1E1",
+          "borderRadius": "0.25rem",
+          "width": "100%",
+        }
+      }
+    >
+      ‌
+    </span>
+    <br />
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/LoadingSkeleton Height And Width 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    aria-busy={true}
+    aria-live="polite"
+  >
+    <span
+      className="react-loading-skeleton LoadingSkeleton"
+      style={
+        Object {
+          "--base-color": "#E1E1E1",
+          "borderRadius": "0.25rem",
+          "height": "44px",
+          "width": "200px",
+        }
+      }
+    >
+      ‌
+    </span>
+    <br />
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/LoadingSkeleton Multi Line 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    aria-busy={true}
+    aria-live="polite"
+  >
+    <span
+      className="react-loading-skeleton LoadingSkeleton"
+      style={
+        Object {
+          "--base-color": "#E1E1E1",
+          "borderRadius": "0.25rem",
+          "width": "100%",
+        }
+      }
+    >
+      ‌
+    </span>
+    <br />
+    <span
+      className="react-loading-skeleton LoadingSkeleton"
+      style={
+        Object {
+          "--base-color": "#E1E1E1",
+          "borderRadius": "0.25rem",
+          "width": "100%",
+        }
+      }
+    >
+      ‌
+    </span>
+    <br />
+    <span
+      className="react-loading-skeleton LoadingSkeleton"
+      style={
+        Object {
+          "--base-color": "#E1E1E1",
+          "borderRadius": "0.25rem",
+          "width": "100%",
+        }
+      }
+    >
+      ‌
+    </span>
+    <br />
+  </span>
+</div>
+`;
+
 exports[`Storyshots Components/Modal Danger Modal 1`] = `
 <div
   style={
