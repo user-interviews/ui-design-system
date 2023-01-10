@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
-import 'react-loading-skeleton/dist/skeleton.css';
 
 import colors from '../Styles/colors/palette';
+
+import './LoadingSkeleton.scss';
 
 const LoadingSkeleton = ({ className, ...props }) => (
   <SkeletonTheme baseColor={colors.UX_GRAY_300}>
