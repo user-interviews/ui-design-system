@@ -6,6 +6,20 @@ const borderWidth = '0.125rem';
 const fontType30 = '400 0.875rem/1.25rem DM Sans, sans-serif';
 
 export const StyledTabsWrapper = styled.span`
+  ${({ flexWrapUnset }) => flexWrapUnset && `
+    .nav {
+      flex-wrap: nowrap;
+    } 
+  `}
+  
+  ${({ navItemButtonFullHeight }) => navItemButtonFullHeight && `
+    .nav-item {
+      button {
+        height: calc(100% + ${borderWidth});
+      }
+    }  
+  `}
+   
   .nav-tabs {
     border-bottom: ${borderWidth} solid ${colors.UX_GRAY_400};
   }
