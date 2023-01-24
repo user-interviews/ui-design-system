@@ -28,12 +28,10 @@ export default {
 };
 
 const options = [
-  { label: 'White', value: 1 },
-  { label: 'Black / African American', value: 2 },
-  { label: 'American Indian / Alaska Native', value: 3 },
-  { label: 'Asian', value: 4 },
-  { label: 'Native Hawaiian / Pacific Islander', value: 5 },
-  { label: 'Hispanic / Latinx', value: 6 },
+  { label: '1-on-1 interview', value: 1 },
+  { label: 'Focus group', value: 2 },
+  { label: 'Multi-day study', value: 3 },
+  { label: 'Unmoderated task', value: 4 },
 ];
 
 export const Default = () => (
@@ -111,6 +109,34 @@ export const InModal = () => (
     </ModalFooter>
   </Modal>
   );
+
+export const GroupedOptions = () => {
+  const groupedOptions = [
+    {
+      label: 'Study type',
+      options,
+    },
+    {
+      label: 'Audience type',
+      options: [
+        { label: 'Consumers', value: 5 },
+        { label: 'Professionals', value: 6 },
+      ],
+    },
+  ];
+  return (
+    <FormGroup
+      label="Grouped options"
+      labelHtmlFor="grouped-options-select"
+    >
+      <SingleSelect
+        inputId="grouped-options-select"
+        options={groupedOptions}
+        onChange={onChange}
+      />
+    </FormGroup>
+  );
+};
 
 export const CustomOptionWithDescription = () => {
   const optionsWithDescriptions = [
