@@ -4364,6 +4364,85 @@ exports[`Storyshots Components/Card Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Card Loading 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "height": 24,
+            "width": "33%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <br />
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </section>
+</div>
+`;
+
 exports[`Storyshots Components/Card Sizes 1`] = `
 <div
   style={
@@ -7676,124 +7755,6 @@ exports[`Storyshots Components/LoadingOverlay Default 1`] = `
       />
     </svg>
   </div>
-</div>
-`;
-
-exports[`Storyshots Components/LoadingSkeleton Card Content 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <section
-    className="Card Card--md"
-  >
-    <div
-      className="Card__header"
-    >
-      <h2
-        className="Card__title"
-      >
-        Invite Team members
-      </h2>
-    </div>
-    <h3
-      className="Card__subtitle"
-    >
-      Research is better together 🕵️🕵. Invite as many team members as you'd like so they can view and copy any project.
-    </h3>
-    <span
-      aria-busy={true}
-      aria-live="polite"
-    >
-      <span
-        className="react-loading-skeleton LoadingSkeleton"
-        style={
-          Object {
-            "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
-            "width": "100%",
-          }
-        }
-      >
-        ‌
-      </span>
-      <br />
-      <span
-        className="react-loading-skeleton LoadingSkeleton"
-        style={
-          Object {
-            "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
-            "width": "100%",
-          }
-        }
-      >
-        ‌
-      </span>
-      <br />
-      <span
-        className="react-loading-skeleton LoadingSkeleton"
-        style={
-          Object {
-            "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
-            "width": "100%",
-          }
-        }
-      >
-        ‌
-      </span>
-      <br />
-    </span>
-    <br />
-    <span
-      aria-busy={true}
-      aria-live="polite"
-    >
-      <span
-        className="react-loading-skeleton LoadingSkeleton"
-        style={
-          Object {
-            "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
-            "width": "100%",
-          }
-        }
-      >
-        ‌
-      </span>
-      <br />
-      <span
-        className="react-loading-skeleton LoadingSkeleton"
-        style={
-          Object {
-            "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
-            "width": "100%",
-          }
-        }
-      >
-        ‌
-      </span>
-      <br />
-      <span
-        className="react-loading-skeleton LoadingSkeleton"
-        style={
-          Object {
-            "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
-            "width": "calc(100% * 0.5)",
-          }
-        }
-      >
-        ‌
-      </span>
-      <br />
-    </span>
-  </section>
 </div>
 `;
 

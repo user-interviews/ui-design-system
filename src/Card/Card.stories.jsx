@@ -4,6 +4,7 @@ import {
 } from '@storybook/addon-knobs';
 
 import Card, { CardSizes } from 'src/Card';
+
 import mdx from './Card.mdx';
 
 export default {
@@ -64,4 +65,16 @@ export const Sizes = () => (
       When no size is given, the Card takes up the full width of its parent container.
     </Card>
   </>
+);
+
+export const Loading = () => (
+  <Card
+    divided={boolean('divided', false)}
+    helperText={text('helperText', '(helper text)')}
+    isLoading={boolean('isLoading', true)}
+    noPadding={boolean('noPadding', false)}
+    size={select('size', CardSizes, undefined)}
+    subTitle={text('subTitle', 'Subtitle')}
+    title={text('title', 'Default card title')}
+  />
 );

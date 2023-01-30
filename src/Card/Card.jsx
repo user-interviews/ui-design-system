@@ -1,6 +1,8 @@
-import React, { createElement, Fragment } from 'react';
+import React, { createElement } from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
+
+import { LoadingSkeleton } from 'src/LoadingSkeleton';
 
 import './Card.scss';
 
@@ -17,6 +19,7 @@ const Card = ({
   divided,
   elementType,
   helperText,
+  isLoading,
   noPadding,
   size,
   subTitle,
@@ -24,18 +27,28 @@ const Card = ({
   ...props
 }) => {
   const cardChildren = (
-    <Fragment>
-      { title && (
-        <div className="Card__header">
-          <h2 className="Card__title">{title}</h2>
-          { helperText && <span className="Card__helper-text">{helperText}</span>}
-        </div>
+    <>
+      {isLoading ? (
+        <>
+          <LoadingSkeleton height={24} width="33%" />
+          <br />
+          <LoadingSkeleton count={3} />
+        </>
+      ) : (
+        <>
+          { title && (
+          <div className="Card__header">
+            <h2 className="Card__title">{title}</h2>
+            { helperText && <span className="Card__helper-text">{helperText}</span>}
+          </div>
       )}
 
-      { divided && <hr className="Card__divider" /> }
-      { subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }
-      { children }
-    </Fragment>
+          { divided && <hr className="Card__divider" /> }
+          { subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }
+          { children }
+        </>
+      )}
+    </>
   );
 
   return createElement(
@@ -61,6 +74,7 @@ Card.propTypes = {
   divided: PropTypes.bool,
   elementType: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   helperText: PropTypes.string,
+  isLoading: PropTypes.bool,
   noPadding: PropTypes.bool,
   size: PropTypes.string,
   subTitle: PropTypes.string,
@@ -72,6 +86,7 @@ Card.defaultProps = {
   divided: false,
   elementType: 'section',
   helperText: undefined,
+  isLoading: undefined,
   noPadding: false,
   size: undefined,
   subTitle: undefined,
