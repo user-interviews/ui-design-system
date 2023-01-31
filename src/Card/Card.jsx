@@ -20,33 +20,44 @@ const Card = ({
   elementType,
   helperText,
   isLoading,
+  loadingSkeleton,
+  loadingSkeletonParagraphCount,
   noPadding,
   size,
   subTitle,
   title,
   ...props
 }) => {
+  const defaultLoadingSkeleton = (
+    <>
+      <LoadingSkeleton height={24} width="33%" />
+      <br />
+      {Array(loadingSkeletonParagraphCount).fill(0).map((_, i) => (
+        // eslint-disable-next-line react/no-array-index-key
+        <div className="Card__loading-skeleton-paragraphs" key={`skeleton-paragraph-${i}`}>
+          <LoadingSkeleton count={3} />
+        </div>
+      ))}
+    </>
+  );
+  const getLoadingSkeleton = () => loadingSkeleton || defaultLoadingSkeleton;
+
   const cardChildren = (
     <>
       {isLoading ? (
-        <>
-          <LoadingSkeleton height={24} width="33%" />
-          <br />
-          <LoadingSkeleton count={3} />
-        </>
-      ) : (
-        <>
-          { title && (
-          <div className="Card__header">
-            <h2 className="Card__title">{title}</h2>
-            { helperText && <span className="Card__helper-text">{helperText}</span>}
-          </div>
+        getLoadingSkeleton()) : (
+          <>
+            { title && (
+            <div className="Card__header">
+              <h2 className="Card__title">{title}</h2>
+              { helperText && <span className="Card__helper-text">{helperText}</span>}
+            </div>
       )}
 
-          { divided && <hr className="Card__divider" /> }
-          { subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }
-          { children }
-        </>
+            { divided && <hr className="Card__divider" /> }
+            { subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }
+            { children }
+          </>
       )}
     </>
   );
@@ -75,6 +86,8 @@ Card.propTypes = {
   elementType: PropTypes.oneOfType([PropTypes.func, PropTypes.string]),
   helperText: PropTypes.string,
   isLoading: PropTypes.bool,
+  loadingSkeleton: PropTypes.node,
+  loadingSkeletonParagraphCount: PropTypes.number,
   noPadding: PropTypes.bool,
   size: PropTypes.string,
   subTitle: PropTypes.string,
@@ -87,6 +100,8 @@ Card.defaultProps = {
   elementType: 'section',
   helperText: undefined,
   isLoading: undefined,
+  loadingSkeleton: undefined,
+  loadingSkeletonParagraphCount: undefined,
   noPadding: false,
   size: undefined,
   subTitle: undefined,

@@ -1,9 +1,11 @@
 import React from 'react';
 import {
-  withKnobs, text, select, boolean,
+  withKnobs, text, select, boolean, number,
 } from '@storybook/addon-knobs';
 
 import Card, { CardSizes } from 'src/Card';
+import { LoadingSkeleton } from 'src/LoadingSkeleton';
+import { Text } from 'src/Text';
 
 import mdx from './Card.mdx';
 
@@ -67,7 +69,7 @@ export const Sizes = () => (
   </>
 );
 
-export const Loading = () => (
+export const LoadingDefault = () => (
   <Card
     divided={boolean('divided', false)}
     helperText={text('helperText', '(helper text)')}
@@ -76,5 +78,62 @@ export const Loading = () => (
     size={select('size', CardSizes, undefined)}
     subTitle={text('subTitle', 'Subtitle')}
     title={text('title', 'Default card title')}
-  />
+  >
+    <Text>
+      Powerful panel management and recruitment automation.
+      The #1 panel software for teams that research at scale. Built for ReOps,
+      loved by researchers, trusted by participants.
+    </Text>
+  </Card>
 );
+
+export const LoadingParagraphCount = () => (
+  <Card
+    divided={boolean('divided', false)}
+    helperText={text('helperText', '(helper text)')}
+    isLoading={boolean('isLoading', true)}
+    loadingSkeletonParagraphCount={number('loadingSkeletonParagraphCount', 2)}
+    noPadding={boolean('noPadding', false)}
+    size={select('size', CardSizes, undefined)}
+    subTitle={text('subTitle', 'Subtitle')}
+    title={text('title', 'Default card title')}
+  >
+    <Text>
+      Powerful panel management and recruitment automation.
+      The #1 panel software for teams that research at scale. Built for ReOps,
+      loved by researchers, trusted by participants.
+    </Text>
+    <Text>
+      From branding to invite rules, you’re in total control over how research gets done org-wide
+      doodle-y blue check mark with a black outline. With integrations and an API, our open
+      platform plays nice with all your favorite research tools and methods doodle-y blue check
+      mark with a black outline. SOC2 certified, SSO, 2FA, data consent, and all the privacy
+      settings you need to stay GDPR compliant.
+    </Text>
+  </Card>
+  );
+
+export const LoadingCustom = () => {
+  const CustomLoadingSkeleton = (
+    <>
+      <LoadingSkeleton circle height={40} width={40} />
+      <br />
+      <LoadingSkeleton count={3} />
+      <br />
+      <LoadingSkeleton count={2.5} />
+    </>
+  );
+
+  return (
+    <Card
+      divided={boolean('divided', false)}
+      helperText={text('helperText', '(helper text)')}
+      isLoading={boolean('isLoading', true)}
+      loadingSkeleton={CustomLoadingSkeleton}
+      noPadding={boolean('noPadding', false)}
+      size={select('size', CardSizes, CardSizes.SMALL)}
+      subTitle={text('subTitle', 'Subtitle')}
+      title={text('title', 'Default card title')}
+    />
+  );
+};

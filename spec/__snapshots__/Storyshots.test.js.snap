@@ -4364,7 +4364,7 @@ exports[`Storyshots Components/Card Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Card Loading 1`] = `
+exports[`Storyshots Components/Card Loading Custom 1`] = `
 <div
   style={
     Object {
@@ -4373,7 +4373,7 @@ exports[`Storyshots Components/Card Loading 1`] = `
   }
 >
   <section
-    className="Card"
+    className="Card Card--sm"
   >
     <span
       aria-busy={true}
@@ -4384,9 +4384,9 @@ exports[`Storyshots Components/Card Loading 1`] = `
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
-            "height": 24,
-            "width": "33%",
+            "borderRadius": "50%",
+            "height": 40,
+            "width": 40,
           }
         }
       >
@@ -4439,6 +4439,265 @@ exports[`Storyshots Components/Card Loading 1`] = `
       </span>
       <br />
     </span>
+    <br />
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "calc(100% * 0.5)",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Components/Card Loading Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "height": 24,
+            "width": "33%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <br />
+    <div
+      className="Card__loading-skeleton-paragraphs"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Components/Card Loading Paragraph Count 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "height": 24,
+            "width": "33%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <br />
+    <div
+      className="Card__loading-skeleton-paragraphs"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+    <div
+      className="Card__loading-skeleton-paragraphs"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
   </section>
 </div>
 `;
