@@ -4,8 +4,6 @@ import {
   withKnobs, boolean, number, text,
 } from '@storybook/addon-knobs';
 
-import Card from 'src/Card';
-
 import LoadingSkeleton from './LoadingSkeleton';
 import mdx from './LoadingSkeleton.mdx';
 
@@ -34,12 +32,4 @@ export const HeightAndWidth = () => (
 
 export const Circle = () => (
   <LoadingSkeleton circle={boolean('circle', true)} height={44} width={44} />
-);
-
-export const CardContent = () => (
-  <Card size="md" subTitle={`Research is better together 🕵️🕵. Invite as many team members as you'd like so they can view and copy any project.`} title="Invite Team members">
-    <LoadingSkeleton count={3} />
-    <br />
-    <LoadingSkeleton count={2.5} />
-  </Card>
 );

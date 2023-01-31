@@ -4364,6 +4364,344 @@ exports[`Storyshots Components/Card Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Card Loading Custom 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card Card--sm"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "50%",
+            "height": 40,
+            "width": 40,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <br />
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <br />
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "100%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": "calc(100% * 0.5)",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Components/Card Loading Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "height": 24,
+            "width": "33%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <br />
+    <div
+      className="Card__loading-skeleton-paragraphs"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Storyshots Components/Card Loading Paragraph Count 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <section
+    className="Card"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "height": 24,
+            "width": "33%",
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <br />
+    <div
+      className="Card__loading-skeleton-paragraphs"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+    <div
+      className="Card__loading-skeleton-paragraphs"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+  </section>
+</div>
+`;
+
 exports[`Storyshots Components/Card Sizes 1`] = `
 <div
   style={
@@ -7679,124 +8017,6 @@ exports[`Storyshots Components/LoadingOverlay Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/LoadingSkeleton Card Content 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <section
-    className="Card Card--md"
-  >
-    <div
-      className="Card__header"
-    >
-      <h2
-        className="Card__title"
-      >
-        Invite Team members
-      </h2>
-    </div>
-    <h3
-      className="Card__subtitle"
-    >
-      Research is better together 🕵️🕵. Invite as many team members as you'd like so they can view and copy any project.
-    </h3>
-    <span
-      aria-busy={true}
-      aria-live="polite"
-    >
-      <span
-        className="react-loading-skeleton LoadingSkeleton"
-        style={
-          Object {
-            "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
-            "width": "100%",
-          }
-        }
-      >
-        ‌
-      </span>
-      <br />
-      <span
-        className="react-loading-skeleton LoadingSkeleton"
-        style={
-          Object {
-            "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
-            "width": "100%",
-          }
-        }
-      >
-        ‌
-      </span>
-      <br />
-      <span
-        className="react-loading-skeleton LoadingSkeleton"
-        style={
-          Object {
-            "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
-            "width": "100%",
-          }
-        }
-      >
-        ‌
-      </span>
-      <br />
-    </span>
-    <br />
-    <span
-      aria-busy={true}
-      aria-live="polite"
-    >
-      <span
-        className="react-loading-skeleton LoadingSkeleton"
-        style={
-          Object {
-            "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
-            "width": "100%",
-          }
-        }
-      >
-        ‌
-      </span>
-      <br />
-      <span
-        className="react-loading-skeleton LoadingSkeleton"
-        style={
-          Object {
-            "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
-            "width": "100%",
-          }
-        }
-      >
-        ‌
-      </span>
-      <br />
-      <span
-        className="react-loading-skeleton LoadingSkeleton"
-        style={
-          Object {
-            "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
-            "width": "calc(100% * 0.5)",
-          }
-        }
-      >
-        ‌
-      </span>
-      <br />
-    </span>
-  </section>
-</div>
-`;
-
 exports[`Storyshots Components/LoadingSkeleton Circle 1`] = `
 <div
   style={
@@ -10316,7 +10536,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-14-live-region"
+        id="react-select-15-live-region"
       />
       <span
         aria-atomic="false"
@@ -10334,13 +10554,13 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-14-placeholder"
+            id="react-select-15-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-14-placeholder"
+            aria-describedby="react-select-15-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10411,7 +10631,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-13-live-region"
+        id="react-select-14-live-region"
       />
       <span
         aria-atomic="false"
@@ -10429,13 +10649,13 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-13-placeholder"
+            id="react-select-14-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-13-placeholder"
+            aria-describedby="react-select-14-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10506,7 +10726,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-15-live-region"
+        id="react-select-16-live-region"
       />
       <span
         aria-atomic="false"
@@ -10524,13 +10744,13 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-15-placeholder"
+            id="react-select-16-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-15-placeholder"
+            aria-describedby="react-select-16-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10601,7 +10821,7 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-16-live-region"
+        id="react-select-17-live-region"
       />
       <span
         aria-atomic="false"
@@ -10619,13 +10839,13 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-16-placeholder"
+            id="react-select-17-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-16-placeholder"
+            aria-describedby="react-select-17-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10727,6 +10947,101 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
             className="css-mohuvp-dummyInput-DummyInput"
             disabled={false}
             id="default-select"
+            inputMode="none"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            tabIndex={0}
+            value=""
+          />
+        </div>
+        <div
+          className=" css-1hb7zxy-IndicatorsContainer"
+        >
+          <span
+            className=" css-43ykx9-indicatorSeparator"
+          />
+          <div
+            aria-hidden="true"
+            className=" css-7sl878-indicatorContainer"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="css-tj5bde-Svg"
+              focusable="false"
+              height={20}
+              viewBox="0 0 20 20"
+              width={20}
+            >
+              <path
+                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="grouped-options-select"
+    >
+      Grouped options
+    </label>
+    <div
+      className="SingleSelect css-b62m3t-container"
+      onKeyDown={[Function]}
+    >
+      <span
+        className="css-1f43avz-a11yText-A11yText"
+        id="react-select-13-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="css-1f43avz-a11yText-A11yText"
+      />
+      <div
+        className=" css-cijnja-control"
+        onMouseDown={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div
+          className=" css-319lph-ValueContainer"
+        >
+          <div
+            className=" css-858797-placeholder"
+            id="react-select-13-placeholder"
+          >
+            Select...
+          </div>
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-13-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-readonly={true}
+            className="css-mohuvp-dummyInput-DummyInput"
+            disabled={false}
+            id="grouped-options-select"
             inputMode="none"
             onBlur={[Function]}
             onChange={[Function]}
