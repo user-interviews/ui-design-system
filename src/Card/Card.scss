@@ -38,6 +38,10 @@
     margin-bottom: $ux-spacing-10;
   }
 
+  &__loading-skeleton-paragraphs:not(:last-child) {
+    margin-bottom: $ux-spacing-40;
+  }
+
   &--divided {
     .Card__title {
       margin-bottom: 0;
