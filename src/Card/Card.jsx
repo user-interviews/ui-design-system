@@ -101,7 +101,7 @@ Card.defaultProps = {
   helperText: undefined,
   isLoading: undefined,
   loadingSkeleton: undefined,
-  loadingSkeletonParagraphCount: undefined,
+  loadingSkeletonParagraphCount: 1,
   noPadding: false,
   size: undefined,
   subTitle: undefined,
