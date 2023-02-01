@@ -1,0 +1,15 @@
+.ProfileCellSkeleton {
+  display: grid;
+  grid-template-columns: 44px auto;
+
+  &__avatar {
+    grid-column-start: 1;
+  }
+
+  &__info {
+    grid-column-start: 2;
+    margin-left: 1rem;
+    display: grid;
+    align-items: center;
+  }
+}

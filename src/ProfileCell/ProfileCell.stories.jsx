@@ -82,3 +82,14 @@ export const WithTrailingIcon = () => (
     user={userWithImage}
   />
 );
+
+export const Loading = () => (
+  <ProfileCell
+    colorId={number('Color ID', undefined)}
+    isLoading
+    maxWidth={text('Max Text Width (e.g. 8rem)', '')}
+    showAlert={boolean('Show Alert', false)}
+    subtitle={text('Subtitle Text', `riley@userinterviews.com`)}
+    user={userNoImage}
+  />
+);

@@ -9316,6 +9316,79 @@ exports[`Storyshots Components/Profile Cell Large 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Profile Cell Loading 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCellSkeleton"
+  >
+    <div
+      className="ProfileCellSkeleton__avatar"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "50%",
+              "height": 44,
+              "width": 44,
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+    <div
+      className="ProfileCellSkeleton__info"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Profile Cell Small 1`] = `
 <div
   style={
