@@ -1,6 +1,10 @@
+@import '../../scss/theme';
+
+$profile-cell-avatar-small-width: $avatar-small-width;
+
 .ProfileCellSkeleton {
   display: grid;
-  grid-template-columns: 44px auto;
+  grid-template-columns: $profile-cell-avatar-small-width auto;
 
   &__avatar {
     grid-column-start: 1;
