@@ -83,7 +83,11 @@ AsyncCreatableSelect.propTypes = {
   getOptionValue: propTypes.func,
   id: propTypes.string,
   ignoreCase: propTypes.bool,
-  inputId: propTypes.string,
+  /**
+    The value of the search input.
+    Required for connecting the input with a form label.
+  */
+  inputId: propTypes.string.isRequired,
   isClearable: propTypes.bool,
   isLoading: propTypes.bool,
   loadOptions: propTypes.func.isRequired,
@@ -110,7 +114,6 @@ AsyncCreatableSelect.defaultProps = {
   getOptionValue: undefined,
   id: undefined,
   ignoreCase: undefined,
-  inputId: undefined,
   isClearable: false,
   isLoading: false,
   menuWidth: undefined,
