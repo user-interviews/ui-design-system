@@ -71,7 +71,11 @@ CreatableSelect.propTypes = {
   getOptionLabel: PropTypes.func,
   getOptionValue: PropTypes.func,
   id: PropTypes.string,
-  inputId: PropTypes.string,
+  /**
+    The value of the search input.
+    Required for connecting the input with a form label.
+  */
+  inputId: PropTypes.string.isRequired,
   isClearable: PropTypes.bool,
   isLoading: PropTypes.bool,
   menuWidth: PropTypes.string,
@@ -96,7 +100,6 @@ CreatableSelect.defaultProps = {
   getOptionValue: undefined,
   isClearable: false,
   id: undefined,
-  inputId: undefined,
   isLoading: undefined,
   menuWidth: undefined,
   modal: undefined,
