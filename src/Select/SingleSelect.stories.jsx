@@ -45,17 +45,17 @@ export const Default = () => (
 );
 
 export const MediumText = () => (
-    <FormGroup
-        label="Default select"
-        labelHtmlFor="medium-text-select"
-    >
-      <SingleSelect
-        inputId="medium-text-select"
-        options={options}
-        size={SELECT_SIZES.MEDIUM}
-        onChange={onChange}
-      />
-    </FormGroup>
+  <FormGroup
+    label="Default select"
+    labelHtmlFor="medium-text-select"
+  >
+    <SingleSelect
+      inputId="medium-text-select"
+      options={options}
+      size={SELECT_SIZES.MEDIUM}
+      onChange={onChange}
+    />
+  </FormGroup>
 );
 
 export const Searchable = () => (
