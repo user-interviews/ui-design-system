@@ -1,17 +1,28 @@
 import systemColors from 'src/Styles/colors';
 import fontWeights from '../Styles/fontWeights';
 
-export const SELECT_SIZES = { SMALL: 'small' };
+export const SELECT_SIZES = { SMALL: 'small', MEDIUM: 'medium' };
 
 export const SIZE_SMALL_HEIGHT = {
   height: 'auto',
   minHeight: '2.25rem',
 };
 
+export const SIZE_MEDIUM_HEIGHT = {
+  height: 'auto',
+  minHeight: '2.375rem',
+  fontWeight: 500,
+  fontSize: '16px',
+};
+
 const getHeightProps = (size) => {
   if (size === SELECT_SIZES.SMALL) {
     return SIZE_SMALL_HEIGHT;
   }
+  if (size === SELECT_SIZES.MEDIUM) {
+    return SIZE_MEDIUM_HEIGHT;
+  }
+
   return null;
 };
 
@@ -99,6 +110,7 @@ const defaultStyles = ({ menuWidth, size }) => ({
         color: systemColors.UX_GRAY_900,
         fontWeight: fontWeights.light,
         fontSize: '0.875rem',
+        ...getHeightProps(size),
         cursor: 'pointer',
 
         ':active': {

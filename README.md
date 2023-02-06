@@ -55,6 +55,14 @@ If you need any help with setup or have questions about the process of writing d
 After cloning the repo, obtain a `.npmrc` file from another developer. This file contains authorization tokens for any private
 node packages.
 
+## Set up Fortawesome
+> $FONTAWESOME_NPM_AUTH_TOKEN can be found in .env in rails-server 
+
+```
+npm config set "@fortawesome:registry" https://npm.fontawesome.com/
+npm config set "//npm.fontawesome.com/:_authToken" $FONTAWESOME_NPM_AUTH_TOKEN
+```
+
 ## Available Scripts
 In the project directory, you can run:
 

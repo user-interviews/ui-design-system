@@ -7,6 +7,7 @@ import {
  Modal, ModalHeader, ModalBody, ModalFooter,
 } from 'src/Modal';
 import SingleSelect from 'src/Select/SingleSelect';
+import { SELECT_SIZES } from './styles';
 
 import Option from './Option';
 import OptionWithDescription from './OptionWithDescription';
@@ -41,6 +42,20 @@ export const Default = () => (
   >
     <SingleSelect inputId="default-select" options={options} onChange={onChange} />
   </FormGroup>
+);
+
+export const MediumText = () => (
+    <FormGroup
+        label="Default select"
+        labelHtmlFor="medium-text-select"
+    >
+      <SingleSelect
+        inputId="medium-text-select"
+        options={options}
+        size={SELECT_SIZES.MEDIUM}
+        onChange={onChange}
+      />
+    </FormGroup>
 );
 
 export const Searchable = () => (
