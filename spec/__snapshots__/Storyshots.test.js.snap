@@ -10536,7 +10536,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-15-live-region"
+        id="react-select-16-live-region"
       />
       <span
         aria-atomic="false"
@@ -10554,13 +10554,13 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-15-placeholder"
+            id="react-select-16-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-15-placeholder"
+            aria-describedby="react-select-16-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10631,7 +10631,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-14-live-region"
+        id="react-select-15-live-region"
       />
       <span
         aria-atomic="false"
@@ -10649,13 +10649,13 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-14-placeholder"
+            id="react-select-15-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-14-placeholder"
+            aria-describedby="react-select-15-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10726,7 +10726,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-16-live-region"
+        id="react-select-17-live-region"
       />
       <span
         aria-atomic="false"
@@ -10744,13 +10744,13 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-16-placeholder"
+            id="react-select-17-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-16-placeholder"
+            aria-describedby="react-select-17-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10821,7 +10821,7 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-17-live-region"
+        id="react-select-18-live-region"
       />
       <span
         aria-atomic="false"
@@ -10839,13 +10839,13 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-17-placeholder"
+            id="react-select-18-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-17-placeholder"
+            aria-describedby="react-select-18-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -11011,7 +11011,7 @@ exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-13-live-region"
+        id="react-select-14-live-region"
       />
       <span
         aria-atomic="false"
@@ -11029,13 +11029,13 @@ exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-13-placeholder"
+            id="react-select-14-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-13-placeholder"
+            aria-describedby="react-select-14-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -11157,7 +11157,7 @@ exports[`Storyshots Components/Selects/Single In Modal 1`] = `
           >
             <span
               className="css-1f43avz-a11yText-A11yText"
-              id="react-select-12-live-region"
+              id="react-select-13-live-region"
             />
             <span
               aria-atomic="false"
@@ -11175,13 +11175,13 @@ exports[`Storyshots Components/Selects/Single In Modal 1`] = `
               >
                 <div
                   className=" css-858797-placeholder"
-                  id="react-select-12-placeholder"
+                  id="react-select-13-placeholder"
                 >
                   Select...
                 </div>
                 <input
                   aria-autocomplete="list"
-                  aria-describedby="react-select-12-placeholder"
+                  aria-describedby="react-select-13-placeholder"
                   aria-expanded={false}
                   aria-haspopup={true}
                   aria-readonly={true}
@@ -11279,7 +11279,7 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-10-live-region"
+        id="react-select-11-live-region"
       />
       <span
         aria-atomic="false"
@@ -11297,13 +11297,13 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-10-placeholder"
+            id="react-select-11-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-10-placeholder"
+            aria-describedby="react-select-11-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -11324,6 +11324,101 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
         >
           <span
             className=" css-3igypj-indicatorSeparator"
+          />
+          <div
+            aria-hidden="true"
+            className=" css-7sl878-indicatorContainer"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <svg
+              aria-hidden="true"
+              className="css-tj5bde-Svg"
+              focusable="false"
+              height={20}
+              viewBox="0 0 20 20"
+              width={20}
+            >
+              <path
+                d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Selects/Single Medium Text 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="FormGroup"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="medium-text-select"
+    >
+      Default select
+    </label>
+    <div
+      className="SingleSelect css-b62m3t-container"
+      onKeyDown={[Function]}
+    >
+      <span
+        className="css-1f43avz-a11yText-A11yText"
+        id="react-select-9-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="css-1f43avz-a11yText-A11yText"
+      />
+      <div
+        className=" css-1hci1ba-control"
+        onMouseDown={[Function]}
+        onTouchEnd={[Function]}
+      >
+        <div
+          className=" css-319lph-ValueContainer"
+        >
+          <div
+            className=" css-858797-placeholder"
+            id="react-select-9-placeholder"
+          >
+            Select...
+          </div>
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-9-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-readonly={true}
+            className="css-mohuvp-dummyInput-DummyInput"
+            disabled={false}
+            id="medium-text-select"
+            inputMode="none"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            tabIndex={0}
+            value=""
+          />
+        </div>
+        <div
+          className=" css-1hb7zxy-IndicatorsContainer"
+        >
+          <span
+            className=" css-43ykx9-indicatorSeparator"
           />
           <div
             aria-hidden="true"
@@ -11374,7 +11469,7 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-11-live-region"
+        id="react-select-12-live-region"
       />
       <span
         aria-atomic="false"
@@ -11392,13 +11487,13 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-11-placeholder"
+            id="react-select-12-placeholder"
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
-            aria-describedby="react-select-11-placeholder"
+            aria-describedby="react-select-12-placeholder"
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -11469,7 +11564,7 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
-        id="react-select-9-live-region"
+        id="react-select-10-live-region"
       />
       <span
         aria-atomic="false"
@@ -11487,7 +11582,7 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
         >
           <div
             className=" css-858797-placeholder"
-            id="react-select-9-placeholder"
+            id="react-select-10-placeholder"
           >
             Select...
           </div>
@@ -11497,7 +11592,7 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
           >
             <input
               aria-autocomplete="list"
-              aria-describedby="react-select-9-placeholder"
+              aria-describedby="react-select-10-placeholder"
               aria-expanded={false}
               aria-haspopup={true}
               autoCapitalize="none"
