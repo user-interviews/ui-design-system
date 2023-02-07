@@ -11,6 +11,7 @@ import './Button.scss';
 const Button = forwardRef(({
   children,
   className,
+  disabled,
   isLoading,
   leadingIcon,
   loadingText,
@@ -18,8 +19,9 @@ const Button = forwardRef(({
   ...props
 }, ref) => (
   <RBButton
+    aria-disabled={disabled || isLoading}
     className={classNames('Button', className)}
-    disabled={isLoading}
+    disabled={disabled || isLoading}
     ref={ref}
     {...props}
   >
@@ -41,6 +43,7 @@ const Button = forwardRef(({
 Button.propTypes = {
   children: PropTypes.any,
   className: PropTypes.string,
+  disabled: PropTypes.bool,
   isLoading: PropTypes.bool,
   leadingIcon: PropTypes.object,
   loadingText: PropTypes.string,
@@ -50,6 +53,7 @@ Button.propTypes = {
 Button.defaultProps = {
   children: undefined,
   className: undefined,
+  disabled: false,
   isLoading: undefined,
   leadingIcon: undefined,
   loadingText: 'Loading...',

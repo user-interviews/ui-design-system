@@ -2833,6 +2833,7 @@ exports[`Storyshots Components/Button Brands 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-brand-google btn-sm"
     disabled={true}
     type="button"
@@ -2883,6 +2884,7 @@ exports[`Storyshots Components/Button Brands 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-brand-google btn-md"
     disabled={true}
     type="button"
@@ -2939,6 +2941,7 @@ exports[`Storyshots Components/Button Brands 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-brand-facebook btn-sm"
     disabled={true}
     type="button"
@@ -2989,6 +2992,7 @@ exports[`Storyshots Components/Button Brands 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-brand-facebook btn-md"
     disabled={true}
     type="button"
@@ -3046,6 +3050,7 @@ exports[`Storyshots Components/Button Brands 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-brand-linkedin btn-sm"
     disabled={true}
     type="button"
@@ -3096,6 +3101,7 @@ exports[`Storyshots Components/Button Brands 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-brand-linkedin btn-md"
     disabled={true}
     type="button"
@@ -3152,6 +3158,7 @@ exports[`Storyshots Components/Button Brands 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-brand-twitter btn-sm"
     disabled={true}
     type="button"
@@ -3202,6 +3209,7 @@ exports[`Storyshots Components/Button Brands 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-brand-twitter btn-md"
     disabled={true}
     type="button"
@@ -3321,6 +3329,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-danger btn-sm"
     disabled={true}
     type="button"
@@ -3447,6 +3456,7 @@ exports[`Storyshots Components/Button Danger 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-danger btn-md"
     disabled={true}
     type="button"
@@ -3532,6 +3542,7 @@ exports[`Storyshots Components/Button Link 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-link btn-sm"
     disabled={true}
     type="button"
@@ -3550,6 +3561,7 @@ exports[`Storyshots Components/Button Loading 1`] = `
   }
 >
   <button
+    aria-disabled={true}
     className="Button btn btn-primary btn-sm"
     disabled={true}
     type="button"
@@ -3575,6 +3587,7 @@ exports[`Storyshots Components/Button Loading 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-outline-primary btn-sm"
     disabled={true}
     type="button"
@@ -3600,6 +3613,7 @@ exports[`Storyshots Components/Button Loading 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-primary btn-md"
     disabled={true}
     type="button"
@@ -3625,6 +3639,7 @@ exports[`Storyshots Components/Button Loading 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-outline-primary btn-md"
     disabled={true}
     type="button"
@@ -3744,6 +3759,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-primary btn-sm"
     disabled={true}
     type="button"
@@ -3870,6 +3886,7 @@ exports[`Storyshots Components/Button Primary 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-primary btn-md"
     disabled={true}
     type="button"
@@ -4006,6 +4023,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-transparent btn-sm"
     disabled={true}
     type="button"
@@ -4132,6 +4150,7 @@ exports[`Storyshots Components/Button Transparent 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-transparent btn-md"
     disabled={true}
     type="button"
@@ -4268,6 +4287,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-warning btn-sm"
     disabled={true}
     type="button"
@@ -4394,6 +4414,7 @@ exports[`Storyshots Components/Button Warning 1`] = `
   </button>
    
   <button
+    aria-disabled={true}
     className="Button btn btn-warning btn-md"
     disabled={true}
     type="button"
