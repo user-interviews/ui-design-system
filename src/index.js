@@ -33,6 +33,7 @@ import InputLabel from 'src/InputLabel';
 import InputLegend from 'src/InputLegend';
 import { LoadingSkeleton } from 'src/LoadingSkeleton';
 import LoadingOverlay from 'src/LoadingOverlay';
+import Main from 'src/Main';
 import {
   Modal,
   MODAL_SIZES,
@@ -123,6 +124,7 @@ export {
   InputLegend,
   LoadingOverlay,
   LoadingSkeleton,
+  Main,
   MessageTypes,
   Modal,
   MODAL_SIZES,
