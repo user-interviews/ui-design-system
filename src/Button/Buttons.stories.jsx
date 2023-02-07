@@ -1,5 +1,7 @@
 import React from 'react';
 
+import { boolean, text, withKnobs } from '@storybook/addon-knobs';
+
 import Button from 'src/Button';
 import { faFileAlt, faCaretDown, faPaperPlane } from '@fortawesome/pro-regular-svg-icons';
 import {
@@ -10,6 +12,7 @@ import mdx from './Button.mdx';
 export default {
   title: 'Components/Button',
   component: Button,
+  decorators: [withKnobs],
   parameters: {
     docs: {
       page: mdx,
@@ -421,6 +424,50 @@ export const Brands = () => (
       variant="brand-twitter"
     >
       Twitter
+    </Button>
+  </>
+);
+
+export const Loading = () => (
+  <>
+    <Button
+      isLoading={boolean('isLoading', true)}
+      leadingIcon={faFileAlt}
+      loadingText={text('loadingText')}
+      size="sm"
+      variant="primary"
+    >
+      Confirm
+    </Button>
+    {' '}
+    <Button
+      isLoading={boolean('isLoading', true)}
+      leadingIcon={faFileAlt}
+      loadingText={text('loadingText')}
+      size="sm"
+      variant="outline-primary"
+    >
+      Confirm
+    </Button>
+    {' '}
+    <Button
+      isLoading={boolean('isLoading', true)}
+      leadingIcon={faFileAlt}
+      loadingText={text('loadingText')}
+      size="md"
+      variant="primary"
+    >
+      Confirm
+    </Button>
+    {' '}
+    <Button
+      isLoading={boolean('isLoading', true)}
+      leadingIcon={faFileAlt}
+      loadingText={text('loadingText')}
+      size="md"
+      variant="outline-primary"
+    >
+      Confirm
     </Button>
   </>
 );
