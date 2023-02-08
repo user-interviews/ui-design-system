@@ -1,4 +1,5 @@
 import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Button } from 'src/Button';
 
 # Button
 
@@ -11,6 +12,10 @@ import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 <Canvas>
   <Story id="components-button--primary" />
 </Canvas>
+
+## Props
+
+<ArgsTable of={Button} />
 
 ## Anatomy:
 - **Leading icon (optional):** Should be included when the button has a clear action verb (e.g. Edit, Save, Delete)
@@ -93,4 +98,14 @@ import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 <Preview>
   <Story id="components-button--brands" />
 </Preview>
+
+### Loading
+- The loading state is displayed when an action has been initiated and the system is processing it.
+For instance, when a page is being saved or a file is uploading, the button typically transforms into a loading state with altered
+loading text and a spinner. This is accompanied by a disabled state to prevent duplicated actions.
+
+<Preview>
+  <Story id="components-button--loading" />
+</Preview>
+
 

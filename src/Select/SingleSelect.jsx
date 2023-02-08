@@ -78,7 +78,11 @@ SingleSelect.propTypes = {
   getOptionLabel: propTypes.func,
   getOptionValue: propTypes.func,
   id: propTypes.string,
-  inputId: propTypes.string,
+  /**
+    The value of the search input.
+    Required for connecting the input with a form label.
+  */
+  inputId: propTypes.string.isRequired,
   isClearable: propTypes.bool,
   isLoading: propTypes.bool,
   isMulti: propTypes.bool,
@@ -106,7 +110,6 @@ SingleSelect.defaultProps = {
   getOptionValue: undefined,
   isClearable: false,
   id: undefined,
-  inputId: undefined,
   isLoading: false,
   isMulti: undefined,
   isSearchable: false,
