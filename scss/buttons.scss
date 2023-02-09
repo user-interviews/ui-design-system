@@ -288,6 +288,7 @@ $warning: $ux-yellow-400;
 
   &:active, &:focus {
     @include btn-remove-bootstrap-focus-outline;
+    background-color: transparent;
   }
 }
 
