@@ -28,6 +28,10 @@ $warning: $ux-yellow-400;
   outline-offset: 0.125rem;
 }
 
+@mixin btn-remove-bootstrap-focus-outline {
+  box-shadow: none !important;
+}
+
 @mixin btn-primary {
   $btn-primary-background: $primary;
   $btn-primary-border: $primary;
@@ -55,8 +59,12 @@ $warning: $ux-yellow-400;
     $btn-primary-active-color,
   );
 
-  &:focus, &:active {
+  &:focus-visible {
     @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
   }
 }
 
@@ -88,8 +96,12 @@ $warning: $ux-yellow-400;
     border-color: $btn-outline-primary-active-border-color;
   }
 
-  &:focus, &:active {
+  &:focus-visible {
     @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
   }
 }
 
@@ -120,8 +132,12 @@ $warning: $ux-yellow-400;
     $btn-danger-active-color,
   );
 
-  &:focus, &:active {
+  &:focus-visible {
     @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
   }
 }
 
@@ -153,8 +169,12 @@ $warning: $ux-yellow-400;
     border-color: $btn-outline-danger-active-border-color;
   }
 
-  &:focus, &:active {
+  &:focus-visible {
     @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
   }
 }
 
@@ -185,8 +205,12 @@ $warning: $ux-yellow-400;
     $btn-warning-active-color,
   );
 
-  &:focus, &:active {
+  &:focus-visible {
     @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
   }
 }
 
@@ -218,8 +242,12 @@ $warning: $ux-yellow-400;
     border-color: $btn-outline-warning-active-border-color;
   }
 
-  &:focus, &:active {
+  &:focus-visible {
     @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
   }
 }
 
@@ -254,8 +282,13 @@ $warning: $ux-yellow-400;
     color: $ux-gray-500;
   }
 
-  &:focus, &:active {
+  &:focus-visible {
     @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
+    background-color: transparent;
   }
 }
 
@@ -287,8 +320,12 @@ $warning: $ux-yellow-400;
     border-color: $btn-outline-transparent-active-border-color;
   }
 
-  &:focus, &:active {
+  &:focus-visible {
     @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
   }
 }
 
@@ -323,8 +360,12 @@ $warning: $ux-yellow-400;
     color: $ux-white;
   }
 
-  &:focus, &:active {
+  &:focus-visible {
     @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
   }
 }
 
@@ -359,8 +400,12 @@ $warning: $ux-yellow-400;
     color: $ux-white;
   }
 
-  &:focus, &:active {
+  &:focus-visible {
     @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
   }
 }
 
@@ -395,8 +440,12 @@ $warning: $ux-yellow-400;
       color: $ux-white;
     }
 
-    &:focus, &:active {
+    &:focus-visible {
       @include btn-focus-outline;
+    }
+  
+    &:active, &:focus {
+      @include btn-remove-bootstrap-focus-outline;
     }
   }
 
@@ -431,8 +480,12 @@ $warning: $ux-yellow-400;
       color: $ux-white;
     }
 
-    &:focus, &:active {
+    &:focus-visible {
       @include btn-focus-outline;
+    }
+  
+    &:active, &:focus {
+      @include btn-remove-bootstrap-focus-outline;
     }
   }
 
@@ -474,8 +527,12 @@ $warning: $ux-yellow-400;
       text-decoration: underline;
     }
 
-    &:focus, &:active {
+    &:focus-visible {
       @include btn-focus-outline;
+    }
+  
+    &:active, &:focus {
+      @include btn-remove-bootstrap-focus-outline;
     }
   }
 
