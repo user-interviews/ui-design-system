@@ -1,0 +1,57 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Toast from './Toast';
+
+# Toast
+
+##
+
+<h4>
+	Toasts communicate important messages and provide immediate feedback without disrupting the user experience.
+</h4>
+
+<Canvas>
+  <Story id="components-toast--default" />
+</Canvas>
+
+## Props
+
+<ArgsTable of={Toast} />
+
+
+## useToast
+
+This custom hook returns the following four values to aid the implementation of toast components.
+
+#### messages
+- Array of objects with shape:
+```
+{
+  type: MessageTypes.SUCCESS, (one of MessageTypes)
+  title: 'A good title',
+  message: 'A good message',
+  action: {
+    url: 'www.url.com'
+    content: 'Action name'
+  }
+}
+```
+#### clearMessages
+- Function that resets `messages` value to an empty array.
+#### dismissMessage
+- Function that removes message from `messages` array, by `messageId`
+#### setMessage
+- Function that adds message to `messages` array.
+- Accepts parameter of object with shape:
+```
+{
+  type: MessageTypes.SUCCESS, (one of MessageTypes)
+  title: 'A good title',
+  message: 'A good message',
+  action: {
+    url: 'www.url.com'
+    content: 'Action name'
+  }
+}
+```
+
+

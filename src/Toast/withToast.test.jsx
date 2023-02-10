@@ -22,7 +22,10 @@ describe('test withToast', () => {
     const component = toast.root.findByType(WrappedComponent);
 
     act(() => {
-      component.props.setToastMessage(MessageTypes.SUCCESS, newMessage);
+      component.props.setToastMessage({
+        type: MessageTypes.SUCCESS,
+        message: newMessage,
+      });
     });
 
     expect(toast).toMatchSnapshot();

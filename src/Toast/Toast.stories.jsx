@@ -4,6 +4,7 @@ import { withKnobs, text, radios } from '@storybook/addon-knobs';
 import { MessageTypes } from 'src/Alert';
 import Button from 'src/Button';
 import { withToast, withToastPropTypes } from 'src/Toast';
+import mdx from './Toast.mdx';
 
 import '../../scss/global.scss';
 
@@ -11,6 +12,11 @@ export default {
   title: 'Components/Toast',
   component: withToast,
   decorators: [withKnobs],
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 };
 
 const DummyComponent = ({
@@ -18,13 +24,23 @@ const DummyComponent = ({
 }) => (
   <div>
     <p>Click the button to see a toast message.  Use the knobs to try different types!</p>
-    <Button variant="primary" onClick={() => setToastMessage(type, message, action, title)}>Submit</Button>
+    <Button
+      variant="primary"
+      onClick={() => setToastMessage({
+        type,
+        message,
+        action,
+        title,
+      })}
+    >
+      Submit
+    </Button>
   </div>
   );
 DummyComponent.propTypes = withToastPropTypes;
 const ToastDummyComponent = withToast(DummyComponent);
 
-export const Toast = () => (
+export const Default = () => (
   <ToastDummyComponent
     message={text('Message', 'Your action was a success!')}
     title={text('Title', 'Title')}
