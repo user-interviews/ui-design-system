@@ -16,13 +16,18 @@ describe('useToast', () => {
     const { result } = renderHook(() => useToast());
 
     act(() => {
-      result.current.setMessage(MessageTypes.SUCCESS, newMessage);
+      result.current.setMessage({
+        type: MessageTypes.SUCCESS,
+        message: newMessage,
+      });
     });
 
     expect(result.current.messages).toEqual([{
       id: GENERATED_UUID,
       type: MessageTypes.SUCCESS,
       message: newMessage,
+      action: undefined,
+      title: undefined,
     }]);
   });
 
@@ -31,7 +36,10 @@ describe('useToast', () => {
     const { result } = renderHook(() => useToast());
 
     act(() => {
-      result.current.setMessage(MessageTypes.SUCCESS, newMessage);
+      result.current.setMessage({
+        type: MessageTypes.SUCCESS,
+        message: newMessage,
+      });
     });
 
     expect(result.current.messages).toEqual([{
@@ -54,7 +62,10 @@ describe('useToast', () => {
     newMessages.forEach(
       (message) => {
         act(() => {
-          result.current.setMessage(MessageTypes.ERROR, message);
+          result.current.setMessage({
+            type: MessageTypes.ERROR,
+            message,
+          });
         });
       },
     );
@@ -63,6 +74,8 @@ describe('useToast', () => {
       newMessages.map((message) => ({
         id: GENERATED_UUID,
         type: MessageTypes.ERROR,
+        action: undefined,
+        title: undefined,
         message,
       })),
     );
@@ -70,10 +83,10 @@ describe('useToast', () => {
 
   test('can clear all messages', () => {
     const messages = ['A new', 'message'].map(
-      (msg, i) => ({
+      (message, i) => ({
           id: i,
           type: MessageTypes.SUCCESS,
-          message: msg,
+          message,
         }),
     );
 

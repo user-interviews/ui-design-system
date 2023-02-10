@@ -43,6 +43,10 @@ Toast.propTypes = {
   header: PropTypes.bool,
   messages: PropTypes.arrayOf(
     PropTypes.shape({
+      action: PropTypes.shape({
+        content: PropTypes.string,
+        url: PropTypes.string,
+      }),
       id: PropTypes.string,
       message: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
       title: PropTypes.string,
