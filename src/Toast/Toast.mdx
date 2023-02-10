@@ -6,8 +6,12 @@ import Toast from './Toast';
 ##
 
 <h4>
-	Toasts communciate important messages and provide immediate feedback without disrupting the user experience.
+	Toasts communicate important messages and provide immediate feedback without disrupting the user experience.
 </h4>
+
+<Canvas>
+  <Story id="components-toast--default" />
+</Canvas>
 
 ## Props
 
@@ -22,7 +26,7 @@ This custom hook returns the following four values to aid the implementation of 
 - Array of objects with shape:
 ```
 {
-  type: 'success' (one of MessageTypes),
+  type: MessageTypes.SUCCESS, (one of MessageTypes)
   title: 'A good title',
   message: 'A good message',
   action: {
@@ -40,7 +44,7 @@ This custom hook returns the following four values to aid the implementation of 
 - Accepts parameter of object with shape:
 ```
 {
-  type: 'success' (one of MessageTypes),
+  type: MessageTypes.SUCCESS, (one of MessageTypes)
   title: 'A good title',
   message: 'A good message',
   action: {

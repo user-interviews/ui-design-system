@@ -40,7 +40,7 @@ const DummyComponent = ({
 DummyComponent.propTypes = withToastPropTypes;
 const ToastDummyComponent = withToast(DummyComponent);
 
-export const Toast = () => (
+export const Default = () => (
   <ToastDummyComponent
     message={text('Message', 'Your action was a success!')}
     title={text('Title', 'Title')}
