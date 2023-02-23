@@ -49,16 +49,26 @@ const useToast = (initialMessages = []) => {
     dispatch({ type: ACTIONS.CLEAR_MESSAGES });
   }, []);
 
-  const setMessage = useCallback((options) => {
-    if ((options && typeof options === 'string')) {
+  const setMessage = useCallback((...options) => {
+    if (options && typeof options[0] === 'string') {
       bugsnagClient.notify(new Error('Toast component argument error, expecting single formatted object'));
+
+      dispatch({
+        type: ACTIONS.SET_MESSAGE,
+        payload: {
+          type: options[0] || undefined,
+          message: options[1] || undefined,
+          action: options[2] || undefined,
+          title: options[3] || undefined,
+        },
+      });
     } else {
       const {
         action,
         type,
         message,
         title,
-      } = options;
+      } = options[0];
 
       dispatch({
         type: ACTIONS.SET_MESSAGE,
