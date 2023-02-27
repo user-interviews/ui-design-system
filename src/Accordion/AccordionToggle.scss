@@ -23,10 +23,9 @@
     }
   }
 
-  &:focus {
+  &:focus-visible {
+    @include btn-focus-outline;
     border-radius: $ux-border-radius;
-    box-shadow: 0 0 0 2px $ux-blue-500;
-    transition: $focus-state-transition-time;
   }
 
   &:not(.collapsed) .AccordionToggle__chevron-right {
