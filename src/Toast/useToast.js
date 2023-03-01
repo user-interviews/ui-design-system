@@ -52,6 +52,7 @@ const useToast = (initialMessages = []) => {
   const setMessage = useCallback((...options) => {
     if (options && typeof options[0] === 'string') {
       bugsnagClient.notify(new Error('Toast component argument error, expecting single formatted object'));
+      console.log('Toast component argument error, expecting single formatted object');
 
       dispatch({
         type: ACTIONS.SET_MESSAGE,

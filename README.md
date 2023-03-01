@@ -10,7 +10,7 @@ The goal of the design system is to achieve visual and experiential consistency 
 
 ## Contributing
 
-The Design System tech lead and Product Designers are the main decision makers & implementers for the system, but we welcome everyone's contributions or suggestions. We meet on a weekly basis and are continuously prioritizing updates while also supporting the needs of our product teams. 
+The Design System tech lead and Product Designers are the main decision makers & implementers for the system, but we welcome everyone's contributions or suggestions. We meet on a weekly basis and are continuously prioritizing updates while also supporting the needs of our product teams.
 
 ## Storybook Documentation
 
@@ -20,33 +20,36 @@ The Design System tech lead and Product Designers are the main decision makers &
 
 - For every component, we typically illustrate common use cases for different variants or states of a component.
 - Documentation lives in `Component.mdx` which references stories defined in `Component.stories.jsx`. See documentation style here in [Stories with arbitrary MDX](https://github.com/storybookjs/storybook/blob/master/addons/docs/docs/recipes.md#csf-stories-with-arbitrary-mdx).
-- Check out our [Storybook Notion Doc](https://www.notion.so/userinterviews1/Storybook-9a3585db57514ec783e39c78518ad5e6) for examples. You can find our current documentation template that we try to follow for all of our `mdx` files in that Notion doc. 
--  We encourage all contributors to the Design System (engineers, designers, product) to add to our documentation. 
+- Check out our [Storybook Notion Doc](https://www.notion.so/userinterviews1/Storybook-9a3585db57514ec783e39c78518ad5e6) for examples. You can find our current documentation template that we try to follow for all of our `mdx` files in that Notion doc.
+-  We encourage all contributors to the Design System (engineers, designers, product) to add to our documentation.
 
 
 ## Steps to update any documentation file
 
-After cloning the repo, obtain a `.npmrc` file from another developer. This file contains authorization tokens for any private
-node packages.
+### Set up local variables
 
-### `git checkout -b chore/UIDS-###-update-some-component-documentation`
+After cloning the repo, create `.npmrc` and `.env` files in the root level directory, as well as a `.jest` directory with a file named `setEnvVars.js` inside. These gitignored files will store our auth tokens and other local variables.
 
-In your terminal, check out a new branch locally for you to make changes. You should have a Github issue to track that corresponds to the branch name. 
+Copy the respective contents of into each new file from the `Design System local variables` note located in our password manager (1Password).
 
 ### `yarn install`
 
 Installs all yarn dependencies
 
+### `git checkout -b chore/UIDS-###-update-some-component-documentation`
+
+In your terminal, check out a new branch locally for you to make changes. You should have a Github issue to track that corresponds to the branch name.
+
 ### `yarn storybook`
 
 Launches the Storybook server.<br />
 
-- In the code editor of your choice, navigate to the Component library found under src `ui-design-system/src` 
+- In the code editor of your choice, navigate to the Component library found under src `ui-design-system/src`
 - Open any `Component.mdx` file (e.g. `Alert.mdx`) that you want to edit. These are markdown files. See [markdown docs](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for additional how-to.
-- While Storybook is running, you should be able to view any changes you make to the `mdx` file after saving your changes. 
-- Push your changes to Github and submit for a review / pull request. 
+- While Storybook is running, you should be able to view any changes you make to the `mdx` file after saving your changes.
+- Push your changes to Github and submit for a review / pull request.
 
-If you need any help with setup or have questions about the process of writing documentation, feel free to reach out to a developer or a member of the Design System team. 
+If you need any help with setup or have questions about the process of writing documentation, feel free to reach out to a developer or a member of the Design System team.
 
 
 # Developer Resources
@@ -87,16 +90,16 @@ Trigger a production build when files are changed.
 Remove symlinked packages.
 
 ## Chromatic visual testing & live feedback
-We use [Chromatic](https://www.chromatic.com/) for visual testing and gathering UI feedback. 
+We use [Chromatic](https://www.chromatic.com/) for visual testing and gathering UI feedback.
 
 To join Chromatic for 'ui-design-system', ask Jason for the join link.
 
-If you are a Product Designer or wanting to view changes on a particular feature branch, a developer can provide a link to that specific Chromatic build. 
+If you are a Product Designer or wanting to view changes on a particular feature branch, a developer can provide a link to that specific Chromatic build.
 
 If you are a Developer and want to trigger a Chromatic build,
   1. Join Chromatic for the 'ui-design-system' (ask Jason for the join link).
   2. Go to the Manage tab for 'ui-design-system' > Configure > Find the project token.
-  3. In your terminal, run `npx chromatic --project-token <projectToken>`. Use this command when you want to create a build and share with a stakeholder to gather UI feedback. You will be able to find the build on the Chromatic builds dashboard. We currently run automatic nightly builds for Chromatic via Github Actions. 
+  3. In your terminal, run `npx chromatic --project-token <projectToken>`. Use this command when you want to create a build and share with a stakeholder to gather UI feedback. You will be able to find the build on the Chromatic builds dashboard. We currently run automatic nightly builds for Chromatic via Github Actions.
 
 ## Pull requests
 
