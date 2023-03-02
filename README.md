@@ -28,9 +28,9 @@ The Design System tech lead and Product Designers are the main decision makers &
 
 ### Set up local variables
 
-After cloning the repo, create `.npmrc` and `.env` files in the root level directory, as well as a `.jest` directory with a file named `setEnvVars.js` inside. These gitignored files will store our auth tokens and other local variables.
+After cloning the repo, create `.npmrc` and `.env` files in the root level directory. These gitignored files will store our auth tokens and other local variables.
 
-Copy the respective contents of into each new file from the `Design System local variables` note located in our password manager (1Password).
+Copy the respective contents into each new file from the `Design System local variables` note located in our password manager (1Password).
 
 ### `yarn install`
 
