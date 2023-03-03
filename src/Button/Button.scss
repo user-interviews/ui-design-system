@@ -28,6 +28,15 @@
 
   &.btn-sm {
     border-radius: $ux-border-radius;
+    padding: .188rem .5rem;
+  }
+
+  &.btn-md {
+    padding: .438rem .75rem;
+  }
+
+  &.btn-lg {
+    padding: .563rem 1rem;
   }
 
   &.btn-primary {
