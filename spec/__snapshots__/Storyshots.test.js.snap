@@ -21208,7 +21208,7 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
 >
   <div>
     <span
-      className="sc-dkrFOg JebrL"
+      className="sc-dmyDGi goryrA"
     >
       <ul
         className="nav nav-tabs"
@@ -21375,7 +21375,7 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
 >
   <div>
     <span
-      className="sc-dkrFOg JebrL"
+      className="sc-dmyDGi goryrA"
     >
       <ul
         className="nav nav-tabs"
@@ -21673,118 +21673,6 @@ exports[`Storyshots Components/Text Weight 1`] = `
   >
     Source from a pool of more than 2.1 million participants to reach nearly any target audience.
   </p>
-</div>
-`;
-
-exports[`Storyshots Components/Toast Default 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    aria-live="polite"
-    className="Toast"
-  />
-  <div>
-    <p>
-      Click the button to see a toast message.  Use the knobs to try different types!
-    </p>
-    <button
-      className="Button btn btn-primary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      Submit
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Toast Manual Dismiss Toast 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    aria-live="polite"
-    className="Toast"
-  />
-  <div>
-    <p>
-      Click the button to see a toast message.  Use the knobs to try different types!
-    </p>
-    <button
-      className="Button btn btn-primary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      Submit
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Toast Toast Custom Message 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    aria-live="polite"
-    className="Toast"
-  />
-  <div>
-    <p>
-      Click the button to see a toast message.  Use the knobs to try different types!
-    </p>
-    <button
-      className="Button btn btn-primary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      Submit
-    </button>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Toast Toast With Action 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
->
-  <div
-    aria-live="polite"
-    className="Toast"
-  />
-  <div>
-    <p>
-      Click the button to see a toast message.  Use the knobs to try different types!
-    </p>
-    <button
-      className="Button btn btn-primary"
-      disabled={false}
-      onClick={[Function]}
-      type="button"
-    >
-      Submit
-    </button>
-  </div>
 </div>
 `;
 
@@ -26200,7 +26088,7 @@ exports[`Storyshots Layouts/CardStack Centered 1`] = `
   }
 >
   <div
-    className="sc-bcXHqe fA-DmmI"
+    className="sc-beySbM psqHh"
   >
     <div
       className="CardStack CardStack--sm"
@@ -27205,7 +27093,7 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
   }
 >
   <div
-    className="sc-bcXHqe kCrVoB"
+    className="sc-beySbM dqVzNU"
     height="100%"
   >
     <div
@@ -27501,7 +27389,7 @@ exports[`Storyshots Layouts/Flex Flex Container 1`] = `
     Properties for the parent (flex container)
   </h1>
   <div
-    className="sc-bcXHqe kCrVoB"
+    className="sc-beySbM dqVzNU"
     height="100%"
   >
     <div
@@ -27797,10 +27685,10 @@ exports[`Storyshots Layouts/Flex Flex Item 1`] = `
     Properties for the children (flex item)
   </h1>
   <div
-    className="sc-bcXHqe jkPkpM"
+    className="sc-beySbM cbcIFp"
   >
     <div
-      className="sc-bcXHqe bCIimy"
+      className="sc-beySbM letLKH"
     >
       <div
         className="ProfileCell"
@@ -27849,7 +27737,7 @@ exports[`Storyshots Layouts/Flex Flex Item 1`] = `
       </div>
     </div>
     <div
-      className="sc-bcXHqe gRULsZ"
+      className="sc-beySbM gXSAHo"
     >
       <div
         className="ProfileCell"
@@ -27898,7 +27786,7 @@ exports[`Storyshots Layouts/Flex Flex Item 1`] = `
       </div>
     </div>
     <div
-      className="sc-bcXHqe gRULsZ"
+      className="sc-beySbM gXSAHo"
     >
       <div
         className="ProfileCell"

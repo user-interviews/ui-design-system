@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import Avatar from 'src/Avatar';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import ProfileCellSkeleton from './ProfileCellSkeleton';
 
 import './ProfileCell.scss';
