@@ -26,6 +26,7 @@ const Form = forwardRef(({
       className={classNames('Form', className)}
       id={id}
       method={isGetFormMethod ? 'GET' : 'POST'}
+      // eslint-disable-next-line
       multipart={multipart}
       name={name}
       ref={ref}

@@ -80,6 +80,7 @@ module.exports = {
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|mdx)$": "<rootDir>/spec/__mocks__/fileMock.js",
     '\\.(?:(?!variables).)+.(css|less|scss)$': '<rootDir>/spec/__mocks__/styleMock.js',
     '^src/([^\\.]*)$': "<rootDir>/src/$1",
+    '@bugsnag/js': '@bugsnag/browser',
   },
 
   // An array of regexp pattern strings, matched against all module paths before considered 'visible' to the module loader

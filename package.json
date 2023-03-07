@@ -2,9 +2,12 @@
   "name": "@user-interviews/ui-design-system",
   "version": "1.40.0",
   "dependencies": {
+    "@bugsnag/js": "^6.0.0",
+    "@bugsnag/plugin-react": "^6.0.0",
     "react-bootstrap": "^2.5.0",
     "react-loading-skeleton": "^3.1.0",
     "react-router-dom": "^5.2.0",
+    "react-scripts": "0.2.3",
     "react-select": "^5.0.0",
     "react-toggle": "4.1.1",
     "react-transition-group": "^4.3.0",
