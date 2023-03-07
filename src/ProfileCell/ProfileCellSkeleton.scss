@@ -1,0 +1,19 @@
+@import '../../scss/theme';
+
+$profile-cell-avatar-small-width: $avatar-small-width;
+
+.ProfileCellSkeleton {
+  display: grid;
+  grid-template-columns: $profile-cell-avatar-small-width auto;
+
+  &__avatar {
+    grid-column-start: 1;
+  }
+
+  &__info {
+    grid-column-start: 2;
+    margin-left: 1rem;
+    display: grid;
+    align-items: center;
+  }
+}

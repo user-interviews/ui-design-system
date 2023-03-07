@@ -8,13 +8,13 @@ export default function withTrackedClick(Target) {
 
     const { eventData, event, ...rest } = props;
 
-    function handleClick(clickEvent) {
+    const handleClick = (clickEvent) => {
       props.tracking.trackEvent({ ...eventData, event });
 
       if (props.onClick) {
         props.onClick(clickEvent);
       }
-    }
+    };
 
     return <Target {...rest} onClick={handleClick} />;
   };
