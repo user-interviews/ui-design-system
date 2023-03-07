@@ -45,7 +45,7 @@ import { OverlayTrigger, OVERLAY_TRIGGER_PLACEMENT } from 'src/OverlayTrigger';
 import { Pill, Pills, PILL_COLORS } from 'src/Pill';
 import { Popover, PopoverBody, PopoverCard } from 'src/Popover';
 import Popper from 'src/Popper';
-import ProfileCell from 'src/ProfileCell';
+import ProfileCell, { ProfileCellSkeleton } from 'src/ProfileCell';
 import RadioButton from 'src/RadioButton';
 import RadioButtonGroup from 'src/RadioButtonGroup';
 import {
@@ -145,6 +145,7 @@ export {
   PopoverCard,
   Popper,
   ProfileCell,
+  ProfileCellSkeleton,
   RadioButton,
   RadioButtonGroup,
   Row,
