@@ -9383,6 +9383,399 @@ exports[`Storyshots Components/Popper Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Profile Cell Large 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCell ProfileCell--large"
+  >
+    <div
+      className="ProfileCell__image"
+    >
+      <div
+        aria-hidden={false}
+        className="Avatar Avatar--large"
+      >
+        <div
+          className="Avatar__circle"
+        >
+          <span
+            className="Avatar__circle__initials"
+          >
+            RR
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <div
+        className="ProfileCell__content__name__container"
+      >
+        <h5
+          className="ProfileCell__content__name"
+        >
+          Riley Researcher
+        </h5>
+      </div>
+      <div
+        className="ProfileCell__content__subtitle"
+      >
+        <div>
+          riley@userinterviews.com
+        </div>
+        <div>
+          +1 888 888 8888
+        </div>
+        <div>
+          (-5:00) America/New York
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Profile Cell Loading 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCellSkeleton"
+  >
+    <div
+      className="ProfileCellSkeleton__avatar"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "50%",
+              "height": 44,
+              "width": 44,
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+    <div
+      className="ProfileCellSkeleton__info"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+  </div>
+  <br />
+  <div
+    className="ProfileCellSkeleton"
+  >
+    <div
+      className="ProfileCellSkeleton__avatar"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "50%",
+              "height": 44,
+              "width": 44,
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+    <div
+      className="ProfileCellSkeleton__info"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Profile Cell Small 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCell"
+  >
+    <div
+      className="ProfileCell__image"
+    >
+      <div
+        aria-hidden={false}
+        className="Avatar"
+      >
+        <div
+          className="Avatar__circle"
+        >
+          <span
+            className="Avatar__circle__initials"
+          >
+            RR
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <div
+        className="ProfileCell__content__name__container"
+      >
+        <h5
+          className="ProfileCell__content__name"
+        >
+          Riley Researcher
+        </h5>
+      </div>
+      <div
+        className="ProfileCell__content__subtitle"
+      >
+        riley@userinterviews.com
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Profile Cell With Image 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCell ProfileCell--large"
+  >
+    <div
+      className="ProfileCell__image"
+    >
+      <div
+        aria-hidden={false}
+        className="Avatar Avatar--large"
+      >
+        <div
+          className="Avatar__circle"
+        >
+          <img
+            alt="Riley Researcher"
+            onError={[Function]}
+            src="https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <div
+        className="ProfileCell__content__name__container"
+      >
+        <h5
+          className="ProfileCell__content__name"
+        >
+          Riley Researcher
+        </h5>
+      </div>
+      <div
+        className="ProfileCell__content__subtitle"
+      >
+        <div>
+          riley@userinterviews.com
+        </div>
+        <div>
+          +1 888 888 8888
+        </div>
+        <div>
+          (-5:00) America/New York
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Profile Cell With Trailing Icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCell"
+  >
+    <div
+      className="ProfileCell__image"
+    >
+      <div
+        aria-hidden={false}
+        className="Avatar"
+      >
+        <div
+          className="Avatar__circle"
+        >
+          <img
+            alt="Riley Researcher"
+            onError={[Function]}
+            src="https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <div
+        className="ProfileCell__content__name__container"
+      >
+        <h5
+          className="ProfileCell__content__name"
+        >
+          Riley Researcher
+        </h5>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-shield-check ProfileCell__content__trailing_icon"
+          data-icon="shield-check"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zm-47.2 114.2l-184 184c-6.2 6.2-16.4 6.2-22.6 0l-104-104c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l70.1 70.1 150.1-150.1c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.3 6.3 6.3 16.4 0 22.6z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </div>
+      <div
+        className="ProfileCell__content__subtitle"
+      >
+        riley@userinterviews.com
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/RadioButton Default 1`] = `
 <div
   style={
@@ -20815,7 +21208,7 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
 >
   <div>
     <span
-      className="sc-dkrFOg JebrL"
+      className="sc-dmyDGi goryrA"
     >
       <ul
         className="nav nav-tabs"
@@ -20982,7 +21375,7 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
 >
   <div>
     <span
-      className="sc-dkrFOg JebrL"
+      className="sc-dmyDGi goryrA"
     >
       <ul
         className="nav nav-tabs"
@@ -25695,7 +26088,7 @@ exports[`Storyshots Layouts/CardStack Centered 1`] = `
   }
 >
   <div
-    className="sc-bcXHqe fA-DmmI"
+    className="sc-beySbM psqHh"
   >
     <div
       className="CardStack CardStack--sm"
@@ -26685,6 +27078,760 @@ exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
             </h2>
           </div>
         </section>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/Flex Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="sc-beySbM dqVzNU"
+    height="100%"
+  >
+    <div
+      className="ProfileCell"
+    >
+      <div
+        className="ProfileCell__image"
+      >
+        <div
+          aria-hidden={false}
+          className="Avatar"
+        >
+          <div
+            className="Avatar__circle ui-mod ui-mod--1"
+          >
+            <span
+              className="Avatar__circle__initials"
+            >
+              RR
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ProfileCell__content"
+        style={
+          Object {
+            "maxWidth": "none",
+          }
+        }
+      >
+        <div
+          className="ProfileCell__content__name__container"
+        >
+          <h5
+            className="ProfileCell__content__name"
+          >
+            Riley Researcher
+          </h5>
+        </div>
+        <div
+          className="ProfileCell__content__subtitle"
+        >
+          riley+1@userinterviews.com
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell"
+    >
+      <div
+        className="ProfileCell__image"
+      >
+        <div
+          aria-hidden={false}
+          className="Avatar"
+        >
+          <div
+            className="Avatar__circle ui-mod ui-mod--2"
+          >
+            <span
+              className="Avatar__circle__initials"
+            >
+              RR
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ProfileCell__content"
+        style={
+          Object {
+            "maxWidth": "none",
+          }
+        }
+      >
+        <div
+          className="ProfileCell__content__name__container"
+        >
+          <h5
+            className="ProfileCell__content__name"
+          >
+            Riley Researcher
+          </h5>
+        </div>
+        <div
+          className="ProfileCell__content__subtitle"
+        >
+          riley+2@userinterviews.com
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell"
+    >
+      <div
+        className="ProfileCell__image"
+      >
+        <div
+          aria-hidden={false}
+          className="Avatar"
+        >
+          <div
+            className="Avatar__circle ui-mod ui-mod--3"
+          >
+            <span
+              className="Avatar__circle__initials"
+            >
+              RR
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ProfileCell__content"
+        style={
+          Object {
+            "maxWidth": "none",
+          }
+        }
+      >
+        <div
+          className="ProfileCell__content__name__container"
+        >
+          <h5
+            className="ProfileCell__content__name"
+          >
+            Riley Researcher
+          </h5>
+        </div>
+        <div
+          className="ProfileCell__content__subtitle"
+        >
+          riley+3@userinterviews.com
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell"
+    >
+      <div
+        className="ProfileCell__image"
+      >
+        <div
+          aria-hidden={false}
+          className="Avatar"
+        >
+          <div
+            className="Avatar__circle ui-mod ui-mod--4"
+          >
+            <span
+              className="Avatar__circle__initials"
+            >
+              RR
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ProfileCell__content"
+        style={
+          Object {
+            "maxWidth": "none",
+          }
+        }
+      >
+        <div
+          className="ProfileCell__content__name__container"
+        >
+          <h5
+            className="ProfileCell__content__name"
+          >
+            Riley Researcher
+          </h5>
+        </div>
+        <div
+          className="ProfileCell__content__subtitle"
+        >
+          riley+4@userinterviews.com
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell"
+    >
+      <div
+        className="ProfileCell__image"
+      >
+        <div
+          aria-hidden={false}
+          className="Avatar"
+        >
+          <div
+            className="Avatar__circle ui-mod ui-mod--5"
+          >
+            <span
+              className="Avatar__circle__initials"
+            >
+              RR
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ProfileCell__content"
+        style={
+          Object {
+            "maxWidth": "none",
+          }
+        }
+      >
+        <div
+          className="ProfileCell__content__name__container"
+        >
+          <h5
+            className="ProfileCell__content__name"
+          >
+            Riley Researcher
+          </h5>
+        </div>
+        <div
+          className="ProfileCell__content__subtitle"
+        >
+          riley+5@userinterviews.com
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell"
+    >
+      <div
+        className="ProfileCell__image"
+      >
+        <div
+          aria-hidden={false}
+          className="Avatar"
+        >
+          <div
+            className="Avatar__circle ui-mod ui-mod--0"
+          >
+            <span
+              className="Avatar__circle__initials"
+            >
+              RR
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ProfileCell__content"
+        style={
+          Object {
+            "maxWidth": "none",
+          }
+        }
+      >
+        <div
+          className="ProfileCell__content__name__container"
+        >
+          <h5
+            className="ProfileCell__content__name"
+          >
+            Riley Researcher
+          </h5>
+        </div>
+        <div
+          className="ProfileCell__content__subtitle"
+        >
+          riley+6@userinterviews.com
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/Flex Flex Container 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <h1
+    style={
+      Object {
+        "fontSize": "1.5rem",
+        "fontWeight": "700",
+      }
+    }
+  >
+    Properties for the parent (flex container)
+  </h1>
+  <div
+    className="sc-beySbM dqVzNU"
+    height="100%"
+  >
+    <div
+      className="ProfileCell"
+    >
+      <div
+        className="ProfileCell__image"
+      >
+        <div
+          aria-hidden={false}
+          className="Avatar"
+        >
+          <div
+            className="Avatar__circle ui-mod ui-mod--1"
+          >
+            <span
+              className="Avatar__circle__initials"
+            >
+              RR
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ProfileCell__content"
+        style={
+          Object {
+            "maxWidth": "none",
+          }
+        }
+      >
+        <div
+          className="ProfileCell__content__name__container"
+        >
+          <h5
+            className="ProfileCell__content__name"
+          >
+            Riley Researcher
+          </h5>
+        </div>
+        <div
+          className="ProfileCell__content__subtitle"
+        >
+          riley+1@userinterviews.com
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell"
+    >
+      <div
+        className="ProfileCell__image"
+      >
+        <div
+          aria-hidden={false}
+          className="Avatar"
+        >
+          <div
+            className="Avatar__circle ui-mod ui-mod--2"
+          >
+            <span
+              className="Avatar__circle__initials"
+            >
+              RR
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ProfileCell__content"
+        style={
+          Object {
+            "maxWidth": "none",
+          }
+        }
+      >
+        <div
+          className="ProfileCell__content__name__container"
+        >
+          <h5
+            className="ProfileCell__content__name"
+          >
+            Riley Researcher
+          </h5>
+        </div>
+        <div
+          className="ProfileCell__content__subtitle"
+        >
+          riley+2@userinterviews.com
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell"
+    >
+      <div
+        className="ProfileCell__image"
+      >
+        <div
+          aria-hidden={false}
+          className="Avatar"
+        >
+          <div
+            className="Avatar__circle ui-mod ui-mod--3"
+          >
+            <span
+              className="Avatar__circle__initials"
+            >
+              RR
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ProfileCell__content"
+        style={
+          Object {
+            "maxWidth": "none",
+          }
+        }
+      >
+        <div
+          className="ProfileCell__content__name__container"
+        >
+          <h5
+            className="ProfileCell__content__name"
+          >
+            Riley Researcher
+          </h5>
+        </div>
+        <div
+          className="ProfileCell__content__subtitle"
+        >
+          riley+3@userinterviews.com
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell"
+    >
+      <div
+        className="ProfileCell__image"
+      >
+        <div
+          aria-hidden={false}
+          className="Avatar"
+        >
+          <div
+            className="Avatar__circle ui-mod ui-mod--4"
+          >
+            <span
+              className="Avatar__circle__initials"
+            >
+              RR
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ProfileCell__content"
+        style={
+          Object {
+            "maxWidth": "none",
+          }
+        }
+      >
+        <div
+          className="ProfileCell__content__name__container"
+        >
+          <h5
+            className="ProfileCell__content__name"
+          >
+            Riley Researcher
+          </h5>
+        </div>
+        <div
+          className="ProfileCell__content__subtitle"
+        >
+          riley+4@userinterviews.com
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell"
+    >
+      <div
+        className="ProfileCell__image"
+      >
+        <div
+          aria-hidden={false}
+          className="Avatar"
+        >
+          <div
+            className="Avatar__circle ui-mod ui-mod--5"
+          >
+            <span
+              className="Avatar__circle__initials"
+            >
+              RR
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ProfileCell__content"
+        style={
+          Object {
+            "maxWidth": "none",
+          }
+        }
+      >
+        <div
+          className="ProfileCell__content__name__container"
+        >
+          <h5
+            className="ProfileCell__content__name"
+          >
+            Riley Researcher
+          </h5>
+        </div>
+        <div
+          className="ProfileCell__content__subtitle"
+        >
+          riley+5@userinterviews.com
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell"
+    >
+      <div
+        className="ProfileCell__image"
+      >
+        <div
+          aria-hidden={false}
+          className="Avatar"
+        >
+          <div
+            className="Avatar__circle ui-mod ui-mod--0"
+          >
+            <span
+              className="Avatar__circle__initials"
+            >
+              RR
+            </span>
+          </div>
+        </div>
+      </div>
+      <div
+        className="ProfileCell__content"
+        style={
+          Object {
+            "maxWidth": "none",
+          }
+        }
+      >
+        <div
+          className="ProfileCell__content__name__container"
+        >
+          <h5
+            className="ProfileCell__content__name"
+          >
+            Riley Researcher
+          </h5>
+        </div>
+        <div
+          className="ProfileCell__content__subtitle"
+        >
+          riley+6@userinterviews.com
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Layouts/Flex Flex Item 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <h1
+    style={
+      Object {
+        "fontSize": "1.5rem",
+        "fontWeight": "700",
+      }
+    }
+  >
+    Properties for the children (flex item)
+  </h1>
+  <div
+    className="sc-beySbM cbcIFp"
+  >
+    <div
+      className="sc-beySbM letLKH"
+    >
+      <div
+        className="ProfileCell"
+      >
+        <div
+          className="ProfileCell__image"
+        >
+          <div
+            aria-hidden={false}
+            className="Avatar"
+          >
+            <div
+              className="Avatar__circle ui-mod ui-mod--1"
+            >
+              <span
+                className="Avatar__circle__initials"
+              >
+                CM
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ProfileCell__content"
+          style={
+            Object {
+              "maxWidth": "none",
+            }
+          }
+        >
+          <div
+            className="ProfileCell__content__name__container"
+          >
+            <h5
+              className="ProfileCell__content__name"
+            >
+              Change Me
+            </h5>
+          </div>
+          <div
+            className="ProfileCell__content__subtitle"
+          >
+            change@userinterviews.com
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-beySbM gXSAHo"
+    >
+      <div
+        className="ProfileCell"
+      >
+        <div
+          className="ProfileCell__image"
+        >
+          <div
+            aria-hidden={false}
+            className="Avatar"
+          >
+            <div
+              className="Avatar__circle ui-mod ui-mod--2"
+            >
+              <span
+                className="Avatar__circle__initials"
+              >
+                RR
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ProfileCell__content"
+          style={
+            Object {
+              "maxWidth": "none",
+            }
+          }
+        >
+          <div
+            className="ProfileCell__content__name__container"
+          >
+            <h5
+              className="ProfileCell__content__name"
+            >
+              Riley Researcher
+            </h5>
+          </div>
+          <div
+            className="ProfileCell__content__subtitle"
+          >
+            riley+2@userinterviews.com
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="sc-beySbM gXSAHo"
+    >
+      <div
+        className="ProfileCell"
+      >
+        <div
+          className="ProfileCell__image"
+        >
+          <div
+            aria-hidden={false}
+            className="Avatar"
+          >
+            <div
+              className="Avatar__circle ui-mod ui-mod--3"
+            >
+              <span
+                className="Avatar__circle__initials"
+              >
+                RR
+              </span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="ProfileCell__content"
+          style={
+            Object {
+              "maxWidth": "none",
+            }
+          }
+        >
+          <div
+            className="ProfileCell__content__name__container"
+          >
+            <h5
+              className="ProfileCell__content__name"
+            >
+              Riley Researcher
+            </h5>
+          </div>
+          <div
+            className="ProfileCell__content__subtitle"
+          >
+            riley+3@userinterviews.com
+          </div>
+        </div>
       </div>
     </div>
   </div>
