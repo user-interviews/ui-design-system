@@ -1,5 +1,6 @@
 import { useCallback, useReducer } from 'react';
 import { v4 as generateUUID } from 'uuid';
+import { bugsnagClient } from '../bugsnag';
 
 const createMessage = (
   type,
@@ -48,18 +49,34 @@ const useToast = (initialMessages = []) => {
     dispatch({ type: ACTIONS.CLEAR_MESSAGES });
   }, []);
 
-  const setMessage = useCallback(({
-    action,
-    type,
-    message,
-    title,
-  }) => {
-    dispatch({
- type: ACTIONS.SET_MESSAGE,
-payload: {
- action, type, message, title,
-},
-});
+  const setMessage = useCallback((...options) => {
+    if (options && typeof options[0] === 'string') {
+      bugsnagClient.notify(new Error('Toast component argument error, expecting single formatted object'));
+
+      dispatch({
+        type: ACTIONS.SET_MESSAGE,
+        payload: {
+          type: options[0] || undefined,
+          message: options[1] || undefined,
+          action: options[2] || undefined,
+          title: options[3] || undefined,
+        },
+      });
+    } else {
+      const {
+        action,
+        type,
+        message,
+        title,
+      } = options[0];
+
+      dispatch({
+        type: ACTIONS.SET_MESSAGE,
+        payload: {
+        action, type, message, title,
+        },
+      });
+    }
   }, []);
 
   const dismissMessage = useCallback((messageId) => {

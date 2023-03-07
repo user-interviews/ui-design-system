@@ -260,7 +260,7 @@ $warning: $ux-yellow-400;
   $btn-transparent-hover-border: transparent;
   $btn-transparent-hover-color: $ux-gray-900;
   
-  $btn-transparent-active-background: transparent;
+  $btn-transparent-active-background: $ux-gray-400;
   $btn-transparent-active-border: $ux-gray-400;
   $btn-transparent-active-color: $ux-gray-900;
 
@@ -288,7 +288,6 @@ $warning: $ux-yellow-400;
 
   &:active, &:focus {
     @include btn-remove-bootstrap-focus-outline;
-    background-color: transparent;
   }
 }
 

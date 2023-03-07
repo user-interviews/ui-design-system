@@ -4,11 +4,13 @@ import {
 } from '@storybook/addon-knobs';
 import { faShieldCheck } from '@fortawesome/pro-solid-svg-icons';
 import ProfileCell from 'src/ProfileCell';
+import ProfileCellSkeleton from './ProfileCellSkeleton';
 import mdx from './ProfileCell.mdx';
 
 export default {
   title: 'Components/Profile Cell',
   component: ProfileCell,
+  subcomponents: { ProfileCellSkeleton },
   decorators: [withKnobs],
   parameters: {
     docs: {
@@ -81,4 +83,19 @@ export const WithTrailingIcon = () => (
     trailingIcon={faShieldCheck}
     user={userWithImage}
   />
+);
+
+export const Loading = () => (
+  <>
+    <ProfileCell
+      colorId={number('Color ID', undefined)}
+      isLoading
+      maxWidth={text('Max Text Width (e.g. 8rem)', '')}
+      showAlert={boolean('Show Alert', false)}
+      subtitle={text('Subtitle Text', `riley@userinterviews.com`)}
+      user={userNoImage}
+    />
+    <br />
+    <ProfileCellSkeleton maxWidth={text('Max Text Width (e.g. 8rem)', '')} />
+  </>
 );
