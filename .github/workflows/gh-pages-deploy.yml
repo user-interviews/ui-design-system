@@ -28,4 +28,3 @@
           run: yarn deploy-storybook -- --ci
           env:
             GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
-            REACT_APP_BUGSNAG_API_KEY_JS: ${{ secrets.REACT_APP_BUGSNAG_API_KEY_JS }}
