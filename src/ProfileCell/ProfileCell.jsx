@@ -5,7 +5,6 @@ import classNames from 'classnames';
 import Avatar from 'src/Avatar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import ProfileCellSkeleton from './ProfileCellSkeleton';
 
 import './ProfileCell.scss';
