@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
- Dropdown, DropdownToggle, DropdownItem, DropdownMenu,
+ Dropdown, DropdownDivider, DropdownToggle, DropdownItem, DropdownMenu,
 } from 'src/Dropdown';
 
 import { faEllipsisV, faFileAlt, faChevronDown } from '@fortawesome/pro-solid-svg-icons';
@@ -13,7 +13,7 @@ export default {
   title: 'Components/Dropdown',
   component: Dropdown,
   subcomponents: {
-    DropdownToggle, DropdownItem, DropdownMenu,
+    DropdownDivider, DropdownToggle, DropdownItem, DropdownMenu,
   },
   parameters: {
     docs: {
@@ -131,4 +131,20 @@ export const UnstyledToggle = () => (
       <DropdownItem href="#">Team C</DropdownItem>
     </DropdownMenu>
   </Dropdown>
+);
+
+export const WithDivider = () => (
+  <>
+    <Dropdown>
+      <DropdownToggle leadingIcon={faFileAlt} variant="primary">
+        Dropdown toggle
+      </DropdownToggle>
+      <DropdownMenu>
+        <DropdownItem href="#">Action</DropdownItem>
+        <DropdownItem href="#">Another action</DropdownItem>
+        <DropdownDivider />
+        <DropdownItem href="#">Separated action</DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  </>
 );

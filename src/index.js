@@ -17,6 +17,7 @@ import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
 import {
   Dropdown,
+  DropdownDivider,
   DropdownToggle,
   DropdownItem,
   DropdownMenu,
@@ -109,6 +110,7 @@ export {
   CopyToClipboardButton,
   CreatableSelect,
   Dropdown,
+  DropdownDivider,
   DropdownToggle,
   DropdownItem,
   DropdownMenu,
