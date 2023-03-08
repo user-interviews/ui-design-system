@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { withKnobs, text } from '@storybook/addon-knobs';
+import { boolean, withKnobs, text } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
 
 import { Alert, MessageTypes } from 'src/Alert';
@@ -26,6 +26,7 @@ export const Success = () => (
   <Alert
     id="1"
     message={text('Message', 'Success message')}
+    removeBorderLeft={boolean('removeBorderLeft', false)}
     title={text('Title', 'Success title')}
     type={MessageTypes.SUCCESS}
   />
@@ -35,6 +36,7 @@ export const Info = () => (
   <Alert
     id="2"
     message={text('Message', 'Info message')}
+    removeBorderLeft={boolean('removeBorderLeft', false)}
     title={text('Title', 'Info title')}
     type={MessageTypes.INFO}
   />
@@ -44,6 +46,7 @@ export const Announcement = () => (
   <Alert
     id="3"
     message={text('Message', 'Announcement message')}
+    removeBorderLeft={boolean('removeBorderLeft', false)}
     title={text('Title', 'Announcement title')}
     type={MessageTypes.ANNOUNCEMENT}
   />
@@ -53,6 +56,7 @@ export const Error = () => (
   <Alert
     id="4"
     message={text('Message', 'Error message')}
+    removeBorderLeft={boolean('removeBorderLeft', false)}
     title={text('Title', 'Error title')}
     type={MessageTypes.ERROR}
   />
@@ -62,6 +66,7 @@ export const Warning = () => (
   <Alert
     id="5"
     message={text('Message', 'Warning message')}
+    removeBorderLeft={boolean('removeBorderLeft', false)}
     title={text('Title', 'Warning title')}
     type={MessageTypes.WARNING}
   />
@@ -75,6 +80,7 @@ export const WithDismiss = () => (
   <Alert
     id="6"
     message={text('Message', 'Default message')}
+    removeBorderLeft={boolean('removeBorderLeft', false)}
     title={text('Title', 'Default title')}
     type={MessageTypes.SUCCESS}
     onDismiss={onDismiss}
@@ -108,6 +114,7 @@ export const WithCallToAction = () => (
       action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
       id="8"
       message="Success message"
+      removeBorderLeft={boolean('removeBorderLeft', false)}
       title="Success title"
       type={MessageTypes.SUCCESS}
       onDismiss={onDismiss}
@@ -116,6 +123,7 @@ export const WithCallToAction = () => (
       action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
       id="9"
       message="Info message"
+      removeBorderLeft={boolean('removeBorderLeft', false)}
       title="Info title"
       type={MessageTypes.INFO}
       onDismiss={onDismiss}
@@ -124,6 +132,7 @@ export const WithCallToAction = () => (
       action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
       id="10"
       message="Announcement message"
+      removeBorderLeft={boolean('removeBorderLeft', false)}
       title="Announcement title"
       type={MessageTypes.ANNOUNCEMENT}
       onDismiss={onDismiss}
@@ -132,6 +141,7 @@ export const WithCallToAction = () => (
       action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
       id="11"
       message="Error message"
+      removeBorderLeft={boolean('removeBorderLeft', false)}
       title="Error title"
       type={MessageTypes.ERROR}
       onDismiss={onDismiss}
@@ -140,6 +150,7 @@ export const WithCallToAction = () => (
       action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
       id="12"
       message="Warning message"
+      removeBorderLeft={boolean('removeBorderLeft', false)}
       title="Warning title"
       type={MessageTypes.WARNING}
       onDismiss={onDismiss}
@@ -156,6 +167,7 @@ export const WithCallToAction = () => (
           <GoogleCalendarButton />
         </Fragment>
       )}
+      removeBorderLeft={boolean('removeBorderLeft', false)}
       title={text('Title', 'Connect to Google Calendar to create reminders automatically')}
       type={MessageTypes.ANNOUNCEMENT}
       onDismiss={onDismiss}
@@ -167,6 +179,7 @@ export const WithCallToAction = () => (
       id="8"
       message={text('Message', `When you confirm a session we’ll automatically
       add an event and reminders to your Google Calendar.`)}
+      removeBorderLeft={boolean('removeBorderLeft', false)}
       title={text('Title', 'Connect to Google Calendar to create reminders automatically')}
       type={MessageTypes.ANNOUNCEMENT}
       onDismiss={onDismiss}

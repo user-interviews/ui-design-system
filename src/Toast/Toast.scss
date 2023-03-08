@@ -31,24 +31,4 @@
       justify-content: flex-start;
     }
   }
-
-  .Alert-success {
-    border-left: 0.5rem solid $ux-green-400;
-  }
-
-  .Alert-info {
-    border-left: 0.5rem solid $ux-blue-300;
-  }
-
-  .Alert-announcement {
-    border-left: 0.5rem solid $ux-blue-300;
-  }
-
-  .Alert-warning {
-    border-left: 0.5rem solid $ux-yellow-600;
-  }  
-
-  .Alert-error {
-    border-left: 0.5rem solid $ux-red-400;
-  }
 }
