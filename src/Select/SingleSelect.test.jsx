@@ -6,7 +6,7 @@ import { SingleSelect, SELECT_SIZES } from 'src/Select';
 import { SIZE_SMALL_HEIGHT } from 'src/Select/styles';
 
 const renderSelect = (props) => create(
-  <SingleSelect options={[]} onChange={jest.fn()} {...props} />,
+  <SingleSelect inputId='single-select' options={[]} onChange={jest.fn()} {...props} />,
 );
 
 const getContentStyles = ({ styles }) => styles.control({}, { isDisabled: false });
