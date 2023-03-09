@@ -3,8 +3,8 @@
 .Avatar {
   position: relative;
   display: inline-block;
-  height: 2.75rem;
-  width: 2.75rem;
+  height: $avatar-small-height;
+  width: $avatar-small-width;
 
   &__alert {
      background-color: $ux-red-400;
@@ -49,8 +49,8 @@
   }
 
   &--large {
-    height: 5rem;
-    width: 5rem;
+    height: $avatar-large-height;
+    width: $avatar-large-width;
 
     .Avatar {
       &__circle__initials {

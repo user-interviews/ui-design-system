@@ -1,7 +1,9 @@
 {
   "name": "@user-interviews/ui-design-system",
-  "version": "1.40.0",
+  "version": "1.41.0",
   "dependencies": {
+    "@bugsnag/js": "^6.0.0",
+    "@bugsnag/plugin-react": "^6.0.0",
     "react-bootstrap": "^2.5.0",
     "react-loading-skeleton": "^3.1.0",
     "react-router-dom": "^5.2.0",
@@ -115,6 +117,7 @@
     "react-dom": "^16.12.0",
     "react-modal": "^3.12.1",
     "react-popper": "^2.2.3",
+    "react-scripts": "0.2.3",
     "react-test-renderer": "^16.12.0",
     "react-tracking": "8.1.0",
     "sass-loader": "^8.0.2",
