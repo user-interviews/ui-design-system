@@ -8,7 +8,7 @@ import { Button as RBButton } from 'react-bootstrap';
 
 import './Button.scss';
 
-const BUTTON_SIZES = {
+export const BUTTON_SIZES = {
   LARGE: 'lg',
   MEDIUM: 'md',
   SMALL: 'sm',
