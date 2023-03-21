@@ -1153,6 +1153,7 @@ exports[`Storyshots Components/Alert Announcement 1`] = `
 >
   <div
     className="Alert Alert-announcement"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1218,6 +1219,7 @@ exports[`Storyshots Components/Alert Error 1`] = `
 >
   <div
     className="Alert Alert-error"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1284,6 +1286,7 @@ exports[`Storyshots Components/Alert Info 1`] = `
 >
   <div
     className="Alert Alert-info"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1385,6 +1388,7 @@ exports[`Storyshots Components/Alert Success 1`] = `
 >
   <div
     className="Alert Alert-success"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1486,6 +1490,7 @@ exports[`Storyshots Components/Alert Warning 1`] = `
 >
   <div
     className="Alert Alert-warning"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1554,6 +1559,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </p>
   <div
     className="Alert Alert-success"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1683,6 +1689,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </div>
   <div
     className="Alert Alert-info"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1812,6 +1819,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </div>
   <div
     className="Alert Alert-announcement"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1905,6 +1913,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </div>
   <div
     className="Alert Alert-error"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1999,6 +2008,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </div>
   <div
     className="Alert Alert-warning"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -2099,6 +2109,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </p>
   <div
     className="Alert Alert-announcement"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -2231,6 +2242,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </p>
   <div
     className="Alert Alert-announcement"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -2370,6 +2382,7 @@ exports[`Storyshots Components/Alert With Dismiss 1`] = `
 >
   <div
     className="Alert Alert-success"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -22233,6 +22246,118 @@ exports[`Storyshots Components/Text Weight 1`] = `
   >
     Source from a pool of more than 2.1 million participants to reach nearly any target audience.
   </p>
+</div>
+`;
+
+exports[`Storyshots Components/Toast Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    aria-live="polite"
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Toast Manual Dismiss Toast 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    aria-live="polite"
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Toast Toast Custom Message 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    aria-live="polite"
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Toast Toast With Action 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    aria-live="polite"
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
 </div>
 `;
 
