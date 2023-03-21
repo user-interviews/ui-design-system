@@ -2,8 +2,6 @@
   "name": "@user-interviews/ui-design-system",
   "version": "1.41.0",
   "dependencies": {
-    "@bugsnag/js": "^6.0.0",
-    "@bugsnag/plugin-react": "^6.0.0",
     "react-bootstrap": "^2.5.0",
     "react-loading-skeleton": "^3.1.0",
     "react-router-dom": "^5.2.0",
@@ -41,6 +39,8 @@
     ]
   },
   "peerDependencies": {
+    "@bugsnag/js": "^7.0.0",
+    "@bugsnag/plugin-react": "^7.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.15.3",
     "@fortawesome/pro-regular-svg-icons": "^5.15.3",
@@ -59,6 +59,8 @@
     "styled-components": "^5.3.3"
   },
   "devDependencies": {
+    "@bugsnag/js": "^7.0.0",
+    "@bugsnag/plugin-react": "^7.0.0",
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
