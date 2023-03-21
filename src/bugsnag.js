@@ -1,11 +1,9 @@
-import bugsnag from '@bugsnag/js';
-import bugsnagReact from '@bugsnag/plugin-react';
-import react from 'react';
+import Bugsnag from '@bugsnag/js';
+import BugsnagPluginReact from '@bugsnag/plugin-react';
 
-const bugsnagClient = bugsnag({
+const config = {
   apiKey: process.env.REACT_APP_BUGSNAG_API_KEY_JS,
-});
+  plugins: [new BugsnagPluginReact()],
+};
 
-bugsnagClient.use(bugsnagReact, react);
-
-export { bugsnagClient };
+export const bugsnagClient = Bugsnag.start(config);
