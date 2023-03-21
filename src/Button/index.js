@@ -1,1 +1,3 @@
-export { default, BUTTON_SIZES } from './Button';
+import Button from './Button';
+
+export default Button;
