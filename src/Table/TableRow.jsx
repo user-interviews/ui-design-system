@@ -2,6 +2,8 @@ import React, { Children, cloneElement } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import { LoadingSkeleton } from 'src/LoadingSkeleton';
+
 import './TableRow.scss';
 
 const TableRow = ({
@@ -31,6 +33,7 @@ const TableRow = ({
     )}
       {...props}
     >
+      <LoadingSkeleton />
       {Children.map(children, addStickyRowProp)}
     </tr>
 );

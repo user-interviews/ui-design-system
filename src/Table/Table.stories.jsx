@@ -1,6 +1,10 @@
+import React, { useState } from 'react';
+
+import { withKnobs, boolean, number } from '@storybook/addon-knobs';
+
 import { faFileAlt, faEllipsisV, faThumbtack } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React, { useState } from 'react';
+
 import Button from 'src/Button';
 import Card from 'src/Card';
 import CheckboxButton from 'src/CheckboxButton';
@@ -14,6 +18,7 @@ import mdx from './Table.mdx';
 export default {
   title: 'Components/Table',
   component: Table,
+  decorators: [withKnobs],
   subcomponents: {
  TableBody, TableCell, TableHead, TableRow, TableSortLabel,
 },
@@ -49,6 +54,72 @@ const sortableData = [
 
 export const Default = () => (
   <Table>
+    <TableHead>
+      <TableRow>
+        <TableCell header />
+        <TableCell header>Status</TableCell>
+        <TableCell header>Email</TableCell>
+        <TableCell header>First name</TableCell>
+        <TableCell header>Last name</TableCell>
+        <TableCell header>Phone number</TableCell>
+        <TableCell header>Date added</TableCell>
+        <TableCell header>Last invited</TableCell>
+        <TableCell header>Last applied</TableCell>
+      </TableRow>
+    </TableHead>
+    <TableBody>
+      {data.map(((row) => (
+        <TableRow key={row.id}>
+          <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
+          <TableCell>{row.status}</TableCell>
+          <TableCell>{row.email}</TableCell>
+          <TableCell>{row.firstName}</TableCell>
+          <TableCell>{row.lastName}</TableCell>
+          <TableCell>{row.phoneNumber}</TableCell>
+          <TableCell>{row.dateAdded}</TableCell>
+          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+        </TableRow>
+      )))}
+    </TableBody>
+  </Table>
+);
+
+export const LoadingDefault = () => (
+  <Table isLoading={boolean('isLoading', true)}>
+    <TableHead>
+      <TableRow>
+        <TableCell header />
+        <TableCell header>Status</TableCell>
+        <TableCell header>Email</TableCell>
+        <TableCell header>First name</TableCell>
+        <TableCell header>Last name</TableCell>
+        <TableCell header>Phone number</TableCell>
+        <TableCell header>Date added</TableCell>
+        <TableCell header>Last invited</TableCell>
+        <TableCell header>Last applied</TableCell>
+      </TableRow>
+    </TableHead>
+    <TableBody>
+      {data.map(((row) => (
+        <TableRow key={row.id}>
+          <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
+          <TableCell>{row.status}</TableCell>
+          <TableCell>{row.email}</TableCell>
+          <TableCell>{row.firstName}</TableCell>
+          <TableCell>{row.lastName}</TableCell>
+          <TableCell>{row.phoneNumber}</TableCell>
+          <TableCell>{row.dateAdded}</TableCell>
+          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+        </TableRow>
+      )))}
+    </TableBody>
+  </Table>
+);
+
+export const LoadingCustomColumns = () => (
+  <Table isLoading={boolean('isLoading', true)} loadingColumns={[75, 100, 250, 250, 100]} loadingRows={number('loadingRows', 4)}>
     <TableHead>
       <TableRow>
         <TableCell header />
