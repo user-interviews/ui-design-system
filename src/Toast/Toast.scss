@@ -18,7 +18,8 @@
   
   .Alert {
     box-shadow: $ux-elevations-20;
-
+    padding: $ux-spacing-30 1.25rem;
+    
     // explicitly sets grid template areas based on Alert.scss
     // the CTA action will always be below the Toast content
     grid-template-areas: 
