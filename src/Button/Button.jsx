@@ -8,12 +8,6 @@ import { Button as RBButton } from 'react-bootstrap';
 
 import './Button.scss';
 
-export const BUTTON_SIZES = {
-  LARGE: 'lg',
-  MEDIUM: 'md',
-  SMALL: 'sm',
-};
-
 const Button = forwardRef(({
   children,
   className,
@@ -21,7 +15,6 @@ const Button = forwardRef(({
   isLoading,
   leadingIcon,
   loadingText,
-  size,
   trailingIcon,
   ...props
 }, ref) => (
@@ -30,7 +23,6 @@ const Button = forwardRef(({
     className={classNames('Button', className)}
     disabled={disabled || isLoading}
     ref={ref}
-    size={size}
     {...props}
   >
     { !isLoading ? (
@@ -55,7 +47,6 @@ Button.propTypes = {
   isLoading: PropTypes.bool,
   leadingIcon: PropTypes.object,
   loadingText: PropTypes.string,
-  size: PropTypes.oneOf(Object.values(BUTTON_SIZES)),
   trailingIcon: PropTypes.object,
 };
 
@@ -66,7 +57,6 @@ Button.defaultProps = {
   isLoading: undefined,
   leadingIcon: undefined,
   loadingText: 'Loading...',
-  size: BUTTON_SIZES.MEDIUM,
   trailingIcon: undefined,
 };
 export default Button;

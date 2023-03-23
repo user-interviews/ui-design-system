@@ -1,6 +1,7 @@
 @import '../../scss/theme';
 
 .Button {
+  @include font-type-30--bold;
 
   i, svg {
     &.icon-left {
@@ -27,18 +28,6 @@
 
   &.btn-sm {
     border-radius: $ux-border-radius;
-    @include font-type-30--medium;
-    padding: 3px 10px;
-  }
-
-  &.btn-md {
-    @include font-type-40--medium;
-    padding: 6px 12px;
-  }
-
-  &.btn-lg {
-    @include font-type-50--medium;
-    padding: 9px 14px;
   }
 
   &.btn-primary {
