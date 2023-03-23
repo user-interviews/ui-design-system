@@ -48,32 +48,18 @@ const useToast = (initialMessages = []) => {
     dispatch({ type: ACTIONS.CLEAR_MESSAGES });
   }, []);
 
-  const setMessage = useCallback((...options) => {
-    if (options && typeof options[0] === 'string') {
-      dispatch({
-        type: ACTIONS.SET_MESSAGE,
-        payload: {
-          type: options[0] || undefined,
-          message: options[1] || undefined,
-          action: options[2] || undefined,
-          title: options[3] || undefined,
-        },
-      });
-    } else {
-      const {
-        action,
-        type,
-        message,
-        title,
-      } = options[0];
-
+  const setMessage = useCallback(({
+    action,
+    type,
+    message,
+    title,
+  }) => {
       dispatch({
         type: ACTIONS.SET_MESSAGE,
         payload: {
         action, type, message, title,
         },
       });
-    }
   }, []);
 
   const dismissMessage = useCallback((messageId) => {
