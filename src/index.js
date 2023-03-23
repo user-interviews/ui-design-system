@@ -82,7 +82,6 @@ import {
 } from 'src/Toast';
 import { ToggleInput } from 'src/ToggleInput';
 import Tooltip from 'src/Tooltip';
-import { bugsnagClient } from './bugsnag';
 
 export {
   Accordion,
@@ -93,7 +92,6 @@ export {
   Avatar,
   AsyncSelect,
   AsyncCreatableSelect,
-  bugsnagClient,
   Button,
   BUTTON_SIZES,
   BUTTON_GROUP_ORIENTATIONS,
