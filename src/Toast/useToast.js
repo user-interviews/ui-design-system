@@ -1,6 +1,5 @@
 import { useCallback, useReducer } from 'react';
 import { v4 as generateUUID } from 'uuid';
-import { bugsnagClient } from '../bugsnag';
 
 const createMessage = (
   type,
