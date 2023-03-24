@@ -1153,6 +1153,7 @@ exports[`Storyshots Components/Alert Announcement 1`] = `
 >
   <div
     className="Alert Alert-announcement"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1218,6 +1219,7 @@ exports[`Storyshots Components/Alert Error 1`] = `
 >
   <div
     className="Alert Alert-error"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1284,6 +1286,7 @@ exports[`Storyshots Components/Alert Info 1`] = `
 >
   <div
     className="Alert Alert-info"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1385,6 +1388,7 @@ exports[`Storyshots Components/Alert Success 1`] = `
 >
   <div
     className="Alert Alert-success"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1486,6 +1490,7 @@ exports[`Storyshots Components/Alert Warning 1`] = `
 >
   <div
     className="Alert Alert-warning"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1554,6 +1559,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </p>
   <div
     className="Alert Alert-success"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1683,6 +1689,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </div>
   <div
     className="Alert Alert-info"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1812,6 +1819,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </div>
   <div
     className="Alert Alert-announcement"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1905,6 +1913,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </div>
   <div
     className="Alert Alert-error"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -1999,6 +2008,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </div>
   <div
     className="Alert Alert-warning"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -2099,6 +2109,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </p>
   <div
     className="Alert Alert-announcement"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -2231,6 +2242,7 @@ exports[`Storyshots Components/Alert With Call To Action 1`] = `
   </p>
   <div
     className="Alert Alert-announcement"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -2370,6 +2382,7 @@ exports[`Storyshots Components/Alert With Dismiss 1`] = `
 >
   <div
     className="Alert Alert-success"
+    style={null}
   >
     <div
       className="Alert__icon"
@@ -3497,133 +3510,6 @@ exports[`Storyshots Components/Button Danger 1`] = `
       />
     </svg>
   </button>
-   
-  <button
-    className="Button btn btn-danger btn-lg"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Delete
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    className="Button btn btn-outline-danger btn-lg"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Delete
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    aria-disabled={true}
-    className="Button btn btn-danger btn-lg"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Delete
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
 </div>
 `;
 
@@ -3768,58 +3654,6 @@ exports[`Storyshots Components/Button Loading 1`] = `
   <button
     aria-disabled={true}
     className="Button btn btn-outline-primary btn-md"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-spinner-third icon-left btn-loading-spin"
-      data-icon="spinner-third"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Loading...
-  </button>
-   
-  <button
-    aria-disabled={true}
-    className="Button btn btn-primary btn-lg"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-spinner-third icon-left btn-loading-spin"
-      data-icon="spinner-third"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Loading...
-  </button>
-   
-  <button
-    aria-disabled={true}
-    className="Button btn btn-outline-primary btn-lg"
     disabled={true}
     type="button"
   >
@@ -4067,133 +3901,6 @@ exports[`Storyshots Components/Button Primary 1`] = `
   <button
     aria-disabled={true}
     className="Button btn btn-primary btn-md"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Confirm
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    className="Button btn btn-primary btn-lg"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Confirm
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    className="Button btn btn-outline-primary btn-lg"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Confirm
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    aria-disabled={true}
-    className="Button btn btn-primary btn-lg"
     disabled={true}
     type="button"
   >
@@ -4497,133 +4204,6 @@ exports[`Storyshots Components/Button Transparent 1`] = `
       />
     </svg>
   </button>
-   
-  <button
-    className="Button btn btn-transparent btn-lg"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Skip
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    className="Button btn btn-outline-transparent btn-lg"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Skip
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    aria-disabled={true}
-    className="Button btn btn-transparent btn-lg"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Skip
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
 </div>
 `;
 
@@ -4849,133 +4429,6 @@ exports[`Storyshots Components/Button Warning 1`] = `
   <button
     aria-disabled={true}
     className="Button btn btn-warning btn-md"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Edit
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    className="Button btn btn-warning btn-lg"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Edit
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    className="Button btn btn-outline-warning btn-lg"
-    disabled={false}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-file-alt icon-left"
-      data-icon="file-alt"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 384 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Edit
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-caret-down icon-right"
-      data-icon="caret-down"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 320 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>
-   
-  <button
-    aria-disabled={true}
-    className="Button btn btn-warning btn-lg"
     disabled={true}
     type="button"
   >
@@ -6178,7 +5631,7 @@ exports[`Storyshots Components/Form Default 1`] = `
       </label>
     </div>
     <button
-      className="Button btn btn-primary btn-md"
+      className="Button btn btn-primary"
       disabled={false}
       type="submit"
     >
@@ -8936,7 +8389,7 @@ exports[`Storyshots Components/Modal Danger Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="Button btn btn-transparent btn-md"
+          className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -8944,7 +8397,7 @@ exports[`Storyshots Components/Modal Danger Modal 1`] = `
           Cancel
         </button>
         <button
-          className="Button btn btn-danger btn-md"
+          className="Button btn btn-danger"
           disabled={false}
           type="button"
         >
@@ -9023,7 +8476,7 @@ exports[`Storyshots Components/Modal Default 1`] = `
         className="ModalFooter"
       >
         <button
-          className="Button btn btn-transparent btn-md"
+          className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -9031,7 +8484,7 @@ exports[`Storyshots Components/Modal Default 1`] = `
           Cancel
         </button>
         <button
-          className="Button btn btn-primary btn-md"
+          className="Button btn btn-primary"
           disabled={false}
           type="submit"
         >
@@ -9110,7 +8563,7 @@ exports[`Storyshots Components/Modal Large Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="Button btn btn-transparent btn-md"
+          className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -9118,7 +8571,7 @@ exports[`Storyshots Components/Modal Large Modal 1`] = `
           Cancel
         </button>
         <button
-          className="Button btn btn-primary btn-md"
+          className="Button btn btn-primary"
           disabled={false}
           type="submit"
         >
@@ -9197,7 +8650,7 @@ exports[`Storyshots Components/Modal Medium Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="Button btn btn-transparent btn-md"
+          className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -9205,7 +8658,7 @@ exports[`Storyshots Components/Modal Medium Modal 1`] = `
           Cancel
         </button>
         <button
-          className="Button btn btn-primary btn-md"
+          className="Button btn btn-primary"
           disabled={false}
           type="submit"
         >
@@ -9296,7 +8749,7 @@ exports[`Storyshots Components/Modal Transactional Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="Button btn btn-transparent btn-md"
+          className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -9304,7 +8757,7 @@ exports[`Storyshots Components/Modal Transactional Modal 1`] = `
           Cancel
         </button>
         <button
-          className="Button btn btn-primary btn-md"
+          className="Button btn btn-primary"
           disabled={false}
           type="submit"
         >
@@ -9400,7 +8853,7 @@ exports[`Storyshots Components/Modal Warning Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="Button btn btn-transparent btn-md"
+          className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -9492,7 +8945,7 @@ exports[`Storyshots Components/Modal With Subtitle Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="Button btn btn-transparent btn-md"
+          className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -9500,7 +8953,7 @@ exports[`Storyshots Components/Modal With Subtitle Modal 1`] = `
           Cancel
         </button>
         <button
-          className="Button btn btn-primary btn-md"
+          className="Button btn btn-primary"
           disabled={false}
           type="submit"
         >
@@ -9841,7 +9294,7 @@ exports[`Storyshots Components/Popover Card Popover 1`] = `
   }
 >
   <button
-    className="Button btn btn-primary btn-md"
+    className="Button btn btn-primary"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -9860,7 +9313,7 @@ exports[`Storyshots Components/Popover Default 1`] = `
   }
 >
   <button
-    className="Button btn btn-primary btn-md"
+    className="Button btn btn-primary"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -9879,7 +9332,7 @@ exports[`Storyshots Components/Popover Placement 1`] = `
   }
 >
   <button
-    className="Button btn btn-primary btn-md"
+    className="Button btn btn-primary"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -10688,7 +10141,7 @@ exports[`Storyshots Components/Selects/Async In Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="Button btn btn-transparent btn-md"
+          className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -10696,7 +10149,7 @@ exports[`Storyshots Components/Selects/Async In Modal 1`] = `
           Cancel
         </button>
         <button
-          className="Button btn btn-primary btn-md"
+          className="Button btn btn-primary"
           disabled={false}
           type="submit"
         >
@@ -11004,7 +10457,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="Button btn btn-transparent btn-md"
+          className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -11012,7 +10465,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
           Cancel
         </button>
         <button
-          className="Button btn btn-primary btn-md"
+          className="Button btn btn-primary"
           disabled={false}
           type="submit"
         >
@@ -11320,7 +10773,7 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="Button btn btn-transparent btn-md"
+          className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -11328,7 +10781,7 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
           Cancel
         </button>
         <button
-          className="Button btn btn-primary btn-md"
+          className="Button btn btn-primary"
           disabled={false}
           type="submit"
         >
@@ -12063,7 +11516,7 @@ exports[`Storyshots Components/Selects/Single In Modal 1`] = `
         className="ModalFooter"
       >
         <button
-          className="Button btn btn-transparent btn-md"
+          className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
           type="button"
@@ -12071,7 +11524,7 @@ exports[`Storyshots Components/Selects/Single In Modal 1`] = `
           Cancel
         </button>
         <button
-          className="Button btn btn-primary btn-md"
+          className="Button btn btn-primary"
           disabled={false}
           type="submit"
         >
@@ -15896,7 +15349,7 @@ exports[`Storyshots Components/Table Table With Compact Option 1`] = `
 >
   <div>
     <button
-      className="Button btn btn-outline-primary btn-md"
+      className="Button btn btn-outline-primary"
       disabled={false}
       onClick={[Function]}
       type="button"
@@ -20021,7 +19474,7 @@ exports[`Storyshots Components/Table Table With Multiple Sticky Columns And Head
           }
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -20134,7 +19587,7 @@ exports[`Storyshots Components/Table Table With Multiple Sticky Columns And Head
           }
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -20247,7 +19700,7 @@ exports[`Storyshots Components/Table Table With Multiple Sticky Columns And Head
           }
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -20360,7 +19813,7 @@ exports[`Storyshots Components/Table Table With Multiple Sticky Columns And Head
           }
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -20473,7 +19926,7 @@ exports[`Storyshots Components/Table Table With Multiple Sticky Columns And Head
           }
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -20586,7 +20039,7 @@ exports[`Storyshots Components/Table Table With Multiple Sticky Columns And Head
           }
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -20699,7 +20152,7 @@ exports[`Storyshots Components/Table Table With Multiple Sticky Columns And Head
           }
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -20812,7 +20265,7 @@ exports[`Storyshots Components/Table Table With Multiple Sticky Columns And Head
           }
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -20925,7 +20378,7 @@ exports[`Storyshots Components/Table Table With Multiple Sticky Columns And Head
           }
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -21038,7 +20491,7 @@ exports[`Storyshots Components/Table Table With Multiple Sticky Columns And Head
           }
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -21188,7 +20641,7 @@ exports[`Storyshots Components/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -21263,7 +20716,7 @@ exports[`Storyshots Components/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -21338,7 +20791,7 @@ exports[`Storyshots Components/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -21413,7 +20866,7 @@ exports[`Storyshots Components/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -21488,7 +20941,7 @@ exports[`Storyshots Components/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -21563,7 +21016,7 @@ exports[`Storyshots Components/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -21638,7 +21091,7 @@ exports[`Storyshots Components/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -21713,7 +21166,7 @@ exports[`Storyshots Components/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -21788,7 +21241,7 @@ exports[`Storyshots Components/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -21863,7 +21316,7 @@ exports[`Storyshots Components/Table Table With Single Action Column 1`] = `
           style={Object {}}
         >
           <button
-            className="Button btn btn-outline-primary btn-md"
+            className="Button btn btn-outline-primary"
             disabled={false}
             type="button"
           >
@@ -23541,6 +22994,118 @@ exports[`Storyshots Components/Text Weight 1`] = `
   >
     Source from a pool of more than 2.1 million participants to reach nearly any target audience.
   </p>
+</div>
+`;
+
+exports[`Storyshots Components/Toast Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    aria-live="polite"
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Toast Manual Dismiss Toast 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    aria-live="polite"
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Toast Toast Custom Message 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    aria-live="polite"
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Toast Toast With Action 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    aria-live="polite"
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
 </div>
 `;
 

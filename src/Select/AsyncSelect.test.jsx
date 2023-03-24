@@ -6,7 +6,7 @@ import { AsyncSelect, SELECT_SIZES } from 'src/Select';
 import { SIZE_SMALL_HEIGHT } from 'src/Select/styles';
 
 const renderAsync = (props) => create(
-  <AsyncSelect loadOptions={jest.fn()} {...props} />,
+  <AsyncSelect inputId="async-select" loadOptions={jest.fn()} {...props} />,
 );
 
 const getContentStyles = ({ styles }) => styles.control({}, { isDisabled: false });

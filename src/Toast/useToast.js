@@ -1,6 +1,5 @@
 import { useCallback, useReducer } from 'react';
 import { v4 as generateUUID } from 'uuid';
-import { bugsnagClient } from '../bugsnag';
 
 const createMessage = (
   type,
@@ -51,8 +50,6 @@ const useToast = (initialMessages = []) => {
 
   const setMessage = useCallback((...options) => {
     if (options && typeof options[0] === 'string') {
-      bugsnagClient.notify(new Error('Toast component argument error, expecting single formatted object'));
-
       dispatch({
         type: ACTIONS.SET_MESSAGE,
         payload: {

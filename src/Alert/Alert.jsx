@@ -73,7 +73,10 @@ function Alert(props) {
   }, [autoDismiss, onDismiss, id]);
 
   return (
-    <div className={getAlertClassName(props.type)}>
+    <div
+      className={getAlertClassName(props.type)}
+      style={props.removeBorderLeft ? { borderLeft: 'none' } : null}
+    >
       <div className="Alert__icon">
         {getAlertIcon(props.type)}
       </div>
@@ -138,6 +141,7 @@ Alert.propTypes = {
   autoDismiss: PropTypes.bool,
   id: PropTypes.string.isRequired,
   message: PropTypes.oneOfType([PropTypes.string, PropTypes.node]).isRequired,
+  removeBorderLeft: PropTypes.bool,
   title: PropTypes.string,
   /**
    One of the MessageTypes
@@ -149,6 +153,7 @@ Alert.propTypes = {
 Alert.defaultProps = {
   action: undefined,
   autoDismiss: false,
+  removeBorderLeft: false,
   title: undefined,
   onDismiss: undefined,
 };
