@@ -70,6 +70,7 @@ import {
   TableBody,
   TableCell,
   TableHead,
+  TableLoadingSkeleton,
   TableRow,
   TableSortLabel,
 } from 'src/Table';
@@ -158,6 +159,7 @@ export {
   TableBody,
   TableCell,
   TableHead,
+  TableLoadingSkeleton,
   TableRow,
   TableSortLabel,
   Text,

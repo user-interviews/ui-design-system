@@ -12731,6 +12731,1314 @@ exports[`Storyshots Components/Table Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Table Loading Custom Columns 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Table Loading Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Table Table On Card 1`] = `
 <div
   style={
