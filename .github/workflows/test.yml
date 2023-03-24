@@ -7,7 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
-      REACT_APP_BUGSNAG_API_KEY_JS: ${{ secrets.REACT_APP_BUGSNAG_API_KEY_JS }}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
