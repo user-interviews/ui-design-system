@@ -92,6 +92,7 @@ export {
   Avatar,
   AsyncSelect,
   AsyncCreatableSelect,
+  bugsnagClient,
   Button,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
