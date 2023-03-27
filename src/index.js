@@ -71,6 +71,7 @@ import {
   TableBody,
   TableCell,
   TableHead,
+  TableLoadingSkeleton,
   TableRow,
   TableSortLabel,
 } from 'src/Table';
@@ -83,7 +84,6 @@ import {
 } from 'src/Toast';
 import { ToggleInput } from 'src/ToggleInput';
 import Tooltip from 'src/Tooltip';
-import { bugsnagClient } from './bugsnag';
 
 export {
   Accordion,
@@ -94,7 +94,6 @@ export {
   Avatar,
   AsyncSelect,
   AsyncCreatableSelect,
-  bugsnagClient,
   Button,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
@@ -162,6 +161,7 @@ export {
   TableBody,
   TableCell,
   TableHead,
+  TableLoadingSkeleton,
   TableRow,
   TableSortLabel,
   Text,
