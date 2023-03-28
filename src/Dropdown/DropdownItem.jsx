@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { Dropdown as RBDropdown } from 'react-bootstrap';
 
 import './DropdownItem.scss';
@@ -14,6 +16,7 @@ const DropdownItem = ({
   disabled,
   eventKey,
   href,
+  leadingIcon,
   onClick,
   bsPrefix,
   ...props
@@ -29,6 +32,7 @@ const DropdownItem = ({
     onClick={onClick}
     {...props}
   >
+    { leadingIcon && <FontAwesomeIcon className="icon-left" icon={leadingIcon} /> }
     { children }
   </RBDropdown.Item>
   );
@@ -60,6 +64,7 @@ DropdownItem.propTypes = {
     HTML href attribute corresponding to a.href.
    */
   href: PropTypes.string,
+  leadingIcon: PropTypes.object,
   /**
     Callback fired when the menu item is clicked.
    */
@@ -74,6 +79,7 @@ DropdownItem.defaultProps = {
   disabled: false,
   eventKey: undefined,
   href: undefined,
+  leadingIcon: undefined,
   onClick: undefined,
 };
 

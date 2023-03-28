@@ -4,7 +4,9 @@ import {
  Dropdown, DropdownDivider, DropdownToggle, DropdownItem, DropdownMenu,
 } from 'src/Dropdown';
 
-import { faEllipsisV, faFileAlt, faChevronDown } from '@fortawesome/pro-solid-svg-icons';
+import {
+ faEllipsisV, faFileAlt, faChevronDown, faTag, faEnvelope, faTrashAlt,
+} from '@fortawesome/pro-regular-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import mdx from './Dropdown.mdx';
@@ -30,9 +32,8 @@ export const Default = () => (
         Dropdown toggle
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem href="#">Action</DropdownItem>
-        <DropdownItem href="#">Another action</DropdownItem>
-        <DropdownItem href="#">Click me</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
       </DropdownMenu>
     </Dropdown>
     <br />
@@ -41,9 +42,8 @@ export const Default = () => (
         Dropdown toggle
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem href="#">Action</DropdownItem>
-        <DropdownItem href="#">Another action</DropdownItem>
-        <DropdownItem href="#">Click me</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
       </DropdownMenu>
     </Dropdown>
   </>
@@ -56,9 +56,8 @@ export const Sizes = () => (
         Small toggle
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem href="#">Action</DropdownItem>
-        <DropdownItem href="#">Another action</DropdownItem>
-        <DropdownItem href="#">Click me</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
       </DropdownMenu>
     </Dropdown>
     <br />
@@ -67,9 +66,8 @@ export const Sizes = () => (
         Medium toggle
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem href="#">Action</DropdownItem>
-        <DropdownItem href="#">Another action</DropdownItem>
-        <DropdownItem href="#">Click me</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
       </DropdownMenu>
     </Dropdown>
   </>
@@ -80,9 +78,8 @@ export const IconDefault = () => (
     <Dropdown>
       <DropdownToggle ariaLabel="dropdown toggle" variant="transparent" />
       <DropdownMenu>
-        <DropdownItem href="#">Action</DropdownItem>
-        <DropdownItem href="#">Another action</DropdownItem>
-        <DropdownItem href="#">Click me</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
       </DropdownMenu>
     </Dropdown>
   </>
@@ -95,9 +92,8 @@ export const IconSwap = () => (
         <FontAwesomeIcon icon={faEllipsisV} size="lg" />
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem href="#">Action</DropdownItem>
-        <DropdownItem href="#">Another action</DropdownItem>
-        <DropdownItem href="#">Click me</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
       </DropdownMenu>
     </Dropdown>
   </>
@@ -140,10 +136,10 @@ export const WithDivider = () => (
         Dropdown toggle
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem href="#">Action</DropdownItem>
-        <DropdownItem href="#">Another action</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
         <DropdownDivider />
-        <DropdownItem href="#">Separated action</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faTrashAlt}>Delete</DropdownItem>
       </DropdownMenu>
     </Dropdown>
   </>

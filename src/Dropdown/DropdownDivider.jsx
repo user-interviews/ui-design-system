@@ -4,6 +4,8 @@ import classNames from 'classnames';
 
 import { Dropdown as RBDropdown } from 'react-bootstrap';
 
+import './DropdownDivider.scss';
+
 const DropdownDivider = ({ as, bsPrefix, className }) => (
   <RBDropdown.Divider
     as={as}
