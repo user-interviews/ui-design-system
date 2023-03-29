@@ -17,6 +17,7 @@ import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
 import {
   Dropdown,
+  DropdownDivider,
   DropdownToggle,
   DropdownItem,
   DropdownMenu,
@@ -70,6 +71,7 @@ import {
   TableBody,
   TableCell,
   TableHead,
+  TableLoadingSkeleton,
   TableRow,
   TableSortLabel,
 } from 'src/Table';
@@ -107,6 +109,7 @@ export {
   CopyToClipboardButton,
   CreatableSelect,
   Dropdown,
+  DropdownDivider,
   DropdownToggle,
   DropdownItem,
   DropdownMenu,
@@ -158,6 +161,7 @@ export {
   TableBody,
   TableCell,
   TableHead,
+  TableLoadingSkeleton,
   TableRow,
   TableSortLabel,
   Text,

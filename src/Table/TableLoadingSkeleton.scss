@@ -1,0 +1,8 @@
+@import '../../scss/theme.scss';
+
+.TableLoadingSkeleton {
+
+  &__row {
+    margin: 0 $ux-spacing-40 $ux-spacing-60 0;
+  }
+}
