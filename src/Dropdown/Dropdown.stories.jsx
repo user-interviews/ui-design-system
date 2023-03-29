@@ -139,7 +139,7 @@ export const WithDivider = () => (
         <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
         <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
         <DropdownDivider />
-        <DropdownItem href="#" leadingIcon={faTrashAlt}>Delete</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faTrashAlt} variant="danger">Delete</DropdownItem>
       </DropdownMenu>
     </Dropdown>
   </>

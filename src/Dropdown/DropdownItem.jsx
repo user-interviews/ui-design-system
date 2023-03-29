@@ -8,6 +8,10 @@ import { Dropdown as RBDropdown } from 'react-bootstrap';
 
 import './DropdownItem.scss';
 
+const DropdownItemVariants = {
+  DANGER: 'danger',
+};
+
 const DropdownItem = ({
   active,
   as,
@@ -18,6 +22,7 @@ const DropdownItem = ({
   href,
   leadingIcon,
   onClick,
+  variant,
   bsPrefix,
   ...props
 }) => (
@@ -25,7 +30,11 @@ const DropdownItem = ({
     active={active}
     as={as}
     bsPrefix={bsPrefix}
-    className={classNames('DropdownItem', className)}
+    className={classNames(
+      className,
+      'DropdownItem',
+      variant && `DropdownItem--${variant}`,
+    )}
     disabled={disabled}
     eventKey={eventKey}
     href={href}
@@ -65,6 +74,7 @@ DropdownItem.propTypes = {
    */
   href: PropTypes.string,
   leadingIcon: PropTypes.object,
+  variant: PropTypes.oneOf(Object.values(DropdownItemVariants)),
   /**
     Callback fired when the menu item is clicked.
    */
@@ -80,6 +90,7 @@ DropdownItem.defaultProps = {
   eventKey: undefined,
   href: undefined,
   leadingIcon: undefined,
+  variant: undefined,
   onClick: undefined,
 };
 
