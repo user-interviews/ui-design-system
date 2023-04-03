@@ -5503,6 +5503,358 @@ exports[`Storyshots Components/Dropdown With Divider 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/EmptyState Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="EmptyState"
+  >
+    <div
+      className="EmptyState__content"
+    >
+      <h4
+        className="EmptyState__title Heading Heading--xxl Heading--bold"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        You have no projects
+      </h4>
+      <p
+        className="EmptyState__subtitle Text Text--md Text--regular"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        Launch your first project to start conducting research!
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/EmptyState Full Width 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="EmptyState"
+  >
+    <div
+      className="EmptyState__content EmptyState--full-width"
+    >
+      <div
+        className="EmptyState__image"
+      >
+        <img
+          alt=""
+          aria-hidden="true"
+          className="EmptyState__image"
+          role="presentation"
+          src={Object {}}
+        />
+      </div>
+      <h4
+        className="EmptyState__title Heading Heading--xxl Heading--bold"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        You have no projects
+      </h4>
+      <p
+        className="EmptyState__subtitle Text Text--md Text--regular"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        Launch your first project to start conducting research! Source from a pool of 2.4 million participants to reach nearly any target audience.
+      </p>
+      <div
+        className="EmptyState__actions"
+      >
+        <div
+          className="EmptyState__actions__secondary-action"
+        />
+        <div
+          className="EmptyState__actions__primary-action"
+        >
+          <button
+            className="Button btn btn-primary"
+            disabled={false}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-plus icon-left"
+              data-icon="plus"
+              data-prefix="far"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            New project
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/EmptyState Illustrations 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="EmptyState"
+  >
+    <div
+      className="EmptyState__content"
+    >
+      <div
+        className="EmptyState__image"
+      >
+        <img
+          alt=""
+          aria-hidden="true"
+          className="EmptyState__image"
+          role="presentation"
+          src={Object {}}
+        />
+      </div>
+      <h4
+        className="EmptyState__title Heading Heading--xxl Heading--bold"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        You have no projects
+      </h4>
+      <p
+        className="EmptyState__subtitle Text Text--md Text--regular"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        Launch your first project to start conducting research!
+      </p>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/EmptyState Primary Action 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="EmptyState"
+  >
+    <div
+      className="EmptyState__content"
+    >
+      <div
+        className="EmptyState__image"
+      >
+        <img
+          alt=""
+          aria-hidden="true"
+          className="EmptyState__image"
+          role="presentation"
+          src={Object {}}
+        />
+      </div>
+      <h4
+        className="EmptyState__title Heading Heading--xxl Heading--bold"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        You have no projects
+      </h4>
+      <p
+        className="EmptyState__subtitle Text Text--md Text--regular"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        Launch your first project to start conducting research!
+      </p>
+      <div
+        className="EmptyState__actions"
+      >
+        <div
+          className="EmptyState__actions__secondary-action"
+        />
+        <div
+          className="EmptyState__actions__primary-action"
+        >
+          <button
+            className="Button btn btn-primary"
+            disabled={false}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-plus icon-left"
+              data-icon="plus"
+              data-prefix="far"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            New project
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/EmptyState Secondary Action 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="EmptyState"
+  >
+    <div
+      className="EmptyState__content"
+    >
+      <div
+        className="EmptyState__image"
+      >
+        <img
+          alt=""
+          aria-hidden="true"
+          className="EmptyState__image"
+          role="presentation"
+          src={Object {}}
+        />
+      </div>
+      <h4
+        className="EmptyState__title Heading Heading--xxl Heading--bold"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        You have no projects
+      </h4>
+      <p
+        className="EmptyState__subtitle Text Text--md Text--regular"
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        Launch your first project to start conducting research!
+      </p>
+      <div
+        className="EmptyState__actions"
+      >
+        <div
+          className="EmptyState__actions__secondary-action"
+        >
+          <button
+            className="Button btn btn-transparent"
+            disabled={false}
+            type="button"
+          >
+            See projects
+          </button>
+        </div>
+        <div
+          className="EmptyState__actions__primary-action"
+        >
+          <button
+            className="Button btn btn-primary"
+            disabled={false}
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-plus icon-left"
+              data-icon="plus"
+              data-prefix="far"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 384 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            New project
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Form Default 1`] = `
 <div
   style={

@@ -1,0 +1,33 @@
+@import '../../scss/theme';
+
+$empty-state-max-width: 25rem;
+
+.EmptyState {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &__content {
+    max-width: $empty-state-max-width;
+  }
+ 
+  &__image {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: $ux-spacing-40;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+
+    &__secondary-action {
+      margin-right: $ux-spacing-20;
+    }
+  }
+
+  &--full-width {
+    max-width: unset;
+  }
+}

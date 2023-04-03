@@ -1,0 +1,60 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import EmptyState from './EmptyState';
+
+# EmptyState
+
+##
+
+<h4>
+  EmptyState signals to the user that there is no data or content to display in a specific area the app,
+  often including messages or actions to guide user in populating the area.
+</h4>
+
+<Canvas>
+  <Story id="components-emptystate--secondary-action" />
+</Canvas>
+
+
+## Props
+
+<ArgsTable of={EmptyState} />
+
+## Stories
+
+### Default
+- Keep the message and/or icon simple and clear, avoiding jargon or technical terms.
+- Use friendly and approachable language to convey that the app is empty.
+
+<Canvas>
+  <Story id="components-emptystate--default" />
+</Canvas>
+
+### Illustrations
+- Use a visually appealing imagery that matches the style of the rest of the app and catches the user's attention.
+
+<Canvas>
+  <Story id="components-emptystate--illustrations" />
+</Canvas>
+
+### Primary Action
+- Offer helpful and actionable tips or instructions to assist the user in populating the area.
+- Primary action should usually accept a primary CTA Button.
+
+<Canvas>
+  <Story id="components-emptystate--primary-action" />
+</Canvas>
+
+### Secondary Action
+- Offer a secondary action to supplement the main CTA primary action.
+- Secondary action should usually accept a secondary Button or link. 
+
+<Canvas>
+  <Story id="components-emptystate--secondary-action" />
+</Canvas>
+
+### Full Width
+- Set the content area to full width.
+
+<Canvas>
+  <Story id="components-emptystate--full-width" />
+</Canvas>
