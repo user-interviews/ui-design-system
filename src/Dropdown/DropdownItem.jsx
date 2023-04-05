@@ -41,7 +41,7 @@ const DropdownItem = ({
     onClick={onClick}
     {...props}
   >
-    { leadingIcon && <FontAwesomeIcon className="icon-left" icon={leadingIcon} /> }
+    { leadingIcon && <FontAwesomeIcon className="icon-left fa-fw" icon={leadingIcon} /> }
     { children }
   </RBDropdown.Item>
   );
@@ -74,6 +74,9 @@ DropdownItem.propTypes = {
    */
   href: PropTypes.string,
   leadingIcon: PropTypes.object,
+  /**
+    Optional variant for controlling color and hover states (e.g. destructive actions)
+   */
   variant: PropTypes.oneOf(Object.values(DropdownItemVariants)),
   /**
     Callback fired when the menu item is clicked.
