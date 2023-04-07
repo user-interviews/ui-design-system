@@ -1,83 +1,93 @@
-import React from 'react';
-import { action } from '@storybook/addon-actions';
+import React, { useState } from 'react';
 
 import Button from 'src/Button';
 import CreatableSelect from 'src/Select/CreatableSelect';
 import FormGroup from 'src/FormGroup';
 import {
-  Modal, ModalHeader, ModalBody, ModalFooter,
- } from 'src/Modal';
+    Modal, ModalHeader, ModalBody, ModalFooter,
+} from 'src/Modal';
 
 export default {
-  title: 'Components/Selects/Creatable',
-  component: CreatableSelect,
+    title: 'Components/Selects/Creatable',
+    component: CreatableSelect,
 };
 
 const options = [
-  { label: 'Red', value: 1 },
-  { label: 'Green', value: 2 },
-  { label: 'Blue', value: 3 },
+    { label: 'Red', value: 1 },
+    { label: 'Green', value: 2 },
+    { label: 'Blue', value: 3 },
 ];
 
 export const Default = () => {
-  const handleChange = () => {};
-  const handleInputChange = () => {};
+    const handleChange = () => {
+    };
+    const handleInputChange = () => {
+    };
 
-  return (
-    <FormGroup
-      label="Default creatable select"
-      labelHtmlFor="default-creatable-select"
-    >
-      <CreatableSelect
-        inputId="default-creatable-select"
-        isClearable
-        options={options}
-        onChange={handleChange}
-        onInputChange={handleInputChange}
-      />
-    </FormGroup>
-  );
+    return (
+      <FormGroup
+        label="Default creatable select"
+        labelHtmlFor="default-creatable-select"
+      >
+        <CreatableSelect
+          inputId="default-creatable-select"
+          isClearable
+          options={options}
+          onChange={handleChange}
+          onInputChange={handleInputChange}
+        />
+      </FormGroup>
+    );
 };
 
 export const InModal = () => {
-  const handleChange = () => {};
-  const handleInputChange = () => {};
-  const handleRequestClose = () => action('Close');
+    const [isOpen, setIsOpen] = useState(false);
 
-  return (
-    <Modal
-      ariaHideApp={false}
-      className="CreatableSelectInModal"
-      contentLabel="CreatableSelect in Modal"
-      isOpen
-    >
-      <ModalHeader
-        title="In Modal creatable select"
-        titleId="in-modal-creatable-select"
-        onRequestClose={handleRequestClose}
-      />
-      <ModalBody>
-        <FormGroup
-          helperText="Select menu is able to overflow the Modal container"
-          label="In Modal creatable select"
-          labelHtmlFor="in-modal-creatable-select"
+    const handleChange = () => {
+    };
+    const handleInputChange = () => {
+    };
+    const handleRequestClose = () => setIsOpen(false);
+
+    return (
+      <>
+        <Button onClick={() => setIsOpen(true)}>Click to open modal</Button>
+        <Modal
+          ariaHideApp={false}
+          className="CreatableSelectInModal"
+          contentLabel="CreatableSelect in Modal"
+          isOpen={isOpen}
         >
-          <CreatableSelect
-            inputId="in-modal-creatable-select"
-            isClearable
-            modal
-            options={options}
-            onChange={handleChange}
-            onInputChange={handleInputChange}
+          <ModalHeader
+            git
+            stat
+            title="In Modal creatable select"
+            titleId="in-modal-creatable-select"
+            onRequestClose={handleRequestClose}
           />
-        </FormGroup>
-      </ModalBody>
-      <ModalFooter
-        dismissButtonText="Cancel"
-        onRequestClose={handleRequestClose}
-      >
-        <Button type="submit" variant="primary">Confirm</Button>
-      </ModalFooter>
-    </Modal>
-  );
+          <ModalBody>
+            <FormGroup
+              helperText="Select menu is able to overflow the Modal container"
+              label="In Modal creatable select"
+              labelHtmlFor="in-modal-creatable-select"
+            >
+              <CreatableSelect
+                inputId="in-modal-creatable-select"
+                isClearable
+                modal
+                options={options}
+                onChange={handleChange}
+                onInputChange={handleInputChange}
+              />
+            </FormGroup>
+          </ModalBody>
+          <ModalFooter
+            dismissButtonText="Cancel"
+            onRequestClose={handleRequestClose}
+          >
+            <Button type="submit" variant="primary">Confirm</Button>
+          </ModalFooter>
+        </Modal>
+      </>
+    );
 };

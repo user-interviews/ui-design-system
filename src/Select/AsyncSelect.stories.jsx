@@ -1,35 +1,34 @@
-import React from 'react';
-import { action } from '@storybook/addon-actions';
+import React, { useState } from 'react';
 
 import AsyncSelect from 'src/Select/AsyncSelect';
 import Button from 'src/Button';
 import FormGroup from 'src/FormGroup';
 import {
-  Modal, ModalHeader, ModalBody, ModalFooter,
- } from 'src/Modal';
+    Modal, ModalHeader, ModalBody, ModalFooter,
+} from 'src/Modal';
 
 export default {
-  title: 'Components/Selects/Async',
-  component: AsyncSelect,
+    title: 'Components/Selects/Async',
+    component: AsyncSelect,
 };
 
 const options = [
-  { label: 'Bob', value: 1 },
-  { label: 'Dave', value: 2 },
-  { label: 'Jeff', value: 3 },
-  { label: 'Dennis', value: 4 },
-  { label: 'Basel', value: 5 },
+    { label: 'Bob', value: 1 },
+    { label: 'Dave', value: 2 },
+    { label: 'Jeff', value: 3 },
+    { label: 'Dennis', value: 4 },
+    { label: 'Basel', value: 5 },
 ];
 
 async function loadOptions(search) {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+    await new Promise((resolve) => setTimeout(resolve, 2000));
 
-  if (!search || !search.length) { return options; }
+    if (!search || !search.length) {
+        return options;
+    }
 
-  return options.filter(({ label }) => label.toLowerCase().includes(search.toLowerCase()));
+    return options.filter(({ label }) => label.toLowerCase().includes(search.toLowerCase()));
 }
-
-const handleRequestClose = () => action('Close');
 
 export const Default = () => (
   <FormGroup
@@ -46,39 +45,48 @@ export const Default = () => (
   </FormGroup>
 );
 
-export const InModal = () => (
-  <Modal
-    ariaHideApp={false}
-    className="AsyncSelectInModal"
-    contentLabel="AsyncSelect in Modal"
-    isOpen
-  >
-    <ModalHeader
-      title="In Modal AsyncSelect"
-      titleId="in-modal-async-select"
-      onRequestClose={handleRequestClose}
-    />
-    <ModalBody>
-      <FormGroup
-        helperText="Select menu is able to overflow the Modal container"
-        label="In Modal async select"
-        labelHtmlFor="in-modal-async-select"
-      >
-        <AsyncSelect
-          getOptionLabel={({ label }) => label}
-          getOptionValue={({ value }) => value}
-          inputId="in-modal-async-select"
-          loadOptions={loadOptions}
-          modal
-          noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
-        />
-      </FormGroup>
-    </ModalBody>
-    <ModalFooter
-      dismissButtonText="Cancel"
-      onRequestClose={handleRequestClose}
-    >
-      <Button type="submit" variant="primary">Confirm</Button>
-    </ModalFooter>
-  </Modal>
-  );
+export const InModal = () => {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleRequestClose = () => setIsOpen(false);
+
+    return (
+      <>
+        <Button onClick={() => setIsOpen(true)}>Click to open modal</Button>
+        <Modal
+          ariaHideApp={false}
+          className="AsyncSelectInModal"
+          contentLabel="AsyncSelect in Modal"
+          isOpen={isOpen}
+        >
+          <ModalHeader
+            title="In Modal AsyncSelect"
+            titleId="in-modal-async-select"
+            onRequestClose={handleRequestClose}
+          />
+          <ModalBody>
+            <FormGroup
+              helperText="Select menu is able to overflow the Modal container"
+              label="In Modal async select"
+              labelHtmlFor="in-modal-async-select"
+            >
+              <AsyncSelect
+                getOptionLabel={({ label }) => label}
+                getOptionValue={({ value }) => value}
+                inputId="in-modal-async-select"
+                loadOptions={loadOptions}
+                modal
+                noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+              />
+            </FormGroup>
+          </ModalBody>
+          <ModalFooter
+            dismissButtonText="Cancel"
+            onRequestClose={handleRequestClose}
+          >
+            <Button type="submit" variant="primary">Confirm</Button>
+          </ModalFooter>
+        </Modal>
+      </>
+    );
+};
