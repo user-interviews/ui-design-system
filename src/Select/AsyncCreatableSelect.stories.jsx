@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { action } from '@storybook/addon-actions';
 
 import AsyncCreatableSelect from 'src/Select/AsyncCreatableSelect';
 import Button from 'src/Button';
