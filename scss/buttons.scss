@@ -319,6 +319,12 @@ $warning: $ux-yellow-400;
     border-color: $btn-outline-transparent-active-border-color;
   }
 
+  &:disabled {
+    background-color: $ux-gray-300;
+    border: $ux-gray-400;
+    color: $ux-gray-800;
+  }
+
   &:focus-visible {
     @include btn-focus-outline;
   }

@@ -51,6 +51,16 @@ export const Primary = () => (
     </Button>
     {' '}
     <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="sm"
+      trailingIcon={faCaretDown}
+      variant="outline-primary"
+    >
+      Confirm
+    </Button>
+    {' '}
+    <Button
       leadingIcon={faFileAlt}
       size="md"
       trailingIcon={faCaretDown}
@@ -74,6 +84,16 @@ export const Primary = () => (
       size="md"
       trailingIcon={faCaretDown}
       variant="primary"
+    >
+      Confirm
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="md"
+      trailingIcon={faCaretDown}
+      variant="outline-primary"
     >
       Confirm
     </Button>
@@ -109,6 +129,16 @@ export const Danger = () => (
     >
       Delete
     </Button>
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="sm"
+      trailingIcon={faCaretDown}
+      variant="outline-danger"
+    >
+      Delete
+    </Button>
+    {' '}
     {' '}
     <Button
       leadingIcon={faFileAlt}
@@ -134,6 +164,16 @@ export const Danger = () => (
       size="md"
       trailingIcon={faCaretDown}
       variant="danger"
+    >
+      Delete
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="md"
+      trailingIcon={faCaretDown}
+      variant="outline-danger"
     >
       Delete
     </Button>
@@ -171,6 +211,16 @@ export const Warning = () => (
     </Button>
     {' '}
     <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="sm"
+      trailingIcon={faCaretDown}
+      variant="outline-warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
       leadingIcon={faFileAlt}
       size="md"
       trailingIcon={faCaretDown}
@@ -194,6 +244,16 @@ export const Warning = () => (
       size="md"
       trailingIcon={faCaretDown}
       variant="warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="md"
+      trailingIcon={faCaretDown}
+      variant="outline-warning"
     >
       Edit
     </Button>
@@ -231,6 +291,16 @@ export const Transparent = () => (
     </Button>
     {' '}
     <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="sm"
+      trailingIcon={faCaretDown}
+      variant="outline-transparent"
+    >
+      Skip
+    </Button>
+    {' '}
+    <Button
       leadingIcon={faFileAlt}
       size="md"
       trailingIcon={faCaretDown}
@@ -254,6 +324,16 @@ export const Transparent = () => (
       size="md"
       trailingIcon={faCaretDown}
       variant="transparent"
+    >
+      Skip
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt}
+      size="md"
+      trailingIcon={faCaretDown}
+      variant="outline-transparent"
     >
       Skip
     </Button>
