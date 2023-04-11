@@ -414,130 +414,130 @@ $warning: $ux-yellow-400;
   }
 }
 
-  @mixin btn-brand-linkedin {
-    $btn-brand-linkedin-background: $brand-color-linkedin;
-    $btn-brand-linkedin-border: $brand-color-linkedin;
-    $btn-brand-linkedin-color: $ux-white;
-    
-    $btn-brand-linkedin-hover-background: darken($brand-color-linkedin, 5%);
-    $btn-brand-linkedin-hover-border: darken($brand-color-linkedin, 5%);
-    $btn-brand-linkedin-hover-color: $ux-white;
-    
-    $btn-brand-linkedin-active-background: darken($brand-color-linkedin, 5%);
-    $btn-brand-linkedin-active-border: darken($brand-color-linkedin, 5%);
-    $btn-brand-linkedin-active-color: $ux-white;
-  
-    @include button-variant(
-      $btn-brand-linkedin-background, 
-      $btn-brand-linkedin-border,
-      $btn-brand-linkedin-color,
-      
-      $btn-brand-linkedin-hover-background,
-      $btn-brand-linkedin-hover-border,
-      $btn-brand-linkedin-hover-color,
-      
-      $btn-brand-linkedin-active-background,
-      $btn-brand-linkedin-active-border,
-      $btn-brand-linkedin-active-color,
-    );
-  
-    &:disabled {
-      color: $ux-white;
-    }
+@mixin btn-brand-linkedin {
+  $btn-brand-linkedin-background: $brand-color-linkedin;
+  $btn-brand-linkedin-border: $brand-color-linkedin;
+  $btn-brand-linkedin-color: $ux-white;
 
-    &:focus-visible {
-      @include btn-focus-outline;
-    }
-  
-    &:active, &:focus {
-      @include btn-remove-bootstrap-focus-outline;
-    }
+  $btn-brand-linkedin-hover-background: darken($brand-color-linkedin, 5%);
+  $btn-brand-linkedin-hover-border: darken($brand-color-linkedin, 5%);
+  $btn-brand-linkedin-hover-color: $ux-white;
+
+  $btn-brand-linkedin-active-background: darken($brand-color-linkedin, 5%);
+  $btn-brand-linkedin-active-border: darken($brand-color-linkedin, 5%);
+  $btn-brand-linkedin-active-color: $ux-white;
+
+  @include button-variant(
+    $btn-brand-linkedin-background, 
+    $btn-brand-linkedin-border,
+    $btn-brand-linkedin-color,
+
+    $btn-brand-linkedin-hover-background,
+    $btn-brand-linkedin-hover-border,
+    $btn-brand-linkedin-hover-color,
+
+    $btn-brand-linkedin-active-background,
+    $btn-brand-linkedin-active-border,
+    $btn-brand-linkedin-active-color,
+  );
+
+  &:disabled {
+    color: $ux-white;
   }
 
-  @mixin btn-brand-twitter {
-    $btn-brand-twitter-background: $brand-color-twitter;
-    $btn-brand-twitter-border: $brand-color-twitter;
-    $btn-brand-twitter-color: $ux-white;
-    
-    $btn-brand-twitter-hover-background: darken($brand-color-twitter, 5%);
-    $btn-brand-twitter-hover-border: darken($brand-color-twitter, 5%);
-    $btn-brand-twitter-hover-color: $ux-white;
-    
-    $btn-brand-twitter-active-background: darken($brand-color-twitter, 5%);
-    $btn-brand-twitter-active-border: darken($brand-color-twitter, 5%);
-    $btn-brand-twitter-active-color: $ux-white;
-  
-    @include button-variant(
-      $btn-brand-twitter-background, 
-      $btn-brand-twitter-border,
-      $btn-brand-twitter-color,
-      
-      $btn-brand-twitter-hover-background,
-      $btn-brand-twitter-hover-border,
-      $btn-brand-twitter-hover-color,
-      
-      $btn-brand-twitter-active-background,
-      $btn-brand-twitter-active-border,
-      $btn-brand-twitter-active-color,
-    );
-  
-    &:disabled {
-      color: $ux-white;
-    }
-
-    &:focus-visible {
-      @include btn-focus-outline;
-    }
-  
-    &:active, &:focus {
-      @include btn-remove-bootstrap-focus-outline;
-    }
+  &:focus-visible {
+    @include btn-focus-outline;
   }
 
-  @mixin btn-link {
-    $btn-link-background: transparent;
-    $btn-link-border: transparent;
-    $btn-link-color: $ux-blue;
-    
-    $btn-link-hover-background: transparent;
-    $btn-link-hover-border: transparent;
-    $btn-link-hover-color: $ux-blue-600;
-    
-    $btn-link-active-background: transparent;
-    $btn-link-active-border: transparent;
-    $btn-link-active-color: $ux-blue-600;
-  
-    @include button-variant(
-      $btn-link-background, 
-      $btn-link-border,
-      $btn-link-color,
-      
-      $btn-link-hover-background,
-      $btn-link-hover-border,
-      $btn-link-hover-color,
-      
-      $btn-link-active-background,
-      $btn-link-active-border,
-      $btn-link-active-color,
-    );
-
-    text-decoration: none;
-
-    &:disabled {
-      color: $ux-blue;
-      opacity: 0.5;
-    }
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    &:focus-visible {
-      @include btn-focus-outline;
-    }
-  
-    &:active, &:focus {
-      @include btn-remove-bootstrap-focus-outline;
-    }
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
   }
+}
+
+@mixin btn-brand-twitter {
+  $btn-brand-twitter-background: $brand-color-twitter;
+  $btn-brand-twitter-border: $brand-color-twitter;
+  $btn-brand-twitter-color: $ux-white;
+
+  $btn-brand-twitter-hover-background: darken($brand-color-twitter, 5%);
+  $btn-brand-twitter-hover-border: darken($brand-color-twitter, 5%);
+  $btn-brand-twitter-hover-color: $ux-white;
+
+  $btn-brand-twitter-active-background: darken($brand-color-twitter, 5%);
+  $btn-brand-twitter-active-border: darken($brand-color-twitter, 5%);
+  $btn-brand-twitter-active-color: $ux-white;
+
+  @include button-variant(
+    $btn-brand-twitter-background, 
+    $btn-brand-twitter-border,
+    $btn-brand-twitter-color,
+
+    $btn-brand-twitter-hover-background,
+    $btn-brand-twitter-hover-border,
+    $btn-brand-twitter-hover-color,
+
+    $btn-brand-twitter-active-background,
+    $btn-brand-twitter-active-border,
+    $btn-brand-twitter-active-color,
+  );
+
+  &:disabled {
+    color: $ux-white;
+  }
+
+  &:focus-visible {
+    @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
+  }
+}
+
+@mixin btn-link {
+  $btn-link-background: transparent;
+  $btn-link-border: transparent;
+  $btn-link-color: $ux-blue;
+
+  $btn-link-hover-background: transparent;
+  $btn-link-hover-border: transparent;
+  $btn-link-hover-color: $ux-blue-600;
+
+  $btn-link-active-background: transparent;
+  $btn-link-active-border: transparent;
+  $btn-link-active-color: $ux-blue-600;
+
+  @include button-variant(
+    $btn-link-background, 
+    $btn-link-border,
+    $btn-link-color,
+
+    $btn-link-hover-background,
+    $btn-link-hover-border,
+    $btn-link-hover-color,
+
+    $btn-link-active-background,
+    $btn-link-active-border,
+    $btn-link-active-color,
+  );
+
+  text-decoration: none;
+
+  &:disabled {
+    color: $ux-blue;
+    opacity: 0.5;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:focus-visible {
+    @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
+  }
+}
 
