@@ -59,8 +59,6 @@ export const InModal = () => {
         isOpen={isOpen}
       >
         <ModalHeader
-          git
-          stat
           title="In Modal creatable select"
           titleId="in-modal-creatable-select"
           onRequestClose={handleRequestClose}

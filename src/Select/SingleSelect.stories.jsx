@@ -180,12 +180,12 @@ export const CustomOptionWithDescription = () => {
     >
       <SingleSelect
         components={{
-              Option: (props) => (
-                <OptionWithDescription
-                  {...props}
-                />
-              ),
-            }}
+          Option: (props) => (
+            <OptionWithDescription
+              {...props}
+            />
+          ),
+        }}
         inputId="custom-option-with-description-select"
         options={optionsWithDescriptions}
         onChange={onChange}
@@ -201,9 +201,7 @@ export const CustomOptionWithCheckbox = () => (
   >
     <SingleSelect
       closeMenuOnSelect={false}
-      components={{
-            Option,
-          }}
+      components={{ Option }}
       hideSelectedOptions={false}
       inputId="custom-option-with-checkbox-select"
       isMulti
@@ -237,15 +235,15 @@ export const CustomOptionWithIndeterminateCheckbox = () => {
       <SingleSelect
         closeMenuOnSelect={false}
         components={{
-              Option: (props) => (
-                <Option
-                  {...props}
-                      // eslint-disable-next-line react/prop-types
-                  indeterminate={props.value > 2}
-                  ref={createInputRef()}
-                />
-              ),
-            }}
+          Option: (props) => (
+            <Option
+              {...props}
+                  // eslint-disable-next-line react/prop-types
+              indeterminate={props.value > 2}
+              ref={createInputRef()}
+            />
+          ),
+        }}
         hideSelectedOptions={false}
         inputId="custom-option-with-indeterminate-checkbox"
         isMulti
@@ -264,15 +262,15 @@ export const CustomValueContainer = () => (
     <SingleSelect
       closeMenuOnSelect={false}
       components={{
-            Option,
-            ValueContainer: (props) => (
-              <ValueContainer
-                {...props}
-                    /* eslint-disable react/prop-types */
-                valueText={`participant${props.getValue().length > 1 ? 's' : ''} selected`}
-              />
-            ),
-          }}
+        Option,
+        ValueContainer: (props) => (
+          <ValueContainer
+            {...props}
+                /* eslint-disable react/prop-types */
+            valueText={`participant${props.getValue().length > 1 ? 's' : ''} selected`}
+          />
+        ),
+      }}
       hideSelectedOptions={false}
       inputId="custom-value-container-select"
       isMulti
