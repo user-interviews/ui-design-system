@@ -1,12 +1,11 @@
-import React from 'react';
-import { action } from '@storybook/addon-actions';
+import React, { useState } from 'react';
 
 import Button from 'src/Button';
 import CreatableSelect from 'src/Select/CreatableSelect';
 import FormGroup from 'src/FormGroup';
 import {
   Modal, ModalHeader, ModalBody, ModalFooter,
- } from 'src/Modal';
+} from 'src/Modal';
 
 export default {
   title: 'Components/Selects/Creatable',
@@ -20,8 +19,10 @@ const options = [
 ];
 
 export const Default = () => {
-  const handleChange = () => {};
-  const handleInputChange = () => {};
+  const handleChange = () => {
+  };
+  const handleInputChange = () => {
+  };
 
   return (
     <FormGroup
@@ -40,44 +41,51 @@ export const Default = () => {
 };
 
 export const InModal = () => {
-  const handleChange = () => {};
-  const handleInputChange = () => {};
-  const handleRequestClose = () => action('Close');
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleChange = () => {
+  };
+  const handleInputChange = () => {
+  };
+  const handleRequestClose = () => setIsOpen(false);
 
   return (
-    <Modal
-      ariaHideApp={false}
-      className="CreatableSelectInModal"
-      contentLabel="CreatableSelect in Modal"
-      isOpen
-    >
-      <ModalHeader
-        title="In Modal creatable select"
-        titleId="in-modal-creatable-select"
-        onRequestClose={handleRequestClose}
-      />
-      <ModalBody>
-        <FormGroup
-          helperText="Select menu is able to overflow the Modal container"
-          label="In Modal creatable select"
-          labelHtmlFor="in-modal-creatable-select"
-        >
-          <CreatableSelect
-            inputId="in-modal-creatable-select"
-            isClearable
-            modal
-            options={options}
-            onChange={handleChange}
-            onInputChange={handleInputChange}
-          />
-        </FormGroup>
-      </ModalBody>
-      <ModalFooter
-        dismissButtonText="Cancel"
-        onRequestClose={handleRequestClose}
+    <>
+      <Button onClick={() => setIsOpen(true)}>Click to open modal</Button>
+      <Modal
+        ariaHideApp={false}
+        className="CreatableSelectInModal"
+        contentLabel="CreatableSelect in Modal"
+        isOpen={isOpen}
       >
-        <Button type="submit" variant="primary">Confirm</Button>
-      </ModalFooter>
-    </Modal>
+        <ModalHeader
+          title="In Modal creatable select"
+          titleId="in-modal-creatable-select"
+          onRequestClose={handleRequestClose}
+        />
+        <ModalBody>
+          <FormGroup
+            helperText="Select menu is able to overflow the Modal container"
+            label="In Modal creatable select"
+            labelHtmlFor="in-modal-creatable-select"
+          >
+            <CreatableSelect
+              inputId="in-modal-creatable-select"
+              isClearable
+              modal
+              options={options}
+              onChange={handleChange}
+              onInputChange={handleInputChange}
+            />
+          </FormGroup>
+        </ModalBody>
+        <ModalFooter
+          dismissButtonText="Cancel"
+          onRequestClose={handleRequestClose}
+        >
+          <Button type="submit" variant="primary">Confirm</Button>
+        </ModalFooter>
+      </Modal>
+    </>
   );
 };
