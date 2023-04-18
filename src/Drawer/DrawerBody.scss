@@ -1,0 +1,10 @@
+@import '../../scss/theme.scss';
+
+.Drawer__body {
+  height: 0;
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 0 $ux-spacing-60;
+  padding-top: $ux-spacing-30;
+}
+
