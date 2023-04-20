@@ -197,7 +197,7 @@ export const AdditionalActions = () => {
       <Drawer
         behindNav={(boolean('behindNav', true))}
         expandable={boolean('expandable', true)}
-        hasBackgroundOverlay={boolean('hasBackgroundOverlay', true)}
+        hasBackgroundOverlay={boolean('hasBackgroundOverlay', false)}
         orientation={select('orientation', ['left', 'right'], 'right')}
         size={select('size', DrawerSizes, 'sm')}
         visible={isVisible}
