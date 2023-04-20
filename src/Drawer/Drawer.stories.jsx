@@ -26,8 +26,6 @@ export default {
   },
 };
 
-// const handleRequestClose = () => action('Close');
-
 export const Default = () => {
   const [isVisible, setVisible] = useState(false);
 
