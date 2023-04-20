@@ -117,6 +117,7 @@ export const InModal = () => {
     </>
   );
 };
+
 export const GroupedOptions = () => {
   const groupedOptions = [
     {
@@ -148,29 +149,17 @@ export const GroupedOptions = () => {
 export const CustomOptionWithDescription = () => {
   const optionsWithDescriptions = [
     {
-      label: 'Org Admin',
-      value: 1,
-      description: 'Short description of role capabilities',
-      labelDescription: '(Full access)',
-    },
+ label: 'Org Admin', value: 1, description: 'Short description of role capabilities', labelDescription: '(Full access)',
+},
     {
-      label: 'Administrator',
-      value: 2,
-      description: 'Short description of role capabilities',
-      labelDescription: '(Full access)',
-    },
+ label: 'Administrator', value: 2, description: 'Short description of role capabilities', labelDescription: '(Full access)',
+},
     {
-      label: 'Researcher',
-      value: 3,
-      description: 'Short description of role capabilities',
-      labelDescription: '(Standard access)',
-    },
+ label: 'Researcher', value: 3, description: 'Short description of role capabilities', labelDescription: '(Standard access)',
+},
     {
-      label: 'Teammate',
-      value: 4,
-      description: 'Short description of role capabilities',
-      labelDescription: '(Limited access)',
-    },
+ label: 'Teammate', value: 4, description: 'Short description of role capabilities', labelDescription: '(Limited access)',
+},
   ];
 
   return (
