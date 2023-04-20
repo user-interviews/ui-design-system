@@ -20,6 +20,7 @@ import {
   DrawerHeader,
   DrawerBody,
   DrawerFooter,
+  DrawerSizes,
 } from 'src/Drawer';
 import {
   Dropdown,
@@ -118,6 +119,7 @@ export {
   DrawerHeader,
   DrawerBody,
   DrawerFooter,
+  DrawerSizes,
   Dropdown,
   DropdownDivider,
   DropdownToggle,

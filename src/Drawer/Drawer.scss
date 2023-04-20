@@ -20,15 +20,15 @@
 
 .Drawer {
   @include media-breakpoint-up(sm) {
-    &--small {
+    &--sm {
       width: $drawer-width-small
     }
 
-    &--medium {
+    &--md {
       width: $drawer-width-medium;
     }
 
-    &--large {
+    &--lg {
       width: $drawer-width-large;
     }
   }

@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import {
+  withKnobs, text, select, boolean, number,
+} from '@storybook/addon-knobs';
 
 import {
  Drawer, DrawerBody, DrawerFooter, DrawerHeader,
@@ -19,6 +22,7 @@ export default {
   subcomponents: {
      DrawerHeader, DrawerBody, DrawerFooter,
   },
+  decorators: [withKnobs({ escapeHTML: false })],
   parameters: {
     docs: {
       page: mdx,
@@ -81,7 +85,7 @@ export const Medium = () => {
     <>
       <Button onClick={toggleVisible}>Open</Button>
       <Drawer
-        size="medium"
+        size="md"
         visible={isVisible}
         onRequestClose={toggleVisible}
       >
@@ -128,7 +132,7 @@ export const Large = () => {
     <>
       <Button onClick={toggleVisible}>Open</Button>
       <Drawer
-        size="large"
+        size="lg"
         visible={isVisible}
         onRequestClose={toggleVisible}
       >

@@ -15,6 +15,12 @@ export const ExpandContext = createContext({
   handleExpand: null,
 });
 
+export const DrawerSizes = {
+  SMALL: 'sm',
+  MEDIUM: 'md',
+  LARGE: 'lg',
+};
+
 const Drawer = ({
   behindNav,
   children,
@@ -83,7 +89,7 @@ Drawer.propTypes = {
   expandable: propTypes.bool,
   hasBackgroundOverlay: propTypes.bool,
   orientation: propTypes.oneOf([ORIENTATION_LEFT, ORIENTATION_RIGHT]),
-  size: propTypes.oneOf(['small', 'medium', 'large']),
+  size: propTypes.oneOf([DrawerSizes.SMALL, DrawerSizes.MEDIUM, DrawerSizes.LARGE]),
   visible: propTypes.bool.isRequired,
   onRequestClose: propTypes.func.isRequired,
 };
@@ -95,7 +101,7 @@ Drawer.defaultProps = {
   expandable: false,
   hasBackgroundOverlay: true,
   orientation: ORIENTATION_RIGHT,
-  size: 'small',
+  size: 'sm',
 };
 
 export default Drawer;
