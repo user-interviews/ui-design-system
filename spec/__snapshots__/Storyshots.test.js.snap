@@ -8866,6 +8866,8 @@ exports[`Storyshots Components/Modal Default 1`] = `
           disabled={false}
           onClick={[Function]}
           type="button"
+<<<<<<< release/1.43.0
+=======
         >
           Cancel
         </button>
@@ -8953,6 +8955,7 @@ exports[`Storyshots Components/Modal Large Modal 1`] = `
           disabled={false}
           onClick={[Function]}
           type="button"
+>>>>>>> main
         >
           Cancel
         </button>
@@ -8969,7 +8972,11 @@ exports[`Storyshots Components/Modal Large Modal 1`] = `
 </div>
 `;
 
+<<<<<<< release/1.43.0
+exports[`Storyshots Components/Modal Large Modal 1`] = `
+=======
 exports[`Storyshots Components/Modal Medium Modal 1`] = `
+>>>>>>> main
 <div
   style={
     Object {
@@ -8993,9 +9000,15 @@ exports[`Storyshots Components/Modal Medium Modal 1`] = `
     }
   >
     <div
+<<<<<<< release/1.43.0
+      aria-label="Large Modal"
+      aria-modal={true}
+      className="ReactModal__Content LargeModal ReactModal--large"
+=======
       aria-label="Medium Modal"
       aria-modal={true}
       className="ReactModal__Content MediumModal ReactModal--medium"
+>>>>>>> main
       onClick={[Function]}
       onKeyDown={[Function]}
       onMouseDown={[Function]}
@@ -9012,9 +9025,15 @@ exports[`Storyshots Components/Modal Medium Modal 1`] = `
         >
           <h1
             className="ModalHeader__title"
+<<<<<<< release/1.43.0
+            id="large-modal"
+          >
+            Large modal
+=======
             id="medium-modal"
           >
             Medium modal
+>>>>>>> main
           </h1>
         </div>
         <button
@@ -9047,6 +9066,127 @@ exports[`Storyshots Components/Modal Medium Modal 1`] = `
           className="Button btn btn-primary"
           disabled={false}
           type="submit"
+        >
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+<<<<<<< release/1.43.0
+exports[`Storyshots Components/Modal Medium Modal 1`] = `
+=======
+exports[`Storyshots Components/Modal Transactional Modal 1`] = `
+>>>>>>> main
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ReactModal__Overlay"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+<<<<<<< release/1.43.0
+      aria-label="Medium Modal"
+      aria-modal={true}
+      className="ReactModal__Content MediumModal ReactModal--medium"
+=======
+      aria-label="Transactional Modal"
+      aria-modal={true}
+      className="ReactModal__Content TransactionalModal"
+>>>>>>> main
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+<<<<<<< release/1.43.0
+            id="medium-modal"
+          >
+            Medium modal
+=======
+            id="transactional-modal"
+          >
+            Transactional modal
+>>>>>>> main
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        />
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <p>
+<<<<<<< release/1.43.0
+          Some content goes here.
+        </p>
+=======
+          The user needs to take action here.
+        </p>
+        <div
+          className="Input input-group"
+        >
+          <input
+            className="Input form-control"
+            disabled={false}
+            id="Email"
+            name="Email"
+            placeholder="Email"
+            type="text"
+          />
+        </div>
+>>>>>>> main
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          type="submit"
+<<<<<<< release/1.43.0
         >
           Confirm
         </button>
@@ -9103,49 +9243,7 @@ exports[`Storyshots Components/Modal Transactional Modal 1`] = `
           >
             Transactional modal
           </h1>
-        </div>
-        <button
-          aria-label="Close"
-          className="btn btn-sm btn-close"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        />
-      </header>
-      <div
-        className="ModalBody"
-      >
-        <p>
-          The user needs to take action here.
-        </p>
-        <div
-          className="Input input-group"
-        >
-          <input
-            className="Input form-control"
-            disabled={false}
-            id="Email"
-            name="Email"
-            placeholder="Email"
-            type="text"
-          />
-        </div>
-      </div>
-      <div
-        className="ModalFooter"
-      >
-        <button
-          className="Button btn btn-transparent"
-          disabled={false}
-          onClick={[Function]}
-          type="button"
-        >
-          Cancel
-        </button>
-        <button
-          className="Button btn btn-primary"
-          disabled={false}
-          type="submit"
+=======
         >
           Invite
         </button>
@@ -9267,6 +9365,238 @@ exports[`Storyshots Components/Modal With Subtitle Modal 1`] = `
     }
   }
 >
+  <div
+    className="ReactModal__Overlay"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="With Subtitle Modal"
+      aria-modal={true}
+      className="ReactModal__Content WithSubtitleModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="with-subtitle-modal"
+          >
+            With subtitle modal
+          </h1>
+          <h2
+            className="ModalHeader__subtitle"
+          >
+            A subtitle to provide more information
+          </h2>
+>>>>>>> main
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        />
+      </header>
+      <div
+        className="ModalBody"
+<<<<<<< release/1.43.0
+      >
+        <p>
+          The user needs to take action here.
+        </p>
+        <div
+          className="Input input-group"
+        >
+          <input
+            className="Input form-control"
+            disabled={false}
+            id="Email"
+            name="Email"
+            placeholder="Email"
+            type="text"
+          />
+        </div>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          type="submit"
+        >
+          Invite
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Modal Warning Modal 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ReactModal__Overlay"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="Warning Modal"
+      aria-modal={true}
+      className="ReactModal__Content WarningModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="warning-modal"
+          >
+            <svg
+              aria-hidden="true"
+              className="svg-inline--fa fa-exclamation-triangle warning"
+              data-icon="exclamation-triangle"
+              data-prefix="fas"
+              focusable="false"
+              role="img"
+              style={Object {}}
+              viewBox="0 0 576 512"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M569.517 440.013C587.975 472.007 564.806 512 527.94 512H48.054c-36.937 0-59.999-40.055-41.577-71.987L246.423 23.985c18.467-32.009 64.72-31.951 83.154 0l239.94 416.028zM288 354c-25.405 0-46 20.595-46 46s20.595 46 46 46 46-20.595 46-46-20.595-46-46-46zm-43.673-165.346l7.418 136c.347 6.364 5.609 11.346 11.982 11.346h48.546c6.373 0 11.635-4.982 11.982-11.346l7.418-136c.375-6.874-5.098-12.654-11.982-12.654h-63.383c-6.884 0-12.356 5.78-11.981 12.654z"
+                fill="currentColor"
+                style={Object {}}
+              />
+            </svg>
+            Warning modal
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        />
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <p>
+          Are you sure you want to do this?
+=======
+      >
+        <p>
+          Some content goes here.
+>>>>>>> main
+        </p>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+<<<<<<< release/1.43.0
+        >
+          Cancel
+        </button>
+        <button
+          className="Button btn btn-warning btn-md"
+          disabled={false}
+          type="button"
+        >
+          Edit
+=======
+        >
+          Cancel
+        </button>
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          type="submit"
+        >
+          Confirm
+>>>>>>> main
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+<<<<<<< release/1.43.0
+exports[`Storyshots Components/Modal With Subtitle Modal 1`] = `
+=======
+exports[`Storyshots Components/Pill Default 1`] = `
+>>>>>>> main
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+<<<<<<< release/1.43.0
   <div
     className="ReactModal__Overlay"
     onClick={[Function]}
@@ -10158,6 +10488,807 @@ exports[`Storyshots Components/Profile Cell With Trailing Icon 1`] = `
           viewBox="0 0 512 512"
           xmlns="http://www.w3.org/2000/svg"
         >
+=======
+  <div>
+    <h4
+      style={
+        Object {
+          "marginBottom": "2rem",
+        }
+      }
+    >
+      Test Pill
+    </h4>
+    <span
+      className="Pill Pill--blue"
+    >
+      Text
+    </span>
+    <h4
+      style={
+        Object {
+          "marginBottom": "2rem",
+          "marginTop": "2rem",
+        }
+      }
+    >
+      Colors
+    </h4>
+    <span
+      className="Pill Pill--blue"
+    >
+      blue
+    </span>
+    <span
+      className="Pill Pill--orange"
+    >
+      orange
+    </span>
+    <span
+      className="Pill Pill--yellow"
+    >
+      yellow
+    </span>
+    <span
+      className="Pill Pill--red"
+    >
+      red
+    </span>
+    <span
+      className="Pill Pill--green"
+    >
+      green
+    </span>
+    <span
+      className="Pill Pill--gray"
+    >
+      gray
+    </span>
+    <span
+      className="Pill Pill--silver"
+    >
+      silver
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Pill Statuses 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Pills"
+  >
+    <span
+      className="Pill Pill--blue"
+    >
+      Informational
+    </span>
+    <span
+      className="Pill Pill--silver"
+    >
+      Informational
+    </span>
+    <span
+      className="Pill Pill--orange"
+    >
+      Partially complete
+    </span>
+    <span
+      className="Pill Pill--yellow"
+    >
+      Incomplete
+    </span>
+    <span
+      className="Pill Pill--red"
+    >
+      Attention
+    </span>
+    <span
+      className="Pill Pill--green"
+    >
+      Active
+    </span>
+    <span
+      className="Pill Pill--gray"
+    >
+      Inactive
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Pill With Close 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    className="Pill Pill--blue Pill--closeable"
+  >
+    Text
+    <button
+      aria-label="Remove undefined"
+      className="Pill__button--close"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-times "
+        data-icon="times"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 352 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Pill With Container 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Pills"
+  >
+    <span
+      className="Pill Pill--silver"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-microphone Pill__icon--lead"
+        data-icon="microphone"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 352 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M176 352c53.02 0 96-42.98 96-96V96c0-53.02-42.98-96-96-96S80 42.98 80 96v160c0 53.02 42.98 96 96 96zm160-160h-16c-8.84 0-16 7.16-16 16v48c0 74.8-64.49 134.82-140.79 127.38C96.71 376.89 48 317.11 48 250.3V208c0-8.84-7.16-16-16-16H16c-8.84 0-16 7.16-16 16v40.16c0 89.64 63.97 169.55 152 181.69V464H96c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16h-56v-33.77C285.71 418.47 352 344.9 352 256v-48c0-8.84-7.16-16-16-16z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      1-on-1 Interview
+    </span>
+    <span
+      className="Pill Pill--silver"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-globe Pill__icon--lead"
+        data-icon="globe"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 496 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M336.5 160C322 70.7 287.8 8 248 8s-74 62.7-88.5 152h177zM152 256c0 22.2 1.2 43.5 3.3 64h185.3c2.1-20.5 3.3-41.8 3.3-64s-1.2-43.5-3.3-64H155.3c-2.1 20.5-3.3 41.8-3.3 64zm324.7-96c-28.6-67.9-86.5-120.4-158-141.6 24.4 33.8 41.2 84.7 50 141.6h108zM177.2 18.4C105.8 39.6 47.8 92.1 19.3 160h108c8.7-56.9 25.5-107.8 49.9-141.6zM487.4 192H372.7c2.1 21 3.3 42.5 3.3 64s-1.2 43-3.3 64h114.6c5.5-20.5 8.6-41.8 8.6-64s-3.1-43.5-8.5-64zM120 256c0-21.5 1.2-43 3.3-64H8.6C3.2 212.5 0 233.8 0 256s3.2 43.5 8.6 64h114.6c-2-21-3.2-42.5-3.2-64zm39.5 96c14.5 89.3 48.7 152 88.5 152s74-62.7 88.5-152h-177zm159.3 141.6c71.4-21.2 129.4-73.7 158-141.6h-108c-8.8 56.9-25.6 107.8-50 141.6zM19.3 352c28.6 67.9 86.5 120.4 158 141.6-24.4-33.8-41.2-84.7-50-141.6h-108z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      Online
+    </span>
+    <span
+      className="Pill Pill--silver"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-gift-card Pill__icon--lead"
+        data-icon="gift-card"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 576 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M528 128h-58.07c6.22-12.06 10.07-25.52 10.07-40 0-48.52-39.48-88-88-88-41.6 0-68.51 21.34-103.04 68.33C254.44 21.33 227.53 0 185.93 0c-48.52 0-88 39.48-88 88 0 14.48 3.85 27.94 10.07 40H48c-26.51 0-48 21.49-48 48v288c0 26.51 21.49 48 48 48h480c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zM392 48c22.06 0 40 17.94 40 40 0 22.05-17.94 40-40 40h-86.07c51.36-76.47 65.72-80 86.07-80zM145.93 88c0-22.06 17.94-40 40-40 19.94 0 34.58 3.27 86.07 80h-86.07c-22.06 0-40-17.95-40-40zm60.13 104l-35.72 35.72c-6.25 6.25-6.25 16.38 0 22.63l11.31 11.31c6.25 6.25 16.38 6.25 22.63 0L273.94 192h28.13l69.65 69.65c6.25 6.25 16.38 6.25 22.63 0l11.31-11.31c6.25-6.25 6.25-16.38 0-22.63L369.94 192H512v128H64V192h142.06zM64 448v-64h448v64H64z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      $120 choice of dozens of digital gift cards
+    </span>
+    <span
+      className="Pill Pill--silver"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-clock Pill__icon--lead"
+        data-icon="clock"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      1 hour
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Pill With Leading Icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    className="Pill Pill--blue"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-users Pill__icon--lead"
+      data-icon="users"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 640 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M96 224c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm448 0c35.3 0 64-28.7 64-64s-28.7-64-64-64-64 28.7-64 64 28.7 64 64 64zm32 32h-64c-17.6 0-33.5 7.1-45.1 18.6 40.3 22.1 68.9 62 75.1 109.4h66c17.7 0 32-14.3 32-32v-32c0-35.3-28.7-64-64-64zm-256 0c61.9 0 112-50.1 112-112S381.9 32 320 32 208 82.1 208 144s50.1 112 112 112zm76.8 32h-8.3c-20.8 10-43.9 16-68.5 16s-47.6-6-68.5-16h-8.3C179.6 288 128 339.6 128 403.2V432c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48v-28.8c0-63.6-51.6-115.2-115.2-115.2zm-223.7-13.4C161.5 263.1 145.6 256 128 256H64c-35.3 0-64 28.7-64 64v32c0 17.7 14.3 32 32 32h65.9c6.3-47.4 34.9-87.3 75.2-109.4z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Text
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Pill With Link 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <span
+    className="Pill Pill--blue"
+  >
+    <a
+      href="https://www.userinterviews.com/"
+      rel="noreferrer"
+      target="_blank"
+    >
+      Visit our site
+    </a>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Popover Card Popover 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Filter
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Popover Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Filter
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Popover Placement 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Try different placements
+  </button>
+</div>
+`;
+
+exports[`Storyshots Components/Popper Dark 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <p>
+    reference element
+  </p>
+  <div
+    className="Popper Popper--dark"
+    data-placement="top"
+    style={
+      Object {
+        "left": "0",
+        "position": "absolute",
+        "top": "0",
+      }
+    }
+  >
+    Dark Popper
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Popper Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <p>
+    reference element
+  </p>
+  <div
+    className="Popper"
+    data-placement="top"
+    style={
+      Object {
+        "left": "0",
+        "position": "absolute",
+        "top": "0",
+      }
+    }
+  >
+    Default Popper
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Profile Cell Large 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCell ProfileCell--large"
+  >
+    <div
+      className="ProfileCell__image"
+    >
+      <div
+        aria-hidden={false}
+        className="Avatar Avatar--large"
+      >
+        <div
+          className="Avatar__circle"
+        >
+          <span
+            className="Avatar__circle__initials"
+          >
+            RR
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <div
+        className="ProfileCell__content__name__container"
+      >
+        <h5
+          className="ProfileCell__content__name"
+        >
+          Riley Researcher
+        </h5>
+      </div>
+      <div
+        className="ProfileCell__content__subtitle"
+      >
+        <div>
+          riley@userinterviews.com
+        </div>
+        <div>
+          +1 888 888 8888
+        </div>
+        <div>
+          (-5:00) America/New York
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Profile Cell Loading 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCellSkeleton"
+  >
+    <div
+      className="ProfileCellSkeleton__avatar"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "50%",
+              "height": 44,
+              "width": 44,
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+    <div
+      className="ProfileCellSkeleton__info"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "100%",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+  </div>
+  <br />
+  <div
+    className="ProfileCellSkeleton"
+  >
+    <div
+      className="ProfileCellSkeleton__avatar"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "50%",
+              "height": 44,
+              "width": 44,
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+    <div
+      className="ProfileCellSkeleton__info"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+              "borderRadius": "0.25rem",
+              "width": "",
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Profile Cell Small 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCell"
+  >
+    <div
+      className="ProfileCell__image"
+    >
+      <div
+        aria-hidden={false}
+        className="Avatar"
+      >
+        <div
+          className="Avatar__circle"
+        >
+          <span
+            className="Avatar__circle__initials"
+          >
+            RR
+          </span>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <div
+        className="ProfileCell__content__name__container"
+      >
+        <h5
+          className="ProfileCell__content__name"
+        >
+          Riley Researcher
+        </h5>
+      </div>
+      <div
+        className="ProfileCell__content__subtitle"
+      >
+        riley@userinterviews.com
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Profile Cell With Image 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCell ProfileCell--large"
+  >
+    <div
+      className="ProfileCell__image"
+    >
+      <div
+        aria-hidden={false}
+        className="Avatar Avatar--large"
+      >
+        <div
+          className="Avatar__circle"
+        >
+          <img
+            alt="Riley Researcher"
+            onError={[Function]}
+            src="https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <div
+        className="ProfileCell__content__name__container"
+      >
+        <h5
+          className="ProfileCell__content__name"
+        >
+          Riley Researcher
+        </h5>
+      </div>
+      <div
+        className="ProfileCell__content__subtitle"
+      >
+        <div>
+          riley@userinterviews.com
+        </div>
+        <div>
+          +1 888 888 8888
+        </div>
+        <div>
+          (-5:00) America/New York
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Profile Cell With Trailing Icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="ProfileCell"
+  >
+    <div
+      className="ProfileCell__image"
+    >
+      <div
+        aria-hidden={false}
+        className="Avatar"
+      >
+        <div
+          className="Avatar__circle"
+        >
+          <img
+            alt="Riley Researcher"
+            onError={[Function]}
+            src="https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="ProfileCell__content"
+      style={
+        Object {
+          "maxWidth": "none",
+        }
+      }
+    >
+      <div
+        className="ProfileCell__content__name__container"
+      >
+        <h5
+          className="ProfileCell__content__name"
+        >
+          Riley Researcher
+        </h5>
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-shield-check ProfileCell__content__trailing_icon"
+          data-icon="shield-check"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+>>>>>>> main
           <path
             d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zm-47.2 114.2l-184 184c-6.2 6.2-16.4 6.2-22.6 0l-104-104c-6.2-6.2-6.2-16.4 0-22.6l22.6-22.6c6.2-6.2 16.4-6.2 22.6 0l70.1 70.1 150.1-150.1c6.2-6.2 16.4-6.2 22.6 0l22.6 22.6c6.3 6.3 6.3 16.4 0 22.6z"
             fill="currentColor"
@@ -10254,7 +11385,11 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.43.0
         id="react-select-3-live-region"
+=======
+        id="react-select-4-live-region"
+>>>>>>> main
       />
       <span
         aria-atomic="false"
@@ -10272,7 +11407,11 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
         >
           <div
             className=" css-177do1b-placeholder"
+<<<<<<< release/1.43.0
             id="react-select-3-placeholder"
+=======
+            id="react-select-4-placeholder"
+>>>>>>> main
           >
             Select...
           </div>
@@ -10282,7 +11421,11 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
           >
             <input
               aria-autocomplete="list"
+<<<<<<< release/1.43.0
               aria-describedby="react-select-3-placeholder"
+=======
+              aria-describedby="react-select-4-placeholder"
+>>>>>>> main
               aria-expanded={false}
               aria-haspopup={true}
               autoCapitalize="none"
@@ -10358,6 +11501,7 @@ exports[`Storyshots Components/Selects/Async In Modal 1`] = `
     }
   }
 >
+<<<<<<< release/1.43.0
   <button
     className="Button btn btn-primary"
     disabled={false}
@@ -10366,6 +11510,194 @@ exports[`Storyshots Components/Selects/Async In Modal 1`] = `
   >
     Click to open modal
   </button>
+=======
+  <div
+    className="ReactModal__Overlay"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="AsyncSelect in Modal"
+      aria-modal={true}
+      className="ReactModal__Content AsyncSelectInModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="in-modal-async-select"
+          >
+            In Modal AsyncSelect
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        />
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <div
+          className="FormGroup"
+        >
+          <label
+            className="InputLabel"
+            htmlFor="in-modal-async-select"
+          >
+            In Modal async select
+          </label>
+          <div
+            className="AsyncSelect css-b62m3t-container"
+            onKeyDown={[Function]}
+          >
+            <span
+              className="css-1f43avz-a11yText-A11yText"
+              id="react-select-5-live-region"
+            />
+            <span
+              aria-atomic="false"
+              aria-live="polite"
+              aria-relevant="additions text"
+              className="css-1f43avz-a11yText-A11yText"
+            />
+            <div
+              className=" css-9435u6-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-1fdsijx-ValueContainer"
+              >
+                <div
+                  className=" css-177do1b-placeholder"
+                  id="react-select-5-placeholder"
+                >
+                  Select...
+                </div>
+                <div
+                  className=" css-qbdosj-Input"
+                  data-value=""
+                >
+                  <input
+                    aria-autocomplete="list"
+                    aria-describedby="react-select-5-placeholder"
+                    aria-expanded={false}
+                    aria-haspopup={true}
+                    autoCapitalize="none"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    className=""
+                    disabled={false}
+                    id="in-modal-async-select"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    role="combobox"
+                    spellCheck="false"
+                    style={
+                      Object {
+                        "background": 0,
+                        "border": 0,
+                        "color": "inherit",
+                        "font": "inherit",
+                        "gridArea": "1 / 2",
+                        "label": "input",
+                        "margin": 0,
+                        "minWidth": "2px",
+                        "opacity": 1,
+                        "outline": 0,
+                        "padding": 0,
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={0}
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-1uei4ir-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-1r0gan2-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-tj5bde-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="FormGroup__helper-text"
+          >
+            Select menu is able to overflow the Modal container
+          </div>
+        </div>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          type="submit"
+        >
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+>>>>>>> main
 </div>
 `;
 
@@ -10496,6 +11828,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
     }
   }
 >
+<<<<<<< release/1.43.0
   <button
     className="Button btn btn-primary"
     disabled={false}
@@ -10504,6 +11837,194 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
   >
     Click to open modal
   </button>
+=======
+  <div
+    className="ReactModal__Overlay"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="AsyncCreatableSelect in Modal"
+      aria-modal={true}
+      className="ReactModal__Content AsyncCreatableSelectInModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="in-modal-async-creatable-select"
+          >
+            In Modal AsyncCreatable select
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        />
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <div
+          className="FormGroup"
+        >
+          <label
+            className="InputLabel"
+            htmlFor="in-modal-creatable-select"
+          >
+            In Modal AsyncCreatable select
+          </label>
+          <div
+            className="AsyncSelect css-b62m3t-container"
+            onKeyDown={[Function]}
+          >
+            <span
+              className="css-1f43avz-a11yText-A11yText"
+              id="react-select-3-live-region"
+            />
+            <span
+              aria-atomic="false"
+              aria-live="polite"
+              aria-relevant="additions text"
+              className="css-1f43avz-a11yText-A11yText"
+            />
+            <div
+              className=" css-9435u6-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-1fdsijx-ValueContainer"
+              >
+                <div
+                  className=" css-177do1b-placeholder"
+                  id="react-select-3-placeholder"
+                >
+                  Select...
+                </div>
+                <div
+                  className=" css-qbdosj-Input"
+                  data-value=""
+                >
+                  <input
+                    aria-autocomplete="list"
+                    aria-describedby="react-select-3-placeholder"
+                    aria-expanded={false}
+                    aria-haspopup={true}
+                    autoCapitalize="none"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    className=""
+                    disabled={false}
+                    id="in-modal-creatable-select"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    role="combobox"
+                    spellCheck="false"
+                    style={
+                      Object {
+                        "background": 0,
+                        "border": 0,
+                        "color": "inherit",
+                        "font": "inherit",
+                        "gridArea": "1 / 2",
+                        "label": "input",
+                        "margin": 0,
+                        "minWidth": "2px",
+                        "opacity": 1,
+                        "outline": 0,
+                        "padding": 0,
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={0}
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-1uei4ir-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-1r0gan2-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-tj5bde-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="FormGroup__helper-text"
+          >
+            Select menu is able to overflow the Modal container
+          </div>
+        </div>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          type="submit"
+        >
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+>>>>>>> main
 </div>
 `;
 
@@ -10530,7 +12051,11 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.43.0
         id="react-select-4-live-region"
+=======
+        id="react-select-6-live-region"
+>>>>>>> main
       />
       <span
         aria-atomic="false"
@@ -10548,7 +12073,11 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
         >
           <div
             className=" css-177do1b-placeholder"
+<<<<<<< release/1.43.0
             id="react-select-4-placeholder"
+=======
+            id="react-select-6-placeholder"
+>>>>>>> main
           >
             Select...
           </div>
@@ -10558,7 +12087,11 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
           >
             <input
               aria-autocomplete="list"
+<<<<<<< release/1.43.0
               aria-describedby="react-select-4-placeholder"
+=======
+              aria-describedby="react-select-6-placeholder"
+>>>>>>> main
               aria-expanded={false}
               aria-haspopup={true}
               autoCapitalize="none"
@@ -10634,6 +12167,7 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
     }
   }
 >
+<<<<<<< release/1.43.0
   <button
     className="Button btn btn-primary"
     disabled={false}
@@ -10642,6 +12176,194 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
   >
     Click to open modal
   </button>
+=======
+  <div
+    className="ReactModal__Overlay"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="CreatableSelect in Modal"
+      aria-modal={true}
+      className="ReactModal__Content CreatableSelectInModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="in-modal-creatable-select"
+          >
+            In Modal creatable select
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        />
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <div
+          className="FormGroup"
+        >
+          <label
+            className="InputLabel"
+            htmlFor="in-modal-creatable-select"
+          >
+            In Modal creatable select
+          </label>
+          <div
+            className="CreatableSelect css-b62m3t-container"
+            onKeyDown={[Function]}
+          >
+            <span
+              className="css-1f43avz-a11yText-A11yText"
+              id="react-select-7-live-region"
+            />
+            <span
+              aria-atomic="false"
+              aria-live="polite"
+              aria-relevant="additions text"
+              className="css-1f43avz-a11yText-A11yText"
+            />
+            <div
+              className=" css-9435u6-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-1fdsijx-ValueContainer"
+              >
+                <div
+                  className=" css-177do1b-placeholder"
+                  id="react-select-7-placeholder"
+                >
+                  Select...
+                </div>
+                <div
+                  className=" css-qbdosj-Input"
+                  data-value=""
+                >
+                  <input
+                    aria-autocomplete="list"
+                    aria-describedby="react-select-7-placeholder"
+                    aria-expanded={false}
+                    aria-haspopup={true}
+                    autoCapitalize="none"
+                    autoComplete="off"
+                    autoCorrect="off"
+                    className=""
+                    disabled={false}
+                    id="in-modal-creatable-select"
+                    onBlur={[Function]}
+                    onChange={[Function]}
+                    onFocus={[Function]}
+                    role="combobox"
+                    spellCheck="false"
+                    style={
+                      Object {
+                        "background": 0,
+                        "border": 0,
+                        "color": "inherit",
+                        "font": "inherit",
+                        "gridArea": "1 / 2",
+                        "label": "input",
+                        "margin": 0,
+                        "minWidth": "2px",
+                        "opacity": 1,
+                        "outline": 0,
+                        "padding": 0,
+                        "width": "100%",
+                      }
+                    }
+                    tabIndex={0}
+                    type="text"
+                    value=""
+                  />
+                </div>
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-1uei4ir-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-1r0gan2-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-tj5bde-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="FormGroup__helper-text"
+          >
+            Select menu is able to overflow the Modal container
+          </div>
+        </div>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          type="submit"
+        >
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+>>>>>>> main
 </div>
 `;
 
@@ -10668,7 +12390,11 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.43.0
         id="react-select-5-live-region"
+=======
+        id="react-select-8-live-region"
+>>>>>>> main
       />
       <span
         aria-atomic="false"
@@ -10686,13 +12412,21 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
         >
           <div
             className=" css-177do1b-placeholder"
+<<<<<<< release/1.43.0
             id="react-select-5-placeholder"
+=======
+            id="react-select-8-placeholder"
+>>>>>>> main
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
+<<<<<<< release/1.43.0
             aria-describedby="react-select-5-placeholder"
+=======
+            aria-describedby="react-select-8-placeholder"
+>>>>>>> main
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10763,7 +12497,11 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.43.0
         id="react-select-6-live-region"
+=======
+        id="react-select-9-live-region"
+>>>>>>> main
       />
       <span
         aria-atomic="false"
@@ -10781,13 +12519,21 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
         >
           <div
             className=" css-177do1b-placeholder"
+<<<<<<< release/1.43.0
             id="react-select-6-placeholder"
+=======
+            id="react-select-9-placeholder"
+>>>>>>> main
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
+<<<<<<< release/1.43.0
             aria-describedby="react-select-6-placeholder"
+=======
+            aria-describedby="react-select-9-placeholder"
+>>>>>>> main
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10858,7 +12604,11 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.43.0
         id="react-select-7-live-region"
+=======
+        id="react-select-10-live-region"
+>>>>>>> main
       />
       <span
         aria-atomic="false"
@@ -10876,13 +12626,21 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
         >
           <div
             className=" css-177do1b-placeholder"
+<<<<<<< release/1.43.0
             id="react-select-7-placeholder"
+=======
+            id="react-select-10-placeholder"
+>>>>>>> main
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
+<<<<<<< release/1.43.0
             aria-describedby="react-select-7-placeholder"
+=======
+            aria-describedby="react-select-10-placeholder"
+>>>>>>> main
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -10953,7 +12711,11 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.43.0
         id="react-select-8-live-region"
+=======
+        id="react-select-11-live-region"
+>>>>>>> main
       />
       <span
         aria-atomic="false"
@@ -10971,13 +12733,21 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
         >
           <div
             className=" css-177do1b-placeholder"
+<<<<<<< release/1.43.0
             id="react-select-8-placeholder"
+=======
+            id="react-select-11-placeholder"
+>>>>>>> main
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
+<<<<<<< release/1.43.0
             aria-describedby="react-select-8-placeholder"
+=======
+            aria-describedby="react-select-11-placeholder"
+>>>>>>> main
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -11048,7 +12818,11 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.43.0
         id="react-select-9-live-region"
+=======
+        id="react-select-12-live-region"
+>>>>>>> main
       />
       <span
         aria-atomic="false"
@@ -11066,13 +12840,21 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
         >
           <div
             className=" css-177do1b-placeholder"
+<<<<<<< release/1.43.0
             id="react-select-9-placeholder"
+=======
+            id="react-select-12-placeholder"
+>>>>>>> main
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
+<<<<<<< release/1.43.0
             aria-describedby="react-select-9-placeholder"
+=======
+            aria-describedby="react-select-12-placeholder"
+>>>>>>> main
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -11143,7 +12925,11 @@ exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.43.0
         id="react-select-10-live-region"
+=======
+        id="react-select-13-live-region"
+>>>>>>> main
       />
       <span
         aria-atomic="false"
@@ -11161,13 +12947,21 @@ exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
         >
           <div
             className=" css-177do1b-placeholder"
+<<<<<<< release/1.43.0
             id="react-select-10-placeholder"
+=======
+            id="react-select-13-placeholder"
+>>>>>>> main
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
+<<<<<<< release/1.43.0
             aria-describedby="react-select-10-placeholder"
+=======
+            aria-describedby="react-select-13-placeholder"
+>>>>>>> main
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -11223,6 +13017,7 @@ exports[`Storyshots Components/Selects/Single In Modal 1`] = `
     }
   }
 >
+<<<<<<< release/1.43.0
   <button
     className="Button btn btn-primary"
     disabled={false}
@@ -11231,6 +13026,170 @@ exports[`Storyshots Components/Selects/Single In Modal 1`] = `
   >
     Click to open modal
   </button>
+=======
+  <div
+    className="ReactModal__Overlay"
+    onClick={[Function]}
+    onMouseDown={[Function]}
+    style={
+      Object {
+        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+        "bottom": 0,
+        "left": 0,
+        "position": "fixed",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <div
+      aria-label="Select in Modal"
+      aria-modal={true}
+      className="ReactModal__Content SelectInModal"
+      onClick={[Function]}
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onMouseUp={[Function]}
+      role="dialog"
+      style={Object {}}
+      tabIndex="-1"
+    >
+      <header
+        className="ModalHeader"
+      >
+        <div
+          className="ModalHeader__heading"
+        >
+          <h1
+            className="ModalHeader__title"
+            id="select-in-modal"
+          >
+            Select in modal
+          </h1>
+        </div>
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-close"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        />
+      </header>
+      <div
+        className="ModalBody"
+      >
+        <div
+          className="FormGroup"
+        >
+          <label
+            className="InputLabel"
+            htmlFor="in-modal-select"
+          >
+            In Modal select
+          </label>
+          <div
+            className="SingleSelect css-b62m3t-container"
+            onKeyDown={[Function]}
+          >
+            <span
+              className="css-1f43avz-a11yText-A11yText"
+              id="react-select-14-live-region"
+            />
+            <span
+              aria-atomic="false"
+              aria-live="polite"
+              aria-relevant="additions text"
+              className="css-1f43avz-a11yText-A11yText"
+            />
+            <div
+              className=" css-9435u6-control"
+              onMouseDown={[Function]}
+              onTouchEnd={[Function]}
+            >
+              <div
+                className=" css-1fdsijx-ValueContainer"
+              >
+                <div
+                  className=" css-177do1b-placeholder"
+                  id="react-select-14-placeholder"
+                >
+                  Select...
+                </div>
+                <input
+                  aria-autocomplete="list"
+                  aria-describedby="react-select-14-placeholder"
+                  aria-expanded={false}
+                  aria-haspopup={true}
+                  aria-readonly={true}
+                  className="css-mohuvp-dummyInput-DummyInput"
+                  disabled={false}
+                  id="in-modal-select"
+                  inputMode="none"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  role="combobox"
+                  tabIndex={0}
+                  value=""
+                />
+              </div>
+              <div
+                className=" css-1hb7zxy-IndicatorsContainer"
+              >
+                <span
+                  className=" css-1uei4ir-indicatorSeparator"
+                />
+                <div
+                  aria-hidden="true"
+                  className=" css-1r0gan2-indicatorContainer"
+                  onMouseDown={[Function]}
+                  onTouchEnd={[Function]}
+                >
+                  <svg
+                    aria-hidden="true"
+                    className="css-tj5bde-Svg"
+                    focusable="false"
+                    height={20}
+                    viewBox="0 0 20 20"
+                    width={20}
+                  >
+                    <path
+                      d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className="FormGroup__helper-text"
+          >
+            Select menu is able to overflow the Modal container
+          </div>
+        </div>
+      </div>
+      <div
+        className="ModalFooter"
+      >
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          type="submit"
+        >
+          Confirm
+        </button>
+      </div>
+    </div>
+  </div>
+>>>>>>> main
 </div>
 `;
 
@@ -11257,7 +13216,11 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.43.0
         id="react-select-11-live-region"
+=======
+        id="react-select-15-live-region"
+>>>>>>> main
       />
       <span
         aria-atomic="false"
@@ -11275,13 +13238,21 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
         >
           <div
             className=" css-177do1b-placeholder"
+<<<<<<< release/1.43.0
             id="react-select-11-placeholder"
+=======
+            id="react-select-15-placeholder"
+>>>>>>> main
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
+<<<<<<< release/1.43.0
             aria-describedby="react-select-11-placeholder"
+=======
+            aria-describedby="react-select-15-placeholder"
+>>>>>>> main
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -11352,7 +13323,11 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.43.0
         id="react-select-12-live-region"
+=======
+        id="react-select-16-live-region"
+>>>>>>> main
       />
       <span
         aria-atomic="false"
@@ -11370,13 +13345,21 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
         >
           <div
             className=" css-177do1b-placeholder"
+<<<<<<< release/1.43.0
             id="react-select-12-placeholder"
+=======
+            id="react-select-16-placeholder"
+>>>>>>> main
           >
             Select...
           </div>
           <input
             aria-autocomplete="list"
+<<<<<<< release/1.43.0
             aria-describedby="react-select-12-placeholder"
+=======
+            aria-describedby="react-select-16-placeholder"
+>>>>>>> main
             aria-expanded={false}
             aria-haspopup={true}
             aria-readonly={true}
@@ -11447,7 +13430,11 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
     >
       <span
         className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/1.43.0
         id="react-select-13-live-region"
+=======
+        id="react-select-17-live-region"
+>>>>>>> main
       />
       <span
         aria-atomic="false"
@@ -11465,7 +13452,11 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
         >
           <div
             className=" css-177do1b-placeholder"
+<<<<<<< release/1.43.0
             id="react-select-13-placeholder"
+=======
+            id="react-select-17-placeholder"
+>>>>>>> main
           >
             Select...
           </div>
@@ -11475,7 +13466,11 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
           >
             <input
               aria-autocomplete="list"
+<<<<<<< release/1.43.0
               aria-describedby="react-select-13-placeholder"
+=======
+              aria-describedby="react-select-17-placeholder"
+>>>>>>> main
               aria-expanded={false}
               aria-haspopup={true}
               autoCapitalize="none"

@@ -18,6 +18,8 @@ const options = [
   { label: 'Blue', value: 3 },
 ];
 
+const handleRequestClose = () => action('Close');
+
 async function loadOptions(search) {
   await new Promise((resolve) => setTimeout(resolve, 2000));
 
@@ -97,3 +99,40 @@ export const InModal = () => {
     </>
   );
 };
+
+export const InModal = () => (
+  <Modal
+    ariaHideApp={false}
+    className="AsyncCreatableSelectInModal"
+    contentLabel="AsyncCreatableSelect in Modal"
+    isOpen
+  >
+    <ModalHeader
+      title="In Modal AsyncCreatable select"
+      titleId="in-modal-async-creatable-select"
+      onRequestClose={handleRequestClose}
+    />
+    <ModalBody>
+      <FormGroup
+        helperText="Select menu is able to overflow the Modal container"
+        label="In Modal AsyncCreatable select"
+        labelHtmlFor="in-modal-creatable-select"
+      >
+        <AsyncCreatableSelect
+          getOptionLabel={({ label }) => label}
+          getOptionValue={({ value }) => value}
+          inputId="in-modal-creatable-select"
+          loadOptions={loadOptions}
+          modal
+          noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+        />
+      </FormGroup>
+    </ModalBody>
+    <ModalFooter
+      dismissButtonText="Cancel"
+      onRequestClose={handleRequestClose}
+    >
+      <Button type="submit" variant="primary">Confirm</Button>
+    </ModalFooter>
+  </Modal>
+  );
