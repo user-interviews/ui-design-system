@@ -1,10 +1,10 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { action } from '@storybook/addon-actions';
 
 import Button from 'src/Button';
 import FormGroup from 'src/FormGroup';
 import {
- Modal, ModalHeader, ModalBody, ModalFooter,
+  Modal, ModalHeader, ModalBody, ModalFooter,
 } from 'src/Modal';
 import SingleSelect from 'src/Select/SingleSelect';
 
@@ -15,7 +15,6 @@ import ValueContainer from './ValueContainer';
 import mdx from './SingleSelect.mdx';
 
 const onChange = () => action('Change');
-const handleRequestClose = () => action('Close');
 
 export default {
   title: 'Components/Selects/Single',
@@ -75,40 +74,49 @@ export const MultipleSelect = () => (
   </FormGroup>
 );
 
-export const InModal = () => (
-  <Modal
-    ariaHideApp={false}
-    className="SelectInModal"
-    contentLabel="Select in Modal"
-    isOpen
-  >
-    <ModalHeader
-      title="Select in modal"
-      titleId="select-in-modal"
-      onRequestClose={handleRequestClose}
-    />
-    <ModalBody>
-      <FormGroup
-        helperText="Select menu is able to overflow the Modal container"
-        label="In Modal select"
-        labelHtmlFor="in-modal-select"
+export const InModal = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleRequestClose = () => setIsOpen(false);
+
+  return (
+    <>
+      <Button onClick={() => setIsOpen(true)}>Click to open modal</Button>
+      <Modal
+        ariaHideApp={false}
+        className="SelectInModal"
+        contentLabel="Select in Modal"
+        isOpen={isOpen}
       >
-        <SingleSelect
-          inputId="in-modal-select"
-          modal
-          options={options}
-          onChange={onChange}
+        <ModalHeader
+          title="Select in modal"
+          titleId="select-in-modal"
+          onRequestClose={handleRequestClose}
         />
-      </FormGroup>
-    </ModalBody>
-    <ModalFooter
-      dismissButtonText="Cancel"
-      onRequestClose={handleRequestClose}
-    >
-      <Button type="submit" variant="primary">Confirm</Button>
-    </ModalFooter>
-  </Modal>
+        <ModalBody>
+          <FormGroup
+            helperText="Select menu is able to overflow the Modal container"
+            label="In Modal select"
+            labelHtmlFor="in-modal-select"
+          >
+            <SingleSelect
+              inputId="in-modal-select"
+              modal
+              options={options}
+              onChange={onChange}
+            />
+          </FormGroup>
+        </ModalBody>
+        <ModalFooter
+          dismissButtonText="Cancel"
+          onRequestClose={handleRequestClose}
+        >
+          <Button type="submit" variant="primary">Confirm</Button>
+        </ModalFooter>
+      </Modal>
+    </>
   );
+};
 
 export const GroupedOptions = () => {
   const groupedOptions = [
@@ -182,9 +190,7 @@ export const CustomOptionWithCheckbox = () => (
   >
     <SingleSelect
       closeMenuOnSelect={false}
-      components={{
-        Option,
-      }}
+      components={{ Option }}
       hideSelectedOptions={false}
       inputId="custom-option-with-checkbox-select"
       isMulti
@@ -221,7 +227,7 @@ export const CustomOptionWithIndeterminateCheckbox = () => {
           Option: (props) => (
             <Option
               {...props}
-              // eslint-disable-next-line react/prop-types
+                  // eslint-disable-next-line react/prop-types
               indeterminate={props.value > 2}
               ref={createInputRef()}
             />
@@ -249,9 +255,8 @@ export const CustomValueContainer = () => (
         ValueContainer: (props) => (
           <ValueContainer
             {...props}
-            /* eslint-disable react/prop-types */
+                /* eslint-disable react/prop-types */
             valueText={`participant${props.getValue().length > 1 ? 's' : ''} selected`}
-            /* eslint-enable react/prop-types */
           />
         ),
       }}

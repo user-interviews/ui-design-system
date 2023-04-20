@@ -1,12 +1,11 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
 
 import AsyncCreatableSelect from 'src/Select/AsyncCreatableSelect';
 import Button from 'src/Button';
 import FormGroup from 'src/FormGroup';
 import {
   Modal, ModalHeader, ModalBody, ModalFooter,
- } from 'src/Modal';
+} from 'src/Modal';
 
 export default {
   title: 'Components/Selects/AsyncCreatable',
@@ -24,14 +23,18 @@ const handleRequestClose = () => action('Close');
 async function loadOptions(search) {
   await new Promise((resolve) => setTimeout(resolve, 2000));
 
-  if (!search || !search.length) { return options; }
+  if (!search || !search.length) {
+    return options;
+  }
 
   return options.filter(({ label }) => label.toLowerCase().includes(search.toLowerCase()));
 }
 
 export const Default = () => {
-  const handleChange = () => {};
-  const handleInputChange = () => {};
+  const handleChange = () => {
+  };
+  const handleInputChange = () => {
+  };
 
   return (
     <FormGroup

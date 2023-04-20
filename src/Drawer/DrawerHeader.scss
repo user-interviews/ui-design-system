@@ -1,0 +1,30 @@
+@import '../../scss/theme.scss';
+
+.Drawer {
+  &__header {
+    align-items: center;
+    padding-bottom: $ux-spacing-40;
+    display: flex;
+    justify-content: space-between;
+    margin: $ux-spacing-60;
+    margin-bottom: 0;
+
+    &--bordered {
+      border-bottom: 1px solid $ux-neutral-400;
+    }
+  }
+
+  &__header-action {
+    @include font-type-40;
+
+    border: none;
+    background: transparent;
+    color: $ux-gray-700;
+  }
+
+  &__title {
+    @include font-type-70--bold;
+
+    color: $ux-gray-900;
+  }
+}
