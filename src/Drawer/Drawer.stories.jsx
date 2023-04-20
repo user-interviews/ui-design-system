@@ -16,6 +16,9 @@ import mdx from './Drawer.mdx';
 export default {
   title: 'Components/Drawer',
   component: Drawer,
+  subcomponents: {
+     DrawerHeader, DrawerBody, DrawerFooter,
+  },
   parameters: {
     docs: {
       page: mdx,
