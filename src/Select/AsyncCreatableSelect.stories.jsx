@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import AsyncCreatableSelect from 'src/Select/AsyncCreatableSelect';
 import Button from 'src/Button';
@@ -51,52 +51,6 @@ export const Default = () => {
         onInputChange={handleInputChange}
       />
     </FormGroup>
-  );
-};
-
-export const InModal = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleRequestClose = () => setIsOpen(false);
-
-  return (
-    <>
-      <Button onClick={() => setIsOpen(true)}>Click to open modal</Button>
-      <Modal
-        ariaHideApp={false}
-        className="AsyncCreatableSelectInModal"
-        contentLabel="AsyncCreatableSelect in Modal"
-        isOpen={isOpen}
-      >
-        <ModalHeader
-          title="In Modal AsyncCreatable select"
-          titleId="in-modal-async-creatable-select"
-          onRequestClose={handleRequestClose}
-        />
-        <ModalBody>
-          <FormGroup
-            helperText="Select menu is able to overflow the Modal container"
-            label="In Modal AsyncCreatable select"
-            labelHtmlFor="in-modal-creatable-select"
-          >
-            <AsyncCreatableSelect
-              getOptionLabel={({ label }) => label}
-              getOptionValue={({ value }) => value}
-              inputId="in-modal-creatable-select"
-              loadOptions={loadOptions}
-              modal
-              noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
-            />
-          </FormGroup>
-        </ModalBody>
-        <ModalFooter
-          dismissButtonText="Cancel"
-          onRequestClose={handleRequestClose}
-        >
-          <Button type="submit" variant="primary">Confirm</Button>
-        </ModalFooter>
-      </Modal>
-    </>
   );
 };
 
