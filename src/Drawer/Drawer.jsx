@@ -16,9 +16,11 @@ export const ExpandContext = createContext({
 });
 
 const Drawer = ({
+  behindNav,
   children,
   className,
   expandable,
+  hasBackgroundOverlay,
   visible,
   orientation,
   size,
@@ -31,6 +33,7 @@ const Drawer = ({
   const drawerClasses = classNames(`Drawer Drawer--${orientation} Drawer--${size}`, {
     'Drawer--expanded': expanded,
     'Drawer--visible': !!visible,
+    'Drawer--behind-nav': behindNav,
     [className]: !!className,
   });
 
@@ -50,12 +53,20 @@ const Drawer = ({
 
   return (
     <>
-      <div
-        className={`DrawerScrim ${visible && 'DrawerScrim--active'}`}
-        role="presentation"
-        onClick={onRequestClose}
-        onKeyDown={handleEscKeyPress}
-      />
+      {
+        hasBackgroundOverlay && (
+          <div
+            className={
+              classNames('DrawerBackgroundOverlay', {
+                'DrawerBackgroundOverlay--active': visible,
+              })
+            }
+            role="presentation"
+            onClick={onRequestClose}
+            onKeyDown={handleEscKeyPress}
+          />
+        )
+      }
       <div className={drawerClasses}>
         <ExpandContext.Provider value={{ expandable, expanded, handleExpand }}>
           {children}
@@ -66,9 +77,11 @@ const Drawer = ({
 };
 
 Drawer.propTypes = {
+  behindNav: propTypes.bool,
   children: propTypes.node,
   className: propTypes.string,
   expandable: propTypes.bool,
+  hasBackgroundOverlay: propTypes.bool,
   orientation: propTypes.oneOf([ORIENTATION_LEFT, ORIENTATION_RIGHT]),
   size: propTypes.oneOf(['small', 'medium', 'large']),
   visible: propTypes.bool.isRequired,
@@ -76,9 +89,11 @@ Drawer.propTypes = {
 };
 
 Drawer.defaultProps = {
+  behindNav: true,
   children: undefined,
   className: null,
   expandable: false,
+  hasBackgroundOverlay: true,
   orientation: ORIENTATION_RIGHT,
   size: 'small',
 };

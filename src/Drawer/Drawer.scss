@@ -4,7 +4,7 @@ $drawer-width-small: 32rem;
 $drawer-width-medium: 40rem;
 $drawer-width-large: 55.625rem;
 
-.DrawerScrim {
+.DrawerBackgroundOverlay {
   position: fixed;
   top: 0;
   right: 0;
@@ -17,7 +17,7 @@ $drawer-width-large: 55.625rem;
   transition: 0.25s linear;
 }
 
-.DrawerScrim--active {
+.DrawerBackgroundOverlay--active {
   opacity: 50%;
   pointer-events: auto;
 }
@@ -42,7 +42,6 @@ $drawer-width-large: 55.625rem;
   background-color: $ux-white;
   height: 100vh;
   width: 100%;
-  padding-top: 48px;
   position: fixed;
   bottom: 0;
   transition: 200ms ease-out;
@@ -50,6 +49,10 @@ $drawer-width-large: 55.625rem;
 
   display: flex;
   flex-direction: column;
+
+  &--behind-nav {
+    padding-top: 48px;
+  }
 
   &--expanded {
     width: 100%;

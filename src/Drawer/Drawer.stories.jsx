@@ -270,6 +270,7 @@ export const AdditionalActions = () => {
       <Button onClick={toggleVisible}>Open</Button>
       <Drawer
         expandable
+        hasBackgroundOverlay={false}
         visible={isVisible}
         onRequestClose={toggleVisible}
       >
