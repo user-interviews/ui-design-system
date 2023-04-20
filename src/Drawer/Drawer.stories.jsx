@@ -13,9 +13,6 @@ import {
 
 import mdx from './Drawer.mdx';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../scss/global.scss';
-
 export default {
   title: 'Components/Drawer',
   component: Drawer,
