@@ -1,0 +1,58 @@
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import Drawer from './Drawer';
+import DrawerHeader from './DrawerHeader';
+import DrawerBody from './DrawerBody';
+import DrawerFooter from './DrawerFooter';
+
+# Drawer
+
+##
+
+<h4>
+  Drawers are container elements which slide in and sit on top of an application's main window. To return to the main interface users must click outside of the drawer, click an action within the drawer such as a close or cancel button, or press the escape key.
+</h4>
+
+### When to use 
+When we want to focus the user’s attention on an interactive interface or a large amount of information
+
+### When to not use
+When there is too much negative space with the content required. Consider a modal in those cases.
+
+## Props
+
+<ArgsTable of={Drawer} />
+
+## Anatomy:
+* **Drawer**
+    * This the parent component and the only one truly required, but its child components are highly encouraged
+    * If you do need to do something fully custom, Drawer can be used as a general purpose container for your own components
+    * Drawer features padding at the top as it is intended to sit behind a navigation bar
+* **DrawerHeader**
+    * Provides a header with a close button, a title (optional) and a button to expand the drawer to the viewport's full width (optional based on a prop to Drawer)
+    * There is also a prop for whether there is a border separating the header from the body. Turning the border off is a good option for drawer's without titles
+* **DrawerBody**
+  * Wraps your components to provide correct spacing within the drawer
+* **DrawerFooter**
+  * Includes a primary action button and a secondary action button (often used for Cancel)
+  * The primary and secondary action buttons are encouraged but not required
+  * If additional actions or other components are required, children of this component are included to the left of the footer (see example below)
+
+### Size
+
+There are three `size` options, `sm` (default), `md` and `lg`. Choose size via the knobs to see examples.
+
+### Orientation
+
+Pass `orientation="left"` to override the default behavior of sliding in from the right
+
+### Expandable
+
+Setting `expandable` allows the drawer to expand to the full size of the viewport
+
+### Additional Actions
+
+If additional components are required to be included, pass them as children to the `DrawerFooter`. This example also doesn't have a title or a border on the header, and the background overlay is turned off to allow interaction with outside elements.
+
+### Empty
+
+While using the corresponding child components is recommended, Drawer is fully functional on its own and be closed by clicking outside of it or pressing the escape key. This is intended as an escape hatch to allow fully custom contents. In fully custom cases it is encouraged to include a close button. As the child components all work independent of each other it is also possible to use the header and body, but not the footer, for instance. This is useful for drawers which only include information and not an action.

@@ -1,0 +1,84 @@
+@import '../../scss/theme.scss';
+
+.DrawerBackgroundOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: black;
+  z-index: 1000;
+  opacity: 0%;
+  pointer-events: none;
+  transition: 200ms linear;
+}
+
+.DrawerBackgroundOverlay--active {
+  opacity: 50%;
+  pointer-events: auto;
+}
+
+.Drawer {
+  @include media-breakpoint-up(sm) {
+    &--sm {
+      width: $drawer-width-small
+    }
+
+    &--md {
+      width: $drawer-width-medium;
+    }
+
+    &--lg {
+      width: $drawer-width-large;
+    }
+  }
+
+  $block: #{&};
+
+  background-color: $ux-white;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  transition: 200ms ease-out;
+  z-index: $z-index-drawer;
+
+  display: flex;
+  flex-direction: column;
+
+  &--behind-nav {
+    padding-top: 48px;
+  }
+
+  &--expanded {
+    width: 100%;
+  }
+
+  &--right {
+    right: -100%;
+
+    &#{$block}--visible {
+      right: 0;
+      box-shadow: $ux-drawer-box-shadow-right;
+    }
+  }
+
+  &--left {
+    left: -100%;
+
+    &#{$block}--visible {
+      left: 0;
+      box-shadow: $ux-drawer-box-shadow-left;
+    }
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .Drawer {
+    transition: none;
+  }
+
+  .DrawerBackgroundOverlay {
+    transition: none;
+  }
+}

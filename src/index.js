@@ -16,6 +16,13 @@ import { ORIENTATIONS as BUTTON_GROUP_ORIENTATIONS } from 'src/ControlButtonGrou
 import CopyToClipboard from 'src/CopyToClipboard';
 import CopyToClipboardButton from 'src/CopyToClipboardButton';
 import {
+  Drawer,
+  DrawerHeader,
+  DrawerBody,
+  DrawerFooter,
+  DrawerSizes,
+} from 'src/Drawer';
+import {
   Dropdown,
   DropdownDivider,
   DropdownToggle,
@@ -108,6 +115,11 @@ export {
   CopyToClipboard,
   CopyToClipboardButton,
   CreatableSelect,
+  Drawer,
+  DrawerHeader,
+  DrawerBody,
+  DrawerFooter,
+  DrawerSizes,
   Dropdown,
   DropdownDivider,
   DropdownToggle,
