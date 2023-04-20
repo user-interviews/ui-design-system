@@ -18,10 +18,14 @@ When we want to focus the user’s attention on an interactive interface or a la
 ### When to not use
 When there is too much negative space with the content required. Consider a modal in those cases.
 
+## Props
+
+<ArgsTable of={Drawer} />
+
 ## Anatomy:
 * **Drawer**
     * This the parent component and the only one truly required, but its child components are highly encouraged
-    * If you do need to do something truly custom, Drawer can be used as a general purpose container for your own components
+    * If you do need to do something fully custom, Drawer can be used as a general purpose container for your own components
     * Drawer features padding at the top as it is intended to sit behind a navigation bar
 * **DrawerHeader**
     * Provides a header with a close button, a title (optional) and a button to expand the drawer to the viewport's full width (optional based on a prop to Drawer)
@@ -32,10 +36,6 @@ When there is too much negative space with the content required. Consider a moda
   * Includes a primary action button and a secondary action button (often used for Cancel)
   * The primary and secondary action buttons are encouraged but not required
   * If additional actions or other components are required, children of this component are included to the left of the footer (see example below)
-
-## Props 
-
-<ArgsTable of={Drawer} />
 
 ## Stories
 
