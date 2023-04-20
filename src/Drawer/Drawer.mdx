@@ -37,56 +37,22 @@ When there is too much negative space with the content required. Consider a moda
   * The primary and secondary action buttons are encouraged but not required
   * If additional actions or other components are required, children of this component are included to the left of the footer (see example below)
 
-## Stories
+### Size
 
-There are three `size` options, `sm` (default), `md` and `lg`
-
-### Default
-
-<Canvas>
-  <Story id="components-drawer--default" />
-</Canvas>
-
-### Medium
-
-<Canvas>
-  <Story id="components-drawer--medium" />
-</Canvas>
-
-### Large
-
-<Canvas>
-  <Story id="components-drawer--large" />
-</Canvas>
+There are three `size` options, `sm` (default), `md` and `lg`. Choose size via the knobs to see examples.
 
 ### Orientation
 
 Pass `orientation="left"` to override the default behavior of sliding in from the right
 
-<Canvas>
-  <Story id="components-drawer--orientation" />
-</Canvas>
-
 ### Expandable
 
 Setting `expandable` allows the drawer to expand to the full size of the viewport
-
-<Canvas>
-  <Story id="components-drawer--expandable" />
-</Canvas>
 
 ### Additional Actions
 
 If additional components are required to be included, pass them as children to the `DrawerFooter`. This example also doesn't have a title or a border on the header, and the background overlay is turned off to allow interaction with outside elements.
 
-<Canvas>
-  <Story id="components-drawer--additional-actions" />
-</Canvas>
-
 ### Empty
 
 While using the corresponding child components is recommended, Drawer is fully functional on its own and be closed by clicking outside of it or pressing the escape key. This is intended as an escape hatch to allow fully custom contents. In fully custom cases it is encouraged to include a close button. As the child components all work independent of each other it is also possible to use the header and body, but not the footer, for instance. This is useful for drawers which only include information and not an action.
-
-<Canvas>
-  <Story id="components-drawer--empty" />
-</Canvas>
