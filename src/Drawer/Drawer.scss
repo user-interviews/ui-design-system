@@ -1,9 +1,5 @@
 @import '../../scss/theme.scss';
 
-$drawer-width-small: 32rem;
-$drawer-width-medium: 40rem;
-$drawer-width-large: 55.625rem;
-
 .DrawerBackgroundOverlay {
   position: fixed;
   top: 0;
@@ -75,7 +71,7 @@ $drawer-width-large: 55.625rem;
   }
 
   &--visible {
-    box-shadow: -4px 4px 8px rgba(0,0,0,.1);
+    box-shadow: $ux-drawer-box-shadow;
   }
 }
 
