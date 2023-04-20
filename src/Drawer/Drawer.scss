@@ -14,7 +14,7 @@ $drawer-width-large: 55.625rem;
   z-index: 1000;
   opacity: 0%;
   pointer-events: none;
-  transition: 0.25s linear;
+  transition: 200ms linear;
 }
 
 .DrawerBackgroundOverlay--active {
@@ -76,5 +76,15 @@ $drawer-width-large: 55.625rem;
 
   &--visible {
     box-shadow: -4px 4px 8px rgba(0,0,0,.1);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .Drawer {
+    transition: none;
+  }
+
+  .DrawerBackgroundOverlay {
+    transition: none;
   }
 }
