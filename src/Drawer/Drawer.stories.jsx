@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  withKnobs, text, select, boolean, number,
+  withKnobs, select, boolean,
 } from '@storybook/addon-knobs';
 
 import {
