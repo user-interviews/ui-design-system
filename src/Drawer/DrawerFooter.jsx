@@ -37,6 +37,7 @@ const DrawerFooter = ({
           leadingIcon={primaryActionIcon}
           type="button"
           variant={primaryActionVariant}
+          onClick={onPrimaryAction}
         >
           {primaryActionText}
         </Button>
