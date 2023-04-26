@@ -12,6 +12,7 @@ const config = {
     '@storybook/addon-a11y',
     '@storybook/addon-actions',
     '@storybook/addon-links',
+    '@storybook/addon-knobs',
     '@storybook/addon-storysource',
     '@storybook/addon-mdx-gfm'
   ],
