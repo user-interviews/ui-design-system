@@ -19,6 +19,10 @@
     white-space: nowrap;
   }
 
+  &--remove-border-bottom {
+    border-bottom: none;
+  }
+
   &--compact {
     padding: $ux-spacing-30 $ux-spacing-50;
     max-height: 3.25rem;
