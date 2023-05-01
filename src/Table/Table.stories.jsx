@@ -151,6 +151,39 @@ export const LoadingCustomColumns = () => (
   </Table>
 );
 
+export const TableNoHoverState = () => (
+  <Table>
+    <TableHead>
+      <TableRow>
+        <TableCell header />
+        <TableCell header>Status</TableCell>
+        <TableCell header>Email</TableCell>
+        <TableCell header>First name</TableCell>
+        <TableCell header>Last name</TableCell>
+        <TableCell header>Phone number</TableCell>
+        <TableCell header>Date added</TableCell>
+        <TableCell header>Last invited</TableCell>
+        <TableCell header>Last applied</TableCell>
+      </TableRow>
+    </TableHead>
+    <TableBody>
+      {data.map(((row) => (
+        <TableRow key={row.id} removeHover>
+          <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
+          <TableCell>{row.status}</TableCell>
+          <TableCell>{row.email}</TableCell>
+          <TableCell>{row.firstName}</TableCell>
+          <TableCell>{row.lastName}</TableCell>
+          <TableCell>{row.phoneNumber}</TableCell>
+          <TableCell>{row.dateAdded}</TableCell>
+          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+        </TableRow>
+      )))}
+    </TableBody>
+  </Table>
+);
+
 export const TableWithFixedColumnWidths = () => (
   <Table style={{ tableLayout: 'fixed' }}>
     <TableHead>
