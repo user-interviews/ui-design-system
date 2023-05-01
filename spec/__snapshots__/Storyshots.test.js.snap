@@ -17717,6 +17717,407 @@ exports[`Storyshots Components/Table Table With Fixed Column Widths 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/Table Table With Footer 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <table
+    className="Table"
+  >
+    <thead
+      className="TableHead"
+    >
+      <tr
+        className="TableRow"
+      >
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+          style={null}
+        >
+          Participant
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+          style={null}
+        >
+          Incentive
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+          style={null}
+        >
+          Processing fee
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+          style={null}
+        >
+          Recruit fee
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row"
+          style={null}
+        >
+          Amount
+        </th>
+      </tr>
+    </thead>
+    <tbody
+      className="TableBody"
+    >
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Anna
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $50.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $50.00
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Carly
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $25.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $25.00
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Erin
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $100.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $100.00
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Gregg
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $250.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $250.00
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Izzie
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $180.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $180.00
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Anna
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $50.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $50.00
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Carly
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $25.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $25.00
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Erin
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $100.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $100.00
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          Gregg
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $250.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $0.00
+        </td>
+        <td
+          className="TableCell"
+          style={Object {}}
+        >
+          $250.00
+        </td>
+      </tr>
+    </tbody>
+    <tfoot
+      className="TableFoot"
+    >
+      <tr
+        className="TableRow"
+      >
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row-bottom"
+          style={null}
+        >
+          Total
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row-bottom"
+          style={null}
+        >
+          $1030.00
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row-bottom"
+          style={null}
+        >
+          $0.00
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row-bottom"
+          style={null}
+        >
+          $0.00
+        </th>
+        <th
+          className="TableCell TableCell__header TableCell--sticky-row-bottom"
+          style={null}
+        >
+          $1030.00
+        </th>
+      </tr>
+    </tfoot>
+  </table>
+</div>
+`;
+
 exports[`Storyshots Components/Table Table With Multiple Action Column 1`] = `
 <div
   style={

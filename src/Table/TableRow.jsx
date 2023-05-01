@@ -11,13 +11,17 @@ const TableRow = ({
   removeHover,
   selected,
   stickyRow,
+  stickyRowBottom,
   ...props
 }) => {
   const addStickyRowProp = (child) => {
-    if (!stickyRow) {
-      return child;
+    if (stickyRow) {
+      return cloneElement(child, { stickyRow });
     }
-    return cloneElement(child, { stickyRow });
+    if (stickyRowBottom) {
+      return cloneElement(child, { stickyRowBottom });
+    }
+    return child;
   };
 
   return (
@@ -47,6 +51,7 @@ TableRow.propTypes = {
   removeHover: PropTypes.bool,
   selected: PropTypes.bool,
   stickyRow: PropTypes.bool,
+  stickyRowBottom: PropTypes.bool,
 };
 
 TableRow.defaultProps = {
@@ -56,4 +61,5 @@ TableRow.defaultProps = {
   removeHover: undefined,
   selected: undefined,
   stickyRow: undefined,
+  stickyRowBottom: undefined,
 };
