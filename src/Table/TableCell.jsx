@@ -18,7 +18,6 @@ const TableCell = ({
   stickyLeft,
   stickyRight,
   stickyRow,
-  stickyRowBottom,
   ...props
 }) => {
   const getTableCellClassName = () => classNames(
@@ -34,7 +33,6 @@ const TableCell = ({
         [`TableCell--sticky-column--left`]: !!stickyLeft && stickyColumn,
         [`TableCell--sticky-column--right`]: !!stickyRight && stickyColumn,
         [`TableCell--sticky-row`]: !!stickyRow,
-        [`TableCell--sticky-row-bottom`]: !!stickyRowBottom,
       },
     );
 
@@ -101,7 +99,6 @@ TableCell.propTypes = {
   stickyLeft: PropTypes.bool,
   stickyRight: PropTypes.bool,
   stickyRow: PropTypes.bool,
-  stickyRowBottom: PropTypes.bool,
 };
 
 TableCell.defaultProps = {
@@ -118,5 +115,4 @@ TableCell.defaultProps = {
   stickyLeft: undefined,
   stickyRight: undefined,
   stickyRow: undefined,
-  stickyRowBottom: undefined,
 };

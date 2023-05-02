@@ -18077,37 +18077,37 @@ exports[`Storyshots Components/Table Table With Footer 1`] = `
       </tr>
     </tbody>
     <tfoot
-      className="TableFoot"
+      className="TableFoot TableFoot--sticky-row"
     >
       <tr
         className="TableRow"
       >
         <th
-          className="TableCell TableCell__header TableCell--sticky-row-bottom"
+          className="TableCell TableCell__header"
           style={null}
         >
           Total
         </th>
         <th
-          className="TableCell TableCell__header TableCell--sticky-row-bottom"
+          className="TableCell TableCell__header"
           style={null}
         >
           $1030.00
         </th>
         <th
-          className="TableCell TableCell__header TableCell--sticky-row-bottom"
+          className="TableCell TableCell__header"
           style={null}
         >
           $0.00
         </th>
         <th
-          className="TableCell TableCell__header TableCell--sticky-row-bottom"
+          className="TableCell TableCell__header"
           style={null}
         >
           $0.00
         </th>
         <th
-          className="TableCell TableCell__header TableCell--sticky-row-bottom"
+          className="TableCell TableCell__header"
           style={null}
         >
           $1030.00

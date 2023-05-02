@@ -35,7 +35,7 @@
   &--sticky-column {
     position: sticky; 
     background: $ux-white;
-    z-index: $z-index-10;
+    z-index: $z-index-table-cell-sticky-column;
 
     &--corner {
       background-color: $ux-gray-100;

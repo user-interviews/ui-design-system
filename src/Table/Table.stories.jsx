@@ -551,8 +551,8 @@ export const TableWithFooter = () => (
         </TableRow>
         )))}
     </TableBody>
-    <TableFoot>
-      <TableRow stickyRowBottom>
+    <TableFoot stickyRow>
+      <TableRow>
         <TableCell header>Total</TableCell>
         <TableCell header>$1030.00</TableCell>
         <TableCell header>$0.00</TableCell>
