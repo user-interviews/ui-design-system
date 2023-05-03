@@ -1,4 +1,4 @@
-import { ArgsTable, Story, Preview } from '@storybook/blocks';
+import { ArgTypes, Story, Preview } from '@storybook/blocks';
 import Tabs from './Tabs';
 import Tab from './Tab';
 
@@ -15,7 +15,7 @@ Since we should always be tracking user interactions it is highly recommended to
 
 ## Tabs Anatomy
 
-<ArgsTable of={Tabs} />
+<ArgTypes of={Tabs} />
 
 - **activeKey:** string which matches the `Tab` **eventKey** which should be active on initial load *and* update this prop from the `onSelect` function
 - **defaultActiveKey:** The default active key that is selected on start
@@ -37,7 +37,7 @@ Since we should always be tracking user interactions it is highly recommended to
 
 ## Tab Anatomy
 
-<ArgsTable of={Tab} />
+<ArgTypes of={Tab} />
 
 - **disabled:** The disabled state of the tab.
 - **eventKey:** A unique identifier for the Component, the eventKey makes it distinguishable from others in a set. Similar to React's key prop, in that it only needs to be unique amongst the Components siblings, not globally.
