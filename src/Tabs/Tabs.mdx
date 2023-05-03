@@ -1,11 +1,14 @@
-import { ArgTypes, Story, Preview } from '@storybook/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import Tabs from './Tabs';
 import Tab from './Tab';
+import * as ComponentStories from './Tabs.stories';
 
 # Tabs
 Create dynamic tabbed interfaces, as described in the [WAI ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices/#tabpanel). Tabs is a higher-level component for quickly creating a Nav matched with a set of TabPanes.
 
 These are wrapped and styled [React Bootstrap](https://react-bootstrap.github.io) `Tabs` and `Tab` components. Refer to [React Bootstrap `Tabs`](https://react-bootstrap.github.io/components/tabs/) documentation as the source of truth.
+
+<Canvas of={ComponentStories.Controlled} />
 
 ## Best Practices
 
@@ -48,12 +51,8 @@ Since we should always be tracking user interactions it is highly recommended to
 
 ### Controlled Tabs
 
-<Preview>
-  <Story id="components-tabs--controlled" />
-</Preview>
+<Canvas of={ComponentStories.Controlled} />
 
 ### Uncontrolled Tabs
 
-<Preview>
-  <Story id="components-tabs--uncontrolled" />
-</Preview>
+<Canvas of={ComponentStories.Uncontrolled} />

@@ -1,5 +1,6 @@
-import { ArgTypes, Story, Canvas } from '@storybook/blocks';
+import { ArgTypes, Canvas } from '@storybook/blocks';
 import Button from './Button';
+import * as ComponentStories from './Button.stories';
 
 # Button
 
@@ -9,9 +10,7 @@ import Button from './Button';
 	Buttons allow users to take actions and make choices.
 </h4>
 
-<Canvas>
-  <Story id="components-button--primary" />
-</Canvas>
+<Canvas of={ComponentStories.Primary} />
 
 ## Props
 
@@ -59,53 +58,39 @@ import Button from './Button';
 
 - Important actions that usually trigger a longer workflow.
 
-<Canvas>
-  <Story id="components-button--primary" />
-</Canvas>
+<Canvas of={ComponentStories.Primary} />
 
 ### Danger
 
 - Used to indicate destructive actions.
 
-<Canvas>
-  <Story id="components-button--danger" />
-</Canvas>
+<Canvas of={ComponentStories.Danger} />
 
 ### Warning
 
 - Currently only used for managing project drafts, but could potentially be used to indicate actions that need require special attention.
 
-<Canvas>
-  <Story id="components-button--warning" />
-</Canvas>
+<Canvas of={ComponentStories.Warning} />
 
 ### Transparent
 
-<Canvas>
-  <Story id="components-button--transparent" />
-</Canvas>
+<Canvas of={ComponentStories.Transparent} />
 
 ### Link
 - A button that is styled like a link
 
-<Canvas>
-  <Story id="components-button--link" />
-</Canvas>
+<Canvas of={ComponentStories.Link} />
 
 ### Brands
 - Usually used for authentication purposes with different brands
 
-<Canvas>
-  <Story id="components-button--brands" />
-</Canvas>
+<Canvas of={ComponentStories.Brands} />
 
 ### Loading
 - The loading state is displayed when an action has been initiated and the system is processing it.
 For instance, when a page is being saved or a file is uploading, the button typically transforms into a loading state with altered
 loading text and a spinner. This is accompanied by a disabled state to prevent duplicated actions.
 
-<Canvas>
-  <Story id="components-button--loading" />
-</Canvas>
+<Canvas of={ComponentStories.Loading} />
 
 

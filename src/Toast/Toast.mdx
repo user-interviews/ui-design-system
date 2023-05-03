@@ -1,5 +1,6 @@
-import { ArgTypes, Story, Canvas } from '@storybook/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import Toast from './Toast';
+import * as ComponentStories from './Toast.stories';
 
 # Toast
 
@@ -9,9 +10,7 @@ import Toast from './Toast';
 	Toasts communicate important messages and provide immediate feedback without disrupting the user experience.
 </h4>
 
-<Canvas>
-  <Story id="components-toast--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ## Props
 

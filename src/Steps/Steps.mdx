@@ -1,5 +1,6 @@
-import { ArgTypes, Story, Canvas } from '@storybook/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import Steps from './Steps';
+import * as ComponentStories from './Steps.stories';
 
 # Steps
 
@@ -9,17 +10,7 @@ import Steps from './Steps';
   A static progress display of a sequence of logical and numbered steps.
 </h4>
 
-<Canvas>
-  <Story id="components-steps--default" />
-</Canvas>
-
-### When to use 
-- Reason 1
-- Reason 2
-
-### When to not use
-- Reason 1
-- Reason 2
+<Canvas of={ComponentStories.Default} />
 
 
 ## Props
@@ -31,35 +22,8 @@ import Steps from './Steps';
 
 ### Default
 
-<Canvas>
-  <Story id="components-steps--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### Varying Content Length
 
-<Canvas>
-  <Story id="components-steps--varying-content-length" />
-</Canvas>
-
-## Formatting
-
-### States
-
-### Anatomy 
-
-### Sizing
-
-### Alignment
-
-
-## Best practices
-
-### General
-
-### Behavior
-
-### Implementation
-
-### UX Copy
-
-## Anatomy
+<Canvas of={ComponentStories.VaryingContentLength} />

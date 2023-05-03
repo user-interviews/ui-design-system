@@ -1,5 +1,6 @@
-import { Story, Canvas } from '@storybook/blocks';
+import {  Canvas } from '@storybook/blocks';
 import { Tooltip } from './Tooltip';
+import * as ComponentStories from './Tooltip.stories';
 
 # Tooltip
 
@@ -9,62 +10,38 @@ import { Tooltip } from './Tooltip';
   Contained messages used for showing extra information about a specifically selected element.
 </h4>
 
-<Canvas>
-  <Story id="components-tooltip--default" />
-</Canvas>
-
-### When to use
-- Reason 1
-- Reason 2
-
-### When to not use
-- Reason 1
-- Reason 2
+<Canvas of={ComponentStories.Default} />
 
 
 ## Stories
 
 ### Default
 
-<Canvas>
-  <Story id="components-tooltip--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### Light
 
-<Canvas>
-  <Story id="components-tooltip--light" />
-</Canvas>
+<Canvas of={ComponentStories.Light} />
 
 ### With Header
 
-<Canvas>
-  <Story id="components-tooltip--with-header" />
-</Canvas>
+<Canvas of={ComponentStories.WithHeader} />
 
 ### With HTML
 
-<Canvas>
-  <Story id="components-tooltip--with-html" />
-</Canvas>
+<Canvas of={ComponentStories.WithHtml} />
 
 ### Green Icon
 
-<Canvas>
-  <Story id="components-tooltip--green-icon" />
-</Canvas>
+<Canvas of={ComponentStories.GreenIcon} />
 
 ### Gray Icon
 
-<Canvas>
-  <Story id="components-tooltip--gray-icon" />
-</Canvas>
+<Canvas of={ComponentStories.GrayIcon} />
 
 ### With Tracking
 
-<Canvas>
-  <Story id="components-tooltip--with-tracking" />
-</Canvas>
+<Canvas of={ComponentStories.WithTracking} />
 
 
 ## Formatting

@@ -1,5 +1,6 @@
-import { ArgTypes, Story, Canvas } from '@storybook/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import Text from './Text';
+import * as ComponentStories from './Text.stories';
 
 # Text
 
@@ -9,9 +10,7 @@ import Text from './Text';
 	Text communicates important content using clear visual patterns.
 </h4>
 
-<Canvas>
-  <Story id="components-text--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 
 ## Props
@@ -25,9 +24,7 @@ import Text from './Text';
 - By default `<Text>`, will render a `p` with size `md` and weight `regular`
 - You can use the `as` prop to swap out for an appropriate text element
 
-<Canvas>
-  <Story id="components-text--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### Sizes
 
@@ -35,9 +32,7 @@ Adjust the font `size` with the available sizes:
 
 `lg`, `md`, `sm`
 
-<Canvas>
-  <Story id="components-text--default" />
-</Canvas>
+<Canvas of={ComponentStories.Sizes} />
 
 
 ### Weight
@@ -46,9 +41,7 @@ Use to give text one of the supported font weights:
 
 `bold`, `medium`, or `regular`
 
-<Canvas>
-  <Story id="components-text--weight" />
-</Canvas>
+<Canvas of={ComponentStories.Weight} />
 
 
 ### Alignment
@@ -57,7 +50,5 @@ Use to set text alignment:
 
 `left`, `center`, or `right`
 
-<Canvas>
-  <Story id="components-text--alignment" />
-</Canvas>
+<Canvas of={ComponentStories.Alignment} />
 

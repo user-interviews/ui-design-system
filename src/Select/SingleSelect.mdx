@@ -1,5 +1,6 @@
-import { ArgTypes, Story, Preview } from '@storybook/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import SingleSelect from './SingleSelect';
+import * as ComponentStories from './SingleSelect.stories';
 
 # SingleSelect
 
@@ -19,42 +20,28 @@ A base select input. Flexible and comes with multiselect, clearable, searchable,
 
 ### Default
 
-<Preview>
-  <Story id="components-selects-single--default" />
-</Preview>
+<Canvas of={ComponentStories.Default} />
 
 ### Searchable
 
-<Preview>
-  <Story id="components-selects-single--searchable" />
-</Preview>
+<Canvas of={ComponentStories.Searchable} />
 
 ### Loading
 
-<Preview>
-  <Story id="components-selects-single--loading" />
-</Preview>
+<Canvas of={ComponentStories.Loading} />
 
 ### Multi Select
 
-<Preview>
-  <Story id="components-selects-single--multiple-select" />
-</Preview>
+<Canvas of={ComponentStories.MultipleSelect} />
 
 ### Custom Option With Checkbox
 
-<Preview>
-  <Story id="components-selects-single--custom-option-with-checkbox" />
-</Preview>
+<Canvas of={ComponentStories.CustomOptionWithCheckbox} />
 
 ### Custom Option With Indeterminate Checkbox
 
-<Preview>
-  <Story id="components-selects-single--custom-option-with-indeterminate-checkbox" />
-</Preview>
+<Canvas of={ComponentStories.CustomOptionWithIndeterminateCheckbox} />
 
 ### Custom Value Container
 
-<Preview>
-  <Story id="components-selects-single--custom-value-container" />
-</Preview>
+<Canvas of={ComponentStories.CustomValueContainer} />

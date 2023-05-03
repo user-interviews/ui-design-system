@@ -1,5 +1,6 @@
-import { ArgTypes, Story, Canvas } from '@storybook/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import CardStack from './CardStack';
+import * as ComponentStories from './CardStack.stories';
 
 # CardStack
 
@@ -9,9 +10,7 @@ import CardStack from './CardStack';
 	A simple layout container for positioning Cards.
 </h4>
 
-<Canvas>
-  <Story id="layouts-cardstack--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### When to use 
 - Use `CardStack` to wrap one or more `Card` components.
@@ -24,12 +23,8 @@ import CardStack from './CardStack';
 
 ### Default 
 
-<Canvas>
-  <Story id="layouts-cardstack--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### Centered
 
-<Canvas>
-  <Story id="layouts-cardstack--centered" />
-</Canvas>
+<Canvas of={ComponentStories.Centered} />

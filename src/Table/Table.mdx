@@ -1,5 +1,6 @@
-import { ArgTypes, Story, Canvas } from '@storybook/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import Table from './Table';
+import * as ComponentStories from './Table.stories';
 
 # Table
 
@@ -9,17 +10,12 @@ import Table from './Table';
   Displays sets of data. Can be fully customized.
 </h4>
 
-<Canvas>
-  <Story id="components-table--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### When to use
 - Tables display information that is easy to scan, so that users can look for patterns and insights
 - Tables can be embedded in various containers and primary content, such as Cards
 
-### When to not use
-- Reason 1
-- Reason 2
 
 ## Props
 
@@ -32,25 +28,19 @@ import Table from './Table';
 - A simple example of a `Table`
 - In the `TableHead`, all `TableCell` components should be given a `header` prop to designate it as a column label
 
-<Canvas>
-  <Story id="components-table--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### Loading Default
 - Set `isLoading` on the `<Table>` component to render the default `<TableLoadingSkeleton>`
 
-<Canvas>
-  <Story id="components-table--loading-default" />
-</Canvas>
+<Canvas of={ComponentStories.LoadingDefault} />
 
 ### Loading Custom Columns
 - Adjust the column count and widths of the `<TableLoadingSkeleton>` by giving `loadingColumns` an array of widths (e.g. `[75, 100, 250, 250, 100]`) 
 - Adjust the row count of the `<TableLoadingSkeleton>` by giving `loadingRows` a number
 - The loading skeleton does not need to perfectly match the Table that is eventually rendered.
 
-<Canvas>
-  <Story id="components-table--loading-custom-columns" />
-</Canvas>
+<Canvas of={ComponentStories.LoadingCustomColumns} />
 
 ### Table With Fixed Column Widths
 - Create a column with a fixed width
@@ -59,38 +49,28 @@ import Table from './Table';
 - Set `minWidth` to provide extra space in `px` for the `TableCell`
 - `text-overflow: ellipsis` is set by default for content that exceeds the designated width. This would only be seen if `maxWidth` is set
 
-<Canvas>
-  <Story id="components-table--table-with-fixed-column-widths" />
-</Canvas>
+<Canvas of={ComponentStories.TableWithFixedColumnWidths} />
 
 ### Table On Card
 - Default `Table` on a `Card` component
 
-<Canvas>
-  <Story id="components-table--table-on-card" />
-</Canvas>
+<Canvas of={ComponentStories.TableOnCard} />
 
 ### Table On Card No Padding
 - When the `Card` component has the `noPadding` prop set
 
-<Canvas>
-  <Story id="components-table--table-on-card-no-padding" />
-</Canvas>
+<Canvas of={ComponentStories.TableOnCardNoPadding} />
 
 ### Table With Single Action Column
 - When a row has a single action, expose the action directly (usually through a button) with a clear action verb. Otherwise a kebab should be used when multiple actions are available for a rows
 
-<Canvas>
-  <Story id="components-table--table-with-single-action-column" />
-</Canvas>
+<Canvas of={ComponentStories.TableWithSingleActionColumn} />
 
 ### Table With Multiple Action Column
 - Kebabs should be used when there’s more than one action per row
 - If any row has one action and others more than one action, kebabs should be displayed on all rows
 
-<Canvas>
-  <Story id="components-table--table-with-multiple-action-column" />
-</Canvas>
+<Canvas of={ComponentStories.TableWithMultipleActionColumn} />
 
 ### Table With Sticky Column And Header
 - A Table's header row can be made sticky to ensure column labels are always visible when a user scrolls down
@@ -102,9 +82,7 @@ import Table from './Table';
 - A pin icon can optionally be displayed on a sticky column to let the user toggle between a sticky column state and a default state
 - *Note: view this story on Canvas instead of Docs to see the sticky header*
 
-<Canvas>
-  <Story id="components-table--table-with-sticky-column-and-header" />
-</Canvas>
+<Canvas of={ComponentStories.TableWithStickyColumnAndHeader} />
 
 ### Table With Multiple Sticky Columns (left & right) And Header
 - If *multiple* `stickyColumn`s are needed on either left or right side of the Table (e.g. a Checkbox and Email column on the left-side of the Table), `stickyColumnOffsetX` must be set precisely
@@ -148,9 +126,7 @@ import Table from './Table';
 </TableBody>
 ```
 
-<Canvas>
-  <Story id="components-table--table-with-multiple-sticky-columns-and-header" />
-</Canvas>
+<Canvas of={ComponentStories.TableWithMultipleStickyColumnsAndHeader} />
 
 ### Table With Multiple Select
 - Checkboxes are displayed on a separate column
@@ -158,18 +134,14 @@ import Table from './Table';
 - When `TableRow` prop `selected` evaluates to `true`, `background-color` is set to `$ux-blue-100`
 - Clicking the first `Checkbox` located on the header row should select or de-select all current rows displayed on the `Table`
 
-<Canvas>
-  <Story id="components-table--table-with-multiple-select" />
-</Canvas>
+<Canvas of={ComponentStories.TableWithMultipleSelect} />
 
 ### Table With Multiple Select And Multiple Sticky Columns And Header
 - Combining the sticky columns & headers with multi-select functionality.
 - Creates an easier scrolling and selecting experience for users while searching through table data.
 - *Note: view this story on Canvas instead of Docs to see the sticky header*
 
-<Canvas>
-  <Story id="components-table--table-with-multiple-select-and-multiple-sticky-columns-and-header" />
-</Canvas>
+<Canvas of={ComponentStories.TableWithMultipleSelectAndMultipleStickyColumnsAndHeader} />
 
 ### Table With Sorting
 - **Currently WIP**
@@ -178,25 +150,19 @@ import Table from './Table';
 - *Active state:* When users click the column heading the text turns blue and the icon changes to either an ascending or descending icon
 
 
-<Canvas>
-  <Story id="components-table--table-with-sorting" />
-</Canvas>
+<Canvas of={ComponentStories.TableWithSorting} />
 
 ### Table With Cell Right Alignment
 - `TableCell` can be given `alignRight` prop to align content to the right
 - Cells with numerical data should be aligned right
 
-<Canvas>
-  <Story id="components-table--table-with-cell-right-alignment" />
-</Canvas>
+<Canvas of={ComponentStories.TableWithCellRightAlignment} />
 
 ### Table With Compact Option
 - `TableCell` can be given a `compact` prop to reduce the size of the cell
 - This allows the `Table` to display more rows on a page
 
-<Canvas>
-  <Story id="components-table--table-with-compact-option" />
-</Canvas>
+<Canvas of={ComponentStories.TableWithCompactOption} />
 
 
 ## Formatting

@@ -1,5 +1,6 @@
-import { ArgTypes, Story, Canvas } from '@storybook/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import Form from './Form';
+import * as ComponentStories from './Form.stories';
 
 # Form
 
@@ -9,9 +10,7 @@ import Form from './Form';
   A wrapper component that handles the submission of forms.
 </h4>
 
-<Canvas>
-  <Story id="components-form--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### When to use
 - You are writing a page which submits a form via HTML
@@ -28,27 +27,4 @@ import Form from './Form';
 
 ### Default
 
-<Canvas>
-  <Story id="components-form--default" />
-</Canvas>
-
-## Formatting
-
-### States
-
-### Anatomy
-
-### Sizing
-
-### Alignment
-
-
-## Best practices
-
-### General
-
-### Behavior
-
-### Implementation
-
-### UX Copy
+<Canvas of={ComponentStories.Default} />
