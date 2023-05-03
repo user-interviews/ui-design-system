@@ -18,9 +18,6 @@ export default {
   title: 'Components/Accordion',
   component: Accordion,
   decorators: [withKnobs],
-  subcomponents: {
-    AccordionItem, AccordionToggle, AccordionCollapse,
-  },
   parameters: {
     docs: {
       page: mdx,
