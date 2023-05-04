@@ -11,6 +11,7 @@ const config = {
     },
     '@storybook/addon-a11y',
     '@storybook/addon-actions',
+    '@storybook/addon-controls',
     '@storybook/addon-links',
     '@storybook/addon-knobs',
     '@storybook/addon-storysource',
