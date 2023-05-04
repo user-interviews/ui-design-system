@@ -19,7 +19,7 @@ const config = {
   ],
   docs: {
     autodocs: true,
-    defaultName: 'Sick docs',
+    defaultName: 'Docs',
   },
   stories: [
     '../stories/Intro.stories.mdx',
