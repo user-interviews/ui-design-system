@@ -15,7 +15,7 @@
         - name: Setup node
           uses: actions/setup-node@v3
           with:
-            node-version-file: '.nvmrc'
+            node-version-file: '.node-version'
 
         - name: Configure npm
           run: npm config set "@fortawesome:registry" https://npm.fontawesome.com/ &&

@@ -21,7 +21,7 @@ jobs:
           fetch-depth: 0 # 👈 Required to retrieve git history
       - uses: actions/setup-node@v3
         with:
-          node-version-file: '.nvmrc'
+          node-version-file: '.node-version'
       - run: npm config set "@fortawesome:registry" https://npm.fontawesome.com/ &&
           npm config set "//npm.fontawesome.com/:_authToken" $FONTAWESOME_NPM_AUTH_TOKEN
       - run: yarn
