@@ -8,15 +8,16 @@ const TableRow = ({
   children,
   className,
   clickable,
+  removeHover,
   selected,
   stickyRow,
   ...props
 }) => {
   const addStickyRowProp = (child) => {
-    if (!stickyRow) {
-      return child;
+    if (stickyRow) {
+      return cloneElement(child, { stickyRow });
     }
-    return cloneElement(child, { stickyRow });
+    return child;
   };
 
   return (
@@ -27,6 +28,7 @@ const TableRow = ({
     {
       [`TableRow--selected`]: !!selected,
       [`TableRow--clickable`]: !!clickable,
+      [`TableRow--remove-hover`]: !!removeHover,
     },
     )}
       {...props}
@@ -42,6 +44,7 @@ TableRow.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   clickable: PropTypes.bool,
+  removeHover: PropTypes.bool,
   selected: PropTypes.bool,
   stickyRow: PropTypes.bool,
 };
@@ -50,6 +53,7 @@ TableRow.defaultProps = {
   children: undefined,
   className: undefined,
   clickable: undefined,
+  removeHover: undefined,
   selected: undefined,
   stickyRow: undefined,
 };

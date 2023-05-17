@@ -1,6 +1,7 @@
 import Table from './Table';
 import TableBody from './TableBody';
 import TableCell from './TableCell';
+import TableFoot from './TableFoot';
 import TableHead from './TableHead';
 import TableLoadingSkeleton from './TableLoadingSkeleton';
 import TableRow from './TableRow';
@@ -10,6 +11,7 @@ export {
   Table,
   TableBody,
   TableCell,
+  TableFoot,
   TableHead,
   TableLoadingSkeleton,
   TableRow,

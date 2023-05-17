@@ -21,6 +21,7 @@ $z-index-100: 100;
 
 $z-index-30: 30;
 $z-index-20: 20;
+$z-index-11: 11;
 $z-index-10: 10;
 $z-index-3: 3;
 $z-index-2: 2;
@@ -33,3 +34,5 @@ $z-index-drawer: $z-index-1040;
 $z-index-modal-backdrop: $z-index-1040; // Matches bootstrap $zindex-modal-backdrop
 $z-index-fixed: $z-index-1030; //Matches bootstrap $zindex-fixed
 $z-index-overlay: $z-index-fixed - 1; // Sits just under $z-index-fixed
+$z-index-table-cell-sticky-column: $z-index-10; // Sits under $z-index-table-foot-sticky-row
+$z-index-table-foot-sticky-row: $z-index-11; // Sits above $z-index-table-cell-sticky-column

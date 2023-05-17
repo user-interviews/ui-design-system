@@ -13463,6 +13463,673 @@ Array [
 ]
 `;
 
+exports[`Storyshots Components/Table Table No Hover State 1`] = `
+<table
+  className="Table"
+>
+  <thead
+    className="TableHead"
+  >
+    <tr
+      className="TableRow"
+    >
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      />
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        Status
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        Email
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        First name
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        Last name
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        Phone number
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        Date added
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        Last invited
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        Last applied
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="TableBody"
+  >
+    <tr
+      className="TableRow TableRow--remove-hover"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      />
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Approved
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        riley@userinterviews.com
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Riley
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Researcher
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        +18888888888
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        01/22/2021
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        3 days ago
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        1 day ago
+      </td>
+    </tr>
+    <tr
+      className="TableRow TableRow--remove-hover"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <span
+          className="Pill Pill--blue"
+        >
+          New
+        </span>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Approved
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        basel123@userinterviews.com
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Basel
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Fakhoury
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        +467234460393409
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        04/08/2020
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        -
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        -
+      </td>
+    </tr>
+    <tr
+      className="TableRow TableRow--remove-hover"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      />
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Paid
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        bob456@userinterviews.com
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Bob
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Saris
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      />
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        01/26/2020
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        2 days ago
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        -
+      </td>
+    </tr>
+    <tr
+      className="TableRow TableRow--remove-hover"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      />
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Confirmed
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        dennis789@userinterviews.com
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Dennis
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Meng
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      />
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        12/21/2020
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        6 days ago
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        5 days ago
+      </td>
+    </tr>
+    <tr
+      className="TableRow TableRow--remove-hover"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <span
+          className="Pill Pill--blue"
+        >
+          New
+        </span>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Confirmed
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        erin007@userinterviews.com
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Erin
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        May
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        +1499090234
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        09/21/2020
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        -
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        23 days ago
+      </td>
+    </tr>
+    <tr
+      className="TableRow TableRow--remove-hover"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <span
+          className="Pill Pill--blue"
+        >
+          New
+        </span>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Qualified
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        jh247@userinterviews.com
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        John-Henry
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Forster
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        +1888938488
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        03/14/2021
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        -
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        -
+      </td>
+    </tr>
+    <tr
+      className="TableRow TableRow--remove-hover"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <span
+          className="Pill Pill--blue"
+        >
+          New
+        </span>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Approved
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        jason909085119@userinterviews.com
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Jason
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Basuil
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      />
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        01/01/2021
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        -
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        -
+      </td>
+    </tr>
+    <tr
+      className="TableRow TableRow--remove-hover"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <span
+          className="Pill Pill--blue"
+        >
+          New
+        </span>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Qualified
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        rachel777@userinterviews.com
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Rachel
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Rapollo
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        +40988881822329308
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        07/21/2019
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        -
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        -
+      </td>
+    </tr>
+    <tr
+      className="TableRow TableRow--remove-hover"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <span
+          className="Pill Pill--blue"
+        >
+          New
+        </span>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Approved
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        jojo330@userinterviews.com
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        JoJo
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Lee
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        +1898374888
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        09/17/2020
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        1 day ago
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        2 days ago
+      </td>
+    </tr>
+    <tr
+      className="TableRow TableRow--remove-hover"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <span
+          className="Pill Pill--blue"
+        >
+          New
+        </span>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Approved
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        faus555@userinterviews.com
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Faustino
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Gaitan
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        +90918394789
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        06/13/2019
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        -
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        -
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
 exports[`Storyshots Components/Table Table On Card 1`] = `
 <section
   className="Card Card--divided"
@@ -15958,6 +16625,399 @@ exports[`Storyshots Components/Table Table With Fixed Column Widths 1`] = `
       </td>
     </tr>
   </tbody>
+</table>
+`;
+
+exports[`Storyshots Components/Table Table With Footer 1`] = `
+<table
+  className="Table"
+>
+  <thead
+    className="TableHead"
+  >
+    <tr
+      className="TableRow"
+    >
+      <th
+        className="TableCell TableCell__header TableCell--sticky-row"
+        style={null}
+      >
+        Participant
+      </th>
+      <th
+        className="TableCell TableCell__header TableCell--sticky-row"
+        style={null}
+      >
+        Incentive
+      </th>
+      <th
+        className="TableCell TableCell__header TableCell--sticky-row"
+        style={null}
+      >
+        Processing fee
+      </th>
+      <th
+        className="TableCell TableCell__header TableCell--sticky-row"
+        style={null}
+      >
+        Recruit fee
+      </th>
+      <th
+        className="TableCell TableCell__header TableCell--sticky-row"
+        style={null}
+      >
+        Amount
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="TableBody"
+  >
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Anna
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $50.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $50.00
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Carly
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $25.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $25.00
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Erin
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $100.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $100.00
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Gregg
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $250.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $250.00
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Izzie
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $180.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $180.00
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Anna
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $50.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $50.00
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Carly
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $25.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $25.00
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Erin
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $100.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $100.00
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        Gregg
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $250.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $0.00
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        $250.00
+      </td>
+    </tr>
+  </tbody>
+  <tfoot
+    className="TableFoot TableFoot--sticky-row"
+  >
+    <tr
+      className="TableRow"
+    >
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        Total
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        $1030.00
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        $0.00
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        $0.00
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        $1030.00
+      </th>
+    </tr>
+  </tfoot>
 </table>
 `;
 
@@ -25908,320 +26968,312 @@ exports[`Storyshots Foundations/Color Palette Yellow 1`] = `
 `;
 
 exports[`Storyshots Foundations/Spacing Spacing 1`] = `
-<div
-  style={
-    Object {
-      "padding": "1rem",
-    }
-  }
+<table
+  className="Table"
 >
-  <table
-    className="Table"
+  <thead
+    className="TableHead"
   >
-    <thead
-      className="TableHead"
+    <tr
+      className="TableRow"
     >
-      <tr
-        className="TableRow"
+      <th
+        className="TableCell TableCell__header"
+        style={null}
       >
-        <th
-          className="TableCell TableCell__header"
-          style={null}
-        >
-          Token
-        </th>
-        <th
-          className="TableCell TableCell__header"
-          style={null}
-        >
-          rem
-        </th>
-        <th
-          className="TableCell TableCell__header"
-          style={null}
-        >
-          px
-        </th>
-        <th
-          className="TableCell TableCell__header"
-          style={null}
-        >
-          Example
-        </th>
-      </tr>
-    </thead>
-    <tbody
-      className="TableBody"
+        Token
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        rem
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        px
+      </th>
+      <th
+        className="TableCell TableCell__header"
+        style={null}
+      >
+        Example
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="TableBody"
+  >
+    <tr
+      className="TableRow"
     >
-      <tr
-        className="TableRow"
+      <td
+        className="TableCell"
+        style={Object {}}
       >
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <code>
-            $ux-spacing-10
-          </code>
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          0.25
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          4
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <div
-            style={
-              Object {
-                "backgroundColor": "#725CCC",
-                "height": "0.25rem",
-                "width": "0.25rem",
-              }
-            }
-          />
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
+        <code>
+          $ux-spacing-10
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
       >
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <code>
-            $ux-spacing-20
-          </code>
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          0.5
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          8
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <div
-            style={
-              Object {
-                "backgroundColor": "#725CCC",
-                "height": "0.5rem",
-                "width": "0.5rem",
-              }
-            }
-          />
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
+        0.25
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
       >
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <code>
-            $ux-spacing-30
-          </code>
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          0.75
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          12
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <div
-            style={
-              Object {
-                "backgroundColor": "#725CCC",
-                "height": "0.75rem",
-                "width": "0.75rem",
-              }
-            }
-          />
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
+        4
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
       >
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <code>
-            $ux-spacing-40
-          </code>
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          1
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          16
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <div
-            style={
-              Object {
-                "backgroundColor": "#725CCC",
-                "height": "1rem",
-                "width": "1rem",
-              }
+        <div
+          style={
+            Object {
+              "backgroundColor": "#725CCC",
+              "height": "0.25rem",
+              "width": "0.25rem",
             }
-          />
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
+          }
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
       >
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <code>
-            $ux-spacing-50
-          </code>
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          1.5
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          24
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <div
-            style={
-              Object {
-                "backgroundColor": "#725CCC",
-                "height": "1.5rem",
-                "width": "1.5rem",
-              }
-            }
-          />
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
+        <code>
+          $ux-spacing-20
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
       >
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <code>
-            $ux-spacing-60
-          </code>
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          2
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          32
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <div
-            style={
-              Object {
-                "backgroundColor": "#725CCC",
-                "height": "2rem",
-                "width": "2rem",
-              }
-            }
-          />
-        </td>
-      </tr>
-      <tr
-        className="TableRow"
+        0.5
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
       >
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <code>
-            $ux-spacing-70
-          </code>
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          3
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          48
-        </td>
-        <td
-          className="TableCell"
-          style={Object {}}
-        >
-          <div
-            style={
-              Object {
-                "backgroundColor": "#725CCC",
-                "height": "3rem",
-                "width": "3rem",
-              }
+        8
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#725CCC",
+              "height": "0.5rem",
+              "width": "0.5rem",
             }
-          />
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+          }
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $ux-spacing-30
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        0.75
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        12
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#725CCC",
+              "height": "0.75rem",
+              "width": "0.75rem",
+            }
+          }
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $ux-spacing-40
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        1
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        16
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#725CCC",
+              "height": "1rem",
+              "width": "1rem",
+            }
+          }
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $ux-spacing-50
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        1.5
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        24
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#725CCC",
+              "height": "1.5rem",
+              "width": "1.5rem",
+            }
+          }
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $ux-spacing-60
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        2
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        32
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#725CCC",
+              "height": "2rem",
+              "width": "2rem",
+            }
+          }
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $ux-spacing-70
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        3
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        48
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          style={
+            Object {
+              "backgroundColor": "#725CCC",
+              "height": "3rem",
+              "width": "3rem",
+            }
+          }
+        />
+      </td>
+    </tr>
+  </tbody>
+</table>
 `;
 
 exports[`Storyshots Foundations/Typography Typography 1`] = `
