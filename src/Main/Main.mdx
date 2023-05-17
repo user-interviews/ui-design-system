@@ -1,5 +1,6 @@
-import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
-import Main from './Main'
+import { ArgTypes,  Canvas } from '@storybook/blocks';
+import Main from './Main';
+import * as ComponentStories from './Main.stories';
 
 # Main
 
@@ -15,11 +16,9 @@ import Main from './Main'
   <code>Main</code> is built off of the <code>Container</code> component.
 </p>
 
-<Canvas>
-  <Story id="layouts-main--page-example"/>
-</Canvas>
+<Canvas of={ComponentStories.PageExample} />
 
-<ArgsTable of={Main} />
+<ArgTypes of={Main} />
 
 ## When should you use Main?
 
@@ -38,19 +37,13 @@ import Main from './Main'
 
 ### Default
 
-<Canvas>
-  <Story id="layouts-main--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### Page Example
 
-<Canvas>
-  <Story id="layouts-main--page-example" />
-</Canvas>
+<Canvas of={ComponentStories.PageExample} />
 
 ### Accessibility
 
-<Canvas>
-  <Story id="layouts-main--accessibility" />
-</Canvas>
+<Canvas of={ComponentStories.Accessibility} />
 

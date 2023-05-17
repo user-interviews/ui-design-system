@@ -1,5 +1,6 @@
-import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { ArgTypes, Canvas } from '@storybook/blocks';
 import RadioButtonGroup from './RadioButtonGroup';
+import * as ComponentStories from './RadioButtonGroup.stories';
 
 # RadioButtonGroup
 
@@ -9,13 +10,11 @@ import RadioButtonGroup from './RadioButtonGroup';
   A collections of radio buttons describing a set of related options. Only one option selected at a time.
 </h4>
 
-<Canvas>
-  <Story id="components-form-elements-radiobuttongroup--default"/>
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ## Props
 
-<ArgsTable of={RadioButtonGroup} />
+<ArgTypes of={RadioButtonGroup} />
 
 ## Stories
 
@@ -23,37 +22,33 @@ import RadioButtonGroup from './RadioButtonGroup';
 
 Single-selection button.
 
-<Canvas>
-  <Story id="components-form-elements-radiobuttongroup--default"/>
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### Row
 
-<Canvas>
-  <Story id="components-form-elements-radiobuttongroup--row"/>
-</Canvas>
+<Canvas of={ComponentStories.Row} />
 
 ### Bordered Row
 
 Single-selection button. Only used in the context of Radio FormGroups.
 
-<Canvas>
-  <Story id="components-form-elements-radiobuttongroup--bordered-row"/>
-</Canvas>
+<Canvas of={ComponentStories.BorderedRow} />
 
 ### Description Column
 
-<Canvas>
-  <Story id="components-form-elements-radiobuttongroup--description-column"/>
-</Canvas>
+<Canvas of={ComponentStories.DescriptionColumn} />
 
 ### Description Row
 
 Single-selection button. Includes helper text and/or a description in addition to the default label.
 
-<Canvas>
-  <Story id="components-form-elements-radiobuttongroup--description-row"/>
-</Canvas>
+<Canvas of={ComponentStories.DescriptionRow} />
+
+### Bordered Column Full Width
+
+Single-selection button. Includes helper text and/or a description in addition to the default label.
+
+<Canvas of={ComponentStories.BorderedColumnFullWidth} />
 
 ### Bordered Column Full Width
 
