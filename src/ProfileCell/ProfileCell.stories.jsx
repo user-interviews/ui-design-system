@@ -10,6 +10,7 @@ import mdx from './ProfileCell.mdx';
 export default {
   title: 'Components/Profile Cell',
   component: ProfileCell,
+  subcomponents: { ProfileCellSkeleton },
   decorators: [withKnobs],
   parameters: {
     docs: {
