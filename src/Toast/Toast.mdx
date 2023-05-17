@@ -1,6 +1,5 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Toast from './Toast';
-import * as ComponentStories from './Toast.stories';
 
 # Toast
 
@@ -10,11 +9,13 @@ import * as ComponentStories from './Toast.stories';
 	Toasts communicate important messages and provide immediate feedback without disrupting the user experience.
 </h4>
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-toast--default" />
+</Canvas>
 
 ## Props
 
-<ArgTypes of={Toast} />
+<ArgsTable of={Toast} />
 
 
 ## useToast

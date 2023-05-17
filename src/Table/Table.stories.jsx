@@ -10,7 +10,7 @@ import Card from 'src/Card';
 import CheckboxButton from 'src/CheckboxButton';
 import { Pill } from 'src/Pill';
 import {
- Table, TableBody, TableCell, TableFoot, TableHead, TableRow, TableSortLabel,
+ Table, TableBody, TableCell, TableHead, TableRow, TableSortLabel,
 } from 'src/Table';
 
 import mdx from './Table.mdx';
@@ -19,6 +19,9 @@ export default {
   title: 'Components/Table',
   component: Table,
   decorators: [withKnobs],
+  subcomponents: {
+ TableBody, TableCell, TableHead, TableRow, TableSortLabel,
+},
   parameters: {
     docs: {
       page: mdx,
@@ -46,18 +49,6 @@ const sortableData = [
   { id: 3, firstName: 'Erin', lastName: 'Fitzgerald', incentivesEarned: 10, unsubscribed: true },
   { id: 4, firstName: 'Gregg', lastName: 'Harris', incentivesEarned: 20, unsubscribed: true },
   { id: 5, firstName: 'Izzie', lastName: 'Jackson', incentivesEarned: 100, unsubscribed: false },
-];
-
-const incentiveData = [
-  { id: 1, participant: 'Anna', incentive: '$50.00', processingFee: '$0.00', recruitFee: '$0.00', amount: '$50.00' },
-  { id: 2, participant: 'Carly', incentive: '$25.00', processingFee: '$0.00', recruitFee: '$0.00', amount: '$25.00' },
-  { id: 3, participant: 'Erin', incentive: '$100.00', processingFee: '$0.00', recruitFee: '$0.00', amount: '$100.00' },
-  { id: 4, participant: 'Gregg', incentive: '$250.00', processingFee: '$0.00', recruitFee: '$0.00', amount: '$250.00' },
-  { id: 5, participant: 'Izzie', incentive: '$180.00', processingFee: '$0.00', recruitFee: '$0.00', amount: '$180.00' },
-  { id: 6, participant: 'Anna', incentive: '$50.00', processingFee: '$0.00', recruitFee: '$0.00', amount: '$50.00' },
-  { id: 7, participant: 'Carly', incentive: '$25.00', processingFee: '$0.00', recruitFee: '$0.00', amount: '$25.00' },
-  { id: 8, participant: 'Erin', incentive: '$100.00', processingFee: '$0.00', recruitFee: '$0.00', amount: '$100.00' },
-  { id: 9, participant: 'Gregg', incentive: '$250.00', processingFee: '$0.00', recruitFee: '$0.00', amount: '$250.00' },
 ];
 /* eslint-enable object-curly-newline */
 
@@ -145,39 +136,6 @@ export const LoadingCustomColumns = () => (
     <TableBody>
       {data.map(((row) => (
         <TableRow key={row.id}>
-          <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
-          <TableCell>{row.status}</TableCell>
-          <TableCell>{row.email}</TableCell>
-          <TableCell>{row.firstName}</TableCell>
-          <TableCell>{row.lastName}</TableCell>
-          <TableCell>{row.phoneNumber}</TableCell>
-          <TableCell>{row.dateAdded}</TableCell>
-          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
-        </TableRow>
-      )))}
-    </TableBody>
-  </Table>
-);
-
-export const TableNoHoverState = () => (
-  <Table>
-    <TableHead>
-      <TableRow>
-        <TableCell header />
-        <TableCell header>Status</TableCell>
-        <TableCell header>Email</TableCell>
-        <TableCell header>First name</TableCell>
-        <TableCell header>Last name</TableCell>
-        <TableCell header>Phone number</TableCell>
-        <TableCell header>Date added</TableCell>
-        <TableCell header>Last invited</TableCell>
-        <TableCell header>Last applied</TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {data.map(((row) => (
-        <TableRow key={row.id} removeHover>
           <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
           <TableCell>{row.status}</TableCell>
           <TableCell>{row.email}</TableCell>
@@ -525,40 +483,6 @@ export const TableWithMultipleStickyColumnsAndHeader = () => {
     </Table>
    );
 };
-
-export const TableWithFooter = () => (
-  <Table>
-    <TableHead>
-      <TableRow stickyRow>
-        <TableCell header>Participant</TableCell>
-        <TableCell header>Incentive</TableCell>
-        <TableCell header>Processing fee</TableCell>
-        <TableCell header>Recruit fee</TableCell>
-        <TableCell header>Amount</TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {incentiveData.map(((row) => (
-        <TableRow key={row.id}>
-          <TableCell>{row.participant}</TableCell>
-          <TableCell>{row.incentive}</TableCell>
-          <TableCell>{row.processingFee}</TableCell>
-          <TableCell>{row.recruitFee}</TableCell>
-          <TableCell>{row.amount}</TableCell>
-        </TableRow>
-        )))}
-    </TableBody>
-    <TableFoot stickyRow>
-      <TableRow>
-        <TableCell header>Total</TableCell>
-        <TableCell header>$1030.00</TableCell>
-        <TableCell header>$0.00</TableCell>
-        <TableCell header>$0.00</TableCell>
-        <TableCell header>$1030.00</TableCell>
-      </TableRow>
-    </TableFoot>
-  </Table>
-  );
 
 export const TableWithMultipleSelect = () => {
   const [selectedRows, setSelectedRows] = useState([]);

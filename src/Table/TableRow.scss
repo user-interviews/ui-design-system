@@ -1,7 +1,7 @@
 @import '../../scss/theme.scss';
 
 .TableRow {
-  &:hover:not(.TableRow--remove-hover) {
+  &:hover {
     td {
       background-color: $ux-gray-100;
     }

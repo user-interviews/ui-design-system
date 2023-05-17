@@ -28,12 +28,6 @@ $warning: $ux-yellow-400;
   outline-offset: 0.125rem;
 }
 
-@mixin btn-focus-outline--dark-bg {
-  box-shadow: none !important;
-  outline: 0.125rem solid $ux-white;
-  outline-offset: 0.125rem;
-}
-
 @mixin btn-remove-bootstrap-focus-outline {
   box-shadow: none !important;
 }

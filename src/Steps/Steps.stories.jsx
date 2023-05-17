@@ -7,6 +7,7 @@ import mdx from './Steps.mdx';
 export default {
   title: 'Components/Steps',
   component: Steps,
+  subcomponents: { Step },
   parameters: {
     docs: {
       page: mdx,

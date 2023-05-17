@@ -14,6 +14,9 @@ import mdx from './Dropdown.mdx';
 export default {
   title: 'Components/Dropdown',
   component: Dropdown,
+  subcomponents: {
+    DropdownDivider, DropdownToggle, DropdownItem, DropdownMenu,
+  },
   parameters: {
     docs: {
       page: mdx,

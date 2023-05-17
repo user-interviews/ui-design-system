@@ -1,6 +1,5 @@
-import { ArgTypes, Canvas } from '@storybook/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Accordion from './Accordion';
-import * as ComponentStories from './Accordion.stories';
 
 # Accordion
 
@@ -10,7 +9,10 @@ import * as ComponentStories from './Accordion.stories';
   Vertically-stacked header that reveal or hide additional content.
 </h4>
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-accordion--default" />
+</Canvas>
+
 
 ### When to use
 
@@ -19,37 +21,51 @@ import * as ComponentStories from './Accordion.stories';
 
 ## Props
 
-<ArgTypes of={Accordion} />
+<ArgsTable of={Accordion} />
 
 ## Stories
 
 ### Default
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-accordion--default" />
+</Canvas>
 
 ### Default Open
 
-<Canvas of={ComponentStories.DefaultOpen} />
+<Canvas>
+  <Story id="components-accordion--default-open" />
+</Canvas>
 
 ### Chevron Left
 
-<Canvas of={ComponentStories.ChevronLeft} />
+<Canvas>
+  <Story id="components-accordion--chevron-left" />
+</Canvas>
 
 ### Borderless
 
-<Canvas of={ComponentStories.Borderless} />
+<Canvas>
+  <Story id="components-accordion--borderless" />
+</Canvas>
 
 ### In Card
 When multiple Cards are stacked, you want to ensure there is proper content alignment with padding. When wrapping `Accordion` in `Card`:
 1. Use `<Card noPadding>`
 2. Use `<AccordionItem borderless>`
 
-<Canvas of={ComponentStories.InCard} />
+<Canvas>
+  <Story id="components-accordion--in-card" />
+</Canvas>
 
 ### Separate
 
-<Canvas of={ComponentStories.Separate} />
+<Canvas>
+  <Story id="components-accordion--separate" />
+</Canvas>
 
 ### Disabled
 
-<Canvas of={ComponentStories.Disabled} />
+<Canvas>
+  <Story id="components-accordion--disabled" />
+</Canvas>

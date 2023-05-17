@@ -1,4 +1,5 @@
 import React from 'react';
+import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 
 import {
   Accordion,
@@ -16,6 +17,10 @@ import mdx from './Accordion.mdx';
 export default {
   title: 'Components/Accordion',
   component: Accordion,
+  decorators: [withKnobs],
+  subcomponents: {
+    AccordionItem, AccordionToggle, AccordionCollapse,
+  },
   parameters: {
     docs: {
       page: mdx,
@@ -23,13 +28,16 @@ export default {
   },
 };
 
-export const Default = (args) => (
+export const Default = () => (
   <Accordion>
     <AccordionItem>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', false)}
         eventKey="0"
+        helperText={text('helperText', 'helper text')}
         leadingIcon={faCreditCard}
-        {...args}
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -41,9 +49,12 @@ export const Default = (args) => (
     </AccordionItem>
     <AccordionItem>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', false)}
         eventKey="1"
+        helperText={text('helperText', 'helper text')}
         leadingIcon={faCreditCard}
-        {...args}
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="1">
         <ul>
@@ -56,20 +67,16 @@ export const Default = (args) => (
   </Accordion>
 );
 
-Default.args = {
-  chevronLeft: false,
-  disabled: false,
-  helperText: 'helper text',
-  title: 'Accordion Toggle',
-};
-
-export const DefaultOpen = (args) => (
+export const DefaultOpen = () => (
   <Accordion defaultActiveKey="1">
     <AccordionItem>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', false)}
         eventKey="0"
+        helperText={text('helperText', 'helper text')}
         leadingIcon={faCreditCard}
-        {...args}
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -81,9 +88,12 @@ export const DefaultOpen = (args) => (
     </AccordionItem>
     <AccordionItem>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', false)}
         eventKey="1"
+        helperText={text('helperText', 'helper text')}
         leadingIcon={faCreditCard}
-        {...args}
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="1">
         <ul>
@@ -94,19 +104,15 @@ export const DefaultOpen = (args) => (
   </Accordion>
 );
 
-DefaultOpen.args = {
-  chevronLeft: false,
-  disabled: false,
-  helperText: 'helper text',
-  title: 'Accordion Toggle',
-};
-
-export const ChevronLeft = (args) => (
+export const ChevronLeft = () => (
   <Accordion>
     <AccordionItem>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', true)}
+        disabled={boolean('disabled', false)}
         eventKey="0"
-        {...args}
+        helperText={text('helperText', 'helper text')}
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -118,8 +124,11 @@ export const ChevronLeft = (args) => (
     </AccordionItem>
     <AccordionItem>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', true)}
+        disabled={boolean('disabled', false)}
         eventKey="1"
-        {...args}
+        helperText={text('helperText', 'helper text')}
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="1">
         <ul>
@@ -132,20 +141,16 @@ export const ChevronLeft = (args) => (
   </Accordion>
 );
 
-ChevronLeft.args = {
-  chevronLeft: true,
-  disabled: false,
-  helperText: 'helper text',
-  title: 'Accordion Toggle',
-};
-
-export const Borderless = (args) => (
+export const Borderless = () => (
   <Accordion flush>
     <AccordionItem borderless>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', false)}
         eventKey="0"
+        helperText={text('helperText', 'helper text')}
         leadingIcon={faCreditCard}
-        {...args}
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -157,9 +162,12 @@ export const Borderless = (args) => (
     </AccordionItem>
     <AccordionItem borderless>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', false)}
         eventKey="1"
+        helperText={text('helperText', 'helper text')}
         leadingIcon={faCreditCard}
-        {...args}
+        title={text('title', 'Accordion Toggle')}
       />
       <AccordionCollapse eventKey="1">
         <ul>
@@ -172,21 +180,17 @@ export const Borderless = (args) => (
   </Accordion>
 );
 
-Borderless.args = {
-  chevronLeft: false,
-  disabled: false,
-  helperText: 'helper text',
-  title: 'Accordion Toggle',
-};
-
-export const InCard = (args) => (
+export const InCard = () => (
   <>
     <Card noPadding>
       <Accordion defaultActiveKey="0" flush>
         <AccordionItem borderless>
           <AccordionToggle
+            chevronLeft={boolean('chevronLeft', false)}
+            disabled={boolean('disabled', false)}
             eventKey="0"
-            {...args}
+            helperText={text('helperText', 'with cardPadding')}
+            title={text('title', 'Accordion Toggle')}
           />
           <AccordionCollapse
             eventKey="0"
@@ -206,20 +210,16 @@ export const InCard = (args) => (
   </>
 );
 
-InCard.args = {
-  chevronLeft: false,
-  disabled: false,
-  helperText: 'helper text',
-  title: 'Accordion Toggle',
-};
-
-export const Separate = (args) => (
+export const Separate = () => (
   <>
     <Accordion>
       <AccordionItem>
         <AccordionToggle
+          chevronLeft={boolean('chevronLeft', false)}
+          disabled={boolean('disabled', false)}
           eventKey="0"
-          {...args}
+          helperText={text('helperText', 'helper text')}
+          title={text('title', 'Accordion Toggle')}
         />
         <AccordionCollapse eventKey="0">
           <ul>
@@ -232,8 +232,11 @@ export const Separate = (args) => (
     <Accordion>
       <AccordionItem>
         <AccordionToggle
+          chevronLeft={boolean('chevronLeft', false)}
+          disabled={boolean('disabled', false)}
           eventKey="1"
-          {...args}
+          helperText={text('helperText', 'helper text')}
+          title={text('title', 'Accordion Toggle')}
         />
         <AccordionCollapse eventKey="1">
           <ul>
@@ -245,19 +248,15 @@ export const Separate = (args) => (
   </>
 );
 
-Separate.args = {
-  chevronLeft: false,
-  disabled: false,
-  helperText: 'helper text',
-  title: 'Accordion Toggle',
-};
-
-export const Disabled = (args) => (
+export const Disabled = () => (
   <Accordion>
     <AccordionItem>
       <AccordionToggle
+        chevronLeft={boolean('chevronLeft', false)}
+        disabled={boolean('disabled', true)}
         eventKey="0"
-        {...args}
+        helperText={text('helperText', 'helper text')}
+        title={text('title', 'Accordion Toggle -- disabled')}
       />
       <AccordionCollapse eventKey="0">
         <ul>
@@ -269,10 +268,3 @@ export const Disabled = (args) => (
     </AccordionItem>
   </Accordion>
 );
-
-Disabled.args = {
-  chevronLeft: false,
-  disabled: true,
-  helperText: 'helper text',
-  title: 'Accordion Toggle -- disabled',
-};

@@ -1,6 +1,5 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Popper from './Popper';
-import * as ComponentStories from './Popper.stories';
 
 # Popper
 
@@ -10,23 +9,36 @@ import * as ComponentStories from './Popper.stories';
   A Popper can be used to display some content on top of another.
 </h4>
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-popper" />
+</Canvas>
 
+### When to use
+- Reason 1
+- Reason 2
+
+### When to not use
+- Reason 1
+- Reason 2
 
 ## Props
 
-<ArgTypes of={Popper} />
+<ArgsTable of={Popper} />
 
 
 ## Stories
 
 ### Default
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-popper--default" />
+</Canvas>
 
 ### Dark
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-popper--dark" />
+</Canvas>
 
 
 ## Formatting

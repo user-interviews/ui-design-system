@@ -14,6 +14,9 @@ export default {
   title: 'Components/Popover',
   component: Popover,
   decorators: [withKnobs],
+  subcomponents: {
+    PopoverBody, PopoverCard, OverlayTrigger,
+  },
   parameters: {
     docs: {
       page: mdx,

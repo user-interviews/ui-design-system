@@ -1,6 +1,5 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Heading from './Heading';
-import * as ComponentStories from './Heading.stories';
 
 # Heading
 
@@ -10,12 +9,14 @@ import * as ComponentStories from './Heading.stories';
   Headings are used as the titles of each major section of a page in the interface. 
 </h4>
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-heading--default" />
+</Canvas>
 
 
 ## Props
 
-<ArgTypes of={Heading} />
+<ArgsTable of={Heading} />
 
 ## Stories
 
@@ -24,7 +25,9 @@ import * as ComponentStories from './Heading.stories';
 
 A default `Heading` as a level `2` with size `xxl` and weight `bold`
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-heading--default" />
+</Canvas>
 
 
 ### Levels
@@ -35,7 +38,9 @@ Adjust the font `size` with the available sizes:
 
 `xxxl`, `xxl`, `xl`, `lg`, `md`, `sm`, `xs`
 
-<Canvas of={ComponentStories.Levels} />
+<Canvas>
+  <Story id="components-heading--levels" />
+</Canvas>
 
 #### Best practices:
 
@@ -66,7 +71,9 @@ Use to give heading one of the supported font weights:
 
 `bold`, `medium`, or `regular`
 
-<Canvas of={ComponentStories.Weights} />
+<Canvas>
+  <Story id="components-heading--weight" />
+</Canvas>
 
 
 ### Alignment
@@ -75,4 +82,6 @@ Use to set heading alignment:
 
 `left`, `center`, or `right`
 
-<Canvas of={ComponentStories.Alignment} />
+<Canvas>
+  <Story id="components-heading--alignment" />
+</Canvas>

@@ -1,6 +1,5 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import LoadingSkeleton from './LoadingSkeleton';
-import * as ComponentStories from './LoadingSkeleton.stories';
 
 # LoadingSkeleton
 
@@ -11,7 +10,9 @@ import * as ComponentStories from './LoadingSkeleton.stories';
   renders on the page. It improves load time perception for users.
 </h4>
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-loadingskeleton--default" />
+</Canvas>
 
 ### When to use 
 - For representing all content on initial page load 
@@ -40,23 +41,31 @@ import * as ComponentStories from './LoadingSkeleton.stories';
 
 ## Props
 
-<ArgTypes of={LoadingSkeleton} />
+<ArgsTable of={LoadingSkeleton} />
 
 
 ## Stories 
 
 ### Default
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-loadingskeleton--default" />
+</Canvas>
 
 ### Multi-line
 
-<Canvas of={ComponentStories.MultiLine} />
+<Canvas>
+  <Story id="components-loadingskeleton--multi-line" />
+</Canvas>
 
 ### Height and Width
 
-<Canvas of={ComponentStories.HeightAndWidth} />
+<Canvas>
+  <Story id="components-loadingskeleton--height-and-width" />
+</Canvas>
 
 ### Circle
 
-<Canvas of={ComponentStories.Circle} />
+<Canvas>
+  <Story id="components-loadingskeleton--circle" />
+</Canvas>

@@ -1,6 +1,5 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Flex from './Flex';
-import * as ComponentStories from './Flex.stories';
 
 # Flex
 
@@ -18,22 +17,30 @@ Flexbox CSS properties in the following documentation:
   <li><a href='https://css-tricks.com/snippets/css/a-guide-to-flexbox/'>A Complete Guide to Flex - CSS Tricks</a></li>
 </ul>
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="layouts-flex--default" />
+</Canvas>
 
 ## Props
 
-<ArgTypes of={Flex} />
+<ArgsTable of={Flex} />
 
 ## Stories
 
 ### Default
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="layouts-flex--default" />
+</Canvas>
 
 ### Flex Container
 
-<Canvas of={ComponentStories.FlexContainer} />
+<Canvas>
+  <Story id="layouts-flex--flex-container" />
+</Canvas>
 
 ### Flex Item
 
-<Canvas of={ComponentStories.FlexItem} />
+<Canvas>
+  <Story id="layouts-flex--flex-item" />
+</Canvas>

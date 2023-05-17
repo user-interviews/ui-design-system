@@ -1,6 +1,5 @@
-import { ArgTypes, Canvas } from '@storybook/blocks';
-import Button from './Button';
-import * as ComponentStories from './Button.stories';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { Button } from 'src/Button';
 
 # Button
 
@@ -10,11 +9,13 @@ import * as ComponentStories from './Button.stories';
 	Buttons allow users to take actions and make choices.
 </h4>
 
-<Canvas of={ComponentStories.Primary} />
+<Canvas>
+  <Story id="components-button--primary" />
+</Canvas>
 
 ## Props
 
-<ArgTypes of={Button} />
+<ArgsTable of={Button} />
 
 ## Anatomy:
 - **Leading icon (optional):** Should be included when the button has a clear action verb (e.g. Edit, Save, Delete)
@@ -58,39 +59,53 @@ import * as ComponentStories from './Button.stories';
 
 - Important actions that usually trigger a longer workflow.
 
-<Canvas of={ComponentStories.Primary} />
+<Preview>
+  <Story id="components-button--primary" />
+</Preview>
 
 ### Danger
 
 - Used to indicate destructive actions.
 
-<Canvas of={ComponentStories.Danger} />
+<Preview>
+  <Story id="components-button--danger" />
+</Preview>
 
 ### Warning
 
 - Currently only used for managing project drafts, but could potentially be used to indicate actions that need require special attention.
 
-<Canvas of={ComponentStories.Warning} />
+<Preview>
+  <Story id="components-button--warning" />
+</Preview>
 
 ### Transparent
 
-<Canvas of={ComponentStories.Transparent} />
+<Preview>
+  <Story id="components-button--transparent" />
+</Preview>
 
 ### Link
 - A button that is styled like a link
 
-<Canvas of={ComponentStories.Link} />
+<Preview>
+  <Story id="components-button--link" />
+</Preview>
 
 ### Brands
 - Usually used for authentication purposes with different brands
 
-<Canvas of={ComponentStories.Brands} />
+<Preview>
+  <Story id="components-button--brands" />
+</Preview>
 
 ### Loading
 - The loading state is displayed when an action has been initiated and the system is processing it.
 For instance, when a page is being saved or a file is uploading, the button typically transforms into a loading state with altered
 loading text and a spinner. This is accompanied by a disabled state to prevent duplicated actions.
 
-<Canvas of={ComponentStories.Loading} />
+<Preview>
+  <Story id="components-button--loading" />
+</Preview>
 
 

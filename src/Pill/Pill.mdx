@@ -1,6 +1,5 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import Pill from './Pill';
-import * as ComponentStories from './Pill.stories';
 
 # Pill
 
@@ -10,7 +9,9 @@ import * as ComponentStories from './Pill.stories';
   Pills are used to inform users of the status of an object or of an action that’s been taken.
 </h4>
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-pill--default" />
+</Canvas>
 
 ### When to use
 - Use to label, categorize, or organize items using keywords that describe them
@@ -20,7 +21,7 @@ import * as ComponentStories from './Pill.stories';
 
 ## Props
 
-<ArgTypes of={Pill} />
+<ArgsTable of={Pill} />
 
 
 ## Stories
@@ -28,7 +29,9 @@ import * as ComponentStories from './Pill.stories';
 ### Default
 - The default Pill and available colors
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-pill--default" />
+</Canvas>
 
 ### Statuses
 
@@ -53,28 +56,38 @@ Use the appropriate color to indicate the status of an object
 **Inactive**
 - gray: ("Completed", "Expired")
 
-<Canvas of={ComponentStories.Statuses} />
+<Canvas>
+  <Story id="components-pill--statuses" />
+</Canvas>
 
 ### With Container
 - The `Pills` container should be used when a collection of `Pill` components are displayed
 
-<Canvas of={ComponentStories.WithContainer} />
+<Canvas>
+  <Story id="components-pill--with-container" />
+</Canvas>
 
 ### With Leading Icon
 - Import an icon that is most relevant to the text
 
-<Canvas of={ComponentStories.WithLeadingIcon} />
+<Canvas>
+  <Story id="components-pill--with-leading-icon" />
+</Canvas>
 
 ### With Close
 - For Pills that need to option to be closed
 
-<Canvas of={ComponentStories.WithClose} />
+<Canvas>
+  <Story id="components-pill--with-close" />
+</Canvas>
 
 ### With Link
 - For Pills that link to more information
 - The Pill accepts an `<a>` tag as a child
 
-<Canvas of={ComponentStories.WithLink} />
+<Canvas>
+  <Story id="components-pill--with-link" />
+</Canvas>
 
 
 ## Formatting

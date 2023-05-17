@@ -1,6 +1,5 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import IconCell from './IconCell';
-import * as ComponentStories from './IconCell.stories';
 
 # Icon Cell
 
@@ -10,22 +9,52 @@ import * as ComponentStories from './IconCell.stories';
   An icon with a colored background used to draw more attention to surrounding elements.
 </h4>
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-iconcell--default" />
+</Canvas>
 
+### When to use
+- Reason 1
+- Reason 2
+
+### When to not use
+- Reason 1
+- Reason 2
 
 ## Props
 
-<ArgTypes of={IconCell} />
+<ArgsTable of={IconCell} />
 
 ## Stories
 
 ### Default
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-iconcell--default" />
+</Canvas>
 
 
 ## Formatting
 
+### States
+
 ### Anatomy
 - **Icon: ** an icon from FontAwesome
 - **Background: ** a colored background
+
+### Sizing
+
+### Alignment
+
+
+## Best practices
+
+### General
+
+### Behavior
+
+### Implementation
+
+- Use Regular Font Awesome icons
+
+### UX Copy

@@ -1,6 +1,5 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import CheckboxButtonGroup from './CheckboxButtonGroup';
-import * as ComponentStories from './CheckboxButtonGroup.stories';
 
 # CheckboxButtonGroup
 
@@ -10,12 +9,14 @@ import * as ComponentStories from './CheckboxButtonGroup.stories';
   A FormGroup that utilizes Checkboxes. Supports borders, row/column orientations, and descriptions.
 </h4>
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--default"/>
+</Canvas>
 
 
 ## Props
 
-<ArgTypes of={CheckboxButtonGroup} />
+<ArgsTable of={CheckboxButtonGroup} />
 
 ## Stories
 
@@ -23,31 +24,43 @@ import * as ComponentStories from './CheckboxButtonGroup.stories';
 
 - Multi-selection button. Can be toggled on/off by clicking.
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--default"/>
+</Canvas>
 
 ### Row
 
-<Canvas of={ComponentStories.Row} />
+<Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--row"/>
+</Canvas>
 
 ### Bordered Row
 
 - Multi-selection button. Only used in the context of Checkbox FormGroups.
 
-<Canvas of={ComponentStories.BorderedRow} />
+<Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--bordered-row"/>
+</Canvas>
 
 ### Description Column
 
 - Multi-selection button. Includes helper text and/or a description in addition to the default label.
 
-<Canvas of={ComponentStories.DescriptionColumn} />
+<Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--description-column"/>
+</Canvas>
 
 ### Description Row
 
-<Canvas of={ComponentStories.DescriptionRow} />
+<Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--description-row"/>
+</Canvas>
 
 ### Bordered Column Full Width
 
-<Canvas of={ComponentStories.BorderedColumnFullWidth} />
+<Canvas>
+  <Story id="components-form-elements-checkboxbuttongroup--bordered-column-full-width"/>
+</Canvas>
 
 ## Formatting
 

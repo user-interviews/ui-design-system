@@ -19,10 +19,6 @@
     white-space: nowrap;
   }
 
-  &--remove-border-bottom {
-    border-bottom: none;
-  }
-
   &--compact {
     padding: $ux-spacing-30 $ux-spacing-50;
     max-height: 3.25rem;
@@ -35,7 +31,7 @@
   &--sticky-column {
     position: sticky; 
     background: $ux-white;
-    z-index: $z-index-table-cell-sticky-column;
+    z-index: $z-index-10;
 
     &--corner {
       background-color: $ux-gray-100;
@@ -55,11 +51,5 @@
     position: sticky;
     top: 0;
     z-index: $z-index-1;
-  }
-
-  &--sticky-row-bottom {
-    position: sticky;
-    bottom: 0;
-    z-index: 11;
   }
 }

@@ -1,6 +1,5 @@
-import { ArgTypes, Canvas } from '@storybook/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import RadioButtonGroup from './RadioButtonGroup';
-import * as ComponentStories from './RadioButtonGroup.stories';
 
 # RadioButtonGroup
 
@@ -10,11 +9,13 @@ import * as ComponentStories from './RadioButtonGroup.stories';
   A collections of radio buttons describing a set of related options. Only one option selected at a time.
 </h4>
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-form-elements-radiobuttongroup--default"/>
+</Canvas>
 
 ## Props
 
-<ArgTypes of={RadioButtonGroup} />
+<ArgsTable of={RadioButtonGroup} />
 
 ## Stories
 
@@ -22,33 +23,45 @@ import * as ComponentStories from './RadioButtonGroup.stories';
 
 Single-selection button.
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-form-elements-radiobuttongroup--default"/>
+</Canvas>
 
 ### Row
 
-<Canvas of={ComponentStories.Row} />
+<Canvas>
+  <Story id="components-form-elements-radiobuttongroup--row"/>
+</Canvas>
 
 ### Bordered Row
 
 Single-selection button. Only used in the context of Radio FormGroups.
 
-<Canvas of={ComponentStories.BorderedRow} />
+<Canvas>
+  <Story id="components-form-elements-radiobuttongroup--bordered-row"/>
+</Canvas>
 
 ### Description Column
 
-<Canvas of={ComponentStories.DescriptionColumn} />
+<Canvas>
+  <Story id="components-form-elements-radiobuttongroup--description-column"/>
+</Canvas>
 
 ### Description Row
 
 Single-selection button. Includes helper text and/or a description in addition to the default label.
 
-<Canvas of={ComponentStories.DescriptionRow} />
+<Canvas>
+  <Story id="components-form-elements-radiobuttongroup--description-row"/>
+</Canvas>
 
 ### Bordered Column Full Width
 
 Single-selection button. Includes helper text and/or a description in addition to the default label.
 
-<Canvas of={ComponentStories.BorderedColumnFullWidth} />
+<Canvas>
+  <Story id="components-form-elements-radiobuttongroup--bordered-column-full-width"/>
+</Canvas>
 
 
 ## Formatting

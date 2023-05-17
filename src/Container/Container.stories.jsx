@@ -13,6 +13,9 @@ import mdx from './Container.mdx';
 export default {
   title: 'Layouts/Container',
   component: Container,
+  subcomponents: {
+    Col, Row,
+  },
   decorators: [withKnobs],
   parameters: {
     docs: {

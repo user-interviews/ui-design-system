@@ -1,7 +1,6 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import { Figma } from "storybook-addon-designs/blocks"
 import Dropdown from './Dropdown';
-import * as ComponentStories from './Dropdown.stories';
 
 # Dropdown
 
@@ -12,7 +11,9 @@ import * as ComponentStories from './Dropdown.stories';
   Typically contained within a button, an action is initiated based on the selection.
 </h4>
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-dropdown--default" />
+</Canvas>
 
 
 ### When to not use
@@ -23,7 +24,7 @@ Avoid the Dropdown component if:
 
 ## Props
 
-<ArgTypes of={Dropdown} />
+<ArgsTable of={Dropdown} />
 
 ## Stories
 
@@ -31,34 +32,46 @@ Avoid the Dropdown component if:
 
 - The basic Dropdown is composed of a wrapping Dropdown and inner `<DropdownMenu>`, and `<DropdownToggle>`. By default the `<DropdownToggle>` will render a Button component and accepts all the same props.
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-dropdown--default" />
+</Canvas>
 
 ### Sizes
 
-<Canvas of={ComponentStories.Sizes} />
+<Canvas>
+  <Story id="components-dropdown--sizes" />
+</Canvas>
 
 ### Icon Default
 - A single icon button that opens a `<DropdownMenu>`.
 
-<Canvas of={ComponentStories.IconDefault} />
+<Canvas>
+  <Story id="components-dropdown--icon-default" />
+</Canvas>
 
 ### Icon Swap
 - To use a different icon, add the `removeCaret` prop to remove the default icon.
 - Be sure to include an appropriate `ariaLabel`
 
-<Canvas of={ComponentStories.IconSwap} />
+<Canvas>
+  <Story id="components-dropdown--icon-swap" />
+</Canvas>
 
 ### Unstyled Toggle
 - Use the `unstyled` and `removeCaret` prop on `DropdownToggle` to remove default styling.
 
-<Canvas of={ComponentStories.UnstyledToggle} />
+<Canvas>
+  <Story id="components-dropdown--unstyled-toggle" />
+</Canvas>
 
 ### With Divider
 
 - Visually separates related items in a dropdown menu.
 - Use sparingly, and only when necessary, to avoid cluttering the dropdown menu with too many visual separators.
 
-<Canvas of={ComponentStories.WithDivider} />
+<Canvas>
+  <Story id="components-dropdown--with-divider" />
+</Canvas>
 
 ## Formatting
 
@@ -83,7 +96,7 @@ The labels should:
 
 - Be clear and predictable.
 - Lead with a strong verb that encourages action.
-    - To provide enough context, use 'verb' + 'noun' format unless the action is clear with a single verb
+    - To provide enough context, use {verb} + {noun} format unless the action is clear with a single verb
 - Be concise.
 
 ### To Label, or Not To Label

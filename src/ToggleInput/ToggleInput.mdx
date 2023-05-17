@@ -1,6 +1,5 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import ToggleInput from './ToggleInput';
-import * as ComponentStories from './ToggleInput.stories';
 
 # ToggleInput
 
@@ -10,21 +9,58 @@ import * as ComponentStories from './ToggleInput.stories';
   A control used to switch between two states (often off or on).
 </h4>
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-toggleinput--default" />
+</Canvas>
 
+### When to use
+- Reason 1
+- Reason 2
 
-<ArgTypes of={ToggleInput} />
+### When to not use
+- Reason 1
+- Reason 2
+
+<ArgsTable of={ToggleInput} />
 
 ## Stories
 
 ### Default
 
-<Canvas of={ComponentStories.Default} />
+<Canvas>
+  <Story id="components-toggleinput--default" />
+</Canvas>
 
 ### Label Left
 
-<Canvas of={ComponentStories.LabelLeft} />
+<Canvas>
+  <Story id="components-toggleinput--label-left" />
+</Canvas>
 
 ### Disabled
 
-<Canvas of={ComponentStories.Disabled} />
+<Canvas>
+  <Story id="components-toggleinput--disabled" />
+</Canvas>
+
+
+## Formatting
+
+### States
+
+### Anatomy 
+
+### Sizing
+
+### Alignment
+
+
+## Best practices
+
+### General
+
+### Behavior
+
+### Implementation
+
+### UX Copy

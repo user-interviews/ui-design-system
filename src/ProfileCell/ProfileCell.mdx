@@ -1,6 +1,5 @@
-import { ArgTypes, Canvas } from '@storybook/blocks';
+import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
 import ProfileCell from './ProfileCell';
-import * as ComponentStories from './ProfileCell.stories';
 
 # Profile Cell
 
@@ -10,12 +9,22 @@ import * as ComponentStories from './ProfileCell.stories';
   Displays information about a user which can include an avatar, name, email, phone number, timezone (or other relevant pieces of information).
 </h4>
 
-<Canvas of={ComponentStories.Small} />
+<Canvas>
+  <Story id="components-profile-cell--small" />
+</Canvas>
+
+### When to use
+- Reason 1
+- Reason 2
+
+### When to not use
+- Reason 1
+- Reason 2
 
 
 ## Props
 
-<ArgTypes of={ProfileCell} />
+<ArgsTable of={ProfileCell} />
 
 
 ## Stories
@@ -23,20 +32,28 @@ import * as ComponentStories from './ProfileCell.stories';
 ### Small
 - Typically contains one or two lines of information (e.g. name and email).
 
-<Canvas of={ComponentStories.Small} />
+<Canvas>
+  <Story id="components-profile-cell--small" />
+</Canvas>
 
 ### Large
 - Can contain multiple lines of information (e.g. name, email, phone number, and timezone).
 
-<Canvas of={ComponentStories.Large} />
+<Canvas>
+  <Story id="components-profile-cell--large" />
+</Canvas>
 
 ### With Image
 
-<Canvas of={ComponentStories.WithImage} />
+<Canvas>
+  <Story id="components-profile-cell--with-image" />
+</Canvas>
 
 ### With Trailing Icon
 
-<Canvas of={ComponentStories.WithTrailingIcon} />
+<Canvas>
+  <Story id="components-profile-cell--with-trailing-icon" />
+</Canvas>
 
 ### Loading
 
@@ -44,7 +61,9 @@ Use the `isLoading` prop on `ProfileCell` to create a low fidelity representatio
 
 `ProfileCellSkeleton` is also available for use.
 
-<Canvas of={ComponentStories.Loading} />
+<Canvas>
+  <Story id="components-profile-cell--loading" />
+</Canvas>
 
 
 ## Formatting
