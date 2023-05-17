@@ -45,25 +45,8 @@ import * as ComponentStories from './Table.stories';
 ### Table No Hover State
 - Set `removeHover` on a `TableRow` component to remove the default hover state.
 
-<Canvas>
-  <Story id="components-table--table-no-hover-state" />
-</Canvas>
+<Canvas of={ComponentStories.TableNoHoverState} />
 
-### Loading Default
-- Set `isLoading` on the `<Table>` component to render the default `<TableLoadingSkeleton>`
-
-<Canvas>
-  <Story id="components-table--loading-default" />
-</Canvas>
-
-### Loading Custom Columns
-- Adjust the column count and widths of the `<TableLoadingSkeleton>` by giving `loadingColumns` an array of widths (e.g. `[75, 100, 250, 250, 100]`) 
-- Adjust the row count of the `<TableLoadingSkeleton>` by giving `loadingRows` a number
-- The loading skeleton does not need to perfectly match the Table that is eventually rendered.
-
-<Canvas>
-  <Story id="components-table--loading-custom-columns" />
-</Canvas>
 
 ### Table With Fixed Column Widths
 - Create a column with a fixed width
