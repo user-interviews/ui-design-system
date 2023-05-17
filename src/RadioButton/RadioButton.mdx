@@ -1,5 +1,6 @@
-import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import RadioButton from './RadioButton';
+import * as ComponentStories from './RadioButton.stories';
 
 # RadioButton
 
@@ -9,50 +10,26 @@ import RadioButton from './RadioButton';
   A radio button control. In a given group, only one radio button can be selected at the same time.
 </h4>
 
-<Canvas>
-  <Story id="components-radiobutton--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
-### When to use 
-- Reason 1
-- Reason 2
-
-### When to not use
-- Reason 1
-- Reason 2
 
 ## Props
 
-<ArgsTable of={RadioButton} />
+<ArgTypes of={RadioButton} />
 
 
 ## Stories
 
 ### Default
 
-<Canvas>
-  <Story id="components-radiobutton--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
+### With Description
+
+<Canvas of={ComponentStories.WithDescription} />
 
 ## Formatting
 
 ### States
 - checked, unchecked
 
-### Anatomy 
-
-### Sizing
-
-### Alignment
-
-
-## Best practices
-
-### General
-
-### Behavior
-
-### Implementation
-
-### UX Copy
