@@ -19,9 +19,6 @@ export default {
   title: 'Components/Table',
   component: Table,
   decorators: [withKnobs],
-  subcomponents: {
- TableBody, TableCell, TableHead, TableRow, TableSortLabel,
-},
   parameters: {
     docs: {
       page: mdx,

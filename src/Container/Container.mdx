@@ -1,5 +1,6 @@
-import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
-import Container from './Container'
+import { ArgTypes,  Canvas } from '@storybook/blocks';
+import Container from './Container';
+import * as ComponentStories from './Container.stories';
 
 # Container
 
@@ -15,71 +16,51 @@ There are six default breakpoints, sometimes referred to as grid tiers, for buil
 
 | Breakpoint        | Class infix | Dimensions |
 |-------------------|-------------|------------|
-| x-small           | none        | <576px     |
-| small             | sm          | ≥576px     |
-| medium            | md          | ≥768px     |
-| large             | lg          | ≥992px     |
-| extra large       | xl          | ≥1200px    |
-| extra extra large | xxl         | ≥1400px    |
+| x-small           | none        | {'<'}576px     |
+| small             | sm          | {'≥'}576px     |
+| medium            | md          | {'≥'}768px     |
+| large             | lg          | {'≥'}992px     |
+| extra large       | xl          | {'≥'}1200px    |
+| extra extra large | xxl         | {'≥'}1400px    |
 
-<Canvas>
-  <Story id="layouts-container--default"/>
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
-<ArgsTable of={Container} />
+<ArgTypes of={Container} />
 
 ## Stories
 
 ### Default
 
-<Canvas>
-  <Story id="layouts-container--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### Fluid Container
 
-<Canvas>
-  <Story id="layouts-container--fluid-container" />
-</Canvas>
+<Canvas of={ComponentStories.FluidContainer} />
 
 ### Fluid Container With Breakpoints
 
-<Canvas>
-  <Story id="layouts-container--fluid-container-with-breakpoints" />
-</Canvas>
+<Canvas of={ComponentStories.FluidContainerWithBreakpoints} />
 
 ### Auto Layout Columns
 
-<Canvas>
-  <Story id="layouts-container--auto-layout-columns" />
-</Canvas>
+<Canvas of={ComponentStories.AutoLayoutColumns} />
 
 ### Setting One Column Width
 
-<Canvas>
-  <Story id="layouts-container--setting-one-column-width" />
-</Canvas>
+<Canvas of={ComponentStories.SettingOneColumnWidth} />
 
 ### Responsive Grids
 
-<Canvas>
-  <Story id="layouts-container--responsive-grids" />
-</Canvas>
+<Canvas of={ComponentStories.ResponsiveGrids} />
 
 ### Mixing Breakpoints
 
-<Canvas>
-  <Story id="layouts-container--mixing-breakpoints" />
-</Canvas>
+<Canvas of={ComponentStories.MixingBreakpoints} />
 
 ### Offsetting Columns
 
-<Canvas>
-  <Story id="layouts-container--offsetting-columns" />
-</Canvas>
+<Canvas of={ComponentStories.OffsettingColumns} />
 
 ### Setting Column Widths In Row
 
-<Canvas>
-  <Story id="layouts-container--setting-column-widths-in-row" />
-</Canvas>
+<Canvas of={ComponentStories.SettingColumnWidthsInRow} />

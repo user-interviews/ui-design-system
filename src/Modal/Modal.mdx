@@ -1,5 +1,6 @@
-import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import Modal from './Modal';
+import * as ComponentStories from './Modal.stories';
 
 # Modal
 
@@ -16,12 +17,11 @@ import Modal from './Modal';
 - Use to show relevant info
 
 ### When to not use
-- Reason 1
-- Reason 2
+- Interruption of user flow: Modal dialogs can interrupt the user's flow and cause frustration, especially if they appear unexpectedly or are difficult to dismiss. If the information or input required can be displayed or collected in a non-intrusive way, it is generally better to avoid using a modal.
 
 ## Props 
 
-<ArgsTable of={Modal} />
+<ArgTypes of={Modal} />
 
 
 ## Stories

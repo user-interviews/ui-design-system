@@ -1,6 +1,5 @@
-import { Meta } from '@storybook/addon-docs/blocks';
-import { colors } from 'src/Styles';
-import ImageFile from '../public/ui-design-system.svg';
+import { Meta } from '@storybook/blocks';
+import ImageFile from '../public/ui-design-system-dark.svg';
 import FigmaLogo from '../public/figma-logo.svg';
 import GithubLogo from '../public/github-logo.svg';
 
@@ -16,38 +15,28 @@ import GithubLogo from '../public/github-logo.svg';
   <a
     type="button"
     style={{
-      background: colors.UX_NEUTRAL_300,
-      borderRadius: '60px',
       fontSize: '14px',
       fontWeight: 'bold',
-      padding: '10px 20px',
       margin: '10px',
-      border: '0',
-      color: colors.UX_GRAY_700,
     }}
     href="https://www.figma.com/file/471iS3QrpPtXZpS1xbsJ20/Components"
     rel="noopener noreferrer"
     target="_blank"
   >
-    <img alt="" src={FigmaLogo} style={{paddingRight: '0.25rem' }} />
-    Figma Library
+    <img alt="" src={FigmaLogo} style={{marginRight: '0.5rem' }} />
+    <span>Figma Library</span>
   </a>
   <a
     type="button"
     style={{
-      background: colors.UX_NEUTRAL_300,
-      borderRadius: '60px',
       fontSize: '14px',
       fontWeight: 'bold',
-      padding: '10px 20px',
-      border: '0',
-      color: colors.UX_GRAY_700,
     }}
     href="https://github.com/user-interviews/ui-design-system"
     rel="noopener noreferrer"
     target="_blank"
   >
-      <img alt="" src={GithubLogo} style={{paddingRight: '0.25rem' }}/>
-      Github Repo
+      <img alt="" src={GithubLogo} style={{marginRight: '0.5rem' }}/>
+      <span>Github Repo</span>
   </a>
 </div>

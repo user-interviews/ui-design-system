@@ -1,5 +1,6 @@
-import { Story, ArgsTable, Canvas } from '@storybook/addon-docs/blocks';
+import {  ArgTypes, Canvas } from '@storybook/blocks';
 import FormGroup from './FormGroup';
+import * as ComponentStories from './FormGroup.stories';
 
 # FormGroup
 
@@ -10,21 +11,12 @@ import FormGroup from './FormGroup';
   Here we use an Input field as the form control.
 </h4>
 
-<Canvas>
-  <Story id="components-form-elements-form-group--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
-### When to use
-- Reason 1
-- Reason 2
-
-### When to not use
-- Reason 1
-- Reason 2
 
 ## Props
 
-<ArgsTable of={FormGroup} />
+<ArgTypes of={FormGroup} />
 
 ## Stories
 
@@ -33,18 +25,14 @@ import FormGroup from './FormGroup';
 - Used to give the user an idea of what sort text they should include here. Does not carry over as
  default text if no other text is added, so if left blank will produce an error.
 
-<Canvas>
-  <Story id="components-form-elements-form-group--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### With Helper Text
 
 - Information tied to a field that gives suggestions or additional information that might
 be beneficial to the user
 
-<Canvas>
-  <Story id="components-form-elements-form-group--with-helper-text" />
-</Canvas>
+<Canvas of={ComponentStories.WithHelperText} />
 
 ### Required
 
@@ -52,9 +40,7 @@ be beneficial to the user
 - If some fields are required, indicate all required ones
 - If most fields are required, indicate optional fields by displaying "(Optional)" next to the label
 
-<Canvas>
-  <Story id="components-form-elements-form-group--required" />
-</Canvas>
+<Canvas of={ComponentStories.Required} />
 
 ### With Label Tooltip
 
@@ -62,35 +48,25 @@ be beneficial to the user
 This information is typically more of a recommendation, and not vital for the user to know, but
 helpful if they do!
 
-<Canvas>
-  <Story id="components-form-elements-form-group--with-label-tooltip" />
-</Canvas>
+<Canvas of={ComponentStories.WithLabelTooltip} />
 
 ### Leading Icon
 
-<Canvas>
-  <Story id="components-form-elements-form-group--with-leading-icon" />
-</Canvas>
+<Canvas of={ComponentStories.WithLeadingIcon} />
 
 ### Trailing Icon
 
-<Canvas>
-  <Story id="components-form-elements-form-group--with-trailing-icon" />
-</Canvas>
+<Canvas of={ComponentStories.WithTrailingIcon} />
 
 ### Trailing Icon with Button
 
 - This has a trailing icon wrapped in a button you can pass an onClick function to.
 
-<Canvas>
-  <Story id="components-form-elements-form-group--with-trailing-icon-and-button" />
-</Canvas>
+<Canvas of={ComponentStories.WithTrailingIconAndButton} />
 
 ### Leading & Trailing Icons
 
-<Canvas>
-  <Story id="components-form-elements-form-group--with-leading-and-trailing-icons" />
-</Canvas>
+<Canvas of={ComponentStories.WithLeadingAndTrailingIcons} />
 
 ### Error
 
@@ -100,27 +76,4 @@ in a new browser tab
   - When `displayErrorText` is true, be sure to set an `aria-invalid` and `aria-describedby='form-errors-${inputKey}'` 
 on the invalid input when there is an error so that screen readers will read the error message.
 
-<Canvas>
-  <Story id="components-form-elements-form-group--with-errors" />
-</Canvas>
-
-## Formatting
-
-### States
-
-### Anatomy
-
-### Sizing
-
-### Alignment
-
-
-## Best practices
-
-### General
-
-### Behavior
-
-### Implementation
-
-### UX Copy
+<Canvas of={ComponentStories.WithErrors} />

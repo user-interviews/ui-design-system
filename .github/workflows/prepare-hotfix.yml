@@ -15,9 +15,9 @@ jobs:
       - uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v3
         with:
-          node-version: '14.17.4'
+          node-version-file: '.node-version'
 
       - name: Create hotfix branch
         run: git checkout -b hotfix/${{ github.event.inputs.version }}
