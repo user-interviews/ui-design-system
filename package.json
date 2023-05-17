@@ -137,7 +137,7 @@
     "scss"
   ],
   "engines": {
-    "node": ">= 16 < 17",
+    "node": ">= 16 < 19",
     "yarn": "^ 1.22"
   },
   "main": "lib/index.js",
