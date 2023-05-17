@@ -1,8 +1,9 @@
-import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import Drawer from './Drawer';
 import DrawerHeader from './DrawerHeader';
 import DrawerBody from './DrawerBody';
 import DrawerFooter from './DrawerFooter';
+import * as ComponentStories from './Drawer.stories';
 
 # Drawer
 
@@ -12,6 +13,8 @@ import DrawerFooter from './DrawerFooter';
   Drawers are container elements which slide in and sit on top of an application's main window. To return to the main interface users must click outside of the drawer, click an action within the drawer such as a close or cancel button, or press the escape key.
 </h4>
 
+<Canvas of={ComponentStories.Default} />
+
 ### When to use 
 When we want to focus the user’s attention on an interactive interface or a large amount of information
 
@@ -20,7 +23,7 @@ When there is too much negative space with the content required. Consider a moda
 
 ## Props
 
-<ArgsTable of={Drawer} />
+<ArgTypes of={Drawer} />
 
 ## Anatomy:
 * **Drawer**

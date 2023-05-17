@@ -1,5 +1,4 @@
 import React from 'react';
-import { withKnobs } from '@storybook/addon-knobs';
 
 import Avatar from 'src/Avatar';
 import mdx from './Avatar.mdx';
@@ -7,7 +6,6 @@ import mdx from './Avatar.mdx';
 export default {
   title: 'Components/Avatar',
   component: Avatar,
-  decorators: [withKnobs],
   parameters: {
     docs: {
       page: mdx,

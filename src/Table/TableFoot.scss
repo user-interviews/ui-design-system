@@ -1,0 +1,10 @@
+@import '../../scss/theme';
+
+.TableFoot {
+
+  &--sticky-row {
+    position: sticky;
+    bottom: 0;
+    z-index: $z-index-table-foot-sticky-row;
+  }
+}

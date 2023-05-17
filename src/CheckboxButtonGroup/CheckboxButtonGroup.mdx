@@ -1,5 +1,6 @@
-import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import CheckboxButtonGroup from './CheckboxButtonGroup';
+import * as ComponentStories from './CheckboxButtonGroup.stories';
 
 # CheckboxButtonGroup
 
@@ -9,14 +10,12 @@ import CheckboxButtonGroup from './CheckboxButtonGroup';
   A FormGroup that utilizes Checkboxes. Supports borders, row/column orientations, and descriptions.
 </h4>
 
-<Canvas>
-  <Story id="components-form-elements-checkboxbuttongroup--default"/>
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 
 ## Props
 
-<ArgsTable of={CheckboxButtonGroup} />
+<ArgTypes of={CheckboxButtonGroup} />
 
 ## Stories
 
@@ -24,43 +23,31 @@ import CheckboxButtonGroup from './CheckboxButtonGroup';
 
 - Multi-selection button. Can be toggled on/off by clicking.
 
-<Canvas>
-  <Story id="components-form-elements-checkboxbuttongroup--default"/>
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### Row
 
-<Canvas>
-  <Story id="components-form-elements-checkboxbuttongroup--row"/>
-</Canvas>
+<Canvas of={ComponentStories.Row} />
 
 ### Bordered Row
 
 - Multi-selection button. Only used in the context of Checkbox FormGroups.
 
-<Canvas>
-  <Story id="components-form-elements-checkboxbuttongroup--bordered-row"/>
-</Canvas>
+<Canvas of={ComponentStories.BorderedRow} />
 
 ### Description Column
 
 - Multi-selection button. Includes helper text and/or a description in addition to the default label.
 
-<Canvas>
-  <Story id="components-form-elements-checkboxbuttongroup--description-column"/>
-</Canvas>
+<Canvas of={ComponentStories.DescriptionColumn} />
 
 ### Description Row
 
-<Canvas>
-  <Story id="components-form-elements-checkboxbuttongroup--description-row"/>
-</Canvas>
+<Canvas of={ComponentStories.DescriptionRow} />
 
 ### Bordered Column Full Width
 
-<Canvas>
-  <Story id="components-form-elements-checkboxbuttongroup--bordered-column-full-width"/>
-</Canvas>
+<Canvas of={ComponentStories.BorderedColumnFullWidth} />
 
 ## Formatting
 

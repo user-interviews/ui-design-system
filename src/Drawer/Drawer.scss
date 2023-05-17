@@ -19,15 +19,19 @@
 }
 
 .Drawer {
-  @include media-breakpoint-up(sm) {
+  @media (min-width: $drawer-width-small) {
     &--sm {
       width: $drawer-width-small
     }
+  }
 
+  @media (min-width: $drawer-width-medium) {
     &--md {
       width: $drawer-width-medium;
     }
+  }
 
+  @media (min-width: $drawer-width-large) {
     &--lg {
       width: $drawer-width-large;
     }

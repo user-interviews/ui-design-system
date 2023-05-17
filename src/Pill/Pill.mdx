@@ -1,5 +1,6 @@
-import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import Pill from './Pill';
+import * as ComponentStories from './Pill.stories';
 
 # Pill
 
@@ -9,9 +10,7 @@ import Pill from './Pill';
   Pills are used to inform users of the status of an object or of an action that’s been taken.
 </h4>
 
-<Canvas>
-  <Story id="components-pill--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### When to use
 - Use to label, categorize, or organize items using keywords that describe them
@@ -21,7 +20,7 @@ import Pill from './Pill';
 
 ## Props
 
-<ArgsTable of={Pill} />
+<ArgTypes of={Pill} />
 
 
 ## Stories
@@ -29,9 +28,7 @@ import Pill from './Pill';
 ### Default
 - The default Pill and available colors
 
-<Canvas>
-  <Story id="components-pill--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### Statuses
 
@@ -56,38 +53,28 @@ Use the appropriate color to indicate the status of an object
 **Inactive**
 - gray: ("Completed", "Expired")
 
-<Canvas>
-  <Story id="components-pill--statuses" />
-</Canvas>
+<Canvas of={ComponentStories.Statuses} />
 
 ### With Container
 - The `Pills` container should be used when a collection of `Pill` components are displayed
 
-<Canvas>
-  <Story id="components-pill--with-container" />
-</Canvas>
+<Canvas of={ComponentStories.WithContainer} />
 
 ### With Leading Icon
 - Import an icon that is most relevant to the text
 
-<Canvas>
-  <Story id="components-pill--with-leading-icon" />
-</Canvas>
+<Canvas of={ComponentStories.WithLeadingIcon} />
 
 ### With Close
 - For Pills that need to option to be closed
 
-<Canvas>
-  <Story id="components-pill--with-close" />
-</Canvas>
+<Canvas of={ComponentStories.WithClose} />
 
 ### With Link
 - For Pills that link to more information
 - The Pill accepts an `<a>` tag as a child
 
-<Canvas>
-  <Story id="components-pill--with-link" />
-</Canvas>
+<Canvas of={ComponentStories.WithLink} />
 
 
 ## Formatting

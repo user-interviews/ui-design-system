@@ -1,5 +1,6 @@
-import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { ArgTypes,  Canvas } from '@storybook/blocks';
 import LoadingOverlay from './LoadingOverlay';
+import * as ComponentStories from './LoadingOverlay.stories';
 
 # LoadingOverlay
 
@@ -9,40 +10,17 @@ import LoadingOverlay from './LoadingOverlay';
   A visual indicator for a loading state.
 </h4>
 
-<Canvas>
-  <Story id="components-loadingoverlay--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### When to use
-- Reason 1
-- Reason 2
+- Long loading times: If your application takes a long time to load data or process requests, using a LoadingOverlay component can help improve user experience by providing a visual indication that the application is still functioning and hasn't frozen.
+- Complex user interactions: If your application has complex user interactions that require processing time, such as a form with multiple fields or a search feature that queries a large database, using a LoadingOverlay component can help indicate to users that their input is being processed.
 
 ### When to not use
-- Reason 1
-- Reason 2
+- Short loading times: If your application loads data quickly, using a LoadingOverlay component may not be necessary and could actually be distracting to users.
+- Inappropriate context: If the loading process is not critical to the user experience, it may not be necessary to use a LoadingOverlay component. In some cases, it may even be better to not use a LoadingOverlay component to avoid distracting users from the main content.
 
 ## Props
 
-<ArgsTable of={LoadingOverlay} />
-
-## Formatting
-
-### States
-
-### Anatomy
-
-### Sizing
-
-### Alignment
-
-
-## Best practices
-
-### General
-
-### Behavior
-
-### Implementation
-
-### UX Copy
+<ArgTypes of={LoadingOverlay} />
 

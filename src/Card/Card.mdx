@@ -1,5 +1,6 @@
-import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { ArgTypes, Canvas } from '@storybook/blocks';
 import Card from './Card';
+import * as ComponentStories from './Card.stories';
 
 # Card
 
@@ -9,14 +10,11 @@ import Card from './Card';
 	Cards serve as containers to help group content on a page.
 </h4>
 
-<Canvas>
-  <Story id="components-card--default" />
-</Canvas>
-
+<Canvas of={ComponentStories.Default} />
 
 ## Props
 
-<ArgsTable of={Card} />
+<ArgTypes of={Card} />
 
 ## Stories
 
@@ -24,39 +22,29 @@ import Card from './Card';
 
 `Card` will take up the full width of its parent container by default.
 
-<Canvas>
-  <Story id="components-card--default" />
-</Canvas>
+<Canvas of={ComponentStories.Default} />
 
 ### Sizes
 
-<Canvas>
-  <Story id="components-card--sizes" />
-</Canvas>
+<Canvas of={ComponentStories.Sizes} />
 
 ### Loading Default
 
 Default LoadingSkeleton when `isLoading` is set.
 
-<Canvas>
-  <Story id="components-card--loading" />
-</Canvas>
+<Canvas of={ComponentStories.LoadingDefault} />
 
 ### Loading Paragraph Count
 
 Adjust `loadingSkeletonParagraphCount` for representing additional content space.
 
-<Canvas>
-  <Story id="components-card--loading-paragraph-count" />
-</Canvas>
+<Canvas of={ComponentStories.LoadingParagraphCount} />
 
 ### Loading Custom
 
 Pass a custom LoadingSkeleton to `loadingSkeleton`. Use only when a custom skeleton better suits the rendered content.
 
-<Canvas>
-  <Story id="components-card--loading-custom" />
-</Canvas>
+<Canvas of={ComponentStories.LoadingCustom} />
 
 ## Formatting
 

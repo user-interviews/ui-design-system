@@ -1,5 +1,6 @@
-import { ArgsTable, Story, Canvas } from '@storybook/addon-docs/blocks';
+import { ArgTypes, Canvas } from '@storybook/blocks';
 import Avatar from './Avatar';
+import * as ComponentStories from './Avatar.stories';
 
 # Avatar
 
@@ -9,9 +10,7 @@ import Avatar from './Avatar';
   Displays a user's initials or profile photo.
 </h4>
 
-<Canvas>
-  <Story id="components-avatar--small" />
-</Canvas>
+<Canvas of={ComponentStories.Small} />
 
 ### When to use
 - Reason 1
@@ -23,7 +22,7 @@ import Avatar from './Avatar';
 
 ## Props
 
-<ArgsTable of={Avatar} />
+<ArgTypes of={Avatar} />
 
 ## Stories
 
@@ -31,34 +30,26 @@ import Avatar from './Avatar';
 
 - The most common size for the Avatar.
 
-<Canvas>
-  <Story id="components-avatar--small" />
-</Canvas>
+<Canvas of={ComponentStories.Small} />
 
 ### Large
 
 - Use when more space allows in a layout, especially to provide more emphasis -- for example, a profile page.
 
-<Canvas>
-  <Story id="components-avatar--large" />
-</Canvas>
+<Canvas of={ComponentStories.Large} />
 
 ### With Alert
 
 - Usually used within the context of a new message.
 - Helps instruct the user to click the Avatar to reveal some new information about that specific user.
 
-<Canvas>
-  <Story id="components-avatar--with-alert" />
-</Canvas>
+<Canvas of={ComponentStories.WithAlert} />
 
 ### With Image
 
 - Typically used when an image url is provided from a social media profile (e.g. LinkedIn or Facebook)
 
-<Canvas>
-  <Story id="components-avatar--with-image" />
-</Canvas>
+<Canvas of={ComponentStories.WithImage} />
 
 ## Formatting
 
