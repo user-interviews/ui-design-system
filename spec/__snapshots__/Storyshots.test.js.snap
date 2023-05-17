@@ -3232,7 +3232,11 @@ Array [
         style={Object {}}
       />
     </svg>
+<<<<<<< HEAD
+  </button>
+=======
   </button>,
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
   <button
     aria-disabled={true}
     className="Button btn btn-outline-danger btn-sm"
@@ -3274,9 +3278,15 @@ Array [
         style={Object {}}
       />
     </svg>
+<<<<<<< HEAD
+  </button>
+   
+   
+=======
   </button>,
   " ",
   " ",
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
   <button
     className="Button btn btn-danger btn-md"
     disabled={false}
@@ -3402,8 +3412,13 @@ Array [
         style={Object {}}
       />
     </svg>
+<<<<<<< HEAD
+  </button>
+   
+=======
   </button>,
   " ",
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
   <button
     aria-disabled={true}
     className="Button btn btn-outline-danger btn-md"
@@ -3445,8 +3460,13 @@ Array [
         style={Object {}}
       />
     </svg>
+<<<<<<< HEAD
+  </button>
+</div>
+=======
   </button>,
 ]
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
 `;
 
 exports[`Storyshots Components/Button Link 1`] = `
@@ -3776,6 +3796,49 @@ Array [
   </button>,
   " ",
   <button
+    aria-disabled={true}
+    className="Button btn btn-outline-primary btn-sm"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Confirm
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+   
+  <button
     className="Button btn btn-primary btn-md"
     disabled={false}
     type="button"
@@ -3900,8 +3963,13 @@ Array [
         style={Object {}}
       />
     </svg>
+<<<<<<< HEAD
+  </button>
+   
+=======
   </button>,
   " ",
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
   <button
     aria-disabled={true}
     className="Button btn btn-outline-primary btn-md"
@@ -3943,8 +4011,13 @@ Array [
         style={Object {}}
       />
     </svg>
+<<<<<<< HEAD
+  </button>
+</div>
+=======
   </button>,
 ]
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
 `;
 
 exports[`Storyshots Components/Button Transparent 1`] = `
@@ -4120,6 +4193,49 @@ Array [
   </button>,
   " ",
   <button
+    aria-disabled={true}
+    className="Button btn btn-outline-transparent btn-sm"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Skip
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+   
+  <button
     className="Button btn btn-transparent btn-md"
     disabled={false}
     type="button"
@@ -4244,8 +4360,13 @@ Array [
         style={Object {}}
       />
     </svg>
+<<<<<<< HEAD
+  </button>
+   
+=======
   </button>,
   " ",
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
   <button
     aria-disabled={true}
     className="Button btn btn-outline-transparent btn-md"
@@ -4287,8 +4408,13 @@ Array [
         style={Object {}}
       />
     </svg>
+<<<<<<< HEAD
+  </button>
+</div>
+=======
   </button>,
 ]
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
 `;
 
 exports[`Storyshots Components/Button Warning 1`] = `
@@ -4464,6 +4590,49 @@ Array [
   </button>,
   " ",
   <button
+    aria-disabled={true}
+    className="Button btn btn-outline-warning btn-sm"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-file-alt icon-left"
+      data-icon="file-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 384 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+    Edit
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-caret-down icon-right"
+      data-icon="caret-down"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 320 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M272 160H48.1c-42.6 0-64.2 51.7-33.9 81.9l111.9 112c18.7 18.7 49.1 18.7 67.9 0l112-112c30-30.1 8.7-81.9-34-81.9zM160 320L48 208h224L160 320z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>
+   
+  <button
     className="Button btn btn-warning btn-md"
     disabled={false}
     type="button"
@@ -4588,8 +4757,13 @@ Array [
         style={Object {}}
       />
     </svg>
+<<<<<<< HEAD
+  </button>
+   
+=======
   </button>,
   " ",
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
   <button
     aria-disabled={true}
     className="Button btn btn-outline-warning btn-md"
@@ -4631,8 +4805,13 @@ Array [
         style={Object {}}
       />
     </svg>
+<<<<<<< HEAD
+  </button>
+</div>
+=======
   </button>,
 ]
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
 `;
 
 exports[`Storyshots Components/Card Default 1`] = `
@@ -5804,6 +5983,565 @@ Array [
 ]
 `;
 
+exports[`Storyshots Components/Drawer Additional Actions 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Open
+  </button>
+  <div
+    className="Drawer Drawer--right Drawer--sm Drawer--behind-nav"
+  >
+    <div
+      className="Drawer__header"
+    >
+      <button
+        aria-label="Expand"
+        className="Drawer__header-action"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-expand-alt "
+          data-icon="expand-alt"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+      <div
+        className="Drawer__title"
+      />
+      <button
+        aria-label="Close"
+        className="Drawer__header-action"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-times "
+          data-icon="times"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 352 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="Drawer__body"
+    >
+      <p>
+        Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi, vitae malesuada odio. Sed varius libero sed erat faucibus ultrices. Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec porttitor, est quis aliquet condimentum, nisi felis porta odio, eu luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra, imperdiet purus at, finibus turpis. Sed mattis erat a risus dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque metus felis, auctor sit amet posuere eu, aliquam blandit libero. Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta lacus, vitae mattis felis elit in metus. Nulla ligula ligula, laoreet in dictum sit amet, pretium ac est.
+      </p>
+    </div>
+    <div
+      className="DrawerFooter"
+    >
+      <div>
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-left "
+            data-icon="chevron-left"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-right "
+            data-icon="chevron-right"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        className="DrawerFooter__actions"
+      >
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="Button btn btn-danger"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-trash icon-left"
+            data-icon="trash"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Drawer Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Open
+  </button>
+  <div
+    className="DrawerBackgroundOverlay"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="presentation"
+  />
+  <div
+    className="Drawer Drawer--right Drawer--sm Drawer--behind-nav"
+  >
+    <div
+      className="Drawer__header Drawer__header--bordered"
+    >
+      <div
+        className="Drawer__title"
+      >
+        Title goes here
+      </div>
+      <button
+        aria-label="Close"
+        className="Drawer__header-action"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-times "
+          data-icon="times"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 352 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="Drawer__body"
+    >
+      <p>
+        Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi, vitae malesuada odio. Sed varius libero sed erat faucibus ultrices. Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec porttitor, est quis aliquet condimentum, nisi felis porta odio, eu luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra, imperdiet purus at, finibus turpis. Sed mattis erat a risus dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque metus felis, auctor sit amet posuere eu, aliquam blandit libero. Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta lacus, vitae mattis felis elit in metus. Nulla ligula ligula, laoreet in dictum sit amet, pretium ac est.
+      </p>
+    </div>
+    <div
+      className="DrawerFooter"
+    >
+      <div />
+      <div
+        className="DrawerFooter__actions"
+      >
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-envelope icon-left"
+            data-icon="envelope"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          Send
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Drawer Empty 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Open
+  </button>
+  <div
+    className="DrawerBackgroundOverlay"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="presentation"
+  />
+  <div
+    className="Drawer Drawer--right Drawer--sm Drawer--behind-nav"
+  />
+</div>
+`;
+
+exports[`Storyshots Components/Drawer Expandable 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Open
+  </button>
+  <div
+    className="DrawerBackgroundOverlay"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="presentation"
+  />
+  <div
+    className="Drawer Drawer--right Drawer--sm Drawer--behind-nav"
+  >
+    <div
+      className="Drawer__header Drawer__header--bordered"
+    >
+      <button
+        aria-label="Expand"
+        className="Drawer__header-action"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-expand-alt "
+          data-icon="expand-alt"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 448 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M212.686 315.314L120 408l32.922 31.029c15.12 15.12 4.412 40.971-16.97 40.971h-112C10.697 480 0 469.255 0 456V344c0-21.382 25.803-32.09 40.922-16.971L72 360l92.686-92.686c6.248-6.248 16.379-6.248 22.627 0l25.373 25.373c6.249 6.248 6.249 16.378 0 22.627zm22.628-118.628L328 104l-32.922-31.029C279.958 57.851 290.666 32 312.048 32h112C437.303 32 448 42.745 448 56v112c0 21.382-25.803 32.09-40.922 16.971L376 152l-92.686 92.686c-6.248 6.248-16.379 6.248-22.627 0l-25.373-25.373c-6.249-6.248-6.249-16.378 0-22.627z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+      <div
+        className="Drawer__title"
+      >
+        Title goes here
+      </div>
+      <button
+        aria-label="Close"
+        className="Drawer__header-action"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-times "
+          data-icon="times"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 352 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="Drawer__body"
+    >
+      <p>
+        Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi, vitae malesuada odio. Sed varius libero sed erat faucibus ultrices. Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec porttitor, est quis aliquet condimentum, nisi felis porta odio, eu luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra, imperdiet purus at, finibus turpis. Sed mattis erat a risus dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque metus felis, auctor sit amet posuere eu, aliquam blandit libero. Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta lacus, vitae mattis felis elit in metus. Nulla ligula ligula, laoreet in dictum sit amet, pretium ac est.
+      </p>
+    </div>
+    <div
+      className="DrawerFooter"
+    >
+      <div />
+      <div
+        className="DrawerFooter__actions"
+      >
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-envelope icon-left"
+            data-icon="envelope"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          Send
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Drawer Orientation 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Open
+  </button>
+  <div
+    className="DrawerBackgroundOverlay"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="presentation"
+  />
+  <div
+    className="Drawer Drawer--left Drawer--sm Drawer--behind-nav"
+  >
+    <div
+      className="Drawer__header Drawer__header--bordered"
+    >
+      <div
+        className="Drawer__title"
+      >
+        Title goes here
+      </div>
+      <button
+        aria-label="Close"
+        className="Drawer__header-action"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-times "
+          data-icon="times"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 352 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="Drawer__body"
+    >
+      <p>
+        Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi, vitae malesuada odio. Sed varius libero sed erat faucibus ultrices. Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec porttitor, est quis aliquet condimentum, nisi felis porta odio, eu luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra, imperdiet purus at, finibus turpis. Sed mattis erat a risus dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque metus felis, auctor sit amet posuere eu, aliquam blandit libero. Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta lacus, vitae mattis felis elit in metus. Nulla ligula ligula, laoreet in dictum sit amet, pretium ac est.
+      </p>
+    </div>
+    <div
+      className="DrawerFooter"
+    >
+      <div />
+      <div
+        className="DrawerFooter__actions"
+      >
+        <button
+          className="Button btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel
+        </button>
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-envelope icon-left"
+            data-icon="envelope"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          Send
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Dropdown Default 1`] = `
 Array [
   <div
@@ -5910,6 +6648,27 @@ exports[`Storyshots Components/Dropdown Icon Swap 1`] = `
       viewBox="0 0 128 512"
       xmlns="http://www.w3.org/2000/svg"
     >
+<<<<<<< HEAD
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-ellipsis-v fa-lg "
+        data-icon="ellipsis-v"
+        data-prefix="far"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 128 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+  </div>
+=======
       <path
         d="M64 208c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zM16 104c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48zm0 304c0 26.5 21.5 48 48 48s48-21.5 48-48-21.5-48-48-48-48 21.5-48 48z"
         fill="currentColor"
@@ -5917,6 +6676,7 @@ exports[`Storyshots Components/Dropdown Icon Swap 1`] = `
       />
     </svg>
   </button>
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
 </div>
 `;
 
@@ -5999,7 +6759,27 @@ exports[`Storyshots Components/Dropdown Unstyled Toggle 1`] = `
             }
           }
         >
+<<<<<<< HEAD
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-chevron-down "
+            data-icon="chevron-down"
+            data-prefix="far"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 448 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M441.9 167.3l-19.8-19.8c-4.7-4.7-12.3-4.7-17 0L224 328.2 42.9 147.5c-4.7-4.7-12.3-4.7-17 0L6.1 167.3c-4.7 4.7-4.7 12.3 0 17l209.4 209.4c4.7 4.7 12.3 4.7 17 0l209.4-209.4c4.7-4.7 4.7-12.3 0-17z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+=======
           Organization
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
         </div>
       </div>
       <div
@@ -6063,6 +6843,48 @@ exports[`Storyshots Components/Dropdown With Divider 1`] = `
     </svg>
     Dropdown toggle
   </button>
+</div>
+`;
+
+exports[`Storyshots Components/Dropdown With Divider 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="Dropdown dropdown"
+  >
+    <button
+      aria-expanded={false}
+      aria-label="dropdown-toggle"
+      className="DropdownToggle dropdown-toggle btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-file-alt icon-left"
+        data-icon="file-alt"
+        data-prefix="far"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M288 248v28c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-28c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm-12 72H108c-6.6 0-12 5.4-12 12v28c0 6.6 5.4 12 12 12h168c6.6 0 12-5.4 12-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V48C0 21.5 21.5 0 48 0h204.1C264.8 0 277 5.1 286 14.1L369.9 98c9 8.9 14.1 21.2 14.1 33.9zm-128-80V128h76.1L256 51.9zM336 464V176H232c-13.3 0-24-10.7-24-24V48H48v416h288z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+      Dropdown toggle
+    </button>
+  </div>
 </div>
 `;
 
@@ -10067,8 +10889,20 @@ exports[`Storyshots Components/Selects/Async In Modal 1`] = `
   onClick={[Function]}
   type="button"
 >
+<<<<<<< HEAD
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Click to open modal
+  </button>
+</div>
+=======
   Click to open modal
 </button>
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
 `;
 
 exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
@@ -10400,6 +11234,19 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
+<<<<<<< HEAD
+      <span
+        className="css-1f43avz-a11yText-A11yText"
+        id="react-select-5-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="css-1f43avz-a11yText-A11yText"
+      />
+=======
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
       <div
         className=" css-1fdsijx-ValueContainer"
       >
@@ -10407,7 +11254,57 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
           className=" css-177do1b-placeholder"
           id="react-select-5-placeholder"
         >
+<<<<<<< HEAD
+          <div
+            className=" css-177do1b-placeholder"
+            id="react-select-5-placeholder"
+          >
+            Select...
+          </div>
+          <div
+            className=" css-qbdosj-Input"
+            data-value=""
+          >
+            <input
+              aria-autocomplete="list"
+              aria-describedby="react-select-5-placeholder"
+              aria-expanded={false}
+              aria-haspopup={true}
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              className=""
+              disabled={false}
+              id="default-creatable-select"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              role="combobox"
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "color": "inherit",
+                  "font": "inherit",
+                  "gridArea": "1 / 2",
+                  "label": "input",
+                  "margin": 0,
+                  "minWidth": "2px",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "100%",
+                }
+              }
+              tabIndex={0}
+              type="text"
+              value=""
+            />
+          </div>
+=======
           Select...
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
         </div>
         <div
           className=" css-qbdosj-Input"
@@ -10489,8 +11386,20 @@ exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
   onClick={[Function]}
   type="button"
 >
+<<<<<<< HEAD
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Click to open modal
+  </button>
+</div>
+=======
   Click to open modal
 </button>
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
 `;
 
 exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = `
@@ -10522,6 +11431,19 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
+<<<<<<< HEAD
+      <span
+        className="css-1f43avz-a11yText-A11yText"
+        id="react-select-6-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="css-1f43avz-a11yText-A11yText"
+      />
+=======
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
       <div
         className=" css-1fdsijx-ValueContainer"
       >
@@ -10529,7 +11451,33 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
           className=" css-177do1b-placeholder"
           id="react-select-6-placeholder"
         >
+<<<<<<< HEAD
+          <div
+            className=" css-177do1b-placeholder"
+            id="react-select-6-placeholder"
+          >
+            Select...
+          </div>
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-6-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-readonly={true}
+            className="css-mohuvp-dummyInput-DummyInput"
+            disabled={false}
+            id="custom-option-with-checkbox-select"
+            inputMode="none"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            tabIndex={0}
+            value=""
+          />
+=======
           Select...
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
         </div>
         <input
           aria-autocomplete="list"
@@ -10609,6 +11557,19 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
+<<<<<<< HEAD
+      <span
+        className="css-1f43avz-a11yText-A11yText"
+        id="react-select-7-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="css-1f43avz-a11yText-A11yText"
+      />
+=======
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
       <div
         className=" css-1fdsijx-ValueContainer"
       >
@@ -10616,7 +11577,33 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
           className=" css-177do1b-placeholder"
           id="react-select-7-placeholder"
         >
+<<<<<<< HEAD
+          <div
+            className=" css-177do1b-placeholder"
+            id="react-select-7-placeholder"
+          >
+            Select...
+          </div>
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-7-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-readonly={true}
+            className="css-mohuvp-dummyInput-DummyInput"
+            disabled={false}
+            id="custom-option-with-description-select"
+            inputMode="none"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            tabIndex={0}
+            value=""
+          />
+=======
           Select...
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
         </div>
         <input
           aria-autocomplete="list"
@@ -10696,6 +11683,19 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
+<<<<<<< HEAD
+      <span
+        className="css-1f43avz-a11yText-A11yText"
+        id="react-select-8-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="css-1f43avz-a11yText-A11yText"
+      />
+=======
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
       <div
         className=" css-1fdsijx-ValueContainer"
       >
@@ -10703,7 +11703,33 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
           className=" css-177do1b-placeholder"
           id="react-select-8-placeholder"
         >
+<<<<<<< HEAD
+          <div
+            className=" css-177do1b-placeholder"
+            id="react-select-8-placeholder"
+          >
+            Select...
+          </div>
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-8-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-readonly={true}
+            className="css-mohuvp-dummyInput-DummyInput"
+            disabled={false}
+            id="custom-option-with-indeterminate-checkbox"
+            inputMode="none"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            tabIndex={0}
+            value=""
+          />
+=======
           Select...
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
         </div>
         <input
           aria-autocomplete="list"
@@ -10783,6 +11809,19 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
+<<<<<<< HEAD
+      <span
+        className="css-1f43avz-a11yText-A11yText"
+        id="react-select-9-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="css-1f43avz-a11yText-A11yText"
+      />
+=======
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
       <div
         className=" css-1fdsijx-ValueContainer"
       >
@@ -10790,7 +11829,33 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
           className=" css-177do1b-placeholder"
           id="react-select-9-placeholder"
         >
+<<<<<<< HEAD
+          <div
+            className=" css-177do1b-placeholder"
+            id="react-select-9-placeholder"
+          >
+            Select...
+          </div>
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-9-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-readonly={true}
+            className="css-mohuvp-dummyInput-DummyInput"
+            disabled={false}
+            id="custom-value-container-select"
+            inputMode="none"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            tabIndex={0}
+            value=""
+          />
+=======
           Select...
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
         </div>
         <input
           aria-autocomplete="list"
@@ -10870,6 +11935,19 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
+<<<<<<< HEAD
+      <span
+        className="css-1f43avz-a11yText-A11yText"
+        id="react-select-10-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="css-1f43avz-a11yText-A11yText"
+      />
+=======
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
       <div
         className=" css-1fdsijx-ValueContainer"
       >
@@ -10877,7 +11955,33 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
           className=" css-177do1b-placeholder"
           id="react-select-10-placeholder"
         >
+<<<<<<< HEAD
+          <div
+            className=" css-177do1b-placeholder"
+            id="react-select-10-placeholder"
+          >
+            Select...
+          </div>
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-10-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-readonly={true}
+            className="css-mohuvp-dummyInput-DummyInput"
+            disabled={false}
+            id="default-select"
+            inputMode="none"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            tabIndex={0}
+            value=""
+          />
+=======
           Select...
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
         </div>
         <input
           aria-autocomplete="list"
@@ -10957,6 +12061,19 @@ exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
+<<<<<<< HEAD
+      <span
+        className="css-1f43avz-a11yText-A11yText"
+        id="react-select-11-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="css-1f43avz-a11yText-A11yText"
+      />
+=======
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
       <div
         className=" css-1fdsijx-ValueContainer"
       >
@@ -10964,7 +12081,33 @@ exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
           className=" css-177do1b-placeholder"
           id="react-select-11-placeholder"
         >
+<<<<<<< HEAD
+          <div
+            className=" css-177do1b-placeholder"
+            id="react-select-11-placeholder"
+          >
+            Select...
+          </div>
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-11-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-readonly={true}
+            className="css-mohuvp-dummyInput-DummyInput"
+            disabled={false}
+            id="grouped-options-select"
+            inputMode="none"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            tabIndex={0}
+            value=""
+          />
+=======
           Select...
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
         </div>
         <input
           aria-autocomplete="list"
@@ -11022,8 +12165,20 @@ exports[`Storyshots Components/Selects/Single In Modal 1`] = `
   onClick={[Function]}
   type="button"
 >
+<<<<<<< HEAD
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Click to open modal
+  </button>
+</div>
+=======
   Click to open modal
 </button>
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
 `;
 
 exports[`Storyshots Components/Selects/Single Loading 1`] = `
@@ -11055,6 +12210,19 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
+<<<<<<< HEAD
+      <span
+        className="css-1f43avz-a11yText-A11yText"
+        id="react-select-12-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="css-1f43avz-a11yText-A11yText"
+      />
+=======
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
       <div
         className=" css-1fdsijx-ValueContainer"
       >
@@ -11062,7 +12230,33 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
           className=" css-177do1b-placeholder"
           id="react-select-12-placeholder"
         >
+<<<<<<< HEAD
+          <div
+            className=" css-177do1b-placeholder"
+            id="react-select-12-placeholder"
+          >
+            Select...
+          </div>
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-12-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-readonly={true}
+            className="css-mohuvp-dummyInput-DummyInput"
+            disabled={true}
+            id="loading-select"
+            inputMode="none"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            tabIndex={0}
+            value=""
+          />
+=======
           Select...
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
         </div>
         <input
           aria-autocomplete="list"
@@ -11142,6 +12336,19 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
+<<<<<<< HEAD
+      <span
+        className="css-1f43avz-a11yText-A11yText"
+        id="react-select-13-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="css-1f43avz-a11yText-A11yText"
+      />
+=======
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
       <div
         className=" css-1fdsijx-ValueContainer"
       >
@@ -11149,7 +12356,33 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
           className=" css-177do1b-placeholder"
           id="react-select-13-placeholder"
         >
+<<<<<<< HEAD
+          <div
+            className=" css-177do1b-placeholder"
+            id="react-select-13-placeholder"
+          >
+            Select...
+          </div>
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-13-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            aria-readonly={true}
+            className="css-mohuvp-dummyInput-DummyInput"
+            disabled={false}
+            id="multi-select"
+            inputMode="none"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            tabIndex={0}
+            value=""
+          />
+=======
           Select...
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
         </div>
         <input
           aria-autocomplete="list"
@@ -11229,6 +12462,19 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
+<<<<<<< HEAD
+      <span
+        className="css-1f43avz-a11yText-A11yText"
+        id="react-select-14-live-region"
+      />
+      <span
+        aria-atomic="false"
+        aria-live="polite"
+        aria-relevant="additions text"
+        className="css-1f43avz-a11yText-A11yText"
+      />
+=======
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
       <div
         className=" css-1fdsijx-ValueContainer"
       >
@@ -11236,7 +12482,57 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
           className=" css-177do1b-placeholder"
           id="react-select-14-placeholder"
         >
+<<<<<<< HEAD
+          <div
+            className=" css-177do1b-placeholder"
+            id="react-select-14-placeholder"
+          >
+            Select...
+          </div>
+          <div
+            className=" css-qbdosj-Input"
+            data-value=""
+          >
+            <input
+              aria-autocomplete="list"
+              aria-describedby="react-select-14-placeholder"
+              aria-expanded={false}
+              aria-haspopup={true}
+              autoCapitalize="none"
+              autoComplete="off"
+              autoCorrect="off"
+              className=""
+              disabled={false}
+              id="searchable-select"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onFocus={[Function]}
+              role="combobox"
+              spellCheck="false"
+              style={
+                Object {
+                  "background": 0,
+                  "border": 0,
+                  "color": "inherit",
+                  "font": "inherit",
+                  "gridArea": "1 / 2",
+                  "label": "input",
+                  "margin": 0,
+                  "minWidth": "2px",
+                  "opacity": 1,
+                  "outline": 0,
+                  "padding": 0,
+                  "width": "100%",
+                }
+              }
+              tabIndex={0}
+              type="text"
+              value=""
+            />
+          </div>
+=======
           Select...
+>>>>>>> e5d9102 (remove unused react-scripts (#928))
         </div>
         <div
           className=" css-qbdosj-Input"
@@ -14128,6 +15424,1314 @@ exports[`Storyshots Components/Table Table No Hover State 1`] = `
     </tr>
   </tbody>
 </table>
+`;
+
+exports[`Storyshots Components/Table Loading Custom Columns 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 100,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Table Loading Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+  <div
+    className="sc-beqWaB eNVZdc TableLoadingSkeleton"
+  >
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 75,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 150,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+    <span
+      aria-busy={true}
+      aria-live="polite"
+    >
+      <span
+        className="react-loading-skeleton LoadingSkeleton TableLoadingSkeleton__row"
+        style={
+          Object {
+            "--base-color": "#E1E1E1",
+            "borderRadius": "0.25rem",
+            "width": 250,
+          }
+        }
+      >
+        ‌
+      </span>
+      <br />
+    </span>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Components/Table Table On Card 1`] = `
@@ -23369,6 +25973,118 @@ Array [
     </button>
   </div>,
 ]
+`;
+
+exports[`Storyshots Components/Toast Default 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    aria-live="polite"
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Toast Manual Dismiss Toast 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    aria-live="polite"
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Toast Toast Custom Message 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    aria-live="polite"
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Toast Toast With Action 1`] = `
+<div
+  style={
+    Object {
+      "padding": "1rem",
+    }
+  }
+>
+  <div
+    aria-live="polite"
+    className="Toast"
+  />
+  <div>
+    <p>
+      Click the button to see a toast message.  Use the knobs to try different types!
+    </p>
+    <button
+      className="Button btn btn-primary"
+      disabled={false}
+      onClick={[Function]}
+      type="button"
+    >
+      Submit
+    </button>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Components/ToggleInput Checked 1`] = `
