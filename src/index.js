@@ -29,6 +29,7 @@ import {
   DropdownItem,
   DropdownMenu,
 } from 'src/Dropdown';
+import EmptyState from 'src/EmptyState';
 import FadeTransition from 'src/FadeTransition';
 import { Flex, FLEX_PROPS } from 'src/Flex';
 import Form from 'src/Form';
@@ -126,6 +127,7 @@ export {
   DropdownToggle,
   DropdownItem,
   DropdownMenu,
+  EmptyState,
   FadeTransition,
   Flex,
   FLEX_PROPS,
