@@ -6,15 +6,19 @@ import Button from 'src/Button';
 import './DrawerFooter.scss';
 
 const DrawerFooter = ({
-  onPrimaryAction,
+  children,
+  isPrimaryActionLoading,
+  isSecondaryActionLoading,
   primaryActionDisabled,
   primaryActionIcon,
+  primaryActionLoadingText,
   primaryActionText,
   primaryActionVariant,
-  onSecondaryAction,
   secondaryActionDisabled,
+  secondaryActionLoadingText,
   secondaryActionText,
-  children,
+  onPrimaryAction,
+  onSecondaryAction,
 }) => (
   <div className="DrawerFooter">
     <div>
@@ -24,6 +28,8 @@ const DrawerFooter = ({
       {onSecondaryAction && (
         <Button
           disabled={secondaryActionDisabled}
+          isLoading={isSecondaryActionLoading}
+          loadingText={secondaryActionLoadingText}
           type="button"
           variant="transparent"
           onClick={onSecondaryAction}
@@ -34,7 +40,9 @@ const DrawerFooter = ({
       {onPrimaryAction && (
         <Button
           disabled={primaryActionDisabled}
+          isLoading={isPrimaryActionLoading}
           leadingIcon={primaryActionIcon}
+          loadingText={primaryActionLoadingText}
           type="button"
           variant={primaryActionVariant}
           onClick={onPrimaryAction}
@@ -48,11 +56,15 @@ const DrawerFooter = ({
 
 DrawerFooter.propTypes = {
   children: propTypes.node,
+  isPrimaryActionLoading: propTypes.bool,
+  isSecondaryActionLoading: propTypes.bool,
   primaryActionDisabled: propTypes.bool,
   primaryActionIcon: propTypes.object,
+  primaryActionLoadingText: propTypes.string,
   primaryActionText: propTypes.string,
   primaryActionVariant: propTypes.string,
   secondaryActionDisabled: propTypes.bool,
+  secondaryActionLoadingText: propTypes.string,
   secondaryActionText: propTypes.string,
   onPrimaryAction: propTypes.func,
   onSecondaryAction: propTypes.func,
@@ -60,14 +72,18 @@ DrawerFooter.propTypes = {
 
 DrawerFooter.defaultProps = {
   children: undefined,
-  onPrimaryAction: undefined,
+  isPrimaryActionLoading: false,
+  isSecondaryActionLoading: false,
   primaryActionDisabled: false,
   primaryActionIcon: undefined,
+  primaryActionLoadingText: undefined,
   primaryActionText: undefined,
   primaryActionVariant: undefined,
-  onSecondaryAction: undefined,
   secondaryActionDisabled: false,
+  secondaryActionLoadingText: undefined,
   secondaryActionText: undefined,
+  onPrimaryAction: undefined,
+  onSecondaryAction: undefined,
 };
 
 export default DrawerFooter;
