@@ -5405,6 +5405,7 @@ Array [
         className="DrawerFooter__actions"
       >
         <button
+          aria-disabled={false}
           className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
@@ -5413,6 +5414,7 @@ Array [
           Cancel
         </button>
         <button
+          aria-disabled={false}
           className="Button btn btn-danger"
           disabled={false}
           onClick={[Function]}
@@ -5510,6 +5512,7 @@ Array [
         className="DrawerFooter__actions"
       >
         <button
+          aria-disabled={false}
           className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
@@ -5518,6 +5521,7 @@ Array [
           Cancel
         </button>
         <button
+          aria-disabled={false}
           className="Button btn btn-primary"
           disabled={false}
           onClick={[Function]}
@@ -5661,6 +5665,7 @@ Array [
         className="DrawerFooter__actions"
       >
         <button
+          aria-disabled={false}
           className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
@@ -5669,6 +5674,7 @@ Array [
           Cancel
         </button>
         <button
+          aria-disabled={false}
           className="Button btn btn-primary"
           disabled={false}
           onClick={[Function]}
@@ -5766,6 +5772,7 @@ Array [
         className="DrawerFooter__actions"
       >
         <button
+          aria-disabled={false}
           className="Button btn btn-transparent"
           disabled={false}
           onClick={[Function]}
@@ -5774,6 +5781,7 @@ Array [
           Cancel
         </button>
         <button
+          aria-disabled={false}
           className="Button btn btn-primary"
           disabled={false}
           onClick={[Function]}
@@ -6063,6 +6071,194 @@ exports[`Storyshots Components/Dropdown With Divider 1`] = `
     </svg>
     Dropdown toggle
   </button>
+</div>
+`;
+
+exports[`Storyshots Components/EmptyState Default 1`] = `
+<div
+  className="EmptyState EmptyState--margin-top--sm"
+>
+  <div
+    className="EmptyState__content"
+  >
+    <h4
+      className="EmptyState__title Heading Heading--lg Heading--bold"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      You have no projects
+    </h4>
+    <p
+      className="EmptyState__subtitle Text Text--md Text--regular"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      Launch your first project to start conducting research!
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/EmptyState Full Width 1`] = `
+<div
+  className="EmptyState EmptyState--margin-top--sm"
+>
+  <div
+    className="EmptyState__content EmptyState--full-width"
+  >
+    <h4
+      className="EmptyState__title Heading Heading--lg Heading--bold"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      You have no projects
+    </h4>
+    <p
+      className="EmptyState__subtitle Text Text--md Text--regular"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      Launch your first project to start conducting research! Source from a pool of 2.4 million participants to reach nearly any target audience.
+    </p>
+    <div
+      className="EmptyState__actions"
+    >
+      <div
+        className="EmptyState__actions__primary-action"
+      >
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-plus icon-left"
+            data-icon="plus"
+            data-prefix="far"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 384 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          New project
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/EmptyState Margin Top 1`] = `
+<div
+  className="EmptyState EmptyState--margin-top--sm"
+>
+  <div
+    className="EmptyState__content"
+  >
+    <h4
+      className="EmptyState__title Heading Heading--lg Heading--bold"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      No segments created
+    </h4>
+    <p
+      className="EmptyState__subtitle Text Text--md Text--regular"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      Add a new participant segment above
+    </p>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/EmptyState Primary Action 1`] = `
+<div
+  className="EmptyState EmptyState--margin-top--sm"
+>
+  <div
+    className="EmptyState__content"
+  >
+    <h4
+      className="EmptyState__title Heading Heading--lg Heading--bold"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      You have no projects
+    </h4>
+    <p
+      className="EmptyState__subtitle Text Text--md Text--regular"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      Launch your first project to start conducting research! Source from a pool of 2.4 million participants to reach nearly any target audience.
+    </p>
+    <div
+      className="EmptyState__actions"
+    >
+      <div
+        className="EmptyState__actions__primary-action"
+      >
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-plus icon-left"
+            data-icon="plus"
+            data-prefix="far"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 384 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M368 224H224V80c0-8.84-7.16-16-16-16h-32c-8.84 0-16 7.16-16 16v144H16c-8.84 0-16 7.16-16 16v32c0 8.84 7.16 16 16 16h144v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V288h144c8.84 0 16-7.16 16-16v-32c0-8.84-7.16-16-16-16z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+          New project
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
