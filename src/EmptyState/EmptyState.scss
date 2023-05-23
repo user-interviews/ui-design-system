@@ -1,0 +1,53 @@
+@import '../../scss/theme';
+
+$empty-state-max-width: 25rem;
+$empty-state-max-image-height: 10rem;
+
+$empty-state-margin-top-sm: 4rem;
+$empty-state-margin-top-md: 6rem;
+$empty-state-margin-top-lg: 12.5rem;
+
+.EmptyState {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  &--margin-top {
+    &--sm {
+      margin-top: $empty-state-margin-top-sm;
+    }
+
+    &--md {
+      margin-top: $empty-state-margin-top-md;
+    }
+
+    &--lg {
+      margin-top: $empty-state-margin-top-lg;
+    }
+
+    &--none {
+      margin-top: 0;
+    }
+  }
+
+  &__content {
+    max-width: $empty-state-max-width;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: $ux-spacing-40;
+    max-height: $empty-state-max-image-height;
+  }
+
+  &__actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--full-width {
+    max-width: unset;
+  }
+}

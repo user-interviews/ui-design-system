@@ -1,0 +1,45 @@
+import { ArgTypes, Canvas } from '@storybook/blocks';
+import EmptyState from './EmptyState';
+import * as ComponentStories from './EmptyState.stories';
+
+# EmptyState
+
+##
+
+<h4>
+  EmptyState signals to the user that there is no data or content to display in a specific area the app,
+  often including messages or actions to guide user in populating the area.
+</h4>
+
+<Canvas of={ComponentStories.PrimaryAction} />
+
+
+## Props
+
+<ArgTypes of={EmptyState} />
+
+## Stories
+
+### Default
+- Header should be short and to the point describing the empty state. 
+- Description provides a bit more detail and the sentence should always end with punctuation. Most of the time it will be a period.
+
+<Canvas of={ComponentStories.Default} />
+
+
+### Primary Action
+- Avoid using a CTA that is the same action as the item the descriptor text is pointing to in the bottom nav bar. Instead the description should point them to that action.
+
+<Canvas of={ComponentStories.PrimaryAction} />
+
+### Full Width
+- Set the content area to full width.
+
+<Canvas of={ComponentStories.FullWidth} />
+
+### Margin Top
+- Use a pre-defined set of `margin-top` values: `sm`, `md`, and `lg`
+- Typically, the larger the empty state area, the larger the `margin-top` value
+- Rules of thumb: set `marginTop` to `sm` when in a Card, `md` when on an empty page with other components present, and `lg` when EmptyState is the only thing present on a page.
+
+<Canvas of={ComponentStories.MarginTop} />
