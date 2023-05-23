@@ -35,13 +35,7 @@ const EmptyState = ({
     )}
     >
       {title && (
-        <>
-          { typeof title === 'string' ? (
-            <Heading className="EmptyState__title" level={4} size="lg" textAlign="center">{title}</Heading>
-          ) : (
-            <>{title}</>
-          )}
-        </>
+        <Heading className="EmptyState__title" level={4} size="lg" textAlign="center">{title}</Heading>
       )}
 
       {subtitle && (
@@ -74,7 +68,7 @@ EmptyState.propTypes = {
   */
   primaryAction: propTypes.node,
   subtitle: propTypes.oneOfType([propTypes.string, propTypes.node]),
-  title: propTypes.oneOfType([propTypes.string, propTypes.node]),
+  title: propTypes.node,
 };
 
 EmptyState.defaultProps = {
