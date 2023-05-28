@@ -1,0 +1,27 @@
+name: Build and publish Storybook to GH pages
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    types: [ opened ]
+
+jobs:
+  run:
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Build
+        run: yarn build-storybook
+
+      - name: Upload
+        uses: actions/upload-pages-artifact@v1.0.4
+        with:
+          path: 'storybook-static'
+
+      - name: Deploy
+        uses: actions/deploy-pages@v1
+        with:
+          token: ${{ github.token }}
