@@ -2,7 +2,7 @@ name: Build and publish Storybook to GH pages
 
 on:
   push:
-    branches: [ develop ]
+    branches: [ develop security/move-deploy-to-github-actions ]
   pull_request:
     types: [ opened ]
 
