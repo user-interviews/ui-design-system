@@ -1,30 +1,46 @@
   name: Deploy to github pages
   on:
+    workflow_dispatch:
     push:
       branches:
         - main
+
+  # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+  permissions:
+    contents: read
+    pages: write
+    id-token: write
+
   jobs:
     gh-pages-deploy:
       name: Deploying to gh-pages
       runs-on: ubuntu-latest
-      env:
-        FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
       steps:
         - name: Checkout branch
-          uses: actions/checkout@v2
+          uses: actions/checkout@v3
+
         - name: Setup node
           uses: actions/setup-node@v3
           with:
             node-version-file: '.node-version'
+            cache: 'yarn'
 
         - name: Configure npm
           run: npm config set "@fortawesome:registry" https://npm.fontawesome.com/ &&
-               npm config set "//npm.fontawesome.com/:_authToken" $FONTAWESOME_NPM_AUTH_TOKEN
+               npm config set "//npm.fontawesome.com/:_authToken" ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
 
         - name: Install dependencies
           run: yarn install
 
-        - name: Run deploy script
-          run: yarn deploy-storybook -- --ci
-          env:
-            GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+        - name: Build
+          run: yarn build-storybook
+
+        - name: Upload
+          uses: actions/upload-pages-artifact@v1.0.4
+          with:
+            path: 'storybook-static'
+
+        - name: Deploy
+          uses: actions/deploy-pages@v1
+          with:
+            token: ${{ github.token }}
