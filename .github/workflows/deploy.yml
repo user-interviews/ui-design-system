@@ -2,7 +2,9 @@ name: Build and publish Storybook to GH pages
 
 on:
   push:
-    branches: [ develop security/move-deploy-to-github-actions ]
+    branches:
+      - develop
+      - security/move-deploy-to-github-actions
   pull_request:
     types: [ opened ]
 
@@ -19,10 +21,10 @@ jobs:
           node-version: 16.x
           cache: 'yarn'
 
-      - run:
-        name: Npm configure
-        run: npm config set "@fortawesome:registry" https://npm.fontawesome.com/ &&
-          npm config set "//npm.fontawesome.com/:_authToken" $FONTAWESOME_NPM_AUTH_TOKEN
+      - name: Setup Font Awesome for install
+        run: |
+          npm config set "@fortawesome:registry" https://npm.fontawesome.com/
+          npm config set "//npm.fontawesome.com/:_authToken" ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
 
       - name: Yarn setup
         run: yarn install
