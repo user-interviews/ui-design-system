@@ -7,12 +7,10 @@ permissions:
   id-token: write
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - develop
-      - security/move-deploy-to-github-actions
-  pull_request:
-    types: [ opened ]
 
 jobs:
   run:
