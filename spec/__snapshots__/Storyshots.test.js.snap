@@ -9403,6 +9403,86 @@ exports[`Storyshots Components/Modal With Subtitle Modal 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/MoneyInput Default 1`] = `
+<div
+  className="FormGroup"
+>
+  <label
+    className="InputLabel"
+    htmlFor="money-input-1"
+  >
+    Incentive amount
+  </label>
+  <input
+    className="MoneyInput form-control"
+    disabled={false}
+    id="money-input-1"
+    inputMode="decimal"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    placeholder="Please enter a number"
+    type="text"
+    value="1,250.99"
+  />
+  <br />
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Value: 
+    1250.99
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Components/MoneyInput Prefix 1`] = `
+Array [
+  <div
+    className="FormGroup"
+  >
+    <label
+      className="InputLabel"
+      htmlFor="money-input-2"
+    >
+      Incentive amount
+    </label>
+    <input
+      className="MoneyInput form-control"
+      disabled={false}
+      id="money-input-2"
+      inputMode="decimal"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      placeholder="Please enter incentive amount"
+      type="text"
+      value="$2,500.55"
+    />
+  </div>,
+  <br />,
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Value: 
+    2500.55
+  </h2>,
+]
+`;
+
 exports[`Storyshots Components/Pill Default 1`] = `
 <div>
   <h4

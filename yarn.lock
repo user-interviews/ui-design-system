@@ -10739,6 +10739,11 @@ react-copy-to-clipboard@^5.0.2:
     copy-to-clipboard "^3.3.1"
     prop-types "^15.8.1"
 
+react-currency-input-field@^3.6.10:
+  version "3.6.10"
+  resolved "https://registry.yarnpkg.com/react-currency-input-field/-/react-currency-input-field-3.6.10.tgz#f04663a2074b894735edb6d9fae95499727596b1"
+  integrity sha512-KRAJJaLujarBTLlEVbznsUxQ56+Qyqwoe5w9DnGxmsGnHv4ycQRpRkuuCDfF9BcXHmegzsOXesfIGpW7Cw9mTQ==
+
 react-docgen-typescript@^2.2.2:
   version "2.2.2"
   resolved "https://registry.yarnpkg.com/react-docgen-typescript/-/react-docgen-typescript-2.2.2.tgz#4611055e569edc071204aadb20e1c93e1ab1659c"
