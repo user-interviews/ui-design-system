@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Button from 'src/Button';
+import Button, { ButtonVariants } from 'src/Button';
 
 const IconButton = ({
  ariaLabel, className, icon, variant, ...props
@@ -29,5 +29,5 @@ IconButton.propTypes = {
 
 IconButton.defaultProps = {
   className: undefined,
-  variant: 'transparent',
+  variant: ButtonVariants.TRANSPARENT,
 };
