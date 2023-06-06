@@ -1932,6 +1932,22 @@
     ts-dedent "^2.0.0"
     uuid "^9.0.0"
 
+"@storybook/addon-backgrounds@7.0.8":
+  version "7.0.8"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-backgrounds/-/addon-backgrounds-7.0.8.tgz#b317b91a2ef65d8d16af49e4374ef98fc7a9fdfc"
+  integrity sha512-xDTySwXWlyROWi9SJEa12DfGyaYL8oMGADMgn/C82qzcIXGx2tpkjU4UsA/w7JvpZumLr5wEfGrZiStg2xFygA==
+  dependencies:
+    "@storybook/client-logger" "7.0.8"
+    "@storybook/components" "7.0.8"
+    "@storybook/core-events" "7.0.8"
+    "@storybook/global" "^5.0.0"
+    "@storybook/manager-api" "7.0.8"
+    "@storybook/preview-api" "7.0.8"
+    "@storybook/theming" "7.0.8"
+    "@storybook/types" "7.0.8"
+    memoizerific "^1.11.3"
+    ts-dedent "^2.0.0"
+
 "@storybook/addon-controls@^7.0.8":
   version "7.0.12"
   resolved "https://registry.yarnpkg.com/@storybook/addon-controls/-/addon-controls-7.0.12.tgz#24f3a579c7485dcb619c6d05cbd90c1b9e4a53eb"
