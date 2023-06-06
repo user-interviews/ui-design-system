@@ -50,6 +50,7 @@ import {
   ModalFooter,
   ModalHeader,
 } from 'src/Modal';
+import MoneyInput from 'src/MoneyInput';
 import { OverlayTrigger, OVERLAY_TRIGGER_PLACEMENT } from 'src/OverlayTrigger';
 import { Pill, Pills, PILL_COLORS } from 'src/Pill';
 import { Popover, PopoverBody, PopoverCard } from 'src/Popover';
@@ -149,6 +150,7 @@ export {
   ModalBody,
   ModalFooter,
   ModalHeader,
+  MoneyInput,
   Option,
   OptionWithDescription,
   OverlayTrigger,

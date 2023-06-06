@@ -9403,6 +9403,45 @@ exports[`Storyshots Components/Modal With Subtitle Modal 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/MoneyInput Default 1`] = `
+<div
+  className="FormGroup"
+>
+  <label
+    className="InputLabel"
+    htmlFor="money-input-1"
+  >
+    Incentive amount
+  </label>
+  <input
+    className="MoneyInput form-control"
+    disabled={false}
+    id="money-input-1"
+    inputMode="decimal"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    placeholder="Please enter a number"
+    type="text"
+    value="$1,250.99"
+  />
+  <br />
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Value: 
+    1250.99
+  </h2>
+</div>
+`;
+
 exports[`Storyshots Components/Pill Default 1`] = `
 <div>
   <h4
