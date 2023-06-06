@@ -93,7 +93,7 @@ MoneyInput.defaultProps = {
   decimalsLimit: 2,
   decimalScale: undefined,
   fixedDecimalLength: undefined,
-  prefix: undefined,
+  prefix: '$',
   suffix: undefined,
   decimalSeparator: undefined,
   groupSeparator: undefined,
