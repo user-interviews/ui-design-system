@@ -11,6 +11,8 @@ import {
   faChevronLeft,
   faChevronRight,
   faPencil,
+  faTimes,
+  faExpandAlt,
 } from '@fortawesome/pro-regular-svg-icons';
 
 import Button, { ButtonSizes, ButtonVariants } from 'src/Button';
@@ -43,6 +45,14 @@ export const IconButtonActions = {
   PREVIOUS: {
     icon: faChevronLeft,
     ariaLabel: 'Previous',
+  },
+  CLOSE: {
+    icon: faTimes,
+    ariaLabel: 'Close',
+  },
+  EXPAND: {
+    icon: faExpandAlt,
+    ariaLabel: 'Expand',
   },
 };
 

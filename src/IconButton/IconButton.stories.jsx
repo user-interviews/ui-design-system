@@ -23,6 +23,8 @@ export const CommonActions = () => (
     <IconButton action="COPY" />
     <IconButton action="PREVIOUS" />
     <IconButton action="NEXT" />
+    <IconButton action="CLOSE" />
+    <IconButton action="EXPAND" />
   </>
 );
 
