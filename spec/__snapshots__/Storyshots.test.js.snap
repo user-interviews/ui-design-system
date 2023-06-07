@@ -8551,10 +8551,10 @@ Array [
 ]
 `;
 
-exports[`Storyshots Components/IconButton Default 1`] = `
-<span>
+exports[`Storyshots Components/IconButton Aria Label 1`] = `
+Array [
   <button
-    aria-label="Previous"
+    aria-label="Previous page"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
     type="button"
@@ -8576,9 +8576,9 @@ exports[`Storyshots Components/IconButton Default 1`] = `
         style={Object {}}
       />
     </svg>
-  </button>
+  </button>,
   <button
-    aria-label="Next"
+    aria-label="Next page"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
     type="button"
@@ -8600,9 +8600,9 @@ exports[`Storyshots Components/IconButton Default 1`] = `
         style={Object {}}
       />
     </svg>
-  </button>
+  </button>,
   <button
-    aria-label="Delete"
+    aria-label="Delete participant"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
     type="button"
@@ -8624,7 +8624,84 @@ exports[`Storyshots Components/IconButton Default 1`] = `
         style={Object {}}
       />
     </svg>
-  </button>
+  </button>,
+  <button
+    aria-label="Edit note"
+    className="Button IconButton btn btn-transparent btn-sm"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-pencil fa-fw"
+      data-icon="pencil"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M491.609 73.625l-53.861-53.839c-26.378-26.379-69.076-26.383-95.46-.001L24.91 335.089.329 484.085c-2.675 16.215 11.368 30.261 27.587 27.587l148.995-24.582 315.326-317.378c26.33-26.331 26.581-68.879-.628-96.087zM120.644 302l170.259-169.155 88.251 88.251L210 391.355V350h-48v-48h-41.356zM82.132 458.132l-28.263-28.263 12.14-73.587L84.409 338H126v48h48v41.59l-18.282 18.401-73.586 12.141zm378.985-319.533l-.051.051-.051.051-48.03 48.344-88.03-88.03 48.344-48.03.05-.05.05-.05c9.147-9.146 23.978-9.259 33.236-.001l53.854 53.854c9.878 9.877 9.939 24.549.628 33.861z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>,
+]
+`;
+
+exports[`Storyshots Components/IconButton Common Actions 1`] = `
+Array [
+  <button
+    aria-label="Add"
+    className="Button IconButton btn btn-transparent btn-sm"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-plus-circle fa-fw"
+      data-icon="plus-circle"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M384 240v32c0 6.6-5.4 12-12 12h-88v88c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-88h-88c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h88v-88c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v88h88c6.6 0 12 5.4 12 12zm120 16c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-48 0c0-110.5-89.5-200-200-200S56 145.5 56 256s89.5 200 200 200 200-89.5 200-200z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>,
+  <button
+    aria-label="Subtract"
+    className="Button IconButton btn btn-transparent btn-sm"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-minus-circle fa-fw"
+      data-icon="minus-circle"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M140 284c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h232c6.6 0 12 5.4 12 12v32c0 6.6-5.4 12-12 12H140zm364-28c0 137-111 248-248 248S8 393 8 256 119 8 256 8s248 111 248 248zm-48 0c0-110.5-89.5-200-200-200S56 145.5 56 256s89.5 200 200 200 200-89.5 200-200z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>,
   <button
     aria-label="Edit"
     className="Button IconButton btn btn-transparent btn-sm"
@@ -8648,8 +8725,104 @@ exports[`Storyshots Components/IconButton Default 1`] = `
         style={Object {}}
       />
     </svg>
-  </button>
-</span>
+  </button>,
+  <button
+    aria-label="Delete"
+    className="Button IconButton btn btn-transparent btn-sm"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-trash-alt fa-fw"
+      data-icon="trash-alt"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M268 416h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12zM432 80h-82.41l-34-56.7A48 48 0 0 0 274.41 0H173.59a48 48 0 0 0-41.16 23.3L98.41 80H16A16 16 0 0 0 0 96v16a16 16 0 0 0 16 16h16v336a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48V128h16a16 16 0 0 0 16-16V96a16 16 0 0 0-16-16zM171.84 50.91A6 6 0 0 1 177 48h94a6 6 0 0 1 5.15 2.91L293.61 80H154.39zM368 464H80V128h288zm-212-48h24a12 12 0 0 0 12-12V188a12 12 0 0 0-12-12h-24a12 12 0 0 0-12 12v216a12 12 0 0 0 12 12z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>,
+  <button
+    aria-label="Copy"
+    className="Button IconButton btn btn-transparent btn-sm"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-copy fa-fw"
+      data-icon="copy"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 448 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>,
+  <button
+    aria-label="Previous"
+    className="Button IconButton btn btn-transparent btn-sm"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-chevron-left fa-fw"
+      data-icon="chevron-left"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 256 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>,
+  <button
+    aria-label="Next"
+    className="Button IconButton btn btn-transparent btn-sm"
+    disabled={false}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-chevron-right fa-fw"
+      data-icon="chevron-right"
+      data-prefix="far"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 256 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </button>,
+]
 `;
 
 exports[`Storyshots Components/IconCell Default 1`] = `

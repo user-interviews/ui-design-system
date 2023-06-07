@@ -1,8 +1,5 @@
 import React from 'react';
 
-import {
- faChevronLeft, faChevronRight, faPencil, faTrashAlt,
-} from '@fortawesome/pro-regular-svg-icons';
 import IconButton from './IconButton';
 
 import mdx from './IconButton.mdx';
@@ -17,11 +14,23 @@ export default {
   },
 };
 
-export const Default = () => (
-  <span>
-    <IconButton ariaLabel="Previous" icon={faChevronLeft} />
-    <IconButton ariaLabel="Next" icon={faChevronRight} />
-    <IconButton ariaLabel="Delete" icon={faTrashAlt} />
-    <IconButton ariaLabel="Edit" icon={faPencil} />
-  </span>
+export const CommonActions = () => (
+  <>
+    <IconButton action="ADD" />
+    <IconButton action="SUBTRACT" />
+    <IconButton action="EDIT" />
+    <IconButton action="DELETE" />
+    <IconButton action="COPY" />
+    <IconButton action="PREVIOUS" />
+    <IconButton action="NEXT" />
+  </>
+);
+
+export const AriaLabel = () => (
+  <>
+    <IconButton action="PREVIOUS" ariaLabel="Previous page" />
+    <IconButton action="NEXT" ariaLabel="Next page" />
+    <IconButton action="DELETE" ariaLabel="Delete participant" />
+    <IconButton action="EDIT" ariaLabel="Edit note" />
+  </>
 );
