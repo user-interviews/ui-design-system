@@ -8555,13 +8555,13 @@ exports[`Storyshots Components/IconButton Default 1`] = `
 <span>
   <button
     aria-label="Previous"
-    className="Button IconButton btn btn-transparent"
+    className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
     type="button"
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-chevron-left "
+      className="svg-inline--fa fa-chevron-left fa-fw"
       data-icon="chevron-left"
       data-prefix="far"
       focusable="false"
@@ -8579,13 +8579,13 @@ exports[`Storyshots Components/IconButton Default 1`] = `
   </button>
   <button
     aria-label="Next"
-    className="Button IconButton btn btn-transparent"
+    className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
     type="button"
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-chevron-right "
+      className="svg-inline--fa fa-chevron-right fa-fw"
       data-icon="chevron-right"
       data-prefix="far"
       focusable="false"
@@ -8603,13 +8603,13 @@ exports[`Storyshots Components/IconButton Default 1`] = `
   </button>
   <button
     aria-label="Delete"
-    className="Button IconButton btn btn-transparent"
+    className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
     type="button"
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-trash-alt "
+      className="svg-inline--fa fa-trash-alt fa-fw"
       data-icon="trash-alt"
       data-prefix="far"
       focusable="false"
@@ -8627,13 +8627,13 @@ exports[`Storyshots Components/IconButton Default 1`] = `
   </button>
   <button
     aria-label="Edit"
-    className="Button IconButton btn btn-transparent"
+    className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
     type="button"
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-pencil "
+      className="svg-inline--fa fa-pencil fa-fw"
       data-icon="pencil"
       data-prefix="far"
       focusable="false"

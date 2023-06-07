@@ -15,7 +15,7 @@ const IconButton = ({
     variant={variant}
     {...props}
   >
-    <FontAwesomeIcon icon={icon} />
+    <FontAwesomeIcon className="fa-fw" icon={icon} />
   </Button>
 );
 
