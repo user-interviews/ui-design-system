@@ -34,3 +34,10 @@ export const AriaLabel = () => (
     <IconButton action="EDIT" ariaLabel="Edit note" />
   </>
 );
+
+export const Sizes = () => (
+  <>
+    <IconButton action="DELETE" size="sm" />
+    <IconButton action="DELETE" size="md" />
+  </>
+);

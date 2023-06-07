@@ -7,17 +7,29 @@ import * as ComponentStories from './IconButton.stories';
 ##
 
 <h4>
-  
-The IconButton component is used for creating clickable buttons with icons, commonly found in app bars, toolbars, and toggleable actions.
+  The IconButton component is used for creating clickable buttons with icons, commonly found in app bars, toolbars, and toggleable actions.
 </h4>
 
-<Canvas of={ComponentStories.Default} />
+<Canvas of={ComponentStories.CommonActions} />
 
 <ArgTypes of={IconButton} />
 
 
 ## Stories
 
-### Default
+### Common Actions
+- A set of common actions for the `IconButton` with default `aria-label` attached.
+- Try to use from this defined set before swapping icons.
 
-<Canvas of={ComponentStories.Default} />
+<Canvas of={ComponentStories.CommonActions} />
+
+### Aria Label
+- `aria-label` is required. 
+- use `ariaLabel` to more accurately describe the `IconButton` when necessary.
+
+<Canvas of={ComponentStories.AriaLabel} />
+
+### Sizes
+- Supports `sm` and `md` sizes
+
+<Canvas of={ComponentStories.Sizes} />

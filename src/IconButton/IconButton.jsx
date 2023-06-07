@@ -64,7 +64,10 @@ const IconButton = ({
       variant={variant}
       {...props}
     >
-      <FontAwesomeIcon className="fa-fw" icon={action ? IconButtonActions[action]?.icon : icon} />
+      <FontAwesomeIcon
+        className={classnames('fa-fw', size === ButtonSizes.MEDIUM && 'fa-lg')}
+        icon={action ? IconButtonActions[action]?.icon : icon}
+      />
     </Button>
   );
 };
