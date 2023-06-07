@@ -8,6 +8,11 @@ import { Button as RBButton } from 'react-bootstrap';
 
 import './Button.scss';
 
+export const ButtonSizes = {
+  SMALL: 'sm',
+  MEDIUM: 'md',
+};
+
 export const ButtonVariants = {
   BRAND_GOOGLE: 'brand-google',
   BRAND_FACEBOOK: 'brand-facebook',

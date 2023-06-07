@@ -5,7 +5,7 @@ import {
   AccordionToggle,
 } from 'src/Accordion';
 import { Alert, MessageTypes } from 'src/Alert';
-import Button, { ButtonVariants } from 'src/Button';
+import Button, { ButtonSizes, ButtonVariants } from 'src/Button';
 import Avatar from 'src/Avatar';
 import Card, { CardSizes } from 'src/Card';
 import { CardStack } from 'src/CardStack';
@@ -105,6 +105,7 @@ export {
   AsyncSelect,
   AsyncCreatableSelect,
   Button,
+  ButtonSizes,
   ButtonVariants,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
