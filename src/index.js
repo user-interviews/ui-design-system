@@ -5,7 +5,7 @@ import {
   AccordionToggle,
 } from 'src/Accordion';
 import { Alert, MessageTypes } from 'src/Alert';
-import Button from 'src/Button';
+import Button, { ButtonSizes, ButtonVariants } from 'src/Button';
 import Avatar from 'src/Avatar';
 import Card, { CardSizes } from 'src/Card';
 import { CardStack } from 'src/CardStack';
@@ -50,6 +50,7 @@ import {
   ModalFooter,
   ModalHeader,
 } from 'src/Modal';
+import MoneyInput from 'src/MoneyInput';
 import { OverlayTrigger, OVERLAY_TRIGGER_PLACEMENT } from 'src/OverlayTrigger';
 import { Pill, Pills, PILL_COLORS } from 'src/Pill';
 import { Popover, PopoverBody, PopoverCard } from 'src/Popover';
@@ -104,6 +105,8 @@ export {
   AsyncSelect,
   AsyncCreatableSelect,
   Button,
+  ButtonSizes,
+  ButtonVariants,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
   CardSizes,
@@ -149,6 +152,7 @@ export {
   ModalBody,
   ModalFooter,
   ModalHeader,
+  MoneyInput,
   Option,
   OptionWithDescription,
   OverlayTrigger,
