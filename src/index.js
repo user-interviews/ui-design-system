@@ -36,6 +36,7 @@ import Form from 'src/Form';
 import FormControlLabel from 'src/FormControlLabel';
 import FormGroup from 'src/FormGroup';
 import { Heading, HEADING_PROPS } from 'src/Heading';
+import IconButton from 'src/IconButton';
 import IconCell from 'src/IconCell';
 import Input from 'src/Input';
 import InputLabel from 'src/InputLabel';
@@ -139,6 +140,7 @@ export {
   FormGroup,
   Heading,
   HEADING_PROPS,
+  IconButton,
   IconCell,
   Input,
   InputLabel,
