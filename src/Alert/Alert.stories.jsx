@@ -42,13 +42,13 @@ export const Info = () => (
   />
 );
 
-export const Announcement = () => (
+export const Feature = () => (
   <Alert
     id="3"
-    message={text('Message', 'Announcement message')}
+    message={text('Message', 'Some context around new feature if needed.')}
     removeBorderLeft={boolean('removeBorderLeft', false)}
-    title={text('Title', 'Announcement title')}
-    type={MessageTypes.ANNOUNCEMENT}
+    title={text('Title', 'New feature alert!')}
+    type={MessageTypes.FEATURE}
   />
 );
 
@@ -130,15 +130,6 @@ export const WithCallToAction = () => (
     />
     <Alert
       action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
-      id="10"
-      message="Announcement message"
-      removeBorderLeft={boolean('removeBorderLeft', false)}
-      title="Announcement title"
-      type={MessageTypes.ANNOUNCEMENT}
-      onDismiss={onDismiss}
-    />
-    <Alert
-      action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
       id="11"
       message="Error message"
       removeBorderLeft={boolean('removeBorderLeft', false)}
@@ -153,6 +144,15 @@ export const WithCallToAction = () => (
       removeBorderLeft={boolean('removeBorderLeft', false)}
       title="Warning title"
       type={MessageTypes.WARNING}
+      onDismiss={onDismiss}
+    />
+    <Alert
+      action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+      id="13"
+      message="Some context around new feature if needed"
+      removeBorderLeft={boolean('removeBorderLeft', false)}
+      title="New feature alert!"
+      type={MessageTypes.FEATURE}
       onDismiss={onDismiss}
     />
 
