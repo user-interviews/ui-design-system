@@ -1091,64 +1091,6 @@ Array [
 ]
 `;
 
-exports[`Storyshots Components/Alert Announcement 1`] = `
-<div
-  className="Alert Alert-announcement"
-  style={null}
->
-  <div
-    className="Alert__icon"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-bullhorn "
-      data-icon="bullhorn"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style={
-        Object {
-          "transformOrigin": "0.5625em 0.5em",
-        }
-      }
-      viewBox="0 0 576 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <g
-        style={Object {}}
-        transform="translate(288 256)"
-      >
-        <g
-          style={Object {}}
-          transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
-        >
-          <path
-            d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
-            fill="currentColor"
-            style={Object {}}
-            transform="translate(-288 -256)"
-          />
-        </g>
-      </g>
-    </svg>
-  </div>
-  <div
-    className="Alert__content"
-  >
-    <div
-      className="Alert__title"
-    >
-      Announcement title
-    </div>
-    <div
-      className="Alert__message"
-    >
-      Announcement message
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Components/Alert Error 1`] = `
 <div
   className="Alert Alert-error"
@@ -1203,6 +1145,64 @@ exports[`Storyshots Components/Alert Error 1`] = `
       tabIndex={-1}
     >
       Error message
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Alert Feature 1`] = `
+<div
+  className="Alert Alert-feature"
+  style={null}
+>
+  <div
+    className="Alert__icon"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-bullhorn "
+      data-icon="bullhorn"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={
+        Object {
+          "transformOrigin": "0.5625em 0.5em",
+        }
+      }
+      viewBox="0 0 576 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g
+        style={Object {}}
+        transform="translate(288 256)"
+      >
+        <g
+          style={Object {}}
+          transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+        >
+          <path
+            d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+            fill="currentColor"
+            style={Object {}}
+            transform="translate(-288 -256)"
+          />
+        </g>
+      </g>
+    </svg>
+  </div>
+  <div
+    className="Alert__content"
+  >
+    <div
+      className="Alert__title"
+    >
+      New feature alert!
+    </div>
+    <div
+      className="Alert__message"
+    >
+      Some context around new feature if needed.
     </div>
   </div>
 </div>
@@ -1720,100 +1720,6 @@ Array [
     </div>
   </div>,
   <div
-    className="Alert Alert-announcement"
-    style={null}
-  >
-    <div
-      className="Alert__icon"
-    >
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-bullhorn "
-        data-icon="bullhorn"
-        data-prefix="fas"
-        focusable="false"
-        role="img"
-        style={
-          Object {
-            "transformOrigin": "0.5625em 0.5em",
-          }
-        }
-        viewBox="0 0 576 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <g
-          style={Object {}}
-          transform="translate(288 256)"
-        >
-          <g
-            style={Object {}}
-            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
-          >
-            <path
-              d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
-              fill="currentColor"
-              style={Object {}}
-              transform="translate(-288 -256)"
-            />
-          </g>
-        </g>
-      </svg>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-        Announcement title
-      </div>
-      <div
-        className="Alert__message"
-      >
-        Announcement message
-      </div>
-    </div>
-    <div
-      className="Alert__action"
-    >
-      <a
-        className="Alert-announcement primary-action"
-        href="https://www.userinterviews.com/"
-        rel="noopener noreferrer"
-      >
-        Primary action
-      </a>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-        aria-label="close announcement"
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-times "
-          data-icon="times"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 352 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-    </div>
-  </div>,
-  <div
     className="Alert Alert-error"
     style={null}
   >
@@ -1978,6 +1884,100 @@ Array [
     >
       <button
         aria-label="close warning"
+        className="close"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-times "
+          data-icon="times"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 352 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+    </div>
+  </div>,
+  <div
+    className="Alert Alert-feature"
+    style={null}
+  >
+    <div
+      className="Alert__icon"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-bullhorn "
+        data-icon="bullhorn"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={
+          Object {
+            "transformOrigin": "0.5625em 0.5em",
+          }
+        }
+        viewBox="0 0 576 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          style={Object {}}
+          transform="translate(288 256)"
+        >
+          <g
+            style={Object {}}
+            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+          >
+            <path
+              d="M576 240c0-23.63-12.95-44.04-32-55.12V32.01C544 23.26 537.02 0 512 0c-7.12 0-14.19 2.38-19.98 7.02l-85.03 68.03C364.28 109.19 310.66 128 256 128H64c-35.35 0-64 28.65-64 64v96c0 35.35 28.65 64 64 64h33.7c-1.39 10.48-2.18 21.14-2.18 32 0 39.77 9.26 77.35 25.56 110.94 5.19 10.69 16.52 17.06 28.4 17.06h74.28c26.05 0 41.69-29.84 25.9-50.56-16.4-21.52-26.15-48.36-26.15-77.44 0-11.11 1.62-21.79 4.41-32H256c54.66 0 108.28 18.81 150.98 52.95l85.03 68.03a32.023 32.023 0 0 0 19.98 7.02c24.92 0 32-22.78 32-32V295.13C563.05 284.04 576 263.63 576 240zm-96 141.42l-33.05-26.44C392.95 311.78 325.12 288 256 288v-96c69.12 0 136.95-23.78 190.95-66.98L480 98.58v282.84z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-288 -256)"
+            />
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div
+      className="Alert__content"
+    >
+      <div
+        className="Alert__title"
+      >
+        New feature alert!
+      </div>
+      <div
+        className="Alert__message"
+      >
+        Some context around new feature if needed
+      </div>
+    </div>
+    <div
+      className="Alert__action"
+    >
+      <a
+        className="Alert-feature primary-action"
+        href="https://www.userinterviews.com/"
+        rel="noopener noreferrer"
+      >
+        Primary action
+      </a>
+    </div>
+    <div
+      className="Alert__close"
+    >
+      <button
+        aria-label="close feature"
         className="close"
         onClick={[Function]}
         type="button"
