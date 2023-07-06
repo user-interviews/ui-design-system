@@ -18,6 +18,7 @@ export const MessageTypes = {
   SUCCESS: 'success',
   INFO: 'info',
   ANNOUNCEMENT: 'announcement',
+  FEATURE: 'feature',
   WARNING: 'warning',
   ERROR: 'error',
 };
@@ -39,6 +40,8 @@ const getAlertIcon = (type) => {
         </span>
       );
     case MessageTypes.ANNOUNCEMENT:
+      return (<FontAwesomeIcon icon={faBullhorn} transform="grow-2" />);
+    case MessageTypes.FEATURE:
       return (<FontAwesomeIcon icon={faBullhorn} transform="grow-2" />);
     case MessageTypes.WARNING:
       return (<FontAwesomeIcon icon={faExclamationTriangle} transform="grow-2" />);

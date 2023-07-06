@@ -145,6 +145,20 @@
   }
 }
 
+.Alert-feature {
+  background-color: $ux-teal-100;
+  color: $ux-teal-800;
+  border: 2px solid $ux-teal-600;
+
+  .close {
+    @include close-action($ux-teal-600, $ux-teal-800)
+  }
+
+  .primary-action {
+    @include primary-action($ux-teal-600, $ux-teal-700, $ux-white)
+  }
+}
+
 .Alert-warning {
   background-color: $ux-yellow-100;
   color: $ux-yellow-900;
