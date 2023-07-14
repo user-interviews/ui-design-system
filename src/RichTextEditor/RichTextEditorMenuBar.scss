@@ -1,0 +1,21 @@
+@import '../../scss/theme.scss';
+
+.RichTextEditorMenuBar {
+  background-color: $ux-gray-100;
+  border-radius: $ux-border-radius;
+  display: flex;
+  gap: $ux-spacing-30;
+  margin-top: $ux-spacing-40;
+  padding: $ux-spacing-20;
+
+  .Button {
+    &--active {
+      background-color: $ux-gray-300;
+
+      &:hover {
+        background-color: $ux-gray-400;
+      }
+    }
+  }
+}
+

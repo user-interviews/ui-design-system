@@ -1,0 +1,21 @@
+import { ArgTypes,  Canvas } from '@storybook/blocks';
+import RichTextEditor from './RichTextEditor';
+import * as ComponentStories from './RichTextEditor.stories';
+
+# RichTextEditor
+
+<h4>
+  RichTextEditor is a field element which provides a "what you see is what you get" (WYSIWYG) editor for HTML content.
+</h4>
+
+<Canvas of={ComponentStories.Default} />
+
+### When to use 
+To allow users to edit text where formatting is important, such as messages to be sent via email.
+
+### When to not use
+When formatting is not important. In those cases regular form inputs are a better fit.
+
+## Props
+
+<ArgTypes of={RichTextEditor} />
