@@ -10,6 +10,7 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
       class="RichTextEditorMenuBar"
     >
       <button
+        aria-label="Bold"
         class="Button btn btn-transparent"
         type="button"
       >
@@ -30,6 +31,7 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
         </svg>
       </button>
       <button
+        aria-label="Italic"
         class="Button btn btn-transparent"
         type="button"
       >
@@ -50,6 +52,7 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
         </svg>
       </button>
       <button
+        aria-label="Link"
         class="Button btn btn-transparent"
         type="button"
       >
@@ -71,6 +74,7 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
       </button>
       <button
         aria-disabled="true"
+        aria-label="Unlink"
         class="Button btn btn-transparent"
         disabled=""
         type="button"
@@ -92,6 +96,7 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
         </svg>
       </button>
       <button
+        aria-label="Unordered List"
         class="Button btn btn-transparent"
         type="button"
       >
@@ -112,6 +117,7 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
         </svg>
       </button>
       <button
+        aria-label="Ordered List"
         class="Button btn btn-transparent"
         type="button"
       >
@@ -134,6 +140,7 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
     </div>
     <div
       class="RichTextEditor__field"
+      role="textbox"
     >
       <div
         class="ProseMirror"
