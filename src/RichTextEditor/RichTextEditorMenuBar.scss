@@ -2,7 +2,9 @@
 
 .RichTextEditorMenuBar {
   background-color: $ux-gray-100;
-  border-radius: $ux-border-radius;
+  border: 1px solid $ux-gray-400;
+  border-bottom: 0;
+  border-radius: 0.25rem 0.25rem 0 0;
   display: flex;
   gap: $ux-spacing-30;
   margin-top: $ux-spacing-40;
