@@ -146,6 +146,7 @@ const RichTextEditor = ({
             { 'RichTextEditor__field--error': hasErrors },
           )}
           editor={editor}
+          role="textbox"
           {...rest} // pass along ARIA attributes
         />
         {
