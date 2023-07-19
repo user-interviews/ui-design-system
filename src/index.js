@@ -60,10 +60,10 @@ import ProfileCell, { ProfileCellSkeleton } from 'src/ProfileCell';
 import RadioButton from 'src/RadioButton';
 import RadioButtonGroup from 'src/RadioButtonGroup';
 import {
-  AllRteActions,
-  DefaultRteActions,
   RichTextEditor,
-  RteActions,
+  RichTextEditorActions,
+  RichTextEditorAllActionsArray,
+  RichTextEditorDefaultActionsArray,
 } from 'src/RichTextEditor';
 import {
   AsyncSelect,
@@ -176,10 +176,10 @@ export {
   ProfileCellSkeleton,
   RadioButton,
   RadioButtonGroup,
-  AllRteActions,
-  DefaultRteActions,
   RichTextEditor,
-  RteActions,
+  RichTextEditorActions,
+  RichTextEditorAllActionsArray,
+  RichTextEditorDefaultActionsArray,
   Row,
   SELECT_SIZES,
   SelectComponents,

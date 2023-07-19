@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { RichTextEditor, RteActions } from 'src/RichTextEditor';
+import { RichTextEditor, RichTextEditorActions } from 'src/RichTextEditor';
 
 import mdx from './RichTextEditor.mdx';
 
@@ -23,7 +23,7 @@ export const Default = () => (
 
 export const AvailableActions = () => (
   <RichTextEditor
-    availableActions={[RteActions.BOLD, RteActions.ITALIC]}
+    availableActions={[RichTextEditorActions.BOLD, RichTextEditorActions.ITALIC]}
     id="text-editor"
     onChange={() => null}
   />

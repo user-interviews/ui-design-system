@@ -1,9 +1,9 @@
 import RichTextEditor from './RichTextEditor';
-import { AllRteActions, DefaultRteActions, RteActions } from './richTextEditorActions';
+import { RichTextEditorAllActionsArray, RichTextEditorDefaultActionsArray, RichTextEditorActions } from './richTextEditorActions';
 
 export {
-  AllRteActions,
-  DefaultRteActions,
+  RichTextEditorAllActionsArray,
+  RichTextEditorDefaultActionsArray,
   RichTextEditor,
-  RteActions,
+  RichTextEditorActions,
 };

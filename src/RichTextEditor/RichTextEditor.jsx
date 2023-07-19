@@ -29,7 +29,7 @@ import RichTextEditorMenuBar from './RichTextEditorMenuBar';
 
 import { OneLineLimit } from './oneLineLimit';
 
-import { RteActions, AllRteActions, DefaultRteActions } from './richTextEditorActions';
+import { RichTextEditorActions, RichTextEditorAllActionsArray, RichTextEditorDefaultActionsArray } from './richTextEditorActions';
 import { createActionHandlers } from './actionHandlers';
 
 const ExtendedLink = Link.extend({
@@ -75,23 +75,23 @@ const RichTextEditor = ({
 
   const optionalExtensions = [
     {
-      name: RteActions.BOLD,
+      name: RichTextEditorActions.BOLD,
       config: Bold,
     },
     {
-      name: RteActions.ITALIC,
+      name: RichTextEditorActions.ITALIC,
       config: Italic,
     },
     {
-      name: RteActions.LINK,
+      name: RichTextEditorActions.LINK,
       config: ExtendedLink,
     },
     {
-      name: RteActions.UNORDERED_LIST,
+      name: RichTextEditorActions.UNORDERED_LIST,
       config: BulletList,
     },
     {
-      name: RteActions.ORDERED_LIST,
+      name: RichTextEditorActions.ORDERED_LIST,
       config: OrderedList,
     },
   ].filter((extension) => availableActions.includes(extension.name))
@@ -183,7 +183,7 @@ RichTextEditor.propTypes = {
    Which actions to include in the taskbar. Available as constants.
    Current options are BOLD, ITALIC, LINK, UNLINK, UNORDERED_LIST and ORDERED_LIST
   */
-  availableActions: propTypes.arrayOf(propTypes.oneOf(AllRteActions)),
+  availableActions: propTypes.arrayOf(propTypes.oneOf(RichTextEditorAllActionsArray)),
   characterLimit: propTypes.number,
   className: propTypes.string,
   hasErrors: propTypes.bool,
@@ -203,7 +203,7 @@ RichTextEditor.propTypes = {
 RichTextEditor.defaultProps = {
   allowedAttributes: undefined,
   allowedTags: undefined,
-  availableActions: DefaultRteActions,
+  availableActions: RichTextEditorDefaultActionsArray,
   characterLimit: undefined,
   className: undefined,
   hasErrors: false,

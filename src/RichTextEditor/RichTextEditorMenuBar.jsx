@@ -18,7 +18,7 @@ import {
   faUnlink,
 } from '@fortawesome/pro-regular-svg-icons';
 
-import { RteActions, AllRteActions } from './richTextEditorActions';
+import { RichTextEditorActions, RichTextEditorAllActionsArray } from './richTextEditorActions';
 import { createActionHandlers } from './actionHandlers';
 
 const RichTextEditorMenuBar = ({
@@ -30,8 +30,8 @@ const RichTextEditorMenuBar = ({
   const actions = [
     {
       label: 'Bold',
-      name: RteActions.BOLD,
-      disabled: availableActions.includes(RteActions.BOLD) && !editor.can()
+      name: RichTextEditorActions.BOLD,
+      disabled: availableActions.includes(RichTextEditorActions.BOLD) && !editor.can()
         .chain()
         .focus()
         .toggleBold()
@@ -41,8 +41,8 @@ const RichTextEditorMenuBar = ({
     },
     {
       label: 'Italic',
-      name: RteActions.ITALIC,
-      disabled: availableActions.includes(RteActions.ITALIC) && !editor.can()
+      name: RichTextEditorActions.ITALIC,
+      disabled: availableActions.includes(RichTextEditorActions.ITALIC) && !editor.can()
         .chain()
         .focus()
         .toggleItalic()
@@ -52,28 +52,28 @@ const RichTextEditorMenuBar = ({
     },
     {
       label: 'Link',
-      name: RteActions.LINK,
+      name: RichTextEditorActions.LINK,
       disabled: false,
       onClick: actionHandlers.link,
       icon: faLink,
     },
     {
       label: 'Unlink',
-      name: RteActions.UNLINK,
-      disabled: availableActions.includes(RteActions.LINK) && !editor.isActive('link'),
+      name: RichTextEditorActions.UNLINK,
+      disabled: availableActions.includes(RichTextEditorActions.LINK) && !editor.isActive('link'),
       onClick: actionHandlers.unlink,
       icon: faUnlink,
     },
     {
       label: 'Unordered List',
-      name: RteActions.UNORDERED_LIST,
+      name: RichTextEditorActions.UNORDERED_LIST,
       disabled: false,
       onClick: actionHandlers.unorderedList,
       icon: faListUl,
     },
     {
       label: 'Ordered List',
-      name: RteActions.ORDERED_LIST,
+      name: RichTextEditorActions.ORDERED_LIST,
       disabled: false,
       onClick: actionHandlers.orderedList,
       icon: faListOl,
@@ -103,7 +103,7 @@ const RichTextEditorMenuBar = ({
 };
 
 RichTextEditorMenuBar.propTypes = {
-  availableActions: propTypes.arrayOf(propTypes.oneOf(AllRteActions)).isRequired,
+  availableActions: propTypes.arrayOf(propTypes.oneOf(RichTextEditorAllActionsArray)).isRequired,
   editor: propTypes.object.isRequired,
 };
 
