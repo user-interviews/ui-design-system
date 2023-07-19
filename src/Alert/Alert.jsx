@@ -108,6 +108,7 @@ function Alert(props) {
                 className={classNames(`Alert-${(props.type)}`, 'primary-action')}
                 href={props.action.url}
                 rel="noopener noreferrer"
+                target={props.actionTarget}
               >
                 {props.action.content}
               </a>
@@ -139,6 +140,10 @@ Alert.propTypes = {
   */
   action: PropTypes.oneOfType([PropTypes.object, PropTypes.node]),
   /**
+    Specifies where to open the linked document
+  */
+  actionTarget: PropTypes.string,
+  /**
    Determines whether the Alert will disappear automatically
   */
   autoDismiss: PropTypes.bool,
@@ -155,6 +160,7 @@ Alert.propTypes = {
 
 Alert.defaultProps = {
   action: undefined,
+  actionTarget: undefined,
   autoDismiss: false,
   removeBorderLeft: false,
   title: undefined,
