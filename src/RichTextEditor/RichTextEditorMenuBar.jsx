@@ -5,9 +5,7 @@ import * as propTypes from 'prop-types';
 
 import classNames from 'classnames';
 
-import Button from 'src/Button';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import IconButton from 'src/IconButton';
 
 import {
   faBold,
@@ -86,16 +84,14 @@ const RichTextEditorMenuBar = ({
         actions
           .filter((action) => availableActions.includes(action.name))
           .map((action) => (
-            <Button
-              aria-label={action.label}
+            <IconButton
+              ariaLabel={action.label}
               className={classNames({ 'Button--active': editor.isActive(action.name) })}
               disabled={action.disabled}
+              icon={action.icon}
               key={action.name}
-              variant="transparent"
               onClick={action.onClick}
-            >
-              <FontAwesomeIcon icon={action.icon} />
-            </Button>
+            />
           ))
       }
     </div>

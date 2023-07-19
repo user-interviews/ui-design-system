@@ -11,12 +11,12 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
     >
       <button
         aria-label="Bold"
-        class="Button btn btn-transparent"
+        class="Button IconButton btn btn-transparent btn-sm"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-bold "
+          class="svg-inline--fa fa-bold fa-fw"
           data-icon="bold"
           data-prefix="far"
           focusable="false"
@@ -32,12 +32,12 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
       </button>
       <button
         aria-label="Italic"
-        class="Button btn btn-transparent"
+        class="Button IconButton btn btn-transparent btn-sm"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-italic "
+          class="svg-inline--fa fa-italic fa-fw"
           data-icon="italic"
           data-prefix="far"
           focusable="false"
@@ -53,12 +53,12 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
       </button>
       <button
         aria-label="Link"
-        class="Button btn btn-transparent"
+        class="Button IconButton btn btn-transparent btn-sm"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-link "
+          class="svg-inline--fa fa-link fa-fw"
           data-icon="link"
           data-prefix="far"
           focusable="false"
@@ -75,13 +75,13 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
       <button
         aria-disabled="true"
         aria-label="Unlink"
-        class="Button btn btn-transparent"
+        class="Button IconButton btn btn-transparent btn-sm"
         disabled=""
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-unlink "
+          class="svg-inline--fa fa-unlink fa-fw"
           data-icon="unlink"
           data-prefix="far"
           focusable="false"
@@ -97,12 +97,12 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
       </button>
       <button
         aria-label="Unordered List"
-        class="Button btn btn-transparent"
+        class="Button IconButton btn btn-transparent btn-sm"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-list-ul "
+          class="svg-inline--fa fa-list-ul fa-fw"
           data-icon="list-ul"
           data-prefix="far"
           focusable="false"
@@ -118,12 +118,12 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
       </button>
       <button
         aria-label="Ordered List"
-        class="Button btn btn-transparent"
+        class="Button IconButton btn btn-transparent btn-sm"
         type="button"
       >
         <svg
           aria-hidden="true"
-          class="svg-inline--fa fa-list-ol "
+          class="svg-inline--fa fa-list-ol fa-fw"
           data-icon="list-ol"
           data-prefix="far"
           focusable="false"
