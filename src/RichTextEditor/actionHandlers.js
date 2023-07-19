@@ -1,5 +1,3 @@
-const hasNoHttpProtocol = (url) => url.indexOf('http://') !== 0 && url.indexOf('https://') !== 0;
-
 export const createActionHandlers = (editor) => ({
   link: () => {
     // TODO: use DS components for link prompt
@@ -19,7 +17,8 @@ export const createActionHandlers = (editor) => ({
       return;
     }
 
-    const absoluteUrl = hasNoHttpProtocol(url) ? `//${url}` : url;
+    const protocolRegex = /^http(s?):\/\//;
+    const absoluteUrl = url.match(protocolRegex) ? url : `//${url}`;
 
     // update link
     editor.chain().focus().extendMarkRange('link').setLink({ href: absoluteUrl })
