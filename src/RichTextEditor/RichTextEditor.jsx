@@ -45,16 +45,16 @@ const ExtendedLink = Link.extend({
 const RichTextEditor = ({
   allowedAttributes,
   allowedTags,
+  ariaAttributes,
   availableActions,
-  className,
   characterLimit,
+  className,
   hasErrors,
   id,
-  isOneLine,
   initialValue,
-  placeholder,
+  isOneLine,
   onChange,
-  ...rest
+  placeholder,
 }) => {
   const oneLineExtension = isOneLine ? [OneLineLimit] : [];
 
@@ -147,7 +147,7 @@ const RichTextEditor = ({
           )}
           editor={editor}
           role="textbox"
-          {...rest} // pass along ARIA attributes
+          {...ariaAttributes}
         />
         {
           !!characterLimit && (
@@ -180,6 +180,12 @@ RichTextEditor.propTypes = {
   */
   allowedTags: propTypes.array,
   /**
+    ARIA attributes to pass along to the text editor field
+    for accessibility purposes. The keys of the object should be valid
+    ARIA attributes.
+  */
+  ariaAttributes: propTypes.object,
+  /**
    Which actions to include in the taskbar. Available as constants.
    Current options are BOLD, ITALIC, LINK, UNLINK, UNORDERED_LIST and ORDERED_LIST
   */
@@ -203,6 +209,7 @@ RichTextEditor.propTypes = {
 RichTextEditor.defaultProps = {
   allowedAttributes: undefined,
   allowedTags: undefined,
+  ariaAttributes: undefined,
   availableActions: RichTextEditorDefaultActionsArray,
   characterLimit: undefined,
   className: undefined,

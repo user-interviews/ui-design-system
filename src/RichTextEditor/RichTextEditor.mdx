@@ -27,6 +27,10 @@ If you'd like to limit which options are available you can do so by passing the 
 
 <Canvas of={ComponentStories.AvailableActions} />
 
+Provide an object where the keys are ARIA attributes to `ariaAttributes` to pass them along to the text input field for accessibility purposes.
+
+<Canvas of={ComponentStories.ARIAAttributes} />
+
 If you set a character limit then the length of the inputted text will be restricted accordingly, including if longer text is pasted.
 A counter will also be shown below the input so you know how close you are to hitting the limit.
 

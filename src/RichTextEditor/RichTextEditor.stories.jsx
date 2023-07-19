@@ -21,6 +21,14 @@ export const Default = () => (
   />
 );
 
+export const ARIAAttributes = () => (
+  <RichTextEditor
+    ariaAttributes={{ 'aria-label': 'Rich Text Editor', 'aria-required': true }}
+    id="text-editor"
+    onChange={() => null}
+  />
+);
+
 export const AvailableActions = () => (
   <RichTextEditor
     availableActions={[RichTextEditorActions.BOLD, RichTextEditorActions.ITALIC]}
