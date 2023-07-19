@@ -4,8 +4,7 @@
   width: 100%;
 
   .RichTextEditor__character-count {
-    font-size: 0.75rem;
-    line-height: 1rem;
+    @include font-type-20;
     margin-top: 0.5rem;
   }
 }
@@ -21,7 +20,7 @@
   min-height: 5rem;
   background: $ux-neutral-100;
   border: 1px solid $ux-gray-400;
-  border-radius: 0 0 0.25rem 0.25rem;
+  border-radius: 0 0 $ux-border-radius $ux-border-radius;
   padding: 1rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
