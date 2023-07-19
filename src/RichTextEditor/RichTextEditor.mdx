@@ -1,0 +1,47 @@
+import { ArgTypes,  Canvas } from '@storybook/blocks';
+import RichTextEditor from './RichTextEditor';
+import * as ComponentStories from './RichTextEditor.stories';
+
+# RichTextEditor
+
+<h4>
+  RichTextEditor is a field element which provides a "what you see is what you get" (WYSIWYG) editor for HTML content.
+</h4>
+
+<Canvas of={ComponentStories.Default} />
+
+### When to use 
+To allow users to edit text where formatting is important, such as messages to be sent via email.
+
+### When to not use
+When formatting is not important. In those cases regular form inputs are a better fit.
+
+## Props
+
+<ArgTypes of={RichTextEditor} />
+
+## Stories
+
+By default RichTextEditor includes all available formatting actions.
+If you'd like to limit which options are available you can do so by passing the actions you'd like to the `availableActions` prop in an array.
+
+<Canvas of={ComponentStories.AvailableActions} />
+
+Provide an object where the keys are ARIA attributes to `ariaAttributes` to pass them along to the text input field for accessibility purposes.
+
+<Canvas of={ComponentStories.ARIAAttributes} />
+
+If you set a character limit then the length of the inputted text will be restricted accordingly, including if longer text is pasted.
+A counter will also be shown below the input so you know how close you are to hitting the limit.
+
+<Canvas of={ComponentStories.CharacterLimit} />
+
+You are also able to limit input to one line. This can be useful in situations where a limited amount of text is idea, but formatting is important.
+The `isOneLine` and `characterLimit` props can be used together in cases where you really need to restrict text length.
+
+<Canvas of={ComponentStories.OneLine} />
+
+RichTextEditor also has an error state to display that the input is invalid. The most common use case for this is when it is a required field and the input is empty,
+but by setting `hasErrors` via your provided `onChange` callback you can check the HTML produced by the RichTextEditor for any requirements that you have.
+
+<Canvas of={ComponentStories.Error} />

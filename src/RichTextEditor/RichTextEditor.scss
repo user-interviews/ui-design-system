@@ -1,0 +1,55 @@
+@import '../../scss/theme.scss';
+
+.RichTextEditor {
+  width: 100%;
+
+  .RichTextEditor__character-count {
+    @include font-type-20;
+    margin-top: 0.5rem;
+  }
+}
+
+
+.RichTextEditor__field--error {
+  .ProseMirror {
+    border-color: $ux-red-600;
+  }
+}
+
+.ProseMirror {
+  min-height: 5rem;
+  background: $ux-neutral-100;
+  border: 1px solid $ux-gray-400;
+  border-radius: 0 0 $ux-border-radius $ux-border-radius;
+  padding: 1rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:focus {
+    border: 0.06rem solid $ux-blue-500;
+    box-shadow: $input-focus-box-shadow;
+    color: $input-focus-color;
+    filter: drop-shadow(0px 0px 3px rgba(102, 175, 233, 0.7));
+    outline: none;
+  }
+
+  > * + * {
+    margin-top: 0.75em;
+  }
+
+  ul,
+  ol {
+    padding: 0 1rem;
+  }
+
+  li > p {
+    margin: 0;
+  }
+
+  p.is-editor-empty:first-child::before {
+    color: $ux-gray-700;
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+  }
+}
