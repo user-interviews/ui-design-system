@@ -11,7 +11,11 @@ export const createActionHandlers = (editor) => ({
 
     // empty
     if (url === '') {
-      editor.chain().focus().extendMarkRange('link').unsetLink()
+      editor
+        .chain()
+        .focus()
+        .extendMarkRange('link')
+        .unsetLink()
         .run();
 
       return;
@@ -21,7 +25,11 @@ export const createActionHandlers = (editor) => ({
     const absoluteUrl = url.match(protocolRegex) ? url : `//${url}`;
 
     // update link
-    editor.chain().focus().extendMarkRange('link').setLink({ href: absoluteUrl })
+    editor
+      .chain()
+      .focus()
+      .extendMarkRange('link')
+      .setLink({ href: absoluteUrl })
       .run();
   },
   unlink: () => editor.chain().focus().unsetLink().run(),
