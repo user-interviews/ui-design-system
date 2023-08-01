@@ -76,6 +76,7 @@ import {
   SingleSelect,
   ValueContainer,
 } from 'src/Select';
+import { Sidebar } from 'src/Sidebar';
 import { colors as COLORS } from 'src/Styles';
 import { Step, Steps } from 'src/Steps';
 import {
@@ -183,6 +184,7 @@ export {
   Row,
   SELECT_SIZES,
   SelectComponents,
+  Sidebar,
   SingleSelect,
   Step,
   Steps,

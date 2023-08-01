@@ -1,0 +1,54 @@
+@import '../../scss/theme';
+
+.Sidebar {
+  background-color: $ux-gray-200;
+  height: 100vh;
+
+  transition: 75ms linear;
+
+  &__header { 
+    padding: $ux-spacing-30;
+    position: relative; /* Needed for absolute positioning */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    border: 1px solid red;
+    
+    &__resize-button {
+      position: absolute;
+      top: 0; /* Position the button at the top */
+      right: 0; /* Position the button at the right */
+      margin-top: 16px;
+      margin-right: 16px;
+    }
+  }
+}
+
+.Sidebar--expanded {
+   // current Hub sidebar width
+   width: 359px;
+}
+
+.Sidebar--collapsed {
+  // some width
+  width: 65px;
+
+  .Sidebar__header__resize-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    .Sidebar__header__resize-button {
+      position: unset;
+      margin: unset;
+    }
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .Sidebar {
+    transition: none;
+  }
+}
