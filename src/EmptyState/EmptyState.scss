@@ -7,6 +7,9 @@ $empty-state-margin-top-sm: 4rem;
 $empty-state-margin-top-md: 6rem;
 $empty-state-margin-top-lg: 12.5rem;
 
+$empty-state-title-margin-bottom: $ux-spacing-40;
+$empty-state-subtitle-margin-bottom: $ux-spacing-40;
+
 .EmptyState {
   display: flex;
   flex-direction: row;
@@ -40,6 +43,14 @@ $empty-state-margin-top-lg: 12.5rem;
 
     margin-bottom: $ux-spacing-40;
     max-height: $empty-state-max-image-height;
+  }
+
+  &__title {
+    margin-bottom: $empty-state-title-margin-bottom;
+  }
+
+  &__subtitle {
+    margin-bottom: $empty-state-subtitle-margin-bottom;
   }
 
   &__actions {
