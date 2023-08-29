@@ -139,6 +139,121 @@ ChevronLeft.args = {
   title: 'Accordion Toggle',
 };
 
+export const ChevronLeftLateral = (args) => (
+  <Accordion>
+    <AccordionItem>
+      <AccordionToggle
+        eventKey="0"
+        {...args}
+      />
+      <AccordionCollapse eventKey="0">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </AccordionCollapse>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionToggle
+        eventKey="1"
+        {...args}
+      />
+      <AccordionCollapse eventKey="1">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </AccordionCollapse>
+    </AccordionItem>
+  </Accordion>
+);
+
+ChevronLeftLateral.args = {
+  chevronLateral: true,
+  chevronLeft: true,
+  disabled: false,
+  helperText: 'helper text',
+  title: 'Accordion Toggle',
+};
+
+export const ChevronLateral = (args) => (
+  <Accordion>
+    <AccordionItem>
+      <AccordionToggle
+        eventKey="0"
+        {...args}
+      />
+      <AccordionCollapse eventKey="0">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </AccordionCollapse>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionToggle
+        eventKey="1"
+        {...args}
+      />
+      <AccordionCollapse eventKey="1">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </AccordionCollapse>
+    </AccordionItem>
+  </Accordion>
+);
+
+ChevronLateral.args = {
+  chevronLateral: true,
+  disabled: false,
+  helperText: 'helper text',
+  title: 'Accordion Toggle',
+};
+
+export const CollapsedText = (args) => (
+  <Accordion defaultActiveKey="1">
+    <AccordionItem>
+      <AccordionToggle
+        eventKey="0"
+        {...args}
+      />
+      <AccordionCollapse eventKey="0">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </AccordionCollapse>
+    </AccordionItem>
+    <AccordionItem>
+      <AccordionToggle
+        eventKey="1"
+        {...args}
+      />
+      <AccordionCollapse eventKey="1">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </AccordionCollapse>
+    </AccordionItem>
+  </Accordion>
+);
+
+CollapsedText.args = {
+  collapsedText: 'This shows only when collapsed',
+  disabled: false,
+  helperText: 'helper text',
+  title: 'Accordion Toggle',
+};
+
 export const Borderless = (args) => (
   <Accordion flush>
     <AccordionItem borderless>

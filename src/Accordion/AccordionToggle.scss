@@ -23,6 +23,20 @@
     }
   }
 
+  &--chevron-lateral {
+    .AccordionToggle__chevron-left {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+
+    .AccordionToggle__chevron-right {
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+  }
+
   &:focus-visible {
     @include btn-focus-outline;
     border-radius: $ux-border-radius;
@@ -69,6 +83,11 @@
 
   &__helper-text {
     @include font-type-30;
+  }
+
+  &__collapsed-text {
+    @include font-type-30;
+    color: $ux-gray-600;
   }
 
   &--disabled {
