@@ -32,7 +32,7 @@
 
     .AccordionToggle__chevron-right {
       svg {
-        transform: rotate(-90deg);
+        transform: rotate(90deg);
       }
     }
   }
@@ -53,6 +53,15 @@
     svg {
       transform: rotate(180deg);
       transition: $chevron-rotation-transition-time ease all;
+    }
+  }
+
+  &--chevron-lateral {
+    &:not(.collapsed) .AccordionToggle__chevron-right {
+      svg {
+        transform: rotate(180deg);
+        transition: $chevron-rotation-transition-time ease all;
+      }
     }
   }
 
