@@ -12,8 +12,10 @@ import { faChevronUp } from '@fortawesome/pro-solid-svg-icons';
 
 const AccordionToggle = ({
   children,
+  chevronLateral,
   chevronLeft,
   chevronRight,
+  collapsedText,
   disabled,
   eventKey,
   helperText,
@@ -54,6 +56,7 @@ const AccordionToggle = ({
           UNSAFE_className,
           'AccordionToggle',
           { collapsed: isCollapsed },
+          { 'AccordionToggle--chevron-lateral': chevronLateral },
           { 'AccordionToggle--disabled': disabled },
         )
       }
@@ -76,6 +79,9 @@ const AccordionToggle = ({
           {title && (
             <span className="AccordionToggle__title">{title}</span>
           )}
+          {collapsedText && isCollapsed && (
+            <span className="AccordionToggle__collapsed-text">{collapsedText} </span>
+          )}
           {helperText && (
             <span className="AccordionToggle__helper-text">({helperText})</span>
           )}
@@ -95,6 +101,10 @@ const AccordionToggle = ({
 
 AccordionToggle.propTypes = {
   /**
+   Set Chevron icon to open/close quarter turn from lateral
+  */
+  chevronLateral: PropTypes.bool,
+  /**
    Aligns the Chevron icon to the left
   */
   chevronLeft: PropTypes.bool,
@@ -102,6 +112,7 @@ AccordionToggle.propTypes = {
    Aligns the Chevron icon to the right (default)
   */
   chevronRight: PropTypes.bool,
+  collapsedText: PropTypes.string,
   /**
    A unique key used to control this item's collapse/expand.
    */
@@ -114,8 +125,10 @@ AccordionToggle.propTypes = {
 };
 
 AccordionToggle.defaultProps = {
+  chevronLateral: false,
   chevronLeft: false,
   chevronRight: true,
+  collapsedText: undefined,
   disabled: undefined,
   helperText: undefined,
   leadingIcon: undefined,
