@@ -98,8 +98,13 @@ Array [
       >
         <svg
           aria-hidden="true"
+<<<<<<< release/2.1.1
           className="svg-inline--fa fa-xmark "
           data-icon="xmark"
+=======
+          className="svg-inline--fa fa-times "
+          data-icon="times"
+>>>>>>> main
           data-prefix="fas"
           focusable="false"
           role="img"
