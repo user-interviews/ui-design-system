@@ -32,6 +32,7 @@
     "build": "NODE_ENV=production babel src --out-dir lib --copy-files",
     "build-storybook": "storybook build -s public",
     "build-storybook-docs": "storybook build -s public --docs",
+    "build-ts": "tsc",
     "chromatic": "npx chromatic",
     "lint": "eslint . --ext .js,.jsx",
     "prepublishOnly": "yarn build",
@@ -162,6 +163,7 @@
     "yarn": "^ 1.22"
   },
   "main": "lib/index.js",
+  "types": "dist/index.d.ts",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
