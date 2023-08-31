@@ -92,6 +92,8 @@ import {
   TableRow,
   TableSortLabel,
 } from 'src/Table';
+// import { TestPill, TestPillProps } from 'src/TestPill';
+import { TestPill } from '../src/TestPill';
 import { Text, TEXT_PROPS } from 'src/Text';
 import {
   Toast,
@@ -196,6 +198,7 @@ export {
   TableLoadingSkeleton,
   TableRow,
   TableSortLabel,
+  TestPill,
   Text,
   TEXT_PROPS,
   Toast,
