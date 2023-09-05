@@ -3,68 +3,68 @@ import {
   AccordionCollapse,
   AccordionItem,
   AccordionToggle,
-} from 'src/Accordion';
-import { Alert, MessageTypes } from 'src/Alert';
-import Button, { ButtonSizes, ButtonVariants } from 'src/Button';
-import Avatar from 'src/Avatar';
-import Card, { CardSizes } from 'src/Card';
-import { CardStack } from 'src/CardStack';
-import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
-import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
-import { Col, Container, Row } from 'src/Container';
-import { ORIENTATIONS as BUTTON_GROUP_ORIENTATIONS } from 'src/ControlButtonGroup';
-import CopyToClipboard from 'src/CopyToClipboard';
-import CopyToClipboardButton from 'src/CopyToClipboardButton';
+} from './Accordion';
+import { Alert, MessageTypes } from './Alert';
+import Button, { ButtonSizes, ButtonVariants } from './Button';
+import Avatar from './Avatar';
+import Card, { CardSizes } from './Card';
+import { CardStack } from './CardStack';
+import CheckboxButton, { CHECKED_STATES } from './CheckboxButton';
+import CheckboxButtonGroup from './CheckboxButtonGroup';
+import { Col, Container, Row } from './Container';
+import { ORIENTATIONS as BUTTON_GROUP_ORIENTATIONS } from './ControlButtonGroup';
+import CopyToClipboard from './CopyToClipboard';
+import CopyToClipboardButton from './CopyToClipboardButton';
 import {
   Drawer,
   DrawerHeader,
   DrawerBody,
   DrawerFooter,
   DrawerSizes,
-} from 'src/Drawer';
+} from './Drawer';
 import {
   Dropdown,
   DropdownDivider,
   DropdownToggle,
   DropdownItem,
   DropdownMenu,
-} from 'src/Dropdown';
-import EmptyState from 'src/EmptyState';
-import FadeTransition from 'src/FadeTransition';
-import { Flex, FLEX_PROPS } from 'src/Flex';
-import Form from 'src/Form';
-import FormControlLabel from 'src/FormControlLabel';
-import FormGroup from 'src/FormGroup';
-import { Heading, HEADING_PROPS } from 'src/Heading';
-import IconButton from 'src/IconButton';
-import IconCell from 'src/IconCell';
-import Input from 'src/Input';
-import InputLabel from 'src/InputLabel';
-import InputLegend from 'src/InputLegend';
-import { LoadingSkeleton } from 'src/LoadingSkeleton';
-import LoadingOverlay from 'src/LoadingOverlay';
-import Main from 'src/Main';
+} from './Dropdown';
+import EmptyState from './EmptyState';
+import FadeTransition from './FadeTransition';
+import { Flex, FLEX_PROPS } from './Flex';
+import Form from './Form';
+import FormControlLabel from './FormControlLabel';
+import FormGroup from './FormGroup';
+import { Heading, HEADING_PROPS } from './Heading';
+import IconButton from './IconButton';
+import IconCell from './IconCell';
+import Input from './Input';
+import InputLabel from './InputLabel';
+import InputLegend from './InputLegend';
+import { LoadingSkeleton } from './LoadingSkeleton';
+import LoadingOverlay from './LoadingOverlay';
+import Main from './Main';
 import {
   Modal,
   MODAL_SIZES,
   ModalBody,
   ModalFooter,
   ModalHeader,
-} from 'src/Modal';
-import MoneyInput from 'src/MoneyInput';
-import { OverlayTrigger, OVERLAY_TRIGGER_PLACEMENT } from 'src/OverlayTrigger';
-import { Pill, Pills, PILL_COLORS } from 'src/Pill';
-import { Popover, PopoverBody, PopoverCard } from 'src/Popover';
-import Popper from 'src/Popper';
-import ProfileCell, { ProfileCellSkeleton } from 'src/ProfileCell';
-import RadioButton from 'src/RadioButton';
-import RadioButtonGroup from 'src/RadioButtonGroup';
+} from './Modal';
+import MoneyInput from './MoneyInput';
+import { OverlayTrigger, OVERLAY_TRIGGER_PLACEMENT } from './OverlayTrigger';
+import { Pill, Pills, PILL_COLORS } from './Pill';
+import { Popover, PopoverBody, PopoverCard } from './Popover';
+import Popper from './Popper';
+import ProfileCell, { ProfileCellSkeleton } from './ProfileCell';
+import RadioButton from './RadioButton';
+import RadioButtonGroup from './RadioButtonGroup';
 import {
   RichTextEditor,
   RichTextEditorActions,
   RichTextEditorAllActionsArray,
   RichTextEditorDefaultActionsArray,
-} from 'src/RichTextEditor';
+} from './RichTextEditor';
 import {
   AsyncSelect,
   AsyncCreatableSelect,
@@ -75,13 +75,13 @@ import {
   SelectComponents,
   SingleSelect,
   ValueContainer,
-} from 'src/Select';
-import { colors as COLORS } from 'src/Styles';
-import { Step, Steps } from 'src/Steps';
+} from './Select';
+import { colors as COLORS } from './Styles';
+import { Step, Steps } from './Steps';
 import {
   Tab,
   Tabs,
-} from 'src/Tabs';
+} from './Tabs';
 import {
   Table,
   TableBody,
@@ -91,18 +91,17 @@ import {
   TableLoadingSkeleton,
   TableRow,
   TableSortLabel,
-} from 'src/Table';
-// import { TestPill, TestPillProps } from 'src/TestPill';
-import { TestPill } from '../src/TestPill';
-import { Text, TEXT_PROPS } from 'src/Text';
+} from './Table';
+import { TestPill } from './TestPill/index';
+import { Text, TEXT_PROPS } from './Text';
 import {
   Toast,
   useToast,
   withToast,
   withToastPropTypes,
-} from 'src/Toast';
-import { ToggleInput } from 'src/ToggleInput';
-import Tooltip from 'src/Tooltip';
+} from './Toast';
+import { ToggleInput } from './ToggleInput';
+import Tooltip from './Tooltip';
 
 export {
   Accordion,

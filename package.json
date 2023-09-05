@@ -162,8 +162,8 @@
     "node": ">= 16 < 19",
     "yarn": "^ 1.22"
   },
-  "main": "lib/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index",
+  "types": "lib/index",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
