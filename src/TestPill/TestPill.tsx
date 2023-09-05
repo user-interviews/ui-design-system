@@ -9,6 +9,7 @@ const TestPill: React.FC<TestPillProps> = ({ color, text }) => {
   const getColor = () => {
     if (color === 'red') return 'red'
     if (color === 'blue') return 'blue'
+    return 'black';
   }
   return <div className="test-pill" style={{backgroundColor: getColor()}}>{text}</div>;
 };
