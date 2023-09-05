@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "declaration": true,
@@ -13,7 +12,7 @@
     "module": "CommonJs",
     "moduleResolution": "Node",
     "noEmit": false,
-    "noImplicitAny": true,
+    "noImplicitAny": false, // TODO: set to true once all components are TS
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "outDir": "./lib",
