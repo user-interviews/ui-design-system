@@ -165,23 +165,13 @@ If you are not able to or choose not to use the github actions described above, 
 ### Starting up development
 1. run these commands inside the root of the DS repo:
 ````bash
-  yarn rs:link && yarn rs:link:watch
+  yarn rs:link
+  # or using nodemon
+  yarn rs:link:watch
 ````
 💡 at this point you should see a nodemon process running
-
-2. run these commands inside the root of the RS repo:
-````bash
-  bin/link-ds
-````
 ### Wrapping up development
-1. run these commands inside the root of the RS repo:
-````bash
-  bin/unlink-ds
-````
-2. run these commands inside the root of the DS repo:
+1. run these commands inside the root of the DS repo:
 ````bash
   yarn rs:unlink
 ````
-
-#### 🤔 Snags
-- you'll have to manually refresh your browser tab, after the automatic refresh, to see your expected changes.
