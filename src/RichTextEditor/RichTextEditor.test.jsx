@@ -7,7 +7,7 @@ describe('<RichTextEditor />', () => {
   const Setup = (overrides = {}) => (
     <RichTextEditor
       id="some-id"
-      onChange={() => {}}
+      onChange={jest.fn()}
       {...overrides}
     />
   );

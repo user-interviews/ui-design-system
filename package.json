@@ -18,6 +18,8 @@
     "@tiptap/extension-text": "^2.0.3",
     "@tiptap/pm": "^2.0.3",
     "@tiptap/react": "^2.0.3",
+    "@typescript-eslint/eslint-plugin": "^2",
+    "@typescript-eslint/parser": "^2",
     "react-bootstrap": "^2.5.0",
     "react-currency-input-field": "^3.6.10",
     "react-loading-skeleton": "^3.1.0",
@@ -29,7 +31,7 @@
     "uuid": "^7.0.2"
   },
   "scripts": {
-    "build": "NODE_ENV=production babel src --out-dir lib --copy-files",
+    "build": "NODE_ENV=production babel src --out-dir lib --copy-files --extensions '.js,.jsx,.ts,.tsx' && tsc",
     "build-storybook": "storybook build -s public",
     "build-storybook-docs": "storybook build -s public --docs",
     "build-ts": "tsc",
@@ -162,8 +164,8 @@
     "node": ">= 16 < 19",
     "yarn": "^ 1.22"
   },
-  "main": "lib/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index",
+  "types": "lib/index",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },

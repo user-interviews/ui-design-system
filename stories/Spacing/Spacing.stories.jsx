@@ -7,16 +7,6 @@ import { colors } from 'src/Styles';
 
 import mdx from './Spacing.mdx';
 
-export default {
-  title: 'Foundations/Spacing',
-  component: Spacing,
-  parameters: {
-    docs: {
-      page: mdx,
-    },
-  },
-};
-
 /* eslint-disable object-curly-newline */
 const data = [
   { id: 1, token: '$ux-spacing-10', rem: '0.25', px: '4' },
@@ -52,3 +42,13 @@ export const Spacing = () => (
     </TableBody>
   </Table>
 );
+
+export default {
+  title: 'Foundations/Spacing',
+  component: Spacing,
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
+};
