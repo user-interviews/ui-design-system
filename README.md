@@ -163,15 +163,23 @@ If you are not able to or choose not to use the github actions described above, 
 ## Developing against the Rails Server repo
 
 ### Starting up development
-1. run these commands inside the root of the DS repo:
+
+1. Add `RAILS_SERVER_PATH` to a `.env` of this application
+  *this will be the path to rails-server in your local machine*
+1. Run these commands inside the root of the DS repo:
+
 ````bash
   yarn rs:link
   # or using nodemon
   yarn rs:link:watch
 ````
+
 💡 at this point you should see a nodemon process running
+
 ### Wrapping up development
-1. run these commands inside the root of the DS repo:
+
+1. Run these commands inside the root of the DS repo:
+
 ````bash
   yarn rs:unlink
 ````
