@@ -92,7 +92,6 @@ import {
   TableRow,
   TableSortLabel,
 } from './Table';
-import { TestPill } from './TestPill';
 import { Text, TEXT_PROPS } from './Text';
 import {
   Toast,
@@ -197,7 +196,6 @@ export {
   TableLoadingSkeleton,
   TableRow,
   TableSortLabel,
-  TestPill,
   Text,
   TEXT_PROPS,
   Toast,

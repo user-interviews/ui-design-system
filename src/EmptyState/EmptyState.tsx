@@ -1,24 +1,25 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 import classNames from 'classnames';
-import propTypes from 'prop-types';
 
 import { Heading } from 'src/Heading';
 import { Text } from 'src/Text';
 
 import './EmptyState.scss';
 
-export const EmptyStateMarginTopSizes = {
-  SMALL: 'sm',
-  MEDIUM: 'md',
-  LARGE: 'lg',
-  NONE: 'none',
-};
+export interface IEmptyStateProps {
+  className?: string;
+  fullWidth?: boolean;
+  marginTop?: 'sm' | 'md' | 'lg' | 'none';
+  primaryAction?: ReactNode;
+  subtitle?: string | ReactNode;
+  title?: ReactNode;
+}
 
-const EmptyState = ({
+const EmptyState: React.FC<IEmptyStateProps> = ({
   className,
-  fullWidth,
-  marginTop,
+  fullWidth = false,
+  marginTop = 'sm',
   primaryAction,
   subtitle,
   title,
@@ -52,32 +53,5 @@ const EmptyState = ({
     </div>
   </div>
 );
-
-EmptyState.propTypes = {
-  className: propTypes.string,
-  /**
-    Sets the content area to full width.
-  */
-  fullWidth: propTypes.bool,
-  /**
-    Sets a predefined margin-top depending on spacial context.
-  */
-  marginTop: propTypes.oneOf(Object.values(EmptyStateMarginTopSizes)),
-  /**
-    Accepts a React node, in most cases a Button component.
-  */
-  primaryAction: propTypes.node,
-  subtitle: propTypes.oneOfType([propTypes.string, propTypes.node]),
-  title: propTypes.node,
-};
-
-EmptyState.defaultProps = {
-  className: undefined,
-  fullWidth: false,
-  marginTop: EmptyStateMarginTopSizes.SMALL,
-  primaryAction: undefined,
-  subtitle: undefined,
-  title: undefined,
-};
 
 export default EmptyState;
