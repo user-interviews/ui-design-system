@@ -1,7 +1,13 @@
 #!/bin/bash
 
-yarn link
-cd node_modules/react
-yarn link
-cd ../../node_modules/react-dom
-yarn link
+source ./.env
+
+if [ -z ${RAILS_SERVER_PATH+x} ]; then
+  printf "Set RAILS_SERVER_PATH in your .env to link the DS to the RS\n"
+  exit 1
+fi
+
+yarn build
+yalc publish
+cd $RAILS_SERVER_PATH
+yalc link @user-interviews/ui-design-system

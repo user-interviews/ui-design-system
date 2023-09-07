@@ -1,5 +1,5 @@
 {
-  "exec": "yarn build",
+  "exec": "bin/link-rs",
   "ext": "js,json,jsx,ts,tsx,scss",
   "verbose": true,
   "watch": [
