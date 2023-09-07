@@ -1,17 +1,12 @@
 #!/bin/bash
 
-unlink()
-{
-  local package_name="${2:-$1}"
+source ./.env
 
-  output=$(eval "yarn unlink $1")
+if [ -z ${RAILS_SERVER_PATH+x} ]; then
+  printf "Set RAILS_SERVER_PATH in your .env to link the DS to the RS\n"
+  exit 1
+fi
 
-  echo "$output"
-  echo "== $package_name unlinked =="
-}
-
-unlink '' 'DS package'
-unlink 'react'
-unlink 'react-dom'
-
-yarn install --force
+cd $RAILS_SERVER_PATH
+yalc remove @user-interviews/ui-design-system
+yalc installations clean @user-interviews/ui-design-system
