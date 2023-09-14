@@ -2,8 +2,8 @@ import React, { ReactNode } from 'react';
 
 import classNames from 'classnames';
 
-import { Heading } from 'src/Heading';
-import { Text } from 'src/Text';
+import { Heading } from '../Heading';
+import { Text } from '../Text';
 
 import './EmptyState.scss';
 
@@ -35,6 +35,7 @@ const EmptyState = ({
       fullWidth && 'EmptyState--full-width',
     )}
     >
+      <b>HEY HEY</b>
       {title && (
         <Heading className="EmptyState__title" level={4} size="lg" textAlign="center">{title}</Heading>
       )}
