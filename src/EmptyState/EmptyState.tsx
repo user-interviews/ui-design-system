@@ -7,7 +7,7 @@ import { Text } from 'src/Text';
 
 import './EmptyState.scss';
 
-export interface IEmptyStateProps {
+export interface EmptyStateProps {
   className?: string;
   fullWidth?: boolean;
   marginTop?: 'sm' | 'md' | 'lg' | 'none';
@@ -16,14 +16,14 @@ export interface IEmptyStateProps {
   title?: ReactNode;
 }
 
-const EmptyState: React.FC<IEmptyStateProps> = ({
+const EmptyState = ({
   className,
   fullWidth = false,
   marginTop = 'sm',
   primaryAction,
   subtitle,
   title,
-}) => (
+}: EmptyStateProps) => (
   <div className={classNames(
     className,
     'EmptyState',
