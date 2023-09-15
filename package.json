@@ -154,6 +154,7 @@
     "yalc": "^1.0.0-pre.53"
   },
   "resolutions": {
+    "@babel/helper-create-regexp-features-plugin": "^7.22.15",
     "istanbul-lib-instrument": "^6.0.0",
     "jackspeak": "2.1.1",
     "make-dir": "4.0.0",
