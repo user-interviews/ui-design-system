@@ -147,6 +147,9 @@
     "prefer-destructuring": "warn",
     "quotes": ["error", "single", { "allowTemplateLiterals" : true }],
     "radix": 0,
+    "react/jsx-filename-extension": ["error", {
+      "extensions": [".tsx", ".jsx"]
+    }],
     "react/jsx-fragments": 0,
     "symbol-description": 0,
     "template-curly-spacing": "off",
