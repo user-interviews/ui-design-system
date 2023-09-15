@@ -35,7 +35,6 @@ const EmptyState = ({
       fullWidth && 'EmptyState--full-width',
     )}
     >
-      <b>HEY HEY</b>
       {title && (
         <Heading className="EmptyState__title" level={4} size="lg" textAlign="center">{title}</Heading>
       )}
