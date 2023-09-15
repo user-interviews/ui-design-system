@@ -147,9 +147,10 @@
     "yalc": "^1.0.0-pre.53"
   },
   "resolutions": {
+    "istanbul-lib-instrument": "^6.0.0",
+    "jackspeak": "2.1.1",
     "make-dir": "4.0.0",
     "normalize-package-data": "^3.0.0",
-    "jackspeak": "2.1.1",
     "semver": "^7.5.3",
     "styled-components": "^5"
   },
