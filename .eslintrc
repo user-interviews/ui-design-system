@@ -1,5 +1,10 @@
 {
-  "extends": "airbnb",
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript"
+  ],
+  "parser": "@typescript-eslint/parser",
   "overrides": [
     {
       "files": [
@@ -11,9 +16,9 @@
     },
     {
       "files": [
-        "src/**/*.{js,jsx}",
-        "spec/**/*.{js,jsx}",
-        "stories/**/*.{js,jsx}"
+        "src/**/*.{js,jsx,ts,tsx}",
+        "spec/**/*.{js,jsx,ts,tsx}",
+        "stories/**/*.{js,jsx,ts,tsx}"
       ],
       "env": {
         "browser": true
@@ -117,6 +122,7 @@
     }
   },
   "rules": {
+    "@typescript-eslint/explicit-function-return-type": "off",
     "class-methods-use-this": 0,
     "function-paren-newline": ["error", "consistent"],
     "func-names": ["error", "never"],
@@ -141,9 +147,22 @@
     "prefer-destructuring": "warn",
     "quotes": ["error", "single", { "allowTemplateLiterals" : true }],
     "radix": 0,
+    "react/jsx-filename-extension": ["error", {
+      "extensions": [".tsx", ".jsx"]
+    }],
     "react/jsx-fragments": 0,
     "symbol-description": 0,
     "template-curly-spacing": "off",
-    "indent": "off"
+    "indent": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+   ]
   }
 }
