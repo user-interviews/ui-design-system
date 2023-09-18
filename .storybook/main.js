@@ -25,9 +25,12 @@ const config = {
   stories: [
     '../stories/Intro.stories.mdx',
     '../src/**/*.stories.@(js|mdx)',
+    '../src/**/*.stories.@(ts|mdx)',
     '../src/**/*.stories.js[x]',
+    '../src/**/*.stories.ts[x]',
     '../stories/**/*.stories.mdx',
-    '../stories/**/*.stories.js[x]'
+    '../stories/**/*.stories.js[x]',
+    '../stories/**/*.stories.ts[x]'
   ],
   features: {
     storyStoreV7: false,
@@ -35,6 +38,9 @@ const config = {
   framework: {
     name: '@storybook/react-webpack5',
     options: { fastRefresh: true },
+  },
+  typescript: {
+    check: true,
   },
 };
 
