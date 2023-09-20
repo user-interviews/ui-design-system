@@ -31,7 +31,7 @@ import {
 } from './Dropdown';
 import EmptyState from './EmptyState';
 import FadeTransition from './FadeTransition';
-import { Flex, FLEX_PROPS } from './Flex';
+import { Flex } from './Flex';
 import Form from './Form';
 import FormControlLabel from './FormControlLabel';
 import FormGroup from './FormGroup';
@@ -140,7 +140,6 @@ export {
   EmptyState,
   FadeTransition,
   Flex,
-  FLEX_PROPS,
   Form,
   FormControlLabel,
   FormGroup,
