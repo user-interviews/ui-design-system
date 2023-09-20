@@ -4,9 +4,15 @@ import { FlexWrapper } from './FlexWrapper.styles';
 export interface FlexProps {
   alignItems?: 'stretch' | 'center' | 'flex-start' | 'flex-end' | 'baseline' | 'initial' | 'inherit';
   alignSelf?: 'stretch' | 'center' | 'start' | 'end';
+  /**
+    You can use a custom element for this component other than the default `div`
+  */
   as?: ElementType;
   className?: string;
   children?: ReactNode;
+  /**
+    If `true`, `display: flex;` otherwise `display: block;`
+  */
   container?: boolean;
   flex?: number | string;
   flexBasis?: string;
@@ -14,11 +20,23 @@ export interface FlexProps {
   flexGrow?: number;
   flexShrink?: number;
   flexWrap?: 'wrap' | 'no-wrap' | 'wrap-reverse';
+  /**
+    rem or px
+  */
   height?: string;
   justifyContent?: 'flex-start' | 'flex-end' | 'space-between' | 'space-around' | 'center' | 'initial' | 'inherit';
   justifySelf?: 'stretch' | 'center' | 'start' | 'end';
+  /**
+    rem or px
+  */
   maxHeight?: string;
+  /**
+    rem or px
+  */
   maxWidth?: string;
+  /**
+    rem or px
+  */
   width?: string;
 }
 
