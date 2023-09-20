@@ -1,9 +1,10 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, ElementType } from 'react';
 import { FlexWrapper } from './FlexWrapper.styles';
 
 export interface FlexProps {
   alignItems?: 'stretch' | 'center' | 'flex-start' | 'flex-end' | 'baseline' | 'initial' | 'inherit';
   alignSelf?: 'stretch' | 'center' | 'start' | 'end';
+  as?: ElementType;
   className?: string;
   children?: ReactNode;
   container?: boolean;
@@ -24,6 +25,7 @@ export interface FlexProps {
 const Flex = ({
   alignItems,
   alignSelf,
+  as,
   className,
   children,
   container,
@@ -41,6 +43,7 @@ const Flex = ({
   width,
   ...props } : FlexProps) => (
   <FlexWrapper
+    as={as}
     alignItems={alignItems}
     alignSelf={alignSelf}
     className={className}
