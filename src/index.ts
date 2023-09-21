@@ -35,7 +35,7 @@ import { Flex, FLEX_PROPS } from './Flex';
 import Form from './Form';
 import FormControlLabel from './FormControlLabel';
 import FormGroup from './FormGroup';
-import { Heading, HEADING_PROPS } from './Heading';
+import { Heading } from './Heading';
 import IconButton from './IconButton';
 import IconCell from './IconCell';
 import Input from './Input';
@@ -145,7 +145,6 @@ export {
   FormControlLabel,
   FormGroup,
   Heading,
-  HEADING_PROPS,
   IconButton,
   IconCell,
   Input,
