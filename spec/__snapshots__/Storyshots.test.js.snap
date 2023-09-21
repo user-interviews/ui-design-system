@@ -30163,738 +30163,203 @@ exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
 </div>
 `;
 
-exports[`Storyshots Layouts/Flex Default 1`] = `
+exports[`Storyshots Layouts/Flex Align Items 1`] = `
 <div
-  className="sc-aXZVg gxosyc"
-  height="100%"
+  className="sc-aXZVg idOQCp"
 >
-  <div
-    className="ProfileCell"
+  <section
+    className="Card Card--xs"
   >
     <div
-      className="ProfileCell__image"
+      className="Card__header"
     >
-      <div
-        aria-hidden={false}
-        className="Avatar"
+      <h2
+        className="Card__title"
       >
-        <div
-          className="Avatar__circle ui-mod ui-mod--1"
-        >
-          <span
-            className="Avatar__circle__initials"
-          >
-            RR
-          </span>
-        </div>
-      </div>
+        Card 1
+      </h2>
     </div>
-    <div
-      className="ProfileCell__content"
-      style={
-        Object {
-          "maxWidth": "none",
-        }
-      }
-    >
-      <div
-        className="ProfileCell__content__name__container"
-      >
-        <h5
-          className="ProfileCell__content__name"
-        >
-          Riley Researcher
-        </h5>
-      </div>
-      <div
-        className="ProfileCell__content__subtitle"
-      >
-        riley+1@userinterviews.com
-      </div>
-    </div>
-  </div>
-  <div
-    className="ProfileCell"
+  </section>
+  <section
+    className="Card Card--xs"
   >
     <div
-      className="ProfileCell__image"
+      className="Card__header"
     >
-      <div
-        aria-hidden={false}
-        className="Avatar"
+      <h2
+        className="Card__title"
       >
-        <div
-          className="Avatar__circle ui-mod ui-mod--2"
-        >
-          <span
-            className="Avatar__circle__initials"
-          >
-            RR
-          </span>
-        </div>
-      </div>
+        align-items: 
+      </h2>
     </div>
-    <div
-      className="ProfileCell__content"
-      style={
-        Object {
-          "maxWidth": "none",
-        }
-      }
+    <h3
+      className="Card__subtitle"
     >
-      <div
-        className="ProfileCell__content__name__container"
-      >
-        <h5
-          className="ProfileCell__content__name"
-        >
-          Riley Researcher
-        </h5>
-      </div>
-      <div
-        className="ProfileCell__content__subtitle"
-      >
-        riley+2@userinterviews.com
-      </div>
-    </div>
-  </div>
-  <div
-    className="ProfileCell"
+      center
+    </h3>
+  </section>
+  <section
+    className="Card Card--xs"
   >
     <div
-      className="ProfileCell__image"
+      className="Card__header"
     >
-      <div
-        aria-hidden={false}
-        className="Avatar"
+      <h2
+        className="Card__title"
       >
-        <div
-          className="Avatar__circle ui-mod ui-mod--3"
-        >
-          <span
-            className="Avatar__circle__initials"
-          >
-            RR
-          </span>
-        </div>
-      </div>
+        Card 3
+      </h2>
     </div>
-    <div
-      className="ProfileCell__content"
-      style={
-        Object {
-          "maxWidth": "none",
-        }
-      }
-    >
-      <div
-        className="ProfileCell__content__name__container"
-      >
-        <h5
-          className="ProfileCell__content__name"
-        >
-          Riley Researcher
-        </h5>
-      </div>
-      <div
-        className="ProfileCell__content__subtitle"
-      >
-        riley+3@userinterviews.com
-      </div>
-    </div>
-  </div>
-  <div
-    className="ProfileCell"
-  >
-    <div
-      className="ProfileCell__image"
-    >
-      <div
-        aria-hidden={false}
-        className="Avatar"
-      >
-        <div
-          className="Avatar__circle ui-mod ui-mod--4"
-        >
-          <span
-            className="Avatar__circle__initials"
-          >
-            RR
-          </span>
-        </div>
-      </div>
-    </div>
-    <div
-      className="ProfileCell__content"
-      style={
-        Object {
-          "maxWidth": "none",
-        }
-      }
-    >
-      <div
-        className="ProfileCell__content__name__container"
-      >
-        <h5
-          className="ProfileCell__content__name"
-        >
-          Riley Researcher
-        </h5>
-      </div>
-      <div
-        className="ProfileCell__content__subtitle"
-      >
-        riley+4@userinterviews.com
-      </div>
-    </div>
-  </div>
-  <div
-    className="ProfileCell"
-  >
-    <div
-      className="ProfileCell__image"
-    >
-      <div
-        aria-hidden={false}
-        className="Avatar"
-      >
-        <div
-          className="Avatar__circle ui-mod ui-mod--5"
-        >
-          <span
-            className="Avatar__circle__initials"
-          >
-            RR
-          </span>
-        </div>
-      </div>
-    </div>
-    <div
-      className="ProfileCell__content"
-      style={
-        Object {
-          "maxWidth": "none",
-        }
-      }
-    >
-      <div
-        className="ProfileCell__content__name__container"
-      >
-        <h5
-          className="ProfileCell__content__name"
-        >
-          Riley Researcher
-        </h5>
-      </div>
-      <div
-        className="ProfileCell__content__subtitle"
-      >
-        riley+5@userinterviews.com
-      </div>
-    </div>
-  </div>
-  <div
-    className="ProfileCell"
-  >
-    <div
-      className="ProfileCell__image"
-    >
-      <div
-        aria-hidden={false}
-        className="Avatar"
-      >
-        <div
-          className="Avatar__circle ui-mod ui-mod--0"
-        >
-          <span
-            className="Avatar__circle__initials"
-          >
-            RR
-          </span>
-        </div>
-      </div>
-    </div>
-    <div
-      className="ProfileCell__content"
-      style={
-        Object {
-          "maxWidth": "none",
-        }
-      }
-    >
-      <div
-        className="ProfileCell__content__name__container"
-      >
-        <h5
-          className="ProfileCell__content__name"
-        >
-          Riley Researcher
-        </h5>
-      </div>
-      <div
-        className="ProfileCell__content__subtitle"
-      >
-        riley+6@userinterviews.com
-      </div>
-    </div>
-  </div>
+  </section>
 </div>
 `;
 
-exports[`Storyshots Layouts/Flex Flex Container 1`] = `
-Array [
-  <h1
-    style={
-      Object {
-        "fontSize": "1.5rem",
-        "fontWeight": "700",
-      }
-    }
-  >
-    Properties for the parent (flex container)
-  </h1>,
-  <div
-    className="sc-aXZVg gxosyc"
-    height="100%"
+exports[`Storyshots Layouts/Flex Default 1`] = `
+<div
+  className="sc-aXZVg fBLyyp"
+>
+  <section
+    className="Card Card--xs"
   >
     <div
-      className="ProfileCell"
+      className="Card__header"
     >
-      <div
-        className="ProfileCell__image"
+      <h2
+        className="Card__title"
       >
-        <div
-          aria-hidden={false}
-          className="Avatar"
-        >
-          <div
-            className="Avatar__circle ui-mod ui-mod--1"
-          >
-            <span
-              className="Avatar__circle__initials"
-            >
-              RR
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="ProfileCell__content"
-        style={
-          Object {
-            "maxWidth": "none",
-          }
-        }
-      >
-        <div
-          className="ProfileCell__content__name__container"
-        >
-          <h5
-            className="ProfileCell__content__name"
-          >
-            Riley Researcher
-          </h5>
-        </div>
-        <div
-          className="ProfileCell__content__subtitle"
-        >
-          riley+1@userinterviews.com
-        </div>
-      </div>
+        Card 1
+      </h2>
     </div>
+  </section>
+  <section
+    className="Card Card--xs"
+  >
     <div
-      className="ProfileCell"
+      className="Card__header"
     >
-      <div
-        className="ProfileCell__image"
+      <h2
+        className="Card__title"
       >
-        <div
-          aria-hidden={false}
-          className="Avatar"
-        >
-          <div
-            className="Avatar__circle ui-mod ui-mod--2"
-          >
-            <span
-              className="Avatar__circle__initials"
-            >
-              RR
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="ProfileCell__content"
-        style={
-          Object {
-            "maxWidth": "none",
-          }
-        }
-      >
-        <div
-          className="ProfileCell__content__name__container"
-        >
-          <h5
-            className="ProfileCell__content__name"
-          >
-            Riley Researcher
-          </h5>
-        </div>
-        <div
-          className="ProfileCell__content__subtitle"
-        >
-          riley+2@userinterviews.com
-        </div>
-      </div>
+        Card 2
+      </h2>
     </div>
+  </section>
+  <section
+    className="Card Card--xs"
+  >
     <div
-      className="ProfileCell"
+      className="Card__header"
     >
-      <div
-        className="ProfileCell__image"
+      <h2
+        className="Card__title"
       >
-        <div
-          aria-hidden={false}
-          className="Avatar"
-        >
-          <div
-            className="Avatar__circle ui-mod ui-mod--3"
-          >
-            <span
-              className="Avatar__circle__initials"
-            >
-              RR
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="ProfileCell__content"
-        style={
-          Object {
-            "maxWidth": "none",
-          }
-        }
-      >
-        <div
-          className="ProfileCell__content__name__container"
-        >
-          <h5
-            className="ProfileCell__content__name"
-          >
-            Riley Researcher
-          </h5>
-        </div>
-        <div
-          className="ProfileCell__content__subtitle"
-        >
-          riley+3@userinterviews.com
-        </div>
-      </div>
+        Card 3
+      </h2>
     </div>
-    <div
-      className="ProfileCell"
-    >
-      <div
-        className="ProfileCell__image"
-      >
-        <div
-          aria-hidden={false}
-          className="Avatar"
-        >
-          <div
-            className="Avatar__circle ui-mod ui-mod--4"
-          >
-            <span
-              className="Avatar__circle__initials"
-            >
-              RR
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="ProfileCell__content"
-        style={
-          Object {
-            "maxWidth": "none",
-          }
-        }
-      >
-        <div
-          className="ProfileCell__content__name__container"
-        >
-          <h5
-            className="ProfileCell__content__name"
-          >
-            Riley Researcher
-          </h5>
-        </div>
-        <div
-          className="ProfileCell__content__subtitle"
-        >
-          riley+4@userinterviews.com
-        </div>
-      </div>
-    </div>
-    <div
-      className="ProfileCell"
-    >
-      <div
-        className="ProfileCell__image"
-      >
-        <div
-          aria-hidden={false}
-          className="Avatar"
-        >
-          <div
-            className="Avatar__circle ui-mod ui-mod--5"
-          >
-            <span
-              className="Avatar__circle__initials"
-            >
-              RR
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="ProfileCell__content"
-        style={
-          Object {
-            "maxWidth": "none",
-          }
-        }
-      >
-        <div
-          className="ProfileCell__content__name__container"
-        >
-          <h5
-            className="ProfileCell__content__name"
-          >
-            Riley Researcher
-          </h5>
-        </div>
-        <div
-          className="ProfileCell__content__subtitle"
-        >
-          riley+5@userinterviews.com
-        </div>
-      </div>
-    </div>
-    <div
-      className="ProfileCell"
-    >
-      <div
-        className="ProfileCell__image"
-      >
-        <div
-          aria-hidden={false}
-          className="Avatar"
-        >
-          <div
-            className="Avatar__circle ui-mod ui-mod--0"
-          >
-            <span
-              className="Avatar__circle__initials"
-            >
-              RR
-            </span>
-          </div>
-        </div>
-      </div>
-      <div
-        className="ProfileCell__content"
-        style={
-          Object {
-            "maxWidth": "none",
-          }
-        }
-      >
-        <div
-          className="ProfileCell__content__name__container"
-        >
-          <h5
-            className="ProfileCell__content__name"
-          >
-            Riley Researcher
-          </h5>
-        </div>
-        <div
-          className="ProfileCell__content__subtitle"
-        >
-          riley+6@userinterviews.com
-        </div>
-      </div>
-    </div>
-  </div>,
-]
+  </section>
+</div>
 `;
 
-exports[`Storyshots Layouts/Flex Flex Item 1`] = `
-Array [
-  <h1
-    style={
-      Object {
-        "fontSize": "1.5rem",
-        "fontWeight": "700",
-      }
-    }
-  >
-    Properties for the children (flex item)
-  </h1>,
-  <div
-    className="sc-aXZVg jOWkxh"
+exports[`Storyshots Layouts/Flex Flex Direction 1`] = `
+<div
+  className="sc-aXZVg cfPfql"
+>
+  <section
+    className="Card Card--xs"
   >
     <div
-      className="sc-aXZVg ceKnvv"
+      className="Card__header"
     >
-      <div
-        className="ProfileCell"
+      <h2
+        className="Card__title"
       >
-        <div
-          className="ProfileCell__image"
-        >
-          <div
-            aria-hidden={false}
-            className="Avatar"
-          >
-            <div
-              className="Avatar__circle ui-mod ui-mod--1"
-            >
-              <span
-                className="Avatar__circle__initials"
-              >
-                CM
-              </span>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ProfileCell__content"
-          style={
-            Object {
-              "maxWidth": "none",
-            }
-          }
-        >
-          <div
-            className="ProfileCell__content__name__container"
-          >
-            <h5
-              className="ProfileCell__content__name"
-            >
-              Change Me
-            </h5>
-          </div>
-          <div
-            className="ProfileCell__content__subtitle"
-          >
-            change@userinterviews.com
-          </div>
-        </div>
-      </div>
+        Card 1
+      </h2>
     </div>
+  </section>
+  <section
+    className="Card Card--xs"
+  >
     <div
-      className="sc-aXZVg kTDfcs"
+      className="Card__header"
     >
-      <div
-        className="ProfileCell"
+      <h2
+        className="Card__title"
       >
-        <div
-          className="ProfileCell__image"
-        >
-          <div
-            aria-hidden={false}
-            className="Avatar"
-          >
-            <div
-              className="Avatar__circle ui-mod ui-mod--2"
-            >
-              <span
-                className="Avatar__circle__initials"
-              >
-                RR
-              </span>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ProfileCell__content"
-          style={
-            Object {
-              "maxWidth": "none",
-            }
-          }
-        >
-          <div
-            className="ProfileCell__content__name__container"
-          >
-            <h5
-              className="ProfileCell__content__name"
-            >
-              Riley Researcher
-            </h5>
-          </div>
-          <div
-            className="ProfileCell__content__subtitle"
-          >
-            riley+2@userinterviews.com
-          </div>
-        </div>
-      </div>
+        flex-direction: 
+      </h2>
     </div>
+    <h3
+      className="Card__subtitle"
+    >
+      column
+    </h3>
+  </section>
+  <section
+    className="Card Card--xs"
+  >
     <div
-      className="sc-aXZVg kTDfcs"
+      className="Card__header"
     >
-      <div
-        className="ProfileCell"
+      <h2
+        className="Card__title"
       >
-        <div
-          className="ProfileCell__image"
-        >
-          <div
-            aria-hidden={false}
-            className="Avatar"
-          >
-            <div
-              className="Avatar__circle ui-mod ui-mod--3"
-            >
-              <span
-                className="Avatar__circle__initials"
-              >
-                RR
-              </span>
-            </div>
-          </div>
-        </div>
-        <div
-          className="ProfileCell__content"
-          style={
-            Object {
-              "maxWidth": "none",
-            }
-          }
-        >
-          <div
-            className="ProfileCell__content__name__container"
-          >
-            <h5
-              className="ProfileCell__content__name"
-            >
-              Riley Researcher
-            </h5>
-          </div>
-          <div
-            className="ProfileCell__content__subtitle"
-          >
-            riley+3@userinterviews.com
-          </div>
-        </div>
-      </div>
+        Card 3
+      </h2>
     </div>
-  </div>,
-]
+  </section>
+</div>
+`;
+
+exports[`Storyshots Layouts/Flex Justify Content 1`] = `
+<div
+  className="sc-aXZVg fBLyyp"
+>
+  <section
+    className="Card Card--xs"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        Card 1
+      </h2>
+    </div>
+  </section>
+  <section
+    className="Card Card--xs"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        justify-content: 
+      </h2>
+    </div>
+    <h3
+      className="Card__subtitle"
+    >
+      space-between
+    </h3>
+  </section>
+  <section
+    className="Card Card--xs"
+  >
+    <div
+      className="Card__header"
+    >
+      <h2
+        className="Card__title"
+      >
+        Card 3
+      </h2>
+    </div>
+  </section>
+</div>
 `;
 
 exports[`Storyshots Layouts/Main Accessibility 1`] = `
