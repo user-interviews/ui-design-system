@@ -36,7 +36,15 @@ const EmptyState = ({
     )}
     >
       {title && (
-        <Heading className="EmptyState__title" level={4} size="lg" textAlign="center">{title}</Heading>
+        <Heading
+          className="EmptyState__title"
+          level={4}
+          size="lg"
+          textAlign="center"
+          weight="bold"
+          >
+            {title}
+        </Heading>
       )}
 
       {subtitle && (
