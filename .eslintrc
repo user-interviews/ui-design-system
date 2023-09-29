@@ -23,7 +23,7 @@
       "env": {
         "browser": true
       },
-      "parser": "babel-eslint",
+      "parser": "@typescript-eslint/parser",
       "plugins": [ "babel", "react", "react-hooks" ],
       "rules": {
         "babel/semi": 2,
@@ -111,6 +111,12 @@
         "react-hooks/exhaustive-deps": "warn",
         "react-hooks/rules-of-hooks": "error",
         "semi": 0
+      }
+    },
+    {
+      "files": "**/*.{ts,tsx}",
+      "rules": {
+        "react/require-default-props": "off"
       }
     }
   ],
