@@ -42,7 +42,7 @@ const EmptyState = ({
           size="lg"
           textAlign="center"
           weight="bold"
-          >
+        >
             {title}
         </Heading>
       )}

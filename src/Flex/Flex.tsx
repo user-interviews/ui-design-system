@@ -59,11 +59,12 @@ const Flex = ({
   maxHeight,
   maxWidth,
   width,
-  ...props } : FlexProps) => (
+  ...props
+}: FlexProps) => (
   <FlexWrapper
-    as={as}
     alignItems={alignItems}
     alignSelf={alignSelf}
+    as={as}
     className={className}
     container={container}
     flex={flex}
