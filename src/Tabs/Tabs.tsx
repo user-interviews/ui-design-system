@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import ReactBootstrapTabs from 'react-bootstrap/Tabs';
-
-import { StyledTabsWrapper } from './Tabs.styles';
+import styles from './tabs.module.scss';
 
 const Tabs = ({
   children,
@@ -11,14 +11,21 @@ const Tabs = ({
   navItemButtonFullHeight,
   ...props
 }) => (
-  <StyledTabsWrapper
-    flexWrapUnset={flexWrapUnset}
-    navItemButtonFullHeight={navItemButtonFullHeight}
+  <ReactBootstrapTabs
+    className={
+        classNames(
+          styles.tabs,
+          {
+            [styles.flexWrapUnset]: flexWrapUnset,
+            [styles.navItemButtonFullHeight]: navItemButtonFullHeight,
+          },
+        )
+      }
+    variant="tabs"
+    {...props}
   >
-    <ReactBootstrapTabs variant="tabs" {...props}>
-      {children}
-    </ReactBootstrapTabs>
-  </StyledTabsWrapper>
+    {children}
+  </ReactBootstrapTabs>
 );
 
 export default Tabs;
