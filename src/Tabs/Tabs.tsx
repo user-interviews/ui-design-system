@@ -7,8 +7,8 @@ import ReactBootstrapTabs from 'react-bootstrap/Tabs';
 import styles from './tabs.module.scss';
 
 export interface TabsProps extends BootstrapTabProps {
-  flexWrapUnset: boolean;
-  navItemButtonFullHeight: boolean;
+  flexWrapUnset?: boolean;
+  navItemButtonFullHeight?: boolean;
 }
 
 const Tabs = ({
