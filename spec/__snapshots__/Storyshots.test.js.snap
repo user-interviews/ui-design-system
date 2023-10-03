@@ -24197,7 +24197,7 @@ exports[`Storyshots Components/Table Table With Sticky Column And Header 1`] = `
 `;
 
 exports[`Storyshots Components/Tabs Controlled 1`] = `
-<div>
+Array [
   <ul
     className="nav nav-tabs"
     onKeyDown={[Function]}
@@ -24208,12 +24208,12 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
       role="presentation"
     >
       <button
-        aria-controls="controlled-tabpane-one"
+        aria-controls="react-aria-:r8:-tabpane-one"
         aria-selected={true}
         className="nav-link active"
         data-rr-ui-event-key="one"
         disabled={false}
-        id="controlled-tab-one"
+        id="react-aria-:r8:-tab-one"
         onClick={[Function]}
         role="tab"
         type="button"
@@ -24226,12 +24226,12 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
       role="presentation"
     >
       <button
-        aria-controls="controlled-tabpane-two"
+        aria-controls="react-aria-:r8:-tabpane-two"
         aria-selected={false}
         className="nav-link"
         data-rr-ui-event-key="two"
         disabled={false}
-        id="controlled-tab-two"
+        id="react-aria-:r8:-tab-two"
         onClick={[Function]}
         role="tab"
         tabIndex={-1}
@@ -24245,12 +24245,12 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
       role="presentation"
     >
       <button
-        aria-controls="controlled-tabpane-three"
+        aria-controls="react-aria-:r8:-tabpane-three"
         aria-selected={false}
         className="nav-link"
         data-rr-ui-event-key="three"
         disabled={false}
-        id="controlled-tab-three"
+        id="react-aria-:r8:-tab-three"
         onClick={[Function]}
         role="tab"
         tabIndex={-1}
@@ -24264,13 +24264,13 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
       role="presentation"
     >
       <button
-        aria-controls="controlled-tabpane-four"
+        aria-controls="react-aria-:r8:-tabpane-four"
         aria-disabled={true}
         aria-selected={false}
         className="nav-link disabled"
         data-rr-ui-event-key="four"
         disabled={true}
-        id="controlled-tab-four"
+        id="react-aria-:r8:-tab-four"
         onClick={[Function]}
         role="tab"
         tabIndex={-1}
@@ -24279,14 +24279,14 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
         Tab Four (disabled)
       </button>
     </li>
-  </ul>
+  </ul>,
   <div
     className="tab-content"
   >
     <div
-      aria-labelledby="controlled-tab-one"
+      aria-labelledby="react-aria-:r8:-tab-one"
       className="fade tab-pane active show"
-      id="controlled-tabpane-one"
+      id="react-aria-:r8:-tabpane-one"
       role="tabpanel"
     >
       <div
@@ -24300,9 +24300,9 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
       </div>
     </div>
     <div
-      aria-labelledby="controlled-tab-two"
+      aria-labelledby="react-aria-:r8:-tab-two"
       className="fade tab-pane"
-      id="controlled-tabpane-two"
+      id="react-aria-:r8:-tabpane-two"
       role="tabpanel"
     >
       <div
@@ -24316,9 +24316,9 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
       </div>
     </div>
     <div
-      aria-labelledby="controlled-tab-three"
+      aria-labelledby="react-aria-:r8:-tab-three"
       className="fade tab-pane"
-      id="controlled-tabpane-three"
+      id="react-aria-:r8:-tabpane-three"
       role="tabpanel"
     >
       <div
@@ -24332,9 +24332,9 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
       </div>
     </div>
     <div
-      aria-labelledby="controlled-tab-four"
+      aria-labelledby="react-aria-:r8:-tab-four"
       className="fade tab-pane"
-      id="controlled-tabpane-four"
+      id="react-aria-:r8:-tabpane-four"
       role="tabpanel"
     >
       <div
@@ -24347,8 +24347,8 @@ exports[`Storyshots Components/Tabs Controlled 1`] = `
         Tab Content Four
       </div>
     </div>
-  </div>
-</div>
+  </div>,
+]
 `;
 
 exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
