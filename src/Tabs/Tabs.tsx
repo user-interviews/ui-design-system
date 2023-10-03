@@ -20,6 +20,7 @@ const Tabs = ({
   <ReactBootstrapTabs
     className={
         classNames(
+          props.className,
           styles.tabs,
           {
             [styles.flexWrapUnset]: flexWrapUnset,
