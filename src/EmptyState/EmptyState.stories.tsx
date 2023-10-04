@@ -19,7 +19,7 @@ export const Default: Story = {
   args: {
     subtitle: 'Launch your first project to start conducting research!',
     title: 'You have no projects',
-  }
+  },
 };
 
 export const PrimaryAction: Story = {
@@ -27,7 +27,7 @@ export const PrimaryAction: Story = {
     primaryAction: <Button leadingIcon={faPlus} variant="primary">New project</Button>,
     subtitle: 'Launch your first project to start conducting research! Source from a pool of 2.4 million participants to reach nearly any target audience.',
     title: 'You have no projects',
-  }
+  },
 };
 
 export const FullWidth: Story = {
@@ -36,7 +36,7 @@ export const FullWidth: Story = {
     primaryAction: <Button leadingIcon={faPlus} variant="primary">New project</Button>,
     subtitle: 'Launch your first project to start conducting research! Source from a pool of 2.4 million participants to reach nearly any target audience.',
     title: 'You have no projects',
-  }
+  },
 };
 
 export const MarginTop: Story = {
@@ -44,5 +44,5 @@ export const MarginTop: Story = {
     marginTop: 'sm',
     subtitle: 'Add a new participant segment above',
     title: 'No segments created',
-  }
+  },
 };

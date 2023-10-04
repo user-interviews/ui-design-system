@@ -5,101 +5,6 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <span
-        class="sc-aXZVg kKIzfk"
-      >
-        <ul
-          class="nav nav-tabs"
-          role="tablist"
-        >
-          <li
-            class="nav-item"
-            role="presentation"
-          >
-            <button
-              aria-controls="tabID-tabpane-one"
-              aria-selected="true"
-              class="nav-link active"
-              data-rr-ui-event-key="one"
-              id="tabID-tab-one"
-              role="tab"
-              type="button"
-            >
-              Tab One
-            </button>
-          </li>
-          <li
-            class="nav-item"
-            role="presentation"
-          >
-            <button
-              aria-controls="tabID-tabpane-two"
-              aria-selected="false"
-              class="nav-link"
-              data-rr-ui-event-key="two"
-              id="tabID-tab-two"
-              role="tab"
-              tabindex="-1"
-              type="button"
-            >
-              Tab Two
-            </button>
-          </li>
-          <li
-            class="nav-item"
-            role="presentation"
-          >
-            <button
-              aria-controls="tabID-tabpane-three"
-              aria-disabled="true"
-              aria-selected="false"
-              class="nav-link disabled"
-              data-rr-ui-event-key="three"
-              disabled=""
-              id="tabID-tab-three"
-              role="tab"
-              tabindex="-1"
-              type="button"
-            >
-              Tab Three
-            </button>
-          </li>
-        </ul>
-        <div
-          class="tab-content"
-        >
-          <div
-            aria-labelledby="tabID-tab-one"
-            class="tab-pane active"
-            id="tabID-tabpane-one"
-            role="tabpanel"
-          >
-            Tab Content One
-          </div>
-          <div
-            aria-labelledby="tabID-tab-two"
-            class="tab-pane"
-            id="tabID-tabpane-two"
-            role="tabpanel"
-          >
-            Tab Content Two
-          </div>
-          <div
-            aria-labelledby="tabID-tab-three"
-            class="tab-pane"
-            id="tabID-tabpane-three"
-            role="tabpanel"
-          >
-            Tab Content Three
-          </div>
-        </div>
-      </span>
-    </div>
-  </body>,
-  "container": <div>
-    <span
-      class="sc-aXZVg kKIzfk"
-    >
       <ul
         class="nav nav-tabs"
         role="tablist"
@@ -185,7 +90,94 @@ Object {
           Tab Content Three
         </div>
       </div>
-    </span>
+    </div>
+  </body>,
+  "container": <div>
+    <ul
+      class="nav nav-tabs"
+      role="tablist"
+    >
+      <li
+        class="nav-item"
+        role="presentation"
+      >
+        <button
+          aria-controls="tabID-tabpane-one"
+          aria-selected="true"
+          class="nav-link active"
+          data-rr-ui-event-key="one"
+          id="tabID-tab-one"
+          role="tab"
+          type="button"
+        >
+          Tab One
+        </button>
+      </li>
+      <li
+        class="nav-item"
+        role="presentation"
+      >
+        <button
+          aria-controls="tabID-tabpane-two"
+          aria-selected="false"
+          class="nav-link"
+          data-rr-ui-event-key="two"
+          id="tabID-tab-two"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          Tab Two
+        </button>
+      </li>
+      <li
+        class="nav-item"
+        role="presentation"
+      >
+        <button
+          aria-controls="tabID-tabpane-three"
+          aria-disabled="true"
+          aria-selected="false"
+          class="nav-link disabled"
+          data-rr-ui-event-key="three"
+          disabled=""
+          id="tabID-tab-three"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          Tab Three
+        </button>
+      </li>
+    </ul>
+    <div
+      class="tab-content"
+    >
+      <div
+        aria-labelledby="tabID-tab-one"
+        class="tab-pane active"
+        id="tabID-tabpane-one"
+        role="tabpanel"
+      >
+        Tab Content One
+      </div>
+      <div
+        aria-labelledby="tabID-tab-two"
+        class="tab-pane"
+        id="tabID-tabpane-two"
+        role="tabpanel"
+      >
+        Tab Content Two
+      </div>
+      <div
+        aria-labelledby="tabID-tab-three"
+        class="tab-pane"
+        id="tabID-tabpane-three"
+        role="tabpanel"
+      >
+        Tab Content Three
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -246,101 +238,6 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <span
-        class="sc-aXZVg kKIzfk"
-      >
-        <ul
-          class="nav nav-tabs"
-          role="tablist"
-        >
-          <li
-            class="nav-item"
-            role="presentation"
-          >
-            <button
-              aria-controls="tabID-tabpane-one"
-              aria-selected="true"
-              class="nav-link active"
-              data-rr-ui-event-key="one"
-              id="tabID-tab-one"
-              role="tab"
-              type="button"
-            >
-              Tab One
-            </button>
-          </li>
-          <li
-            class="nav-item"
-            role="presentation"
-          >
-            <button
-              aria-controls="tabID-tabpane-two"
-              aria-selected="false"
-              class="nav-link"
-              data-rr-ui-event-key="two"
-              id="tabID-tab-two"
-              role="tab"
-              tabindex="-1"
-              type="button"
-            >
-              Tab Two
-            </button>
-          </li>
-          <li
-            class="nav-item"
-            role="presentation"
-          >
-            <button
-              aria-controls="tabID-tabpane-three"
-              aria-disabled="true"
-              aria-selected="false"
-              class="nav-link disabled"
-              data-rr-ui-event-key="three"
-              disabled=""
-              id="tabID-tab-three"
-              role="tab"
-              tabindex="-1"
-              type="button"
-            >
-              Tab Three
-            </button>
-          </li>
-        </ul>
-        <div
-          class="tab-content"
-        >
-          <div
-            aria-labelledby="tabID-tab-one"
-            class="tab-pane active"
-            id="tabID-tabpane-one"
-            role="tabpanel"
-          >
-            Tab Content One
-          </div>
-          <div
-            aria-labelledby="tabID-tab-two"
-            class="tab-pane"
-            id="tabID-tabpane-two"
-            role="tabpanel"
-          >
-            Tab Content Two
-          </div>
-          <div
-            aria-labelledby="tabID-tab-three"
-            class="tab-pane"
-            id="tabID-tabpane-three"
-            role="tabpanel"
-          >
-            Tab Content Three
-          </div>
-        </div>
-      </span>
-    </div>
-  </body>,
-  "container": <div>
-    <span
-      class="sc-aXZVg kKIzfk"
-    >
       <ul
         class="nav nav-tabs"
         role="tablist"
@@ -426,7 +323,94 @@ Object {
           Tab Content Three
         </div>
       </div>
-    </span>
+    </div>
+  </body>,
+  "container": <div>
+    <ul
+      class="nav nav-tabs"
+      role="tablist"
+    >
+      <li
+        class="nav-item"
+        role="presentation"
+      >
+        <button
+          aria-controls="tabID-tabpane-one"
+          aria-selected="true"
+          class="nav-link active"
+          data-rr-ui-event-key="one"
+          id="tabID-tab-one"
+          role="tab"
+          type="button"
+        >
+          Tab One
+        </button>
+      </li>
+      <li
+        class="nav-item"
+        role="presentation"
+      >
+        <button
+          aria-controls="tabID-tabpane-two"
+          aria-selected="false"
+          class="nav-link"
+          data-rr-ui-event-key="two"
+          id="tabID-tab-two"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          Tab Two
+        </button>
+      </li>
+      <li
+        class="nav-item"
+        role="presentation"
+      >
+        <button
+          aria-controls="tabID-tabpane-three"
+          aria-disabled="true"
+          aria-selected="false"
+          class="nav-link disabled"
+          data-rr-ui-event-key="three"
+          disabled=""
+          id="tabID-tab-three"
+          role="tab"
+          tabindex="-1"
+          type="button"
+        >
+          Tab Three
+        </button>
+      </li>
+    </ul>
+    <div
+      class="tab-content"
+    >
+      <div
+        aria-labelledby="tabID-tab-one"
+        class="tab-pane active"
+        id="tabID-tabpane-one"
+        role="tabpanel"
+      >
+        Tab Content One
+      </div>
+      <div
+        aria-labelledby="tabID-tab-two"
+        class="tab-pane"
+        id="tabID-tabpane-two"
+        role="tabpanel"
+      >
+        Tab Content Two
+      </div>
+      <div
+        aria-labelledby="tabID-tab-three"
+        class="tab-pane"
+        id="tabID-tabpane-three"
+        role="tabpanel"
+      >
+        Tab Content Three
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

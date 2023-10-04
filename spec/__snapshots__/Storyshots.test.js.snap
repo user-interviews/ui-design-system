@@ -24197,320 +24197,312 @@ exports[`Storyshots Components/Table Table With Sticky Column And Header 1`] = `
 `;
 
 exports[`Storyshots Components/Tabs Controlled 1`] = `
-<div>
-  <span
-    className="sc-eqUAAy gIqBwm"
+Array [
+  <ul
+    className="nav nav-tabs"
+    onKeyDown={[Function]}
+    role="tablist"
   >
-    <ul
-      className="nav nav-tabs"
-      onKeyDown={[Function]}
-      role="tablist"
+    <li
+      className="nav-item"
+      role="presentation"
     >
-      <li
-        className="nav-item"
-        role="presentation"
+      <button
+        aria-controls="react-aria-:r8:-tabpane-one"
+        aria-selected={true}
+        className="nav-link active"
+        data-rr-ui-event-key="one"
+        disabled={false}
+        id="react-aria-:r8:-tab-one"
+        onClick={[Function]}
+        role="tab"
+        type="button"
       >
-        <button
-          aria-controls="controlled-tabpane-one"
-          aria-selected={true}
-          className="nav-link active"
-          data-rr-ui-event-key="one"
-          disabled={false}
-          id="controlled-tab-one"
-          onClick={[Function]}
-          role="tab"
-          type="button"
-        >
-          Tab One
-        </button>
-      </li>
-      <li
-        className="nav-item"
-        role="presentation"
+        Tab One
+      </button>
+    </li>
+    <li
+      className="nav-item"
+      role="presentation"
+    >
+      <button
+        aria-controls="react-aria-:r8:-tabpane-two"
+        aria-selected={false}
+        className="nav-link"
+        data-rr-ui-event-key="two"
+        disabled={false}
+        id="react-aria-:r8:-tab-two"
+        onClick={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
       >
-        <button
-          aria-controls="controlled-tabpane-two"
-          aria-selected={false}
-          className="nav-link"
-          data-rr-ui-event-key="two"
-          disabled={false}
-          id="controlled-tab-two"
-          onClick={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          Tab Two
-        </button>
-      </li>
-      <li
-        className="nav-item"
-        role="presentation"
+        Tab Two
+      </button>
+    </li>
+    <li
+      className="nav-item"
+      role="presentation"
+    >
+      <button
+        aria-controls="react-aria-:r8:-tabpane-three"
+        aria-selected={false}
+        className="nav-link"
+        data-rr-ui-event-key="three"
+        disabled={false}
+        id="react-aria-:r8:-tab-three"
+        onClick={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
       >
-        <button
-          aria-controls="controlled-tabpane-three"
-          aria-selected={false}
-          className="nav-link"
-          data-rr-ui-event-key="three"
-          disabled={false}
-          id="controlled-tab-three"
-          onClick={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          Tab Three
-        </button>
-      </li>
-      <li
-        className="nav-item"
-        role="presentation"
+        Tab Three
+      </button>
+    </li>
+    <li
+      className="nav-item"
+      role="presentation"
+    >
+      <button
+        aria-controls="react-aria-:r8:-tabpane-four"
+        aria-disabled={true}
+        aria-selected={false}
+        className="nav-link disabled"
+        data-rr-ui-event-key="four"
+        disabled={true}
+        id="react-aria-:r8:-tab-four"
+        onClick={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
       >
-        <button
-          aria-controls="controlled-tabpane-four"
-          aria-disabled={true}
-          aria-selected={false}
-          className="nav-link disabled"
-          data-rr-ui-event-key="four"
-          disabled={true}
-          id="controlled-tab-four"
-          onClick={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          Tab Four (disabled)
-        </button>
-      </li>
-    </ul>
+        Tab Four (disabled)
+      </button>
+    </li>
+  </ul>,
+  <div
+    className="tab-content"
+  >
     <div
-      className="tab-content"
+      aria-labelledby="react-aria-:r8:-tab-one"
+      className="fade tab-pane active show"
+      id="react-aria-:r8:-tabpane-one"
+      role="tabpanel"
     >
       <div
-        aria-labelledby="controlled-tab-one"
-        className="fade tab-pane active show"
-        id="controlled-tabpane-one"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
+        style={
+          Object {
+            "paddingTop": "20px",
           }
-        >
-          Tab Content One
-        </div>
-      </div>
-      <div
-        aria-labelledby="controlled-tab-two"
-        className="fade tab-pane"
-        id="controlled-tabpane-two"
-        role="tabpanel"
+        }
       >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content Two
-        </div>
-      </div>
-      <div
-        aria-labelledby="controlled-tab-three"
-        className="fade tab-pane"
-        id="controlled-tabpane-three"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content Three
-        </div>
-      </div>
-      <div
-        aria-labelledby="controlled-tab-four"
-        className="fade tab-pane"
-        id="controlled-tabpane-four"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content Four
-        </div>
+        Tab Content One
       </div>
     </div>
-  </span>
-</div>
+    <div
+      aria-labelledby="react-aria-:r8:-tab-two"
+      className="fade tab-pane"
+      id="react-aria-:r8:-tabpane-two"
+      role="tabpanel"
+    >
+      <div
+        style={
+          Object {
+            "paddingTop": "20px",
+          }
+        }
+      >
+        Tab Content Two
+      </div>
+    </div>
+    <div
+      aria-labelledby="react-aria-:r8:-tab-three"
+      className="fade tab-pane"
+      id="react-aria-:r8:-tabpane-three"
+      role="tabpanel"
+    >
+      <div
+        style={
+          Object {
+            "paddingTop": "20px",
+          }
+        }
+      >
+        Tab Content Three
+      </div>
+    </div>
+    <div
+      aria-labelledby="react-aria-:r8:-tab-four"
+      className="fade tab-pane"
+      id="react-aria-:r8:-tabpane-four"
+      role="tabpanel"
+    >
+      <div
+        style={
+          Object {
+            "paddingTop": "20px",
+          }
+        }
+      >
+        Tab Content Four
+      </div>
+    </div>
+  </div>,
+]
 `;
 
 exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
 <div>
-  <span
-    className="sc-eqUAAy gIqBwm"
+  <ul
+    className="nav nav-tabs"
+    onKeyDown={[Function]}
+    role="tablist"
   >
-    <ul
-      className="nav nav-tabs"
-      onKeyDown={[Function]}
-      role="tablist"
+    <li
+      className="nav-item"
+      role="presentation"
     >
-      <li
-        className="nav-item"
-        role="presentation"
+      <button
+        aria-controls="uncontrolled-tabpane-one"
+        aria-selected={true}
+        className="nav-link active"
+        data-rr-ui-event-key="one"
+        disabled={false}
+        id="uncontrolled-tab-one"
+        onClick={[Function]}
+        role="tab"
+        type="button"
       >
-        <button
-          aria-controls="uncontrolled-tabpane-one"
-          aria-selected={true}
-          className="nav-link active"
-          data-rr-ui-event-key="one"
-          disabled={false}
-          id="uncontrolled-tab-one"
-          onClick={[Function]}
-          role="tab"
-          type="button"
-        >
-          Tab One
-        </button>
-      </li>
-      <li
-        className="nav-item"
-        role="presentation"
+        Tab One
+      </button>
+    </li>
+    <li
+      className="nav-item"
+      role="presentation"
+    >
+      <button
+        aria-controls="uncontrolled-tabpane-two"
+        aria-selected={false}
+        className="nav-link"
+        data-rr-ui-event-key="two"
+        disabled={false}
+        id="uncontrolled-tab-two"
+        onClick={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
       >
-        <button
-          aria-controls="uncontrolled-tabpane-two"
-          aria-selected={false}
-          className="nav-link"
-          data-rr-ui-event-key="two"
-          disabled={false}
-          id="uncontrolled-tab-two"
-          onClick={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          Tab Two
-        </button>
-      </li>
-      <li
-        className="nav-item"
-        role="presentation"
+        Tab Two
+      </button>
+    </li>
+    <li
+      className="nav-item"
+      role="presentation"
+    >
+      <button
+        aria-controls="uncontrolled-tabpane-three"
+        aria-selected={false}
+        className="nav-link"
+        data-rr-ui-event-key="three"
+        disabled={false}
+        id="uncontrolled-tab-three"
+        onClick={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
       >
-        <button
-          aria-controls="uncontrolled-tabpane-three"
-          aria-selected={false}
-          className="nav-link"
-          data-rr-ui-event-key="three"
-          disabled={false}
-          id="uncontrolled-tab-three"
-          onClick={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          Tab Three
-        </button>
-      </li>
-      <li
-        className="nav-item"
-        role="presentation"
+        Tab Three
+      </button>
+    </li>
+    <li
+      className="nav-item"
+      role="presentation"
+    >
+      <button
+        aria-controls="uncontrolled-tabpane-four"
+        aria-disabled={true}
+        aria-selected={false}
+        className="nav-link disabled"
+        data-rr-ui-event-key="four"
+        disabled={true}
+        id="uncontrolled-tab-four"
+        onClick={[Function]}
+        role="tab"
+        tabIndex={-1}
+        type="button"
       >
-        <button
-          aria-controls="uncontrolled-tabpane-four"
-          aria-disabled={true}
-          aria-selected={false}
-          className="nav-link disabled"
-          data-rr-ui-event-key="four"
-          disabled={true}
-          id="uncontrolled-tab-four"
-          onClick={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          Tab Four (disabled)
-        </button>
-      </li>
-    </ul>
+        Tab Four (disabled)
+      </button>
+    </li>
+  </ul>
+  <div
+    className="tab-content"
+  >
     <div
-      className="tab-content"
+      aria-labelledby="uncontrolled-tab-one"
+      className="fade tab-pane active show"
+      id="uncontrolled-tabpane-one"
+      role="tabpanel"
     >
       <div
-        aria-labelledby="uncontrolled-tab-one"
-        className="fade tab-pane active show"
-        id="uncontrolled-tabpane-one"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
+        style={
+          Object {
+            "paddingTop": "20px",
           }
-        >
-          Tab Content One
-        </div>
-      </div>
-      <div
-        aria-labelledby="uncontrolled-tab-two"
-        className="fade tab-pane"
-        id="uncontrolled-tabpane-two"
-        role="tabpanel"
+        }
       >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content Two
-        </div>
-      </div>
-      <div
-        aria-labelledby="uncontrolled-tab-three"
-        className="fade tab-pane"
-        id="uncontrolled-tabpane-three"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content Three
-        </div>
-      </div>
-      <div
-        aria-labelledby="uncontrolled-tab-four"
-        className="fade tab-pane"
-        id="uncontrolled-tabpane-four"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content Four
-        </div>
+        Tab Content One
       </div>
     </div>
-  </span>
+    <div
+      aria-labelledby="uncontrolled-tab-two"
+      className="fade tab-pane"
+      id="uncontrolled-tabpane-two"
+      role="tabpanel"
+    >
+      <div
+        style={
+          Object {
+            "paddingTop": "20px",
+          }
+        }
+      >
+        Tab Content Two
+      </div>
+    </div>
+    <div
+      aria-labelledby="uncontrolled-tab-three"
+      className="fade tab-pane"
+      id="uncontrolled-tabpane-three"
+      role="tabpanel"
+    >
+      <div
+        style={
+          Object {
+            "paddingTop": "20px",
+          }
+        }
+      >
+        Tab Content Three
+      </div>
+    </div>
+    <div
+      aria-labelledby="uncontrolled-tab-four"
+      className="fade tab-pane"
+      id="uncontrolled-tabpane-four"
+      role="tabpanel"
+    >
+      <div
+        style={
+          Object {
+            "paddingTop": "20px",
+          }
+        }
+      >
+        Tab Content Four
+      </div>
+    </div>
+  </div>
 </div>
 `;
 
