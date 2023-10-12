@@ -8,7 +8,9 @@ module.exports = function({ config }) {
       {
         loader: 'css-loader',
         options: {
-          modules: true
+          modules: {
+            mode: (path) => path.endsWith('.module.scss') ? 'local' : 'global'
+          }
         }
       },
       'sass-loader'
