@@ -25,7 +25,7 @@ export const Default: Story = {
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-  render: ({ children, ...args }) => (
+  render: ({ ...args }) => (
     <Flex {...args}>
       <Card size="xs" title="Card 1" />
       <Card size="xs" title="Card 2" />
@@ -39,7 +39,7 @@ export const FlexDirection: Story = {
     container: true,
     flexDirection: 'column',
   },
-  render: ({ children, ...args }) => (
+  render: ({ ...args }) => (
     <Flex {...args}>
       <Card size="xs" title="Card 1" />
       <Card size="xs" subTitle={args.flexDirection} title="flex-direction: " />
@@ -54,7 +54,7 @@ export const JustifyContent: Story = {
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-  render: ({ children, ...args }) => (
+  render: ({ ...args }) => (
     <Flex {...args}>
       <Card size="xs" title="Card 1" />
       <Card size="xs" subTitle={args.justifyContent} title="justify-content: " />
@@ -68,7 +68,7 @@ export const AlignItems: Story = {
     container: true,
     alignItems: 'center',
   },
-  render: ({ children, ...args }) => (
+  render: ({ ...args }) => (
     <Flex {...args}>
       <Card size="xs" title="Card 1" />
       <Card size="xs" subTitle={args.alignItems} title="align-items: " />

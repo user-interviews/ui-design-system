@@ -13519,7 +13519,19 @@ exports[`Storyshots Components/Table Default 1`] = `
 exports[`Storyshots Components/Table Loading Custom Columns 1`] = `
 Array [
   <div
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
+    className="Flex TableLoadingSkeleton"
+    style={
+      Object {
+        "flex": undefined,
+        "flexBasis": undefined,
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "height": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "width": undefined,
+      }
+    }
   >
     <span
       aria-busy={true}
@@ -13613,7 +13625,19 @@ Array [
     </span>
   </div>,
   <div
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
+    className="Flex TableLoadingSkeleton"
+    style={
+      Object {
+        "flex": undefined,
+        "flexBasis": undefined,
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "height": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "width": undefined,
+      }
+    }
   >
     <span
       aria-busy={true}
@@ -13707,7 +13731,19 @@ Array [
     </span>
   </div>,
   <div
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
+    className="Flex TableLoadingSkeleton"
+    style={
+      Object {
+        "flex": undefined,
+        "flexBasis": undefined,
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "height": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "width": undefined,
+      }
+    }
   >
     <span
       aria-busy={true}
@@ -13801,7 +13837,19 @@ Array [
     </span>
   </div>,
   <div
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
+    className="Flex TableLoadingSkeleton"
+    style={
+      Object {
+        "flex": undefined,
+        "flexBasis": undefined,
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "height": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "width": undefined,
+      }
+    }
   >
     <span
       aria-busy={true}
@@ -13900,7 +13948,19 @@ Array [
 exports[`Storyshots Components/Table Loading Default 1`] = `
 Array [
   <div
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
+    className="Flex TableLoadingSkeleton"
+    style={
+      Object {
+        "flex": undefined,
+        "flexBasis": undefined,
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "height": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "width": undefined,
+      }
+    }
   >
     <span
       aria-busy={true}
@@ -14030,7 +14090,19 @@ Array [
     </span>
   </div>,
   <div
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
+    className="Flex TableLoadingSkeleton"
+    style={
+      Object {
+        "flex": undefined,
+        "flexBasis": undefined,
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "height": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "width": undefined,
+      }
+    }
   >
     <span
       aria-busy={true}
@@ -14160,7 +14232,19 @@ Array [
     </span>
   </div>,
   <div
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
+    className="Flex TableLoadingSkeleton"
+    style={
+      Object {
+        "flex": undefined,
+        "flexBasis": undefined,
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "height": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "width": undefined,
+      }
+    }
   >
     <span
       aria-busy={true}
@@ -14290,7 +14374,19 @@ Array [
     </span>
   </div>,
   <div
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
+    className="Flex TableLoadingSkeleton"
+    style={
+      Object {
+        "flex": undefined,
+        "flexBasis": undefined,
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "height": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "width": undefined,
+      }
+    }
   >
     <span
       aria-busy={true}
@@ -14420,7 +14516,19 @@ Array [
     </span>
   </div>,
   <div
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
+    className="Flex TableLoadingSkeleton"
+    style={
+      Object {
+        "flex": undefined,
+        "flexBasis": undefined,
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "height": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "width": undefined,
+      }
+    }
   >
     <span
       aria-busy={true}
@@ -14550,7 +14658,19 @@ Array [
     </span>
   </div>,
   <div
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
+    className="Flex TableLoadingSkeleton"
+    style={
+      Object {
+        "flex": undefined,
+        "flexBasis": undefined,
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "height": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "width": undefined,
+      }
+    }
   >
     <span
       aria-busy={true}
@@ -14680,7 +14800,19 @@ Array [
     </span>
   </div>,
   <div
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
+    className="Flex TableLoadingSkeleton"
+    style={
+      Object {
+        "flex": undefined,
+        "flexBasis": undefined,
+        "flexGrow": undefined,
+        "flexShrink": undefined,
+        "height": undefined,
+        "maxHeight": undefined,
+        "maxWidth": undefined,
+        "width": undefined,
+      }
+    }
   >
     <span
       aria-busy={true}
@@ -29236,7 +29368,19 @@ Array [
 
 exports[`Storyshots Layouts/CardStack Centered 1`] = `
 <div
-  className="sc-aXZVg eEvRmZ"
+  className="Flex"
+  style={
+    Object {
+      "flex": undefined,
+      "flexBasis": undefined,
+      "flexGrow": undefined,
+      "flexShrink": undefined,
+      "height": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "width": undefined,
+    }
+  }
 >
   <div
     className="CardStack CardStack--sm"
@@ -30157,7 +30301,19 @@ exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
 
 exports[`Storyshots Layouts/Flex Align Items 1`] = `
 <div
-  className="sc-aXZVg idOQCp"
+  className="Flex"
+  style={
+    Object {
+      "flex": undefined,
+      "flexBasis": undefined,
+      "flexGrow": undefined,
+      "flexShrink": undefined,
+      "height": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "width": undefined,
+    }
+  }
 >
   <section
     className="Card Card--xs"
@@ -30208,7 +30364,19 @@ exports[`Storyshots Layouts/Flex Align Items 1`] = `
 
 exports[`Storyshots Layouts/Flex Default 1`] = `
 <div
-  className="sc-aXZVg fBLyyp"
+  className="Flex"
+  style={
+    Object {
+      "flex": undefined,
+      "flexBasis": undefined,
+      "flexGrow": undefined,
+      "flexShrink": undefined,
+      "height": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "width": undefined,
+    }
+  }
 >
   <section
     className="Card Card--xs"
@@ -30254,7 +30422,19 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
 
 exports[`Storyshots Layouts/Flex Flex Direction 1`] = `
 <div
-  className="sc-aXZVg cfPfql"
+  className="Flex"
+  style={
+    Object {
+      "flex": undefined,
+      "flexBasis": undefined,
+      "flexGrow": undefined,
+      "flexShrink": undefined,
+      "height": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "width": undefined,
+    }
+  }
 >
   <section
     className="Card Card--xs"
@@ -30305,7 +30485,19 @@ exports[`Storyshots Layouts/Flex Flex Direction 1`] = `
 
 exports[`Storyshots Layouts/Flex Justify Content 1`] = `
 <div
-  className="sc-aXZVg fBLyyp"
+  className="Flex"
+  style={
+    Object {
+      "flex": undefined,
+      "flexBasis": undefined,
+      "flexGrow": undefined,
+      "flexShrink": undefined,
+      "height": undefined,
+      "maxHeight": undefined,
+      "maxWidth": undefined,
+      "width": undefined,
+    }
+  }
 >
   <section
     className="Card Card--xs"
