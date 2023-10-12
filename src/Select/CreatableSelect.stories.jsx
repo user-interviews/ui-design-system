@@ -19,8 +19,8 @@ const options = [
 ];
 
 export const Default = () => {
-  const handleChange = jest.fn();
-  const handleInputChange = jest.fn();
+  const handleChange = () => {};
+  const handleInputChange = () => {};
 
   return (
     <FormGroup
@@ -41,8 +41,8 @@ export const Default = () => {
 export const InModal = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleChange = jest.fn();
-  const handleInputChange = jest.fn();
+  const handleChange = () => {};
+  const handleInputChange = () => {};
   const handleRequestClose = () => setIsOpen(false);
 
   return (
