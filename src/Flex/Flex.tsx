@@ -65,7 +65,7 @@ const Flex = ({
 }: FlexProps) => {
   // Defined flex properties as strings
   const flexClasses = [
-    container ? styles.flexContainer : styles.container,
+    container ? styles[`flex-container`] : styles.container,
     alignItems && styles[`align-items-${alignItems}`],
     alignSelf && styles[`align-self-${alignSelf}`],
     flexDirection && styles[`flex-direction-${flexDirection}`],
