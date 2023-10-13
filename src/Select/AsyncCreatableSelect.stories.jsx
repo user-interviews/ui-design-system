@@ -31,8 +31,8 @@ async function loadOptions(search) {
 }
 
 export const Default = () => {
-  const handleChange = jest.fn();
-  const handleInputChange = jest.fn();
+  const handleChange = () => {};
+  const handleInputChange = () => {};
 
   return (
     <FormGroup

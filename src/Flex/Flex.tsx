@@ -1,5 +1,7 @@
-import React, { ReactNode, ElementType } from 'react';
-import { FlexWrapper } from './FlexWrapper.styles';
+import { ReactNode, ElementType, createElement } from 'react';
+import classNames from 'classnames';
+
+import styles from './Flex.module.scss';
 
 export interface FlexProps {
   alignItems?: 'stretch' | 'center' | 'flex-start' | 'flex-end' | 'baseline' | 'initial' | 'inherit';
@@ -43,7 +45,7 @@ export interface FlexProps {
 const Flex = ({
   alignItems,
   alignSelf,
-  as,
+  as = 'div',
   className,
   children,
   container,
@@ -59,29 +61,40 @@ const Flex = ({
   maxHeight,
   maxWidth,
   width,
-  ...props } : FlexProps) => (
-  <FlexWrapper
-    as={as}
-    alignItems={alignItems}
-    alignSelf={alignSelf}
-    className={className}
-    container={container}
-    flex={flex}
-    flexBasis={flexBasis}
-    flexDirection={flexDirection}
-    flexGrow={flexGrow}
-    flexShrink={flexShrink}
-    flexWrap={flexWrap}
-    height={height}
-    justifyContent={justifyContent}
-    justifySelf={justifySelf}
-    maxHeight={maxHeight}
-    maxWidth={maxWidth}
-    width={width}
-    {...props}
-  >
-    {children}
-  </FlexWrapper>
-);
+  ...props
+}: FlexProps) => {
+  // Defined flex properties as strings
+  const flexClasses = [
+    container ? styles[`flex-container`] : styles.container,
+    alignItems && styles[`align-items-${alignItems}`],
+    alignSelf && styles[`align-self-${alignSelf}`],
+    flexDirection && styles[`flex-direction-${flexDirection}`],
+    flexWrap && styles[`flex-wrap-${flexWrap}`],
+    justifyContent && styles[`justify-content-${justifyContent}`],
+    justifySelf && styles[`justify-self-${justifySelf}`],
+  ].filter(Boolean).join(' ');
+
+  // Variable flex properties defined by consumer
+  const style = {
+    flex,
+    flexBasis,
+    flexGrow,
+    flexShrink,
+    height,
+    maxHeight,
+    maxWidth,
+    width,
+  };
+
+  return createElement(
+    as,
+    {
+      className: classNames('Flex', className, flexClasses),
+      style,
+      ...props,
+    },
+    children,
+  );
+};
 
 export default Flex;

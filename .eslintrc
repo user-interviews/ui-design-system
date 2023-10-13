@@ -23,7 +23,7 @@
       "env": {
         "browser": true
       },
-      "parser": "babel-eslint",
+      "parser": "@typescript-eslint/parser",
       "plugins": [ "babel", "react", "react-hooks" ],
       "rules": {
         "babel/semi": 2,
@@ -112,6 +112,12 @@
         "react-hooks/rules-of-hooks": "error",
         "semi": 0
       }
+    },
+    {
+      "files": "**/*.{ts,tsx}",
+      "rules": {
+        "react/require-default-props": "off"
+      }
     }
   ],
   "settings": {
@@ -123,6 +129,7 @@
   },
   "rules": {
     "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-empty-function": "off",
     "class-methods-use-this": 0,
     "function-paren-newline": ["error", "consistent"],
     "func-names": ["error", "never"],

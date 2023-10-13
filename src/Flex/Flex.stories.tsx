@@ -1,17 +1,17 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Flex from './Flex';
 import Card from 'src/Card';
+import Flex from './Flex';
 
 const meta: Meta<typeof Flex> = {
   component: Flex,
   parameters: {
     docs: {
       description: {
-        component:  'Flex is a utility component for creating consistent spacing between items. Use this for quick alignment and spacing in your layouts.'
+        component: 'Flex is a utility component for creating consistent spacing between items. Use this for quick alignment and spacing in your layouts.',
       },
-    }
+    },
   },
   title: 'Layouts/Flex',
 };
@@ -25,54 +25,54 @@ export const Default: Story = {
     flexDirection: 'row',
     justifyContent: 'space-between',
   },
-  render: ({children, ...args}) => (
+  render: ({ ...args }) => (
     <Flex {...args}>
-      <Card title="Card 1" size="xs" />
-      <Card title="Card 2" size="xs" />
-      <Card title="Card 3" size="xs" />
+      <Card size="xs" title="Card 1" />
+      <Card size="xs" title="Card 2" />
+      <Card size="xs" title="Card 3" />
     </Flex>
-  )
-}
+  ),
+};
 
 export const FlexDirection: Story = {
   args: {
     container: true,
     flexDirection: 'column',
   },
-  render: ({children, ...args}) => (
+  render: ({ ...args }) => (
     <Flex {...args}>
-      <Card title="Card 1" size="xs" />
-      <Card title={'flex-direction: ' } subTitle={args.flexDirection} size="xs" />
-      <Card title="Card 3" size="xs" />
+      <Card size="xs" title="Card 1" />
+      <Card size="xs" subTitle={args.flexDirection} title="flex-direction: " />
+      <Card size="xs" title="Card 3" />
     </Flex>
-  )
-}
+  ),
+};
 
 export const JustifyContent: Story = {
   args: {
     container: true,
     flexDirection: 'row',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
   },
-  render: ({children, ...args}) => (
+  render: ({ ...args }) => (
     <Flex {...args}>
-      <Card title="Card 1" size="xs" />
-      <Card title={'justify-content: ' } subTitle={args.justifyContent} size="xs" />
-      <Card title="Card 3" size="xs" />
+      <Card size="xs" title="Card 1" />
+      <Card size="xs" subTitle={args.justifyContent} title="justify-content: " />
+      <Card size="xs" title="Card 3" />
     </Flex>
-  )
-}
+  ),
+};
 
 export const AlignItems: Story = {
   args: {
     container: true,
     alignItems: 'center',
   },
-  render: ({children, ...args}) => (
+  render: ({ ...args }) => (
     <Flex {...args}>
-      <Card title="Card 1" size="xs" />
-      <Card title={'align-items: ' } subTitle={args.alignItems} size="xs" />
-      <Card title="Card 3" size="xs" />
+      <Card size="xs" title="Card 1" />
+      <Card size="xs" subTitle={args.alignItems} title="align-items: " />
+      <Card size="xs" title="Card 3" />
     </Flex>
-  )
-}
+  ),
+};
