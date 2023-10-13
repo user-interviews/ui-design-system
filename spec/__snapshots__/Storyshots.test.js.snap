@@ -13519,7 +13519,6 @@ exports[`Storyshots Components/Table Default 1`] = `
 exports[`Storyshots Components/Table Loading Custom Columns 1`] = `
 Array [
   <div
-<<<<<<< HEAD
     className="Flex TableLoadingSkeleton"
     style={
       Object {
@@ -13533,9 +13532,6 @@ Array [
         "width": undefined,
       }
     }
-=======
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
->>>>>>> main
   >
     <span
       aria-busy={true}
@@ -13629,7 +13625,6 @@ Array [
     </span>
   </div>,
   <div
-<<<<<<< HEAD
     className="Flex TableLoadingSkeleton"
     style={
       Object {
@@ -13643,9 +13638,6 @@ Array [
         "width": undefined,
       }
     }
-=======
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
->>>>>>> main
   >
     <span
       aria-busy={true}
@@ -13739,7 +13731,6 @@ Array [
     </span>
   </div>,
   <div
-<<<<<<< HEAD
     className="Flex TableLoadingSkeleton"
     style={
       Object {
@@ -13753,9 +13744,6 @@ Array [
         "width": undefined,
       }
     }
-=======
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
->>>>>>> main
   >
     <span
       aria-busy={true}
@@ -13849,7 +13837,6 @@ Array [
     </span>
   </div>,
   <div
-<<<<<<< HEAD
     className="Flex TableLoadingSkeleton"
     style={
       Object {
@@ -13863,9 +13850,6 @@ Array [
         "width": undefined,
       }
     }
-=======
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
->>>>>>> main
   >
     <span
       aria-busy={true}
@@ -13964,7 +13948,6 @@ Array [
 exports[`Storyshots Components/Table Loading Default 1`] = `
 Array [
   <div
-<<<<<<< HEAD
     className="Flex TableLoadingSkeleton"
     style={
       Object {
@@ -13978,9 +13961,6 @@ Array [
         "width": undefined,
       }
     }
-=======
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
->>>>>>> main
   >
     <span
       aria-busy={true}
@@ -14110,7 +14090,6 @@ Array [
     </span>
   </div>,
   <div
-<<<<<<< HEAD
     className="Flex TableLoadingSkeleton"
     style={
       Object {
@@ -14124,9 +14103,6 @@ Array [
         "width": undefined,
       }
     }
-=======
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
->>>>>>> main
   >
     <span
       aria-busy={true}
@@ -14256,7 +14232,6 @@ Array [
     </span>
   </div>,
   <div
-<<<<<<< HEAD
     className="Flex TableLoadingSkeleton"
     style={
       Object {
@@ -14270,9 +14245,6 @@ Array [
         "width": undefined,
       }
     }
-=======
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
->>>>>>> main
   >
     <span
       aria-busy={true}
@@ -14402,7 +14374,6 @@ Array [
     </span>
   </div>,
   <div
-<<<<<<< HEAD
     className="Flex TableLoadingSkeleton"
     style={
       Object {
@@ -14416,9 +14387,6 @@ Array [
         "width": undefined,
       }
     }
-=======
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
->>>>>>> main
   >
     <span
       aria-busy={true}
@@ -14548,7 +14516,6 @@ Array [
     </span>
   </div>,
   <div
-<<<<<<< HEAD
     className="Flex TableLoadingSkeleton"
     style={
       Object {
@@ -14562,9 +14529,6 @@ Array [
         "width": undefined,
       }
     }
-=======
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
->>>>>>> main
   >
     <span
       aria-busy={true}
@@ -14694,7 +14658,6 @@ Array [
     </span>
   </div>,
   <div
-<<<<<<< HEAD
     className="Flex TableLoadingSkeleton"
     style={
       Object {
@@ -14708,9 +14671,6 @@ Array [
         "width": undefined,
       }
     }
-=======
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
->>>>>>> main
   >
     <span
       aria-busy={true}
@@ -14840,7 +14800,6 @@ Array [
     </span>
   </div>,
   <div
-<<<<<<< HEAD
     className="Flex TableLoadingSkeleton"
     style={
       Object {
@@ -14854,9 +14813,6 @@ Array [
         "width": undefined,
       }
     }
-=======
-    className="sc-aXZVg fbaeUV TableLoadingSkeleton"
->>>>>>> main
   >
     <span
       aria-busy={true}
@@ -24373,7 +24329,6 @@ exports[`Storyshots Components/Table Table With Sticky Column And Header 1`] = `
 `;
 
 exports[`Storyshots Components/Tabs Controlled 1`] = `
-<<<<<<< HEAD
 Array [
   <ul
     className="nav nav-tabs"
@@ -24526,169 +24481,10 @@ Array [
     </div>
   </div>,
 ]
-=======
-<div>
-  <span
-    className="sc-eqUAAy gIqBwm"
-  >
-    <ul
-      className="nav nav-tabs"
-      onKeyDown={[Function]}
-      role="tablist"
-    >
-      <li
-        className="nav-item"
-        role="presentation"
-      >
-        <button
-          aria-controls="controlled-tabpane-one"
-          aria-selected={true}
-          className="nav-link active"
-          data-rr-ui-event-key="one"
-          disabled={false}
-          id="controlled-tab-one"
-          onClick={[Function]}
-          role="tab"
-          type="button"
-        >
-          Tab One
-        </button>
-      </li>
-      <li
-        className="nav-item"
-        role="presentation"
-      >
-        <button
-          aria-controls="controlled-tabpane-two"
-          aria-selected={false}
-          className="nav-link"
-          data-rr-ui-event-key="two"
-          disabled={false}
-          id="controlled-tab-two"
-          onClick={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          Tab Two
-        </button>
-      </li>
-      <li
-        className="nav-item"
-        role="presentation"
-      >
-        <button
-          aria-controls="controlled-tabpane-three"
-          aria-selected={false}
-          className="nav-link"
-          data-rr-ui-event-key="three"
-          disabled={false}
-          id="controlled-tab-three"
-          onClick={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          Tab Three
-        </button>
-      </li>
-      <li
-        className="nav-item"
-        role="presentation"
-      >
-        <button
-          aria-controls="controlled-tabpane-four"
-          aria-disabled={true}
-          aria-selected={false}
-          className="nav-link disabled"
-          data-rr-ui-event-key="four"
-          disabled={true}
-          id="controlled-tab-four"
-          onClick={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          Tab Four (disabled)
-        </button>
-      </li>
-    </ul>
-    <div
-      className="tab-content"
-    >
-      <div
-        aria-labelledby="controlled-tab-one"
-        className="fade tab-pane active show"
-        id="controlled-tabpane-one"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content One
-        </div>
-      </div>
-      <div
-        aria-labelledby="controlled-tab-two"
-        className="fade tab-pane"
-        id="controlled-tabpane-two"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content Two
-        </div>
-      </div>
-      <div
-        aria-labelledby="controlled-tab-three"
-        className="fade tab-pane"
-        id="controlled-tabpane-three"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content Three
-        </div>
-      </div>
-      <div
-        aria-labelledby="controlled-tab-four"
-        className="fade tab-pane"
-        id="controlled-tabpane-four"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content Four
-        </div>
-      </div>
-    </div>
-  </span>
-</div>
->>>>>>> main
 `;
 
 exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
 <div>
-<<<<<<< HEAD
   <ul
     className="nav nav-tabs"
     onKeyDown={[Function]}
@@ -24839,162 +24635,6 @@ exports[`Storyshots Components/Tabs Uncontrolled 1`] = `
       </div>
     </div>
   </div>
-=======
-  <span
-    className="sc-eqUAAy gIqBwm"
-  >
-    <ul
-      className="nav nav-tabs"
-      onKeyDown={[Function]}
-      role="tablist"
-    >
-      <li
-        className="nav-item"
-        role="presentation"
-      >
-        <button
-          aria-controls="uncontrolled-tabpane-one"
-          aria-selected={true}
-          className="nav-link active"
-          data-rr-ui-event-key="one"
-          disabled={false}
-          id="uncontrolled-tab-one"
-          onClick={[Function]}
-          role="tab"
-          type="button"
-        >
-          Tab One
-        </button>
-      </li>
-      <li
-        className="nav-item"
-        role="presentation"
-      >
-        <button
-          aria-controls="uncontrolled-tabpane-two"
-          aria-selected={false}
-          className="nav-link"
-          data-rr-ui-event-key="two"
-          disabled={false}
-          id="uncontrolled-tab-two"
-          onClick={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          Tab Two
-        </button>
-      </li>
-      <li
-        className="nav-item"
-        role="presentation"
-      >
-        <button
-          aria-controls="uncontrolled-tabpane-three"
-          aria-selected={false}
-          className="nav-link"
-          data-rr-ui-event-key="three"
-          disabled={false}
-          id="uncontrolled-tab-three"
-          onClick={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          Tab Three
-        </button>
-      </li>
-      <li
-        className="nav-item"
-        role="presentation"
-      >
-        <button
-          aria-controls="uncontrolled-tabpane-four"
-          aria-disabled={true}
-          aria-selected={false}
-          className="nav-link disabled"
-          data-rr-ui-event-key="four"
-          disabled={true}
-          id="uncontrolled-tab-four"
-          onClick={[Function]}
-          role="tab"
-          tabIndex={-1}
-          type="button"
-        >
-          Tab Four (disabled)
-        </button>
-      </li>
-    </ul>
-    <div
-      className="tab-content"
-    >
-      <div
-        aria-labelledby="uncontrolled-tab-one"
-        className="fade tab-pane active show"
-        id="uncontrolled-tabpane-one"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content One
-        </div>
-      </div>
-      <div
-        aria-labelledby="uncontrolled-tab-two"
-        className="fade tab-pane"
-        id="uncontrolled-tabpane-two"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content Two
-        </div>
-      </div>
-      <div
-        aria-labelledby="uncontrolled-tab-three"
-        className="fade tab-pane"
-        id="uncontrolled-tabpane-three"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content Three
-        </div>
-      </div>
-      <div
-        aria-labelledby="uncontrolled-tab-four"
-        className="fade tab-pane"
-        id="uncontrolled-tabpane-four"
-        role="tabpanel"
-      >
-        <div
-          style={
-            Object {
-              "paddingTop": "20px",
-            }
-          }
-        >
-          Tab Content Four
-        </div>
-      </div>
-    </div>
-  </span>
->>>>>>> main
 </div>
 `;
 
@@ -29728,7 +29368,6 @@ Array [
 
 exports[`Storyshots Layouts/CardStack Centered 1`] = `
 <div
-<<<<<<< HEAD
   className="Flex"
   style={
     Object {
@@ -29742,9 +29381,6 @@ exports[`Storyshots Layouts/CardStack Centered 1`] = `
       "width": undefined,
     }
   }
-=======
-  className="sc-aXZVg eEvRmZ"
->>>>>>> main
 >
   <div
     className="CardStack CardStack--sm"
@@ -30665,7 +30301,6 @@ exports[`Storyshots Layouts/Container Setting One Column Width 1`] = `
 
 exports[`Storyshots Layouts/Flex Align Items 1`] = `
 <div
-<<<<<<< HEAD
   className="Flex"
   style={
     Object {
@@ -30679,9 +30314,6 @@ exports[`Storyshots Layouts/Flex Align Items 1`] = `
       "width": undefined,
     }
   }
-=======
-  className="sc-aXZVg idOQCp"
->>>>>>> main
 >
   <section
     className="Card Card--xs"
@@ -30732,7 +30364,6 @@ exports[`Storyshots Layouts/Flex Align Items 1`] = `
 
 exports[`Storyshots Layouts/Flex Default 1`] = `
 <div
-<<<<<<< HEAD
   className="Flex"
   style={
     Object {
@@ -30746,9 +30377,6 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
       "width": undefined,
     }
   }
-=======
-  className="sc-aXZVg fBLyyp"
->>>>>>> main
 >
   <section
     className="Card Card--xs"
@@ -30794,7 +30422,6 @@ exports[`Storyshots Layouts/Flex Default 1`] = `
 
 exports[`Storyshots Layouts/Flex Flex Direction 1`] = `
 <div
-<<<<<<< HEAD
   className="Flex"
   style={
     Object {
@@ -30808,9 +30435,6 @@ exports[`Storyshots Layouts/Flex Flex Direction 1`] = `
       "width": undefined,
     }
   }
-=======
-  className="sc-aXZVg cfPfql"
->>>>>>> main
 >
   <section
     className="Card Card--xs"
@@ -30861,7 +30485,6 @@ exports[`Storyshots Layouts/Flex Flex Direction 1`] = `
 
 exports[`Storyshots Layouts/Flex Justify Content 1`] = `
 <div
-<<<<<<< HEAD
   className="Flex"
   style={
     Object {
@@ -30875,9 +30498,6 @@ exports[`Storyshots Layouts/Flex Justify Content 1`] = `
       "width": undefined,
     }
   }
-=======
-  className="sc-aXZVg fBLyyp"
->>>>>>> main
 >
   <section
     className="Card Card--xs"
