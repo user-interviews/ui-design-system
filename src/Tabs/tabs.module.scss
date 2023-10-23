@@ -1,6 +1,6 @@
 @import '../../scss/theme.scss';
 
-.tabs {
+.tabs.tabs {
   --border-width: 0.125rem;
 
   border-bottom: var(--border-width) solid $ux-gray-400;
@@ -25,11 +25,11 @@
   }
 }
 
-.flexWrapUnset {
+.flexWrapUnset.flexWrapUnset {
   flex-wrap: nowrap;
 }
 
-.navItemButtonFullHeight {
+.navItemButtonFullHeight.navItemButtonFullHeight {
   :global(.nav-item .button) {
     height: calc(100% + var(--border-width));
   }
