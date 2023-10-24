@@ -15,12 +15,13 @@ const Tabs = ({
   children,
   flexWrapUnset,
   navItemButtonFullHeight,
+  className,
   ...props
 }: TabsProps) => (
   <ReactBootstrapTabs
     className={
         classNames(
-          props.className,
+          className,
           styles.tabs,
           {
             [styles.flexWrapUnset]: flexWrapUnset,
