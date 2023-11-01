@@ -90,6 +90,16 @@ export const WithLeadingIcon = () => (
   </FormGroup>
 );
 
+export const WithTrailingText = () => (
+  <FormGroup
+    id="with-trailing-text"
+    label="Form Group with trailing text"
+    labelHtmlFor="trailing-text-input"
+  >
+    <InputComponent id="trailing-text-input" name="default" placeholder="Session length" trailingText="min" type="number" />
+  </FormGroup>
+);
+
 export const WithTrailingIcon = () => (
   <FormGroup
     helperText="with trailing icon"

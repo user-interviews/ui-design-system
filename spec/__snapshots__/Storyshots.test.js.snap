@@ -8250,6 +8250,39 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
 </div>
 `;
 
+exports[`Storyshots Components/Form Elements/Form Group With Trailing Text 1`] = `
+<div
+  className="FormGroup"
+  id="with-trailing-text"
+>
+  <label
+    className="InputLabel"
+    htmlFor="trailing-text-input"
+  >
+    Form Group with trailing text
+  </label>
+  <div
+    className="Input input-group"
+  >
+    <input
+      className="Input form-control"
+      disabled={false}
+      id="trailing-text-input"
+      name="default"
+      onChange={[Function]}
+      placeholder="Session length"
+      type="number"
+      value=""
+    />
+    <span
+      className="input-trailing-text input-trailing-text--input-type-number"
+    >
+      min
+    </span>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/Form Elements/RadioButtonGroup Bordered Column Full Width 1`] = `
 <fieldset
   className="FormGroup"
