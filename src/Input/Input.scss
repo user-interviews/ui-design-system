@@ -1,5 +1,8 @@
 @import '../../scss/theme';
 
+$input-trailing-text-spacing-for-type-number: 2.1875rem;
+$input-trailing-text-max-width-before-hiding: 12.5rem;
+
 .Input {
   @include font-type-30;
   box-shadow: $input-box-shadow;
@@ -22,6 +25,23 @@
 
   .input-group-text {
     background-color: $ux-gray-100;
+  }
+
+  .input-trailing-text {
+    position: absolute;
+    right: $ux-spacing-40;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none; 
+    z-index: 3;
+
+    &--input-type-number {
+      right: $input-trailing-text-spacing-for-type-number;
+    }
+
+    @media (max-width: $input-trailing-text-max-width-before-hiding) {
+      display: none;
+    }
   }
 
   .trailing-icon-button {
