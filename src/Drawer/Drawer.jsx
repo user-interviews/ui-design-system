@@ -25,6 +25,7 @@ const Drawer = ({
   behindNav,
   children,
   className,
+  defaultExpanded,
   expandable,
   hasBackgroundOverlay,
   visible,
@@ -32,7 +33,7 @@ const Drawer = ({
   size,
   onRequestClose,
 }) => {
-  const [expanded, setExpanded] = useState(false);
+  const [expanded, setExpanded] = useState(defaultExpanded);
 
   const handleExpand = () => setExpanded(!expanded);
 
@@ -86,6 +87,7 @@ Drawer.propTypes = {
   behindNav: propTypes.bool,
   children: propTypes.node,
   className: propTypes.string,
+  defaultExpanded: propTypes.bool,
   expandable: propTypes.bool,
   hasBackgroundOverlay: propTypes.bool,
   orientation: propTypes.oneOf([ORIENTATION_LEFT, ORIENTATION_RIGHT]),
@@ -98,6 +100,7 @@ Drawer.defaultProps = {
   behindNav: true,
   children: undefined,
   className: null,
+  defaultExpanded: false,
   expandable: false,
   hasBackgroundOverlay: true,
   orientation: ORIENTATION_RIGHT,
