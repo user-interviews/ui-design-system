@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 import { Pill, PILL_COLORS } from 'src/Pill';
 
@@ -30,7 +30,7 @@ TypographyExample.propTypes = {
 const TypographyTokens = ({ tokens }) => (
   <ul>
     {
-      tokens.map((token) => <li key={token}><Pill color={PILL_COLORS.BLUE} text={token} /></li>)
+      tokens.map((token) => <li key={token}><Pill color={PILL_COLORS.BLUE} text={`$synth-${token}`} /></li>)
     }
   </ul>
 );
@@ -108,88 +108,80 @@ const TypographyStyle = (props) => (
   </div>
 );
 
-const presets = [
+const headingPresets = [
   {
-    preset: 'font-type-70',
+    preset: 'font-type-header-page',
     font: 'Inter, sans-serif',
-    size: '1.5rem',
-    weight: '400 / Regular',
-    lineHeight: '2rem',
-    modifiers: ['font-type-70--medium', 'font-type-70--bold'],
+    size: '1.5rem (24px)',
+    weight: '700 / Bold',
+    lineHeight: '2rem (32px)',
+    modifiers: [],
   },
   {
-    preset: 'font-type-60',
+    preset: 'font-type-header-section',
     font: 'Inter, sans-serif',
-    size: '1.25rem',
-    weight: '400 / Regular',
-    lineHeight: '1.625rem',
-    modifiers: ['font-type-60--medium', 'font-type-60--bold'],
-
-  },
-  {
-    preset: 'font-type-50',
-    font: 'Inter, sans-serif',
-    size: '1.125rem',
-    weight: '400 / Regular',
-    lineHeight: '1.5rem',
-    modifiers: ['font-type-50--medium', 'font-type-50--bold'],
-
-  },
-  {
-    preset: 'font-type-40',
-    font: 'Inter, sans-serif',
-    size: '1rem',
-    weight: '400 / Regular',
-    lineHeight: '1.375rem',
-    modifiers: ['font-type-40--medium', 'font-type-40--bold'],
-
-  },
-  {
-    preset: 'font-type-30',
-    font: 'Inter, sans-serif',
-    size: '0.875rem',
-    weight: '400 / Regular',
-    lineHeight: '1.25rem',
-    modifiers: ['font-type-30--medium', 'font-type-30--bold'],
-  },
-  {
-    preset: 'font-type-20',
-    font: 'Inter, sans-serif',
-    size: '0.75rem',
-    weight: '400 / Regular',
-    lineHeight: '1rem',
-    modifiers: ['font-type-20--medium', 'font-type-20--bold'],
-  },
-  {
-    preset: 'font-type-10',
-    font: 'Inter, sans-serif',
-    size: '0.625rem',
-    weight: '400 / Regular',
-    lineHeight: '0.875rem',
-    letterSpacing: '0.0625rem',
-    modifiers: ['font-type-10--medium', 'font-type-10--bold'],
-  },
-  {
-    preset: 'font-type-10--uppercase',
-    font: 'Inter, sans-serif',
-    size: '0.625rem',
-    weight: '400 / Regular',
-    lineHeight: '0.875rem',
-    textTransform: 'Uppercase',
-    letterSpacing: '0.0625rem',
-    modifiers: ['font-type-10--medium-uppercase', 'font-type-10--bold-uppercase'],
+    size: '1.125rem (18px)',
+    weight: '700 / Bold',
+    lineHeight: '2rem (24px)',
+    modifiers: [],
   },
 ];
 
-export const Typography = () => (
-  <Fragment>
+const bodyPresets = [
+  {
+    preset: 'font-type-body',
+    font: 'Inter, sans-serif',
+    size: '0.875rem (14px)',
+    weight: '400 / Regular',
+    lineHeight: '1.25rem (20px)',
+    modifiers: [],
+  },
+  {
+    preset: 'font-type-subtext',
+    font: 'Inter, sans-serif',
+    size: '0.75rem (12px)',
+    weight: '400 / Regular',
+    lineHeight: '1rem (16px)',
+    modifiers: ['font-type-subtext--medium', 'font-type-subtext--bold'],
+  },
+  {
+    preset: 'font-type-small-caps',
+    font: 'Inter, sans-serif',
+    size: '0.625rem (10px)',
+    weight: '400 / Regular',
+    lineHeight: '0.875rem (14px)',
+    textTransform: 'Uppercase',
+    modifiers: ['font-type-small-caps--medium', 'font-type-small-caps--bold'],
+  },
+];
+
+export const Default = () => (
+  <>
     {
-      presets.map((preset) => <TypographyStyle {...preset} key={preset.preset} />)
+      [...headingPresets, ...bodyPresets].map((preset) => (
+        <TypographyStyle {...preset} key={preset.preset} />
+        ))
     }
-  </Fragment>
+  </>
+);
+
+export const Headings = () => (
+  <>
+    {
+      headingPresets.map((preset) => <TypographyStyle {...preset} key={preset.preset} />)
+     }
+  </>
+);
+
+export const Body = () => (
+  <>
+    {
+      bodyPresets.map((preset) => <TypographyStyle {...preset} key={preset.preset} />)
+     }
+  </>
 );
 
 export default {
   title: 'Foundations/Typography',
-  component: Typography,
+  component: Default,
 };
