@@ -1,7 +1,7 @@
 @import '../../scss/theme';
 
 @mixin primary-action($bg-color, $bg-color-hover, $color) {
-  @include font-type-30--bold;
+  @include synth-font-type-30--bold;
   background-color: $bg-color;
   border: none;
   border-left: unset;
@@ -77,12 +77,12 @@
   }
 
   &__title {
-    @include font-type-30--bold;
+    @include synth-font-type-30--bold;
     margin-bottom: 0.25rem;
   }
 
   &__message {
-    @include font-type-30;
+    @include synth-font-type-30;
     margin-bottom: 0;
   }
 }

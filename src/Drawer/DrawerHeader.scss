@@ -15,7 +15,7 @@
   }
 
   &__header-action {
-    @include font-type-40;
+    @include synth-font-type-40;
 
     border: none;
     background: transparent;
@@ -23,7 +23,7 @@
   }
 
   &__title {
-    @include font-type-70--bold;
+    @include synth-font-type-70--bold;
 
     color: $ux-gray-900;
   }

@@ -8,8 +8,8 @@
   padding-bottom: $ux-spacing-20;
 
   &__title {
-    font-family: $font-family;
-    @include font-type-60--bold();
+    font-family: $synth-font-family;
+    @include synth-font-type-60--bold();
     margin-bottom: 0;
 
     &--has-icon {
@@ -29,8 +29,8 @@
   }
 
   &__subtitle {
-    font-family: $font-family;
-    @include font-type-30;
+    font-family: $synth-font-family;
+    @include synth-font-type-30;
     margin-bottom: 0;
     margin-top: $ux-spacing-20;
   }

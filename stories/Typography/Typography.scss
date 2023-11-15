@@ -34,37 +34,37 @@
 }
 
 .font-type-header-page {
-  @include font-type-70--bold;
+  @include synth-font-type-70--bold;
 }
 
 .font-type-header-section {
-  @include font-type-50--bold;
+  @include synth-font-type-50--bold;
 }
 
 .font-type-body {
-  @include font-type-30;
+  @include synth-font-type-30;
 }
 
 .font-type-subtext {
-  @include font-type-20;
+  @include synth-font-type-20;
 }
 
 .font-type-subtext--medium {
-  @include font-type-20--medium;
+  @include synth-font-type-20--medium;
 }
 
 .font-type-subtext--bold {
-  @include font-type-20--bold;
+  @include synth-font-type-20--bold;
 }
 
 .font-type-small-caps {
-  @include font-type-10--uppercase;
+  @include synth-font-type-10--uppercase;
 }
 
 .font-type-small-caps--medium {
-  @include font-type-10--medium-uppercase;
+  @include synth-font-type-10--medium-uppercase;
 }
 
 .font-type-small-caps--bold {
-  @include font-type-10--bold-uppercase;
+  @include synth-font-type-10--bold-uppercase;
 }
