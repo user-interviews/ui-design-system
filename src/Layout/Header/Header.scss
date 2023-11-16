@@ -9,7 +9,7 @@
   padding: $ux-spacing-40;
 
   > div:first-child {
-    @include font-type-60--bold;
+    @include synth-font-type-60--bold;
     flex-grow: 1;
   }
 

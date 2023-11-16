@@ -1,13 +1,13 @@
 @import '../../scss/theme';
 
 .ModalBody {
-  font-weight: $font-weight-regular;
+  font-weight: $synth-font-weight-regular;
   padding: $ux-spacing-20 $ux-spacing-50 $ux-spacing-40;
 
   &__title {
-    font-family: $font-family;
-    font-size: $font-size-base;
-    font-weight: $font-weight-medium;
+    font-family: $synth-font-family;
+    font-size: $synth-font-size-base;
+    font-weight: $synth-font-weight-medium;
     margin-bottom: $ux-spacing-10;
   }
 }

@@ -33,98 +33,38 @@
   }
 }
 
-.font-type-10 {
-  @include font-type-10;
+.font-type-header-page {
+  @include synth-font-type-70--bold;
 }
 
-.font-type-20{
-  @include font-type-20;
+.font-type-header-section {
+  @include synth-font-type-50--bold;
 }
 
-.font-type-30 {
-  @include font-type-30;
+.font-type-body {
+  @include synth-font-type-30;
 }
 
-.font-type-40 {
-  @include font-type-40;
+.font-type-subtext {
+  @include synth-font-type-20;
 }
 
-.font-type-50 {
-  @include font-type-50;
+.font-type-subtext--medium {
+  @include synth-font-type-20--medium;
 }
 
-.font-type-60 {
-  @include font-type-60;
+.font-type-subtext--bold {
+  @include synth-font-type-20--bold;
 }
 
-.font-type-70 {
-  @include font-type-70;
+.font-type-small-caps {
+  @include synth-font-type-10--uppercase;
 }
 
-.font-type-10--medium {
-  @include font-type-10--medium;
+.font-type-small-caps--medium {
+  @include synth-font-type-10--medium-uppercase;
 }
 
-.font-type-20--medium {
-  @include font-type-20--medium;
-}
-
-.font-type-30--medium {
-  @include font-type-30--medium;
-}
-
-.font-type-40--medium {
-  @include font-type-40--medium;
-}
-
-.font-type-50--medium {
-  @include font-type-50--medium;
-}
-
-.font-type-60--medium {
-  @include font-type-60--medium;
-}
-
-.font-type-70--medium {
-  @include font-type-70--medium;
-}
-
-.font-type-10--bold {
-  @include font-type-10--bold;
-}
-
-.font-type-20--bold {
-  @include font-type-20--bold;
-}
-
-.font-type-30--bold {
-  @include font-type-30--bold;
-}
-
-.font-type-40--bold {
-  @include font-type-40--bold;
-}
-
-.font-type-50--bold {
-  @include font-type-50--bold;
-}
-
-.font-type-60--bold {
-  @include font-type-60--bold;
-}
-
-.font-type-70--bold {
-  @include font-type-70--bold;
-}
-
-.font-type-10--uppercase {
-  @include font-type-10--uppercase;
-}
-
-.font-type-10--medium-uppercase {
-  @include font-type-10--medium-uppercase;
-}
-
-.font-type-10--bold-uppercase {
-  @include font-type-10--bold-uppercase;
+.font-type-small-caps--bold {
+  @include synth-font-type-10--bold-uppercase;
 }

@@ -1,135 +1,231 @@
-$font-family: DM Sans, sans-serif;
-$font-weight-regular: 400;
-$font-weight-medium: 500;
-$font-weight-bold: 700;
-$font-size-base: 0.875rem;
+$synth-font-family: Inter, sans-serif;
+$synth-font-weight-regular: 400;
+$synth-font-weight-medium: 500;
+$synth-font-weight-bold: 700;
+$synth-font-size-base: 0.875rem;
 
-@mixin font-type-10() {
+@mixin synth-font-type-10() {
   font-size: .625rem;
-  font-weight: $font-weight-regular;
+  font-weight: $synth-font-weight-regular;
   letter-spacing: 0.0625rem;
   line-height: 0.875rem;
 }
 
-@mixin font-type-20() {
+@mixin font-type-10() {
+  @include synth-font-type-10;
+}
+
+@mixin synth-font-type-20() {
   font-size: .75rem;
-  font-weight: $font-weight-regular;
+  font-weight: $synth-font-weight-regular;
   line-height: 1rem;
 }
 
-@mixin font-type-30() {
-  font-size: $font-size-base;
-  font-weight: $font-weight-regular;
+@mixin font-type-20() {
+  @include synth-font-type-20;
+}
+
+@mixin synth-font-type-30() {
+  font-size: $synth-font-size-base;
+  font-weight: $synth-font-weight-regular;
   line-height: 1.25rem;
 }
 
-@mixin font-type-40() {
+@mixin font-type-30() {
+  @include synth-font-type-30;
+}
+
+@mixin synth-font-type-40() {
   font-size: 1rem;
-  font-weight: $font-weight-regular;
+  font-weight: $synth-font-weight-regular;
   line-height: 1.375rem;
 }
 
-@mixin font-type-50() {
+@mixin font-type-40() {
+  @include synth-font-type-40;
+}
+
+@mixin synth-font-type-50() {
   font-size: 1.125rem;
-  font-weight: $font-weight-regular;
+  font-weight: $synth-font-weight-regular;
   line-height: 1.5rem;
 }
 
-@mixin font-type-60() {
+@mixin font-type-50() {
+  @include synth-font-type-50;
+}
+
+@mixin synth-font-type-60() {
   font-size: 1.25rem;
-  font-weight: $font-weight-regular;
+  font-weight: $synth-font-weight-regular;
   line-height: 1.625rem;
 }
 
-@mixin font-type-70() {
+@mixin font-type-60() {
+  @include synth-font-type-60;
+}
+
+@mixin synth-font-type-70() {
   font-size: 1.5rem;
-  font-weight: $font-weight-regular;
+  font-weight: $synth-font-weight-regular;
   line-height: 2rem;
 }
 
+@mixin font-type-70() {
+  @include synth-font-type-70;
+}
+
+@mixin synth-font-type-10--medium() {
+  @include synth-font-type-10;
+  font-weight: $synth-font-weight-medium;
+}
+
 @mixin font-type-10--medium() {
-  @include font-type-10;
-  font-weight: $font-weight-medium;
+  @include synth-font-type-10--medium;
+}
+
+@mixin synth-font-type-20--medium() {
+  @include synth-font-type-20;
+  font-weight: $synth-font-weight-medium;
 }
 
 @mixin font-type-20--medium() {
-  @include font-type-20;
-  font-weight: $font-weight-medium;
+  @include synth-font-type-20--medium;
+}
+
+@mixin synth-font-type-30--medium() {
+  @include synth-font-type-30;
+  font-weight: $synth-font-weight-medium;
 }
 
 @mixin font-type-30--medium() {
-  @include font-type-30;
-  font-weight: $font-weight-medium;
+  @include synth-font-type-30--medium;
+}
+
+@mixin synth-font-type-40--medium() {
+  @include synth-font-type-40();
+  font-weight: $synth-font-weight-medium;
 }
 
 @mixin font-type-40--medium() {
-  @include font-type-40();
-  font-weight: $font-weight-medium;
+  @include synth-font-type-40--medium;
+}
+
+@mixin synth-font-type-50--medium() {
+  @include synth-font-type-50;
+  font-weight: $synth-font-weight-medium;
 }
 
 @mixin font-type-50--medium() {
-  @include font-type-50;
-  font-weight: $font-weight-medium;
+  @include synth-font-type-50--medium;
+}
+
+@mixin synth-font-type-60--medium() {
+  @include synth-font-type-60();
+  font-weight: $synth-font-weight-medium;
 }
 
 @mixin font-type-60--medium() {
-  @include font-type-60();
-  font-weight: $font-weight-medium;
+  @include synth-font-type-60--medium;
+}
+
+@mixin synth-font-type-70--medium() {
+  @include synth-font-type-70;
+  font-weight: $synth-font-weight-medium;
 }
 
 @mixin font-type-70--medium() {
-  @include font-type-70;
-  font-weight: $font-weight-medium;
+  @include synth-font-type-70--medium;
+}
+
+@mixin synth-font-type-10--bold() {
+  @include synth-font-type-10;
+  font-weight: $synth-font-weight-bold;
 }
 
 @mixin font-type-10--bold() {
-  @include font-type-10;
-  font-weight: $font-weight-bold;
+  @include synth-font-type-10--bold;
+}
+
+@mixin synth-font-type-20--bold() {
+  @include synth-font-type-20;
+  font-weight: $synth-font-weight-bold;
 }
 
 @mixin font-type-20--bold() {
-  @include font-type-20;
-  font-weight: $font-weight-bold;
+  @include synth-font-type-20--bold;
+}
+
+@mixin synth-font-type-30--bold() {
+  @include synth-font-type-30;
+  font-weight: $synth-font-weight-bold;
 }
 
 @mixin font-type-30--bold() {
-  @include font-type-30;
-  font-weight: $font-weight-bold;
+  @include synth-font-type-30--bold;
+}
+
+@mixin synth-font-type-40--bold() {
+  @include synth-font-type-40;
+  font-weight: $synth-font-weight-bold;
 }
 
 @mixin font-type-40--bold() {
-  @include font-type-40;
-  font-weight: $font-weight-bold;
+  @include synth-font-type-40--bold;
+}
+
+@mixin synth-font-type-50--bold() {
+  @include synth-font-type-50;
+  font-weight: $synth-font-weight-bold;
 }
 
 @mixin font-type-50--bold() {
-  @include font-type-50;
-  font-weight: $font-weight-bold;
+  @include synth-font-type-50--bold;
+}
+
+@mixin synth-font-type-60--bold() {
+  @include synth-font-type-60;
+  font-weight: $synth-font-weight-bold;
 }
 
 @mixin font-type-60--bold() {
-  @include font-type-60;
-  font-weight: $font-weight-bold;
+  @include synth-font-type-60--bold;
+}
+
+@mixin synth-font-type-70--bold() {
+  @include synth-font-type-70;
+  font-weight: $synth-font-weight-bold;
 }
 
 @mixin font-type-70--bold() {
-  @include font-type-70;
-  font-weight: $font-weight-bold;
+  @include synth-font-type-70--bold;
 }
 
 // Uppercase fonts
 
-@mixin font-type-10--uppercase() {
-  @include font-type-10;
+@mixin synth-font-type-10--uppercase() {
+  @include synth-font-type-10;
   text-transform: uppercase;
 }
 
+@mixin font-type-10--uppercase() {
+  @include synth-font-type-10--uppercase;
+}
+
+@mixin synth-font-type-10--bold-uppercase() {
+  @include synth-font-type-10--uppercase;
+  font-weight: $synth-font-weight-bold;
+}
+
 @mixin font-type-10--bold-uppercase() {
-  @include font-type-10--uppercase;
-  font-weight: $font-weight-bold;
+  @include synth-font-type-10--bold-uppercase;
+}
+
+@mixin synth-font-type-10--medium-uppercase() {
+  @include synth-font-type-10--uppercase;
+  font-weight: $synth-font-weight-medium
 }
 
 @mixin font-type-10--medium-uppercase() {
-  @include font-type-10--uppercase;
-  font-weight: $font-weight-medium
+  @include synth-font-type-10--medium-uppercase;
 }

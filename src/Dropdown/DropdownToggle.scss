@@ -5,7 +5,7 @@ $danger: $ux-red;
 $warning: $ux-yellow-400; 
 
 .DropdownToggle {
-  @include font-type-30--bold;
+  @include synth-font-type-30--bold;
 
   &--unstyled {
     all: unset;
