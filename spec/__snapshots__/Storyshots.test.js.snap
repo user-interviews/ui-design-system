@@ -7831,6 +7831,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Helper Text 1`] = `
     Label
   </label>
   <div
+    className="FormGroup__helper-text"
+  >
+    test helper text
+  </div>
+  <div
     className="Input input-group"
   >
     <input
@@ -7843,11 +7848,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Helper Text 1`] = `
       type="text"
       value=""
     />
-  </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    test helper text
   </div>
 </div>
 `;
@@ -7917,6 +7917,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Leading And Trailin
     Form Group with input leading and trailing icons
   </label>
   <div
+    className="FormGroup__helper-text"
+  >
+    with leading and trailing icons
+  </div>
+  <div
     className="Input input-group"
   >
     <div
@@ -7972,11 +7977,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Leading And Trailin
       </svg>
     </div>
   </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    with leading and trailing icons
-  </div>
 </div>
 `;
 
@@ -7991,6 +7991,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Leading Icon 1`] = 
   >
     Form Group with input leading icon
   </label>
+  <div
+    className="FormGroup__helper-text"
+  >
+    with leading icon
+  </div>
   <div
     className="Input input-group"
   >
@@ -8025,11 +8030,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Leading Icon 1`] = 
       type="text"
       value=""
     />
-  </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    with leading icon
   </div>
 </div>
 `;
@@ -8132,6 +8132,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon 1`] =
     Form Group with input trailing icon
   </label>
   <div
+    className="FormGroup__helper-text"
+  >
+    with trailing icon
+  </div>
+  <div
     className="Input input-group"
   >
     <input
@@ -8166,11 +8171,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon 1`] =
       </svg>
     </div>
   </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    with trailing icon
-  </div>
 </div>
 `;
 
@@ -8185,6 +8185,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
   >
     Form Group with input trailing icon and button
   </label>
+  <div
+    className="FormGroup__helper-text"
+  >
+    with trailing icon and button
+  </div>
   <div
     className="Input input-group"
   >
@@ -8227,11 +8232,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
       </div>
     </button>
   </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    with trailing icon and button
-  </div>
 </div>
 `;
 
@@ -8246,6 +8246,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
   >
     Form Group with input trailing icon and button with submit
   </label>
+  <div
+    className="FormGroup__helper-text"
+  >
+    with trailing icon and button with submit
+  </div>
   <div
     className="Input input-group"
   >
@@ -8288,11 +8293,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
       </div>
     </button>
   </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    with trailing icon and button with submit
-  </div>
 </div>
 `;
 
@@ -8307,6 +8307,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
   >
     Form Group with input trailing icon and button with submit and label
   </label>
+  <div
+    className="FormGroup__helper-text"
+  >
+    with trailing icon and button with submit and label
+  </div>
   <div
     className="Input input-group"
   >
@@ -8348,11 +8353,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
         </svg>
       </div>
     </button>
-  </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    with trailing icon and button with submit and label
   </div>
 </div>
 `;
@@ -11463,7 +11463,7 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className=" css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -11585,7 +11585,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className=" css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -11733,6 +11733,11 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
           In Modal AsyncCreatable select
         </label>
         <div
+          className="FormGroup__helper-text"
+        >
+          Select menu is able to overflow the Modal container
+        </div>
+        <div
           className="AsyncSelect css-b62m3t-container"
           onKeyDown={[Function]}
         >
@@ -11747,7 +11752,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
             className="css-1f43avz-a11yText-A11yText"
           />
           <div
-            className=" css-9435u6-control"
+            className=" css-1d5d4h9-control"
             onMouseDown={[Function]}
             onTouchEnd={[Function]}
           >
@@ -11830,11 +11835,6 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
             </div>
           </div>
         </div>
-        <div
-          className="FormGroup__helper-text"
-        >
-          Select menu is able to overflow the Modal container
-        </div>
       </div>
     </div>
     <div
@@ -11885,7 +11885,7 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className=" css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12007,7 +12007,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className=" css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12094,7 +12094,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className=" css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12181,7 +12181,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className=" css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12268,7 +12268,7 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className=" css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12355,7 +12355,7 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className=" css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12442,7 +12442,7 @@ exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className=" css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12540,7 +12540,7 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-awpioc-control"
+      className=" css-1in6l7w-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12627,7 +12627,7 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className=" css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12714,7 +12714,7 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className=" css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
