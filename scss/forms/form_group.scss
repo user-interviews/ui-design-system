@@ -57,11 +57,9 @@
   }
 
   &__helper-text {
-    @include synth-font-type-20--medium;
-    font-weight: 100;
+    @include synth-font-type-20;
     color: $ux-gray-900;
-    padding: .375rem 0;
-    margin: 0;
+    margin: 0 0 0.75rem;
 
     &--pre {
       white-space: pre-wrap;
