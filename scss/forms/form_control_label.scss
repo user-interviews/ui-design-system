@@ -18,14 +18,13 @@
   }
 
   &__label {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     flex-direction: row;
   }
 
   &__helper-text {
-    @include synth-font-type-30--medium;
-    font-weight: 100;
+    @include synth-font-type-10--uppercase;
   }
 
   &__control {

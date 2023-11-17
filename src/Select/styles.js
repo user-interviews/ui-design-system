@@ -17,7 +17,6 @@ const getHeightProps = (size) => {
 
 function getBorderStyles(isFocused, isSelected) {
   return {
-    boxShadow: (isFocused || isSelected) ? '0px 0px 8px 0px #66AFE9B2;' : 'none',
     borderColor: (
       (isFocused || isSelected) ? systemColors.UX_BLUE_500 : systemColors.inputBorderColor
     ),

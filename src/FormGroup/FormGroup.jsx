@@ -73,6 +73,14 @@ export default function FormGroup(props) {
         />
       )}
 
+      {
+        helperText && !hasErrors && (
+          <div className="FormGroup__helper-text">
+            {helperText}
+          </div>
+        )
+      }
+
       {props.children}
 
       {props.displayErrorText && hasErrors && (
@@ -84,13 +92,6 @@ export default function FormGroup(props) {
         </div>
       )}
 
-      {
-        helperText && !hasErrors && (
-          <div className="FormGroup__helper-text">
-            {helperText}
-          </div>
-        )
-      }
     </>
   );
 
