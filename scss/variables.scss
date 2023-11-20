@@ -1,6 +1,34 @@
 @import './colors/palette';
+@import './colors/synthesis-palette';
 
 :export {
+  SYNTH_GREEN_1_SUCCESS: $synth-green-1-success;
+  SYNTH_GREEN_2_SUCCESS: $synth-green-2-success;
+  SYNTH_GREEN_3_SUCCESS: $synth-green-3-success;
+  SYNTH_RED_1_ERROR: $synth-red-1-error;
+  SYNTH_RED_2_ERROR: $synth-red-2-error;
+  SYNTH_RED_3_ERROR: $synth-red-3-error;
+  SYNTH_YELLOW_1_WARN: $synth-yellow-1-warn;
+  SYNTH_YELLOW_2_WARN: $synth-yellow-2-warn;
+  SYNTH_YELLOW_3_WARN: $synth-yellow-3-warn;
+  SYNTH_ALERT_BG_GRAY: $synth-alert-bg-gray;
+  SYNTH_DIV_STROKE_GRAY: $synth-div-stroke-gray;
+  SYNTH_HEADER_GRAY: $synth-header-gray;
+  SYNTH_PAGE_WHITE: $synth-page-white;
+  SYNTH_TEXT_BLACK: $synth-text-black;
+  SYNTH_UNSELECTED_GRAY: $synth-unselected-gray;
+  SYNTH_ACCENT_GREEN: $synth-accent-green;
+  SYNTH_DARK_BACKGROUND_SELECTED_BLUE: $synth-dark-background-selected-blue;
+  SYNTH_HOVER_STATE: $synth-hover-state;
+  SYNTH_INDICATOR_STROKE_GREEN: $synth-indicator-stroke-green;
+  SYNTH_NAVBAR_BLUE: $synth-navbar-blue;
+  SYNTH_PRIMARY_CTA_BLUE: $synth-primary-cta-blue;
+  SYNTH_SELECTED_STATE_GREEN: $synth-selected-state-green;
+  SYNTH_HYPERLINK: $synth-hyperlink;
+  SYNTH_ORANGE_1_WARN: $synth-orange-1-warn;
+  SYNTH_HOVER_BLUE: $synth-hover-blue;
+  SYNTH_HEADER_GRAY_BLUE: $synth-header-gray-blue;
+
   UX_BLACK: $ux-black;
   UX_BLUE: $ux-blue;
   UX_CREAM: $ux-cream;
