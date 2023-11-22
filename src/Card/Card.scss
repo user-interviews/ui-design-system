@@ -1,5 +1,12 @@
 @import '../../scss/theme';
 
+.Synthesized {
+  .Card {
+    border: 1px solid $ux-gray-400;
+    box-shadow: none;
+  }
+}
+
 .Card {
   background-color: $ux-white;
   border: none;
