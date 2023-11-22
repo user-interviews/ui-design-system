@@ -5566,12 +5566,14 @@ exports[`Storyshots Components/CheckboxButton Indeterminate 1`] = `
 >
   <input
     checked={false}
+    className=""
     id="select-all"
     onChange={[Function]}
     type="checkbox"
   />
   <input
     checked={false}
+    className=""
     id="1"
     onChange={[Function]}
     type="checkbox"
@@ -5579,6 +5581,7 @@ exports[`Storyshots Components/CheckboxButton Indeterminate 1`] = `
   />
   <input
     checked={false}
+    className=""
     id="2"
     onChange={[Function]}
     type="checkbox"
@@ -5586,6 +5589,7 @@ exports[`Storyshots Components/CheckboxButton Indeterminate 1`] = `
   />
   <input
     checked={false}
+    className=""
     id="3"
     onChange={[Function]}
     type="checkbox"
@@ -11143,6 +11147,7 @@ exports[`Storyshots Components/Profile Cell With Trailing Icon 1`] = `
 exports[`Storyshots Components/RadioButton Default 1`] = `
 <input
   checked={false}
+  className=""
   disabled={false}
   id="1"
   name=""
@@ -19518,6 +19523,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
         style={null}
       >
         <input
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19580,6 +19586,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19638,6 +19645,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19696,6 +19704,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19752,6 +19761,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19808,6 +19818,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19866,6 +19877,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19924,6 +19936,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19980,6 +19993,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20038,6 +20052,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20096,6 +20111,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20167,6 +20183,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
         }
       >
         <input
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20278,6 +20295,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20376,6 +20394,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20474,6 +20493,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20570,6 +20590,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20666,6 +20687,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20764,6 +20786,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20862,6 +20885,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20958,6 +20982,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -21056,6 +21081,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -21154,6 +21180,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
