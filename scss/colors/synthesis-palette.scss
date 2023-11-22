@@ -1,23 +1,24 @@
 // stoplight color system
-$synth-green-1-success: #015029;
-$synth-green-2-success: #09914f;
-$synth-green-3-success: #d4f6e5;
+$synth-success-green-dark: #015029;
+$synth-success-green-medium: #09914f;
+$synth-success-green-light: #d4f6e5;
 
-$synth-red-1-error: #c71f1f;
-$synth-red-2-error: #e03131;
-$synth-red-3-error: #fae1e1;
+$synth-error-red-dark: #c71f1f;
+$synth-error-red-medium: #e03131;
+$synth-error-red-light: #fae1e1;
 
-$synth-yellow-1-warn: #fbda36;
-$synth-yellow-2-warn: #ffe356;
-$synth-yellow-3-warn: #fff1ab;
+$synth-warning-amber-dark: #fbda36;
+$synth-warning-amber-medium: #ffe356;
+$synth-warning-amber-light: #fff1ab;
+$synth-warning-amber-alternate: #f59c27;
 
 // neutrals
-$synth-alert-bg-gray: #f4f4f4;
-$synth-div-stroke-gray: #dedede;
-$synth-header-gray: #fbfbfb;
-$synth-page-white: #fdfdfd;
-$synth-text-black: #1b1b1b;
-$synth-unselected-gray: #5b5b5b;
+$synth-alert-bg-neutral: #f4f4f4;
+$synth-div-stroke-neutral: #dedede;
+$synth-header-neutral: #fbfbfb;
+$synth-page-neutral: #fdfdfd;
+$synth-text-neutral: #1b1b1b;
+$synth-unselected-neutral: #5b5b5b;
 
 // main schema - visual hierarchy
 $synth-accent-green: #158d71;
@@ -29,8 +30,7 @@ $synth-primary-cta-blue: #162c4e;
 $synth-selected-state-green: #c6e2db;
 
 // feedback and signifier colors
-$synth-hyperlink: #3f6dca;
-$synth-orange-1-warn: #f59c27;
+$synth-hyperlink-color: #3f6dca;
 
 $synth-hover-blue: #e5ecff;
 $synth-header-gray-blue: #eef2f8;
