@@ -18,6 +18,8 @@
   }
 }
 
+$synthesis-primary: $synth-primary-cta-blue;
+
 $primary: $ux-emerald-600;
 $danger: $ux-red;
 $warning: $ux-yellow-400;
@@ -74,6 +76,42 @@ $warning: $ux-yellow-400;
   }
 }
 
+@mixin synthesis-btn-primary {
+  $btn-primary-background: $synthesis-primary;
+  $btn-primary-border: $synthesis-primary;
+  $btn-primary-color: $ux-white;
+  
+  $btn-primary-hover-background: $synth-dark-background-selected-blue;
+  $btn-primary-hover-border: $synth-dark-background-selected-blue;
+  $btn-primary-hover-color: $ux-white;
+  
+  $btn-primary-active-background: $synth-dark-background-pressed-blue;
+  $btn-primary-active-border: $synth-dark-background-pressed-blue;
+  $btn-primary-active-color: $ux-white;
+
+  @include button-variant(
+    $btn-primary-background, 
+    $btn-primary-border,
+    $btn-primary-color,
+    
+    $btn-primary-hover-background,
+    $btn-primary-hover-border,
+    $btn-primary-hover-color,
+    
+    $btn-primary-active-background,
+    $btn-primary-active-border,
+    $btn-primary-active-color,
+  );
+
+  &:focus-visible {
+    @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
+  }
+}
+
 @mixin btn-outline-primary {
   $btn-outline-primary-color: $primary;
   $btn-outline-primary-color-hover: $ux-white;
@@ -86,6 +124,43 @@ $warning: $ux-yellow-400;
 
   $btn-outline-primary-active-background: $ux-emerald-800;
   $btn-outline-primary-active-border-color: $ux-emerald-800;
+
+  @include button-outline-variant(
+    $btn-outline-primary-color, 
+    $btn-outline-primary-color-hover,
+
+    $btn-outline-primary-hover-background,
+    $btn-outline-primary-hover-border,
+    $btn-outline-primary-hover-color,
+  );
+  border-color: $btn-outline-primary-border;
+
+  &:active {
+    background-color: $btn-outline-primary-active-background;
+    border-color: $btn-outline-primary-active-border-color;
+  }
+
+  &:focus-visible {
+    @include btn-focus-outline;
+  }
+
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
+  }
+}
+
+@mixin synthesis-btn-outline-primary {
+  $btn-outline-primary-color: $synthesis-primary;
+  $btn-outline-primary-color-hover: $ux-white;
+
+  $btn-outline-primary-hover-background: $synth-dark-background-selected-blue;
+  $btn-outline-primary-hover-border: $synth-dark-background-selected-blue;
+  $btn-outline-primary-hover-color: $ux-white;
+
+  $btn-outline-primary-border: $synthesis-primary;
+
+  $btn-outline-primary-active-background: $synth-dark-background-pressed-blue;
+  $btn-outline-primary-active-border-color: $synth-dark-background-pressed-blue;
 
   @include button-outline-variant(
     $btn-outline-primary-color, 

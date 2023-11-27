@@ -9884,7 +9884,7 @@ exports[`Storyshots Components/Modal Danger Modal 1`] = `
         Cancel
       </button>
       <button
-        className="Button btn btn-danger"
+        className="Button btn btn-primary"
         disabled={false}
         type="button"
       >
@@ -10308,7 +10308,7 @@ exports[`Storyshots Components/Modal Warning Modal 1`] = `
         Cancel
       </button>
       <button
-        className="Button btn btn-warning btn-md"
+        className="Button btn btn-primary btn-md"
         disabled={false}
         type="button"
       >

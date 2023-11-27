@@ -166,7 +166,7 @@ export const WarningModal = () => (
       dismissButtonText="Cancel"
       onRequestClose={handleRequestClose}
     >
-      <Button size="md" variant="warning">Edit</Button>
+      <Button size="md" variant="primary">Edit</Button>
     </ModalFooter>
   </Modal>
 );
@@ -191,7 +191,7 @@ export const DangerModal = () => (
       dismissButtonText="Cancel"
       onRequestClose={handleRequestClose}
     >
-      <Button variant="danger">Delete</Button>
+      <Button variant="primary">Delete</Button>
     </ModalFooter>
   </Modal>
 );
