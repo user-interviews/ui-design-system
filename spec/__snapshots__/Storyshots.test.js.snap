@@ -5566,12 +5566,14 @@ exports[`Storyshots Components/CheckboxButton Indeterminate 1`] = `
 >
   <input
     checked={false}
+    className=""
     id="select-all"
     onChange={[Function]}
     type="checkbox"
   />
   <input
     checked={false}
+    className=""
     id="1"
     onChange={[Function]}
     type="checkbox"
@@ -5579,6 +5581,7 @@ exports[`Storyshots Components/CheckboxButton Indeterminate 1`] = `
   />
   <input
     checked={false}
+    className=""
     id="2"
     onChange={[Function]}
     type="checkbox"
@@ -5586,6 +5589,7 @@ exports[`Storyshots Components/CheckboxButton Indeterminate 1`] = `
   />
   <input
     checked={false}
+    className=""
     id="3"
     onChange={[Function]}
     type="checkbox"
@@ -7831,6 +7835,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Helper Text 1`] = `
     Label
   </label>
   <div
+    className="FormGroup__helper-text"
+  >
+    test helper text
+  </div>
+  <div
     className="Input input-group"
   >
     <input
@@ -7843,11 +7852,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Helper Text 1`] = `
       type="text"
       value=""
     />
-  </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    test helper text
   </div>
 </div>
 `;
@@ -7917,6 +7921,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Leading And Trailin
     Form Group with input leading and trailing icons
   </label>
   <div
+    className="FormGroup__helper-text"
+  >
+    with leading and trailing icons
+  </div>
+  <div
     className="Input input-group"
   >
     <div
@@ -7972,11 +7981,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Leading And Trailin
       </svg>
     </div>
   </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    with leading and trailing icons
-  </div>
 </div>
 `;
 
@@ -7991,6 +7995,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Leading Icon 1`] = 
   >
     Form Group with input leading icon
   </label>
+  <div
+    className="FormGroup__helper-text"
+  >
+    with leading icon
+  </div>
   <div
     className="Input input-group"
   >
@@ -8025,11 +8034,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Leading Icon 1`] = 
       type="text"
       value=""
     />
-  </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    with leading icon
   </div>
 </div>
 `;
@@ -8132,6 +8136,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon 1`] =
     Form Group with input trailing icon
   </label>
   <div
+    className="FormGroup__helper-text"
+  >
+    with trailing icon
+  </div>
+  <div
     className="Input input-group"
   >
     <input
@@ -8166,11 +8175,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon 1`] =
       </svg>
     </div>
   </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    with trailing icon
-  </div>
 </div>
 `;
 
@@ -8185,6 +8189,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
   >
     Form Group with input trailing icon and button
   </label>
+  <div
+    className="FormGroup__helper-text"
+  >
+    with trailing icon and button
+  </div>
   <div
     className="Input input-group"
   >
@@ -8227,11 +8236,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
       </div>
     </button>
   </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    with trailing icon and button
-  </div>
 </div>
 `;
 
@@ -8246,6 +8250,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
   >
     Form Group with input trailing icon and button with submit
   </label>
+  <div
+    className="FormGroup__helper-text"
+  >
+    with trailing icon and button with submit
+  </div>
   <div
     className="Input input-group"
   >
@@ -8288,11 +8297,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
       </div>
     </button>
   </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    with trailing icon and button with submit
-  </div>
 </div>
 `;
 
@@ -8307,6 +8311,11 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
   >
     Form Group with input trailing icon and button with submit and label
   </label>
+  <div
+    className="FormGroup__helper-text"
+  >
+    with trailing icon and button with submit and label
+  </div>
   <div
     className="Input input-group"
   >
@@ -8348,11 +8357,6 @@ exports[`Storyshots Components/Form Elements/Form Group With Trailing Icon And B
         </svg>
       </div>
     </button>
-  </div>
-  <div
-    className="FormGroup__helper-text"
-  >
-    with trailing icon and button with submit and label
   </div>
 </div>
 `;
@@ -9880,7 +9884,7 @@ exports[`Storyshots Components/Modal Danger Modal 1`] = `
         Cancel
       </button>
       <button
-        className="Button btn btn-danger"
+        className="Button btn btn-primary"
         disabled={false}
         type="button"
       >
@@ -10304,7 +10308,7 @@ exports[`Storyshots Components/Modal Warning Modal 1`] = `
         Cancel
       </button>
       <button
-        className="Button btn btn-warning btn-md"
+        className="Button btn btn-primary btn-md"
         disabled={false}
         type="button"
       >
@@ -11143,6 +11147,7 @@ exports[`Storyshots Components/Profile Cell With Trailing Icon 1`] = `
 exports[`Storyshots Components/RadioButton Default 1`] = `
 <input
   checked={false}
+  className=""
   disabled={false}
   id="1"
   name=""
@@ -11463,21 +11468,21 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-4-placeholder"
         >
           Select...
         </div>
         <div
-          className=" css-qbdosj-Input"
+          className="Select__input-container css-qbdosj-Input"
           data-value=""
         >
           <input
@@ -11488,7 +11493,7 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect="off"
-            className=""
+            className="Select__input"
             disabled={false}
             id="default-async-select"
             onBlur={[Function]}
@@ -11519,14 +11524,14 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
         </div>
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -11585,21 +11590,21 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-2-placeholder"
         >
           Select...
         </div>
         <div
-          className=" css-qbdosj-Input"
+          className="Select__input-container css-qbdosj-Input"
           data-value=""
         >
           <input
@@ -11610,7 +11615,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect="off"
-            className=""
+            className="Select__input"
             disabled={false}
             id="default-async-creatable-select"
             onBlur={[Function]}
@@ -11641,14 +11646,14 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
         </div>
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -11733,6 +11738,11 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
           In Modal AsyncCreatable select
         </label>
         <div
+          className="FormGroup__helper-text"
+        >
+          Select menu is able to overflow the Modal container
+        </div>
+        <div
           className="AsyncSelect css-b62m3t-container"
           onKeyDown={[Function]}
         >
@@ -11747,21 +11757,21 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
             className="css-1f43avz-a11yText-A11yText"
           />
           <div
-            className=" css-9435u6-control"
+            className="Select__control css-1d5d4h9-control"
             onMouseDown={[Function]}
             onTouchEnd={[Function]}
           >
             <div
-              className=" css-1fdsijx-ValueContainer"
+              className="Select__value-container css-1fdsijx-ValueContainer"
             >
               <div
-                className=" css-177do1b-placeholder"
+                className="Select__placeholder css-177do1b-placeholder"
                 id="react-select-3-placeholder"
               >
                 Select...
               </div>
               <div
-                className=" css-qbdosj-Input"
+                className="Select__input-container css-qbdosj-Input"
                 data-value=""
               >
                 <input
@@ -11772,7 +11782,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
                   autoCapitalize="none"
                   autoComplete="off"
                   autoCorrect="off"
-                  className=""
+                  className="Select__input"
                   disabled={false}
                   id="in-modal-creatable-select"
                   onBlur={[Function]}
@@ -11803,14 +11813,14 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
               </div>
             </div>
             <div
-              className=" css-1hb7zxy-IndicatorsContainer"
+              className="Select__indicators css-1hb7zxy-IndicatorsContainer"
             >
               <span
-                className=" css-1uei4ir-indicatorSeparator"
+                className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
               />
               <div
                 aria-hidden="true"
-                className=" css-1r0gan2-indicatorContainer"
+                className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
               >
@@ -11829,11 +11839,6 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
               </div>
             </div>
           </div>
-        </div>
-        <div
-          className="FormGroup__helper-text"
-        >
-          Select menu is able to overflow the Modal container
         </div>
       </div>
     </div>
@@ -11885,21 +11890,21 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-5-placeholder"
         >
           Select...
         </div>
         <div
-          className=" css-qbdosj-Input"
+          className="Select__input-container css-qbdosj-Input"
           data-value=""
         >
           <input
@@ -11910,7 +11915,7 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect="off"
-            className=""
+            className="Select__input"
             disabled={false}
             id="default-creatable-select"
             onBlur={[Function]}
@@ -11941,14 +11946,14 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
         </div>
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12007,15 +12012,15 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container Select__value-container--is-multi css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-6-placeholder"
         >
           Select...
@@ -12039,14 +12044,14 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12094,15 +12099,15 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-7-placeholder"
         >
           Select...
@@ -12126,14 +12131,14 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12181,15 +12186,15 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container Select__value-container--is-multi css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-8-placeholder"
         >
           Select...
@@ -12213,14 +12218,14 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12268,15 +12273,15 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container Select__value-container--is-multi css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-9-placeholder"
         >
           Select...
@@ -12300,14 +12305,14 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12355,15 +12360,15 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-10-placeholder"
         >
           Select...
@@ -12387,14 +12392,14 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12442,15 +12447,15 @@ exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-11-placeholder"
         >
           Select...
@@ -12474,14 +12479,14 @@ exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12526,7 +12531,7 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
     Loading select
   </label>
   <div
-    className="SingleSelect css-3iigni-container"
+    className="SingleSelect Select--is-disabled css-3iigni-container"
     onKeyDown={[Function]}
   >
     <span
@@ -12540,15 +12545,15 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-awpioc-control"
+      className="Select__control Select__control--is-disabled css-1in6l7w-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-12-placeholder"
         >
           Select...
@@ -12572,14 +12577,14 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-qts9v9-indicatorSeparator"
+          className="Select__indicator-separator css-qts9v9-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12627,15 +12632,15 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container Select__value-container--is-multi css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-13-placeholder"
         >
           Select...
@@ -12659,14 +12664,14 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12714,21 +12719,21 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-9435u6-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-14-placeholder"
         >
           Select...
         </div>
         <div
-          className=" css-qbdosj-Input"
+          className="Select__input-container css-qbdosj-Input"
           data-value=""
         >
           <input
@@ -12739,7 +12744,7 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect="off"
-            className=""
+            className="Select__input"
             disabled={false}
             id="searchable-select"
             onBlur={[Function]}
@@ -12770,14 +12775,14 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
         </div>
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -19518,6 +19523,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
         style={null}
       >
         <input
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19580,6 +19586,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19638,6 +19645,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19696,6 +19704,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19752,6 +19761,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19808,6 +19818,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19866,6 +19877,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19924,6 +19936,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -19980,6 +19993,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20038,6 +20052,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20096,6 +20111,7 @@ exports[`Storyshots Components/Table Table With Multiple Select 1`] = `
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20167,6 +20183,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
         }
       >
         <input
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20278,6 +20295,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20376,6 +20394,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20474,6 +20493,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20570,6 +20590,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20666,6 +20687,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20764,6 +20786,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20862,6 +20885,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -20958,6 +20982,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -21056,6 +21081,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -21154,6 +21180,7 @@ exports[`Storyshots Components/Table Table With Multiple Select And Multiple Sti
       >
         <input
           checked={false}
+          className=""
           id="checkbox"
           onChange={[Function]}
           type="checkbox"
@@ -28889,7 +28916,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
 </table>
 `;
 
-exports[`Storyshots Foundations/Typography Typography 1`] = `
+exports[`Storyshots Foundations/Typography Body 1`] = `
 Array [
   <div
     className="TypographyRow"
@@ -28898,19 +28925,9 @@ Array [
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-70"
+        className="font-type-body"
       >
         <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-70--medium"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-70--bold"
-        >
           The fastest way to recruit research participants
         </p>
       </div>
@@ -28921,20 +28938,20 @@ Array [
       <ul>
         <li>
           <strong>
-            font-type-70
+            font-type-body
           </strong>
         </li>
         <li>
           Type: 
-          DM Sans, sans-serif
+          Inter, sans-serif
         </li>
         <li>
           Size: 
-          1.5rem
+          0.875rem (14px)
         </li>
         <li>
           Line-height: 
-          2rem
+          1.25rem (20px)
         </li>
         <li>
           Weight: 
@@ -28946,21 +28963,7 @@ Array [
           <span
             className="Pill Pill--blue"
           >
-            font-type-70
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-70--medium
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-70--bold
+            $synth-font-type-body
           </span>
         </li>
       </ul>
@@ -28973,18 +28976,18 @@ Array [
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-60"
+        className="font-type-subtext"
       >
         <p>
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-60--medium"
+          className="font-type-subtext--medium"
         >
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-60--bold"
+          className="font-type-subtext--bold"
         >
           The fastest way to recruit research participants
         </p>
@@ -28996,20 +28999,20 @@ Array [
       <ul>
         <li>
           <strong>
-            font-type-60
+            font-type-subtext
           </strong>
         </li>
         <li>
           Type: 
-          DM Sans, sans-serif
+          Inter, sans-serif
         </li>
         <li>
           Size: 
-          1.25rem
+          0.75rem (12px)
         </li>
         <li>
           Line-height: 
-          1.625rem
+          1rem (16px)
         </li>
         <li>
           Weight: 
@@ -29021,21 +29024,21 @@ Array [
           <span
             className="Pill Pill--blue"
           >
-            font-type-60
+            $synth-font-type-subtext
           </span>
         </li>
         <li>
           <span
             className="Pill Pill--blue"
           >
-            font-type-60--medium
+            $synth-font-type-subtext--medium
           </span>
         </li>
         <li>
           <span
             className="Pill Pill--blue"
           >
-            font-type-60--bold
+            $synth-font-type-subtext--bold
           </span>
         </li>
       </ul>
@@ -29048,18 +29051,18 @@ Array [
       className="TypographyRow__Example"
     >
       <div
-        className="font-type-50"
+        className="font-type-small-caps"
       >
         <p>
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-50--medium"
+          className="font-type-small-caps--medium"
         >
           The fastest way to recruit research participants
         </p>
         <p
-          className="font-type-50--bold"
+          className="font-type-small-caps--bold"
         >
           The fastest way to recruit research participants
         </p>
@@ -29071,407 +29074,24 @@ Array [
       <ul>
         <li>
           <strong>
-            font-type-50
+            font-type-small-caps
           </strong>
         </li>
         <li>
           Type: 
-          DM Sans, sans-serif
+          Inter, sans-serif
         </li>
         <li>
           Size: 
-          1.125rem
+          0.625rem (10px)
         </li>
         <li>
           Line-height: 
-          1.5rem
+          0.875rem (14px)
         </li>
         <li>
           Weight: 
           400 / Regular
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-50
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-50--medium
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-50--bold
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>,
-  <div
-    className="TypographyRow"
-  >
-    <div
-      className="TypographyRow__Example"
-    >
-      <div
-        className="font-type-40"
-      >
-        <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-40--medium"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-40--bold"
-        >
-          The fastest way to recruit research participants
-        </p>
-      </div>
-    </div>
-    <div
-      className="TypographyRow__Specs"
-    >
-      <ul>
-        <li>
-          <strong>
-            font-type-40
-          </strong>
-        </li>
-        <li>
-          Type: 
-          DM Sans, sans-serif
-        </li>
-        <li>
-          Size: 
-          1rem
-        </li>
-        <li>
-          Line-height: 
-          1.375rem
-        </li>
-        <li>
-          Weight: 
-          400 / Regular
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-40
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-40--medium
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-40--bold
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>,
-  <div
-    className="TypographyRow"
-  >
-    <div
-      className="TypographyRow__Example"
-    >
-      <div
-        className="font-type-30"
-      >
-        <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-30--medium"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-30--bold"
-        >
-          The fastest way to recruit research participants
-        </p>
-      </div>
-    </div>
-    <div
-      className="TypographyRow__Specs"
-    >
-      <ul>
-        <li>
-          <strong>
-            font-type-30
-          </strong>
-        </li>
-        <li>
-          Type: 
-          DM Sans, sans-serif
-        </li>
-        <li>
-          Size: 
-          0.875rem
-        </li>
-        <li>
-          Line-height: 
-          1.25rem
-        </li>
-        <li>
-          Weight: 
-          400 / Regular
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-30
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-30--medium
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-30--bold
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>,
-  <div
-    className="TypographyRow"
-  >
-    <div
-      className="TypographyRow__Example"
-    >
-      <div
-        className="font-type-20"
-      >
-        <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-20--medium"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-20--bold"
-        >
-          The fastest way to recruit research participants
-        </p>
-      </div>
-    </div>
-    <div
-      className="TypographyRow__Specs"
-    >
-      <ul>
-        <li>
-          <strong>
-            font-type-20
-          </strong>
-        </li>
-        <li>
-          Type: 
-          DM Sans, sans-serif
-        </li>
-        <li>
-          Size: 
-          0.75rem
-        </li>
-        <li>
-          Line-height: 
-          1rem
-        </li>
-        <li>
-          Weight: 
-          400 / Regular
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-20
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-20--medium
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-20--bold
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>,
-  <div
-    className="TypographyRow"
-  >
-    <div
-      className="TypographyRow__Example"
-    >
-      <div
-        className="font-type-10"
-      >
-        <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-10--medium"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-10--bold"
-        >
-          The fastest way to recruit research participants
-        </p>
-      </div>
-    </div>
-    <div
-      className="TypographyRow__Specs"
-    >
-      <ul>
-        <li>
-          <strong>
-            font-type-10
-          </strong>
-        </li>
-        <li>
-          Type: 
-          DM Sans, sans-serif
-        </li>
-        <li>
-          Size: 
-          0.625rem
-        </li>
-        <li>
-          Line-height: 
-          0.875rem
-        </li>
-        <li>
-          Weight: 
-          400 / Regular
-        </li>
-        <li>
-          Letter-spacing: 
-          0.0625rem
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-10
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-10--medium
-          </span>
-        </li>
-        <li>
-          <span
-            className="Pill Pill--blue"
-          >
-            font-type-10--bold
-          </span>
-        </li>
-      </ul>
-    </div>
-  </div>,
-  <div
-    className="TypographyRow"
-  >
-    <div
-      className="TypographyRow__Example"
-    >
-      <div
-        className="font-type-10--uppercase"
-      >
-        <p>
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-10--medium-uppercase"
-        >
-          The fastest way to recruit research participants
-        </p>
-        <p
-          className="font-type-10--bold-uppercase"
-        >
-          The fastest way to recruit research participants
-        </p>
-      </div>
-    </div>
-    <div
-      className="TypographyRow__Specs"
-    >
-      <ul>
-        <li>
-          <strong>
-            font-type-10--uppercase
-          </strong>
-        </li>
-        <li>
-          Type: 
-          DM Sans, sans-serif
-        </li>
-        <li>
-          Size: 
-          0.625rem
-        </li>
-        <li>
-          Line-height: 
-          0.875rem
-        </li>
-        <li>
-          Weight: 
-          400 / Regular
-        </li>
-        <li>
-          Letter-spacing: 
-          0.0625rem
         </li>
         <li>
           Text-transform: 
@@ -29483,21 +29103,440 @@ Array [
           <span
             className="Pill Pill--blue"
           >
-            font-type-10--uppercase
+            $synth-font-type-small-caps
           </span>
         </li>
         <li>
           <span
             className="Pill Pill--blue"
           >
-            font-type-10--medium-uppercase
+            $synth-font-type-small-caps--medium
           </span>
         </li>
         <li>
           <span
             className="Pill Pill--blue"
           >
-            font-type-10--bold-uppercase
+            $synth-font-type-small-caps--bold
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Foundations/Typography Default 1`] = `
+Array [
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-header-page"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-header-page
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Inter, sans-serif
+        </li>
+        <li>
+          Size: 
+          1.5rem (24px)
+        </li>
+        <li>
+          Line-height: 
+          2rem (32px)
+        </li>
+        <li>
+          Weight: 
+          700 / Bold
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            $synth-font-type-header-page
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-header-section"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-header-section
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Inter, sans-serif
+        </li>
+        <li>
+          Size: 
+          1.125rem (18px)
+        </li>
+        <li>
+          Line-height: 
+          2rem (24px)
+        </li>
+        <li>
+          Weight: 
+          700 / Bold
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            $synth-font-type-header-section
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-body"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-body
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Inter, sans-serif
+        </li>
+        <li>
+          Size: 
+          0.875rem (14px)
+        </li>
+        <li>
+          Line-height: 
+          1.25rem (20px)
+        </li>
+        <li>
+          Weight: 
+          400 / Regular
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            $synth-font-type-body
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-subtext"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-subtext--medium"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-subtext--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-subtext
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Inter, sans-serif
+        </li>
+        <li>
+          Size: 
+          0.75rem (12px)
+        </li>
+        <li>
+          Line-height: 
+          1rem (16px)
+        </li>
+        <li>
+          Weight: 
+          400 / Regular
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            $synth-font-type-subtext
+          </span>
+        </li>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            $synth-font-type-subtext--medium
+          </span>
+        </li>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            $synth-font-type-subtext--bold
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-small-caps"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-small-caps--medium"
+        >
+          The fastest way to recruit research participants
+        </p>
+        <p
+          className="font-type-small-caps--bold"
+        >
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-small-caps
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Inter, sans-serif
+        </li>
+        <li>
+          Size: 
+          0.625rem (10px)
+        </li>
+        <li>
+          Line-height: 
+          0.875rem (14px)
+        </li>
+        <li>
+          Weight: 
+          400 / Regular
+        </li>
+        <li>
+          Text-transform: 
+          Uppercase
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            $synth-font-type-small-caps
+          </span>
+        </li>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            $synth-font-type-small-caps--medium
+          </span>
+        </li>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            $synth-font-type-small-caps--bold
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Foundations/Typography Headings 1`] = `
+Array [
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-header-page"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-header-page
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Inter, sans-serif
+        </li>
+        <li>
+          Size: 
+          1.5rem (24px)
+        </li>
+        <li>
+          Line-height: 
+          2rem (32px)
+        </li>
+        <li>
+          Weight: 
+          700 / Bold
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            $synth-font-type-header-page
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>,
+  <div
+    className="TypographyRow"
+  >
+    <div
+      className="TypographyRow__Example"
+    >
+      <div
+        className="font-type-header-section"
+      >
+        <p>
+          The fastest way to recruit research participants
+        </p>
+      </div>
+    </div>
+    <div
+      className="TypographyRow__Specs"
+    >
+      <ul>
+        <li>
+          <strong>
+            font-type-header-section
+          </strong>
+        </li>
+        <li>
+          Type: 
+          Inter, sans-serif
+        </li>
+        <li>
+          Size: 
+          1.125rem (18px)
+        </li>
+        <li>
+          Line-height: 
+          2rem (24px)
+        </li>
+        <li>
+          Weight: 
+          700 / Bold
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span
+            className="Pill Pill--blue"
+          >
+            $synth-font-type-header-section
           </span>
         </li>
       </ul>

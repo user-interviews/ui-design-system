@@ -1,7 +1,7 @@
 @import '../../scss/theme.scss';
 
 .TableCell {
-  @include font-type-30;
+  @include synth-font-type-30;
   border-bottom: 0.06rem solid $ux-gray-200;
   overflow: hidden;
   padding: $ux-spacing-50;
@@ -10,7 +10,7 @@
   white-space: nowrap;
 
   &__header {
-    @include font-type-30--bold;
+    @include synth-font-type-30--bold;
     background-color: $ux-gray-100;
     border-bottom: none;
     color: $ux-gray-800;

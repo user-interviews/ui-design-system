@@ -1,0 +1,32 @@
+@import '../../scss/theme.scss';
+// Note: react-select is largely styled via css-in-js, not SCSS. 
+// However, we need to only provide the styles below when the "Synthesized"
+// class is present on the body in rails server
+
+.Synthesized .Select__menu {
+  .Select__option:hover,
+  .Select__option--is-focused {
+    background-color: $synth-hover-state;
+  }
+
+  .Select__option--is-selected,
+  .Select__option--is-selected:hover {
+    background-color: $synth-selected-state-green;
+  }
+}
+
+.Select__control {
+  .Select__multi-value__label,
+  .Select__multi-value__remove {
+    color: $synth-success-green-dark;
+  }
+
+  .Select__multi-value__remove:hover {
+    background-color: $synth-selected-state-green;
+    color: $synth-success-green-dark;
+  }
+
+  .Select__multi-value {
+    background-color: $synth-hover-state;
+  }
+}

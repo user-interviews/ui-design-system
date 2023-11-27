@@ -1,13 +1,13 @@
 @import '../../scss/theme.scss';
 
-.tabs.tabs {
+.tabs {
   --border-width: 0.125rem;
 
   border-bottom: var(--border-width) solid $ux-gray-400;
 
   :global(.nav-link) {
-    color:$ux-gray-800;
-    font: 400 0.875rem/1.25rem DM Sans, sans-serif;
+    color: $ux-gray-800;
+    font: 400 0.875rem/1.25rem Inter, sans-serif;
     text-decoration: none;
     border: none;
     border-radius: 0;
@@ -23,14 +23,42 @@
     color: $ux-blue-500;
     border-bottom: var(--border-width) solid $ux-blue-500;
   }
+
+  .flexWrapUnset {
+    flex-wrap: nowrap;
+  }
+  
+  .navItemButtonFullHeight {
+    :global(.nav-item .button) {
+      height: calc(100% + 0.125rem);
+    }
+  }
 }
 
-.flexWrapUnset.flexWrapUnset {
-  flex-wrap: nowrap;
-}
+:global(.Synthesized) .tabs {
+  border-bottom: 1px solid $synth-div-stroke-neutral;
+  align-items: flex-end;
 
-.navItemButtonFullHeight.navItemButtonFullHeight {
-  :global(.nav-item .button) {
-    height: calc(100% + var(--border-width));
+  :global(.nav-link),
+  :global(.nav-link.disabled) {
+    color: $synth-unselected-neutral;
+    border-bottom: 1px solid $synth-div-stroke-neutral;
+    position: relative;
+    margin-bottom: -1px;
+  }
+
+  :global(.nav-link.active),
+  :global(.nav-link:hover),
+  :global(.nav-link:active),
+  :global(.nav-link:focus) {
+    font-weight: $synth-font-weight-bold;
+    color: $synth-text-neutral;
+    border-bottom: 3px solid $synth-indicator-stroke-green;
+  }
+
+  .navItemButtonFullHeight {
+    :global(.nav-item .button) {
+      height: calc(100% + 1px);
+    }
   }
 }

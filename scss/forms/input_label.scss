@@ -2,14 +2,14 @@
 @import '../typography';
 
 .InputLabel, .InputLegend {
-  @include font-type-30--bold;
+  @include synth-font-type-30--bold;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   margin-bottom: 0.375rem;
 
   &__helper-text {
-    @include font-type-30--medium;
-    font-weight: 100;
+    @include synth-font-type-10--uppercase;
     color: $ux-gray-900;
   }
 }

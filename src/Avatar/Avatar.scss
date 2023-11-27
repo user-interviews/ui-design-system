@@ -37,7 +37,7 @@
     width: 100%;
 
     &__initials {
-      @include font-type-30--bold;
+      @include synth-font-type-30--bold;
       display: inline-block;
       vertical-align: middle;
     }
@@ -54,7 +54,7 @@
 
     .Avatar {
       &__circle__initials {
-        @include font-type-70--bold;
+        @include synth-font-type-70--bold;
       }
       &__alert {
         height: 1.36rem;

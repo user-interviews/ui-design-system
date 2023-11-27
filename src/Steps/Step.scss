@@ -25,7 +25,7 @@ $text-container-margin-top: 0.625rem;
     z-index: 1;
 
     &__number {
-      @include font-type-40--bold;
+      @include synth-font-type-40--bold;
       color: $ux-emerald-600;
       float: left;
       line-height: 1;

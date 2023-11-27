@@ -86,16 +86,16 @@
   }
 
   &__title {
-    @include font-type-30--bold;
+    @include synth-font-type-30--bold;
     margin-right: .5rem;
   }
 
   &__helper-text {
-    @include font-type-30;
+    @include synth-font-type-30;
   }
 
   &__collapsed-text {
-    @include font-type-30;
+    @include synth-font-type-30;
     color: $ux-gray-600;
   }
 

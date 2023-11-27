@@ -1,13 +1,12 @@
 @import '../../scss/theme';
 
 .MoneyInput {
-  @include font-type-30;
+  @include synth-font-type-30;
   box-shadow: $input-box-shadow;
 
   &:focus {
     border: 0.06rem solid $ux-blue-500;
     box-shadow: $input-focus-box-shadow;
     color: $input-focus-color;
-    filter: drop-shadow(0px 0px 3px rgba(102, 175, 233, 0.7));
   }
 }

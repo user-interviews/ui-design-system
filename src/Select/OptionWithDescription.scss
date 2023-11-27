@@ -2,11 +2,11 @@
 
 .OptionWithDescription {
   &__label {
-    @include font-type-30--bold;
+    @include synth-font-type-30--bold;
   }
 
   &__description {
-    @include font-type-30;
+    @include synth-font-type-30;
     color: $ux-gray-700;
   }
 }
