@@ -4,6 +4,7 @@ import Select from 'react-select';
 import propTypes from 'prop-types';
 
 import zStack from 'src/Styles/zStack';
+import './select.scss';
 
 import { defaultTheme, defaultStyles, SELECT_SIZES } from './styles';
 
@@ -38,6 +39,7 @@ const SingleSelect = ({
     aria-label={ariaLabel}
     aria-labelledby={ariaLabelledBy}
     className={classNames('SingleSelect', className)}
+    classNamePrefix="Select"
     closeMenuOnSelect={closeMenuOnSelect}
     components={components}
     defaultValue={defaultValue}

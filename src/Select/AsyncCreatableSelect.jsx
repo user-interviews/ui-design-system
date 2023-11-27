@@ -38,6 +38,7 @@ const AsyncCreatableSelect = ({
     aria-label={ariaLabel}
     aria-labelledby={ariaLabelledBy}
     className={`${className || ''} AsyncSelect`}
+    classNamePrefix="Select"
     components={components}
     defaultOptions={defaultOptions}
     defaultValue={defaultValue}

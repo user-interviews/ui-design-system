@@ -11468,21 +11468,21 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-1d5d4h9-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-4-placeholder"
         >
           Select...
         </div>
         <div
-          className=" css-qbdosj-Input"
+          className="Select__input-container css-qbdosj-Input"
           data-value=""
         >
           <input
@@ -11493,7 +11493,7 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect="off"
-            className=""
+            className="Select__input"
             disabled={false}
             id="default-async-select"
             onBlur={[Function]}
@@ -11524,14 +11524,14 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
         </div>
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -11590,21 +11590,21 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-1d5d4h9-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-2-placeholder"
         >
           Select...
         </div>
         <div
-          className=" css-qbdosj-Input"
+          className="Select__input-container css-qbdosj-Input"
           data-value=""
         >
           <input
@@ -11615,7 +11615,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect="off"
-            className=""
+            className="Select__input"
             disabled={false}
             id="default-async-creatable-select"
             onBlur={[Function]}
@@ -11646,14 +11646,14 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
         </div>
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -11757,21 +11757,21 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
             className="css-1f43avz-a11yText-A11yText"
           />
           <div
-            className=" css-1d5d4h9-control"
+            className="Select__control css-1d5d4h9-control"
             onMouseDown={[Function]}
             onTouchEnd={[Function]}
           >
             <div
-              className=" css-1fdsijx-ValueContainer"
+              className="Select__value-container css-1fdsijx-ValueContainer"
             >
               <div
-                className=" css-177do1b-placeholder"
+                className="Select__placeholder css-177do1b-placeholder"
                 id="react-select-3-placeholder"
               >
                 Select...
               </div>
               <div
-                className=" css-qbdosj-Input"
+                className="Select__input-container css-qbdosj-Input"
                 data-value=""
               >
                 <input
@@ -11782,7 +11782,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
                   autoCapitalize="none"
                   autoComplete="off"
                   autoCorrect="off"
-                  className=""
+                  className="Select__input"
                   disabled={false}
                   id="in-modal-creatable-select"
                   onBlur={[Function]}
@@ -11813,14 +11813,14 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
               </div>
             </div>
             <div
-              className=" css-1hb7zxy-IndicatorsContainer"
+              className="Select__indicators css-1hb7zxy-IndicatorsContainer"
             >
               <span
-                className=" css-1uei4ir-indicatorSeparator"
+                className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
               />
               <div
                 aria-hidden="true"
-                className=" css-1r0gan2-indicatorContainer"
+                className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
                 onMouseDown={[Function]}
                 onTouchEnd={[Function]}
               >
@@ -11890,21 +11890,21 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-1d5d4h9-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-5-placeholder"
         >
           Select...
         </div>
         <div
-          className=" css-qbdosj-Input"
+          className="Select__input-container css-qbdosj-Input"
           data-value=""
         >
           <input
@@ -11915,7 +11915,7 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect="off"
-            className=""
+            className="Select__input"
             disabled={false}
             id="default-creatable-select"
             onBlur={[Function]}
@@ -11946,14 +11946,14 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
         </div>
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12012,15 +12012,15 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-1d5d4h9-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container Select__value-container--is-multi css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-6-placeholder"
         >
           Select...
@@ -12044,14 +12044,14 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12099,15 +12099,15 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-1d5d4h9-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-7-placeholder"
         >
           Select...
@@ -12131,14 +12131,14 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12186,15 +12186,15 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-1d5d4h9-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container Select__value-container--is-multi css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-8-placeholder"
         >
           Select...
@@ -12218,14 +12218,14 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12273,15 +12273,15 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-1d5d4h9-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container Select__value-container--is-multi css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-9-placeholder"
         >
           Select...
@@ -12305,14 +12305,14 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12360,15 +12360,15 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-1d5d4h9-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-10-placeholder"
         >
           Select...
@@ -12392,14 +12392,14 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12447,15 +12447,15 @@ exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-1d5d4h9-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-11-placeholder"
         >
           Select...
@@ -12479,14 +12479,14 @@ exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12531,7 +12531,7 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
     Loading select
   </label>
   <div
-    className="SingleSelect css-3iigni-container"
+    className="SingleSelect Select--is-disabled css-3iigni-container"
     onKeyDown={[Function]}
   >
     <span
@@ -12545,15 +12545,15 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-1in6l7w-control"
+      className="Select__control Select__control--is-disabled css-1in6l7w-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-12-placeholder"
         >
           Select...
@@ -12577,14 +12577,14 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-qts9v9-indicatorSeparator"
+          className="Select__indicator-separator css-qts9v9-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12632,15 +12632,15 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-1d5d4h9-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container Select__value-container--is-multi css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-13-placeholder"
         >
           Select...
@@ -12664,14 +12664,14 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
         />
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
@@ -12719,21 +12719,21 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className=" css-1d5d4h9-control"
+      className="Select__control css-1d5d4h9-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
       <div
-        className=" css-1fdsijx-ValueContainer"
+        className="Select__value-container css-1fdsijx-ValueContainer"
       >
         <div
-          className=" css-177do1b-placeholder"
+          className="Select__placeholder css-177do1b-placeholder"
           id="react-select-14-placeholder"
         >
           Select...
         </div>
         <div
-          className=" css-qbdosj-Input"
+          className="Select__input-container css-qbdosj-Input"
           data-value=""
         >
           <input
@@ -12744,7 +12744,7 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
             autoCapitalize="none"
             autoComplete="off"
             autoCorrect="off"
-            className=""
+            className="Select__input"
             disabled={false}
             id="searchable-select"
             onBlur={[Function]}
@@ -12775,14 +12775,14 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
         </div>
       </div>
       <div
-        className=" css-1hb7zxy-IndicatorsContainer"
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
       >
         <span
-          className=" css-1uei4ir-indicatorSeparator"
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
         />
         <div
           aria-hidden="true"
-          className=" css-1r0gan2-indicatorContainer"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
