@@ -34,6 +34,7 @@ const CreatableSelect = ({
     ariaLabel={ariaLabel}
     ariaLabelledBy={ariaLabelledBy}
     className={`${className || ''} CreatableSelect`}
+    classNamePrefix="Select"
     components={components}
     defaultValue={defaultValue}
     disabled={disabled}
