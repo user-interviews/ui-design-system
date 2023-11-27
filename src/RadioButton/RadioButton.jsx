@@ -1,6 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import classNames from 'classnames';
+
+import styles from './RadioButton.module.scss';
+
 const RadioButton = React.forwardRef(({
   checked,
   className,
@@ -13,7 +17,7 @@ const RadioButton = React.forwardRef(({
 }, ref) => (
   <input
     checked={checked}
-    className={className}
+    className={classNames(className, styles.radioButton)}
     disabled={disabled}
     id={id}
     name={name}
