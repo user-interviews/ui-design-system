@@ -23,6 +23,10 @@ $warning: $ux-yellow-400;
     all: unset;
   }
 
+  &--unstyled {
+    all: unset;
+  }
+
   i, svg {
     &.icon-left {
       margin-right: $ux-spacing-20;
