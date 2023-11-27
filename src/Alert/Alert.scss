@@ -1,6 +1,6 @@
 @import '../../scss/theme';
 
-@mixin primary-action($bg-color, $bg-color-hover, $color) {
+@mixin primary-action($bg-color: none, $bg-color-hover: $ux-gray-300, $color: $synth-unselected-neutral) {
   @include synth-font-type-30--bold;
   background-color: $bg-color;
   border: none;
@@ -17,13 +17,176 @@
   }
 }
 
-@mixin close-action($color, $color-hover) {
+@mixin close-action($color: $ux-gray-700, $color-hover: $ux-gray-800) {
   background-color: unset;
   border: none;
   color: $color;
 
   &:hover {
     color: $color-hover
+  }
+}
+
+.Synthesized {
+  .Alert {
+    display: grid;
+    grid-template-columns: 2rem auto auto 2rem;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      'icon content content close'
+      'icon action action close'
+      ;
+  
+    @media (min-width: 450px) {
+      grid-template-areas:
+      'icon content action close'
+      'icon content action close'
+      ;
+    }
+  
+    background-color: $synth-alert-bg-neutral;
+    border-radius: $ux-border-radius;
+    color: $synth-text-neutral;
+    margin-bottom: $ux-spacing-40;
+    padding: $ux-spacing-40;
+    position: relative;
+  
+    &__icon {
+      grid-area: icon;
+    }
+  
+    &__content {
+      grid-area: content;
+      margin-right: $ux-spacing-40;
+    }
+  
+    &__action {
+      grid-area: action;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+  
+      @media (min-width: 450px) {
+        justify-content: flex-end;
+      }
+    }
+  
+    &__close {
+      grid-area: close;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+    }
+  
+    &__title {
+      @include synth-font-type-30--bold;
+      margin-bottom: 0.25rem;
+    }
+  
+    &__message {
+      @include synth-font-type-30;
+      margin-bottom: 0;
+    }
+  }
+  
+  .Alert-success {
+    border-left: 0.5rem solid $synth-accent-green;
+  
+    .close {
+      @include close-action;
+    }
+  
+    .primary-action {
+      @include primary-action;
+    }
+  
+    .Alert__icon {
+      color: $synth-accent-green;
+      
+      .fa-check {
+        color: $ux-gray-100;
+      }
+    }
+  }
+  
+  .Alert-info {
+    border-left: 0.5rem solid $synth-hyperlink-color;
+  
+    .close {
+      @include close-action;
+    }
+  
+    .primary-action {
+      @include primary-action;
+    }
+  
+    .Alert__icon {
+      color: $ux-blue-300;
+      
+      .fa-info {
+        color: $ux-blue-600;
+      }
+    }
+  }
+  
+  .Alert-announcement {
+    border-left: 0.5rem solid $synth-hyperlink-color;
+  
+    .close {
+      @include close-action;
+    }
+  
+    .primary-action {
+      @include primary-action;
+    }
+  }
+  
+  .Alert-feature {
+    border: 2px solid $ux-teal-600;
+  
+    .close {
+      @include close-action;
+    }
+  
+    .primary-action {
+      @include primary-action;
+    }
+  
+    .Alert__icon {
+      color: $ux-teal-600;
+    }
+  }
+  
+  .Alert-warning {
+    border-left: 0.5rem solid $synth-warning-amber-alternate;
+  
+    .close {
+      @include close-action;
+    }
+  
+    .primary-action {
+      @include primary-action;
+    }
+  
+    .Alert__icon {
+      color: $synth-warning-amber-alternate;
+    }
+  }
+  
+  .Alert-error {
+    border-left: 0.5rem solid $ux-red-400;
+  
+    .close {
+      @include close-action;
+    }
+  
+    .primary-action {
+      @include primary-action;
+    }
+  
+    .Alert__icon {
+      color: $ux-red;
+    }
   }
 }
 
@@ -93,11 +256,11 @@
   border-left: 0.5rem solid $ux-green-400;
 
   .close {
-    @include close-action($ux-green-600, $ux-green-800)
+    @include close-action;
   }
 
   .primary-action {
-    @include primary-action($ux-green-300, $ux-green-400, $ux-green-800)
+    @include primary-action;
   }
 
   .Alert__icon {
@@ -119,7 +282,7 @@
   }
 
   .primary-action {
-    @include primary-action($ux-blue-200, $ux-blue-300, $ux-blue-600)
+    @include primary-action;
   }
 
   .Alert__icon {
@@ -137,11 +300,11 @@
   border-left: 0.5rem solid $ux-blue-300;
 
   .close {
-    @include close-action($ux-blue-600, $ux-blue-800)
+    @include close-action;
   }
 
   .primary-action {
-    @include primary-action($ux-blue-200, $ux-blue-300, $ux-blue-600)
+    @include primary-action;
   }
 }
 
@@ -151,11 +314,11 @@
   border: 2px solid $ux-teal-600;
 
   .close {
-    @include close-action($ux-teal-600, $ux-teal-800)
+    @include close-action;
   }
 
   .primary-action {
-    @include primary-action($ux-teal-600, $ux-teal-700, $ux-white)
+    @include primary-action;
   }
 }
 
@@ -165,11 +328,11 @@
   border-left: 0.5rem solid $ux-yellow-600;
 
   .close {
-    @include close-action($ux-yellow-600, $ux-yellow-800)
+    @include close-action;
   }
 
   .primary-action {
-    @include primary-action($ux-yellow-300, $ux-yellow-400, $ux-yellow-900)
+    @include primary-action;
   }
 
   .Alert__icon {
@@ -183,11 +346,11 @@
   border-left: 0.5rem solid $ux-red-400;
 
   .close {
-    @include close-action($ux-red-600, $ux-red-800)
+    @include close-action;
   }
 
   .primary-action {
-    @include primary-action($ux-red-200, $ux-red-300, $ux-red-900)
+    @include primary-action;
   }
 
   .Alert__icon {
