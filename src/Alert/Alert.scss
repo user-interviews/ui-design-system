@@ -1,6 +1,6 @@
 @import '../../scss/theme';
 
-@mixin primary-action($bg-color, $bg-color-hover, $color) {
+@mixin primary-action($bg-color: none, $bg-color-hover: $ux-gray-300, $color: $synth-unselected-neutral) {
   @include synth-font-type-30--bold;
   background-color: $bg-color;
   border: none;
@@ -17,7 +17,7 @@
   }
 }
 
-@mixin close-action($color, $color-hover) {
+@mixin close-action($color: $ux-gray-700, $color-hover: $ux-gray-800) {
   background-color: unset;
   border: none;
   color: $color;
@@ -43,8 +43,9 @@
     ;
   }
 
-  font-weight: 500;
+  background-color: $synth-alert-bg-neutral;
   border-radius: $ux-border-radius;
+  color: $synth-text-neutral;
   margin-bottom: $ux-spacing-40;
   padding: $ux-spacing-40;
   position: relative;
@@ -88,38 +89,34 @@
 }
 
 .Alert-success {
-  background-color: $ux-green-100;
-  color: $ux-green-800;
-  border-left: 0.5rem solid $ux-green-400;
+  border-left: 0.5rem solid $synth-accent-green;
 
   .close {
-    @include close-action($ux-green-600, $ux-green-800)
+    @include close-action;
   }
 
   .primary-action {
-    @include primary-action($ux-green-300, $ux-green-400, $ux-green-800)
+    @include primary-action;
   }
 
   .Alert__icon {
-    color: $ux-green-400;
+    color: $synth-accent-green;
     
     .fa-check {
-      color: $ux-green-800;
+      color: $ux-gray-100;
     }
   }
 }
 
 .Alert-info {
-  background-color: $ux-blue-100;
-  color: $ux-blue-800;
-  border-left: 0.5rem solid $ux-blue-300;
+  border-left: 0.5rem solid $synth-hyperlink-color;
 
   .close {
-    @include close-action($ux-blue-600, $ux-blue-800)
+    @include close-action;
   }
 
   .primary-action {
-    @include primary-action($ux-blue-200, $ux-blue-300, $ux-blue-600)
+    @include primary-action;
   }
 
   .Alert__icon {
@@ -132,62 +129,58 @@
 }
 
 .Alert-announcement {
-  background-color: $ux-blue-100;
-  color: $ux-blue-700;
-  border-left: 0.5rem solid $ux-blue-300;
+  border-left: 0.5rem solid $synth-hyperlink-color;
 
   .close {
-    @include close-action($ux-blue-600, $ux-blue-800)
+    @include close-action;
   }
 
   .primary-action {
-    @include primary-action($ux-blue-200, $ux-blue-300, $ux-blue-600)
+    @include primary-action;
   }
 }
 
 .Alert-feature {
-  background-color: $ux-teal-100;
-  color: $ux-teal-800;
   border: 2px solid $ux-teal-600;
 
   .close {
-    @include close-action($ux-teal-600, $ux-teal-800)
+    @include close-action;
   }
 
   .primary-action {
-    @include primary-action($ux-teal-600, $ux-teal-700, $ux-white)
+    @include primary-action;
+  }
+
+  .Alert__icon {
+    color: $ux-teal-600;
   }
 }
 
 .Alert-warning {
-  background-color: $ux-yellow-100;
-  color: $ux-yellow-900;
-  border-left: 0.5rem solid $ux-yellow-600;
+  border-left: 0.5rem solid $synth-warning-amber-alternate;
 
   .close {
-    @include close-action($ux-yellow-600, $ux-yellow-800)
+    @include close-action;
   }
 
   .primary-action {
-    @include primary-action($ux-yellow-300, $ux-yellow-400, $ux-yellow-900)
+    @include primary-action;
   }
 
   .Alert__icon {
-    color: $ux-yellow-700;
+    color: $synth-warning-amber-alternate;
   }
 }
 
 .Alert-error {
-  background-color: $ux-red-100;
-  color: $ux-red-800;
   border-left: 0.5rem solid $ux-red-400;
 
   .close {
-    @include close-action($ux-red-600, $ux-red-800)
+    @include close-action;
   }
 
   .primary-action {
-    @include primary-action($ux-red-200, $ux-red-300, $ux-red-900)
+    @include primary-action;
   }
 
   .Alert__icon {
