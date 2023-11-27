@@ -1,6 +1,10 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
+import classNames from 'classnames';
+
+import styles from './CheckboxButton.module.scss';
+
 export const CHECKED_STATES = {
   CHECKED: true,
   UNCHECKED: false,
@@ -28,7 +32,7 @@ const CheckboxButton = React.forwardRef(({
   return (
     <input
       checked={checked}
-      className={className}
+      className={classNames(className, styles.checkboxButton)}
       disabled={disabled}
       id={id}
       name={name}
