@@ -1,6 +1,40 @@
 @import './colors/palette';
+@import './colors/synthesis-palette';
 
 :export {
+  SYNTH_SUCCESS_GREEN_DARK: $synth-success-green-dark;
+  SYNTH_SUCCESS_GREEN_MEDIUM: $synth-success-green-medium;
+  SYNTH_SUCCESS_GREEN_LIGHT: $synth-success-green-light;
+
+  SYNTH_ERROR_RED_DARK: $synth-error-red-dark;
+  SYNTH_ERROR_RED_MEDIUM: $synth-error-red-medium;
+  SYNTH_ERROR_RED_LIGHT: $synth-error-red-light;
+
+  SYNTH_WARNING_AMBER_DARK: $synth-warning-amber-dark;
+  SYNTH_WARNING_AMBER_MEDIUM: $synth-warning-amber-medium;
+  SYNTH_WARNING_AMBER_LIGHT: $synth-warning-amber-light;
+  SYNTH_WARNING_AMBER_ALTERNATE: $synth-warning-amber-alternate;
+
+  SYNTH_ALERT_BG_NEUTRAL: $synth-alert-bg-neutral;
+  SYNTH_DIV_STROKE_NEUTRAL: $synth-div-stroke-neutral;
+  SYNTH_HEADER_NEUTRAL: $synth-header-neutral;
+  SYNTH_PAGE_NEUTRAL: $synth-page-neutral;
+  SYNTH_TEXT_NEUTRAL: $synth-text-neutral;
+  SYNTH_UNSELECTED_NEUTRAL: $synth-unselected-neutral;
+
+  SYNTH_ACCENT_GREEN: $synth-accent-green;
+  SYNTH_DARK_BACKGROUND_SELECTED_BLUE: $synth-dark-background-selected-blue;
+  SYNTH_HOVER_STATE: $synth-hover-state;
+  SYNTH_INDICATOR_STROKE_GREEN: $synth-indicator-stroke-green;
+  SYNTH_NAVBAR_BLUE: $synth-navbar-blue;
+  SYNTH_PRIMARY_CTA_BLUE: $synth-primary-cta-blue;
+  SYNTH_SELECTED_STATE_GREEN: $synth-selected-state-green;
+
+  SYNTH_HYPERLINK_COLOR: $synth-hyperlink-color;
+
+  SYNTH_HOVER_BLUE: $synth-hover-blue;
+  SYNTH_HEADER_GRAY_BLUE: $synth-header-gray-blue;
+
   UX_BLACK: $ux-black;
   UX_BLUE: $ux-blue;
   UX_CREAM: $ux-cream;
