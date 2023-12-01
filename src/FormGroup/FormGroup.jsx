@@ -118,7 +118,7 @@ FormGroup.propTypes = {
   displayErrorText: PropTypes.bool,
   elementType: PropTypes.oneOf(FORM_GROUP_ELEMENT_TYPES),
   errors: PropTypes.object,
-  helperText: PropTypes.string,
+  helperText: PropTypes.node,
   id: PropTypes.string,
   inline: PropTypes.bool,
   inputKey: PropTypes.string,
