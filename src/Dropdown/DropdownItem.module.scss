@@ -11,21 +11,12 @@
   }
 
   &:hover {
-    background-color: $ux-blue-100;
+    background-color: $synth-hover-state;
     text-decoration: none;
   }
 
   &:focus {
     background-color: $ux-blue-200;
     color: $ux-gray-900;
-  }
-
-  &--danger {
-    color: $ux-red;
-    
-    &:hover {
-      background-color: $ux-red-100;
-      color: $ux-red-600;
-    }
   }
 }

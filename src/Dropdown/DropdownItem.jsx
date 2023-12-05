@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Dropdown as RBDropdown } from 'react-bootstrap';
 
-import './DropdownItem.scss';
+import styles from './DropdownItem.module.scss';
 
 const DropdownItemVariants = {
   DANGER: 'danger',
@@ -33,7 +33,7 @@ const DropdownItem = ({
     className={classNames(
       className,
       'DropdownItem',
-      variant && `DropdownItem--${variant}`,
+      styles.DropdownItem
     )}
     disabled={disabled}
     eventKey={eventKey}
