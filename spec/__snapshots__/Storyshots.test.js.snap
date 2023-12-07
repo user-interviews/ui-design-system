@@ -9054,8 +9054,8 @@ Array [
 `;
 
 exports[`Storyshots Components/Heading Default 1`] = `
-<h2
-  className="Heading Heading--xxl Heading--bold"
+<h1
+  className="Heading Heading--xxxl Heading--bold"
   style={
     Object {
       "textAlign": undefined,
@@ -9063,7 +9063,7 @@ exports[`Storyshots Components/Heading Default 1`] = `
   }
 >
   The fastest way to recruit research participants
-</h2>
+</h1>
 `;
 
 exports[`Storyshots Components/Heading Levels 1`] = `
@@ -9128,7 +9128,72 @@ Array [
   >
     The fastest way to recruit research participants
   </h6>,
-  <h6
+]
+`;
+
+exports[`Storyshots Components/Heading Sizes 1`] = `
+Array [
+  <h2
+    className="Heading Heading--xxxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    This is a heading level 2 with size="xxxl"
+  </h2>,
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    This is a heading level 2 with size="xxl"
+  </h2>,
+  <h2
+    className="Heading Heading--xl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    This is a heading level 2 with size="xl"
+  </h2>,
+  <h2
+    className="Heading Heading--lg Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    This is a heading level 2 with size="lg"
+  </h2>,
+  <h2
+    className="Heading Heading--md Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    This is a heading level 2 with size="md"
+  </h2>,
+  <h2
+    className="Heading Heading--sm Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    This is a heading level 2 with size="sm"
+  </h2>,
+  <h2
     className="Heading Heading--xs Heading--bold"
     style={
       Object {
@@ -9136,8 +9201,8 @@ Array [
       }
     }
   >
-    The fastest way to recruit research participants
-  </h6>,
+    This is a heading level 2 with size="xs"
+  </h2>,
 ]
 `;
 
@@ -10428,8 +10493,8 @@ exports[`Storyshots Components/MoneyInput Default 1`] = `
     value="$ 1,250.99"
   />
   <br />
-  <h2
-    className="Heading Heading--xxl Heading--bold"
+  <h1
+    className="Heading Heading--xxxl Heading--bold"
     style={
       Object {
         "textAlign": undefined,
@@ -10438,7 +10503,7 @@ exports[`Storyshots Components/MoneyInput Default 1`] = `
   >
     Value: 
     1250.99
-  </h2>
+  </h1>
 </div>
 `;
 
@@ -10472,8 +10537,8 @@ exports[`Storyshots Components/MoneyInput Prefix 1`] = `
     value="USD$ 500"
   />
   <br />
-  <h2
-    className="Heading Heading--xxl Heading--bold"
+  <h1
+    className="Heading Heading--xxxl Heading--bold"
     style={
       Object {
         "textAlign": undefined,
@@ -10482,7 +10547,7 @@ exports[`Storyshots Components/MoneyInput Prefix 1`] = `
   >
     Value: 
     500
-  </h2>
+  </h1>
 </div>
 `;
 
@@ -10516,8 +10581,8 @@ exports[`Storyshots Components/MoneyInput Step 1`] = `
     value="$ 200"
   />
   <br />
-  <h2
-    className="Heading Heading--xxl Heading--bold"
+  <h1
+    className="Heading Heading--xxxl Heading--bold"
     style={
       Object {
         "textAlign": undefined,
@@ -10526,7 +10591,7 @@ exports[`Storyshots Components/MoneyInput Step 1`] = `
   >
     Value: 
     200
-  </h2>
+  </h1>
 </div>
 `;
 
