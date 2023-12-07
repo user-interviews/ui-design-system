@@ -10425,7 +10425,7 @@ exports[`Storyshots Components/MoneyInput Default 1`] = `
     onKeyUp={[Function]}
     placeholder="Please enter a number"
     type="text"
-    value="$1,250.99"
+    value="$ 1,250.99"
   />
   <br />
   <h2
@@ -10438,6 +10438,94 @@ exports[`Storyshots Components/MoneyInput Default 1`] = `
   >
     Value: 
     1250.99
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Components/MoneyInput Prefix 1`] = `
+<div
+  className="FormGroup"
+>
+  <label
+    className="InputLabel"
+    htmlFor="money-input-3"
+  >
+    Incentive amount
+  </label>
+  <div
+    className="FormGroup__helper-text"
+  >
+    Change the prefix
+  </div>
+  <input
+    className="MoneyInput form-control"
+    disabled={false}
+    id="money-input-3"
+    inputMode="decimal"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    placeholder="Please enter a number"
+    type="text"
+    value="USD$ 500"
+  />
+  <br />
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Value: 
+    500
+  </h2>
+</div>
+`;
+
+exports[`Storyshots Components/MoneyInput Step 1`] = `
+<div
+  className="FormGroup"
+>
+  <label
+    className="InputLabel"
+    htmlFor="money-input-2"
+  >
+    Incentive amount
+  </label>
+  <div
+    className="FormGroup__helper-text"
+  >
+    Use the Up Arrow (↑) or Down Arrow (↓) to adjust the incremental value change
+  </div>
+  <input
+    className="MoneyInput form-control"
+    disabled={false}
+    id="money-input-2"
+    inputMode="decimal"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    placeholder="Please enter a number"
+    type="text"
+    value="$ 200"
+  />
+  <br />
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Value: 
+    200
   </h2>
 </div>
 `;
