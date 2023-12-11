@@ -36,7 +36,7 @@ const DropdownItem = ({
     onClick={onClick}
     {...props}
   >
-    { leadingIcon && <FontAwesomeIcon className="icon-left fa-fw" icon={leadingIcon} /> }
+    { leadingIcon && <FontAwesomeIcon className={classNames(styles.DropdownItemIcon, 'icon-left', 'fa-fw')} icon={leadingIcon} /> }
     { children }
   </RBDropdown.Item>
   );
