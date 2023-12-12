@@ -9054,8 +9054,8 @@ Array [
 `;
 
 exports[`Storyshots Components/Heading Default 1`] = `
-<h2
-  className="Heading Heading--xxl Heading--bold"
+<h1
+  className="Heading Heading--xxxl Heading--bold"
   style={
     Object {
       "textAlign": undefined,
@@ -9063,7 +9063,7 @@ exports[`Storyshots Components/Heading Default 1`] = `
   }
 >
   The fastest way to recruit research participants
-</h2>
+</h1>
 `;
 
 exports[`Storyshots Components/Heading Levels 1`] = `
@@ -9128,7 +9128,72 @@ Array [
   >
     The fastest way to recruit research participants
   </h6>,
-  <h6
+]
+`;
+
+exports[`Storyshots Components/Heading Sizes 1`] = `
+Array [
+  <h2
+    className="Heading Heading--xxxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    This is a heading level 2 with size="xxxl"
+  </h2>,
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    This is a heading level 2 with size="xxl"
+  </h2>,
+  <h2
+    className="Heading Heading--xl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    This is a heading level 2 with size="xl"
+  </h2>,
+  <h2
+    className="Heading Heading--lg Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    This is a heading level 2 with size="lg"
+  </h2>,
+  <h2
+    className="Heading Heading--md Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    This is a heading level 2 with size="md"
+  </h2>,
+  <h2
+    className="Heading Heading--sm Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    This is a heading level 2 with size="sm"
+  </h2>,
+  <h2
     className="Heading Heading--xs Heading--bold"
     style={
       Object {
@@ -9136,8 +9201,8 @@ Array [
       }
     }
   >
-    The fastest way to recruit research participants
-  </h6>,
+    This is a heading level 2 with size="xs"
+  </h2>,
 ]
 `;
 
@@ -10425,11 +10490,11 @@ exports[`Storyshots Components/MoneyInput Default 1`] = `
     onKeyUp={[Function]}
     placeholder="Please enter a number"
     type="text"
-    value="$1,250.99"
+    value="$ 1,250.99"
   />
   <br />
-  <h2
-    className="Heading Heading--xxl Heading--bold"
+  <h1
+    className="Heading Heading--xxxl Heading--bold"
     style={
       Object {
         "textAlign": undefined,
@@ -10438,7 +10503,95 @@ exports[`Storyshots Components/MoneyInput Default 1`] = `
   >
     Value: 
     1250.99
-  </h2>
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Components/MoneyInput Prefix 1`] = `
+<div
+  className="FormGroup"
+>
+  <label
+    className="InputLabel"
+    htmlFor="money-input-3"
+  >
+    Incentive amount
+  </label>
+  <div
+    className="FormGroup__helper-text"
+  >
+    Change the prefix
+  </div>
+  <input
+    className="MoneyInput form-control"
+    disabled={false}
+    id="money-input-3"
+    inputMode="decimal"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    placeholder="Please enter a number"
+    type="text"
+    value="USD$ 500"
+  />
+  <br />
+  <h1
+    className="Heading Heading--xxxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Value: 
+    500
+  </h1>
+</div>
+`;
+
+exports[`Storyshots Components/MoneyInput Step 1`] = `
+<div
+  className="FormGroup"
+>
+  <label
+    className="InputLabel"
+    htmlFor="money-input-2"
+  >
+    Incentive amount
+  </label>
+  <div
+    className="FormGroup__helper-text"
+  >
+    Use the Up Arrow (↑) or Down Arrow (↓) to adjust the incremental value change
+  </div>
+  <input
+    className="MoneyInput form-control"
+    disabled={false}
+    id="money-input-2"
+    inputMode="decimal"
+    onBlur={[Function]}
+    onChange={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    placeholder="Please enter a number"
+    type="text"
+    value="$ 200"
+  />
+  <br />
+  <h1
+    className="Heading Heading--xxxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    Value: 
+    200
+  </h1>
 </div>
 `;
 

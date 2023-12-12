@@ -35,6 +35,14 @@ MoneyInput.propTypes = {
   */
   placeholder: PropTypes.string,
   /**
+    Include a prefix eg. £ or $
+  */
+  prefix: PropTypes.string,
+  /**
+    Incremental value change on arrow down and arrow up key press
+  */
+  step: PropTypes.number,
+  /**
     Transform the raw value from the input before parsing. Needs to return string.
   */
   transformRawValue: PropTypes.func,
@@ -51,6 +59,8 @@ MoneyInput.defaultProps = {
   intlConfig: { locale: 'en-US', currency: 'USD' },
   maxLength: undefined,
   placeholder: undefined,
+  prefix: '$ ',
+  step: undefined,
   transformRawValue: undefined,
   value: undefined,
   onValueChange: undefined,

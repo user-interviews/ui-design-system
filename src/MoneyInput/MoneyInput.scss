@@ -2,10 +2,9 @@
 
 .MoneyInput {
   @include synth-font-type-30;
-  box-shadow: $input-box-shadow;
 
   &:focus {
-    border: 0.06rem solid $ux-blue-500;
+    border: 1px solid $ux-blue-500;
     box-shadow: $input-focus-box-shadow;
     color: $input-focus-color;
   }

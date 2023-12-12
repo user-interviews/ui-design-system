@@ -6,11 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { Dropdown as RBDropdown } from 'react-bootstrap';
 
-import './DropdownItem.scss';
-
-const DropdownItemVariants = {
-  DANGER: 'danger',
-};
+import styles from './DropdownItem.module.scss';
 
 const DropdownItem = ({
   active,
@@ -22,7 +18,6 @@ const DropdownItem = ({
   href,
   leadingIcon,
   onClick,
-  variant,
   bsPrefix,
   ...props
 }) => (
@@ -33,7 +28,7 @@ const DropdownItem = ({
     className={classNames(
       className,
       'DropdownItem',
-      variant && `DropdownItem--${variant}`,
+      styles.DropdownItem,
     )}
     disabled={disabled}
     eventKey={eventKey}
@@ -41,7 +36,7 @@ const DropdownItem = ({
     onClick={onClick}
     {...props}
   >
-    { leadingIcon && <FontAwesomeIcon className="icon-left fa-fw" icon={leadingIcon} /> }
+    { leadingIcon && <FontAwesomeIcon className={classNames(styles.DropdownItemIcon, 'icon-left', 'fa-fw')} icon={leadingIcon} /> }
     { children }
   </RBDropdown.Item>
   );
@@ -75,10 +70,6 @@ DropdownItem.propTypes = {
   href: PropTypes.string,
   leadingIcon: PropTypes.object,
   /**
-    Optional variant for controlling color and hover states (e.g. destructive actions)
-   */
-  variant: PropTypes.oneOf(Object.values(DropdownItemVariants)),
-  /**
     Callback fired when the menu item is clicked.
    */
   onClick: PropTypes.func,
@@ -93,7 +84,6 @@ DropdownItem.defaultProps = {
   eventKey: undefined,
   href: undefined,
   leadingIcon: undefined,
-  variant: undefined,
   onClick: undefined,
 };
 
