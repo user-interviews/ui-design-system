@@ -24,6 +24,7 @@ type Story = StoryObj<typeof Heading>;
 export const Default: Story = {
   args: {
     children: 'The fastest way to recruit research participants',
+    level: 1,
   },
 };
 
@@ -61,13 +62,30 @@ export const Default: Story = {
 export const Levels: Story = {
   render: () => (
     <>
-      <Heading level={1} size="xxxl" weight="bold">The fastest way to recruit research participants</Heading>
-      <Heading level={2} size="xxl" weight="bold">The fastest way to recruit research participants</Heading>
-      <Heading level={3} size="xl" weight="bold">The fastest way to recruit research participants</Heading>
-      <Heading level={4} size="lg" weight="bold">The fastest way to recruit research participants</Heading>
-      <Heading level={5} size="md" weight="bold">The fastest way to recruit research participants</Heading>
-      <Heading level={6} size="sm" weight="bold">The fastest way to recruit research participants</Heading>
-      <Heading level={6} size="xs" weight="bold">The fastest way to recruit research participants</Heading>
+      <Heading level={1} size="xxxl">The fastest way to recruit research participants</Heading>
+      <Heading level={2} size="xxl">The fastest way to recruit research participants</Heading>
+      <Heading level={3} size="xl">The fastest way to recruit research participants</Heading>
+      <Heading level={4} size="lg">The fastest way to recruit research participants</Heading>
+      <Heading level={5} size="md">The fastest way to recruit research participants</Heading>
+      <Heading level={6} size="sm">The fastest way to recruit research participants</Heading>
+    </>
+  ),
+};
+
+/**
+  Headings come with default sizes based on their level, but you are able to
+  adjust its size based on visual hierarchy needs.
+*/
+export const Sizes: Story = {
+  render: () => (
+    <>
+      <Heading level={2} size="xxxl">This is a heading level 2 with size="xxxl"</Heading>
+      <Heading level={2} size="xxl">This is a heading level 2 with size="xxl"</Heading>
+      <Heading level={2} size="xl">This is a heading level 2 with size="xl"</Heading>
+      <Heading level={2} size="lg">This is a heading level 2 with size="lg"</Heading>
+      <Heading level={2} size="md">This is a heading level 2 with size="md"</Heading>
+      <Heading level={2} size="sm">This is a heading level 2 with size="sm"</Heading>
+      <Heading level={2} size="xs">This is a heading level 2 with size="xs"</Heading>
     </>
   ),
 };
