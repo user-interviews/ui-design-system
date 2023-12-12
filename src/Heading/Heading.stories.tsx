@@ -62,12 +62,12 @@ export const Default: Story = {
 export const Levels: Story = {
   render: () => (
     <>
-      <Heading level={1}>The fastest way to recruit research participants</Heading>
-      <Heading level={2}>The fastest way to recruit research participants</Heading>
-      <Heading level={3}>The fastest way to recruit research participants</Heading>
-      <Heading level={4}>The fastest way to recruit research participants</Heading>
-      <Heading level={5}>The fastest way to recruit research participants</Heading>
-      <Heading level={6}>The fastest way to recruit research participants</Heading>
+      <Heading level={1} size="xxxl">The fastest way to recruit research participants</Heading>
+      <Heading level={2} size="xxl">The fastest way to recruit research participants</Heading>
+      <Heading level={3} size="xl">The fastest way to recruit research participants</Heading>
+      <Heading level={4} size="lg">The fastest way to recruit research participants</Heading>
+      <Heading level={5} size="md">The fastest way to recruit research participants</Heading>
+      <Heading level={6} size="sm">The fastest way to recruit research participants</Heading>
     </>
   ),
 };
