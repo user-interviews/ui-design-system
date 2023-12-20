@@ -29,14 +29,14 @@ const handleClose = (id) => {
 
 export const Default = () => (
   <div>
-    <h4 style={{ marginBottom: '2rem' }}>Test Pill</h4>
+    <h4 style={{ marginBottom: '32px' }}>Test Pill</h4>
     <Pill
       color={select('Color', Object.values(PILL_COLORS), PILL_COLORS.BLUE)}
       id="1"
     >
       {text('Text', 'Text')}
     </Pill>
-    <h4 style={{ marginBottom: '2rem', marginTop: '2rem' }}>Colors</h4>
+    <h4 style={{ marginBottom: '32px', marginTop: '32px' }}>Colors</h4>
     <Pill
       color={PILL_COLORS.BLUE}
     >

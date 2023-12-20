@@ -402,7 +402,7 @@ export const Brands = () => (
     >
       Google
     </Button>
-    <div style={{ margin: '.5rem' }} />
+    <div style={{ margin: '8px' }} />
     <Button
       leadingIcon={faFacebook}
       size="sm"
@@ -437,7 +437,7 @@ export const Brands = () => (
       Facebook
     </Button>
     {' '}
-    <div style={{ margin: '.5rem' }} />
+    <div style={{ margin: '8px' }} />
     <Button
       leadingIcon={faLinkedin}
       size="sm"
@@ -471,7 +471,7 @@ export const Brands = () => (
     >
       LinkedIn
     </Button>
-    <div style={{ margin: '.5rem' }} />
+    <div style={{ margin: '8px' }} />
     <Button
       leadingIcon={faTwitter}
       size="sm"

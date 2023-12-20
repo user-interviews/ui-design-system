@@ -2,7 +2,7 @@
 
 .TableCell {
   @include synth-font-type-30;
-  border-bottom: 0.06rem solid $ux-gray-200;
+  border-bottom: 1px solid $ux-gray-200;
   overflow: hidden;
   padding: $ux-spacing-50;
   text-align: left;
@@ -25,7 +25,7 @@
 
   &--compact {
     padding: $ux-spacing-30 $ux-spacing-50;
-    max-height: 3.25rem;
+    max-height: 52px;
   }
 
   &--right {

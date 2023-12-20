@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 0.375rem;
+  margin-bottom: 6px;
 
   &__helper-text {
     @include synth-font-type-10--uppercase;

@@ -5,7 +5,7 @@
 
   .RichTextEditor__character-count {
     @include synth-font-type-20;
-    margin-top: 0.5rem;
+    margin-top: 8px;
   }
 }
 
@@ -17,15 +17,15 @@
 }
 
 .ProseMirror {
-  min-height: 5rem;
+  min-height: 80px;
   background: $ux-neutral-100;
   border: 1px solid $ux-gray-400;
   border-radius: 0 0 $ux-border-radius $ux-border-radius;
-  padding: 1rem;
+  padding: 16px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   &:focus {
-    border: 0.06rem solid $ux-blue-500;
+    border: 1px solid $ux-blue-500;
     box-shadow: $input-focus-box-shadow;
     color: $input-focus-color;
     outline: none;
@@ -37,7 +37,7 @@
 
   ul,
   ol {
-    padding: 0 1rem;
+    padding: 0 16px;
   }
 
   li > p {

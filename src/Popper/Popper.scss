@@ -2,9 +2,9 @@
 
 @mixin popper-arrow($popper-color: $ux-gray-800, $popper-border-color: $ux-gray-800) {
   .Popper__arrow {
-    height: 1rem;
+    height: 16px;
     position: absolute;
-    width: 1rem;
+    width: 16px;
     pointer-events: none;
   }
 
@@ -29,70 +29,70 @@
 
   &[data-placement*='bottom'] .Popper__arrow {
     left: 0;
-    margin-top: -0.4rem;
+    margin-top: -6px;
     top: 0;
   }
 
   &[data-placement*='bottom'] .Popper__arrow::before {
     border-color: transparent transparent $popper-border-color transparent;
-    border-width: 0 0.5rem 0.4rem 0.5rem;
+    border-width: 0 8px 6px 8px;
     position: absolute;
     top: -1px;
   }
 
   &[data-placement*='bottom'] .Popper__arrow::after {
     border-color: transparent transparent $popper-color transparent;
-    border-width: 0 0.5rem 0.4rem 0.5rem;
+    border-width: 0 8px 6px 8px;
   }
 
   &[data-placement*='top'] .Popper__arrow {
     bottom: 0;
     left: 0;
-    margin-bottom: -1rem;
+    margin-bottom: -16px;
   }
 
   &[data-placement*='top'] .Popper__arrow::before {
     border-color: $popper-border-color transparent transparent transparent;
-    border-width: 0.4rem 0.5rem 0 0.5rem;
+    border-width: 6px 8px 0 8px;
     position: absolute;
     top: 1px;
   }
 
   &[data-placement*='top'] .Popper__arrow::after {
     border-color: $popper-color transparent transparent transparent;
-    border-width: 0.4rem 0.5rem 0 0.5rem;
+    border-width: 6px 8px 0 8px;
   }
 
   &[data-placement*='right'] .Popper__arrow {
     left: 0;
-    margin-left: -0.7rem;
+    margin-left: -11px;
   }
 
   &[data-placement*='right'] .Popper__arrow::before {
     border-color: transparent $popper-border-color transparent transparent;
-    border-width: 0.5rem 0.4rem 0.5rem 0;
+    border-width: 8px 6px 8px 0;
   }
 
   &[data-placement*='right'] .Popper__arrow::after {
     border-color: transparent $popper-color transparent transparent;
-    border-width: 0.5rem 0.4rem 0.5rem 0;
+    border-width: 8px 6px 8px 0;
     left: 6px;
     top: 0;
   }
 
   &[data-placement*='left'] .Popper__arrow {
-    margin-right: -0.7rem;
+    margin-right: -11px;
     right: 0;
   }
 
   &[data-placement*='left'] .Popper__arrow::before {
     border-color: transparent transparent transparent $popper-border-color;
-    border-width: 0.5rem 0 0.5rem 0.4em;
+    border-width: 8px 0 8px 6px;
   }
 
   &[data-placement*='left'] .Popper__arrow::after {
     border-color: transparent transparent transparent $popper-color;
-    border-width: 0.5rem 0 0.5rem 0.4em;
+    border-width: 8px 0 8px 6px;
     left: 3px;
     top: 0;
   }
@@ -103,9 +103,9 @@
   @include popper-arrow($popper-color: $ux-white, $popper-border-color: $ux-gray-300);
   background-color: $ux-white;
   border-radius: $ux-border-radius;
-  border: 0.06rem solid $ux-gray-300;
+  border: 1px solid $ux-gray-300;
   box-shadow: $ux-box-shadow-card;
-  max-width: 15rem;
+  max-width: 240px;
   letter-spacing: normal;
   padding: $ux-spacing-30;
   z-index: $z-index-flash;

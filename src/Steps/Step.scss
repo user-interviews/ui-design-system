@@ -1,7 +1,7 @@
 @import '../../scss/theme';
 
-$step-circle-size: 2.5rem;
-$text-container-margin-top: 0.625rem;
+$step-circle-size: 40px;
+$text-container-margin-top: 10px;
 
 .Step {
   display: grid;
@@ -29,7 +29,7 @@ $text-container-margin-top: 0.625rem;
       color: $ux-emerald-600;
       float: left;
       line-height: 1;
-      margin-top: -0.5rem;
+      margin-top: -8px;
       padding-top: 50%;
       text-align: center;
       width: 100%;
@@ -52,7 +52,7 @@ $text-container-margin-top: 0.625rem;
     display: flex;
     position: relative;
     // translates the text-container so that border is centered with circle
-    right: 1.25rem;
+    right: 20px;
 
     min-height: ($step-circle-size * 2) - $ux-spacing-30;
 

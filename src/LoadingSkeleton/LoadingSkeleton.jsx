@@ -57,7 +57,7 @@ LoadingSkeleton.propTypes = {
 };
 
 LoadingSkeleton.defaultProps = {
-  borderRadius: '0.25rem',
+  borderRadius: '4px',
   className: undefined,
   circle: false,
   containerClassName: undefined,

@@ -6,9 +6,9 @@
 
   &__container {
     display: grid;
-    grid-template-columns: auto 1.5rem;
+    grid-template-columns: auto 24px;
     grid-template-areas: 'content chevron-right';
-    padding: 1rem 1.5rem;
+    padding: 16px 24px;
 
     &--right {
       grid-area: chevron-right;
@@ -74,20 +74,20 @@
     }
 
   &__chevron-left {
-    margin-right: 1rem;
+    margin-right: 16px;
   }
 
   &__chevron-right {
-    margin-left: 2rem;
+    margin-left: 32px;
   }
 
   &__leading-icon {
-    margin-right: .5rem;
+    margin-right: 8px;
   }
 
   &__title {
     @include synth-font-type-30--bold;
-    margin-right: .5rem;
+    margin-right: 8px;
   }
 
   &__helper-text {

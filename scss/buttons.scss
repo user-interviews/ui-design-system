@@ -26,14 +26,14 @@ $warning: $ux-yellow-400;
 
 @mixin btn-focus-outline {
   box-shadow: none !important;
-  outline: 0.125rem solid $ux-blue-500;
-  outline-offset: 0.125rem;
+  outline: 2px solid $ux-blue-500;
+  outline-offset: 2px;
 }
 
 @mixin btn-focus-outline--dark-bg {
   box-shadow: none !important;
-  outline: 0.125rem solid $ux-white;
-  outline-offset: 0.125rem;
+  outline: 2px solid $ux-white;
+  outline-offset: 2px;
 }
 
 @mixin btn-remove-bootstrap-focus-outline {

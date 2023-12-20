@@ -102,7 +102,7 @@ const googleButtonStyle = {
 
 const GoogleCalendarButton = () => (
   <button style={googleButtonStyle} type="button">
-    <FontAwesomeIcon icon={faGoogle} style={{ height: '1rem', marginRight: '0.5rem' }} />
+    <FontAwesomeIcon icon={faGoogle} style={{ height: '16px', marginRight: '8px' }} />
     Connect Google Calendar
   </button>
 );
