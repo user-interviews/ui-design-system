@@ -33,9 +33,8 @@
   }
 
   &__children {
-    @include synth-font-type-30--medium;
+    @include synth-font-type-30;
 
-    font-weight: 100;
     margin-top: 0.5rem;
     width: 100%;
   }
