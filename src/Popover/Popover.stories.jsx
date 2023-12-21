@@ -69,7 +69,7 @@ export const CardPopover = () => {
           <PopoverCard
             size={select('size', ['sm', 'md'], 'sm')}
           >
-            <h3 style={{ fontSize: '1rem', fontWeight: '700', marginBottom: '1.5rem' }}>Popover with Card styling</h3>
+            <h3 style={{ fontSize: '1rem', fontWeight: '700', marginBottom: '24px' }}>Popover with Card styling</h3>
             <FormGroup
               label="Last project launched"
               labelHtmlFor="last-project-launched-input"
@@ -90,7 +90,7 @@ export const CardPopover = () => {
                 placeholder="MM/DD/YYYY"
               />
             </FormGroup>
-            <div style={{ display: 'flex', justifyContent: 'right', marginTop: '1rem' }}>
+            <div style={{ display: 'flex', justifyContent: 'right', marginTop: '16px' }}>
               <Button variant="primary" onClick={handleOpen}>Apply</Button>
             </div>
           </PopoverCard>

@@ -2570,8 +2570,8 @@ Array [
             role="img"
             style={
               Object {
-                "height": "1rem",
-                "marginRight": "0.5rem",
+                "height": "16px",
+                "marginRight": "8px",
               }
             }
             viewBox="0 0 488 512"
@@ -2707,8 +2707,8 @@ Array [
           role="img"
           style={
             Object {
-              "height": "1rem",
-              "marginRight": "0.5rem",
+              "height": "16px",
+              "marginRight": "8px",
             }
           }
           viewBox="0 0 488 512"
@@ -3261,7 +3261,7 @@ Array [
   <div
     style={
       Object {
-        "margin": ".5rem",
+        "margin": "8px",
       }
     }
   />,
@@ -3370,7 +3370,7 @@ Array [
   <div
     style={
       Object {
-        "margin": ".5rem",
+        "margin": "8px",
       }
     }
   />,
@@ -3478,7 +3478,7 @@ Array [
   <div
     style={
       Object {
-        "margin": ".5rem",
+        "margin": "8px",
       }
     }
   />,
@@ -5178,7 +5178,7 @@ exports[`Storyshots Components/Card Loading Custom 1`] = `
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "width": "100%",
         }
       }
@@ -5191,7 +5191,7 @@ exports[`Storyshots Components/Card Loading Custom 1`] = `
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "width": "100%",
         }
       }
@@ -5204,7 +5204,7 @@ exports[`Storyshots Components/Card Loading Custom 1`] = `
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "width": "100%",
         }
       }
@@ -5223,7 +5223,7 @@ exports[`Storyshots Components/Card Loading Custom 1`] = `
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "width": "100%",
         }
       }
@@ -5236,7 +5236,7 @@ exports[`Storyshots Components/Card Loading Custom 1`] = `
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "width": "100%",
         }
       }
@@ -5249,7 +5249,7 @@ exports[`Storyshots Components/Card Loading Custom 1`] = `
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "width": "calc(100% * 0.5)",
         }
       }
@@ -5274,7 +5274,7 @@ exports[`Storyshots Components/Card Loading Default 1`] = `
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 24,
           "width": "33%",
         }
@@ -5297,7 +5297,7 @@ exports[`Storyshots Components/Card Loading Default 1`] = `
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": "100%",
           }
         }
@@ -5310,7 +5310,7 @@ exports[`Storyshots Components/Card Loading Default 1`] = `
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": "100%",
           }
         }
@@ -5323,7 +5323,7 @@ exports[`Storyshots Components/Card Loading Default 1`] = `
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": "100%",
           }
         }
@@ -5349,7 +5349,7 @@ exports[`Storyshots Components/Card Loading Paragraph Count 1`] = `
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 24,
           "width": "33%",
         }
@@ -5372,7 +5372,7 @@ exports[`Storyshots Components/Card Loading Paragraph Count 1`] = `
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": "100%",
           }
         }
@@ -5385,7 +5385,7 @@ exports[`Storyshots Components/Card Loading Paragraph Count 1`] = `
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": "100%",
           }
         }
@@ -5398,7 +5398,7 @@ exports[`Storyshots Components/Card Loading Paragraph Count 1`] = `
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": "100%",
           }
         }
@@ -5420,7 +5420,7 @@ exports[`Storyshots Components/Card Loading Paragraph Count 1`] = `
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": "100%",
           }
         }
@@ -5433,7 +5433,7 @@ exports[`Storyshots Components/Card Loading Paragraph Count 1`] = `
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": "100%",
           }
         }
@@ -5446,7 +5446,7 @@ exports[`Storyshots Components/Card Loading Paragraph Count 1`] = `
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": "100%",
           }
         }
@@ -5560,7 +5560,7 @@ exports[`Storyshots Components/CheckboxButton Indeterminate 1`] = `
     Object {
       "display": "flex",
       "flexDirection": "column",
-      "rowGap": "1rem",
+      "rowGap": "16px",
     }
   }
 >
@@ -9784,7 +9784,7 @@ exports[`Storyshots Components/LoadingSkeleton Default 1`] = `
     style={
       Object {
         "--base-color": "#E1E1E1",
-        "borderRadius": "0.25rem",
+        "borderRadius": "4px",
         "width": "100%",
       }
     }
@@ -9805,7 +9805,7 @@ exports[`Storyshots Components/LoadingSkeleton Height And Width 1`] = `
     style={
       Object {
         "--base-color": "#E1E1E1",
-        "borderRadius": "0.25rem",
+        "borderRadius": "4px",
         "height": "44px",
         "width": "200px",
       }
@@ -9827,7 +9827,7 @@ exports[`Storyshots Components/LoadingSkeleton Multi Line 1`] = `
     style={
       Object {
         "--base-color": "#E1E1E1",
-        "borderRadius": "0.25rem",
+        "borderRadius": "4px",
         "width": "100%",
       }
     }
@@ -9840,7 +9840,7 @@ exports[`Storyshots Components/LoadingSkeleton Multi Line 1`] = `
     style={
       Object {
         "--base-color": "#E1E1E1",
-        "borderRadius": "0.25rem",
+        "borderRadius": "4px",
         "width": "100%",
       }
     }
@@ -9853,7 +9853,7 @@ exports[`Storyshots Components/LoadingSkeleton Multi Line 1`] = `
     style={
       Object {
         "--base-color": "#E1E1E1",
-        "borderRadius": "0.25rem",
+        "borderRadius": "4px",
         "width": "100%",
       }
     }
@@ -10600,7 +10600,7 @@ exports[`Storyshots Components/Pill Default 1`] = `
   <h4
     style={
       Object {
-        "marginBottom": "2rem",
+        "marginBottom": "32px",
       }
     }
   >
@@ -10614,8 +10614,8 @@ exports[`Storyshots Components/Pill Default 1`] = `
   <h4
     style={
       Object {
-        "marginBottom": "2rem",
-        "marginTop": "2rem",
+        "marginBottom": "32px",
+        "marginTop": "32px",
       }
     }
   >
@@ -11038,7 +11038,7 @@ Array [
           style={
             Object {
               "--base-color": "#E1E1E1",
-              "borderRadius": "0.25rem",
+              "borderRadius": "4px",
               "width": "100%",
             }
           }
@@ -11051,7 +11051,7 @@ Array [
           style={
             Object {
               "--base-color": "#E1E1E1",
-              "borderRadius": "0.25rem",
+              "borderRadius": "4px",
               "width": "100%",
             }
           }
@@ -11101,7 +11101,7 @@ Array [
           style={
             Object {
               "--base-color": "#E1E1E1",
-              "borderRadius": "0.25rem",
+              "borderRadius": "4px",
               "width": "",
             }
           }
@@ -11114,7 +11114,7 @@ Array [
           style={
             Object {
               "--base-color": "#E1E1E1",
-              "borderRadius": "0.25rem",
+              "borderRadius": "4px",
               "width": "",
             }
           }
@@ -11349,7 +11349,7 @@ Array [
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 40,
           "width": "100%",
         }
@@ -11368,7 +11368,7 @@ Array [
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 70,
           "width": "100%",
         }
@@ -11392,7 +11392,7 @@ Array [
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 40,
           "width": "100%",
         }
@@ -11411,7 +11411,7 @@ Array [
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 70,
           "width": "100%",
         }
@@ -11435,7 +11435,7 @@ Array [
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 40,
           "width": "100%",
         }
@@ -11454,7 +11454,7 @@ Array [
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 70,
           "width": "100%",
         }
@@ -11478,7 +11478,7 @@ Array [
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 40,
           "width": "100%",
         }
@@ -11497,7 +11497,7 @@ Array [
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 70,
           "width": "100%",
         }
@@ -11521,7 +11521,7 @@ Array [
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 40,
           "width": "100%",
         }
@@ -11540,7 +11540,7 @@ Array [
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 70,
           "width": "100%",
         }
@@ -11564,7 +11564,7 @@ Array [
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 40,
           "width": "100%",
         }
@@ -11583,7 +11583,7 @@ Array [
       style={
         Object {
           "--base-color": "#E1E1E1",
-          "borderRadius": "0.25rem",
+          "borderRadius": "4px",
           "height": 70,
           "width": "100%",
         }
@@ -11621,7 +11621,7 @@ exports[`Storyshots Components/Selects/Async Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className="Select__control css-1d5d4h9-control"
+      className="Select__control css-1jyc18f-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -11743,7 +11743,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className="Select__control css-1d5d4h9-control"
+      className="Select__control css-1jyc18f-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -11910,7 +11910,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
             className="css-1f43avz-a11yText-A11yText"
           />
           <div
-            className="Select__control css-1d5d4h9-control"
+            className="Select__control css-1jyc18f-control"
             onMouseDown={[Function]}
             onTouchEnd={[Function]}
           >
@@ -12043,7 +12043,7 @@ exports[`Storyshots Components/Selects/Creatable Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className="Select__control css-1d5d4h9-control"
+      className="Select__control css-1jyc18f-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12165,7 +12165,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = 
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className="Select__control css-1d5d4h9-control"
+      className="Select__control css-1jyc18f-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12252,7 +12252,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Description 1`]
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className="Select__control css-1d5d4h9-control"
+      className="Select__control css-1jyc18f-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12339,7 +12339,7 @@ exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate C
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className="Select__control css-1d5d4h9-control"
+      className="Select__control css-1jyc18f-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12426,7 +12426,7 @@ exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className="Select__control css-1d5d4h9-control"
+      className="Select__control css-1jyc18f-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12513,7 +12513,7 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className="Select__control css-1d5d4h9-control"
+      className="Select__control css-1jyc18f-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12600,7 +12600,7 @@ exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className="Select__control css-1d5d4h9-control"
+      className="Select__control css-1jyc18f-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12698,7 +12698,7 @@ exports[`Storyshots Components/Selects/Single Loading 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className="Select__control Select__control--is-disabled css-1in6l7w-control"
+      className="Select__control Select__control--is-disabled css-ppezk3-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12785,7 +12785,7 @@ exports[`Storyshots Components/Selects/Single Multiple Select 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className="Select__control css-1d5d4h9-control"
+      className="Select__control css-1jyc18f-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -12872,7 +12872,7 @@ exports[`Storyshots Components/Selects/Single Searchable 1`] = `
       className="css-1f43avz-a11yText-A11yText"
     />
     <div
-      className="Select__control css-1d5d4h9-control"
+      className="Select__control css-1jyc18f-control"
       onMouseDown={[Function]}
       onTouchEnd={[Function]}
     >
@@ -13840,7 +13840,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -13858,7 +13858,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 100,
           }
         }
@@ -13876,7 +13876,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -13894,7 +13894,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -13912,7 +13912,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 100,
           }
         }
@@ -13946,7 +13946,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -13964,7 +13964,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 100,
           }
         }
@@ -13982,7 +13982,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14000,7 +14000,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14018,7 +14018,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 100,
           }
         }
@@ -14052,7 +14052,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -14070,7 +14070,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 100,
           }
         }
@@ -14088,7 +14088,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14106,7 +14106,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14124,7 +14124,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 100,
           }
         }
@@ -14158,7 +14158,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -14176,7 +14176,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 100,
           }
         }
@@ -14194,7 +14194,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14212,7 +14212,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14230,7 +14230,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 100,
           }
         }
@@ -14269,7 +14269,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -14287,7 +14287,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -14305,7 +14305,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -14323,7 +14323,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -14341,7 +14341,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14359,7 +14359,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14377,7 +14377,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14411,7 +14411,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -14429,7 +14429,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -14447,7 +14447,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -14465,7 +14465,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -14483,7 +14483,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14501,7 +14501,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14519,7 +14519,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14553,7 +14553,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -14571,7 +14571,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -14589,7 +14589,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -14607,7 +14607,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -14625,7 +14625,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14643,7 +14643,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14661,7 +14661,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14695,7 +14695,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -14713,7 +14713,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -14731,7 +14731,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -14749,7 +14749,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -14767,7 +14767,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14785,7 +14785,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14803,7 +14803,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14837,7 +14837,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -14855,7 +14855,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -14873,7 +14873,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -14891,7 +14891,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -14909,7 +14909,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14927,7 +14927,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14945,7 +14945,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -14979,7 +14979,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -14997,7 +14997,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -15015,7 +15015,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -15033,7 +15033,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -15051,7 +15051,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -15069,7 +15069,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -15087,7 +15087,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -15121,7 +15121,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -15139,7 +15139,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 75,
           }
         }
@@ -15157,7 +15157,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -15175,7 +15175,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 150,
           }
         }
@@ -15193,7 +15193,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -15211,7 +15211,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -15229,7 +15229,7 @@ Array [
         style={
           Object {
             "--base-color": "#E1E1E1",
-            "borderRadius": "0.25rem",
+            "borderRadius": "4px",
             "width": 250,
           }
         }
@@ -25751,7 +25751,7 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
   style={
     Object {
       "display": "flex",
-      "height": "20rem",
+      "height": "320px",
       "width": "100%",
     }
   }
@@ -25771,8 +25771,8 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -25800,8 +25800,8 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -25829,8 +25829,8 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -25858,8 +25858,8 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -25887,8 +25887,8 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -25916,8 +25916,8 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -25945,8 +25945,8 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -25974,8 +25974,8 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26003,8 +26003,8 @@ exports[`Storyshots Foundations/Color Palette Blue 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26025,7 +26025,7 @@ exports[`Storyshots Foundations/Color Palette Emerald 1`] = `
   style={
     Object {
       "display": "flex",
-      "height": "20rem",
+      "height": "320px",
       "width": "100%",
     }
   }
@@ -26045,8 +26045,8 @@ exports[`Storyshots Foundations/Color Palette Emerald 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26074,8 +26074,8 @@ exports[`Storyshots Foundations/Color Palette Emerald 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26103,8 +26103,8 @@ exports[`Storyshots Foundations/Color Palette Emerald 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26132,8 +26132,8 @@ exports[`Storyshots Foundations/Color Palette Emerald 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26161,8 +26161,8 @@ exports[`Storyshots Foundations/Color Palette Emerald 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26190,8 +26190,8 @@ exports[`Storyshots Foundations/Color Palette Emerald 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26219,8 +26219,8 @@ exports[`Storyshots Foundations/Color Palette Emerald 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26248,8 +26248,8 @@ exports[`Storyshots Foundations/Color Palette Emerald 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26277,8 +26277,8 @@ exports[`Storyshots Foundations/Color Palette Emerald 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26299,7 +26299,7 @@ exports[`Storyshots Foundations/Color Palette Gray 1`] = `
   style={
     Object {
       "display": "flex",
-      "height": "20rem",
+      "height": "320px",
       "width": "100%",
     }
   }
@@ -26319,8 +26319,8 @@ exports[`Storyshots Foundations/Color Palette Gray 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26348,8 +26348,8 @@ exports[`Storyshots Foundations/Color Palette Gray 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26377,8 +26377,8 @@ exports[`Storyshots Foundations/Color Palette Gray 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26406,8 +26406,8 @@ exports[`Storyshots Foundations/Color Palette Gray 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26435,8 +26435,8 @@ exports[`Storyshots Foundations/Color Palette Gray 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26464,8 +26464,8 @@ exports[`Storyshots Foundations/Color Palette Gray 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26493,8 +26493,8 @@ exports[`Storyshots Foundations/Color Palette Gray 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26522,8 +26522,8 @@ exports[`Storyshots Foundations/Color Palette Gray 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26551,8 +26551,8 @@ exports[`Storyshots Foundations/Color Palette Gray 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26573,7 +26573,7 @@ exports[`Storyshots Foundations/Color Palette Green 1`] = `
   style={
     Object {
       "display": "flex",
-      "height": "20rem",
+      "height": "320px",
       "width": "100%",
     }
   }
@@ -26593,8 +26593,8 @@ exports[`Storyshots Foundations/Color Palette Green 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26622,8 +26622,8 @@ exports[`Storyshots Foundations/Color Palette Green 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26651,8 +26651,8 @@ exports[`Storyshots Foundations/Color Palette Green 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26680,8 +26680,8 @@ exports[`Storyshots Foundations/Color Palette Green 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26709,8 +26709,8 @@ exports[`Storyshots Foundations/Color Palette Green 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26738,8 +26738,8 @@ exports[`Storyshots Foundations/Color Palette Green 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26767,8 +26767,8 @@ exports[`Storyshots Foundations/Color Palette Green 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26796,8 +26796,8 @@ exports[`Storyshots Foundations/Color Palette Green 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26825,8 +26825,8 @@ exports[`Storyshots Foundations/Color Palette Green 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26847,7 +26847,7 @@ exports[`Storyshots Foundations/Color Palette Navy 1`] = `
   style={
     Object {
       "display": "flex",
-      "height": "20rem",
+      "height": "320px",
       "width": "100%",
     }
   }
@@ -26867,8 +26867,8 @@ exports[`Storyshots Foundations/Color Palette Navy 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26896,8 +26896,8 @@ exports[`Storyshots Foundations/Color Palette Navy 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26925,8 +26925,8 @@ exports[`Storyshots Foundations/Color Palette Navy 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26954,8 +26954,8 @@ exports[`Storyshots Foundations/Color Palette Navy 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -26983,8 +26983,8 @@ exports[`Storyshots Foundations/Color Palette Navy 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27012,8 +27012,8 @@ exports[`Storyshots Foundations/Color Palette Navy 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27041,8 +27041,8 @@ exports[`Storyshots Foundations/Color Palette Navy 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27070,8 +27070,8 @@ exports[`Storyshots Foundations/Color Palette Navy 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27099,8 +27099,8 @@ exports[`Storyshots Foundations/Color Palette Navy 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27121,7 +27121,7 @@ exports[`Storyshots Foundations/Color Palette Neutral 1`] = `
   style={
     Object {
       "display": "flex",
-      "height": "20rem",
+      "height": "320px",
       "width": "100%",
     }
   }
@@ -27141,8 +27141,8 @@ exports[`Storyshots Foundations/Color Palette Neutral 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27170,8 +27170,8 @@ exports[`Storyshots Foundations/Color Palette Neutral 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27199,8 +27199,8 @@ exports[`Storyshots Foundations/Color Palette Neutral 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27228,8 +27228,8 @@ exports[`Storyshots Foundations/Color Palette Neutral 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27257,8 +27257,8 @@ exports[`Storyshots Foundations/Color Palette Neutral 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27286,8 +27286,8 @@ exports[`Storyshots Foundations/Color Palette Neutral 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27315,8 +27315,8 @@ exports[`Storyshots Foundations/Color Palette Neutral 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27344,8 +27344,8 @@ exports[`Storyshots Foundations/Color Palette Neutral 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27373,8 +27373,8 @@ exports[`Storyshots Foundations/Color Palette Neutral 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27395,7 +27395,7 @@ exports[`Storyshots Foundations/Color Palette Orange 1`] = `
   style={
     Object {
       "display": "flex",
-      "height": "20rem",
+      "height": "320px",
       "width": "100%",
     }
   }
@@ -27415,8 +27415,8 @@ exports[`Storyshots Foundations/Color Palette Orange 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27444,8 +27444,8 @@ exports[`Storyshots Foundations/Color Palette Orange 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27473,8 +27473,8 @@ exports[`Storyshots Foundations/Color Palette Orange 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27502,8 +27502,8 @@ exports[`Storyshots Foundations/Color Palette Orange 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27531,8 +27531,8 @@ exports[`Storyshots Foundations/Color Palette Orange 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27560,8 +27560,8 @@ exports[`Storyshots Foundations/Color Palette Orange 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27589,8 +27589,8 @@ exports[`Storyshots Foundations/Color Palette Orange 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27618,8 +27618,8 @@ exports[`Storyshots Foundations/Color Palette Orange 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27647,8 +27647,8 @@ exports[`Storyshots Foundations/Color Palette Orange 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27669,7 +27669,7 @@ exports[`Storyshots Foundations/Color Palette Red 1`] = `
   style={
     Object {
       "display": "flex",
-      "height": "20rem",
+      "height": "320px",
       "width": "100%",
     }
   }
@@ -27689,8 +27689,8 @@ exports[`Storyshots Foundations/Color Palette Red 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27718,8 +27718,8 @@ exports[`Storyshots Foundations/Color Palette Red 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27747,8 +27747,8 @@ exports[`Storyshots Foundations/Color Palette Red 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27776,8 +27776,8 @@ exports[`Storyshots Foundations/Color Palette Red 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27805,8 +27805,8 @@ exports[`Storyshots Foundations/Color Palette Red 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27834,8 +27834,8 @@ exports[`Storyshots Foundations/Color Palette Red 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27863,8 +27863,8 @@ exports[`Storyshots Foundations/Color Palette Red 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27892,8 +27892,8 @@ exports[`Storyshots Foundations/Color Palette Red 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27921,8 +27921,8 @@ exports[`Storyshots Foundations/Color Palette Red 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27943,7 +27943,7 @@ exports[`Storyshots Foundations/Color Palette Sand 1`] = `
   style={
     Object {
       "display": "flex",
-      "height": "20rem",
+      "height": "320px",
       "width": "100%",
     }
   }
@@ -27963,8 +27963,8 @@ exports[`Storyshots Foundations/Color Palette Sand 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -27992,8 +27992,8 @@ exports[`Storyshots Foundations/Color Palette Sand 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28021,8 +28021,8 @@ exports[`Storyshots Foundations/Color Palette Sand 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28050,8 +28050,8 @@ exports[`Storyshots Foundations/Color Palette Sand 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28079,8 +28079,8 @@ exports[`Storyshots Foundations/Color Palette Sand 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28108,8 +28108,8 @@ exports[`Storyshots Foundations/Color Palette Sand 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28137,8 +28137,8 @@ exports[`Storyshots Foundations/Color Palette Sand 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28166,8 +28166,8 @@ exports[`Storyshots Foundations/Color Palette Sand 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28195,8 +28195,8 @@ exports[`Storyshots Foundations/Color Palette Sand 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28217,7 +28217,7 @@ exports[`Storyshots Foundations/Color Palette Teal 1`] = `
   style={
     Object {
       "display": "flex",
-      "height": "20rem",
+      "height": "320px",
       "width": "100%",
     }
   }
@@ -28237,8 +28237,8 @@ exports[`Storyshots Foundations/Color Palette Teal 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28266,8 +28266,8 @@ exports[`Storyshots Foundations/Color Palette Teal 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28295,8 +28295,8 @@ exports[`Storyshots Foundations/Color Palette Teal 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28324,8 +28324,8 @@ exports[`Storyshots Foundations/Color Palette Teal 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28353,8 +28353,8 @@ exports[`Storyshots Foundations/Color Palette Teal 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28382,8 +28382,8 @@ exports[`Storyshots Foundations/Color Palette Teal 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28411,8 +28411,8 @@ exports[`Storyshots Foundations/Color Palette Teal 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28440,8 +28440,8 @@ exports[`Storyshots Foundations/Color Palette Teal 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28469,8 +28469,8 @@ exports[`Storyshots Foundations/Color Palette Teal 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28491,7 +28491,7 @@ exports[`Storyshots Foundations/Color Palette Yellow 1`] = `
   style={
     Object {
       "display": "flex",
-      "height": "20rem",
+      "height": "320px",
       "width": "100%",
     }
   }
@@ -28511,8 +28511,8 @@ exports[`Storyshots Foundations/Color Palette Yellow 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28540,8 +28540,8 @@ exports[`Storyshots Foundations/Color Palette Yellow 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28569,8 +28569,8 @@ exports[`Storyshots Foundations/Color Palette Yellow 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28598,8 +28598,8 @@ exports[`Storyshots Foundations/Color Palette Yellow 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28627,8 +28627,8 @@ exports[`Storyshots Foundations/Color Palette Yellow 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28656,8 +28656,8 @@ exports[`Storyshots Foundations/Color Palette Yellow 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28685,8 +28685,8 @@ exports[`Storyshots Foundations/Color Palette Yellow 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28714,8 +28714,8 @@ exports[`Storyshots Foundations/Color Palette Yellow 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28743,8 +28743,8 @@ exports[`Storyshots Foundations/Color Palette Yellow 1`] = `
           "backgroundColor": "#FFF",
           "color": "#000",
           "fontSize": "0.75rem",
-          "margin": "1rem",
-          "padding": "0.25rem",
+          "margin": "16px",
+          "padding": "4px",
           "textAlign": "center",
         }
       }
@@ -28780,12 +28780,6 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         className="TableCell TableCell__header"
         style={null}
       >
-        rem
-      </th>
-      <th
-        className="TableCell TableCell__header"
-        style={null}
-      >
         px
       </th>
       <th
@@ -28814,12 +28808,6 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         className="TableCell"
         style={Object {}}
       >
-        0.25
-      </td>
-      <td
-        className="TableCell"
-        style={Object {}}
-      >
         4
       </td>
       <td
@@ -28830,8 +28818,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
           style={
             Object {
               "backgroundColor": "#725CCC",
-              "height": "0.25rem",
-              "width": "0.25rem",
+              "height": "4px",
+              "width": "4px",
             }
           }
         />
@@ -28852,12 +28840,6 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         className="TableCell"
         style={Object {}}
       >
-        0.5
-      </td>
-      <td
-        className="TableCell"
-        style={Object {}}
-      >
         8
       </td>
       <td
@@ -28868,8 +28850,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
           style={
             Object {
               "backgroundColor": "#725CCC",
-              "height": "0.5rem",
-              "width": "0.5rem",
+              "height": "8px",
+              "width": "8px",
             }
           }
         />
@@ -28890,12 +28872,6 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         className="TableCell"
         style={Object {}}
       >
-        0.75
-      </td>
-      <td
-        className="TableCell"
-        style={Object {}}
-      >
         12
       </td>
       <td
@@ -28906,8 +28882,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
           style={
             Object {
               "backgroundColor": "#725CCC",
-              "height": "0.75rem",
-              "width": "0.75rem",
+              "height": "12px",
+              "width": "12px",
             }
           }
         />
@@ -28928,12 +28904,6 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         className="TableCell"
         style={Object {}}
       >
-        1
-      </td>
-      <td
-        className="TableCell"
-        style={Object {}}
-      >
         16
       </td>
       <td
@@ -28944,8 +28914,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
           style={
             Object {
               "backgroundColor": "#725CCC",
-              "height": "1rem",
-              "width": "1rem",
+              "height": "16px",
+              "width": "16px",
             }
           }
         />
@@ -28966,12 +28936,6 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         className="TableCell"
         style={Object {}}
       >
-        1.5
-      </td>
-      <td
-        className="TableCell"
-        style={Object {}}
-      >
         24
       </td>
       <td
@@ -28982,8 +28946,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
           style={
             Object {
               "backgroundColor": "#725CCC",
-              "height": "1.5rem",
-              "width": "1.5rem",
+              "height": "24px",
+              "width": "24px",
             }
           }
         />
@@ -29004,12 +28968,6 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         className="TableCell"
         style={Object {}}
       >
-        2
-      </td>
-      <td
-        className="TableCell"
-        style={Object {}}
-      >
         32
       </td>
       <td
@@ -29020,8 +28978,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
           style={
             Object {
               "backgroundColor": "#725CCC",
-              "height": "2rem",
-              "width": "2rem",
+              "height": "32px",
+              "width": "32px",
             }
           }
         />
@@ -29042,12 +29000,6 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         className="TableCell"
         style={Object {}}
       >
-        3
-      </td>
-      <td
-        className="TableCell"
-        style={Object {}}
-      >
         48
       </td>
       <td
@@ -29058,8 +29010,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
           style={
             Object {
               "backgroundColor": "#725CCC",
-              "height": "3rem",
-              "width": "3rem",
+              "height": "48px",
+              "width": "48px",
             }
           }
         />
@@ -30988,7 +30940,7 @@ exports[`Storyshots Layouts/Main Page Example 1`] = `
       style={
         Object {
           "color": "#101010",
-          "padding": ".5rem",
+          "padding": "8px",
         }
       }
     >
@@ -30999,7 +30951,7 @@ exports[`Storyshots Layouts/Main Page Example 1`] = `
       style={
         Object {
           "color": "#101010",
-          "padding": ".5rem",
+          "padding": "8px",
         }
       }
     >
@@ -31010,7 +30962,7 @@ exports[`Storyshots Layouts/Main Page Example 1`] = `
       style={
         Object {
           "color": "#101010",
-          "padding": ".5rem",
+          "padding": "8px",
         }
       }
     >
@@ -31024,8 +30976,8 @@ exports[`Storyshots Layouts/Main Page Example 1`] = `
         "alignItems": "center",
         "backgroundColor": "#177863",
         "display": "flex",
-        "height": "4.5rem",
-        "padding": "1rem",
+        "height": "72px",
+        "padding": "16px",
         "width": "100%",
       }
     }

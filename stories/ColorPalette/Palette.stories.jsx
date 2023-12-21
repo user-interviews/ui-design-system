@@ -4,7 +4,7 @@ import { colors } from 'src/Styles';
 
 /* eslint-disable react/prop-types, react/no-array-index-key */
 const Palette = ({ color }) => (
-  <div style={{ display: 'flex', height: '20rem', width: '100%' }}>
+  <div style={{ display: 'flex', height: '320px', width: '100%' }}>
     {
       [...Array(9)].map((_, i) => {
         const colorNameKey = `UX_${color}_${i + 1}00`;
@@ -23,8 +23,8 @@ const Palette = ({ color }) => (
                 backgroundColor: '#FFF',
                 color: '#000',
                 fontSize: '0.75rem',
-                margin: '1rem',
-                padding: '0.25rem',
+                margin: '16px',
+                padding: '4px',
                 textAlign: 'center',
               }}
             >

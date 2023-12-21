@@ -23,21 +23,21 @@ export interface FlexProps {
   flexShrink?: number;
   flexWrap?: 'wrap' | 'no-wrap' | 'wrap-reverse';
   /**
-    rem or px
+    px
   */
   height?: string;
   justifyContent?: 'flex-start' | 'flex-end' | 'space-between' | 'space-around' | 'center' | 'initial' | 'inherit';
   justifySelf?: 'stretch' | 'center' | 'start' | 'end';
   /**
-    rem or px
+    px
   */
   maxHeight?: string;
   /**
-    rem or px
+    px
   */
   maxWidth?: string;
   /**
-    rem or px
+    px
   */
   width?: string;
 }
