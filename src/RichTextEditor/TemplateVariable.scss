@@ -1,0 +1,29 @@
+@import '../../scss/theme';
+
+.RichTextEditor__TemplateVariables__Items {
+  border: 1px solid $synth-div-stroke-neutral;
+  background-color: $ux-white;
+  border-radius: $ux-border-radius;
+  padding: $ux-spacing-20 0;
+}
+
+.RichTextEditor__TemplateVariables__Item {
+  @include synth-font-type-30;
+  background: $ux-white;
+  text-align: left;
+  width: 100%;
+  border: 0;
+  outline: 0;
+  color: $ux-gray-900;
+  padding: $ux-spacing-10 $ux-spacing-40;
+}
+
+.RichTextEditor__TemplateVariables__Item:active, 
+.RichTextEditor__TemplateVariables__Item:hover,
+.RichTextEditor__TemplateVariables__Item:focus,
+.RichTextEditor__TemplateVariables__Item--selected {
+  &:not(.RichTextEditor__TemplateVariables__Item--no-results) {
+    background-color: $synth-hover-state;
+    text-decoration: none;
+  }
+}

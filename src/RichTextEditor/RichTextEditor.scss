@@ -52,3 +52,7 @@
     pointer-events: none;
   }
 }
+
+.RichTextEditor__field--without-menu-bar .ProseMirror {
+  border-radius: $ux-border-radius;
+}
