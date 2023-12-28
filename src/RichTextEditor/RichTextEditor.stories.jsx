@@ -56,7 +56,7 @@ export const OneLine = () => (
 export const TemplateVariables = () => (
   <RichTextEditor
     id="text-editor"
-    placeholder="Enter / to view available variables "
+    placeholder="Enter / to view available variables"
     templateVariables={['howdy', 'ho']}
     onChange={() => null}
   />
