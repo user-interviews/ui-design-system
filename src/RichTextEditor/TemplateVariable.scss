@@ -22,6 +22,8 @@
 .RichTextEditor__TemplateVariables__Item:hover,
 .RichTextEditor__TemplateVariables__Item:focus,
 .RichTextEditor__TemplateVariables__Item--selected {
-  background-color: $synth-hover-state;
-  text-decoration: none;
+  &:not(.RichTextEditor__TemplateVariables__Item--no-results) {
+    background-color: $synth-hover-state;
+    text-decoration: none;
+  }
 }

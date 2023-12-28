@@ -250,7 +250,7 @@ export const TemplateVariableList = forwardRef((props: TemplateVariableListProps
             {item}
           </button>
         )) :
-        <div className="RichTextEditor__TemplateVariables__Item">No variables found</div>}
+        <div className="RichTextEditor__TemplateVariables__Item RichTextEditor__TemplateVariables__Item--no-results">No variables found</div>}
     </div>
   );
 });
