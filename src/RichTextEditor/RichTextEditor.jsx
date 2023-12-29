@@ -59,6 +59,7 @@ const RichTextEditor = ({
   templateVariables,
 }) => {
   const oneLineExtension = isOneLine ? [OneLineLimit] : [];
+  const hasTemplateVariables = templateVariables.length > 0;
 
   const requiredExtensions = [
     Document,
@@ -75,7 +76,7 @@ const RichTextEditor = ({
     }),
   ];
 
-  const templateVariablesExtension = templateVariables.length > 0 ?
+  const templateVariablesExtension = hasTemplateVariables ?
     [TemplateVariable.configure({
       HTMLAttributes: {
         class: 'RichTextEditor__TemplateVariable',
@@ -132,6 +133,19 @@ const RichTextEditor = ({
 
       if (allowedTags) {
         options.allowedTags = allowedTags;
+      }
+
+      // When using template variables, we need to whitelist some specific attributes so that
+      // the editor can re-initialize correctly from db state
+      if (hasTemplateVariables) {
+        options.allowedAttributes = {
+          ...(options.allowedAttributes || {}),
+          span: ['class', 'data-id', 'data-type'],
+        };
+
+        if (options.allowedTags && !options.allowedTags.includes('span')) {
+          options.allowedTags.push('span');
+        }
       }
 
       const sanitizedHtml = sanitizeHtml(html, options);
