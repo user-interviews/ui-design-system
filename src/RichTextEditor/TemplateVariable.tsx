@@ -7,7 +7,7 @@ import React, {
   useState,
 } from 'react';
 import { mergeAttributes, Node } from '@tiptap/core';
-import { DOMOutputSpec, Node as ProseMirrorNode } from '@tiptap/pm/model';
+import { Node as ProseMirrorNode } from '@tiptap/pm/model';
 import { PluginKey } from '@tiptap/pm/state';
 import Suggestion, { SuggestionOptions } from '@tiptap/suggestion';
 import { ReactRenderer } from '@tiptap/react';
@@ -15,10 +15,8 @@ import { ReactRenderer } from '@tiptap/react';
 import './TemplateVariable.scss';
 
 export type TemplateVariableOptions = {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   HTMLAttributes: Record<string, any>;
-  renderText: (props: { options: TemplateVariableOptions; node: ProseMirrorNode }) => string;
-  renderHTML: (props: { options: TemplateVariableOptions; node: ProseMirrorNode }) => DOMOutputSpec;
+  renderLabel: (props: { options: TemplateVariableOptions; node: ProseMirrorNode }) => string;
   suggestion: Omit<SuggestionOptions, 'editor'>;
 }
 
@@ -30,15 +28,8 @@ export const TemplateVariable = Node.create<TemplateVariableOptions>({
   addOptions() {
     return {
       HTMLAttributes: {},
-      renderText({ node }) {
+      renderLabel({ node }) {
         return `{{ ${node.attrs.label ?? node.attrs.id} }}`;
-      },
-      renderHTML({ node }) {
-        return [
-          'span',
-          this.HTMLAttributes,
-          `{{ ${node.attrs.label ?? node.attrs.id} }}`,
-        ];
       },
       suggestion: {
         char: '/',
@@ -127,23 +118,18 @@ export const TemplateVariable = Node.create<TemplateVariableOptions>({
   },
 
   renderHTML({ node, HTMLAttributes }) {
-    const html = this.options.renderHTML({
-      options: this.options,
-      node,
-    });
-
-    if (typeof html === 'string') {
-      return [
-        'span',
-        mergeAttributes({ 'data-type': this.name }, this.options.HTMLAttributes, HTMLAttributes),
-        html,
-      ];
-    }
-    return html;
+    return [
+      'span',
+      mergeAttributes({ 'data-type': this.name }, this.options.HTMLAttributes, HTMLAttributes),
+      this.options.renderLabel({
+        options: this.options,
+        node,
+      }),
+    ];
   },
 
   renderText({ node }) {
-    return this.options.renderText({
+    return this.options.renderLabel({
       options: this.options,
       node,
     });
