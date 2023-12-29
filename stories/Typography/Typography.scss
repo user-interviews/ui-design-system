@@ -4,8 +4,8 @@
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem;
-  min-height: 13.5rem;
+  margin: 16px;
+  min-height: 216px;
 
   ul {
     list-style: none;
@@ -16,7 +16,7 @@
   flex: 0 0 62.5%;
   max-width: 66.7%;
   padding-right: 15%;
-  padding: 1rem;
+  padding: 16px;
   width: 66.7%;
 }
 
@@ -25,11 +25,11 @@
   display: block;
   flex: 0 0 37.5%;
   max-width: 33.3%;
-  padding: 1rem 1.5rem;
+  padding: 16px 24px;
   width: 33.3%;
 
   li {
-    min-height: 1.5rem;
+    min-height: 24px;
   }
 }
 

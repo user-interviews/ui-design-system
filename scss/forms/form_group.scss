@@ -7,20 +7,19 @@
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  margin: 0.5rem 0;
+  margin: 8px 0;
 
   &--bordered {
     border: 1px solid $ux-gray-400;
     border-radius: $ux-border-radius;
-    padding: 1rem;
+    padding: 16px;
 
     .InputLabel {
       @include synth-font-type-30--bold;
-      margin-bottom: 0.5rem;
+      margin-bottom: 8px;
 
       &__helper-text {
         @include synth-font-type-30;
-        font-weight: 100;
         color: $ux-gray-900;
       }
     }
@@ -42,13 +41,13 @@
     flex-direction: row;
 
     .InputLabel {
-      margin-right: 1rem;
-      margin-bottom: 0.5rem;
+      margin-right: 16px;
+      margin-bottom: 8px;
     }
 
     .FormControlLabel {
       white-space: nowrap;
-      margin-right: 1rem;
+      margin-right: 16px;
     }
 
     .FormControlLabel--active {
@@ -59,7 +58,7 @@
   &__helper-text {
     @include synth-font-type-20;
     color: $ux-gray-900;
-    margin: 0 0 0.75rem;
+    margin: 0 0 12px;
 
     &--pre {
       white-space: pre-wrap;
@@ -69,7 +68,7 @@
   &__invalid-feedback {
     @include synth-font-type-20--medium;
     color: $ux-red;
-    padding: .375rem 0;
+    padding: 6px 0;
     margin: 0;
 
     &__list {
@@ -79,7 +78,7 @@
 
   .form-control {
     @include synth-font-type-30;
-    height: 2.25rem;
+    height: 36px;
   }
 
   textarea.form-control {

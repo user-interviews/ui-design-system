@@ -22,14 +22,14 @@ const styles = {
   },
   navLink: {
     color: '#101010',
-    padding: '.5rem',
+    padding: '8px',
   },
   header: {
     alignItems: 'center',
     backgroundColor: '#177863',
     display: 'flex',
-    height: '4.5rem',
-    padding: '1rem',
+    height: '72px',
+    padding: '16px',
     width: '100%',
   },
   h1: {

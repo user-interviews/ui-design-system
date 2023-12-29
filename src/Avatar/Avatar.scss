@@ -8,13 +8,13 @@
 
   &__alert {
      background-color: $ux-red-400;
-     border: 0.125rem solid $ux-white;
+     border: 2px solid $ux-white;
      border-radius: 50%;
-     height: 0.75rem;
+     height: 12px;
      position: absolute;
      top: 0;
      right: 0;
-     width: 0.75rem;
+     width: 12px;
   }
 
   &__circle {
@@ -57,8 +57,8 @@
         @include synth-font-type-70--bold;
       }
       &__alert {
-        height: 1.36rem;
-        width: 1.36rem;
+        height: 22px;
+        width: 22px;
       }
     }
   }

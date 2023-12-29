@@ -5,7 +5,7 @@ export const SELECT_SIZES = { SMALL: 'small' };
 
 export const SIZE_SMALL_HEIGHT = {
   height: 'auto',
-  minHeight: '2.25rem',
+  minHeight: '36px',
 };
 
 const getHeightProps = (size) => {
@@ -53,7 +53,7 @@ const defaultStyles = ({ menuWidth, size }) => ({
       ...styles,
       backgroundColor: systemColors.UX_BLUE_100,
       color: systemColors.UX_BLUE_700,
-      borderRadius: '.25rem',
+      borderRadius: '4px',
     }),
     menu: (styles) => ({
       ...styles,
@@ -65,7 +65,7 @@ const defaultStyles = ({ menuWidth, size }) => ({
       fontSize: '0.875rem',
       fontWeight: 400,
       lineHeight: '1.25rem',
-      paddingLeft: '.5rem',
+      paddingLeft: '8px',
     }),
     multiValueRemove: (styles) => ({
       ...styles,

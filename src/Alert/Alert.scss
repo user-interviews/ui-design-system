@@ -30,7 +30,7 @@
 .Synthesized {
   .Alert {
     display: grid;
-    grid-template-columns: 2rem auto auto 2rem;
+    grid-template-columns: 32px auto auto 32px;
     grid-template-rows: auto auto;
     grid-template-areas:
       'icon content content close'
@@ -80,7 +80,7 @@
   
     &__title {
       @include synth-font-type-30--bold;
-      margin-bottom: 0.25rem;
+      margin-bottom: 4px;
     }
   
     &__message {
@@ -90,7 +90,7 @@
   }
   
   .Alert-success {
-    border-left: 0.5rem solid $synth-accent-green;
+    border-left: 8px solid $synth-accent-green;
   
     .close {
       @include close-action;
@@ -110,7 +110,7 @@
   }
   
   .Alert-info {
-    border-left: 0.5rem solid $synth-hyperlink-color;
+    border-left: 8px solid $synth-hyperlink-color;
   
     .close {
       @include close-action;
@@ -130,7 +130,7 @@
   }
   
   .Alert-announcement {
-    border-left: 0.5rem solid $synth-hyperlink-color;
+    border-left: 8px solid $synth-hyperlink-color;
   
     .close {
       @include close-action;
@@ -158,7 +158,7 @@
   }
   
   .Alert-warning {
-    border-left: 0.5rem solid $synth-warning-amber-alternate;
+    border-left: 8px solid $synth-warning-amber-alternate;
   
     .close {
       @include close-action;
@@ -174,7 +174,7 @@
   }
   
   .Alert-error {
-    border-left: 0.5rem solid $ux-red-400;
+    border-left: 8px solid $ux-red-400;
   
     .close {
       @include close-action;
@@ -192,7 +192,7 @@
 
 .Alert {
   display: grid;
-  grid-template-columns: 2rem auto auto 2rem;
+  grid-template-columns: 32px auto auto 32px;
   grid-template-rows: auto auto;
   grid-template-areas:
     'icon content content close'
@@ -241,7 +241,7 @@
 
   &__title {
     @include synth-font-type-30--bold;
-    margin-bottom: 0.25rem;
+    margin-bottom: 4px;
   }
 
   &__message {
@@ -253,7 +253,7 @@
 .Alert-success {
   background-color: $ux-green-100;
   color: $ux-green-800;
-  border-left: 0.5rem solid $ux-green-400;
+  border-left: 8px solid $ux-green-400;
 
   .close {
     @include close-action;
@@ -275,7 +275,7 @@
 .Alert-info {
   background-color: $ux-blue-100;
   color: $ux-blue-800;
-  border-left: 0.5rem solid $ux-blue-300;
+  border-left: 8px solid $ux-blue-300;
 
   .close {
     @include close-action($ux-blue-600, $ux-blue-800)
@@ -297,7 +297,7 @@
 .Alert-announcement {
   background-color: $ux-blue-100;
   color: $ux-blue-700;
-  border-left: 0.5rem solid $ux-blue-300;
+  border-left: 8px solid $ux-blue-300;
 
   .close {
     @include close-action;
@@ -339,7 +339,7 @@
 .Alert-warning {
   background-color: $ux-yellow-100;
   color: $ux-yellow-900;
-  border-left: 0.5rem solid $ux-yellow-600;
+  border-left: 8px solid $ux-yellow-600;
 
   .close {
     @include close-action;
@@ -357,7 +357,7 @@
 .Alert-error {
   background-color: $ux-red-100;
   color: $ux-red-800;
-  border-left: 0.5rem solid $ux-red-400;
+  border-left: 8px solid $ux-red-400;
 
   .close {
     @include close-action;

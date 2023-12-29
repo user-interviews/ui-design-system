@@ -24,6 +24,7 @@ import Text from '@tiptap/extension-text';
 import sanitizeHtml from 'sanitize-html';
 
 import { LoadingSkeleton } from 'src/LoadingSkeleton';
+import { TemplateVariable, buildSuggestions } from './TemplateVariable';
 
 import RichTextEditorMenuBar from './RichTextEditorMenuBar';
 
@@ -55,8 +56,10 @@ const RichTextEditor = ({
   isOneLine,
   onChange,
   placeholder,
+  templateVariables,
 }) => {
   const oneLineExtension = isOneLine ? [OneLineLimit] : [];
+  const hasTemplateVariables = templateVariables.length > 0;
 
   const requiredExtensions = [
     Document,
@@ -72,6 +75,14 @@ const RichTextEditor = ({
       limit: characterLimit,
     }),
   ];
+
+  const templateVariablesExtension = hasTemplateVariables ?
+    [TemplateVariable.configure({
+      HTMLAttributes: {
+        class: 'RichTextEditor__TemplateVariable',
+      },
+      suggestion: buildSuggestions(templateVariables),
+    })] : [];
 
   const optionalExtensions = [
     {
@@ -100,6 +111,7 @@ const RichTextEditor = ({
   const extensions = [
     ...oneLineExtension,
     ...requiredExtensions,
+    ...templateVariablesExtension,
     ...optionalExtensions,
   ];
 
@@ -123,6 +135,19 @@ const RichTextEditor = ({
         options.allowedTags = allowedTags;
       }
 
+      // When using template variables, we need to whitelist some specific attributes so that
+      // the editor can re-initialize correctly from db state
+      if (hasTemplateVariables) {
+        options.allowedAttributes = {
+          ...(options.allowedAttributes || {}),
+          span: ['class', 'data-id', 'data-type'],
+        };
+
+        if (options.allowedTags && !options.allowedTags.includes('span')) {
+          options.allowedTags.push('span');
+        }
+      }
+
       const sanitizedHtml = sanitizeHtml(html, options);
 
       onChange(sanitizedHtml);
@@ -135,15 +160,18 @@ const RichTextEditor = ({
         className="RichTextEditor"
         id={id}
       >
-        <RichTextEditorMenuBar
-          availableActions={availableActions}
-          editor={editor}
-        />
+        {availableActions.length > 0 && (
+          <RichTextEditorMenuBar
+            availableActions={availableActions}
+            editor={editor}
+          />
+        )}
         <EditorContent
           className={classNames(
             className,
             'RichTextEditor__field',
             { 'RichTextEditor__field--error': hasErrors },
+            { 'RichTextEditor__field--without-menu-bar': availableActions.length === 0 },
           )}
           editor={editor}
           role="textbox"
@@ -200,6 +228,7 @@ RichTextEditor.propTypes = {
   initialValue: propTypes.string,
   isOneLine: propTypes.bool,
   placeholder: propTypes.string,
+  templateVariables: propTypes.arrayOf(propTypes.string),
   /**
     Callback function to call with sanitized HTML when editor state changes
   */
@@ -217,6 +246,7 @@ RichTextEditor.defaultProps = {
   initialValue: undefined,
   isOneLine: false,
   placeholder: undefined,
+  templateVariables: [],
 };
 
 export default RichTextEditor;
