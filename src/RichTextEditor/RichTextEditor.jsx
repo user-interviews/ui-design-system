@@ -144,7 +144,7 @@ const RichTextEditor = ({
         };
 
         if (options.allowedTags && !options.allowedTags.includes('span')) {
-          options.allowedTags.push(['span']);
+          options.allowedTags.push('span');
         }
       }
 
