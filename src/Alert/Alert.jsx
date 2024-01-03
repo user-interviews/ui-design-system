@@ -52,7 +52,8 @@ const getAlertIcon = (type) => {
   }
 };
 
-const AUTO_DISMISS_TIMEOUT = 5000;
+const AUTO_DISMISS_TIMEOUT_SUCCESS = 3000;
+const AUTO_DISMISS_TIMEOUT_DEFAULT = 5000;
 
 const getAlertClassName = (type) => {
   if (!Object.values(MessageTypes).includes(type)) {
@@ -68,12 +69,14 @@ function Alert(props) {
   useEffect(() => {
     let timeout;
     if (autoDismiss) {
-      timeout = setTimeout(() => (onDismiss(id)), AUTO_DISMISS_TIMEOUT);
+      timeout = setTimeout(() => (onDismiss(id)),
+      props.type === MessageTypes.SUCCESS ?
+      AUTO_DISMISS_TIMEOUT_SUCCESS : AUTO_DISMISS_TIMEOUT_DEFAULT);
     }
     return () => {
       clearTimeout(timeout);
     };
-  }, [autoDismiss, onDismiss, id]);
+  }, [autoDismiss, onDismiss, id, props.type]);
 
   return (
     <div
