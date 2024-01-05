@@ -28844,7 +28844,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $synth-spacing-1
+          $
+          synth-spacing-1
         </code>
       </td>
       <td
@@ -28858,13 +28859,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "4px",
-              "width": "4px",
-            }
-          }
+          className="spacing-example synth-spacing-1"
         />
       </td>
     </tr>
@@ -28876,7 +28871,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $synth-spacing-2
+          $
+          synth-spacing-2
         </code>
       </td>
       <td
@@ -28890,13 +28886,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "8px",
-              "width": "8px",
-            }
-          }
+          className="spacing-example synth-spacing-2"
         />
       </td>
     </tr>
@@ -28908,7 +28898,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $synth-spacing-3
+          $
+          synth-spacing-3
         </code>
       </td>
       <td
@@ -28922,13 +28913,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "12px",
-              "width": "12px",
-            }
-          }
+          className="spacing-example synth-spacing-3"
         />
       </td>
     </tr>
@@ -28940,7 +28925,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $synth-spacing-4
+          $
+          synth-spacing-4
         </code>
       </td>
       <td
@@ -28954,13 +28940,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "16px",
-              "width": "16px",
-            }
-          }
+          className="spacing-example synth-spacing-4"
         />
       </td>
     </tr>
@@ -28972,7 +28952,35 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $synth-spacing-6
+          $
+          synth-spacing-5
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        20
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          className="spacing-example synth-spacing-5"
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $
+          synth-spacing-6
         </code>
       </td>
       <td
@@ -28986,13 +28994,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "24px",
-              "width": "24px",
-            }
-          }
+          className="spacing-example synth-spacing-6"
         />
       </td>
     </tr>
@@ -29004,7 +29006,35 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $synth-spacing-8
+          $
+          synth-spacing-7
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        28
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          className="spacing-example synth-spacing-7"
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $
+          synth-spacing-8
         </code>
       </td>
       <td
@@ -29018,13 +29048,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "32px",
-              "width": "32px",
-            }
-          }
+          className="spacing-example synth-spacing-8"
         />
       </td>
     </tr>
@@ -29036,7 +29060,89 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $ux-spacing-70
+          $
+          synth-spacing-9
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        36
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          className="spacing-example synth-spacing-9"
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $
+          synth-spacing-10
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        40
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          className="spacing-example synth-spacing-10"
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $
+          synth-spacing-11
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        44
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          className="spacing-example synth-spacing-11"
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $
+          synth-spacing-12
         </code>
       </td>
       <td
@@ -29050,13 +29156,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "48px",
-              "width": "48px",
-            }
-          }
+          className="spacing-example synth-spacing-12"
         />
       </td>
     </tr>
