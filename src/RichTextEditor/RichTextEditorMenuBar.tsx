@@ -4,7 +4,6 @@ import './RichTextEditorMenuBar.scss';
 
 import React from 'react';
 import * as propTypes from 'prop-types';
-import { IconButton } from '@user-interviews/ui-design-system'
 
 import classNames from 'classnames';
 
@@ -16,6 +15,7 @@ import {
   faListUl,
   faUnlink,
 } from '@fortawesome/pro-regular-svg-icons';
+import IconButton from '../IconButton';
 
 import { RichTextEditorActions, RichTextEditorAllActionsArray } from './richTextEditorActions';
 import { createActionHandlers } from './actionHandlers';

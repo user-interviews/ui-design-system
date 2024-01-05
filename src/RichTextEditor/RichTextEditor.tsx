@@ -26,7 +26,7 @@ import Text from '@tiptap/extension-text';
 
 import sanitizeHtml from 'sanitize-html';
 
-import { LoadingSkeleton } from 'src/LoadingSkeleton';
+import { LoadingSkeleton } from '../LoadingSkeleton';
 
 import RichTextEditorMenuBar from './RichTextEditorMenuBar';
 
@@ -71,6 +71,9 @@ export type RichTextEditorProps = {
   availableActions?: typeof RichTextEditorActions[keyof typeof RichTextEditorActions][];
   characterLimit?: number;
   className?: string;
+  /**
+   https://tiptap.dev/docs/editor/guide/custom-extensions
+  */
   extensions?: (Extension | TipTapNode | Mark)[];
   hasErrors?: boolean;
   id: string;
