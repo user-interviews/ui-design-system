@@ -11596,49 +11596,6 @@ Array [
 ]
 `;
 
-exports[`Storyshots Components/RichTextEditor Template Variables 1`] = `
-Array [
-  <span
-    aria-busy={true}
-    aria-live="polite"
-  >
-    <span
-      className="react-loading-skeleton LoadingSkeleton"
-      style={
-        Object {
-          "--base-color": "#E1E1E1",
-          "borderRadius": "4px",
-          "height": 40,
-          "width": "100%",
-        }
-      }
-    >
-      ‌
-    </span>
-    <br />
-  </span>,
-  <span
-    aria-busy={true}
-    aria-live="polite"
-  >
-    <span
-      className="react-loading-skeleton LoadingSkeleton"
-      style={
-        Object {
-          "--base-color": "#E1E1E1",
-          "borderRadius": "4px",
-          "height": 70,
-          "width": "100%",
-        }
-      }
-    >
-      ‌
-    </span>
-    <br />
-  </span>,
-]
-`;
-
 exports[`Storyshots Components/Selects/Async Default 1`] = `
 <div
   className="FormGroup"
