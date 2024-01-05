@@ -199,9 +199,6 @@ function RichTextEditor({
           )}
           editor={editor}
           role="textbox"
-          // TODO DS-1112
-          // onBlur={handleEditorContentBlur}
-          // eslint-disable-next-line react/jsx-props-no-spreading
           {...ariaAttributes}
         />
         {
