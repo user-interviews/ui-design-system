@@ -1,3 +1,4 @@
+// TODO: deprecate after swapping for synth spacing vars
 $ux-spacing-10: 4px;
 $ux-spacing-20: 8px;
 $ux-spacing-30: 12px;
@@ -5,3 +6,19 @@ $ux-spacing-40: 16px;
 $ux-spacing-50: 24px;
 $ux-spacing-60: 32px;
 $ux-spacing-70: 48px;
+
+$synth-spacing-base: 4px;
+
+$synth-spacing-1: $synth-spacing-base; // 4px
+$synth-spacing-2: $synth-spacing-base * 2; // 8px
+$synth-spacing-3: $synth-spacing-base * 3; // 12px
+$synth-spacing-4: $synth-spacing-base * 4; // 16px
+$synth-spacing-5: $synth-spacing-base * 5; // 20px
+$synth-spacing-6: $synth-spacing-base * 6; // 24px
+$synth-spacing-7: $synth-spacing-base * 7; // 28px
+$synth-spacing-8: $synth-spacing-base * 8; // 32px
+$synth-spacing-9: $synth-spacing-base * 9; // 36px
+$synth-spacing-10: $synth-spacing-base * 10; // 40px
+$synth-spacing-11: $synth-spacing-base * 11; // 44px
+$synth-spacing-12: $synth-spacing-base * 12; // 48px
+

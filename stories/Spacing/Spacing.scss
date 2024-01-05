@@ -1,0 +1,59 @@
+@import 'scss/colors';
+@import 'scss/spacing';
+
+.spacing-example {
+  background-color: $synth-accent-green;
+}
+
+@mixin spacing-example-square($spacing-token) {
+  height: $spacing-token;
+  width: $spacing-token;
+}
+
+.synth-spacing-1 {
+  @include spacing-example-square($synth-spacing-1);
+}
+
+.synth-spacing-2 {
+  @include spacing-example-square($synth-spacing-2);
+}
+
+.synth-spacing-3 {
+  @include spacing-example-square($synth-spacing-3);
+}
+
+.synth-spacing-4 {
+  @include spacing-example-square($synth-spacing-4);
+}
+
+.synth-spacing-5 {
+  @include spacing-example-square($synth-spacing-5);
+}
+
+.synth-spacing-6 {
+  @include spacing-example-square($synth-spacing-6);
+}
+
+.synth-spacing-7 {
+  @include spacing-example-square($synth-spacing-7);
+}
+
+.synth-spacing-8 {
+  @include spacing-example-square($synth-spacing-8);
+}
+
+.synth-spacing-9 {
+  @include spacing-example-square($synth-spacing-9);
+}
+
+.synth-spacing-10 {
+  @include spacing-example-square($synth-spacing-10);
+}
+
+.synth-spacing-11 {
+  @include spacing-example-square($synth-spacing-11);
+}
+
+.synth-spacing-12 {
+  @include spacing-example-square($synth-spacing-12);
+}

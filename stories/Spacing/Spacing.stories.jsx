@@ -1,21 +1,28 @@
 import React from 'react';
+import classNames from 'classnames';
 
 import {
  Table, TableBody, TableCell, TableHead, TableRow,
 } from 'src/Table';
-import { colors } from 'src/Styles';
+
+import './Spacing.scss';
 
 import mdx from './Spacing.mdx';
 
 /* eslint-disable object-curly-newline */
 const data = [
-  { id: 1, token: '$ux-spacing-10', px: '4' },
-  { id: 2, token: '$ux-spacing-20', px: '8' },
-  { id: 3, token: '$ux-spacing-30', px: '12' },
-  { id: 4, token: '$ux-spacing-40', px: '16' },
-  { id: 5, token: '$ux-spacing-50', px: '24' },
-  { id: 6, token: '$ux-spacing-60', px: '32' },
-  { id: 7, token: '$ux-spacing-70', px: '48' },
+  { id: 1, token: 'synth-spacing-1', px: '4' },
+  { id: 2, token: 'synth-spacing-2', px: '8' },
+  { id: 3, token: 'synth-spacing-3', px: '12' },
+  { id: 4, token: 'synth-spacing-4', px: '16' },
+  { id: 5, token: 'synth-spacing-5', px: '20' },
+  { id: 6, token: 'synth-spacing-6', px: '24' },
+  { id: 7, token: 'synth-spacing-7', px: '28' },
+  { id: 8, token: 'synth-spacing-8', px: '32' },
+  { id: 9, token: 'synth-spacing-9', px: '36' },
+  { id: 10, token: 'synth-spacing-10', px: '40' },
+  { id: 11, token: 'synth-spacing-11', px: '44' },
+  { id: 12, token: 'synth-spacing-12', px: '48' },
 ];
 
 export const Spacing = () => (
@@ -30,10 +37,10 @@ export const Spacing = () => (
     <TableBody>
       {data.map(((row) => (
         <TableRow key={row.id}>
-          <TableCell><code>{row.token}</code></TableCell>
+          <TableCell><code>${row.token}</code></TableCell>
           <TableCell>{row.px}</TableCell>
           <TableCell>
-            <div style={{ height: `${row.px}px`, width: `${row.px}px`, backgroundColor: colors.UX_PURPLE }} />
+            <div className={classNames('spacing-example', row.token)} />
           </TableCell>
         </TableRow>
       )))}
