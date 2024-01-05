@@ -1,11 +1,12 @@
+import type { Editor } from '@tiptap/core';
+
 import './RichTextEditorMenuBar.scss';
 
 import React from 'react';
 import * as propTypes from 'prop-types';
+import { IconButton } from '@user-interviews/ui-design-system'
 
 import classNames from 'classnames';
-
-import IconButton from 'src/IconButton';
 
 import {
   faBold,
@@ -19,10 +20,15 @@ import {
 import { RichTextEditorActions, RichTextEditorAllActionsArray } from './richTextEditorActions';
 import { createActionHandlers } from './actionHandlers';
 
-const RichTextEditorMenuBar = ({
+type RichTextEditorMenuBarProps = {
+  availableActions: typeof RichTextEditorActions[keyof typeof RichTextEditorActions][];
+  editor: Editor;
+}
+
+function RichTextEditorMenuBar({
   availableActions,
   editor,
-}) => {
+}: RichTextEditorMenuBarProps) {
   const actionHandlers = createActionHandlers(editor);
 
   const actions = [
@@ -96,11 +102,12 @@ const RichTextEditorMenuBar = ({
       }
     </div>
   );
-};
+}
 
 RichTextEditorMenuBar.propTypes = {
   availableActions: propTypes.arrayOf(propTypes.oneOf(RichTextEditorAllActionsArray)).isRequired,
   editor: propTypes.object.isRequired,
 };
 
+// eslint-disable-next-line import/no-default-export
 export default RichTextEditorMenuBar;

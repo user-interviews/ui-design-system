@@ -1,10 +1,10 @@
-import React from 'react';
 import { render, screen } from '@testing-library/react';
+import React from 'react';
 
-import RichTextEditor from './RichTextEditor';
+import RichTextEditor, { type RichTextEditorProps } from './RichTextEditor';
 
 describe('<RichTextEditor />', () => {
-  const Setup = (overrides = {}) => (
+  const Setup = (overrides: Omit<RichTextEditorProps, 'id' | 'onChange'> = {}) => (
     <RichTextEditor
       id="some-id"
       onChange={jest.fn()}
