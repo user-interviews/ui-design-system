@@ -7,8 +7,8 @@ $empty-state-margin-top-sm: 64px;
 $empty-state-margin-top-md: 96px;
 $empty-state-margin-top-lg: 200px;
 
-$empty-state-title-margin-bottom: $ux-spacing-40;
-$empty-state-subtitle-margin-bottom: $ux-spacing-40;
+$empty-state-title-margin-bottom: $synth-spacing-4;
+$empty-state-subtitle-margin-bottom: $synth-spacing-4;
 
 .EmptyState {
   display: flex;
@@ -41,7 +41,7 @@ $empty-state-subtitle-margin-bottom: $ux-spacing-40;
     display: flex;
     justify-content: center;
 
-    margin-bottom: $ux-spacing-40;
+    margin-bottom: $synth-spacing-4;
     max-height: $empty-state-max-image-height;
   }
 

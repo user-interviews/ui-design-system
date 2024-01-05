@@ -67,7 +67,7 @@
     z-index: $z-index-modal-backdrop;
 
     @media (max-width: 512px) {
-      padding: $ux-spacing-40;
+      padding: $synth-spacing-4;
     }
 
     &--after-open:not(&--before-close) {
