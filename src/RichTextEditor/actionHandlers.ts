@@ -4,7 +4,6 @@ export const createActionHandlers = (editor: Editor) => ({
   link: () => {
     // TODO: use DS components for link prompt
     const previousUrl = editor.getAttributes('link').href;
-    // eslint-disable-next-line no-alert
     const url = window.prompt('URL', previousUrl);
 
     // cancelled
