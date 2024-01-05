@@ -7,7 +7,7 @@
   background-color: $ux-blue-100;
   color: $ux-blue-700;
   border-radius: $ux-border-radius;
-  padding: $ux-spacing-10 $ux-spacing-30;
+  padding: $synth-spacing-1 $ux-spacing-30;
   white-space: nowrap;
 
   &--blue {
@@ -16,7 +16,7 @@
 
     .Pill__icon--lead {
       color: $ux-blue;
-      margin-right: $ux-spacing-10;
+      margin-right: $synth-spacing-1;
     }
 
     .Pill__button--close {
@@ -41,7 +41,7 @@
 
     .Pill__icon--lead {
       color: $ux-orange-700;
-      margin-right: $ux-spacing-10;
+      margin-right: $synth-spacing-1;
     }
 
     .Pill__button--close {
@@ -66,7 +66,7 @@
 
     .Pill__icon--lead {
       color: $ux-green-600;
-      margin-right: $ux-spacing-10;
+      margin-right: $synth-spacing-1;
     }
 
     .Pill__button--close {
@@ -91,7 +91,7 @@
 
     .Pill__icon--lead {
       color: $ux-yellow-700;
-      margin-right: $ux-spacing-10;
+      margin-right: $synth-spacing-1;
     }
 
     .Pill__button--close {
@@ -116,7 +116,7 @@
 
     .Pill__icon--lead {
       color: $ux-red-900;
-      margin-right: $ux-spacing-10;
+      margin-right: $synth-spacing-1;
     }
 
     .Pill__button--close {
@@ -141,7 +141,7 @@
 
     .Pill__icon--lead {
       color: $ux-gray-800;
-      margin-right: $ux-spacing-10;
+      margin-right: $synth-spacing-1;
     }
 
     .Pill__button--close {
@@ -166,7 +166,7 @@
 
     .Pill__icon--lead {
       color: $ux-gray-700;
-      margin-right: $ux-spacing-10;
+      margin-right: $synth-spacing-1;
     }
 
     .Pill__button--close {

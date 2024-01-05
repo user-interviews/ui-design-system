@@ -112,7 +112,7 @@
   font-weight: $synth-font-weight-regular;
 
   &__header {
-    margin-bottom: $ux-spacing-10;
+    margin-bottom: $synth-spacing-1;
     @include synth-font-type-30--bold;
   }
 

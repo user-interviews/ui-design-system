@@ -8,10 +8,10 @@
   padding: $ux-spacing-40;
 
   > :not(:first-child) {
-    margin-left: $ux-spacing-10;
+    margin-left: $synth-spacing-1;
   }
 
   > :not(:last-child) {
-    margin-right: $ux-spacing-10;
+    margin-right: $synth-spacing-1;
   }
 }
