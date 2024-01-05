@@ -1,8 +1,10 @@
-import React, { createElement } from 'react';
+import React, {
+ createElement, type FunctionComponent, type ComponentClass, type ReactNode,
+} from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
-import { LoadingSkeleton } from 'src/LoadingSkeleton';
+import { LoadingSkeleton } from '../LoadingSkeleton';
 
 import './Card.scss';
 
@@ -11,13 +13,29 @@ export const CardSizes = {
   SMALL: 'sm',
   MEDIUM: 'md',
   LARGE: 'lg',
-};
+} as const;
+
+export type CardProps = {
+  children?: ReactNode;
+  className?: string;
+  divided?: boolean;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  elementType?: string | FunctionComponent<unknown> | ComponentClass<any, unknown>;
+  helperText?: string;
+  isLoading?: boolean;
+  loadingSkeleton?: ReactNode;
+  loadingSkeletonParagraphCount?: number;
+  noPadding?: boolean;
+  size?: typeof CardSizes[keyof typeof CardSizes];
+  subTitle?: string;
+  title?: string;
+}
 
 const Card = ({
   children,
   className,
   divided,
-  elementType,
+  elementType = 'section',
   helperText,
   isLoading,
   loadingSkeleton,
@@ -26,8 +44,7 @@ const Card = ({
   size,
   subTitle,
   title,
-  ...props
-}) => {
+}: CardProps) => {
   const defaultLoadingSkeleton = (
     <>
       <LoadingSkeleton height={24} width="33%" />
@@ -65,7 +82,6 @@ const Card = ({
   return createElement(
     elementType,
     {
-      ...props,
       className: classNames(
         'Card',
         { [`Card--${size}`]: size },
