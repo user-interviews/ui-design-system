@@ -20,7 +20,7 @@
   &__divider {
     border-top: 1px solid rgba(0,0,0,.1);
 
-    margin-bottom: $ux-spacing-20;
+    margin-bottom: $synth-spacing-2;
     margin-top: $synth-spacing-1;
   }
 
@@ -84,7 +84,7 @@
 
     .Card__helper-text {
       margin-left: 0;
-      margin-bottom: $ux-spacing-20;
+      margin-bottom: $synth-spacing-2;
     }
   }
 }

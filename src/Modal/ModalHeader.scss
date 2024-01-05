@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   padding: $ux-spacing-50;
-  padding-bottom: $ux-spacing-20;
+  padding-bottom: $synth-spacing-2;
 
   &__title {
     font-family: $synth-font-family;
@@ -19,12 +19,12 @@
 
     .warning {
       color: $ux-yellow-600;
-      margin-right: $ux-spacing-20;
+      margin-right: $synth-spacing-2;
     }
 
     .danger {
       color: $ux-red-400;
-      margin-right: $ux-spacing-20;
+      margin-right: $synth-spacing-2;
     }
   }
 
@@ -32,6 +32,6 @@
     font-family: $synth-font-family;
     @include synth-font-type-30;
     margin-bottom: 0;
-    margin-top: $ux-spacing-20;
+    margin-top: $synth-spacing-2;
   }
 }

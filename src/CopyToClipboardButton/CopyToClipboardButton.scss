@@ -3,6 +3,6 @@
 .CopyToClipboardButton {
   &__display-text {
     @include synth-font-type-40--bold;
-    margin-left: $ux-spacing-20;
+    margin-left: $synth-spacing-2;
   }
 }
