@@ -12,13 +12,13 @@
   @include media-breakpoint-down(sm) {
     bottom: 0;
     transform: translateX(0%);
-    padding: $ux-spacing-20;
+    padding: $synth-spacing-2;
     width: 100vw;
   }
   
   .Alert {
     box-shadow: $ux-elevations-20;
-    padding: $ux-spacing-30 20px;
+    padding: $synth-spacing-3 20px;
     
     // explicitly sets grid template areas based on Alert.scss
     // the CTA action will always be below the Toast content

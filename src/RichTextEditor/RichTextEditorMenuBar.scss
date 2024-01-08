@@ -6,9 +6,9 @@
   border-bottom: 0;
   border-radius: $ux-border-radius $ux-border-radius 0 0;
   display: flex;
-  gap: $ux-spacing-30;
-  margin-top: $ux-spacing-40;
-  padding: $ux-spacing-20;
+  gap: $synth-spacing-3;
+  margin-top: $synth-spacing-4;
+  padding: $synth-spacing-2;
 
   .Button {
     &--active {

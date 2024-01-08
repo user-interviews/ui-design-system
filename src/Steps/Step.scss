@@ -54,7 +54,7 @@ $text-container-margin-top: 10px;
     // translates the text-container so that border is centered with circle
     right: 20px;
 
-    min-height: ($step-circle-size * 2) - $ux-spacing-30;
+    min-height: ($step-circle-size * 2) - $synth-spacing-3;
 
     border-left: 1px solid $ux-emerald-600;
 
@@ -62,10 +62,10 @@ $text-container-margin-top: 10px;
     margin-top: $text-container-margin-top;
     
     // provides padding bottom between steps
-    padding-bottom: $ux-spacing-30;
+    padding-bottom: $synth-spacing-3;
 
     &__text {
-      margin-left: $ux-spacing-60;
+      margin-left: $synth-spacing-8;
     }
   }
 }
