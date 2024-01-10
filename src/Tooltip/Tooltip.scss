@@ -9,12 +9,16 @@
     margin-right: $synth-spacing-2;
     vertical-align: middle;
 
-    &--gray {
+    &--neutral {
       color: $ux-gray-800;
     }
 
-    &--primary {
-      color: $ux-emerald;
+    &--warning {
+      color: $synth-warning-amber-alternate;
+    }
+
+    &--error {
+      color: $synth-error-red-medium;
     }
   }
 
