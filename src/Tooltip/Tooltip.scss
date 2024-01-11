@@ -21,14 +21,5 @@
       color: $synth-error-red-medium;
     }
   }
-
-  &__icon:focus {
-    outline: none;
-
-    svg {
-      box-shadow: 0 0 4px 3px;
-      border-radius: 16px;
-    }
-  }
 }
 
