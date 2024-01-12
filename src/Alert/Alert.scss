@@ -7,8 +7,8 @@
   border-left: unset;
   border-radius: $ux-border-radius;
   color: $color;
-  margin: $ux-spacing-20 $ux-spacing-40 $ux-spacing-20 0;
-  padding: $ux-spacing-20 $ux-spacing-40;
+  margin: $synth-spacing-2 $synth-spacing-4 $synth-spacing-2 0;
+  padding: $synth-spacing-2 $synth-spacing-4;
   text-decoration: none;
   white-space: nowrap;
 
@@ -47,8 +47,8 @@
     background-color: $synth-alert-bg-neutral;
     border-radius: $ux-border-radius;
     color: $synth-text-neutral;
-    margin-bottom: $ux-spacing-40;
-    padding: $ux-spacing-40;
+    margin-bottom: $synth-spacing-4;
+    padding: $synth-spacing-4;
     position: relative;
   
     &__icon {
@@ -57,7 +57,7 @@
   
     &__content {
       grid-area: content;
-      margin-right: $ux-spacing-40;
+      margin-right: $synth-spacing-4;
     }
   
     &__action {
@@ -208,8 +208,8 @@
 
   font-weight: 500;
   border-radius: $ux-border-radius;
-  margin-bottom: $ux-spacing-40;
-  padding: $ux-spacing-40;
+  margin-bottom: $synth-spacing-4;
+  padding: $synth-spacing-4;
   position: relative;
 
   &__icon {
@@ -218,7 +218,7 @@
 
   &__content {
     grid-area: content;
-    margin-right: $ux-spacing-40;
+    margin-right: $synth-spacing-4;
   }
 
   &__action {
