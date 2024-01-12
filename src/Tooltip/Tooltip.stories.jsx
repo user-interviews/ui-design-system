@@ -2,7 +2,7 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, radios, text } from '@storybook/addon-knobs';
 
-import { faExclamationCircle } from '@fortawesome/pro-solid-svg-icons';
+import { faExclamationTriangle } from '@fortawesome/pro-solid-svg-icons';
 
 import Tooltip from 'src/Tooltip';
 import mdx from './Tooltip.mdx';
@@ -66,7 +66,7 @@ export const NeutralIcon = () => (
 
 export const WarningIcon = () => (
   <Tooltip
-    icon={faExclamationCircle}
+    icon={faExclamationTriangle}
     iconClasses="Tooltip__icon--warning"
     placement="right"
     text={text('Tooltip Text', 'Warning Icon')}
@@ -75,7 +75,7 @@ export const WarningIcon = () => (
 
 export const ErrorIcon = () => (
   <Tooltip
-    icon={faExclamationCircle}
+    icon={faExclamationTriangle}
     iconClasses="Tooltip__icon--error"
     placement="right"
     text={text('Tooltip Text', 'Error Icon')}
