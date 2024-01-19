@@ -5,6 +5,8 @@ import { faPlus } from '@fortawesome/pro-regular-svg-icons';
 
 import Button from 'src/Button';
 
+import ProfileSearchImage from './profile_search.png';
+
 import EmptyState from './EmptyState';
 
 const meta: Meta<typeof EmptyState> = {
@@ -27,6 +29,15 @@ export const PrimaryAction: Story = {
     primaryAction: <Button leadingIcon={faPlus} variant="primary">New project</Button>,
     subtitle: 'Launch your first project to start conducting research! Source from a pool of 2.4 million participants to reach nearly any target audience.',
     title: 'You have no projects',
+  },
+};
+
+export const Image: Story = {
+  args: {
+    image: ProfileSearchImage,
+    primaryAction: <Button variant="primary">Start recruiting</Button>,
+    subtitle: `Start recruiting from User Interviews' panel of 6M+ users and kick off your research!`,
+    title: 'No participants to display',
   },
 };
 
