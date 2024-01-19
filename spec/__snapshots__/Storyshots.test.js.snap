@@ -6760,13 +6760,18 @@ exports[`Storyshots Components/EmptyState Full Width 1`] = `
 </div>
 `;
 
+<<<<<<< release/2.4.4
 exports[`Storyshots Components/EmptyState Image 1`] = `
+=======
+exports[`Storyshots Components/EmptyState Margin Top 1`] = `
+>>>>>>> main
 <div
   className="EmptyState EmptyState--margin-top--sm"
 >
   <div
     className="EmptyState__content"
   >
+<<<<<<< release/2.4.4
     <div
       className="EmptyState__image"
     >
@@ -6775,6 +6780,8 @@ exports[`Storyshots Components/EmptyState Image 1`] = `
         src={Object {}}
       />
     </div>
+=======
+>>>>>>> main
     <h4
       className="EmptyState__title Heading Heading--lg Heading--bold"
       style={
@@ -6782,6 +6789,7 @@ exports[`Storyshots Components/EmptyState Image 1`] = `
           "textAlign": "center",
         }
       }
+<<<<<<< release/2.4.4
     >
       No participants to display
     </h4>
@@ -6823,12 +6831,20 @@ exports[`Storyshots Components/EmptyState Margin Top 1`] = `
   >
     <h4
       className="EmptyState__title Heading Heading--lg Heading--bold"
+=======
+    >
+      No segments created
+    </h4>
+    <p
+      className="EmptyState__subtitle Text Text--md Text--regular"
+>>>>>>> main
       style={
         Object {
           "textAlign": "center",
         }
       }
     >
+<<<<<<< release/2.4.4
       No segments created
     </h4>
     <p
@@ -6839,6 +6855,8 @@ exports[`Storyshots Components/EmptyState Margin Top 1`] = `
         }
       }
     >
+=======
+>>>>>>> main
       Add a new participant segment above
     </p>
   </div>
@@ -7166,6 +7184,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Column
       className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
       htmlFor="value-3-5"
     >
+<<<<<<< release/2.4.4
       <span
         className="FormControlLabel__label"
       >
@@ -7252,6 +7271,254 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`
           value="2"
         />
         Label 2
+      </span>
+    </label>
+    <label
+      className="FormControlLabel FormControlLabel--bordered"
+      htmlFor="value-3-2"
+    >
+      <span
+        className="FormControlLabel__label"
+      >
+        <input
+          checked={false}
+          className="FormControlLabel__control"
+          id="value-3-2"
+=======
+      <span
+        className="FormControlLabel__label"
+      >
+        <input
+          checked={false}
+          className="FormControlLabel__control"
+          id="value-3-5"
+>>>>>>> main
+          onChange={[Function]}
+          type="checkbox"
+          value="3"
+        />
+        Label 3
+<<<<<<< release/2.4.4
+      </span>
+    </label>
+  </div>
+</fieldset>
+`;
+
+exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
+<fieldset
+  className="FormGroup"
+  id="with-checkbox-button-group"
+>
+  <legend
+    className="InputLegend"
+    htmlFor="checkbox-button-group"
+  >
+    Legend
+    <span
+      className="InputLegend__helper-text"
+    >
+       (
+      use the knobs to try out different variations
+      )
+    </span>
+  </legend>
+  <div
+    className="CheckboxButtonGroup"
+    id="with-checkbox-button-group-button-group"
+  >
+    <label
+      className="FormControlLabel"
+      htmlFor="value-1"
+    >
+      <span
+        className="FormControlLabel__label"
+      >
+        <input
+          checked={false}
+          className="FormControlLabel__control"
+          id="value-1"
+          onChange={[Function]}
+          type="checkbox"
+          value="1"
+        />
+        Value 1
+      </span>
+    </label>
+    <label
+      className="FormControlLabel"
+      htmlFor="value-2"
+    >
+      <span
+        className="FormControlLabel__label"
+      >
+        <input
+          checked={false}
+          className="FormControlLabel__control"
+          id="value-2"
+          onChange={[Function]}
+          type="checkbox"
+          value="2"
+        />
+        Value 2
+      </span>
+    </label>
+    <label
+      className="FormControlLabel"
+      htmlFor="value-3"
+    >
+      <span
+        className="FormControlLabel__label"
+      >
+        <input
+          checked={false}
+          className="FormControlLabel__control"
+          id="value-3"
+          onChange={[Function]}
+          type="checkbox"
+          value="3"
+        />
+        Value 3
+      </span>
+    </label>
+  </div>
+</fieldset>
+`;
+
+exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Column 1`] = `
+<fieldset
+  className="FormGroup"
+  id="with-checkbox-button-group-3"
+>
+  <legend
+    className="InputLegend"
+    htmlFor="checkbox-button-group"
+  >
+    Legend
+    <span
+      className="InputLegend__helper-text"
+    >
+       (
+      helper text
+      )
+    </span>
+  </legend>
+  <div
+    className="CheckboxButtonGroup"
+    id="with-checkbox-button-group-3-button-group"
+  >
+    <label
+      className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+      htmlFor="value-1-3"
+    >
+      <span
+        className="FormControlLabel__label"
+      >
+        <input
+          checked={false}
+          className="FormControlLabel__control"
+          id="value-1-3"
+          onChange={[Function]}
+          type="checkbox"
+          value="1"
+        />
+        Label 1
+=======
+>>>>>>> main
+        <span
+          className="FormControlLabel__helper-text"
+        >
+           (
+          helper text
+          )
+        </span>
+      </span>
+      <span
+        className="FormControlLabel__children"
+<<<<<<< release/2.4.4
+      >
+        This is where the description goes
+      </span>
+    </label>
+    <label
+      className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+      htmlFor="value-2-3"
+    >
+      <span
+        className="FormControlLabel__label"
+      >
+        <input
+          checked={false}
+          className="FormControlLabel__control"
+          id="value-2-3"
+=======
+      >
+        This is where the description goes
+      </span>
+    </label>
+  </div>
+</fieldset>
+`;
+
+exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Row 1`] = `
+<fieldset
+  className="FormGroup"
+  id="with-checkbox-button-group-2"
+>
+  <legend
+    className="InputLegend"
+    htmlFor="checkbox-button-group"
+  >
+    Legend
+    <span
+      className="InputLegend__helper-text"
+    >
+       (
+      helper text
+      )
+    </span>
+  </legend>
+  <div
+    className="CheckboxButtonGroup CheckboxButtonGroup--row CheckboxButtonGroup--row--compact"
+    id="with-checkbox-button-group-2-button-group"
+  >
+    <label
+      className="FormControlLabel FormControlLabel--bordered"
+      htmlFor="value-1-2"
+    >
+      <span
+        className="FormControlLabel__label"
+      >
+        <input
+          checked={false}
+          className="FormControlLabel__control"
+          id="value-1-2"
+          onChange={[Function]}
+          type="checkbox"
+          value="1"
+        />
+        Label 1
+      </span>
+    </label>
+    <label
+      className="FormControlLabel FormControlLabel--bordered"
+      htmlFor="value-2-2"
+    >
+      <span
+        className="FormControlLabel__label"
+      >
+        <input
+          checked={false}
+          className="FormControlLabel__control"
+          id="value-2-2"
+>>>>>>> main
+          onChange={[Function]}
+          type="checkbox"
+          value="2"
+        />
+        Label 2
+<<<<<<< release/2.4.4
+=======
       </span>
     </label>
     <label
@@ -7394,6 +7661,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Col
           value="1"
         />
         Label 1
+>>>>>>> main
         <span
           className="FormControlLabel__helper-text"
         >
@@ -7410,7 +7678,11 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Col
     </label>
     <label
       className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+<<<<<<< release/2.4.4
+      htmlFor="value-3-3"
+=======
       htmlFor="value-2-3"
+>>>>>>> main
     >
       <span
         className="FormControlLabel__label"
@@ -7418,12 +7690,21 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Col
         <input
           checked={false}
           className="FormControlLabel__control"
+<<<<<<< release/2.4.4
+          id="value-3-3"
+          onChange={[Function]}
+          type="checkbox"
+          value="3"
+        />
+        Label 3
+=======
           id="value-2-3"
           onChange={[Function]}
           type="checkbox"
           value="2"
         />
         Label 2
+>>>>>>> main
         <span
           className="FormControlLabel__helper-text"
         >
@@ -7438,6 +7719,8 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Col
         This is where the description goes
       </span>
     </label>
+<<<<<<< release/2.4.4
+=======
     <label
       className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
       htmlFor="value-3-3"
@@ -7468,6 +7751,7 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Description Col
         This is where the description goes
       </span>
     </label>
+>>>>>>> main
   </div>
 </fieldset>
 `;
@@ -9127,6 +9411,8 @@ Array [
     style={
       Object {
         "textAlign": undefined,
+<<<<<<< release/2.4.4
+=======
       }
     }
   >
@@ -9137,10 +9423,24 @@ Array [
     style={
       Object {
         "textAlign": undefined,
+>>>>>>> main
       }
     }
   >
     The fastest way to recruit research participants
+<<<<<<< release/2.4.4
+  </h1>,
+  <h2
+    className="Heading Heading--xxl Heading--bold"
+    style={
+      Object {
+        "textAlign": undefined,
+      }
+    }
+  >
+    The fastest way to recruit research participants
+=======
+>>>>>>> main
   </h2>,
   <h3
     className="Heading Heading--xl Heading--bold"
