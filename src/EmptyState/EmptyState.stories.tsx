@@ -36,7 +36,7 @@ export const Image: Story = {
   args: {
     image: ProfileSearchImage,
     primaryAction: <Button variant="primary">Start recruiting</Button>,
-    subtitle: 'Start recruiting from User Interviews panel of 6M+ users and kick off your research!',
+    subtitle: `Start recruiting from User Interviews' panel of 6M+ users and kick off your research!`,
     title: 'No participants to display',
   },
 };
