@@ -6760,6 +6760,60 @@ exports[`Storyshots Components/EmptyState Full Width 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/EmptyState Image 1`] = `
+<div
+  className="EmptyState EmptyState--margin-top--sm"
+>
+  <div
+    className="EmptyState__content"
+  >
+    <div
+      className="EmptyState__image"
+    >
+      <img
+        alt=""
+        src={Object {}}
+      />
+    </div>
+    <h4
+      className="EmptyState__title Heading Heading--lg Heading--bold"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      No participants to display
+    </h4>
+    <p
+      className="EmptyState__subtitle Text Text--md Text--regular"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      Start recruiting from User Interviews' panel of 6M+ users and kick off your research!
+    </p>
+    <div
+      className="EmptyState__actions"
+    >
+      <div
+        className="EmptyState__actions__primary-action"
+      >
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          type="button"
+        >
+          Start recruiting
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/EmptyState Margin Top 1`] = `
 <div
   className="EmptyState EmptyState--margin-top--sm"

@@ -11,7 +11,6 @@ export interface EmptyStateProps {
   className?: string;
   fullWidth?: boolean;
   image?: string;
-  imageAltText?: string;
   marginTop?: 'sm' | 'md' | 'lg' | 'none';
   primaryAction?: ReactNode;
   subtitle?: string | ReactNode;
@@ -22,7 +21,6 @@ const EmptyState = ({
   className,
   fullWidth = false,
   image,
-  imageAltText = '',
   marginTop = 'sm',
   primaryAction,
   subtitle,
@@ -41,7 +39,7 @@ const EmptyState = ({
     >
       {image && (
         <div className="EmptyState__image">
-          <img alt={imageAltText} src={image} />
+          <img alt="" src={image} />
         </div>
       )}
       {title && (
