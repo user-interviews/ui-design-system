@@ -3,10 +3,10 @@
 .Drawer {
   &__header {
     align-items: center;
-    padding-bottom: $ux-spacing-40;
+    padding-bottom: $synth-spacing-4;
     display: flex;
     justify-content: space-between;
-    margin: $ux-spacing-60;
+    margin: $synth-spacing-8;
     margin-bottom: 0;
 
     &--bordered {

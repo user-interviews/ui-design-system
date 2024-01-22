@@ -10,6 +10,7 @@ import './EmptyState.scss';
 export interface EmptyStateProps {
   className?: string;
   fullWidth?: boolean;
+  image?: string;
   marginTop?: 'sm' | 'md' | 'lg' | 'none';
   primaryAction?: ReactNode;
   subtitle?: string | ReactNode;
@@ -19,6 +20,7 @@ export interface EmptyStateProps {
 const EmptyState = ({
   className,
   fullWidth = false,
+  image,
   marginTop = 'sm',
   primaryAction,
   subtitle,
@@ -35,6 +37,11 @@ const EmptyState = ({
       fullWidth && 'EmptyState--full-width',
     )}
     >
+      {image && (
+        <div className="EmptyState__image">
+          <img alt="" src={image} />
+        </div>
+      )}
       {title && (
         <Heading
           className="EmptyState__title"

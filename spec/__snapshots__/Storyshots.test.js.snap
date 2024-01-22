@@ -6760,6 +6760,60 @@ exports[`Storyshots Components/EmptyState Full Width 1`] = `
 </div>
 `;
 
+exports[`Storyshots Components/EmptyState Image 1`] = `
+<div
+  className="EmptyState EmptyState--margin-top--sm"
+>
+  <div
+    className="EmptyState__content"
+  >
+    <div
+      className="EmptyState__image"
+    >
+      <img
+        alt=""
+        src={Object {}}
+      />
+    </div>
+    <h4
+      className="EmptyState__title Heading Heading--lg Heading--bold"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      No participants to display
+    </h4>
+    <p
+      className="EmptyState__subtitle Text Text--md Text--regular"
+      style={
+        Object {
+          "textAlign": "center",
+        }
+      }
+    >
+      Start recruiting from User Interviews' panel of 6M+ users and kick off your research!
+    </p>
+    <div
+      className="EmptyState__actions"
+    >
+      <div
+        className="EmptyState__actions__primary-action"
+      >
+        <button
+          className="Button btn btn-primary"
+          disabled={false}
+          type="button"
+        >
+          Start recruiting
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Components/EmptyState Margin Top 1`] = `
 <div
   className="EmptyState EmptyState--margin-top--sm"
@@ -25492,7 +25546,7 @@ exports[`Storyshots Components/Tooltip Default 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Tooltip Gray Icon 1`] = `
+exports[`Storyshots Components/Tooltip Error Icon 1`] = `
 <div
   style={
     Object {
@@ -25502,15 +25556,15 @@ exports[`Storyshots Components/Tooltip Gray Icon 1`] = `
 >
   <span
     aria-hidden="true"
-    className="Tooltip__icon Tooltip__icon--gray"
+    className="Tooltip__icon Tooltip__icon--error"
     onClick={[Function]}
     onKeyPress={[Function]}
     tabIndex="0"
   >
     <svg
       aria-hidden="true"
-      className="svg-inline--fa fa-circle-question "
-      data-icon="circle-question"
+      className="svg-inline--fa fa-triangle-exclamation "
+      data-icon="triangle-exclamation"
       data-prefix="fas"
       focusable="false"
       role="img"
@@ -25519,43 +25573,7 @@ exports[`Storyshots Components/Tooltip Gray Icon 1`] = `
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </span>
-</div>
-`;
-
-exports[`Storyshots Components/Tooltip Green Icon 1`] = `
-<div
-  style={
-    Object {
-      "padding": "4rem",
-    }
-  }
->
-  <span
-    aria-hidden="true"
-    className="Tooltip__icon Tooltip__icon--primary"
-    onClick={[Function]}
-    onKeyPress={[Function]}
-    tabIndex="0"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-circle-question "
-      data-icon="circle-question"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
+        d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
         fill="currentColor"
         style={Object {}}
       />
@@ -25592,6 +25610,78 @@ exports[`Storyshots Components/Tooltip Light 1`] = `
     >
       <path
         d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Tooltip Neutral Icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "4rem",
+    }
+  }
+>
+  <span
+    aria-hidden="true"
+    className="Tooltip__icon Tooltip__icon--neutral"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    tabIndex="0"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-circle-question "
+      data-icon="circle-question"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
+        fill="currentColor"
+        style={Object {}}
+      />
+    </svg>
+  </span>
+</div>
+`;
+
+exports[`Storyshots Components/Tooltip Warning Icon 1`] = `
+<div
+  style={
+    Object {
+      "padding": "4rem",
+    }
+  }
+>
+  <span
+    aria-hidden="true"
+    className="Tooltip__icon Tooltip__icon--warning"
+    onClick={[Function]}
+    onKeyPress={[Function]}
+    tabIndex="0"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-triangle-exclamation "
+      data-icon="triangle-exclamation"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={Object {}}
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
         fill="currentColor"
         style={Object {}}
       />
@@ -28801,7 +28891,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $ux-spacing-10
+          $
+          synth-spacing-1
         </code>
       </td>
       <td
@@ -28815,13 +28906,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "4px",
-              "width": "4px",
-            }
-          }
+          className="spacing-example synth-spacing-1"
         />
       </td>
     </tr>
@@ -28833,7 +28918,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $ux-spacing-20
+          $
+          synth-spacing-2
         </code>
       </td>
       <td
@@ -28847,13 +28933,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "8px",
-              "width": "8px",
-            }
-          }
+          className="spacing-example synth-spacing-2"
         />
       </td>
     </tr>
@@ -28865,7 +28945,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $ux-spacing-30
+          $
+          synth-spacing-3
         </code>
       </td>
       <td
@@ -28879,13 +28960,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "12px",
-              "width": "12px",
-            }
-          }
+          className="spacing-example synth-spacing-3"
         />
       </td>
     </tr>
@@ -28897,7 +28972,8 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $ux-spacing-40
+          $
+          synth-spacing-4
         </code>
       </td>
       <td
@@ -28911,13 +28987,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "16px",
-              "width": "16px",
-            }
-          }
+          className="spacing-example synth-spacing-4"
         />
       </td>
     </tr>
@@ -28929,7 +28999,35 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $ux-spacing-50
+          $
+          synth-spacing-5
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        20
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          className="spacing-example synth-spacing-5"
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $
+          synth-spacing-6
         </code>
       </td>
       <td
@@ -28943,13 +29041,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "24px",
-              "width": "24px",
-            }
-          }
+          className="spacing-example synth-spacing-6"
         />
       </td>
     </tr>
@@ -28961,7 +29053,35 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $ux-spacing-60
+          $
+          synth-spacing-7
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        28
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          className="spacing-example synth-spacing-7"
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $
+          synth-spacing-8
         </code>
       </td>
       <td
@@ -28975,13 +29095,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "32px",
-              "width": "32px",
-            }
-          }
+          className="spacing-example synth-spacing-8"
         />
       </td>
     </tr>
@@ -28993,7 +29107,89 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <code>
-          $ux-spacing-70
+          $
+          synth-spacing-9
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        36
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          className="spacing-example synth-spacing-9"
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $
+          synth-spacing-10
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        40
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          className="spacing-example synth-spacing-10"
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $
+          synth-spacing-11
+        </code>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        44
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <div
+          className="spacing-example synth-spacing-11"
+        />
+      </td>
+    </tr>
+    <tr
+      className="TableRow"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <code>
+          $
+          synth-spacing-12
         </code>
       </td>
       <td
@@ -29007,13 +29203,7 @@ exports[`Storyshots Foundations/Spacing Spacing 1`] = `
         style={Object {}}
       >
         <div
-          style={
-            Object {
-              "backgroundColor": "#725CCC",
-              "height": "48px",
-              "width": "48px",
-            }
-          }
+          className="spacing-example synth-spacing-12"
         />
       </td>
     </tr>

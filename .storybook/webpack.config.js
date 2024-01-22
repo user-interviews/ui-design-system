@@ -16,6 +16,10 @@ module.exports = function({ config }) {
       'sass-loader'
     ],
     include: path.resolve(__dirname, '../')
+  },
+  {
+    test: /\\.(png|jp(e*)g|svg|gif)$/,
+    use: ['file-loader'],
   });
 
   return config;

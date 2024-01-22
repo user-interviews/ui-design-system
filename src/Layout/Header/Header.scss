@@ -6,7 +6,7 @@
   color: $ux-white;
   display: flex;
   height: $ui-header-height;
-  padding: $ux-spacing-40;
+  padding: $synth-spacing-4;
 
   > div:first-child {
     @include synth-font-type-60--bold;
@@ -15,7 +15,7 @@
 
   &__controls {
     > :not(:last-child) {
-      margin-right: $ux-spacing-20;
+      margin-right: $synth-spacing-2;
     }
   }
 }

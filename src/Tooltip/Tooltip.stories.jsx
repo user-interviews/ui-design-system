@@ -2,6 +2,8 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import { withKnobs, radios, text } from '@storybook/addon-knobs';
 
+import { faExclamationTriangle } from '@fortawesome/pro-solid-svg-icons';
+
 import Tooltip from 'src/Tooltip';
 import mdx from './Tooltip.mdx';
 
@@ -54,19 +56,29 @@ export const WithHtml = () => (
   />
 );
 
-export const GreenIcon = () => (
+export const NeutralIcon = () => (
   <Tooltip
-    iconClasses="Tooltip__icon--primary"
+    iconClasses="Tooltip__icon--neutral"
     placement="right"
-    text={text('Tooltip Text', 'Green Icon')}
+    text={text('Tooltip Text', 'Neutral Icon')}
   />
 );
 
-export const GrayIcon = () => (
+export const WarningIcon = () => (
   <Tooltip
-    iconClasses="Tooltip__icon--gray"
+    icon={faExclamationTriangle}
+    iconClasses="Tooltip__icon--warning"
     placement="right"
-    text={text('Tooltip Text', 'Gray Icon')}
+    text={text('Tooltip Text', 'Warning Icon')}
+  />
+);
+
+export const ErrorIcon = () => (
+  <Tooltip
+    icon={faExclamationTriangle}
+    iconClasses="Tooltip__icon--error"
+    placement="right"
+    text={text('Tooltip Text', 'Error Icon')}
   />
 );
 
