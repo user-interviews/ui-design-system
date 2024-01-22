@@ -72,9 +72,14 @@ export type RichTextEditorProps = {
   characterLimit?: number;
   className?: string;
   /**
+   Custom extensions that provide functionality related to app features beyond
+   the responsibility of the text editor itself. An example of such an extension
+   would be template variables as the requirements of implementation would rely on
+   other code processing them. Not yet supported extensions which relate solely
+   to the text editor should be added via a pull request and used via `availableActions`.
    https://tiptap.dev/docs/editor/guide/custom-extensions
   */
-  extensions?: (Extension | TipTapNode | Mark)[];
+  customExtensions?: (Extension | TipTapNode | Mark)[];
   hasErrors?: boolean;
   id: string;
   /**
@@ -102,7 +107,7 @@ function RichTextEditor({
   isOneLine,
   onChange,
   placeholder,
-  extensions = [],
+  customExtensions = [],
 }: RichTextEditorProps) {
   const oneLineExtension = isOneLine ? [OneLineLimit] : [];
 
@@ -146,10 +151,10 @@ function RichTextEditor({
     .map((extension) => extension.config);
 
   const editorExtensions = [
-    ...oneLineExtension,
     ...requiredExtensions,
-    ...extensions,
     ...optionalExtensions,
+    ...oneLineExtension,
+    ...customExtensions,
   ];
 
   const editor = useEditor({
