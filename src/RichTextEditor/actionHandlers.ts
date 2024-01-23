@@ -1,4 +1,6 @@
-export const createActionHandlers = (editor) => ({
+import type { Editor } from '@tiptap/core';
+
+export const createActionHandlers = (editor: Editor) => ({
   link: () => {
     // TODO: use DS components for link prompt
     const previousUrl = editor.getAttributes('link').href;
@@ -6,7 +8,7 @@ export const createActionHandlers = (editor) => ({
 
     // cancelled
     if (url === null) {
-      return;
+      return false;
     }
 
     // empty
@@ -18,7 +20,7 @@ export const createActionHandlers = (editor) => ({
         .unsetLink()
         .run();
 
-      return;
+      return false;
     }
 
     const protocolRegex = /^http(s?):\/\//;
@@ -31,6 +33,8 @@ export const createActionHandlers = (editor) => ({
       .extendMarkRange('link')
       .setLink({ href: absoluteUrl })
       .run();
+
+    return false;
   },
   unlink: () => editor.chain().focus().unsetLink().run(),
   bold: () => editor.chain().focus().toggleBold().run(),

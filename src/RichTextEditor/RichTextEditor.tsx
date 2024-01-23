@@ -1,7 +1,10 @@
+import type { IOptions } from 'sanitize-html';
+import type { AriaAttributes } from 'react';
+import type { Extension, Node as TipTapNode, Mark } from '@tiptap/core';
+
 import './RichTextEditor.scss';
 
 import React from 'react';
-import * as propTypes from 'prop-types';
 
 import classNames from 'classnames';
 
@@ -23,14 +26,13 @@ import Text from '@tiptap/extension-text';
 
 import sanitizeHtml from 'sanitize-html';
 
-import { LoadingSkeleton } from 'src/LoadingSkeleton';
-import { TemplateVariable, buildSuggestions } from './TemplateVariable';
+import { LoadingSkeleton } from '../LoadingSkeleton';
 
 import RichTextEditorMenuBar from './RichTextEditorMenuBar';
 
 import { OneLineLimit } from './oneLineLimit';
 
-import { RichTextEditorActions, RichTextEditorAllActionsArray, RichTextEditorDefaultActionsArray } from './richTextEditorActions';
+import { RichTextEditorActions, RichTextEditorDefaultActionsArray } from './richTextEditorActions';
 import { createActionHandlers } from './actionHandlers';
 
 const ExtendedLink = Link.extend({
@@ -43,11 +45,60 @@ const ExtendedLink = Link.extend({
   },
 });
 
-const RichTextEditor = ({
+export type RichTextEditorProps = {
+  /**
+   HTML attributes to allow while sanitizing the editor's content.
+   If none provided then it uses sanitize-html's defaults
+   https://github.com/apostrophecms/sanitize-html#default-options
+  */
+  allowedAttributes?: IOptions['allowedAttributes'];
+  /**
+   HTML tags to allow while sanitizing the editor's content.
+   If none provided then it uses sanitize-html's defaults
+   https://github.com/apostrophecms/sanitize-html#default-options
+  */
+  allowedTags?: string[];
+  /**
+    ARIA attributes to pass along to the text editor field
+    for accessibility purposes. The keys of the object should be valid
+    ARIA attributes.
+  */
+  ariaAttributes?: AriaAttributes;
+  /**
+   Which actions to include in the taskbar. Available as constants.
+   Current options are BOLD, ITALIC, LINK, UNLINK, UNORDERED_LIST and ORDERED_LIST
+  */
+  availableActions?: typeof RichTextEditorActions[keyof typeof RichTextEditorActions][];
+  characterLimit?: number;
+  className?: string;
+  /**
+   Custom extensions that provide functionality related to app features beyond
+   the responsibility of the text editor itself. An example of such an extension
+   would be template variables as the requirements of implementation would rely on
+   other code processing them. Not yet supported extensions which relate solely
+   to the text editor should be added via a pull request and used via `availableActions`.
+   https://tiptap.dev/docs/editor/guide/custom-extensions
+  */
+  customExtensions?: (Extension | TipTapNode | Mark)[];
+  hasErrors?: boolean;
+  id: string;
+  /**
+   HTML provided to initialize the editor's content
+  */
+  initialValue?: string;
+  isOneLine?: boolean;
+  placeholder?: string;
+  /**
+    Callback function to call with sanitized HTML when editor state changes
+  */
+  onChange: (arg0: string) => void;
+}
+
+function RichTextEditor({
   allowedAttributes,
   allowedTags,
   ariaAttributes,
-  availableActions,
+  availableActions = RichTextEditorDefaultActionsArray,
   characterLimit,
   className,
   hasErrors,
@@ -56,10 +107,9 @@ const RichTextEditor = ({
   isOneLine,
   onChange,
   placeholder,
-  templateVariables,
-}) => {
+  customExtensions = [],
+}: RichTextEditorProps) {
   const oneLineExtension = isOneLine ? [OneLineLimit] : [];
-  const hasTemplateVariables = templateVariables.length > 0;
 
   const requiredExtensions = [
     Document,
@@ -75,14 +125,6 @@ const RichTextEditor = ({
       limit: characterLimit,
     }),
   ];
-
-  const templateVariablesExtension = hasTemplateVariables ?
-    [TemplateVariable.configure({
-      HTMLAttributes: {
-        class: 'RichTextEditor__TemplateVariable',
-      },
-      suggestion: buildSuggestions(templateVariables),
-    })] : [];
 
   const optionalExtensions = [
     {
@@ -108,15 +150,15 @@ const RichTextEditor = ({
   ].filter((extension) => availableActions.includes(extension.name))
     .map((extension) => extension.config);
 
-  const extensions = [
-    ...oneLineExtension,
+  const editorExtensions = [
     ...requiredExtensions,
-    ...templateVariablesExtension,
     ...optionalExtensions,
+    ...oneLineExtension,
+    ...customExtensions,
   ];
 
   const editor = useEditor({
-    extensions,
+    extensions: editorExtensions,
     content: initialValue,
     onUpdate: ({ editor: ttEditor }) => {
       const html = ttEditor.getHTML();
@@ -125,7 +167,7 @@ const RichTextEditor = ({
       // then use defaults from sanitize-html by not passing that key in the options
       // https://github.com/apostrophecms/sanitize-html
 
-      const options = {};
+      const options: IOptions = {};
 
       if (allowedAttributes) {
         options.allowedAttributes = allowedAttributes;
@@ -133,19 +175,6 @@ const RichTextEditor = ({
 
       if (allowedTags) {
         options.allowedTags = allowedTags;
-      }
-
-      // When using template variables, we need to whitelist some specific attributes so that
-      // the editor can re-initialize correctly from db state
-      if (hasTemplateVariables) {
-        options.allowedAttributes = {
-          ...(options.allowedAttributes || {}),
-          span: ['class', 'data-id', 'data-type'],
-        };
-
-        if (options.allowedTags && !options.allowedTags.includes('span')) {
-          options.allowedTags.push('span');
-        }
       }
 
       const sanitizedHtml = sanitizeHtml(html, options);
@@ -192,61 +221,7 @@ const RichTextEditor = ({
       </>
     )
   );
-};
+}
 
-RichTextEditor.propTypes = {
-  /**
-   HTML attributes to allow while sanitizing the editor's content.
-   If none provided then it uses sanitize-html's defaults
-   https://github.com/apostrophecms/sanitize-html#default-options
-  */
-  allowedAttributes: propTypes.array,
-  /**
-   HTML tags to allow while sanitizing the editor's content.
-   If none provided then it uses sanitize-html's defaults
-   https://github.com/apostrophecms/sanitize-html#default-options
-  */
-  allowedTags: propTypes.array,
-  /**
-    ARIA attributes to pass along to the text editor field
-    for accessibility purposes. The keys of the object should be valid
-    ARIA attributes.
-  */
-  ariaAttributes: propTypes.object,
-  /**
-   Which actions to include in the taskbar. Available as constants.
-   Current options are BOLD, ITALIC, LINK, UNLINK, UNORDERED_LIST and ORDERED_LIST
-  */
-  availableActions: propTypes.arrayOf(propTypes.oneOf(RichTextEditorAllActionsArray)),
-  characterLimit: propTypes.number,
-  className: propTypes.string,
-  hasErrors: propTypes.bool,
-  id: propTypes.string.isRequired,
-  /**
-   HTML provided to initialize the editor's content
-  */
-  initialValue: propTypes.string,
-  isOneLine: propTypes.bool,
-  placeholder: propTypes.string,
-  templateVariables: propTypes.arrayOf(propTypes.string),
-  /**
-    Callback function to call with sanitized HTML when editor state changes
-  */
-  onChange: propTypes.func.isRequired,
-};
-
-RichTextEditor.defaultProps = {
-  allowedAttributes: undefined,
-  allowedTags: undefined,
-  ariaAttributes: undefined,
-  availableActions: RichTextEditorDefaultActionsArray,
-  characterLimit: undefined,
-  className: undefined,
-  hasErrors: false,
-  initialValue: undefined,
-  isOneLine: false,
-  placeholder: undefined,
-  templateVariables: [],
-};
-
+// eslint-disable-next-line import/no-default-export
 export default RichTextEditor;
