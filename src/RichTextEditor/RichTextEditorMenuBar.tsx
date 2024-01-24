@@ -1,4 +1,5 @@
 import type { Editor } from '@tiptap/core';
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 import './RichTextEditorMenuBar.scss';
 
@@ -94,7 +95,7 @@ function RichTextEditorMenuBar({
               ariaLabel={action.label}
               className={classNames({ 'Button--active': editor.isActive(action.name) })}
               disabled={action.disabled}
-              icon={action.icon}
+              icon={action.icon as IconDefinition}
               key={action.name}
               onClick={action.onClick}
             />
