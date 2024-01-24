@@ -94,7 +94,7 @@ function IconButton({
       <FontAwesomeIcon
         className={classnames(
           'fa-fw', {
-            'fa-lg': !size,
+            'fa-lg': size === ButtonSizes.MEDIUM,
           },
         )}
         icon={icon as IconDefinition}
