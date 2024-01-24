@@ -16,15 +16,15 @@ export default {
 
 export const CommonActions = () => (
   <>
-    <IconButton action="ADD" />
-    <IconButton action="SUBTRACT" />
-    <IconButton action="EDIT" />
-    <IconButton action="DELETE" />
-    <IconButton action="COPY" />
-    <IconButton action="PREVIOUS" />
-    <IconButton action="NEXT" />
-    <IconButton action="CLOSE" />
-    <IconButton action="EXPAND" />
+    <IconButton action="ADD" ariaLabel="add" />
+    <IconButton action="SUBTRACT" ariaLabel="subtract" />
+    <IconButton action="EDIT" ariaLabel="edit" />
+    <IconButton action="DELETE" ariaLabel="delete" />
+    <IconButton action="COPY" ariaLabel="copy" />
+    <IconButton action="PREVIOUS" ariaLabel="previous" />
+    <IconButton action="NEXT" ariaLabel="next" />
+    <IconButton action="CLOSE" ariaLabel="close" />
+    <IconButton action="EXPAND" ariaLabel="expand" />
   </>
 );
 
