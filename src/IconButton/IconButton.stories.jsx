@@ -41,5 +41,6 @@ export const Sizes = () => (
   <>
     <IconButton action="DELETE" size="sm" />
     <IconButton action="DELETE" size="md" />
+    <IconButton action="DELETE" size="lg" />
   </>
 );

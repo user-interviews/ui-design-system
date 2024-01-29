@@ -513,7 +513,7 @@ export const Loading = () => (
     <Button
       isLoading={boolean('isLoading', true)}
       leadingIcon={faFileAlt}
-      loadingText={text('loadingText')}
+      loadingText={text('loadingText', 'Loading...')}
       size="sm"
       variant="primary"
     >
@@ -523,7 +523,7 @@ export const Loading = () => (
     <Button
       isLoading={boolean('isLoading', true)}
       leadingIcon={faFileAlt}
-      loadingText={text('loadingText')}
+      loadingText={text('loadingText', 'Loading...')}
       size="sm"
       variant="outline-primary"
     >
@@ -533,7 +533,7 @@ export const Loading = () => (
     <Button
       isLoading={boolean('isLoading', true)}
       leadingIcon={faFileAlt}
-      loadingText={text('loadingText')}
+      loadingText={text('loadingText', 'Loading...')}
       size="md"
       variant="primary"
     >
@@ -543,7 +543,7 @@ export const Loading = () => (
     <Button
       isLoading={boolean('isLoading', true)}
       leadingIcon={faFileAlt}
-      loadingText={text('loadingText')}
+      loadingText={text('loadingText', 'Loading...')}
       size="md"
       variant="outline-primary"
     >
