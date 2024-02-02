@@ -3209,7 +3209,7 @@ Array [
   </button>,
   " ",
   <button
-    className="Button btn btn-brand-google btn-md"
+    className="Button btn btn-brand-google"
     disabled={false}
     type="button"
   >
@@ -3235,7 +3235,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-brand-google btn-md"
+    className="Button btn btn-brand-google"
     disabled={true}
     type="button"
   >
@@ -3317,7 +3317,7 @@ Array [
   </button>,
   " ",
   <button
-    className="Button btn btn-brand-facebook btn-md"
+    className="Button btn btn-brand-facebook"
     disabled={false}
     type="button"
   >
@@ -3343,7 +3343,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-brand-facebook btn-md"
+    className="Button btn btn-brand-facebook"
     disabled={true}
     type="button"
   >
@@ -3426,7 +3426,7 @@ Array [
   </button>,
   " ",
   <button
-    className="Button btn btn-brand-linkedin btn-md"
+    className="Button btn btn-brand-linkedin"
     disabled={false}
     type="button"
   >
@@ -3452,7 +3452,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-brand-linkedin btn-md"
+    className="Button btn btn-brand-linkedin"
     disabled={true}
     type="button"
   >
@@ -3534,7 +3534,7 @@ Array [
   </button>,
   " ",
   <button
-    className="Button btn btn-brand-twitter btn-md"
+    className="Button btn btn-brand-twitter"
     disabled={false}
     type="button"
   >
@@ -3560,7 +3560,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-brand-twitter btn-md"
+    className="Button btn btn-brand-twitter"
     disabled={true}
     type="button"
   >
@@ -3759,7 +3759,7 @@ Array [
   " ",
   " ",
   <button
-    className="Button btn btn-danger btn-md"
+    className="Button btn btn-danger"
     disabled={false}
     type="button"
   >
@@ -3801,7 +3801,7 @@ Array [
   </button>,
   " ",
   <button
-    className="Button btn btn-outline-danger btn-md"
+    className="Button btn btn-outline-danger"
     disabled={false}
     type="button"
   >
@@ -3844,7 +3844,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-danger btn-md"
+    className="Button btn btn-danger"
     disabled={true}
     type="button"
   >
@@ -3887,7 +3887,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-outline-danger btn-md"
+    className="Button btn btn-outline-danger"
     disabled={true}
     type="button"
   >
@@ -4032,7 +4032,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-primary btn-md"
+    className="Button btn btn-primary"
     disabled={true}
     type="button"
   >
@@ -4058,7 +4058,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-outline-primary btn-md"
+    className="Button btn btn-outline-primary"
     disabled={true}
     type="button"
   >
@@ -4257,7 +4257,7 @@ Array [
   </button>,
   " ",
   <button
-    className="Button btn btn-primary btn-md"
+    className="Button btn btn-primary"
     disabled={false}
     type="button"
   >
@@ -4299,7 +4299,7 @@ Array [
   </button>,
   " ",
   <button
-    className="Button btn btn-outline-primary btn-md"
+    className="Button btn btn-outline-primary"
     disabled={false}
     type="button"
   >
@@ -4342,7 +4342,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-primary btn-md"
+    className="Button btn btn-primary"
     disabled={true}
     type="button"
   >
@@ -4385,7 +4385,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-outline-primary btn-md"
+    className="Button btn btn-outline-primary"
     disabled={true}
     type="button"
   >
@@ -4601,7 +4601,7 @@ Array [
   </button>,
   " ",
   <button
-    className="Button btn btn-transparent btn-md"
+    className="Button btn btn-transparent"
     disabled={false}
     type="button"
   >
@@ -4643,7 +4643,7 @@ Array [
   </button>,
   " ",
   <button
-    className="Button btn btn-outline-transparent btn-md"
+    className="Button btn btn-outline-transparent"
     disabled={false}
     type="button"
   >
@@ -4686,7 +4686,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-transparent btn-md"
+    className="Button btn btn-transparent"
     disabled={true}
     type="button"
   >
@@ -4729,7 +4729,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-outline-transparent btn-md"
+    className="Button btn btn-outline-transparent"
     disabled={true}
     type="button"
   >
@@ -4945,7 +4945,7 @@ Array [
   </button>,
   " ",
   <button
-    className="Button btn btn-warning btn-md"
+    className="Button btn btn-warning"
     disabled={false}
     type="button"
   >
@@ -4987,7 +4987,7 @@ Array [
   </button>,
   " ",
   <button
-    className="Button btn btn-outline-warning btn-md"
+    className="Button btn btn-outline-warning"
     disabled={false}
     type="button"
   >
@@ -5030,7 +5030,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-warning btn-md"
+    className="Button btn btn-warning"
     disabled={true}
     type="button"
   >
@@ -5073,7 +5073,7 @@ Array [
   " ",
   <button
     aria-disabled={true}
-    className="Button btn btn-outline-warning btn-md"
+    className="Button btn btn-outline-warning"
     disabled={true}
     type="button"
   >

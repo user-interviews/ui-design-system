@@ -3,6 +3,7 @@ import React from 'react';
 import { boolean, text, withKnobs } from '@storybook/addon-knobs';
 
 import Button from 'src/Button';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faFileAlt, faCaretDown, faPaperPlane } from '@fortawesome/pro-regular-svg-icons';
 import {
  faGoogle, faFacebook, faLinkedin, faTwitter,
@@ -23,18 +24,18 @@ export default {
 export const Primary = () => (
   <>
     <Button
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="primary"
     >
       Confirm
     </Button>
     {' '}
     <Button
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-primary"
     >
       Confirm
@@ -42,9 +43,9 @@ export const Primary = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="primary"
     >
       Confirm
@@ -52,27 +53,25 @@ export const Primary = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-primary"
     >
       Confirm
     </Button>
     {' '}
     <Button
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="primary"
     >
       Confirm
     </Button>
     {' '}
     <Button
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-primary"
     >
       Confirm
@@ -80,9 +79,8 @@ export const Primary = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="primary"
     >
       Confirm
@@ -90,9 +88,8 @@ export const Primary = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-primary"
     >
       Confirm
@@ -103,18 +100,18 @@ export const Primary = () => (
 export const Danger = () => (
   <>
     <Button
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="danger"
     >
       Delete
     </Button>
     {' '}
     <Button
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-danger"
     >
       Delete
@@ -122,18 +119,18 @@ export const Danger = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="danger"
     >
       Delete
     </Button>
     <Button
       disabled
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-danger"
     >
       Delete
@@ -141,18 +138,16 @@ export const Danger = () => (
     {' '}
     {' '}
     <Button
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="danger"
     >
       Delete
     </Button>
     {' '}
     <Button
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-danger"
     >
       Delete
@@ -160,9 +155,8 @@ export const Danger = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="danger"
     >
       Delete
@@ -170,9 +164,8 @@ export const Danger = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-danger"
     >
       Delete
@@ -183,18 +176,18 @@ export const Danger = () => (
 export const Warning = () => (
   <>
     <Button
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="warning"
     >
       Edit
     </Button>
     {' '}
     <Button
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-warning"
     >
       Edit
@@ -202,9 +195,9 @@ export const Warning = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="warning"
     >
       Edit
@@ -212,27 +205,25 @@ export const Warning = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-warning"
     >
       Edit
     </Button>
     {' '}
     <Button
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="warning"
     >
       Edit
     </Button>
     {' '}
     <Button
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-warning"
     >
       Edit
@@ -240,9 +231,8 @@ export const Warning = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="warning"
     >
       Edit
@@ -250,9 +240,8 @@ export const Warning = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-warning"
     >
       Edit
@@ -263,18 +252,18 @@ export const Warning = () => (
 export const Transparent = () => (
   <>
     <Button
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="transparent"
     >
       Skip
     </Button>
     {' '}
     <Button
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-transparent"
     >
       Skip
@@ -282,9 +271,9 @@ export const Transparent = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="transparent"
     >
       Skip
@@ -292,27 +281,25 @@ export const Transparent = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       size="sm"
-      trailingIcon={faCaretDown}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-transparent"
     >
       Skip
     </Button>
     {' '}
     <Button
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="transparent"
     >
       Skip
     </Button>
     {' '}
     <Button
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-transparent"
     >
       Skip
@@ -320,9 +307,8 @@ export const Transparent = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="transparent"
     >
       Skip
@@ -330,9 +316,8 @@ export const Transparent = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFileAlt}
-      size="md"
-      trailingIcon={faCaretDown}
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
       variant="outline-transparent"
     >
       Skip
@@ -350,7 +335,7 @@ export const Link = () => (
     </Button>
     {' '}
     <Button
-      leadingIcon={faPaperPlane}
+      leadingIcon={faPaperPlane as IconDefinition}
       size="sm"
       variant="link"
     >
@@ -370,7 +355,7 @@ export const Link = () => (
 export const Brands = () => (
   <>
     <Button
-      leadingIcon={faGoogle}
+      leadingIcon={faGoogle as IconDefinition}
       size="sm"
       variant="brand-google"
     >
@@ -379,7 +364,7 @@ export const Brands = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faGoogle}
+      leadingIcon={faGoogle as IconDefinition}
       size="sm"
       variant="brand-google"
     >
@@ -387,8 +372,7 @@ export const Brands = () => (
     </Button>
     {' '}
     <Button
-      leadingIcon={faGoogle}
-      size="md"
+      leadingIcon={faGoogle as IconDefinition}
       variant="brand-google"
     >
       Google
@@ -396,15 +380,14 @@ export const Brands = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faGoogle}
-      size="md"
+      leadingIcon={faGoogle as IconDefinition}
       variant="brand-google"
     >
       Google
     </Button>
     <div style={{ margin: '8px' }} />
     <Button
-      leadingIcon={faFacebook}
+      leadingIcon={faFacebook as IconDefinition}
       size="sm"
       variant="brand-facebook"
     >
@@ -413,7 +396,7 @@ export const Brands = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFacebook}
+      leadingIcon={faFacebook as IconDefinition}
       size="sm"
       variant="brand-facebook"
     >
@@ -421,8 +404,7 @@ export const Brands = () => (
     </Button>
     {' '}
     <Button
-      leadingIcon={faFacebook}
-      size="md"
+      leadingIcon={faFacebook as IconDefinition}
       variant="brand-facebook"
     >
       Facebook
@@ -430,8 +412,7 @@ export const Brands = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faFacebook}
-      size="md"
+      leadingIcon={faFacebook as IconDefinition}
       variant="brand-facebook"
     >
       Facebook
@@ -439,7 +420,7 @@ export const Brands = () => (
     {' '}
     <div style={{ margin: '8px' }} />
     <Button
-      leadingIcon={faLinkedin}
+      leadingIcon={faLinkedin as IconDefinition}
       size="sm"
       variant="brand-linkedin"
     >
@@ -448,7 +429,7 @@ export const Brands = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faLinkedin}
+      leadingIcon={faLinkedin as IconDefinition}
       size="sm"
       variant="brand-linkedin"
     >
@@ -456,8 +437,7 @@ export const Brands = () => (
     </Button>
     {' '}
     <Button
-      leadingIcon={faLinkedin}
-      size="md"
+      leadingIcon={faLinkedin as IconDefinition}
       variant="brand-linkedin"
     >
       LinkedIn
@@ -465,15 +445,14 @@ export const Brands = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faLinkedin}
-      size="md"
+      leadingIcon={faLinkedin as IconDefinition}
       variant="brand-linkedin"
     >
       LinkedIn
     </Button>
     <div style={{ margin: '8px' }} />
     <Button
-      leadingIcon={faTwitter}
+      leadingIcon={faTwitter as IconDefinition}
       size="sm"
       variant="brand-twitter"
     >
@@ -482,7 +461,7 @@ export const Brands = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faTwitter}
+      leadingIcon={faTwitter as IconDefinition}
       size="sm"
       variant="brand-twitter"
     >
@@ -490,8 +469,7 @@ export const Brands = () => (
     </Button>
     {' '}
     <Button
-      leadingIcon={faTwitter}
-      size="md"
+      leadingIcon={faTwitter as IconDefinition}
       variant="brand-twitter"
     >
       Twitter
@@ -499,8 +477,7 @@ export const Brands = () => (
     {' '}
     <Button
       disabled
-      leadingIcon={faTwitter}
-      size="md"
+      leadingIcon={faTwitter as IconDefinition}
       variant="brand-twitter"
     >
       Twitter
@@ -512,7 +489,7 @@ export const Loading = () => (
   <>
     <Button
       isLoading={boolean('isLoading', true)}
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       loadingText={text('loadingText', 'Loading...')}
       size="sm"
       variant="primary"
@@ -522,7 +499,7 @@ export const Loading = () => (
     {' '}
     <Button
       isLoading={boolean('isLoading', true)}
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       loadingText={text('loadingText', 'Loading...')}
       size="sm"
       variant="outline-primary"
@@ -532,9 +509,8 @@ export const Loading = () => (
     {' '}
     <Button
       isLoading={boolean('isLoading', true)}
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       loadingText={text('loadingText', 'Loading...')}
-      size="md"
       variant="primary"
     >
       Confirm
@@ -542,9 +518,8 @@ export const Loading = () => (
     {' '}
     <Button
       isLoading={boolean('isLoading', true)}
-      leadingIcon={faFileAlt}
+      leadingIcon={faFileAlt as IconDefinition}
       loadingText={text('loadingText', 'Loading...')}
-      size="md"
       variant="outline-primary"
     >
       Confirm
