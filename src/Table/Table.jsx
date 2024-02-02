@@ -5,33 +5,39 @@ import classNames from 'classnames';
 import { FixedSizeList } from 'react-window';
 import TableLoadingSkeleton from './TableLoadingSkeleton';
 
-const Item = ({ index, style, data }) => {
-  return (
-    <div style={style}>
-      {data[index]}
-   </div>
-  );
-};
+const Item = ({ index, style }) => (
+  <div style={style}>hey{index}
+  </div>
+);
 
 const Table = ({
-  children,
   className,
   isLoading,
   loadingColumns,
   loadingRows,
-  ...props
+  renderRow,
 }) => (
   <>
     <FixedSizeList
+      height={500}
+      itemCount={100}
+      itemSize={50}
+      width="100%"
+    >
+      {({ index, style }) => (
+        <div style={style}>{renderRow && renderRow({ index })}</div>
+      )}
+    </FixedSizeList>
+
+    {/* <FixedSizeList
       className={classNames('Table', className)}
       height={800}
       itemCount={1000}
       itemSize={150}
-      width={'100%'}
-      itemData={children}
+      width="100%"
     >
       {Item}
-    </FixedSizeList>
+    </FixedSizeList> */}
   </>
 );
 
