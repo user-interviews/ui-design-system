@@ -2,7 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+import { FixedSizeList } from 'react-window';
 import TableLoadingSkeleton from './TableLoadingSkeleton';
+
+const Item = ({ index, style, data }) => {
+  return (
+    <div style={style}>
+      {data[index]}
+   </div>
+  );
+};
 
 const Table = ({
   children,
@@ -13,19 +22,16 @@ const Table = ({
   ...props
 }) => (
   <>
-    {!isLoading ? (
-      <table
-        className={classNames(
-        'Table',
-        className,
-        )}
-        {...props}
-      >
-        {children}
-      </table>
-    ) : (
-      <TableLoadingSkeleton columns={loadingColumns} rows={loadingRows} />
-    )}
+    <FixedSizeList
+      className={classNames('Table', className)}
+      height={800}
+      itemCount={1000}
+      itemSize={150}
+      width={'100%'}
+      itemData={children}
+    >
+      {Item}
+    </FixedSizeList>
   </>
 );
 
