@@ -1,6 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faPlus } from '@fortawesome/pro-regular-svg-icons';
 
 import Button from 'src/Button';
@@ -26,7 +27,7 @@ export const Default: Story = {
 
 export const PrimaryAction: Story = {
   args: {
-    primaryAction: <Button leadingIcon={faPlus} variant="primary">New project</Button>,
+    primaryAction: <Button leadingIcon={faPlus as IconDefinition} variant="primary">New project</Button>,
     subtitle: 'Launch your first project to start conducting research! Source from a pool of 2.4 million participants to reach nearly any target audience.',
     title: 'You have no projects',
   },
@@ -44,7 +45,7 @@ export const Image: Story = {
 export const FullWidth: Story = {
   args: {
     fullWidth: true,
-    primaryAction: <Button leadingIcon={faPlus} variant="primary">New project</Button>,
+    primaryAction: <Button leadingIcon={faPlus as IconDefinition} variant="primary">New project</Button>,
     subtitle: 'Launch your first project to start conducting research! Source from a pool of 2.4 million participants to reach nearly any target audience.',
     title: 'You have no projects',
   },
