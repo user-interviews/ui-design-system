@@ -189,7 +189,7 @@ export const Warning = () => (
       size="sm"
       trailingIcon={faCaretDown as IconDefinition}
       variant="outline-warning"
-    >
+      >
       Edit
     </Button>
     {' '}
@@ -301,7 +301,7 @@ export const Transparent = () => (
       leadingIcon={faFileAlt as IconDefinition}
       trailingIcon={faCaretDown as IconDefinition}
       variant="outline-transparent"
-    >
+      >
       Skip
     </Button>
     {' '}
