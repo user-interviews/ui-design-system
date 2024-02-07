@@ -91,7 +91,7 @@ Card.propTypes = {
   noPadding: PropTypes.bool,
   size: PropTypes.string,
   subTitle: PropTypes.string,
-  title: PropTypes.string,
+  title: PropTypes.node,
 };
 
 Card.defaultProps = {
