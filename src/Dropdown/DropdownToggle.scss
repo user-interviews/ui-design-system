@@ -39,6 +39,14 @@ $warning: $ux-yellow-400;
 
   &.btn-primary {
     @include btn-primary;
+
+    &:focus {
+      background: $ux-emerald-600;
+    }
+
+    &.show:focus {
+      background: $ux-emerald-700;
+    }
   }
 
   &.btn-outline-primary {
@@ -47,6 +55,14 @@ $warning: $ux-yellow-400;
 
   &.btn-danger {
     @include btn-danger;
+
+    &:focus {
+      background: $ux-red-500;
+    }
+
+    &.show:focus {
+      background: $ux-red-700;
+    }
   }
   
   &.btn-outline-danger {
@@ -55,6 +71,14 @@ $warning: $ux-yellow-400;
   
   &.btn-warning {
     @include btn-warning;
+
+    &:focus {
+      background: $ux-yellow-400;
+    }
+
+    &.show:focus {
+      background: $ux-yellow-600;
+    }
   }
   
   &.btn-outline-warning {
@@ -63,6 +87,14 @@ $warning: $ux-yellow-400;
 
   &.btn-transparent {
     @include btn-transparent;
+
+    &:focus {
+      background: transparent;
+    }
+
+    &.show:focus {
+      background: $ux-gray-400;
+    }
   }
 
   &.btn-outline-transparent {
