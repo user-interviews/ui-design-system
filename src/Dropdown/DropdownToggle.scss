@@ -4,18 +4,6 @@ $primary: $ux-emerald-600;
 $danger: $ux-red;
 $warning: $ux-yellow-400; 
 
-.Synthesized {
-  .DropdownToggle {
-    &.btn-primary {
-      @include synthesis-btn-primary;
-    }
-  
-    &.btn-outline-primary {
-      @include synthesis-btn-outline-primary;
-    }
-  }
-}
-
 .DropdownToggle {
   @include synth-font-type-30--bold;
 
@@ -99,5 +87,17 @@ $warning: $ux-yellow-400;
 
   &.btn-outline-transparent {
     @include btn-outline-transparent;
+  }
+}
+
+.Synthesized {
+  .DropdownToggle {
+    &.btn-primary {
+      @include synthesis-btn-primary;
+    }
+
+    &.btn-outline-primary {
+      @include synthesis-btn-outline-primary;
+    }
   }
 }
