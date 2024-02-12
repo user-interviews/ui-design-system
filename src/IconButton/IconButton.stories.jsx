@@ -37,13 +37,7 @@ export const AriaLabel = () => (
   </>
 );
 
-export const Loading = () => (
-  <>
-    <IconButton action="ADD" isLoading />
-    <IconButton action="ADD" isLoading loadingText="Adding participant..." />
-    <IconButton action="ADD" isLoading loadingText="" />
-  </>
-);
+export const Loading = () => <IconButton action="ADD" isLoading />;
 
 export const Sizes = () => (
   <>
