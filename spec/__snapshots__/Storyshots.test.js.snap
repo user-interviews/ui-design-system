@@ -9298,6 +9298,7 @@ Array [
 exports[`Storyshots Components/IconButton Aria Label 1`] = `
 Array [
   <button
+    aria-disabled={false}
     aria-label="Previous page"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9322,6 +9323,7 @@ Array [
     </svg>
   </button>,
   <button
+    aria-disabled={false}
     aria-label="Next page"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9346,6 +9348,7 @@ Array [
     </svg>
   </button>,
   <button
+    aria-disabled={false}
     aria-label="Delete participant"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9370,6 +9373,7 @@ Array [
     </svg>
   </button>,
   <button
+    aria-disabled={false}
     aria-label="Edit note"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9399,6 +9403,7 @@ Array [
 exports[`Storyshots Components/IconButton Common Actions 1`] = `
 Array [
   <button
+    aria-disabled={false}
     aria-label="Add"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9423,6 +9428,7 @@ Array [
     </svg>
   </button>,
   <button
+    aria-disabled={false}
     aria-label="Subtract"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9447,6 +9453,7 @@ Array [
     </svg>
   </button>,
   <button
+    aria-disabled={false}
     aria-label="Edit"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9471,6 +9478,7 @@ Array [
     </svg>
   </button>,
   <button
+    aria-disabled={false}
     aria-label="Delete"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9495,6 +9503,7 @@ Array [
     </svg>
   </button>,
   <button
+    aria-disabled={false}
     aria-label="Copy"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9519,6 +9528,7 @@ Array [
     </svg>
   </button>,
   <button
+    aria-disabled={false}
     aria-label="Previous"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9543,6 +9553,7 @@ Array [
     </svg>
   </button>,
   <button
+    aria-disabled={false}
     aria-label="Next"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9567,6 +9578,7 @@ Array [
     </svg>
   </button>,
   <button
+    aria-disabled={false}
     aria-label="Close"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9591,6 +9603,7 @@ Array [
     </svg>
   </button>,
   <button
+    aria-disabled={false}
     aria-label="Expand"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9617,9 +9630,38 @@ Array [
 ]
 `;
 
+exports[`Storyshots Components/IconButton Loading 1`] = `
+<button
+  aria-disabled={true}
+  aria-label="Add"
+  className="Button IconButton btn btn-transparent btn-sm"
+  disabled={true}
+  type="button"
+>
+  <svg
+    aria-hidden="true"
+    className="svg-inline--fa fa-spinner-third icon-left btn-loading-spin"
+    data-icon="spinner-third"
+    data-prefix="far"
+    focusable="false"
+    role="img"
+    style={Object {}}
+    viewBox="0 0 512 512"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M457 372c11.5 6.6 26.3 2.7 31.8-9.3C503.7 330.2 512 294.1 512 256C512 122.7 410.1 13.2 280 1.1C266.8-.1 256 10.7 256 24v0c0 13.3 10.8 23.9 24 25.4C383.5 61.2 464 149.2 464 256c0 29.3-6.1 57.3-17 82.6c-5.3 12.2-1.5 26.8 10 33.5v0z"
+      fill="currentColor"
+      style={Object {}}
+    />
+  </svg>
+</button>
+`;
+
 exports[`Storyshots Components/IconButton Sizes 1`] = `
 Array [
   <button
+    aria-disabled={false}
     aria-label="Delete"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9644,6 +9686,7 @@ Array [
     </svg>
   </button>,
   <button
+    aria-disabled={false}
     aria-label="Delete"
     className="Button IconButton btn btn-transparent btn-md"
     disabled={false}
@@ -9668,6 +9711,7 @@ Array [
     </svg>
   </button>,
   <button
+    aria-disabled={false}
     aria-label="Delete"
     className="Button IconButton btn btn-transparent btn-lg"
     disabled={false}
