@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import propTypes from 'prop-types';
 
-import { cleanup, render, screen } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import Drawer from './Drawer';
@@ -12,21 +13,18 @@ const elements = {
   drawerChildren: {
     get: () => screen.getByText('children'),
   },
-  drawerOneChildren: {
-    get: () => screen.getByText('children1'),
-  },
   drawerOverlay: {
     get: () => screen.getByRole('presentation'),
     query: () => screen.queryByRole('presentation'),
   },
   drawerOneToggleVisibilityButton: {
-    get: () => screen.getByRole('button', { name: /toggle visibility drawer1/ }),
+    get: () => screen.getByRole('button', { name: /toggle visibility drawerOne/ }),
   },
   drawerTwoToggleVisibilityButton: {
-    get: () => screen.getByRole('button', { name: /toggle visibility drawer2/ }),
+    get: () => screen.getByRole('button', { name: /toggle visibility drawerTwo/ }),
   },
   drawerThreeToggleVisibilityButton: {
-    get: () => screen.getByRole('button', { name: /toggle visibility drawer3/ }),
+    get: () => screen.getByRole('button', { name: /toggle visibility drawerThree/ }),
   },
 };
 
@@ -42,10 +40,14 @@ function SetupDrawerWithChildren(props) {
   );
 }
 
-function SetupMultipleDrawersWithOneOpen() {
-  const [isDrawerOneVisible, setIsDrawerOneVisible] = useState(true);
-  const [isDrawerTwoVisible, setIsDrawerTwoVisible] = useState(false);
-  const [isDrawerThreeVisible, setIsDrawerThreeVisible] = useState(false);
+function SetupMultipleDrawers({
+  drawerOneVisibleDefault,
+  drawerTwoVisibleDefault,
+  drawerThreeVisibleDefault,
+}) {
+  const [isDrawerOneVisible, setIsDrawerOneVisible] = useState(drawerOneVisibleDefault);
+  const [isDrawerTwoVisible, setIsDrawerTwoVisible] = useState(drawerTwoVisibleDefault);
+  const [isDrawerThreeVisible, setIsDrawerThreeVisible] = useState(drawerThreeVisibleDefault);
 
   return (
     <div>
@@ -53,44 +55,56 @@ function SetupMultipleDrawersWithOneOpen() {
         type="button"
         onClick={() => setIsDrawerOneVisible((prevState) => !prevState)}
       >
-        toggle visibility drawer1
+        toggle visibility drawerOne
       </button>
 
       <button
         type="button"
         onClick={() => setIsDrawerTwoVisible((prevState) => !prevState)}
       >
-        toggle visibility drawer2
+        toggle visibility drawerTwo
       </button>
 
       <button
         type="button"
         onClick={() => setIsDrawerThreeVisible((prevState) => !prevState)}
       >
-        toggle visibility drawer3
+        toggle visibility drawerThree
       </button>
 
       <Drawer
         visible={isDrawerOneVisible}
         onRequestClose={() => setIsDrawerOneVisible(false)}
       >
-        <div>children1</div>
+        <div>childrenDrawerOne</div>
       </Drawer>
       <Drawer
         visible={isDrawerTwoVisible}
         onRequestClose={() => setIsDrawerTwoVisible(false)}
       >
-        <div>children2</div>
+        <div>childrenDrawerTwo</div>
       </Drawer>
       <Drawer
         visible={isDrawerThreeVisible}
         onRequestClose={() => setIsDrawerThreeVisible(false)}
       >
-        <div>children3</div>
+        <div>childrenDrawerThree</div>
       </Drawer>
     </div>
   );
 }
+
+SetupMultipleDrawers.propTypes = {
+  drawerOneVisibleDefault: propTypes.bool,
+  drawerThreeVisibleDefault: propTypes.bool,
+  drawerTwoVisibleDefault: propTypes.bool,
+};
+
+SetupMultipleDrawers.defaultProps = {
+  drawerOneVisibleDefault: false,
+  drawerTwoVisibleDefault: false,
+  drawerThreeVisibleDefault: false,
+};
 
 describe('Drawer', () => {
   beforeEach(() => {
@@ -143,6 +157,14 @@ describe('Drawer', () => {
 
           expect(elements.drawerOverlay.query()).not.toBeInTheDocument();
         });
+
+        it('body tag does not have Drawer__Body--open', () => {
+          // eslint-disable-next-line max-len
+          const { container } = render(<SetupDrawerWithChildren hasBackgroundOverlay={false} visible={false} />);
+          const body = container.closest('body');
+
+          expect(body.classList).not.toContain('Drawer__Body--open');
+        });
       });
     });
 
@@ -183,14 +205,14 @@ describe('Drawer', () => {
         expect(body.classList).toContain('Drawer__Body--open');
       });
 
-      describe('when hasBackgroundOverlay is falsex', () => {
+      describe('when hasBackgroundOverlay is false', () => {
         it('does not have drawer overlay', () => {
           render(<SetupDrawerWithChildren hasBackgroundOverlay={false} visible />);
 
           expect(elements.drawerOverlay.query()).not.toBeInTheDocument();
         });
 
-        it('body tag does not have Drawer__Body--openx', () => {
+        it('body tag does not have Drawer__Body--open', () => {
           // eslint-disable-next-line max-len
           const { container } = render(<SetupDrawerWithChildren hasBackgroundOverlay={false} visible />);
           const body = container.closest('body');
@@ -202,17 +224,17 @@ describe('Drawer', () => {
   });
 
   describe('When component renders multiple Drawers', () => {
-    describe('with drawer1 visible', () => {
+    describe('with drawerOne visible visible by default', () => {
       it('body tag has Drawer__Body--open', () => {
-        const { container } = render(<SetupMultipleDrawersWithOneOpen />);
+        const { container } = render(<SetupMultipleDrawers drawerOneVisibleDefault />);
         const body = container.closest('body');
 
         expect(body.classList).toContain('Drawer__Body--open');
       });
 
-      describe('when user clicks on drawer1 toggle visibility button', () => {
-        it('body tag does not have Drawer__body--open', () => {
-          const { container } = render(<SetupMultipleDrawersWithOneOpen />);
+      describe('when user clicks on drawerOne toggle visibility button', () => {
+        it('body tag does not have Drawer__body--open after click', () => {
+          const { container } = render(<SetupMultipleDrawers drawerOneVisibleDefault />);
           const body = container.closest('body');
 
           expect(body.classList).toContain('Drawer__Body--open');
@@ -223,6 +245,27 @@ describe('Drawer', () => {
         });
       });
     });
-    it.todo('add more spec variations');
+
+    describe('with no drawers visible by default', () => {
+      it('body tag does not have Drawer__body--open', () => {
+        const { container } = render(<SetupMultipleDrawers />);
+        const body = container.closest('body');
+
+        expect(body.classList).not.toContain('Drawer__Body--open');
+      });
+
+      describe('when user clicks on drawerOne toggle visibility button', () => {
+        it('body tag has Drawer__body--open after click', () => {
+          const { container } = render(<SetupMultipleDrawers />);
+          const body = container.closest('body');
+
+          expect(body.classList).not.toContain('Drawer__Body--open');
+
+          userEvent.click(elements.drawerOneToggleVisibilityButton.get());
+
+          expect(body.classList).toContain('Drawer__Body--open');
+        });
+      });
+    });
   });
 });
