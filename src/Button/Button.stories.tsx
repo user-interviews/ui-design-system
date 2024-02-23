@@ -97,6 +97,158 @@ export const Primary = () => (
   </>
 );
 
+export const DangerDEPRECATED = () => (
+  <>
+    <Button
+      leadingIcon={faFileAlt as IconDefinition}
+      size="sm"
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="danger"
+    >
+      Delete
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt as IconDefinition}
+      size="sm"
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="outline-danger"
+    >
+      Delete
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt as IconDefinition}
+      size="sm"
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="danger"
+    >
+      Delete
+    </Button>
+    <Button
+      disabled
+      leadingIcon={faFileAlt as IconDefinition}
+      size="sm"
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="outline-danger"
+    >
+      Delete
+    </Button>
+    {' '}
+    {' '}
+    <Button
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="danger"
+    >
+      Delete
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="outline-danger"
+    >
+      Delete
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="danger"
+    >
+      Delete
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="outline-danger"
+    >
+      Delete
+    </Button>
+  </>
+);
+
+export const WarningDEPRECATED = () => (
+  <>
+    <Button
+      leadingIcon={faFileAlt as IconDefinition}
+      size="sm"
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt as IconDefinition}
+      size="sm"
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="outline-warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt as IconDefinition}
+      size="sm"
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt as IconDefinition}
+      size="sm"
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="outline-warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="outline-warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="warning"
+    >
+      Edit
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="outline-warning"
+    >
+      Edit
+    </Button>
+  </>
+);
+
 export const Transparent = () => (
   <>
     <Button
