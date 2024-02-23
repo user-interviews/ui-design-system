@@ -224,7 +224,7 @@ describe('Drawer', () => {
   });
 
   describe('When component renders multiple Drawers', () => {
-    describe('with drawerOne visible visible by default', () => {
+    describe('with drawerOne visible by default', () => {
       it('body tag has Drawer__Body--open', () => {
         const { container } = render(<SetupMultipleDrawers drawerOneVisibleDefault />);
         const body = container.closest('body');
