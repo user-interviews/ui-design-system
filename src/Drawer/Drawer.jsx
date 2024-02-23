@@ -59,13 +59,13 @@ const Drawer = ({
     };
   }, [handleEscKeyPress, visible]);
 
-  // console.log(isCurrentlyOpen, 'ref')
-  // console.log(visible, 'visible')
-
   useEffect(() => {
+    // isCurrentlyOpen ref accounts for a case where you could have multiple drawers
+    // on one page and you try to access one of them via their url. Without using ref, the
+    // Drawer__Body--open would be potentially removed via other
+    // closed drawer because of a race condition
     function disableBackgroundScrolling() {
       if (visible && !isCurrentlyOpen.current) {
-        // console.log('setting css')
         document.body.classList.add('Drawer__Body--open');
         isCurrentlyOpen.current = true;
       }
