@@ -216,5 +216,5 @@ describe('Multiple Drawers', () => {
       expect(body.classList).not.toContain('Drawer__Body--open');
     });
   });
-  it.todo('add more variations')
+  it.todo('add more spec variations');
 });
