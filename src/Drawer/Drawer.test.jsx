@@ -94,6 +94,8 @@ function SetupMultipleDrawersWithOneOpen() {
 
 describe('Drawer', () => {
   beforeEach(() => {
+    // Need to manually clean classList on body since jsdom instance can stay
+    // the same across specs https://github.com/jestjs/jest/issues/1224
     window.document.body.classList.remove(...window.document.body.classList);
   });
 
@@ -200,8 +202,7 @@ describe('Drawer', () => {
   });
 
   describe('When component renders multiple Drawers', () => {
-
-    describe('When component renders multiple drawers with drawer1 visible', () => {
+    describe('with drawer1 visible', () => {
       it('body tag has Drawer__Body--open', () => {
         const { container } = render(<SetupMultipleDrawersWithOneOpen />);
         const body = container.closest('body');
@@ -225,19 +226,3 @@ describe('Drawer', () => {
     it.todo('add more spec variations');
   });
 });
-
-// describe('when hasBackgroundOverlay is falsex', () => {
-//   it('does not have drawer overlay', () => {
-//     render(<SetupDrawerWithChildren hasBackgroundOverlay={false} visible />);
-//
-//     expect(elements.drawerOverlay.query()).not.toBeInTheDocument();
-//   });
-//
-//   it('body tag does not have Drawer__Body--openx', () => {
-//     // eslint-disable-next-line max-len
-//     const { container } = render(<SetupDrawerWithChildren hasBackgroundOverlay={false} visible />);
-//     const body = container.closest('body');
-//
-//     expect(body.classList).not.toContain('Drawer__Body--open');
-//   });
-// });
