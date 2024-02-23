@@ -206,14 +206,16 @@ describe('Multiple Drawers', () => {
     });
 
     describe('when user clicks on drawer1 toggle visibility button', () => {
-      const { container } = render(<SetupMultipleDrawersWithOneOpen />);
-      const body = container.closest('body');
+      it('body tag does not have Drawer__body--open', () => {
+        const { container } = render(<SetupMultipleDrawersWithOneOpen />);
+        const body = container.closest('body');
 
-      expect(body.classList).toContain('Drawer__Body--open');
+        expect(body.classList).toContain('Drawer__Body--open');
 
-      userEvent.click(elements.drawerOneToggleVisibilityButton.get());
+        userEvent.click(elements.drawerOneToggleVisibilityButton.get());
 
-      expect(body.classList).not.toContain('Drawer__Body--open');
+        expect(body.classList).not.toContain('Drawer__Body--open');
+      });
     });
   });
   it.todo('add more spec variations');
