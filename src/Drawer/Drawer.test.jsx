@@ -44,10 +44,6 @@ describe('Drawer', () => {
   }
 
   describe('When component renders single drawer', () => {
-    afterEach(() => {
-      cleanup();
-    });
-
     describe('when visible is false', () => {
       it('renders its children', () => {
         render(<SetupDrawerWithChildren visible={false} />);
@@ -138,7 +134,7 @@ describe('Drawer', () => {
           expect(elements.drawerOverlay.query()).not.toBeInTheDocument();
         });
 
-        it('body tag does not have Drawer__Body--open', () => {
+        it('body tag does not have Drawer__Body--openx', () => {
           // eslint-disable-next-line max-len
           const { container } = render(<SetupDrawerWithChildren hasBackgroundOverlay={false} visible />);
           const body = container.closest('body');
@@ -200,8 +196,6 @@ describe('Multiple Drawers', () => {
       </div>
     );
   }
-
-  afterEach(cleanup);
 
   describe('When component renders multiple drawers with drawer1 visible', () => {
     it('body tag has Drawer__Body--open', () => {

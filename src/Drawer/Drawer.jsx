@@ -59,9 +59,13 @@ const Drawer = ({
     };
   }, [handleEscKeyPress, visible]);
 
+  // console.log(isCurrentlyOpen, 'ref')
+  // console.log(visible, 'visible')
+
   useEffect(() => {
     function disableBackgroundScrolling() {
       if (visible && !isCurrentlyOpen.current) {
+        // console.log('setting css')
         document.body.classList.add('Drawer__Body--open');
         isCurrentlyOpen.current = true;
       }
