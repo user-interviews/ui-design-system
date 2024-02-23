@@ -61,8 +61,6 @@ const Drawer = ({
 
   useEffect(() => {
     function disableBackgroundScrolling() {
-      if (!hasBackgroundOverlay) return;
-
       if (visible && !isCurrentlyOpen.current) {
         document.body.classList.add('Drawer__Body--open');
         isCurrentlyOpen.current = true;
@@ -74,7 +72,9 @@ const Drawer = ({
       }
     }
 
-    disableBackgroundScrolling();
+    if (hasBackgroundOverlay) {
+      disableBackgroundScrolling();
+    }
   }, [hasBackgroundOverlay, visible]);
 
   return (
