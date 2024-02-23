@@ -61,8 +61,12 @@ const incentiveData = [
 ];
 /* eslint-enable object-curly-newline */
 
+function MyRow({ index }) {
+  return <div><p>hey</p><p>{index}</p></div>;
+}
+
 export const Default = () => (
-  <Table>
+  <Table renderRow={MyRow}>
     <TableHead>
       <TableRow>
         <TableCell header />
