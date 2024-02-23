@@ -1,5 +1,5 @@
 import React, {
-  createContext, useEffect, useState, useCallback,
+  createContext, useEffect, useState, useCallback, useRef,
 } from 'react';
 import * as propTypes from 'prop-types';
 import classNames from 'classnames';
@@ -33,6 +33,7 @@ const Drawer = ({
   size,
   onRequestClose,
 }) => {
+  const isCurrentlyOpen = useRef(false);
   const [expanded, setExpanded] = useState(defaultExpanded);
 
   const handleExpand = () => setExpanded(!expanded);
@@ -57,6 +58,24 @@ const Drawer = ({
       window.removeEventListener('keydown', handleEscKeyPress);
     };
   }, [handleEscKeyPress, visible]);
+
+  useEffect(() => {
+    function disableBackgroundScrolling() {
+      if (!hasBackgroundOverlay) return;
+
+      if (visible && !isCurrentlyOpen.current) {
+        document.body.classList.add('Drawer__Body--open');
+        isCurrentlyOpen.current = true;
+      }
+
+      if (!visible && isCurrentlyOpen.current) {
+        document.body.classList.remove('Drawer__Body--open');
+        isCurrentlyOpen.current = false;
+      }
+    }
+
+    disableBackgroundScrolling();
+  }, [hasBackgroundOverlay, visible]);
 
   return (
     <>
