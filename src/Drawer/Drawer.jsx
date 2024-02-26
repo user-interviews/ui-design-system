@@ -62,16 +62,16 @@ const Drawer = ({
   useEffect(() => {
     // isCurrentlyOpen ref accounts for a case where you could have multiple drawers
     // on one page and you try to access one of them via their url. Without using ref, the
-    // Drawer__Body--open would be potentially removed via other
+    // Drawer--open would be potentially removed via other
     // closed drawer because of a race condition
     function disableBackgroundScrolling() {
       if (visible && !isCurrentlyOpen.current) {
-        document.body.classList.add('Drawer__Body--open');
+        document.body.classList.add('Drawer--open');
         isCurrentlyOpen.current = true;
       }
 
       if (!visible && isCurrentlyOpen.current) {
-        document.body.classList.remove('Drawer__Body--open');
+        document.body.classList.remove('Drawer--open');
         isCurrentlyOpen.current = false;
       }
     }

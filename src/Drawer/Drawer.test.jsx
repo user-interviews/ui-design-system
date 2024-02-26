@@ -144,11 +144,11 @@ describe('Drawer', () => {
         expect(onRequestClose).not.toHaveBeenCalled();
       });
 
-      it('body tag does not have Drawer__Body--open', () => {
+      it('body tag does not have Drawer--open', () => {
         const { container } = render(<SetupDrawerWithChildren visible={false} />);
         const body = container.closest('body');
 
-        expect(body.classList).not.toContain('Drawer__Body--open');
+        expect(body.classList).not.toContain('Drawer--open');
       });
 
       describe('when hasBackgroundOverlay is false', () => {
@@ -158,12 +158,12 @@ describe('Drawer', () => {
           expect(elements.drawerOverlay.query()).not.toBeInTheDocument();
         });
 
-        it('body tag does not have Drawer__Body--open', () => {
+        it('body tag does not have Drawer--open', () => {
           // eslint-disable-next-line max-len
           const { container } = render(<SetupDrawerWithChildren hasBackgroundOverlay={false} visible={false} />);
           const body = container.closest('body');
 
-          expect(body.classList).not.toContain('Drawer__Body--open');
+          expect(body.classList).not.toContain('Drawer--open');
         });
       });
     });
@@ -198,11 +198,11 @@ describe('Drawer', () => {
         expect(onRequestClose).toHaveBeenCalled();
       });
 
-      it('body tag has Drawer__Body--open', () => {
+      it('body tag has Drawer--open', () => {
         const { container } = render(<SetupDrawerWithChildren visible />);
         const body = container.closest('body');
 
-        expect(body.classList).toContain('Drawer__Body--open');
+        expect(body.classList).toContain('Drawer--open');
       });
 
       describe('when hasBackgroundOverlay is false', () => {
@@ -212,12 +212,12 @@ describe('Drawer', () => {
           expect(elements.drawerOverlay.query()).not.toBeInTheDocument();
         });
 
-        it('body tag does not have Drawer__Body--open', () => {
+        it('body tag does not have Drawer--open', () => {
           // eslint-disable-next-line max-len
           const { container } = render(<SetupDrawerWithChildren hasBackgroundOverlay={false} visible />);
           const body = container.closest('body');
 
-          expect(body.classList).not.toContain('Drawer__Body--open');
+          expect(body.classList).not.toContain('Drawer--open');
         });
       });
     });
@@ -225,45 +225,45 @@ describe('Drawer', () => {
 
   describe('When component renders multiple Drawers', () => {
     describe('with drawerOne visible by default', () => {
-      it('body tag has Drawer__Body--open', () => {
+      it('body tag has Drawer--open', () => {
         const { container } = render(<SetupMultipleDrawers drawerOneVisibleDefault />);
         const body = container.closest('body');
 
-        expect(body.classList).toContain('Drawer__Body--open');
+        expect(body.classList).toContain('Drawer--open');
       });
 
       describe('when user clicks on drawerOne toggle visibility button', () => {
-        it('body tag does not have Drawer__body--open after click', () => {
+        it('body tag does not have Drawer--open after click', () => {
           const { container } = render(<SetupMultipleDrawers drawerOneVisibleDefault />);
           const body = container.closest('body');
 
-          expect(body.classList).toContain('Drawer__Body--open');
+          expect(body.classList).toContain('Drawer--open');
 
           userEvent.click(elements.drawerOneToggleVisibilityButton.get());
 
-          expect(body.classList).not.toContain('Drawer__Body--open');
+          expect(body.classList).not.toContain('Drawer--open');
         });
       });
     });
 
     describe('with no drawers visible by default', () => {
-      it('body tag does not have Drawer__body--open', () => {
+      it('body tag does not have Drawer--open', () => {
         const { container } = render(<SetupMultipleDrawers />);
         const body = container.closest('body');
 
-        expect(body.classList).not.toContain('Drawer__Body--open');
+        expect(body.classList).not.toContain('Drawer--open');
       });
 
       describe('when user clicks on drawerOne toggle visibility button', () => {
-        it('body tag has Drawer__body--open after click', () => {
+        it('body tag has Drawer--open after click', () => {
           const { container } = render(<SetupMultipleDrawers />);
           const body = container.closest('body');
 
-          expect(body.classList).not.toContain('Drawer__Body--open');
+          expect(body.classList).not.toContain('Drawer--open');
 
           userEvent.click(elements.drawerOneToggleVisibilityButton.get());
 
-          expect(body.classList).toContain('Drawer__Body--open');
+          expect(body.classList).toContain('Drawer--open');
         });
       });
     });
