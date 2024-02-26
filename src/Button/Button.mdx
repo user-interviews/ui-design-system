@@ -44,6 +44,10 @@ import * as ComponentStories from './Button.stories';
 	- Space is limited (e.g. too small for text alone)
 	- The icon is standardized or represents an object with a strong physical analog or visual attribute (e.g. floppy disk (Save), pencil (Edit))
 
+### Deprecated variants
+
+- The `danger` and `warning` variants are deprecated and will be removed in the next major version.
+
 ## Button vs. Link distinction
 
 - Buttons are used for actions that affect the application. Clicking them causes changes on the frontend or backend.
@@ -59,18 +63,6 @@ import * as ComponentStories from './Button.stories';
 - Important actions that usually trigger a longer workflow.
 
 <Canvas of={ComponentStories.Primary} />
-
-### Danger
-
-- Used to indicate destructive actions.
-
-<Canvas of={ComponentStories.Danger} />
-
-### Warning
-
-- Currently only used for managing project drafts, but could potentially be used to indicate actions that need require special attention.
-
-<Canvas of={ComponentStories.Warning} />
 
 ### Transparent
 
