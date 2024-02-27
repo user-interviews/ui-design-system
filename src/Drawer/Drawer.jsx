@@ -1,5 +1,5 @@
 import React, {
-  createContext, useEffect, useState, useCallback,
+  createContext, useEffect, useState, useCallback, useRef,
 } from 'react';
 import * as propTypes from 'prop-types';
 import classNames from 'classnames';
@@ -33,6 +33,7 @@ const Drawer = ({
   size,
   onRequestClose,
 }) => {
+  const isCurrentlyOpen = useRef(false);
   const [expanded, setExpanded] = useState(defaultExpanded);
 
   const handleExpand = () => setExpanded(!expanded);
@@ -57,6 +58,28 @@ const Drawer = ({
       window.removeEventListener('keydown', handleEscKeyPress);
     };
   }, [handleEscKeyPress, visible]);
+
+  useEffect(() => {
+    // isCurrentlyOpen ref accounts for a case where you could have multiple drawers
+    // on one page and you try to access one of them via their url. Without using ref, the
+    // Drawer--open would be potentially removed via other
+    // closed drawer because of a race condition
+    function disableBackgroundScrolling() {
+      if (visible && !isCurrentlyOpen.current) {
+        document.body.classList.add('Drawer--open');
+        isCurrentlyOpen.current = true;
+      }
+
+      if (!visible && isCurrentlyOpen.current) {
+        document.body.classList.remove('Drawer--open');
+        isCurrentlyOpen.current = false;
+      }
+    }
+
+    if (hasBackgroundOverlay) {
+      disableBackgroundScrolling();
+    }
+  }, [hasBackgroundOverlay, visible]);
 
   return (
     <>

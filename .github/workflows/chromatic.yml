@@ -13,8 +13,6 @@ on:
 jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
-    env:
-      FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
     steps:
       - uses: actions/checkout@v2
         with:
@@ -22,8 +20,9 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version-file: '.node-version'
-      - run: npm config set "@fortawesome:registry" https://npm.fontawesome.com/ &&
-          npm config set "//npm.fontawesome.com/:_authToken" $FONTAWESOME_NPM_AUTH_TOKEN
+      - run: |
+          npm config set "@fortawesome:registry" https://npm.fontawesome.com/
+          npm config set "//npm.fontawesome.com/:_authToken" ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
       - run: yarn
       - name: Publish to Chromatic
         uses: chromaui/action@v1

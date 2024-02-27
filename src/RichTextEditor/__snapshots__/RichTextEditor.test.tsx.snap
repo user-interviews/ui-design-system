@@ -10,6 +10,7 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
       class="RichTextEditorMenuBar"
     >
       <button
+        aria-disabled="false"
         aria-label="Bold"
         class="Button IconButton btn btn-transparent btn-sm"
         type="button"
@@ -31,6 +32,7 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
         </svg>
       </button>
       <button
+        aria-disabled="false"
         aria-label="Italic"
         class="Button IconButton btn btn-transparent btn-sm"
         type="button"
@@ -52,6 +54,7 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
         </svg>
       </button>
       <button
+        aria-disabled="false"
         aria-label="Link"
         class="Button IconButton btn btn-transparent btn-sm"
         type="button"
@@ -96,6 +99,7 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
         </svg>
       </button>
       <button
+        aria-disabled="false"
         aria-label="Unordered List"
         class="Button IconButton btn btn-transparent btn-sm"
         type="button"
@@ -117,6 +121,7 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
         </svg>
       </button>
       <button
+        aria-disabled="false"
         aria-label="Ordered List"
         class="Button IconButton btn btn-transparent btn-sm"
         type="button"

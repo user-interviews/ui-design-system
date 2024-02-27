@@ -57,7 +57,7 @@ export const IconButtonActions = {
 };
 
 const IconButton = ({
- action, ariaLabel, className, icon, size, variant, ...props
+ action, ariaLabel, className, icon, isLoading, size, variant, ...props
 }) => {
   const getAriaLabel = () => {
     if (action) {
@@ -70,6 +70,8 @@ const IconButton = ({
     <Button
       aria-label={getAriaLabel()}
       className={classnames('IconButton', className)}
+      isLoading={isLoading}
+      loadingText=""
       size={size}
       variant={variant}
       {...props}
@@ -89,6 +91,7 @@ IconButton.propTypes = {
   ariaLabel: PropTypes.string.isRequired,
   className: PropTypes.string,
   icon: PropTypes.object.isRequired,
+  isLoading: PropTypes.bool,
   size: PropTypes.oneOf(Object.values(ButtonSizes)),
   variant: PropTypes.string,
 };
@@ -96,6 +99,7 @@ IconButton.propTypes = {
 IconButton.defaultProps = {
   action: undefined,
   className: undefined,
+  isLoading: false,
   size: ButtonSizes.SMALL,
   variant: ButtonVariants.TRANSPARENT,
 };

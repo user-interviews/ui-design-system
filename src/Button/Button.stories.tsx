@@ -97,7 +97,7 @@ export const Primary = () => (
   </>
 );
 
-export const Danger = () => (
+export const DangerDEPRECATED = () => (
   <>
     <Button
       leadingIcon={faFileAlt as IconDefinition}
@@ -173,7 +173,7 @@ export const Danger = () => (
   </>
 );
 
-export const Warning = () => (
+export const WarningDEPRECATED = () => (
   <>
     <Button
       leadingIcon={faFileAlt as IconDefinition}
