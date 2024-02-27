@@ -3586,7 +3586,11 @@ Array [
 ]
 `;
 
+<<<<<<< release/2.6.0
 exports[`Storyshots Components/Button Danger DEPRECATED 1`] = `
+=======
+exports[`Storyshots Components/Button Danger 1`] = `
+>>>>>>> main
 Array [
   <button
     className="Button btn btn-danger btn-sm"
@@ -4772,7 +4776,11 @@ Array [
 ]
 `;
 
+<<<<<<< release/2.6.0
 exports[`Storyshots Components/Button Warning DEPRECATED 1`] = `
+=======
+exports[`Storyshots Components/Button Warning 1`] = `
+>>>>>>> main
 Array [
   <button
     className="Button btn btn-warning btn-sm"
@@ -9298,7 +9306,10 @@ Array [
 exports[`Storyshots Components/IconButton Aria Label 1`] = `
 Array [
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Previous page"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9323,7 +9334,10 @@ Array [
     </svg>
   </button>,
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Next page"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9348,7 +9362,10 @@ Array [
     </svg>
   </button>,
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Delete participant"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9373,7 +9390,10 @@ Array [
     </svg>
   </button>,
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Edit note"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9403,7 +9423,10 @@ Array [
 exports[`Storyshots Components/IconButton Common Actions 1`] = `
 Array [
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Add"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9428,7 +9451,10 @@ Array [
     </svg>
   </button>,
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Subtract"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9453,7 +9479,10 @@ Array [
     </svg>
   </button>,
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Edit"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9478,7 +9507,10 @@ Array [
     </svg>
   </button>,
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Delete"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9503,7 +9535,10 @@ Array [
     </svg>
   </button>,
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Copy"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9528,7 +9563,10 @@ Array [
     </svg>
   </button>,
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Previous"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9553,7 +9591,10 @@ Array [
     </svg>
   </button>,
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Next"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9578,7 +9619,10 @@ Array [
     </svg>
   </button>,
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Close"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9603,7 +9647,10 @@ Array [
     </svg>
   </button>,
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Expand"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9630,6 +9677,7 @@ Array [
 ]
 `;
 
+<<<<<<< release/2.6.0
 exports[`Storyshots Components/IconButton Loading 1`] = `
 <button
   aria-disabled={true}
@@ -9662,6 +9710,11 @@ exports[`Storyshots Components/IconButton Sizes 1`] = `
 Array [
   <button
     aria-disabled={false}
+=======
+exports[`Storyshots Components/IconButton Sizes 1`] = `
+Array [
+  <button
+>>>>>>> main
     aria-label="Delete"
     className="Button IconButton btn btn-transparent btn-sm"
     disabled={false}
@@ -9686,7 +9739,10 @@ Array [
     </svg>
   </button>,
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Delete"
     className="Button IconButton btn btn-transparent btn-md"
     disabled={false}
@@ -9711,7 +9767,10 @@ Array [
     </svg>
   </button>,
   <button
+<<<<<<< release/2.6.0
     aria-disabled={false}
+=======
+>>>>>>> main
     aria-label="Delete"
     className="Button IconButton btn btn-transparent btn-lg"
     disabled={false}
@@ -11080,6 +11139,60 @@ exports[`Storyshots Components/Profile Cell Large 1`] = `
       >
         <span
           className="Avatar__circle__initials"
+<<<<<<< release/2.6.0
+        >
+          RR
+        </span>
+      </div>
+    </div>
+  </div>
+  <div
+    className="ProfileCell__content"
+    style={
+      Object {
+        "maxWidth": "none",
+      }
+    }
+  >
+    <div
+      className="ProfileCell__content__name__container"
+    >
+      <h5
+        className="ProfileCell__content__name"
+      >
+        Riley Researcher
+      </h5>
+    </div>
+    <div
+      className="ProfileCell__content__subtitle"
+    >
+      <div>
+        riley@userinterviews.com
+      </div>
+      <div>
+        +1 888 888 8888
+      </div>
+      <div>
+        (-5:00) America/New York
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Profile Cell Loading 1`] = `
+Array [
+  <div
+    className="ProfileCellSkeleton"
+  >
+    <div
+      className="ProfileCellSkeleton__avatar"
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+=======
         >
           RR
         </span>
@@ -11168,6 +11281,65 @@ Array [
           ‌
         </span>
         <br />
+>>>>>>> main
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+<<<<<<< release/2.6.0
+              "borderRadius": "50%",
+              "height": 44,
+              "width": 44,
+=======
+              "borderRadius": "4px",
+              "width": "100%",
+>>>>>>> main
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+<<<<<<< release/2.6.0
+    <div
+      className="ProfileCellSkeleton__info"
+=======
+  </div>,
+  <br />,
+  <div
+    className="ProfileCellSkeleton"
+  >
+    <div
+      className="ProfileCellSkeleton__avatar"
+>>>>>>> main
+    >
+      <span
+        aria-busy={true}
+        aria-live="polite"
+      >
+        <span
+          className="react-loading-skeleton LoadingSkeleton"
+          style={
+            Object {
+              "--base-color": "#E1E1E1",
+<<<<<<< release/2.6.0
+              "borderRadius": "4px",
+              "width": "100%",
+=======
+              "borderRadius": "50%",
+              "height": 44,
+              "width": 44,
+>>>>>>> main
+            }
+          }
+        >
+          ‌
+        </span>
+        <br />
+<<<<<<< release/2.6.0
         <span
           className="react-loading-skeleton LoadingSkeleton"
           style={
@@ -11190,6 +11362,12 @@ Array [
   >
     <div
       className="ProfileCellSkeleton__avatar"
+=======
+      </span>
+    </div>
+    <div
+      className="ProfileCellSkeleton__info"
+>>>>>>> main
     >
       <span
         aria-busy={true}
@@ -11200,15 +11378,21 @@ Array [
           style={
             Object {
               "--base-color": "#E1E1E1",
+<<<<<<< release/2.6.0
               "borderRadius": "50%",
               "height": 44,
               "width": 44,
+=======
+              "borderRadius": "4px",
+              "width": "",
+>>>>>>> main
             }
           }
         >
           ‌
         </span>
         <br />
+<<<<<<< release/2.6.0
       </span>
     </div>
     <div
@@ -11218,6 +11402,8 @@ Array [
         aria-busy={true}
         aria-live="polite"
       >
+=======
+>>>>>>> main
         <span
           className="react-loading-skeleton LoadingSkeleton"
           style={
@@ -11227,6 +11413,7 @@ Array [
               "width": "",
             }
           }
+<<<<<<< release/2.6.0
         >
           ‌
         </span>
@@ -11267,6 +11454,35 @@ exports[`Storyshots Components/Profile Cell Small 1`] = `
         <span
           className="Avatar__circle__initials"
         >
+=======
+        >
+          ‌
+        </span>
+        <br />
+      </span>
+    </div>
+  </div>,
+]
+`;
+
+exports[`Storyshots Components/Profile Cell Small 1`] = `
+<div
+  className="ProfileCell"
+>
+  <div
+    className="ProfileCell__image"
+  >
+    <div
+      aria-hidden={false}
+      className="Avatar"
+    >
+      <div
+        className="Avatar__circle"
+      >
+        <span
+          className="Avatar__circle__initials"
+        >
+>>>>>>> main
           RR
         </span>
       </div>
@@ -12009,6 +12225,7 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
         <label
           className="InputLabel"
           htmlFor="in-modal-creatable-select"
+<<<<<<< release/2.6.0
         >
           In Modal AsyncCreatable select
         </label>
@@ -12021,6 +12238,20 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
           className="AsyncSelect css-b62m3t-container"
           onKeyDown={[Function]}
         >
+=======
+        >
+          In Modal AsyncCreatable select
+        </label>
+        <div
+          className="FormGroup__helper-text"
+        >
+          Select menu is able to overflow the Modal container
+        </div>
+        <div
+          className="AsyncSelect css-b62m3t-container"
+          onKeyDown={[Function]}
+        >
+>>>>>>> main
           <span
             className="css-1f43avz-a11yText-A11yText"
             id="react-select-3-live-region"
@@ -12030,6 +12261,210 @@ exports[`Storyshots Components/Selects/AsyncCreatable In Modal 1`] = `
             aria-live="polite"
             aria-relevant="additions text"
             className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/2.6.0
+          />
+          <div
+            className="Select__control css-1jyc18f-control"
+            onMouseDown={[Function]}
+            onTouchEnd={[Function]}
+          >
+            <div
+              className="Select__value-container css-1fdsijx-ValueContainer"
+            >
+              <div
+                className="Select__placeholder css-177do1b-placeholder"
+                id="react-select-3-placeholder"
+              >
+                Select...
+              </div>
+              <div
+                className="Select__input-container css-qbdosj-Input"
+                data-value=""
+              >
+                <input
+                  aria-autocomplete="list"
+                  aria-describedby="react-select-3-placeholder"
+                  aria-expanded={false}
+                  aria-haspopup={true}
+                  autoCapitalize="none"
+                  autoComplete="off"
+                  autoCorrect="off"
+                  className="Select__input"
+                  disabled={false}
+                  id="in-modal-creatable-select"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  role="combobox"
+                  spellCheck="false"
+                  style={
+                    Object {
+                      "background": 0,
+                      "border": 0,
+                      "color": "inherit",
+                      "font": "inherit",
+                      "gridArea": "1 / 2",
+                      "label": "input",
+                      "margin": 0,
+                      "minWidth": "2px",
+                      "opacity": 1,
+                      "outline": 0,
+                      "padding": 0,
+                      "width": "100%",
+                    }
+                  }
+                  tabIndex={0}
+                  type="text"
+                  value=""
+                />
+              </div>
+            </div>
+            <div
+              className="Select__indicators css-1hb7zxy-IndicatorsContainer"
+            >
+              <span
+                className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
+              />
+              <div
+                aria-hidden="true"
+                className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
+                onMouseDown={[Function]}
+                onTouchEnd={[Function]}
+              >
+                <svg
+                  aria-hidden="true"
+                  className="css-tj5bde-Svg"
+                  focusable="false"
+                  height={20}
+                  viewBox="0 0 20 20"
+                  width={20}
+                >
+                  <path
+                    d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="ModalFooter"
+    >
+      <button
+        className="Button btn btn-transparent"
+        disabled={false}
+        onClick={[Function]}
+        type="button"
+      >
+        Cancel
+      </button>
+      <button
+        className="Button btn btn-primary"
+        disabled={false}
+        type="submit"
+      >
+        Confirm
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Selects/Creatable Default 1`] = `
+<div
+  className="FormGroup"
+>
+  <label
+    className="InputLabel"
+    htmlFor="default-creatable-select"
+  >
+    Default creatable select
+  </label>
+  <div
+    className="CreatableSelect css-b62m3t-container"
+    onKeyDown={[Function]}
+  >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-5-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
+    <div
+      className="Select__control css-1jyc18f-control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className="Select__value-container css-1fdsijx-ValueContainer"
+      >
+        <div
+          className="Select__placeholder css-177do1b-placeholder"
+          id="react-select-5-placeholder"
+        >
+          Select...
+        </div>
+        <div
+          className="Select__input-container css-qbdosj-Input"
+          data-value=""
+        >
+          <input
+            aria-autocomplete="list"
+            aria-describedby="react-select-5-placeholder"
+            aria-expanded={false}
+            aria-haspopup={true}
+            autoCapitalize="none"
+            autoComplete="off"
+            autoCorrect="off"
+            className="Select__input"
+            disabled={false}
+            id="default-creatable-select"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onFocus={[Function]}
+            role="combobox"
+            spellCheck="false"
+            style={
+              Object {
+                "background": 0,
+                "border": 0,
+                "color": "inherit",
+                "font": "inherit",
+                "gridArea": "1 / 2",
+                "label": "input",
+                "margin": 0,
+                "minWidth": "2px",
+                "opacity": 1,
+                "outline": 0,
+                "padding": 0,
+                "width": "100%",
+              }
+            }
+            tabIndex={0}
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
+      <div
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
+      >
+        <span
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
+        />
+        <div
+          aria-hidden="true"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+=======
           />
           <div
             className="Select__control css-1jyc18f-control"
@@ -12678,6 +13113,468 @@ exports[`Storyshots Components/Selects/Single Default 1`] = `
           onMouseDown={[Function]}
           onTouchEnd={[Function]}
         >
+>>>>>>> main
+          <svg
+            aria-hidden="true"
+            className="css-tj5bde-Svg"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+<<<<<<< release/2.6.0
+exports[`Storyshots Components/Selects/Creatable In Modal 1`] = `
+<button
+  className="Button btn btn-primary"
+  disabled={false}
+  onClick={[Function]}
+  type="button"
+>
+  Click to open modal
+</button>
+`;
+
+exports[`Storyshots Components/Selects/Single Custom Option With Checkbox 1`] = `
+=======
+exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
+>>>>>>> main
+<div
+  className="FormGroup"
+>
+  <label
+    className="InputLabel"
+<<<<<<< release/2.6.0
+    htmlFor="custom-option-with-checkbox-select"
+  >
+    Custom Option with Checkbox
+=======
+    htmlFor="grouped-options-select"
+  >
+    Grouped options
+>>>>>>> main
+  </label>
+  <div
+    className="SingleSelect css-b62m3t-container"
+    onKeyDown={[Function]}
+  >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+<<<<<<< release/2.6.0
+      id="react-select-6-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
+    <div
+      className="Select__control css-1jyc18f-control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className="Select__value-container Select__value-container--is-multi css-1fdsijx-ValueContainer"
+      >
+        <div
+          className="Select__placeholder css-177do1b-placeholder"
+          id="react-select-6-placeholder"
+        >
+          Select...
+        </div>
+        <input
+          aria-autocomplete="list"
+          aria-describedby="react-select-6-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
+          aria-readonly={true}
+          className="css-mohuvp-dummyInput-DummyInput"
+          disabled={false}
+          id="custom-option-with-checkbox-select"
+          inputMode="none"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          role="combobox"
+          tabIndex={0}
+          value=""
+        />
+      </div>
+      <div
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
+      >
+        <span
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
+        />
+        <div
+          aria-hidden="true"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-tj5bde-Svg"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Selects/Single Custom Option With Description 1`] = `
+<div
+  className="FormGroup"
+>
+  <label
+    className="InputLabel"
+    htmlFor="custom-option-with-description-select"
+  >
+    Custom Option with Description
+  </label>
+  <div
+    className="SingleSelect css-b62m3t-container"
+    onKeyDown={[Function]}
+  >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-7-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
+    <div
+      className="Select__control css-1jyc18f-control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className="Select__value-container css-1fdsijx-ValueContainer"
+      >
+        <div
+          className="Select__placeholder css-177do1b-placeholder"
+          id="react-select-7-placeholder"
+        >
+          Select...
+        </div>
+        <input
+          aria-autocomplete="list"
+          aria-describedby="react-select-7-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
+          aria-readonly={true}
+          className="css-mohuvp-dummyInput-DummyInput"
+          disabled={false}
+          id="custom-option-with-description-select"
+          inputMode="none"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          role="combobox"
+          tabIndex={0}
+          value=""
+        />
+      </div>
+      <div
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
+      >
+        <span
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
+        />
+        <div
+          aria-hidden="true"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-tj5bde-Svg"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Selects/Single Custom Option With Indeterminate Checkbox 1`] = `
+<div
+  className="FormGroup"
+>
+  <label
+    className="InputLabel"
+    htmlFor="custom-option-with-indeterminate-checkbox"
+  >
+    Custom Option with Indeterminate Checkbox
+  </label>
+  <div
+    className="SingleSelect css-b62m3t-container"
+    onKeyDown={[Function]}
+  >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-8-live-region"
+=======
+      id="react-select-11-live-region"
+>>>>>>> main
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
+    <div
+      className="Select__control css-1jyc18f-control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+<<<<<<< release/2.6.0
+        className="Select__value-container Select__value-container--is-multi css-1fdsijx-ValueContainer"
+      >
+        <div
+          className="Select__placeholder css-177do1b-placeholder"
+          id="react-select-8-placeholder"
+        >
+          Select...
+        </div>
+        <input
+          aria-autocomplete="list"
+          aria-describedby="react-select-8-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
+          aria-readonly={true}
+          className="css-mohuvp-dummyInput-DummyInput"
+          disabled={false}
+          id="custom-option-with-indeterminate-checkbox"
+          inputMode="none"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          role="combobox"
+          tabIndex={0}
+          value=""
+        />
+      </div>
+      <div
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
+      >
+        <span
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
+        />
+        <div
+          aria-hidden="true"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-tj5bde-Svg"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Selects/Single Custom Value Container 1`] = `
+<div
+  className="FormGroup"
+>
+  <label
+    className="InputLabel"
+    htmlFor="custom-value-container-select"
+  >
+    Custom Value Container
+  </label>
+  <div
+    className="SingleSelect css-b62m3t-container"
+    onKeyDown={[Function]}
+  >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-9-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
+    <div
+      className="Select__control css-1jyc18f-control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className="Select__value-container Select__value-container--is-multi css-1fdsijx-ValueContainer"
+      >
+        <div
+          className="Select__placeholder css-177do1b-placeholder"
+          id="react-select-9-placeholder"
+        >
+          Select...
+        </div>
+        <input
+          aria-autocomplete="list"
+          aria-describedby="react-select-9-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
+          aria-readonly={true}
+          className="css-mohuvp-dummyInput-DummyInput"
+          disabled={false}
+          id="custom-value-container-select"
+          inputMode="none"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          role="combobox"
+          tabIndex={0}
+          value=""
+        />
+      </div>
+      <div
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
+      >
+        <span
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
+        />
+        <div
+          aria-hidden="true"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="css-tj5bde-Svg"
+            focusable="false"
+            height={20}
+            viewBox="0 0 20 20"
+            width={20}
+          >
+            <path
+              d="M4.516 7.548c0.436-0.446 1.043-0.481 1.576 0l3.908 3.747 3.908-3.747c0.533-0.481 1.141-0.446 1.574 0 0.436 0.445 0.408 1.197 0 1.615-0.406 0.418-4.695 4.502-4.695 4.502-0.217 0.223-0.502 0.335-0.787 0.335s-0.57-0.112-0.789-0.335c0 0-4.287-4.084-4.695-4.502s-0.436-1.17 0-1.615z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Selects/Single Default 1`] = `
+<div
+  className="FormGroup"
+>
+  <label
+    className="InputLabel"
+    htmlFor="default-select"
+  >
+    Default select
+  </label>
+  <div
+    className="SingleSelect css-b62m3t-container"
+    onKeyDown={[Function]}
+  >
+    <span
+      className="css-1f43avz-a11yText-A11yText"
+      id="react-select-10-live-region"
+    />
+    <span
+      aria-atomic="false"
+      aria-live="polite"
+      aria-relevant="additions text"
+      className="css-1f43avz-a11yText-A11yText"
+    />
+    <div
+      className="Select__control css-1jyc18f-control"
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+    >
+      <div
+        className="Select__value-container css-1fdsijx-ValueContainer"
+      >
+        <div
+          className="Select__placeholder css-177do1b-placeholder"
+          id="react-select-10-placeholder"
+        >
+          Select...
+        </div>
+        <input
+          aria-autocomplete="list"
+          aria-describedby="react-select-10-placeholder"
+          aria-expanded={false}
+          aria-haspopup={true}
+          aria-readonly={true}
+          className="css-mohuvp-dummyInput-DummyInput"
+          disabled={false}
+          id="default-select"
+          inputMode="none"
+          onBlur={[Function]}
+          onChange={[Function]}
+          onFocus={[Function]}
+          role="combobox"
+          tabIndex={0}
+          value=""
+        />
+      </div>
+      <div
+        className="Select__indicators css-1hb7zxy-IndicatorsContainer"
+      >
+        <span
+          className="Select__indicator-separator css-1uei4ir-indicatorSeparator"
+        />
+        <div
+          aria-hidden="true"
+          className="Select__indicator Select__dropdown-indicator css-1r0gan2-indicatorContainer"
+          onMouseDown={[Function]}
+          onTouchEnd={[Function]}
+        >
           <svg
             aria-hidden="true"
             className="css-tj5bde-Svg"
@@ -12731,6 +13628,12 @@ exports[`Storyshots Components/Selects/Single Grouped Options 1`] = `
       >
         <div
           className="Select__placeholder css-177do1b-placeholder"
+=======
+        className="Select__value-container css-1fdsijx-ValueContainer"
+      >
+        <div
+          className="Select__placeholder css-177do1b-placeholder"
+>>>>>>> main
           id="react-select-11-placeholder"
         >
           Select...
@@ -15850,6 +16753,7 @@ exports[`Storyshots Components/Table Table No Hover State 1`] = `
       >
         <span
           className="Pill Pill--blue"
+<<<<<<< release/2.6.0
         >
           New
         </span>
@@ -15912,6 +16816,102 @@ exports[`Storyshots Components/Table Table No Hover State 1`] = `
       >
         <span
           className="Pill Pill--blue"
+=======
+>>>>>>> main
+        >
+          New
+        </span>
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+<<<<<<< release/2.6.0
+        Approved
+=======
+        Qualified
+>>>>>>> main
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+<<<<<<< release/2.6.0
+        jojo330@userinterviews.com
+=======
+        rachel777@userinterviews.com
+>>>>>>> main
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+<<<<<<< release/2.6.0
+        JoJo
+=======
+        Rachel
+>>>>>>> main
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+<<<<<<< release/2.6.0
+        Lee
+=======
+        Rapollo
+>>>>>>> main
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+<<<<<<< release/2.6.0
+        +1898374888
+=======
+        +40988881822329308
+>>>>>>> main
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+<<<<<<< release/2.6.0
+        09/17/2020
+=======
+        07/21/2019
+>>>>>>> main
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+<<<<<<< release/2.6.0
+        1 day ago
+=======
+        -
+>>>>>>> main
+      </td>
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+<<<<<<< release/2.6.0
+        2 days ago
+=======
+        -
+>>>>>>> main
+      </td>
+    </tr>
+    <tr
+      className="TableRow TableRow--remove-hover"
+    >
+      <td
+        className="TableCell"
+        style={Object {}}
+      >
+        <span
+          className="Pill Pill--blue"
         >
           New
         </span>
@@ -15926,42 +16926,163 @@ exports[`Storyshots Components/Table Table No Hover State 1`] = `
         className="TableCell"
         style={Object {}}
       >
+<<<<<<< release/2.6.0
+        faus555@userinterviews.com
+=======
         jojo330@userinterviews.com
+>>>>>>> main
       </td>
       <td
         className="TableCell"
         style={Object {}}
       >
+<<<<<<< release/2.6.0
+        Faustino
+=======
         JoJo
+>>>>>>> main
       </td>
       <td
         className="TableCell"
         style={Object {}}
       >
+<<<<<<< release/2.6.0
+        Gaitan
+=======
         Lee
+>>>>>>> main
       </td>
       <td
         className="TableCell"
         style={Object {}}
       >
+<<<<<<< release/2.6.0
+        +90918394789
+=======
         +1898374888
+>>>>>>> main
       </td>
       <td
         className="TableCell"
         style={Object {}}
       >
+<<<<<<< release/2.6.0
+        06/13/2019
+=======
         09/17/2020
+>>>>>>> main
       </td>
       <td
         className="TableCell"
         style={Object {}}
       >
+<<<<<<< release/2.6.0
+        -
+=======
         1 day ago
+>>>>>>> main
       </td>
       <td
         className="TableCell"
         style={Object {}}
       >
+<<<<<<< release/2.6.0
+        -
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`Storyshots Components/Table Table On Card 1`] = `
+<section
+  className="Card Card--divided"
+>
+  <div
+    className="Card__header"
+  >
+    <h2
+      className="Card__title"
+    >
+      Email Template Sets
+    </h2>
+  </div>
+  <hr
+    className="Card__divider"
+  />
+  <h3
+    className="Card__subtitle"
+  >
+    Manage a set of templates that can be applied to a project’s automated emails.
+  </h3>
+  <div
+    id="Some table container"
+    style={
+      Object {
+        "display": "block",
+        "maxWidth": "fit-content",
+        "overflowX": "auto",
+        "overflowY": "auto",
+        "whiteSpace": "nowrap",
+      }
+    }
+  >
+    <table
+      className="Table"
+    >
+      <thead
+        className="TableHead"
+      >
+        <tr
+          className="TableRow"
+        >
+          <th
+            className="TableCell TableCell__header"
+            style={null}
+          >
+            Email
+          </th>
+          <th
+            className="TableCell TableCell__header"
+            style={null}
+          >
+            First name
+          </th>
+          <th
+            className="TableCell TableCell__header"
+            style={null}
+          >
+            Last name
+          </th>
+          <th
+            className="TableCell TableCell__header"
+            style={null}
+          >
+            Phone number
+          </th>
+          <th
+            className="TableCell TableCell__header"
+            style={null}
+          >
+            Date added
+          </th>
+          <th
+            className="TableCell TableCell__header"
+            style={null}
+          >
+            Last invited
+          </th>
+          <th
+            className="TableCell TableCell__header"
+            style={null}
+          >
+            Last applied
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        className="TableBody"
+=======
         2 days ago
       </td>
     </tr>
@@ -16069,10 +17190,56 @@ exports[`Storyshots Components/Table Table On Card 1`] = `
     >
       <thead
         className="TableHead"
+>>>>>>> main
       >
         <tr
           className="TableRow"
         >
+<<<<<<< release/2.6.0
+          <td
+            className="TableCell"
+            style={Object {}}
+          >
+            riley@userinterviews.com
+          </td>
+          <td
+            className="TableCell"
+            style={Object {}}
+          >
+            Riley
+          </td>
+          <td
+            className="TableCell"
+            style={Object {}}
+          >
+            Researcher
+          </td>
+          <td
+            className="TableCell"
+            style={Object {}}
+          >
+            +18888888888
+          </td>
+          <td
+            className="TableCell"
+            style={Object {}}
+          >
+            01/22/2021
+          </td>
+          <td
+            className="TableCell"
+            style={Object {}}
+          >
+            3 days ago
+          </td>
+          <td
+            className="TableCell"
+            style={Object {}}
+          >
+            1 day ago
+          </td>
+        </tr>
+=======
           <th
             className="TableCell TableCell__header"
             style={null}
@@ -16120,6 +17287,7 @@ exports[`Storyshots Components/Table Table On Card 1`] = `
       <tbody
         className="TableBody"
       >
+>>>>>>> main
         <tr
           className="TableRow"
         >
@@ -16127,6 +17295,8 @@ exports[`Storyshots Components/Table Table On Card 1`] = `
             className="TableCell"
             style={Object {}}
           >
+<<<<<<< release/2.6.0
+=======
             riley@userinterviews.com
           </td>
           <td
@@ -16173,6 +17343,7 @@ exports[`Storyshots Components/Table Table On Card 1`] = `
             className="TableCell"
             style={Object {}}
           >
+>>>>>>> main
             basel123@userinterviews.com
           </td>
           <td
@@ -17460,7 +18631,26 @@ exports[`Storyshots Components/Table Table With Compact Option 1`] = `
           style={Object {}}
         >
           04/08/2020
+<<<<<<< release/2.6.0
         </td>
+        <td
+          className="TableCell TableCell--compact"
+          style={Object {}}
+        >
+          -
+        </td>
+        <td
+          className="TableCell TableCell--compact"
+          style={Object {}}
+        >
+          -
+=======
+>>>>>>> main
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
         <td
           className="TableCell TableCell--compact"
           style={Object {}}
@@ -17562,7 +18752,20 @@ exports[`Storyshots Components/Table Table With Compact Option 1`] = `
           style={Object {}}
         >
           6 days ago
+<<<<<<< release/2.6.0
+=======
         </td>
+        <td
+          className="TableCell TableCell--compact"
+          style={Object {}}
+        >
+          5 days ago
+>>>>>>> main
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
         <td
           className="TableCell TableCell--compact"
           style={Object {}}
@@ -17725,10 +18928,23 @@ exports[`Storyshots Components/Table Table With Compact Option 1`] = `
         </td>
         <td
           className="TableCell TableCell--compact"
+<<<<<<< release/2.6.0
           style={Object {}}
         >
           -
         </td>
+        <td
+          className="TableCell TableCell--compact"
+=======
+>>>>>>> main
+          style={Object {}}
+        >
+          -
+        </td>
+      </tr>
+      <tr
+        className="TableRow"
+      >
         <td
           className="TableCell TableCell--compact"
           style={Object {}}
