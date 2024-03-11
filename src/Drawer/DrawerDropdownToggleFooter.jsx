@@ -15,9 +15,9 @@ export function DrawerDropdownToggleFooter({
   secondaryActionText,
   onSecondaryAction,
 }) {
-	const dropdownToggle = renderDropdownToggle({
-	  variant: 'primary',
-	});
+  const dropdownToggle = renderDropdownToggle({
+    variant: 'primary',
+  });
 
   const dropdownItems = renderDropdownItems();
 
@@ -28,17 +28,17 @@ export function DrawerDropdownToggleFooter({
       </div>
       <div className="DrawerDropdownToggleFooter__actions">
         {onSecondaryAction && (
-        <Button
-          disabled={secondaryActionDisabled}
-          isLoading={isSecondaryActionLoading}
-          loadingText={secondaryActionLoadingText}
-          type="button"
-          variant="transparent"
-          onClick={onSecondaryAction}
-        >
-          {secondaryActionText}
-        </Button>
-		  )}
+          <Button
+            disabled={secondaryActionDisabled}
+            isLoading={isSecondaryActionLoading}
+            loadingText={secondaryActionLoadingText}
+            type="button"
+            variant="transparent"
+            onClick={onSecondaryAction}
+          >
+            {secondaryActionText}
+          </Button>
+        )}
         <Dropdown>
           {dropdownToggle}
           <DropdownMenu>
