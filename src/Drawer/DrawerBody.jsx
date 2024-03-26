@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import * as propTypes from 'prop-types';
 
 import './DrawerBody.scss';
 
-const DrawerBody = ({
+const DrawerBody = forwardRef(({
   children,
-}) => (
-  <div className="Drawer__body">
+}, ref) => (
+  <div
+    className="Drawer__body"
+    ref={ref}
+  >
     {children}
   </div>
-);
+));
 
 DrawerBody.propTypes = {
   children: propTypes.node.isRequired,

@@ -10,4 +10,4 @@ fi
 yarn build
 yalc publish
 cd $RAILS_SERVER_PATH
-yalc link @user-interviews/ui-design-system
+yalc add @user-interviews/ui-design-system
