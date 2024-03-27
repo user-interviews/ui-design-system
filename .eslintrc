@@ -142,10 +142,6 @@
       "labelComponents": []
     }],
     "linebreak-style": 0,
-    "max-len": ["error", 125, 2, {
-      "ignorePattern": "^import\\s.+\\sfrom\\s.+;$",
-      "ignoreUrls": true
-    }],
     "no-case-declarations": "warn",
     "no-confusing-arrow": 0,
     "no-loop-func": 1,
