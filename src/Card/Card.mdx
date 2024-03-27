@@ -1,19 +1,16 @@
-import { ArgTypes, Canvas } from '@storybook/blocks';
-import Card from './Card';
-import * as ComponentStories from './Card.stories';
+import { Controls, Canvas } from "@storybook/blocks";
+import Card from "./Card";
+import * as ComponentStories from "./Card.stories";
 
 # Card
 
 ##
 
-<h4>
-	Cards serve as containers to help group content on a page.
-</h4>
+<h4>Cards serve as containers to help group content on a page.</h4>
 
 <Canvas of={ComponentStories.Default} />
 
-<ArgTypes of={Card} />
-
+<Controls />
 
 ### Default
 
@@ -43,7 +40,6 @@ Pass a custom LoadingSkeleton to `loadingSkeleton`. Use only when a custom skele
 
 <Canvas of={ComponentStories.LoadingCustom} />
 
-
 ## Formatting
 
 ### States
@@ -59,13 +55,12 @@ Pass a custom LoadingSkeleton to `loadingSkeleton`. Use only when a custom skele
 ### Sizing
 
 - **Width:** Card width is defined by, informed by the surrounding layout:
-	- `card-width`: 896px
-	- `card-width-md`: 640px
-	- `card-width-sm`: 512px
-	- `card-width-xs`: 240px
+  - `card-width`: 896px
+  - `card-width-md`: 640px
+  - `card-width-sm`: 512px
+  - `card-width-xs`: 240px
 
 ### Alignment
-
 
 ## Best practices
 

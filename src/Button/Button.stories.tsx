@@ -14,7 +14,6 @@ export default {
     controls: { exclude: [] },
     docs: {
       page: mdx,
-
     },
   },
   args: {
