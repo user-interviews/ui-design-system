@@ -1,42 +1,18 @@
-import { ArgTypes, Canvas } from '@storybook/blocks';
-import Avatar from './Avatar';
-import * as ComponentStories from './Avatar.stories';
+import { Controls, Canvas } from "@storybook/blocks";
+import Avatar from "./Avatar";
+import * as ComponentStories from "./Avatar.stories";
 
 # Avatar
 
-##
+<h4>Displays a user's initials or profile photo.</h4>
 
-<h4>
-  Displays a user's initials or profile photo.
-</h4>
-
-<Canvas of={ComponentStories.Small} />
-
-### When to use
-- Reason 1
-- Reason 2
-
-### When to not use
-- Reason 1
-- Reason 2
+<Canvas of={ComponentStories.Primary} />
 
 ## Props
 
-<ArgTypes of={Avatar} />
+<Controls />
 
 ## Stories
-
-### Small
-
-- The most common size for the Avatar.
-
-<Canvas of={ComponentStories.Small} />
-
-### Large
-
-- Use when more space allows in a layout, especially to provide more emphasis -- for example, a profile page.
-
-<Canvas of={ComponentStories.Large} />
 
 ### With Alert
 
@@ -53,23 +29,7 @@ import * as ComponentStories from './Avatar.stories';
 
 ## Formatting
 
-### States
-
 ### Anatomy
+
 - **Initials: ** First name and Last name
 - **Image: ** profile photo
-
-### Sizing
-
-### Alignment
-
-
-## Best practices
-
-### General
-
-### Behavior
-
-### Implementation
-
-### UX Copy
