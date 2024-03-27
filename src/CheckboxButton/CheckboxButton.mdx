@@ -1,28 +1,31 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
-import CheckboxButton from './CheckboxButton';
-import * as ComponentStories from './CheckboxButton.stories';
+import { Controls, Canvas } from "@storybook/blocks";
+import CheckboxButton from "./CheckboxButton";
+import * as ComponentStories from "./CheckboxButton.stories";
 
 # CheckboxButton
 
 ##
 
 <h4>
-  A checkbox control. It is shown as a square box that is ticked (checked) when activated.
+  A checkbox control. It is shown as a square box that is ticked (checked) when
+  activated.
 </h4>
 
 <Canvas of={ComponentStories.Default} />
 
-### When to use 
+### When to use
+
 - Reason 1
 - Reason 2
 
 ### When to not use
+
 - Reason 1
 - Reason 2
 
 ## Props
 
-<ArgTypes of={CheckboxButton} />
+<Controls />
 
 ## Stories
 
@@ -34,7 +37,7 @@ import * as ComponentStories from './CheckboxButton.stories';
 
 - When a checkbox "owns" a number of sub-checkboxes and any one or more of the sub-checkboxes have a different state than the others, the owning checkbox is in the indeterminate state (or "partially" checked)
 - The indeterminate state of a checkbox is visual only.
-- You can’t make a checkbox indeterminate through HTML. There is no indeterminate attribute. It is a property of checkboxes though, which you can change via JavaScript (i.e. we're handling it through refs and `useEffect` on the CheckboxButton component). Please use the `indeterminate` prop to get the desired effect. 
+- You can’t make a checkbox indeterminate through HTML. There is no indeterminate attribute. It is a property of checkboxes though, which you can change via JavaScript (i.e. we're handling it through refs and `useEffect` on the CheckboxButton component). Please use the `indeterminate` prop to get the desired effect.
 
 <Canvas of={ComponentStories.Indeterminate} />
 
@@ -48,12 +51,11 @@ import * as ComponentStories from './CheckboxButton.stories';
 
 - checked, unchecked, & indeterminate
 
-### Anatomy 
+### Anatomy
 
 ### Sizing
 
 ### Alignment
-
 
 ## Best practices
 
