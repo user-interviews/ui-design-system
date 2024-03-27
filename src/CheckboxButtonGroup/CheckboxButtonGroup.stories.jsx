@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import {
- boolean, radios, text, withKnobs,
-} from '@storybook/addon-knobs';
 import { ORIENTATIONS } from '../ControlButtonGroup';
 import CheckboxButtonGroup from './index';
 import CheckboxButton from '../CheckboxButton';
@@ -12,11 +9,30 @@ import mdx from './CheckboxButtonGroup.mdx';
 export default {
   title: 'Components/Form Elements/CheckboxButtonGroup',
   component: CheckboxButtonGroup,
-  decorators: [withKnobs()],
+  subcomponents: { CheckboxButton },
   parameters: {
+    controls: { exclude: [] },
     docs: {
       page: mdx,
     },
+  },
+  args: {
+    id: 'checkbox-button-group',
+    bordered: false,
+  },
+  argTypes: {
+    orientation: {
+      options: Object.values(ORIENTATIONS),
+      mapping: ORIENTATIONS,
+      control: { type: 'select' },
+    },
+    value: { control: { type: null } },
+    parseInput: { control: { type: null } },
+    onChange: { control: { type: null } },
+    children: { control: { type: null } },
+    id: { control: { type: null } },
+    bordered: { control: { type: 'boolean' } },
+    fullWidth: { control: { type: 'boolean' } },
   },
 };
 
@@ -61,19 +77,15 @@ const CheckboxButtonGroupComponent = ({
 /* eslint-enable react/prop-types */
 
 export const Default = () => {
-  const orientation = radios(
-    'Orientation',
-    Object.values(ORIENTATIONS),
-    ORIENTATIONS.COLUMN,
-  );
-  const bordered = boolean('Bordered buttons', false);
+  const orientation = ORIENTATIONS.COLUMN;
+  const bordered = false;
 
   return (
     <CheckboxButtonGroupComponent
-      bordered={boolean('Bordered Form Group', false)}
+      bordered={false}
       defaultValue={[]}
       elementType="fieldset"
-      fullWidth={boolean('Full width', false)}
+      fullWidth={false}
       id="with-checkbox-button-group"
       label="Legend"
       labelHelperText="use the knobs to try out different variations"
@@ -84,21 +96,21 @@ export const Default = () => {
         bordered={bordered}
         Control={CheckboxButton}
         id="value-1"
-        text={text('Label 1', 'Value 1')}
+        text="Value 1"
         value="1"
       />
       <FormControlLabel
         bordered={bordered}
         Control={CheckboxButton}
         id="value-2"
-        text={text('Label 2', 'Value 2')}
+        text="Value 2"
         value="2"
       />
       <FormControlLabel
         bordered={bordered}
         Control={CheckboxButton}
         id="value-3"
-        text={text('Label 3', 'Value 3')}
+        text="Value 3"
         value="3"
       />
     </CheckboxButtonGroupComponent>
