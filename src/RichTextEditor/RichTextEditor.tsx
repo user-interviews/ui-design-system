@@ -4,7 +4,7 @@ import type { Extension, Node as TipTapNode, Mark } from '@tiptap/core';
 
 import './RichTextEditor.scss';
 
-import React from 'react';
+import React, { forwardRef, type ForwardedRef, useImperativeHandle } from 'react';
 
 import classNames from 'classnames';
 
@@ -94,21 +94,28 @@ export type RichTextEditorProps = {
   onChange: (arg0: string) => void;
 }
 
-function RichTextEditor({
-  allowedAttributes,
-  allowedTags,
-  ariaAttributes,
-  availableActions = RichTextEditorDefaultActionsArray,
-  characterLimit,
-  className,
-  hasErrors,
-  id,
-  initialValue,
-  isOneLine,
-  onChange,
-  placeholder,
-  customExtensions = [],
-}: RichTextEditorProps) {
+export type RichTextEditorRef  = {
+  setContent: (content: string) => void;
+}
+
+const RichTextEditor = forwardRef((
+  {
+    allowedAttributes,
+    allowedTags,
+    ariaAttributes,
+    availableActions = RichTextEditorDefaultActionsArray,
+    characterLimit,
+    className,
+    hasErrors,
+    id,
+    initialValue,
+    isOneLine,
+    onChange,
+    placeholder,
+    customExtensions = [],
+  }: RichTextEditorProps,
+  ref: ForwardedRef<RichTextEditorRef> = null,
+) => {
   const oneLineExtension = isOneLine ? [OneLineLimit] : [];
 
   const requiredExtensions = [
@@ -183,6 +190,13 @@ function RichTextEditor({
     },
   });
 
+  useImperativeHandle(ref, () => ({
+    setContent: (content: string) => {
+      editor?.commands.setContent(content);
+      onChange(content);
+    },
+  }));
+
   return (
     editor ? (
       <div
@@ -221,7 +235,7 @@ function RichTextEditor({
       </>
     )
   );
-}
+})
 
 // eslint-disable-next-line import/no-default-export
 export default RichTextEditor;
