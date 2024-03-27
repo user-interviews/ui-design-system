@@ -1,27 +1,24 @@
-import React from 'react';
-import { withKnobs, text } from '@storybook/addon-knobs';
-
-import CopyToClipboardButton from 'src/CopyToClipboardButton';
+import CopyToClipboardButton, { ButtonVariants } from 'src/CopyToClipboardButton';
 
 export default {
   title: 'Components/Copy To Clipboard Button',
   component: CopyToClipboardButton,
-  decorators: [withKnobs({ escapeHTML: false })],
+  parameters: {
+    controls: { exclude: [] },
+  },
+  args: {
+    copyText: 'the text getting copied',
+    displayText: 'displayed text',
+    trackingEvent: 'tracking-event',
+    variant: {
+      options: Object.values(ButtonVariants),
+      mapping: ButtonVariants,
+      control: { type: 'select' },
+    },
+  },
+  argTypes: {
+    copyText: { control: { type: 'text' } },
+  },
 };
 
-export const Default = () => (
-  <CopyToClipboardButton
-    copyText={text('Copy text', 'Copy me!')}
-    displayText={text('Display text', 'Click to copy')}
-    trackingEvent="copy-text"
-  />
-);
-
-export const Secondary = () => (
-  <CopyToClipboardButton
-    copyText={text('Copy text', 'Copy me!')}
-    displayText={text('Display text', 'Click to copy')}
-    trackingEvent="copy-text"
-    variant="secondary"
-  />
-);
+export const Primary = {};
