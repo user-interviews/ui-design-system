@@ -1,4 +1,4 @@
-import React, {useRef} from 'react';
+import React, { useRef } from 'react';
 
 import Button from 'src/Button';
 import { RichTextEditor, RichTextEditorActions } from 'src/RichTextEditor';
@@ -67,7 +67,7 @@ export const SetContent = () => {
 
   const handleClick = () => {
     ref.current.setContent('Oh hey');
-  }
+  };
 
   return (
     <>
@@ -78,5 +78,5 @@ export const SetContent = () => {
         onChange={() => null}
       />
     </>
-  )
-}
+  );
+};

@@ -94,7 +94,7 @@ export type RichTextEditorProps = {
   onChange: (arg0: string) => void;
 }
 
-export type RichTextEditorRef  = {
+export type RichTextEditorRef = {
   setContent: (content: string) => void;
 }
 
@@ -235,7 +235,7 @@ const RichTextEditor = forwardRef((
       </>
     )
   );
-})
+});
 
 // eslint-disable-next-line import/no-default-export
 export default RichTextEditor;
