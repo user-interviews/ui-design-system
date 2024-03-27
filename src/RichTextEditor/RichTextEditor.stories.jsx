@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
+import Button from 'src/Button';
 import { RichTextEditor, RichTextEditorActions } from 'src/RichTextEditor';
 
 import mdx from './RichTextEditor.mdx';
@@ -60,3 +61,22 @@ export const Error = () => (
     onChange={() => null}
   />
 );
+
+export const SetContent = () => {
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    ref.current.setContent('Oh hey');
+  };
+
+  return (
+    <>
+      <Button onClick={handleClick}>Set content to "Oh hey"</Button>
+      <RichTextEditor
+        id="text-editor"
+        ref={ref}
+        onChange={() => null}
+      />
+    </>
+  );
+};
