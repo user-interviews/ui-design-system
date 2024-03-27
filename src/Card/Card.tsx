@@ -6,7 +6,7 @@ import React, {
 } from 'react';
 import classNames from 'classnames';
 
-import { LoadingSkeleton } from 'src/LoadingSkeleton';
+import { LoadingSkeleton } from '../LoadingSkeleton';
 
 import './Card.scss';
 
