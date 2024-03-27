@@ -1,15 +1,15 @@
-import { ArgTypes, Canvas } from '@storybook/blocks';
-import Alert from './Alert';
-import * as ComponentStories from './Alert.stories';
+import { ArgTypes, Canvas } from "@storybook/blocks";
+import Alert from "./Alert";
+import * as ComponentStories from "./Alert.stories";
 
 # Alert
 
-## 
+##
 
 <h4>
-  Alerts give users updates or changes to system status. Providing immediate feedback is important for
-  building trust.  While alerts are a great way of communicating with users, they are disruptive and
-  should be used cautiously.
+  Alerts give users updates or changes to system status. Providing immediate
+  feedback is important for building trust. While alerts are a great way of
+  communicating with users, they are disruptive and should be used cautiously.
 </h4>
 
 <Canvas of={ComponentStories.Success} />
@@ -29,7 +29,7 @@ import * as ComponentStories from './Alert.stories';
 ### Info
 
 - Information that needs to be referenced often or is very important. These alerts are within the
-page and are not affected by an event.
+  page and are not affected by an event.
 
 <Canvas of={ComponentStories.Info} />
 
@@ -49,7 +49,7 @@ page and are not affected by an event.
 ### Warning
 
 - Messages used for general information on a more temporary level, not based on the user
-performing an action. 
+  performing an action.
 
 <Canvas of={ComponentStories.Warning} />
 
@@ -61,25 +61,28 @@ performing an action.
 
 ### With Call To Action
 
-- Used to provide a call to action for the user. 
+- Used to provide a call to action for the user.
 - You should primarily use the `action` prop to create the CTA.
 - Using the `action` prop creates a 4-column grid versus the default 3-column grid on this component.
 - The `action` prop can take an object `{ content: 'string', url: 'string' }` or a React element (e.g. for cases when you want to use a custom button). See example below.
+
 ```
 <Alert
   action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
 />
 
-or 
+or
 
 <Alert
   action={<CustomButton/>}
 />
 
 ```
-- Option: you can place the CTA in the `message` prop for special edge cases when you want the CTA to always be below the Alert message (see code example below). This is only used for custom CTA buttons. Otherwise, please use the `action` prop for all CTAs. 
+
+- Option: you can place the CTA in the `message` prop for special edge cases when you want the CTA to always be below the Alert message (see code example below). This is only used for custom CTA buttons. Otherwise, please use the `action` prop for all CTAs.
+
 ```
-Custom CTA via message prop 
+Custom CTA via message prop
 
  <Alert
   message={(
@@ -91,15 +94,18 @@ Custom CTA via message prop
     </Fragment>
   )}
 ```
+
 <Canvas of={ComponentStories.WithCallToAction} />
+<Canvas of={ComponentStories.WithCustomCallToAction} />
 
 ## Formatting
 
 ### States
 
-### Anatomy 
+### Anatomy
+
 - **Icon:** Allow users to identify the type of alert at a glance
-- **Title:** Summary of alert topic 
+- **Title:** Summary of alert topic
 - **Message:** Provide details or actionable step for user
 - **CTA:** To provide more details, an action, or an escape so users can finish the task they were doing
 - **Close icon:** Closes the alert
@@ -108,13 +114,12 @@ Custom CTA via message prop
 
 ### Alignment
 
-
 ## Best practices
 
 ### General
 
-- Alerts should be placed near their related items and embedded in the app. 
-- They should expand within their container. 
+- Alerts should be placed near their related items and embedded in the app.
+- They should expand within their container.
 - The width of inline alerts can vary depending on the content and layout.
 
 ### Behavior
