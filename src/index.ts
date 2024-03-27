@@ -17,6 +17,7 @@ import CopyToClipboard from './CopyToClipboard';
 import CopyToClipboardButton from './CopyToClipboardButton';
 import {
   Drawer,
+  DrawerDropdownToggleFooter,
   DrawerHeader,
   DrawerBody,
   DrawerFooter,
@@ -128,6 +129,7 @@ export {
   CopyToClipboardButton,
   CreatableSelect,
   Drawer,
+  DrawerDropdownToggleFooter,
   DrawerHeader,
   DrawerBody,
   DrawerFooter,

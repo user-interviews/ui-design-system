@@ -1,0 +1,21 @@
+@import '../../scss/theme.scss';
+
+.DrawerDropdownToggleFooter {
+  align-items: center;
+  background-color: $ux-gray-100;
+  display: flex;
+  justify-content: space-between;
+  padding: $synth-spacing-4;
+
+  &__actions {
+    display: flex;
+
+    > :not(:first-child) {
+      margin-left: $synth-spacing-1;
+    }
+
+    > :not(:last-child) {
+      margin-right: $synth-spacing-1;
+    }
+  }
+}
