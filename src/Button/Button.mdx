@@ -1,48 +1,49 @@
-import { ArgTypes, Canvas } from '@storybook/blocks';
-import Button from './Button';
-import * as ComponentStories from './Button.stories';
+import { Controls, Canvas } from "@storybook/blocks";
+import Button from "./Button";
+import * as ComponentStories from "./Button.stories";
 
 # Button
 
 ##
 
-<h4>
-	Buttons allow users to take actions and make choices.
-</h4>
+<h4>Buttons allow users to take actions and make choices.</h4>
 
 <Canvas of={ComponentStories.Primary} />
 
 ## Props
 
-<ArgTypes of={Button} />
+<Controls />
 
 ## Anatomy:
+
 - **Leading icon (optional):** Should be included when the button has a clear action verb (e.g. Edit, Save, Delete)
 - **Label:** Utilizes sentence-casing (e.g. “New project”)
 - **Container:** Indicates the button's touch target
 - **Trailing icon (optional):** Typically used as a dropdown arrow
 
-
 ## Guidelines
 
 ### Implementation
+
 - A layout should have one prominent button, the others should clearly be secondary
 
 ### Copy
+
 - Use sentence casing for all buttons (e.g. “New project”)
 - Maintain `verb` + `noun` syntax for labels (e.g. "Save profile" vs "save")
 - Avoid generic messaging such as "Ok"
 - Use 3 or fewer words for each button
 
 ### Iconography
+
 - Font Awesome library
   - We utilize the Regular and Solid Font Awesome icons
   - Only use Solid icons on icon-only buttons. import `@fortawesome/pro-solid-svg-icons`
   - Use Regular icons for all other buttons. import `@fortawesome/pro-regular-svg-icons`
 - Use a leading icon alongside a label if there is a primary action verb (e.g. Edit, Share, Copy)
 - Icon-only buttons should only be permitted if
-	- Space is limited (e.g. too small for text alone)
-	- The icon is standardized or represents an object with a strong physical analog or visual attribute (e.g. floppy disk (Save), pencil (Edit))
+  - Space is limited (e.g. too small for text alone)
+  - The icon is standardized or represents an object with a strong physical analog or visual attribute (e.g. floppy disk (Save), pencil (Edit))
 
 ### Deprecated variants
 
@@ -54,7 +55,6 @@ import * as ComponentStories from './Button.stories';
 - Links are used for navigation.
 
 **For accessibility purposes, it’s important to style buttons as buttons and links as links. So if the app’s CTA only takes the user to a new page, use a link instead.**
-
 
 ## Stories
 
@@ -69,20 +69,21 @@ import * as ComponentStories from './Button.stories';
 <Canvas of={ComponentStories.Transparent} />
 
 ### Link
+
 - A button that is styled like a link
 
 <Canvas of={ComponentStories.Link} />
 
 ### Brands
+
 - Usually used for authentication purposes with different brands
 
 <Canvas of={ComponentStories.Brands} />
 
 ### Loading
+
 - The loading state is displayed when an action has been initiated and the system is processing it.
-For instance, when a page is being saved or a file is uploading, the button typically transforms into a loading state with altered
-loading text and a spinner. This is accompanied by a disabled state to prevent duplicated actions.
+  For instance, when a page is being saved or a file is uploading, the button typically transforms into a loading state with altered
+  loading text and a spinner. This is accompanied by a disabled state to prevent duplicated actions.
 
 <Canvas of={ComponentStories.Loading} />
-
-

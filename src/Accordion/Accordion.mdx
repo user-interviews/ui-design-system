@@ -1,25 +1,18 @@
-import { ArgTypes, Canvas } from '@storybook/blocks';
-import Accordion from './Accordion';
-import * as ComponentStories from './Accordion.stories';
+import { Controls, Canvas } from "@storybook/blocks";
+import Accordion from "./Accordion";
+import * as ComponentStories from "./Accordion.stories";
 
 # Accordion
 
 ##
 
-<h4>
-  Vertically-stacked header that reveal or hide additional content.
-</h4>
+<h4>Vertically-stacked header that reveal or hide additional content.</h4>
 
 <Canvas of={ComponentStories.Default} />
 
-### When to use
-
-### When not to use
-
-
 ## Props
 
-<ArgTypes of={Accordion} />
+<Controls />
 
 ## Stories
 
@@ -52,7 +45,9 @@ import * as ComponentStories from './Accordion.stories';
 <Canvas of={ComponentStories.Borderless} />
 
 ### In Card
+
 When multiple Cards are stacked, you want to ensure there is proper content alignment with padding. When wrapping `Accordion` in `Card`:
+
 1. Use `<Card noPadding>`
 2. Use `<AccordionItem borderless>`
 

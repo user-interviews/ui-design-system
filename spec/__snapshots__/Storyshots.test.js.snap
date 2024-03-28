@@ -1619,14 +1619,42 @@ exports[`Storyshots Components/Alert Error 1`] = `
     <div
       className="Alert__title"
     >
-      Error title
+      Example title
     </div>
     <div
       className="Alert__message"
       tabIndex={-1}
     >
-      Error message
+      Example message
     </div>
+  </div>
+  <div
+    className="Alert__close"
+  >
+    <button
+      aria-label="close error"
+      className="close"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-xmark "
+        data-icon="xmark"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
   </div>
 </div>
 `;
@@ -1678,13 +1706,41 @@ exports[`Storyshots Components/Alert Feature 1`] = `
     <div
       className="Alert__title"
     >
-      New feature alert!
+      Example title
     </div>
     <div
       className="Alert__message"
     >
-      Some context around new feature if needed.
+      Example message
     </div>
+  </div>
+  <div
+    className="Alert__close"
+  >
+    <button
+      aria-label="close feature"
+      className="close"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-xmark "
+        data-icon="xmark"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
   </div>
 </div>
 `;
@@ -1772,13 +1828,41 @@ exports[`Storyshots Components/Alert Info 1`] = `
     <div
       className="Alert__title"
     >
-      Info title
+      Example title
     </div>
     <div
       className="Alert__message"
     >
-      Info message
+      Example message
     </div>
+  </div>
+  <div
+    className="Alert__close"
+  >
+    <button
+      aria-label="close info"
+      className="close"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-xmark "
+        data-icon="xmark"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
   </div>
 </div>
 `;
@@ -1866,13 +1950,41 @@ exports[`Storyshots Components/Alert Success 1`] = `
     <div
       className="Alert__title"
     >
-      Success title
+      Example title
     </div>
     <div
       className="Alert__message"
     >
-      Success message
+      Example message
     </div>
+  </div>
+  <div
+    className="Alert__close"
+  >
+    <button
+      aria-label="close success"
+      className="close"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-xmark "
+        data-icon="xmark"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
   </div>
 </div>
 `;
@@ -1924,293 +2036,60 @@ exports[`Storyshots Components/Alert Warning 1`] = `
     <div
       className="Alert__title"
     >
-      Warning title
+      Example title
     </div>
     <div
       className="Alert__message"
     >
-      Warning message
+      Example message
     </div>
+  </div>
+  <div
+    className="Alert__close"
+  >
+    <button
+      aria-label="close warning"
+      className="close"
+      onClick={[Function]}
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-xmark "
+        data-icon="xmark"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
   </div>
 </div>
 `;
 
 exports[`Storyshots Components/Alert With Call To Action 1`] = `
-Array [
-  <p>
-    Default CTA rendered by component
-  </p>,
+<div
+  className="Alert Alert-success"
+  style={null}
+>
   <div
-    className="Alert Alert-success"
-    style={null}
+    className="Alert__icon"
   >
-    <div
-      className="Alert__icon"
-    >
-      <span
-        className="fa-layers fa-fw"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-circle "
-          data-icon="circle"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "transformOrigin": "0.5em 0.5em",
-            }
-          }
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            style={Object {}}
-            transform="translate(256 256)"
-          >
-            <g
-              style={Object {}}
-              transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
-            >
-              <path
-                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
-                fill="currentColor"
-                style={Object {}}
-                transform="translate(-256 -256)"
-              />
-            </g>
-          </g>
-        </svg>
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-check "
-          data-icon="check"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "transformOrigin": "0.4375em 0.5em",
-            }
-          }
-          viewBox="0 0 448 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            style={Object {}}
-            transform="translate(224 256)"
-          >
-            <g
-              style={Object {}}
-              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
-            >
-              <path
-                d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
-                fill="currentColor"
-                style={Object {}}
-                transform="translate(-224 -256)"
-              />
-            </g>
-          </g>
-        </svg>
-      </span>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-        Success title
-      </div>
-      <div
-        className="Alert__message"
-      >
-        Success message
-      </div>
-    </div>
-    <div
-      className="Alert__action"
-    >
-      <a
-        className="Alert-success primary-action"
-        href="https://www.userinterviews.com/"
-        rel="noopener noreferrer"
-      >
-        Primary action
-      </a>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-        aria-label="close success"
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-xmark "
-          data-icon="xmark"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 384 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-    </div>
-  </div>,
-  <div
-    className="Alert Alert-info"
-    style={null}
-  >
-    <div
-      className="Alert__icon"
-    >
-      <span
-        className="fa-layers fa-fw"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-circle "
-          data-icon="circle"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "transformOrigin": "0.5em 0.5em",
-            }
-          }
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            style={Object {}}
-            transform="translate(256 256)"
-          >
-            <g
-              style={Object {}}
-              transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
-            >
-              <path
-                d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
-                fill="currentColor"
-                style={Object {}}
-                transform="translate(-256 -256)"
-              />
-            </g>
-          </g>
-        </svg>
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-info "
-          data-icon="info"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "transformOrigin": "0.1875em 0.5em",
-            }
-          }
-          viewBox="0 0 192 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            style={Object {}}
-            transform="translate(96 256)"
-          >
-            <g
-              style={Object {}}
-              transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
-            >
-              <path
-                d="M48 80a48 48 0 1 1 96 0A48 48 0 1 1 48 80zM0 224c0-17.7 14.3-32 32-32H96c17.7 0 32 14.3 32 32V448h32c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H64V256H32c-17.7 0-32-14.3-32-32z"
-                fill="currentColor"
-                style={Object {}}
-                transform="translate(-96 -256)"
-              />
-            </g>
-          </g>
-        </svg>
-      </span>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-        Info title
-      </div>
-      <div
-        className="Alert__message"
-      >
-        Info message
-      </div>
-    </div>
-    <div
-      className="Alert__action"
-    >
-      <a
-        className="Alert-info primary-action"
-        href="https://www.userinterviews.com/"
-        rel="noopener noreferrer"
-      >
-        Primary action
-      </a>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-        aria-label="close info"
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-xmark "
-          data-icon="xmark"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 384 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-    </div>
-  </div>,
-  <div
-    className="Alert Alert-error"
-    style={null}
-  >
-    <div
-      className="Alert__icon"
+    <span
+      className="fa-layers fa-fw"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-triangle-exclamation "
-        data-icon="triangle-exclamation"
+        className="svg-inline--fa fa-circle "
+        data-icon="circle"
         data-prefix="fas"
         focusable="false"
         role="img"
@@ -2228,10 +2107,10 @@ Array [
         >
           <g
             style={Object {}}
-            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+            transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
           >
             <path
-              d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+              d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
               fill="currentColor"
               style={Object {}}
               transform="translate(-256 -256)"
@@ -2239,73 +2118,112 @@ Array [
           </g>
         </g>
       </svg>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-check "
+        data-icon="check"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={
+          Object {
+            "transformOrigin": "0.4375em 0.5em",
+          }
+        }
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        Error title
-      </div>
-      <div
-        className="Alert__message"
-        tabIndex={-1}
-      >
-        Error message
-      </div>
-    </div>
-    <div
-      className="Alert__action"
-    >
-      <a
-        className="Alert-error primary-action"
-        href="https://www.userinterviews.com/"
-        rel="noopener noreferrer"
-      >
-        Primary action
-      </a>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-        aria-label="close error"
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-xmark "
-          data-icon="xmark"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
+        <g
           style={Object {}}
-          viewBox="0 0 384 512"
-          xmlns="http://www.w3.org/2000/svg"
+          transform="translate(224 256)"
         >
-          <path
-            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-            fill="currentColor"
+          <g
             style={Object {}}
-          />
-        </svg>
-      </button>
-    </div>
-  </div>,
+            transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
+          >
+            <path
+              d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+              fill="currentColor"
+              style={Object {}}
+              transform="translate(-224 -256)"
+            />
+          </g>
+        </g>
+      </svg>
+    </span>
+  </div>
   <div
-    className="Alert Alert-warning"
-    style={null}
+    className="Alert__content"
   >
     <div
-      className="Alert__icon"
+      className="Alert__title"
+    >
+      Example title
+    </div>
+    <div
+      className="Alert__message"
+    >
+      Example message
+    </div>
+  </div>
+  <div
+    className="Alert__action"
+  >
+    <a
+      className="Alert-success primary-action"
+      href="https://www.userinterviews.com/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Primary action
+    </a>
+  </div>
+  <div
+    className="Alert__close"
+  >
+    <button
+      aria-label="close success"
+      className="close"
+      onClick={[Function]}
+      type="button"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-triangle-exclamation "
-        data-icon="triangle-exclamation"
+        className="svg-inline--fa fa-xmark "
+        data-icon="xmark"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Components/Alert With Custom Call To Action 1`] = `
+<div
+  className="Alert Alert-success"
+  style={null}
+>
+  <div
+    className="Alert__icon"
+  >
+    <span
+      className="fa-layers fa-fw"
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-circle "
+        data-icon="circle"
         data-prefix="fas"
         focusable="false"
         role="img"
@@ -2323,10 +2241,10 @@ Array [
         >
           <g
             style={Object {}}
-            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+            transform="translate(0, 0)  scale(1.5, 1.5)  rotate(0 0 0)"
           >
             <path
-              d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480H40c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24V296c0 13.3 10.7 24 24 24s24-10.7 24-24V184c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+              d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"
               fill="currentColor"
               style={Object {}}
               transform="translate(-256 -256)"
@@ -2334,425 +2252,128 @@ Array [
           </g>
         </g>
       </svg>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-        Warning title
-      </div>
-      <div
-        className="Alert__message"
-      >
-        Warning message
-      </div>
-    </div>
-    <div
-      className="Alert__action"
-    >
-      <a
-        className="Alert-warning primary-action"
-        href="https://www.userinterviews.com/"
-        rel="noopener noreferrer"
-      >
-        Primary action
-      </a>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-        aria-label="close warning"
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-xmark "
-          data-icon="xmark"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 384 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-    </div>
-  </div>,
-  <div
-    className="Alert Alert-feature"
-    style={null}
-  >
-    <div
-      className="Alert__icon"
-    >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-bullhorn "
-        data-icon="bullhorn"
+        className="svg-inline--fa fa-check "
+        data-icon="check"
         data-prefix="fas"
         focusable="false"
         role="img"
         style={
           Object {
-            "transformOrigin": "0.5em 0.5em",
+            "transformOrigin": "0.4375em 0.5em",
           }
         }
-        viewBox="0 0 512 512"
+        viewBox="0 0 448 512"
         xmlns="http://www.w3.org/2000/svg"
       >
         <g
           style={Object {}}
-          transform="translate(256 256)"
+          transform="translate(224 256)"
         >
           <g
             style={Object {}}
-            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
+            transform="translate(0, 0)  scale(0.75, 0.75)  rotate(0 0 0)"
           >
             <path
-              d="M480 32c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9L381.7 53c-48 48-113.1 75-181 75H192 160 64c-35.3 0-64 28.7-64 64v96c0 35.3 28.7 64 64 64l0 128c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V352l8.7 0c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V300.4c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4V32zm-64 76.7V240 371.3C357.2 317.8 280.5 288 200.7 288H192V192h8.7c79.8 0 156.5-29.8 215.3-83.3z"
+              d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
               fill="currentColor"
               style={Object {}}
-              transform="translate(-256 -256)"
+              transform="translate(-224 -256)"
             />
           </g>
         </g>
       </svg>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-        New feature alert!
-      </div>
-      <div
-        className="Alert__message"
-      >
-        Some context around new feature if needed
-      </div>
-    </div>
-    <div
-      className="Alert__action"
-    >
-      <a
-        className="Alert-feature primary-action"
-        href="https://www.userinterviews.com/"
-        rel="noopener noreferrer"
-      >
-        Primary action
-      </a>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-        aria-label="close feature"
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-xmark "
-          data-icon="xmark"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 384 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-    </div>
-  </div>,
-  <p>
-    Custom CTA via 
-    <code>
-      message
-    </code>
-     prop
-  </p>,
+    </span>
+  </div>
   <div
-    className="Alert Alert-announcement"
-    style={null}
+    className="Alert__content"
   >
     <div
-      className="Alert__icon"
+      className="Alert__title"
+    >
+      Example title
+    </div>
+    <div
+      className="Alert__message"
+    >
+      Example message
+    </div>
+  </div>
+  <div
+    className="Alert__action"
+  >
+    <button
+      style={
+        Object {
+          "backgroundColor": "#4285F4",
+          "border": "1px solid #4285F4",
+          "borderRadius": "4px",
+          "color": "#FFFFFF",
+          "fontSize": "0.875rem",
+          "fontWeight": "bold",
+          "lineHeight": "1.25rem",
+          "margin": "16px 0",
+          "padding": "8px 16px",
+          "whiteSpace": "nowrap",
+        }
+      }
+      type="button"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-bullhorn "
-        data-icon="bullhorn"
-        data-prefix="fas"
+        className="svg-inline--fa fa-google "
+        data-icon="google"
+        data-prefix="fab"
         focusable="false"
         role="img"
         style={
           Object {
-            "transformOrigin": "0.5em 0.5em",
+            "height": "16px",
+            "marginRight": "8px",
           }
         }
-        viewBox="0 0 512 512"
+        viewBox="0 0 488 512"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g
+        <path
+          d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
+          fill="currentColor"
           style={Object {}}
-          transform="translate(256 256)"
-        >
-          <g
-            style={Object {}}
-            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
-          >
-            <path
-              d="M480 32c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9L381.7 53c-48 48-113.1 75-181 75H192 160 64c-35.3 0-64 28.7-64 64v96c0 35.3 28.7 64 64 64l0 128c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V352l8.7 0c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V300.4c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4V32zm-64 76.7V240 371.3C357.2 317.8 280.5 288 200.7 288H192V192h8.7c79.8 0 156.5-29.8 215.3-83.3z"
-              fill="currentColor"
-              style={Object {}}
-              transform="translate(-256 -256)"
-            />
-          </g>
-        </g>
+        />
       </svg>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-        Connect to Google Calendar to create reminders automatically
-      </div>
-      <div
-        className="Alert__message"
-      >
-        <div>
-          When you confirm a session we’ll automatically add an event and reminders to your Google Calendar.
-        </div>
-        <button
-          style={
-            Object {
-              "backgroundColor": "#4285F4",
-              "border": "1px solid #4285F4",
-              "borderRadius": "4px",
-              "color": "#FFFFFF",
-              "fontSize": "0.875rem",
-              "fontWeight": "bold",
-              "lineHeight": "1.25rem",
-              "margin": "16px 0",
-              "padding": "8px 16px",
-              "whiteSpace": "nowrap",
-            }
-          }
-          type="button"
-        >
-          <svg
-            aria-hidden="true"
-            className="svg-inline--fa fa-google "
-            data-icon="google"
-            data-prefix="fab"
-            focusable="false"
-            role="img"
-            style={
-              Object {
-                "height": "16px",
-                "marginRight": "8px",
-              }
-            }
-            viewBox="0 0 488 512"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
-              fill="currentColor"
-              style={Object {}}
-            />
-          </svg>
-          Connect Google Calendar
-        </button>
-      </div>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-        aria-label="close announcement"
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-xmark "
-          data-icon="xmark"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 384 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-    </div>
-  </div>,
-  <p>
-    Custom CTA via 
-    <code>
-      action
-    </code>
-     prop
-  </p>,
+      Connect Google Calendar
+    </button>
+  </div>
   <div
-    className="Alert Alert-announcement"
-    style={null}
+    className="Alert__close"
   >
-    <div
-      className="Alert__icon"
+    <button
+      aria-label="close success"
+      className="close"
+      onClick={[Function]}
+      type="button"
     >
       <svg
         aria-hidden="true"
-        className="svg-inline--fa fa-bullhorn "
-        data-icon="bullhorn"
+        className="svg-inline--fa fa-xmark "
+        data-icon="xmark"
         data-prefix="fas"
         focusable="false"
         role="img"
-        style={
-          Object {
-            "transformOrigin": "0.5em 0.5em",
-          }
-        }
-        viewBox="0 0 512 512"
+        style={Object {}}
+        viewBox="0 0 384 512"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <g
+        <path
+          d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+          fill="currentColor"
           style={Object {}}
-          transform="translate(256 256)"
-        >
-          <g
-            style={Object {}}
-            transform="translate(0, 0)  scale(1.125, 1.125)  rotate(0 0 0)"
-          >
-            <path
-              d="M480 32c0-12.9-7.8-24.6-19.8-29.6s-25.7-2.2-34.9 6.9L381.7 53c-48 48-113.1 75-181 75H192 160 64c-35.3 0-64 28.7-64 64v96c0 35.3 28.7 64 64 64l0 128c0 17.7 14.3 32 32 32h64c17.7 0 32-14.3 32-32V352l8.7 0c67.9 0 133 27 181 75l43.6 43.6c9.2 9.2 22.9 11.9 34.9 6.9s19.8-16.6 19.8-29.6V300.4c18.6-8.8 32-32.5 32-60.4s-13.4-51.6-32-60.4V32zm-64 76.7V240 371.3C357.2 317.8 280.5 288 200.7 288H192V192h8.7c79.8 0 156.5-29.8 215.3-83.3z"
-              fill="currentColor"
-              style={Object {}}
-              transform="translate(-256 -256)"
-            />
-          </g>
-        </g>
+        />
       </svg>
-    </div>
-    <div
-      className="Alert__content"
-    >
-      <div
-        className="Alert__title"
-      >
-        Connect to Google Calendar to create reminders automatically
-      </div>
-      <div
-        className="Alert__message"
-      >
-        When you confirm a session we’ll automatically
-      add an event and reminders to your Google Calendar.
-      </div>
-    </div>
-    <div
-      className="Alert__action"
-    >
-      <button
-        style={
-          Object {
-            "backgroundColor": "#4285F4",
-            "border": "1px solid #4285F4",
-            "borderRadius": "4px",
-            "color": "#FFFFFF",
-            "fontSize": "0.875rem",
-            "fontWeight": "bold",
-            "lineHeight": "1.25rem",
-            "margin": "16px 0",
-            "padding": "8px 16px",
-            "whiteSpace": "nowrap",
-          }
-        }
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-google "
-          data-icon="google"
-          data-prefix="fab"
-          focusable="false"
-          role="img"
-          style={
-            Object {
-              "height": "16px",
-              "marginRight": "8px",
-            }
-          }
-          viewBox="0 0 488 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-        Connect Google Calendar
-      </button>
-    </div>
-    <div
-      className="Alert__close"
-    >
-      <button
-        aria-label="close announcement"
-        className="close"
-        onClick={[Function]}
-        type="button"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-xmark "
-          data-icon="xmark"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 384 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-    </div>
-  </div>,
-]
+    </button>
+  </div>
+</div>
 `;
 
 exports[`Storyshots Components/Alert With Dismiss 1`] = `
@@ -2838,12 +2459,12 @@ exports[`Storyshots Components/Alert With Dismiss 1`] = `
     <div
       className="Alert__title"
     >
-      Default title
+      Example title
     </div>
     <div
       className="Alert__message"
     >
-      Default message
+      Example message
     </div>
   </div>
   <div
@@ -2877,280 +2498,56 @@ exports[`Storyshots Components/Alert With Dismiss 1`] = `
 </div>
 `;
 
-exports[`Storyshots Components/Avatar Large 1`] = `
-<div>
+exports[`Storyshots Components/Avatar Primary 1`] = `
+<div
+  aria-hidden={false}
+  className="Avatar"
+>
   <div
-    aria-hidden={false}
-    className="Avatar Avatar--large"
+    className="Avatar__circle"
   >
-    <div
-      className="Avatar__circle"
+    <span
+      className="Avatar__circle__initials"
     >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-  </div>
-  <div
-    aria-hidden={false}
-    className="Avatar Avatar--large"
-  >
-    <div
-      className="Avatar__circle ui-mod ui-mod--1"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-  </div>
-  <div
-    aria-hidden={false}
-    className="Avatar Avatar--large"
-  >
-    <div
-      className="Avatar__circle ui-mod ui-mod--2"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-  </div>
-  <div
-    aria-hidden={false}
-    className="Avatar Avatar--large"
-  >
-    <div
-      className="Avatar__circle ui-mod ui-mod--3"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-  </div>
-  <div
-    aria-hidden={false}
-    className="Avatar Avatar--large"
-  >
-    <div
-      className="Avatar__circle ui-mod ui-mod--4"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-  </div>
-  <div
-    aria-hidden={false}
-    className="Avatar Avatar--large"
-  >
-    <div
-      className="Avatar__circle ui-mod ui-mod--5"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-  </div>
-  <div
-    aria-hidden={false}
-    className="Avatar Avatar--large"
-  >
-    <div
-      className="Avatar__circle ui-mod ui-mod--0"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`Storyshots Components/Avatar Small 1`] = `
-<div>
-  <div
-    aria-hidden={false}
-    className="Avatar"
-  >
-    <div
-      className="Avatar__circle"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-  </div>
-  <div
-    aria-hidden={false}
-    className="Avatar"
-  >
-    <div
-      className="Avatar__circle ui-mod ui-mod--1"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-  </div>
-  <div
-    aria-hidden={false}
-    className="Avatar"
-  >
-    <div
-      className="Avatar__circle ui-mod ui-mod--2"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-  </div>
-  <div
-    aria-hidden={false}
-    className="Avatar"
-  >
-    <div
-      className="Avatar__circle ui-mod ui-mod--3"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-  </div>
-  <div
-    aria-hidden={false}
-    className="Avatar"
-  >
-    <div
-      className="Avatar__circle ui-mod ui-mod--4"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-  </div>
-  <div
-    aria-hidden={false}
-    className="Avatar"
-  >
-    <div
-      className="Avatar__circle ui-mod ui-mod--5"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-  </div>
-  <div
-    aria-hidden={false}
-    className="Avatar"
-  >
-    <div
-      className="Avatar__circle ui-mod ui-mod--0"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
+      KS
+    </span>
   </div>
 </div>
 `;
 
 exports[`Storyshots Components/Avatar With Alert 1`] = `
-<div>
+<div
+  aria-hidden={false}
+  className="Avatar"
+>
   <div
-    aria-hidden={false}
-    className="Avatar Avatar--large"
+    className="Avatar__circle"
   >
-    <div
-      className="Avatar__circle"
+    <span
+      className="Avatar__circle__initials"
     >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-    <div
-      className="Avatar__alert"
-    />
+      KS
+    </span>
   </div>
   <div
-    aria-hidden={false}
-    className="Avatar"
-  >
-    <div
-      className="Avatar__circle"
-    >
-      <span
-        className="Avatar__circle__initials"
-      >
-        RR
-      </span>
-    </div>
-    <div
-      className="Avatar__alert"
-    />
-  </div>
+    className="Avatar__alert"
+  />
 </div>
 `;
 
 exports[`Storyshots Components/Avatar With Image 1`] = `
-<div>
+<div
+  aria-hidden={false}
+  className="Avatar Avatar--large"
+>
   <div
-    aria-hidden={false}
-    className="Avatar Avatar--large"
+    className="Avatar__circle"
   >
-    <div
-      className="Avatar__circle"
-    >
-      <img
-        alt=""
-        onError={[Function]}
-        src="https://avatars.dicebear.com/api/avataaars/1234.svg"
-      />
-    </div>
-  </div>
-  <div
-    aria-hidden={false}
-    className="Avatar"
-  >
-    <div
-      className="Avatar__circle"
-    >
-      <img
-        alt=""
-        onError={[Function]}
-        src="https://avatars.dicebear.com/api/avataaars/1234.svg"
-      />
-    </div>
+    <img
+      alt=""
+      onError={[Function]}
+      src="https://placehold.it/160/160"
+    />
   </div>
 </div>
 `;
@@ -3977,111 +3374,31 @@ Array [
 `;
 
 exports[`Storyshots Components/Button Loading 1`] = `
-Array [
-  <button
-    aria-disabled={true}
-    className="Button btn btn-primary btn-sm"
-    disabled={true}
-    type="button"
+<button
+  aria-disabled={true}
+  className="Button btn btn-primary btn-sm"
+  disabled={true}
+  type="button"
+>
+  <svg
+    aria-hidden="true"
+    className="svg-inline--fa fa-spinner-third icon-left btn-loading-spin"
+    data-icon="spinner-third"
+    data-prefix="far"
+    focusable="false"
+    role="img"
+    style={Object {}}
+    viewBox="0 0 512 512"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-spinner-third icon-left btn-loading-spin"
-      data-icon="spinner-third"
-      data-prefix="far"
-      focusable="false"
-      role="img"
+    <path
+      d="M457 372c11.5 6.6 26.3 2.7 31.8-9.3C503.7 330.2 512 294.1 512 256C512 122.7 410.1 13.2 280 1.1C266.8-.1 256 10.7 256 24v0c0 13.3 10.8 23.9 24 25.4C383.5 61.2 464 149.2 464 256c0 29.3-6.1 57.3-17 82.6c-5.3 12.2-1.5 26.8 10 33.5v0z"
+      fill="currentColor"
       style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M457 372c11.5 6.6 26.3 2.7 31.8-9.3C503.7 330.2 512 294.1 512 256C512 122.7 410.1 13.2 280 1.1C266.8-.1 256 10.7 256 24v0c0 13.3 10.8 23.9 24 25.4C383.5 61.2 464 149.2 464 256c0 29.3-6.1 57.3-17 82.6c-5.3 12.2-1.5 26.8 10 33.5v0z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Loading...
-  </button>,
-  " ",
-  <button
-    aria-disabled={true}
-    className="Button btn btn-outline-primary btn-sm"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-spinner-third icon-left btn-loading-spin"
-      data-icon="spinner-third"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M457 372c11.5 6.6 26.3 2.7 31.8-9.3C503.7 330.2 512 294.1 512 256C512 122.7 410.1 13.2 280 1.1C266.8-.1 256 10.7 256 24v0c0 13.3 10.8 23.9 24 25.4C383.5 61.2 464 149.2 464 256c0 29.3-6.1 57.3-17 82.6c-5.3 12.2-1.5 26.8 10 33.5v0z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Loading...
-  </button>,
-  " ",
-  <button
-    aria-disabled={true}
-    className="Button btn btn-primary"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-spinner-third icon-left btn-loading-spin"
-      data-icon="spinner-third"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M457 372c11.5 6.6 26.3 2.7 31.8-9.3C503.7 330.2 512 294.1 512 256C512 122.7 410.1 13.2 280 1.1C266.8-.1 256 10.7 256 24v0c0 13.3 10.8 23.9 24 25.4C383.5 61.2 464 149.2 464 256c0 29.3-6.1 57.3-17 82.6c-5.3 12.2-1.5 26.8 10 33.5v0z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Loading...
-  </button>,
-  " ",
-  <button
-    aria-disabled={true}
-    className="Button btn btn-outline-primary"
-    disabled={true}
-    type="button"
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-spinner-third icon-left btn-loading-spin"
-      data-icon="spinner-third"
-      data-prefix="far"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 512 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M457 372c11.5 6.6 26.3 2.7 31.8-9.3C503.7 330.2 512 294.1 512 256C512 122.7 410.1 13.2 280 1.1C266.8-.1 256 10.7 256 24v0c0 13.3 10.8 23.9 24 25.4C383.5 61.2 464 149.2 464 256c0 29.3-6.1 57.3-17 82.6c-5.3 12.2-1.5 26.8 10 33.5v0z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-    Loading...
-  </button>,
-]
+    />
+  </svg>
+  Loading...
+</button>
 `;
 
 exports[`Storyshots Components/Button Primary 1`] = `
@@ -5118,7 +4435,7 @@ Array [
 
 exports[`Storyshots Components/Card Default 1`] = `
 <section
-  className="Card"
+  className="Card Card--divided"
 >
   <div
     className="Card__header"
@@ -5126,7 +4443,7 @@ exports[`Storyshots Components/Card Default 1`] = `
     <h2
       className="Card__title"
     >
-      Default card title
+      Title
     </h2>
     <span
       className="Card__helper-text"
@@ -5134,20 +4451,21 @@ exports[`Storyshots Components/Card Default 1`] = `
       (helper text)
     </span>
   </div>
+  <hr
+    className="Card__divider"
+  />
   <h3
     className="Card__subtitle"
   >
     Subtitle
   </h3>
-  <div>
-    Use knobs to try out the different card sizes
-  </div>
+  Children
 </section>
 `;
 
 exports[`Storyshots Components/Card Loading Custom 1`] = `
 <section
-  className="Card Card--sm"
+  className="Card Card--divided"
 >
   <span
     aria-busy={true}
@@ -5263,7 +4581,7 @@ exports[`Storyshots Components/Card Loading Custom 1`] = `
 
 exports[`Storyshots Components/Card Loading Default 1`] = `
 <section
-  className="Card"
+  className="Card Card--divided"
 >
   <span
     aria-busy={true}
@@ -5338,7 +4656,7 @@ exports[`Storyshots Components/Card Loading Default 1`] = `
 
 exports[`Storyshots Components/Card Loading Paragraph Count 1`] = `
 <section
-  className="Card"
+  className="Card Card--divided"
 >
   <span
     aria-busy={true}
@@ -5542,89 +4860,7 @@ Array [
 ]
 `;
 
-exports[`Storyshots Components/CheckboxButton Default 1`] = `
-<input
-  checked={true}
-  className="checkbox"
-  disabled={false}
-  id="1"
-  onChange={[Function]}
-  type="checkbox"
-  value={1}
-/>
-`;
-
-exports[`Storyshots Components/CheckboxButton Indeterminate 1`] = `
-<div
-  style={
-    Object {
-      "display": "flex",
-      "flexDirection": "column",
-      "rowGap": "16px",
-    }
-  }
->
-  <input
-    checked={false}
-    className=""
-    id="select-all"
-    onChange={[Function]}
-    type="checkbox"
-  />
-  <input
-    checked={false}
-    className=""
-    id="1"
-    onChange={[Function]}
-    type="checkbox"
-    value="1"
-  />
-  <input
-    checked={false}
-    className=""
-    id="2"
-    onChange={[Function]}
-    type="checkbox"
-    value="2"
-  />
-  <input
-    checked={false}
-    className=""
-    id="3"
-    onChange={[Function]}
-    type="checkbox"
-    value="3"
-  />
-</div>
-`;
-
-exports[`Storyshots Components/CheckboxButton With Description 1`] = `
-<label
-  className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
-  htmlFor="value-2"
->
-  <span
-    className="FormControlLabel__label"
-  >
-    <input
-      checked={false}
-      className="FormControlLabel__control"
-      id="value-2"
-      onClick={[Function]}
-      type="checkbox"
-      value="2"
-    />
-    Label 2
-  </span>
-  <span
-    className="FormControlLabel__children"
-  >
-    This is where the description goes
-  </span>
-</label>
-`;
-
-exports[`Storyshots Components/Copy To Clipboard Button Default 1`] = `
+exports[`Storyshots Components/Copy To Clipboard Button Primary 1`] = `
 <div
   className="CopyToClipboardButton"
 >
@@ -5661,65 +4897,21 @@ exports[`Storyshots Components/Copy To Clipboard Button Default 1`] = `
       <span
         className="CopyToClipboardButton__display-text"
       >
-        Click to copy
+        displayed text
       </span>
     </span>
   </button>
 </div>
 `;
 
-exports[`Storyshots Components/Copy To Clipboard Button Secondary 1`] = `
-<div
-  className="CopyToClipboardButton"
->
-  <button
-    aria-label="Copy to clipboard"
-    className="CopyToClipboardButton btn btn-outline-secondary"
-    onClick={[Function]}
-    tracking={
-      Object {
-        "getTrackingData": [Function],
-        "trackEvent": [Function],
-      }
-    }
-    type="button"
-  >
-    <span>
-      <svg
-        aria-hidden="true"
-        className="svg-inline--fa fa-copy "
-        data-icon="copy"
-        data-prefix="far"
-        focusable="false"
-        role="img"
-        style={Object {}}
-        viewBox="0 0 448 512"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M384 336H192c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16l140.1 0L400 115.9V320c0 8.8-7.2 16-16 16zM192 384H384c35.3 0 64-28.7 64-64V115.9c0-12.7-5.1-24.9-14.1-33.9L366.1 14.1c-9-9-21.2-14.1-33.9-14.1H192c-35.3 0-64 28.7-64 64V320c0 35.3 28.7 64 64 64zM64 128c-35.3 0-64 28.7-64 64V448c0 35.3 28.7 64 64 64H256c35.3 0 64-28.7 64-64V416H272v32c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192c0-8.8 7.2-16 16-16H96V128H64z"
-          fill="currentColor"
-          style={Object {}}
-        />
-      </svg>
-      <span
-        className="CopyToClipboardButton__display-text"
-      >
-        Click to copy
-      </span>
-    </span>
-  </button>
-</div>
-`;
-
-exports[`Storyshots Components/Copy To Clipboard Default 1`] = `
+exports[`Storyshots Components/Copy To Clipboard Primary 1`] = `
 <div
   className="CopyToClipboard"
 >
   <span
     className="CopyToClipboard__copy-text"
   >
-    Copy me!
+    the text getting copied
   </span>
   <div
     className="CopyToClipboardButton"
@@ -7078,6 +6270,83 @@ exports[`Storyshots Components/Form Default 1`] = `
     Save
   </button>
 </form>
+`;
+
+exports[`Storyshots Components/Form Elements/CheckboxButton Default 1`] = `
+<input
+  className=""
+  type="checkbox"
+/>
+`;
+
+exports[`Storyshots Components/Form Elements/CheckboxButton Indeterminate 1`] = `
+<div
+  style={
+    Object {
+      "display": "flex",
+      "flexDirection": "column",
+      "rowGap": "16px",
+    }
+  }
+>
+  <input
+    checked={false}
+    className=""
+    id="select-all"
+    onChange={[Function]}
+    type="checkbox"
+  />
+  <input
+    checked={false}
+    className=""
+    id="1"
+    onChange={[Function]}
+    type="checkbox"
+    value="1"
+  />
+  <input
+    checked={false}
+    className=""
+    id="2"
+    onChange={[Function]}
+    type="checkbox"
+    value="2"
+  />
+  <input
+    checked={false}
+    className=""
+    id="3"
+    onChange={[Function]}
+    type="checkbox"
+    value="3"
+  />
+</div>
+`;
+
+exports[`Storyshots Components/Form Elements/CheckboxButton With Description 1`] = `
+<label
+  className="FormControlLabel FormControlLabel--bordered FormControlLabel--with-children"
+  htmlFor="value-2"
+>
+  <span
+    className="FormControlLabel__label"
+  >
+    <input
+      checked={false}
+      className="FormControlLabel__control"
+      id="value-2"
+      onClick={[Function]}
+      type="checkbox"
+      value="2"
+    />
+    Label 2
+  </span>
+  <span
+    className="FormControlLabel__children"
+  >
+    This is where the description goes
+  </span>
+</label>
 `;
 
 exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Bordered Column Full Width 1`] = `
@@ -29906,94 +29175,6 @@ Array [
     </div>
   </div>,
 ]
-`;
-
-exports[`Storyshots Layouts/CardStack Centered 1`] = `
-<div
-  className="Flex"
-  style={
-    Object {
-      "flex": undefined,
-      "flexBasis": undefined,
-      "flexGrow": undefined,
-      "flexShrink": undefined,
-      "height": undefined,
-      "maxHeight": undefined,
-      "maxWidth": undefined,
-      "width": undefined,
-    }
-  }
->
-  <div
-    className="CardStack CardStack--sm"
-  >
-    <h1
-      style={
-        Object {
-          "fontSize": "1.5rem",
-          "fontWeight": 700,
-        }
-      }
-    >
-      CardStack
-    </h1>
-    <section
-      className="Card"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 1
-        </h2>
-      </div>
-      <p>
-        Many pages consist of 
-        <code>
-          CardStack
-        </code>
-         containers centered on the page.
-      </p>
-      <p>
-        <code>
-          CardStack
-        </code>
-         can be placed in any container and aligned as needed. This example is in a container with 
-        <code>
-          display: flex; justify-content: center;
-        </code>
-      </p>
-    </section>
-    <section
-      className="Card"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 2
-        </h2>
-      </div>
-    </section>
-    <section
-      className="Card"
-    >
-      <div
-        className="Card__header"
-      >
-        <h2
-          className="Card__title"
-        >
-          Card 3
-        </h2>
-      </div>
-    </section>
-  </div>
-</div>
 `;
 
 exports[`Storyshots Layouts/CardStack Default 1`] = `

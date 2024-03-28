@@ -1,8 +1,5 @@
 import React from 'react';
-
-import { boolean, text, withKnobs } from '@storybook/addon-knobs';
-
-import Button from 'src/Button';
+import Button, { ButtonSizes, ButtonVariants } from 'src/Button';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faFileAlt, faCaretDown, faPaperPlane } from '@fortawesome/pro-regular-svg-icons';
 import {
@@ -13,11 +10,30 @@ import mdx from './Button.mdx';
 export default {
   title: 'Components/Button',
   component: Button,
-  decorators: [withKnobs],
   parameters: {
+    controls: { exclude: [] },
     docs: {
       page: mdx,
     },
+  },
+  args: {
+    children: 'Button text',
+    size: 'sm',
+    variant: 'primary',
+  },
+  argTypes: {
+    size: {
+      options: Object.values(ButtonSizes),
+      mapping: ButtonSizes,
+      control: { type: 'select' },
+    },
+    variant: {
+      options: Object.values(ButtonVariants),
+      mapping: ButtonVariants,
+      control: { type: 'select' },
+    },
+    leadingIcon: { control: { type: null } },
+    trailingIcon: { control: { type: null } },
   },
 };
 
@@ -485,44 +501,8 @@ export const Brands = () => (
   </>
 );
 
-export const Loading = () => (
-  <>
-    <Button
-      isLoading={boolean('isLoading', true)}
-      leadingIcon={faFileAlt as IconDefinition}
-      loadingText={text('loadingText', 'Loading...')}
-      size="sm"
-      variant="primary"
-    >
-      Confirm
-    </Button>
-    {' '}
-    <Button
-      isLoading={boolean('isLoading', true)}
-      leadingIcon={faFileAlt as IconDefinition}
-      loadingText={text('loadingText', 'Loading...')}
-      size="sm"
-      variant="outline-primary"
-    >
-      Confirm
-    </Button>
-    {' '}
-    <Button
-      isLoading={boolean('isLoading', true)}
-      leadingIcon={faFileAlt as IconDefinition}
-      loadingText={text('loadingText', 'Loading...')}
-      variant="primary"
-    >
-      Confirm
-    </Button>
-    {' '}
-    <Button
-      isLoading={boolean('isLoading', true)}
-      leadingIcon={faFileAlt as IconDefinition}
-      loadingText={text('loadingText', 'Loading...')}
-      variant="outline-primary"
-    >
-      Confirm
-    </Button>
-  </>
-);
+export const Loading = {
+  args: {
+    isLoading: true,
+  },
+};

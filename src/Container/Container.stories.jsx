@@ -1,11 +1,5 @@
 import React from 'react';
 
-import {
-  boolean,
-  select,
-  withKnobs,
-} from '@storybook/addon-knobs';
-
 import Card from 'src/Card';
 import { Col, Container, Row } from 'src/Container';
 import mdx from './Container.mdx';
@@ -13,16 +7,22 @@ import mdx from './Container.mdx';
 export default {
   title: 'Layouts/Container',
   component: Container,
-  decorators: [withKnobs],
   parameters: {
+    controls: { exclude: [] },
     docs: {
       page: mdx,
     },
   },
+  argTypes: {
+    fluid: {
+      options: [false, 'sm', 'md', 'lg', 'xl', 'xxl'],
+      control: { type: 'select' },
+    },
+  },
+  args: {},
 };
-
-export const Default = () => (
-  <Container>
+export const Default = (args) => (
+  <Container {...args}>
     <Row>
       <Col>
         <Card title="Default container">
@@ -35,7 +35,7 @@ export const Default = () => (
 );
 
 export const FluidContainer = () => (
-  <Container fluid={boolean('fluid', true)}>
+  <Container fluid>
     <Row>
       <Col>
         <Card title="Fluid container">
@@ -47,7 +47,7 @@ export const FluidContainer = () => (
 );
 
 export const FluidContainerWithBreakpoints = () => (
-  <Container fluid={select('breakpoint', ['sm', 'md', 'lg', 'xl', 'xxl'], 'md')}>
+  <Container fluid="md">
     <Row>
       <Col>
         <Card title="Fluid container with breakpoints">
@@ -90,7 +90,7 @@ export const AutoLayoutColumns = () => (
 );
 
 export const SettingOneColumnWidth = () => {
-  const xs = select('column width', [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], 8);
+  const xs = 8;
 
   return (
     <Container>

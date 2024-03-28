@@ -1,38 +1,25 @@
 import React, { useRef, useState } from 'react';
-import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
+import CheckboxButton from 'src/CheckboxButton';
 import FormControlLabel from 'src/FormControlLabel';
 
 import mdx from './CheckboxButton.mdx';
 
 export default {
-  title: 'Components/CheckboxButton',
+  title: 'Components/Form Elements/CheckboxButton',
   component: CheckboxButton,
   parameters: {
+    controls: { exclude: [] },
     docs: {
-      page: mdx,
+      pages: mdx,
     },
+  },
+  args: {},
+  argTypes: {
+    onChange: { control: { type: null } },
   },
 };
 
-export const Default = () => {
-  const [isChecked, setIsChecked] = useState(CHECKED_STATES.CHECKED);
-
-  const handleChange = () => {
-    setIsChecked((prev) => !prev);
-  };
-
-  return (
-    <CheckboxButton
-      checked={isChecked}
-      className="checkbox"
-      disabled={false}
-      id="1"
-      type="checkbox"
-      value={1}
-      onChange={handleChange}
-    />
-  );
-};
+export const Default = {};
 
 export const Indeterminate = () => {
   const inputEl = useRef(null);

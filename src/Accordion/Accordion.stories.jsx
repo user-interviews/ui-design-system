@@ -17,9 +17,16 @@ export default {
   title: 'Components/Accordion',
   component: Accordion,
   parameters: {
+    controls: { exclude: [] },
     docs: {
       page: mdx,
     },
+  },
+  args: {},
+  argTypes: {
+    activeKey: { control: { type: null } },
+    as: { control: { type: null } },
+    onSelect: { control: { type: null } },
   },
 };
 
