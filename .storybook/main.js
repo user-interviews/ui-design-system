@@ -32,7 +32,7 @@ const config = {
     defaultName: 'Docs',
   },
   stories: [
-    '../stories/Intro.stories.jdx',
+    '../stories/Intro.stories.jsx',
     '../src/**/*.stories.@(js|mdx)',
     '../src/**/*.stories.@(ts|mdx)',
     '../src/**/*.stories.js[x]',
