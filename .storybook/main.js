@@ -14,7 +14,6 @@ const config = {
     '@storybook/addon-backgrounds',
     '@storybook/addon-controls',
     '@storybook/addon-links',
-    '@storybook/addon-knobs',
     '@storybook/addon-storysource',
     '@storybook/addon-mdx-gfm'
   ],

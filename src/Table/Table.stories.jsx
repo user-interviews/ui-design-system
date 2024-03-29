@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 
-import { withKnobs, boolean, number } from '@storybook/addon-knobs';
-
 import { faFileAlt, faEllipsisV, faThumbtack } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -18,7 +16,6 @@ import mdx from './Table.mdx';
 export default {
   title: 'Components/Table',
   component: Table,
-  decorators: [withKnobs],
   parameters: {
     docs: {
       page: mdx,
@@ -95,7 +92,7 @@ export const Default = () => (
 );
 
 export const LoadingDefault = () => (
-  <Table isLoading={boolean('isLoading', true)}>
+  <Table isLoading>
     <TableHead>
       <TableRow>
         <TableCell header />
@@ -128,7 +125,7 @@ export const LoadingDefault = () => (
 );
 
 export const LoadingCustomColumns = () => (
-  <Table isLoading={boolean('isLoading', true)} loadingColumns={[75, 100, 250, 250, 100]} loadingRows={number('loadingRows', 4)}>
+  <Table isLoading loadingColumns={[75, 100, 250, 250, 100]} loadingRows={4}>
     <TableHead>
       <TableRow>
         <TableCell header />

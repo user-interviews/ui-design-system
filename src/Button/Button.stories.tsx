@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { boolean, text, withKnobs } from '@storybook/addon-knobs';
-
 import Button from 'src/Button';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faFileAlt, faCaretDown, faPaperPlane } from '@fortawesome/pro-regular-svg-icons';
@@ -13,7 +11,6 @@ import mdx from './Button.mdx';
 export default {
   title: 'Components/Button',
   component: Button,
-  decorators: [withKnobs],
   parameters: {
     docs: {
       page: mdx,
@@ -488,9 +485,9 @@ export const Brands = () => (
 export const Loading = () => (
   <>
     <Button
-      isLoading={boolean('isLoading', true)}
+      isLoading
       leadingIcon={faFileAlt as IconDefinition}
-      loadingText={text('loadingText', 'Loading...')}
+      loadingText="Loading..."
       size="sm"
       variant="primary"
     >
@@ -498,9 +495,9 @@ export const Loading = () => (
     </Button>
     {' '}
     <Button
-      isLoading={boolean('isLoading', true)}
+      isLoading
       leadingIcon={faFileAlt as IconDefinition}
-      loadingText={text('loadingText', 'Loading...')}
+      loadingText="Loading..."
       size="sm"
       variant="outline-primary"
     >
@@ -508,18 +505,18 @@ export const Loading = () => (
     </Button>
     {' '}
     <Button
-      isLoading={boolean('isLoading', true)}
+      isLoading
       leadingIcon={faFileAlt as IconDefinition}
-      loadingText={text('loadingText', 'Loading...')}
+      loadingText="Loading..."
       variant="primary"
     >
       Confirm
     </Button>
     {' '}
     <Button
-      isLoading={boolean('isLoading', true)}
+      isLoading
       leadingIcon={faFileAlt as IconDefinition}
-      loadingText={text('loadingText', 'Loading...')}
+      loadingText="Loading..."
       variant="outline-primary"
     >
       Confirm

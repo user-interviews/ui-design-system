@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
-import { boolean, withKnobs } from '@storybook/addon-knobs';
 
 import FormControlLabel from 'src/FormControlLabel';
 import CheckboxButton from 'src/CheckboxButton';
@@ -9,7 +8,6 @@ import RadioButton from 'src/RadioButton';
 export default {
   title: 'Components/Form Elements/Form Control Label',
   component: FormControlLabel,
-  decorators: [withKnobs()],
 };
 
 const FormControlLabelControlComponent = (props) => {
@@ -30,9 +28,9 @@ const FormControlLabelControlComponent = (props) => {
 
 export const Checkbox = () => (
   <FormControlLabelControlComponent
-    bordered={boolean('Bordered button', false)}
+    bordered={false}
     Control={CheckboxButton}
-    disabled={boolean('Disabled', false)}
+    disabled={false}
     id="checkbox"
     name="checkbox"
     text="Labeled checkbox"
@@ -42,7 +40,7 @@ export const Checkbox = () => (
 
 export const CheckboxWithChildren = () => (
   <FormControlLabelControlComponent
-    bordered={boolean('Bordered button', true)}
+    bordered
     Control={CheckboxButton}
     id="checkbox"
     name="checkbox"
@@ -55,7 +53,7 @@ export const CheckboxWithChildren = () => (
 
 export const Radio = () => (
   <FormControlLabelControlComponent
-    bordered={boolean('Bordered radio', false)}
+    bordered={false}
     Control={RadioButton}
     id="radio"
     name="radio"
@@ -66,7 +64,7 @@ export const Radio = () => (
 
 export const RadioWithChildren = () => (
   <FormControlLabelControlComponent
-    bordered={boolean('Bordered radio', true)}
+    bordered
     Control={RadioButton}
     id="radio"
     name="radio"

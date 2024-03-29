@@ -5139,9 +5139,6 @@ exports[`Storyshots Components/Card Default 1`] = `
   >
     Subtitle
   </h3>
-  <div>
-    Use knobs to try out the different card sizes
-  </div>
 </section>
 `;
 
@@ -7286,13 +7283,6 @@ exports[`Storyshots Components/Form Elements/CheckboxButtonGroup Default 1`] = `
     htmlFor="checkbox-button-group"
   >
     Legend
-    <span
-      className="InputLegend__helper-text"
-    >
-       (
-      use the knobs to try out different variations
-      )
-    </span>
   </legend>
   <div
     className="CheckboxButtonGroup"
@@ -8115,7 +8105,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Radio Button Group 
     name=""
   >
     <label
-      className="FormControlLabel FormControlLabel--active"
+      className="FormControlLabel FormControlLabel--bordered FormControlLabel--active"
       htmlFor="value-1"
     >
       <span
@@ -8135,7 +8125,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Radio Button Group 
       </span>
     </label>
     <label
-      className="FormControlLabel"
+      className="FormControlLabel FormControlLabel--bordered"
       htmlFor="value-2"
     >
       <span
@@ -8155,7 +8145,7 @@ exports[`Storyshots Components/Form Elements/Form Group With Radio Button Group 
       </span>
     </label>
     <label
-      className="FormControlLabel"
+      className="FormControlLabel FormControlLabel--bordered"
       htmlFor="value-3"
     >
       <span
@@ -8666,13 +8656,6 @@ exports[`Storyshots Components/Form Elements/RadioButtonGroup Default 1`] = `
     htmlFor="radio-button-group"
   >
     Legend
-    <span
-      className="InputLegend__helper-text"
-    >
-       (
-      use the knobs to try out different variations
-      )
-    </span>
   </legend>
   <div
     className="RadioButtonGroup"
@@ -11677,6 +11660,57 @@ Array [
 
 exports[`Storyshots Components/RichTextEditor One Line 1`] = `
 Array [
+  <span
+    aria-busy={true}
+    aria-live="polite"
+  >
+    <span
+      className="react-loading-skeleton LoadingSkeleton"
+      style={
+        Object {
+          "--base-color": "#E1E1E1",
+          "borderRadius": "4px",
+          "height": 40,
+          "width": "100%",
+        }
+      }
+    >
+      ‌
+    </span>
+    <br />
+  </span>,
+  <span
+    aria-busy={true}
+    aria-live="polite"
+  >
+    <span
+      className="react-loading-skeleton LoadingSkeleton"
+      style={
+        Object {
+          "--base-color": "#E1E1E1",
+          "borderRadius": "4px",
+          "height": 70,
+          "width": "100%",
+        }
+      }
+    >
+      ‌
+    </span>
+    <br />
+  </span>,
+]
+`;
+
+exports[`Storyshots Components/RichTextEditor Set Content 1`] = `
+Array [
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Set content to "Oh hey"
+  </button>,
   <span
     aria-busy={true}
     aria-live="polite"
@@ -25206,7 +25240,7 @@ Array [
   />,
   <div>
     <p>
-      Click the button to see a toast message.  Use the knobs to try different types!
+      Click the button to see a toast message.
     </p>
     <button
       className="Button btn btn-primary"
@@ -25228,7 +25262,7 @@ Array [
   />,
   <div>
     <p>
-      Click the button to see a toast message.  Use the knobs to try different types!
+      Click the button to see a toast message.
     </p>
     <button
       className="Button btn btn-primary"
@@ -25250,7 +25284,7 @@ Array [
   />,
   <div>
     <p>
-      Click the button to see a toast message.  Use the knobs to try different types!
+      Click the button to see a toast message.
     </p>
     <button
       className="Button btn btn-primary"
@@ -25272,7 +25306,7 @@ Array [
   />,
   <div>
     <p>
-      Click the button to see a toast message.  Use the knobs to try different types!
+      Click the button to see a toast message.
     </p>
     <button
       className="Button btn btn-primary"

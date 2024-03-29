@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { withKnobs, select } from '@storybook/addon-knobs';
 
 import Button from 'src/Button';
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
 
-import { OverlayTrigger, OVERLAY_TRIGGER_PLACEMENT } from 'src/OverlayTrigger';
+import { OverlayTrigger } from 'src/OverlayTrigger';
 import { Popover, PopoverBody, PopoverCard } from 'src/Popover';
 
 import mdx from './Popover.mdx';
@@ -13,7 +12,6 @@ import mdx from './Popover.mdx';
 export default {
   title: 'Components/Popover',
   component: Popover,
-  decorators: [withKnobs],
   parameters: {
     docs: {
       page: mdx,
@@ -30,7 +28,7 @@ export const Default = () => (
         </PopoverBody>
       </Popover>
     )}
-    placement={select('placement', OVERLAY_TRIGGER_PLACEMENT, 'auto')}
+    placement="auto"
     trigger="click"
   >
     <Button variant="primary">Filter</Button>
@@ -46,7 +44,7 @@ export const Placement = () => (
         </PopoverBody>
       </Popover>
     )}
-    placement={select('placement', OVERLAY_TRIGGER_PLACEMENT, 'bottom')}
+    placement="bottom"
     trigger="click"
   >
     <Button variant="primary">Try different placements</Button>
@@ -67,7 +65,7 @@ export const CardPopover = () => {
           id="popover-basic"
         >
           <PopoverCard
-            size={select('size', ['sm', 'md'], 'sm')}
+            size="sm"
           >
             <h3 style={{ fontSize: '1rem', fontWeight: '700', marginBottom: '24px' }}>Popover with Card styling</h3>
             <FormGroup
