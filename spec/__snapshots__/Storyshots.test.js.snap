@@ -5927,6 +5927,101 @@ Array [
 ]
 `;
 
+exports[`Storyshots Components/Drawer Additional Primary Actions 1`] = `
+Array [
+  <button
+    className="Button btn btn-primary"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    Open
+  </button>,
+  <div
+    className="DrawerBackgroundOverlay"
+    onClick={[Function]}
+    onKeyDown={[Function]}
+    role="presentation"
+  />,
+  <div
+    className="Drawer Drawer--right Drawer--sm Drawer--behind-nav"
+  >
+    <div
+      className="Drawer__header Drawer__header--bordered"
+    >
+      <div
+        className="Drawer__title"
+      >
+        Title goes here
+      </div>
+      <button
+        aria-label="Close"
+        className="Drawer__header-action"
+        onClick={[Function]}
+        type="button"
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-xmark "
+          data-icon="xmark"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 384 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+    </div>
+    <div
+      className="Drawer__body"
+    >
+      <p>
+        Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi, vitae malesuada odio. Sed varius libero sed erat faucibus ultrices. Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec porttitor, est quis aliquet condimentum, nisi felis porta odio, eu luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra, imperdiet purus at, finibus turpis. Sed mattis erat a risus dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque metus felis, auctor sit amet posuere eu, aliquam blandit libero. Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta lacus, vitae mattis felis elit in metus. Nulla ligula ligula, laoreet in dictum sit amet, pretium ac est.
+      </p>
+    </div>
+    <div
+      className="DrawerFooter"
+    >
+      <div />
+      <div
+        className="DrawerFooter__actions"
+      >
+        <button
+          aria-disabled={false}
+          className="Button btn btn-transparent"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          Cancel
+        </button>
+        <div
+          className="Dropdown dropdown"
+        >
+          <button
+            aria-expanded={false}
+            aria-label="dropdown-toggle"
+            className="DropdownToggle dropdown-toggle btn btn-primary"
+            disabled={false}
+            onClick={[Function]}
+            type="button"
+          >
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>,
+]
+`;
+
 exports[`Storyshots Components/Drawer Default 1`] = `
 Array [
   <button
@@ -24816,12 +24911,12 @@ Array [
       role="presentation"
     >
       <button
-        aria-controls="react-aria-:r8:-tabpane-one"
+        aria-controls="react-aria-:r9:-tabpane-one"
         aria-selected={true}
         className="nav-link active"
         data-rr-ui-event-key="one"
         disabled={false}
-        id="react-aria-:r8:-tab-one"
+        id="react-aria-:r9:-tab-one"
         onClick={[Function]}
         role="tab"
         type="button"
@@ -24834,12 +24929,12 @@ Array [
       role="presentation"
     >
       <button
-        aria-controls="react-aria-:r8:-tabpane-two"
+        aria-controls="react-aria-:r9:-tabpane-two"
         aria-selected={false}
         className="nav-link"
         data-rr-ui-event-key="two"
         disabled={false}
-        id="react-aria-:r8:-tab-two"
+        id="react-aria-:r9:-tab-two"
         onClick={[Function]}
         role="tab"
         tabIndex={-1}
@@ -24853,12 +24948,12 @@ Array [
       role="presentation"
     >
       <button
-        aria-controls="react-aria-:r8:-tabpane-three"
+        aria-controls="react-aria-:r9:-tabpane-three"
         aria-selected={false}
         className="nav-link"
         data-rr-ui-event-key="three"
         disabled={false}
-        id="react-aria-:r8:-tab-three"
+        id="react-aria-:r9:-tab-three"
         onClick={[Function]}
         role="tab"
         tabIndex={-1}
@@ -24872,13 +24967,13 @@ Array [
       role="presentation"
     >
       <button
-        aria-controls="react-aria-:r8:-tabpane-four"
+        aria-controls="react-aria-:r9:-tabpane-four"
         aria-disabled={true}
         aria-selected={false}
         className="nav-link disabled"
         data-rr-ui-event-key="four"
         disabled={true}
-        id="react-aria-:r8:-tab-four"
+        id="react-aria-:r9:-tab-four"
         onClick={[Function]}
         role="tab"
         tabIndex={-1}
@@ -24892,9 +24987,9 @@ Array [
     className="tab-content"
   >
     <div
-      aria-labelledby="react-aria-:r8:-tab-one"
+      aria-labelledby="react-aria-:r9:-tab-one"
       className="fade tab-pane active show"
-      id="react-aria-:r8:-tabpane-one"
+      id="react-aria-:r9:-tabpane-one"
       role="tabpanel"
     >
       <div
@@ -24908,9 +25003,9 @@ Array [
       </div>
     </div>
     <div
-      aria-labelledby="react-aria-:r8:-tab-two"
+      aria-labelledby="react-aria-:r9:-tab-two"
       className="fade tab-pane"
-      id="react-aria-:r8:-tabpane-two"
+      id="react-aria-:r9:-tabpane-two"
       role="tabpanel"
     >
       <div
@@ -24924,9 +25019,9 @@ Array [
       </div>
     </div>
     <div
-      aria-labelledby="react-aria-:r8:-tab-three"
+      aria-labelledby="react-aria-:r9:-tab-three"
       className="fade tab-pane"
-      id="react-aria-:r8:-tabpane-three"
+      id="react-aria-:r9:-tabpane-three"
       role="tabpanel"
     >
       <div
@@ -24940,9 +25035,9 @@ Array [
       </div>
     </div>
     <div
-      aria-labelledby="react-aria-:r8:-tab-four"
+      aria-labelledby="react-aria-:r9:-tab-four"
       className="fade tab-pane"
-      id="react-aria-:r8:-tabpane-four"
+      id="react-aria-:r9:-tabpane-four"
       role="tabpanel"
     >
       <div

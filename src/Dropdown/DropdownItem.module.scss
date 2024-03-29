@@ -15,6 +15,10 @@
   }
 }
 
-.DropdownItemIcon {
+.DropdownItemLeadingIcon {
   margin-right: $synth-spacing-2;
+}
+
+.DropdownItemTrailingIcon {
+  margin-left: $synth-spacing-2;
 }

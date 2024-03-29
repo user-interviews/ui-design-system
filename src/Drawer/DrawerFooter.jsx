@@ -2,11 +2,15 @@ import React from 'react';
 import * as propTypes from 'prop-types';
 
 import Button from 'src/Button';
+import {
+ Dropdown, DropdownToggle, DropdownItem, DropdownMenu,
+} from 'src/Dropdown';
 
 import './DrawerFooter.scss';
 
 const DrawerFooter = ({
   children,
+  additionalPrimaryActions,
   isPrimaryActionLoading,
   isSecondaryActionLoading,
   primaryActionDisabled,
@@ -19,13 +23,16 @@ const DrawerFooter = ({
   secondaryActionText,
   onPrimaryAction,
   onSecondaryAction,
-}) => (
-  <div className="DrawerFooter">
-    <div>
-      {children}
-    </div>
-    <div className="DrawerFooter__actions">
-      {onSecondaryAction && (
+}) => {
+  const isDropdownToggle = !!additionalPrimaryActions.length;
+
+  return (
+    <div className="DrawerFooter">
+      <div>
+        {children}
+      </div>
+      <div className="DrawerFooter__actions">
+        {onSecondaryAction && (
         <Button
           disabled={secondaryActionDisabled}
           isLoading={isSecondaryActionLoading}
@@ -37,24 +44,53 @@ const DrawerFooter = ({
           {secondaryActionText}
         </Button>
       )}
-      {onPrimaryAction && (
-        <Button
-          disabled={primaryActionDisabled}
-          isLoading={isPrimaryActionLoading}
-          leadingIcon={primaryActionIcon}
-          loadingText={primaryActionLoadingText}
-          type="button"
-          variant={primaryActionVariant}
-          onClick={onPrimaryAction}
-        >
-          {primaryActionText}
-        </Button>
-      )}
+        {!isDropdownToggle && onPrimaryAction && (
+          <Button
+            disabled={primaryActionDisabled}
+            isLoading={isPrimaryActionLoading}
+            leadingIcon={primaryActionIcon}
+            loadingText={primaryActionLoadingText}
+            type="button"
+            variant={primaryActionVariant}
+            onClick={onPrimaryAction}
+          >
+            {primaryActionText}
+          </Button>
+        )}
+        {isDropdownToggle && (
+          <Dropdown>
+            <DropdownToggle>{primaryActionText}</DropdownToggle>
+            <DropdownMenu>
+              {additionalPrimaryActions.map((action) => (
+                <DropdownItem
+                  disabled={action.disabled}
+                  href={action.href}
+                  key={action.text}
+                  leadingIcon={action.leadingIcon}
+                  trailingIcon={action.trailingIcon}
+                  onClick={action.onClick}
+                >
+                  {action.text}
+                </DropdownItem>
+              ))}
+            </DropdownMenu>
+          </Dropdown>
+        )}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 DrawerFooter.propTypes = {
+  additionalPrimaryActions: propTypes.arrayOf(
+    propTypes.shape({
+      disabled: propTypes.bool,
+      leadingIcon: propTypes.object,
+      text: propTypes.string.isRequired,
+      trailingIcon: propTypes.object,
+      onClick: propTypes.func.isRequired,
+    }),
+  ),
   children: propTypes.node,
   isPrimaryActionLoading: propTypes.bool,
   isSecondaryActionLoading: propTypes.bool,
@@ -72,6 +108,7 @@ DrawerFooter.propTypes = {
 
 DrawerFooter.defaultProps = {
   children: undefined,
+  additionalPrimaryActions: [],
   isPrimaryActionLoading: false,
   isSecondaryActionLoading: false,
   primaryActionDisabled: false,

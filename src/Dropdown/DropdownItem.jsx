@@ -17,6 +17,7 @@ const DropdownItem = ({
   eventKey,
   href,
   leadingIcon,
+  trailingIcon,
   onClick,
   bsPrefix,
   ...props
@@ -36,8 +37,9 @@ const DropdownItem = ({
     onClick={onClick}
     {...props}
   >
-    { leadingIcon && <FontAwesomeIcon className={classNames(styles.DropdownItemIcon, 'icon-left', 'fa-fw')} icon={leadingIcon} /> }
+    { leadingIcon && <FontAwesomeIcon className={classNames(styles.DropdownItemLeadingIcon, 'icon-left', 'fa-fw')} icon={leadingIcon} /> }
     { children }
+    { trailingIcon && <FontAwesomeIcon className={classNames(styles.DropdownItemTrailingIcon, 'icon-right', 'fa-fw')} icon={trailingIcon} /> }
   </RBDropdown.Item>
   );
 
@@ -69,6 +71,7 @@ DropdownItem.propTypes = {
    */
   href: PropTypes.string,
   leadingIcon: PropTypes.object,
+  trailingIcon: PropTypes.object,
   /**
     Callback fired when the menu item is clicked.
    */
@@ -84,6 +87,7 @@ DropdownItem.defaultProps = {
   eventKey: undefined,
   href: undefined,
   leadingIcon: undefined,
+  trailingIcon: undefined,
   onClick: undefined,
 };
 

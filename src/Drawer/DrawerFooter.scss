@@ -8,6 +8,7 @@
   padding: $synth-spacing-4;
 
   &__actions {
+    display: flex;
     > :not(:first-child) {
       margin-left: $synth-spacing-1;
     }
