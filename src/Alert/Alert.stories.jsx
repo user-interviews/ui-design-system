@@ -7,9 +7,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import mdx from './Alert.mdx';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../scss/global.scss';
-
 export default {
   title: 'Components/Alert',
   component: Alert,

@@ -1,4 +1,6 @@
 import colors from '../src/Styles/colors/palette';
+import '../scss/global.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const preview = {
   decorators: [

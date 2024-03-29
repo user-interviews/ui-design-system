@@ -5,8 +5,6 @@ import Button from 'src/Button';
 import { withToast, withToastPropTypes } from 'src/Toast';
 import mdx from './Toast.mdx';
 
-import '../../scss/global.scss';
-
 export default {
   title: 'Components/Toast',
   component: withToast,
