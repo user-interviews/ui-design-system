@@ -67,6 +67,10 @@ you want the drawer to be the full width of the viewport but you want to disable
 
 If additional components are required to be included, pass them as children to the `DrawerFooter`. This example also doesn't have a title or a border on the header, and the background overlay is turned off to allow interaction with outside elements.
 
+### Additional Primary Actions
+
+If additional primary actions are required, you can utilize the `primaryAdditionalActions` prop. This will render the primary action as a dropdown toggle.
+
 ### Empty
 
 While using the corresponding child components is recommended, Drawer is fully functional on its own and be closed by clicking outside of it or pressing the escape key. This is intended as an escape hatch to allow fully custom contents. In fully custom cases it is encouraged to include a close button. As the child components all work independent of each other it is also possible to use the header and body, but not the footer, for instance. This is useful for drawers which only include information and not an action.

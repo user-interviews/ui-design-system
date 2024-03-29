@@ -90,7 +90,7 @@ export const IconSwap = () => (
       </DropdownToggle>
       <DropdownMenu>
         <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
-        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
+        <DropdownItem href="#" trailingIcon={faEnvelope}>Compose email</DropdownItem>
       </DropdownMenu>
     </Dropdown>
   </>
