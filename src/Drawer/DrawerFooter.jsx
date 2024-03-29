@@ -64,7 +64,6 @@ const DrawerFooter = ({
               {additionalPrimaryActions.map((action) => (
                 <DropdownItem
                   disabled={action.disabled}
-                  href={action.href}
                   key={action.text}
                   leadingIcon={action.leadingIcon}
                   trailingIcon={action.trailingIcon}
