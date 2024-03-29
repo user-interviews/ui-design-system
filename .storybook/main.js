@@ -31,9 +31,6 @@ const config = {
     '../stories/**/*.stories.js[x]',
     '../stories/**/*.stories.ts[x]'
   ],
-  features: {
-    storyStoreV7: false,
-  },
   framework: {
     name: '@storybook/react-webpack5',
     options: { fastRefresh: true },
