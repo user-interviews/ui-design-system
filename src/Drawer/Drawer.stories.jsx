@@ -8,7 +8,7 @@ import Button from 'src/Button';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faEnvelope, faChevronLeft, faChevronRight, faUpRightFromSquare,
+  faEnvelope, faChevronLeft, faChevronRight, faTrash, faUpRightFromSquare,
 } from '@fortawesome/pro-solid-svg-icons';
 
 import mdx from './Drawer.mdx';
