@@ -1,11 +1,6 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 import {
-  withKnobs,
-  text,
-  select,
-} from '@storybook/addon-knobs';
-import {
  faClock, faGiftCard, faGlobe, faMicrophone, faUsers,
 } from '@fortawesome/pro-solid-svg-icons';
 
@@ -15,7 +10,6 @@ import mdx from './Pill.mdx';
 export default {
   title: 'Components/Pill',
   component: Pill,
-  decorators: [withKnobs],
   parameters: {
     docs: {
       page: mdx,
@@ -31,10 +25,10 @@ export const Default = () => (
   <div>
     <h4 style={{ marginBottom: '32px' }}>Test Pill</h4>
     <Pill
-      color={select('Color', Object.values(PILL_COLORS), PILL_COLORS.BLUE)}
+      color={PILL_COLORS.BLUE}
       id="1"
     >
-      {text('Text', 'Text')}
+      Text
     </Pill>
     <h4 style={{ marginBottom: '32px', marginTop: '32px' }}>Colors</h4>
     <Pill
@@ -146,29 +140,29 @@ export const WithContainer = () => (
 
 export const WithLeadingIcon = () => (
   <Pill
-    color={select('Color', Object.values(PILL_COLORS), PILL_COLORS.BLUE)}
+    color={PILL_COLORS.BLUE}
     icon={faUsers}
     id="2"
   >
-    {text('Text', 'Text')}
+    Text
   </Pill>
 );
 
 export const WithClose = () => (
   <Pill
-    color={select('Color', Object.values(PILL_COLORS), PILL_COLORS.BLUE)}
+    color={PILL_COLORS.BLUE}
     id="3"
     onClose={handleClose}
   >
-    {text('Text', 'Text')}
+    Text
   </Pill>
 );
 
 export const WithLink = () => (
   <Pill
-    color={select('Color', Object.values(PILL_COLORS), PILL_COLORS.BLUE)}
+    color={PILL_COLORS.BLUE}
     id="3"
   >
-    <a href="https://www.userinterviews.com/" rel="noreferrer" target="_blank">{text('Link text', 'Visit our site')}</a>
+    <a href="https://www.userinterviews.com/" rel="noreferrer" target="_blank">Visit our site</a>
   </Pill>
 );

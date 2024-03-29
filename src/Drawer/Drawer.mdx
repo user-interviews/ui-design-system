@@ -1,24 +1,29 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
-import Drawer from './Drawer';
-import DrawerHeader from './DrawerHeader';
-import DrawerBody from './DrawerBody';
-import DrawerFooter from './DrawerFooter';
-import * as ComponentStories from './Drawer.stories';
+import { ArgTypes, Canvas } from "@storybook/blocks";
+import Drawer from "./Drawer";
+import DrawerHeader from "./DrawerHeader";
+import DrawerBody from "./DrawerBody";
+import DrawerFooter from "./DrawerFooter";
+import * as ComponentStories from "./Drawer.stories";
 
 # Drawer
 
 ##
 
 <h4>
-  Drawers are container elements which slide in and sit on top of an application's main window. To return to the main interface users must click outside of the drawer, click an action within the drawer such as a close or cancel button, or press the escape key.
+  Drawers are container elements which slide in and sit on top of an
+  application's main window. To return to the main interface users must click
+  outside of the drawer, click an action within the drawer such as a close or
+  cancel button, or press the escape key.
 </h4>
 
 <Canvas of={ComponentStories.Default} />
 
 ### When to use
+
 When we want to focus the user’s attention on an interactive interface or a large amount of information
 
 ### When to not use
+
 When there is too much negative space with the content required. Consider a modal in those cases.
 
 ## Props
@@ -26,23 +31,24 @@ When there is too much negative space with the content required. Consider a moda
 <ArgTypes of={Drawer} />
 
 ## Anatomy:
-* **Drawer**
-    * This the parent component and the only one truly required, but its child components are highly encouraged
-    * If you do need to do something fully custom, Drawer can be used as a general purpose container for your own components
-    * Drawer features padding at the top as it is intended to sit behind a navigation bar
-* **DrawerHeader**
-    * Provides a header with a close button, a title (optional) and a button to expand the drawer to the viewport's full width (optional based on a prop to Drawer)
-    * There is also a prop for whether there is a border separating the header from the body. Turning the border off is a good option for drawer's without titles
-* **DrawerBody**
-  * Wraps your components to provide correct spacing within the drawer
-* **DrawerFooter**
-  * Includes a primary action button and a secondary action button (often used for Cancel)
-  * The primary and secondary action buttons are encouraged but not required
-  * If additional actions or other components are required, children of this component are included to the left of the footer (see example below)
+
+- **Drawer**
+  - This the parent component and the only one truly required, but its child components are highly encouraged
+  - If you do need to do something fully custom, Drawer can be used as a general purpose container for your own components
+  - Drawer features padding at the top as it is intended to sit behind a navigation bar
+- **DrawerHeader**
+  - Provides a header with a close button, a title (optional) and a button to expand the drawer to the viewport's full width (optional based on a prop to Drawer)
+  - There is also a prop for whether there is a border separating the header from the body. Turning the border off is a good option for drawer's without titles
+- **DrawerBody**
+  - Wraps your components to provide correct spacing within the drawer
+- **DrawerFooter**
+  - Includes a primary action button and a secondary action button (often used for Cancel)
+  - The primary and secondary action buttons are encouraged but not required
+  - If additional actions or other components are required, children of this component are included to the left of the footer (see example below)
 
 ### Size
 
-There are three `size` options, `sm` (default), `md` and `lg`. Choose size via the knobs to see examples.
+There are three `size` options, `sm` (default), `md` and `lg`.
 
 ### Orientation
 

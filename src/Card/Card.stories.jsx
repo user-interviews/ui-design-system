@@ -1,7 +1,4 @@
 import React from 'react';
-import {
-  withKnobs, text, select, boolean, number,
-} from '@storybook/addon-knobs';
 
 import Card, { CardSizes } from 'src/Card';
 import { LoadingSkeleton } from 'src/LoadingSkeleton';
@@ -12,7 +9,6 @@ import mdx from './Card.mdx';
 export default {
   title: 'Components/Card',
   component: Card,
-  decorators: [withKnobs({ escapeHTML: false })],
   parameters: {
     docs: {
       page: mdx,
@@ -22,17 +18,13 @@ export default {
 
 export const Default = () => (
   <Card
-    divided={boolean('divided', false)}
-    helperText={text('helperText', '(helper text)')}
-    noPadding={boolean('noPadding', false)}
-    size={select('size', CardSizes, undefined)}
-    subTitle={text('subTitle', 'Subtitle')}
-    title={text('title', 'Default card title')}
-  >
-    <div>
-      Use knobs to try out the different card sizes
-    </div>
-  </Card>
+    divided={false}
+    helperText="(helper text)"
+    noPadding={false}
+    size={undefined}
+    subTitle="Subtitle"
+    title="Default card title"
+  />
 );
 
 export const Sizes = () => (
@@ -71,13 +63,13 @@ export const Sizes = () => (
 
 export const LoadingDefault = () => (
   <Card
-    divided={boolean('divided', false)}
-    helperText={text('helperText', '(helper text)')}
-    isLoading={boolean('isLoading', true)}
-    noPadding={boolean('noPadding', false)}
-    size={select('size', CardSizes, undefined)}
-    subTitle={text('subTitle', 'Subtitle')}
-    title={text('title', 'Default card title')}
+    divided={false}
+    helperText="(helper text)"
+    isLoading
+    noPadding={false}
+    size={undefined}
+    subTitle="Subtitle"
+    title="Default card title"
   >
     <Text>
       Powerful panel management and recruitment automation.
@@ -89,14 +81,14 @@ export const LoadingDefault = () => (
 
 export const LoadingParagraphCount = () => (
   <Card
-    divided={boolean('divided', false)}
-    helperText={text('helperText', '(helper text)')}
-    isLoading={boolean('isLoading', true)}
-    loadingSkeletonParagraphCount={number('loadingSkeletonParagraphCount', 2)}
-    noPadding={boolean('noPadding', false)}
-    size={select('size', CardSizes, undefined)}
-    subTitle={text('subTitle', 'Subtitle')}
-    title={text('title', 'Default card title')}
+    divided={false}
+    helperText="(helper text)"
+    isLoading
+    loadingSkeletonParagraphCount={2}
+    noPadding={false}
+    size={undefined}
+    subTitle="Subtitle"
+    title="Default card title"
   >
     <Text>
       Powerful panel management and recruitment automation.
@@ -126,14 +118,14 @@ export const LoadingCustom = () => {
 
   return (
     <Card
-      divided={boolean('divided', false)}
-      helperText={text('helperText', '(helper text)')}
-      isLoading={boolean('isLoading', true)}
+      divided={false}
+      helperText="(helper text)"
+      isLoading
       loadingSkeleton={CustomLoadingSkeleton}
-      noPadding={boolean('noPadding', false)}
-      size={select('size', CardSizes, CardSizes.SMALL)}
-      subTitle={text('subTitle', 'Subtitle')}
-      title={text('title', 'Default card title')}
+      noPadding={false}
+      size={CardSizes.SMALL}
+      subTitle="Subtitle"
+      title="Default card title"
     />
   );
 };

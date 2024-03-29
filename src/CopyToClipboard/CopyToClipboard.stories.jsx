@@ -1,17 +1,15 @@
 import React from 'react';
-import { withKnobs, text } from '@storybook/addon-knobs';
 
 import CopyToClipboard from 'src/CopyToClipboard';
 
 export default {
   title: 'Components/Copy To Clipboard',
   component: CopyToClipboard,
-  decorators: [withKnobs({ escapeHTML: false })],
 };
 
 export const Default = () => (
   <CopyToClipboard
-    copyText={text('Copy text', 'Copy me!')}
+    copyText="Copy me!"
     trackingEvent="copy-text"
   />
 );

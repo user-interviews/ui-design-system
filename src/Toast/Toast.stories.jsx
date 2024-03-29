@@ -1,5 +1,4 @@
 import React from 'react';
-import { withKnobs, text, radios } from '@storybook/addon-knobs';
 
 import { MessageTypes } from 'src/Alert';
 import Button from 'src/Button';
@@ -11,7 +10,6 @@ import '../../scss/global.scss';
 export default {
   title: 'Components/Toast',
   component: withToast,
-  decorators: [withKnobs],
   parameters: {
     docs: {
       page: mdx,
@@ -23,7 +21,7 @@ const DummyComponent = ({
  action, type, message, title, setToastMessage,
 }) => (
   <div>
-    <p>Click the button to see a toast message.  Use the knobs to try different types!</p>
+    <p>Click the button to see a toast message.</p>
     <Button
       variant="primary"
       onClick={() => setToastMessage({
@@ -42,9 +40,9 @@ const ToastDummyComponent = withToast(DummyComponent);
 
 export const Default = () => (
   <ToastDummyComponent
-    message={text('Message', 'Your action was a success!')}
-    title={text('Title', 'Title')}
-    type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
+    message="Your action was a success!"
+    title="Title"
+    type={MessageTypes.SUCCESS}
   />
 );
 
@@ -55,8 +53,8 @@ export const ToastCustomMessage = () => (
         <strong>[Some strong text]</strong> and additional text that is wrapped in a fragment.
       </>
     )}
-    title={text('Title', 'Normal string title')}
-    type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
+    title="Normal string title"
+    type={MessageTypes.SUCCESS}
   />
 );
 
@@ -64,17 +62,17 @@ const ManualDismissToastComponent = withToast(DummyComponent, { autoDismiss: fal
 
 export const ManualDismissToast = () => (
   <ManualDismissToastComponent
-    message={text('Message', 'Your action was a success!')}
-    title={text('Title', 'Title')}
-    type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
+    message="Your action was a success!"
+    title="Title"
+    type={MessageTypes.SUCCESS}
   />
 );
 
 export const ToastWithAction = () => (
   <ManualDismissToastComponent
     action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
-    message={text('Message', 'Your action was a success!')}
-    title={text('Title', 'Title')}
-    type={radios('Message Type', MessageTypes, MessageTypes.SUCCESS)}
+    message="Your action was a success!"
+    title="Title"
+    type={MessageTypes.SUCCESS}
   />
 );

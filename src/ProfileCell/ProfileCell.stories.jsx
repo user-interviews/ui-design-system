@@ -1,7 +1,4 @@
 import React from 'react';
-import {
- withKnobs, text, number, boolean,
-} from '@storybook/addon-knobs';
 import { faShieldCheck } from '@fortawesome/pro-solid-svg-icons';
 import ProfileCell from 'src/ProfileCell';
 import ProfileCellSkeleton from './ProfileCellSkeleton';
@@ -11,7 +8,6 @@ export default {
   title: 'Components/Profile Cell',
   component: ProfileCell,
   subcomponents: { ProfileCellSkeleton },
-  decorators: [withKnobs],
   parameters: {
     docs: {
       page: mdx,
@@ -45,20 +41,20 @@ const userWithImage = {
 
 export const Small = () => (
   <ProfileCell
-    colorId={number('Color ID', undefined)}
-    maxWidth={text('Max Text Width (e.g. 8rem)', '')}
-    showAlert={boolean('Show Alert', false)}
-    subtitle={text('Subtitle Text', `riley@userinterviews.com`)}
+    colorId={undefined}
+    maxWidth=""
+    showAlert={false}
+    subtitle="riley@userinterviews.com"
     user={userNoImage}
   />
 );
 
 export const Large = () => (
   <ProfileCell
-    colorId={number('Color ID', undefined)}
+    colorId={undefined}
     large
-    maxWidth={text('Max Text Width (e.g. 8rem)', '')}
-    showAlert={boolean('Show Alert', false)}
+    maxWidth=""
+    showAlert={false}
     subtitle={largeSubtitle}
     user={userNoImage}
   />
@@ -67,8 +63,8 @@ export const Large = () => (
 export const WithImage = () => (
   <ProfileCell
     large
-    maxWidth={text('Max Text Width (e.g. 8rem)', '')}
-    showAlert={boolean('Show Alert', false)}
+    maxWidth=""
+    showAlert={false}
     subtitle={largeSubtitle}
     user={userWithImage}
   />
@@ -76,10 +72,10 @@ export const WithImage = () => (
 
 export const WithTrailingIcon = () => (
   <ProfileCell
-    colorId={number('Color ID', undefined)}
-    maxWidth={text('Max Text Width (e.g. 8rem)', '')}
-    showAlert={boolean('Show Alert', false)}
-    subtitle={text('Subtitle Text', `riley@userinterviews.com`)}
+    colorId={undefined}
+    maxWidth=""
+    showAlert={false}
+    subtitle="riley@userinterviews.com"
     trailingIcon={faShieldCheck}
     user={userWithImage}
   />
@@ -88,14 +84,14 @@ export const WithTrailingIcon = () => (
 export const Loading = () => (
   <>
     <ProfileCell
-      colorId={number('Color ID', undefined)}
+      colorId={undefined}
       isLoading
-      maxWidth={text('Max Text Width (e.g. 8rem)', '')}
-      showAlert={boolean('Show Alert', false)}
-      subtitle={text('Subtitle Text', `riley@userinterviews.com`)}
+      maxWidth=""
+      showAlert={false}
+      subtitle="riley@userinterviews.com"
       user={userNoImage}
     />
     <br />
-    <ProfileCellSkeleton maxWidth={text('Max Text Width (e.g. 8rem)', '')} />
+    <ProfileCellSkeleton maxWidth="" />
   </>
 );
