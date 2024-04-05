@@ -1,18 +1,33 @@
 import React from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 
 import RBAccordionItem from 'react-bootstrap/AccordionItem';
 
 import './AccordionItem.scss';
 
+type AccordionItemProps = {
+  /**
+    Sets a custom element for this component
+  */
+  as?: React.ElementType;
+  /**
+    Removes border from accordion item
+  */
+  borderless?: boolean;
+  // eslint-disable-next-line camelcase
+  UNSAFE_className?: string;
+  children: React.ReactNode;
+  eventKey: string;
+};
+
 const AccordionItem = ({
   as,
   borderless,
   children,
+  eventKey,
   // eslint-disable-next-line camelcase
   UNSAFE_className,
-}) => (
+}: AccordionItemProps) => (
   <RBAccordionItem
     as={as}
     className={classNames(
@@ -20,22 +35,11 @@ const AccordionItem = ({
       'AccordionItem',
       borderless && 'AccordionItem--borderless',
     )}
+    eventKey={eventKey}
   >
     { children }
   </RBAccordionItem>
 );
-
-AccordionItem.propTypes = {
-  /**
-    Sets a custom element for this component
-  */
-  as: PropTypes.elementType,
-  /**
-    Removes border from accordion item
-  */
-  borderless: PropTypes.bool,
-  UNSAFE_className: PropTypes.string,
-};
 
 AccordionItem.defaultProps = {
   as: undefined,

@@ -1,18 +1,25 @@
 import React, { Children } from 'react';
-import PropTypes from 'prop-types';
 
 export const ORIENTATIONS = {
   COLUMN: 'column',
   ROW: 'row',
+} as const;
+
+type ControlButtonGroupProps = {
+  childChecked: (...args: unknown[]) => boolean;
+  children: React.ReactNode;
+  handleChangeValue: (...args: unknown[]) => unknown;
+  orientation?: 'column' | 'row';
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
 };
 
 const ControlButtonGroup = ({
   children,
   childChecked,
   handleChangeValue,
-  orientation,
-  onChange,
-}) => {
+  orientation = ORIENTATIONS.COLUMN,
+  onChange = undefined,
+}: ControlButtonGroupProps) => {
   const row = orientation === ORIENTATIONS.ROW;
 
   const renderChildElement = (child) => {
@@ -20,7 +27,11 @@ const ControlButtonGroup = ({
     const checked = childChecked(childValue);
 
     // Treat children as controlled components only if group is also controlled
-    const childProps = onChange ? {
+    const childProps: {
+      bordered?: boolean;
+      checked?: unknown;
+      onChange?: typeof onChange,
+    } = onChange ? {
       checked,
       onChange: handleChangeValue,
     } : {};
@@ -33,19 +44,6 @@ const ControlButtonGroup = ({
   };
 
   return Children.toArray(children).map(renderChildElement);
-};
-
-ControlButtonGroup.propTypes = {
-  childChecked: PropTypes.func.isRequired,
-  children: PropTypes.node.isRequired,
-  handleChangeValue: PropTypes.func.isRequired,
-  orientation: PropTypes.oneOf(Object.values(ORIENTATIONS)),
-  onChange: PropTypes.func,
-};
-
-ControlButtonGroup.defaultProps = {
-  orientation: ORIENTATIONS.COLUMN,
-  onChange: undefined,
 };
 
 export default ControlButtonGroup;

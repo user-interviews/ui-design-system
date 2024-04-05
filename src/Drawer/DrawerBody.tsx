@@ -1,9 +1,12 @@
 import React, { forwardRef } from 'react';
-import * as propTypes from 'prop-types';
 
 import './DrawerBody.scss';
 
-const DrawerBody = forwardRef(({
+type DrawerBodyProps = {
+  children: React.ReactNode;
+};
+
+const DrawerBody = forwardRef<HTMLDivElement, DrawerBodyProps>(({
   children,
 }, ref) => (
   <div
@@ -13,9 +16,5 @@ const DrawerBody = forwardRef(({
     {children}
   </div>
 ));
-
-DrawerBody.propTypes = {
-  children: propTypes.node.isRequired,
-};
 
 export default DrawerBody;

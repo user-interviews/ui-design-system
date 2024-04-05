@@ -1,18 +1,29 @@
 import React from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 
 import RBAccordionCollapse from 'react-bootstrap/AccordionCollapse';
 
 import './AccordionCollapse.scss';
 
+type AccordionCollapseProps = {
+  /**
+   A unique key used to control this item's collapse/expand.
+   */
+  eventKey: string;
+  // eslint-disable-next-line camelcase
+  UNSAFE_className?: string;
+  children: React.ReactNode;
+};
+
 const AccordionCollapse = ({
   children,
   eventKey,
+
   // eslint-disable-next-line camelcase
   UNSAFE_className,
+
   ...props
-}) => (
+}: AccordionCollapseProps) => (
   <RBAccordionCollapse
     className={classNames(UNSAFE_className, 'AccordionCollapse')}
     eventKey={eventKey}
@@ -23,14 +34,6 @@ const AccordionCollapse = ({
     </div>
   </RBAccordionCollapse>
 );
-
-AccordionCollapse.propTypes = {
-  /**
-   A unique key used to control this item's collapse/expand.
-   */
-  eventKey: PropTypes.string.isRequired,
-  UNSAFE_className: PropTypes.string,
-};
 
 AccordionCollapse.defaultProps = {
   UNSAFE_className: undefined,

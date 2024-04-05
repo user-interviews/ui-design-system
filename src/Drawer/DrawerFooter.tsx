@@ -1,9 +1,25 @@
 import React from 'react';
-import * as propTypes from 'prop-types';
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 import Button from 'src/Button';
 
 import './DrawerFooter.scss';
+
+type DrawerFooterProps = {
+  children?: React.ReactNode;
+  isPrimaryActionLoading?: boolean;
+  isSecondaryActionLoading?: boolean;
+  primaryActionDisabled?: boolean;
+  primaryActionIcon?: IconDefinition;
+  primaryActionLoadingText?: string;
+  primaryActionText?: string;
+  primaryActionVariant?: string;
+  secondaryActionDisabled?: boolean;
+  secondaryActionLoadingText?: string;
+  secondaryActionText?: string;
+  onPrimaryAction?: () => void;
+  onSecondaryAction?: () => void;
+};
 
 const DrawerFooter = ({
   children,
@@ -19,7 +35,7 @@ const DrawerFooter = ({
   secondaryActionText,
   onPrimaryAction,
   onSecondaryAction,
-}) => (
+}: DrawerFooterProps) => (
   <div className="DrawerFooter">
     <div>
       {children}
@@ -53,22 +69,6 @@ const DrawerFooter = ({
     </div>
   </div>
 );
-
-DrawerFooter.propTypes = {
-  children: propTypes.node,
-  isPrimaryActionLoading: propTypes.bool,
-  isSecondaryActionLoading: propTypes.bool,
-  primaryActionDisabled: propTypes.bool,
-  primaryActionIcon: propTypes.object,
-  primaryActionLoadingText: propTypes.string,
-  primaryActionText: propTypes.string,
-  primaryActionVariant: propTypes.string,
-  secondaryActionDisabled: propTypes.bool,
-  secondaryActionLoadingText: propTypes.string,
-  secondaryActionText: propTypes.string,
-  onPrimaryAction: propTypes.func,
-  onSecondaryAction: propTypes.func,
-};
 
 DrawerFooter.defaultProps = {
   children: undefined,

@@ -1,5 +1,10 @@
-import React, { useEffect } from 'react';
-import PropTypes from 'prop-types';
+import React, {
+  forwardRef,
+  useEffect,
+  InputHTMLAttributes,
+  type DetailedHTMLProps,
+  type ChangeEventHandler,
+} from 'react';
 
 import classNames from 'classnames';
 
@@ -11,7 +16,18 @@ export const CHECKED_STATES = {
   INDETERMINATE: 'indeterminate',
 };
 
-const CheckboxButton = React.forwardRef(({
+type CheckboxButtonProps = {
+  checked?: boolean;
+  className?: string;
+  disabled?: boolean;
+  id: string;
+  indeterminate?: boolean;
+  name?: string;
+  value?: DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>['value'];
+  onChange?: ChangeEventHandler<HTMLInputElement> | undefined;
+};
+
+const CheckboxButton = forwardRef<HTMLInputElement, CheckboxButtonProps>(({
   checked,
   className,
   disabled,
@@ -23,9 +39,9 @@ const CheckboxButton = React.forwardRef(({
   ...rest
 }, ref) => {
   useEffect(() => {
-    if (ref && ref.current) {
+    if (ref && 'current' in ref && ref.current) {
       const checkboxRef = ref.current;
-      checkboxRef.indeterminate = indeterminate;
+      checkboxRef.indeterminate = !!indeterminate;
     }
   }, [indeterminate, ref]);
 
@@ -44,21 +60,6 @@ const CheckboxButton = React.forwardRef(({
     />
   );
 });
-
-CheckboxButton.propTypes = {
-  checked: PropTypes.bool,
-  className: PropTypes.string,
-  disabled: PropTypes.bool,
-  id: PropTypes.string.isRequired,
-  indeterminate: PropTypes.bool,
-  name: PropTypes.string,
-  value: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.string,
-    PropTypes.bool,
-  ]),
-  onChange: PropTypes.func,
-};
 
 CheckboxButton.defaultProps = {
   checked: undefined,

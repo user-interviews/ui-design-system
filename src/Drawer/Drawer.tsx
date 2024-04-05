@@ -1,7 +1,6 @@
 import React, {
   createContext, useEffect, useState, useCallback, useRef,
 } from 'react';
-import * as propTypes from 'prop-types';
 import classNames from 'classnames';
 
 import './Drawer.scss';
@@ -9,30 +8,47 @@ import './Drawer.scss';
 export const ORIENTATION_LEFT = 'left';
 export const ORIENTATION_RIGHT = 'right';
 
-export const ExpandContext = createContext({
-  expandable: null,
-  expanded: null,
-  handleExpand: null,
+export const ExpandContext = createContext<{
+  expandable: boolean,
+  expanded: boolean,
+  handleExpand:() => void;
+}>({
+  expandable: false,
+  expanded: false,
+  handleExpand: () => null,
 });
 
 export const DrawerSizes = {
   SMALL: 'sm',
   MEDIUM: 'md',
   LARGE: 'lg',
+} as const;
+
+type DrawerProps = {
+  behindNav?: boolean;
+  children?: React.ReactNode;
+  className?: string;
+  defaultExpanded?: boolean;
+  expandable?: boolean;
+  hasBackgroundOverlay?: boolean;
+  orientation?: typeof ORIENTATION_LEFT | typeof ORIENTATION_RIGHT;
+  size?: typeof DrawerSizes[keyof typeof DrawerSizes];
+  visible: boolean;
+  onRequestClose: (...args: unknown[]) => unknown;
 };
 
 const Drawer = ({
-  behindNav,
-  children,
-  className,
-  defaultExpanded,
-  expandable,
-  hasBackgroundOverlay,
+  behindNav = true,
+  children = undefined,
+  className = '',
+  defaultExpanded = false,
+  expandable = false,
+  hasBackgroundOverlay = true,
   visible,
-  orientation,
-  size,
+  orientation = ORIENTATION_RIGHT,
+  size = 'sm',
   onRequestClose,
-}) => {
+}: DrawerProps) => {
   const isCurrentlyOpen = useRef(false);
   const [expanded, setExpanded] = useState(defaultExpanded);
 
@@ -104,30 +120,6 @@ const Drawer = ({
       </div>
     </>
   );
-};
-
-Drawer.propTypes = {
-  behindNav: propTypes.bool,
-  children: propTypes.node,
-  className: propTypes.string,
-  defaultExpanded: propTypes.bool,
-  expandable: propTypes.bool,
-  hasBackgroundOverlay: propTypes.bool,
-  orientation: propTypes.oneOf([ORIENTATION_LEFT, ORIENTATION_RIGHT]),
-  size: propTypes.oneOf([DrawerSizes.SMALL, DrawerSizes.MEDIUM, DrawerSizes.LARGE]),
-  visible: propTypes.bool.isRequired,
-  onRequestClose: propTypes.func.isRequired,
-};
-
-Drawer.defaultProps = {
-  behindNav: true,
-  children: undefined,
-  className: null,
-  defaultExpanded: false,
-  expandable: false,
-  hasBackgroundOverlay: true,
-  orientation: ORIENTATION_RIGHT,
-  size: 'sm',
 };
 
 export default Drawer;

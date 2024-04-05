@@ -1,6 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container as ReactBootstrapContainer } from 'react-bootstrap';
+import {
+  Container as ReactBootstrapContainer,
+  type ContainerProps as ReactBootstrapContainerProps,
+} from 'react-bootstrap';
+
+type ContainerProps = {
+  /**
+   You can use a custom element for this component
+  */
+  as?: React.ElementType;
+  /**
+   Change the underlying component CSS base class name and modifier class names prefix.
+   This is an escape hatch for working with heavily customized bootstrap css.
+  */
+  bsPrefix?: string;
+  className?: string;
+  /**
+   Allow the Container to fill all of its available horizontal space.
+   `bool | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'`
+  */
+  fluid?: ReactBootstrapContainerProps['fluid'];
+} & ReactBootstrapContainerProps;
 
 const Container = ({
   as,
@@ -9,7 +30,7 @@ const Container = ({
   fluid,
   bsPrefix,
   ...props
-}) => (
+}: ContainerProps) => (
   <ReactBootstrapContainer
     as={as}
     bsPrefix={bsPrefix}
@@ -27,16 +48,6 @@ export const containerSizes = PropTypes.oneOfType([
 ]);
 
 Container.propTypes = {
-  /**
-   You can use a custom element for this component
-  */
-  as: PropTypes.elementType,
-  /**
-   Change the underlying component CSS base class name and modifier class names prefix.
-   This is an escape hatch for working with heavily customized bootstrap css.
-  */
-  bsPrefix: PropTypes.string,
-  className: PropTypes.string,
   /**
    Allow the Container to fill all of its available horizontal space.
    `bool | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'`

@@ -1,12 +1,22 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import { uiModClassName } from '../Styles/classNames';
 
 import './Avatar.scss';
 
-function Avatar(props) {
+type AvatarProps = {
+  ariaHidden?: boolean;
+  colorId?: string | number;
+  image?: string;
+  initials: string;
+  large?: boolean;
+  name?: string;
+  showAlert?: boolean;
+  url?: string;
+};
+
+function Avatar(props: AvatarProps) {
   const [imageLoadFailed, setImageLoadFailed] = useState(false);
 
   function onImageLoadError() {
@@ -63,17 +73,6 @@ function Avatar(props) {
     </div>
   );
 }
-
-Avatar.propTypes = {
-  ariaHidden: PropTypes.bool,
-  colorId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  image: PropTypes.string,
-  initials: PropTypes.string.isRequired,
-  large: PropTypes.bool,
-  name: PropTypes.string,
-  showAlert: PropTypes.bool,
-  url: PropTypes.string,
-};
 
 Avatar.defaultProps = {
   ariaHidden: false,

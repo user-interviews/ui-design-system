@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import * as propTypes from 'prop-types';
 import classNames from 'classnames';
 
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faTimes, faCompressAlt, faExpandAlt,
@@ -11,11 +11,17 @@ import './DrawerHeader.scss';
 
 import { ExpandContext } from './Drawer';
 
+type DrawerHeaderProps = {
+  bordered?: boolean;
+  title?: string;
+  onRequestClose: (...args: unknown[]) => unknown;
+};
+
 const DrawerHeader = ({
   bordered,
   title,
   onRequestClose,
-}) => {
+}: DrawerHeaderProps) => {
   const { expandable, expanded, handleExpand } = useContext(ExpandContext);
 
   return (
@@ -31,7 +37,7 @@ const DrawerHeader = ({
             type="button"
             onClick={handleExpand}
           >
-            <FontAwesomeIcon icon={expanded ? faCompressAlt : faExpandAlt} />
+            <FontAwesomeIcon icon={(expanded ? faCompressAlt : faExpandAlt) as IconDefinition} />
           </button>
         )
       }
@@ -46,16 +52,10 @@ const DrawerHeader = ({
         type="button"
         onClick={onRequestClose}
       >
-        <FontAwesomeIcon icon={faTimes} />
+        <FontAwesomeIcon icon={faTimes as IconDefinition} />
       </button>
     </div>
   );
-};
-
-DrawerHeader.propTypes = {
-  bordered: propTypes.bool,
-  title: propTypes.string,
-  onRequestClose: propTypes.func.isRequired,
 };
 
 DrawerHeader.defaultProps = {

@@ -1,18 +1,26 @@
 import React from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 
 import { CardSizes } from 'src/Card';
 
 import './CardStack.scss';
 
+type CardStackProps = {
+  size?: typeof CardSizes[keyof typeof CardSizes];
+  // eslint-disable-next-line camelcase
+  UNSAFE_className?: string;
+  children: React.ReactNode;
+};
+
 const CardStack = ({
   children,
+
   // eslint-disable-next-line camelcase
   UNSAFE_className,
+
   size,
   ...props
-}) => (
+}: CardStackProps) => (
   <div
     className={classNames(
       UNSAFE_className,
@@ -24,11 +32,6 @@ const CardStack = ({
     {children}
   </div>
 );
-
-CardStack.propTypes = {
-  size: PropTypes.oneOf(Object.values(CardSizes)),
-  UNSAFE_className: PropTypes.string,
-};
 
 CardStack.defaultProps = {
   size: undefined,

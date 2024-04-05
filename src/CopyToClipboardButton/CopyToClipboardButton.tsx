@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopy } from '@fortawesome/pro-regular-svg-icons';
 import { CopyToClipboard } from 'react-copy-to-clipboard';
@@ -14,9 +14,21 @@ import 'scss/buttons.scss';
 export const ButtonVariants = {
   NEUTRAL: 'neutral',
   SECONDARY: 'secondary',
+} as const;
+
+type CopyToClipboardButtonProps = {
+  copyText?: string;
+  displayText?: string;
+  trackingEvent: string;
+  variant?: 'neutral' | 'secondary';
 };
 
-function CopyToClipboardButton(props) {
+function CopyToClipboardButton({
+  copyText = '',
+  displayText = undefined,
+  trackingEvent,
+  variant = ButtonVariants.NEUTRAL,
+}: CopyToClipboardButtonProps) {
   const [copied, setCopied] = useState(false);
 
   const handleClickCopy = () => {
@@ -26,16 +38,16 @@ function CopyToClipboardButton(props) {
 
   return (
     <div className="CopyToClipboardButton">
-      <CopyToClipboard text={props.copyText} onCopy={handleClickCopy}>
+      <CopyToClipboard text={copyText} onCopy={handleClickCopy}>
         <TrackedButton
           aria-label="Copy to clipboard"
           className={classNames(
             'CopyToClipboardButton',
             'btn', {
-            'btn-outline-secondary': props.variant === ButtonVariants.SECONDARY,
+            'btn-outline-secondary': variant === ButtonVariants.SECONDARY,
             },
           )}
-          event={props.trackingEvent}
+          event={trackingEvent}
           type="button"
         >
           <Popper
@@ -44,12 +56,10 @@ function CopyToClipboardButton(props) {
             visible={copied}
           >
             <span>
-              <FontAwesomeIcon
-                icon={faCopy}
-              />
-              {props.displayText && (
+              <FontAwesomeIcon icon={faCopy as IconDefinition} />
+              {displayText && (
                 <span className="CopyToClipboardButton__display-text">
-                  {props.displayText}
+                  {displayText}
                 </span>
               )}
             </span>
@@ -59,13 +69,6 @@ function CopyToClipboardButton(props) {
     </div>
   );
 }
-
-CopyToClipboardButton.propTypes = {
-  copyText: PropTypes.string,
-  displayText: PropTypes.string,
-  trackingEvent: PropTypes.string.isRequired,
-  variant: PropTypes.oneOf(Object.values(ButtonVariants)),
-};
 
 CopyToClipboardButton.defaultProps = {
   copyText: '',

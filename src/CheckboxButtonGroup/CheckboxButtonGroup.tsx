@@ -1,26 +1,35 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import ControlButtonGroup, { ORIENTATIONS } from '../ControlButtonGroup';
 
 import './CheckboxButtonGroup.scss';
 
+type CheckboxButtonGroupProps = {
+  children: React.ReactElement[];
+  fullWidth?: boolean;
+  id: string;
+  orientation?: unknown[];
+  parseInput?: (arg0: string) => string | number;
+  value?: (number | string)[] | number | string;
+  onChange?: (...args: unknown[]) => unknown;
+};
+
 export default function CheckboxButtonGroup({
   children,
-  fullWidth,
+  fullWidth = false,
   id,
-  orientation,
-  parseInput,
-  value,
-  onChange,
-}) {
+  orientation = ORIENTATIONS.ROW,
+  parseInput = (val) => val,
+  value = [],
+  onChange = undefined,
+}: CheckboxButtonGroupProps) {
   const row = orientation === ORIENTATIONS.ROW;
   const column = orientation === ORIENTATIONS.COLUMN;
 
-  const handleChangeValue = (event) => {
+  const handleChangeValue = (event: React.ChangeEvent<HTMLInputElement>) => {
     const eventValue = parseInput(event.target.value);
-    const values = [...value];
+    const values = Array.isArray(value) ? [...value] : [value];
 
     if (event.target.checked && !values.includes(eventValue)) {
       values.push(eventValue);
@@ -34,7 +43,7 @@ export default function CheckboxButtonGroup({
   };
 
   const childChecked = (childValue) => (
-    value && value.includes(childValue)
+    Array.isArray(value) && value.includes(childValue)
   );
 
   return (
@@ -58,26 +67,3 @@ export default function CheckboxButtonGroup({
     </div>
   );
 }
-
-CheckboxButtonGroup.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.element).isRequired,
-  fullWidth: PropTypes.bool,
-  id: PropTypes.string.isRequired,
-  orientation: PropTypes.oneOf(Object.values(ORIENTATIONS)),
-  parseInput: PropTypes.func,
-  value: PropTypes.arrayOf(
-    PropTypes.oneOfType([
-      PropTypes.number,
-      PropTypes.string,
-    ]),
-  ),
-  onChange: PropTypes.func,
-};
-
-CheckboxButtonGroup.defaultProps = {
-  fullWidth: false,
-  orientation: ORIENTATIONS.ROW,
-  parseInput: (i) => i,
-  value: [],
-  onChange: undefined,
-};

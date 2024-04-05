@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
@@ -9,6 +9,33 @@ import AccordionContext from 'react-bootstrap/AccordionContext';
 
 import './AccordionToggle.scss';
 import { faChevronUp } from '@fortawesome/pro-solid-svg-icons';
+
+type AccordionToggleProps = {
+  /**
+   Set Chevron icon to open/close quarter turn from lateral
+  */
+  chevronLateral?: boolean;
+  /**
+   Aligns the Chevron icon to the left
+  */
+  chevronLeft?: boolean;
+  /**
+   Aligns the Chevron icon to the right (default)
+  */
+  chevronRight?: boolean;
+  collapsedText?: string;
+  /**
+   A unique key used to control this item's collapse/expand.
+   */
+  disabled?: boolean;
+  eventKey: string;
+  helperText?: string;
+  leadingIcon?: object;
+  title?: string;
+  // eslint-disable-next-line camelcase
+  UNSAFE_className?: string;
+  children: React.ReactNode;
+};
 
 const AccordionToggle = ({
   children,
@@ -21,9 +48,10 @@ const AccordionToggle = ({
   helperText,
   leadingIcon,
   title,
+
   // eslint-disable-next-line camelcase
   UNSAFE_className,
-}) => {
+}: AccordionToggleProps) => {
   const { activeEventKey } = React.useContext(AccordionContext);
 
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -68,12 +96,12 @@ const AccordionToggle = ({
         <div className="AccordionToggle__container--content">
           {chevronLeft && (
             <span className="AccordionToggle__chevron-left">
-              <FontAwesomeIcon icon={faChevronUp} />
+              <FontAwesomeIcon icon={faChevronUp as IconDefinition} />
             </span>
           )}
           {leadingIcon && (
             <span className="AccordionToggle__leading-icon">
-              <FontAwesomeIcon icon={leadingIcon} />
+              <FontAwesomeIcon icon={leadingIcon as IconDefinition} />
             </span>
           )}
           {title && (
@@ -90,38 +118,13 @@ const AccordionToggle = ({
         {chevronRight && !chevronLeft && (
           <div className="AccordionToggle__container--right">
             <span className="AccordionToggle__chevron-right">
-              <FontAwesomeIcon icon={faChevronUp} />
+              <FontAwesomeIcon icon={faChevronUp as IconDefinition} />
             </span>
           </div>
         )}
       </div>
     </button>
   );
-};
-
-AccordionToggle.propTypes = {
-  /**
-   Set Chevron icon to open/close quarter turn from lateral
-  */
-  chevronLateral: PropTypes.bool,
-  /**
-   Aligns the Chevron icon to the left
-  */
-  chevronLeft: PropTypes.bool,
-  /**
-   Aligns the Chevron icon to the right (default)
-  */
-  chevronRight: PropTypes.bool,
-  collapsedText: PropTypes.string,
-  /**
-   A unique key used to control this item's collapse/expand.
-   */
-  disabled: PropTypes.bool,
-  eventKey: PropTypes.string.isRequired,
-  helperText: PropTypes.string,
-  leadingIcon: PropTypes.object,
-  title: PropTypes.string,
-  UNSAFE_className: PropTypes.string,
 };
 
 AccordionToggle.defaultProps = {
