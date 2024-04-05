@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import { Tab, Tabs } from './index';
@@ -64,7 +64,7 @@ describe('Tabs', () => {
       expect(screen.getByText(tabTwoContent)).not.toHaveClass('active');
     });
 
-    it('shows the tab content when clicked', () => {
+    it('shows the tab content when clicked', async () => {
       renderTabs(uncontrolledProps);
 
       expect(screen.getByText(tabOneContent)).toHaveClass('active');
@@ -73,8 +73,9 @@ describe('Tabs', () => {
       const tabTwoButton = screen.getByRole('tab', { name: tabTwoTitle });
 
       userEvent.click(tabTwoButton);
-
-      expect(tabTwoButton).toHaveClass('active');
+      await waitFor(() => {
+        expect(tabTwoButton).toHaveClass('active');
+      });
 
       expect(screen.getByText(tabOneContent)).not.toHaveClass('active');
       expect(screen.getByText(tabTwoContent)).toHaveClass('active');
@@ -93,7 +94,7 @@ describe('Tabs', () => {
       expect(screen.getByText(tabTwoContent)).not.toHaveClass('active');
     });
 
-    it('shows the tab content when clicked', () => {
+    it('shows the tab content when clicked', async () => {
       renderTabs(controlledProps);
 
       expect(screen.getByText(tabOneContent)).toHaveClass('active');
@@ -102,8 +103,9 @@ describe('Tabs', () => {
       const tabTwoButton = screen.getByRole('tab', { name: tabTwoTitle });
 
       userEvent.click(tabTwoButton);
-
-      expect(onSelectMock).toHaveBeenCalled();
+      await waitFor(() => {
+        expect(onSelectMock).toHaveBeenCalled();
+      });
     });
   });
 });
