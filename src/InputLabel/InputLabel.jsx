@@ -8,7 +8,6 @@ import 'scss/forms/input_label.scss';
 
 const InputLabel = ({
   className,
-  elementType,
   labelHtmlFor,
   text,
   required,
@@ -38,7 +37,6 @@ const InputLabel = ({
 
 InputLabel.propTypes = {
   className: PropTypes.string,
-  elementType: PropTypes.string,
   labelHelperText: PropTypes.string,
   labelHtmlFor: PropTypes.string,
   required: PropTypes.bool,
@@ -48,7 +46,6 @@ InputLabel.propTypes = {
 
 InputLabel.defaultProps = {
   className: '',
-  elementType: undefined,
   labelHelperText: undefined,
   labelHtmlFor: '',
   required: false,
