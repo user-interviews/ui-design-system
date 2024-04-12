@@ -29,6 +29,7 @@ export enum ButtonVariants {
   OUTLINE_WARNING = 'outline-warning',
   OUTLINE_TRANSPARENT = 'outline-transparent',
   PRIMARY = 'primary',
+  TERTIARY = 'tertiary',
   TRANSPARENT = 'transparent',
   WARNING = 'warning',
 }

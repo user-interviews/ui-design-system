@@ -5,7 +5,7 @@
     &.btn-primary {
       @include synthesis-btn-primary;
     }
-  
+
     &.btn-outline-primary {
       @include synthesis-btn-outline-primary;
     }
@@ -19,7 +19,7 @@
     &.icon-left {
       margin-right: $synth-spacing-2;
     }
-  
+
     &.icon-right {
       margin-left: $synth-spacing-2;
     }
@@ -28,7 +28,7 @@
   .btn-loading-spin  {
     animation: spin infinite 0.6s linear;
   }
-  
+
   @keyframes spin {
     from {
       transform: rotate(0deg);
@@ -50,18 +50,22 @@
     @include btn-outline-primary;
   }
 
+  &.btn-tertiary {
+    @include btn-tertiary;
+  }
+
   &.btn-danger {
     @include btn-danger;
   }
-  
+
   &.btn-outline-danger {
     @include btn-outline-danger;
   }
-  
+
   &.btn-warning {
     @include btn-warning;
   }
-  
+
   &.btn-outline-warning {
     @include btn-outline-warning;
   }

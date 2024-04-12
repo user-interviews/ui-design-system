@@ -94,6 +94,46 @@ export const Primary = () => (
   </>
 );
 
+export const Tertiary = () => (
+  <>
+    <Button
+      leadingIcon={faFileAlt as IconDefinition}
+      size="sm"
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="tertiary"
+    >
+      Confirm
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt as IconDefinition}
+      size="sm"
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="tertiary"
+    >
+      Confirm
+    </Button>
+    {' '}
+    <Button
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="tertiary"
+    >
+      Confirm
+    </Button>
+    {' '}
+    <Button
+      disabled
+      leadingIcon={faFileAlt as IconDefinition}
+      trailingIcon={faCaretDown as IconDefinition}
+      variant="tertiary"
+    >
+      Confirm
+    </Button>
+  </>
+);
+
 export const DangerDEPRECATED = () => (
   <>
     <Button
