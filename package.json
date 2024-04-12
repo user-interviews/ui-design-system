@@ -193,5 +193,9 @@
   },
   "readme": "https://github.com/user-interviews/ui-design-system#readme",
   "homepage": "https://github.com/user-interviews/ui-design-system",
-  "_id": "@user-interviews/ui-design-system@1.32.0"
+  "_id": "@user-interviews/ui-design-system@1.32.0",
+  "volta": {
+    "node": "18.18.2",
+    "yarn": "1.22.21"
+  }
 }
