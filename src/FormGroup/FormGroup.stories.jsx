@@ -1,11 +1,5 @@
 import React, { useState } from 'react';
 import { faSearch } from '@fortawesome/pro-solid-svg-icons';
-import {
-  boolean,
-  radios,
-  text,
-  withKnobs,
-} from '@storybook/addon-knobs';
 
 import FormGroup from 'src/FormGroup';
 import Input from 'src/Input';
@@ -19,7 +13,6 @@ import mdx from './FormGroup.mdx';
 export default {
   title: 'Components/Form Elements/Form Group',
   component: FormGroup,
-  decorators: [withKnobs],
   parameters: {
     docs: {
       page: mdx,
@@ -68,7 +61,7 @@ export const WithLabelTooltip = () => (
     id="with-label"
     label="Label"
     labelHtmlFor="input"
-    labelTooltip={text('Tooltip', 'Some tooltip text')}
+    labelTooltip="Some tooltip text"
   >
     <InputComponent id="input" name="with-label" />
   </FormGroup>
@@ -247,23 +240,16 @@ const ButtonGroupComponent = ({
 /* eslint-enable react/prop-types */
 
 export const WithRadioButtonGroup = () => {
-  const orientation = radios(
-    'Orientation',
-    Object.values(ORIENTATIONS),
-    ORIENTATIONS.COLUMN,
-  );
-  let bordered = true;
-  if (orientation === ORIENTATIONS.COLUMN) {
-    bordered = boolean('Bordered buttons (only toggleable on column layout)', false);
-  }
+  const orientation = ORIENTATIONS.COLUMN;
+  const bordered = true;
 
   return (
     <ButtonGroupComponent
-      bordered={boolean('Bordered Form Group', true)}
+      bordered
       ButtonGroup={RadioButtonGroup}
       defaultValue="1"
       elementType="fieldset"
-      fullWidth={boolean('Full width', false)}
+      fullWidth={false}
       id="with-radio-button-group"
       label="Form Group with radio button group"
       labelHelperText="with some helper text"
@@ -275,7 +261,7 @@ export const WithRadioButtonGroup = () => {
         Control={RadioButton}
         id="value-1"
         name="choice"
-        text={text('Label 1', 'Value 1')}
+        text="Value 1"
         value="1"
       />
       <FormControlLabel
@@ -283,7 +269,7 @@ export const WithRadioButtonGroup = () => {
         Control={RadioButton}
         id="value-2"
         name="choice"
-        text={text('Label 2', 'Value 2')}
+        text="Value 2"
         value="2"
       />
       <FormControlLabel
@@ -291,7 +277,7 @@ export const WithRadioButtonGroup = () => {
         Control={RadioButton}
         id="value-3"
         name="choice"
-        text={text('Label 3', 'Value 3')}
+        text="Value 3"
         value="3"
       />
     </ButtonGroupComponent>

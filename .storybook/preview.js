@@ -1,6 +1,16 @@
 import colors from '../src/Styles/colors/palette';
+import '../scss/global.scss';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const preview = {
+  decorators: [
+    (Story) => (
+      <div className="Synthesized">
+        {/* 👇 Decorators in Storybook also accept a function. Replace <Story/> with Story() to enable it  */}
+        <Story />
+      </div>
+    ),
+  ],
   parameters: {
     backgrounds: {
       default: '$ux-white',

@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import { ToggleInput } from 'src/ToggleInput';
 
-import { boolean, text, withKnobs } from '@storybook/addon-knobs';
-
 import mdx from './ToggleInput.mdx';
 
 export default {
   title: 'Components/ToggleInput',
   component: ToggleInput,
-  decorators: [withKnobs],
   parameters: {
     docs: {
       page: mdx,
@@ -27,8 +24,8 @@ export const Default = () => {
     <ToggleInput
       id="1"
       isChecked={isChecked}
-      labelLeft={boolean('Label left', false)}
-      labelText={text('Label text', 'Label')}
+      labelLeft={false}
+      labelText="Label"
       onToggle={handleChange}
     />
   );
@@ -45,8 +42,8 @@ export const Checked = () => {
     <ToggleInput
       id="1"
       isChecked={isChecked}
-      labelLeft={boolean('Label left', false)}
-      labelText={text('Label text', 'Label')}
+      labelLeft={false}
+      labelText="Label"
       onToggle={handleChange}
     />
   );
@@ -64,7 +61,7 @@ export const LabelLeft = () => {
       id="1"
       isChecked={isChecked}
       labelLeft
-      labelText={text('Label text', 'Label')}
+      labelText="Label"
       onToggle={handleChange}
     />
   );
@@ -82,8 +79,8 @@ export const Disabled = () => {
       disabled
       id="2"
       isChecked={isChecked}
-      labelLeft={boolean('Label left', false)}
-      labelText={text('Label text', 'Label')}
+      labelLeft={false}
+      labelText="Label"
       onToggle={handleChange}
     />
   );
