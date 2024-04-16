@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import propTypes from 'prop-types';
 
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import Drawer from './Drawer';
@@ -188,14 +188,15 @@ describe('Drawer', () => {
         expect(elements.drawerOverlay.get().classList).toContain('DrawerBackgroundOverlay--active');
       });
 
-      it('calls onRequestClose when pressing ESC key', () => {
+      it('calls onRequestClose when pressing ESC key', async () => {
         const onRequestClose = jest.fn();
 
         render(<SetupDrawerWithChildren visible onRequestClose={onRequestClose} />);
 
         userEvent.keyboard('{Escape}');
-
-        expect(onRequestClose).toHaveBeenCalled();
+        await waitFor(() => {
+          expect(onRequestClose).toHaveBeenCalled();
+        });
       });
 
       it('body tag has Drawer--open', () => {
@@ -233,15 +234,16 @@ describe('Drawer', () => {
       });
 
       describe('when user clicks on drawerOne toggle visibility button', () => {
-        it('body tag does not have Drawer--open after click', () => {
+        it('body tag does not have Drawer--open after click', async () => {
           const { container } = render(<SetupMultipleDrawers drawerOneVisibleDefault />);
           const body = container.closest('body');
 
           expect(body.classList).toContain('Drawer--open');
 
           userEvent.click(elements.drawerOneToggleVisibilityButton.get());
-
-          expect(body.classList).not.toContain('Drawer--open');
+          await waitFor(() => {
+            expect(body.classList).not.toContain('Drawer--open');
+          });
         });
       });
     });
@@ -255,15 +257,16 @@ describe('Drawer', () => {
       });
 
       describe('when user clicks on drawerOne toggle visibility button', () => {
-        it('body tag has Drawer--open after click', () => {
+        it('body tag has Drawer--open after click', async () => {
           const { container } = render(<SetupMultipleDrawers />);
           const body = container.closest('body');
 
           expect(body.classList).not.toContain('Drawer--open');
 
           userEvent.click(elements.drawerOneToggleVisibilityButton.get());
-
-          expect(body.classList).toContain('Drawer--open');
+          await waitFor(() => {
+            expect(body.classList).toContain('Drawer--open');
+          });
         });
       });
     });
