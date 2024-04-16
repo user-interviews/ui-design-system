@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
 import userEvent from '@testing-library/user-event';
 import { DrawerFooter } from './index';
@@ -9,7 +9,7 @@ describe('DrawerFooter', () => {
   );
 
   describe('primary action button', () => {
-    it('calls the onPrimaryAction callback when clicked', () => {
+    it('calls the onPrimaryAction callback when clicked', async () => {
       const onPrimaryActionMock = jest.fn();
 
       renderDrawerFooter({
@@ -19,7 +19,9 @@ describe('DrawerFooter', () => {
 
       userEvent.click(screen.getByRole('button', { name: 'Primary Action' }));
 
-      expect(onPrimaryActionMock).toHaveBeenCalled();
+      await waitFor(() => {
+        expect(onPrimaryActionMock).toHaveBeenCalled();
+      });
     });
   });
 });

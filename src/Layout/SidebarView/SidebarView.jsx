@@ -145,7 +145,6 @@ export default class SidebarView extends Component {
     const sidebarClassName = classNames(
       this.props.className,
       {
-        // eslint-disable-next-line @typescript-eslint/camelcase
         SidebarView__sidebar: true,
         'SidebarView__sidebar--open': this.props.isSidebarOpen,
         'SidebarView__sidebar--openable': this.props.isSidebarOpenable,

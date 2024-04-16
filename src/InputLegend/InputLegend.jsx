@@ -9,7 +9,6 @@ import 'scss/forms/input_label.scss';
 
 const InputLegend = ({
   className,
-  elementType,
   labelHtmlFor,
   text,
   required,
@@ -39,7 +38,6 @@ const InputLegend = ({
 
 InputLegend.propTypes = {
   className: PropTypes.string,
-  elementType: PropTypes.string,
   labelHelperText: PropTypes.string,
   labelHtmlFor: PropTypes.string,
   required: PropTypes.bool,
@@ -49,7 +47,6 @@ InputLegend.propTypes = {
 
 InputLegend.defaultProps = {
   className: '',
-  elementType: undefined,
   labelHelperText: undefined,
   labelHtmlFor: '',
   required: false,
