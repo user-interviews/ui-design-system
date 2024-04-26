@@ -41,17 +41,20 @@
 
   :global(.nav-link),
   :global(.nav-link.disabled) {
-    color: $synth-unselected-neutral;
+    color: $synth-unselected-tab;
     border-bottom: 1px solid $synth-div-stroke-neutral;
     position: relative;
     margin-bottom: -1px;
+  }
+
+  :global(.nav-link.active) {
+    font-weight: $synth-font-weight-bold;
   }
 
   :global(.nav-link.active),
   :global(.nav-link:hover),
   :global(.nav-link:active),
   :global(.nav-link:focus) {
-    font-weight: $synth-font-weight-bold;
     color: $synth-text-neutral;
     border-bottom: 3px solid $synth-indicator-stroke-green;
   }

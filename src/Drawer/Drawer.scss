@@ -50,6 +50,10 @@
   display: flex;
   flex-direction: column;
 
+  &--open {
+    overflow: hidden;
+  }
+
   &--behind-nav {
     padding-top: 48px;
   }

@@ -7,9 +7,6 @@ import {
 } from 'src/Modal';
 import mdx from './Modal.mdx';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../scss/global.scss';
-
 export default {
   title: 'Components/Modal',
   component: Modal,

@@ -44,24 +44,24 @@ $warning: $ux-yellow-400;
   $btn-primary-background: $primary;
   $btn-primary-border: $primary;
   $btn-primary-color: $ux-white;
-  
+
   $btn-primary-hover-background: $ux-emerald-700;
   $btn-primary-hover-border: $ux-emerald-700;
   $btn-primary-hover-color: $ux-white;
-  
+
   $btn-primary-active-background: $ux-emerald-800;
   $btn-primary-active-border: $ux-emerald-800;
   $btn-primary-active-color: $ux-white;
 
   @include button-variant(
-    $btn-primary-background, 
+    $btn-primary-background,
     $btn-primary-border,
     $btn-primary-color,
-    
+
     $btn-primary-hover-background,
     $btn-primary-hover-border,
     $btn-primary-hover-color,
-    
+
     $btn-primary-active-background,
     $btn-primary-active-border,
     $btn-primary-active-color,
@@ -80,24 +80,24 @@ $warning: $ux-yellow-400;
   $btn-primary-background: $synthesis-primary;
   $btn-primary-border: $synthesis-primary;
   $btn-primary-color: $ux-white;
-  
+
   $btn-primary-hover-background: $synth-dark-background-selected-blue;
   $btn-primary-hover-border: $synth-dark-background-selected-blue;
   $btn-primary-hover-color: $ux-white;
-  
+
   $btn-primary-active-background: $synth-dark-background-pressed-blue;
   $btn-primary-active-border: $synth-dark-background-pressed-blue;
   $btn-primary-active-color: $ux-white;
 
   @include button-variant(
-    $btn-primary-background, 
+    $btn-primary-background,
     $btn-primary-border,
     $btn-primary-color,
-    
+
     $btn-primary-hover-background,
     $btn-primary-hover-border,
     $btn-primary-hover-color,
-    
+
     $btn-primary-active-background,
     $btn-primary-active-border,
     $btn-primary-active-color,
@@ -126,7 +126,7 @@ $warning: $ux-yellow-400;
   $btn-outline-primary-active-border-color: $ux-emerald-800;
 
   @include button-outline-variant(
-    $btn-outline-primary-color, 
+    $btn-outline-primary-color,
     $btn-outline-primary-color-hover,
 
     $btn-outline-primary-hover-background,
@@ -163,7 +163,7 @@ $warning: $ux-yellow-400;
   $btn-outline-primary-active-border-color: $synth-dark-background-pressed-blue;
 
   @include button-outline-variant(
-    $btn-outline-primary-color, 
+    $btn-outline-primary-color,
     $btn-outline-primary-color-hover,
 
     $btn-outline-primary-hover-background,
@@ -186,28 +186,71 @@ $warning: $ux-yellow-400;
   }
 }
 
+@mixin btn-tertiary {
+  $btn-tertiary-background: transparent;
+  $btn-tertiary-border: transparent;
+  $btn-tertiary-color: $synth-primary-cta-blue;
+
+  $btn-tertiary-hover-background: $btn-tertiary-background;
+  $btn-tertiary-hover-border: $btn-tertiary-border;
+  $btn-tertiary-hover-color: $btn-tertiary-color;
+
+  $btn-tertiary-active-background: $btn-tertiary-background;
+  $btn-tertiary-active-border: $synth-hyperlink-color;
+  $btn-tertiary-active-color: $btn-tertiary-hover-color;
+
+  $btn-tertiary-disabled-background: $btn-tertiary-background;
+  $btn-tertiary-disabled-border: $btn-tertiary-hover-border;
+  $btn-tertiary-disabled-color: $btn-tertiary-hover-color;
+
+  @include button-variant(
+    $btn-tertiary-background,
+    $btn-tertiary-border,
+    $btn-tertiary-color,
+
+    $btn-tertiary-hover-background,
+    $btn-tertiary-hover-border,
+    $btn-tertiary-hover-color,
+
+    $btn-tertiary-active-background,
+    $btn-tertiary-active-border,
+    $btn-tertiary-active-color,
+
+    $btn-tertiary-disabled-background,
+    $btn-tertiary-disabled-border,
+    $btn-tertiary-disabled-color,
+  );
+
+  border-width: 2px;
+
+  &:active, &.btn-tertiary:focus {
+    box-shadow: none;
+    border-color: $synth-hyperlink-color;
+  }
+}
+
 @mixin btn-danger {
   $btn-danger-background: $danger;
   $btn-danger-border: $danger;
   $btn-danger-color: $ux-white;
-  
+
   $btn-danger-hover-background: $ux-red-600;
   $btn-danger-hover-border: $ux-red-600;
   $btn-danger-hover-color: $ux-white;
-  
+
   $btn-danger-active-background: $ux-red-700;
   $btn-danger-active-border: $ux-red-700;
   $btn-danger-active-color: $ux-white;
 
   @include button-variant(
-    $btn-danger-background, 
+    $btn-danger-background,
     $btn-danger-border,
     $btn-danger-color,
-    
+
     $btn-danger-hover-background,
     $btn-danger-hover-border,
     $btn-danger-hover-color,
-    
+
     $btn-danger-active-background,
     $btn-danger-active-border,
     $btn-danger-active-color,
@@ -236,7 +279,7 @@ $warning: $ux-yellow-400;
   $btn-outline-danger-active-border-color: $ux-red-700;
 
   @include button-outline-variant(
-    $btn-outline-danger-color, 
+    $btn-outline-danger-color,
     $btn-outline-danger-color-hover,
 
     $btn-outline-danger-hover-background,
@@ -263,24 +306,24 @@ $warning: $ux-yellow-400;
   $btn-warning-background: $warning;
   $btn-warning-border: $warning;
   $btn-warning-color: $ux-yellow-900;
-  
+
   $btn-warning-hover-background: $ux-yellow-500;
   $btn-warning-hover-border: $ux-yellow-500;
   $btn-warning-hover-color: $ux-yellow-900;
-  
+
   $btn-warning-active-background: $ux-yellow-600;
   $btn-warning-active-border: $ux-yellow-600;
   $btn-warning-active-color: $ux-yellow-900;
 
   @include button-variant(
-    $btn-warning-background, 
+    $btn-warning-background,
     $btn-warning-border,
     $btn-warning-color,
-    
+
     $btn-warning-hover-background,
     $btn-warning-hover-border,
     $btn-warning-hover-color,
-    
+
     $btn-warning-active-background,
     $btn-warning-active-border,
     $btn-warning-active-color,
@@ -307,9 +350,9 @@ $warning: $ux-yellow-400;
 
   $btn-outline-warning-active-background: $ux-yellow-500;
   $btn-outline-warning-active-border-color: $ux-yellow-500;
-  
+
   @include button-outline-variant(
-    $btn-outline-warning-color, 
+    $btn-outline-warning-color,
     $btn-outline-warning-color-hover,
 
     $btn-outline-warning-hover-background,
@@ -336,24 +379,24 @@ $warning: $ux-yellow-400;
   $btn-transparent-background: transparent;
   $btn-transparent-border: transparent;
   $btn-transparent-color: $ux-gray-700;
-  
+
   $btn-transparent-hover-background: $ux-gray-300;
   $btn-transparent-hover-border: transparent;
   $btn-transparent-hover-color: $ux-gray-900;
-  
+
   $btn-transparent-active-background: $ux-gray-400;
   $btn-transparent-active-border: $ux-gray-400;
   $btn-transparent-active-color: $ux-gray-900;
 
   @include button-variant(
-    $btn-transparent-background, 
+    $btn-transparent-background,
     $btn-transparent-border,
     $btn-transparent-color,
-    
+
     $btn-transparent-hover-background,
     $btn-transparent-hover-border,
     $btn-transparent-hover-color,
-    
+
     $btn-transparent-active-background,
     $btn-transparent-active-border,
     $btn-transparent-active-color,
@@ -384,9 +427,9 @@ $warning: $ux-yellow-400;
 
   $btn-outline-transparent-active-background: $ux-gray-400;
   $btn-outline-transparent-active-border-color: $ux-gray-400;
-  
+
   @include button-outline-variant(
-    $btn-outline-transparent-color, 
+    $btn-outline-transparent-color,
     $btn-outline-transparent-color-hover,
 
     $btn-outline-transparent-hover-background,
@@ -419,24 +462,24 @@ $warning: $ux-yellow-400;
   $btn-brand-google-background: $brand-color-google-alt;
   $btn-brand-google-border: $brand-color-google-alt;
   $btn-brand-google-color: $ux-white;
-  
+
   $btn-brand-google-hover-background: #2069cf;
   $btn-brand-google-hover-border: #2069cf;
   $btn-brand-google-hover-color: $ux-white;
-  
+
   $btn-brand-google-active-background: #2069cf;
   $btn-brand-google-active-border: #2069cf;
   $btn-brand-google-active-color: $ux-white;
 
   @include button-variant(
-    $btn-brand-google-background, 
+    $btn-brand-google-background,
     $btn-brand-google-border,
     $btn-brand-google-color,
-    
+
     $btn-brand-google-hover-background,
     $btn-brand-google-hover-border,
     $btn-brand-google-hover-color,
-    
+
     $btn-brand-google-active-background,
     $btn-brand-google-active-border,
     $btn-brand-google-active-color,
@@ -459,24 +502,24 @@ $warning: $ux-yellow-400;
   $btn-brand-facebook-background: $brand-color-facebook;
   $btn-brand-facebook-border: $brand-color-facebook;
   $btn-brand-facebook-color: $ux-white;
-  
+
   $btn-brand-facebook-hover-background: darken($brand-color-facebook, 5%);
   $btn-brand-facebook-hover-border: darken($brand-color-facebook, 5%);
   $btn-brand-facebook-hover-color: $ux-white;
-  
+
   $btn-brand-facebook-active-background: darken($brand-color-facebook, 5%);
   $btn-brand-facebook-active-border: darken($brand-color-facebook, 5%);
   $btn-brand-facebook-active-color: $ux-white;
 
   @include button-variant(
-    $btn-brand-facebook-background, 
+    $btn-brand-facebook-background,
     $btn-brand-facebook-border,
     $btn-brand-facebook-color,
-    
+
     $btn-brand-facebook-hover-background,
     $btn-brand-facebook-hover-border,
     $btn-brand-facebook-hover-color,
-    
+
     $btn-brand-facebook-active-background,
     $btn-brand-facebook-active-border,
     $btn-brand-facebook-active-color,
@@ -509,7 +552,7 @@ $warning: $ux-yellow-400;
   $btn-brand-linkedin-active-color: $ux-white;
 
   @include button-variant(
-    $btn-brand-linkedin-background, 
+    $btn-brand-linkedin-background,
     $btn-brand-linkedin-border,
     $btn-brand-linkedin-color,
 
@@ -549,7 +592,7 @@ $warning: $ux-yellow-400;
   $btn-brand-twitter-active-color: $ux-white;
 
   @include button-variant(
-    $btn-brand-twitter-background, 
+    $btn-brand-twitter-background,
     $btn-brand-twitter-border,
     $btn-brand-twitter-color,
 
@@ -589,7 +632,7 @@ $warning: $ux-yellow-400;
   $btn-link-active-color: $ux-blue-600;
 
   @include button-variant(
-    $btn-link-background, 
+    $btn-link-background,
     $btn-link-border,
     $btn-link-color,
 
@@ -621,4 +664,3 @@ $warning: $ux-yellow-400;
     @include btn-remove-bootstrap-focus-outline;
   }
 }
-

@@ -1,6 +1,5 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import { withKnobs, radios, text } from '@storybook/addon-knobs';
 
 import { faExclamationTriangle } from '@fortawesome/pro-solid-svg-icons';
 
@@ -12,7 +11,7 @@ const withContainer = (story) => <div style={{ padding: '4rem' }}>{story()}</div
 export default {
   title: 'Components/Tooltip',
   component: Tooltip,
-  decorators: [withKnobs, withContainer],
+  decorators: [withContainer],
   parameters: {
     docs: {
       page: mdx,
@@ -22,30 +21,30 @@ export default {
 
 export const Default = () => (
   <Tooltip
-    placement={radios('Placement', ['right', 'top', 'bottom', 'left', 'auto'], 'right')}
-    text={text('Tooltip Text', 'Default Tooltip')}
+    placement="right"
+    text="Default Tooltip"
   />
 );
 
 export const Light = () => (
   <Tooltip
     placement="right"
-    text={text('Tooltip Text', 'Light Tooltip')}
+    text="Light Tooltip"
     theme="light"
   />
 );
 
 export const WithHeader = () => (
   <Tooltip
-    header={text('Header Text', 'Default Header')}
+    header="Default Header"
     placement="right"
-    text={text('Tooltip Text', 'Tooltip with Header')}
+    text="Tooltip with Header"
   />
 );
 
 export const WithHtml = () => (
   <Tooltip
-    header={text('Header Text', 'Default Header')}
+    header="Default Header"
     placement="right"
     text={(
       <span>
@@ -60,7 +59,7 @@ export const NeutralIcon = () => (
   <Tooltip
     iconClasses="Tooltip__icon--neutral"
     placement="right"
-    text={text('Tooltip Text', 'Neutral Icon')}
+    text="Neutral Icon"
   />
 );
 
@@ -69,7 +68,7 @@ export const WarningIcon = () => (
     icon={faExclamationTriangle}
     iconClasses="Tooltip__icon--warning"
     placement="right"
-    text={text('Tooltip Text', 'Warning Icon')}
+    text="Warning Icon"
   />
 );
 
@@ -78,14 +77,14 @@ export const ErrorIcon = () => (
     icon={faExclamationTriangle}
     iconClasses="Tooltip__icon--error"
     placement="right"
-    text={text('Tooltip Text', 'Error Icon')}
+    text="Error Icon"
   />
 );
 
 export const WithHover = () => (
   <Tooltip
-    placement={radios('Placement', ['right', 'top', 'bottom', 'left', 'auto'], 'right')}
-    text={text('Tooltip Text', 'Default Tooltip')}
+    placement="right"
+    text="Default Tooltip"
     withHover
   />
 );
@@ -102,7 +101,7 @@ const handleShow = () => {
 export const WithTracking = () => (
   <Tooltip
     placement="right"
-    text={text('Tooltip Text', 'Tracked Tooltip')}
+    text="Tracked Tooltip"
     onShow={handleShow}
   />
 );

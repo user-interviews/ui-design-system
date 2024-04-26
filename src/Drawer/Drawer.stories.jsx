@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
-import {
-  withKnobs, select, boolean,
-} from '@storybook/addon-knobs';
 
 import {
- Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerSizes,
+ Drawer, DrawerBody, DrawerFooter, DrawerHeader,
 } from 'src/Drawer';
 
 import Button from 'src/Button';
@@ -19,7 +16,6 @@ import mdx from './Drawer.mdx';
 export default {
   title: 'Components/Drawer',
   component: Drawer,
-  decorators: [withKnobs({ escapeHTML: false })],
   parameters: {
     docs: {
       page: mdx,
@@ -36,17 +32,17 @@ export const Default = () => {
     <>
       <Button onClick={toggleVisible}>Open</Button>
       <Drawer
-        behindNav={(boolean('behindNav', true))}
-        defaultExpanded={boolean('defaultExpanded', false)}
-        expandable={boolean('expandable', false)}
-        hasBackgroundOverlay={boolean('hasBackgroundOverlay', true)}
-        orientation={select('orientation', ['left', 'right'], 'right')}
-        size={select('size', DrawerSizes, 'sm')}
+        behindNav
+        defaultExpanded={false}
+        expandable={false}
+        hasBackgroundOverlay
+        orientation="right"
+        size="sm"
         visible={isVisible}
         onRequestClose={toggleVisible}
       >
         <DrawerHeader
-          bordered={boolean('bordered', true)}
+          bordered
           title="Title goes here"
           onRequestClose={toggleVisible}
         />
@@ -89,17 +85,17 @@ export const Orientation = () => {
     <>
       <Button onClick={toggleVisible}>Open</Button>
       <Drawer
-        behindNav={(boolean('behindNav', true))}
-        defaultExpanded={boolean('defaultExpanded', false)}
-        expandable={boolean('expandable', false)}
-        hasBackgroundOverlay={boolean('hasBackgroundOverlay', true)}
-        orientation={select('orientation', ['left', 'right'], 'left')}
-        size={select('size', DrawerSizes, 'sm')}
+        behindNav
+        defaultExpanded={false}
+        expandable={false}
+        hasBackgroundOverlay
+        orientation="left"
+        size="sm"
         visible={isVisible}
         onRequestClose={toggleVisible}
       >
         <DrawerHeader
-          bordered={boolean('bordered', true)}
+          bordered
           title="Title goes here"
           onRequestClose={toggleVisible}
         />
@@ -142,17 +138,17 @@ export const Expandable = () => {
     <>
       <Button onClick={toggleVisible}>Open</Button>
       <Drawer
-        behindNav={(boolean('behindNav', true))}
-        defaultExpanded={boolean('defaultExpanded', false)}
-        expandable={boolean('expandable', true)}
-        hasBackgroundOverlay={boolean('hasBackgroundOverlay', true)}
-        orientation={select('orientation', ['left', 'right'], 'right')}
-        size={select('size', DrawerSizes, 'sm')}
+        behindNav
+        defaultExpanded={false}
+        expandable
+        hasBackgroundOverlay
+        orientation="right"
+        size="sm"
         visible={isVisible}
         onRequestClose={toggleVisible}
       >
         <DrawerHeader
-          bordered={boolean('bordered', true)}
+          bordered
           title="Title goes here"
           onRequestClose={toggleVisible}
         />
@@ -195,17 +191,17 @@ export const DefaultExpanded = () => {
     <>
       <Button onClick={toggleVisible}>Open</Button>
       <Drawer
-        behindNav={(boolean('behindNav', true))}
-        defaultExpanded={boolean('defaultExpanded', true)}
-        expandable={boolean('expandable', false)}
-        hasBackgroundOverlay={boolean('hasBackgroundOverlay', true)}
-        orientation={select('orientation', ['left', 'right'], 'right')}
-        size={select('size', DrawerSizes, 'sm')}
+        behindNav
+        defaultExpanded
+        expandable={false}
+        hasBackgroundOverlay
+        orientation="right"
+        size="sm"
         visible={isVisible}
         onRequestClose={toggleVisible}
       >
         <DrawerHeader
-          bordered={boolean('bordered', true)}
+          bordered
           title="Title goes here"
           onRequestClose={toggleVisible}
         />
@@ -248,17 +244,17 @@ export const AdditionalActions = () => {
     <>
       <Button onClick={toggleVisible}>Open</Button>
       <Drawer
-        behindNav={(boolean('behindNav', true))}
-        defaultExpanded={boolean('defaultExpanded', false)}
-        expandable={boolean('expandable', true)}
-        hasBackgroundOverlay={boolean('hasBackgroundOverlay', false)}
-        orientation={select('orientation', ['left', 'right'], 'right')}
-        size={select('size', DrawerSizes, 'sm')}
+        behindNav
+        defaultExpanded={false}
+        expandable
+        hasBackgroundOverlay={false}
+        orientation="right"
+        size="sm"
         visible={isVisible}
         onRequestClose={toggleVisible}
       >
         <DrawerHeader
-          bordered={boolean('bordered', false)}
+          bordered={false}
           onRequestClose={toggleVisible}
         />
         <DrawerBody>
