@@ -8,10 +8,11 @@ import colors from '../Styles/colors/palette';
 
 import './LoadingSkeleton.scss';
 
-const LoadingSkeleton = ({ className, ...props }) => (
+const LoadingSkeleton = ({ className, containerClassName, ...props }) => (
   <SkeletonTheme baseColor={colors.UX_GRAY_300}>
     <Skeleton
       className={classNames('LoadingSkeleton', className)}
+      containerClassName={classNames('loadingSkeletonContainer', containerClassName)}
       {...props}
     />
   </SkeletonTheme>
