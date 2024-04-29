@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import Button from 'src/Button';
 import './ModalFooter.scss';
 
-export default class ModalFooter extends Component {
+type ModalFooterProps = {
+  children?: React.ReactNode;
+  closingIsDisabled?: boolean;
+  dismissButtonText?: string;
+  onRequestClose?: (...args: unknown[]) => unknown;
+};
+
+export default class ModalFooter extends Component<ModalFooterProps> {
   // Don’t pass event to props callback; the callback is not always called from
   // event listeners:
 
-  handleCloseClick = () => this.props.onRequestClose();
+  handleCloseClick = () => this.props.onRequestClose && this.props.onRequestClose();
 
   render() {
     return (
@@ -19,7 +25,7 @@ export default class ModalFooter extends Component {
             variant="transparent"
             onClick={this.handleCloseClick}
           >
-            {this.props.dismissButtonText}
+            {this.props.dismissButtonText || 'Cancel'}
           </Button>
         )}
         {this.props.children}
@@ -27,17 +33,3 @@ export default class ModalFooter extends Component {
     );
   }
 }
-
-ModalFooter.propTypes = {
-  children: PropTypes.node,
-  closingIsDisabled: PropTypes.bool,
-  dismissButtonText: PropTypes.string,
-  onRequestClose: PropTypes.func,
-};
-
-ModalFooter.defaultProps = {
-  children: undefined,
-  closingIsDisabled: false,
-  dismissButtonText: 'Cancel',
-  onRequestClose: undefined,
-};

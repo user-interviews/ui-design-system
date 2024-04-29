@@ -163,7 +163,7 @@ export const WarningModal = () => (
       dismissButtonText="Cancel"
       onRequestClose={handleRequestClose}
     >
-      <Button size="md" variant="primary">Edit</Button>
+      <Button variant="primary">Edit</Button>
     </ModalFooter>
   </Modal>
 );

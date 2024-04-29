@@ -1,16 +1,26 @@
 import React, { Component, Fragment } from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 import './ModalHeader.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExclamationTriangle } from '@fortawesome/pro-solid-svg-icons';
 
-export default class ModalHeader extends Component {
+type ModalHeaderProps = {
+  children?: React.ReactNode;
+  closingIsDisabled?: boolean;
+  subtitle?: string;
+  title?: string;
+  titleClass?: string;
+  titleId: string;
+  variant?: string;
+  onRequestClose?: (...args: unknown[]) => unknown;
+};
+
+export default class ModalHeader extends Component<ModalHeaderProps> {
   // Don’t pass event to props callback; the callback is not always called from
   // event listeners:
 
-  handleCloseClick = () => this.props.onRequestClose();
+  handleCloseClick = () => this.props.onRequestClose && this.props.onRequestClose();
 
   get titleClassName() {
     return classNames('ModalHeader__title', this.props.titleClass);
@@ -50,24 +60,3 @@ export default class ModalHeader extends Component {
     );
   }
 }
-
-ModalHeader.propTypes = {
-  children: PropTypes.node,
-  closingIsDisabled: PropTypes.bool,
-  subtitle: PropTypes.string,
-  title: PropTypes.string,
-  titleClass: PropTypes.string,
-  titleId: PropTypes.string.isRequired,
-  variant: PropTypes.string,
-  onRequestClose: PropTypes.func,
-};
-
-ModalHeader.defaultProps = {
-  children: undefined,
-  closingIsDisabled: false,
-  title: undefined,
-  titleClass: '',
-  subtitle: undefined,
-  variant: undefined,
-  onRequestClose: undefined,
-};
