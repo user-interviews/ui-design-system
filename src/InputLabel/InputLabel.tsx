@@ -1,10 +1,21 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import Tooltip from 'src/Tooltip';
 
 import 'scss/forms/input_label.scss';
+
+type LabelProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLLabelElement>, HTMLLabelElement>;
+
+export type InputLabelProps = {
+  className?: string;
+  elementType?: string;
+  labelHelperText?: React.ReactNode;
+  labelHtmlFor?: string;
+  required?: boolean;
+  text: string;
+  tooltipText?: React.ReactNode;
+} & LabelProps;
 
 const InputLabel = ({
   className,
@@ -14,7 +25,7 @@ const InputLabel = ({
   labelHelperText,
   tooltipText,
   ...props
-}) => {
+}: InputLabelProps) => {
   const inputLabelChildren = (
     <>
       {text}
@@ -33,23 +44,6 @@ const InputLabel = ({
       {inputLabelChildren}
     </label>
   );
-};
-
-InputLabel.propTypes = {
-  className: PropTypes.string,
-  labelHelperText: PropTypes.string,
-  labelHtmlFor: PropTypes.string,
-  required: PropTypes.bool,
-  text: PropTypes.string.isRequired,
-  tooltipText: PropTypes.string,
-};
-
-InputLabel.defaultProps = {
-  className: '',
-  labelHelperText: undefined,
-  labelHtmlFor: '',
-  required: false,
-  tooltipText: undefined,
 };
 
 export default InputLabel;
