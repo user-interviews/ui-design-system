@@ -12,18 +12,11 @@ import Option from './Option';
 import OptionWithDescription from './OptionWithDescription';
 import ValueContainer from './ValueContainer';
 
-import mdx from './SingleSelect.mdx';
-
 const onChange = () => action('Change');
 
 export default {
   title: 'Components/Selects/Single',
   component: SingleSelect,
-  parameters: {
-    docs: {
-      page: mdx,
-    },
-  },
 };
 
 const options = [
@@ -31,6 +24,13 @@ const options = [
   { label: 'Focus group', value: 2 },
   { label: 'Multi-day study', value: 3 },
   { label: 'Unmoderated task', value: 4 },
+];
+
+const peopleOptions = [
+  { label: 'Riley Researcher', value: 5 },
+  { label: 'Mickey Moderator', value: 6 },
+  { label: 'Connie Collaborator', value: 7 },
+  { label: 'Ozzy Observer', value: 8 },
 ];
 
 export const Default = () => (
@@ -69,6 +69,21 @@ export const MultipleSelect = () => (
       inputId="multi-select"
       isMulti
       options={options}
+      onChange={onChange}
+    />
+  </FormGroup>
+);
+
+export const MultipleSelectBorderedPill = () => (
+  <FormGroup
+    label="Multiple select bordered pill"
+    labelHtmlFor="multi-select-bordered-pill"
+  >
+    <SingleSelect
+      borderedMultiValue
+      inputId="multi-select-bordered-pill"
+      isMulti
+      options={peopleOptions}
       onChange={onChange}
     />
   </FormGroup>
