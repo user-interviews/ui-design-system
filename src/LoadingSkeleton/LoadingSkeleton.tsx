@@ -1,14 +1,55 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
-import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
+import Skeleton, { SkeletonTheme, type SkeletonProps } from 'react-loading-skeleton';
 
 import colors from '../Styles/colors/palette';
 
 import './LoadingSkeleton.scss';
 
-const LoadingSkeleton = ({ className, ...props }) => (
+export type LoadingSkeletonProps = SkeletonProps & {
+  /**
+  The border radius of the skeleton.
+  */
+  borderRadius?: number | string;
+  /**
+  Makes the skeleton circular by setting border-radius to 50%.
+  */
+  circle?: boolean;
+  className?: string;
+  /**
+  A custom class name for the `<span>` that wraps the individual skeleton elements.
+  */
+  containerClassName?: string;
+  /**
+  A string that is added to the container element as a data-testid attribute.
+  Use it with screen.getByTestId('...') from React Testing Library.
+  */
+  containerTestId?: string;
+  /**
+  The number of lines of skeletons to render. If count is a decimal number like 3.5,
+  three full skeletons and one half-width skeleton will be rendered.
+  */
+  count?: number;
+  /**
+  The height of the skeleton.
+  */
+  height?: number | string;
+  /**
+  By default, a `<br />` is inserted after each skeleton so that each skeleton gets its own line.
+  When inline is true, no line breaks are inserted.
+  */
+  inline?: boolean;
+  /**
+  The width of the skeleton.
+  */
+  width?: number | string;
+};
+
+const LoadingSkeleton = ({
+  className,
+  ...props
+}: LoadingSkeletonProps) => (
   <SkeletonTheme baseColor={colors.UX_GRAY_300}>
     <Skeleton
       className={classNames('LoadingSkeleton', className)}
@@ -16,45 +57,6 @@ const LoadingSkeleton = ({ className, ...props }) => (
     />
   </SkeletonTheme>
 );
-
-LoadingSkeleton.propTypes = {
-  /**
-  The border radius of the skeleton.
-  */
-  borderRadius: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  /**
-  Makes the skeleton circular by setting border-radius to 50%.
-  */
-  circle: PropTypes.bool,
-  className: PropTypes.string,
-  /**
-  A custom class name for the `<span>` that wraps the individual skeleton elements.
-  */
-  containerClassName: PropTypes.string,
-  /**
-  A string that is added to the container element as a data-testid attribute.
-  Use it with screen.getByTestId('...') from React Testing Library.
-  */
-  containerTestId: PropTypes.string,
-  /**
-  The number of lines of skeletons to render. If count is a decimal number like 3.5,
-  three full skeletons and one half-width skeleton will be rendered.
-  */
-  count: PropTypes.number,
-  /**
-  The height of the skeleton.
-  */
-  height: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-  /**
-  By default, a `<br />` is inserted after each skeleton so that each skeleton gets its own line.
-  When inline is true, no line breaks are inserted.
-  */
-  inline: PropTypes.bool,
-  /**
-  The width of the skeleton.
-  */
-  width: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
-};
 
 LoadingSkeleton.defaultProps = {
   borderRadius: '4px',
