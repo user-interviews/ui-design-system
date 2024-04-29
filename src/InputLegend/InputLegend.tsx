@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import Tooltip from 'src/Tooltip';
@@ -7,15 +6,29 @@ import Tooltip from 'src/Tooltip';
 import './InputLegend.scss';
 import 'scss/forms/input_label.scss';
 
+type LegendProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLLegendElement>,
+  HTMLLegendElement
+>;
+
+export type InputLegendProps = {
+  className?: string;
+  elementType?: string;
+  labelHelperText?: React.ReactNode;
+  labelHtmlFor?: string;
+  required?: boolean;
+  text: string;
+  tooltipText?: React.ReactNode;
+} & LegendProps;
+
 const InputLegend = ({
   className,
-  labelHtmlFor,
   text,
   required,
   labelHelperText,
   tooltipText,
   ...props
-}) => {
+}: InputLegendProps) => {
   const inputLegendChildren = (
     <>
       {text}
@@ -28,29 +41,11 @@ const InputLegend = ({
   return (
     <legend
       className={classNames('InputLegend', className)}
-      htmlFor={labelHtmlFor}
       {...props}
     >
       {inputLegendChildren}
     </legend>
   );
-};
-
-InputLegend.propTypes = {
-  className: PropTypes.string,
-  labelHelperText: PropTypes.string,
-  labelHtmlFor: PropTypes.string,
-  required: PropTypes.bool,
-  text: PropTypes.string.isRequired,
-  tooltipText: PropTypes.string,
-};
-
-InputLegend.defaultProps = {
-  className: '',
-  labelHelperText: undefined,
-  labelHtmlFor: '',
-  required: false,
-  tooltipText: undefined,
 };
 
 export default InputLegend;
