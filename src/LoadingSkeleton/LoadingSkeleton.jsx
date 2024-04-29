@@ -61,7 +61,7 @@ LoadingSkeleton.defaultProps = {
   borderRadius: '4px',
   className: undefined,
   circle: false,
-  containerClassName: '',
+  containerClassName: undefined,
   containerTestId: undefined,
   count: 1,
   height: undefined,
