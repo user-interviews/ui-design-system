@@ -1,19 +1,27 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import './Steps.scss';
 
-const Steps = ({ children, className, ...props }) => (
+type DivProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+>
+
+type StepsProps = DivProps & {
+  children?: React.ReactNode;
+  className?: string;
+};
+
+const Steps = ({
+  children,
+  className,
+  ...props
+}: StepsProps) => (
   <div className={classNames('Steps', className)} {...props}>
     {children}
   </div>
 );
-
-Steps.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-};
 
 Steps.defaultProps = {
   children: undefined,

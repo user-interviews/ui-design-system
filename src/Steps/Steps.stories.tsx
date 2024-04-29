@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Steps, Step } from 'src/Steps';
+import { Steps, Step } from '.';
 
 import mdx from './Steps.mdx';
 
