@@ -1,10 +1,21 @@
 import React, { forwardRef } from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import './Form.scss';
 
-const Form = forwardRef(({
+export type FormProps = {
+  action?: string;
+  children?: React.ReactNode;
+  className?: string;
+  CSRFParam?: string;
+  CSRFToken?: string;
+  id: string;
+  method?: string;
+  name?: string;
+  onSubmit?: (...args: unknown[]) => unknown;
+};
+
+const Form = forwardRef<HTMLFormElement, FormProps>(({
   action,
   children,
   className,
@@ -12,7 +23,6 @@ const Form = forwardRef(({
   CSRFToken,
   id,
   method,
-  multipart,
   name,
   onSubmit,
 }, ref) => {
@@ -26,8 +36,6 @@ const Form = forwardRef(({
       className={classNames('Form', className)}
       id={id}
       method={isGetFormMethod ? 'GET' : 'POST'}
-      // eslint-disable-next-line
-      multipart={multipart}
       name={name}
       ref={ref}
       onSubmit={onSubmit}
@@ -38,32 +46,5 @@ const Form = forwardRef(({
     </form>
   );
 });
-
-Form.displayName = 'Form';
-
-Form.propTypes = {
-  action: PropTypes.string,
-  children: PropTypes.node,
-  className: PropTypes.string,
-  CSRFParam: PropTypes.string,
-  CSRFToken: PropTypes.string,
-  id: PropTypes.string.isRequired,
-  method: PropTypes.string,
-  multipart: PropTypes.string,
-  name: PropTypes.string,
-  onSubmit: PropTypes.func,
-};
-
-Form.defaultProps = {
-  action: undefined,
-  children: undefined,
-  className: undefined,
-  CSRFParam: undefined,
-  CSRFToken: undefined,
-  method: undefined,
-  multipart: undefined,
-  name: undefined,
-  onSubmit: undefined,
-};
 
 export default Form;

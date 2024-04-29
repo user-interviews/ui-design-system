@@ -82,21 +82,22 @@ export const WithDismiss = () => (
   />
 );
 
-const googleButtonStyle = {
-  backgroundColor: '#4285F4',
-  border: '1px solid #4285F4',
-  borderRadius: '4px',
-  fontSize: '0.875rem',
-  fontWeight: 'bold',
-  lineHeight: '1.25rem',
-  margin: '16px 0',
-  padding: '8px 16px',
-  color: '#FFFFFF',
-  whiteSpace: 'nowrap',
-};
-
 const GoogleCalendarButton = () => (
-  <button style={googleButtonStyle} type="button">
+  <button
+    style={{
+      backgroundColor: '#4285F4',
+      border: '1px solid #4285F4',
+      borderRadius: '4px',
+      fontSize: '0.875rem',
+      fontWeight: 'bold',
+      lineHeight: '1.25rem',
+      margin: '16px 0',
+      padding: '8px 16px',
+      color: '#FFFFFF',
+      whiteSpace: 'nowrap',
+    }}
+    type="button"
+  >
     <FontAwesomeIcon icon={faGoogle} style={{ height: '16px', marginRight: '8px' }} />
     Connect Google Calendar
   </button>

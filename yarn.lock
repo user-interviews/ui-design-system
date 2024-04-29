@@ -3067,60 +3067,46 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/fontawesome-common-types@npm:6.4.2":
-  version: 6.4.2
-  resolution: "@fortawesome/fontawesome-common-types@npm:6.4.2::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Ffontawesome-common-types%2F-%2F6.4.2%2Ffontawesome-common-types-6.4.2.tgz"
-  checksum: 10c0/121bb1c55f7578d7516a1dfb95b4b5644d3aacd04cbbbddef317b99ec84ddd56aa8f6414abff190e9fc72ea1754f1beef1c5068641c31fbaf8407822a1733f82
+"@fortawesome/fontawesome-common-types@npm:6.5.2":
+  version: 6.5.2
+  resolution: "@fortawesome/fontawesome-common-types@npm:6.5.2::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Ffontawesome-common-types%2F-%2F6.5.2%2Ffontawesome-common-types-6.5.2.tgz"
+  checksum: 10c0/12104e93a0056ad1077f7350826f52aa26465bb1d6b4ce75dab0307072a3871301ec750c3a34d89d05e7338c9b446fa2793150cf58a5167217021943ef877d77
   languageName: node
   linkType: hard
 
-"@fortawesome/fontawesome-common-types@npm:^0.2.36":
-  version: 0.2.36
-  resolution: "@fortawesome/fontawesome-common-types@npm:0.2.36::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Ffontawesome-common-types%2F-%2F0.2.36%2Ffontawesome-common-types-0.2.36.tgz"
-  checksum: 10c0/4918ede75f22bf4623c645153d1385b16b58c638b8d500ba93d198382a1619742c77a3fd1348df8a6c157baf3486dc96710d6fe38e5eb006ea85ac39d294cb24
-  languageName: node
-  linkType: hard
-
-"@fortawesome/fontawesome-common-types@npm:^0.3.0":
-  version: 0.3.0
-  resolution: "@fortawesome/fontawesome-common-types@npm:0.3.0::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Ffontawesome-common-types%2F-%2F0.3.0%2Ffontawesome-common-types-0.3.0.tgz"
-  checksum: 10c0/39b8b9eb33c4f5a58fed46cfb8fc94e1da42f767d2fbcc02e6c3fa2e848786d43b47b5fedfdd5267e1d3db65cecd60da862d682fed012fc098e8cfd63f1f72a7
-  languageName: node
-  linkType: hard
-
-"@fortawesome/fontawesome-svg-core@npm:^1.2.28":
-  version: 1.3.0
-  resolution: "@fortawesome/fontawesome-svg-core@npm:1.3.0::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Ffontawesome-svg-core%2F-%2F1.3.0%2Ffontawesome-svg-core-1.3.0.tgz"
+"@fortawesome/fontawesome-svg-core@npm:^6.5.1":
+  version: 6.5.2
+  resolution: "@fortawesome/fontawesome-svg-core@npm:6.5.2::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Ffontawesome-svg-core%2F-%2F6.5.2%2Ffontawesome-svg-core-6.5.2.tgz"
   dependencies:
-    "@fortawesome/fontawesome-common-types": "npm:^0.3.0"
-  checksum: 10c0/073c898d9e234b9d31a77e5d70025a469c6140e51a11b0e48a4602d4888bf7ad1df056f603517f02df1b51c2e1fbc6e4e36fe13dbc710e2b9155d9269a58a952
+    "@fortawesome/fontawesome-common-types": "npm:6.5.2"
+  checksum: 10c0/91695dd375623988d16e6f0dc69d20350ef3fa3296fe40aa08877aae7beaf64378134656a2227419fe648dcd27a81c03fe1fd9a6c87956d863164b0380ba77d0
   languageName: node
   linkType: hard
 
-"@fortawesome/free-brands-svg-icons@npm:^5.15.3":
-  version: 5.15.4
-  resolution: "@fortawesome/free-brands-svg-icons@npm:5.15.4::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Ffree-brands-svg-icons%2F-%2F5.15.4%2Ffree-brands-svg-icons-5.15.4.tgz"
+"@fortawesome/free-brands-svg-icons@npm:^6.5.1":
+  version: 6.5.2
+  resolution: "@fortawesome/free-brands-svg-icons@npm:6.5.2::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Ffree-brands-svg-icons%2F-%2F6.5.2%2Ffree-brands-svg-icons-6.5.2.tgz"
   dependencies:
-    "@fortawesome/fontawesome-common-types": "npm:^0.2.36"
-  checksum: 10c0/138c9c427d9d81fda1ebbe740df6d6dcd6a02cd63cf1b6bd4c6f1d79e91a4f8ee31b604781659521173f8d6fa325f6dd37ab1409557c21d5bae4797612307c90
+    "@fortawesome/fontawesome-common-types": "npm:6.5.2"
+  checksum: 10c0/4c1798930547a73bf9dfd04064288d4ce02fbf42fece056c1f5dd6596363d6a34bb86bc2e0f400b78f938f48773aceb375bc6977e55cbaec9b7bd07996ae1e8c
   languageName: node
   linkType: hard
 
-"@fortawesome/pro-regular-svg-icons@npm:^6.4.0":
-  version: 6.4.2
-  resolution: "@fortawesome/pro-regular-svg-icons@npm:6.4.2::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Fpro-regular-svg-icons%2F-%2F6.4.2%2Fpro-regular-svg-icons-6.4.2.tgz"
+"@fortawesome/pro-regular-svg-icons@npm:^6.5.1":
+  version: 6.5.2
+  resolution: "@fortawesome/pro-regular-svg-icons@npm:6.5.2::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Fpro-regular-svg-icons%2F-%2F6.5.2%2Fpro-regular-svg-icons-6.5.2.tgz"
   dependencies:
-    "@fortawesome/fontawesome-common-types": "npm:6.4.2"
-  checksum: 10c0/f4b2a1ecf343b7c366b83cbb56655c8dd4ab7b68a408c109ff20afa5d920a14821aa3c1353cce90f028c27e204ce9f34c867e4e2650587fa5c252b263cfa077d
+    "@fortawesome/fontawesome-common-types": "npm:6.5.2"
+  checksum: 10c0/b8905040db6b1e2839bfd9fb5be194314ae2f261a62a1020c24acc364c939d1b897aa37c6a16e52a7522be066b14e1b3829d9c19d624c22abac68d3029c01b13
   languageName: node
   linkType: hard
 
-"@fortawesome/pro-solid-svg-icons@npm:^6.4.0":
-  version: 6.4.2
-  resolution: "@fortawesome/pro-solid-svg-icons@npm:6.4.2::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Fpro-solid-svg-icons%2F-%2F6.4.2%2Fpro-solid-svg-icons-6.4.2.tgz"
+"@fortawesome/pro-solid-svg-icons@npm:^6.5.1":
+  version: 6.5.2
+  resolution: "@fortawesome/pro-solid-svg-icons@npm:6.5.2::__archiveUrl=https%3A%2F%2Fnpm.fontawesome.com%2F%40fortawesome%2Fpro-solid-svg-icons%2F-%2F6.5.2%2Fpro-solid-svg-icons-6.5.2.tgz"
   dependencies:
-    "@fortawesome/fontawesome-common-types": "npm:6.4.2"
-  checksum: 10c0/81cdc4cb38c4f3fdbdb1c1cb9a2791591a0427ff41f293698d60460fd3987392f9fb8900b0557c5c92a18bea623536dc5d338ecdd1dbd30e260523e09f133fe1
+    "@fortawesome/fontawesome-common-types": "npm:6.5.2"
+  checksum: 10c0/811c06b8bc856e5378c1fdeb464a9cca69ebf7f4c0ffbed4e6d3bcf58b3b3ac96f35d8a21a3f89f5a70bf16fb9a6cfb4d13e487ca5d0ef149ad750496abb588b
   languageName: node
   linkType: hard
 
@@ -5453,21 +5439,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^16.0.0":
-  version: 16.9.19
-  resolution: "@types/react-dom@npm:16.9.19"
-  dependencies:
-    "@types/react": "npm:^16"
-  checksum: 10c0/fe74e2166054fd4c6ff86b561be559d2ffd77524818a49f07206892b73c473d0db0fa7d82bd68c81d5ba3dccfbb1dd0478c28879a6f8ac2639fb1e77cef3db0f
-  languageName: node
-  linkType: hard
-
 "@types/react-dom@npm:^18.0.0":
   version: 18.2.24
   resolution: "@types/react-dom@npm:18.2.24"
   dependencies:
     "@types/react": "npm:*"
   checksum: 10c0/9ec38e5ab4727c56ef17bd8e938ead88748ba19db314b8d9807714a5cae430f5b799514667b221b4f2dc8d9b4ca17dd1c3da8c41c083c2de9eddcc31bec6b8ff
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:^18.3.0":
+  version: 18.3.0
+  resolution: "@types/react-dom@npm:18.3.0"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10c0/6c90d2ed72c5a0e440d2c75d99287e4b5df3e7b011838cdc03ae5cd518ab52164d86990e73246b9d812eaf02ec351d74e3b4f5bd325bf341e13bf980392fd53b
   languageName: node
   linkType: hard
 
@@ -5498,6 +5484,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/react-transition-group@npm:^4.4.10":
+  version: 4.4.10
+  resolution: "@types/react-transition-group@npm:4.4.10"
+  dependencies:
+    "@types/react": "npm:*"
+  checksum: 10c0/3eb9bca143abc21eb781aa5cb1bded0c9335689d515bf0513fb8e63217b7a8122c6a323ecd5644a06938727e1f467ee061d8df1c93b68825a80ff1b47ab777a2
+  languageName: node
+  linkType: hard
+
 "@types/react@npm:*, @types/react@npm:>=16.9.11":
   version: 18.2.21
   resolution: "@types/react@npm:18.2.21"
@@ -5509,17 +5504,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^16":
-  version: 16.14.46
-  resolution: "@types/react@npm:16.14.46"
-  dependencies:
-    "@types/prop-types": "npm:*"
-    "@types/scheduler": "npm:*"
-    csstype: "npm:^3.0.2"
-  checksum: 10c0/815885cbae2c8653dddf8df4e6c2ce43ff8ff1d02c03f8356ce4b13aa7c8e6c72c588f04977c6f49fdd82419d46fdd895535d5e66726f0b0ea13c04065294995
-  languageName: node
-  linkType: hard
-
 "@types/react@npm:^16.8.0 || ^17.0.0 || ^18.0.0":
   version: 18.2.73
   resolution: "@types/react@npm:18.2.73"
@@ -5527,6 +5511,16 @@ __metadata:
     "@types/prop-types": "npm:*"
     csstype: "npm:^3.0.2"
   checksum: 10c0/b6645ab3c20efa41cfccf58ce0be45419517a0ba4594e323dd400342fb1c1f9589d169cf9bfa85b5b0605e9097fe9de7734b6d0c533f5b9bc32aaadb624537a4
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^18.3.1":
+  version: 18.3.1
+  resolution: "@types/react@npm:18.3.1"
+  dependencies:
+    "@types/prop-types": "npm:*"
+    csstype: "npm:^3.0.2"
+  checksum: 10c0/18d856c12a4ec93f3cda2d58ef3d77a9480818afd3af895f812896fb82cfca1f35a692ab1add4ce826a4eb58a071624c7d1c8c6c4ccfb81c100d2916dc607614
   languageName: node
   linkType: hard
 
@@ -5809,10 +5803,10 @@ __metadata:
     "@babel/preset-react": "npm:^7.24.1"
     "@babel/preset-typescript": "npm:^7.22.5"
     "@babel/runtime": "npm:^7.12.5"
-    "@fortawesome/fontawesome-svg-core": "npm:^1.2.28"
-    "@fortawesome/free-brands-svg-icons": "npm:^5.15.3"
-    "@fortawesome/pro-regular-svg-icons": "npm:^6.4.0"
-    "@fortawesome/pro-solid-svg-icons": "npm:^6.4.0"
+    "@fortawesome/fontawesome-svg-core": "npm:^6.5.1"
+    "@fortawesome/free-brands-svg-icons": "npm:^6.5.1"
+    "@fortawesome/pro-regular-svg-icons": "npm:^6.5.1"
+    "@fortawesome/pro-solid-svg-icons": "npm:^6.5.1"
     "@fortawesome/react-fontawesome": "npm:^0.2.0"
     "@popperjs/core": "npm:^2.5.3"
     "@storybook/addon-a11y": "npm:^8.0.5"
@@ -5852,8 +5846,10 @@ __metadata:
     "@tiptap/react": "npm:^2.0.3"
     "@tiptap/suggestion": "npm:^2.1.13"
     "@types/jest": "npm:^29.5.5"
-    "@types/react-dom": "npm:^16.0.0"
+    "@types/react": "npm:^18.3.1"
+    "@types/react-dom": "npm:^18.3.0"
     "@types/react-toggle": "npm:^4"
+    "@types/react-transition-group": "npm:^4.4.10"
     "@types/testing-library__jest-dom": "npm:^6.0.0"
     "@typescript-eslint/eslint-plugin": "npm:^6.21"
     "@typescript-eslint/parser": "npm:^6.21"
@@ -5895,7 +5891,7 @@ __metadata:
     react-test-renderer: "npm:^18.0.2"
     react-toggle: "npm:^4.1.3"
     react-tracking: "npm:^9.3"
-    react-transition-group: "npm:^4.3.0"
+    react-transition-group: "npm:^4.4.5"
     sanitize-html: "npm:^2.12.1"
     sass-loader: "npm:^14.2.1"
     storybook: "npm:^8.0.5"
