@@ -110,7 +110,7 @@ describe('Drawer', () => {
   beforeEach(() => {
     // Need to manually clean classList on body since jsdom instance can stay
     // the same across specs https://github.com/jestjs/jest/issues/1224
-    window.document.body?.classList.remove(window.document.body?.classList.toString());
+    window.document.body.className = '';
   });
 
   describe('When component renders single drawer', () => {

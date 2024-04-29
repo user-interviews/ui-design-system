@@ -74,8 +74,8 @@ const IconButton = ({
   className,
   icon,
   isLoading,
-  size,
-  variant,
+  size = 'sm',
+  variant = 'transparent',
   ...props
 }: IconButtonProps) => {
   const getAriaLabel = () => {
