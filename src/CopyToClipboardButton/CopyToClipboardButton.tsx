@@ -9,7 +9,7 @@ import TrackedButton from '../TrackedButton';
 import Popper from '../Popper';
 
 import './CopyToClipboardButton.scss';
-import 'scss/buttons.scss';
+import '../scss/buttons.scss';
 
 export const ButtonVariants = {
   NEUTRAL: 'neutral',

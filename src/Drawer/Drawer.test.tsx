@@ -110,7 +110,7 @@ describe('Drawer', () => {
   beforeEach(() => {
     // Need to manually clean classList on body since jsdom instance can stay
     // the same across specs https://github.com/jestjs/jest/issues/1224
-    window.document.body.classList.remove(...window.document.body.classList);
+    window.document.body?.classList.remove(window.document.body?.classList.toString());
   });
 
   describe('When component renders single drawer', () => {
@@ -148,7 +148,7 @@ describe('Drawer', () => {
         const { container } = render(<SetupDrawerWithChildren visible={false} />);
         const body = container.closest('body');
 
-        expect(body.classList).not.toContain('Drawer--open');
+        expect(body?.classList).not.toContain('Drawer--open');
       });
 
       describe('when hasBackgroundOverlay is false', () => {
@@ -163,7 +163,7 @@ describe('Drawer', () => {
           const { container } = render(<SetupDrawerWithChildren hasBackgroundOverlay={false} visible={false} />);
           const body = container.closest('body');
 
-          expect(body.classList).not.toContain('Drawer--open');
+          expect(body?.classList).not.toContain('Drawer--open');
         });
       });
     });
@@ -203,7 +203,7 @@ describe('Drawer', () => {
         const { container } = render(<SetupDrawerWithChildren visible />);
         const body = container.closest('body');
 
-        expect(body.classList).toContain('Drawer--open');
+        expect(body?.classList).toContain('Drawer--open');
       });
 
       describe('when hasBackgroundOverlay is false', () => {
@@ -218,7 +218,7 @@ describe('Drawer', () => {
           const { container } = render(<SetupDrawerWithChildren hasBackgroundOverlay={false} visible />);
           const body = container.closest('body');
 
-          expect(body.classList).not.toContain('Drawer--open');
+          expect(body?.classList).not.toContain('Drawer--open');
         });
       });
     });
@@ -230,7 +230,7 @@ describe('Drawer', () => {
         const { container } = render(<SetupMultipleDrawers drawerOneVisibleDefault />);
         const body = container.closest('body');
 
-        expect(body.classList).toContain('Drawer--open');
+        expect(body?.classList).toContain('Drawer--open');
       });
 
       describe('when user clicks on drawerOne toggle visibility button', () => {
@@ -238,11 +238,11 @@ describe('Drawer', () => {
           const { container } = render(<SetupMultipleDrawers drawerOneVisibleDefault />);
           const body = container.closest('body');
 
-          expect(body.classList).toContain('Drawer--open');
+          expect(body?.classList).toContain('Drawer--open');
 
           userEvent.click(elements.drawerOneToggleVisibilityButton.get());
           await waitFor(() => {
-            expect(body.classList).not.toContain('Drawer--open');
+            expect(body?.classList).not.toContain('Drawer--open');
           });
         });
       });
@@ -253,7 +253,7 @@ describe('Drawer', () => {
         const { container } = render(<SetupMultipleDrawers />);
         const body = container.closest('body');
 
-        expect(body.classList).not.toContain('Drawer--open');
+        expect(body?.classList).not.toContain('Drawer--open');
       });
 
       describe('when user clicks on drawerOne toggle visibility button', () => {
@@ -261,11 +261,11 @@ describe('Drawer', () => {
           const { container } = render(<SetupMultipleDrawers />);
           const body = container.closest('body');
 
-          expect(body.classList).not.toContain('Drawer--open');
+          expect(body?.classList).not.toContain('Drawer--open');
 
           userEvent.click(elements.drawerOneToggleVisibilityButton.get());
           await waitFor(() => {
-            expect(body.classList).toContain('Drawer--open');
+            expect(body?.classList).toContain('Drawer--open');
           });
         });
       });

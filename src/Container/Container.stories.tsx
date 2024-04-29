@@ -18,7 +18,7 @@ export const Default = () => (
   <Container>
     <Row>
       <Col>
-        <Card title="Default container">
+        <Card size="sm" title="Default container">
           <code>{`<Container>`}</code> provides a means to center and horizontally pad your site's contents.
           Use Container for a responsive pixel width.
         </Card>
@@ -31,7 +31,7 @@ export const FluidContainer = () => (
   <Container fluid>
     <Row>
       <Col>
-        <Card title="Fluid container">
+        <Card size="sm" title="Fluid container">
           You can use <code>{`<Container fluid />`}</code> for width: 100% across all viewport and device sizes.
         </Card>
       </Col>
@@ -43,7 +43,7 @@ export const FluidContainerWithBreakpoints = () => (
   <Container fluid="md">
     <Row>
       <Col>
-        <Card title="Fluid container with breakpoints">
+        <Card size="sm" title="Fluid container with breakpoints">
           You can set breakpoints for the <code>fluid</code> prop.
           Setting it to a breakpoint <code>['sm', 'md', 'lg', 'xl', 'xxl']</code> will set the
           Container as fluid until the specified breakpoint.
@@ -61,22 +61,22 @@ export const AutoLayoutColumns = () => (
     </p>
     <Row>
       <Col>
-        <Card title="1 of 2" />
+        <Card size="sm" title="1 of 2" />
       </Col>
       <Col>
-        <Card title="2 of 2" />
+        <Card size="sm" title="2 of 2" />
       </Col>
     </Row>
     <br />
     <Row>
       <Col>
-        <Card title="1 of 3" />
+        <Card size="sm" title="1 of 3" />
       </Col>
       <Col>
-        <Card title="2 of 3" />
+        <Card size="sm" title="2 of 3" />
       </Col>
       <Col>
-        <Card title="3 of 3" />
+        <Card size="sm" title="3 of 3" />
       </Col>
     </Row>
   </Container>
@@ -95,29 +95,29 @@ export const SettingOneColumnWidth = () => {
       </p>
       <Row>
         <Col>
-          <Card title="1 of 3" />
+          <Card size="sm" title="1 of 3" />
         </Col>
         <Col xs={xs}>
-          <Card title="2 of 3 (adjust me!)">
+          <Card size="sm" title="2 of 3 (adjust me!)">
             <code>{`xs={${xs}}`}</code>
           </Card>
         </Col>
         <Col>
-          <Card title="3 of 3" />
+          <Card size="sm" title="3 of 3" />
         </Col>
       </Row>
       <br />
       <Row>
         <Col>
-          <Card title="1 of 3" />
+          <Card size="sm" title="1 of 3" />
         </Col>
         <Col xs={4}>
-          <Card title="2 of 3">
+          <Card size="sm" title="2 of 3">
             <code>xs={4}</code>
           </Card>
         </Col>
         <Col>
-          <Card title="3 of 3" />
+          <Card size="sm" title="3 of 3" />
         </Col>
       </Row>
     </Container>
@@ -129,7 +129,7 @@ export const ResponsiveGrids = () => (
     <Container>
       <Row>
         <Col sm={8}>
-          <Card title="1 of 2">
+          <Card size="sm" title="1 of 2">
             <p>
               <code>sm={8}</code>
             </p>
@@ -142,7 +142,7 @@ export const ResponsiveGrids = () => (
           </Card>
         </Col>
         <Col sm={4}>
-          <Card title="2 of 2">
+          <Card size="sm" title="2 of 2">
             <p>
               <code>sm={4}</code>
             </p>
@@ -154,7 +154,7 @@ export const ResponsiveGrids = () => (
     <Container>
       <Row>
         <Col sm>
-          <Card title="1 of 3">
+          <Card size="sm" title="1 of 3">
             <p>
               <code>{`sm={true}`}</code>
             </p>
@@ -164,14 +164,14 @@ export const ResponsiveGrids = () => (
           </Card>
         </Col>
         <Col sm>
-          <Card title="2 of 3">
+          <Card size="sm" title="2 of 3">
             <p>
               <code>{`sm={true}`}</code>
             </p>
           </Card>
         </Col>
         <Col sm>
-          <Card title="3 of 3">
+          <Card size="sm" title="3 of 3">
             <p>
               <code>{`sm={true}`}</code>
             </p>
@@ -187,7 +187,7 @@ export const MixingBreakpoints = () => (
     <Container>
       <Row>
         <Col md={8} xs={12}>
-          <Card title="1 of 2">
+          <Card size="sm" title="1 of 2">
             <p>
               <code>{`md={8} xs={12}`}</code>
             </p>
@@ -198,7 +198,7 @@ export const MixingBreakpoints = () => (
           </Card>
         </Col>
         <Col md={4} xs={6}>
-          <Card title="2 of 2">
+          <Card size="sm" title="2 of 2">
             <p>
               <code>{`md={4} xs={6}`}</code>
             </p>
@@ -210,21 +210,21 @@ export const MixingBreakpoints = () => (
     <Container>
       <Row>
         <Col md={4} xs={3}>
-          <Card title="1 of 3">
+          <Card size="sm" title="1 of 3">
             <p>
               <code>{`md={4} xs={3}`}</code>
             </p>
           </Card>
         </Col>
         <Col md={4} xs={3}>
-          <Card title="2 of 3">
+          <Card size="sm" title="2 of 3">
             <p>
               <code>{`md={4} xs={3}`}</code>
             </p>
           </Card>
         </Col>
         <Col md={4} xs={3}>
-          <Card title="3 of 3">
+          <Card size="sm" title="3 of 3">
             <p>
               <code>{`md={4} xs={3}`}</code>
             </p>
@@ -239,14 +239,14 @@ export const OffsettingColumns = () => (
   <Container>
     <Row>
       <Col md={4}>
-        <Card title="1 of 2">
+        <Card size="sm" title="1 of 2">
           <p>
             <code>{`md={4}`}</code>
           </p>
         </Card>
       </Col>
       <Col md={{ span: 6, offset: 2 }}>
-        <Card title="2 of 2">
+        <Card size="sm" title="2 of 2">
           <p>
             <code>{`md={{ span: 6, offset: 2 }}`}</code>
           </p>
@@ -275,13 +275,13 @@ export const SettingColumnWidthsInRow = () => (
     </p>
     <Row lg={3} md={2} sm={1} xs={1}>
       <Col>
-        <Card title="1 of 3" />
+        <Card size="sm" title="1 of 3" />
       </Col>
       <Col>
-        <Card title="2 of 3" />
+        <Card size="sm" title="2 of 3" />
       </Col>
       <Col>
-        <Card title="3 of 3" />
+        <Card size="sm" title="3 of 3" />
       </Col>
     </Row>
   </Container>

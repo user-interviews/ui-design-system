@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 
 import Button from '../Button';
-import { RichTextEditor, RichTextEditorActions } from '.';
+import { RichTextEditor, RichTextEditorActions, RichTextEditorRef } from '.';
 
 import mdx from './RichTextEditor.mdx';
 
@@ -63,10 +63,10 @@ export const Error = () => (
 );
 
 export const SetContent = () => {
-  const ref = useRef(null);
+  const ref = useRef<RichTextEditorRef>(null);
 
   const handleClick = () => {
-    ref.current.setContent('Oh hey');
+    if (ref.current && ref.current.setContent) ref.current.setContent('Oh hey');
   };
 
   return (

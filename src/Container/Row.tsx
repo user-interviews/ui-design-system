@@ -5,7 +5,7 @@ import {
   type RowProps as ReactBootstrapRowProps,
 } from 'react-bootstrap';
 
-type RowProps = {
+export type RowProps = {
   /**
    You can use a custom element for this component
   */
@@ -54,7 +54,7 @@ type RowProps = {
   xxl?: ReactBootstrapRowProps['xxl'];
 } & ReactBootstrapRowProps;
 
-const Row = ({
+export const Row = ({
   as,
   children,
   className,
@@ -147,5 +147,3 @@ Row.defaultProps = {
   xs: undefined,
   xxl: undefined,
 };
-
-export default Row;

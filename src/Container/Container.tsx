@@ -5,7 +5,7 @@ import {
   type ContainerProps as ReactBootstrapContainerProps,
 } from 'react-bootstrap';
 
-type ContainerProps = {
+export type ContainerProps = {
   /**
    You can use a custom element for this component
   */
@@ -23,7 +23,7 @@ type ContainerProps = {
   fluid?: ReactBootstrapContainerProps['fluid'];
 } & ReactBootstrapContainerProps;
 
-const Container = ({
+export const Container = ({
   as,
   children,
   className,
@@ -61,5 +61,3 @@ Container.defaultProps = {
   className: undefined,
   fluid: false,
 };
-
-export default Container;

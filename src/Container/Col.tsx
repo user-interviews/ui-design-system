@@ -5,7 +5,7 @@ import {
   type ColProps as ReactBootstrapColProps,
 } from 'react-bootstrap';
 
-type ColProps = {
+export type ColProps = {
   /**
    You can use a custom element for this component
   */
@@ -54,7 +54,7 @@ type ColProps = {
   xxl?: ReactBootstrapColProps['xxl'];
 } & ReactBootstrapColProps;
 
-const Col = ({
+export const Col = ({
   as,
   children,
   className,
@@ -159,5 +159,3 @@ Col.defaultProps = {
   xs: undefined,
   xxl: undefined,
 };
-
-export default Col;

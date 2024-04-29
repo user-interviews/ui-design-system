@@ -5,11 +5,16 @@ import { Container, containerSizes } from '../Container';
 
 import './Main.scss';
 
-type MainProps = {
+type ElementProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLElement>,
+  HTMLElement
+>
+
+type MainProps = ElementProps & {
   as?: React.ElementType;
   children?: React.ReactNode;
   className?: string;
-  fluid?: unknown;
+  fluid?: boolean;
   id?: string;
 };
 
