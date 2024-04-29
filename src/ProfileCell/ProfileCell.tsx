@@ -1,15 +1,35 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import Avatar from 'src/Avatar';
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import ProfileCellSkeleton from './ProfileCellSkeleton';
 
 import './ProfileCell.scss';
 
-function ProfileCell(props) {
+type ProfileCellProps = {
+  colorId?: string | number;
+  isLoading?: boolean;
+  large?: boolean;
+  maxWidth?: string;
+  showAlert?: boolean;
+  subtitle?: React.ReactNode;
+  trailingIcon?: IconDefinition;
+  user: {
+    facebookProfileUrl?: string;
+    imageUrl?: string;
+    initials: string;
+    linkedinProfileUrl?: string
+    name: string;
+    profilePictureUrl?: string;
+    profileUrl?: string,
+    url?: string;
+  };
+};
+
+function ProfileCell(props: ProfileCellProps) {
   const profileImage = props.user.imageUrl || props.user.profilePictureUrl;
   const contentStyle = {
     maxWidth: props.maxWidth ? props.maxWidth : 'none',
@@ -54,42 +74,5 @@ function ProfileCell(props) {
     </>
   );
 }
-
-/*
-I don't think this is a perfect prop type, but I imagine we'll need something
-that can be passed a bunch of varying shapes to from the backend, so its just
-a first stab at that - Jeff
- */
-const ProfileUser = PropTypes.shape({
-  facebookProfileUrl: PropTypes.string,
-  imageUrl: PropTypes.string,
-  initials: PropTypes.string.isRequired,
-  linkedinProfileUrl: PropTypes.string,
-  name: PropTypes.string.isRequired,
-  profilePictureUrl: PropTypes.string,
-  profileUrl: PropTypes.string,
-  url: PropTypes.string,
-});
-
-ProfileCell.propTypes = {
-  colorId: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  isLoading: PropTypes.bool,
-  large: PropTypes.bool,
-  maxWidth: PropTypes.string,
-  showAlert: PropTypes.bool,
-  subtitle: PropTypes.node,
-  trailingIcon: PropTypes.object,
-  user: ProfileUser.isRequired,
-};
-
-ProfileCell.defaultProps = {
-  colorId: undefined,
-  isLoading: undefined,
-  large: false,
-  maxWidth: undefined,
-  showAlert: false,
-  subtitle: undefined,
-  trailingIcon: undefined,
-};
 
 export default ProfileCell;
