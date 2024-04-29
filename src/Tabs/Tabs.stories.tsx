@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import React, { useCallback, useState } from 'react';
 
-import { Tabs, Tab } from 'src/Tabs';
+import { Tabs, Tab } from '.';
 
 const tabDivStyles = { paddingTop: '20px' };
 
