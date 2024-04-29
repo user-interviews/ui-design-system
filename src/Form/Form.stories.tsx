@@ -56,7 +56,7 @@ export const Default = () => (
     >
       <InputComponent id="phone-input" name="phone" type="text" />
     </FormGroup>
-    <RadioButtonGroup name="radio-buttons">
+    <RadioButtonGroup>
       <FormControlLabel
         Control={RadioButton}
         id="first-radio"

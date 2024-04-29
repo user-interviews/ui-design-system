@@ -22,9 +22,9 @@ const RadioButtonGroupComponent = ({
   children,
   defaultValue,
   elementType,
-  fullWidth,
+  fullWidth = false,
   id,
-  inline,
+  inline = false,
   label,
   labelHelperText,
   orientation,
@@ -44,7 +44,6 @@ const RadioButtonGroupComponent = ({
     >
       <RadioButtonGroup
         fullWidth={fullWidth}
-        id="button-group"
         orientation={orientation}
         value={value}
         onChange={setValue}

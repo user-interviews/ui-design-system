@@ -7,13 +7,8 @@ type FormControlLabelProps = {
   bordered?: boolean;
   checked?: boolean;
   className?: string;
-  Control: React.ComponentType<{
-    checked?: boolean;
-    className?: string;
-    disabled?: boolean;
-    id?: string;
-    ref?: React.ForwardedRef<HTMLElement>,
-  }>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  Control: React.ComponentType<any>;
   children?: React.ReactNode;
   disabled?: boolean;
   helperText?: string;

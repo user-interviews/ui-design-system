@@ -1,24 +1,32 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 import ControlButtonGroup, { ORIENTATIONS } from '../ControlButtonGroup';
 
 import './RadioButtonGroup.scss';
 
+type RadioButtonGroupProps = {
+  children: React.ReactNode;
+  fullWidth?: boolean;
+  orientation?: typeof ORIENTATIONS[keyof typeof ORIENTATIONS];
+  value?: number | string | boolean;
+  onChange?: (...args: unknown[]) => unknown;
+};
+
 export default function RadioButtonGroup({
   children,
   fullWidth,
-  name,
-  orientation,
+  orientation = 'column',
   value,
   onChange,
-}) {
+}: RadioButtonGroupProps) {
   const row = orientation === ORIENTATIONS.ROW;
   const column = orientation === ORIENTATIONS.COLUMN;
 
   const handleChangeValue = (event) => {
-    onChange(event.target.value);
+    if (onChange) {
+      onChange(event.target.value);
+    }
   };
 
   const childChecked = (childValue) => (value === childValue);
@@ -34,7 +42,6 @@ export default function RadioButtonGroup({
           'RadioButtonGroup--column--full-width': column && fullWidth,
         },
       )}
-      name={name}
     >
       <ControlButtonGroup
         childChecked={childChecked}
@@ -47,24 +54,3 @@ export default function RadioButtonGroup({
     </div>
   );
 }
-
-RadioButtonGroup.propTypes = {
-  children: PropTypes.node.isRequired,
-  fullWidth: PropTypes.bool,
-  name: PropTypes.string,
-  orientation: PropTypes.oneOf(Object.values(ORIENTATIONS)),
-  value: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.string,
-    PropTypes.bool,
-  ]),
-  onChange: PropTypes.func,
-};
-
-RadioButtonGroup.defaultProps = {
-  fullWidth: false,
-  name: '',
-  orientation: ORIENTATIONS.COLUMN,
-  value: undefined,
-  onChange: undefined,
-};
