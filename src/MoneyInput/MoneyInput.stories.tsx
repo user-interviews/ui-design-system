@@ -17,11 +17,11 @@ export default {
 };
 
 export const Default = (args) => {
-  const [value, setValue] = useState(1250.99);
+  const [value, setValue] = useState<number | null>(1250.99);
 
   const handleOnValueChange = (val) => {
     if (!val) {
-      setValue('');
+      setValue(null);
       return;
     }
     setValue(val);
@@ -36,7 +36,7 @@ export const Default = (args) => {
           {...args}
         />
         <br />
-        <Heading>Value: {value}</Heading>
+        <Heading level={1} size="md">Value: {value}</Heading>
       </FormGroup>
     </>
   );
@@ -49,11 +49,11 @@ Default.args = {
 };
 
 export const Step = (args) => {
-  const [value, setValue] = useState(200);
+  const [value, setValue] = useState<number | null>(200);
 
   const handleOnValueChange = (val) => {
     if (!val) {
-      setValue('');
+      setValue(null);
       return;
     }
     setValue(val);
@@ -72,7 +72,7 @@ export const Step = (args) => {
           {...args}
         />
         <br />
-        <Heading>Value: {value}</Heading>
+        <Heading level={1} size="md">Value: {value}</Heading>
       </FormGroup>
     </>
   );
@@ -86,11 +86,11 @@ Step.args = {
 };
 
 export const Prefix = (args) => {
-  const [value, setValue] = useState(500);
+  const [value, setValue] = useState<number | null>(500);
 
   const handleOnValueChange = (val) => {
     if (!val) {
-      setValue('');
+      setValue(null);
       return;
     }
     setValue(val);
@@ -109,7 +109,7 @@ export const Prefix = (args) => {
           {...args}
         />
         <br />
-        <Heading>Value: {value}</Heading>
+        <Heading level={1} size="md">Value: {value}</Heading>
       </FormGroup>
     </>
   );
