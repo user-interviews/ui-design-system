@@ -79,7 +79,7 @@ export const Accessibility = () => (
     <div style={{ display: 'flex', justifyContent: 'center' }}>
       <CardStack size={CardSizes.SMALL}>
         <h1 style={{ fontSize: '1.5rem', fontWeight: '700' }}>Accessibility information</h1>
-        <Card title="Why is it important to use Main?">
+        <Card size="sm" title="Why is it important to use Main?">
           <p>
             Any document needs to have a navigation point to the primary content of the page.
             Ensure all content is contained within a landmark region, designated with HTML5

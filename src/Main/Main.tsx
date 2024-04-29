@@ -1,14 +1,26 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import { Container, containerSizes } from '../Container';
 
 import './Main.scss';
 
+type MainProps = {
+  as?: React.ElementType;
+  children?: React.ReactNode;
+  className?: string;
+  fluid?: unknown;
+  id?: string;
+};
+
 const Main = ({
- as, className, children, fluid, id, ...props
-}) => (
+  as,
+  className,
+  children,
+  fluid,
+  id,
+  ...props
+}: MainProps) => (
   <Container
     as={as}
     className={classNames(className, 'Main')}
@@ -21,10 +33,7 @@ const Main = ({
   );
 
 Main.propTypes = {
-  as: PropTypes.elementType,
-  className: PropTypes.string,
   fluid: containerSizes,
-  id: PropTypes.string,
 };
 
 Main.defaultProps = {
