@@ -42,7 +42,7 @@ export const Loading = () => <IconButton action="ADD" isLoading />;
 export const Sizes = () => (
   <>
     <IconButton action="DELETE" size="sm" />
-    <IconButton action="DELETE" size="md" />
+    <IconButton action="DELETE" />
     <IconButton action="DELETE" size="lg" />
   </>
 );

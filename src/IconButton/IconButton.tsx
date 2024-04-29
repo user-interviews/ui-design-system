@@ -1,7 +1,8 @@
 import React from 'react';
 import classnames from 'classnames';
-import PropTypes from 'prop-types';
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Button, { type ButtonProps } from 'src/Button/Button';
 
 import {
   faPlusCircle,
@@ -14,8 +15,6 @@ import {
   faTimes,
   faExpandAlt,
 } from '@fortawesome/pro-regular-svg-icons';
-
-import Button, { ButtonSizes, ButtonVariants } from 'src/Button';
 
 export const IconButtonActions = {
   ADD: {
@@ -54,11 +53,32 @@ export const IconButtonActions = {
     icon: faExpandAlt,
     ariaLabel: 'Expand',
   },
-};
+} as const;
+
+export type IconButtonProps = (
+  {
+    action: keyof typeof IconButtonActions;
+    ariaLabel?: string;
+    icon?: never;
+  } | {
+    action?: never;
+    ariaLabel: string;
+    icon: IconDefinition;
+  }
+) & {
+  size?: 'sm' | 'lg';
+} & ButtonProps;
 
 const IconButton = ({
- action, ariaLabel, className, icon, isLoading, size, variant, ...props
-}) => {
+  action,
+  ariaLabel,
+  className,
+  icon,
+  isLoading,
+  size,
+  variant,
+  ...props
+}: IconButtonProps) => {
   const getAriaLabel = () => {
     if (action) {
       return ariaLabel || IconButtonActions[action]?.ariaLabel;
@@ -77,7 +97,7 @@ const IconButton = ({
       {...props}
     >
       <FontAwesomeIcon
-        className={classnames('fa-fw', size === ButtonSizes.MEDIUM && 'fa-lg')}
+        className={classnames('fa-fw')}
         icon={action ? IconButtonActions[action]?.icon : icon}
       />
     </Button>
@@ -85,21 +105,3 @@ const IconButton = ({
 };
 
 export default IconButton;
-
-IconButton.propTypes = {
-  action: PropTypes.oneOf(Object.keys(IconButtonActions)),
-  ariaLabel: PropTypes.string.isRequired,
-  className: PropTypes.string,
-  icon: PropTypes.object.isRequired,
-  isLoading: PropTypes.bool,
-  size: PropTypes.oneOf(Object.values(ButtonSizes)),
-  variant: PropTypes.string,
-};
-
-IconButton.defaultProps = {
-  action: undefined,
-  className: undefined,
-  isLoading: false,
-  size: ButtonSizes.SMALL,
-  variant: ButtonVariants.TRANSPARENT,
-};
