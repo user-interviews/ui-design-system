@@ -43,7 +43,8 @@ type DropdownItemProps = {
     Callback fired when the menu item is clicked.
    */
   onClick?: RBDropdownProps['onClick'];
-  children: React.ReactNode;
+  children?: React.ReactNode;
+  variant?: 'danger'
 };
 
 const DropdownItem = ({

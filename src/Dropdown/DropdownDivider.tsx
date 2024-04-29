@@ -3,7 +3,6 @@ import classNames from 'classnames';
 
 import {
   Dropdown as RBDropdown,
-  type DropdownProps as RBDropdownProps,
 } from 'react-bootstrap';
 
 import './DropdownDivider.scss';
@@ -19,7 +18,7 @@ type DropdownDividerProps = {
     */
   bsPrefix?: string;
   className?: string;
-} & RBDropdownProps;
+};
 
 const DropdownDivider = ({
   as,

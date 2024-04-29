@@ -25,7 +25,7 @@ export default {
 export const Default = () => (
   <>
     <Dropdown>
-      <DropdownToggle leadingIcon={faFileAlt} variant="primary">
+      <DropdownToggle leadingIcon={faFileAlt}>
         Dropdown toggle
       </DropdownToggle>
       <DropdownMenu>
@@ -59,8 +59,8 @@ export const Sizes = () => (
     </Dropdown>
     <br />
     <Dropdown>
-      <DropdownToggle size="md" variant="outline-primary">
-        Medium toggle
+      <DropdownToggle size="lg" variant="outline-primary">
+        Large toggle
       </DropdownToggle>
       <DropdownMenu>
         <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>

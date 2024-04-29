@@ -4,9 +4,6 @@ import {
   Dropdown as RBDropdown,
   type DropdownProps as RBDropdownProps,
 } from 'react-bootstrap';
-import {
-  DROPDOWN_ALIGN_PROP_TYPE,
-} from './Dropdown.types';
 
 type DropdownProps = {
   /**
@@ -100,31 +97,6 @@ const Dropdown = ({
   >
     { children }
   </RBDropdown>
-  );
-
-Dropdown.propTypes = {
-  /**
-    Aligns the dropdown menu to the specified side of the Dropdown toggle.
-    You can also align the menu responsively for breakpoints starting at sm and up.
-    The alignment direction will affect the specified breakpoint or larger.
-    Note: Using responsive alignment will disable Popper usage for positioning.
-   */
-  align: DROPDOWN_ALIGN_PROP_TYPE,
-};
-
-Dropdown.defaultProps = {
-  align: 'start',
-  as: undefined,
-  autoClose: true,
-  bsPrefix: 'dropdown',
-  className: undefined,
-  drop: undefined,
-  flip: undefined,
-  focusFirstItemOnShow: undefined,
-  navbar: false,
-  onSelect: undefined,
-  onToggle: undefined,
-  show: undefined,
-};
+);
 
 export default Dropdown;
