@@ -2,7 +2,7 @@ import React from 'react';
 
 import { MessageTypes } from 'src/Alert';
 import Button from 'src/Button';
-import { withToast, withToastPropTypes } from 'src/Toast';
+import { withToast } from 'src/Toast';
 import mdx from './Toast.mdx';
 
 export default {
@@ -16,7 +16,22 @@ export default {
 };
 
 const DummyComponent = ({
- action, type, message, title, setToastMessage,
+ action,
+ type,
+ message,
+ title,
+ setToastMessage,
+}: {
+  action?: {
+    content?: string;
+    url?: string;
+  };
+  type: string;
+  message: string;
+  title: string;
+  setToastMessage: ({
+ type, message, action, title,
+}) => void;
 }) => (
   <div>
     <p>Click the button to see a toast message.</p>
@@ -33,7 +48,6 @@ const DummyComponent = ({
     </Button>
   </div>
   );
-DummyComponent.propTypes = withToastPropTypes;
 const ToastDummyComponent = withToast(DummyComponent);
 
 export const Default = () => (

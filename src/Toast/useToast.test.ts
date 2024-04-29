@@ -17,7 +17,7 @@ describe('useToast', () => {
 
     act(() => {
       result.current.setMessage({
-        type: MessageTypes.SUCCESS,
+        type: 'success',
         message: newMessage,
       });
     });
@@ -84,7 +84,7 @@ describe('useToast', () => {
   test('can clear all messages', () => {
     const messages = ['A new', 'message'].map(
       (message, i) => ({
-          id: i,
+          id: i.toString(),
           type: MessageTypes.SUCCESS,
           message,
         }),

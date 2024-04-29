@@ -1,14 +1,29 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import { TransitionGroup } from 'react-transition-group';
 import classNames from 'classnames';
 
 import { Alert } from 'src/Alert';
+import { TransitionGroup } from 'src/TransitionGroup';
 import FadeTransition from 'src/FadeTransition';
 
 import './Toast.scss';
 
-export default function Toast(props) {
+type ToastProps = {
+  autoDismiss?: boolean;
+  header?: boolean;
+  messages: {
+    action?: {
+      content?: string;
+      url?: string;
+    };
+    id?: string;
+    message?: string | React.ReactNode;
+    title?: string;
+    type?: string;
+  }[];
+  onToastClosed?: (...args: unknown[]) => unknown;
+};
+
+export default function Toast(props: ToastProps) {
   const groupClassNames = classNames(
     'Toast',
     { 'Toast--no-header': !props.header },
@@ -37,27 +52,3 @@ export default function Toast(props) {
     </TransitionGroup>
   );
 }
-
-Toast.propTypes = {
-  autoDismiss: PropTypes.bool,
-  header: PropTypes.bool,
-  messages: PropTypes.arrayOf(
-    PropTypes.shape({
-      action: PropTypes.shape({
-        content: PropTypes.string,
-        url: PropTypes.string,
-      }),
-      id: PropTypes.string,
-      message: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
-      title: PropTypes.string,
-      type: PropTypes.string,
-    }),
-  ).isRequired,
-  onToastClosed: PropTypes.func,
-};
-
-Toast.defaultProps = {
-  autoDismiss: false,
-  header: true,
-  onToastClosed: undefined,
-};
