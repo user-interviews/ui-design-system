@@ -36,7 +36,7 @@ type OverlayTriggerProps = RBOverlayTriggerProps & {
   /**
    * An element or text to overlay next to the target.
    */
-  overlay?: (...args: unknown[]) => unknown | unknown;
+  overlay?: RBOverlayTriggerProps['overlay'],
   /**
    * The placement of the Overlay in relation to it's `target`.
    */

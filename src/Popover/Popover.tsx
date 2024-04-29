@@ -1,12 +1,15 @@
 import React from 'react';
 import classNames from 'classnames';
-import PropTypes from 'prop-types';
 
-import { Popover as RBPopover } from 'react-bootstrap';
+import { Popover as RBPopover, PopoverProps as RBPopoverProps } from 'react-bootstrap';
 
 import './Popover.scss';
 
-const Popover = React.forwardRef(({
+type PopoverProps = RBPopoverProps & {
+  className?: string;
+};
+
+const Popover = React.forwardRef<HTMLDivElement, PopoverProps>(({
   children,
   className,
   ...props
@@ -22,13 +25,5 @@ const Popover = React.forwardRef(({
     { children }
   </RBPopover>
 ));
-
-Popover.propTypes = {
-  className: PropTypes.string,
-};
-
-Popover.defaultProps = {
-  className: undefined,
-};
 
 export default Popover;
