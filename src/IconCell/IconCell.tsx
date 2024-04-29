@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './IconCell.scss';
 
-type IconCellProps = {
+export type IconCellProps = {
   icon: IconDefinition;
 };
 

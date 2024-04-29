@@ -1,11 +1,27 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './Input.scss';
 
-const Input = React.forwardRef((props, ref) => {
+export type InputProps = {
+  disabled?: boolean;
+  id: string;
+  leadingIcon?: IconDefinition;
+  name: string;
+  placeholder?: string;
+  trailingIcon?: IconDefinition;
+  trailingIconLabel?: string;
+  trailingIconOnClick?: (...args: unknown[]) => unknown;
+  trailingIconOnClickSubmit?: boolean;
+  trailingText?: string;
+  type?: string;
+  value?: string;
+  onChange?: (...args: unknown[]) => unknown;
+};
+
+const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
   const {
     disabled,
     id,
@@ -73,37 +89,5 @@ const Input = React.forwardRef((props, ref) => {
     </div>
   );
 });
-
-Input.propTypes = {
-  disabled: PropTypes.bool,
-  id: PropTypes.string.isRequired,
-  leadingIcon: PropTypes.object,
-  name: PropTypes.string.isRequired,
-  placeholder: PropTypes.string,
-  trailingIcon: PropTypes.object,
-  trailingIconLabel: PropTypes.string,
-  trailingIconOnClick: PropTypes.func,
-  trailingIconOnClickSubmit: PropTypes.bool,
-  trailingText: PropTypes.string,
-  type: PropTypes.string,
-  value: PropTypes.string,
-  onChange: PropTypes.func,
-};
-
-Input.defaultProps = {
-  disabled: false,
-  leadingIcon: undefined,
-  placeholder: '',
-  trailingIcon: undefined,
-  trailingIconLabel: '',
-  trailingIconOnClick: undefined,
-  trailingIconOnClickSubmit: false,
-  trailingText: undefined,
-  type: 'text',
-  value: undefined,
-  onChange: undefined,
-};
-
-Input.displayName = 'Input';
 
 export default Input;
