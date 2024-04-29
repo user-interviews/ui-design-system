@@ -14,4 +14,4 @@ export const TEXT_PROPS = {
     medium: 'medium',
     regular: 'regular',
   },
-};
+} as const;

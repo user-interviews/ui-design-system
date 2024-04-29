@@ -1,20 +1,28 @@
 import { createElement } from 'react';
-import PropTypes from 'prop-types';
 
 import classNames from 'classnames';
 
 import { TEXT_PROPS } from './Text.types';
 import './Text.scss';
 
+type TextProps = {
+  as?: React.ElementType;
+  className?: string;
+  children?: React.ReactNode;
+  size?: typeof TEXT_PROPS['size'][keyof typeof TEXT_PROPS['size']];
+  textAlign?: typeof TEXT_PROPS['textAlign'][keyof typeof TEXT_PROPS['textAlign']];
+  weight?: typeof TEXT_PROPS['weight'][keyof typeof TEXT_PROPS['weight']];
+};
+
 const Text = ({
-  as,
+  as = 'p',
   children,
   className,
-  size,
+  size = 'md',
   textAlign,
-  weight,
+  weight = 'regular',
   ...props
-}) => createElement(
+}: TextProps) => createElement(
     as,
     {
       style: { textAlign },
@@ -29,21 +37,5 @@ const Text = ({
       ...props,
     }, children,
 );
-
-Text.propTypes = {
-  as: PropTypes.elementType,
-  className: PropTypes.string,
-  size: PropTypes.string,
-  textAlign: PropTypes.string,
-  weight: PropTypes.string,
-};
-
-Text.defaultProps = {
-  as: 'p',
-  className: undefined,
-  size: TEXT_PROPS.size.md,
-  textAlign: undefined,
-  weight: TEXT_PROPS.weight.regular,
-};
 
 export default Text;
