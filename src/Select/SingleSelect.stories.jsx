@@ -12,18 +12,11 @@ import Option from './Option';
 import OptionWithDescription from './OptionWithDescription';
 import ValueContainer from './ValueContainer';
 
-import mdx from './SingleSelect.mdx';
-
 const onChange = () => action('Change');
 
 export default {
   title: 'Components/Selects/Single',
   component: SingleSelect,
-  parameters: {
-    docs: {
-      page: mdx,
-    },
-  },
 };
 
 const options = [
