@@ -1,12 +1,21 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
+
+type TableElementProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLTableSectionElement>,
+  HTMLTableSectionElement
+>
+
+type TableHeadProps = TableElementProps & {
+  children?: React.ReactNode;
+  className?: string;
+};
 
 const TableHead = ({
   children,
   className,
   ...props
-}) => (
+}: TableHeadProps) => (
   <thead
     className={classNames(
     'TableHead',
@@ -19,13 +28,3 @@ const TableHead = ({
 );
 
 export default TableHead;
-
-TableHead.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-};
-
-TableHead.defaultProps = {
-  children: undefined,
-  className: undefined,
-};

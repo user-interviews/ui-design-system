@@ -1,8 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import TableLoadingSkeleton from './TableLoadingSkeleton';
+
+type TableElementProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLTableElement>,
+  HTMLTableElement
+>
+
+export type TableProps = TableElementProps & {
+  children?: React.ReactNode;
+  className?: string;
+  isLoading?: boolean;
+  loadingColumns?: number[];
+  loadingRows?: number;
+};
 
 const Table = ({
   children,
@@ -11,7 +23,7 @@ const Table = ({
   loadingColumns,
   loadingRows,
   ...props
-}) => (
+}: TableProps) => (
   <>
     {!isLoading ? (
       <table
@@ -30,19 +42,3 @@ const Table = ({
 );
 
 export default Table;
-
-Table.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-  isLoading: PropTypes.bool,
-  loadingColumns: PropTypes.arrayOf(PropTypes.number),
-  loadingRows: PropTypes.number,
-};
-
-Table.defaultProps = {
-  children: undefined,
-  className: undefined,
-  isLoading: false,
-  loadingColumns: undefined,
-  loadingRows: undefined,
-};

@@ -1,8 +1,21 @@
 import React, { Children, cloneElement } from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import './TableRow.scss';
+
+type TableElementProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLTableRowElement>,
+  HTMLTableRowElement
+>
+
+type TableRowProps = TableElementProps & {
+  children?: React.ReactNode;
+  className?: string;
+  clickable?: boolean;
+  removeHover?: boolean;
+  selected?: boolean;
+  stickyRow?: boolean;
+};
 
 const TableRow = ({
   children,
@@ -12,7 +25,7 @@ const TableRow = ({
   selected,
   stickyRow,
   ...props
-}) => {
+}: TableRowProps) => {
   const addStickyRowProp = (child) => {
     if (stickyRow) {
       return cloneElement(child, { stickyRow });
@@ -39,15 +52,6 @@ const TableRow = ({
 };
 
 export default TableRow;
-
-TableRow.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-  clickable: PropTypes.bool,
-  removeHover: PropTypes.bool,
-  selected: PropTypes.bool,
-  stickyRow: PropTypes.bool,
-};
 
 TableRow.defaultProps = {
   children: undefined,

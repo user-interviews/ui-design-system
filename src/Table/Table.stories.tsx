@@ -3,13 +3,13 @@ import React, { useState } from 'react';
 import { faFileAlt, faEllipsisV, faThumbtack } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import Button from 'src/Button';
-import Card from 'src/Card';
-import CheckboxButton from 'src/CheckboxButton';
-import { Pill } from 'src/Pill';
+import Button from '../Button';
+import Card from '../Card';
+import CheckboxButton from '../CheckboxButton';
+import { Pill } from '../Pill';
 import {
  Table, TableBody, TableCell, TableFoot, TableHead, TableRow, TableSortLabel,
-} from 'src/Table';
+} from '.';
 
 import mdx from './Table.mdx';
 
@@ -224,6 +224,7 @@ export const TableWithFixedColumnWidths = () => (
 export const TableOnCard = () => (
   <Card
     divided
+    size="sm"
     subTitle="Manage a set of templates that can be applied to a project’s automated emails."
     title="Email Template Sets"
   >
@@ -270,6 +271,7 @@ export const TableOnCard = () => (
 export const TableOnCardNoPadding = () => (
   <Card
     noPadding
+    size="sm"
   >
     <div
       id="Some table container"
@@ -558,7 +560,7 @@ export const TableWithFooter = () => (
   );
 
 export const TableWithMultipleSelect = () => {
-  const [selectedRows, setSelectedRows] = useState([]);
+  const [selectedRows, setSelectedRows] = useState<number[]>([]);
   const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] = useState(false);
 
   const handleCheckboxSelectSingle = (id) => {
@@ -627,7 +629,7 @@ export const TableWithMultipleSelect = () => {
 };
 
 export const TableWithMultipleSelectAndMultipleStickyColumnsAndHeader = () => {
-  const [selectedRows, setSelectedRows] = useState([]);
+  const [selectedRows, setSelectedRows] = useState<number[]>([]);
   const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] = useState(false);
 
   const handleCheckboxSelectSingle = (id) => {
@@ -724,8 +726,8 @@ export const TableWithSorting = () => (
       <TableRow>
         <TableCell header>First name</TableCell>
         <TableCell header>Last name</TableCell>
-        <TableCell header>Incentives earned <TableSortLabel active /></TableCell>
-        <TableCell header>Unsubscribed <TableSortLabel active /></TableCell>
+        <TableCell header>Incentives earned <TableSortLabel /></TableCell>
+        <TableCell header>Unsubscribed <TableSortLabel /></TableCell>
       </TableRow>
     </TableHead>
     <TableBody>

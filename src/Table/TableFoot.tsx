@@ -1,15 +1,25 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import './TableFoot.scss';
+
+type TableElementProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLTableSectionElement>,
+  HTMLTableSectionElement
+>
+
+type TableFootProps = TableElementProps & {
+  children?: React.ReactNode;
+  className?: string;
+  stickyRow?: boolean;
+};
 
 const TableFoot = ({
   children,
   className,
   stickyRow,
   ...props
-}) => (
+}: TableFootProps) => (
   <tfoot
     className={classNames(
     'TableFoot',
@@ -23,17 +33,5 @@ const TableFoot = ({
     {children}
   </tfoot>
 );
-
-TableFoot.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string,
-  stickyRow: PropTypes.bool,
-};
-
-TableFoot.defaultProps = {
-  children: undefined,
-  className: undefined,
-  stickyRow: undefined,
-};
 
 export default TableFoot;

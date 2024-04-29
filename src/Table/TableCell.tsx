@@ -1,8 +1,28 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import './TableCell.scss';
+
+type TableCellElementProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLTableCellElement>,
+  HTMLTableCellElement
+>
+
+type TableCellProps = TableCellElementProps & {
+  alignRight?: boolean;
+  children?: React.ReactNode;
+  className?: string;
+  compact?: boolean;
+  header?: boolean;
+  maxWidth?: number;
+  minWidth?: number;
+  removeBorderBottom?: boolean;
+  stickyColumn?: boolean;
+  stickyColumnOffsetX?: number;
+  stickyLeft?: boolean;
+  stickyRight?: boolean;
+  stickyRow?: boolean;
+};
 
 const TableCell = ({
   alignRight,
@@ -19,7 +39,7 @@ const TableCell = ({
   stickyRight,
   stickyRow,
   ...props
-}) => {
+}: TableCellProps) => {
   const getTableCellClassName = () => classNames(
       'TableCell',
       className,
@@ -47,7 +67,7 @@ const TableCell = ({
     } if (!maxWidth && minWidth) {
       return minWidthObj;
     }
-    return null;
+    return undefined;
   };
 
   const getStickyStyling = () => {
@@ -57,7 +77,7 @@ const TableCell = ({
     if (stickyColumn && stickyRight) {
       return { right: `${stickyColumnOffsetX}px` };
     }
-    return null;
+    return undefined;
   };
 
   if (header) {
@@ -84,35 +104,3 @@ const TableCell = ({
 };
 
 export default TableCell;
-
-TableCell.propTypes = {
-  alignRight: PropTypes.bool,
-  children: PropTypes.node,
-  className: PropTypes.string,
-  compact: PropTypes.bool,
-  header: PropTypes.bool,
-  maxWidth: PropTypes.number,
-  minWidth: PropTypes.number,
-  removeBorderBottom: PropTypes.bool,
-  stickyColumn: PropTypes.bool,
-  stickyColumnOffsetX: PropTypes.number,
-  stickyLeft: PropTypes.bool,
-  stickyRight: PropTypes.bool,
-  stickyRow: PropTypes.bool,
-};
-
-TableCell.defaultProps = {
-  alignRight: undefined,
-  children: undefined,
-  className: undefined,
-  compact: undefined,
-  header: undefined,
-  maxWidth: undefined,
-  minWidth: undefined,
-  removeBorderBottom: undefined,
-  stickyColumn: undefined,
-  stickyColumnOffsetX: undefined,
-  stickyLeft: undefined,
-  stickyRight: undefined,
-  stickyRow: undefined,
-};
