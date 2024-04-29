@@ -1,10 +1,31 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
 import 'scss/forms/form_control_label.scss';
 
-const FormControlLabel = React.forwardRef(({
+type FormControlLabelProps = {
+  bordered?: boolean;
+  checked?: boolean;
+  className?: string;
+  Control: React.ComponentType<{
+    checked?: boolean;
+    className?: string;
+    disabled?: boolean;
+    id?: string;
+    ref?: React.ForwardedRef<HTMLElement>,
+  }>;
+  children?: React.ReactNode;
+  disabled?: boolean;
+  helperText?: string;
+  id: string;
+  text: React.ReactNode;
+  value?: string;
+  name?: string;
+  onChange?: React.ChangeEventHandler;
+  onClick?: (event: MouseEvent) => void;
+};
+
+const FormControlLabel = React.forwardRef<HTMLElement, FormControlLabelProps>(({
   bordered,
   checked,
   children,
@@ -48,26 +69,5 @@ const FormControlLabel = React.forwardRef(({
     )}
   </label>
 ));
-
-FormControlLabel.propTypes = {
-  bordered: PropTypes.bool,
-  checked: PropTypes.bool,
-  className: PropTypes.string,
-  Control: PropTypes.oneOfType([PropTypes.func, PropTypes.object]).isRequired,
-  disabled: PropTypes.bool,
-  helperText: PropTypes.string,
-  id: PropTypes.string.isRequired,
-  text: PropTypes.node.isRequired,
-};
-
-FormControlLabel.defaultProps = {
-  bordered: undefined,
-  checked: undefined,
-  className: undefined,
-  disabled: undefined,
-  helperText: undefined,
-};
-
-FormControlLabel.displayName = 'FormControlLabel';
 
 export default FormControlLabel;
