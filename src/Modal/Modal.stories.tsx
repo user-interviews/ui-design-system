@@ -1,10 +1,10 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
-import Button from 'src/Button';
-import Input from 'src/Input';
+import Button from '../Button';
+import Input from '../Input';
 import {
  Modal, ModalBody, ModalFooter, ModalHeader, MODAL_SIZES,
-} from 'src/Modal';
+} from '.';
 import mdx from './Modal.mdx';
 
 export default {

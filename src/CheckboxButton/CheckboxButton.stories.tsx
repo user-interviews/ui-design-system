@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
-import CheckboxButton, { CHECKED_STATES } from 'src/CheckboxButton';
-import FormControlLabel from 'src/FormControlLabel';
+import CheckboxButton, { CHECKED_STATES } from '.';
+import FormControlLabel from '../FormControlLabel';
 
 import mdx from './CheckboxButton.mdx';
 

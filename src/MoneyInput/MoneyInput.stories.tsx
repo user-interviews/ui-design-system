@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import FormGroup from 'src/FormGroup';
-import { Heading } from 'src/Heading';
+import FormGroup from '../FormGroup';
+import { Heading } from '../Heading';
 import MoneyInput from './MoneyInput';
 
 import mdx from './MoneyInput.mdx';

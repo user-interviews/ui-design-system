@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { LoadingSkeleton } from 'src/LoadingSkeleton';
+import { LoadingSkeleton } from '../LoadingSkeleton';
 
 import './ProfileCellSkeleton.scss';
 
@@ -9,7 +9,7 @@ type ProfileCellSkeletonProps = {
 };
 
 const ProfileCellSkeleton = ({
-  maxWidth,
+  maxWidth = '100%',
   ...props
 }: ProfileCellSkeletonProps) => (
   <div className="ProfileCellSkeleton" {...props}>
@@ -20,10 +20,6 @@ const ProfileCellSkeleton = ({
       <LoadingSkeleton count={2} width={maxWidth} />
     </div>
   </div>
-  );
-
-ProfileCellSkeleton.defaultProps = {
-  maxWidth: '100%',
-};
+);
 
 export default ProfileCellSkeleton;

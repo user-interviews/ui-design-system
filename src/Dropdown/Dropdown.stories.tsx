@@ -1,14 +1,13 @@
 import React from 'react';
 
 import {
- Dropdown, DropdownDivider, DropdownToggle, DropdownItem, DropdownMenu,
-} from 'src/Dropdown';
-
-import {
  faEllipsisV, faFileAlt, faChevronDown, faTag, faEnvelope, faTrashAlt,
 } from '@fortawesome/pro-regular-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+ Dropdown, DropdownDivider, DropdownToggle, DropdownItem, DropdownMenu,
+} from '.';
 import mdx from './Dropdown.mdx';
 
 export default {

@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { Alert } from 'src/Alert';
-import { TransitionGroup } from 'src/TransitionGroup';
-import FadeTransition from 'src/FadeTransition';
+import { Alert } from '../Alert';
+import { TransitionGroup } from '../TransitionGroup';
+import FadeTransition from '../FadeTransition';
 
 import './Toast.scss';
 

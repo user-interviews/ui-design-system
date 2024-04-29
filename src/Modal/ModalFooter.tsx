@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Button from 'src/Button';
+import Button from '../Button';
 import './ModalFooter.scss';
 
 type ModalFooterProps = {

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ToggleInput } from 'src/ToggleInput';
+import { ToggleInput } from '.';
 
 import mdx from './ToggleInput.mdx';
 

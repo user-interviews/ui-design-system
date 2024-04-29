@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-import Button from 'src/Button';
-import FormGroup from 'src/FormGroup';
-import Input from 'src/Input';
+import Button from '../Button';
+import FormGroup from '../FormGroup';
+import Input from '../Input';
 
-import { OverlayTrigger } from 'src/OverlayTrigger';
-import { Popover, PopoverBody, PopoverCard } from 'src/Popover';
+import { OverlayTrigger } from '../OverlayTrigger';
+import { Popover, PopoverBody, PopoverCard } from '.';
 
 import mdx from './Popover.mdx';
 

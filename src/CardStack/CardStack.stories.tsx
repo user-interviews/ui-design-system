@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Card, { CardSizes } from 'src/Card';
-import { Flex } from 'src/Flex';
+import Card, { CardSizes } from '../Card';
+import { Flex } from '../Flex';
 import CardStack from './CardStack';
 
 import mdx from './CardStack.mdx';

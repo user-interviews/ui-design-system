@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 
-import Button from 'src/Button';
-import Form from 'src/Form';
-import FormControlLabel from 'src/FormControlLabel';
-import FormGroup from 'src/FormGroup';
-import Input from 'src/Input';
-import RadioButton from 'src/RadioButton';
-import RadioButtonGroup from 'src/RadioButtonGroup';
+import Button from '../Button';
+import Form from '.';
+import FormControlLabel from '../FormControlLabel';
+import FormGroup from '../FormGroup';
+import Input from '../Input';
+import RadioButton from '../RadioButton';
+import RadioButtonGroup from '../RadioButtonGroup';
 
 import mdx from './Form.mdx';
 

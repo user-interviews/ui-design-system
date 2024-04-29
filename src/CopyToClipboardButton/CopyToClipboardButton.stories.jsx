@@ -1,6 +1,6 @@
 import React from 'react';
 
-import CopyToClipboardButton from 'src/CopyToClipboardButton';
+import CopyToClipboardButton from '.';
 
 export default {
   title: 'Components/Copy To Clipboard Button',

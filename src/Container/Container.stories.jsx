@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Card from 'src/Card';
-import { Col, Container, Row } from 'src/Container';
+import Card from '../Card';
+import { Col, Container, Row } from '.';
 import mdx from './Container.mdx';
 
 export default {

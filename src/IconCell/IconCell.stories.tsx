@@ -4,7 +4,7 @@ import {
  faGlobe, faMailbox, faPaperPlane, faStar, faUser,
 } from '@fortawesome/pro-regular-svg-icons';
 
-import IconCell from 'src/IconCell';
+import IconCell from '.';
 import mdx from './IconCell.mdx';
 
 export default {

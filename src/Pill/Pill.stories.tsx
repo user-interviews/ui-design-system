@@ -4,7 +4,7 @@ import {
  faClock, faGiftCard, faGlobe, faMicrophone, faUsers,
 } from '@fortawesome/pro-solid-svg-icons';
 
-import { Pill, Pills, PILL_COLORS } from 'src/Pill';
+import { Pill, Pills, PILL_COLORS } from '.';
 import mdx from './Pill.mdx';
 
 export default {

@@ -1,5 +1,5 @@
 import React from 'react';
-import CopyToClipboardButton, { ButtonVariants } from 'src/CopyToClipboardButton';
+import CopyToClipboardButton, { ButtonVariants } from '../CopyToClipboardButton';
 
 import './CopyToClipboard.scss';
 

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { MessageTypes } from 'src/Alert';
-import Button from 'src/Button';
-import { withToast } from 'src/Toast';
+import { MessageTypes } from '../Alert';
+import Button from '../Button';
+import { withToast } from '.';
 import mdx from './Toast.mdx';
 
 export default {

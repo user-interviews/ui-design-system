@@ -1,8 +1,8 @@
 import React, { createElement } from 'react';
 import classNames from 'classnames';
 
-import InputLabel from 'src/InputLabel';
-import InputLegend from 'src/InputLegend';
+import InputLabel from '../InputLabel';
+import InputLegend from '../InputLegend';
 
 import 'scss/forms/form_group.scss';
 

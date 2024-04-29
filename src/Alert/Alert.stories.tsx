@@ -1,10 +1,9 @@
 import React, { Fragment } from 'react';
 import { action } from '@storybook/addon-actions';
 
-import { Alert, MessageTypes } from 'src/Alert';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
+import { Alert, MessageTypes } from '.';
 import mdx from './Alert.mdx';
 
 export default {

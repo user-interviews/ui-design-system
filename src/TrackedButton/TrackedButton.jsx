@@ -1,3 +1,3 @@
-import withTrackedClick from 'src/hoc/withTrackedClick';
+import withTrackedClick from '../hoc/withTrackedClick';
 
 export default withTrackedClick('button');

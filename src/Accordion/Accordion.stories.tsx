@@ -1,15 +1,14 @@
 import React from 'react';
 
+import { faCreditCard } from '@fortawesome/pro-regular-svg-icons';
+import Card from '../Card';
+
 import {
   Accordion,
   AccordionItem,
   AccordionToggle,
   AccordionCollapse,
-} from 'src/Accordion';
-
-import Card from 'src/Card';
-
-import { faCreditCard } from '@fortawesome/pro-regular-svg-icons';
+} from '.';
 
 import mdx from './Accordion.mdx';
 

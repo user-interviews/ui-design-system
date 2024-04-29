@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Card from 'src/Card';
+import Card from '../Card';
 import Flex from './Flex';
 
 const meta: Meta<typeof Flex> = {

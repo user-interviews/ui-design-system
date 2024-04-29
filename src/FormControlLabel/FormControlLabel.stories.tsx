@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { action } from '@storybook/addon-actions';
 
-import FormControlLabel from 'src/FormControlLabel';
-import CheckboxButton from 'src/CheckboxButton';
-import RadioButton from 'src/RadioButton';
+import FormControlLabel from '.';
+import CheckboxButton from '../CheckboxButton';
+import RadioButton from '../RadioButton';
 
 export default {
   title: 'Components/Form Elements/Form Control Label',

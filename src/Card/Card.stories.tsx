@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Card, { CardSizes } from 'src/Card';
-import { LoadingSkeleton } from 'src/LoadingSkeleton';
-import { Text } from 'src/Text';
+import { LoadingSkeleton } from '../LoadingSkeleton';
+import { Text } from '../Text';
+import Card, { CardSizes } from '.';
 
 import mdx from './Card.mdx';
 

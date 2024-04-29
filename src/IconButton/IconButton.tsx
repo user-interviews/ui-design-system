@@ -2,8 +2,6 @@ import React from 'react';
 import classnames from 'classnames';
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Button, { type ButtonProps } from 'src/Button/Button';
-
 import {
   faPlusCircle,
   faMinusCircle,
@@ -15,6 +13,7 @@ import {
   faTimes,
   faExpandAlt,
 } from '@fortawesome/pro-regular-svg-icons';
+import Button, { type ButtonProps } from '../Button/Button';
 
 export const IconButtonActions = {
   ADD: {

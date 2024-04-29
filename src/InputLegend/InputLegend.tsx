@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import Tooltip from 'src/Tooltip';
+import Tooltip from '../Tooltip';
 
 import './InputLegend.scss';
 import 'scss/forms/input_label.scss';

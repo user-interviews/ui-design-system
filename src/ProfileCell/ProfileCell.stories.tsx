@@ -1,6 +1,6 @@
 import React from 'react';
 import { faShieldCheck } from '@fortawesome/pro-solid-svg-icons';
-import ProfileCell from 'src/ProfileCell';
+import ProfileCell from '.';
 import ProfileCellSkeleton from './ProfileCellSkeleton';
 import mdx from './ProfileCell.mdx';
 

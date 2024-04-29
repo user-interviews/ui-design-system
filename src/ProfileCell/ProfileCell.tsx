@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import Avatar from 'src/Avatar';
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Avatar from '../Avatar';
 
 import ProfileCellSkeleton from './ProfileCellSkeleton';
 

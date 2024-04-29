@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 
-import Button from 'src/Button';
-import { RichTextEditor, RichTextEditorActions } from 'src/RichTextEditor';
+import Button from '../Button';
+import { RichTextEditor, RichTextEditorActions } from '.';
 
 import mdx from './RichTextEditor.mdx';
 

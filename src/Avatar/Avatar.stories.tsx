@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Avatar from 'src/Avatar';
+import Avatar from '.';
 import mdx from './Avatar.mdx';
 
 export default {

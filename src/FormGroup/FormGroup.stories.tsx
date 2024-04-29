@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { faSearch } from '@fortawesome/pro-solid-svg-icons';
 
-import FormGroup from 'src/FormGroup';
-import Input from 'src/Input';
-import FormControlLabel from 'src/FormControlLabel';
-import RadioButtonGroup from 'src/RadioButtonGroup';
-import { ORIENTATIONS } from 'src/ControlButtonGroup';
-import RadioButton from 'src/RadioButton';
+import FormGroup from '.';
+import Input from '../Input';
+import FormControlLabel from '../FormControlLabel';
+import RadioButtonGroup from '../RadioButtonGroup';
+import { ORIENTATIONS } from '../ControlButtonGroup';
+import RadioButton from '../RadioButton';
 
 import mdx from './FormGroup.mdx';
 

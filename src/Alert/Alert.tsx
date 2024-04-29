@@ -21,7 +21,7 @@ export const MessageTypes = {
   FEATURE: 'feature',
   WARNING: 'warning',
   ERROR: 'error',
-};
+} as const;
 
 const getAlertIcon = (type) => {
   switch (type) {

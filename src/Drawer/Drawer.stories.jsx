@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 
-import {
- Drawer, DrawerBody, DrawerFooter, DrawerHeader,
-} from 'src/Drawer';
-
-import Button from 'src/Button';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEnvelope, faChevronLeft, faChevronRight, faTrash,
 } from '@fortawesome/pro-solid-svg-icons';
+import {
+ Drawer, DrawerBody, DrawerFooter, DrawerHeader,
+} from '.';
+
+import Button from '../Button';
 
 import mdx from './Drawer.mdx';
 
