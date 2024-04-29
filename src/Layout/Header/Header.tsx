@@ -1,9 +1,16 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Controls from './Controls';
 
 import './Header.scss';
+
+type HeaderProps = {
+  controls?: React.ReactNode[];
+  isMobileView: boolean;
+  isSidebarOpen: boolean;
+  titleComponent?: React.ReactNode;
+  onToggleSidebarRequest: (...args: unknown[]) => void;
+};
 
 const Header = ({
   controls,
@@ -11,7 +18,7 @@ const Header = ({
   isSidebarOpen,
   titleComponent,
   onToggleSidebarRequest,
-}) => (
+}: HeaderProps) => (
   <div className="Header">
     {titleComponent}
     <Controls>
@@ -28,18 +35,5 @@ const Header = ({
     </Controls>
   </div>
 );
-
-Header.propTypes = {
-  controls: PropTypes.arrayOf(PropTypes.node),
-  isMobileView: PropTypes.bool.isRequired,
-  isSidebarOpen: PropTypes.bool.isRequired,
-  titleComponent: PropTypes.node,
-  onToggleSidebarRequest: PropTypes.func.isRequired,
-};
-
-Header.defaultProps = {
-  controls: undefined,
-  titleComponent: undefined,
-};
 
 export default Header;

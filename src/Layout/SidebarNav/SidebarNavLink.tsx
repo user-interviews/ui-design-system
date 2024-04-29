@@ -1,17 +1,24 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './SidebarNavLink.scss';
+
+export type SidebarNavLinkProps = {
+  icon?: IconDefinition;
+  iconClass?: string;
+  text: string;
+  url: string;
+};
 
 const SidebarNavLink = ({
   icon,
   iconClass,
   text,
   url,
-}) => (
+}: SidebarNavLinkProps) => (
   <li className="Layout__sidebar-nav__list_item">
     <NavLink
       activeClassName="Layout__sidebar-nav__link--active"
@@ -29,17 +36,5 @@ const SidebarNavLink = ({
     </NavLink>
   </li>
 );
-
-SidebarNavLink.propTypes = {
-  icon: PropTypes.object,
-  iconClass: PropTypes.string,
-  text: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-};
-
-SidebarNavLink.defaultProps = {
-  icon: undefined,
-  iconClass: undefined,
-};
 
 export default SidebarNavLink;

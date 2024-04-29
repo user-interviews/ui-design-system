@@ -1,16 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import './SidebarNavLinks.scss';
 
-const SidebarNavLinks = ({ children }) => (
+export type SidebarNavLinksProps = {
+  children: React.ReactNode;
+};
+
+const SidebarNavLinks = ({
+  children,
+}: SidebarNavLinksProps) => (
   <ul className="Layout__sidebar-nav__links">
     {children}
   </ul>
 );
-
-SidebarNavLinks.propTypes = {
-  children: PropTypes.node.isRequired,
-};
 
 export default SidebarNavLinks;
