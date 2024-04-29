@@ -296,7 +296,7 @@ Borderless.args = {
 
 export const InCard = (args) => (
   <>
-    <Card noPadding>
+    <Card noPadding size="sm">
       <Accordion defaultActiveKey="0" flush>
         <AccordionItem borderless>
           <AccordionToggle
@@ -317,7 +317,7 @@ export const InCard = (args) => (
       </Accordion>
     </Card>
     <br />
-    <Card title="Card title" />
+    <Card size="sm" title="Card title" />
   </>
 );
 

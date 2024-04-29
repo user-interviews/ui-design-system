@@ -36,7 +36,7 @@ export const Default = () => {
 
 export const Indeterminate = () => {
   const inputEl = useRef(null);
-  const [checked, setChecked] = useState([]);
+  const [checked, setChecked] = useState<string[]>([]);
   const checkboxes = ['1', '2', '3'];
 
   const onCheckAll = (event) => {

@@ -21,7 +21,7 @@ export const Default = () => (
     divided={false}
     helperText="(helper text)"
     noPadding={false}
-    size={undefined}
+    size="sm"
     subTitle="Subtitle"
     title="Default card title"
   />
@@ -53,11 +53,6 @@ export const Sizes = () => (
     >
       <code>CardSizes.LARGE</code>
     </Card>
-    <Card
-      title="default"
-    >
-      When no size is given, the Card takes up the full width of its parent container.
-    </Card>
   </>
 );
 
@@ -67,7 +62,7 @@ export const LoadingDefault = () => (
     helperText="(helper text)"
     isLoading
     noPadding={false}
-    size={undefined}
+    size="sm"
     subTitle="Subtitle"
     title="Default card title"
   >
@@ -86,7 +81,7 @@ export const LoadingParagraphCount = () => (
     isLoading
     loadingSkeletonParagraphCount={2}
     noPadding={false}
-    size={undefined}
+    size="sm"
     subTitle="Subtitle"
     title="Default card title"
   >
