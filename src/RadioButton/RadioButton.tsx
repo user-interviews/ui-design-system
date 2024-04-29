@@ -1,11 +1,20 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import classNames from 'classnames';
 
 import styles from './RadioButton.module.scss';
 
-const RadioButton = React.forwardRef(({
+type RadioButtonProps = {
+  checked?: boolean;
+  className?: string;
+  disabled?: boolean;
+  id: string;
+  name?: string;
+  value?: number | string | boolean;
+  onChange?: (...args: unknown[]) => unknown;
+};
+
+const RadioButton = React.forwardRef<HTMLInputElement, RadioButtonProps>(({
   checked,
   className,
   disabled,
@@ -23,25 +32,11 @@ const RadioButton = React.forwardRef(({
     name={name}
     ref={ref}
     type="radio"
-    value={value}
+    value={value?.toString()}
     onChange={onChange}
     {...rest}
   />
 ));
-
-RadioButton.propTypes = {
-  checked: PropTypes.bool,
-  className: PropTypes.string,
-  disabled: PropTypes.bool,
-  id: PropTypes.string.isRequired,
-  name: PropTypes.string,
-  value: PropTypes.oneOfType([
-    PropTypes.number,
-    PropTypes.string,
-    PropTypes.bool,
-  ]),
-  onChange: PropTypes.func,
-};
 
 RadioButton.defaultProps = {
   checked: undefined,
