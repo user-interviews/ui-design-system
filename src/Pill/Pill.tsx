@@ -1,24 +1,39 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { type IconDefinition } from '@fortawesome/pro-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/pro-solid-svg-icons';
 
 import './Pill.scss';
 
 export const PILL_COLORS = {
- BLUE: 'blue', ORANGE: 'orange', YELLOW: 'yellow', RED: 'red', GREEN: 'green', GRAY: 'gray', SILVER: 'silver',
+  BLUE: 'blue',
+  ORANGE: 'orange',
+  YELLOW: 'yellow',
+  RED: 'red',
+  GREEN: 'green',
+  GRAY: 'gray',
+  SILVER: 'silver',
+} as const;
+
+type PillProps = {
+  children?: React.ReactNode;
+  color?: typeof PILL_COLORS[keyof typeof PILL_COLORS];
+  icon?: IconDefinition;
+  id?: string;
+  text?: React.ReactNode;
+  onClose?: (...args: unknown[]) => unknown;
 };
 
 const Pill = ({
   children,
-  color,
+  color = 'blue',
   icon,
   id,
   onClose,
   text,
   ...props
-}) => (
+}: PillProps) => (
   <span
     className={
         classNames(
@@ -47,24 +62,6 @@ const Pill = ({
       </button>
         )}
   </span>
-  );
-
-Pill.propTypes = {
-  children: PropTypes.node,
-  color: PropTypes.oneOf(Object.values(PILL_COLORS)),
-  icon: PropTypes.any,
-  id: PropTypes.string,
-  text: PropTypes.node,
-  onClose: PropTypes.func,
-};
-
-Pill.defaultProps = {
-  children: undefined,
-  color: PILL_COLORS.BLUE,
-  icon: undefined,
-  id: undefined,
-  text: undefined,
-  onClose: undefined,
-};
+);
 
 export default Pill;
