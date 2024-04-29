@@ -9,9 +9,9 @@ type ModalHeaderProps = {
   children?: React.ReactNode;
   closingIsDisabled?: boolean;
   subtitle?: string;
-  title?: string;
+  title?: React.ReactNode;
   titleClass?: string;
-  titleId: string;
+  titleId?: string;
   variant?: string;
   onRequestClose?: (...args: unknown[]) => unknown;
 };

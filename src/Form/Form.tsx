@@ -12,7 +12,7 @@ export type FormProps = {
   id: string;
   method?: string;
   name?: string;
-  onSubmit?: (...args: unknown[]) => unknown;
+  onSubmit?: React.FormEventHandler<HTMLFormElement>;
 };
 
 const Form = forwardRef<HTMLFormElement, FormProps>(({

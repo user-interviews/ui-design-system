@@ -5,7 +5,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './Input.scss';
 
-export type InputProps = {
+type InputElementProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLInputElement>,
+  HTMLInputElement
+>
+
+export type InputProps = InputElementProps & {
   disabled?: boolean;
   id: string;
   leadingIcon?: IconDefinition;
@@ -18,7 +23,7 @@ export type InputProps = {
   trailingText?: string;
   type?: string;
   value?: string;
-  onChange?: (...args: unknown[]) => unknown;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
 };
 
 const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {

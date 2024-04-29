@@ -44,8 +44,9 @@ type DropdownToggleProps = {
     If true, it removes all styling from toggle button. Use for full custom DropdownToggle styling.
   */
   unstyled?: boolean;
-  variant?: 'transparent' | 'outline-primary' | 'primary'
-} & unknown;
+  variant?: 'transparent' | 'outline-primary' | 'primary';
+  split?: boolean;
+};
 
 const DropdownToggle = ({
   as,

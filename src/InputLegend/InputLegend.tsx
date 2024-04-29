@@ -4,7 +4,6 @@ import classNames from 'classnames';
 import Tooltip from '../Tooltip';
 
 import './InputLegend.scss';
-import 'scss/forms/input_label.scss';
 
 type LegendProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLLegendElement>,

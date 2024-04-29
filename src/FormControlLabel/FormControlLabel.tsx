@@ -1,7 +1,7 @@
 import React from 'react';
 import classnames from 'classnames';
 
-import 'scss/forms/form_control_label.scss';
+import './form_control_label.scss';
 
 type FormControlLabelProps = {
   bordered?: boolean;

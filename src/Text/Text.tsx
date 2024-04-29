@@ -5,7 +5,12 @@ import classNames from 'classnames';
 import { TEXT_PROPS } from './Text.types';
 import './Text.scss';
 
-type TextProps = {
+type ElementProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLElement>,
+  HTMLElement
+>
+
+type TextProps = ElementProps & {
   as?: React.ElementType;
   className?: string;
   children?: React.ReactNode;

@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import Tooltip from '../Tooltip';
 
-import 'scss/forms/input_label.scss';
+import './input_label.scss';
 
 type LabelProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLLabelElement>, HTMLLabelElement>;
 
