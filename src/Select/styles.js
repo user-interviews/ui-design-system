@@ -91,6 +91,7 @@ const defaultStyles = ({ menuWidth, size }) => ({
     }),
     option: (styles, {
       isDisabled,
+      isFocused,
       isSelected,
     }) => ({
         ...styles,

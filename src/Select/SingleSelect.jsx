@@ -4,7 +4,6 @@ import Select from 'react-select';
 import propTypes from 'prop-types';
 
 import zStack from 'src/Styles/zStack';
-import './select.scss';
 
 import {
  borderedMultiValueStyles, defaultTheme, defaultStyles, SELECT_SIZES,
