@@ -4,13 +4,15 @@ import Select from 'react-select';
 import propTypes from 'prop-types';
 
 import zStack from 'src/Styles/zStack';
-import './select.scss';
 
-import { defaultTheme, defaultStyles, SELECT_SIZES } from './styles';
+import {
+ borderedMultiValueStyles, defaultTheme, defaultStyles, SELECT_SIZES,
+} from './styles';
 
 const SingleSelect = ({
   'aria-label': ariaLabel,
   'aria-labelledby': ariaLabelledBy,
+  borderedMultiValue,
   className,
   closeMenuOnSelect,
   components,
@@ -57,6 +59,7 @@ const SingleSelect = ({
     placeholder={placeholder}
     styles={{
       ...defaultStyles({ menuWidth, size }),
+      ...borderedMultiValueStyles(borderedMultiValue),
       menuPortal: (base) => (
         modal ?
         { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } :
@@ -72,6 +75,7 @@ const SingleSelect = ({
 SingleSelect.propTypes = {
   'aria-label': propTypes.string,
   'aria-labelledby': propTypes.string,
+  borderedMultiValue: propTypes.bool,
   className: propTypes.string,
   closeMenuOnSelect: propTypes.bool,
   components: propTypes.any,
@@ -103,6 +107,7 @@ SingleSelect.propTypes = {
 SingleSelect.defaultProps = {
   'aria-label': undefined,
   'aria-labelledby': undefined,
+  borderedMultiValue: undefined,
   className: undefined,
   closeMenuOnSelect: true,
   components: undefined,
