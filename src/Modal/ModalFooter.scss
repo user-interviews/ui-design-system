@@ -2,16 +2,16 @@
 
 .ModalFooter {
   align-items: center;
-  background-color: $ux-gray-100;
+  background-color: var(--ux-gray-100);
   display: flex;
   justify-content: flex-end;
-  padding: $synth-spacing-4;
+  padding: var(--synth-spacing-4);
 
   > :not(:first-child) {
-    margin-left: $synth-spacing-1;
+    margin-left: var(--synth-spacing-1);
   }
 
   > :not(:last-child) {
-    margin-right: $synth-spacing-1;
+    margin-right: var(--synth-spacing-1);
   }
 }

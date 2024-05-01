@@ -1,20 +1,20 @@
 @import './colors';
 
 .btn-link--neutral {
-  color: $ux-gray-500;
+  color: var(--ux-gray-500);
 
   &:hover {
-    color: $ux-gray-700;
+    color: var(--ux-gray-700);
   }
 }
 
 .btn-outline-secondary {
-  color: $ux-blue;
-  border-color: $ux-blue;
+  color: var(--ux-blue);
+  border-color: var(--ux-blue);
 
   &:hover {
-    background-color: $ux-blue;
-    color: $ux-white;
+    background-color: var(--ux-blue);
+    color: var(--ux-white);
   }
 }
 
@@ -26,13 +26,13 @@ $warning: $ux-yellow-400;
 
 @mixin btn-focus-outline {
   box-shadow: none !important;
-  outline: 2px solid $ux-blue-500;
+  outline: 2px solid var(--ux-blue-500);
   outline-offset: 2px;
 }
 
 @mixin btn-focus-outline--dark-bg {
   box-shadow: none !important;
-  outline: 2px solid $ux-white;
+  outline: 2px solid var(--ux-white);
   outline-offset: 2px;
 }
 
@@ -133,11 +133,11 @@ $warning: $ux-yellow-400;
     $btn-outline-primary-hover-border,
     $btn-outline-primary-hover-color,
   );
-  border-color: $btn-outline-primary-border;
+  border-color: var(--btn-outline-primary-border);
 
   &:active {
-    background-color: $btn-outline-primary-active-background;
-    border-color: $btn-outline-primary-active-border-color;
+    background-color: var(--btn-outline-primary-active-background);
+    border-color: var(--btn-outline-primary-active-border-color);
   }
 
   &:focus-visible {
@@ -170,11 +170,11 @@ $warning: $ux-yellow-400;
     $btn-outline-primary-hover-border,
     $btn-outline-primary-hover-color,
   );
-  border-color: $btn-outline-primary-border;
+  border-color: var(--btn-outline-primary-border);
 
   &:active {
-    background-color: $btn-outline-primary-active-background;
-    border-color: $btn-outline-primary-active-border-color;
+    background-color: var(--btn-outline-primary-active-background);
+    border-color: var(--btn-outline-primary-active-border-color);
   }
 
   &:focus-visible {
@@ -225,7 +225,7 @@ $warning: $ux-yellow-400;
 
   &:active, &.btn-tertiary:focus {
     box-shadow: none;
-    border-color: $synth-hyperlink-color;
+    border-color: var(--synth-hyperlink-color);
   }
 }
 
@@ -286,11 +286,11 @@ $warning: $ux-yellow-400;
     $btn-outline-danger-hover-border,
     $btn-outline-danger-hover-color,
   );
-  border-color: $btn-outline-danger-border;
+  border-color: var(--btn-outline-danger-border);
 
   &:active {
-    background-color: $btn-outline-danger-active-background;
-    border-color: $btn-outline-danger-active-border-color;
+    background-color: var(--btn-outline-danger-active-background);
+    border-color: var(--btn-outline-danger-active-border-color);
   }
 
   &:focus-visible {
@@ -359,11 +359,11 @@ $warning: $ux-yellow-400;
     $btn-outline-warning-hover-border,
     $btn-outline-warning-hover-color,
   );
-  border-color: $btn-outline-warning-border;
+  border-color: var(--btn-outline-warning-border);
 
   &:active {
-    background-color: $btn-outline-warning-active-background;
-    border-color: $btn-outline-warning-active-border-color;
+    background-color: var(--btn-outline-warning-active-background);
+    border-color: var(--btn-outline-warning-active-border-color);
   }
 
   &:focus-visible {
@@ -403,7 +403,7 @@ $warning: $ux-yellow-400;
   );
 
   &:disabled {
-    color: $ux-gray-500;
+    color: var(--ux-gray-500);
   }
 
   &:focus-visible {
@@ -436,17 +436,17 @@ $warning: $ux-yellow-400;
     $btn-outline-transparent-hover-border,
     $btn-outline-transparent-hover-color,
   );
-  border-color: $btn-outline-transparent-border;
+  border-color: var(--btn-outline-transparent-border);
 
   &:active {
-    background-color: $btn-outline-transparent-active-background;
-    border-color: $btn-outline-transparent-active-border-color;
+    background-color: var(--btn-outline-transparent-active-background);
+    border-color: var(--btn-outline-transparent-active-border-color);
   }
 
   &:disabled {
-    background-color: $ux-gray-300;
+    background-color: var(--ux-gray-300);
     border: $ux-gray-400;
-    color: $ux-gray-800;
+    color: var(--ux-gray-800);
   }
 
   &:focus-visible {
@@ -486,7 +486,7 @@ $warning: $ux-yellow-400;
   );
 
   &:disabled {
-    color: $ux-white;
+    color: var(--ux-white);
   }
 
   &:focus-visible {
@@ -526,7 +526,7 @@ $warning: $ux-yellow-400;
   );
 
   &:disabled {
-    color: $ux-white;
+    color: var(--ux-white);
   }
 
   &:focus-visible {
@@ -566,7 +566,7 @@ $warning: $ux-yellow-400;
   );
 
   &:disabled {
-    color: $ux-white;
+    color: var(--ux-white);
   }
 
   &:focus-visible {
@@ -606,7 +606,7 @@ $warning: $ux-yellow-400;
   );
 
   &:disabled {
-    color: $ux-white;
+    color: var(--ux-white);
   }
 
   &:focus-visible {
@@ -648,7 +648,7 @@ $warning: $ux-yellow-400;
   text-decoration: none;
 
   &:disabled {
-    color: $ux-blue;
+    color: var(--ux-blue);
     opacity: 0.5;
   }
 

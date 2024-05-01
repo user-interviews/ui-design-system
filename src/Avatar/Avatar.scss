@@ -7,8 +7,8 @@
   width: $avatar-small-width;
 
   &__alert {
-     background-color: $ux-red-400;
-     border: 2px solid $ux-white;
+     background-color: var(--ux-red-400);
+     border: 2px solid var(--ux-white);
      border-radius: 50%;
      height: 12px;
      position: absolute;
@@ -27,9 +27,9 @@
       vertical-align: middle;
     }
 
-    background-color: $ux-blue;
+    background-color: var(--ux-blue);
     border-radius: 50%;
-    color: $ux-white;
+    color: var(--ux-white);
     display: inline-block;
     height: 100%;
     overflow: hidden;

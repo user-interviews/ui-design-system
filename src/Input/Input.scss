@@ -7,27 +7,27 @@ $input-trailing-text-max-width-before-hiding: 200px;
   @include synth-font-type-30;
 
   ::placeholder {
-    color: $ux-gray-700;
+    color: var(--ux-gray-700);
   }
 
   &:focus {
-    border: 1px solid $ux-blue-500;
+    border: 1px solid var(--ux-blue-500);
     box-shadow: $input-focus-box-shadow;
     color: $input-focus-color;
   }
 
   .form-control {
     color: $input-color;
-    padding: $synth-spacing-2 $synth-spacing-3;
+    padding: var(--synth-spacing-2) var(--synth-spacing-3);
   }
 
   .input-group-text {
-    background-color: $ux-gray-100;
+    background-color: var(--ux-gray-100);
   }
 
   .input-trailing-text {
     position: absolute;
-    right: $synth-spacing-4;
+    right: var(--synth-spacing-4);
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none; 
@@ -46,7 +46,7 @@ $input-trailing-text-max-width-before-hiding: 200px;
     padding: 0;
     border: none;
     border-radius: none;
-    background-color: $ux-gray-100;
+    background-color: var(--ux-gray-100);
   }
   .trailing-icon-button > .input-group-text {
     width: 100%;
@@ -54,7 +54,7 @@ $input-trailing-text-max-width-before-hiding: 200px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     &:hover {
-      background-color: $ux-gray-200;
+      background-color: var(--ux-gray-200);
     }
 
   }

@@ -1,146 +1,39 @@
-// When updating this file, please export the color variable in variables.scss
-// so it is available in src/Styles/palette.js
+// DEPRECATED -- use css_properties.scss
+// The only reason these variables still exist is because they are currently in use by Sass mixins.
+// They can be iteratively removed as we continue to kill Sass.
 
-$ux-black: #000000;
+
 $ux-blue: #3F6DCA;
-$ux-cream: #F8F4F2;
 $ux-emerald: #158D71;
 $ux-gray: #A1A1A1;
-$ux-green: #04713C;
-$ux-light-blue: #7CCBF2;
-$ux-navy: #011936;
-$ux-orange: #F59C27;
-$ux-purple: #725CCC;
 $ux-red: #E03131;
-$ux-sand: #DABDA2;
 $ux-teal: #0E4749;
 $ux-yellow: #F3CE14;
 $ux-white: #FFFFFF;
-
 $brand-color-facebook: #3577ea;
 $brand-color-google: #DB3236;
 $brand-color-google-alt: #2D8CFF;
 $brand-color-linkedin: #0077B5;
 $brand-color-office365: #2372BA;
 $brand-color-twitter: #1B95E0;
-$brand-color-yahoo: #6001d2;
-
-$ux-blue-100: #F1F5FE;
-$ux-blue-200: #BDD1FB;
 $ux-blue-300: #A6C0F5;
-$ux-blue-400: #7497DF;
 $ux-blue-500: $ux-blue;
 $ux-blue-600: #2854AF;
-$ux-blue-700: #143C8D;
 $ux-blue-800: #0B2D72;
-$ux-blue-900: #031D52;
-
-$ux-emerald-100: #BFDDD5;
-$ux-emerald-200: #91CABB;
-$ux-emerald-300: #65B8A2;
-$ux-emerald-400: #3EA388;
-$ux-emerald-500: $ux-emerald;
 $ux-emerald-600: #177863;
 $ux-emerald-700: #156152;
 $ux-emerald-800: #0D4A3E;
-$ux-emerald-900: #073B31;
-
-$ux-gray-100: #F9F9F9;
-$ux-gray-200: #F1F1F1;
 $ux-gray-300: #E1E1E1;
 $ux-gray-400: #D1D1D1;
-$ux-gray-500: $ux-gray;
-$ux-gray-600: #818181;
 $ux-gray-700: #616161;
 $ux-gray-800: #444444;
 $ux-gray-900: #101010;
-
-$ux-green-100: #D4F6E5;
-$ux-green-200: #A3F9CF;
-$ux-green-300: #70E2AB;
-$ux-green-400: #40CC88;
-$ux-green-500: #21B36C;
-$ux-green-600: #09914F;
-$ux-green-700: $ux-green;
-$ux-green-800: #015029;
-$ux-green-900: #003119;
-
-$ux-navy-100: #C4D0DF;
-$ux-navy-200: #A3BAD2;
-$ux-navy-300: #7396BA;
-$ux-navy-400: #40669C;
-$ux-navy-500: #234574;
-$ux-navy-600: #16325A;
-$ux-navy-700: $ux-navy;
-$ux-navy-800: #01152D;
-$ux-navy-900: #021020;
-
-$ux-neutral-100: $ux-white;
-$ux-neutral-200: $ux-cream;
-$ux-neutral-300: #E6E2E0;
-$ux-neutral-400: #CECBC9;
-$ux-neutral-500: #B5B0AB;
-$ux-neutral-600: #9A938D;
-$ux-neutral-700: #817874;
-$ux-neutral-800: #33312F;
-$ux-neutral-900: $ux-black;
-
-$ux-orange-100: #FDEAD2;
-$ux-orange-200: #FCDFB9;
-$ux-orange-300: #FAC988;
-$ux-orange-400: #F7B258;
-$ux-orange-500: $ux-orange;
-$ux-orange-600: #E18C28;
-$ux-orange-700: #AE6608;
-$ux-orange-800: #7D4A06;
-$ux-orange-900: #3D2200;
-
-$ux-red-100: #FAE1E1;
-$ux-red-200: #F3BDBD;
-$ux-red-300: #EB7A7A;
-$ux-red-400: #E44E4E;
-$ux-red-500: $ux-red;
 $ux-red-600: #C71F1F;
 $ux-red-700: #B11B1B;
-$ux-red-800: #9B1818;
-$ux-red-900: #470404;
-
-$ux-sand-100: #ECE1D4;
-$ux-sand-200: #E8DAC9;
-$ux-sand-300: #E5D2BD;
-$ux-sand-400: #DFC7AF;
-$ux-sand-500: $ux-sand;
-$ux-sand-600: #D4B191;
-$ux-sand-700: #CFAA86;
-$ux-sand-800: #C59B72;
-$ux-sand-900: #BA8E5E;
-
-$ux-teal-100: #CAE1E2;
-$ux-teal-200: #A2CBCD;
-$ux-teal-300: #85A9AA;
-$ux-teal-400: #408F91;
-$ux-teal-500: #2A7779;
 $ux-teal-600: #1C5D5F;
 $ux-teal-700: $ux-teal;
 $ux-teal-800: #093C3F;
-$ux-teal-900: #083236;
-
-$ux-yellow-100: #FFF1AB;
-$ux-yellow-200: #FFEB85;
-$ux-yellow-300: #FFE356;
 $ux-yellow-400: #FBDA36;
 $ux-yellow-500: $ux-yellow;
 $ux-yellow-600: #E1BE0C;
-$ux-yellow-700: #CAA900;
-$ux-yellow-800: #A98D01;
 $ux-yellow-900: #453A00;
-
-$ux-purple-100: #EAE6FA;
-$ux-purple-200: #DCD7F1;
-$ux-purple-300: #BDB3E5;
-$ux-purple-400: #9382D9;
-$ux-purple-500: $ux-purple;
-$ux-purple-600: #5642A6;
-$ux-purple-700: #42308C;
-$ux-purple-800: #34227A;
-$ux-purple-900: #120640;

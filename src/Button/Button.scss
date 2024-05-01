@@ -17,11 +17,11 @@
 
   i, svg {
     &.icon-left {
-      margin-right: $synth-spacing-2;
+      margin-right: var(--synth-spacing-2);
     }
 
     &.icon-right {
-      margin-left: $synth-spacing-2;
+      margin-left: var(--synth-spacing-2);
     }
   }
 
@@ -39,7 +39,7 @@
   }
 
   &.btn-sm {
-    border-radius: $ux-border-radius;
+    border-radius: var(--ux-border-radius);
   }
 
   &.btn-primary {

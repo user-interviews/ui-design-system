@@ -1,8 +1,5 @@
-@import './colors/palette';
-@import './typography';
-
 body {
-  font-family: $synth-font-family;
-  font-size: $synth-font-size-base;
-  color: $ux-gray-900;
+  font-family: var(--synth-font-family);
+  font-size: var(--synth-font-size-base);
+  color: var(--ux-gray-900);
 }

@@ -101,28 +101,28 @@
 .Popper {
   @include synth-font-type-30--medium;
   @include popper-arrow($popper-color: $ux-white, $popper-border-color: $ux-gray-300);
-  background-color: $ux-white;
-  border-radius: $ux-border-radius;
+  background-color: var(--ux-white);
+  border-radius: var(--ux-border-radius);
   border: 1px solid $ux-gray-300;
-  box-shadow: $ux-box-shadow-card;
+  box-shadow: var(--ux-box-shadow-card);
   max-width: 240px;
   letter-spacing: normal;
-  padding: $synth-spacing-3;
-  z-index: $z-index-flash;
-  font-weight: $synth-font-weight-regular;
+  padding: var(--synth-spacing-3);
+  z-index: var(--z-index-flash);
+  font-weight: var(--synth-font-weight-regular);
 
   &__header {
-    margin-bottom: $synth-spacing-1;
+    margin-bottom: var(--synth-spacing-1);
     @include synth-font-type-30--bold;
   }
 
   &--dark {
     @include popper-arrow($popper-color: $ux-gray-800);
-    background-color: $ux-gray-800;
-    color: $ux-gray-100;
+    background-color: var(--ux-gray-800);
+    color: var(--ux-gray-100);
 
     a, a:active, a:focus, a:hover, a:visited {
-      color: $ux-blue-300;
+      color: var(--ux-blue-300);
       @include synth-font-type-30--medium;
     }
   }
