@@ -5,6 +5,6 @@
   &--sticky-row {
     position: sticky;
     bottom: 0;
-    z-index: $z-index-table-foot-sticky-row;
+    z-index: var(--z-index-table-foot-sticky-row);
   }
 }

@@ -6,9 +6,9 @@
   border-bottom: 0;
   border-radius: var(--ux-border-radius) var(--ux-border-radius) 0 0;
   display: flex;
-  gap: $synth-spacing-3;
-  margin-top: $synth-spacing-4;
-  padding: $synth-spacing-2;
+  gap: var(--synth-spacing-3);
+  margin-top: var(--synth-spacing-4);
+  padding: var(--synth-spacing-2);
 
   .Button {
     &--active {

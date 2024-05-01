@@ -7,7 +7,7 @@
   cursor: pointer;
   display: inherit;
   height: 100%;
-  padding: $synth-spacing-4;
+  padding: var(--synth-spacing-4);
   text-align: left;
   vertical-align: middle;
   width: 100%;

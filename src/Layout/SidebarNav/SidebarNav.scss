@@ -1,5 +1,3 @@
-@import '../../scss/theme.scss';
-
 .Layout__sidebar-nav {
   &__mobile-controls {
     border-top: 1px solid var(--ux-gray-400);
@@ -8,7 +6,7 @@
     flex-direction: column;
 
     justify-content: space-evenly;
-    margin: 0 $synth-spacing-4;
-    padding-top: $synth-spacing-4;
+    margin: 0 var(--synth-spacing-4);
+    padding-top: var(--synth-spacing-4);
   }
 }

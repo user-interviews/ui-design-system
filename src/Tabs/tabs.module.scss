@@ -48,7 +48,7 @@
   }
 
   :global(.nav-link.active) {
-    font-weight: $synth-font-weight-bold;
+    font-weight: var(--synth-font-weight-bold);
   }
 
   :global(.nav-link.active),

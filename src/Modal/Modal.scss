@@ -62,12 +62,12 @@
     display: flex;
     justify-content: center;
     opacity: 0;
-    padding: $synth-spacing-6;
+    padding: var(--synth-spacing-6);
     transition: opacity $ux-duration-short linear;
-    z-index: $z-index-modal-backdrop;
+    z-index: var(--z-index-modal-backdrop);
 
     @media (max-width: 512px) {
-      padding: $synth-spacing-4;
+      padding: var(--synth-spacing-4);
     }
 
     &--after-open:not(&--before-close) {

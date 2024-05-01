@@ -4,11 +4,11 @@
   align-items: baseline;
   display: flex;
   justify-content: space-between;
-  padding: $synth-spacing-6;
-  padding-bottom: $synth-spacing-2;
+  padding: var(--synth-spacing-6);
+  padding-bottom: var(--synth-spacing-2);
 
   &__title {
-    font-family: $synth-font-family;
+    font-family: var(--synth-font-family);
     @include synth-font-type-60--bold();
     margin-bottom: 0;
 
@@ -19,19 +19,19 @@
 
     .warning {
       color: var(--ux-yellow-600);
-      margin-right: $synth-spacing-2;
+      margin-right: var(--synth-spacing-2);
     }
 
     .danger {
       color: var(--ux-red-400);
-      margin-right: $synth-spacing-2;
+      margin-right: var(--synth-spacing-2);
     }
   }
 
   &__subtitle {
-    font-family: $synth-font-family;
+    font-family: var(--synth-font-family);
     @include synth-font-type-30;
     margin-bottom: 0;
-    margin-top: $synth-spacing-2;
+    margin-top: var(--synth-spacing-2);
   }
 }

@@ -3,6 +3,6 @@
 .TableLoadingSkeleton {
 
   &__row {
-    margin: 0 $synth-spacing-4 $synth-spacing-8 0;
+    margin: 0 var(--synth-spacing-4) var(--synth-spacing-8) 0;
   }
 }

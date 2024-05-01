@@ -18,7 +18,7 @@ $input-trailing-text-max-width-before-hiding: 200px;
 
   .form-control {
     color: $input-color;
-    padding: $synth-spacing-2 $synth-spacing-3;
+    padding: var(--synth-spacing-2) var(--synth-spacing-3);
   }
 
   .input-group-text {
@@ -27,7 +27,7 @@ $input-trailing-text-max-width-before-hiding: 200px;
 
   .input-trailing-text {
     position: absolute;
-    right: $synth-spacing-4;
+    right: var(--synth-spacing-4);
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none; 

@@ -1,7 +1,4 @@
-@import 'elevations';
 @import 'spacing';
-@import 'typography';
-@import 'z_stack';
 
 :root {
   --ux-border-radius: 4px;
@@ -169,18 +166,21 @@
   --ux-purple-900: #120640;
 
 
-  --synth-spacing-1: #{$synth-spacing-1};
-  --synth-spacing-2: #{$synth-spacing-2};
-  --synth-spacing-3: #{$synth-spacing-3};
-  --synth-spacing-4: #{$synth-spacing-4};
-  --synth-spacing-5: #{$synth-spacing-5};
-  --synth-spacing-6: #{$synth-spacing-6};
-  --synth-spacing-7: #{$synth-spacing-7};
-  --synth-spacing-8: #{$synth-spacing-8};
-  --synth-spacing-9: #{$synth-spacing-9};
-  --synth-spacing-10: #{$synth-spacing-10};
-  --synth-spacing-11: #{$synth-spacing-11};
-  --synth-spacing-12: #{$synth-spacing-12};
+  --synth-spacing-base: 4px;
+
+  // Increments of 4 according to the 4 pixel grid system
+  --synth-spacing-1: var(--synth-spacing-base); // 4px
+  --synth-spacing-2: calc(var(--synth-spacing-base) * 2); // 8px
+  --synth-spacing-3: calc(var(--synth-spacing-base) * 3); // 12px
+  --synth-spacing-4: calc(var(--synth-spacing-base) * 4); // 16px
+  --synth-spacing-5: calc(var(--synth-spacing-base) * 5); // 20px
+  --synth-spacing-6: calc(var(--synth-spacing-base) * 6); // 24px
+  --synth-spacing-7: calc(var(--synth-spacing-base) * 7); // 28px
+  --synth-spacing-8: calc(var(--synth-spacing-base) * 8); // 32px
+  --synth-spacing-9: calc(var(--synth-spacing-base) * 9); // 36px
+  --synth-spacing-10: calc(var(--synth-spacing-base) * 10); // 40px
+  --synth-spacing-11: calc(var(--synth-spacing-base) * 11); // 44px
+  --synth-spacing-12: calc(var(--synth-spacing-base) * 12); // 48px
 
   // stoplight color system
   --synth-success-green-dark: #015029;
@@ -221,33 +221,38 @@
   --synth-hover-blue: #e5ecff;
   --synth-header-gray-blue: #eef2f8;
 
-  --synth-font-family: #{$synth-font-family};
-  --synth-font-weight-regular: #{$synth-font-weight-regular};
-  --synth-font-weight-medium: #{$synth-font-weight-medium};
-  --synth-font-weight-bold: #{$synth-font-weight-bold};
-  --synth-font-size-base: #{$synth-font-size-base};
+  --synth-font-family: Inter, sans-serif;
+  --synth-font-weight-regular: 400;
+  --synth-font-weight-medium: 500;
+  --synth-font-weight-bold: 700;
+  --synth-font-size-base: 0.875rem;
 
-  --z-index-1050: #{$z-index-1050};
-  --z-index-1045: #{$z-index-1045};
-  --z-index-1040: #{$z-index-1040};
-  --z-index-1030: #{$z-index-1030};
-  --z-index-1025: #{$z-index-1025};
-  --z-index-1020: #{$z-index-1020};
-  --z-index-115: #{$z-index-115};
-  --z-index-100: #{$z-index-100};
-  --z-index-30: #{$z-index-30};
-  --z-index-20: #{$z-index-20};
-  --z-index-11: #{$z-index-11};
-  --z-index-10: #{$z-index-10};
-  --z-index-3: #{$z-index-3};
-  --z-index-2: #{$z-index-2};
-  --z-index-1: #{$z-index-1};
-  --z-index-popover: #{$z-index-popover};
-  --z-index-flash: #{$z-index-flash};
-  --z-index-drawer: #{$z-index-drawer};
-  --z-index-modal-backdrop: #{$z-index-modal-backdrop};
-  --z-index-fixed: #{$z-index-fixed};
-  --z-index-overlay: #{$z-index-overlay};
-  --z-index-table-cell-sticky-column: #{$z-index-table-cell-sticky-column};
-  --z-index-table-foot-sticky-row: #{$z-index-table-foot-sticky-row};
+  // By Level
+  --z-index-1050: 1050;
+  --z-index-1045: 1045;
+  --z-index-1040: 1040;
+  --z-index-1030: 1030;
+  --z-index-1025: 1025;
+  --z-index-1020: 1020;
+
+  --z-index-115: 115;
+  --z-index-100: 100;
+
+  --z-index-30: 30;
+  --z-index-20: 20;
+  --z-index-11: 11;
+  --z-index-10: 10;
+  --z-index-3: 3;
+  --z-index-2: 2;
+  --z-index-1: 1;
+
+  // By Purpose
+  --z-index-popover: var(--z-index-1050);
+  --z-index-flash: var(--z-index-1045);
+  --z-index-drawer: var(--z-index-1040);
+  --z-index-modal-backdrop: var(--z-index-1040); // Matches bootstrap --z-index-modal-backdrop
+  --z-index-fixed: var(--z-index-1030); //Matches bootstrap --z-index-fixed
+  --z-index-overlay: calc(var(--z-index-fixed) - 1); // Sits just under --z-index-fixed
+  --z-index-table-cell-sticky-column: var(--z-index-10); // Sits under --z-index-table-foot-sticky-row
+  --z-index-table-foot-sticky-row: var(--z-index-11); // Sits above var(--z-index-table-cell-sticky-column)
 }

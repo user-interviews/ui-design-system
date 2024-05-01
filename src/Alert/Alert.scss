@@ -1,14 +1,14 @@
 @import '../../scss/theme';
 
-@mixin primary-action($bg-color: none, $bg-color-hover: $ux-gray-300, $color: var(--synth-unselected-neutral)) {
+@mixin primary-action($bg-color: none, $bg-color-hover: $ux-gray-300, $color: $synth-unselected-neutral) {
   @include synth-font-type-30--bold;
   background-color: $bg-color;
   border: none;
   border-left: unset;
   border-radius: var(--ux-border-radius);
   color: $color;
-  margin: $synth-spacing-2 $synth-spacing-4 $synth-spacing-2 0;
-  padding: $synth-spacing-2 $synth-spacing-4;
+  margin: var(--synth-spacing-2) var(--synth-spacing-4) var(--synth-spacing-2) 0;
+  padding: var(--synth-spacing-2) var(--synth-spacing-4);
   text-decoration: none;
   white-space: nowrap;
 
@@ -47,8 +47,8 @@
     background-color: var(--synth-alert-bg-neutral);
     border-radius: var(--ux-border-radius);
     color: var(--synth-text-neutral);
-    margin-bottom: $synth-spacing-4;
-    padding: $synth-spacing-4;
+    margin-bottom: var(--synth-spacing-4);
+    padding: var(--synth-spacing-4);
     position: relative;
   
     &__icon {
@@ -57,7 +57,7 @@
   
     &__content {
       grid-area: content;
-      margin-right: $synth-spacing-4;
+      margin-right: var(--synth-spacing-4);
     }
   
     &__action {
@@ -104,7 +104,7 @@
       color: var(--synth-accent-green);
       
       .fa-check {
-        color: $ux-gray-100;
+        color: var(--ux-gray-100);
       }
     }
   }
@@ -121,10 +121,10 @@
     }
   
     .Alert__icon {
-      color: $ux-blue-300;
+      color: var(--ux-blue-300);
       
       .fa-info {
-        color: $ux-blue-600;
+        color: var(--ux-blue-600);
       }
     }
   }
@@ -142,7 +142,7 @@
   }
   
   .Alert-feature {
-    border: 2px solid $ux-teal-600;
+    border: 2px solid var(--ux-teal-600);
   
     .close {
       @include close-action;
@@ -153,7 +153,7 @@
     }
   
     .Alert__icon {
-      color: $ux-teal-600;
+      color: var(--ux-teal-600);
     }
   }
   
@@ -174,7 +174,7 @@
   }
   
   .Alert-error {
-    border-left: 8px solid $ux-red-400;
+    border-left: 8px solid var(--ux-red-400);
   
     .close {
       @include close-action;
@@ -185,7 +185,7 @@
     }
   
     .Alert__icon {
-      color: $ux-red;
+      color: var(--ux-red);
     }
   }
 }
@@ -208,8 +208,8 @@
 
   font-weight: 500;
   border-radius: var(--ux-border-radius);
-  margin-bottom: $synth-spacing-4;
-  padding: $synth-spacing-4;
+  margin-bottom: var(--synth-spacing-4);
+  padding: var(--synth-spacing-4);
   position: relative;
 
   &__icon {
@@ -218,7 +218,7 @@
 
   &__content {
     grid-area: content;
-    margin-right: $synth-spacing-4;
+    margin-right: var(--synth-spacing-4);
   }
 
   &__action {
@@ -251,9 +251,9 @@
 }
 
 .Alert-success {
-  background-color: $ux-green-100;
-  color: $ux-green-800;
-  border-left: 8px solid $ux-green-400;
+  background-color: var(--ux-green-100);
+  color: var(--ux-green-800);
+  border-left: 8px solid var(--ux-green-400);
 
   .close {
     @include close-action;
@@ -264,18 +264,18 @@
   }
 
   .Alert__icon {
-    color: $ux-green-400;
+    color: var(--ux-green-400);
     
     .fa-check {
-      color: $ux-green-800;
+      color: var(--ux-green-800);
     }
   }
 }
 
 .Alert-info {
-  background-color: $ux-blue-100;
-  color: $ux-blue-800;
-  border-left: 8px solid $ux-blue-300;
+  background-color: var(--ux-blue-100);
+  color: var(--ux-blue-800);
+  border-left: 8px solid var(--ux-blue-300);
 
   .close {
     @include close-action($ux-blue-600, $ux-blue-800)
@@ -286,18 +286,18 @@
   }
 
   .Alert__icon {
-    color: $ux-blue-300;
+    color: var(--ux-blue-300);
     
     .fa-info {
-      color: $ux-blue-600;
+      color: var(--ux-blue-600);
     }
   }
 }
 
 .Alert-announcement {
-  background-color: $ux-blue-100;
-  color: $ux-blue-700;
-  border-left: 8px solid $ux-blue-300;
+  background-color: var(--ux-blue-100);
+  color: var(--ux-blue-700);
+  border-left: 8px solid var(--ux-blue-300);
 
   .close {
     @include close-action;
@@ -309,9 +309,9 @@
 }
 
 .Alert-feature {
-  background-color: $ux-teal-100;
-  color: $ux-teal-800;
-  border: 2px solid $ux-teal-600;
+  background-color: var(--ux-teal-100);
+  color: var(--ux-teal-800);
+  border: 2px solid var(--ux-teal-600);
 
   .close {
     @include close-action;
@@ -323,9 +323,9 @@
 }
 
 .Alert-feature {
-  background-color: $ux-teal-100;
-  color: $ux-teal-800;
-  border: 2px solid $ux-teal-600;
+  background-color: var(--ux-teal-100);
+  color: var(--ux-teal-800);
+  border: 2px solid var(--ux-teal-600);
 
   .close {
     @include close-action($ux-teal-600, $ux-teal-800)
@@ -337,9 +337,9 @@
 }
 
 .Alert-warning {
-  background-color: $ux-yellow-100;
-  color: $ux-yellow-900;
-  border-left: 8px solid $ux-yellow-600;
+  background-color: var(--ux-yellow-100);
+  color: var(--ux-yellow-900);
+  border-left: 8px solid var(--ux-yellow-600);
 
   .close {
     @include close-action;
@@ -350,14 +350,14 @@
   }
 
   .Alert__icon {
-    color: $ux-yellow-700;
+    color: var(--ux-yellow-700);
   }
 }
 
 .Alert-error {
-  background-color: $ux-red-100;
-  color: $ux-red-800;
-  border-left: 8px solid $ux-red-400;
+  background-color: var(--ux-red-100);
+  color: var(--ux-red-800);
+  border-left: 8px solid var(--ux-red-400);
 
   .close {
     @include close-action;
@@ -368,6 +368,6 @@
   }
 
   .Alert__icon {
-    color: $ux-red;
+    color: var(--ux-red);
   }
 }

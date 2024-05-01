@@ -1,4 +1,3 @@
-@import '../../scss/borders';
 @import '../../scss/theme';
 
 .Pill {
@@ -7,7 +6,7 @@
   background-color: var(--ux-blue-100);
   color: var(--ux-blue-700);
   border-radius: var(--ux-border-radius);
-  padding: $synth-spacing-1 $synth-spacing-3;
+  padding: var(--synth-spacing-1) var(--synth-spacing-3);
   white-space: nowrap;
 
   &--blue {
@@ -16,14 +15,14 @@
 
     .Pill__icon--lead {
       color: var(--ux-blue);
-      margin-right: $synth-spacing-1;
+      margin-right: var(--synth-spacing-1);
     }
 
     .Pill__button--close {
       background-color: unset; 
       border: none;
       color: var(--ux-blue-500);
-      margin-left: $synth-spacing-2;
+      margin-left: var(--synth-spacing-2);
       margin-right: 0;
       padding: 0;
     }
@@ -41,14 +40,14 @@
 
     .Pill__icon--lead {
       color: var(--ux-orange-700);
-      margin-right: $synth-spacing-1;
+      margin-right: var(--synth-spacing-1);
     }
 
     .Pill__button--close {
       background-color: unset; 
       border: none;
       color: var(--ux-orange);
-      margin-left: $synth-spacing-2;
+      margin-left: var(--synth-spacing-2);
       margin-right: 0;
       padding: 0;
     }
@@ -66,14 +65,14 @@
 
     .Pill__icon--lead {
       color: var(--ux-green-600);
-      margin-right: $synth-spacing-1;
+      margin-right: var(--synth-spacing-1);
     }
 
     .Pill__button--close {
       background-color: unset; 
       border: none;
       color: var(--ux-green-600);
-      margin-left: $synth-spacing-2;
+      margin-left: var(--synth-spacing-2);
       margin-right: 0;
       padding: 0;
     }
@@ -91,14 +90,14 @@
 
     .Pill__icon--lead {
       color: var(--ux-yellow-700);
-      margin-right: $synth-spacing-1;
+      margin-right: var(--synth-spacing-1);
     }
 
     .Pill__button--close {
       background-color: unset; 
       border: none;
       color: var(--ux-yellow-600);
-      margin-left: $synth-spacing-2;
+      margin-left: var(--synth-spacing-2);
       margin-right: 0;
       padding: 0;
     }
@@ -116,14 +115,14 @@
 
     .Pill__icon--lead {
       color: var(--ux-red-900);
-      margin-right: $synth-spacing-1;
+      margin-right: var(--synth-spacing-1);
     }
 
     .Pill__button--close {
       background-color: unset; 
       border: none;
       color: var(--ux-red-900);
-      margin-left: $synth-spacing-2;
+      margin-left: var(--synth-spacing-2);
       margin-right: 0;
       padding: 0;
     }
@@ -141,14 +140,14 @@
 
     .Pill__icon--lead {
       color: var(--ux-gray-800);
-      margin-right: $synth-spacing-1;
+      margin-right: var(--synth-spacing-1);
     }
 
     .Pill__button--close {
       background-color: unset; 
       border: none;
       color: var(--ux-gray-500);
-      margin-left: $synth-spacing-2;
+      margin-left: var(--synth-spacing-2);
       margin-right: 0;
       padding: 0;
     }
@@ -166,14 +165,14 @@
 
     .Pill__icon--lead {
       color: var(--ux-gray-700);
-      margin-right: $synth-spacing-1;
+      margin-right: var(--synth-spacing-1);
     }
 
     .Pill__button--close {
       background-color: unset; 
       border: none;
       color: var(--ux-gray-500);
-      margin-left: $synth-spacing-2;
+      margin-left: var(--synth-spacing-2);
       margin-right: 0;
       padding: 0;
     }

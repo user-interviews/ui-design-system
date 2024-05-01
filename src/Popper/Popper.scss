@@ -107,12 +107,12 @@
   box-shadow: var(--ux-box-shadow-card);
   max-width: 240px;
   letter-spacing: normal;
-  padding: $synth-spacing-3;
-  z-index: $z-index-flash;
-  font-weight: $synth-font-weight-regular;
+  padding: var(--synth-spacing-3);
+  z-index: var(--z-index-flash);
+  font-weight: var(--synth-font-weight-regular);
 
   &__header {
-    margin-bottom: $synth-spacing-1;
+    margin-bottom: var(--synth-spacing-1);
     @include synth-font-type-30--bold;
   }
 

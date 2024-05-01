@@ -43,15 +43,15 @@ $warning: $ux-yellow-400;
 @mixin btn-primary {
   $btn-primary-background: $primary;
   $btn-primary-border: $primary;
-  $btn-primary-color: var(--ux-white);
+  $btn-primary-color: $ux-white;
 
   $btn-primary-hover-background: $ux-emerald-700;
   $btn-primary-hover-border: $ux-emerald-700;
-  $btn-primary-hover-color: var(--ux-white);
+  $btn-primary-hover-color: $ux-white;
 
   $btn-primary-active-background: $ux-emerald-800;
   $btn-primary-active-border: $ux-emerald-800;
-  $btn-primary-active-color: var(--ux-white);
+  $btn-primary-active-color: $ux-white;
 
   @include button-variant(
     $btn-primary-background,
@@ -79,15 +79,15 @@ $warning: $ux-yellow-400;
 @mixin synthesis-btn-primary {
   $btn-primary-background: $synthesis-primary;
   $btn-primary-border: $synthesis-primary;
-  $btn-primary-color: var(--ux-white);
+  $btn-primary-color: $ux-white;
 
   $btn-primary-hover-background: $synth-dark-background-selected-blue;
   $btn-primary-hover-border: $synth-dark-background-selected-blue;
-  $btn-primary-hover-color: var(--ux-white);
+  $btn-primary-hover-color: $ux-white;
 
   $btn-primary-active-background: $synth-dark-background-pressed-blue;
   $btn-primary-active-border: $synth-dark-background-pressed-blue;
-  $btn-primary-active-color: var(--ux-white);
+  $btn-primary-active-color: $ux-white;
 
   @include button-variant(
     $btn-primary-background,
@@ -113,17 +113,17 @@ $warning: $ux-yellow-400;
 }
 
 @mixin btn-outline-primary {
-  $btn-outline-primary-color: var(--primary);
+  $btn-outline-primary-color: $primary;
   $btn-outline-primary-color-hover: $ux-white;
 
   $btn-outline-primary-hover-background: $ux-emerald-700;
   $btn-outline-primary-hover-border: $ux-emerald-700;
-  $btn-outline-primary-hover-color: var(--ux-white);
+  $btn-outline-primary-hover-color: $ux-white;
 
   $btn-outline-primary-border: $primary;
 
   $btn-outline-primary-active-background: $ux-emerald-800;
-  $btn-outline-primary-active-border-color: var(--ux-emerald-800);
+  $btn-outline-primary-active-border-color: $ux-emerald-800;
 
   @include button-outline-variant(
     $btn-outline-primary-color,
@@ -150,17 +150,17 @@ $warning: $ux-yellow-400;
 }
 
 @mixin synthesis-btn-outline-primary {
-  $btn-outline-primary-color: var(--synthesis-primary);
+  $btn-outline-primary-color: $synthesis-primary;
   $btn-outline-primary-color-hover: $ux-white;
 
   $btn-outline-primary-hover-background: $synth-dark-background-selected-blue;
   $btn-outline-primary-hover-border: $synth-dark-background-selected-blue;
-  $btn-outline-primary-hover-color: var(--ux-white);
+  $btn-outline-primary-hover-color: $ux-white;
 
   $btn-outline-primary-border: $synthesis-primary;
 
   $btn-outline-primary-active-background: $synth-dark-background-pressed-blue;
-  $btn-outline-primary-active-border-color: var(--synth-dark-background-pressed-blue);
+  $btn-outline-primary-active-border-color: $synth-dark-background-pressed-blue;
 
   @include button-outline-variant(
     $btn-outline-primary-color,
@@ -189,19 +189,19 @@ $warning: $ux-yellow-400;
 @mixin btn-tertiary {
   $btn-tertiary-background: transparent;
   $btn-tertiary-border: transparent;
-  $btn-tertiary-color: var(--synth-primary-cta-blue);
+  $btn-tertiary-color: $synth-primary-cta-blue;
 
   $btn-tertiary-hover-background: $btn-tertiary-background;
   $btn-tertiary-hover-border: $btn-tertiary-border;
-  $btn-tertiary-hover-color: var(--btn-tertiary-color);
+  $btn-tertiary-hover-color: $btn-tertiary-color;
 
   $btn-tertiary-active-background: $btn-tertiary-background;
   $btn-tertiary-active-border: $synth-hyperlink-color;
-  $btn-tertiary-active-color: var(--btn-tertiary-hover-color);
+  $btn-tertiary-active-color: $btn-tertiary-hover-color;
 
   $btn-tertiary-disabled-background: $btn-tertiary-background;
   $btn-tertiary-disabled-border: $btn-tertiary-hover-border;
-  $btn-tertiary-disabled-color: var(--btn-tertiary-hover-color);
+  $btn-tertiary-disabled-color: $btn-tertiary-hover-color;
 
   @include button-variant(
     $btn-tertiary-background,
@@ -232,15 +232,15 @@ $warning: $ux-yellow-400;
 @mixin btn-danger {
   $btn-danger-background: $danger;
   $btn-danger-border: $danger;
-  $btn-danger-color: var(--ux-white);
+  $btn-danger-color: $ux-white;
 
   $btn-danger-hover-background: $ux-red-600;
   $btn-danger-hover-border: $ux-red-600;
-  $btn-danger-hover-color: var(--ux-white);
+  $btn-danger-hover-color: $ux-white;
 
   $btn-danger-active-background: $ux-red-700;
   $btn-danger-active-border: $ux-red-700;
-  $btn-danger-active-color: var(--ux-white);
+  $btn-danger-active-color: $ux-white;
 
   @include button-variant(
     $btn-danger-background,
@@ -266,17 +266,17 @@ $warning: $ux-yellow-400;
 }
 
 @mixin btn-outline-danger {
-  $btn-outline-danger-color: var(--danger);
+  $btn-outline-danger-color: $danger;
   $btn-outline-danger-color-hover: $ux-white;
 
   $btn-outline-danger-hover-background: $ux-red-600;
   $btn-outline-danger-hover-border: $ux-red-600;
-  $btn-outline-danger-hover-color: var(--ux-white);
+  $btn-outline-danger-hover-color: $ux-white;
 
   $btn-outline-danger-border: $danger;
 
   $btn-outline-danger-active-background: $ux-red-700;
-  $btn-outline-danger-active-border-color: var(--ux-red-700);
+  $btn-outline-danger-active-border-color: $ux-red-700;
 
   @include button-outline-variant(
     $btn-outline-danger-color,
@@ -305,15 +305,15 @@ $warning: $ux-yellow-400;
 @mixin btn-warning {
   $btn-warning-background: $warning;
   $btn-warning-border: $warning;
-  $btn-warning-color: var(--ux-yellow-900);
+  $btn-warning-color: $ux-yellow-900;
 
   $btn-warning-hover-background: $ux-yellow-500;
   $btn-warning-hover-border: $ux-yellow-500;
-  $btn-warning-hover-color: var(--ux-yellow-900);
+  $btn-warning-hover-color: $ux-yellow-900;
 
   $btn-warning-active-background: $ux-yellow-600;
   $btn-warning-active-border: $ux-yellow-600;
-  $btn-warning-active-color: var(--ux-yellow-900);
+  $btn-warning-active-color: $ux-yellow-900;
 
   @include button-variant(
     $btn-warning-background,
@@ -339,17 +339,17 @@ $warning: $ux-yellow-400;
 }
 
 @mixin btn-outline-warning {
-  $btn-outline-warning-color: var(--ux-yellow-900);
+  $btn-outline-warning-color: $ux-yellow-900;
   $btn-outline-warning-color-hover: $ux-yellow-900;
 
   $btn-outline-warning-hover-background: $warning;
   $btn-outline-warning-hover-border: $warning;
-  $btn-outline-warning-hover-color: var(--ux-yellow-900);
+  $btn-outline-warning-hover-color: $ux-yellow-900;
 
   $btn-outline-warning-border: $ux-yellow-500;
 
   $btn-outline-warning-active-background: $ux-yellow-500;
-  $btn-outline-warning-active-border-color: var(--ux-yellow-500);
+  $btn-outline-warning-active-border-color: $ux-yellow-500;
 
   @include button-outline-variant(
     $btn-outline-warning-color,
@@ -378,15 +378,15 @@ $warning: $ux-yellow-400;
 @mixin btn-transparent {
   $btn-transparent-background: transparent;
   $btn-transparent-border: transparent;
-  $btn-transparent-color: var(--ux-gray-700);
+  $btn-transparent-color: $ux-gray-700;
 
   $btn-transparent-hover-background: $ux-gray-300;
   $btn-transparent-hover-border: transparent;
-  $btn-transparent-hover-color: var(--ux-gray-900);
+  $btn-transparent-hover-color: $ux-gray-900;
 
   $btn-transparent-active-background: $ux-gray-400;
   $btn-transparent-active-border: $ux-gray-400;
-  $btn-transparent-active-color: var(--ux-gray-900);
+  $btn-transparent-active-color: $ux-gray-900;
 
   @include button-variant(
     $btn-transparent-background,
@@ -416,17 +416,17 @@ $warning: $ux-yellow-400;
 }
 
 @mixin btn-outline-transparent {
-  $btn-outline-transparent-color: var(--ux-gray-900);
+  $btn-outline-transparent-color: $ux-gray-900;
   $btn-outline-transparent-color-hover: $ux-gray-900;
 
   $btn-outline-transparent-hover-background: $ux-gray-300;
   $btn-outline-transparent-hover-border: $ux-gray-300;
-  $btn-outline-transparent-hover-color: var(--ux-gray-900);
+  $btn-outline-transparent-hover-color: $ux-gray-900;
 
   $btn-outline-transparent-border: $ux-gray-400;
 
   $btn-outline-transparent-active-background: $ux-gray-400;
-  $btn-outline-transparent-active-border-color: var(--ux-gray-400);
+  $btn-outline-transparent-active-border-color: $ux-gray-400;
 
   @include button-outline-variant(
     $btn-outline-transparent-color,
@@ -461,15 +461,15 @@ $warning: $ux-yellow-400;
 @mixin btn-brand-google {
   $btn-brand-google-background: $brand-color-google-alt;
   $btn-brand-google-border: $brand-color-google-alt;
-  $btn-brand-google-color: var(--ux-white);
+  $btn-brand-google-color: $ux-white;
 
   $btn-brand-google-hover-background: #2069cf;
   $btn-brand-google-hover-border: #2069cf;
-  $btn-brand-google-hover-color: var(--ux-white);
+  $btn-brand-google-hover-color: $ux-white;
 
   $btn-brand-google-active-background: #2069cf;
   $btn-brand-google-active-border: #2069cf;
-  $btn-brand-google-active-color: var(--ux-white);
+  $btn-brand-google-active-color: $ux-white;
 
   @include button-variant(
     $btn-brand-google-background,
@@ -501,15 +501,15 @@ $warning: $ux-yellow-400;
 @mixin btn-brand-facebook {
   $btn-brand-facebook-background: $brand-color-facebook;
   $btn-brand-facebook-border: $brand-color-facebook;
-  $btn-brand-facebook-color: var(--ux-white);
+  $btn-brand-facebook-color: $ux-white;
 
   $btn-brand-facebook-hover-background: darken($brand-color-facebook, 5%);
   $btn-brand-facebook-hover-border: darken($brand-color-facebook, 5%);
-  $btn-brand-facebook-hover-color: var(--ux-white);
+  $btn-brand-facebook-hover-color: $ux-white;
 
   $btn-brand-facebook-active-background: darken($brand-color-facebook, 5%);
   $btn-brand-facebook-active-border: darken($brand-color-facebook, 5%);
-  $btn-brand-facebook-active-color: var(--ux-white);
+  $btn-brand-facebook-active-color: $ux-white;
 
   @include button-variant(
     $btn-brand-facebook-background,
@@ -541,15 +541,15 @@ $warning: $ux-yellow-400;
 @mixin btn-brand-linkedin {
   $btn-brand-linkedin-background: $brand-color-linkedin;
   $btn-brand-linkedin-border: $brand-color-linkedin;
-  $btn-brand-linkedin-color: var(--ux-white);
+  $btn-brand-linkedin-color: $ux-white;
 
   $btn-brand-linkedin-hover-background: darken($brand-color-linkedin, 5%);
   $btn-brand-linkedin-hover-border: darken($brand-color-linkedin, 5%);
-  $btn-brand-linkedin-hover-color: var(--ux-white);
+  $btn-brand-linkedin-hover-color: $ux-white;
 
   $btn-brand-linkedin-active-background: darken($brand-color-linkedin, 5%);
   $btn-brand-linkedin-active-border: darken($brand-color-linkedin, 5%);
-  $btn-brand-linkedin-active-color: var(--ux-white);
+  $btn-brand-linkedin-active-color: $ux-white;
 
   @include button-variant(
     $btn-brand-linkedin-background,
@@ -581,15 +581,15 @@ $warning: $ux-yellow-400;
 @mixin btn-brand-twitter {
   $btn-brand-twitter-background: $brand-color-twitter;
   $btn-brand-twitter-border: $brand-color-twitter;
-  $btn-brand-twitter-color: var(--ux-white);
+  $btn-brand-twitter-color: $ux-white;
 
   $btn-brand-twitter-hover-background: darken($brand-color-twitter, 5%);
   $btn-brand-twitter-hover-border: darken($brand-color-twitter, 5%);
-  $btn-brand-twitter-hover-color: var(--ux-white);
+  $btn-brand-twitter-hover-color: $ux-white;
 
   $btn-brand-twitter-active-background: darken($brand-color-twitter, 5%);
   $btn-brand-twitter-active-border: darken($brand-color-twitter, 5%);
-  $btn-brand-twitter-active-color: var(--ux-white);
+  $btn-brand-twitter-active-color: $ux-white;
 
   @include button-variant(
     $btn-brand-twitter-background,
@@ -621,15 +621,15 @@ $warning: $ux-yellow-400;
 @mixin btn-link {
   $btn-link-background: transparent;
   $btn-link-border: transparent;
-  $btn-link-color: var(--ux-blue);
+  $btn-link-color: $ux-blue;
 
   $btn-link-hover-background: transparent;
   $btn-link-hover-border: transparent;
-  $btn-link-hover-color: var(--ux-blue-600);
+  $btn-link-hover-color: $ux-blue-600;
 
   $btn-link-active-background: transparent;
   $btn-link-active-border: transparent;
-  $btn-link-active-color: var(--ux-blue-600);
+  $btn-link-active-color: $ux-blue-600;
 
   @include button-variant(
     $btn-link-background,

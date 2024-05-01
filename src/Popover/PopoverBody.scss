@@ -3,7 +3,7 @@
 .PopoverBody {
   background-color: var(--ux-white);
   border-radius: var(--ux-border-radius);
-  padding: $synth-spacing-4;
+  padding: var(--synth-spacing-4);
 
   &--card {
     padding: $card-spacing;

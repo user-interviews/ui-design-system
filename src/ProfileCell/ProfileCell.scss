@@ -45,7 +45,7 @@
   &__image {
     align-items: center;
     display: flex;
-    margin-right: $synth-spacing-4;
+    margin-right: var(--synth-spacing-4);
   }
 
   &--large {

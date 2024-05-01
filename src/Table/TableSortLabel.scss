@@ -1,7 +1,7 @@
 @import '../../scss/theme.scss';
 
 .TableSortLabel {
-  margin-left: $synth-spacing-2;
+  margin-left: var(--synth-spacing-2);
   color: var(--ux-blue);
 
   &:hover {
