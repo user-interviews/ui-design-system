@@ -43,11 +43,11 @@
     }
 
     &--left {
-      box-shadow: $ux-box-shadow-table-sticky-column-left;
+      box-shadow: var(--ux-box-shadow-table-sticky-column-left);
     }
 
     &--right {
-      box-shadow: $ux-box-shadow-table-sticky-column-right;
+      box-shadow: var(--ux-box-shadow-table-sticky-column-right);
     }
   }
 

@@ -5,13 +5,13 @@
   border: 1px solid $ux-gray-400;
 
   &:first-of-type {
-    border-top-left-radius: $ux-border-radius;
-    border-top-right-radius: $ux-border-radius;
+    border-top-left-radius: var(--ux-border-radius);
+    border-top-right-radius: var(--ux-border-radius);
   }
 
   &:last-of-type {
-    border-bottom-left-radius: $ux-border-radius;
-    border-bottom-right-radius: $ux-border-radius;
+    border-bottom-left-radius: var(--ux-border-radius);
+    border-bottom-right-radius: var(--ux-border-radius);
   }
 
   &--borderless {

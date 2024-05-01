@@ -10,7 +10,7 @@
 .Card {
   background-color: $ux-white;
   border: none;
-  border-radius: 4px;
+  border-radius: var(--ux-border-radius);
   box-shadow: $ux-elevations-20;
   outline-color: $ux-green-500;
   padding: $card-spacing;

@@ -7,7 +7,7 @@
 
   &__Content {
     background-color: white;
-    border-radius: $ux-border-radius;
+    border-radius: var(--ux-border-radius);
     box-shadow: $modal-content-box-shadow-xs;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-weight: 400;

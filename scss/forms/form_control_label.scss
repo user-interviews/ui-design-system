@@ -41,7 +41,7 @@
 
   &--bordered {
     border: 1px solid $ux-gray-400;
-    border-radius: $ux-border-radius;
+    border-radius: var(--ux-border-radius);
     padding: 16px;
     cursor: pointer;
 

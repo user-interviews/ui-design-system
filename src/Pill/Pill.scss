@@ -6,7 +6,7 @@
   display: inline;
   background-color: $ux-blue-100;
   color: $ux-blue-700;
-  border-radius: $ux-border-radius;
+  border-radius: var(--ux-border-radius);
   padding: $synth-spacing-1 $synth-spacing-3;
   white-space: nowrap;
 

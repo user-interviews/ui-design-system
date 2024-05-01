@@ -39,7 +39,7 @@
   }
 
   &.btn-sm {
-    border-radius: $ux-border-radius;
+    border-radius: var(--ux-border-radius);
   }
 
   &.btn-primary {

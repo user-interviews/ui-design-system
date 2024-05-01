@@ -1,5 +1,3 @@
-@import 'borders';
-@import 'box_shadow';
 @import 'colors';
 @import 'elevations';
 @import 'spacing';
@@ -7,18 +5,18 @@
 @import 'z_stack';
 
 :root {
-  --ux-border-radius: #{$ux-border-radius};
+  --ux-border-radius: 4px;
 
-  --ux-navbar-shadow-color: #{$ux-navbar-shadow-color};
-  --ux-box-shadow: #{$ux-box-shadow};
-  --ux-box-shadow-light: #{$ux-box-shadow-light};
-  --ux-box-shadow-card: #{$ux-box-shadow-card};
-  --ux-box-shadow-table-sticky-column-left: #{$ux-box-shadow-table-sticky-column-left};
-  --ux-box-shadow-table-sticky-column-right: #{$ux-box-shadow-table-sticky-column-right};
-  --ux-box-shadow-top: #{$ux-box-shadow-top};
-  --ux-box-shadow-top-light: #{$ux-box-shadow-top-light};
-  --ux-drawer-box-shadow-right: #{$ux-drawer-box-shadow-right};
-  --ux-drawer-box-shadow-left: #{$ux-drawer-box-shadow-left};
+  --ux-navbar-shadow-color: #{rgba( 0, 0, 0, 0.26 )};
+  --ux-box-shadow: #{0 2px 5px rgba( 0, 0, 0, 0.26 )};
+  --ux-box-shadow-light: #{0 1px 1px rgba( 0, 0, 0, 0.26 )};
+  --ux-box-shadow-card: #{0 2px 4px rgba(0,0,0,0.1)};
+  --ux-box-shadow-table-sticky-column-left: 2px 0px 1px 0px rgba(0, 0, 0, 0.05);
+  --ux-box-shadow-table-sticky-column-right: -2px 0px 1px 0px rgba(0, 0, 0, 0.05);
+  --ux-box-shadow-top: 0 -2px 5px rgba( 0, 0, 0, 0.26 );
+  --ux-box-shadow-top-light: 0 -1px 1px rgba( 0, 0, 0, 0.26 );
+  --ux-drawer-box-shadow-right: -4px 4px 8px rgba(0,0,0,.1);
+  --ux-drawer-box-shadow-left: 4px 4px 8px rgba(0,0,0,.1);
 
   --ux-elevations-00: #{$ux-elevations-00};
   --ux-elevations-10: #{$ux-elevations-10};

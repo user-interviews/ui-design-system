@@ -67,7 +67,7 @@
 
     &#{$block}--visible {
       right: 0;
-      box-shadow: $ux-drawer-box-shadow-right;
+      box-shadow: var(--ux-drawer-box-shadow-right);
     }
   }
 
@@ -76,7 +76,7 @@
 
     &#{$block}--visible {
       left: 0;
-      box-shadow: $ux-drawer-box-shadow-left;
+      box-shadow: var(--ux-drawer-box-shadow-left);
     }
   }
 }

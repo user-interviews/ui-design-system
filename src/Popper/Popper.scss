@@ -102,9 +102,9 @@
   @include synth-font-type-30--medium;
   @include popper-arrow($popper-color: $ux-white, $popper-border-color: $ux-gray-300);
   background-color: $ux-white;
-  border-radius: $ux-border-radius;
+  border-radius: var(--ux-border-radius);
   border: 1px solid $ux-gray-300;
-  box-shadow: $ux-box-shadow-card;
+  box-shadow: var(--ux-box-shadow-card);
   max-width: 240px;
   letter-spacing: normal;
   padding: $synth-spacing-3;

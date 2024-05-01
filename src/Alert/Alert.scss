@@ -5,7 +5,7 @@
   background-color: $bg-color;
   border: none;
   border-left: unset;
-  border-radius: $ux-border-radius;
+  border-radius: var(--ux-border-radius);
   color: $color;
   margin: $synth-spacing-2 $synth-spacing-4 $synth-spacing-2 0;
   padding: $synth-spacing-2 $synth-spacing-4;
@@ -45,7 +45,7 @@
     }
   
     background-color: $synth-alert-bg-neutral;
-    border-radius: $ux-border-radius;
+    border-radius: var(--ux-border-radius);
     color: $synth-text-neutral;
     margin-bottom: $synth-spacing-4;
     padding: $synth-spacing-4;
@@ -207,7 +207,7 @@
   }
 
   font-weight: 500;
-  border-radius: $ux-border-radius;
+  border-radius: var(--ux-border-radius);
   margin-bottom: $synth-spacing-4;
   padding: $synth-spacing-4;
   position: relative;

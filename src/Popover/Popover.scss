@@ -3,7 +3,7 @@
 .Popover {
   box-shadow: $ux-elevations-20;
   border: 1px solid $ux-gray-400;
-  border-radius: $ux-border-radius;
+  border-radius: var(--ux-border-radius);
 
   max-width: unset;
 
