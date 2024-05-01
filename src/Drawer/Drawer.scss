@@ -39,7 +39,7 @@
 
   $block: #{&};
 
-  background-color: $ux-white;
+  background-color: var(--ux-white);
   height: 100vh;
   width: 100%;
   position: fixed;

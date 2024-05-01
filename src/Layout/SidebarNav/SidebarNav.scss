@@ -2,8 +2,8 @@
 
 .Layout__sidebar-nav {
   &__mobile-controls {
-    border-top: 1px solid $ux-gray-400;
-    color: $ux-white;
+    border-top: 1px solid var(--ux-gray-400);
+    color: var(--ux-white);
     display: flex;
     flex-direction: column;
 

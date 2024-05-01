@@ -2,8 +2,8 @@
 
 .Header {
   align-items: center;
-  background: $ux-gray-900;
-  color: $ux-white;
+  background: var(--ux-gray-900);
+  color: var(--ux-white);
   display: flex;
   height: $ui-header-height;
   padding: $synth-spacing-4;

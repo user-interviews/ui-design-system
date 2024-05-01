@@ -1,7 +1,7 @@
 @import '../../scss/theme.scss';
 
 .PopoverBody {
-  background-color: $ux-white;
+  background-color: var(--ux-white);
   border-radius: var(--ux-border-radius);
   padding: $synth-spacing-4;
 

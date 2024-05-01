@@ -9,7 +9,7 @@
     margin-bottom: 0;
 
     font-weight: $synth-font-weight-bold;
-    color: $ux-gray-900;
+    color: var(--ux-gray-900);
 
     &--disabled {
       opacity: 0.5;
@@ -35,7 +35,7 @@
 
     .react-toggle--focus {
       border-radius: 12px;
-      outline: 2px solid $ux-blue-500;
+      outline: 2px solid var(--ux-blue-500);
       outline-offset: 2px;
 
       .react-toggle-thumb {
@@ -48,10 +48,10 @@
     }
 
     .react-toggle--checked .react-toggle-track {
-      background-color: $ux-green-600;
+      background-color: var(--ux-green-600);
 
       &:hover {
-        background-color: $ux-green;
+        background-color: var(--ux-green);
       }
     }
 
@@ -64,15 +64,15 @@
     }
 
     .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
-      background-color: $ux-green;
+      background-color: var(--ux-green);
     }
 
     .react-toggle--checked .react-toggle-thumb {
-      border-color: $ux-green-600;
+      border-color: var(--ux-green-600);
       left: 22px;
 
       &:hover {
-        border-color: $ux-green;
+        border-color: var(--ux-green);
       }
     }
   }

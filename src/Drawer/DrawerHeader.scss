@@ -10,7 +10,7 @@
     margin-bottom: 0;
 
     &--bordered {
-      border-bottom: 1px solid $ux-neutral-400;
+      border-bottom: 1px solid var(--ux-neutral-400);
     }
   }
 
@@ -19,12 +19,12 @@
 
     border: none;
     background: transparent;
-    color: $ux-gray-700;
+    color: var(--ux-gray-700);
   }
 
   &__title {
     @include synth-font-type-70--bold;
 
-    color: $ux-gray-900;
+    color: var(--ux-gray-900);
   }
 }

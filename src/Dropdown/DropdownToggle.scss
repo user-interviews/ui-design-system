@@ -1,8 +1,8 @@
 @import '../../scss/theme';
 
-$primary: $ux-emerald-600;
-$danger: $ux-red;
-$warning: $ux-yellow-400; 
+$primary: var(--ux-emerald-600);
+$danger: var(--ux-red);
+$warning: var(--ux-yellow-400); 
 
 .DropdownToggle {
   @include synth-font-type-30--bold;
@@ -25,11 +25,11 @@ $warning: $ux-yellow-400;
     @include btn-primary;
 
     &:focus {
-      background: $ux-emerald-600;
+      background: var(--ux-emerald-600);
     }
 
     &.show:focus {
-      background: $ux-emerald-700;
+      background: var(--ux-emerald-700);
     }
   }
 
@@ -41,11 +41,11 @@ $warning: $ux-yellow-400;
     @include btn-danger;
 
     &:focus {
-      background: $ux-red-500;
+      background: var(--ux-red-500);
     }
 
     &.show:focus {
-      background: $ux-red-700;
+      background: var(--ux-red-700);
     }
   }
   
@@ -57,11 +57,11 @@ $warning: $ux-yellow-400;
     @include btn-warning;
 
     &:focus {
-      background: $ux-yellow-400;
+      background: var(--ux-yellow-400);
     }
 
     &.show:focus {
-      background: $ux-yellow-600;
+      background: var(--ux-yellow-600);
     }
   }
   
@@ -77,7 +77,7 @@ $warning: $ux-yellow-400;
     }
 
     &.show:focus {
-      background: $ux-gray-400;
+      background: var(--ux-gray-400);
     }
   }
 

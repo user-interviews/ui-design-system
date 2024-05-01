@@ -1,8 +1,8 @@
 @import '../../scss/theme';
 
 .AccordionItem {
-  background-color: $ux-white;
-  border: 1px solid $ux-gray-400;
+  background-color: var(--ux-white);
+  border: 1px solid var(--ux-gray-400);
 
   &:first-of-type {
     border-top-left-radius: var(--ux-border-radius);

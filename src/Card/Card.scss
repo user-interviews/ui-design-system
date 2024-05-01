@@ -2,17 +2,17 @@
 
 .Synthesized {
   .Card {
-    border: 1px solid $ux-gray-400;
+    border: 1px solid var(--ux-gray-400);
     box-shadow: none;
   }
 }
 
 .Card {
-  background-color: $ux-white;
+  background-color: var(--ux-white);
   border: none;
   border-radius: var(--ux-border-radius);
   box-shadow: $ux-elevations-20;
-  outline-color: $ux-green-500;
+  outline-color: var(--ux-green-500);
   padding: $card-spacing;
 
   max-width: 100%;
@@ -31,13 +31,13 @@
 
   &__helper-text {
     @include synth-font-type-50;
-    color: $ux-gray-900;
+    color: var(--ux-gray-900);
     margin-left: $synth-spacing-1;
   }
 
   &__subtitle {
     @include synth-font-type-30;
-    color: $ux-gray-800;
+    color: var(--ux-gray-800);
   }
 
   &__title {

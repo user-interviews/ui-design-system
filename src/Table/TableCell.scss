@@ -2,7 +2,7 @@
 
 .TableCell {
   @include synth-font-type-30;
-  border-bottom: 1px solid $ux-gray-200;
+  border-bottom: 1px solid var(--ux-gray-200);
   overflow: hidden;
   padding: $synth-spacing-6;
   text-align: left;
@@ -11,9 +11,9 @@
 
   &__header {
     @include synth-font-type-30--bold;
-    background-color: $ux-gray-100;
+    background-color: var(--ux-gray-100);
     border-bottom: none;
-    color: $ux-gray-800;
+    color: var(--ux-gray-800);
     padding: $synth-spacing-6;
     text-align: left;
     white-space: nowrap;
@@ -34,11 +34,11 @@
 
   &--sticky-column {
     position: sticky; 
-    background: $ux-white;
+    background: var(--ux-white);
     z-index: $z-index-table-cell-sticky-column;
 
     &--corner {
-      background-color: $ux-gray-100;
+      background-color: var(--ux-gray-100);
       z-index: $z-index-20 !important;
     }
 

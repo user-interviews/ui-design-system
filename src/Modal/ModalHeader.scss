@@ -18,12 +18,12 @@
     }
 
     .warning {
-      color: $ux-yellow-600;
+      color: var(--ux-yellow-600);
       margin-right: $synth-spacing-2;
     }
 
     .danger {
-      color: $ux-red-400;
+      color: var(--ux-red-400);
       margin-right: $synth-spacing-2;
     }
   }

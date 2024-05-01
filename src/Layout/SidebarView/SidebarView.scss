@@ -15,7 +15,7 @@
 
   &__sidebar {
     background-color: white;
-    border-right: $border-width solid $ux-gray-300;
+    border-right: $border-width solid var(--ux-gray-300);
     flex: 0 0 360px;
 
     // Why clip-path, rather than width or transform: scaleX?

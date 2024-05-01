@@ -12,8 +12,8 @@ $text-container-margin-top: 10px;
     grid-column-start: 1;
     grid-row-start: 1;
     
-    background: $ux-white;
-    border: 1px solid $ux-emerald-600;
+    background: var(--ux-white);
+    border: 1px solid var(--ux-emerald-600);
     border-radius: 50%;
     
     height: 0;
@@ -26,7 +26,7 @@ $text-container-margin-top: 10px;
 
     &__number {
       @include synth-font-type-40--bold;
-      color: $ux-emerald-600;
+      color: var(--ux-emerald-600);
       float: left;
       line-height: 1;
       margin-top: -8px;
@@ -56,7 +56,7 @@ $text-container-margin-top: 10px;
 
     min-height: ($step-circle-size * 2) - $synth-spacing-3;
 
-    border-left: 1px solid $ux-emerald-600;
+    border-left: 1px solid var(--ux-emerald-600);
 
     // centers text container with step circle
     margin-top: $text-container-margin-top;

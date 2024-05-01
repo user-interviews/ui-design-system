@@ -2,7 +2,7 @@
 
 .ModalFooter {
   align-items: center;
-  background-color: $ux-gray-100;
+  background-color: var(--ux-gray-100);
   display: flex;
   justify-content: flex-end;
   padding: $synth-spacing-4;

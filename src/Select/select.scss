@@ -6,27 +6,27 @@
 .Synthesized .Select__menu {
   .Select__option:hover,
   .Select__option--is-focused {
-    background-color: $synth-hover-state;
+    background-color: var(--synth-hover-state);
   }
 
   .Select__option--is-selected,
   .Select__option--is-selected:hover {
-    background-color: $synth-selected-state-green;
+    background-color: var(--synth-selected-state-green);
   }
 }
 
 .Select__control {
   .Select__multi-value__label,
   .Select__multi-value__remove {
-    color: $synth-success-green-dark;
+    color: var(--synth-success-green-dark);
   }
 
   .Select__multi-value__remove:hover {
-    background-color: $synth-selected-state-green;
-    color: $synth-success-green-dark;
+    background-color: var(--synth-selected-state-green);
+    color: var(--synth-success-green-dark);
   }
 
   .Select__multi-value {
-    background-color: $synth-hover-state;
+    background-color: var(--synth-hover-state);
   }
 }

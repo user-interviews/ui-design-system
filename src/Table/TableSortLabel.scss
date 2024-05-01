@@ -2,7 +2,7 @@
 
 .TableSortLabel {
   margin-left: $synth-spacing-2;
-  color: $ux-blue;
+  color: var(--ux-blue);
 
   &:hover {
     cursor: pointer;
