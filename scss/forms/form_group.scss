@@ -10,7 +10,7 @@
 
   &--bordered {
     border: 1px solid var(--ux-gray-400);
-    border-radius: 4px;
+    border-radius: var(--ux-border-radius);
     padding: 16px;
 
     .InputLabel {
