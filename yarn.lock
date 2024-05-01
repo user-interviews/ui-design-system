@@ -5466,15 +5466,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-toggle@npm:^4":
-  version: 4.0.5
-  resolution: "@types/react-toggle@npm:4.0.5"
-  dependencies:
-    "@types/react": "npm:*"
-  checksum: 10c0/f557b85c96715b145bcc3beb2903f88ee3a6045ef85da0f80561c7cc2ecdc531e2d4ae121ed8ec3a1761264de25b8410653744093f37abf042201587add7ffa6
-  languageName: node
-  linkType: hard
-
 "@types/react-transition-group@npm:^4.4.0, @types/react-transition-group@npm:^4.4.5":
   version: 4.4.6
   resolution: "@types/react-transition-group@npm:4.4.6"
@@ -5848,7 +5839,6 @@ __metadata:
     "@types/jest": "npm:^29.5.5"
     "@types/react": "npm:^18.3.1"
     "@types/react-dom": "npm:^18.3.0"
-    "@types/react-toggle": "npm:^4"
     "@types/react-transition-group": "npm:^4.4.10"
     "@types/testing-library__jest-dom": "npm:^6.0.0"
     "@typescript-eslint/eslint-plugin": "npm:^6.21"
