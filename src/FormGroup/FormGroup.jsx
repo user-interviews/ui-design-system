@@ -64,7 +64,6 @@ export default function FormGroup(props) {
       {isElementTypeDiv && props.label && (
         <InputLabel
           className={props.labelClassName}
-          elementType={props.elementType}
           labelHelperText={props.labelHelperText}
           labelHtmlFor={props.labelHtmlFor}
           required={props.required}
