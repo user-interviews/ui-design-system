@@ -1,5 +1,6 @@
 #!/bin/bash
 
+volta install node@20.12.1
 volta install yarn@4.1.1
 volta setup
 touch .env
