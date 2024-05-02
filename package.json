@@ -1,6 +1,6 @@
 {
   "name": "@user-interviews/ui-design-system",
-  "version": "2.8.0",
+  "version": "3.0.0-alpha",
   "dependencies": {
     "@tiptap/core": "^2.0.3",
     "@tiptap/extension-bold": "^2.0.3",
@@ -197,5 +197,6 @@
   "volta": {
     "node": "20.12.1",
     "yarn": "4.1.1"
-  }
+  },
+  "stableVersion": "2.8.0"
 }
