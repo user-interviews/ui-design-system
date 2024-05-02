@@ -74,7 +74,7 @@ export default function FormGroup(props) {
       )}
 
       {
-        helperText && !hasErrors && (
+        helperText && (
           <div className="FormGroup__helper-text">
             {helperText}
           </div>
