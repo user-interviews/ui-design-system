@@ -52,7 +52,6 @@ export default function FormGroup(props) {
       {isElementTypeFieldset && props.label && (
         <InputLegend
           className={props.labelClassName}
-          elementType={props.elementType}
           labelHelperText={props.labelHelperText}
           labelHtmlFor={props.labelHtmlFor}
           required={props.required}
