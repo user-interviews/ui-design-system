@@ -35,7 +35,7 @@ jobs:
         uses: fregante/setup-git-user@v1
 
       - name: Bump version in package.json
-        run: yarn version --new-version ${{ github.event.inputs.version }} --no-git-tag-version
+        run: yarn version ${{ github.event.inputs.version }}
 
       - name: Commit manifest files
         id: make-commit
