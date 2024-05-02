@@ -32,7 +32,7 @@ jobs:
         run: git checkout -b hotfix/${{ github.event.inputs.version }}
 
       - name: Initialize mandatory git config
-        uses: fregante/setup-git-user@v1
+        uses: fregante/setup-git-user@v2
 
       - name: Bump version in package.json
         run: yarn version --new-version ${{ github.event.inputs.version }} --no-git-tag-version
