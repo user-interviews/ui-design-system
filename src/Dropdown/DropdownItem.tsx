@@ -44,7 +44,6 @@ type DropdownItemProps = {
    */
   onClick?: RBDropdownProps['onClick'];
   children?: React.ReactNode;
-  variant?: 'danger'
 };
 
 const DropdownItem = ({
