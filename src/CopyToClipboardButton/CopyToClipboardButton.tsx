@@ -19,7 +19,7 @@ type CopyToClipboardButtonProps = {
   copyText?: string;
   displayText?: string;
   trackingEvent: string;
-  variant?: 'neutral' | 'secondary';
+  variant?: typeof ButtonVariants[keyof typeof ButtonVariants];
 };
 
 function CopyToClipboardButton({
