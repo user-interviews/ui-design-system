@@ -7,6 +7,7 @@ exports[`Tabs controlled tabs renders the expected snapshot 1`] = `
     <div>
       <ul
         class="nav nav-tabs"
+        id="tabID"
         role="tablist"
       >
         <li
@@ -95,6 +96,7 @@ exports[`Tabs controlled tabs renders the expected snapshot 1`] = `
   "container": <div>
     <ul
       class="nav nav-tabs"
+      id="tabID"
       role="tablist"
     >
       <li
@@ -240,6 +242,7 @@ exports[`Tabs uncontrolled tabs renders the expected snapshot 1`] = `
     <div>
       <ul
         class="nav nav-tabs"
+        id="tabID"
         role="tablist"
       >
         <li
@@ -328,6 +331,7 @@ exports[`Tabs uncontrolled tabs renders the expected snapshot 1`] = `
   "container": <div>
     <ul
       class="nav nav-tabs"
+      id="tabID"
       role="tablist"
     >
       <li
