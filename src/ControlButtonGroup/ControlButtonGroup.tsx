@@ -9,7 +9,7 @@ type ControlButtonGroupProps = {
   childChecked: (...args: unknown[]) => boolean;
   children: React.ReactNode;
   handleChangeValue: (...args: unknown[]) => unknown;
-  orientation?: 'column' | 'row';
+  orientation?: typeof ORIENTATIONS[keyof typeof ORIENTATIONS];
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
 };
 
