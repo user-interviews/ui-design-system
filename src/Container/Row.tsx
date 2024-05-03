@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
   Row as ReactBootstrapRow,
   type RowProps as ReactBootstrapRowProps,
@@ -81,69 +80,4 @@ export const Row = ({
   >
     { children }
   </ReactBootstrapRow>
-  );
-
-const rowColWidth = PropTypes.oneOfType([PropTypes.number, PropTypes.string]);
-
-const rowColumns = PropTypes.oneOfType([
-  rowColWidth,
-  PropTypes.shape({
-    cols: rowColWidth,
-  }),
-]);
-
-Row.propTypes = {
-  /**
-   The number of columns that will fit next to each other on large devices (≥992px).
-   Use auto to give columns their natural widths.
-   `number | 'auto' | { cols: number | 'auto' }`
-  */
-  lg: rowColumns,
-
-  /**
-   The number of columns that will fit next to each other on medium devices (≥768px).
-   Use auto to give columns their natural widths.
-   `number | 'auto' | { cols: number | 'auto' }`
-  */
-  md: rowColumns,
-
-  /**
-   The number of columns that will fit next to each other on small devices (≥576px).
-   Use auto to give columns their natural widths.
-   `number | 'auto' | { cols: number | 'auto' }`
-  */
-  sm: rowColumns,
-
-  /**
-    The number of columns that will fit next to each other on extra large devices (≥1200px).
-    Use auto to give columns their natural widths.
-    `number | 'auto' | { cols: number | 'auto' }`
-  */
-  xl: rowColumns,
-
-  /**
-    The number of columns that will fit next to each other on extra small devices (<576px).
-    Use auto to give columns their natural widths.
-    `number | 'auto' | { cols: number | 'auto' }`
-  */
-  xs: rowColumns,
-
-  /**
-    The number of columns that will fit next to each other on extra extra large devices (≥1400px).
-    Use auto to give columns their natural widths.
-    `number | 'auto' | { cols: number | 'auto' }`
-  */
-  xxl: rowColumns,
-};
-
-Row.defaultProps = {
-  as: undefined,
-  bsPrefix: 'row',
-  className: undefined,
-  lg: undefined,
-  md: undefined,
-  sm: undefined,
-  xl: undefined,
-  xs: undefined,
-  xxl: undefined,
-};
+);

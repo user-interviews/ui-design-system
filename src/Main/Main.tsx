@@ -1,7 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
-
-import { Container, containerSizes } from '../Container';
+import {
+  type ContainerProps as ReactBootstrapContainerProps,
+} from 'react-bootstrap';
+import { Container } from '../Container';
 
 import './Main.scss';
 
@@ -14,7 +16,7 @@ type MainProps = ElementProps & {
   as?: React.ElementType;
   children?: React.ReactNode;
   className?: string;
-  fluid?: boolean;
+  fluid?: ReactBootstrapContainerProps['fluid'];
   id?: string;
 };
 
@@ -35,16 +37,6 @@ const Main = ({
   >
     {children}
   </Container>
-  );
+);
 
-Main.propTypes = {
-  fluid: containerSizes,
-};
-
-Main.defaultProps = {
-  as: 'main',
-  className: undefined,
-  fluid: true,
-  id: undefined,
-};
 export default Main;

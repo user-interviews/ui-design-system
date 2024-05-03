@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {
   Container as ReactBootstrapContainer,
   type ContainerProps as ReactBootstrapContainerProps,
@@ -40,24 +39,4 @@ export const Container = ({
   >
     { children }
   </ReactBootstrapContainer>
-  );
-
-export const containerSizes = PropTypes.oneOfType([
-  PropTypes.bool,
-  PropTypes.oneOf(['sm', 'md', 'lg', 'xl', 'xxl']),
-]);
-
-Container.propTypes = {
-  /**
-   Allow the Container to fill all of its available horizontal space.
-   `bool | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'`
-  */
-  fluid: containerSizes,
-};
-
-Container.defaultProps = {
-  as: undefined,
-  bsPrefix: 'container',
-  className: undefined,
-  fluid: false,
-};
+);
