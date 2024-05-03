@@ -129,18 +129,6 @@
     }
   }
   
-  .Alert-announcement {
-    border-left: 8px solid var(--synth-hyperlink-color);
-  
-    .close {
-      @include close-action;
-    }
-  
-    .primary-action {
-      @include primary-action;
-    }
-  }
-  
   .Alert-feature {
     border: 2px solid var(--ux-teal-600);
   
@@ -291,20 +279,6 @@
     .fa-info {
       color: var(--ux-blue-600);
     }
-  }
-}
-
-.Alert-announcement {
-  background-color: var(--ux-blue-100);
-  color: var(--ux-blue-700);
-  border-left: 8px solid var(--ux-blue-300);
-
-  .close {
-    @include close-action;
-  }
-
-  .primary-action {
-    @include primary-action;
   }
 }
 

@@ -17,7 +17,6 @@ import classNames from 'classnames';
 export const MessageTypes = {
   SUCCESS: 'success',
   INFO: 'info',
-  ANNOUNCEMENT: 'announcement',
   FEATURE: 'feature',
   WARNING: 'warning',
   ERROR: 'error',
@@ -39,8 +38,6 @@ const getAlertIcon = (type) => {
           <FontAwesomeIcon icon={faInfo} transform="shrink-4" />
         </span>
       );
-    case MessageTypes.ANNOUNCEMENT:
-      return (<FontAwesomeIcon icon={faBullhorn} transform="grow-2" />);
     case MessageTypes.FEATURE:
       return (<FontAwesomeIcon icon={faBullhorn} transform="grow-2" />);
     case MessageTypes.WARNING:

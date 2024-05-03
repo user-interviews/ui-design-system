@@ -54,22 +54,6 @@
     @include btn-tertiary;
   }
 
-  &.btn-danger {
-    @include btn-danger;
-  }
-
-  &.btn-outline-danger {
-    @include btn-outline-danger;
-  }
-
-  &.btn-warning {
-    @include btn-warning;
-  }
-
-  &.btn-outline-warning {
-    @include btn-outline-warning;
-  }
-
   &.btn-transparent {
     @include btn-transparent;
   }
