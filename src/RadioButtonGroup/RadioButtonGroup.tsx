@@ -16,7 +16,7 @@ type RadioButtonGroupProps = {
 export default function RadioButtonGroup({
   children,
   fullWidth,
-  orientation = 'column',
+  orientation = ORIENTATIONS.COLUMN,
   value,
   onChange,
 }: RadioButtonGroupProps) {
