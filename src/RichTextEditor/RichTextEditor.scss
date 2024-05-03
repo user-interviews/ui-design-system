@@ -12,20 +12,20 @@
 
 .RichTextEditor__field--error {
   .ProseMirror {
-    border-color: $ux-red-600;
+    border-color: var(--ux-red-600);
   }
 }
 
 .ProseMirror {
   min-height: 80px;
-  background: $ux-neutral-100;
-  border: 1px solid $ux-gray-400;
-  border-radius: 0 0 $ux-border-radius $ux-border-radius;
+  background: var(--ux-neutral-100);
+  border: 1px solid var(--ux-gray-400);
+  border-radius: 0 0 var(--ux-border-radius) var(--ux-border-radius);
   padding: 16px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   &:focus {
-    border: 1px solid $ux-blue-500;
+    border: 1px solid var(--ux-blue-500);
     box-shadow: $input-focus-box-shadow;
     color: $input-focus-color;
     outline: none;
@@ -45,7 +45,7 @@
   }
 
   p.is-editor-empty:first-child::before {
-    color: $ux-gray-700;
+    color: var(--ux-gray-700);
     content: attr(data-placeholder);
     float: left;
     height: 0;
@@ -54,5 +54,5 @@
 }
 
 .RichTextEditor__field--without-menu-bar .ProseMirror {
-  border-radius: $ux-border-radius;
+  border-radius: var(--ux-border-radius);
 }

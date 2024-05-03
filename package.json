@@ -1,6 +1,6 @@
 {
   "name": "@user-interviews/ui-design-system",
-  "version": "2.7.2",
+  "version": "3.0",
   "dependencies": {
     "@tiptap/core": "^2.0.3",
     "@tiptap/extension-bold": "^2.0.3",
@@ -173,7 +173,7 @@
   ],
   "engines": {
     "node": "^ 20.12",
-    "yarn": "^ 4.1"
+    "yarn": "^ 4.2"
   },
   "main": "lib/index",
   "types": "lib/index",
@@ -194,10 +194,9 @@
   },
   "readme": "https://github.com/user-interviews/ui-design-system#readme",
   "homepage": "https://github.com/user-interviews/ui-design-system",
-  "_id": "@user-interviews/ui-design-system@1.32.0",
+  "_id": "@user-interviews/ui-design-system@3.0",
   "volta": {
     "node": "20.12.1",
-    "yarn": "4.1.1"
-  },
-  "packageManager": "pnpm@9.0.4+sha1.b198ac6d38244fd829253720f9daafd6a606834d"
+    "yarn": "4.2.1"
+  }
 }

@@ -52,8 +52,9 @@ const LoadingSkeleton = ({
 }: LoadingSkeletonProps) => (
   <SkeletonTheme baseColor={colors.UX_GRAY_300}>
     <Skeleton
-      className={classNames('LoadingSkeleton', className)}
       {...props}
+      className={classNames('LoadingSkeleton', className)}
+      containerClassName={classNames('loadingSkeletonContainer', props.containerClassName)}
     />
   </SkeletonTheme>
 );

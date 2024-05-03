@@ -1,15 +1,13 @@
-@import '../../scss/theme';
-
 .CopyToClipboard {
   align-items: center;
-  border: 1px solid $ux-gray-400;
-  border-radius: $ux-border-radius;
-  color: $ux-gray-800;
+  border: 1px solid var(--ux-gray-400);
+  border-radius: var(--ux-border-radius);
+  color: var(--ux-gray-800);
   display: flex;
-  font-weight: $synth-font-weight-bold;
+  font-weight: var(--synth-font-weight-bold);
   justify-content: space-between;
   min-height: 32px;
-  padding: 0 0 0 $synth-spacing-2;
+  padding: 0 0 0 var(--synth-spacing-2);
 
   &__copy-text {
     overflow: hidden;

@@ -1,5 +1,4 @@
 @import '../../scss/theme';
-@import '../../scss/borders';
 @import '../../scss/forms/control_button_group';
 
 .CheckboxButtonGroup {
@@ -7,7 +6,7 @@
   flex-direction: column;
 
   label {
-    margin-bottom: $synth-spacing-2;
+    margin-bottom: var(--synth-spacing-2);
   }
 
   &--row {

@@ -1,24 +1,21 @@
-@import '../../scss/colors';
-@import '../../scss/spacing.scss';
-
 .Tooltip {
   &__icon {
-    color: $ux-blue-500;
+    color: var(--ux-blue-500);
     cursor: pointer;
-    margin-left: $synth-spacing-2;
-    margin-right: $synth-spacing-2;
+    margin-left: var(--synth-spacing-2);
+    margin-right: var(--synth-spacing-2);
     vertical-align: middle;
 
     &--neutral {
-      color: $ux-gray-800;
+      color: var(--ux-gray-800);
     }
 
     &--warning {
-      color: $synth-warning-amber-alternate;
+      color: var(--synth-warning-amber-alternate);
     }
 
     &--error {
-      color: $synth-error-red-medium;
+      color: var(--synth-error-red-medium);
     }
   }
 }

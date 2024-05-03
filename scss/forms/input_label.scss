@@ -10,7 +10,7 @@
 
   &__helper-text {
     @include synth-font-type-10--uppercase;
-    color: $ux-gray-900;
+    color: var(--ux-gray-900);
   }
 }
 

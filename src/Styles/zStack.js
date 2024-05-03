@@ -21,6 +21,6 @@ export default {
   zIndexFlash: 1045,
   zIndexDrawer: 1040,
   zIndexModalBackdrop: 1040, // Matches bootstrap $zindex-modal-backdrop
-  zIndexFixed: 1030, // Matches bootstrap $z-index-fixed
-  zIndexOverlay: 1029, // Sits just under $z-index-fixed
+  zIndexFixed: 1030, // Matches bootstrap var(--z-index-fixed)
+  zIndexOverlay: 1029, // Sits just under var(--z-index-fixed)
 };

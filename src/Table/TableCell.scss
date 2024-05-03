@@ -2,19 +2,19 @@
 
 .TableCell {
   @include synth-font-type-30;
-  border-bottom: 1px solid $ux-gray-200;
+  border-bottom: 1px solid var(--ux-gray-200);
   overflow: hidden;
-  padding: $synth-spacing-6;
+  padding: var(--synth-spacing-6);
   text-align: left;
   text-overflow: ellipsis;
   white-space: nowrap;
 
   &__header {
     @include synth-font-type-30--bold;
-    background-color: $ux-gray-100;
+    background-color: var(--ux-gray-100);
     border-bottom: none;
-    color: $ux-gray-800;
-    padding: $synth-spacing-6;
+    color: var(--ux-gray-800);
+    padding: var(--synth-spacing-6);
     text-align: left;
     white-space: nowrap;
   }
@@ -24,7 +24,7 @@
   }
 
   &--compact {
-    padding: $synth-spacing-3 $synth-spacing-6;
+    padding: var(--synth-spacing-3) var(--synth-spacing-6);
     max-height: 52px;
   }
 
@@ -34,27 +34,27 @@
 
   &--sticky-column {
     position: sticky; 
-    background: $ux-white;
-    z-index: $z-index-table-cell-sticky-column;
+    background: var(--ux-white);
+    z-index: var(--z-index-table-cell-sticky-column);
 
     &--corner {
-      background-color: $ux-gray-100;
-      z-index: $z-index-20 !important;
+      background-color: var(--ux-gray-100);
+      z-index: var(--z-index-20) !important;
     }
 
     &--left {
-      box-shadow: $ux-box-shadow-table-sticky-column-left;
+      box-shadow: var(--ux-box-shadow-table-sticky-column-left);
     }
 
     &--right {
-      box-shadow: $ux-box-shadow-table-sticky-column-right;
+      box-shadow: var(--ux-box-shadow-table-sticky-column-right);
     }
   }
 
   &--sticky-row {
     position: sticky;
     top: 0;
-    z-index: $z-index-1;
+    z-index: var(--z-index-1);
   }
 
   &--sticky-row-bottom {

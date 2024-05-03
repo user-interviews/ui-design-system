@@ -4,7 +4,7 @@
   @include synth-font-type-30;
 
   &:focus {
-    border: 1px solid $ux-blue-500;
+    border: 1px solid var(--ux-blue-500);
     box-shadow: $input-focus-box-shadow;
     color: $input-focus-color;
   }

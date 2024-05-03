@@ -39,7 +39,7 @@
 
   &:focus-visible {
     @include btn-focus-outline;
-    border-radius: $ux-border-radius;
+    border-radius: var(--ux-border-radius);
   }
 
   &:not(.collapsed) .AccordionToggle__chevron-right {
@@ -96,7 +96,7 @@
 
   &__collapsed-text {
     @include synth-font-type-30;
-    color: $ux-gray-600;
+    color: var(--ux-gray-600);
   }
 
   &--disabled {

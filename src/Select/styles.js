@@ -51,8 +51,8 @@ const defaultStyles = ({ menuWidth, size }) => ({
     indicatorSeparator: (styles) => ({ ...styles, display: 'none' }),
     multiValue: (styles) => ({
       ...styles,
-      backgroundColor: systemColors.UX_BLUE_100,
-      color: systemColors.UX_BLUE_700,
+      backgroundColor: systemColors.SYNTH_HOVER_STATE,
+      color: systemColors.SYNTH_SUCCESS_GREEN_DARK,
       borderRadius: '4px',
     }),
     menu: (styles) => ({
@@ -61,7 +61,7 @@ const defaultStyles = ({ menuWidth, size }) => ({
     }),
     multiValueLabel: (styles) => ({
       ...styles,
-      color: systemColors.UX_BLUE_700,
+      color: systemColors.SYNTH_SUCCESS_GREEN_DARK,
       fontSize: '0.875rem',
       fontWeight: 400,
       lineHeight: '1.25rem',
@@ -69,12 +69,12 @@ const defaultStyles = ({ menuWidth, size }) => ({
     }),
     multiValueRemove: (styles) => ({
       ...styles,
-      color: systemColors.UX_BLUE,
+      color: systemColors.SYNTH_SUCCESS_GREEN_DARK,
       cursor: 'pointer',
       ':hover': {
         ...styles[':hover'],
-        backgroundColor: systemColors.selectOptionFocusedBg,
-        color: systemColors.UX_BLUE_700,
+        backgroundColor: systemColors.SYNTH_SELECTED_STATE_GREEN,
+        color: systemColors.SYNTH_SUCCESS_GREEN_DARK,
       },
     }),
     placeholder: (styles) => ({
@@ -91,10 +91,12 @@ const defaultStyles = ({ menuWidth, size }) => ({
     }),
     option: (styles, {
       isDisabled,
+      isFocused,
       isSelected,
     }) => ({
         ...styles,
-        backgroundColor: isSelected ? systemColors.UX_BLUE_200 : styles.backgroundColor,
+        backgroundColor: isSelected || isFocused ?
+          systemColors.SYNTH_HOVER_STATE : styles.backgroundColor,
         color: systemColors.UX_GRAY_900,
         fontWeight: fontWeights.light,
         fontSize: '0.875rem',
@@ -108,10 +110,38 @@ const defaultStyles = ({ menuWidth, size }) => ({
 
         ':hover': {
           ...styles[':hover'],
-          backgroundColor: isSelected ? systemColors.UX_BLUE_200 : systemColors.UX_BLUE_100,
+          backgroundColor: isSelected ?
+            systemColors.SYNTH_SELECTED_STATE_GREEN : systemColors.SYNTH_HOVER_STATE,
         },
       }),
 });
+
+const borderedMultiValueStyles = (borderedMultiValue) => borderedMultiValue ? {
+  multiValue: (styles) => (
+    {
+      ...styles,
+      border: `1px solid ${systemColors.SYNTH_DARK_BACKGROUND_SELECTED_BLUE}`,
+      borderRadius: '4px',
+      backgroundColor: systemColors.UX_WHITE,
+    }
+  ),
+  multiValueLabel: (styles) => (
+    {
+      ...styles,
+      color: systemColors.SYNTH_DARK_BACKGROUND_SELECTED_BLUE,
+    }
+  ),
+  multiValueRemove: (styles) => (
+    {
+      ...styles,
+      color: systemColors.SYNTH_DARK_BACKGROUND_SELECTED_BLUE,
+      ':hover': {
+        backgroundColor: systemColors.UX_NAVY_500,
+        color: systemColors.UX_WHITE,
+      },
+    }
+  ),
+} : {};
 
 const defaultTheme = (theme) => ({
   ...theme,
@@ -122,6 +152,7 @@ const defaultTheme = (theme) => ({
 });
 
 export {
+  borderedMultiValueStyles,
   defaultStyles,
   defaultTheme,
 };
