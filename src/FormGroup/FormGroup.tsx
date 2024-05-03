@@ -84,7 +84,6 @@ export default function FormGroup({
       {isElementTypeFieldset && label && (
         <InputLegend
           className={labelClassName}
-          elementType={elementType}
           labelHelperText={labelHelperText}
           labelHtmlFor={labelHtmlFor}
           required={required}
@@ -96,7 +95,6 @@ export default function FormGroup({
       {isElementTypeDiv && label && (
         <InputLabel
           className={labelClassName}
-          elementType={elementType}
           labelHelperText={labelHelperText}
           labelHtmlFor={labelHtmlFor}
           required={required}

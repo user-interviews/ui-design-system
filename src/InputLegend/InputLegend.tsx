@@ -12,7 +12,6 @@ type LegendProps = React.DetailedHTMLProps<
 
 export type InputLegendProps = {
   className?: string;
-  elementType?: string;
   labelHelperText?: React.ReactNode;
   labelHtmlFor?: string;
   required?: boolean;

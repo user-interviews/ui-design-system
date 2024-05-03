@@ -9,7 +9,6 @@ type LabelProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLLabelElement>
 
 export type InputLabelProps = {
   className?: string;
-  elementType?: string;
   labelHelperText?: React.ReactNode;
   labelHtmlFor?: string;
   required?: boolean;
