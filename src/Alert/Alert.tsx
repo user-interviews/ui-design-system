@@ -23,7 +23,9 @@ export const MessageTypes = {
   ERROR: 'error',
 } as const;
 
-const getAlertIcon = (type) => {
+type MessageType = typeof MessageTypes[keyof typeof MessageTypes];
+
+const getAlertIcon = (type: MessageType) => {
   switch (type) {
     case MessageTypes.SUCCESS:
       return (
@@ -55,7 +57,7 @@ const getAlertIcon = (type) => {
 const AUTO_DISMISS_TIMEOUT_SUCCESS = 3000;
 const AUTO_DISMISS_TIMEOUT_DEFAULT = 5000;
 
-const getAlertClassName = (type) => {
+const getAlertClassName = (type: MessageType) => {
   if (!Object.values(MessageTypes).includes(type)) {
     throw new TypeError(`Unexpected type ${type} used for an alert.`);
   }
@@ -86,7 +88,7 @@ type AlertProps = {
   /**
    One of the MessageTypes
   */
-  type: string;
+  type: MessageType;
   onDismiss?: (arg0: string) => void;
 };
 
