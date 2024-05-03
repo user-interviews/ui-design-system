@@ -11,7 +11,7 @@ type CheckboxButtonGroupProps = {
   id: string;
   orientation?: unknown[];
   parseInput?: (arg0: string) => string | number;
-  value?: (number | string)[] | number | string;
+  value?: (number | string)[];
   onChange?: (...args: unknown[]) => unknown;
 };
 
