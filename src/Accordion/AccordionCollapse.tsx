@@ -6,13 +6,13 @@ import RBAccordionCollapse from 'react-bootstrap/AccordionCollapse';
 import './AccordionCollapse.scss';
 
 type AccordionCollapseProps = {
+  children: React.ReactNode;
   /**
    A unique key used to control this item's collapse/expand.
    */
   eventKey: string;
   // eslint-disable-next-line camelcase
   UNSAFE_className?: string;
-  children: React.ReactNode;
 };
 
 const AccordionCollapse = ({
