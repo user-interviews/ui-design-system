@@ -23,6 +23,8 @@ export type InputProps = InputElementProps & {
   trailingText?: string;
   type?: string;
   value?: string;
+  min?: string | number;
+  max?: string | number;
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
 };
 

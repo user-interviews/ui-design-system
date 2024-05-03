@@ -15,6 +15,15 @@ type Action = {
 
 type MessageType = typeof MessageTypes[keyof typeof MessageTypes];
 
+export type SetMessageHandler = (
+  arg0: {
+    action?: Action;
+    type: MessageType;
+    title?: string;
+    message: string;
+  }
+) => void;
+
 type Message = {
   id: string;
   type?: MessageType;
