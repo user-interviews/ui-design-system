@@ -1,5 +1,3 @@
-@import '../../scss/theme';
-
 .DropdownDivider {
-  margin: $synth-spacing-2 0;
+  margin: var(--synth-spacing-2) 0;
 }

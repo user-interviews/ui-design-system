@@ -2,9 +2,9 @@
 
 .IconCell {
   align-items: center;
-  background: $ux-blue-200;
+  background: var(--ux-blue-200);
   border-radius: 50%;
-  color: $ux-blue-700;
+  color: var(--ux-blue-700);
   display: flex;
   font-size: 1rem;
   height: 44px;

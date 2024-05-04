@@ -10,4 +10,4 @@ fi
 cd $RAILS_SERVER_PATH
 yalc remove @user-interviews/ui-design-system
 yalc installations clean @user-interviews/ui-design-system
-yarn --check-files
+yarn

@@ -1,10 +1,11 @@
 import type { IOptions } from 'sanitize-html';
-import type { AriaAttributes } from 'react';
 import type { Extension, Node as TipTapNode, Mark } from '@tiptap/core';
 
 import './RichTextEditor.scss';
 
-import React, { forwardRef, type ForwardedRef, useImperativeHandle } from 'react';
+import React, {
+ forwardRef, useImperativeHandle, type AriaAttributes, type ForwardedRef,
+} from 'react';
 
 import classNames from 'classnames';
 

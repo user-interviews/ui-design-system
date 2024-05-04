@@ -1,8 +1,6 @@
 @import '../../scss/theme';
 
 $primary: $ux-emerald-600;
-$danger: $ux-red;
-$warning: $ux-yellow-400; 
 
 .DropdownToggle {
   @include synth-font-type-30--bold;
@@ -13,60 +11,28 @@ $warning: $ux-yellow-400;
 
   i, svg {
     &.icon-left {
-      margin-right: $synth-spacing-2;
+      margin-right: var(--synth-spacing-2);
     }
   }
 
   &.btn-sm {
-    border-radius: $ux-border-radius;
+    border-radius: var(--ux-border-radius);
   }
 
   &.btn-primary {
     @include btn-primary;
 
     &:focus {
-      background: $ux-emerald-600;
+      background: var(--ux-emerald-600);
     }
 
     &.show:focus {
-      background: $ux-emerald-700;
+      background: var(--ux-emerald-700);
     }
   }
 
   &.btn-outline-primary {
     @include btn-outline-primary;
-  }
-
-  &.btn-danger {
-    @include btn-danger;
-
-    &:focus {
-      background: $ux-red-500;
-    }
-
-    &.show:focus {
-      background: $ux-red-700;
-    }
-  }
-  
-  &.btn-outline-danger {
-    @include btn-outline-danger;
-  }
-  
-  &.btn-warning {
-    @include btn-warning;
-
-    &:focus {
-      background: $ux-yellow-400;
-    }
-
-    &.show:focus {
-      background: $ux-yellow-600;
-    }
-  }
-  
-  &.btn-outline-warning {
-    @include btn-outline-warning;
   }
 
   &.btn-transparent {
@@ -77,7 +43,7 @@ $warning: $ux-yellow-400;
     }
 
     &.show:focus {
-      background: $ux-gray-400;
+      background: var(--ux-gray-400);
     }
   }
 

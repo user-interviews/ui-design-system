@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'The version you want to release.'
+        description: "The version you want to release."
         required: true
 
 jobs:
@@ -12,18 +12,27 @@ jobs:
     name: Prepare hotfix
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout branch
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version-file: '.node-version'
+          node-version-file: ".node-version"
+
+      - name: Setup Yarn
+        uses: volta-cli/action@v4
+
+      - name: Setup env
+        run: echo "FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" > .env
 
       - name: Create hotfix branch
         run: git checkout -b hotfix/${{ github.event.inputs.version }}
 
       - name: Initialize mandatory git config
-        uses: fregante/setup-git-user@v1
+        uses: fregante/setup-git-user@v2
 
       - name: Bump version in package.json
         run: yarn version --new-version ${{ github.event.inputs.version }} --no-git-tag-version
@@ -56,4 +65,3 @@ jobs:
           head: hotfix/${{ github.event.inputs.version }}
           base: develop
           title: Merge hotfix/${{ github.event.inputs.version }} into develop branch
-
