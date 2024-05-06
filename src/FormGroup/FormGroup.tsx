@@ -109,7 +109,7 @@ export default function FormGroup({
       )}
 
       {
-        helperText && !hasErrors && (
+        helperText && (
           <div className="FormGroup__helper-text">
             {helperText}
           </div>
