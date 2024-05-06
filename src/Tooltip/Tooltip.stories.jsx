@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions';
 
 import { faExclamationTriangle } from '@fortawesome/pro-solid-svg-icons';
 
-import Tooltip from 'src/Tooltip';
+import Tooltip from '.';
 import mdx from './Tooltip.mdx';
 
 const withContainer = (story) => <div style={{ padding: '4rem' }}>{story()}</div>;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Popper from 'src/Popper';
+import Popper from '.';
 import mdx from './Popper.mdx';
 
 export default {

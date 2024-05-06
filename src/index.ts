@@ -97,7 +97,6 @@ import {
   Toast,
   useToast,
   withToast,
-  withToastPropTypes,
 } from './Toast';
 import { ToggleInput } from './ToggleInput';
 import Tooltip from './Tooltip';
@@ -202,5 +201,4 @@ export {
   useToast,
   ValueContainer,
   withToast,
-  withToastPropTypes,
 };

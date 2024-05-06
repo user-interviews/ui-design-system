@@ -4,7 +4,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faPlus } from '@fortawesome/pro-regular-svg-icons';
 
-import Button from 'src/Button';
+import Button from '../Button';
 
 import ProfileSearchImage from './profile_search.png';
 

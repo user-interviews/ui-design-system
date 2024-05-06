@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Button from 'src/Button';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faFileAlt, faCaretDown, faPaperPlane } from '@fortawesome/pro-regular-svg-icons';
 import {
  faGoogle, faFacebook, faLinkedin, faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
+import Button from '.';
 import mdx from './Button.mdx';
 
 export default {
