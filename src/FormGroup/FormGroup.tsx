@@ -1,5 +1,9 @@
 import React, { createElement } from 'react';
 import classNames from 'classnames';
+import {
+  type FieldErrors,
+  type FieldError,
+} from 'react-hook-form';
 
 import InputLabel from '../InputLabel';
 import InputLegend from '../InputLegend';
@@ -42,7 +46,8 @@ export type FormGroupProps = {
   // should be rendered as a <fieldset> element.
   // All other FormGroups will be rendered as a normal <div> by default.
   elementType?: 'div' | 'fieldset';
-  errors?: { [key: string]: React.ReactNode };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  errors?: { [key: string]: React.ReactNode } | FieldErrors<any> | FieldError;
   helperText?: React.ReactNode;
   id?: string;
   inline?: boolean;

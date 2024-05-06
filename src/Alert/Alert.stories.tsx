@@ -1,9 +1,8 @@
 import React, { Fragment } from 'react';
 import { action } from '@storybook/addon-actions';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGoogle } from '@fortawesome/free-brands-svg-icons';
-import { Alert, MessageTypes } from '.';
+import { Alert, MessageTypes } from 'src/Alert';
+
 import mdx from './Alert.mdx';
 
 export default {
@@ -81,27 +80,6 @@ export const WithDismiss = () => (
   />
 );
 
-const GoogleCalendarButton = () => (
-  <button
-    style={{
-      backgroundColor: '#4285F4',
-      border: '1px solid #4285F4',
-      borderRadius: '4px',
-      fontSize: '0.875rem',
-      fontWeight: 'bold',
-      lineHeight: '1.25rem',
-      margin: '16px 0',
-      padding: '8px 16px',
-      color: '#FFFFFF',
-      whiteSpace: 'nowrap',
-    }}
-    type="button"
-  >
-    <FontAwesomeIcon icon={faGoogle} style={{ height: '16px', marginRight: '8px' }} />
-    Connect Google Calendar
-  </button>
-);
-
 export const WithCallToAction = () => (
   <>
     <p>Default CTA rendered by component</p>
@@ -148,35 +126,6 @@ export const WithCallToAction = () => (
       removeBorderLeft={false}
       title="New feature alert!"
       type={MessageTypes.FEATURE}
-      onDismiss={onDismiss}
-    />
-
-    <p>Custom CTA via <code>message</code> prop</p>
-    <Alert
-      id="7"
-      message={(
-        <Fragment>
-          <div>When you confirm a session we’ll automatically
-            add an event and reminders to your Google Calendar.
-          </div>
-          <GoogleCalendarButton />
-        </Fragment>
-      )}
-      removeBorderLeft={false}
-      title="Connect to Google Calendar to create reminders automatically"
-      type={MessageTypes.ANNOUNCEMENT}
-      onDismiss={onDismiss}
-    />
-
-    <p>Custom CTA via <code>action</code> prop</p>
-    <Alert
-      action={<GoogleCalendarButton />}
-      id="8"
-      message={`When you confirm a session we’ll automatically
-      add an event and reminders to your Google Calendar.`}
-      removeBorderLeft={false}
-      title="Connect to Google Calendar to create reminders automatically"
-      type={MessageTypes.ANNOUNCEMENT}
       onDismiss={onDismiss}
     />
   </>

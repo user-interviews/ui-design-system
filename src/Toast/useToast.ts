@@ -9,8 +9,8 @@ const ACTIONS = {
 } as const;
 
 type Action = {
-  content?: string;
-  url?: string;
+  content: string;
+  url: string;
 }
 
 type MessageType = typeof MessageTypes[keyof typeof MessageTypes];
@@ -24,16 +24,16 @@ export type SetMessageHandler = (
   }
 ) => void;
 
-type Message = {
+export type Message = {
   id: string;
-  type?: MessageType;
+  type: MessageType;
   title?: string;
   message?: string;
   action?: Action;
 }
 
 const createMessage = (
-  type?: MessageType,
+  type: MessageType,
   title?: string,
   message?: string,
   action?: Action,
@@ -51,7 +51,7 @@ const messagesReducer = (
     {
       type: typeof ACTIONS.SET_MESSAGE;
       payload: {
-        type?: MessageType;
+        type: MessageType;
         title?: string;
         message?: string;
         action?: Action

@@ -8,7 +8,7 @@ export const ORIENTATIONS = {
 type ControlButtonGroupProps = {
   childChecked: (...args: unknown[]) => boolean;
   children: React.ReactNode;
-  handleChangeValue: (...args: unknown[]) => unknown;
+  handleChangeValue: React.ChangeEventHandler<HTMLInputElement>;
   orientation?: typeof ORIENTATIONS[keyof typeof ORIENTATIONS];
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
 };
@@ -43,7 +43,7 @@ const ControlButtonGroup = ({
     return React.cloneElement(child, childProps);
   };
 
-  return Children.toArray(children).map(renderChildElement);
+  return <>{Children.toArray(children).map(renderChildElement)}</>;
 };
 
 export default ControlButtonGroup;

@@ -24,7 +24,7 @@ export default {
 
 export const Default = (args) => (
   <Accordion>
-    <AccordionItem>
+    <AccordionItem eventKey="0">
       <AccordionToggle
         eventKey="0"
         leadingIcon={faCreditCard}
@@ -38,7 +38,7 @@ export const Default = (args) => (
         </ul>
       </AccordionCollapse>
     </AccordionItem>
-    <AccordionItem>
+    <AccordionItem eventKey="1">
       <AccordionToggle
         eventKey="1"
         leadingIcon={faCreditCard}
@@ -64,7 +64,7 @@ Default.args = {
 
 export const DefaultOpen = (args) => (
   <Accordion defaultActiveKey="1">
-    <AccordionItem>
+    <AccordionItem eventKey="0">
       <AccordionToggle
         eventKey="0"
         leadingIcon={faCreditCard}
@@ -78,7 +78,7 @@ export const DefaultOpen = (args) => (
         </ul>
       </AccordionCollapse>
     </AccordionItem>
-    <AccordionItem>
+    <AccordionItem eventKey="1">
       <AccordionToggle
         eventKey="1"
         leadingIcon={faCreditCard}
@@ -102,7 +102,7 @@ DefaultOpen.args = {
 
 export const ChevronLeft = (args) => (
   <Accordion>
-    <AccordionItem>
+    <AccordionItem eventKey="0">
       <AccordionToggle
         eventKey="0"
         {...args}
@@ -115,7 +115,7 @@ export const ChevronLeft = (args) => (
         </ul>
       </AccordionCollapse>
     </AccordionItem>
-    <AccordionItem>
+    <AccordionItem eventKey="1">
       <AccordionToggle
         eventKey="1"
         {...args}
@@ -140,7 +140,7 @@ ChevronLeft.args = {
 
 export const ChevronLeftLateral = (args) => (
   <Accordion>
-    <AccordionItem>
+    <AccordionItem eventKey="0">
       <AccordionToggle
         eventKey="0"
         {...args}
@@ -153,7 +153,7 @@ export const ChevronLeftLateral = (args) => (
         </ul>
       </AccordionCollapse>
     </AccordionItem>
-    <AccordionItem>
+    <AccordionItem eventKey="1">
       <AccordionToggle
         eventKey="1"
         {...args}
@@ -179,7 +179,7 @@ ChevronLeftLateral.args = {
 
 export const ChevronLateral = (args) => (
   <Accordion>
-    <AccordionItem>
+    <AccordionItem eventKey="0">
       <AccordionToggle
         eventKey="0"
         {...args}
@@ -192,7 +192,7 @@ export const ChevronLateral = (args) => (
         </ul>
       </AccordionCollapse>
     </AccordionItem>
-    <AccordionItem>
+    <AccordionItem eventKey="1">
       <AccordionToggle
         eventKey="1"
         {...args}
@@ -217,7 +217,7 @@ ChevronLateral.args = {
 
 export const CollapsedText = (args) => (
   <Accordion defaultActiveKey="1">
-    <AccordionItem>
+    <AccordionItem eventKey="0">
       <AccordionToggle
         eventKey="0"
         {...args}
@@ -230,7 +230,7 @@ export const CollapsedText = (args) => (
         </ul>
       </AccordionCollapse>
     </AccordionItem>
-    <AccordionItem>
+    <AccordionItem eventKey="1">
       <AccordionToggle
         eventKey="1"
         {...args}
@@ -255,7 +255,7 @@ CollapsedText.args = {
 
 export const Borderless = (args) => (
   <Accordion flush>
-    <AccordionItem borderless>
+    <AccordionItem borderless eventKey="0">
       <AccordionToggle
         eventKey="0"
         leadingIcon={faCreditCard}
@@ -269,7 +269,7 @@ export const Borderless = (args) => (
         </ul>
       </AccordionCollapse>
     </AccordionItem>
-    <AccordionItem borderless>
+    <AccordionItem borderless eventKey="1">
       <AccordionToggle
         eventKey="1"
         leadingIcon={faCreditCard}
@@ -297,7 +297,7 @@ export const InCard = (args) => (
   <>
     <Card noPadding size="sm">
       <Accordion defaultActiveKey="0" flush>
-        <AccordionItem borderless>
+        <AccordionItem borderless eventKey="0">
           <AccordionToggle
             eventKey="0"
             {...args}
@@ -330,7 +330,7 @@ InCard.args = {
 export const Separate = (args) => (
   <>
     <Accordion>
-      <AccordionItem>
+      <AccordionItem eventKey="0">
         <AccordionToggle
           eventKey="0"
           {...args}
@@ -344,7 +344,7 @@ export const Separate = (args) => (
     </Accordion>
     <br />
     <Accordion>
-      <AccordionItem>
+      <AccordionItem eventKey="1">
         <AccordionToggle
           eventKey="1"
           {...args}
@@ -368,7 +368,7 @@ Separate.args = {
 
 export const Disabled = (args) => (
   <Accordion>
-    <AccordionItem>
+    <AccordionItem eventKey="0">
       <AccordionToggle
         eventKey="0"
         {...args}

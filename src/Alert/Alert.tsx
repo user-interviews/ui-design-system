@@ -78,7 +78,7 @@ type AlertProps = {
    Determines whether the Alert will disappear automatically
   */
   autoDismiss?: boolean;
-  id: string;
+  id?: string;
   message: string | React.ReactNode;
   removeBorderLeft?: boolean;
   title?: string;
@@ -86,7 +86,7 @@ type AlertProps = {
    One of the MessageTypes
   */
   type: MessageType;
-  onDismiss?: (arg0: string) => void;
+  onDismiss?: (arg0?: string) => void;
 };
 
 function Alert(props: AlertProps) {
@@ -161,14 +161,5 @@ function Alert(props: AlertProps) {
     </div>
   );
 }
-
-Alert.defaultProps = {
-  action: undefined,
-  actionTarget: undefined,
-  autoDismiss: false,
-  removeBorderLeft: false,
-  title: undefined,
-  onDismiss: undefined,
-};
 
 export default React.memo(Alert);

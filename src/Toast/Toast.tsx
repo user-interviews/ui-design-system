@@ -1,7 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { Alert } from '../Alert';
+import Alert from '../Alert/Alert';
+import { type Message } from './useToast';
 import { TransitionGroup } from '../TransitionGroup';
 import FadeTransition from '../FadeTransition';
 
@@ -10,16 +11,7 @@ import './Toast.scss';
 type ToastProps = {
   autoDismiss?: boolean;
   header?: boolean;
-  messages: {
-    action?: {
-      content?: string;
-      url?: string;
-    };
-    id?: string;
-    message?: string | React.ReactNode;
-    title?: string;
-    type?: string;
-  }[];
+  messages: Message[];
   onToastClosed?: (...args: unknown[]) => unknown;
 };
 
@@ -38,9 +30,9 @@ export default function Toast(props: ToastProps) {
         props.messages.map((message) => (
           <FadeTransition key={message.id}>
             <Alert
-              action={message.action}
+              action={message.action ?? undefined}
               autoDismiss={props.autoDismiss}
-              id={message.id}
+              id={message.id ?? ''}
               message={message.message}
               title={message.title}
               type={message.type}

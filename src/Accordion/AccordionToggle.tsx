@@ -23,6 +23,7 @@ type AccordionToggleProps = {
    Aligns the Chevron icon to the right (default)
   */
   chevronRight?: boolean;
+  children?: React.ReactNode;
   collapsedText?: string;
   /**
    A unique key used to control this item's collapse/expand.
@@ -34,7 +35,6 @@ type AccordionToggleProps = {
   title?: string;
   // eslint-disable-next-line camelcase
   UNSAFE_className?: string;
-  children: React.ReactNode;
 };
 
 const AccordionToggle = ({
