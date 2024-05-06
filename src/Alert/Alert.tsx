@@ -17,7 +17,6 @@ import './Alert.scss';
 export const MessageTypes = {
   SUCCESS: 'success',
   INFO: 'info',
-  ANNOUNCEMENT: 'announcement',
   FEATURE: 'feature',
   WARNING: 'warning',
   ERROR: 'error',
@@ -41,8 +40,6 @@ const getAlertIcon = (type: MessageType) => {
           <FontAwesomeIcon icon={faInfo as IconDefinition} transform="shrink-4" />
         </span>
       );
-    case MessageTypes.ANNOUNCEMENT:
-      return (<FontAwesomeIcon icon={faBullhorn as IconDefinition} transform="grow-2" />);
     case MessageTypes.FEATURE:
       return (<FontAwesomeIcon icon={faBullhorn as IconDefinition} transform="grow-2" />);
     case MessageTypes.WARNING:

@@ -22,16 +22,12 @@ export enum ButtonVariants {
   BRAND_FACEBOOK = 'brand-facebook',
   BRAND_LINKEDIN = 'brand-linkedin',
   BRAND_TWITTER = 'brand-twitter',
-  DANGER = 'danger',
   LINK = 'link',
-  OUTLINE_DANGER = 'outline-danger',
   OUTLINE_PRIMARY = 'outline-primary',
-  OUTLINE_WARNING = 'outline-warning',
   OUTLINE_TRANSPARENT = 'outline-transparent',
   PRIMARY = 'primary',
   TERTIARY = 'tertiary',
   TRANSPARENT = 'transparent',
-  WARNING = 'warning',
 }
 
 export type ButtonProps = RBButtonProps & {
