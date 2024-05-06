@@ -21,7 +21,7 @@ type MainProps = ElementProps & {
 };
 
 const Main = ({
-  as,
+  as = 'main',
   className,
   children,
   fluid,

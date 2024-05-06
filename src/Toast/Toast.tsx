@@ -15,10 +15,15 @@ type ToastProps = {
   onToastClosed?: (...args: unknown[]) => unknown;
 };
 
-export default function Toast(props: ToastProps) {
+export default function Toast({
+  autoDismiss,
+  header = true,
+  messages,
+  onToastClosed,
+}: ToastProps) {
   const groupClassNames = classNames(
     'Toast',
-    { 'Toast--no-header': !props.header },
+    { 'Toast--no-header': !header },
   );
 
   return (
@@ -27,16 +32,16 @@ export default function Toast(props: ToastProps) {
       className={groupClassNames}
     >
       {
-        props.messages.map((message) => (
+        messages.map((message) => (
           <FadeTransition key={message.id}>
             <Alert
               action={message.action ?? undefined}
-              autoDismiss={props.autoDismiss}
+              autoDismiss={autoDismiss}
               id={message.id ?? ''}
               message={message.message}
               title={message.title}
               type={message.type}
-              onDismiss={props.onToastClosed}
+              onDismiss={onToastClosed}
             />
           </FadeTransition>
         ))
