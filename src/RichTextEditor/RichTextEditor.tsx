@@ -115,7 +115,7 @@ const RichTextEditor = forwardRef((
     placeholder,
     customExtensions = [],
   }: RichTextEditorProps,
-  ref: ForwardedRef<RichTextEditorRef> = null,
+  ref: ForwardedRef<RichTextEditorRef>,
 ) => {
   const oneLineExtension = isOneLine ? [OneLineLimit] : [];
 
