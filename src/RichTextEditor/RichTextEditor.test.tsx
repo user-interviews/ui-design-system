@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
 
 import RichTextEditor, { type RichTextEditorProps } from './RichTextEditor';
@@ -12,8 +12,10 @@ describe('<RichTextEditor />', () => {
     />
   );
 
-  it('renders snapshot', () => {
+  it('renders snapshot', async () => {
     const { asFragment } = render(<Setup />);
+
+    await waitFor(() => screen.getByRole('button', { name: /bold/i }));
 
     expect(asFragment()).toMatchSnapshot();
   });
