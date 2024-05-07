@@ -19,10 +19,10 @@ describe('<RichTextEditor />', () => {
   });
 
   describe('given an initial value', () => {
-    it('deserializes value correctly', () => {
+    it('deserializes value correctly', async () => {
       render(<Setup initialValue="<p>hello world</p>" />);
 
-      expect(screen.getByText('hello world')).toBeInTheDocument();
+      expect(await screen.findByText('hello world')).toBeInTheDocument();
     });
   });
 });
