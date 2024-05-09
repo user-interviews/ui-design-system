@@ -22,6 +22,8 @@ import {
 } from './constants';
 
 import { PickerEnforcedInput } from './PickerEnforcedInput';
+
+import 'react-datepicker/dist/react-datepicker.css';
 import './DateTimePicker.scss';
 
 const localeMap = {
