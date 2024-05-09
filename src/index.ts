@@ -15,6 +15,7 @@ import { Col, Container, Row } from './Container';
 import { ORIENTATIONS as BUTTON_GROUP_ORIENTATIONS } from './ControlButtonGroup';
 import CopyToClipboard from './CopyToClipboard';
 import CopyToClipboardButton from './CopyToClipboardButton';
+import { DateTimePicker } from './DateTimePicker';
 import {
   Drawer,
   DrawerHeader,
@@ -126,6 +127,7 @@ export {
   CopyToClipboard,
   CopyToClipboardButton,
   CreatableSelect,
+  DateTimePicker,
   Drawer,
   DrawerHeader,
   DrawerBody,
