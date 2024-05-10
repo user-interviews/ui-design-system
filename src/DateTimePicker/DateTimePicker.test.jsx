@@ -9,11 +9,6 @@ const PLACEHOLDER = 'YYYY-MM-DD';
 const VALID_DATE = '1999-12-31';
 const INVALID_DATE = '99999';
 
-const enterDateValue = (dateInput) => {
-  userEvent.click(screen.getByPlaceholderText(PLACEHOLDER));
-  userEvent.keyboard(`${dateInput}{enter}`);
-};
-
 describe('DateTimePicker', () => {
   function Setup(overrides = {}) {
     return (
@@ -36,22 +31,24 @@ describe('DateTimePicker', () => {
   describe('interactions', () => {
     describe('when typing in date', () => {
       describe('with a valid value', () => {
-        it('keeps value', () => {
+        it('keeps value', async () => {
           render(<Setup />);
 
-          enterDateValue(VALID_DATE);
+          const input = screen.getByPlaceholderText(PLACEHOLDER);
+          await userEvent.type(input, `${VALID_DATE}{enter}`);
 
-          expect(screen.getByDisplayValue(VALID_DATE)).toBeInTheDocument();
+          expect(input).toHaveValue(VALID_DATE);
         });
       });
 
       describe('with an invalid value', () => {
-        it('clears value', () => {
+        it('clears value', async () => {
           render(<Setup />);
 
-          enterDateValue(INVALID_DATE);
+          const input = screen.getByPlaceholderText(PLACEHOLDER);
+          await userEvent.type(input, `${INVALID_DATE}{enter}`);
 
-          expect(screen.getByPlaceholderText(PLACEHOLDER).value).toBe('');
+          expect(input).toHaveValue('');
         });
       });
     });
