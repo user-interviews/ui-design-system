@@ -7,8 +7,6 @@ export default {
   component: DateTimePicker,
 };
 
-export const Default = () => {
-  return (
-    <DateTimePicker />
+export const Default = () => (
+  <DateTimePicker />
   );
-};

@@ -13,14 +13,6 @@ import {
   enAU, enCA, enGB, enUS, enZA, fr, frCA, de,
 } from 'date-fns/locale';
 
-// TODO log errors
-// import { logError } from 'lib/logging';
-
-import {
-  STANDARD_TIME_FORMAT_FNS,
-  ISO_DATE_FORMAT_FNS,
-} from './constants';
-
 import { PickerEnforcedInput } from './PickerEnforcedInput';
 
 import './DateTimePicker.scss';
@@ -38,6 +30,9 @@ const localeMap = {
   'fr-FR': fr,
 };
 
+const STANDARD_TIME_FORMAT_FNS = 'hh:mm aa';
+const ISO_DATE_FORMAT_FNS = 'yyyy-MM-dd';
+
 function DateTimePicker({
   date,
   dateFormat,
@@ -53,6 +48,7 @@ function DateTimePicker({
   time,
   timeFormat,
   onChangeDate,
+  onDateParseError,
 }) {
   const [startDate, setStartDate] = useState(date); // string
   const [startTime, setStartTime] = useState(time); // string
@@ -96,8 +92,6 @@ function DateTimePicker({
   useEffect(() => {
     const localeLanguage = navigator.language;
     const supportedLocale = localeMap[localeLanguage];
-    // we don't set the time here because it messes with
-    // the hub filters for some reason
     setStartDate(date);
 
     // register and set the locale if it is supported
@@ -113,12 +107,11 @@ function DateTimePicker({
     const updated = dateFromString();
 
     if (!isValid(updated)) {
-      // TODO log error
-      // logError(
-      //   new Error(
-      //     `bad date parse values in handleOnCalendarClose: date: ${startDate}, time: ${startTime}`,
-      //   ),
-      // );
+      onDateParseError(
+        new Error(
+          `bad date parse values in handleOnCalendarClose: date: ${startDate}, time: ${startTime}`,
+        ),
+      );
       return;
     }
 
@@ -213,6 +206,7 @@ DateTimePicker.propTypes = {
   timeFormat: PropTypes.string,
 
   onChangeDate: PropTypes.func,
+  onDateParseError: PropTypes.func,
 };
 
 DateTimePicker.defaultProps = {
@@ -231,6 +225,7 @@ DateTimePicker.defaultProps = {
   timeFormat: STANDARD_TIME_FORMAT_FNS,
 
   onChangeDate: undefined,
+  onDateParseError: undefined,
 };
 
 export default DateTimePicker;
