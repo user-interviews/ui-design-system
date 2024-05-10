@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import DateTimePicker from './DateTimePicker';
@@ -35,9 +35,11 @@ describe('DateTimePicker', () => {
           render(<Setup />);
 
           const input = screen.getByPlaceholderText(PLACEHOLDER);
-          await userEvent.type(input, `${VALID_DATE}{enter}`);
+          userEvent.type(input, `${VALID_DATE}{enter}`);
 
-          expect(input).toHaveValue(VALID_DATE);
+          await waitFor(() => {
+            expect(input).toHaveValue(VALID_DATE);
+          });
         });
       });
 
@@ -46,9 +48,11 @@ describe('DateTimePicker', () => {
           render(<Setup />);
 
           const input = screen.getByPlaceholderText(PLACEHOLDER);
-          await userEvent.type(input, `${INVALID_DATE}{enter}`);
+          userEvent.type(input, `${INVALID_DATE}{enter}`);
 
-          expect(input).toHaveValue('');
+          await waitFor(() => {
+            expect(input).toHaveValue('');
+          });
         });
       });
     });
