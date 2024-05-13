@@ -32,7 +32,7 @@ const localeMap = {
 const STANDARD_TIME_FORMAT_FNS = 'hh:mm aa';
 const ISO_DATE_FORMAT_FNS = 'yyyy-MM-dd';
 
-type DateTimePickerProps = {
+export type DateTimePickerProps = {
   date?: string;
   dateFormat?: string;
   disabled?: boolean;

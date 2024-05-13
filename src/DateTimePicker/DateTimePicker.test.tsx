@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
-import DateTimePicker from './DateTimePicker';
+import DateTimePicker, { DateTimePickerProps } from './DateTimePicker';
 
 const PLACEHOLDER = 'YYYY-MM-DD';
 
@@ -10,7 +10,7 @@ const VALID_DATE = '1999-12-31';
 const INVALID_DATE = '99999';
 
 describe('DateTimePicker', () => {
-  function Setup(overrides = {}) {
+  function Setup(overrides: DateTimePickerProps) {
     return (
       <DateTimePicker
         {...overrides}
