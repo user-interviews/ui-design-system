@@ -35,13 +35,13 @@ const ISO_DATE_FORMAT_FNS = 'yyyy-MM-dd';
 type DateTimePickerProps = {
   date?: string;
   dateFormat?: string;
-  dateViewMode?: string;
   disabled?: boolean;
   id?: string;
   inputClassName?: string;
   maxDate?: Date;
   minDate?: Date;
   name?: string;
+  showMonthAndYearSelects?: boolean,
   showPickerEnforcedInput?: boolean;
   showTimeSelect?: boolean;
   time?: string;
@@ -53,13 +53,13 @@ type DateTimePickerProps = {
 function DateTimePicker({
   date = '',
   dateFormat = ISO_DATE_FORMAT_FNS,
-  dateViewMode,
   disabled = false,
   id,
   inputClassName = 'form-control',
   maxDate,
   minDate,
   name,
+  showMonthAndYearSelects = false,
   showPickerEnforcedInput = false,
   showTimeSelect = false,
   time = '',
@@ -196,9 +196,9 @@ function DateTimePicker({
         name={name}
         placeholderText={getDateFormat().toUpperCase()}
         selected={dateFromString()}
-        showMonthDropdown={dateViewMode === 'years'}
+        showMonthDropdown={showMonthAndYearSelects}
         showTimeSelect={showTimeSelect}
-        showYearDropdown={dateViewMode === 'years'}
+        showYearDropdown={showMonthAndYearSelects}
         timeCaption="Time"
         timeFormat={timeFormat}
         timeIntervals={60}
