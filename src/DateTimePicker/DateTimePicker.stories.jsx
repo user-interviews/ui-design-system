@@ -10,3 +10,15 @@ export default {
 export const Default = () => (
   <DateTimePicker />
   );
+
+export const EnforcedInput = () => (
+  <DateTimePicker showPickerEnforcedInput />
+  );
+
+export const ShowMonthAndYearSelects = () => (
+  <DateTimePicker showMonthAndYearSelects />
+  );
+
+export const ShowTimeSelect = () => (
+  <DateTimePicker showTimeSelect />
+  );
