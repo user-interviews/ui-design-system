@@ -1,5 +1,4 @@
 import React, { useCallback, useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
 import DatePicker, { getDefaultLocale, registerLocale, setDefaultLocale } from 'react-datepicker';
 import {
   format,
@@ -33,30 +32,49 @@ const localeMap = {
 const STANDARD_TIME_FORMAT_FNS = 'hh:mm aa';
 const ISO_DATE_FORMAT_FNS = 'yyyy-MM-dd';
 
+type DateTimePickerProps = {
+  date?: string;
+  dateFormat?: string;
+  dateViewMode?: string;
+  disabled?: boolean;
+  id?: string;
+  inputClassName?: string;
+  maxDate?: Date;
+  minDate?: Date;
+  name?: string;
+  showPickerEnforcedInput?: boolean;
+  showTimeSelect?: boolean;
+  time?: string;
+  timeFormat?: string;
+  onChangeDate?: (...args: unknown[]) => unknown;
+  onDateParseError?: (...args: unknown[]) => unknown;
+};
+
 function DateTimePicker({
-  date,
-  dateFormat,
+  date = '',
+  dateFormat = ISO_DATE_FORMAT_FNS,
   dateViewMode,
-  disabled,
+  disabled = false,
   id,
-  inputClassName,
+  inputClassName = 'form-control',
   maxDate,
   minDate,
   name,
-  showPickerEnforcedInput,
-  showTimeSelect,
-  time,
-  timeFormat,
+  showPickerEnforcedInput = false,
+  showTimeSelect = false,
+  time = '',
+  timeFormat = STANDARD_TIME_FORMAT_FNS,
   onChangeDate,
   onDateParseError,
-}) {
+}: DateTimePickerProps) {
   const [startDate, setStartDate] = useState(date); // string
   const [startTime, setStartTime] = useState(time); // string
 
   const parsedDateFromString = useCallback(() => {
     if (dateFormat === ISO_DATE_FORMAT_FNS) {
-      return parseISO(startDate, dateFormat);
+      return parseISO(startDate);
     }
+
     return parse(startDate, dateFormat, new Date());
   }, [dateFormat, startDate]);
 
@@ -102,16 +120,18 @@ function DateTimePicker({
   }, [date]);
 
   const handleOnCalendarClose = () => {
-    if (!onChangeDate || !startDate) return;
-
     const updated = dateFromString();
 
+    if (!onChangeDate || !startDate || !updated) return;
+
     if (!isValid(updated)) {
-      onDateParseError(
-        new Error(
-          `bad date parse values in handleOnCalendarClose: date: ${startDate}, time: ${startTime}`,
-        ),
-      );
+      if (onDateParseError) {
+        onDateParseError(
+          new Error(
+            `bad date parse values in handleOnCalendarClose: date: ${startDate}, time: ${startTime}`,
+          ),
+        );
+      }
       return;
     }
 
@@ -189,43 +209,5 @@ function DateTimePicker({
     </div>
   );
 }
-
-DateTimePicker.propTypes = {
-  date: PropTypes.string,
-  dateFormat: PropTypes.string,
-  dateViewMode: PropTypes.string,
-  disabled: PropTypes.bool,
-  id: PropTypes.string,
-  inputClassName: PropTypes.string,
-  maxDate: PropTypes.instanceOf(Date),
-  minDate: PropTypes.instanceOf(Date),
-  name: PropTypes.string,
-  showPickerEnforcedInput: PropTypes.bool,
-  showTimeSelect: PropTypes.bool,
-  time: PropTypes.string,
-  timeFormat: PropTypes.string,
-
-  onChangeDate: PropTypes.func,
-  onDateParseError: PropTypes.func,
-};
-
-DateTimePicker.defaultProps = {
-  date: '',
-  dateFormat: ISO_DATE_FORMAT_FNS,
-  dateViewMode: undefined,
-  disabled: false,
-  maxDate: undefined,
-  minDate: undefined,
-  id: undefined,
-  inputClassName: 'form-control',
-  name: undefined,
-  showPickerEnforcedInput: false,
-  showTimeSelect: false,
-  time: '',
-  timeFormat: STANDARD_TIME_FORMAT_FNS,
-
-  onChangeDate: undefined,
-  onDateParseError: undefined,
-};
 
 export default DateTimePicker;

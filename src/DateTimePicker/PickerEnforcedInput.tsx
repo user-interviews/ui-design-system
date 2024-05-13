@@ -1,18 +1,27 @@
-import { forwardRef } from 'react';
-import PropTypes from 'prop-types';
+import React, { forwardRef } from 'react';
+
 import classNames from 'classnames';
 import { isValid } from 'date-fns';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt } from '@fortawesome/pro-regular-svg-icons';
 
-export const PickerEnforcedInput = forwardRef(({
-  disabled,
-  inputClassName,
-  name,
+type PickerEnforcedInputProps = {
+  disabled?: boolean;
+  inputClassName?: string;
+  name?: string;
+  startDate?: string;
+  value?: string;
+  onClick?: (...args: unknown[]) => unknown;
+};
+
+export const PickerEnforcedInput = forwardRef<HTMLElement, PickerEnforcedInputProps>(({
+  disabled = false,
+  inputClassName = '',
+  name = '',
   onClick,
-  startDate,
-  value,
+  startDate = '',
+  value = '',
 }, ref) => {
   const startDateIsValid = () => isValid(startDate);
 
@@ -40,21 +49,3 @@ export const PickerEnforcedInput = forwardRef(({
     </div>
   );
 });
-
-PickerEnforcedInput.propTypes = {
-  disabled: PropTypes.bool,
-  inputClassName: PropTypes.string,
-  name: PropTypes.string,
-  startDate: PropTypes.string,
-  value: PropTypes.string,
-  onClick: PropTypes.func,
-};
-
-PickerEnforcedInput.defaultProps = {
-  disabled: false,
-  value: '',
-  onClick: undefined,
-  inputClassName: '',
-  startDate: '',
-  name: '',
-};
