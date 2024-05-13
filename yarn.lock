@@ -5037,17 +5037,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-datepicker@npm:^6":
-  version: 6.2.0
-  resolution: "@types/react-datepicker@npm:6.2.0"
-  dependencies:
-    "@floating-ui/react": "npm:^0.26.2"
-    "@types/react": "npm:*"
-    date-fns: "npm:^3.3.1"
-  checksum: 10c0/40342f0a5e15bac6f2b35072a2f7041db20b924692123aface78f2cbf0e896c0c02c299a9173583e01e5b6dad38e3da86ad0e56e943e74e0c0dc7d5c60129bdf
-  languageName: node
-  linkType: hard
-
 "@types/react-dom@npm:^18.0.0":
   version: 18.2.24
   resolution: "@types/react-dom@npm:18.2.24"
@@ -5416,7 +5405,6 @@ __metadata:
     "@tiptap/react": "npm:^2.3.1"
     "@tiptap/suggestion": "npm:^2.3.1"
     "@types/jest": "npm:^29.5.12"
-    "@types/react-datepicker": "npm:^6"
     "@types/react-dom": "npm:^18.3.0"
     "@types/react-toggle": "npm:^4"
     "@types/react-transition-group": "npm:^4"
