@@ -15,7 +15,7 @@ type PickerEnforcedInputProps = {
   onClick?: (...args: unknown[]) => unknown;
 };
 
-export const PickerEnforcedInput = forwardRef<HTMLElement, PickerEnforcedInputProps>(({
+export const PickerEnforcedInput = forwardRef<HTMLInputElement, PickerEnforcedInputProps>(({
   disabled = false,
   inputClassName = '',
   name = '',
