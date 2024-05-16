@@ -1,0 +1,143 @@
+@import 'react-datepicker/dist/react-datepicker.css';
+@import '../../scss/theme.scss';
+
+.date-time-picker {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+
+  @include media-breakpoint-up(sm) {
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .react-datepicker__header {
+    background-color: var(--ux-white);
+    border-bottom: 1px solid var(--ux-gray-200);
+  }
+
+  .react-datepicker__day-names {
+    font-weight: var(--synth-font-weight-bold);
+  }
+
+  .react-datepicker__day--outside-month {
+    color: var(--ux-gray-300);
+  }
+
+
+  .date-time-picker {
+    &__input-group {
+      background-color: var(--ux-white);
+      border-radius: var(--ux-border-radius);
+      border: thin solid var(--ux-gray-400);
+      padding: .46875rem .75rem;
+      justify-content: space-between;
+      width: inherit;
+    }
+  }
+
+  .react-datepicker {
+    @include font-type-30;
+    border: none;
+    box-shadow: 0 1px 3px var(--ux-gray-400);
+  }
+
+  .react-datepicker__time {
+    @include font-type-20;
+  }
+
+  .react-datepicker__day--selected {
+    background: var(--ux-blue-500);
+  }
+
+  .react-datepicker__day--keyboard-selected {
+    background: none;
+    color: var(--ux-black);
+  }
+
+  .react-datepicker__time-container
+  .react-datepicker__time
+  .react-datepicker__time-box
+  ul.react-datepicker__time-list
+  li.react-datepicker__time-list-item--selected {
+    background: var(--ux-blue-500);
+  }
+
+  .react-datepicker__day--today {
+    color: var(--ux-blue-500);
+  }
+
+  .react-datepicker__day--selected {
+    color: var(--ux-white);
+  }
+
+  .react-datepicker__triangle {
+    display: none;
+  }
+
+  // Override form-control's default greying of read only inputs
+  input:read-only, .form-control[readonly] {
+    background-color: var(--ux-white);
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+    border: 1px solid $input-focus-border-color;
+  }
+
+  .react-datepicker {
+    width: 100%;
+
+    > div:first-child {
+      width: 100%;
+    }
+
+    &:not(:first-child) {
+      margin-top: .5rem;
+
+      @include media-breakpoint-up(sm) {
+        margin-top: 0;
+        margin-left: .5rem;
+      }
+    }
+  }
+}
+
+
+// override some of the form group invalid styles
+.FormGroup--is-invalid
+.date-time-picker
+select {
+  border: thin solid var(--ux-gray-400);
+  border-radius: var(--ux-border-radius);
+}
+
+// override some of the form group invalid styles
+// inputs need more specificity to override the above styling
+.FormGroup--is-invalid
+.date-time-picker
+.react-datepicker-wrapper
+.react-datepicker__input-container
+input {
+  border: thin solid var(--ux-red);
+}
+
+// Undoing some styles when this is nested within a bootstrap table
+.table .date-time-picker {
+  td, th {
+    border-top: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  thead th {
+    border-bottom: 0;
+    vertical-align: middle;
+  }
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}
