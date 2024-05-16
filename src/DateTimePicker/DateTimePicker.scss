@@ -19,7 +19,7 @@
   }
 
   .react-datepicker__day-names {
-    font-weight: $font-weight-bold;
+    font-weight: var(--synth-font-weight-bold);
   }
 
   .react-datepicker__day--outside-month {
@@ -40,7 +40,6 @@
 
   .react-datepicker {
     @include font-type-30;
-    // font-family: $body-fonts;
     border: none;
     box-shadow: 0 1px 3px var(--ux-gray-400);
   }
@@ -83,6 +82,11 @@
     background-color: var(--ux-white);
   }
 
+  .form-control:focus {
+    box-shadow: none;
+    border: 1px solid $input-focus-border-color;
+  }
+
   .react-datepicker {
     width: 100%;
 
@@ -107,7 +111,7 @@
 .date-time-picker
 select {
   border: thin solid var(--ux-gray-400);
-  border-radius: $border-radius;
+  border-radius: var(--ux-border-radius);
 }
 
 // override some of the form group invalid styles
