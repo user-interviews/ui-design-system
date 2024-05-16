@@ -30,7 +30,7 @@
   .date-time-picker {
     &__input-group {
       background-color: var(--ux-white);
-      border-radius: $border-radius;
+      border-radius: var(--ux-border-radius);
       border: thin solid var(--ux-gray-400);
       padding: .46875rem .75rem;
       justify-content: space-between;
