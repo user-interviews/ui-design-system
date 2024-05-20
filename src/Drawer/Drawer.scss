@@ -41,7 +41,7 @@
 
   background-color: var(--ux-white);
   height: 100vh;
-  width: 100%;
+  width: 90%;
   position: fixed;
   bottom: 0;
   transition: 200ms ease-out;
@@ -59,7 +59,7 @@
   }
 
   &--expanded {
-    width: 100%;
+    width: 90%;
   }
 
   &--right {
