@@ -69,7 +69,7 @@ const CreatableSelect = ({
 CreatableSelect.propTypes = {
   'aria-label': PropTypes.string,
   'aria-labelledby': PropTypes.string,
-  borderedMultiValue: propTypes.bool,
+  borderedMultiValue: PropTypes.bool,
   className: PropTypes.string,
   components: PropTypes.any,
   defaultValue: PropTypes.object,
