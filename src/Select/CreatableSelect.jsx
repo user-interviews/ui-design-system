@@ -4,11 +4,14 @@ import PropTypes from 'prop-types';
 
 import zStack from 'src/Styles/zStack';
 
-import { defaultTheme, defaultStyles, SELECT_SIZES } from './styles';
+import {
+ borderedMultiValueStyles, defaultTheme, defaultStyles, SELECT_SIZES,
+} from './styles';
 
 const CreatableSelect = ({
   'aria-label': ariaLabel,
   'aria-labelledby': ariaLabelledBy,
+  borderedMultiValue,
   className,
   components,
   defaultValue,
@@ -50,6 +53,7 @@ const CreatableSelect = ({
     placeholder={placeholder}
     styles={{
       ...defaultStyles({ menuWidth, size }),
+      ...borderedMultiValueStyles(borderedMultiValue),
       menuPortal: (base) => (
         modal ?
         { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } :
@@ -65,6 +69,7 @@ const CreatableSelect = ({
 CreatableSelect.propTypes = {
   'aria-label': PropTypes.string,
   'aria-labelledby': PropTypes.string,
+  borderedMultiValue: PropTypes.bool,
   className: PropTypes.string,
   components: PropTypes.any,
   defaultValue: PropTypes.object,
@@ -93,6 +98,7 @@ CreatableSelect.propTypes = {
 CreatableSelect.defaultProps = {
   'aria-label': undefined,
   'aria-labelledby': undefined,
+  borderedMultiValue: undefined,
   className: undefined,
   components: undefined,
   defaultValue: undefined,
