@@ -47,7 +47,14 @@ export const Searchable = () => (
     label="Searchable select"
     labelHtmlFor="searchable-select"
   >
-    <SingleSelect inputId="searchable-select" isSearchable options={options} onChange={onChange} />
+    <SingleSelect
+      closeMenuOnScroll={false}
+      inputId="searchable-select"
+      isSearchable
+      options={options}
+      placeholder="Search or select..."
+      onChange={onChange}
+    />
   </FormGroup>
 );
 
@@ -209,6 +216,24 @@ export const CustomOptionWithCheckbox = () => (
       hideSelectedOptions={false}
       inputId="custom-option-with-checkbox-select"
       isMulti
+      options={options}
+      onChange={onChange}
+    />
+  </FormGroup>
+);
+
+export const SearchableCustomOptionWithCheckbox = () => (
+  <FormGroup
+    label="Searchable Custom Option with Checkbox"
+    labelHtmlFor="searchable-custom-option-with-checkbox-select"
+  >
+    <SingleSelect
+      closeMenuOnSelect={false}
+      components={{ Option }}
+      hideSelectedOptions={false}
+      inputId="searchable-custom-option-with-checkbox-select"
+      isMulti
+      isSearchable
       options={options}
       onChange={onChange}
     />
