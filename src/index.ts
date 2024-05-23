@@ -33,6 +33,7 @@ import {
 import EmptyState from './EmptyState';
 import FadeTransition from './FadeTransition';
 import { Flex } from './Flex';
+import { FlexContainer } from './FlexContainer';
 import Form from './Form';
 import FormControlLabel from './FormControlLabel';
 import FormGroup from './FormGroup';
@@ -141,6 +142,7 @@ export {
   EmptyState,
   FadeTransition,
   Flex,
+  FlexContainer,
   Form,
   FormControlLabel,
   FormGroup,

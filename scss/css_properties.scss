@@ -255,4 +255,9 @@
   --z-index-overlay: calc(var(--z-index-fixed) - 1); // Sits just under --z-index-fixed
   --z-index-table-cell-sticky-column: var(--z-index-10); // Sits under --z-index-table-foot-sticky-row
   --z-index-table-foot-sticky-row: var(--z-index-11); // Sits above var(--z-index-table-cell-sticky-column)
+
+  --card-width-xs: 240px;
+  --card-width-sm: 512px;
+  --card-width-md: 640px;
+  --card-width-lg: 896px;
 }

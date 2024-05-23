@@ -5,9 +5,9 @@
 }
 
 .popover-card-sm {
-  width: $card-width-sm;
+  width: var(--card-width-sm);
 }
 
 .popover-card-md {
-  width: $card-width-md;
+  width: var(--card-width-md);
 }
