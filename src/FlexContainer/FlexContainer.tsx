@@ -20,7 +20,13 @@ type FlexProps = {
     'center' |
     'initial' |
     'inherit';
+  /**
+    Sets the gap (gutters) between the flexbox's items with Synth spacing vars
+  */
   gap?: 1 | 2 | 3 | 4 | 5;
+  /**
+    Sets the width of the FlexContainer. These variants are the same as Card and CardStack
+  */
   width?: 'xs' | 'sm' | 'md' | 'lg';
 }
 
