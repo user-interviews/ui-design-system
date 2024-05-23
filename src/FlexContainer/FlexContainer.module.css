@@ -112,19 +112,19 @@
 }
 
 .width_xs {
-  max-width: 240px;
+  max-width: var(--card-width-xs);
 }
 
 .width_sm {
-  max-width: 512px;
+  max-width: var(--card-width-sm);
 }
 
 .width_md {
-  max-width: 640px;
+  max-width: var(--card-width-md);
 }
 
 .width_lg {
-  max-width: 896px;
+  max-width: var(--card-width-lg);
 }
 
 /* https://getbootstrap.com/docs/5.0/layout/breakpoints/#max-width */
@@ -178,7 +178,7 @@
     flex-wrap: wrap;
   }
 
-  .xs_flexWrap_no {
+  .xs_flexWrap_no-wrap {
     flex-wrap: no-wrap;
   }
 
@@ -239,19 +239,19 @@
   }
 
   .xs_width_xs {
-    max-width: 240px;
+    max-width: var(--card-width-xs);
   }
 
   .xs_width_sm {
-    max-width: 512px;
+    max-width: var(--card-width-sm);
   }
 
   .xs_width_md {
-    max-width: 640px;
+    max-width: var(--card-width-md);
   }
 
   .xs_width_lg {
-    max-width: 896px;
+    max-width: var(--card-width-lg);
   }
 }
 
@@ -305,7 +305,7 @@
     flex-wrap: wrap;
   }
 
-  .sm_flexWrap_no {
+  .sm_flexWrap_no-wrap {
     flex-wrap: no-wrap;
   }
 
@@ -366,19 +366,19 @@
   }
 
   .sm_width_xs {
-    max-width: 240px;
+    max-width: var(--card-width-xs);
   }
 
   .sm_width_sm {
-    max-width: 512px;
+    max-width: var(--card-width-sm);
   }
 
   .sm_width_md {
-    max-width: 640px;
+    max-width: var(--card-width-md);
   }
 
   .sm_width_lg {
-    max-width: 896px;
+    max-width: var(--card-width-lg);
   }
 }
 
@@ -432,7 +432,7 @@
     flex-wrap: wrap;
   }
 
-  .md_flexWrap_no {
+  .md_flexWrap_no-wrap {
     flex-wrap: no-wrap;
   }
 
@@ -493,19 +493,19 @@
   }
 
   .md_width_xs {
-    max-width: 240px;
+    max-width: var(--card-width-xs);
   }
 
   .md_width_sm {
-    max-width: 512px;
+    max-width: var(--card-width-sm);
   }
 
   .md_width_md {
-    max-width: 640px;
+    max-width: var(--card-width-md);
   }
 
   .md_width_lg {
-    max-width: 896px;
+    max-width: var(--card-width-lg);
   }
 }
 
@@ -559,7 +559,7 @@
     flex-wrap: wrap;
   }
 
-  .xl_flexWrap_no {
+  .xl_flexWrap_no-wrap {
     flex-wrap: no-wrap;
   }
 
@@ -620,19 +620,19 @@
   }
 
   .xl_width_xs {
-    max-width: 240px;
+    max-width: var(--card-width-xs);
   }
 
   .xl_width_sm {
-    max-width: 512px;
+    max-width: var(--card-width-sm);
   }
 
   .xl_width_md {
-    max-width: 640px;
+    max-width: var(--card-width-md);
   }
 
   .xl_width_lg {
-    max-width: 896px;
+    max-width: var(--card-width-lg);
   }
 }
 
@@ -686,7 +686,7 @@
     flex-wrap: wrap;
   }
 
-  .xxl_flexWrap_no {
+  .xxl_flexWrap_no-wrap {
     flex-wrap: no-wrap;
   }
 
@@ -747,19 +747,19 @@
   }
 
   .xxl_width_xs {
-    max-width: 240px;
+    max-width: var(--card-width-xs);
   }
 
   .xxl_width_sm {
-    max-width: 512px;
+    max-width: var(--card-width-sm);
   }
 
   .xxl_width_md {
-    max-width: 640px;
+    max-width: var(--card-width-md);
   }
 
   .xxl_width_lg {
-    max-width: 896px;
+    max-width: var(--card-width-lg);
   }
 }
 

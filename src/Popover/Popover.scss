@@ -14,10 +14,10 @@
   }
 
   &--sm {
-    min-width: $card-width-sm;
+    min-width: var(--card-width-sm);
   }
 
   &--md {
-    min-width: $card-width-md;
+    min-width: var(--card-width-md);
   }
 }
