@@ -61,25 +61,25 @@
 
   &--lg {
     @include media-breakpoint-up(sm) {
-      max-width: $card-width;
+      max-width: var(--card-width-lg);
     }
   }
 
   &--md {
     @include media-breakpoint-up(sm) {
-      max-width: $card-width-md;
+      max-width: var(--card-width-md);
     }
   }
 
   &--sm {
     @include media-breakpoint-up(sm) {
-      max-width: $card-width-sm;
+      max-width: var(--card-width-sm);
     }
   }
 
   &--xs {
     @include media-breakpoint-up(sm) {
-      max-width: $card-width-xs;
+      max-width: var(--card-width-xs);
     }
 
     .Card__helper-text {

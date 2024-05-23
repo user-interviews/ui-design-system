@@ -17,18 +17,18 @@ $card-stack-horizontal-padding: 12px;
   }
 
   &--xs {
-   max-width: $card-width-xs
+   max-width: var(--card-width-xs);
   }
 
   &--sm {
-    max-width: $card-width-sm;
+    max-width: var(--card-width-sm);
   }
 
   &--md {
-    max-width: $card-width-md;
+    max-width: var(--card-width-md);
   }
 
   &--lg {
-    max-width: $card-width;
+    max-width: var(--card-width-lg);
   }
 }
