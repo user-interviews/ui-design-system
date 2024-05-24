@@ -46,10 +46,23 @@ export type MoneyInputProps = CurrencyInputProps & {
 };
 
 const MoneyInput = ({
+  allowDecimals = true,
+  allowNegativeValue = true,
+  disabled = false,
   className,
+  intlConfig = { locale: 'en-US', currency: 'USD' },
+  prefix = '$ ',
   ...props
 }: MoneyInputProps) => (
-  <CurrencyInput className={classNames(className, 'MoneyInput', 'form-control')} {...props} />
+  <CurrencyInput
+    allowDecimals={allowDecimals}
+    allowNegativeValue={allowNegativeValue}
+    className={classNames(className, 'MoneyInput', 'form-control')}
+    disabled={disabled}
+    intlConfig={intlConfig}
+    prefix={prefix}
+    {...props}
+  />
 );
 
 export default MoneyInput;

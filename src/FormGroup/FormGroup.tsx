@@ -63,18 +63,18 @@ export type FormGroupProps = {
 export default function FormGroup({
   bordered,
   children,
-  className,
-  displayErrorText,
+  className = '',
+  displayErrorText = true,
   elementType = 'div',
   errors = {},
   helperText,
   id,
   inline,
   inputKey,
-  label,
-  labelClassName,
+  label = '',
+  labelClassName = '',
   labelHelperText,
-  labelHtmlFor,
+  labelHtmlFor = '',
   labelTooltip,
   required,
 }: FormGroupProps) {
@@ -90,7 +90,6 @@ export default function FormGroup({
         <InputLegend
           className={labelClassName}
           labelHelperText={labelHelperText}
-          labelHtmlFor={labelHtmlFor}
           required={required}
           text={label}
           tooltipText={labelTooltip}

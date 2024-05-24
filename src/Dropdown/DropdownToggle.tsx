@@ -50,8 +50,8 @@ type DropdownToggleProps = {
 
 const DropdownToggle = ({
   as,
-  ariaLabel,
-  bsPrefix,
+  ariaLabel = 'dropdown-toggle',
+  bsPrefix = 'dropdown-toggle',
   childBsPrefix,
   children,
   className,

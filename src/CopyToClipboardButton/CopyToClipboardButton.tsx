@@ -24,7 +24,7 @@ type CopyToClipboardButtonProps = {
 
 function CopyToClipboardButton({
   copyText = '',
-  displayText = undefined,
+  displayText,
   trackingEvent,
   variant = ButtonVariants.NEUTRAL,
 }: CopyToClipboardButtonProps) {
