@@ -17,8 +17,8 @@ type LoadingOverlayProps = {
 };
 
 const LoadingOverlay = ({
-  contentCenterOverflow,
-  contentTop,
+  contentCenterOverflow = false,
+  contentTop = false,
   dataTestid = 'LoadingOverlay',
   header,
   text,
