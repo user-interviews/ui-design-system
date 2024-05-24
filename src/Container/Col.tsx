@@ -63,7 +63,7 @@ export const Col = ({
   xl,
   xs,
   xxl,
-  bsPrefix,
+  bsPrefix = 'col',
   ...props
 }: ColProps) => (
   <ReactBootstrapCol

@@ -19,7 +19,7 @@ const RadioButton = React.forwardRef<HTMLInputElement, RadioButtonProps>(({
   className,
   disabled,
   id,
-  name,
+  name = '',
   value,
   onChange,
   ...rest

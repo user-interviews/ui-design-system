@@ -19,10 +19,10 @@ export type InputLegendProps = {
 } & LegendProps;
 
 const InputLegend = ({
-  className,
+  className = '',
   text,
   required,
-  labelHelperText,
+  labelHelperText = '',
   tooltipText,
   ...props
 }: InputLegendProps) => {

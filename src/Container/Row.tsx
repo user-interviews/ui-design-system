@@ -63,7 +63,7 @@ export const Row = ({
   xl,
   xs,
   xxl,
-  bsPrefix,
+  bsPrefix = 'row',
   ...props
 }: RowProps) => (
   <ReactBootstrapRow

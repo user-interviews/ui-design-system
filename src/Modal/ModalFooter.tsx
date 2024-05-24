@@ -10,6 +10,12 @@ type ModalFooterProps = {
 };
 
 export default class ModalFooter extends Component<ModalFooterProps> {
+  static defaultProps: {
+    children: undefined;
+    closingIsDisabled: boolean;
+    dismissButtonText: string;
+    onRequestClose: undefined;
+  };
   // Don’t pass event to props callback; the callback is not always called from
   // event listeners:
 

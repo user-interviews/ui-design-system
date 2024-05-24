@@ -27,7 +27,7 @@ export const Container = ({
   children,
   className,
   fluid,
-  bsPrefix,
+  bsPrefix = 'container',
   ...props
 }: ContainerProps) => (
   <ReactBootstrapContainer

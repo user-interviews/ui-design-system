@@ -48,9 +48,15 @@ export type MoneyInputProps = CurrencyInputProps & {
 const MoneyInput = ({
   className,
   intlConfig = { locale: 'en-US', currency: 'USD' },
+  prefix = '$ ',
   ...props
 }: MoneyInputProps) => (
-  <CurrencyInput className={classNames(className, 'MoneyInput', 'form-control')} intlConfig={intlConfig} {...props} />
+  <CurrencyInput
+    className={classNames(className, 'MoneyInput', 'form-control')}
+    intlConfig={intlConfig}
+    prefix={prefix}
+    {...props}
+  />
 );
 
 export default MoneyInput;

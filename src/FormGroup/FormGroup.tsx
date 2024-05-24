@@ -63,7 +63,7 @@ export type FormGroupProps = {
 export default function FormGroup({
   bordered,
   children,
-  className,
+  className = '',
   displayErrorText = true,
   elementType = 'div',
   errors = {},
@@ -71,10 +71,10 @@ export default function FormGroup({
   id,
   inline,
   inputKey,
-  label,
-  labelClassName,
+  label = '',
+  labelClassName = '',
   labelHelperText,
-  labelHtmlFor,
+  labelHtmlFor = '',
   labelTooltip,
   required,
 }: FormGroupProps) {

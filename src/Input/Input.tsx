@@ -40,7 +40,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
     trailingIconOnClick,
     trailingIconOnClickSubmit,
     trailingText,
-    type,
+    type = 'text',
     value,
     onChange,
     ...rest
