@@ -13,7 +13,6 @@ type LegendProps = React.DetailedHTMLProps<
 export type InputLegendProps = {
   className?: string;
   labelHelperText?: React.ReactNode;
-  labelHtmlFor?: string;
   required?: boolean;
   text: string;
   tooltipText?: React.ReactNode;

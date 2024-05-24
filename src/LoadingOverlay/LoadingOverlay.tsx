@@ -23,7 +23,7 @@ const LoadingOverlay = ({
   header,
   text,
   textClassName,
-  visible,
+  visible = true,
 }: LoadingOverlayProps) => {
   // Only set style if this is not visible to let CSS handle how to display this
   const classes = classNames(

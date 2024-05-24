@@ -64,7 +64,7 @@ export default function FormGroup({
   bordered,
   children,
   className,
-  displayErrorText,
+  displayErrorText = true,
   elementType = 'div',
   errors = {},
   helperText,
@@ -80,6 +80,9 @@ export default function FormGroup({
 }: FormGroupProps) {
   const errorMessage = buildErrorMessage(errors[inputKey || ''], label);
   const hasErrors = errorMessage && errorMessage.length > 0;
+  if (hasErrors) {
+    console.log(renderErrors(errorMessage));
+  }
 
   const isElementTypeFieldset = elementType === 'fieldset';
   const isElementTypeDiv = elementType === 'div';
@@ -90,7 +93,6 @@ export default function FormGroup({
         <InputLegend
           className={labelClassName}
           labelHelperText={labelHelperText}
-          labelHtmlFor={labelHtmlFor}
           required={required}
           text={label}
           tooltipText={labelTooltip}

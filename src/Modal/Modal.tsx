@@ -16,7 +16,7 @@ const Modal = ({
   className,
   ...props
 }: ModalProps) => {
-  let componentClassName = '';
+  let componentClassName = className;
 
   if (size === MODAL_SIZES.MEDIUM) {
     componentClassName = classNames(className, 'ReactModal--medium');
