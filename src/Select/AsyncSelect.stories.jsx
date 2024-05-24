@@ -7,6 +7,8 @@ import {
   Modal, ModalHeader, ModalBody, ModalFooter,
 } from 'src/Modal';
 
+import Option from './Option';
+
 export default {
   title: 'Components/Selects/Async',
   component: AsyncSelect,
@@ -90,3 +92,23 @@ export const InModal = () => {
     </>
   );
 };
+
+export const MultiSelect = () => (
+  <FormGroup
+    label="Async MultiSelect"
+    labelHtmlFor="async-multiselect"
+  >
+    <AsyncSelect
+      cacheOptions
+      closeMenuOnSelect={false}
+      components={{ Option }}
+      getOptionLabel={({ label }) => label}
+      getOptionValue={({ value }) => value}
+      inputId="async-multiselect"
+      isClearable
+      isMulti
+      loadOptions={loadOptions}
+      noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+    />
+  </FormGroup>
+);

@@ -9,7 +9,9 @@ import { defaultStyles, defaultTheme, SELECT_SIZES } from './styles';
 const AsyncSelect = ({
   'aria-label': ariaLabel,
   'aria-labelledby': ariaLabelledBy,
+  cacheOptions,
   className,
+  closeMenuOnSelect,
   components,
   defaultOptions,
   defaultValue,
@@ -26,7 +28,6 @@ const AsyncSelect = ({
   modal,
   name,
   noOptionsMessage,
-  placeholder,
   size,
   value,
 
@@ -37,8 +38,10 @@ const AsyncSelect = ({
     {...props}
     aria-label={ariaLabel}
     aria-labelledby={ariaLabelledBy}
+    cacheOptions={cacheOptions}
     className={`${className || ''} AsyncSelect`}
     classNamePrefix="Select"
+    closeMenuOnSelect={closeMenuOnSelect}
     components={components}
     defaultOptions={defaultOptions}
     defaultValue={defaultValue}
@@ -54,7 +57,7 @@ const AsyncSelect = ({
     menuPortalTarget={modal ? document.body : undefined}
     name={name}
     noOptionsMessage={noOptionsMessage}
-    placeholder={placeholder}
+    placeholder="Search"
     shouldShowValue
     styles={{
       ...defaultStyles({ menuWidth, size }),
@@ -75,7 +78,9 @@ const AsyncSelect = ({
 AsyncSelect.propTypes = {
   'aria-label': propTypes.string,
   'aria-labelledby': propTypes.string,
+  cacheOptions: propTypes.bool,
   className: propTypes.string,
+  closeMenuOnSelect: propTypes.bool,
   components: propTypes.any,
   defaultOptions: propTypes.oneOfType([propTypes.bool, propTypes.array]),
   defaultValue: propTypes.object,
@@ -106,7 +111,9 @@ AsyncSelect.propTypes = {
 AsyncSelect.defaultProps = {
   'aria-label': undefined,
   'aria-labelledby': undefined,
+  cacheOptions: undefined,
   className: undefined,
+  closeMenuOnSelect: undefined,
   components: undefined,
   defaultOptions: false,
   defaultValue: undefined,
@@ -124,7 +131,6 @@ AsyncSelect.defaultProps = {
   placeholder: undefined,
   size: SELECT_SIZES.SMALL,
   value: undefined,
-
   onChange: undefined,
 };
 
