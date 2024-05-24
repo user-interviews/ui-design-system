@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import propTypes from 'prop-types';
 
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
@@ -26,6 +25,9 @@ const elements = {
   drawerThreeToggleVisibilityButton: {
     get: () => screen.getByRole('button', { name: /toggle visibility drawerThree/ }),
   },
+  drawerFourToggleVisibilityButton: {
+    get: () => screen.getByRole('button', { name: /toggle visibility drawerFour/ }),
+  },
 };
 
 function SetupDrawerWithChildren(props) {
@@ -40,14 +42,23 @@ function SetupDrawerWithChildren(props) {
   );
 }
 
+interface SetupMultipleDrawersProps {
+  drawerOneVisibleDefault?: boolean
+  drawerTwoVisibleDefault?: boolean,
+  drawerThreeVisibleDefault?: boolean
+  drawerFourVisibleDefault?: boolean,
+}
+
 function SetupMultipleDrawers({
-  drawerOneVisibleDefault,
-  drawerTwoVisibleDefault,
-  drawerThreeVisibleDefault,
-}) {
+  drawerOneVisibleDefault = false,
+  drawerTwoVisibleDefault = false,
+  drawerThreeVisibleDefault = false,
+  drawerFourVisibleDefault = false,
+}: SetupMultipleDrawersProps) {
   const [isDrawerOneVisible, setIsDrawerOneVisible] = useState(drawerOneVisibleDefault);
   const [isDrawerTwoVisible, setIsDrawerTwoVisible] = useState(drawerTwoVisibleDefault);
   const [isDrawerThreeVisible, setIsDrawerThreeVisible] = useState(drawerThreeVisibleDefault);
+  const [isDrawerFourVisible, setIsDrawerFourVisible] = useState(drawerFourVisibleDefault);
 
   return (
     <div>
@@ -72,6 +83,13 @@ function SetupMultipleDrawers({
         toggle visibility drawerThree
       </button>
 
+      <button
+        type="button"
+        onClick={() => setIsDrawerFourVisible((prevState) => !prevState)}
+      >
+        toggle visibility drawerFour
+      </button>
+
       <Drawer
         visible={isDrawerOneVisible}
         onRequestClose={() => setIsDrawerOneVisible(false)}
@@ -90,21 +108,19 @@ function SetupMultipleDrawers({
       >
         <div>childrenDrawerThree</div>
       </Drawer>
+
+      {/* Testing what happens when drawer unmounts */}
+      {isDrawerFourVisible && (
+        <Drawer
+          visible={isDrawerFourVisible}
+          onRequestClose={() => setIsDrawerThreeVisible(false)}
+        >
+          <div>childrenDrawerFour</div>
+        </Drawer>
+      )}
     </div>
   );
 }
-
-SetupMultipleDrawers.propTypes = {
-  drawerOneVisibleDefault: propTypes.bool,
-  drawerThreeVisibleDefault: propTypes.bool,
-  drawerTwoVisibleDefault: propTypes.bool,
-};
-
-SetupMultipleDrawers.defaultProps = {
-  drawerOneVisibleDefault: false,
-  drawerTwoVisibleDefault: false,
-  drawerThreeVisibleDefault: false,
-};
 
 describe('Drawer', () => {
   beforeEach(() => {
@@ -267,6 +283,20 @@ describe('Drawer', () => {
           await waitFor(() => {
             expect(body?.classList).toContain('Drawer--open');
           });
+        });
+      });
+    });
+
+    describe('when user unmounts the drawer that is open (e.g navigation to a different page)', () => {
+      it('body tag does not have Drawer--open', async () => {
+        const { container } = render(<SetupMultipleDrawers drawerFourVisibleDefault />);
+
+        userEvent.click(elements.drawerFourToggleVisibilityButton.get());
+
+        const body = container.closest('body');
+
+        await waitFor(() => {
+          expect(body?.classList).not.toContain('Drawer--open');
         });
       });
     });
