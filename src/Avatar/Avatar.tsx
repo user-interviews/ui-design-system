@@ -16,7 +16,16 @@ type AvatarProps = {
   url?: string;
 };
 
-function Avatar(props: AvatarProps) {
+function Avatar({
+  ariaHidden,
+  colorId,
+  image,
+  initials,
+  large,
+  name = '',
+  showAlert,
+  url,
+}: AvatarProps) {
   const [imageLoadFailed, setImageLoadFailed] = useState(false);
 
   function onImageLoadError() {
@@ -24,10 +33,10 @@ function Avatar(props: AvatarProps) {
   }
 
   function wrapIfUrlPresent(content) {
-    if (props.url) {
+    if (url) {
       return (
         <a
-          href={props.url}
+          href={url}
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -38,36 +47,36 @@ function Avatar(props: AvatarProps) {
     return content;
   }
 
-  const displayImage = props.image && !imageLoadFailed;
+  const displayImage = image && !imageLoadFailed;
   const content = displayImage ? (
     <img
-      alt={props.name}
-      src={props.image}
+      alt={name}
+      src={image}
       onError={onImageLoadError}
     />
   ) : (
     <span className="Avatar__circle__initials">
-      {props.initials}
+      {initials}
     </span>
   );
 
   return (
     <div
-      aria-hidden={props.ariaHidden}
+      aria-hidden={ariaHidden}
       className={classNames(
         'Avatar',
-        { 'Avatar--large': props.large },
+        { 'Avatar--large': large },
       )}
     >
       <div
         className={classNames([
           'Avatar__circle',
-          { [uiModClassName(props.colorId)]: !!props.colorId },
+          { [uiModClassName(colorId)]: !!colorId },
         ])}
       >
         {wrapIfUrlPresent(content)}
       </div>
-      {props.showAlert && (
+      {showAlert && (
         <div className="Avatar__alert" />
       )}
     </div>

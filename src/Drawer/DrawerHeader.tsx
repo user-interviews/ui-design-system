@@ -18,7 +18,7 @@ type DrawerHeaderProps = {
 };
 
 const DrawerHeader = ({
-  bordered,
+  bordered = true,
   title,
   onRequestClose,
 }: DrawerHeaderProps) => {

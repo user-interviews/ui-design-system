@@ -65,19 +65,19 @@ type DropdownProps = {
 } & RBDropdownProps;
 
 const Dropdown = ({
-  align,
+  align = 'start',
   as,
-  autoClose,
+  autoClose = true,
+  bsPrefix = 'dropdown',
   children,
   className,
   drop,
   flip,
   focusFirstItemOnShow,
-  navbar,
+  navbar = false,
   onSelect,
   onToggle,
   show,
-  bsPrefix,
   ...props
 }: DropdownProps) => (
   <RBDropdown

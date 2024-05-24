@@ -17,11 +17,11 @@ export type InputLabelProps = {
 } & LabelProps;
 
 const InputLabel = ({
-  className,
-  labelHtmlFor,
+  className = '',
+  labelHtmlFor = '',
   text,
   required,
-  labelHelperText,
+  labelHelperText = '',
   tooltipText,
   ...props
 }: InputLabelProps) => {

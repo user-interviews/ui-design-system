@@ -39,7 +39,7 @@ type DrawerProps = {
 
 const Drawer = ({
   behindNav = true,
-  children = undefined,
+  children,
   className = '',
   defaultExpanded = false,
   expandable = false,

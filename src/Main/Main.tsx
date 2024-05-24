@@ -24,7 +24,7 @@ const Main = ({
   as = 'main',
   className,
   children,
-  fluid,
+  fluid = true,
   id,
   ...props
 }: MainProps) => (

@@ -15,6 +15,14 @@ export default class ModalFooter extends Component<ModalFooterProps> {
 
   handleCloseClick = () => this.props.onRequestClose && this.props.onRequestClose();
 
+  // eslint-disable-next-line react/static-property-placement
+  static defaultProps: {
+    children: undefined;
+    closingIsDisabled: boolean;
+    dismissButtonText: string;
+    onRequestClose: undefined;
+  };
+
   render() {
     return (
       <div className="ModalFooter">

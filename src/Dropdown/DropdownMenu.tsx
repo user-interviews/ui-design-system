@@ -57,7 +57,7 @@ const DropdownMenu = ({
   as,
   children,
   className,
-  flip,
+  flip = true,
   onSelect,
   popperConfig,
   renderOnMount,

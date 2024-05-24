@@ -21,8 +21,8 @@ type DropdownDividerProps = {
 };
 
 const DropdownDivider = ({
-  as,
-  bsPrefix,
+  as = 'hr',
+  bsPrefix = 'dropdown',
   className,
 }: DropdownDividerProps) => (
   <RBDropdown.Divider
