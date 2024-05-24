@@ -51,13 +51,13 @@ const MoneyInput = ({
   disabled = false,
   className,
   intlConfig = { locale: 'en-US', currency: 'USD' },
-  prefix ='$ ',
+  prefix = '$ ',
   ...props
 }: MoneyInputProps) => (
   <CurrencyInput
-    className={classNames(className, 'MoneyInput', 'form-control')}
     allowDecimals={allowDecimals}
     allowNegativeValue={allowNegativeValue}
+    className={classNames(className, 'MoneyInput', 'form-control')}
     disabled={disabled}
     intlConfig={intlConfig}
     prefix={prefix}

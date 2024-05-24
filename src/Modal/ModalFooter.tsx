@@ -10,16 +10,18 @@ type ModalFooterProps = {
 };
 
 export default class ModalFooter extends Component<ModalFooterProps> {
+  // Don’t pass event to props callback; the callback is not always called from
+  // event listeners:
+
+  handleCloseClick = () => this.props.onRequestClose && this.props.onRequestClose();
+
+  // eslint-disable-next-line react/static-property-placement
   static defaultProps: {
     children: undefined;
     closingIsDisabled: boolean;
     dismissButtonText: string;
     onRequestClose: undefined;
   };
-  // Don’t pass event to props callback; the callback is not always called from
-  // event listeners:
-
-  handleCloseClick = () => this.props.onRequestClose && this.props.onRequestClose();
 
   render() {
     return (

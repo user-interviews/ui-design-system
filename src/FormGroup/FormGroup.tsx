@@ -80,9 +80,6 @@ export default function FormGroup({
 }: FormGroupProps) {
   const errorMessage = buildErrorMessage(errors[inputKey || ''], label);
   const hasErrors = errorMessage && errorMessage.length > 0;
-  if (hasErrors) {
-    console.log(renderErrors(errorMessage));
-  }
 
   const isElementTypeFieldset = elementType === 'fieldset';
   const isElementTypeDiv = elementType === 'div';
