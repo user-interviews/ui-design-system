@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout branch
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # 👈 Required to retrieve git history
 
       - name: Setup Node
         uses: actions/setup-node@v4

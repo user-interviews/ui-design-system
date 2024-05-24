@@ -95,6 +95,16 @@ const Drawer = ({
     if (hasBackgroundOverlay) {
       disableBackgroundScrolling();
     }
+
+    return () => {
+      // Cleanup function to remove the class and reset the ref.
+      // Covers the edge where you navigate to a new page
+      // from drawer via a link
+      if (hasBackgroundOverlay) {
+        document.body.classList.remove('Drawer--open');
+        isCurrentlyOpen.current = false;
+      }
+    };
   }, [hasBackgroundOverlay, visible]);
 
   return (
