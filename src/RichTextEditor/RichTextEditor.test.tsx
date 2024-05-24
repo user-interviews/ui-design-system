@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
 
 import RichTextEditor, { type RichTextEditorProps } from './RichTextEditor';
@@ -12,17 +12,19 @@ describe('<RichTextEditor />', () => {
     />
   );
 
-  it('renders snapshot', () => {
+  it('renders snapshot', async () => {
     const { asFragment } = render(<Setup />);
+
+    await waitFor(() => screen.getByRole('button', { name: /bold/i }));
 
     expect(asFragment()).toMatchSnapshot();
   });
 
   describe('given an initial value', () => {
-    it('deserializes value correctly', () => {
+    it('deserializes value correctly', async () => {
       render(<Setup initialValue="<p>hello world</p>" />);
 
-      expect(screen.getByText('hello world')).toBeInTheDocument();
+      expect(await screen.findByText('hello world')).toBeInTheDocument();
     });
   });
 });

@@ -1,53 +1,55 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
-import Table from './Table';
-import * as ComponentStories from './Table.stories';
+import { ArgTypes, Canvas } from "@storybook/blocks";
+import Table from "./Table";
+import * as ComponentStories from "./Table.stories";
 
 # Table
 
 ##
 
-<h4>
-  Displays sets of data. Can be fully customized.
-</h4>
+<h4>Displays sets of data. Can be fully customized.</h4>
 
 <Canvas of={ComponentStories.Default} />
 
 ### When to use
+
 - Tables display information that is easy to scan, so that users can look for patterns and insights
 - Tables can be embedded in various containers and primary content, such as Cards
-
 
 ## Props
 
 <ArgTypes of={Table} />
 
-
 ## Stories
 
 ### Default
+
 - A simple example of a `Table`
 - In the `TableHead`, all `TableCell` components should be given a `header` prop to designate it as a column label
 
 <Canvas of={ComponentStories.Default} />
 
 ### Loading Default
+
 - Set `isLoading` on the `<Table>` component to render the default `<TableLoadingSkeleton>`
 
 <Canvas of={ComponentStories.LoadingDefault} />
 
 ### Loading Custom Columns
-- Adjust the column count and widths of the `<TableLoadingSkeleton>` by giving `loadingColumns` an array of widths (e.g. `[75, 100, 250, 250, 100]`) 
+
+- Adjust the column count and widths of the `<TableLoadingSkeleton>` by giving `loadingColumns` an array of widths (e.g. `[75, 100, 250, 250, 100]`)
 - Adjust the row count of the `<TableLoadingSkeleton>` by giving `loadingRows` a number
 - The loading skeleton does not need to perfectly match the Table that is eventually rendered.
 
 <Canvas of={ComponentStories.LoadingCustomColumns} />
 
 ### Table No Hover State
+
 - Set `removeHover` on a `TableRow` component to remove the default hover state.
 
 <Canvas of={ComponentStories.TableNoHoverState} />
 
 ### Table With Fixed Column Widths
+
 - Create a column with a fixed width
 - By default, all content of a `TableCell` will be fully displayed with no line breaks and no set width. Whichever `TableCell` has the longest content, the width of that entire column will be set at that
 - Set `maxWidth` to limit the width in `px` of the `TableCell`
@@ -57,41 +59,48 @@ import * as ComponentStories from './Table.stories';
 <Canvas of={ComponentStories.TableWithFixedColumnWidths} />
 
 ### Table On Card
+
 - Default `Table` on a `Card` component
 
 <Canvas of={ComponentStories.TableOnCard} />
 
 ### Table On Card No Padding
+
 - When the `Card` component has the `noPadding` prop set
 
 <Canvas of={ComponentStories.TableOnCardNoPadding} />
 
 ### Table With Single Action Column
+
 - When a row has a single action, expose the action directly (usually through a button) with a clear action verb. Otherwise a kebab should be used when multiple actions are available for a rows
 
 <Canvas of={ComponentStories.TableWithSingleActionColumn} />
 
 ### Table With Multiple Action Column
+
 - Kebabs should be used when there’s more than one action per row
 - If any row has one action and others more than one action, kebabs should be displayed on all rows
 
 <Canvas of={ComponentStories.TableWithMultipleActionColumn} />
 
 ### Table With Sticky Column And Header
+
 - A Table's header row can be made sticky to ensure column labels are always visible when a user scrolls down
 - `TableRow` can be given a single `stickyRow` prop (within `TableHead`)
 - A Table column can be made sticky to help a user keep track of which row they're currently looking at. The `TableCell` on the column that is made sticky can be given the `stickyColumn` prop. The `TableCell`s both in the `TableHead` and `TableBody` need the `stickyColumn` prop.)
 - A sticky column requires a `stickyLeft` or `stickyRight` prop. This determines whether a sticky column will be positioned on the left-side or right-side of the Table
-- If only a *single* `stickyColumn` is implemented on either left or right side of the Table, `stickyColumnOffsetX` should be set to `0`
+- If only a _single_ `stickyColumn` is implemented on either left or right side of the Table, `stickyColumnOffsetX` should be set to `0`
 - `stickyColumnOffsetX` takes a number that translates into a `px` value. Depending on whether a `TableCell` is provided `stickyLeft` or `stickyRight`, the output becomes a styling value of either `left: ${stickyColumnOffsetX}px` or `right: ${stickyColumnOffsetX}px`
 - A pin icon can optionally be displayed on a sticky column to let the user toggle between a sticky column state and a default state
-- *Note: view this story on Canvas instead of Docs to see the sticky header*
+- _Note: view this story on Canvas instead of Docs to see the sticky header_
 
 <Canvas of={ComponentStories.TableWithStickyColumnAndHeader} />
 
 ### Table With Multiple Sticky Columns (left & right) And Header
-- If *multiple* `stickyColumn`s are needed on either left or right side of the Table (e.g. a Checkbox and Email column on the left-side of the Table), `stickyColumnOffsetX` must be set precisely
+
+- If _multiple_ `stickyColumn`s are needed on either left or right side of the Table (e.g. a Checkbox and Email column on the left-side of the Table), `stickyColumnOffsetX` must be set precisely
 - Note: there is currently only support for only a single `stickyRight` column. This column should be reserved for an action or a relevant data column
+
 ```
 // First left-side stickyColumn, 0px starting position when sticky
 
@@ -134,41 +143,46 @@ import * as ComponentStories from './Table.stories';
 <Canvas of={ComponentStories.TableWithMultipleStickyColumnsAndHeader} />
 
 ### Table With Multiple Select
+
 - Checkboxes are displayed on a separate column
 - `TableRow` can be given a `clickable` prop that sets `cursor: pointer`
-- When `TableRow` prop `selected` evaluates to `true`, `background-color` is set to `$ux-blue-100`
+- When `TableRow` prop `selected` evaluates to `true`, `background-color` is set to `var(--ux-blue-100)`
 - Clicking the first `Checkbox` located on the header row should select or de-select all current rows displayed on the `Table`
 
 <Canvas of={ComponentStories.TableWithMultipleSelect} />
 
 ### Table With Multiple Select And Multiple Sticky Columns And Header
+
 - Combining the sticky columns & headers with multi-select functionality.
 - Creates an easier scrolling and selecting experience for users while searching through table data.
-- *Note: view this story on Canvas instead of Docs to see the sticky header*
+- _Note: view this story on Canvas instead of Docs to see the sticky header_
 
-<Canvas of={ComponentStories.TableWithMultipleSelectAndMultipleStickyColumnsAndHeader} />
+<Canvas
+  of={ComponentStories.TableWithMultipleSelectAndMultipleStickyColumnsAndHeader}
+/>
 
 ### Table With Sorting
+
 - **Currently WIP**
 - When implemented, use a `TableSortLabel` to sort the table by a column in ascending or descending order
-- *Inactive state:* Columns that are not sorted have the sort icon in blue
-- *Active state:* When users click the column heading the text turns blue and the icon changes to either an ascending or descending icon
-
+- _Inactive state:_ Columns that are not sorted have the sort icon in blue
+- _Active state:_ When users click the column heading the text turns blue and the icon changes to either an ascending or descending icon
 
 <Canvas of={ComponentStories.TableWithSorting} />
 
 ### Table With Cell Right Alignment
+
 - `TableCell` can be given `alignRight` prop to align content to the right
 - Cells with numerical data should be aligned right
 
 <Canvas of={ComponentStories.TableWithCellRightAlignment} />
 
 ### Table With Compact Option
+
 - `TableCell` can be given a `compact` prop to reduce the size of the cell
 - This allows the `Table` to display more rows on a page
 
 <Canvas of={ComponentStories.TableWithCompactOption} />
-
 
 ## Formatting
 
@@ -179,15 +193,18 @@ import * as ComponentStories from './Table.stories';
 The `Table` component aims to be closely mapped to the native `<table>` elements. As such, do try to use the `Table` and it's subcomponents as if you were building a regular table <br/>
 
 A Table is primarily made up of columns, rows, and cells
+
 - **Header row:** Made up of cells that act as column labels
 - **Column label:** The cell that acts as a column header and explains what type of data is in the column
 - **Data cell:** The primary component of the table. It can be filled with any type of data or content
 
 Can also have other components for additional functionality such as:
+
 - **Selecting:** adding a `Checkbox` as a data column for selecting multiple rows
 - **Sorting (currently WIP):** adding a `TableSortLabel` to show which columns are actively being sorted
 
 ## Subcomponents
+
 - `Table`
 - `TableBody`
 - `TableCell`
@@ -195,19 +212,19 @@ Can also have other components for additional functionality such as:
 - `TableRow`
 - `TableSortLabel`
 
-
 ### Sizing
 
 ### Alignment
+
 - Textual data = Left aligned (default)
 - Numerical data = Right aligned (`alignRight` prop on a `TableCell`)
 - Align headers with their related data
 - Don't center align
 
-
 ## Best practices
 
 ### General
+
 - Show values across multiple categories
 - Help users visualize and scan multiple values with ease from an entire data set
 - Minimize clutter by only including values that supports the table's purpose
@@ -215,6 +232,7 @@ Can also have other components for additional functionality such as:
 ### Behavior
 
 ### Implementation
+
 - The `Table` and its subcomponents should closely map a native `<table>`
 
 ```
@@ -254,19 +272,24 @@ Can also have other components for additional functionality such as:
 ```
 
 ### UX Copy
+
 **Headers should:**
+
 - Be informative and descriptive
 - Scannable and concise
 - Include units of measurement symbols so they aren't repeated in the columns
 - Use sentence case (first word capitalized, rest lowercase)
 
 **Data cells should:**
+
 - Be scannable and concise
 - Use sentence case (first word capitalized, rest lowercase)
 
 **Decimals:**
+
 - Keep decimals consistent. For example, don’t use 3 decimals in one row and 2 in others
 
 **Ellipsis:**
+
 - Some content may overflow and be given a `text-overflow: ellipsis` property
 - Be sure to wrap these data cells in a `Popover` so that users can view extra long data values

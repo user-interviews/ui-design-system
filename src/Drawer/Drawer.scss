@@ -7,7 +7,7 @@
   bottom: 0;
   left: 0;
   background: black;
-  z-index: $z-index-modal-backdrop;
+  z-index: var(--z-index-modal-backdrop);
   opacity: 0%;
   pointer-events: none;
   transition: 200ms linear;
@@ -39,13 +39,13 @@
 
   $block: #{&};
 
-  background-color: $ux-white;
+  background-color: var(--ux-white);
   height: 100vh;
   width: 100%;
   position: fixed;
   bottom: 0;
   transition: 200ms ease-out;
-  z-index: $z-index-drawer;
+  z-index: var(--z-index-drawer);
 
   display: flex;
   flex-direction: column;
@@ -59,7 +59,7 @@
   }
 
   &--expanded {
-    width: 100%;
+    width: 90%;
   }
 
   &--right {
@@ -67,7 +67,7 @@
 
     &#{$block}--visible {
       right: 0;
-      box-shadow: $ux-drawer-box-shadow-right;
+      box-shadow: var(--ux-drawer-box-shadow-right);
     }
   }
 
@@ -76,7 +76,7 @@
 
     &#{$block}--visible {
       left: 0;
-      box-shadow: $ux-drawer-box-shadow-left;
+      box-shadow: var(--ux-drawer-box-shadow-left);
     }
   }
 }

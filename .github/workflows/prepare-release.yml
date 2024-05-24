@@ -4,56 +4,80 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'The version you want to release.'
+        description: "Select the version increment"
         required: true
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
+          - premajor
+          - preminor
+          - prepatch
+          - prerelease
 
 jobs:
   prepare-release:
     name: Prepare release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout branch
+        uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
         with:
-          node-version-file: '.node-version'
+          node-version-file: ".node-version"
 
-      - name: Create release branch
-        run: git checkout -b release/${{ github.event.inputs.version }}
+      - name: Setup Yarn
+        uses: volta-cli/action@v4
 
-      - name: Initialize mandatory git config
-        uses: fregante/setup-git-user@v1
+      - name: Setup env
+        run: echo "FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" > .env
 
       - name: Bump version in package.json
-        run: yarn version --new-version ${{ github.event.inputs.version }} --no-git-tag-version
+        run: yarn version ${{ github.event.inputs.version }}
+
+      - name: Extract version from package.json
+        id: extract_version
+        run: |
+          version=$(grep '"version"' package.json | sed -E 's/.*"version": "([^"]+)".*/\1/')
+          echo "Extracted version: $version"
+          echo "::set-output name=version::$version"
+
+      - name: Create release branch
+        run: git checkout -b release/v${{ steps.extract_version.outputs.version }}
+
+      - name: Initialize mandatory git config
+        uses: fregante/setup-git-user@v2
 
       - name: Commit manifest files
         id: make-commit
         run: |
           git add package.json
-          git commit --message "Prepare release ${{ github.event.inputs.version }}"
+          git commit --message "Prepare release v${{ steps.extract_version.outputs.version }}"
 
           echo "::set-output name=commit::$(git rev-parse HEAD)"
 
       - name: Publish release branch
-        run: git push origin release/${{ github.event.inputs.version }}
+        run: git push origin release/v${{ steps.extract_version.outputs.version }}
 
       - name: Merge release into main branch
         uses: thomaseizinger/create-pull-request@1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          head: release/${{ github.event.inputs.version }}
+          head: release/v${{ steps.extract_version.outputs.version }}
           base: main
-          title: Merge release/${{ github.event.inputs.version }} into main branch
+          title: "Merge release/v${{ steps.extract_version.outputs.version }} into main branch"
 
       - name: Merge release into develop branch
         uses: thomaseizinger/create-pull-request@1.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          head: release/${{ github.event.inputs.version }}
+          head: release/v${{ steps.extract_version.outputs.version }}
           base: develop
-          title: Merge release/${{ github.event.inputs.version }} into develop branch
-
+          title: "Merge release/v${{ steps.extract_version.outputs.version }} into develop branch"

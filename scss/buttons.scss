@@ -1,38 +1,36 @@
 @import './colors';
 
 .btn-link--neutral {
-  color: $ux-gray-500;
+  color: var(--ux-gray-500);
 
   &:hover {
-    color: $ux-gray-700;
+    color: var(--ux-gray-700);
   }
 }
 
 .btn-outline-secondary {
-  color: $ux-blue;
-  border-color: $ux-blue;
+  color: var(--ux-blue);
+  border-color: var(--ux-blue);
 
   &:hover {
-    background-color: $ux-blue;
-    color: $ux-white;
+    background-color: var(--ux-blue);
+    color: var(--ux-white);
   }
 }
 
 $synthesis-primary: $synth-primary-cta-blue;
 
 $primary: $ux-emerald-600;
-$danger: $ux-red;
-$warning: $ux-yellow-400;
 
 @mixin btn-focus-outline {
   box-shadow: none !important;
-  outline: 2px solid $ux-blue-500;
+  outline: 2px solid var(--ux-blue-500);
   outline-offset: 2px;
 }
 
 @mixin btn-focus-outline--dark-bg {
   box-shadow: none !important;
-  outline: 2px solid $ux-white;
+  outline: 2px solid var(--ux-white);
   outline-offset: 2px;
 }
 
@@ -133,11 +131,11 @@ $warning: $ux-yellow-400;
     $btn-outline-primary-hover-border,
     $btn-outline-primary-hover-color,
   );
-  border-color: $btn-outline-primary-border;
+  border-color: var(--btn-outline-primary-border);
 
   &:active {
-    background-color: $btn-outline-primary-active-background;
-    border-color: $btn-outline-primary-active-border-color;
+    background-color: var(--btn-outline-primary-active-background);
+    border-color: var(--btn-outline-primary-active-border-color);
   }
 
   &:focus-visible {
@@ -170,11 +168,11 @@ $warning: $ux-yellow-400;
     $btn-outline-primary-hover-border,
     $btn-outline-primary-hover-color,
   );
-  border-color: $btn-outline-primary-border;
+  border-color: var(--btn-outline-primary-border);
 
   &:active {
-    background-color: $btn-outline-primary-active-background;
-    border-color: $btn-outline-primary-active-border-color;
+    background-color: var(--btn-outline-primary-active-background);
+    border-color: var(--btn-outline-primary-active-border-color);
   }
 
   &:focus-visible {
@@ -225,153 +223,7 @@ $warning: $ux-yellow-400;
 
   &:active, &.btn-tertiary:focus {
     box-shadow: none;
-    border-color: $synth-hyperlink-color;
-  }
-}
-
-@mixin btn-danger {
-  $btn-danger-background: $danger;
-  $btn-danger-border: $danger;
-  $btn-danger-color: $ux-white;
-
-  $btn-danger-hover-background: $ux-red-600;
-  $btn-danger-hover-border: $ux-red-600;
-  $btn-danger-hover-color: $ux-white;
-
-  $btn-danger-active-background: $ux-red-700;
-  $btn-danger-active-border: $ux-red-700;
-  $btn-danger-active-color: $ux-white;
-
-  @include button-variant(
-    $btn-danger-background,
-    $btn-danger-border,
-    $btn-danger-color,
-
-    $btn-danger-hover-background,
-    $btn-danger-hover-border,
-    $btn-danger-hover-color,
-
-    $btn-danger-active-background,
-    $btn-danger-active-border,
-    $btn-danger-active-color,
-  );
-
-  &:focus-visible {
-    @include btn-focus-outline;
-  }
-
-  &:active, &:focus {
-    @include btn-remove-bootstrap-focus-outline;
-  }
-}
-
-@mixin btn-outline-danger {
-  $btn-outline-danger-color: $danger;
-  $btn-outline-danger-color-hover: $ux-white;
-
-  $btn-outline-danger-hover-background: $ux-red-600;
-  $btn-outline-danger-hover-border: $ux-red-600;
-  $btn-outline-danger-hover-color: $ux-white;
-
-  $btn-outline-danger-border: $danger;
-
-  $btn-outline-danger-active-background: $ux-red-700;
-  $btn-outline-danger-active-border-color: $ux-red-700;
-
-  @include button-outline-variant(
-    $btn-outline-danger-color,
-    $btn-outline-danger-color-hover,
-
-    $btn-outline-danger-hover-background,
-    $btn-outline-danger-hover-border,
-    $btn-outline-danger-hover-color,
-  );
-  border-color: $btn-outline-danger-border;
-
-  &:active {
-    background-color: $btn-outline-danger-active-background;
-    border-color: $btn-outline-danger-active-border-color;
-  }
-
-  &:focus-visible {
-    @include btn-focus-outline;
-  }
-
-  &:active, &:focus {
-    @include btn-remove-bootstrap-focus-outline;
-  }
-}
-
-@mixin btn-warning {
-  $btn-warning-background: $warning;
-  $btn-warning-border: $warning;
-  $btn-warning-color: $ux-yellow-900;
-
-  $btn-warning-hover-background: $ux-yellow-500;
-  $btn-warning-hover-border: $ux-yellow-500;
-  $btn-warning-hover-color: $ux-yellow-900;
-
-  $btn-warning-active-background: $ux-yellow-600;
-  $btn-warning-active-border: $ux-yellow-600;
-  $btn-warning-active-color: $ux-yellow-900;
-
-  @include button-variant(
-    $btn-warning-background,
-    $btn-warning-border,
-    $btn-warning-color,
-
-    $btn-warning-hover-background,
-    $btn-warning-hover-border,
-    $btn-warning-hover-color,
-
-    $btn-warning-active-background,
-    $btn-warning-active-border,
-    $btn-warning-active-color,
-  );
-
-  &:focus-visible {
-    @include btn-focus-outline;
-  }
-
-  &:active, &:focus {
-    @include btn-remove-bootstrap-focus-outline;
-  }
-}
-
-@mixin btn-outline-warning {
-  $btn-outline-warning-color: $ux-yellow-900;
-  $btn-outline-warning-color-hover: $ux-yellow-900;
-
-  $btn-outline-warning-hover-background: $warning;
-  $btn-outline-warning-hover-border: $warning;
-  $btn-outline-warning-hover-color: $ux-yellow-900;
-
-  $btn-outline-warning-border: $ux-yellow-500;
-
-  $btn-outline-warning-active-background: $ux-yellow-500;
-  $btn-outline-warning-active-border-color: $ux-yellow-500;
-
-  @include button-outline-variant(
-    $btn-outline-warning-color,
-    $btn-outline-warning-color-hover,
-
-    $btn-outline-warning-hover-background,
-    $btn-outline-warning-hover-border,
-    $btn-outline-warning-hover-color,
-  );
-  border-color: $btn-outline-warning-border;
-
-  &:active {
-    background-color: $btn-outline-warning-active-background;
-    border-color: $btn-outline-warning-active-border-color;
-  }
-
-  &:focus-visible {
-    @include btn-focus-outline;
-  }
-
-  &:active, &:focus {
-    @include btn-remove-bootstrap-focus-outline;
+    border-color: var(--synth-hyperlink-color);
   }
 }
 
@@ -403,7 +255,7 @@ $warning: $ux-yellow-400;
   );
 
   &:disabled {
-    color: $ux-gray-500;
+    color: var(--ux-gray-500);
   }
 
   &:focus-visible {
@@ -436,17 +288,17 @@ $warning: $ux-yellow-400;
     $btn-outline-transparent-hover-border,
     $btn-outline-transparent-hover-color,
   );
-  border-color: $btn-outline-transparent-border;
+  border-color: var(--btn-outline-transparent-border);
 
   &:active {
-    background-color: $btn-outline-transparent-active-background;
-    border-color: $btn-outline-transparent-active-border-color;
+    background-color: var(--btn-outline-transparent-active-background);
+    border-color: var(--btn-outline-transparent-active-border-color);
   }
 
   &:disabled {
-    background-color: $ux-gray-300;
+    background-color: var(--ux-gray-300);
     border: $ux-gray-400;
-    color: $ux-gray-800;
+    color: var(--ux-gray-800);
   }
 
   &:focus-visible {
@@ -486,7 +338,7 @@ $warning: $ux-yellow-400;
   );
 
   &:disabled {
-    color: $ux-white;
+    color: var(--ux-white);
   }
 
   &:focus-visible {
@@ -526,7 +378,7 @@ $warning: $ux-yellow-400;
   );
 
   &:disabled {
-    color: $ux-white;
+    color: var(--ux-white);
   }
 
   &:focus-visible {
@@ -566,7 +418,7 @@ $warning: $ux-yellow-400;
   );
 
   &:disabled {
-    color: $ux-white;
+    color: var(--ux-white);
   }
 
   &:focus-visible {
@@ -606,7 +458,7 @@ $warning: $ux-yellow-400;
   );
 
   &:disabled {
-    color: $ux-white;
+    color: var(--ux-white);
   }
 
   &:focus-visible {
@@ -648,7 +500,7 @@ $warning: $ux-yellow-400;
   text-decoration: none;
 
   &:disabled {
-    color: $ux-blue;
+    color: var(--ux-blue);
     opacity: 0.5;
   }
 

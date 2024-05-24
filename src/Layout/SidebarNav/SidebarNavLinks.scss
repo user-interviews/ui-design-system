@@ -2,5 +2,5 @@
 
 .Layout__sidebar-nav__links {
   @include ui-remove-list-styles();
-  padding: $synth-spacing-4 0;
+  padding: var(--synth-spacing-4) 0;
 }

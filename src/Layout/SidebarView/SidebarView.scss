@@ -10,12 +10,12 @@
 
   &__content {
     flex: 1 1 auto;
-    z-index: $z-index-1;
+    z-index: var(--z-index-1);
   }
 
   &__sidebar {
     background-color: white;
-    border-right: $border-width solid $ux-gray-300;
+    border-right: $border-width solid var(--ux-gray-300);
     flex: 0 0 360px;
 
     // Why clip-path, rather than width or transform: scaleX?
@@ -41,7 +41,7 @@
       top: 0;
       transition: clip $ux-duration-short $ux-ease-out-circ; 
       width: calc(100% + #{$border-width});
-      z-index: $z-index-2;
+      z-index: var(--z-index-2);
 
       &.SidebarView__sidebar--open {
         clip: rect(0 auto auto 0); // IE11, Edge

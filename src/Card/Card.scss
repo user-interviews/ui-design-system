@@ -2,17 +2,17 @@
 
 .Synthesized {
   .Card {
-    border: 1px solid $ux-gray-400;
+    border: 1px solid var(--ux-gray-400);
     box-shadow: none;
   }
 }
 
 .Card {
-  background-color: $ux-white;
+  background-color: var(--ux-white);
   border: none;
-  border-radius: 4px;
-  box-shadow: $ux-elevations-20;
-  outline-color: $ux-green-500;
+  border-radius: var(--ux-border-radius);
+  box-shadow: var(--ux-elevations-20);
+  outline-color: var(--ux-green-500);
   padding: $card-spacing;
 
   max-width: 100%;
@@ -20,8 +20,8 @@
   &__divider {
     border-top: 1px solid rgba(0,0,0,.1);
 
-    margin-bottom: $synth-spacing-2;
-    margin-top: $synth-spacing-1;
+    margin-bottom: var(--synth-spacing-2);
+    margin-top: var(--synth-spacing-1);
   }
 
   &__header {
@@ -31,22 +31,22 @@
 
   &__helper-text {
     @include synth-font-type-50;
-    color: $ux-gray-900;
-    margin-left: $synth-spacing-1;
+    color: var(--ux-gray-900);
+    margin-left: var(--synth-spacing-1);
   }
 
   &__subtitle {
     @include synth-font-type-30;
-    color: $ux-gray-800;
+    color: var(--ux-gray-800);
   }
 
   &__title {
     @include synth-font-type-50--bold;
-    margin-bottom: $synth-spacing-1;
+    margin-bottom: var(--synth-spacing-1);
   }
 
   &__loading-skeleton-paragraphs:not(:last-child) {
-    margin-bottom: $synth-spacing-4;
+    margin-bottom: var(--synth-spacing-4);
   }
 
   &--divided {
@@ -61,30 +61,30 @@
 
   &--lg {
     @include media-breakpoint-up(sm) {
-      max-width: $card-width;
+      max-width: var(--card-width-lg);
     }
   }
 
   &--md {
     @include media-breakpoint-up(sm) {
-      max-width: $card-width-md;
+      max-width: var(--card-width-md);
     }
   }
 
   &--sm {
     @include media-breakpoint-up(sm) {
-      max-width: $card-width-sm;
+      max-width: var(--card-width-sm);
     }
   }
 
   &--xs {
     @include media-breakpoint-up(sm) {
-      max-width: $card-width-xs;
+      max-width: var(--card-width-xs);
     }
 
     .Card__helper-text {
       margin-left: 0;
-      margin-bottom: $synth-spacing-2;
+      margin-bottom: var(--synth-spacing-2);
     }
   }
 }

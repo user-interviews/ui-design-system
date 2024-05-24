@@ -15,6 +15,7 @@ import { Col, Container, Row } from './Container';
 import { ORIENTATIONS as BUTTON_GROUP_ORIENTATIONS } from './ControlButtonGroup';
 import CopyToClipboard from './CopyToClipboard';
 import CopyToClipboardButton from './CopyToClipboardButton';
+import { DateTimePicker } from './DateTimePicker';
 import {
   Drawer,
   DrawerHeader,
@@ -32,6 +33,7 @@ import {
 import EmptyState from './EmptyState';
 import FadeTransition from './FadeTransition';
 import { Flex } from './Flex';
+import { FlexContainer } from './FlexContainer';
 import Form from './Form';
 import FormControlLabel from './FormControlLabel';
 import FormGroup from './FormGroup';
@@ -97,7 +99,6 @@ import {
   Toast,
   useToast,
   withToast,
-  withToastPropTypes,
 } from './Toast';
 import { ToggleInput } from './ToggleInput';
 import Tooltip from './Tooltip';
@@ -127,6 +128,7 @@ export {
   CopyToClipboard,
   CopyToClipboardButton,
   CreatableSelect,
+  DateTimePicker,
   Drawer,
   DrawerHeader,
   DrawerBody,
@@ -140,6 +142,7 @@ export {
   EmptyState,
   FadeTransition,
   Flex,
+  FlexContainer,
   Form,
   FormControlLabel,
   FormGroup,
@@ -202,5 +205,4 @@ export {
   useToast,
   ValueContainer,
   withToast,
-  withToastPropTypes,
 };

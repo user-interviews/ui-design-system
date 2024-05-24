@@ -1,13 +1,13 @@
 @import '../../scss/theme';
 
 .ModalBody {
-  font-weight: $synth-font-weight-regular;
-  padding: $synth-spacing-2 $synth-spacing-6 $synth-spacing-4;
+  font-weight: var(--synth-font-weight-regular);
+  padding: var(--synth-spacing-2) var(--synth-spacing-6) var(--synth-spacing-4);
 
   &__title {
-    font-family: $synth-font-family;
-    font-size: $synth-font-size-base;
-    font-weight: $synth-font-weight-medium;
-    margin-bottom: $synth-spacing-1;
+    font-family: var(--synth-font-family);
+    font-size: var(--synth-font-size-base);
+    font-weight: var(--synth-font-weight-medium);
+    margin-bottom: var(--synth-spacing-1);
   }
 }

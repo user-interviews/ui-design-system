@@ -3,7 +3,7 @@
 .TableRow {
   &:hover:not(.TableRow--remove-hover) {
     td {
-      background-color: $ux-gray-100;
+      background-color: var(--ux-gray-100);
     }
   }
 
@@ -13,11 +13,11 @@
 
   &--selected {
     td {
-      background-color: $ux-blue-100;
+      background-color: var(--ux-blue-100);
     } 
     &:hover {
       td {
-        background-color: $ux-blue-200;
+        background-color: var(--ux-blue-200);
       }
     }
   }

@@ -1,12 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tabs controlled tabs renders the expected snapshot 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <ul
         class="nav nav-tabs"
+        id="tabID"
         role="tablist"
       >
         <li
@@ -95,6 +96,7 @@ Object {
   "container": <div>
     <ul
       class="nav nav-tabs"
+      id="tabID"
       role="tablist"
     >
       <li
@@ -234,12 +236,13 @@ Object {
 `;
 
 exports[`Tabs uncontrolled tabs renders the expected snapshot 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <ul
         class="nav nav-tabs"
+        id="tabID"
         role="tablist"
       >
         <li
@@ -328,6 +331,7 @@ Object {
   "container": <div>
     <ul
       class="nav nav-tabs"
+      id="tabID"
       role="tablist"
     >
       <li

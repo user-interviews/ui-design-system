@@ -1,11 +1,11 @@
 import React from 'react';
 
-import Button from 'src/Button';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faFileAlt, faCaretDown, faPaperPlane } from '@fortawesome/pro-regular-svg-icons';
 import {
  faGoogle, faFacebook, faLinkedin, faTwitter,
 } from '@fortawesome/free-brands-svg-icons';
+import Button from '.';
 import mdx from './Button.mdx';
 
 export default {
@@ -130,158 +130,6 @@ export const Tertiary = () => (
       variant="tertiary"
     >
       Confirm
-    </Button>
-  </>
-);
-
-export const DangerDEPRECATED = () => (
-  <>
-    <Button
-      leadingIcon={faFileAlt as IconDefinition}
-      size="sm"
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="danger"
-    >
-      Delete
-    </Button>
-    {' '}
-    <Button
-      leadingIcon={faFileAlt as IconDefinition}
-      size="sm"
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="outline-danger"
-    >
-      Delete
-    </Button>
-    {' '}
-    <Button
-      disabled
-      leadingIcon={faFileAlt as IconDefinition}
-      size="sm"
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="danger"
-    >
-      Delete
-    </Button>
-    <Button
-      disabled
-      leadingIcon={faFileAlt as IconDefinition}
-      size="sm"
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="outline-danger"
-    >
-      Delete
-    </Button>
-    {' '}
-    {' '}
-    <Button
-      leadingIcon={faFileAlt as IconDefinition}
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="danger"
-    >
-      Delete
-    </Button>
-    {' '}
-    <Button
-      leadingIcon={faFileAlt as IconDefinition}
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="outline-danger"
-    >
-      Delete
-    </Button>
-    {' '}
-    <Button
-      disabled
-      leadingIcon={faFileAlt as IconDefinition}
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="danger"
-    >
-      Delete
-    </Button>
-    {' '}
-    <Button
-      disabled
-      leadingIcon={faFileAlt as IconDefinition}
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="outline-danger"
-    >
-      Delete
-    </Button>
-  </>
-);
-
-export const WarningDEPRECATED = () => (
-  <>
-    <Button
-      leadingIcon={faFileAlt as IconDefinition}
-      size="sm"
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="warning"
-    >
-      Edit
-    </Button>
-    {' '}
-    <Button
-      leadingIcon={faFileAlt as IconDefinition}
-      size="sm"
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="outline-warning"
-    >
-      Edit
-    </Button>
-    {' '}
-    <Button
-      disabled
-      leadingIcon={faFileAlt as IconDefinition}
-      size="sm"
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="warning"
-    >
-      Edit
-    </Button>
-    {' '}
-    <Button
-      disabled
-      leadingIcon={faFileAlt as IconDefinition}
-      size="sm"
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="outline-warning"
-    >
-      Edit
-    </Button>
-    {' '}
-    <Button
-      leadingIcon={faFileAlt as IconDefinition}
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="warning"
-    >
-      Edit
-    </Button>
-    {' '}
-    <Button
-      leadingIcon={faFileAlt as IconDefinition}
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="outline-warning"
-    >
-      Edit
-    </Button>
-    {' '}
-    <Button
-      disabled
-      leadingIcon={faFileAlt as IconDefinition}
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="warning"
-    >
-      Edit
-    </Button>
-    {' '}
-    <Button
-      disabled
-      leadingIcon={faFileAlt as IconDefinition}
-      trailingIcon={faCaretDown as IconDefinition}
-      variant="outline-warning"
-    >
-      Edit
     </Button>
   </>
 );
