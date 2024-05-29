@@ -3,8 +3,6 @@ import type { Editor } from '@tiptap/core';
 import './RichTextEditorMenuBar.scss';
 
 import React from 'react';
-import * as propTypes from 'prop-types';
-
 import classNames from 'classnames';
 
 import {
@@ -17,7 +15,7 @@ import {
 } from '@fortawesome/pro-regular-svg-icons';
 import IconButton from '../IconButton';
 
-import { RichTextEditorActions, RichTextEditorAllActionsArray } from './richTextEditorActions';
+import { RichTextEditorActions } from './richTextEditorActions';
 import { createActionHandlers } from './actionHandlers';
 
 type RichTextEditorMenuBarProps = {
@@ -109,12 +107,6 @@ function RichTextEditorMenuBar({
     </div>
   );
 }
-
-RichTextEditorMenuBar.propTypes = {
-  availableActions: propTypes.arrayOf(propTypes.oneOf(RichTextEditorAllActionsArray)).isRequired,
-  editable: propTypes.bool.isRequired,
-  editor: propTypes.object.isRequired,
-};
 
 // eslint-disable-next-line import/no-default-export
 export default RichTextEditorMenuBar;
