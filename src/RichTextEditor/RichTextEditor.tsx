@@ -4,7 +4,7 @@ import type { Extension, Node as TipTapNode, Mark } from '@tiptap/core';
 import './RichTextEditor.scss';
 
 import React, {
- forwardRef, useImperativeHandle, type AriaAttributes, type ForwardedRef,
+    forwardRef, useImperativeHandle, type AriaAttributes, type ForwardedRef, useEffect,
 } from 'react';
 
 import classNames from 'classnames';
@@ -81,6 +81,7 @@ export type RichTextEditorProps = {
    https://tiptap.dev/docs/editor/guide/custom-extensions
   */
   customExtensions?: (Extension | TipTapNode | Mark)[];
+  editable?: boolean;
   hasErrors?: boolean;
   id: string;
   /**
@@ -105,6 +106,7 @@ const RichTextEditor = forwardRef((
     allowedTags,
     ariaAttributes,
     availableActions = RichTextEditorDefaultActionsArray,
+    editable = true,
     characterLimit,
     className,
     hasErrors,
@@ -189,6 +191,7 @@ const RichTextEditor = forwardRef((
 
       onChange(sanitizedHtml);
     },
+    editable,
   });
 
   useImperativeHandle(ref, () => ({
@@ -197,6 +200,12 @@ const RichTextEditor = forwardRef((
       onChange(content);
     },
   }));
+
+    useEffect(() => {
+      if (editor) {
+        editor.setEditable(editable);
+      }
+    }, [editor, editable]);
 
   return (
     editor ? (
@@ -207,6 +216,7 @@ const RichTextEditor = forwardRef((
         {availableActions.length > 0 && (
           <RichTextEditorMenuBar
             availableActions={availableActions}
+            editable={editable}
             editor={editor}
           />
         )}
