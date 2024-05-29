@@ -5,7 +5,7 @@ export function computeBreakpointClassNames(
   props: Omit<FlexContainerProps, 'children' | 'className'>,
   bp?: 'xs' | 'sm' | 'md' | 'lg'| 'xl' | 'xxl',
 ): string[] {
-  if (bp && bp in props) {
+  if (bp) {
     const attributes = props[bp];
     return [
       styles[`${bp}_alignItems_${attributes?.alignItems}`],
