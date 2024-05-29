@@ -201,11 +201,11 @@ const RichTextEditor = forwardRef((
     },
   }));
 
-    useEffect(() => {
-      if (editor) {
-        editor.setEditable(editable);
-      }
-    }, [editor, editable]);
+  useEffect(() => {
+    if (editor) {
+      editor.setEditable(editable);
+    }
+  }, [editor, editable]);
 
   return (
     editor ? (
