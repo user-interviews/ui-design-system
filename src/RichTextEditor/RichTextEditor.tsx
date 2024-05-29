@@ -4,7 +4,7 @@ import type { Extension, Node as TipTapNode, Mark } from '@tiptap/core';
 import './RichTextEditor.scss';
 
 import React, {
-    forwardRef, useImperativeHandle, type AriaAttributes, type ForwardedRef, useEffect,
+  forwardRef, useImperativeHandle, type AriaAttributes, type ForwardedRef, useEffect,
 } from 'react';
 
 import classNames from 'classnames';
