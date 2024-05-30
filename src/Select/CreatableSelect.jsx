@@ -34,7 +34,7 @@ const CreatableSelect = ({
 }) => (
   <Creatable
     {...props}
-    ariaLabel={ariaLabel}
+    aria-label={ariaLabel}
     ariaLabelledBy={ariaLabelledBy}
     className={`${className || ''} CreatableSelect`}
     classNamePrefix="Select"
