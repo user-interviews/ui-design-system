@@ -171,7 +171,7 @@ const RichTextEditor = forwardRef((
     extensions: editorExtensions,
     content: initialValue,
     onUpdate: ({ editor: ttEditor }) => {
-      const html = ttEditor.getHTML();
+      const html = ttEditor.isEmpty ? '' : ttEditor.getHTML();
 
       // if allowAttributes or allowedTags aren't passed
       // then use defaults from sanitize-html by not passing that key in the options
