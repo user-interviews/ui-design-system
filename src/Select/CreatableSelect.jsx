@@ -15,12 +15,12 @@ const CreatableSelect = ({
   className,
   components,
   defaultValue,
-  disabled,
-  getOptionValue,
   getOptionLabel,
+  getOptionValue,
   id,
   inputId,
   isClearable,
+  isDisabled,
   isLoading,
   menuWidth,
   modal,
@@ -40,12 +40,12 @@ const CreatableSelect = ({
     classNamePrefix="Select"
     components={components}
     defaultValue={defaultValue}
-    disabled={disabled}
     getOptionLabel={getOptionLabel}
     getOptionValue={getOptionValue}
     id={id}
     inputId={inputId}
     isClearable={isClearable}
+    isDisabled={isDisabled}
     isLoading={isLoading}
     menuPortalTarget={modal ? document.body : undefined}
     name={name}
@@ -73,7 +73,6 @@ CreatableSelect.propTypes = {
   className: PropTypes.string,
   components: PropTypes.any,
   defaultValue: PropTypes.object,
-  disabled: PropTypes.bool,
   getOptionLabel: PropTypes.func,
   getOptionValue: PropTypes.func,
   id: PropTypes.string,
@@ -83,6 +82,7 @@ CreatableSelect.propTypes = {
   */
   inputId: PropTypes.string.isRequired,
   isClearable: PropTypes.bool,
+  isDisabled: PropTypes.bool,
   isLoading: PropTypes.bool,
   menuWidth: PropTypes.string,
   modal: PropTypes.bool,
@@ -102,7 +102,7 @@ CreatableSelect.defaultProps = {
   className: undefined,
   components: undefined,
   defaultValue: undefined,
-  disabled: false,
+  isDisabled: false,
   getOptionLabel: undefined,
   getOptionValue: undefined,
   isClearable: false,
