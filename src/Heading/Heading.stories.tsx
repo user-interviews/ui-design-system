@@ -19,12 +19,11 @@ export default meta;
 type Story = StoryObj<typeof Heading>;
 
 /**
-  A default `Heading` as a level `2` with size `xxl` and weight `bold`
+  A default `Heading` as a level `1` weight `bold`
 */
 export const Default: Story = {
   args: {
     children: 'The fastest way to recruit research participants',
-    level: 1,
   },
 };
 
