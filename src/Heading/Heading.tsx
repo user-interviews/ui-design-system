@@ -16,7 +16,7 @@ export interface HeadingProps {
    * logical hierarchy where each heading level represents a sublevel of the previous one,
    * and avoid skipping levels.
    */
-  level: 1 | 2 | 3 | 4 | 5 | 6;
+  level?: 1 | 2 | 3 | 4 | 5 | 6;
   /**
    * @type {string}
    * @description Sizes map to the available font-sizes from the defined list of font-types.
