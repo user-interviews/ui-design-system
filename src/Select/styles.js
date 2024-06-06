@@ -93,14 +93,26 @@ const defaultStyles = ({ menuWidth, size }) => ({
       isDisabled,
       isFocused,
       isSelected,
-    }) => ({
+    }) => {
+      const getBackgroundColor = () => {
+        if (isDisabled) return systemColors.SYNTH_ALERT_BG_NEUTRAL;
+        if (isSelected || isFocused) return systemColors.SYNTH_HOVER_STATE;
+        return styles.backgroundColor;
+      };
+
+      const getHoverBackgroundColor = () => {
+        if (isDisabled) return systemColors.SYNTH_ALERT_BG_NEUTRAL;
+        if (isSelected) return systemColors.SYNTH_SELECTED_STATE_GREEN;
+        return systemColors.SYNTH_HOVER_STATE;
+      };
+
+      return {
         ...styles,
-        backgroundColor: isSelected || isFocused ?
-          systemColors.SYNTH_HOVER_STATE : styles.backgroundColor,
-        color: systemColors.UX_GRAY_900,
+        backgroundColor: getBackgroundColor(),
+        color: isDisabled ? systemColors.SYNTH_UNSELECTED_NEUTRAL : systemColors.UX_GRAY_900,
         fontWeight: fontWeights.light,
         fontSize: '0.875rem',
-        cursor: 'pointer',
+        cursor: isDisabled ? 'default' : 'pointer',
 
         ':active': {
           ...styles[':active'],
@@ -110,10 +122,10 @@ const defaultStyles = ({ menuWidth, size }) => ({
 
         ':hover': {
           ...styles[':hover'],
-          backgroundColor: isSelected ?
-            systemColors.SYNTH_SELECTED_STATE_GREEN : systemColors.SYNTH_HOVER_STATE,
+          backgroundColor: getHoverBackgroundColor(),
         },
-      }),
+      };
+    },
 });
 
 const borderedMultiValueStyles = (borderedMultiValue) => borderedMultiValue ? {
