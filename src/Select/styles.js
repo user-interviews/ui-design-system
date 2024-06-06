@@ -100,14 +100,19 @@ const defaultStyles = ({ menuWidth, size }) => ({
         return styles.backgroundColor;
       };
 
+      const getHoverBackgroundColor = () => {
+        if (isDisabled) return systemColors.SYNTH_ALERT_BG_NEUTRAL;
+        if (isSelected) return systemColors.SYNTH_SELECTED_STATE_GREEN;
+        return systemColors.SYNTH_HOVER_STATE;
+      };
+
       return {
         ...styles,
         backgroundColor: getBackgroundColor(),
         color: isDisabled ? systemColors.SYNTH_UNSELECTED_NEUTRAL : systemColors.UX_GRAY_900,
         fontWeight: fontWeights.light,
         fontSize: '0.875rem',
-        cursor: 'pointer',
-        pointerEvents: isDisabled ? 'none' : 'auto',
+        cursor: isDisabled ? 'default' : 'pointer',
 
         ':active': {
           ...styles[':active'],
@@ -117,8 +122,7 @@ const defaultStyles = ({ menuWidth, size }) => ({
 
         ':hover': {
           ...styles[':hover'],
-          backgroundColor: isSelected ?
-            systemColors.SYNTH_SELECTED_STATE_GREEN : systemColors.SYNTH_HOVER_STATE,
+          backgroundColor: getHoverBackgroundColor(),
         },
       };
     },
