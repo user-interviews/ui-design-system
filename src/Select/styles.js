@@ -124,7 +124,8 @@ const defaultStyles = ({ menuWidth, size }) => ({
           ...styles[':hover'],
           backgroundColor: getHoverBackgroundColor(),
         },
-      }),
+      };
+    },
 });
 
 const borderedMultiValueStyles = (borderedMultiValue) => borderedMultiValue ? {
