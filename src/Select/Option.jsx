@@ -13,21 +13,29 @@ import './Option.scss';
 // See: https://react-select.com/components#replaceable-components
 
 /* eslint-disable react/prop-types */
-const Option = forwardRef(({ indeterminate, ...props }, ref) => (
-  <components.Option {...props}>
-    <div className="Option">
-      <CheckboxButton
-        checked={props.isSelected}
-        className="Checkbox"
-        id={props.label}
-        indeterminate={indeterminate}
-        ref={ref}
-        onChange={() => null}
-      />
-      <label>{props.label}</label>
-    </div>
-  </components.Option>
-  ));
+const Option = forwardRef(({ indeterminate, ...props }, ref) => {
+  const description = props.data?.description;
+  return (
+    <components.Option {...props}>
+      <div className="Option">
+        <CheckboxButton
+          checked={props.isSelected}
+          className="Checkbox"
+          id={props.label}
+          indeterminate={indeterminate}
+          ref={ref}
+          onChange={() => null}
+        />
+        <div className="TitleDescriptionContainer">
+          <label>{props.label}</label>
+          { description && (
+            <span className="Description">{ description }</span>
+          )}
+        </div>
+      </div>
+    </components.Option>
+  );
+});
 /* eslint-enable react/prop-types */
 
 export default Option;

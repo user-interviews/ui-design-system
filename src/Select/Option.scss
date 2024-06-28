@@ -5,4 +5,13 @@
   .Checkbox {
     margin-right: var(--synth-spacing-3);
   }
+
+  .TitleDescriptionContainer {
+    display: flex;
+    flex-direction: column;
+
+    .Description {
+      color: var(--ux-gray-800);
+    }
+  }
 }
