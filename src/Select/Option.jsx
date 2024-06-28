@@ -14,7 +14,7 @@ import './Option.scss';
 
 /* eslint-disable react/prop-types */
 const Option = forwardRef(({ indeterminate, ...props }, ref) => {
-  const description = props.data?.description;
+  const description = props.data.description;
   return (
     <components.Option {...props}>
       <div className="Option">
