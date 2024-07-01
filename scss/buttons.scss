@@ -131,11 +131,11 @@ $primary: $ux-emerald-600;
     $btn-outline-primary-hover-border,
     $btn-outline-primary-hover-color,
   );
-  border-color: var(--btn-outline-primary-border);
+  border-color: $btn-outline-primary-border;
 
   &:active {
-    background-color: var(--btn-outline-primary-active-background);
-    border-color: var(--btn-outline-primary-active-border-color);
+    background-color: $btn-outline-primary-active-background;
+    border-color: $btn-outline-primary-active-border-color;
   }
 
   &:focus-visible {
@@ -168,11 +168,11 @@ $primary: $ux-emerald-600;
     $btn-outline-primary-hover-border,
     $btn-outline-primary-hover-color,
   );
-  border-color: var(--btn-outline-primary-border);
+  border-color: $btn-outline-primary-border;
 
   &:active {
-    background-color: var(--btn-outline-primary-active-background);
-    border-color: var(--btn-outline-primary-active-border-color);
+    background-color: $btn-outline-primary-active-background;
+    border-color: $btn-outline-primary-active-border-color;
   }
 
   &:focus-visible {
@@ -288,11 +288,11 @@ $primary: $ux-emerald-600;
     $btn-outline-transparent-hover-border,
     $btn-outline-transparent-hover-color,
   );
-  border-color: var(--btn-outline-transparent-border);
+  border-color: $btn-outline-transparent-border;
 
   &:active {
-    background-color: var(--btn-outline-transparent-active-background);
-    border-color: var(--btn-outline-transparent-active-border-color);
+    background-color: $btn-outline-transparent-active-background;
+    border-color: $btn-outline-transparent-active-border-color;
   }
 
   &:disabled {
