@@ -37,7 +37,7 @@ const options = [
   },
   {
     label: 'Unmoderated task',
-    value: 4 ,
+    value: 4,
     description: 'An unmoderated task is just that—an opportunity for a user to try out a product, app, website, etc and share feedback.',
   },
 ];
@@ -185,14 +185,16 @@ export const GroupedOptions = () => {
 };
 
 export const CustomOptionWithDescriptionAndCheckbox = () => (
-  <FormGroup label="Option with Description"
-    labelHtmlFor="option-with-description-select"
+  <FormGroup
+    label="Custom Option with Description And Checkbox"
+    labelHtmlFor="custom-option-with-description-and-checkbox-select"
   >
     <SingleSelect
       components={{
-        Option: (props) => (
+        Option: ({ ...props }) => (
           <Option
             {...props}
+            // eslint-disable-next-line react/prop-types
             description={props.data.description}
           />
         ),
