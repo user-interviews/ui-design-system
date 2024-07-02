@@ -54,6 +54,10 @@
     }
   }
 
+  &--no-margin {
+    margin: 0;
+  }
+
   &__helper-text {
     @include synth-font-type-20;
     color: var(--ux-gray-900);

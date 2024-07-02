@@ -57,6 +57,7 @@ export type FormGroupProps = {
   labelHelperText?: string;
   labelHtmlFor?: string;
   labelTooltip?: React.ReactNode;
+  noMargin?: boolean;
   required?: boolean;
 };
 
@@ -76,6 +77,7 @@ export default function FormGroup({
   labelHelperText,
   labelHtmlFor = '',
   labelTooltip,
+  noMargin,
   required,
 }: FormGroupProps) {
   const errorMessage = buildErrorMessage(errors[inputKey || ''], label);
@@ -137,6 +139,7 @@ export default function FormGroup({
            'FormGroup--is-invalid': hasErrors,
            'FormGroup--bordered': bordered,
            'FormGroup--inline': inline,
+           'FormGroup--no-margin': noMargin,
          },
        ),
        id,
