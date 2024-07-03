@@ -194,6 +194,7 @@ export const CustomOptionWithDescriptionAndCheckbox = () => (
         Option: ({ ...props }) => (
           <Option
             {...props}
+            boldLabel
             // eslint-disable-next-line react/prop-types
             description={props.data.description}
           />
