@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import classNames from 'classnames';
 import { components } from 'react-select';
 
 import CheckboxButton from 'src/CheckboxButton';
@@ -25,7 +26,13 @@ const Option = forwardRef(({ indeterminate, ...props }, ref) => (
         onChange={() => null}
       />
       <div className="TitleDescriptionContainer">
-        <label>{props.label}</label>
+        <label
+          className={classNames({
+            'Label--bold': props.description,
+          })}
+        >
+          {props.label}
+        </label>
         { props.description && (
           <span className="Description">{ props.description }</span>
         )}
