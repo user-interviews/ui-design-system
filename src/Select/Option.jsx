@@ -28,7 +28,7 @@ const Option = forwardRef(({ indeterminate, ...props }, ref) => (
       <div className="TitleDescriptionContainer">
         <label
           className={classNames({
-            'Label--bold': props.description,
+            'Label--bold': props.boldLabel,
           })}
         >
           {props.label}
