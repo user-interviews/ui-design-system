@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { faSearch } from '@fortawesome/pro-solid-svg-icons';
 
+import { FlexContainer } from 'src/FlexContainer';
 import FormGroup from '.';
 import Input from '../Input';
 import FormControlLabel from '../FormControlLabel';
@@ -54,6 +55,27 @@ export const Required = () => (
   >
     <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
   </FormGroup>
+);
+
+export const NoMargin = () => (
+  <FlexContainer flexDirection="column" gap={4}>
+    <FormGroup
+      label="Label"
+      labelHtmlFor="no-margin-1-input"
+      noMargin
+      required
+    >
+      <InputComponent id="no-margin-1-input" placeholder="This FormGroup has no default margin" />
+    </FormGroup>
+    <FormGroup
+      label="Label"
+      labelHtmlFor="no-margin-2-input"
+      noMargin
+      required
+    >
+      <InputComponent id="no-margin-2-input" placeholder="This FormGroup has no default margin" />
+    </FormGroup>
+  </FlexContainer>
 );
 
 export const WithLabelTooltip = () => (
