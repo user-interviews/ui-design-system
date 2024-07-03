@@ -1,4 +1,5 @@
 import React, { forwardRef } from 'react';
+import classNames from 'classnames';
 import { components } from 'react-select';
 
 import CheckboxButton from 'src/CheckboxButton';
@@ -24,10 +25,21 @@ const Option = forwardRef(({ indeterminate, ...props }, ref) => (
         ref={ref}
         onChange={() => null}
       />
-      <label>{props.label}</label>
+      <div className="TitleDescriptionContainer">
+        <label
+          className={classNames({
+            'Label--bold': props.description,
+          })}
+        >
+          {props.label}
+        </label>
+        { props.description && (
+          <span className="Description">{ props.description }</span>
+        )}
+      </div>
     </div>
   </components.Option>
-  ));
+));
 /* eslint-enable react/prop-types */
 
 export default Option;

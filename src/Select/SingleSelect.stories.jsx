@@ -20,10 +20,26 @@ export default {
 };
 
 const options = [
-  { label: '1-on-1 interview', value: 1 },
-  { label: 'Focus group', value: 2 },
-  { label: 'Multi-day study', value: 3 },
-  { label: 'Unmoderated task', value: 4 },
+  {
+    label: '1-on-1 interview',
+    value: 1,
+    description: 'Interviews are typically a conversation between you and a researcher.',
+  },
+  {
+    label: 'Focus group',
+    value: 2,
+    description: 'Focus groups involve interacting with a small group of your peers.',
+  },
+  {
+    label: 'Multi-day study',
+    value: 3,
+    description: 'Diary and multiday studies are days or weeks long commitments.',
+  },
+  {
+    label: 'Unmoderated task',
+    value: 4,
+    description: 'An unmoderated task is just that—an opportunity for a user to try out a product, app, website, etc and share feedback.',
+  },
 ];
 
 const peopleOptions = [
@@ -168,6 +184,32 @@ export const GroupedOptions = () => {
   );
 };
 
+export const CustomOptionWithDescriptionAndCheckbox = () => (
+  <FormGroup
+    label="Custom Option with Description And Checkbox"
+    labelHtmlFor="custom-option-with-description-and-checkbox-select"
+  >
+    <SingleSelect
+      components={{
+        Option: ({ ...props }) => (
+          <Option
+            {...props}
+            // eslint-disable-next-line react/prop-types
+            description={props.data.description}
+          />
+        ),
+      }}
+      inputId="custom-option-with-description-select"
+      options={options}
+      onChange={onChange}
+    />
+  </FormGroup>
+);
+
+/**
+  If you're adding a new code, prefer the use of `Option` with a `description` prop.
+  `OptionWithDescription` is effectively deprecated and will be merged into `Option`.
+ */
 export const CustomOptionWithDescription = () => {
   const optionsWithDescriptions = [
     {
