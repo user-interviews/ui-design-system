@@ -1,8 +1,8 @@
 .Option {
   display: flex;
-  align-items: center;
-
+  
   .Checkbox {
+    margin-top: var(--synth-spacing-1);
     margin-right: var(--synth-spacing-3);
   }
 
