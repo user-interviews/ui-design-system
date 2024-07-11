@@ -17,14 +17,16 @@ import './Option.scss';
 const Option = forwardRef(({ indeterminate, ...props }, ref) => (
   <components.Option {...props}>
     <div className="Option">
-      <CheckboxButton
-        checked={props.isSelected}
-        className="Checkbox"
-        id={props.label}
-        indeterminate={indeterminate}
-        ref={ref}
-        onChange={() => null}
-      />
+      <div className="CheckboxContainer">
+        <CheckboxButton
+          checked={props.isSelected}
+          className="Checkbox"
+          id={props.label}
+          indeterminate={indeterminate}
+          ref={ref}
+          onChange={() => null}
+        />
+      </div>
       <div className="TitleDescriptionContainer">
         <label
           className={classNames({
