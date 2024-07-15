@@ -6,4 +6,13 @@
   &__container {
     padding: 16px 24px;
   }
+
+  &--info {
+    border-top: none !important;
+    color: var(--ux-gray-900);
+  }
+
+  &--noTopPadding {
+    padding-top: 0px !important;
+  }
 }

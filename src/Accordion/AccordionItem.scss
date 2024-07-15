@@ -17,4 +17,9 @@
   &--borderless {
     border: none;
   }
+
+  &--info {
+    background-color: var(--ux-blue-100);
+    color: var(--ux-blue-800);
+  }
 }

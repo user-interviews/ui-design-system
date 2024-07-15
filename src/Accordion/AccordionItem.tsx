@@ -18,9 +18,11 @@ type AccordionItemProps = {
   UNSAFE_className?: string;
   children: React.ReactNode;
   eventKey: string;
+  variant?: string;
 };
 
 const AccordionItem = ({
+  variant,
   as,
   borderless,
   children,
@@ -33,6 +35,7 @@ const AccordionItem = ({
     className={classNames(
       UNSAFE_className,
       'AccordionItem',
+      variant === 'info' && 'AccordionItem--info',
       borderless && 'AccordionItem--borderless',
     )}
     eventKey={eventKey}
@@ -42,6 +45,7 @@ const AccordionItem = ({
 );
 
 AccordionItem.defaultProps = {
+  variant: undefined,
   as: undefined,
   borderless: undefined,
   UNSAFE_className: undefined,

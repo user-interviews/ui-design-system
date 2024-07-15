@@ -390,3 +390,27 @@ Disabled.args = {
   helperText: 'helper text',
   title: 'Accordion Toggle -- disabled',
 };
+
+export const AccordionAlert = (args) => (
+  <Accordion>
+    <AccordionItem borderless eventKey="0" variant="info">
+      <AccordionToggle
+        eventKey="0"
+        {...args}
+      />
+      <AccordionCollapse eventKey="0" variant="info">
+        <div>
+          Add content here.
+        </div>
+      </AccordionCollapse>
+    </AccordionItem>
+  </Accordion>
+);
+
+AccordionAlert.args = {
+  chevronLateral: true,
+  chevronLeft: true,
+  disabled: false,
+  helperText: 'helper text',
+  title: 'Accordion Alert',
+};

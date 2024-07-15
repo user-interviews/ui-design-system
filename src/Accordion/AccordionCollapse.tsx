@@ -6,6 +6,7 @@ import RBAccordionCollapse from 'react-bootstrap/AccordionCollapse';
 import './AccordionCollapse.scss';
 
 type AccordionCollapseProps = {
+  variant?: string;
   children: React.ReactNode;
   /**
    A unique key used to control this item's collapse/expand.
@@ -16,6 +17,7 @@ type AccordionCollapseProps = {
 };
 
 const AccordionCollapse = ({
+  variant,
   children,
   eventKey,
 
@@ -25,17 +27,28 @@ const AccordionCollapse = ({
   ...props
 }: AccordionCollapseProps) => (
   <RBAccordionCollapse
-    className={classNames(UNSAFE_className, 'AccordionCollapse')}
+    className={classNames(
+      UNSAFE_className,
+      'AccordionCollapse',
+      variant === 'info' && 'AccordionCollapse--info',
+    )}
     eventKey={eventKey}
     {...props}
   >
-    <div className="AccordionCollapse__container">
+    <div
+      className={classNames(
+        UNSAFE_className,
+        'AccordionCollapse__container',
+        variant === 'info' && 'AccordionCollapse--noTopPadding',
+      )}
+    >
       {children}
     </div>
   </RBAccordionCollapse>
 );
 
 AccordionCollapse.defaultProps = {
+  variant: undefined,
   UNSAFE_className: undefined,
 };
 
