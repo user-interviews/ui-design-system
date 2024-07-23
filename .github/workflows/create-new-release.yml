@@ -77,9 +77,6 @@ jobs:
       # Build assets
       - run: yarn build
       - run: npm pack
-      - name: Extract Package Version
-        id: extract_version
-        uses: Saionaro/extract-package-version@v1.2.1
 
       - name: Create Release
         id: create_release
