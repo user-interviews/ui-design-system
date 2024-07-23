@@ -1,6 +1,20 @@
 name: "Create new release"
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Select the version increment"
+        required: true
+        type: choice
+        options:
+          - major
+          - minor
+          - patch
+          - premajor
+          - preminor
+          - prepatch
+          - prerelease
 
 jobs:
   create-new-release:
@@ -21,11 +35,44 @@ jobs:
       - name: Setup env
         run: echo "FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" > .env
 
-      - name: Install dependencies
-        run: yarn install
+      - name: Bump version in package.json
+        run: yarn version ${{ github.event.inputs.version }}
+
+      - name: Extract version from package.json
+        id: extract_version
+        run: |
+          version=$(grep '"version"' package.json | sed -E 's/.*"version": "([^"]+)".*/\1/')
+          echo "Extracted version: $version"
+          echo "::set-output name=version::$version"
+
+      - name: Create version bump branch
+        run: git checkout -b release/v${{ steps.extract_version.outputs.version }}
 
       - name: Initialize mandatory git config
         uses: fregante/setup-git-user@v2
+
+      - name: Commit manifest files
+        id: make-commit
+        run: |
+          git add package.json
+          git commit --message "Update package.json v${{ steps.extract_version.outputs.version }}"
+
+          echo "::set-output name=commit::$(git rev-parse HEAD)"
+
+      - name: Publish release branch
+        run: git push origin release/v${{ steps.extract_version.outputs.version }}
+
+      - name: Merge version update into main branch
+        uses: thomaseizinger/create-pull-request@1.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          head: release/v${{ steps.extract_version.outputs.version }}
+          base: main
+          title: "Merge release/v${{ steps.extract_version.outputs.version }} into main branch"
+
+      - name: Install dependencies
+        run: yarn install
 
       # Build assets
       - run: yarn build
