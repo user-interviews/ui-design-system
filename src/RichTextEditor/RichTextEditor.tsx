@@ -36,7 +36,7 @@ import { OneLineLimit } from './oneLineLimit';
 import { RichTextEditorActions, RichTextEditorDefaultActionsArray } from './richTextEditorActions';
 import { createActionHandlers } from './actionHandlers';
 
-const ELLIPSIS = '...'
+const ELLIPSIS = '...';
 
 const ExtendedLink = Link.extend({
   addKeyboardShortcuts() {
@@ -221,6 +221,12 @@ const RichTextEditor = forwardRef((
       editor &&
       editor.storage.characterCount.characters() > characterLimit
     ) {
+      // NOTE: The text will be truncated to plaintext. Depending on the appetite,
+      // in the future, we might want to look into truncating rich text
+      // without plaintext conversion.
+      // That will require us to write our own truncation logic
+      // or add new dependency like truncate-html
+      // https://www.npmjs.com/package/truncate-html
       const truncatedText = editor
         .getText()
         .substring(0, characterLimit - ELLIPSIS.length)
