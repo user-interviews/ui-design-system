@@ -98,7 +98,7 @@ export type RichTextEditorProps = {
   */
   onChange: (arg0: string) => void;
   /**
-   Optional callback function to call when RichTextEditor is in display mode truncates tex
+   Optional callback function to call when RichTextEditor is in display mode truncates text
    */
   onTruncate?: () => void;
 }

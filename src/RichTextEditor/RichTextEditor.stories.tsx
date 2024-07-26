@@ -100,7 +100,6 @@ export const DisplayModeWithCharacterLimitBelow = () => (
   />
 );
 
-
 export const SetContent = () => {
   const ref = useRef<RichTextEditorRef>(null);
 
