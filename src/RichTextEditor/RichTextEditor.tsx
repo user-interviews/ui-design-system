@@ -36,6 +36,8 @@ import { OneLineLimit } from './oneLineLimit';
 import { RichTextEditorActions, RichTextEditorDefaultActionsArray } from './richTextEditorActions';
 import { createActionHandlers } from './actionHandlers';
 
+const ELLIPSIS = '...'
+
 const ExtendedLink = Link.extend({
   addKeyboardShortcuts() {
     const actionHandlers = createActionHandlers(this.editor);
@@ -122,7 +124,8 @@ const RichTextEditor = forwardRef((
   ref: ForwardedRef<RichTextEditorRef>,
 ) => {
   const shouldDisplayMenuBar = !displayMode && availableActions.length > 0;
-  const isEditable = editable && !displayMode
+  const shouldDisplayCharacterLimit = !!characterLimit && !displayMode;
+  const isEditable = editable && !displayMode;
   const oneLineExtension = isOneLine ? [OneLineLimit] : [];
 
   const requiredExtensions = [
@@ -211,6 +214,17 @@ const RichTextEditor = forwardRef((
     }
   }, [editor, isEditable]);
 
+  useEffect(() => {
+    const shouldAddEllipsis = !!characterLimit &&
+      editor?.storage.characterCount.characters() > characterLimit;
+    if (editor && displayMode && shouldAddEllipsis) {
+      const truncatedText = editor
+        .getText().substring(0, characterLimit - ELLIPSIS.length).concat(ELLIPSIS);
+
+      editor.commands.setContent(truncatedText);
+    }
+  }, [characterLimit, displayMode, editor, initialValue]);
+
   return (
     editor ? (
       <div
@@ -237,7 +251,7 @@ const RichTextEditor = forwardRef((
           {...ariaAttributes}
         />
         {
-          !!characterLimit && (
+          shouldDisplayCharacterLimit && (
             <p className="RichTextEditor__character-count">
               {editor.storage.characterCount.characters()}/{characterLimit}
             </p>

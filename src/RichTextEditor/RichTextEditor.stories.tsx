@@ -75,10 +75,31 @@ export const DisplayMode = () => (
   <RichTextEditor
     displayMode
     id="text-editor"
-    initialValue="<p><b>My rich text</b><p> more <i>italic text</i></p>"
+    initialValue="<p><b>My rich text</b></p><p>asda sda sdad sdasdasd</p>"
     onChange={() => {}}
   />
 );
+
+export const DisplayModeWithCharacterLimitAbove = () => (
+  <RichTextEditor
+    characterLimit={20}
+    displayMode
+    id="text-editor"
+    initialValue="<p><b>My rich text</b></p><p>asda sda sdad sdasdasd</p>"
+    onChange={() => {}}
+  />
+);
+
+export const DisplayModeWithCharacterLimitBelow = () => (
+  <RichTextEditor
+    characterLimit={100}
+    displayMode
+    id="text-editor"
+    initialValue="<p><b>My rich text</b></p><p>asda sda sdad sdasdasd</p>"
+    onChange={() => {}}
+  />
+);
+
 
 export const SetContent = () => {
   const ref = useRef<RichTextEditorRef>(null);
