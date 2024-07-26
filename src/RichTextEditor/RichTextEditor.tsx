@@ -216,8 +216,8 @@ const RichTextEditor = forwardRef((
 
   useEffect(() => {
     if (
-      characterLimit &&
       displayMode &&
+      characterLimit &&
       editor &&
       editor.storage.characterCount.characters() > characterLimit
     ) {
@@ -234,7 +234,7 @@ const RichTextEditor = forwardRef((
 
       editor.commands.setContent(truncatedText);
     }
-  }, [characterLimit, displayMode, editor]);
+  }, [displayMode, characterLimit, editor]);
 
   return (
     editor ? (
