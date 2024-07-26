@@ -230,8 +230,9 @@ const RichTextEditor = forwardRef((
       // in the future, we might want to look into truncating rich text
       // without plaintext conversion.
       // That will require us to write our own truncation logic
-      // or add new dependency like truncate-html
-      // https://www.npmjs.com/package/truncate-html
+      // or add new dependency like nodejs-truncate-html
+      // (not a fan of this package, but just an example)
+      // https://github.com/huang47/nodejs-html-truncate
       const truncatedText = editor
         .getText()
         .substring(0, characterLimit - ELLIPSIS.length)
