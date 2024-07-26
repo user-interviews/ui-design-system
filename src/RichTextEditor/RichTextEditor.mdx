@@ -55,7 +55,7 @@ RichTextEditor can be set to read-only mode by setting the `editable` prop to `f
 <Canvas of={ComponentStories.NotEditable} />
 
 RichTextEditor can be configured to be used in display mode only which is useful when displaying rich text when you have to do something extra with it (e.g character truncation with summary display).
-Modify `displayMode` to `true`. This will automatically put the editor in not editable mode as well.
+Modify `displayMode` to `true`. This will automatically put the editor in not editable mode as well. You can also provide optional `onTruncate` callback that will be called if RichTextEditor truncates text.
 
 <Canvas of={ComponentStories.DisplayMode} />
 

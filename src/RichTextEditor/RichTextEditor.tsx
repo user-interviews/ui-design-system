@@ -97,6 +97,10 @@ export type RichTextEditorProps = {
     Callback function to call with sanitized HTML when editor state changes
   */
   onChange: (arg0: string) => void;
+  /**
+   Optional callback function to call when RichTextEditor is in display mode truncates text
+   */
+  onTruncate?: () => void;
 }
 
 export type RichTextEditorRef = {
@@ -118,6 +122,7 @@ const RichTextEditor = forwardRef((
     initialValue,
     isOneLine,
     onChange,
+    onTruncate,
     placeholder,
     customExtensions = [],
   }: RichTextEditorProps,
@@ -233,8 +238,11 @@ const RichTextEditor = forwardRef((
         .concat(ELLIPSIS);
 
       editor.commands.setContent(truncatedText);
+      if (onTruncate) {
+        onTruncate();
+      }
     }
-  }, [displayMode, characterLimit, editor]);
+  }, [displayMode, characterLimit, editor, onTruncate]);
 
   return (
     editor ? (
