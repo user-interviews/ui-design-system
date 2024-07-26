@@ -56,3 +56,8 @@
 .RichTextEditor__field--without-menu-bar .ProseMirror {
   border-radius: var(--ux-border-radius);
 }
+
+.RichTextEditor__field--display-mode .ProseMirror {
+  border: none;
+  padding: unset;
+}

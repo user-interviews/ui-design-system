@@ -49,3 +49,13 @@ but by setting `hasErrors` via your provided `onChange` callback you can check t
 RichTextEditor can optionally take in a forwardedRef to allow content to be programmatically manipulated.
 
 <Canvas of={ComponentStories.SetContent} />
+
+RichTextEditor can be set to read-only mode by setting the `editable` prop to `false` (e.g., when user permissions don't allow them to edit a certain field).
+
+<Canvas of={ComponentStories.NotEditable} />
+
+RichTextEditor can be configured to be used in display mode only which is useful when displaying rich text when you have to do something extra with it (e.g character truncation).
+Modify `displayMode` to `true`. This will automatically put the editor in not editable mode as well.
+
+<Canvas of={ComponentStories.DisplayMode} />
+

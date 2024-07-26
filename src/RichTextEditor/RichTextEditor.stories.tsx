@@ -63,6 +63,23 @@ export const Error = () => (
   />
 );
 
+export const NotEditable = () => (
+  <RichTextEditor
+    editable={false}
+    id="text-editor"
+    onChange={() => null}
+  />
+);
+
+export const DisplayMode = () => (
+  <RichTextEditor
+    displayMode
+    id="text-editor"
+    initialValue="<p><b>My rich text</b><p> more <i>italic text</i></p>"
+    onChange={() => {}}
+  />
+);
+
 export const SetContent = () => {
   const ref = useRef<RichTextEditorRef>(null);
 

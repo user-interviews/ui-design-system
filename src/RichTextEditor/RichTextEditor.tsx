@@ -81,6 +81,7 @@ export type RichTextEditorProps = {
    https://tiptap.dev/docs/editor/guide/custom-extensions
   */
   customExtensions?: (Extension | TipTapNode | Mark)[];
+  displayMode?: boolean;
   editable?: boolean;
   hasErrors?: boolean;
   id: string;
@@ -106,6 +107,7 @@ const RichTextEditor = forwardRef((
     allowedTags,
     ariaAttributes,
     availableActions = RichTextEditorDefaultActionsArray,
+    displayMode = false,
     editable = true,
     characterLimit,
     className,
@@ -119,6 +121,8 @@ const RichTextEditor = forwardRef((
   }: RichTextEditorProps,
   ref: ForwardedRef<RichTextEditorRef>,
 ) => {
+  const shouldDisplayMenuBar = !displayMode && availableActions.length > 0;
+  const isEditable = editable && !displayMode
   const oneLineExtension = isOneLine ? [OneLineLimit] : [];
 
   const requiredExtensions = [
@@ -191,7 +195,7 @@ const RichTextEditor = forwardRef((
 
       onChange(sanitizedHtml);
     },
-    editable,
+    editable: isEditable,
   });
 
   useImperativeHandle(ref, () => ({
@@ -203,9 +207,9 @@ const RichTextEditor = forwardRef((
 
   useEffect(() => {
     if (editor) {
-      editor.setEditable(editable);
+      editor.setEditable(isEditable);
     }
-  }, [editor, editable]);
+  }, [editor, isEditable]);
 
   return (
     editor ? (
@@ -213,10 +217,10 @@ const RichTextEditor = forwardRef((
         className="RichTextEditor"
         id={id}
       >
-        {availableActions.length > 0 && (
+        {shouldDisplayMenuBar && (
           <RichTextEditorMenuBar
             availableActions={availableActions}
-            editable={editable}
+            editable={isEditable}
             editor={editor}
           />
         )}
@@ -226,6 +230,7 @@ const RichTextEditor = forwardRef((
             'RichTextEditor__field',
             { 'RichTextEditor__field--error': hasErrors },
             { 'RichTextEditor__field--without-menu-bar': availableActions.length === 0 },
+            { 'RichTextEditor__field--display-mode': displayMode },
           )}
           editor={editor}
           role="textbox"
