@@ -215,15 +215,20 @@ const RichTextEditor = forwardRef((
   }, [editor, isEditable]);
 
   useEffect(() => {
-    const shouldAddEllipsis = !!characterLimit &&
-      editor?.storage.characterCount.characters() > characterLimit;
-    if (editor && displayMode && shouldAddEllipsis) {
+    if (
+      characterLimit &&
+      displayMode &&
+      editor &&
+      editor.storage.characterCount.characters() > characterLimit
+    ) {
       const truncatedText = editor
-        .getText().substring(0, characterLimit - ELLIPSIS.length).concat(ELLIPSIS);
+        .getText()
+        .substring(0, characterLimit - ELLIPSIS.length)
+        .concat(ELLIPSIS);
 
       editor.commands.setContent(truncatedText);
     }
-  }, [characterLimit, displayMode, editor, initialValue]);
+  }, [characterLimit, displayMode, editor]);
 
   return (
     editor ? (
