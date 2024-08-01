@@ -118,34 +118,21 @@ When you are ready for feedback:
 ## Merge process
 
 Once your pull request has been approved by all parties, you may begin the merge process:
-* Merge in the latest `master` and resolve any conflicts if needed.
+* Merge in the latest `main` and resolve any conflicts if needed.
 * Run `yarn lint` to ensure no new styling errors are returned.
 * Run `yarn test` to ensure tests are passing.
 * Click the Squash and merge button on your pull request and edit your commit message to a concise description of your changes.
 
 ## Release process
 
-This repository follows the [git flow release process](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow).
-* Each new feature branch uses develop as its parent branch and is merged back into develop upon completion.
-* Each new hotfix branch uses main as its parent branch and is merged directly into main.
-
 This package uses [Semantic versioning](https://semver.org/), which requires version numbers in MAJOR.MINOR.PATCH format. Any breaking changes to the API require an update to the MAJOR version. Backwards compatible changes only require an update to the MINOR version. Hotfixes and patches need only update the PATCH version.
 
-To create a new release off of the current develop:
-* Run the "Prepare release" github action which will
-  * Create a new release branch off of the latest develop and increment package.json
-  * Create a pull request of the release branch against main
-  * Create a pull request of the release branch against develop
-  * From there the developer can merge the PRs via github
-* Run the "Create new release" github action which will build the project and create a new release off of the latest main
-
-To create a patch release for a hotfix off the current main:
-* Run the "Prepare hotfix" github action which will
-  * Create a hotfix off the latest main and increment package.json
-  * Create a pull request of the hotfix branch against main
-  * Create a pull request of the release branch against develop
-  * From there the developer can merge the PRs via github
-* Run the "Create new release" github action which will build the project and create a new release off of the latest main
+To create a new release off of `main`:
+* Run the "Create new release" github action found under "Actions"
+* Click "Run workflow" and select the following:
+  * Choose `main` as the branch
+  * Select the version you want to release
+* This will build the project and create a new release off of the latest `main`
 
 ## Manual Release steps
 
