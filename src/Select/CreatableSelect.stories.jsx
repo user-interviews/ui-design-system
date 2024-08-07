@@ -18,7 +18,7 @@ const options = [
   { label: 'Blue', value: 3 },
 ];
 
-export const Default = () => {
+export function Default() {
   const handleChange = () => {};
   const handleInputChange = () => {};
 
@@ -36,9 +36,9 @@ export const Default = () => {
       />
     </FormGroup>
   );
-};
+}
 
-export const InModal = () => {
+export function InModal() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleChange = () => {};
@@ -84,4 +84,4 @@ export const InModal = () => {
       </Modal>
     </>
   );
-};
+}

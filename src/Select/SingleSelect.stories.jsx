@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unstable-nested-components */
 import React, { useRef, useState } from 'react';
 import { action } from '@storybook/addon-actions';
 
@@ -49,70 +50,80 @@ const peopleOptions = [
   { label: 'Ozzy Observer', value: 8 },
 ];
 
-export const Default = () => (
-  <FormGroup
-    label="Default select"
-    labelHtmlFor="default-select"
-  >
-    <SingleSelect inputId="default-select" options={options} onChange={onChange} />
-  </FormGroup>
-);
+export function Default() {
+  return (
+    <FormGroup
+      label="Default select"
+      labelHtmlFor="default-select"
+    >
+      <SingleSelect inputId="default-select" options={options} onChange={onChange} />
+    </FormGroup>
+  );
+}
 
-export const Searchable = () => (
-  <FormGroup
-    label="Searchable select"
-    labelHtmlFor="searchable-select"
-  >
-    <SingleSelect
-      closeMenuOnScroll={false}
-      inputId="searchable-select"
-      isSearchable
-      options={options}
-      placeholder="Search or select..."
-      onChange={onChange}
-    />
-  </FormGroup>
-);
+export function Searchable() {
+  return (
+    <FormGroup
+      label="Searchable select"
+      labelHtmlFor="searchable-select"
+    >
+      <SingleSelect
+        closeMenuOnScroll={false}
+        inputId="searchable-select"
+        isSearchable
+        options={options}
+        placeholder="Search or select..."
+        onChange={onChange}
+      />
+    </FormGroup>
+  );
+}
 
-export const Loading = () => (
-  <FormGroup
-    label="Loading select"
-    labelHtmlFor="loading-select"
-  >
-    <SingleSelect inputId="loading-select" isLoading options={options} onChange={onChange} />
-  </FormGroup>
-);
+export function Loading() {
+  return (
+    <FormGroup
+      label="Loading select"
+      labelHtmlFor="loading-select"
+    >
+      <SingleSelect inputId="loading-select" isLoading options={options} onChange={onChange} />
+    </FormGroup>
+  );
+}
 
-export const MultipleSelect = () => (
-  <FormGroup
-    label="Multiple select"
-    labelHtmlFor="multi-select"
-  >
-    <SingleSelect
-      inputId="multi-select"
-      isMulti
-      options={options}
-      onChange={onChange}
-    />
-  </FormGroup>
-);
+export function MultipleSelect() {
+  return (
+    <FormGroup
+      label="Multiple select"
+      labelHtmlFor="multi-select"
+    >
+      <SingleSelect
+        inputId="multi-select"
+        isMulti
+        options={options}
+        onChange={onChange}
+      />
+    </FormGroup>
+  );
+}
 
-export const MultipleSelectBorderedPill = () => (
-  <FormGroup
-    label="Multiple select bordered pill"
-    labelHtmlFor="multi-select-bordered-pill"
-  >
-    <SingleSelect
-      borderedMultiValue
-      inputId="multi-select-bordered-pill"
-      isMulti
-      options={peopleOptions}
-      onChange={onChange}
-    />
-  </FormGroup>
-);
+export function MultipleSelectBorderedPill() {
+  return (
+    <FormGroup
+      label="Multiple select bordered pill"
+      labelHtmlFor="multi-select-bordered-pill"
+    >
+      <SingleSelect
+        borderedMultiValue
+        inputId="multi-select-bordered-pill"
+        isMulti
+        options={peopleOptions}
+        onChange={onChange}
+      />
+    </FormGroup>
+  );
+}
 
-export const InModal = () => {
+export function InModal() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleRequestClose = () => setIsOpen(false);
@@ -154,9 +165,9 @@ export const InModal = () => {
       </Modal>
     </>
   );
-};
+}
 
-export const GroupedOptions = () => {
+export function GroupedOptions() {
   const groupedOptions = [
     {
       label: 'Study type',
@@ -182,15 +193,16 @@ export const GroupedOptions = () => {
       />
     </FormGroup>
   );
-};
+}
 
-export const CustomOptionWithDescriptionAndCheckbox = () => (
-  <FormGroup
-    label="Custom Option with Description And Checkbox"
-    labelHtmlFor="custom-option-with-description-and-checkbox-select"
-  >
-    <SingleSelect
-      components={{
+export function CustomOptionWithDescriptionAndCheckbox() {
+  return (
+    <FormGroup
+      label="Custom Option with Description And Checkbox"
+      labelHtmlFor="custom-option-with-description-and-checkbox-select"
+    >
+      <SingleSelect
+        components={{
         Option: ({ ...props }) => (
           <Option
             {...props}
@@ -200,18 +212,19 @@ export const CustomOptionWithDescriptionAndCheckbox = () => (
           />
         ),
       }}
-      inputId="custom-option-with-description-select"
-      options={options}
-      onChange={onChange}
-    />
-  </FormGroup>
-);
+        inputId="custom-option-with-description-select"
+        options={options}
+        onChange={onChange}
+      />
+    </FormGroup>
+  );
+}
 
 /**
   If you're adding a new code, prefer the use of `Option` with a `description` prop.
   `OptionWithDescription` is effectively deprecated and will be merged into `Option`.
  */
-export const CustomOptionWithDescription = () => {
+export function CustomOptionWithDescription() {
   const optionsWithDescriptions = [
     {
  label: 'Org Admin', value: 1, description: 'Short description of role capabilities', labelDescription: '(Full access)',
@@ -246,44 +259,48 @@ export const CustomOptionWithDescription = () => {
       />
     </FormGroup>
   );
-};
+}
 
-export const CustomOptionWithCheckbox = () => (
-  <FormGroup
-    label="Custom Option with Checkbox"
-    labelHtmlFor="custom-option-with-checkbox-select"
-  >
-    <SingleSelect
-      closeMenuOnSelect={false}
-      components={{ Option }}
-      hideSelectedOptions={false}
-      inputId="custom-option-with-checkbox-select"
-      isMulti
-      options={options}
-      onChange={onChange}
-    />
-  </FormGroup>
-);
+export function CustomOptionWithCheckbox() {
+  return (
+    <FormGroup
+      label="Custom Option with Checkbox"
+      labelHtmlFor="custom-option-with-checkbox-select"
+    >
+      <SingleSelect
+        closeMenuOnSelect={false}
+        components={{ Option }}
+        hideSelectedOptions={false}
+        inputId="custom-option-with-checkbox-select"
+        isMulti
+        options={options}
+        onChange={onChange}
+      />
+    </FormGroup>
+  );
+}
 
-export const SearchableCustomOptionWithCheckbox = () => (
-  <FormGroup
-    label="Searchable Custom Option with Checkbox"
-    labelHtmlFor="searchable-custom-option-with-checkbox-select"
-  >
-    <SingleSelect
-      closeMenuOnSelect={false}
-      components={{ Option }}
-      hideSelectedOptions={false}
-      inputId="searchable-custom-option-with-checkbox-select"
-      isMulti
-      isSearchable
-      options={options}
-      onChange={onChange}
-    />
-  </FormGroup>
-);
+export function SearchableCustomOptionWithCheckbox() {
+  return (
+    <FormGroup
+      label="Searchable Custom Option with Checkbox"
+      labelHtmlFor="searchable-custom-option-with-checkbox-select"
+    >
+      <SingleSelect
+        closeMenuOnSelect={false}
+        components={{ Option }}
+        hideSelectedOptions={false}
+        inputId="searchable-custom-option-with-checkbox-select"
+        isMulti
+        isSearchable
+        options={options}
+        onChange={onChange}
+      />
+    </FormGroup>
+  );
+}
 
-export const CustomOptionWithIndeterminateCheckbox = () => {
+export function CustomOptionWithIndeterminateCheckbox() {
   const optionsArr = [
     { label: 'Riley Researcher', value: 1 },
     { label: 'Patty Participant', value: 2 },
@@ -324,16 +341,17 @@ export const CustomOptionWithIndeterminateCheckbox = () => {
       />
     </FormGroup>
   );
-};
+}
 
-export const CustomValueContainer = () => (
-  <FormGroup
-    label="Custom Value Container"
-    labelHtmlFor="custom-value-container-select"
-  >
-    <SingleSelect
-      closeMenuOnSelect={false}
-      components={{
+export function CustomValueContainer() {
+  return (
+    <FormGroup
+      label="Custom Value Container"
+      labelHtmlFor="custom-value-container-select"
+    >
+      <SingleSelect
+        closeMenuOnSelect={false}
+        components={{
         Option,
         ValueContainer: (props) => (
           <ValueContainer
@@ -343,11 +361,12 @@ export const CustomValueContainer = () => (
           />
         ),
       }}
-      hideSelectedOptions={false}
-      inputId="custom-value-container-select"
-      isMulti
-      options={options}
-      onChange={onChange}
-    />
-  </FormGroup>
-);
+        hideSelectedOptions={false}
+        inputId="custom-value-container-select"
+        isMulti
+        options={options}
+        onChange={onChange}
+      />
+    </FormGroup>
+  );
+}

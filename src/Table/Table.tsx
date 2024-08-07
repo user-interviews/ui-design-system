@@ -16,29 +16,27 @@ export type TableProps = TableElementProps & {
   loadingRows?: number;
 };
 
-const Table = ({
+function Table({
   children,
   className,
   isLoading,
   loadingColumns,
   loadingRows,
   ...props
-}: TableProps) => (
-  <>
-    {!isLoading ? (
-      <table
-        className={classNames(
+}: TableProps) {
+  return !isLoading ? (
+    <table
+      className={classNames(
         'Table',
         className,
         )}
-        {...props}
-      >
-        {children}
-      </table>
-    ) : (
-      <TableLoadingSkeleton columns={loadingColumns} rows={loadingRows} />
-    )}
-  </>
-);
+      {...props}
+    >
+      {children}
+    </table>
+  ) : (
+    <TableLoadingSkeleton columns={loadingColumns} rows={loadingRows} />
+  );
+}
 
 export default Table;

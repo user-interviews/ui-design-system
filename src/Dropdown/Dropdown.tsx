@@ -64,7 +64,7 @@ type DropdownProps = {
   onToggle?: RBDropdownProps['onToggle'];
 } & RBDropdownProps;
 
-const Dropdown = ({
+function Dropdown({
   align = 'start',
   as,
   autoClose = true,
@@ -79,24 +79,26 @@ const Dropdown = ({
   onToggle,
   show,
   ...props
-}: DropdownProps) => (
-  <RBDropdown
-    align={align}
-    as={as}
-    autoClose={autoClose}
-    bsPrefix={bsPrefix}
-    className={classNames('Dropdown', className)}
-    drop={drop}
-    flip={flip}
-    focusFirstItemOnShow={focusFirstItemOnShow}
-    navbar={navbar}
-    show={show}
-    onSelect={onSelect}
-    onToggle={onToggle}
-    {...props}
-  >
-    { children }
-  </RBDropdown>
-);
+}: DropdownProps) {
+  return (
+    <RBDropdown
+      align={align}
+      as={as}
+      autoClose={autoClose}
+      bsPrefix={bsPrefix}
+      className={classNames('Dropdown', className)}
+      drop={drop}
+      flip={flip}
+      focusFirstItemOnShow={focusFirstItemOnShow}
+      navbar={navbar}
+      show={show}
+      onSelect={onSelect}
+      onToggle={onToggle}
+      {...props}
+    >
+      { children }
+    </RBDropdown>
+  );
+}
 
 export default Dropdown;

@@ -8,20 +8,22 @@ export type SidebarNavProps = {
   isMobileView: boolean;
 };
 
-const SidebarNav = ({
+function SidebarNav({
   controls,
   isMobileView,
   content,
-}: SidebarNavProps) => (
-  <div className="Layout__sidebar-nav">
-    {content}
+}: SidebarNavProps) {
+  return (
+    <div className="Layout__sidebar-nav">
+      {content}
 
-    {controls && isMobileView && (
+      {controls && isMobileView && (
       <div className="Layout__sidebar-nav__mobile-controls">
         {controls}
       </div>
     )}
-  </div>
-);
+    </div>
+  );
+}
 
 export default SidebarNav;

@@ -37,7 +37,7 @@ type AccordionToggleProps = {
   UNSAFE_className?: string;
 };
 
-const AccordionToggle = ({
+function AccordionToggle({
   children,
   chevronLateral,
   chevronLeft,
@@ -51,7 +51,7 @@ const AccordionToggle = ({
 
   // eslint-disable-next-line camelcase
   UNSAFE_className,
-}: AccordionToggleProps) => {
+}: AccordionToggleProps) {
   const { activeEventKey } = React.useContext(AccordionContext);
 
   const [isCollapsed, setIsCollapsed] = useState(true);
@@ -125,7 +125,7 @@ const AccordionToggle = ({
       </div>
     </button>
   );
-};
+}
 
 AccordionToggle.defaultProps = {
   chevronLateral: false,

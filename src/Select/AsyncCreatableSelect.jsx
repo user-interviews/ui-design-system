@@ -6,7 +6,7 @@ import zStack from 'src/Styles/zStack';
 
 import { defaultStyles, defaultTheme, SELECT_SIZES } from './styles';
 
-const AsyncCreatableSelect = ({
+function AsyncCreatableSelect({
   'aria-label': ariaLabel,
   'aria-labelledby': ariaLabelledBy,
   className,
@@ -32,31 +32,32 @@ const AsyncCreatableSelect = ({
 
   onChange,
   ...props
-}) => (
-  <AsyncCreatable
-    {...props}
-    aria-label={ariaLabel}
-    aria-labelledby={ariaLabelledBy}
-    className={`${className || ''} AsyncSelect`}
-    classNamePrefix="Select"
-    components={components}
-    defaultOptions={defaultOptions}
-    defaultValue={defaultValue}
-    getOptionLabel={getOptionLabel}
-    getOptionValue={getOptionValue}
-    id={id}
-    ignoreCase={ignoreCase}
-    inputId={inputId}
-    isClearable={isClearable}
-    isDisabled={disabled}
-    isLoading={isLoading}
-    loadOptions={loadOptions}
-    menuPortalTarget={modal ? document.body : undefined}
-    name={name}
-    noOptionsMessage={noOptionsMessage}
-    placeholder={placeholder}
-    shouldShowValue
-    styles={{
+}) {
+  return (
+    <AsyncCreatable
+      {...props}
+      aria-label={ariaLabel}
+      aria-labelledby={ariaLabelledBy}
+      className={`${className || ''} AsyncSelect`}
+      classNamePrefix="Select"
+      components={components}
+      defaultOptions={defaultOptions}
+      defaultValue={defaultValue}
+      getOptionLabel={getOptionLabel}
+      getOptionValue={getOptionValue}
+      id={id}
+      ignoreCase={ignoreCase}
+      inputId={inputId}
+      isClearable={isClearable}
+      isDisabled={disabled}
+      isLoading={isLoading}
+      loadOptions={loadOptions}
+      menuPortalTarget={modal ? document.body : undefined}
+      name={name}
+      noOptionsMessage={noOptionsMessage}
+      placeholder={placeholder}
+      shouldShowValue
+      styles={{
       ...defaultStyles({ menuWidth, size }),
       menuPortal: (base) => (
         modal ?
@@ -64,13 +65,14 @@ const AsyncCreatableSelect = ({
           base
       ),
     }}
-    theme={defaultTheme}
-    value={value}
-    onBlurResetsInput={false}
-    onChange={onChange}
-    onSelectResetsInput={false}
-  />
-);
+      theme={defaultTheme}
+      value={value}
+      onBlurResetsInput={false}
+      onChange={onChange}
+      onSelectResetsInput={false}
+    />
+  );
+}
 
 AsyncCreatableSelect.propTypes = {
   'aria-label': propTypes.string,

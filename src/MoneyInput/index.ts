@@ -1,1 +1,3 @@
-export { default } from './MoneyInput';
+import MoneyInput from './MoneyInput';
+
+export default MoneyInput;

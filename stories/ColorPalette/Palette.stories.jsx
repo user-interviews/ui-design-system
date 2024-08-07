@@ -3,9 +3,10 @@ import React from 'react';
 import { colors } from 'src/Styles';
 
 /* eslint-disable react/prop-types, react/no-array-index-key */
-const Palette = ({ color }) => (
-  <div style={{ display: 'flex', height: '320px', width: '100%' }}>
-    {
+function Palette({ color }) {
+  return (
+    <div style={{ display: 'flex', height: '320px', width: '100%' }}>
+      {
       [...Array(9)].map((_, i) => {
         const colorNameKey = `UX_${color}_${i + 1}00`;
 
@@ -35,8 +36,9 @@ const Palette = ({ color }) => (
         );
       })
     }
-  </div>
-);
+    </div>
+  );
+}
 /* eslint-enable react/prop-types, react/no-array-index-key */
 
 export default {
@@ -44,16 +46,38 @@ export default {
   component: Palette,
 };
 
-export const Blue = () => <Palette color="BLUE" />;
-export const Gray = () => <Palette color="GRAY" />;
-export const Green = () => <Palette color="GREEN" />;
-export const Orange = () => <Palette color="ORANGE" />;
-export const Red = () => <Palette color="RED" />;
-export const Yellow = () => <Palette color="YELLOW" />;
+export function Blue() {
+  return <Palette color="BLUE" />;
+}
+export function Gray() {
+  return <Palette color="GRAY" />;
+}
+export function Green() {
+  return <Palette color="GREEN" />;
+}
+export function Orange() {
+  return <Palette color="ORANGE" />;
+}
+export function Red() {
+  return <Palette color="RED" />;
+}
+export function Yellow() {
+  return <Palette color="YELLOW" />;
+}
 
 // New brand color additions (currently skip even number series)
-export const Emerald = () => <Palette color="EMERALD" />;
-export const Navy = () => <Palette color="NAVY" />;
-export const Neutral = () => <Palette color="NEUTRAL" />;
-export const Sand = () => <Palette color="SAND" />;
-export const Teal = () => <Palette color="TEAL" />;
+export function Emerald() {
+  return <Palette color="EMERALD" />;
+}
+export function Navy() {
+  return <Palette color="NAVY" />;
+}
+export function Neutral() {
+  return <Palette color="NEUTRAL" />;
+}
+export function Sand() {
+  return <Palette color="SAND" />;
+}
+export function Teal() {
+  return <Palette color="TEAL" />;
+}

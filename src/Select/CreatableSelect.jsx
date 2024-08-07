@@ -8,7 +8,7 @@ import {
  borderedMultiValueStyles, defaultTheme, defaultStyles, SELECT_SIZES,
 } from './styles';
 
-const CreatableSelect = ({
+function CreatableSelect({
   'aria-label': ariaLabel,
   'aria-labelledby': ariaLabelledBy,
   borderedMultiValue,
@@ -31,27 +31,28 @@ const CreatableSelect = ({
   value,
   onChange,
   ...props
-}) => (
-  <Creatable
-    {...props}
-    aria-label={ariaLabel}
-    ariaLabelledBy={ariaLabelledBy}
-    className={`${className || ''} CreatableSelect`}
-    classNamePrefix="Select"
-    components={components}
-    defaultValue={defaultValue}
-    getOptionLabel={getOptionLabel}
-    getOptionValue={getOptionValue}
-    id={id}
-    inputId={inputId}
-    isClearable={isClearable}
-    isDisabled={isDisabled}
-    isLoading={isLoading}
-    menuPortalTarget={modal ? document.body : undefined}
-    name={name}
-    options={options}
-    placeholder={placeholder}
-    styles={{
+}) {
+  return (
+    <Creatable
+      {...props}
+      aria-label={ariaLabel}
+      ariaLabelledBy={ariaLabelledBy}
+      className={`${className || ''} CreatableSelect`}
+      classNamePrefix="Select"
+      components={components}
+      defaultValue={defaultValue}
+      getOptionLabel={getOptionLabel}
+      getOptionValue={getOptionValue}
+      id={id}
+      inputId={inputId}
+      isClearable={isClearable}
+      isDisabled={isDisabled}
+      isLoading={isLoading}
+      menuPortalTarget={modal ? document.body : undefined}
+      name={name}
+      options={options}
+      placeholder={placeholder}
+      styles={{
       ...defaultStyles({ menuWidth, size }),
       ...borderedMultiValueStyles(borderedMultiValue),
       menuPortal: (base) => (
@@ -60,11 +61,12 @@ const CreatableSelect = ({
           base
       ),
     }}
-    theme={defaultTheme}
-    value={value}
-    onChange={onChange}
-  />
+      theme={defaultTheme}
+      value={value}
+      onChange={onChange}
+    />
   );
+}
 
 CreatableSelect.propTypes = {
   'aria-label': PropTypes.string,

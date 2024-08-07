@@ -1,1 +1,3 @@
-export { default } from './InputLabel';
+import InputLabel from './InputLabel';
+
+export default InputLabel;

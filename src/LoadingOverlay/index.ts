@@ -1,1 +1,3 @@
-export { default } from './LoadingOverlay';
+import LoadingOverlay from './LoadingOverlay';
+
+export default LoadingOverlay;

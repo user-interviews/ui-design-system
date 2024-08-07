@@ -9,7 +9,7 @@ import {
  borderedMultiValueStyles, defaultTheme, defaultStyles, SELECT_SIZES,
 } from './styles';
 
-const SingleSelect = ({
+function SingleSelect({
   'aria-label': ariaLabel,
   'aria-labelledby': ariaLabelledBy,
   borderedMultiValue,
@@ -36,30 +36,31 @@ const SingleSelect = ({
   value,
   onChange,
   ...props
-}) => (
-  <Select
-    {...props}
-    aria-label={ariaLabel}
-    aria-labelledby={ariaLabelledBy}
-    className={classNames('SingleSelect', className)}
-    classNamePrefix="Select"
-    closeMenuOnScroll={closeMenuOnScroll}
-    closeMenuOnSelect={closeMenuOnSelect}
-    components={components}
-    defaultValue={defaultValue}
-    getOptionLabel={getOptionLabel}
-    getOptionValue={getOptionValue}
-    id={id}
-    inputId={inputId}
-    isClearable={isClearable}
-    isDisabled={disabled || isLoading}
-    isMulti={isMulti}
-    isSearchable={isSearchable}
-    menuPortalTarget={modal ? document.body : undefined}
-    name={name}
-    options={options}
-    placeholder={placeholder}
-    styles={{
+}) {
+  return (
+    <Select
+      {...props}
+      aria-label={ariaLabel}
+      aria-labelledby={ariaLabelledBy}
+      className={classNames('SingleSelect', className)}
+      classNamePrefix="Select"
+      closeMenuOnScroll={closeMenuOnScroll}
+      closeMenuOnSelect={closeMenuOnSelect}
+      components={components}
+      defaultValue={defaultValue}
+      getOptionLabel={getOptionLabel}
+      getOptionValue={getOptionValue}
+      id={id}
+      inputId={inputId}
+      isClearable={isClearable}
+      isDisabled={disabled || isLoading}
+      isMulti={isMulti}
+      isSearchable={isSearchable}
+      menuPortalTarget={modal ? document.body : undefined}
+      name={name}
+      options={options}
+      placeholder={placeholder}
+      styles={{
       ...defaultStyles({ menuWidth, size }),
       ...borderedMultiValueStyles(borderedMultiValue),
       menuPortal: (base) => (
@@ -68,11 +69,12 @@ const SingleSelect = ({
           base
       ),
     }}
-    theme={defaultTheme}
-    value={value}
-    onChange={onChange}
-  />
-);
+      theme={defaultTheme}
+      value={value}
+      onChange={onChange}
+    />
+  );
+}
 
 SingleSelect.propTypes = {
   'aria-label': propTypes.string,

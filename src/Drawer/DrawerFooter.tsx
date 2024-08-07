@@ -21,7 +21,7 @@ type DrawerFooterProps = {
   onSecondaryAction?: () => void;
 };
 
-const DrawerFooter = ({
+function DrawerFooter({
   children,
   isPrimaryActionLoading,
   isSecondaryActionLoading,
@@ -35,13 +35,14 @@ const DrawerFooter = ({
   secondaryActionText,
   onPrimaryAction,
   onSecondaryAction,
-}: DrawerFooterProps) => (
-  <div className="DrawerFooter">
-    <div>
-      {children}
-    </div>
-    <div className="DrawerFooter__actions">
-      {onSecondaryAction && (
+}: DrawerFooterProps) {
+  return (
+    <div className="DrawerFooter">
+      <div>
+        {children}
+      </div>
+      <div className="DrawerFooter__actions">
+        {onSecondaryAction && (
         <Button
           disabled={secondaryActionDisabled}
           isLoading={isSecondaryActionLoading}
@@ -53,7 +54,7 @@ const DrawerFooter = ({
           {secondaryActionText}
         </Button>
       )}
-      {onPrimaryAction && (
+        {onPrimaryAction && (
         <Button
           disabled={primaryActionDisabled}
           isLoading={isPrimaryActionLoading}
@@ -66,9 +67,10 @@ const DrawerFooter = ({
           {primaryActionText}
         </Button>
       )}
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
 DrawerFooter.defaultProps = {
   children: undefined,

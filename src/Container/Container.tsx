@@ -22,21 +22,23 @@ export type ContainerProps = {
   fluid?: ReactBootstrapContainerProps['fluid'];
 } & ReactBootstrapContainerProps;
 
-export const Container = ({
+export function Container({
   as,
   children,
   className,
   fluid,
   bsPrefix = 'container',
   ...props
-}: ContainerProps) => (
-  <ReactBootstrapContainer
-    as={as}
-    bsPrefix={bsPrefix}
-    className={className}
-    fluid={fluid}
-    {...props}
-  >
-    { children }
-  </ReactBootstrapContainer>
-);
+}: ContainerProps) {
+  return (
+    <ReactBootstrapContainer
+      as={as}
+      bsPrefix={bsPrefix}
+      className={className}
+      fluid={fluid}
+      {...props}
+    >
+      { children }
+    </ReactBootstrapContainer>
+  );
+}

@@ -9,12 +9,14 @@ export type IconCellProps = {
   icon: IconDefinition;
 };
 
-const IconCell = ({
+function IconCell({
   icon,
-}: IconCellProps) => (
-  <div className="IconCell">
-    <FontAwesomeIcon icon={icon} />
-  </div>
-);
+}: IconCellProps) {
+  return (
+    <div className="IconCell">
+      <FontAwesomeIcon icon={icon} />
+    </div>
+  );
+}
 
 export default IconCell;

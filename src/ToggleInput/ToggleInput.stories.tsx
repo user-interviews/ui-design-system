@@ -13,7 +13,7 @@ export default {
   },
 };
 
-export const Default = () => {
+export function Default() {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleChange = () => {
@@ -29,9 +29,9 @@ export const Default = () => {
       onToggle={handleChange}
     />
   );
-};
+}
 
-export const Checked = () => {
+export function Checked() {
   const [isChecked, setIsChecked] = useState(true);
 
   const handleChange = () => {
@@ -47,9 +47,9 @@ export const Checked = () => {
       onToggle={handleChange}
     />
   );
-};
+}
 
-export const LabelLeft = () => {
+export function LabelLeft() {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleChange = () => {
@@ -65,9 +65,9 @@ export const LabelLeft = () => {
       onToggle={handleChange}
     />
   );
-};
+}
 
-export const Disabled = () => {
+export function Disabled() {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleChange = () => {
@@ -84,4 +84,4 @@ export const Disabled = () => {
       onToggle={handleChange}
     />
   );
-};
+}

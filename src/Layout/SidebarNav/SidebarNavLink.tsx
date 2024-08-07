@@ -13,28 +13,30 @@ export type SidebarNavLinkProps = {
   url: string;
 };
 
-const SidebarNavLink = ({
+function SidebarNavLink({
   icon,
   iconClass,
   text,
   url,
-}: SidebarNavLinkProps) => (
-  <li className="Layout__sidebar-nav__list_item">
-    <NavLink
-      activeClassName="Layout__sidebar-nav__link--active"
-      className="Layout__sidebar-nav__link"
-      exact
-      to={url}
-    >
-      {icon && (
+}: SidebarNavLinkProps) {
+  return (
+    <li className="Layout__sidebar-nav__list_item">
+      <NavLink
+        activeClassName="Layout__sidebar-nav__link--active"
+        className="Layout__sidebar-nav__link"
+        exact
+        to={url}
+      >
+        {icon && (
         <FontAwesomeIcon
           className={classNames('icon-left Layout__sidebar-nav__link__icon', iconClass)}
           icon={icon}
         />
       )}
-      {text}
-    </NavLink>
-  </li>
-);
+        {text}
+      </NavLink>
+    </li>
+  );
+}
 
 export default SidebarNavLink;

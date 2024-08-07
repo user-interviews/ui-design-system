@@ -21,7 +21,7 @@ const options = [
 const handleRequestClose = () => action('Close');
 
 async function loadOptions(search) {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  await new Promise((resolve) => { setTimeout(resolve, 2000); });
 
   if (!search || !search.length) {
     return options;
@@ -30,7 +30,7 @@ async function loadOptions(search) {
   return options.filter(({ label }) => label.toLowerCase().includes(search.toLowerCase()));
 }
 
-export const Default = () => {
+export function Default() {
   const handleChange = () => {};
   const handleInputChange = () => {};
 
@@ -50,41 +50,43 @@ export const Default = () => {
       />
     </FormGroup>
   );
-};
+}
 
-export const InModal = () => (
-  <Modal
-    ariaHideApp={false}
-    className="AsyncCreatableSelectInModal"
-    contentLabel="AsyncCreatableSelect in Modal"
-    isOpen
-  >
-    <ModalHeader
-      title="In Modal AsyncCreatable select"
-      titleId="in-modal-async-creatable-select"
-      onRequestClose={handleRequestClose}
-    />
-    <ModalBody>
-      <FormGroup
-        helperText="Select menu is able to overflow the Modal container"
-        label="In Modal AsyncCreatable select"
-        labelHtmlFor="in-modal-creatable-select"
-      >
-        <AsyncCreatableSelect
-          getOptionLabel={({ label }) => label}
-          getOptionValue={({ value }) => value}
-          inputId="in-modal-creatable-select"
-          loadOptions={loadOptions}
-          modal
-          noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
-        />
-      </FormGroup>
-    </ModalBody>
-    <ModalFooter
-      dismissButtonText="Cancel"
-      onRequestClose={handleRequestClose}
+export function InModal() {
+  return (
+    <Modal
+      ariaHideApp={false}
+      className="AsyncCreatableSelectInModal"
+      contentLabel="AsyncCreatableSelect in Modal"
+      isOpen
     >
-      <Button type="submit" variant="primary">Confirm</Button>
-    </ModalFooter>
-  </Modal>
+      <ModalHeader
+        title="In Modal AsyncCreatable select"
+        titleId="in-modal-async-creatable-select"
+        onRequestClose={handleRequestClose}
+      />
+      <ModalBody>
+        <FormGroup
+          helperText="Select menu is able to overflow the Modal container"
+          label="In Modal AsyncCreatable select"
+          labelHtmlFor="in-modal-creatable-select"
+        >
+          <AsyncCreatableSelect
+            getOptionLabel={({ label }) => label}
+            getOptionValue={({ value }) => value}
+            inputId="in-modal-creatable-select"
+            loadOptions={loadOptions}
+            modal
+            noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+          />
+        </FormGroup>
+      </ModalBody>
+      <ModalFooter
+        dismissButtonText="Cancel"
+        onRequestClose={handleRequestClose}
+      >
+        <Button type="submit" variant="primary">Confirm</Button>
+      </ModalFooter>
+    </Modal>
   );
+}

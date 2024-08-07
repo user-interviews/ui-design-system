@@ -14,7 +14,7 @@ export default {
   },
 };
 
-export const Default = () => {
+export function Default() {
   const [isChecked, setIsChecked] = useState(CHECKED_STATES.CHECKED);
 
   const handleChange = () => {
@@ -32,9 +32,9 @@ export const Default = () => {
       onChange={handleChange}
     />
   );
-};
+}
 
-export const Indeterminate = () => {
+export function Indeterminate() {
   const inputEl = useRef(null);
   const [checked, setChecked] = useState([]);
   const checkboxes = ['1', '2', '3'];
@@ -75,9 +75,9 @@ export const Indeterminate = () => {
       ))}
     </div>
   );
-};
+}
 
-export const WithDescription = () => {
+export function WithDescription() {
   const [checked, setChecked] = useState(false);
   const toggleChecked = () => {
     setChecked(!checked);
@@ -96,4 +96,4 @@ export const WithDescription = () => {
       This is where the description goes
     </FormControlLabel>
   );
-};
+}

@@ -1,1 +1,4 @@
-export { default, CardSizes } from './Card';
+import Card from './Card';
+
+export { CardSizes } from './Card';
+export default Card;

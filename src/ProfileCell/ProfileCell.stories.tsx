@@ -39,59 +39,69 @@ const userWithImage = {
   imageUrl: 'https://i.kym-cdn.com/entries/icons/original/000/013/564/doge.jpg',
 };
 
-export const Small = () => (
-  <ProfileCell
-    colorId={undefined}
-    maxWidth=""
-    showAlert={false}
-    subtitle="riley@userinterviews.com"
-    user={userNoImage}
-  />
-);
-
-export const Large = () => (
-  <ProfileCell
-    colorId={undefined}
-    large
-    maxWidth=""
-    showAlert={false}
-    subtitle={largeSubtitle}
-    user={userNoImage}
-  />
-);
-
-export const WithImage = () => (
-  <ProfileCell
-    large
-    maxWidth=""
-    showAlert={false}
-    subtitle={largeSubtitle}
-    user={userWithImage}
-  />
-);
-
-export const WithTrailingIcon = () => (
-  <ProfileCell
-    colorId={undefined}
-    maxWidth=""
-    showAlert={false}
-    subtitle="riley@userinterviews.com"
-    trailingIcon={faShieldCheck}
-    user={userWithImage}
-  />
-);
-
-export const Loading = () => (
-  <>
+export function Small() {
+  return (
     <ProfileCell
       colorId={undefined}
-      isLoading
       maxWidth=""
       showAlert={false}
       subtitle="riley@userinterviews.com"
       user={userNoImage}
     />
-    <br />
-    <ProfileCellSkeleton maxWidth="" />
-  </>
-);
+  );
+}
+
+export function Large() {
+  return (
+    <ProfileCell
+      colorId={undefined}
+      large
+      maxWidth=""
+      showAlert={false}
+      subtitle={largeSubtitle}
+      user={userNoImage}
+    />
+  );
+}
+
+export function WithImage() {
+  return (
+    <ProfileCell
+      large
+      maxWidth=""
+      showAlert={false}
+      subtitle={largeSubtitle}
+      user={userWithImage}
+    />
+  );
+}
+
+export function WithTrailingIcon() {
+  return (
+    <ProfileCell
+      colorId={undefined}
+      maxWidth=""
+      showAlert={false}
+      subtitle="riley@userinterviews.com"
+      trailingIcon={faShieldCheck}
+      user={userWithImage}
+    />
+  );
+}
+
+export function Loading() {
+  return (
+    <>
+      <ProfileCell
+        colorId={undefined}
+        isLoading
+        maxWidth=""
+        showAlert={false}
+        subtitle="riley@userinterviews.com"
+        user={userNoImage}
+      />
+      <br />
+      <ProfileCellSkeleton maxWidth="" />
+    </>
+  );
+}

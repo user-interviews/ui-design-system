@@ -11,15 +11,16 @@ export interface TabsProps extends BootstrapTabProps {
   navItemButtonFullHeight?: boolean;
 }
 
-const Tabs = ({
+function Tabs({
   children,
   flexWrapUnset,
   navItemButtonFullHeight,
   className,
   ...props
-}: TabsProps) => (
-  <ReactBootstrapTabs
-    className={
+}: TabsProps) {
+  return (
+    <ReactBootstrapTabs
+      className={
         classNames(
           className,
           styles.tabs,
@@ -29,11 +30,12 @@ const Tabs = ({
           },
         )
       }
-    variant="tabs"
-    {...props}
-  >
-    {children}
-  </ReactBootstrapTabs>
-);
+      variant="tabs"
+      {...props}
+    >
+      {children}
+    </ReactBootstrapTabs>
+  );
+}
 
 export default Tabs;

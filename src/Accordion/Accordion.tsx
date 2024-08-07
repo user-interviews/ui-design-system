@@ -33,7 +33,7 @@ type AccordionProps = {
   onSelect?: () => void;
 };
 
-const Accordion = ({
+function Accordion({
   activeKey,
   alwaysOpen,
   as,
@@ -43,19 +43,21 @@ const Accordion = ({
   onSelect,
   // eslint-disable-next-line camelcase
   UNSAFE_className,
-}: AccordionProps) => (
-  <RBAccordion
-    activeKey={activeKey}
-    alwaysOpen={alwaysOpen}
-    as={as}
-    className={classNames(UNSAFE_className, 'Accordion')}
-    defaultActiveKey={defaultActiveKey}
-    flush={flush}
-    onSelect={onSelect}
-  >
-    { children }
-  </RBAccordion>
+}: AccordionProps) {
+  return (
+    <RBAccordion
+      activeKey={activeKey}
+      alwaysOpen={alwaysOpen}
+      as={as}
+      className={classNames(UNSAFE_className, 'Accordion')}
+      defaultActiveKey={defaultActiveKey}
+      flush={flush}
+      onSelect={onSelect}
+    >
+      { children }
+    </RBAccordion>
   );
+}
 
 Accordion.defaultProps = {
   activeKey: undefined,

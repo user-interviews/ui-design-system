@@ -12,7 +12,9 @@ jest.mock('react-transition-group', () => (
   }
 ));
 
-const WrappedComponent = () => <div />;
+function WrappedComponent() {
+  return <div />;
+}
 
 describe('test withToast', () => {
   test('it can create a new Toast message', async () => {

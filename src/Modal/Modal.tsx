@@ -11,11 +11,11 @@ type ModalProps = {
   size?: typeof MODAL_SIZES[keyof typeof MODAL_SIZES];
 } & ReactModalProps;
 
-const Modal = ({
+function Modal({
   size = 'small',
   className,
   ...props
-}: ModalProps) => {
+}: ModalProps) {
   let componentClassName = className;
 
   if (size === MODAL_SIZES.MEDIUM) {
@@ -27,6 +27,6 @@ const Modal = ({
   return (
     <ReactModal {...props} className={componentClassName} />
   );
-};
+}
 
 export default Modal;

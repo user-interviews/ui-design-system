@@ -1,7 +1,8 @@
 import ProfileCellSkeleton from './ProfileCellSkeleton';
+import ProfileCell from './ProfileCell';
 
 export {
   ProfileCellSkeleton,
 };
 
-export { default } from './ProfileCell';
+export default ProfileCell;

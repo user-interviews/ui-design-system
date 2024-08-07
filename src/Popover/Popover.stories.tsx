@@ -19,39 +19,43 @@ export default {
   },
 };
 
-export const Default = () => (
-  <OverlayTrigger
-    overlay={(
-      <Popover id="popover-basic">
-        <PopoverBody>
-          This is the default Popover body.
-        </PopoverBody>
-      </Popover>
+export function Default() {
+  return (
+    <OverlayTrigger
+      overlay={(
+        <Popover id="popover-basic">
+          <PopoverBody>
+            This is the default Popover body.
+          </PopoverBody>
+        </Popover>
     )}
-    placement="auto"
-    trigger="click"
-  >
-    <Button variant="primary">Filter</Button>
-  </OverlayTrigger>
-);
+      placement="auto"
+      trigger="click"
+    >
+      <Button variant="primary">Filter</Button>
+    </OverlayTrigger>
+  );
+}
 
-export const Placement = () => (
-  <OverlayTrigger
-    overlay={(
-      <Popover id="popover-basic">
-        <PopoverBody>
-          This is the default Popover body.
-        </PopoverBody>
-      </Popover>
+export function Placement() {
+  return (
+    <OverlayTrigger
+      overlay={(
+        <Popover id="popover-basic">
+          <PopoverBody>
+            This is the default Popover body.
+          </PopoverBody>
+        </Popover>
     )}
-    placement="bottom"
-    trigger="click"
-  >
-    <Button variant="primary">Try different placements</Button>
-  </OverlayTrigger>
-);
+      placement="bottom"
+      trigger="click"
+    >
+      <Button variant="primary">Try different placements</Button>
+    </OverlayTrigger>
+  );
+}
 
-export const CardPopover = () => {
+export function CardPopover() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleOpen = () => {
@@ -101,4 +105,4 @@ export const CardPopover = () => {
       <Button variant="primary" onClick={handleOpen}>Filter</Button>
     </OverlayTrigger>
   );
-};
+}

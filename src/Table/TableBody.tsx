@@ -11,20 +11,22 @@ type TableBodyProps = TableElementProps & {
   className?: string;
 };
 
-const TableBody = ({
+function TableBody({
   children,
   className,
   ...props
-}: TableBodyProps) => (
-  <tbody
-    className={classNames(
+}: TableBodyProps) {
+  return (
+    <tbody
+      className={classNames(
     'TableBody',
     className,
     )}
-    {...props}
-  >
-    {children}
-  </tbody>
-);
+      {...props}
+    >
+      {children}
+    </tbody>
+  );
+}
 
 export default TableBody;

@@ -12,7 +12,7 @@ import propTypes from 'prop-types';
 // See: https://react-select.com/components#replaceable-components
 
 /* eslint-disable react/prop-types */
-const ValueContainer = ({ children, valueText, ...props }) => {
+function ValueContainer({ children, valueText, ...props }) {
   const { getValue, hasValue } = props;
   const numValues = getValue().length;
 
@@ -28,7 +28,7 @@ const ValueContainer = ({ children, valueText, ...props }) => {
       {`${numValues} ${valueText}`}
     </components.ValueContainer>
   );
-};
+}
 /* eslint-enable react/prop-types */
 
 export default ValueContainer;

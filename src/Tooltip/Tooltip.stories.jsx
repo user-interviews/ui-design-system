@@ -19,75 +19,91 @@ export default {
   },
 };
 
-export const Default = () => (
-  <Tooltip
-    placement="right"
-    text="Default Tooltip"
-  />
-);
+export function Default() {
+  return (
+    <Tooltip
+      placement="right"
+      text="Default Tooltip"
+    />
+  );
+}
 
-export const Light = () => (
-  <Tooltip
-    placement="right"
-    text="Light Tooltip"
-    theme="light"
-  />
-);
+export function Light() {
+  return (
+    <Tooltip
+      placement="right"
+      text="Light Tooltip"
+      theme="light"
+    />
+  );
+}
 
-export const WithHeader = () => (
-  <Tooltip
-    header="Default Header"
-    placement="right"
-    text="Tooltip with Header"
-  />
-);
+export function WithHeader() {
+  return (
+    <Tooltip
+      header="Default Header"
+      placement="right"
+      text="Tooltip with Header"
+    />
+  );
+}
 
-export const WithHtml = () => (
-  <Tooltip
-    header="Default Header"
-    placement="right"
-    text={(
-      <span>
-        I am html <br /> with a linebreak!
-        And a <a href="#test">link</a>!
-      </span>
+export function WithHtml() {
+  return (
+    <Tooltip
+      header="Default Header"
+      placement="right"
+      text={(
+        <span>
+          I am html <br /> with a linebreak!
+          And a <a href="#test">link</a>!
+        </span>
     )}
-  />
-);
+    />
+  );
+}
 
-export const NeutralIcon = () => (
-  <Tooltip
-    iconClasses="Tooltip__icon--neutral"
-    placement="right"
-    text="Neutral Icon"
-  />
-);
+export function NeutralIcon() {
+  return (
+    <Tooltip
+      iconClasses="Tooltip__icon--neutral"
+      placement="right"
+      text="Neutral Icon"
+    />
+  );
+}
 
-export const WarningIcon = () => (
-  <Tooltip
-    icon={faExclamationTriangle}
-    iconClasses="Tooltip__icon--warning"
-    placement="right"
-    text="Warning Icon"
-  />
-);
+export function WarningIcon() {
+  return (
+    <Tooltip
+      icon={faExclamationTriangle}
+      iconClasses="Tooltip__icon--warning"
+      placement="right"
+      text="Warning Icon"
+    />
+  );
+}
 
-export const ErrorIcon = () => (
-  <Tooltip
-    icon={faExclamationTriangle}
-    iconClasses="Tooltip__icon--error"
-    placement="right"
-    text="Error Icon"
-  />
-);
+export function ErrorIcon() {
+  return (
+    <Tooltip
+      icon={faExclamationTriangle}
+      iconClasses="Tooltip__icon--error"
+      placement="right"
+      text="Error Icon"
+    />
+  );
+}
 
-export const WithHover = () => (
-  <Tooltip
-    placement="right"
-    text="Default Tooltip"
-    withHover
-  />
-);
+export function WithHover() {
+  return (
+    <Tooltip
+      placement="right"
+      text="Default Tooltip"
+      withHover
+    />
+  );
+}
 
 const trackingEvent = {
   event: 'test tracking event',
@@ -98,10 +114,12 @@ const handleShow = () => {
   action('Track toggle open')(trackingEvent);
 };
 
-export const WithTracking = () => (
-  <Tooltip
-    placement="right"
-    text="Tracked Tooltip"
-    onShow={handleShow}
-  />
-);
+export function WithTracking() {
+  return (
+    <Tooltip
+      placement="right"
+      text="Tracked Tooltip"
+      onShow={handleShow}
+    />
+  );
+}

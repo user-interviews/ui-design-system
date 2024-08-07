@@ -8,18 +8,20 @@ type ProfileCellSkeletonProps = {
   maxWidth?: string;
 };
 
-const ProfileCellSkeleton = ({
+function ProfileCellSkeleton({
   maxWidth = '100%',
   ...props
-}: ProfileCellSkeletonProps) => (
-  <div className="ProfileCellSkeleton" {...props}>
-    <div className="ProfileCellSkeleton__avatar">
-      <LoadingSkeleton circle height={44} width={44} />
+}: ProfileCellSkeletonProps) {
+  return (
+    <div className="ProfileCellSkeleton" {...props}>
+      <div className="ProfileCellSkeleton__avatar">
+        <LoadingSkeleton circle height={44} width={44} />
+      </div>
+      <div className="ProfileCellSkeleton__info">
+        <LoadingSkeleton count={2} width={maxWidth} />
+      </div>
     </div>
-    <div className="ProfileCellSkeleton__info">
-      <LoadingSkeleton count={2} width={maxWidth} />
-    </div>
-  </div>
-);
+  );
+}
 
 export default ProfileCellSkeleton;

@@ -5,7 +5,7 @@ import Toggle from 'react-toggle';
 
 import './ToggleInput.scss';
 
-const ToggleInput = ({
+function ToggleInput({
   ariaLabel,
   ariaLabelledBy,
   disabled,
@@ -17,30 +17,32 @@ const ToggleInput = ({
   onToggle,
   // eslint-disable-next-line camelcase
   UNSAFE_className,
-}) => (
-  <label
-    className={classNames(
+}) {
+  return (
+    <label
+      className={classNames(
       'ToggleInput__label',
       UNSAFE_className,
       { 'ToggleInput__label--disabled': disabled },
     )}
-    htmlFor={id}
-  >
-    {labelLeft ? <span>{labelText}</span> : null}
-    <Toggle
-      aria-label={ariaLabel}
-      aria-labelledby={ariaLabelledBy}
-      checked={isChecked}
-      disabled={disabled}
-      icons
-      id={id}
-      name={name}
-      value={String(isChecked)}
-      onChange={onToggle}
-    />
-    {!labelLeft ? <span>{labelText}</span> : null}
-  </label>
-);
+      htmlFor={id}
+    >
+      {labelLeft ? <span>{labelText}</span> : null}
+      <Toggle
+        aria-label={ariaLabel}
+        aria-labelledby={ariaLabelledBy}
+        checked={isChecked}
+        disabled={disabled}
+        icons
+        id={id}
+        name={name}
+        value={String(isChecked)}
+        onChange={onToggle}
+      />
+      {!labelLeft ? <span>{labelText}</span> : null}
+    </label>
+  );
+}
 
 ToggleInput.propTypes = {
   /**

@@ -16,7 +16,7 @@ export type InputLabelProps = {
   tooltipText?: React.ReactNode;
 } & LabelProps;
 
-const InputLabel = ({
+function InputLabel({
   className = '',
   labelHtmlFor = '',
   text,
@@ -24,7 +24,7 @@ const InputLabel = ({
   labelHelperText = '',
   tooltipText,
   ...props
-}: InputLabelProps) => {
+}: InputLabelProps) {
   const inputLabelChildren = (
     <>
       {text}
@@ -43,6 +43,6 @@ const InputLabel = ({
       {inputLabelChildren}
     </label>
   );
-};
+}
 
 export default InputLabel;

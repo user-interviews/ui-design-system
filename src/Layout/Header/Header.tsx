@@ -12,18 +12,19 @@ type HeaderProps = {
   onToggleSidebarRequest: (...args: unknown[]) => void;
 };
 
-const Header = ({
+function Header({
   controls,
   isMobileView,
   isSidebarOpen,
   titleComponent,
   onToggleSidebarRequest,
-}: HeaderProps) => (
-  <div className="Header">
-    {titleComponent}
-    <Controls>
-      {!isMobileView && controls}
-      {isMobileView && (
+}: HeaderProps) {
+  return (
+    <div className="Header">
+      {titleComponent}
+      <Controls>
+        {!isMobileView && controls}
+        {isMobileView && (
         <button
           className="btn btn-primary btn-outline-neutral"
           type="button"
@@ -32,8 +33,9 @@ const Header = ({
           {isSidebarOpen ? 'Close' : 'Menu'}
         </button>
       )}
-    </Controls>
-  </div>
-);
+      </Controls>
+    </div>
+  );
+}
 
 export default Header;

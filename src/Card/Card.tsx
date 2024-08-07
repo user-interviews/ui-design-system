@@ -34,7 +34,7 @@ type CardProps = {
   title?: ReactNode;
 } & ElementProps;
 
-const Card = ({
+function Card({
   children,
   className,
   divided = false,
@@ -48,7 +48,7 @@ const Card = ({
   subTitle,
   title,
   ...props
-}: CardProps) => {
+}: CardProps) {
   const defaultLoadingSkeleton = (
     <>
       <LoadingSkeleton height={24} width="33%" />
@@ -76,23 +76,21 @@ const Card = ({
         },
       ),
     },
-    <>
-      {isLoading ? (loadingSkeleton || defaultLoadingSkeleton) : (
-        <>
-          {title && (
-            <div className="Card__header">
-              <h2 className="Card__title">{title}</h2>
-              {helperText && <span className="Card__helper-text">{helperText}</span>}
-            </div>
-          )}
+    (isLoading ? (loadingSkeleton || defaultLoadingSkeleton) : (
+      <>
+        {title && (
+          <div className="Card__header">
+            <h2 className="Card__title">{title}</h2>
+            {helperText && <span className="Card__helper-text">{helperText}</span>}
+          </div>
+            )}
 
-          {divided && <hr className="Card__divider" /> }
-          {subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }
-          {children}
-        </>
-      )}
-    </>,
+        {divided && <hr className="Card__divider" /> }
+        {subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }
+        {children}
+      </>
+    )),
   );
-};
+}
 
 export default Card;

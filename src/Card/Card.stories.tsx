@@ -16,91 +16,99 @@ export default {
   },
 };
 
-export const Default = () => (
-  <Card
-    divided={false}
-    helperText="(helper text)"
-    noPadding={false}
-    size="sm"
-    subTitle="Subtitle"
-    title="Default card title"
-  />
-);
-
-export const Sizes = () => (
-  <>
+export function Default() {
+  return (
     <Card
-      size={CardSizes.EXTRA_SMALL}
-      title="xs"
-    >
-      <code>CardSizes.EXTRA_SMALL</code>
-    </Card>
-    <Card
-      size={CardSizes.SMALL}
-      title="sm"
-    >
-      <code>CardSizes.SMALL</code>
-    </Card>
-    <Card
-      size={CardSizes.MEDIUM}
-      title="md"
-    >
-      <code>CardSizes.MEDIUM</code>
-    </Card>
-    <Card
-      size={CardSizes.LARGE}
-      title="lg"
-    >
-      <code>CardSizes.LARGE</code>
-    </Card>
-  </>
-);
-
-export const LoadingDefault = () => (
-  <Card
-    divided={false}
-    helperText="(helper text)"
-    isLoading
-    noPadding={false}
-    size="sm"
-    subTitle="Subtitle"
-    title="Default card title"
-  >
-    <Text>
-      Powerful panel management and recruitment automation.
-      The #1 panel software for teams that research at scale. Built for ReOps,
-      loved by researchers, trusted by participants.
-    </Text>
-  </Card>
-);
-
-export const LoadingParagraphCount = () => (
-  <Card
-    divided={false}
-    helperText="(helper text)"
-    isLoading
-    loadingSkeletonParagraphCount={2}
-    noPadding={false}
-    size="sm"
-    subTitle="Subtitle"
-    title="Default card title"
-  >
-    <Text>
-      Powerful panel management and recruitment automation.
-      The #1 panel software for teams that research at scale. Built for ReOps,
-      loved by researchers, trusted by participants.
-    </Text>
-    <Text>
-      From branding to invite rules, you’re in total control over how research gets done org-wide
-      doodle-y blue check mark with a black outline. With integrations and an API, our open
-      platform plays nice with all your favorite research tools and methods doodle-y blue check
-      mark with a black outline. SOC2 certified, SSO, 2FA, data consent, and all the privacy
-      settings you need to stay GDPR compliant.
-    </Text>
-  </Card>
+      divided={false}
+      helperText="(helper text)"
+      noPadding={false}
+      size="sm"
+      subTitle="Subtitle"
+      title="Default card title"
+    />
   );
+}
 
-export const LoadingCustom = () => {
+export function Sizes() {
+  return (
+    <>
+      <Card
+        size={CardSizes.EXTRA_SMALL}
+        title="xs"
+      >
+        <code>CardSizes.EXTRA_SMALL</code>
+      </Card>
+      <Card
+        size={CardSizes.SMALL}
+        title="sm"
+      >
+        <code>CardSizes.SMALL</code>
+      </Card>
+      <Card
+        size={CardSizes.MEDIUM}
+        title="md"
+      >
+        <code>CardSizes.MEDIUM</code>
+      </Card>
+      <Card
+        size={CardSizes.LARGE}
+        title="lg"
+      >
+        <code>CardSizes.LARGE</code>
+      </Card>
+    </>
+  );
+}
+
+export function LoadingDefault() {
+  return (
+    <Card
+      divided={false}
+      helperText="(helper text)"
+      isLoading
+      noPadding={false}
+      size="sm"
+      subTitle="Subtitle"
+      title="Default card title"
+    >
+      <Text>
+        Powerful panel management and recruitment automation.
+        The #1 panel software for teams that research at scale. Built for ReOps,
+        loved by researchers, trusted by participants.
+      </Text>
+    </Card>
+  );
+}
+
+export function LoadingParagraphCount() {
+  return (
+    <Card
+      divided={false}
+      helperText="(helper text)"
+      isLoading
+      loadingSkeletonParagraphCount={2}
+      noPadding={false}
+      size="sm"
+      subTitle="Subtitle"
+      title="Default card title"
+    >
+      <Text>
+        Powerful panel management and recruitment automation.
+        The #1 panel software for teams that research at scale. Built for ReOps,
+        loved by researchers, trusted by participants.
+      </Text>
+      <Text>
+        From branding to invite rules, you’re in total control over how research gets done org-wide
+        doodle-y blue check mark with a black outline. With integrations and an API, our open
+        platform plays nice with all your favorite research tools and methods doodle-y blue check
+        mark with a black outline. SOC2 certified, SSO, 2FA, data consent, and all the privacy
+        settings you need to stay GDPR compliant.
+      </Text>
+    </Card>
+  );
+}
+
+export function LoadingCustom() {
   const CustomLoadingSkeleton = (
     <>
       <LoadingSkeleton circle height={40} width={40} />
@@ -123,4 +131,4 @@ export const LoadingCustom = () => {
       title="Default card title"
     />
   );
-};
+}

@@ -53,7 +53,7 @@ export type RowProps = {
   xxl?: ReactBootstrapRowProps['xxl'];
 } & ReactBootstrapRowProps;
 
-export const Row = ({
+export function Row({
   as,
   children,
   className,
@@ -65,19 +65,21 @@ export const Row = ({
   xxl,
   bsPrefix = 'row',
   ...props
-}: RowProps) => (
-  <ReactBootstrapRow
-    as={as}
-    bsPrefix={bsPrefix}
-    className={className}
-    lg={lg}
-    md={md}
-    sm={sm}
-    xl={xl}
-    xs={xs}
-    xxl={xxl}
-    {...props}
-  >
-    { children }
-  </ReactBootstrapRow>
-);
+}: RowProps) {
+  return (
+    <ReactBootstrapRow
+      as={as}
+      bsPrefix={bsPrefix}
+      className={className}
+      lg={lg}
+      md={md}
+      sm={sm}
+      xl={xl}
+      xs={xs}
+      xxl={xxl}
+      {...props}
+    >
+      { children }
+    </ReactBootstrapRow>
+  );
+}

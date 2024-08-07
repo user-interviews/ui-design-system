@@ -10,18 +10,20 @@ type PopoverBodyProps = {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 } & any;
 
-const PopoverBody = ({
+function PopoverBody({
   children,
   className,
   ...props
-}: PopoverBodyProps) => (
-  <RBPopover.Body
-    className={classNames(className, 'PopoverBody')}
-    {...props}
-  >
-    { children }
-  </RBPopover.Body>
+}: PopoverBodyProps) {
+  return (
+    <RBPopover.Body
+      className={classNames(className, 'PopoverBody')}
+      {...props}
+    >
+      { children }
+    </RBPopover.Body>
   );
+}
 
 PopoverBody.defaultProps = {
   className: undefined,

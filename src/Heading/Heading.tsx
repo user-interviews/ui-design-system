@@ -38,7 +38,7 @@ const LevelToSizeMap = {
 
 const getHeadingSizeClassFromLevel = (level: number) => `Heading--${LevelToSizeMap[level]}`;
 
-const Heading = ({
+function Heading({
   children,
   className,
   level = 1,
@@ -46,7 +46,8 @@ const Heading = ({
   textAlign,
   weight = 'bold',
   ...props
-}: HeadingProps) => createElement(
+}: HeadingProps) {
+  return createElement(
     `h${level}`,
     {
       style: { textAlign },
@@ -60,7 +61,9 @@ const Heading = ({
         },
       ),
       ...props,
-    }, children,
+    },
+children,
 );
+}
 
 export default Heading;

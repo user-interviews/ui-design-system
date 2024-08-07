@@ -21,7 +21,7 @@ type AccordionItemProps = {
   variant?: string;
 };
 
-const AccordionItem = ({
+function AccordionItem({
   variant,
   as,
   borderless,
@@ -29,20 +29,22 @@ const AccordionItem = ({
   eventKey,
   // eslint-disable-next-line camelcase
   UNSAFE_className,
-}: AccordionItemProps) => (
-  <RBAccordionItem
-    as={as}
-    className={classNames(
+}: AccordionItemProps) {
+  return (
+    <RBAccordionItem
+      as={as}
+      className={classNames(
       UNSAFE_className,
       'AccordionItem',
       variant === 'info' && 'AccordionItem--info',
       borderless && 'AccordionItem--borderless',
     )}
-    eventKey={eventKey}
-  >
-    { children }
-  </RBAccordionItem>
-);
+      eventKey={eventKey}
+    >
+      { children }
+    </RBAccordionItem>
+  );
+}
 
 AccordionItem.defaultProps = {
   variant: undefined,

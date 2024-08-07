@@ -16,7 +16,7 @@ export default {
   },
 };
 
-export const Default = (args) => {
+export function Default(args) {
   const [value, setValue] = useState<number | null>(1250.99);
 
   const handleOnValueChange = (val) => {
@@ -28,19 +28,17 @@ export const Default = (args) => {
   };
 
   return (
-    <>
-      <FormGroup label="Incentive amount" labelHtmlFor="money-input-1">
-        <MoneyInput
-          value={value}
-          onValueChange={handleOnValueChange}
-          {...args}
-        />
-        <br />
-        <Heading level={1} size="md">Value: {value}</Heading>
-      </FormGroup>
-    </>
+    <FormGroup label="Incentive amount" labelHtmlFor="money-input-1">
+      <MoneyInput
+        value={value}
+        onValueChange={handleOnValueChange}
+        {...args}
+      />
+      <br />
+      <Heading level={1} size="md">Value: {value}</Heading>
+    </FormGroup>
   );
-};
+}
 
 Default.args = {
   id: 'money-input-1',
@@ -48,7 +46,7 @@ Default.args = {
   decimalsLimit: 2,
 };
 
-export const Step = (args) => {
+export function Step(args) {
   const [value, setValue] = useState<number | null>(200);
 
   const handleOnValueChange = (val) => {
@@ -60,23 +58,21 @@ export const Step = (args) => {
   };
 
   return (
-    <>
-      <FormGroup
-        helperText="Use the Up Arrow (↑) or Down Arrow (↓) to adjust the incremental value change"
-        label="Incentive amount"
-        labelHtmlFor="money-input-2"
-      >
-        <MoneyInput
-          value={value}
-          onValueChange={handleOnValueChange}
-          {...args}
-        />
-        <br />
-        <Heading level={1} size="md">Value: {value}</Heading>
-      </FormGroup>
-    </>
+    <FormGroup
+      helperText="Use the Up Arrow (↑) or Down Arrow (↓) to adjust the incremental value change"
+      label="Incentive amount"
+      labelHtmlFor="money-input-2"
+    >
+      <MoneyInput
+        value={value}
+        onValueChange={handleOnValueChange}
+        {...args}
+      />
+      <br />
+      <Heading level={1} size="md">Value: {value}</Heading>
+    </FormGroup>
   );
-};
+}
 
 Step.args = {
   decimalsLimit: 2,
@@ -85,7 +81,7 @@ Step.args = {
   step: 1,
 };
 
-export const Prefix = (args) => {
+export function Prefix(args) {
   const [value, setValue] = useState<number | null>(500);
 
   const handleOnValueChange = (val) => {
@@ -97,23 +93,21 @@ export const Prefix = (args) => {
   };
 
   return (
-    <>
-      <FormGroup
-        helperText="Change the prefix"
-        label="Incentive amount"
-        labelHtmlFor="money-input-3"
-      >
-        <MoneyInput
-          value={value}
-          onValueChange={handleOnValueChange}
-          {...args}
-        />
-        <br />
-        <Heading level={1} size="md">Value: {value}</Heading>
-      </FormGroup>
-    </>
+    <FormGroup
+      helperText="Change the prefix"
+      label="Incentive amount"
+      labelHtmlFor="money-input-3"
+    >
+      <MoneyInput
+        value={value}
+        onValueChange={handleOnValueChange}
+        {...args}
+      />
+      <br />
+      <Heading level={1} size="md">Value: {value}</Heading>
+    </FormGroup>
   );
-};
+}
 
 Prefix.args = {
   decimalsLimit: 2,

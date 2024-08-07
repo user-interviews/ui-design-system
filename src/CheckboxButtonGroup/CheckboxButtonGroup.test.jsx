@@ -5,14 +5,14 @@ import PropTypes from 'prop-types';
 import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CheckboxButton from 'src/CheckboxButton';
 
-const CheckboxButtonGroupComponent = ({ children, defaultValues }) => {
+function CheckboxButtonGroupComponent({ children, defaultValues }) {
   const [value, setValue] = useState(defaultValues);
   return (
     <CheckboxButtonGroup id="checkbox-question" value={value} onChange={setValue}>
       {children}
     </CheckboxButtonGroup>
   );
-};
+}
 
 CheckboxButtonGroupComponent.propTypes = {
   defaultValues: PropTypes.array.isRequired,

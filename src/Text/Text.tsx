@@ -19,7 +19,7 @@ type TextProps = ElementProps & {
   weight?: typeof TEXT_PROPS['weight'][keyof typeof TEXT_PROPS['weight']];
 };
 
-const Text = ({
+function Text({
   as = 'p',
   children,
   className,
@@ -27,7 +27,8 @@ const Text = ({
   textAlign,
   weight = 'regular',
   ...props
-}: TextProps) => createElement(
+}: TextProps) {
+  return createElement(
     as,
     {
       style: { textAlign },
@@ -40,7 +41,9 @@ const Text = ({
         },
       ),
       ...props,
-    }, children,
+    },
+children,
 );
+}
 
 export default Text;

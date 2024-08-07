@@ -6,12 +6,14 @@ export type SidebarNavLinksProps = {
   children: React.ReactNode;
 };
 
-const SidebarNavLinks = ({
+function SidebarNavLinks({
   children,
-}: SidebarNavLinksProps) => (
-  <ul className="Layout__sidebar-nav__links">
-    {children}
-  </ul>
-);
+}: SidebarNavLinksProps) {
+  return (
+    <ul className="Layout__sidebar-nav__links">
+      {children}
+    </ul>
+  );
+}
 
 export default SidebarNavLinks;

@@ -23,7 +23,7 @@ const options = [
 ];
 
 async function loadOptions(search) {
-  await new Promise((resolve) => setTimeout(resolve, 2000));
+  await new Promise((resolve) => { setTimeout(resolve, 2000); });
 
   if (!search || !search.length) {
     return options;
@@ -32,22 +32,24 @@ async function loadOptions(search) {
   return options.filter(({ label }) => label.toLowerCase().includes(search.toLowerCase()));
 }
 
-export const Default = () => (
-  <FormGroup
-    label="Default AsyncSelect"
-    labelHtmlFor="default-async-select"
-  >
-    <AsyncSelect
-      getOptionLabel={({ label }) => label}
-      getOptionValue={({ value }) => value}
-      inputId="default-async-select"
-      loadOptions={loadOptions}
-      noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
-    />
-  </FormGroup>
-);
+export function Default() {
+  return (
+    <FormGroup
+      label="Default AsyncSelect"
+      labelHtmlFor="default-async-select"
+    >
+      <AsyncSelect
+        getOptionLabel={({ label }) => label}
+        getOptionValue={({ value }) => value}
+        inputId="default-async-select"
+        loadOptions={loadOptions}
+        noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+      />
+    </FormGroup>
+  );
+}
 
-export const InModal = () => {
+export function InModal() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleRequestClose = () => setIsOpen(false);
@@ -91,24 +93,26 @@ export const InModal = () => {
       </Modal>
     </>
   );
-};
+}
 
-export const MultiSelect = () => (
-  <FormGroup
-    label="Async MultiSelect"
-    labelHtmlFor="async-multiselect"
-  >
-    <AsyncSelect
-      cacheOptions
-      closeMenuOnSelect={false}
-      components={{ Option }}
-      getOptionLabel={({ label }) => label}
-      getOptionValue={({ value }) => value}
-      inputId="async-multiselect"
-      isClearable
-      isMulti
-      loadOptions={loadOptions}
-      noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
-    />
-  </FormGroup>
-);
+export function MultiSelect() {
+  return (
+    <FormGroup
+      label="Async MultiSelect"
+      labelHtmlFor="async-multiselect"
+    >
+      <AsyncSelect
+        cacheOptions
+        closeMenuOnSelect={false}
+        components={{ Option }}
+        getOptionLabel={({ label }) => label}
+        getOptionValue={({ value }) => value}
+        inputId="async-multiselect"
+        isClearable
+        isMulti
+        loadOptions={loadOptions}
+        noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+      />
+    </FormGroup>
+  );
+}

@@ -13,14 +13,18 @@ export default {
   },
 };
 
-export const Default = () => (
-  <Popper text="Default Popper" visible>
-    <p>reference element</p>
-  </Popper>
-);
+export function Default() {
+  return (
+    <Popper text="Default Popper" visible>
+      <p>reference element</p>
+    </Popper>
+  );
+}
 
-export const Dark = () => (
-  <Popper dark text="Dark Popper" visible>
-    <p>reference element</p>
-  </Popper>
-);
+export function Dark() {
+  return (
+    <Popper dark text="Dark Popper" visible>
+      <p>reference element</p>
+    </Popper>
+  );
+}
