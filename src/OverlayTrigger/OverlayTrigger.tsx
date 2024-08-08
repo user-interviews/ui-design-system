@@ -65,7 +65,7 @@ type OverlayTriggerProps = RBOverlayTriggerProps & {
   onToggle?: (...args: unknown[]) => unknown;
 };
 
-export const OverlayTrigger = ({
+export function OverlayTrigger({
   children,
   defaultShow,
   delay,
@@ -75,17 +75,19 @@ export const OverlayTrigger = ({
   show,
   trigger,
   ...props
-}: OverlayTriggerProps) => (
-  <RBOverlayTrigger
-    defaultShow={defaultShow}
-    delay={delay}
-    overlay={overlay}
-    placement={placement}
-    show={show}
-    trigger={trigger}
-    onToggle={onToggle}
-    {...props}
-  >
-    {children}
-  </RBOverlayTrigger>
-);
+}: OverlayTriggerProps) {
+  return (
+    <RBOverlayTrigger
+      defaultShow={defaultShow}
+      delay={delay}
+      overlay={overlay}
+      placement={placement}
+      show={show}
+      trigger={trigger}
+      onToggle={onToggle}
+      {...props}
+    >
+      {children}
+    </RBOverlayTrigger>
+  );
+}

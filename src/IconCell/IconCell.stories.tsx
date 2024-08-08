@@ -17,12 +17,14 @@ export default {
   },
 };
 
-export const Default = () => (
-  <div>
-    <IconCell icon={faGlobe} />
-    <IconCell icon={faMailbox} />
-    <IconCell icon={faUser} />
-    <IconCell icon={faPaperPlane} />
-    <IconCell icon={faStar} />
-  </div>
-);
+export function Default() {
+  return (
+    <div>
+      <IconCell icon={faGlobe} />
+      <IconCell icon={faMailbox} />
+      <IconCell icon={faUser} />
+      <IconCell icon={faPaperPlane} />
+      <IconCell icon={faStar} />
+    </div>
+  );
+}

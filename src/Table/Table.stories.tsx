@@ -58,260 +58,274 @@ const incentiveData = [
 ];
 /* eslint-enable object-curly-newline */
 
-export const Default = () => (
-  <Table>
-    <TableHead>
-      <TableRow>
-        <TableCell header />
-        <TableCell header>Status</TableCell>
-        <TableCell header>Email</TableCell>
-        <TableCell header>First name</TableCell>
-        <TableCell header>Last name</TableCell>
-        <TableCell header>Phone number</TableCell>
-        <TableCell header>Date added</TableCell>
-        <TableCell header>Last invited</TableCell>
-        <TableCell header>Last applied</TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {data.map(((row) => (
-        <TableRow key={row.id}>
-          <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
-          <TableCell>{row.status}</TableCell>
-          <TableCell>{row.email}</TableCell>
-          <TableCell>{row.firstName}</TableCell>
-          <TableCell>{row.lastName}</TableCell>
-          <TableCell>{row.phoneNumber}</TableCell>
-          <TableCell>{row.dateAdded}</TableCell>
-          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+export function Default() {
+  return (
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell header />
+          <TableCell header>Status</TableCell>
+          <TableCell header>Email</TableCell>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
         </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map(((row) => (
+          <TableRow key={row.id}>
+            <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
+            <TableCell>{row.status}</TableCell>
+            <TableCell>{row.email}</TableCell>
+            <TableCell>{row.firstName}</TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell>{row.phoneNumber}</TableCell>
+            <TableCell>{row.dateAdded}</TableCell>
+            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+          </TableRow>
       )))}
-    </TableBody>
-  </Table>
-);
+      </TableBody>
+    </Table>
+  );
+}
 
-export const LoadingDefault = () => (
-  <Table isLoading>
-    <TableHead>
-      <TableRow>
-        <TableCell header />
-        <TableCell header>Status</TableCell>
-        <TableCell header>Email</TableCell>
-        <TableCell header>First name</TableCell>
-        <TableCell header>Last name</TableCell>
-        <TableCell header>Phone number</TableCell>
-        <TableCell header>Date added</TableCell>
-        <TableCell header>Last invited</TableCell>
-        <TableCell header>Last applied</TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {data.map(((row) => (
-        <TableRow key={row.id}>
-          <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
-          <TableCell>{row.status}</TableCell>
-          <TableCell>{row.email}</TableCell>
-          <TableCell>{row.firstName}</TableCell>
-          <TableCell>{row.lastName}</TableCell>
-          <TableCell>{row.phoneNumber}</TableCell>
-          <TableCell>{row.dateAdded}</TableCell>
-          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+export function LoadingDefault() {
+  return (
+    <Table isLoading>
+      <TableHead>
+        <TableRow>
+          <TableCell header />
+          <TableCell header>Status</TableCell>
+          <TableCell header>Email</TableCell>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
         </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map(((row) => (
+          <TableRow key={row.id}>
+            <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
+            <TableCell>{row.status}</TableCell>
+            <TableCell>{row.email}</TableCell>
+            <TableCell>{row.firstName}</TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell>{row.phoneNumber}</TableCell>
+            <TableCell>{row.dateAdded}</TableCell>
+            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+          </TableRow>
       )))}
-    </TableBody>
-  </Table>
-);
+      </TableBody>
+    </Table>
+  );
+}
 
-export const LoadingCustomColumns = () => (
-  <Table isLoading loadingColumns={[75, 100, 250, 250, 100]} loadingRows={4}>
-    <TableHead>
-      <TableRow>
-        <TableCell header />
-        <TableCell header>Status</TableCell>
-        <TableCell header>Email</TableCell>
-        <TableCell header>First name</TableCell>
-        <TableCell header>Last name</TableCell>
-        <TableCell header>Phone number</TableCell>
-        <TableCell header>Date added</TableCell>
-        <TableCell header>Last invited</TableCell>
-        <TableCell header>Last applied</TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {data.map(((row) => (
-        <TableRow key={row.id}>
-          <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
-          <TableCell>{row.status}</TableCell>
-          <TableCell>{row.email}</TableCell>
-          <TableCell>{row.firstName}</TableCell>
-          <TableCell>{row.lastName}</TableCell>
-          <TableCell>{row.phoneNumber}</TableCell>
-          <TableCell>{row.dateAdded}</TableCell>
-          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+export function LoadingCustomColumns() {
+  return (
+    <Table isLoading loadingColumns={[75, 100, 250, 250, 100]} loadingRows={4}>
+      <TableHead>
+        <TableRow>
+          <TableCell header />
+          <TableCell header>Status</TableCell>
+          <TableCell header>Email</TableCell>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
         </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map(((row) => (
+          <TableRow key={row.id}>
+            <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
+            <TableCell>{row.status}</TableCell>
+            <TableCell>{row.email}</TableCell>
+            <TableCell>{row.firstName}</TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell>{row.phoneNumber}</TableCell>
+            <TableCell>{row.dateAdded}</TableCell>
+            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+          </TableRow>
       )))}
-    </TableBody>
-  </Table>
-);
+      </TableBody>
+    </Table>
+  );
+}
 
-export const TableNoHoverState = () => (
-  <Table>
-    <TableHead>
-      <TableRow>
-        <TableCell header />
-        <TableCell header>Status</TableCell>
-        <TableCell header>Email</TableCell>
-        <TableCell header>First name</TableCell>
-        <TableCell header>Last name</TableCell>
-        <TableCell header>Phone number</TableCell>
-        <TableCell header>Date added</TableCell>
-        <TableCell header>Last invited</TableCell>
-        <TableCell header>Last applied</TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {data.map(((row) => (
-        <TableRow key={row.id} removeHover>
-          <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
-          <TableCell>{row.status}</TableCell>
-          <TableCell>{row.email}</TableCell>
-          <TableCell>{row.firstName}</TableCell>
-          <TableCell>{row.lastName}</TableCell>
-          <TableCell>{row.phoneNumber}</TableCell>
-          <TableCell>{row.dateAdded}</TableCell>
-          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+export function TableNoHoverState() {
+  return (
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell header />
+          <TableCell header>Status</TableCell>
+          <TableCell header>Email</TableCell>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
         </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map(((row) => (
+          <TableRow key={row.id} removeHover>
+            <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
+            <TableCell>{row.status}</TableCell>
+            <TableCell>{row.email}</TableCell>
+            <TableCell>{row.firstName}</TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell>{row.phoneNumber}</TableCell>
+            <TableCell>{row.dateAdded}</TableCell>
+            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+          </TableRow>
       )))}
-    </TableBody>
-  </Table>
-);
+      </TableBody>
+    </Table>
+  );
+}
 
-export const TableWithFixedColumnWidths = () => (
-  <Table style={{ tableLayout: 'fixed' }}>
-    <TableHead>
-      <TableRow>
-        <TableCell header>Email</TableCell>
-        <TableCell header>First name</TableCell>
-        <TableCell header>Last name</TableCell>
-        <TableCell header>Phone number</TableCell>
-        <TableCell header>Date added</TableCell>
-        <TableCell header>Last invited</TableCell>
-        <TableCell header>Last applied</TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {data.map(((row) => (
-        <TableRow key={row.id}>
-          {/* TODO: Wrap this TableCell in a Popover to show overflow text
+export function TableWithFixedColumnWidths() {
+  return (
+    <Table style={{ tableLayout: 'fixed' }}>
+      <TableHead>
+        <TableRow>
+          <TableCell header>Email</TableCell>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map(((row) => (
+          <TableRow key={row.id}>
+            {/* TODO: Wrap this TableCell in a Popover to show overflow text
               once that component is finished */}
-          <TableCell maxWidth={192}>{row.email} (with a max-width)</TableCell>
-          <TableCell minWidth={320}>{row.firstName} (with a min-width)</TableCell>
-          <TableCell>{row.lastName}</TableCell>
-          <TableCell>{row.phoneNumber}</TableCell>
-          <TableCell>{row.dateAdded}</TableCell>
-          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
-        </TableRow>
+            <TableCell maxWidth={192}>{row.email} (with a max-width)</TableCell>
+            <TableCell minWidth={320}>{row.firstName} (with a min-width)</TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell>{row.phoneNumber}</TableCell>
+            <TableCell>{row.dateAdded}</TableCell>
+            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+          </TableRow>
       )))}
-    </TableBody>
-  </Table>
-);
+      </TableBody>
+    </Table>
+  );
+}
 
-export const TableOnCard = () => (
-  <Card
-    divided
-    size="sm"
-    subTitle="Manage a set of templates that can be applied to a project’s automated emails."
-    title="Email Template Sets"
-  >
-    <div
-      id="Some table container"
-      style={{
+export function TableOnCard() {
+  return (
+    <Card
+      divided
+      size="sm"
+      subTitle="Manage a set of templates that can be applied to a project’s automated emails."
+      title="Email Template Sets"
+    >
+      <div
+        id="Some table container"
+        style={{
         display: 'block',
         maxWidth: 'fit-content',
         overflowX: 'auto',
         overflowY: 'auto',
         whiteSpace: 'nowrap',
     }}
-    >
-      <Table>
-        <TableHead>
-          <TableRow>
-            <TableCell header>Email</TableCell>
-            <TableCell header>First name</TableCell>
-            <TableCell header>Last name</TableCell>
-            <TableCell header>Phone number</TableCell>
-            <TableCell header>Date added</TableCell>
-            <TableCell header>Last invited</TableCell>
-            <TableCell header>Last applied</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {data.map(((row) => (
-            <TableRow key={row.id}>
-              <TableCell>{row.email}</TableCell>
-              <TableCell>{row.firstName}</TableCell>
-              <TableCell>{row.lastName}</TableCell>
-              <TableCell>{row.phoneNumber}</TableCell>
-              <TableCell>{row.dateAdded}</TableCell>
-              <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-              <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+      >
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell header>Email</TableCell>
+              <TableCell header>First name</TableCell>
+              <TableCell header>Last name</TableCell>
+              <TableCell header>Phone number</TableCell>
+              <TableCell header>Date added</TableCell>
+              <TableCell header>Last invited</TableCell>
+              <TableCell header>Last applied</TableCell>
             </TableRow>
+          </TableHead>
+          <TableBody>
+            {data.map(((row) => (
+              <TableRow key={row.id}>
+                <TableCell>{row.email}</TableCell>
+                <TableCell>{row.firstName}</TableCell>
+                <TableCell>{row.lastName}</TableCell>
+                <TableCell>{row.phoneNumber}</TableCell>
+                <TableCell>{row.dateAdded}</TableCell>
+                <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+                <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+              </TableRow>
         )))}
-        </TableBody>
-      </Table>
-    </div>
-  </Card>
-);
+          </TableBody>
+        </Table>
+      </div>
+    </Card>
+  );
+}
 
-export const TableOnCardNoPadding = () => (
-  <Card
-    noPadding
-    size="sm"
-  >
-    <div
-      id="Some table container"
-      style={{
+export function TableOnCardNoPadding() {
+  return (
+    <Card
+      noPadding
+      size="sm"
+    >
+      <div
+        id="Some table container"
+        style={{
         display: 'block',
         maxWidth: 'fit-content',
         overflowX: 'auto',
         overflowY: 'auto',
         whiteSpace: 'nowrap',
     }}
-    >
-      <Table>
-        <TableHead>
-          <TableRow>
-            <TableCell header>Email</TableCell>
-            <TableCell header>First name</TableCell>
-            <TableCell header>Last name</TableCell>
-            <TableCell header>Phone number</TableCell>
-            <TableCell header>Date added</TableCell>
-            <TableCell header>Last invited</TableCell>
-            <TableCell header>Last applied</TableCell>
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          {data.map(((row) => (
-            <TableRow key={row.id}>
-              <TableCell>{row.email}</TableCell>
-              <TableCell>{row.firstName}</TableCell>
-              <TableCell>{row.lastName}</TableCell>
-              <TableCell>{row.phoneNumber}</TableCell>
-              <TableCell>{row.dateAdded}</TableCell>
-              <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-              <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+      >
+        <Table>
+          <TableHead>
+            <TableRow>
+              <TableCell header>Email</TableCell>
+              <TableCell header>First name</TableCell>
+              <TableCell header>Last name</TableCell>
+              <TableCell header>Phone number</TableCell>
+              <TableCell header>Date added</TableCell>
+              <TableCell header>Last invited</TableCell>
+              <TableCell header>Last applied</TableCell>
             </TableRow>
+          </TableHead>
+          <TableBody>
+            {data.map(((row) => (
+              <TableRow key={row.id}>
+                <TableCell>{row.email}</TableCell>
+                <TableCell>{row.firstName}</TableCell>
+                <TableCell>{row.lastName}</TableCell>
+                <TableCell>{row.phoneNumber}</TableCell>
+                <TableCell>{row.dateAdded}</TableCell>
+                <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+                <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+              </TableRow>
         )))}
-        </TableBody>
-      </Table>
-    </div>
-  </Card>
-);
+          </TableBody>
+        </Table>
+      </div>
+    </Card>
+  );
+}
 
 // TODO: placeholder buttons until the Button component is implemented into the DS
 const kebabButton = () => <button aria-label="kebab button" style={{ background: 'none', border: 'none', color: '#337AB7' }} type="button"><FontAwesomeIcon icon={faEllipsisV} /></button>;
@@ -319,72 +333,78 @@ const editButton = () => (
   <Button leadingIcon={faFileAlt} variant="outline-primary">Edit</Button>
 );
 /* eslint-disable react/prop-types */
-const PinButton = ({ isPinActive, ...props }) => <button style={{ background: 'none', border: 'none', color: isPinActive ? '#337AB7' : '#A1A1A1' }} type="button" {...props}><FontAwesomeIcon icon={faThumbtack} /></button>;
+function PinButton({ isPinActive, ...props }) {
+  return <button style={{ background: 'none', border: 'none', color: isPinActive ? '#337AB7' : '#A1A1A1' }} type="button" {...props}><FontAwesomeIcon icon={faThumbtack} /></button>;
+}
 /* eslint-enable react/prop-types */
 
-export const TableWithSingleActionColumn = () => (
-  <Table>
-    <TableHead>
-      <TableRow>
-        <TableCell header>Email</TableCell>
-        <TableCell header>First name</TableCell>
-        <TableCell header>Last name</TableCell>
-        <TableCell header>Phone number</TableCell>
-        <TableCell header>Date added</TableCell>
-        <TableCell header>Last invited</TableCell>
-        <TableCell header>Last applied</TableCell>
-        <TableCell header>Edit</TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {data.map(((row) => (
-        <TableRow key={row.id}>
-          <TableCell>{row.email}</TableCell>
-          <TableCell>{row.firstName}</TableCell>
-          <TableCell>{row.lastName}</TableCell>
-          <TableCell>{row.phoneNumber}</TableCell>
-          <TableCell>{row.dateAdded}</TableCell>
-          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
-          <TableCell>{editButton()}</TableCell>
+export function TableWithSingleActionColumn() {
+  return (
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell header>Email</TableCell>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
+          <TableCell header>Edit</TableCell>
         </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map(((row) => (
+          <TableRow key={row.id}>
+            <TableCell>{row.email}</TableCell>
+            <TableCell>{row.firstName}</TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell>{row.phoneNumber}</TableCell>
+            <TableCell>{row.dateAdded}</TableCell>
+            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+            <TableCell>{editButton()}</TableCell>
+          </TableRow>
       )))}
-    </TableBody>
-  </Table>
-);
+      </TableBody>
+    </Table>
+  );
+}
 
-export const TableWithMultipleActionColumn = () => (
-  <Table>
-    <TableHead>
-      <TableRow>
-        <TableCell header>Email</TableCell>
-        <TableCell header>First name</TableCell>
-        <TableCell header>Last name</TableCell>
-        <TableCell header>Phone number</TableCell>
-        <TableCell header>Date added</TableCell>
-        <TableCell header>Last invited</TableCell>
-        <TableCell header>Last applied</TableCell>
-        <TableCell header>Edit</TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {data.map(((row) => (
-        <TableRow key={row.id}>
-          <TableCell>{row.email}</TableCell>
-          <TableCell>{row.firstName}</TableCell>
-          <TableCell>{row.lastName}</TableCell>
-          <TableCell>{row.phoneNumber}</TableCell>
-          <TableCell>{row.dateAdded}</TableCell>
-          <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-          <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
-          <TableCell>{kebabButton()}</TableCell>
+export function TableWithMultipleActionColumn() {
+  return (
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell header>Email</TableCell>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Phone number</TableCell>
+          <TableCell header>Date added</TableCell>
+          <TableCell header>Last invited</TableCell>
+          <TableCell header>Last applied</TableCell>
+          <TableCell header>Edit</TableCell>
         </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map(((row) => (
+          <TableRow key={row.id}>
+            <TableCell>{row.email}</TableCell>
+            <TableCell>{row.firstName}</TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell>{row.phoneNumber}</TableCell>
+            <TableCell>{row.dateAdded}</TableCell>
+            <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
+            <TableCell>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+            <TableCell>{kebabButton()}</TableCell>
+          </TableRow>
       )))}
-    </TableBody>
-  </Table>
-);
+      </TableBody>
+    </Table>
+  );
+}
 
-export const TableWithStickyColumnAndHeader = () => {
+export function TableWithStickyColumnAndHeader() {
   const [isStickyColumn, setIsStickyColumn] = useState(true);
 
   const handlePinClick = () => {
@@ -435,10 +455,10 @@ export const TableWithStickyColumnAndHeader = () => {
         )))}
       </TableBody>
     </Table>
-   );
-};
+  );
+}
 
-export const TableWithMultipleStickyColumnsAndHeader = () => {
+export function TableWithMultipleStickyColumnsAndHeader() {
   const [isStickyColumn, setIsStickyColumn] = useState(true);
 
   const handlePinClick = () => {
@@ -522,44 +542,46 @@ export const TableWithMultipleStickyColumnsAndHeader = () => {
         )))}
       </TableBody>
     </Table>
-   );
-};
-
-export const TableWithFooter = () => (
-  <Table>
-    <TableHead>
-      <TableRow stickyRow>
-        <TableCell header>Participant</TableCell>
-        <TableCell header>Incentive</TableCell>
-        <TableCell header>Processing fee</TableCell>
-        <TableCell header>Recruit fee</TableCell>
-        <TableCell header>Amount</TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {incentiveData.map(((row) => (
-        <TableRow key={row.id}>
-          <TableCell>{row.participant}</TableCell>
-          <TableCell>{row.incentive}</TableCell>
-          <TableCell>{row.processingFee}</TableCell>
-          <TableCell>{row.recruitFee}</TableCell>
-          <TableCell>{row.amount}</TableCell>
-        </TableRow>
-        )))}
-    </TableBody>
-    <TableFoot stickyRow>
-      <TableRow>
-        <TableCell header>Total</TableCell>
-        <TableCell header>$1030.00</TableCell>
-        <TableCell header>$0.00</TableCell>
-        <TableCell header>$0.00</TableCell>
-        <TableCell header>$1030.00</TableCell>
-      </TableRow>
-    </TableFoot>
-  </Table>
   );
+}
 
-export const TableWithMultipleSelect = () => {
+export function TableWithFooter() {
+  return (
+    <Table>
+      <TableHead>
+        <TableRow stickyRow>
+          <TableCell header>Participant</TableCell>
+          <TableCell header>Incentive</TableCell>
+          <TableCell header>Processing fee</TableCell>
+          <TableCell header>Recruit fee</TableCell>
+          <TableCell header>Amount</TableCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {incentiveData.map(((row) => (
+          <TableRow key={row.id}>
+            <TableCell>{row.participant}</TableCell>
+            <TableCell>{row.incentive}</TableCell>
+            <TableCell>{row.processingFee}</TableCell>
+            <TableCell>{row.recruitFee}</TableCell>
+            <TableCell>{row.amount}</TableCell>
+          </TableRow>
+        )))}
+      </TableBody>
+      <TableFoot stickyRow>
+        <TableRow>
+          <TableCell header>Total</TableCell>
+          <TableCell header>$1030.00</TableCell>
+          <TableCell header>$0.00</TableCell>
+          <TableCell header>$0.00</TableCell>
+          <TableCell header>$1030.00</TableCell>
+        </TableRow>
+      </TableFoot>
+    </Table>
+  );
+}
+
+export function TableWithMultipleSelect() {
   const [selectedRows, setSelectedRows] = useState<number[]>([]);
   const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] = useState(false);
 
@@ -626,9 +648,9 @@ export const TableWithMultipleSelect = () => {
       </TableBody>
     </Table>
   );
-};
+}
 
-export const TableWithMultipleSelectAndMultipleStickyColumnsAndHeader = () => {
+export function TableWithMultipleSelectAndMultipleStickyColumnsAndHeader() {
   const [selectedRows, setSelectedRows] = useState<number[]>([]);
   const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] = useState(false);
 
@@ -718,55 +740,59 @@ export const TableWithMultipleSelectAndMultipleStickyColumnsAndHeader = () => {
       </TableBody>
     </Table>
   );
-};
+}
 
-export const TableWithSorting = () => (
-  <Table>
-    <TableHead>
-      <TableRow>
-        <TableCell header>First name</TableCell>
-        <TableCell header>Last name</TableCell>
-        <TableCell header>Incentives earned <TableSortLabel /></TableCell>
-        <TableCell header>Unsubscribed <TableSortLabel /></TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {sortableData.map(((row) => (
-        <TableRow key={row.id}>
-          <TableCell>{row.firstName}</TableCell>
-          <TableCell>{row.lastName}</TableCell>
-          <TableCell>{row.incentivesEarned}</TableCell>
-          <TableCell>{row.unsubscribed ? 'True' : 'False'}</TableCell>
+export function TableWithSorting() {
+  return (
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Incentives earned <TableSortLabel /></TableCell>
+          <TableCell header>Unsubscribed <TableSortLabel /></TableCell>
         </TableRow>
+      </TableHead>
+      <TableBody>
+        {sortableData.map(((row) => (
+          <TableRow key={row.id}>
+            <TableCell>{row.firstName}</TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell>{row.incentivesEarned}</TableCell>
+            <TableCell>{row.unsubscribed ? 'True' : 'False'}</TableCell>
+          </TableRow>
       )))}
-    </TableBody>
-  </Table>
-);
+      </TableBody>
+    </Table>
+  );
+}
 
-export const TableWithCellRightAlignment = () => (
-  <Table>
-    <TableHead>
-      <TableRow>
-        <TableCell header>First name</TableCell>
-        <TableCell header>Last name</TableCell>
-        <TableCell header>Incentives earned</TableCell>
-        <TableCell header>Unsubscribed</TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {sortableData.map(((row) => (
-        <TableRow key={row.id}>
-          <TableCell>{row.firstName}</TableCell>
-          <TableCell>{row.lastName}</TableCell>
-          <TableCell alignRight>{row.incentivesEarned}</TableCell>
-          <TableCell>{row.unsubscribed ? 'True' : 'False'}</TableCell>
+export function TableWithCellRightAlignment() {
+  return (
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell header>First name</TableCell>
+          <TableCell header>Last name</TableCell>
+          <TableCell header>Incentives earned</TableCell>
+          <TableCell header>Unsubscribed</TableCell>
         </TableRow>
+      </TableHead>
+      <TableBody>
+        {sortableData.map(((row) => (
+          <TableRow key={row.id}>
+            <TableCell>{row.firstName}</TableCell>
+            <TableCell>{row.lastName}</TableCell>
+            <TableCell alignRight>{row.incentivesEarned}</TableCell>
+            <TableCell>{row.unsubscribed ? 'True' : 'False'}</TableCell>
+          </TableRow>
       )))}
-    </TableBody>
-  </Table>
-);
+      </TableBody>
+    </Table>
+  );
+}
 
-export const TableWithCompactOption = () => {
+export function TableWithCompactOption() {
   const [isCompact, setIsCompact] = useState(true);
   const handleIsCompactClick = () => {
     setIsCompact((prev) => !prev);
@@ -806,4 +832,4 @@ export const TableWithCompactOption = () => {
       </Table>
     </div>
   );
-};
+}

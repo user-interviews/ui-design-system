@@ -7,19 +7,23 @@ export default {
   component: CopyToClipboardButton,
 };
 
-export const Default = () => (
-  <CopyToClipboardButton
-    copyText="Copy me!"
-    displayText="Click to copy"
-    trackingEvent="copy-text"
-  />
-);
+export function Default() {
+  return (
+    <CopyToClipboardButton
+      copyText="Copy me!"
+      displayText="Click to copy"
+      trackingEvent="copy-text"
+    />
+  );
+}
 
-export const Secondary = () => (
-  <CopyToClipboardButton
-    copyText="Copy me!"
-    displayText="Click to copy"
-    trackingEvent="copy-text"
-    variant="secondary"
-  />
-);
+export function Secondary() {
+  return (
+    <CopyToClipboardButton
+      copyText="Copy me!"
+      displayText="Click to copy"
+      trackingEvent="copy-text"
+      variant="secondary"
+    />
+  );
+}

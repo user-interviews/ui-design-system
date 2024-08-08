@@ -12,11 +12,11 @@ type WithToastProps = {
   >
 };
 
-const WithToast = ({
+function WithToast({
   WrappedComponent,
   autoDismiss,
   ...props
-}: WithToastProps) => {
+}: WithToastProps) {
   const { messages, setMessage, dismissMessage } = useToast();
 
   return (
@@ -32,7 +32,7 @@ const WithToast = ({
       />
     </>
   );
-};
+}
 
 WithToast.defaultProps = {
   autoDismiss: true,

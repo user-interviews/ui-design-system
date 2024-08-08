@@ -12,7 +12,7 @@ type CardStackProps = {
   children: React.ReactNode;
 };
 
-const CardStack = ({
+function CardStack({
   children,
 
   // eslint-disable-next-line camelcase
@@ -20,18 +20,20 @@ const CardStack = ({
 
   size,
   ...props
-}: CardStackProps) => (
-  <div
-    className={classNames(
+}: CardStackProps) {
+  return (
+    <div
+      className={classNames(
       UNSAFE_className,
       'CardStack',
       { [`CardStack--${size}`]: size },
     )}
-    {...props}
-  >
-    {children}
-  </div>
-);
+      {...props}
+    >
+      {children}
+    </div>
+  );
+}
 
 CardStack.defaultProps = {
   size: undefined,

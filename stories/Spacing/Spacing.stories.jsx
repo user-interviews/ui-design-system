@@ -25,28 +25,30 @@ const data = [
   { id: 12, token: 'synth-spacing-12', px: '48' },
 ];
 
-export const Spacing = () => (
-  <Table>
-    <TableHead>
-      <TableRow>
-        <TableCell header>Token</TableCell>
-        <TableCell header>px</TableCell>
-        <TableCell header>Example</TableCell>
-      </TableRow>
-    </TableHead>
-    <TableBody>
-      {data.map(((row) => (
-        <TableRow key={row.id}>
-          <TableCell><code>${row.token}</code></TableCell>
-          <TableCell>{row.px}</TableCell>
-          <TableCell>
-            <div className={classNames('spacing-example', row.token)} />
-          </TableCell>
+export function Spacing() {
+  return (
+    <Table>
+      <TableHead>
+        <TableRow>
+          <TableCell header>Token</TableCell>
+          <TableCell header>px</TableCell>
+          <TableCell header>Example</TableCell>
         </TableRow>
+      </TableHead>
+      <TableBody>
+        {data.map(((row) => (
+          <TableRow key={row.id}>
+            <TableCell><code>${row.token}</code></TableCell>
+            <TableCell>{row.px}</TableCell>
+            <TableCell>
+              <div className={classNames('spacing-example', row.token)} />
+            </TableCell>
+          </TableRow>
       )))}
-    </TableBody>
-  </Table>
-);
+      </TableBody>
+    </Table>
+  );
+}
 
 export default {
   title: 'Foundations/Spacing',

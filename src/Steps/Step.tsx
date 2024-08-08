@@ -14,25 +14,27 @@ type StepProps = DivProps & {
   text?: string | React.ReactNode;
 };
 
-const Step = ({
+function Step({
   className,
   circleText,
   text,
   ...props
-}: StepProps) => (
-  <div
-    className={classNames('Step', className, `Step--${circleText}`)}
-    {...props}
-  >
-    <div className="Step__circle">
-      <span className="Step__circle__number">
-        {circleText}
+}: StepProps) {
+  return (
+    <div
+      className={classNames('Step', className, `Step--${circleText}`)}
+      {...props}
+    >
+      <div className="Step__circle">
+        <span className="Step__circle__number">
+          {circleText}
+        </span>
+      </div>
+      <span className="Step__text-container">
+        <span className="Step__text-container__text">{text}</span>
       </span>
     </div>
-    <span className="Step__text-container">
-      <span className="Step__text-container__text">{text}</span>
-    </span>
-  </div>
-);
+  );
+}
 
 export default Step;

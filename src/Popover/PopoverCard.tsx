@@ -19,11 +19,11 @@ interface PopoverCardProps {
   size?: 'sm' | 'md';
 }
 
-const PopoverCard = ({
+function PopoverCard({
   children,
   className,
   size = 'sm',
-}: PopoverCardProps) => {
+}: PopoverCardProps) {
   const widthClass = handleWidth(size);
 
   return (
@@ -31,6 +31,6 @@ const PopoverCard = ({
       {children}
     </PopoverBody>
   );
-};
+}
 
 export default PopoverCard;

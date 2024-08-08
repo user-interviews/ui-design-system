@@ -53,7 +53,7 @@ export type ColProps = {
   xxl?: ReactBootstrapColProps['xxl'];
 } & ReactBootstrapColProps;
 
-export const Col = ({
+export function Col({
   as,
   children,
   className,
@@ -65,19 +65,21 @@ export const Col = ({
   xxl,
   bsPrefix = 'col',
   ...props
-}: ColProps) => (
-  <ReactBootstrapCol
-    as={as}
-    bsPrefix={bsPrefix}
-    className={className}
-    lg={lg}
-    md={md}
-    sm={sm}
-    xl={xl}
-    xs={xs}
-    xxl={xxl}
-    {...props}
-  >
-    { children }
-  </ReactBootstrapCol>
-);
+}: ColProps) {
+  return (
+    <ReactBootstrapCol
+      as={as}
+      bsPrefix={bsPrefix}
+      className={className}
+      lg={lg}
+      md={md}
+      sm={sm}
+      xl={xl}
+      xs={xs}
+      xxl={xxl}
+      {...props}
+    >
+      { children }
+    </ReactBootstrapCol>
+  );
+}

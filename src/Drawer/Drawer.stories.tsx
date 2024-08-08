@@ -22,7 +22,7 @@ export default {
   },
 };
 
-export const Default = () => {
+export function Default() {
   const [isVisible, setVisible] = useState(false);
 
   const toggleVisible = () => setVisible(!isVisible);
@@ -73,9 +73,9 @@ export const Default = () => {
       </Drawer>
     </>
   );
-};
+}
 
-export const Orientation = () => {
+export function Orientation() {
   const [isVisible, setVisible] = useState(false);
 
   const toggleVisible = () => setVisible(!isVisible);
@@ -126,9 +126,9 @@ export const Orientation = () => {
       </Drawer>
     </>
   );
-};
+}
 
-export const Expandable = () => {
+export function Expandable() {
   const [isVisible, setVisible] = useState(false);
 
   const toggleVisible = () => setVisible(!isVisible);
@@ -179,9 +179,9 @@ export const Expandable = () => {
       </Drawer>
     </>
   );
-};
+}
 
-export const DefaultExpanded = () => {
+export function DefaultExpanded() {
   const [isVisible, setVisible] = useState(false);
 
   const toggleVisible = () => setVisible(!isVisible);
@@ -232,9 +232,9 @@ export const DefaultExpanded = () => {
       </Drawer>
     </>
   );
-};
+}
 
-export const AdditionalActions = () => {
+export function AdditionalActions() {
   const [isVisible, setVisible] = useState(false);
 
   const toggleVisible = () => setVisible(!isVisible);
@@ -292,9 +292,9 @@ export const AdditionalActions = () => {
       </Drawer>
     </>
   );
-};
+}
 
-export const Empty = () => {
+export function Empty() {
   const [isVisible, setVisible] = useState(false);
 
   const toggleVisible = () => setVisible(!isVisible);
@@ -308,4 +308,4 @@ export const Empty = () => {
       />
     </>
   );
-};
+}

@@ -13,13 +13,13 @@ type ControlButtonGroupProps = {
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
 };
 
-const ControlButtonGroup = ({
+function ControlButtonGroup({
   children,
   childChecked,
   handleChangeValue,
   orientation = ORIENTATIONS.COLUMN,
   onChange = undefined,
-}: ControlButtonGroupProps) => {
+}: ControlButtonGroupProps) {
   const row = orientation === ORIENTATIONS.ROW;
 
   const renderChildElement = (child) => {
@@ -44,6 +44,6 @@ const ControlButtonGroup = ({
   };
 
   return <>{Children.toArray(children).map(renderChildElement)}</>;
-};
+}
 
 export default ControlButtonGroup;

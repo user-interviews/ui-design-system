@@ -47,7 +47,7 @@ type DropdownItemProps = {
   variant?: 'danger'
 };
 
-const DropdownItem = ({
+function DropdownItem({
   active,
   as,
   children,
@@ -59,25 +59,27 @@ const DropdownItem = ({
   onClick,
   bsPrefix = 'dropdown-item',
   ...props
-}: DropdownItemProps) => (
-  <RBDropdown.Item
-    active={active}
-    as={as}
-    bsPrefix={bsPrefix}
-    className={classNames(
+}: DropdownItemProps) {
+  return (
+    <RBDropdown.Item
+      active={active}
+      as={as}
+      bsPrefix={bsPrefix}
+      className={classNames(
       className,
       'DropdownItem',
       styles.DropdownItem,
     )}
-    disabled={disabled}
-    eventKey={eventKey}
-    href={href}
-    onClick={onClick}
-    {...props}
-  >
-    { leadingIcon && <FontAwesomeIcon className={classNames(styles.DropdownItemIcon, 'icon-left', 'fa-fw')} icon={leadingIcon} /> }
-    { children }
-  </RBDropdown.Item>
-);
+      disabled={disabled}
+      eventKey={eventKey}
+      href={href}
+      onClick={onClick}
+      {...props}
+    >
+      { leadingIcon && <FontAwesomeIcon className={classNames(styles.DropdownItemIcon, 'icon-left', 'fa-fw')} icon={leadingIcon} /> }
+      { children }
+    </RBDropdown.Item>
+  );
+}
 
 export default DropdownItem;

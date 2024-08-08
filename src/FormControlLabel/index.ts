@@ -1,1 +1,3 @@
-export { default } from './FormControlLabel';
+import FormControlLabel from './FormControlLabel';
+
+export default FormControlLabel;

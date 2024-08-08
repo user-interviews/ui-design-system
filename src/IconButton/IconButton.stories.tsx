@@ -14,35 +14,43 @@ export default {
   },
 };
 
-export const CommonActions = () => (
-  <>
-    <IconButton action="ADD" />
-    <IconButton action="SUBTRACT" />
-    <IconButton action="EDIT" />
-    <IconButton action="DELETE" />
-    <IconButton action="COPY" />
-    <IconButton action="PREVIOUS" />
-    <IconButton action="NEXT" />
-    <IconButton action="CLOSE" />
-    <IconButton action="EXPAND" />
-  </>
-);
+export function CommonActions() {
+  return (
+    <>
+      <IconButton action="ADD" />
+      <IconButton action="SUBTRACT" />
+      <IconButton action="EDIT" />
+      <IconButton action="DELETE" />
+      <IconButton action="COPY" />
+      <IconButton action="PREVIOUS" />
+      <IconButton action="NEXT" />
+      <IconButton action="CLOSE" />
+      <IconButton action="EXPAND" />
+    </>
+  );
+}
 
-export const AriaLabel = () => (
-  <>
-    <IconButton action="PREVIOUS" ariaLabel="Previous page" />
-    <IconButton action="NEXT" ariaLabel="Next page" />
-    <IconButton action="DELETE" ariaLabel="Delete participant" />
-    <IconButton action="EDIT" ariaLabel="Edit note" />
-  </>
-);
+export function AriaLabel() {
+  return (
+    <>
+      <IconButton action="PREVIOUS" ariaLabel="Previous page" />
+      <IconButton action="NEXT" ariaLabel="Next page" />
+      <IconButton action="DELETE" ariaLabel="Delete participant" />
+      <IconButton action="EDIT" ariaLabel="Edit note" />
+    </>
+  );
+}
 
-export const Loading = () => <IconButton action="ADD" isLoading />;
+export function Loading() {
+  return <IconButton action="ADD" isLoading />;
+}
 
-export const Sizes = () => (
-  <>
-    <IconButton action="DELETE" size="sm" />
-    <IconButton action="DELETE" />
-    <IconButton action="DELETE" size="lg" />
-  </>
-);
+export function Sizes() {
+  return (
+    <>
+      <IconButton action="DELETE" size="sm" />
+      <IconButton action="DELETE" />
+      <IconButton action="DELETE" size="lg" />
+    </>
+  );
+}

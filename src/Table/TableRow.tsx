@@ -17,7 +17,7 @@ type TableRowProps = TableElementProps & {
   stickyRow?: boolean;
 };
 
-const TableRow = ({
+function TableRow({
   children,
   className,
   clickable,
@@ -25,7 +25,7 @@ const TableRow = ({
   selected,
   stickyRow,
   ...props
-}: TableRowProps) => {
+}: TableRowProps) {
   const addStickyRowProp = (child) => {
     if (stickyRow) {
       return cloneElement(child, { stickyRow });
@@ -48,8 +48,8 @@ const TableRow = ({
     >
       {Children.map(children, addStickyRowProp)}
     </tr>
-);
-};
+  );
+}
 
 export default TableRow;
 

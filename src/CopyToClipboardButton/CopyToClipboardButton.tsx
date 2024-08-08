@@ -42,7 +42,8 @@ function CopyToClipboardButton({
           aria-label="Copy to clipboard"
           className={classNames(
             'CopyToClipboardButton',
-            'btn', {
+            'btn',
+{
             'btn-outline-secondary': variant === ButtonVariants.SECONDARY,
             },
           )}

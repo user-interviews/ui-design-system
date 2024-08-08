@@ -16,7 +16,7 @@ type AccordionCollapseProps = {
   UNSAFE_className?: string;
 };
 
-const AccordionCollapse = ({
+function AccordionCollapse({
   variant,
   children,
   eventKey,
@@ -25,27 +25,29 @@ const AccordionCollapse = ({
   UNSAFE_className,
 
   ...props
-}: AccordionCollapseProps) => (
-  <RBAccordionCollapse
-    className={classNames(
+}: AccordionCollapseProps) {
+  return (
+    <RBAccordionCollapse
+      className={classNames(
       UNSAFE_className,
       'AccordionCollapse',
       variant === 'info' && 'AccordionCollapse--info',
     )}
-    eventKey={eventKey}
-    {...props}
-  >
-    <div
-      className={classNames(
+      eventKey={eventKey}
+      {...props}
+    >
+      <div
+        className={classNames(
         UNSAFE_className,
         'AccordionCollapse__container',
         variant === 'info' && 'AccordionCollapse--noTopPadding',
       )}
-    >
-      {children}
-    </div>
-  </RBAccordionCollapse>
-);
+      >
+        {children}
+      </div>
+    </RBAccordionCollapse>
+  );
+}
 
 AccordionCollapse.defaultProps = {
   variant: undefined,

@@ -13,7 +13,7 @@ type TrackedComponentProps = {
 };
 
 export default function withTrackedClick(Target) {
-  const TrackedComponent = (props: TrackedComponentProps) => {
+  function TrackedComponent(props: TrackedComponentProps) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (TrackedComponent as any).displayName = `${Target.displayName || Target.name}WithTrackedClick`;
 
@@ -28,7 +28,7 @@ export default function withTrackedClick(Target) {
     };
 
     return <Target {...rest} onClick={handleClick} />;
-  };
+  }
 
   TrackedComponent.defaultProps = {
     eventData: {},

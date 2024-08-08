@@ -13,18 +13,18 @@ export default {
   },
 };
 
-export const Default = () => (
-  <LoadingSkeleton />
-);
+export function Default() {
+  return <LoadingSkeleton />;
+}
 
-export const MultiLine = () => (
-  <LoadingSkeleton count={3} />
-);
+export function MultiLine() {
+  return <LoadingSkeleton count={3} />;
+}
 
-export const HeightAndWidth = () => (
-  <LoadingSkeleton height="44px" width="200px" />
-);
+export function HeightAndWidth() {
+  return <LoadingSkeleton height="44px" width="200px" />;
+}
 
-export const Circle = () => (
-  <LoadingSkeleton circle height={44} width={44} />
-);
+export function Circle() {
+  return <LoadingSkeleton circle height={44} width={44} />;
+}

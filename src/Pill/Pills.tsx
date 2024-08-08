@@ -8,17 +8,19 @@ type PillsProps = {
   children?: React.ReactNode;
 };
 
-const Pills = ({
+function Pills({
   children,
   className,
   ...props
-}: PillsProps) => (
-  <div
-    className={classNames('Pills', className)}
-    {...props}
-  >
-    {children}
-  </div>
-);
+}: PillsProps) {
+  return (
+    <div
+      className={classNames('Pills', className)}
+      {...props}
+    >
+      {children}
+    </div>
+  );
+}
 
 export default Pills;

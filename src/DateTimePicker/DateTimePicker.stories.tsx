@@ -7,18 +7,18 @@ export default {
   component: DateTimePicker,
 };
 
-export const Default = () => (
-  <DateTimePicker />
-  );
+export function Default() {
+  return <DateTimePicker />;
+}
 
-export const EnforcedInput = () => (
-  <DateTimePicker showPickerEnforcedInput />
-  );
+export function EnforcedInput() {
+  return <DateTimePicker showPickerEnforcedInput />;
+}
 
-export const ShowMonthAndYearSelects = () => (
-  <DateTimePicker showMonthAndYearSelects />
-  );
+export function ShowMonthAndYearSelects() {
+  return <DateTimePicker showMonthAndYearSelects />;
+}
 
-export const ShowTimeSelect = () => (
-  <DateTimePicker showTimeSelect />
-  );
+export function ShowTimeSelect() {
+  return <DateTimePicker showTimeSelect />;
+}

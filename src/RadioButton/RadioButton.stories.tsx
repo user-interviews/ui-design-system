@@ -14,7 +14,7 @@ export default {
   },
 };
 
-export const Default = () => {
+export function Default() {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleChange = () => {
@@ -30,9 +30,9 @@ export const Default = () => {
       onChange={handleChange}
     />
   );
-};
+}
 
-export const WithDescription = () => {
+export function WithDescription() {
   const [isChecked, setIsChecked] = useState(false);
 
   const handleChange = () => {
@@ -52,4 +52,4 @@ export const WithDescription = () => {
       This is where the description goes
     </FormControlLabel>
   );
-};
+}

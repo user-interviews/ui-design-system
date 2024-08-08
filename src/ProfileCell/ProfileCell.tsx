@@ -35,43 +35,39 @@ function ProfileCell(props: ProfileCellProps) {
     maxWidth: props.maxWidth ? props.maxWidth : 'none',
   };
 
-  return (
-    <>
-      {props.isLoading ? (
-        <ProfileCellSkeleton maxWidth={props.maxWidth || '100%'} />
-      ) : (
-        <div
-          className={classNames(
-            'ProfileCell',
-            { 'ProfileCell--large': props.large },
-          )}
-        >
-          <div className="ProfileCell__image">
-            <Avatar
-              colorId={props.colorId}
-              image={profileImage}
-              initials={props.user.initials}
-              large={props.large}
-              name={props.user.name}
-              showAlert={props.showAlert}
-            />
-          </div>
-          <div className="ProfileCell__content" style={contentStyle}>
-            <div className="ProfileCell__content__name__container">
-              <h5 className="ProfileCell__content__name">
-                {props.user.name}
-              </h5>
-              {props.trailingIcon && (
-                <FontAwesomeIcon className="ProfileCell__content__trailing_icon" icon={props.trailingIcon} />
-              )}
-            </div>
-            <div className="ProfileCell__content__subtitle">
-              {props.subtitle || ' '}
-            </div>
-          </div>
-        </div>
+  return props.isLoading ? (
+    <ProfileCellSkeleton maxWidth={props.maxWidth || '100%'} />
+  ) : (
+    <div
+      className={classNames(
+        'ProfileCell',
+        { 'ProfileCell--large': props.large },
       )}
-    </>
+    >
+      <div className="ProfileCell__image">
+        <Avatar
+          colorId={props.colorId}
+          image={profileImage}
+          initials={props.user.initials}
+          large={props.large}
+          name={props.user.name}
+          showAlert={props.showAlert}
+        />
+      </div>
+      <div className="ProfileCell__content" style={contentStyle}>
+        <div className="ProfileCell__content__name__container">
+          <h5 className="ProfileCell__content__name">
+            {props.user.name}
+          </h5>
+          {props.trailingIcon && (
+            <FontAwesomeIcon className="ProfileCell__content__trailing_icon" icon={props.trailingIcon} />
+          )}
+        </div>
+        <div className="ProfileCell__content__subtitle">
+          {props.subtitle || ' '}
+        </div>
+      </div>
+    </div>
   );
 }
 

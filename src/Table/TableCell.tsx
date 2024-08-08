@@ -24,7 +24,7 @@ type TableCellProps = TableCellElementProps & {
   stickyRow?: boolean;
 };
 
-const TableCell = ({
+function TableCell({
   alignRight,
   children,
   className,
@@ -39,7 +39,7 @@ const TableCell = ({
   stickyRight,
   stickyRow,
   ...props
-}: TableCellProps) => {
+}: TableCellProps) {
   const getTableCellClassName = () => classNames(
       'TableCell',
       className,
@@ -101,6 +101,6 @@ const TableCell = ({
       {children}
     </td>
   );
-};
+}
 
 export default TableCell;

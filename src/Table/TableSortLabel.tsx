@@ -4,10 +4,12 @@ import { faSort } from '@fortawesome/pro-solid-svg-icons';
 
 import './TableSortLabel.scss';
 
-const TableSortLabel = () => (
-  <span className="TableSortLabel">
-    <FontAwesomeIcon icon={faSort} />
-  </span>
-);
+function TableSortLabel() {
+  return (
+    <span className="TableSortLabel">
+      <FontAwesomeIcon icon={faSort} />
+    </span>
+  );
+}
 
 export default TableSortLabel;

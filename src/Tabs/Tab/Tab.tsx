@@ -9,11 +9,11 @@ export type TabProps = RBTabProps & {
   title: React.ReactNode;
 };
 
-const Tab = ({
+function Tab({
   ...props
-}: TabProps) => (
-  <ReactBootstrapTab {...props} />
-);
+}: TabProps) {
+  return <ReactBootstrapTab {...props} />;
+}
 
 export default Tab;
 

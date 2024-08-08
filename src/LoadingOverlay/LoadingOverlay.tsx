@@ -16,7 +16,7 @@ type LoadingOverlayProps = {
   visible?: boolean;
 };
 
-const LoadingOverlay = ({
+function LoadingOverlay({
   contentCenterOverflow = false,
   contentTop = false,
   dataTestid = 'LoadingOverlay',
@@ -24,7 +24,7 @@ const LoadingOverlay = ({
   text,
   textClassName,
   visible = true,
-}: LoadingOverlayProps) => {
+}: LoadingOverlayProps) {
   // Only set style if this is not visible to let CSS handle how to display this
   const classes = classNames(
     'overlay',
@@ -51,6 +51,6 @@ const LoadingOverlay = ({
       <FontAwesomeIcon className="fa-spinner" icon={faSpinnerThird} />
     </div>
   );
-};
+}
 
 export default LoadingOverlay;

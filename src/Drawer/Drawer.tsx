@@ -1,5 +1,5 @@
 import React, {
-  createContext, useEffect, useState, useCallback, useRef,
+  createContext, useEffect, useState, useCallback, useRef, useMemo,
 } from 'react';
 import classNames from 'classnames';
 
@@ -37,7 +37,7 @@ type DrawerProps = {
   onRequestClose: (...args: unknown[]) => unknown;
 };
 
-const Drawer = ({
+function Drawer({
   behindNav = true,
   children,
   className = '',
@@ -48,11 +48,11 @@ const Drawer = ({
   orientation = ORIENTATION_RIGHT,
   size = 'sm',
   onRequestClose,
-}: DrawerProps) => {
+}: DrawerProps) {
   const isCurrentlyOpen = useRef(false);
   const [expanded, setExpanded] = useState(defaultExpanded);
 
-  const handleExpand = () => setExpanded(!expanded);
+  const handleExpand = useCallback(() => setExpanded(!expanded), [expanded]);
 
   const drawerClasses = classNames(`Drawer Drawer--${orientation} Drawer--${size}`, {
     'Drawer--expanded': expanded,
@@ -60,6 +60,10 @@ const Drawer = ({
     'Drawer--behind-nav': behindNav,
     [className]: !!className,
   });
+
+  const expandContentContextValue = useMemo(() => ({
+    expandable, expanded, handleExpand,
+  }), [expandable, expanded, handleExpand]);
 
   const handleEscKeyPress = useCallback((event) => {
     if (visible && event.key === 'Escape') {
@@ -124,12 +128,12 @@ const Drawer = ({
         )
       }
       <div className={drawerClasses}>
-        <ExpandContext.Provider value={{ expandable, expanded, handleExpand }}>
+        <ExpandContext.Provider value={expandContentContextValue}>
           {children}
         </ExpandContext.Provider>
       </div>
     </>
   );
-};
+}
 
 export default Drawer;

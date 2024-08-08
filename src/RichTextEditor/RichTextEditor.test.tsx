@@ -13,13 +13,15 @@ describe('<RichTextEditor />', () => {
       findAll: () => screen.findAllByRole('button'),
     },
   };
-  const Setup = (overrides: Omit<RichTextEditorProps, 'id' | 'onChange'> = {}) => (
+  function Setup(overrides: Omit<RichTextEditorProps, 'id' | 'onChange'> = {}) {
+  return (
     <RichTextEditor
       id="some-id"
       onChange={jest.fn()}
       {...overrides}
     />
   );
+}
 
   it('renders snapshot', async () => {
     const { asFragment } = render(<Setup />);

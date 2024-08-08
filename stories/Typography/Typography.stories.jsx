@@ -5,7 +5,7 @@ import { Pill, PILL_COLORS } from 'src/Pill';
 import './Typography.scss';
 import PropTypes from 'prop-types';
 
-const TypographyExample = ({ modifiers, preset }) => {
+function TypographyExample({ modifiers, preset }) {
   const description = 'The fastest way to recruit research participants';
 
   return (
@@ -20,26 +20,28 @@ const TypographyExample = ({ modifiers, preset }) => {
       </div>
     </div>
   );
-};
+}
 
 TypographyExample.propTypes = {
   modifiers: PropTypes.array.isRequired,
   preset: PropTypes.string.isRequired,
 };
 
-const TypographyTokens = ({ tokens }) => (
-  <ul>
-    {
+function TypographyTokens({ tokens }) {
+  return (
+    <ul>
+      {
       tokens.map((token) => <li key={token}><Pill color={PILL_COLORS.BLUE} text={`$synth-${token}`} /></li>)
     }
-  </ul>
-);
+    </ul>
+  );
+}
 
 TypographyTokens.propTypes = {
   tokens: PropTypes.array.isRequired,
 };
 
-const TypographySpecs = ({
+function TypographySpecs({
   preset,
   font,
   size,
@@ -48,42 +50,44 @@ const TypographySpecs = ({
   modifiers,
   textTransform,
   weight,
-}) => (
-  <div className="TypographyRow__Specs">
-    <ul>
-      <li>
-        <strong>{preset}</strong>
-      </li>
-      <li>
-        Type: {font}
-      </li>
-      <li>
-        Size: {size}
-      </li>
-      <li>
-        Line-height: {lineHeight}
-      </li>
-      <li>
-        Weight: {weight}
-      </li>
-      {
+}) {
+  return (
+    <div className="TypographyRow__Specs">
+      <ul>
+        <li>
+          <strong>{preset}</strong>
+        </li>
+        <li>
+          Type: {font}
+        </li>
+        <li>
+          Size: {size}
+        </li>
+        <li>
+          Line-height: {lineHeight}
+        </li>
+        <li>
+          Weight: {weight}
+        </li>
+        {
         letterSpacing && (
           <li>
             Letter-spacing: {letterSpacing}
           </li>
         )
       }
-      {
+        {
         textTransform && (
           <li>
             Text-transform: {textTransform}
           </li>
         )
       }
-    </ul>
-    <TypographyTokens tokens={[preset, ...modifiers]} />
-  </div>
-);
+      </ul>
+      <TypographyTokens tokens={[preset, ...modifiers]} />
+    </div>
+  );
+}
 
 TypographySpecs.propTypes = {
   font: PropTypes.string.isRequired,
@@ -101,12 +105,14 @@ TypographySpecs.defaultProps = {
   textTransform: undefined,
 };
 
-const TypographyStyle = (props) => (
-  <div className="TypographyRow">
-    <TypographyExample {...props} />
-    <TypographySpecs {...props} />
-  </div>
-);
+function TypographyStyle(props) {
+  return (
+    <div className="TypographyRow">
+      <TypographyExample {...props} />
+      <TypographySpecs {...props} />
+    </div>
+  );
+}
 
 const headingPresets = [
   {
@@ -155,31 +161,37 @@ const bodyPresets = [
   },
 ];
 
-export const Default = () => (
-  <>
-    {
+export function Default() {
+  return (
+    <>
+      {
       [...headingPresets, ...bodyPresets].map((preset) => (
         <TypographyStyle {...preset} key={preset.preset} />
         ))
     }
-  </>
-);
+    </>
+  );
+}
 
-export const Headings = () => (
-  <>
-    {
+export function Headings() {
+  return (
+    <>
+      {
       headingPresets.map((preset) => <TypographyStyle {...preset} key={preset.preset} />)
      }
-  </>
-);
+    </>
+  );
+}
 
-export const Body = () => (
-  <>
-    {
+export function Body() {
+  return (
+    <>
+      {
       bodyPresets.map((preset) => <TypographyStyle {...preset} key={preset.preset} />)
      }
-  </>
-);
+    </>
+  );
+}
 
 export default {
   title: 'Foundations/Typography',

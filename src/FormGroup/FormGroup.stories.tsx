@@ -21,208 +21,234 @@ export default {
   },
 };
 
-const InputComponent = (props) => {
+function InputComponent(props) {
   const [value, setValue] = useState('');
   const handleChangeValue = (event) => setValue(event.target.value);
 
   return (
     <Input value={value} onChange={handleChangeValue} {...props} />
   );
-};
+}
 
-export const Default = () => (
-  <FormGroup id="default">
-    <InputComponent id="default-input" name="default" placeholder="Placeholder text" />
-  </FormGroup>
-);
+export function Default() {
+  return (
+    <FormGroup id="default">
+      <InputComponent id="default-input" name="default" placeholder="Placeholder text" />
+    </FormGroup>
+  );
+}
 
-export const WithHelperText = () => (
-  <FormGroup
-    helperText="test helper text"
-    id="with-helper-text"
-    label="Label"
-    labelHtmlFor="input"
-  >
-    <InputComponent id="input" name="with-helper-text" />
-  </FormGroup>
-);
-
-export const Required = () => (
-  <FormGroup
-    id="with-required"
-    label="Label"
-    required
-  >
-    <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
-  </FormGroup>
-);
-
-export const NoMargin = () => (
-  <FlexContainer flexDirection="column" gap={4}>
+export function WithHelperText() {
+  return (
     <FormGroup
+      helperText="test helper text"
+      id="with-helper-text"
       label="Label"
-      labelHtmlFor="no-margin-1-input"
-      noMargin
+      labelHtmlFor="input"
+    >
+      <InputComponent id="input" name="with-helper-text" />
+    </FormGroup>
+  );
+}
+
+export function Required() {
+  return (
+    <FormGroup
+      id="with-required"
+      label="Label"
       required
     >
-      <InputComponent id="no-margin-1-input" placeholder="This FormGroup has no default margin" />
+      <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
     </FormGroup>
+  );
+}
+
+export function NoMargin() {
+  return (
+    <FlexContainer flexDirection="column" gap={4}>
+      <FormGroup
+        label="Label"
+        labelHtmlFor="no-margin-1-input"
+        noMargin
+        required
+      >
+        <InputComponent id="no-margin-1-input" placeholder="This FormGroup has no default margin" />
+      </FormGroup>
+      <FormGroup
+        label="Label"
+        labelHtmlFor="no-margin-2-input"
+        noMargin
+        required
+      >
+        <InputComponent id="no-margin-2-input" placeholder="This FormGroup has no default margin" />
+      </FormGroup>
+    </FlexContainer>
+  );
+}
+
+export function WithLabelTooltip() {
+  return (
     <FormGroup
+      id="with-label"
       label="Label"
-      labelHtmlFor="no-margin-2-input"
-      noMargin
-      required
+      labelHtmlFor="input"
+      labelTooltip="Some tooltip text"
     >
-      <InputComponent id="no-margin-2-input" placeholder="This FormGroup has no default margin" />
+      <InputComponent id="input" name="with-label" />
     </FormGroup>
-  </FlexContainer>
-);
+  );
+}
 
-export const WithLabelTooltip = () => (
-  <FormGroup
-    id="with-label"
-    label="Label"
-    labelHtmlFor="input"
-    labelTooltip="Some tooltip text"
-  >
-    <InputComponent id="input" name="with-label" />
-  </FormGroup>
-);
+export function WithLeadingIcon() {
+  return (
+    <FormGroup
+      helperText="with leading icon"
+      id="with-leading-icon"
+      label="Form Group with input leading icon"
+      labelHtmlFor="input"
+    >
+      <InputComponent
+        id="input"
+        leadingIcon={faSearch}
+        name="with-leading-icon"
+        placeholder="Placeholder text"
+      />
+    </FormGroup>
+  );
+}
 
-export const WithLeadingIcon = () => (
-  <FormGroup
-    helperText="with leading icon"
-    id="with-leading-icon"
-    label="Form Group with input leading icon"
-    labelHtmlFor="input"
-  >
-    <InputComponent
-      id="input"
-      leadingIcon={faSearch}
-      name="with-leading-icon"
-      placeholder="Placeholder text"
-    />
-  </FormGroup>
-);
+export function WithTrailingText() {
+  return (
+    <FormGroup
+      id="with-trailing-text"
+      label="Form Group with trailing text"
+      labelHtmlFor="trailing-text-input"
+    >
+      <InputComponent id="trailing-text-input" name="default" placeholder="Session length" trailingText="min" type="number" />
+    </FormGroup>
+  );
+}
 
-export const WithTrailingText = () => (
-  <FormGroup
-    id="with-trailing-text"
-    label="Form Group with trailing text"
-    labelHtmlFor="trailing-text-input"
-  >
-    <InputComponent id="trailing-text-input" name="default" placeholder="Session length" trailingText="min" type="number" />
-  </FormGroup>
-);
+export function WithTrailingIcon() {
+  return (
+    <FormGroup
+      helperText="with trailing icon"
+      id="with-trailing-icon"
+      label="Form Group with input trailing icon"
+      labelHtmlFor="input"
+    >
+      <InputComponent
+        id="input"
+        name="with-leading-icon"
+        placeholder="Placeholder text"
+        trailingIcon={faSearch}
+      />
+    </FormGroup>
+  );
+}
 
-export const WithTrailingIcon = () => (
-  <FormGroup
-    helperText="with trailing icon"
-    id="with-trailing-icon"
-    label="Form Group with input trailing icon"
-    labelHtmlFor="input"
-  >
-    <InputComponent
-      id="input"
-      name="with-leading-icon"
-      placeholder="Placeholder text"
-      trailingIcon={faSearch}
-    />
-  </FormGroup>
-);
+export function WithTrailingIconAndButton() {
+  return (
+    <FormGroup
+      helperText="with trailing icon and button"
+      id="with-trailing-icon-and-button"
+      label="Form Group with input trailing icon and button"
+      labelHtmlFor="input"
+    >
+      <InputComponent
+        id="input"
+        name="with-leading-icon-and-button"
+        placeholder="Placeholder text"
+        trailingIcon={faSearch}
+        trailingIconOnClick={() => alert('Great job!')}
+      />
+    </FormGroup>
+  );
+}
 
-export const WithTrailingIconAndButton = () => (
-  <FormGroup
-    helperText="with trailing icon and button"
-    id="with-trailing-icon-and-button"
-    label="Form Group with input trailing icon and button"
-    labelHtmlFor="input"
-  >
-    <InputComponent
-      id="input"
-      name="with-leading-icon-and-button"
-      placeholder="Placeholder text"
-      trailingIcon={faSearch}
-      trailingIconOnClick={() => alert('Great job!')}
-    />
-  </FormGroup>
-);
+export function WithTrailingIconAndButtonWithSubmit() {
+  return (
+    <FormGroup
+      helperText="with trailing icon and button with submit"
+      id="with-trailing-icon-and-button-with-submit"
+      label="Form Group with input trailing icon and button with submit"
+      labelHtmlFor="input"
+    >
+      <InputComponent
+        id="input"
+        name="with-leading-icon-and-button"
+        placeholder="Placeholder text"
+        trailingIcon={faSearch}
+        trailingIconOnClick={() => alert('Great job!')}
+        trailingIconOnClickSubmit
+      />
+    </FormGroup>
+  );
+}
 
-export const WithTrailingIconAndButtonWithSubmit = () => (
-  <FormGroup
-    helperText="with trailing icon and button with submit"
-    id="with-trailing-icon-and-button-with-submit"
-    label="Form Group with input trailing icon and button with submit"
-    labelHtmlFor="input"
-  >
-    <InputComponent
-      id="input"
-      name="with-leading-icon-and-button"
-      placeholder="Placeholder text"
-      trailingIcon={faSearch}
-      trailingIconOnClick={() => alert('Great job!')}
-      trailingIconOnClickSubmit
-    />
-  </FormGroup>
-);
+export function WithTrailingIconAndButtonWithSubmitAndLabel() {
+  return (
+    <FormGroup
+      helperText="with trailing icon and button with submit and label"
+      id="with-trailing-icon-and-button-with-submit-and-label"
+      label="Form Group with input trailing icon and button with submit and label"
+      labelHtmlFor="input"
+    >
+      <InputComponent
+        id="input"
+        name="with-leading-icon-and-button"
+        placeholder="Placeholder text"
+        trailingIcon={faSearch}
+        trailingIconLabel="label"
+        trailingIconOnClick={() => alert('Great job!')}
+        trailingIconOnClickSubmit
+      />
+    </FormGroup>
+  );
+}
 
-export const WithTrailingIconAndButtonWithSubmitAndLabel = () => (
-  <FormGroup
-    helperText="with trailing icon and button with submit and label"
-    id="with-trailing-icon-and-button-with-submit-and-label"
-    label="Form Group with input trailing icon and button with submit and label"
-    labelHtmlFor="input"
-  >
-    <InputComponent
-      id="input"
-      name="with-leading-icon-and-button"
-      placeholder="Placeholder text"
-      trailingIcon={faSearch}
-      trailingIconLabel="label"
-      trailingIconOnClick={() => alert('Great job!')}
-      trailingIconOnClickSubmit
-    />
-  </FormGroup>
-);
+export function WithLeadingAndTrailingIcons() {
+  return (
+    <FormGroup
+      helperText="with leading and trailing icons"
+      id="with-leading-and-trailing-icons"
+      label="Form Group with input leading and trailing icons"
+      labelHtmlFor="input"
+    >
+      <InputComponent
+        id="input"
+        leadingIcon={faSearch}
+        name="with-leading-and-trailing-icons"
+        placeholder="Placeholder text"
+        trailingIcon={faSearch}
+      />
+    </FormGroup>
+  );
+}
 
-export const WithLeadingAndTrailingIcons = () => (
-  <FormGroup
-    helperText="with leading and trailing icons"
-    id="with-leading-and-trailing-icons"
-    label="Form Group with input leading and trailing icons"
-    labelHtmlFor="input"
-  >
-    <InputComponent
-      id="input"
-      leadingIcon={faSearch}
-      name="with-leading-and-trailing-icons"
-      placeholder="Placeholder text"
-      trailingIcon={faSearch}
-    />
-  </FormGroup>
-);
-
-export const WithErrors = () => (
-  <FormGroup
-    displayErrorText
-    errors={{ test: [<div>Sorry, we’re not able to accept this type of input. For more information, click <a href="http://www.google.com">here</a></div>] }}
-    id="with-errors"
-    inputKey="test"
-    label="Form Group with errors"
-    labelHtmlFor="input"
-  >
-    <InputComponent
-      aria-describedby="form-errors-test"
-      aria-invalid
-      id="input"
-      name="with-errors"
-      placeholder="Placeholder text"
-    />
-  </FormGroup>
-);
+export function WithErrors() {
+  return (
+    <FormGroup
+      displayErrorText
+      errors={{ test: [<div>Sorry, we’re not able to accept this type of input. For more information, click <a href="http://www.google.com">here</a></div>] }}
+      id="with-errors"
+      inputKey="test"
+      label="Form Group with errors"
+      labelHtmlFor="input"
+    >
+      <InputComponent
+        aria-describedby="form-errors-test"
+        aria-invalid
+        id="input"
+        name="with-errors"
+        placeholder="Placeholder text"
+      />
+    </FormGroup>
+  );
+}
 
 /* eslint-disable react/prop-types */
-const ButtonGroupComponent = ({
+function ButtonGroupComponent({
   ButtonGroup,
   bordered,
   children,
@@ -234,7 +260,7 @@ const ButtonGroupComponent = ({
   labelHelperText,
   orientation,
   labelHtmlFor,
-}) => {
+}) {
   const [value, setValue] = useState(defaultValue);
   const handleChangeValue = (values) => setValue(values);
 
@@ -258,10 +284,10 @@ const ButtonGroupComponent = ({
       </ButtonGroup>
     </FormGroup>
   );
-};
+}
 /* eslint-enable react/prop-types */
 
-export const WithRadioButtonGroup = () => {
+export function WithRadioButtonGroup() {
   const orientation = ORIENTATIONS.COLUMN;
   const bordered = true;
 
@@ -304,4 +330,4 @@ export const WithRadioButtonGroup = () => {
       />
     </ButtonGroupComponent>
   );
-};
+}

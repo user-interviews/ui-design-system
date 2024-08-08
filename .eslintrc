@@ -117,8 +117,9 @@
       "files": "**/*.{ts,tsx}",
       "rules": {
         "react/require-default-props": "off",
+        "react/prop-types": "off",
         "no-shadow": "off",
-        "@typescript-eslint/no-shadow": "error",
+        "@typescript-eslint/no-shadow": "error"
       }
     }
   ],

@@ -52,7 +52,7 @@ type DropdownMenuProps = {
   onSelect?: (...args: unknown[]) => unknown;
 };
 
-const DropdownMenu = ({
+function DropdownMenu({
   align,
   as,
   children,
@@ -66,23 +66,25 @@ const DropdownMenu = ({
   variant,
   bsPrefix = 'dropdown-menu',
   ...props
-}: DropdownMenuProps) => (
-  <RBDropdown.Menu
-    align={align}
-    as={as}
-    bsPrefix={bsPrefix}
-    className={classNames('DropdownMenu', className)}
-    flip={flip}
-    popperConfig={popperConfig}
-    renderOnMount={renderOnMount}
-    rootCloseEvent={rootCloseEvent}
-    show={show}
-    variant={variant}
-    onSelect={onSelect}
-    {...props}
-  >
-    { children }
-  </RBDropdown.Menu>
-);
+}: DropdownMenuProps) {
+  return (
+    <RBDropdown.Menu
+      align={align}
+      as={as}
+      bsPrefix={bsPrefix}
+      className={classNames('DropdownMenu', className)}
+      flip={flip}
+      popperConfig={popperConfig}
+      renderOnMount={renderOnMount}
+      rootCloseEvent={rootCloseEvent}
+      show={show}
+      variant={variant}
+      onSelect={onSelect}
+      {...props}
+    >
+      { children }
+    </RBDropdown.Menu>
+  );
+}
 
 export default DropdownMenu;

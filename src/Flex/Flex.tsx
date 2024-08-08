@@ -42,7 +42,7 @@ export interface FlexProps {
   width?: string;
 }
 
-const Flex = ({
+function Flex({
   alignItems,
   alignSelf,
   as = 'div',
@@ -62,7 +62,7 @@ const Flex = ({
   maxWidth,
   width,
   ...props
-}: FlexProps) => {
+}: FlexProps) {
   // Defined flex properties as strings
   const flexClasses = [
     container ? styles[`flex-container`] : styles.container,
@@ -95,6 +95,6 @@ const Flex = ({
     },
     children,
   );
-};
+}
 
 export default Flex;

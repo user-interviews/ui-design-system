@@ -21,56 +21,60 @@ export default {
   },
 };
 
-export const Default = () => (
-  <>
-    <Dropdown>
-      <DropdownToggle leadingIcon={faFileAlt}>
-        Dropdown toggle
-      </DropdownToggle>
-      <DropdownMenu>
-        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
-        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
-    <br />
-    <Dropdown>
-      <DropdownToggle leadingIcon={faFileAlt} variant="outline-primary">
-        Dropdown toggle
-      </DropdownToggle>
-      <DropdownMenu>
-        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
-        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
-  </>
-);
+export function Default() {
+  return (
+    <>
+      <Dropdown>
+        <DropdownToggle leadingIcon={faFileAlt}>
+          Dropdown toggle
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
+          <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+      <br />
+      <Dropdown>
+        <DropdownToggle leadingIcon={faFileAlt} variant="outline-primary">
+          Dropdown toggle
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
+          <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+    </>
+  );
+}
 
-export const Sizes = () => (
-  <>
-    <Dropdown>
-      <DropdownToggle size="sm" variant="outline-primary">
-        Small toggle
-      </DropdownToggle>
-      <DropdownMenu>
-        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
-        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
-    <br />
-    <Dropdown>
-      <DropdownToggle size="lg" variant="outline-primary">
-        Large toggle
-      </DropdownToggle>
-      <DropdownMenu>
-        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
-        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
-      </DropdownMenu>
-    </Dropdown>
-  </>
-);
+export function Sizes() {
+  return (
+    <>
+      <Dropdown>
+        <DropdownToggle size="sm" variant="outline-primary">
+          Small toggle
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
+          <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+      <br />
+      <Dropdown>
+        <DropdownToggle size="lg" variant="outline-primary">
+          Large toggle
+        </DropdownToggle>
+        <DropdownMenu>
+          <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
+          <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
+        </DropdownMenu>
+      </Dropdown>
+    </>
+  );
+}
 
-export const IconDefault = () => (
-  <>
+export function IconDefault() {
+  return (
     <Dropdown>
       <DropdownToggle ariaLabel="dropdown toggle" variant="transparent" />
       <DropdownMenu>
@@ -78,11 +82,11 @@ export const IconDefault = () => (
         <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
       </DropdownMenu>
     </Dropdown>
-  </>
-);
+  );
+}
 
-export const IconSwap = () => (
-  <>
+export function IconSwap() {
+  return (
     <Dropdown>
       <DropdownToggle ariaLabel="dropdown toggle ellipsis" removeCaret variant="transparent">
         <FontAwesomeIcon icon={faEllipsisV} size="lg" />
@@ -92,13 +96,14 @@ export const IconSwap = () => (
         <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
       </DropdownMenu>
     </Dropdown>
-  </>
-);
+  );
+}
 
-export const UnstyledToggle = () => (
-  <Dropdown>
-    <DropdownToggle removeCaret unstyled>
-      <div style={{
+export function UnstyledToggle() {
+  return (
+    <Dropdown>
+      <DropdownToggle removeCaret unstyled>
+        <div style={{
         padding: '12px',
         backgroundColor: '#444444',
         width: '200px',
@@ -107,26 +112,27 @@ export const UnstyledToggle = () => (
         alignItems: 'center',
         justifyContent: 'space-between',
         }}
-      >
-        <div>
-          <div style={{ fontSize: '18px', fontWeight: '700' }}>Team A</div>
-          <div style={{ fontSize: '12px', fontWeight: '400', backgroundColor: '#444444' }}>Organization</div>
+        >
+          <div>
+            <div style={{ fontSize: '18px', fontWeight: '700' }}>Team A</div>
+            <div style={{ fontSize: '12px', fontWeight: '400', backgroundColor: '#444444' }}>Organization</div>
+          </div>
+          <div style={{ marginRight: '4px' }}>
+            <FontAwesomeIcon icon={faChevronDown} />
+          </div>
         </div>
-        <div style={{ marginRight: '4px' }}>
-          <FontAwesomeIcon icon={faChevronDown} />
-        </div>
-      </div>
-    </DropdownToggle>
-    <DropdownMenu>
-      <DropdownItem href="#">Team A</DropdownItem>
-      <DropdownItem href="#">Team B</DropdownItem>
-      <DropdownItem href="#">Team C</DropdownItem>
-    </DropdownMenu>
-  </Dropdown>
-);
+      </DropdownToggle>
+      <DropdownMenu>
+        <DropdownItem href="#">Team A</DropdownItem>
+        <DropdownItem href="#">Team B</DropdownItem>
+        <DropdownItem href="#">Team C</DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  );
+}
 
-export const WithDivider = () => (
-  <>
+export function WithDivider() {
+  return (
     <Dropdown>
       <DropdownToggle leadingIcon={faFileAlt} variant="primary">
         Dropdown toggle
@@ -138,5 +144,5 @@ export const WithDivider = () => (
         <DropdownItem href="#" leadingIcon={faTrashAlt} variant="danger">Delete</DropdownItem>
       </DropdownMenu>
     </Dropdown>
-  </>
-);
+  );
+}

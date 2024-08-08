@@ -11,20 +11,22 @@ type TableHeadProps = TableElementProps & {
   className?: string;
 };
 
-const TableHead = ({
+function TableHead({
   children,
   className,
   ...props
-}: TableHeadProps) => (
-  <thead
-    className={classNames(
+}: TableHeadProps) {
+  return (
+    <thead
+      className={classNames(
     'TableHead',
     className,
     )}
-    {...props}
-  >
-    {children}
-  </thead>
-);
+      {...props}
+    >
+      {children}
+    </thead>
+  );
+}
 
 export default TableHead;

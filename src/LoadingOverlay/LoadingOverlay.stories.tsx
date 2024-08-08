@@ -14,6 +14,6 @@ export default {
   },
 };
 
-export const Default = () => (
-  <LoadingOverlay visible />
-);
+export function Default() {
+  return <LoadingOverlay visible />;
+}

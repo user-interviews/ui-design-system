@@ -20,23 +20,25 @@ type MainProps = ElementProps & {
   id?: string;
 };
 
-const Main = ({
+function Main({
   as = 'main',
   className,
   children,
   fluid = true,
   id,
   ...props
-}: MainProps) => (
-  <Container
-    as={as}
-    className={classNames(className, 'Main')}
-    fluid={fluid}
-    id={id}
-    {...props}
-  >
-    {children}
-  </Container>
-);
+}: MainProps) {
+  return (
+    <Container
+      as={as}
+      className={classNames(className, 'Main')}
+      fluid={fluid}
+      id={id}
+      {...props}
+    >
+      {children}
+    </Container>
+  );
+}
 
 export default Main;

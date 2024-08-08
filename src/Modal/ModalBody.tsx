@@ -7,14 +7,15 @@ type ModalBodyProps = {
   className?: string;
 };
 
-const ModalBody = ({
+function ModalBody({
   children,
   className,
-}: ModalBodyProps) => (
-
-  <div className={classNames('ModalBody', className)}>
-    {children}
-  </div>
-);
+}: ModalBodyProps) {
+  return (
+    <div className={classNames('ModalBody', className)}>
+      {children}
+    </div>
+  );
+}
 
 export default ModalBody;

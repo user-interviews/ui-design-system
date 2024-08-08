@@ -13,15 +13,17 @@ type StepsProps = DivProps & {
   className?: string;
 };
 
-const Steps = ({
+function Steps({
   children,
   className,
   ...props
-}: StepsProps) => (
-  <div className={classNames('Steps', className)} {...props}>
-    {children}
-  </div>
-);
+}: StepsProps) {
+  return (
+    <div className={classNames('Steps', className)} {...props}>
+      {children}
+    </div>
+  );
+}
 
 Steps.defaultProps = {
   children: undefined,

@@ -25,7 +25,7 @@ type PillProps = {
   onClose?: (...args: unknown[]) => unknown;
 };
 
-const Pill = ({
+function Pill({
   children,
   color = 'blue',
   icon,
@@ -33,9 +33,10 @@ const Pill = ({
   onClose,
   text,
   ...props
-}: PillProps) => (
-  <span
-    className={
+}: PillProps) {
+  return (
+    <span
+      className={
         classNames(
           'Pill',
           {
@@ -44,14 +45,14 @@ const Pill = ({
           },
         )
       }
-    {...props}
-  >
-    { icon && (
-    <FontAwesomeIcon className="Pill__icon--lead" icon={icon} />
+      {...props}
+    >
+      { icon && (
+      <FontAwesomeIcon className="Pill__icon--lead" icon={icon} />
       )}
-    { children }
-    { text }
-    { onClose && (
+      { children }
+      { text }
+      { onClose && (
       <button
         aria-label={`Remove ${text}`}
         className="Pill__button--close"
@@ -61,7 +62,8 @@ const Pill = ({
         <FontAwesomeIcon icon={faTimes} />
       </button>
         )}
-  </span>
-);
+    </span>
+  );
+}
 
 export default Pill;

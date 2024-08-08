@@ -18,14 +18,14 @@ export type InputLegendProps = {
   tooltipText?: React.ReactNode;
 } & LegendProps;
 
-const InputLegend = ({
+function InputLegend({
   className = '',
   text,
   required,
   labelHelperText = '',
   tooltipText,
   ...props
-}: InputLegendProps) => {
+}: InputLegendProps) {
   const inputLegendChildren = (
     <>
       {text}
@@ -43,6 +43,6 @@ const InputLegend = ({
       {inputLegendChildren}
     </legend>
   );
-};
+}
 
 export default InputLegend;

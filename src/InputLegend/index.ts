@@ -1,1 +1,3 @@
-export { default } from './InputLegend';
+import InputLegend from './InputLegend';
+
+export default InputLegend;

@@ -1,1 +1,3 @@
-export { default } from './TrackedButton';
+import TrackedButton from './TrackedButton';
+
+export default TrackedButton;

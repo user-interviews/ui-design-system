@@ -1,1 +1,4 @@
-export { default, ButtonSizes, ButtonVariants } from './Button';
+import Button from './Button';
+
+export { ButtonSizes, ButtonVariants } from './Button';
+export default Button;

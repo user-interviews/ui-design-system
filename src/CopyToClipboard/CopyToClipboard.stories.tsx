@@ -7,9 +7,11 @@ export default {
   component: CopyToClipboard,
 };
 
-export const Default = () => (
-  <CopyToClipboard
-    copyText="Copy me!"
-    trackingEvent="copy-text"
-  />
-);
+export function Default() {
+  return (
+    <CopyToClipboard
+      copyText="Copy me!"
+      trackingEvent="copy-text"
+    />
+  );
+}

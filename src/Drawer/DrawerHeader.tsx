@@ -17,11 +17,11 @@ type DrawerHeaderProps = {
   onRequestClose: (...args: unknown[]) => unknown;
 };
 
-const DrawerHeader = ({
+function DrawerHeader({
   bordered = true,
   title,
   onRequestClose,
-}: DrawerHeaderProps) => {
+}: DrawerHeaderProps) {
   const { expandable, expanded, handleExpand } = useContext(ExpandContext);
 
   return (
@@ -56,7 +56,7 @@ const DrawerHeader = ({
       </button>
     </div>
   );
-};
+}
 
 DrawerHeader.defaultProps = {
   bordered: true,

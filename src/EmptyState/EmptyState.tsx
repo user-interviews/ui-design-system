@@ -17,7 +17,7 @@ export interface EmptyStateProps {
   title?: ReactNode;
 }
 
-const EmptyState = ({
+function EmptyState({
   className,
   fullWidth = false,
   image,
@@ -25,24 +25,25 @@ const EmptyState = ({
   primaryAction,
   subtitle,
   title,
-}: EmptyStateProps) => (
-  <div className={classNames(
+}: EmptyStateProps) {
+  return (
+    <div className={classNames(
     className,
     'EmptyState',
     marginTop && `EmptyState--margin-top--${marginTop}`,
   )}
-  >
-    <div className={classNames(
+    >
+      <div className={classNames(
       'EmptyState__content',
       fullWidth && 'EmptyState--full-width',
     )}
-    >
-      {image && (
+      >
+        {image && (
         <div className="EmptyState__image">
           <img alt="" src={image} />
         </div>
       )}
-      {title && (
+        {title && (
         <Heading
           className="EmptyState__title"
           level={4}
@@ -50,23 +51,24 @@ const EmptyState = ({
           textAlign="center"
           weight="bold"
         >
-            {title}
+          {title}
         </Heading>
       )}
 
-      {subtitle && (
+        {subtitle && (
         <Text className="EmptyState__subtitle" textAlign="center">{subtitle}</Text>
       )}
 
-      {primaryAction && (
+        {primaryAction && (
         <div className="EmptyState__actions">
           <div className="EmptyState__actions__primary-action">
             {primaryAction}
           </div>
         </div>
       )}
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
 export default EmptyState;

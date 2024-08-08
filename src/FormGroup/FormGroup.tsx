@@ -135,7 +135,8 @@ export default function FormGroup({
      {
        className: classNames(
          'FormGroup',
-         className, {
+         className,
+{
            'FormGroup--is-invalid': hasErrors,
            'FormGroup--bordered': bordered,
            'FormGroup--inline': inline,

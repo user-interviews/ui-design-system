@@ -46,18 +46,20 @@ export type LoadingSkeletonProps = SkeletonProps & {
   width?: number | string;
 };
 
-const LoadingSkeleton = ({
+function LoadingSkeleton({
   className,
   ...props
-}: LoadingSkeletonProps) => (
-  <SkeletonTheme baseColor={colors.UX_GRAY_300}>
-    <Skeleton
-      {...props}
-      className={classNames('LoadingSkeleton', className)}
-      containerClassName={classNames('loadingSkeletonContainer', props.containerClassName)}
-    />
-  </SkeletonTheme>
-);
+}: LoadingSkeletonProps) {
+  return (
+    <SkeletonTheme baseColor={colors.UX_GRAY_300}>
+      <Skeleton
+        {...props}
+        className={classNames('LoadingSkeleton', className)}
+        containerClassName={classNames('loadingSkeletonContainer', props.containerClassName)}
+      />
+    </SkeletonTheme>
+  );
+}
 
 LoadingSkeleton.defaultProps = {
   borderRadius: '4px',

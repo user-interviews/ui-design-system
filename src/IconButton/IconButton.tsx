@@ -68,7 +68,7 @@ export type IconButtonProps = (
   size?: 'sm' | 'lg';
 } & ButtonProps;
 
-const IconButton = ({
+function IconButton({
   action,
   ariaLabel,
   className,
@@ -77,7 +77,7 @@ const IconButton = ({
   size = 'sm',
   variant = 'transparent',
   ...props
-}: IconButtonProps) => {
+}: IconButtonProps) {
   const getAriaLabel = () => {
     if (action) {
       return ariaLabel || IconButtonActions[action]?.ariaLabel;
@@ -101,6 +101,6 @@ const IconButton = ({
       />
     </Button>
   );
-};
+}
 
 export default IconButton;

@@ -48,7 +48,7 @@ type DropdownToggleProps = {
   split?: boolean;
 };
 
-const DropdownToggle = ({
+function DropdownToggle({
   as,
   ariaLabel = 'dropdown-toggle',
   bsPrefix = 'dropdown-toggle',
@@ -60,23 +60,25 @@ const DropdownToggle = ({
   removeCaret,
   unstyled,
   ...props
-}: DropdownToggleProps) => (
-  <RBDropdown.Toggle
-    aria-label={ariaLabel}
-    as={as}
-    bsPrefix={removeCaret ? 'DropdownToggle--no-caret' : bsPrefix}
-    childBsPrefix={childBsPrefix}
-    className={classNames(
+}: DropdownToggleProps) {
+  return (
+    <RBDropdown.Toggle
+      aria-label={ariaLabel}
+      as={as}
+      bsPrefix={removeCaret ? 'DropdownToggle--no-caret' : bsPrefix}
+      childBsPrefix={childBsPrefix}
+      className={classNames(
         'DropdownToggle',
         className,
         { 'DropdownToggle--unstyled': unstyled },
       )}
-    id={id}
-    {...props}
-  >
-    { leadingIcon && (<FontAwesomeIcon className="icon-left" icon={leadingIcon} />)}
-    { children }
-  </RBDropdown.Toggle>
-);
+      id={id}
+      {...props}
+    >
+      { leadingIcon && (<FontAwesomeIcon className="icon-left" icon={leadingIcon} />)}
+      { children }
+    </RBDropdown.Toggle>
+  );
+}
 
 export default DropdownToggle;

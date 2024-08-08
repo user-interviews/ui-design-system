@@ -16,54 +16,66 @@ export default {
   },
 };
 
-export const Default = () => (
-  <RichTextEditor
-    id="text-editor"
-    onChange={() => null}
-  />
-);
+export function Default() {
+  return (
+    <RichTextEditor
+      id="text-editor"
+      onChange={() => null}
+    />
+  );
+}
 
-export const ARIAAttributes = () => (
-  <RichTextEditor
-    ariaAttributes={{ 'aria-label': 'Rich Text Editor', 'aria-required': true }}
-    id="text-editor"
-    onChange={() => null}
-  />
-);
+export function ARIAAttributes() {
+  return (
+    <RichTextEditor
+      ariaAttributes={{ 'aria-label': 'Rich Text Editor', 'aria-required': true }}
+      id="text-editor"
+      onChange={() => null}
+    />
+  );
+}
 
-export const AvailableActions = () => (
-  <RichTextEditor
-    availableActions={[RichTextEditorActions.BOLD, RichTextEditorActions.ITALIC]}
-    id="text-editor"
-    onChange={() => null}
-  />
-);
+export function AvailableActions() {
+  return (
+    <RichTextEditor
+      availableActions={[RichTextEditorActions.BOLD, RichTextEditorActions.ITALIC]}
+      id="text-editor"
+      onChange={() => null}
+    />
+  );
+}
 
-export const CharacterLimit = () => (
-  <RichTextEditor
-    characterLimit={140}
-    id="text-editor"
-    onChange={() => null}
-  />
-);
+export function CharacterLimit() {
+  return (
+    <RichTextEditor
+      characterLimit={140}
+      id="text-editor"
+      onChange={() => null}
+    />
+  );
+}
 
-export const OneLine = () => (
-  <RichTextEditor
-    id="text-editor"
-    isOneLine
-    onChange={() => null}
-  />
-);
+export function OneLine() {
+  return (
+    <RichTextEditor
+      id="text-editor"
+      isOneLine
+      onChange={() => null}
+    />
+  );
+}
 
-export const Error = () => (
-  <RichTextEditor
-    hasErrors
-    id="text-editor"
-    onChange={() => null}
-  />
-);
+export function Error() {
+  return (
+    <RichTextEditor
+      hasErrors
+      id="text-editor"
+      onChange={() => null}
+    />
+  );
+}
 
-export const SetContent = () => {
+export function SetContent() {
   const ref = useRef<RichTextEditorRef>(null);
 
   const handleClick = () => {
@@ -80,4 +92,4 @@ export const SetContent = () => {
       />
     </>
   );
-};
+}

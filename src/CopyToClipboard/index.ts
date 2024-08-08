@@ -1,1 +1,3 @@
-export { default } from './CopyToClipboard';
+import CopyToClipboard from './CopyToClipboard';
+
+export default CopyToClipboard;

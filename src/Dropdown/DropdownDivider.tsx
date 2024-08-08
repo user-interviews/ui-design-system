@@ -20,17 +20,19 @@ type DropdownDividerProps = {
   className?: string;
 };
 
-const DropdownDivider = ({
+function DropdownDivider({
   as = 'hr',
   bsPrefix = 'dropdown',
   className,
-}: DropdownDividerProps) => (
-  <RBDropdown.Divider
-    as={as}
-    bsPrefix={bsPrefix}
-    className={classNames('DropdownDivider', className)}
-  />
-);
+}: DropdownDividerProps) {
+  return (
+    <RBDropdown.Divider
+      as={as}
+      bsPrefix={bsPrefix}
+      className={classNames('DropdownDivider', className)}
+    />
+  );
+}
 
 DropdownDivider.defaultProps = {
   as: 'hr',

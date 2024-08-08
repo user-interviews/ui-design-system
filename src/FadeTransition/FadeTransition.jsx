@@ -4,11 +4,13 @@ import { CSSTransition } from 'react-transition-group';
 
 import './FadeTransition.scss';
 
-const FadeTransition = ({ children, ...props }) => (
-  <CSSTransition {...props} classNames="FadeTransition" timeout={{ enter: 300, exit: 200 }}>
-    {children}
-  </CSSTransition>
-);
+function FadeTransition({ children, ...props }) {
+  return (
+    <CSSTransition {...props} classNames="FadeTransition" timeout={{ enter: 300, exit: 200 }}>
+      {children}
+    </CSSTransition>
+  );
+}
 
 FadeTransition.propTypes = {
   children: PropTypes.element.isRequired,
