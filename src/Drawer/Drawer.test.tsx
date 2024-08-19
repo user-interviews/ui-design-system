@@ -215,6 +215,45 @@ describe('Drawer', () => {
         });
       });
 
+      it('calls onRequestClose when closeOnOverlayClick is not defined', async () => {
+        const onRequestClose = jest.fn();
+
+        const { container } = render(
+          <SetupDrawerWithChildren
+            visible
+            onRequestClose={onRequestClose}
+          />,
+        );
+
+        const [overlay] = Array.from(container.getElementsByClassName('DrawerBackgroundOverlay'));
+
+        userEvent.click(overlay);
+
+        await waitFor(() => {
+          expect(onRequestClose).toHaveBeenCalled();
+        });
+      });
+
+      it('does not call onRequestClose when closeOnOverlayClick is set to false', async () => {
+        const onRequestClose = jest.fn();
+
+        const { container } = render(
+          <SetupDrawerWithChildren
+            closeOnOverlayClick={false}
+            visible
+            onRequestClose={onRequestClose}
+          />,
+        );
+
+        const [overlay] = Array.from(container.getElementsByClassName('DrawerBackgroundOverlay'));
+
+        userEvent.click(overlay);
+
+        await waitFor(() => {
+          expect(onRequestClose).not.toHaveBeenCalled();
+        });
+      });
+
       it('body tag has Drawer--open', () => {
         const { container } = render(<SetupDrawerWithChildren visible />);
         const body = container.closest('body');
