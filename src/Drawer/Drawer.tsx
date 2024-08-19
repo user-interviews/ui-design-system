@@ -28,6 +28,7 @@ type DrawerProps = {
   behindNav?: boolean;
   children?: React.ReactNode;
   className?: string;
+  closeOnOverlayClick?: boolean;
   defaultExpanded?: boolean;
   expandable?: boolean;
   hasBackgroundOverlay?: boolean;
@@ -42,6 +43,7 @@ function Drawer({
   children,
   className = '',
   defaultExpanded = false,
+  closeOnOverlayClick = true,
   expandable = false,
   hasBackgroundOverlay = true,
   visible,
@@ -122,7 +124,7 @@ function Drawer({
               })
             }
             role="presentation"
-            onClick={onRequestClose}
+            onClick={closeOnOverlayClick ? onRequestClose : undefined}
             onKeyDown={handleEscKeyPress}
           />
         )
