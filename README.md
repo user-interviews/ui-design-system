@@ -30,19 +30,22 @@ After cloning the repo, obtain a `.npmrc` file from another developer. This file
 node packages.
 
 ### Available Scripts
-In the project directory, you can run:
+_In the project directory, you can run:_
 
 `yarn storybook`
-Launches the Storybook server.
+_Launches the Storybook server._
 
 `yarn install`
-Installs all yarn dependencies.
+_Installs all yarn dependencies._
 
 `yarn test`
-Runs the jest test suite.
+_Runs the jest test suite._
 
 `yarn lint`
-Runs ESLint to report on any style violations
+_Runs ESLint to report on any style violations._
+
+`bin/migrate-stack`
+_Installs specific Node.js and Yarn versions with Volta, creates a .env file, and adds an FONTAWESOME_NPM_AUTH_TOKEN to it._
 
 ### Developing against `rails-server`
 
@@ -90,7 +93,7 @@ If you want to flag anything design system related on any PR you're working on o
 
 ## Storybook development (Under construction 🚧)
 
-<a href='https://docs.userinterviews.com/?path=/story/intro--page'>
+<a href='https://docs.userinterviews.com/?path=/docs/intro--docs'>
   <img src='https://img.shields.io/badge/storybook-FF4785?style=for-the-badge&logo=storybook&logoColor=white' alt='Storybook logo'/>
 </a>
 
