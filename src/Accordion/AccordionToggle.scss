@@ -10,6 +10,14 @@
     grid-template-areas: 'content chevron-right';
     padding: 16px 24px;
 
+    &.borderBottom {
+      border-bottom: 1px solid var(--ux-gray-400);
+    }
+    
+    &.flush {
+      padding: 16px 4px;
+    }
+
     &--right {
       grid-area: chevron-right;
       

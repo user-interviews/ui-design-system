@@ -349,6 +349,50 @@ Borderless.args = {
   title: 'Accordion Toggle',
 };
 
+export function BorderlessBorderBottomFlushToggles(args) {
+  return (
+    <Accordion flush>
+      <AccordionItem borderless eventKey="0">
+        <AccordionToggle
+          borderBottom
+          eventKey="0"
+          flush
+          {...args}
+        />
+        <AccordionCollapse eventKey="0">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </AccordionCollapse>
+      </AccordionItem>
+      <AccordionItem borderless eventKey="1">
+        <AccordionToggle
+          borderBottom
+          eventKey="1"
+          flush
+          {...args}
+        />
+        <AccordionCollapse eventKey="1">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </AccordionCollapse>
+      </AccordionItem>
+    </Accordion>
+  );
+}
+
+BorderlessBorderBottomFlushToggles.args = {
+  chevronLeft: false,
+  disabled: false,
+  helperText: 'helper text',
+  title: 'Accordion Toggle',
+};
+
 export function InCard(args) {
   return (
     <>

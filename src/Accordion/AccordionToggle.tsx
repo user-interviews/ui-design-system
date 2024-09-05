@@ -13,6 +13,7 @@ import { faChevronUp } from '@fortawesome/pro-solid-svg-icons';
 import { isEventKeyActive } from './utils';
 
 type AccordionToggleProps = {
+  borderBottom?: boolean;
   /**
    Set Chevron icon to open/close quarter turn from lateral
   */
@@ -32,6 +33,7 @@ type AccordionToggleProps = {
    */
   disabled?: boolean;
   eventKey: string;
+  flush?: boolean;
   helperText?: string;
   leadingIcon?: object;
   title?: string;
@@ -40,6 +42,7 @@ type AccordionToggleProps = {
 };
 
 function AccordionToggle({
+  borderBottom,
   children,
   chevronLateral,
   chevronLeft,
@@ -47,6 +50,7 @@ function AccordionToggle({
   collapsedText,
   disabled,
   eventKey,
+  flush,
   helperText,
   leadingIcon,
   title,
@@ -96,7 +100,7 @@ function AccordionToggle({
       type="button"
       onClick={decoratedOnClick}
     >
-      <div className="AccordionToggle__container">
+      <div className={classNames('AccordionToggle__container', { flush }, { borderBottom })}>
         <div className="AccordionToggle__container--content">
           {chevronLeft && (
             <span className="AccordionToggle__chevron-left">
