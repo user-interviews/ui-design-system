@@ -64,6 +64,48 @@ Default.args = {
   title: 'Accordion Toggle',
 };
 
+export function AlwaysOpen(args) {
+  return (
+    <Accordion alwaysOpen>
+      <AccordionItem eventKey="0">
+        <AccordionToggle
+          eventKey="0"
+          leadingIcon={faCreditCard}
+          {...args}
+        />
+        <AccordionCollapse eventKey="0">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </AccordionCollapse>
+      </AccordionItem>
+      <AccordionItem eventKey="1">
+        <AccordionToggle
+          eventKey="1"
+          leadingIcon={faCreditCard}
+          {...args}
+        />
+        <AccordionCollapse eventKey="1">
+          <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+          </ul>
+        </AccordionCollapse>
+      </AccordionItem>
+    </Accordion>
+  );
+}
+
+AlwaysOpen.args = {
+  chevronLeft: false,
+  disabled: false,
+  helperText: 'helper text',
+  title: 'Accordion Toggle - always open',
+};
+
 export function DefaultOpen(args) {
   return (
     <Accordion defaultActiveKey="1">

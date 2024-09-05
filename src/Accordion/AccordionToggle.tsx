@@ -10,6 +10,8 @@ import AccordionContext from 'react-bootstrap/AccordionContext';
 import './AccordionToggle.scss';
 import { faChevronUp } from '@fortawesome/pro-solid-svg-icons';
 
+import { isEventKeyActive } from './utils';
+
 type AccordionToggleProps = {
   /**
    Set Chevron icon to open/close quarter turn from lateral
@@ -54,10 +56,12 @@ function AccordionToggle({
 }: AccordionToggleProps) {
   const { activeEventKey } = React.useContext(AccordionContext);
 
+  const eventKeyIsActive = isEventKeyActive(eventKey, activeEventKey);
+
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const decoratedOnClick = useAccordionButton(eventKey, () => {
-    if (eventKey !== activeEventKey) {
+    if (!eventKeyIsActive) {
       setIsCollapsed(false);
     }
     setIsCollapsed((prev) => !prev);
@@ -68,14 +72,14 @@ function AccordionToggle({
   };
 
   useEffect(() => {
-    if (activeEventKey && eventKey !== activeEventKey) {
+    if (!eventKeyIsActive) {
       handleCloseInactiveToggle();
     }
 
-    if (activeEventKey && eventKey === activeEventKey) {
+    if (eventKeyIsActive) {
       setIsCollapsed(((prev) => !prev));
     }
-  }, [activeEventKey, eventKey]);
+  }, [eventKeyIsActive]);
 
   return (
     <button
