@@ -10,7 +10,7 @@ const meta: Meta<typeof Flex> = {
   component: Flex,
   parameters: {
     docs: {
-      page: mdx
+      page: mdx,
     },
   },
   title: 'Deprecated/Flex',
