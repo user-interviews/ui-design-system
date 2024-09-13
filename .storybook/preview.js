@@ -35,6 +35,7 @@ const preview = {
     },
     options: {
       storySort: {
+        method: 'alphabetical',
         order: ['Foundations', 'Components'],
       },
     },
