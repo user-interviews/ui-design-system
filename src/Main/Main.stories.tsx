@@ -6,7 +6,7 @@ import Main from './Main';
 import mdx from './Main.mdx';
 
 export default {
-  title: 'Layouts/Main',
+  title: 'Components/Main',
   component: Main,
   parameters: {
     docs: {

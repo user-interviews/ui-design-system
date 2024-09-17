@@ -4,6 +4,8 @@ import {
   type ContainerProps as ReactBootstrapContainerProps,
 } from 'react-bootstrap';
 
+import { useDeprecationWarning } from 'src/utils';
+
 export type ContainerProps = {
   /**
    You can use a custom element for this component
@@ -30,6 +32,8 @@ export function Container({
   bsPrefix = 'container',
   ...props
 }: ContainerProps) {
+  useDeprecationWarning({ componentName: 'Container', message: 'Please use FlexContainer instead.' });
+
   return (
     <ReactBootstrapContainer
       as={as}

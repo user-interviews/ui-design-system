@@ -1,10 +1,10 @@
-import { ArgTypes,  Canvas } from '@storybook/blocks';
+import { Canvas } from '@storybook/blocks';
 import Flex from './Flex';
 import * as ComponentStories from './Flex.stories';
 
-# Flex
+# Flex (Deprecated)
 
-##
+<b>⚠️ Deprecated: please use <code>FlexContainer</code> instead</b>
 
 <h4>
   Flex is a utility component for creating consistent spacing between items. Use this for quick alignment and spacing in your layouts.
@@ -19,21 +19,3 @@ Flexbox CSS properties in the following documentation:
 </ul>
 
 <Canvas of={ComponentStories.Default} />
-
-## Props
-
-<ArgTypes of={Flex} />
-
-## Stories
-
-### Default
-
-<Canvas of={ComponentStories.Default} />
-
-### Flex Container
-
-<Canvas of={ComponentStories.FlexContainer} />
-
-### Flex Item
-
-<Canvas of={ComponentStories.FlexItem} />
