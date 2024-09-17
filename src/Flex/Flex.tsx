@@ -65,7 +65,6 @@ function Flex({
   width,
   ...props
 }: FlexProps) {
-  
   useDeprecationWarning({ componentName: 'Flex', message: 'Please use FlexContainer instead.' });
 
   // Defined flex properties as strings
