@@ -1,6 +1,8 @@
 import { ReactNode, ElementType, createElement } from 'react';
 import classNames from 'classnames';
 
+import { useDeprecationWarning } from 'src/utils';
+
 import styles from './Flex.module.scss';
 
 export interface FlexProps {
@@ -63,6 +65,9 @@ function Flex({
   width,
   ...props
 }: FlexProps) {
+  
+  useDeprecationWarning({ componentName: 'Flex', message: 'Please use FlexContainer instead.' });
+
   // Defined flex properties as strings
   const flexClasses = [
     container ? styles[`flex-container`] : styles.container,

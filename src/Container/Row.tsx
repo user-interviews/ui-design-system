@@ -4,6 +4,8 @@ import {
   type RowProps as ReactBootstrapRowProps,
 } from 'react-bootstrap';
 
+import { useDeprecationWarning } from 'src/utils';
+
 export type RowProps = {
   /**
    You can use a custom element for this component
@@ -66,6 +68,9 @@ export function Row({
   bsPrefix = 'row',
   ...props
 }: RowProps) {
+  
+  useDeprecationWarning({ componentName: 'Row', message: 'Please use FlexContainer instead.' });
+
   return (
     <ReactBootstrapRow
       as={as}

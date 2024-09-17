@@ -4,6 +4,8 @@ import {
   type ColProps as ReactBootstrapColProps,
 } from 'react-bootstrap';
 
+import { useDeprecationWarning } from 'src/utils';
+
 export type ColProps = {
   /**
    You can use a custom element for this component
@@ -66,6 +68,8 @@ export function Col({
   bsPrefix = 'col',
   ...props
 }: ColProps) {
+  useDeprecationWarning({ componentName: 'Col', message: 'Please use FlexContainer instead.' });
+
   return (
     <ReactBootstrapCol
       as={as}
