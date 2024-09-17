@@ -16,3 +16,9 @@
     padding-top: 0px !important;
   }
 }
+ /* If the parent AccordionToggle has a border-bottom applied, remove the top one here */
+.borderBottom {
+  .AccordionCollapse {
+    border-top: none;
+  }
+}

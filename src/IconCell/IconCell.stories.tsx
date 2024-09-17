@@ -8,7 +8,7 @@ import IconCell from '.';
 import mdx from './IconCell.mdx';
 
 export default {
-  title: 'Components/IconCell',
+  title: 'Deprecated/IconCell',
   component: IconCell,
   parameters: {
     docs: {

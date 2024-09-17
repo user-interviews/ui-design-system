@@ -5,7 +5,7 @@ import { Col, Container, Row } from '.';
 import mdx from './Container.mdx';
 
 export default {
-  title: 'Layouts/Container',
+  title: 'Deprecated/Container',
   component: Container,
   parameters: {
     docs: {

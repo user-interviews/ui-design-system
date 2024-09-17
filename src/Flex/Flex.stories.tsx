@@ -4,16 +4,16 @@ import type { Meta, StoryObj } from '@storybook/react';
 import Card from '../Card';
 import Flex from './Flex';
 
+import mdx from './Flex.mdx';
+
 const meta: Meta<typeof Flex> = {
   component: Flex,
   parameters: {
     docs: {
-      description: {
-        component: 'Flex is a utility component for creating consistent spacing between items. Use this for quick alignment and spacing in your layouts.',
-      },
+      page: mdx,
     },
   },
-  title: 'Layouts/Flex',
+  title: 'Deprecated/Flex',
 };
 
 export default meta;

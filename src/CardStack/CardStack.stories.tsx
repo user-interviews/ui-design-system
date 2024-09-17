@@ -7,7 +7,7 @@ import CardStack from './CardStack';
 import mdx from './CardStack.mdx';
 
 export default {
-  title: 'Layouts/CardStack',
+  title: 'Components/CardStack',
   component: CardStack,
   parameters: {
     docs: {
