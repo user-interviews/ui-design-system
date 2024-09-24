@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { faFileAlt, faCaretDown, faPaperPlane } from '@fortawesome/pro-regular-svg-icons';
+import { faFileAlt, faCaretDown, faPaperPlane } from 'src/font_awesome/regular';
 import {
  faGoogle, faFacebook, faLinkedin, faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
+} from 'src/font_awesome/brands';
 import Button from '.';
 import mdx from './Button.mdx';
 

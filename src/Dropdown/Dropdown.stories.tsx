@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
  faEllipsisV, faFileAlt, faChevronDown, faTag, faEnvelope, faTrashAlt,
-} from '@fortawesome/pro-regular-svg-icons';
+} from 'src/font_awesome/regular';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {

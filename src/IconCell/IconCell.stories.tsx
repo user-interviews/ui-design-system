@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
  faGlobe, faMailbox, faPaperPlane, faStar, faUser,
-} from '@fortawesome/pro-regular-svg-icons';
+} from 'src/font_awesome/regular';
 
 import IconCell from '.';
 import mdx from './IconCell.mdx';
