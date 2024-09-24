@@ -5,7 +5,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { faCopy } from 'src/font_awesome/regular';
+import { faCopy } from '../font_awesome/regular';
 
 import TrackedButton from '../TrackedButton';
 import Popper from '../Popper';

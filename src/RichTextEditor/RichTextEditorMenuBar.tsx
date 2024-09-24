@@ -12,7 +12,7 @@ import {
   faListOl,
   faListUl,
   faUnlink,
-} from 'src/font_awesome/regular';
+} from '../font_awesome/regular';
 import IconButton from '../IconButton';
 
 import { RichTextEditorActions } from './richTextEditorActions';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { faCreditCard } from 'src/font_awesome/regular';
+import { faCreditCard } from '../font_awesome/regular';
 import Card from '../Card';
 
 import {

@@ -2,7 +2,7 @@ import React from 'react';
 import { action } from '@storybook/addon-actions';
 import {
  faClock, faGiftCard, faGlobe, faMicrophone, faUsers,
-} from 'src/font_awesome/solid';
+} from '../font_awesome/solid';
 
 import { Pill, Pills, PILL_COLORS } from '.';
 import mdx from './Pill.mdx';

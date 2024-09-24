@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSpinnerThird } from 'src/font_awesome/solid';
+import { faSpinnerThird } from '../font_awesome/solid';
 
 import './LoadingOverlay.scss';
 

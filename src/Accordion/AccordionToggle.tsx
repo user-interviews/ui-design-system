@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import AccordionContext from 'react-bootstrap/AccordionContext';
 
-import { faChevronUp } from 'src/font_awesome/solid';
+import { faChevronUp } from '../font_awesome/solid';
 
 import './AccordionToggle.scss';
 

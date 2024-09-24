@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 
-import { faFileAlt, faEllipsisV, faThumbtack } from 'src/font_awesome/solid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { faFileAlt, faEllipsisV, faThumbtack } from '../font_awesome/solid';
 import Button from '../Button';
 import Card from '../Card';
 import CheckboxButton from '../CheckboxButton';

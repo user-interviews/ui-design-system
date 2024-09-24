@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import { isValid } from 'date-fns';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt } from 'src/font_awesome/regular';
+import { faCalendarAlt } from '../font_awesome/regular';
 
 type PickerEnforcedInputProps = {
   disabled?: boolean;

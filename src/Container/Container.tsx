@@ -4,7 +4,7 @@ import {
   type ContainerProps as ReactBootstrapContainerProps,
 } from 'react-bootstrap';
 
-import { useDeprecationWarning } from 'src/utils';
+import { useDeprecationWarning } from '../utils';
 
 export type ContainerProps = {
   /**

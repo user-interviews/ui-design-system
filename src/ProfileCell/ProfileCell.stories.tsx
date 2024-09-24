@@ -1,5 +1,5 @@
 import React from 'react';
-import { faShieldCheck } from 'src/font_awesome/solid';
+import { faShieldCheck } from '../font_awesome/solid';
 import ProfileCell from '.';
 import ProfileCellSkeleton from './ProfileCellSkeleton';
 import mdx from './ProfileCell.mdx';
