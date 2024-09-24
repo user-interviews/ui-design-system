@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import { faSearch } from '../font_awesome/solid';
 import { FlexContainer } from 'src/FlexContainer';
+import { faSearch } from '../font_awesome/solid';
 import FormGroup from '.';
 import Input from '../Input';
 import FormControlLabel from '../FormControlLabel';

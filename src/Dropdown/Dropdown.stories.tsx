@@ -1,10 +1,9 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
  faEllipsisV, faFileAlt, faChevronDown, faTag, faEnvelope, faTrashAlt,
 } from '../font_awesome/regular';
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
  Dropdown, DropdownDivider, DropdownToggle, DropdownItem, DropdownMenu,
 } from '.';
