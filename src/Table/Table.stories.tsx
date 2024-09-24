@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { faFileAlt, faEllipsisV, faThumbtack } from '@fortawesome/pro-solid-svg-icons';
+import { faFileAlt, faEllipsisV, faThumbtack } from 'src/font_awesome/solid';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import Button from '../Button';

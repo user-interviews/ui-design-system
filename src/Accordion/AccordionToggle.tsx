@@ -7,8 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import AccordionContext from 'react-bootstrap/AccordionContext';
 
+import { faChevronUp } from 'src/font_awesome/solid';
+
 import './AccordionToggle.scss';
-import { faChevronUp } from '@fortawesome/pro-solid-svg-icons';
 
 import { isEventKeyActive } from './utils';
 

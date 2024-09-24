@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { faSearch } from '@fortawesome/pro-solid-svg-icons';
 
+import { faSearch } from 'src/font_awesome/solid';
 import { FlexContainer } from 'src/FlexContainer';
 import FormGroup from '.';
 import Input from '../Input';
