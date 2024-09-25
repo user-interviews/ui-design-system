@@ -6,8 +6,6 @@
 
 /* eslint-disable no-restricted-imports */
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-
 import { faSpinnerThird } from '@fortawesome/pro-regular-svg-icons/faSpinnerThird';
 import { faCreditCard } from '@fortawesome/pro-regular-svg-icons/faCreditCard';
 import { faFileAlt } from '@fortawesome/pro-regular-svg-icons/faFileAlt';
@@ -38,37 +36,6 @@ import { faLink } from '@fortawesome/pro-regular-svg-icons/faLink';
 import { faListOl } from '@fortawesome/pro-regular-svg-icons/faListOl';
 import { faListUl } from '@fortawesome/pro-regular-svg-icons/faListUl';
 import { faUnlink } from '@fortawesome/pro-regular-svg-icons/faUnlink';
-
-library.add(faSpinnerThird);
-library.add(faCreditCard);
-library.add(faFileAlt);
-library.add(faCaretDown);
-library.add(faPaperPlane);
-library.add(faCopy);
-library.add(faCalendarAlt);
-library.add(faEllipsisV);
-library.add(faChevronDown);
-library.add(faTag);
-library.add(faEnvelope);
-library.add(faTrashAlt);
-library.add(faPlus);
-library.add(faPlusCircle);
-library.add(faMinusCircle);
-library.add(faChevronLeft);
-library.add(faChevronRight);
-library.add(faPencil);
-library.add(faTimes);
-library.add(faExpandAlt);
-library.add(faGlobe);
-library.add(faMailbox);
-library.add(faStar);
-library.add(faUser);
-library.add(faBold);
-library.add(faItalic);
-library.add(faLink);
-library.add(faListOl);
-library.add(faListUl);
-library.add(faUnlink);
 
 export {
   faSpinnerThird,

@@ -6,8 +6,6 @@
 
 /* eslint-disable no-restricted-imports */
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-
 import { faChevronUp } from '@fortawesome/pro-solid-svg-icons/faChevronUp';
 import { faBullhorn } from '@fortawesome/pro-solid-svg-icons/faBullhorn';
 import { faCircle } from '@fortawesome/pro-solid-svg-icons/faCircle';
@@ -34,33 +32,6 @@ import { faEllipsisV } from '@fortawesome/pro-solid-svg-icons/faEllipsisV';
 import { faThumbtack } from '@fortawesome/pro-solid-svg-icons/faThumbtack';
 import { faSort } from '@fortawesome/pro-solid-svg-icons/faSort';
 import { faQuestionCircle } from '@fortawesome/pro-solid-svg-icons/faQuestionCircle';
-
-library.add(faChevronUp);
-library.add(faBullhorn);
-library.add(faCircle);
-library.add(faCheck);
-library.add(faExclamationTriangle);
-library.add(faInfo);
-library.add(faTimes);
-library.add(faEnvelope);
-library.add(faChevronLeft);
-library.add(faChevronRight);
-library.add(faTrash);
-library.add(faCompressAlt);
-library.add(faExpandAlt);
-library.add(faSearch);
-library.add(faSpinnerThird);
-library.add(faClock);
-library.add(faGiftCard);
-library.add(faGlobe);
-library.add(faMicrophone);
-library.add(faUsers);
-library.add(faShieldCheck);
-library.add(faFileAlt);
-library.add(faEllipsisV);
-library.add(faThumbtack);
-library.add(faSort);
-library.add(faQuestionCircle);
 
 export {
   faChevronUp,
