@@ -4,7 +4,7 @@ import {
   type ColProps as ReactBootstrapColProps,
 } from 'react-bootstrap';
 
-import { useDeprecationWarning } from 'src/utils';
+import { useDeprecationWarning } from '../utils';
 
 export type ColProps = {
   /**

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { faCreditCard } from '@fortawesome/pro-regular-svg-icons';
+import { faCreditCard } from '../font_awesome/regular';
 import Card from '../Card';
 
 import {

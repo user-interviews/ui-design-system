@@ -5,7 +5,7 @@ import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faTimes, faCompressAlt, faExpandAlt,
-} from '@fortawesome/pro-solid-svg-icons';
+} from '../font_awesome/solid';
 
 import './DrawerHeader.scss';
 

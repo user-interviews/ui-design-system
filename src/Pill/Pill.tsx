@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-import { type IconDefinition } from '@fortawesome/pro-solid-svg-icons';
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/pro-solid-svg-icons';
+import { faTimes } from '../font_awesome/solid';
 
 import './Pill.scss';
 

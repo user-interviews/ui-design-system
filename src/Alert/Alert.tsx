@@ -10,7 +10,7 @@ import {
   faExclamationTriangle,
   faInfo,
   faTimes,
-} from '@fortawesome/pro-solid-svg-icons';
+} from '../font_awesome/solid';
 
 import './Alert.scss';
 

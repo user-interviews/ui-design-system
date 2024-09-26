@@ -1,7 +1,7 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
 
-import { faExclamationTriangle } from '@fortawesome/pro-solid-svg-icons';
+import { faExclamationTriangle } from '../font_awesome/solid';
 
 import Tooltip from '.';
 import mdx from './Tooltip.mdx';

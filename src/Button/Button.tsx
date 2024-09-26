@@ -2,12 +2,12 @@ import React, { forwardRef } from 'react';
 import classNames from 'classnames';
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSpinnerThird } from '@fortawesome/pro-regular-svg-icons';
-
 import {
   Button as RBButton,
   type ButtonProps as RBButtonProps,
 } from 'react-bootstrap';
+
+import { faSpinnerThird } from '../font_awesome/regular';
 
 import './Button.scss';
 

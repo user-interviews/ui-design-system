@@ -3,7 +3,7 @@ import classNames from 'classnames';
 import './ModalHeader.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExclamationTriangle } from '@fortawesome/pro-solid-svg-icons';
+import { faExclamationTriangle } from '../font_awesome/solid';
 
 type ModalHeaderProps = {
   children?: React.ReactNode;

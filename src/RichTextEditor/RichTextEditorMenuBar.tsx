@@ -12,7 +12,7 @@ import {
   faListOl,
   faListUl,
   faUnlink,
-} from '@fortawesome/pro-regular-svg-icons';
+} from '../font_awesome/regular';
 import IconButton from '../IconButton';
 
 import { RichTextEditorActions } from './richTextEditorActions';

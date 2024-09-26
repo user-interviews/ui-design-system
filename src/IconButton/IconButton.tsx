@@ -12,7 +12,7 @@ import {
   faPencil,
   faTimes,
   faExpandAlt,
-} from '@fortawesome/pro-regular-svg-icons';
+} from '../font_awesome/regular';
 import Button, { type ButtonProps } from '../Button/Button';
 
 export const IconButtonActions = {
