@@ -23,14 +23,14 @@ type DrawerFooterProps = {
 
 function DrawerFooter({
   children,
-  isPrimaryActionLoading,
-  isSecondaryActionLoading,
-  primaryActionDisabled,
+  isPrimaryActionLoading = false,
+  isSecondaryActionLoading = false,
+  primaryActionDisabled = false,
   primaryActionIcon,
   primaryActionLoadingText,
   primaryActionText,
   primaryActionVariant,
-  secondaryActionDisabled,
+  secondaryActionDisabled = false,
   secondaryActionLoadingText,
   secondaryActionText,
   onPrimaryAction,
@@ -71,21 +71,5 @@ function DrawerFooter({
     </div>
   );
 }
-
-DrawerFooter.defaultProps = {
-  children: undefined,
-  isPrimaryActionLoading: false,
-  isSecondaryActionLoading: false,
-  primaryActionDisabled: false,
-  primaryActionIcon: undefined,
-  primaryActionLoadingText: undefined,
-  primaryActionText: undefined,
-  primaryActionVariant: undefined,
-  secondaryActionDisabled: false,
-  secondaryActionLoadingText: undefined,
-  secondaryActionText: undefined,
-  onPrimaryAction: undefined,
-  onSecondaryAction: undefined,
-};
 
 export default DrawerFooter;

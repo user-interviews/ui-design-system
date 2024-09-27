@@ -185,6 +185,7 @@ SidebarView.propTypes = {
   onSidebarCloseRequest: PropTypes.func.isRequired,
 };
 
+// Default props ok for class component
 SidebarView.defaultProps = {
   className: undefined,
   hideSidebar: false,

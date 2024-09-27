@@ -100,11 +100,6 @@ TypographySpecs.propTypes = {
   weight: PropTypes.string.isRequired,
 };
 
-TypographySpecs.defaultProps = {
-  letterSpacing: undefined,
-  textTransform: undefined,
-};
-
 function TypographyStyle(props) {
   return (
     <div className="TypographyRow">

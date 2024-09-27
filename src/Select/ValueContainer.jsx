@@ -12,7 +12,11 @@ import propTypes from 'prop-types';
 // See: https://react-select.com/components#replaceable-components
 
 /* eslint-disable react/prop-types */
-function ValueContainer({ children, valueText, ...props }) {
+function ValueContainer({
+  children,
+  valueText = 'selected',
+  ...props
+}) {
   const { getValue, hasValue } = props;
   const numValues = getValue().length;
 
@@ -36,9 +40,4 @@ export default ValueContainer;
 ValueContainer.propTypes = {
   children: propTypes.node,
   valueText: propTypes.string,
-};
-
-ValueContainer.defaultProps = {
-  children: undefined,
-  valueText: 'selected',
 };

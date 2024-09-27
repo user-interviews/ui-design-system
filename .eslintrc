@@ -52,6 +52,9 @@
         }],
         "react/no-unescaped-entities": ["error", { "forbid": [">", "}"] }],
         "react/prop-types": [2, { "ignore": ["children"] }],
+        "react/require-default-props": [2, {
+          "functions": "ignore" // ignore rule for function components
+        }],
         "react/react-in-jsx-scope": [0],
         "react/sort-comp": [2, {
             "order": [

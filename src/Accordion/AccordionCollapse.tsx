@@ -49,9 +49,4 @@ function AccordionCollapse({
   );
 }
 
-AccordionCollapse.defaultProps = {
-  variant: undefined,
-  UNSAFE_className: undefined,
-};
-
 export default AccordionCollapse;
