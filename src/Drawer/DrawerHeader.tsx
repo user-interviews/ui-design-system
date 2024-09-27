@@ -58,9 +58,4 @@ function DrawerHeader({
   );
 }
 
-DrawerHeader.defaultProps = {
-  bordered: true,
-  title: null,
-};
-
 export default DrawerHeader;

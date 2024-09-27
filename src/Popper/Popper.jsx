@@ -7,17 +7,25 @@ import './Popper.scss';
 
 const ARROW_OFFSET = 10;
 
-function Popper(props) {
-  const { showArrow } = props;
+function Popper({
+  children,
+  dark = false,
+  header,
+  placement = 'top',
+  showArrow = false,
+  strategy,
+  text,
+  visible = false,
+}) {
   const offset = showArrow ? ARROW_OFFSET : 0;
 
   return (
     <Manager>
       <Reference>
-        {({ ref }) => React.cloneElement(props.children, { ref })}
+        {({ ref }) => React.cloneElement(children, { ref })}
       </Reference>
       {
-        props.visible && (
+        visible && (
           <ReactPopper
             modifiers={[
               {
@@ -25,33 +33,33 @@ function Popper(props) {
                 options: { offset: [0, offset] },
               },
             ]}
-            placement={props.placement}
-            strategy={props.strategy}
+            placement={placement}
+            strategy={strategy}
           >
             {
               ({
                 arrowProps,
-                placement,
+                placement: dataPlacement,
                 ref,
                 style,
               }) => (
                 <div
-                  className={classNames('Popper', { 'Popper--dark': props.dark })}
-                  data-placement={placement}
+                  className={classNames('Popper', { 'Popper--dark': dark })}
+                  data-placement={dataPlacement}
                   ref={ref}
                   style={style}
                 >
                   {
-                      props.header && (
+                      header && (
                         <div className="Popper__header">
-                          {props.header}
+                          {header}
                         </div>
                       )
                     }
 
-                  {props.text}
+                  {text}
                   {
-                    props.showArrow && (
+                    showArrow && (
                       <span className="Popper__arrow" ref={arrowProps.ref} style={arrowProps.style} />
                     )
                   }
@@ -74,15 +82,6 @@ Popper.propTypes = {
   strategy: PropTypes.string,
   text: PropTypes.node.isRequired,
   visible: PropTypes.bool,
-};
-
-Popper.defaultProps = {
-  dark: false,
-  header: undefined,
-  placement: 'top',
-  showArrow: false,
-  strategy: undefined,
-  visible: false,
 };
 
 export default Popper;

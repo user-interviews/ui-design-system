@@ -59,14 +59,4 @@ function Accordion({
   );
 }
 
-Accordion.defaultProps = {
-  activeKey: undefined,
-  alwaysOpen: undefined,
-  as: undefined,
-  defaultActiveKey: undefined,
-  flush: undefined,
-  UNSAFE_className: undefined,
-  onSelect: undefined,
-};
-
 export default Accordion;

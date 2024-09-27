@@ -35,9 +35,4 @@ function CardStack({
   );
 }
 
-CardStack.defaultProps = {
-  size: undefined,
-  UNSAFE_className: undefined,
-};
-
 export default CardStack;

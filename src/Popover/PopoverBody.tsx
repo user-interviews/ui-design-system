@@ -25,8 +25,4 @@ function PopoverBody({
   );
 }
 
-PopoverBody.defaultProps = {
-  className: undefined,
-};
-
 export default PopoverBody;
