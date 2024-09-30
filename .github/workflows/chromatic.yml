@@ -38,7 +38,7 @@ jobs:
         uses: pnpm/action-setup@v4
 
       - name: Install via pnpm
-        run: set FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }} && pnpm install --frozen-lockfile
+        run: FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }} && pnpm install --frozen-lockfile
 
       - name: Publish to Chromatic
         uses: chromaui/action@latest
