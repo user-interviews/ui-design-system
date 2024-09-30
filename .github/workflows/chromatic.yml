@@ -35,7 +35,7 @@ jobs:
         run: yarn install
 
       - name: Install pnpm
-        uses: actions/setup-pnpm@v4
+        uses: pnpm/action-setup@v4
 
       - name: Publish to Chromatic
         uses: chromaui/action@latest
