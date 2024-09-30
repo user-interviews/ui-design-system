@@ -8,7 +8,6 @@ on:
   push:
     branches:
       - main
-      - test/fix-chromatic-builds # TODO: undo this line before merging
 
 # List of jobs
 jobs:
