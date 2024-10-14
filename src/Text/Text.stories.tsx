@@ -35,6 +35,7 @@ export function Weight() {
   return (
     <>
       <Text weight="bold">Source from a pool of more than 2.1 million participants to reach nearly any target audience.</Text>
+      <Text weight="semibold">Source from a pool of more than 2.1 million participants to reach nearly any target audience.</Text>
       <Text weight="medium">Source from a pool of more than 2.1 million participants to reach nearly any target audience.</Text>
       <Text weight="regular">Source from a pool of more than 2.1 million participants to reach nearly any target audience.</Text>
     </>

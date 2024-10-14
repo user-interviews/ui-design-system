@@ -1,7 +1,7 @@
 import { ReactNode, ElementType, createElement } from 'react';
 import classNames from 'classnames';
 
-import { useDeprecationWarning } from 'src/utils';
+import { useDeprecationWarning } from '../utils';
 
 import styles from './Flex.module.scss';
 

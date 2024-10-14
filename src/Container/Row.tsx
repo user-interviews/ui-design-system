@@ -4,7 +4,7 @@ import {
   type RowProps as ReactBootstrapRowProps,
 } from 'react-bootstrap';
 
-import { useDeprecationWarning } from 'src/utils';
+import { useDeprecationWarning } from '../utils';
 
 export type RowProps = {
   /**
@@ -83,7 +83,7 @@ export function Row({
       xxl={xxl}
       {...props}
     >
-      { children }
+      {children}
     </ReactBootstrapRow>
   );
 }
