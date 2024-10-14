@@ -194,7 +194,7 @@ $primary: $ux-emerald-600;
   $btn-tertiary-hover-color: $btn-tertiary-color;
 
   $btn-tertiary-active-background: #DEDEDE;
-  $btn-tertiary-active-border: $synth-hyperlink-color;
+  $btn-tertiary-active-border: #DEDEDE;
   $btn-tertiary-active-color: $btn-tertiary-hover-color;
 
   $btn-tertiary-disabled-background: $btn-tertiary-background;
@@ -221,9 +221,12 @@ $primary: $ux-emerald-600;
 
   border-width: 2px;
 
-  &:active, &.btn-tertiary:focus {
-    box-shadow: none;
-    border-color: var(--synth-hyperlink-color);
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
+  }
+
+  &:focus-visible {
+    @include btn-focus-outline;
   }
 
   &:focus:not(:active):not(:hover) {
