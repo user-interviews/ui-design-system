@@ -187,14 +187,14 @@ $primary: $ux-emerald-600;
 @mixin btn-tertiary {
   $btn-tertiary-background: transparent;
   $btn-tertiary-border: transparent;
-  $btn-tertiary-color: $synth-primary-cta-blue;
+  $btn-tertiary-color: #000000;
 
-  $btn-tertiary-hover-background: $btn-tertiary-background;
+  $btn-tertiary-hover-background: #F4F4F4;
   $btn-tertiary-hover-border: $btn-tertiary-border;
   $btn-tertiary-hover-color: $btn-tertiary-color;
 
-  $btn-tertiary-active-background: $btn-tertiary-background;
-  $btn-tertiary-active-border: $synth-hyperlink-color;
+  $btn-tertiary-active-background: #DEDEDE;
+  $btn-tertiary-active-border: #DEDEDE;
   $btn-tertiary-active-color: $btn-tertiary-hover-color;
 
   $btn-tertiary-disabled-background: $btn-tertiary-background;
@@ -221,9 +221,16 @@ $primary: $ux-emerald-600;
 
   border-width: 2px;
 
-  &:active, &.btn-tertiary:focus {
-    box-shadow: none;
-    border-color: var(--synth-hyperlink-color);
+  &:active, &:focus {
+    @include btn-remove-bootstrap-focus-outline;
+  }
+
+  &:focus-visible {
+    @include btn-focus-outline;
+  }
+
+  &:focus:not(:active):not(:hover) {
+    background-color: transparent;
   }
 }
 

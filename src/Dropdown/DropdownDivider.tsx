@@ -34,10 +34,4 @@ function DropdownDivider({
   );
 }
 
-DropdownDivider.defaultProps = {
-  as: 'hr',
-  bsPrefix: 'dropdown',
-  className: undefined,
-};
-
 export default DropdownDivider;

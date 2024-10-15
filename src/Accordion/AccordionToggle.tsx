@@ -7,8 +7,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import AccordionContext from 'react-bootstrap/AccordionContext';
 
+import { faChevronUp } from '../font_awesome/solid';
+
 import './AccordionToggle.scss';
-import { faChevronUp } from '@fortawesome/pro-solid-svg-icons';
 
 import { isEventKeyActive } from './utils';
 
@@ -44,9 +45,9 @@ type AccordionToggleProps = {
 function AccordionToggle({
   borderBottom,
   children,
-  chevronLateral,
-  chevronLeft,
-  chevronRight,
+  chevronLateral = false,
+  chevronLeft = false,
+  chevronRight = true,
   collapsedText,
   disabled,
   eventKey,
@@ -134,17 +135,5 @@ function AccordionToggle({
     </button>
   );
 }
-
-AccordionToggle.defaultProps = {
-  chevronLateral: false,
-  chevronLeft: false,
-  chevronRight: true,
-  collapsedText: undefined,
-  disabled: undefined,
-  helperText: undefined,
-  leadingIcon: undefined,
-  title: undefined,
-  UNSAFE_className: undefined,
-};
 
 export default AccordionToggle;

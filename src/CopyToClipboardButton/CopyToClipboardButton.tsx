@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import classNames from 'classnames';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCopy } from '@fortawesome/pro-regular-svg-icons';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+
+import { faCopy } from '../font_awesome/regular';
 
 import TrackedButton from '../TrackedButton';
 import Popper from '../Popper';
@@ -69,11 +71,5 @@ function CopyToClipboardButton({
     </div>
   );
 }
-
-CopyToClipboardButton.defaultProps = {
-  copyText: '',
-  displayText: undefined,
-  variant: ButtonVariants.NEUTRAL,
-};
 
 export default CopyToClipboardButton;

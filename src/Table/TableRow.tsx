@@ -52,12 +52,3 @@ function TableRow({
 }
 
 export default TableRow;
-
-TableRow.defaultProps = {
-  children: undefined,
-  className: undefined,
-  clickable: undefined,
-  removeHover: undefined,
-  selected: undefined,
-  stickyRow: undefined,
-};

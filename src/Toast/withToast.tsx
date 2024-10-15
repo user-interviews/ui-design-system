@@ -14,7 +14,7 @@ type WithToastProps = {
 
 function WithToast({
   WrappedComponent,
-  autoDismiss,
+  autoDismiss = true,
   ...props
 }: WithToastProps) {
   const { messages, setMessage, dismissMessage } = useToast();
@@ -33,10 +33,6 @@ function WithToast({
     </>
   );
 }
-
-WithToast.defaultProps = {
-  autoDismiss: true,
-};
 
 export default function withToast(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

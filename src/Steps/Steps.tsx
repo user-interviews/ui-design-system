@@ -25,9 +25,4 @@ function Steps({
   );
 }
 
-Steps.defaultProps = {
-  children: undefined,
-  className: undefined,
-};
-
 export default Steps;

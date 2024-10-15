@@ -44,7 +44,9 @@ const CheckboxButton = React.forwardRef(({
     />
   );
 });
-
+// The rule is configured to not care about default props for function
+// components but because this is a forwardRef it is being triggered
+/* eslint-disable react/require-default-props */
 CheckboxButton.propTypes = {
   checked: PropTypes.bool,
   className: PropTypes.string,
@@ -59,16 +61,7 @@ CheckboxButton.propTypes = {
   ]),
   onChange: PropTypes.func,
 };
-
-CheckboxButton.defaultProps = {
-  checked: undefined,
-  className: undefined,
-  disabled: undefined,
-  indeterminate: undefined,
-  name: undefined,
-  value: undefined,
-  onChange: undefined,
-};
+/* eslint-enable react/require-default-props */
 
 CheckboxButton.displayName = 'CheckboxButton';
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuestionCircle } from '@fortawesome/pro-solid-svg-icons';
+import { faQuestionCircle } from '../font_awesome/solid';
 
 import Popper from '../Popper';
 
@@ -104,6 +104,7 @@ Tooltip.propTypes = {
   onShow: PropTypes.func,
 };
 
+// Default props ok for class component
 Tooltip.defaultProps = {
   icon: faQuestionCircle,
   iconClasses: undefined,

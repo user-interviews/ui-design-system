@@ -17,13 +17,13 @@ type AvatarProps = {
 };
 
 function Avatar({
-  ariaHidden,
+  ariaHidden = false,
   colorId,
   image,
   initials,
-  large,
+  large = false,
   name = '',
-  showAlert,
+  showAlert = false,
   url,
 }: AvatarProps) {
   const [imageLoadFailed, setImageLoadFailed] = useState(false);
@@ -82,15 +82,5 @@ function Avatar({
     </div>
   );
 }
-
-Avatar.defaultProps = {
-  ariaHidden: false,
-  colorId: undefined,
-  image: undefined,
-  large: false,
-  name: '',
-  showAlert: false,
-  url: undefined,
-};
 
 export default Avatar;

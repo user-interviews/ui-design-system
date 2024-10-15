@@ -48,11 +48,21 @@ export type LoadingSkeletonProps = SkeletonProps & {
 
 function LoadingSkeleton({
   className,
+  borderRadius = '4px',
+  circle = false,
+  count = 1,
+  inline = false,
+  width = '100%',
   ...props
 }: LoadingSkeletonProps) {
   return (
     <SkeletonTheme baseColor={colors.UX_GRAY_300}>
       <Skeleton
+        borderRadius={borderRadius}
+        circle={circle}
+        count={count}
+        inline={inline}
+        width={width}
         {...props}
         className={classNames('LoadingSkeleton', className)}
         containerClassName={classNames('loadingSkeletonContainer', props.containerClassName)}
@@ -60,17 +70,5 @@ function LoadingSkeleton({
     </SkeletonTheme>
   );
 }
-
-LoadingSkeleton.defaultProps = {
-  borderRadius: '4px',
-  className: undefined,
-  circle: false,
-  containerClassName: undefined,
-  containerTestId: undefined,
-  count: 1,
-  height: undefined,
-  inline: false,
-  width: '100%',
-};
 
 export default LoadingSkeleton;

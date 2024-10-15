@@ -8,11 +8,11 @@ import './CheckboxButtonGroup.scss';
 
 export default function CheckboxButtonGroup({
   children,
-  fullWidth,
+  fullWidth = false,
   id,
-  orientation,
-  parseInput,
-  value,
+  orientation = ORIENTATIONS.ROW,
+  parseInput = (i) => i,
+  value = [],
   onChange,
 }) {
   const row = orientation === ORIENTATIONS.ROW;
@@ -72,12 +72,4 @@ CheckboxButtonGroup.propTypes = {
     ]),
   ),
   onChange: PropTypes.func,
-};
-
-CheckboxButtonGroup.defaultProps = {
-  fullWidth: false,
-  orientation: ORIENTATIONS.ROW,
-  parseInput: (i) => i,
-  value: [],
-  onChange: undefined,
 };

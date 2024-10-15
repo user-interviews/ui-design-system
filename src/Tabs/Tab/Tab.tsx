@@ -10,15 +10,10 @@ export type TabProps = RBTabProps & {
 };
 
 function Tab({
+  disabled = false,
   ...props
 }: TabProps) {
-  return <ReactBootstrapTab {...props} />;
+  return <ReactBootstrapTab disabled={disabled} {...props} />;
 }
 
 export default Tab;
-
-Tab.defaultProps = {
-  disabled: false,
-  eventKey: undefined,
-  tabClassName: undefined,
-};

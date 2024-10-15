@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faEnvelope, faChevronLeft, faChevronRight, faTrash,
-} from '@fortawesome/pro-solid-svg-icons';
+} from '../font_awesome/solid';
 import {
  Drawer, DrawerBody, DrawerFooter, DrawerHeader,
 } from '.';

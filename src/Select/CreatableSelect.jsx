@@ -19,15 +19,15 @@ function CreatableSelect({
   getOptionValue,
   id,
   inputId,
-  isClearable,
-  isDisabled,
+  isClearable = false,
+  isDisabled = false,
   isLoading,
   menuWidth,
   modal,
   name,
   options,
   placeholder,
-  size,
+  size = SELECT_SIZES.SMALL,
   value,
   onChange,
   ...props
@@ -93,29 +93,7 @@ CreatableSelect.propTypes = {
   placeholder: PropTypes.string,
   size: PropTypes.oneOf(Object.values(SELECT_SIZES)),
   value: PropTypes.object,
-
   onChange: PropTypes.func.isRequired,
-};
-
-CreatableSelect.defaultProps = {
-  'aria-label': undefined,
-  'aria-labelledby': undefined,
-  borderedMultiValue: undefined,
-  className: undefined,
-  components: undefined,
-  defaultValue: undefined,
-  isDisabled: false,
-  getOptionLabel: undefined,
-  getOptionValue: undefined,
-  isClearable: false,
-  id: undefined,
-  isLoading: undefined,
-  menuWidth: undefined,
-  modal: undefined,
-  name: undefined,
-  placeholder: undefined,
-  size: SELECT_SIZES.SMALL,
-  value: undefined,
 };
 
 export default CreatableSelect;
