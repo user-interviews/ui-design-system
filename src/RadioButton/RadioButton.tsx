@@ -38,15 +38,6 @@ const RadioButton = React.forwardRef<HTMLInputElement, RadioButtonProps>(({
   />
 ));
 
-RadioButton.defaultProps = {
-  checked: undefined,
-  className: undefined,
-  disabled: false,
-  name: '',
-  value: undefined,
-  onChange: undefined,
-};
-
 RadioButton.displayName = 'RadioButton';
 
 export default RadioButton;

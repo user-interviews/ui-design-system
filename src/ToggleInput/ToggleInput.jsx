@@ -8,10 +8,10 @@ import './ToggleInput.scss';
 function ToggleInput({
   ariaLabel,
   ariaLabelledBy,
-  disabled,
+  disabled = false,
   id,
-  isChecked,
-  labelLeft,
+  isChecked = false,
+  labelLeft = false,
   labelText,
   name,
   onToggle,
@@ -82,17 +82,6 @@ ToggleInput.propTypes = {
    To get the current checked status from the event, use e.target.checked.
   */
   onToggle: PropTypes.func,
-};
-
-ToggleInput.defaultProps = {
-  ariaLabel: undefined,
-  ariaLabelledBy: undefined,
-  disabled: false,
-  isChecked: false,
-  labelLeft: false,
-  name: undefined,
-  UNSAFE_className: undefined,
-  onToggle: undefined,
 };
 
 export default ToggleInput;

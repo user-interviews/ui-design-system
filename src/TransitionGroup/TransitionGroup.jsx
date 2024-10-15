@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { TransitionGroup as ReactTransitionGroup } from 'react-transition-group';
 
-export function TransitionGroup({ children, className }) {
+export function TransitionGroup({ children, className = '' }) {
   return (
     <ReactTransitionGroup
       aria-live="polite"
@@ -12,10 +12,6 @@ export function TransitionGroup({ children, className }) {
     </ReactTransitionGroup>
   );
 }
-
-TransitionGroup.defaultProps = {
-  className: '',
-};
 
 TransitionGroup.propTypes = {
   className: PropTypes.string,

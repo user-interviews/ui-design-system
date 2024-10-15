@@ -104,6 +104,7 @@ Tooltip.propTypes = {
   onShow: PropTypes.func,
 };
 
+// Default props ok for class component
 Tooltip.defaultProps = {
   icon: faQuestionCircle,
   iconClasses: undefined,

@@ -13,11 +13,14 @@ type TrackedComponentProps = {
 };
 
 export default function withTrackedClick(Target) {
-  function TrackedComponent(props: TrackedComponentProps) {
+  function TrackedComponent({
+    eventData = {},
+    ...props
+  }: TrackedComponentProps) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (TrackedComponent as any).displayName = `${Target.displayName || Target.name}WithTrackedClick`;
 
-    const { eventData, event, ...rest } = props;
+    const { event, ...rest } = props;
 
     const handleClick = (clickEvent) => {
       props.tracking.trackEvent({ ...eventData, event });
@@ -29,11 +32,6 @@ export default function withTrackedClick(Target) {
 
     return <Target {...rest} onClick={handleClick} />;
   }
-
-  TrackedComponent.defaultProps = {
-    eventData: {},
-    onClick: undefined,
-  };
 
   return track()(TrackedComponent);
 }

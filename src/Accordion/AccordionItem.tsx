@@ -46,10 +46,4 @@ function AccordionItem({
   );
 }
 
-AccordionItem.defaultProps = {
-  variant: undefined,
-  as: undefined,
-  borderless: undefined,
-  UNSAFE_className: undefined,
-};
 export default AccordionItem;
