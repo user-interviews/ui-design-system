@@ -83,7 +83,7 @@ export function Col({
       xxl={xxl}
       {...props}
     >
-      { children }
+      {children}
     </ReactBootstrapCol>
   );
 }

@@ -42,7 +42,7 @@ export function Container({
       fluid={fluid}
       {...props}
     >
-      { children }
+      {children}
     </ReactBootstrapContainer>
   );
 }

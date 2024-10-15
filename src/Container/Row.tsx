@@ -83,7 +83,7 @@ export function Row({
       xxl={xxl}
       {...props}
     >
-      { children }
+      {children}
     </ReactBootstrapRow>
   );
 }

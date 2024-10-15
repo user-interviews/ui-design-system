@@ -12,6 +12,7 @@ export const TEXT_PROPS = {
   weight: {
     bold: 'bold',
     medium: 'medium',
+    semibold: 'semibold',
     regular: 'regular',
   },
 } as const;
