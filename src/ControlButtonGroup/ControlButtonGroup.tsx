@@ -36,7 +36,9 @@ function ControlButtonGroup({
       onChange: handleChangeValue,
     } : {};
 
-    if (row && child.props.bordered === undefined) {
+    const isDOMElement = typeof child.type === 'string';
+
+    if (!isDOMElement && child.props.bordered === undefined) {
       childProps.bordered = true;
     }
 
