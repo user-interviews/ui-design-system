@@ -178,14 +178,14 @@ function DateTimePicker({
         adjustDateOnChange
         allowSameDay
         className={showPickerEnforcedInput ? '' : 'date-time-picker__input-group'}
-        customInput={showPickerEnforcedInput && (
+        customInput={showPickerEnforcedInput ? (
           <PickerEnforcedInput
             disabled={disabled}
             inputClassName={inputClassName}
             name={name}
             startDate={startDate}
           />
-        )}
+        ) : undefined}
         dateFormat={getDateFormat()}
         disabled={disabled}
         dropdownMode="select"
