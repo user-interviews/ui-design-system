@@ -1,6 +1,0 @@
-@import '../../scss/theme.scss';
-
-.Layout__sidebar-nav__links {
-  @include ui-remove-list-styles();
-  padding: var(--synth-spacing-4) 0;
-}
