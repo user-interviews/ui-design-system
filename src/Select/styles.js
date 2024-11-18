@@ -1,4 +1,4 @@
-import systemColors from '../../src/Styles/colors';
+import systemColors from '../Styles/colors';
 import fontWeights from '../Styles/fontWeights';
 
 export const SELECT_SIZES = { SMALL: 'small' };
