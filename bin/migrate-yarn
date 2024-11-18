@@ -1,8 +1,0 @@
-#!/bin/bash
-
-volta install yarn@4.1.1
-volta setup
-touch .env
-
-FONTAWESOME_NPM_AUTH_TOKEN=$(echo "$FONTAWESOME_NPM_AUTH_TOKEN"  | sed -n 's/.*authToken=//p' .npmrc)
-echo "FONTAWESOME_NPM_AUTH_TOKEN=${FONTAWESOME_NPM_AUTH_TOKEN}" >> .env
