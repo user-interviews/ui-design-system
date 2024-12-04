@@ -145,6 +145,7 @@ exports[`<RichTextEditor /> renders snapshot 1`] = `
       <div
         class="tiptap ProseMirror"
         contenteditable="true"
+        role="textbox"
         tabindex="0"
         translate="no"
       >
