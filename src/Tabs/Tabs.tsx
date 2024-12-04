@@ -4,7 +4,7 @@ import React from 'react';
 import classNames from 'classnames';
 
 import ReactBootstrapTabs from 'react-bootstrap/Tabs';
-import styles from './tabs.module.scss';
+import * as styles from './tabs.module.scss';
 
 export interface TabsProps extends BootstrapTabProps {
   flexWrapUnset?: boolean;

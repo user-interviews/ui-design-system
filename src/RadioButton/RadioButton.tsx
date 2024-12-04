@@ -2,7 +2,7 @@ import React from 'react';
 
 import classNames from 'classnames';
 
-import styles from './RadioButton.module.scss';
+import * as styles from './RadioButton.module.scss';
 
 type RadioButtonProps = {
   checked?: boolean;

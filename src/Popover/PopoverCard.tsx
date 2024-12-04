@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import classNames from 'classnames';
 import PopoverBody from './PopoverBody';
 
-import styles from './PopoverCard.module.scss';
+import * as styles from './PopoverCard.module.scss';
 
 const handleWidth = (cardSize) => {
   switch (cardSize) {

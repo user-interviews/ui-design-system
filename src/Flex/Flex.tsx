@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import { useDeprecationWarning } from '../utils';
 
-import styles from './Flex.module.scss';
+import * as styles from './Flex.module.scss';
 
 export interface FlexProps {
   alignItems?: 'stretch' | 'center' | 'flex-start' | 'flex-end' | 'baseline' | 'initial' | 'inherit';

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import classNames from 'classnames';
 
-import styles from './CheckboxButton.module.scss';
+import * as styles from './CheckboxButton.module.scss';
 
 export const CHECKED_STATES = {
   CHECKED: true,

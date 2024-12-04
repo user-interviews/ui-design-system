@@ -9,7 +9,7 @@ import {
   type DropdownProps as RBDropdownProps,
 } from 'react-bootstrap';
 
-import styles from './DropdownItem.module.scss';
+import * as styles from './DropdownItem.module.scss';
 
 type DropdownItemProps = {
   /**
