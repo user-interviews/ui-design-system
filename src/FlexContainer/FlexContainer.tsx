@@ -2,7 +2,7 @@ import React, { type ReactNode } from 'react';
 import classNames from 'classnames';
 import { computeBreakpointClassNames } from './utils';
 
-import styles from './FlexContainer.module.css';
+import * as styles from './FlexContainer.module.css';
 
 type FlexProps = {
   alignItems?: 'stretch' | 'center' | 'flex-start' | 'flex-end' | 'baseline' | 'initial' | 'inherit';

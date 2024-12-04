@@ -1,5 +1,5 @@
 import { type FlexContainerProps } from './FlexContainer';
-import styles from './FlexContainer.module.css';
+import * as styles from './FlexContainer.module.css';
 
 export function computeBreakpointClassNames(
   props: Omit<FlexContainerProps, 'children' | 'className'>,
