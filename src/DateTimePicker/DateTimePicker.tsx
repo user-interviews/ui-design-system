@@ -205,6 +205,7 @@ function DateTimePicker({
         popperClassName={isWithinModal ? 'react-datepicker__popper-container--modal' : ''}
         popperContainer={isWithinModal ? popperContainerDocumentBody : undefined}
         selected={dateFromString()}
+        showMonthDropdown={showMonthAndYearSelects}
         showTimeSelect={showTimeSelect}
         showYearDropdown={showMonthAndYearSelects}
         timeCaption="Time"
