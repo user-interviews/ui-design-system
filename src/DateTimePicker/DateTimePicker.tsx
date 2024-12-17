@@ -1,4 +1,5 @@
 import React, { useCallback, useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import DatePicker, { getDefaultLocale, registerLocale, setDefaultLocale } from 'react-datepicker';
 import {
   format,
@@ -46,9 +47,16 @@ export type DateTimePickerProps = {
   showTimeSelect?: boolean;
   time?: string;
   timeFormat?: string;
+  isWithinModal?: boolean;
   onChangeDate?: (...args: unknown[]) => unknown;
   onDateParseError?: (...args: unknown[]) => unknown;
 };
+
+function DocumentBodyContainer({ children }) {
+  return children ? (
+    createPortal(React.cloneElement(children, {}), document.body)
+  ) : null;
+}
 
 function DateTimePicker({
   date = '',
@@ -64,6 +72,7 @@ function DateTimePicker({
   showTimeSelect = false,
   time = '',
   timeFormat = STANDARD_TIME_FORMAT_FNS,
+  isWithinModal = false,
   onChangeDate,
   onDateParseError,
 }: DateTimePickerProps) {
@@ -205,6 +214,10 @@ function DateTimePicker({
         title={name}
         onCalendarClose={handleOnCalendarClose}
         onChange={handleOnChange}
+        {...(isWithinModal ? {
+          popperContainer: DocumentBodyContainer,
+          popperClassName: 'react-datepicker__popper-container--modal',
+        } : {})}
       />
     </div>
   );
