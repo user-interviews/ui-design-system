@@ -33,6 +33,10 @@ const localeMap = {
 const STANDARD_TIME_FORMAT_FNS = 'hh:mm aa';
 const ISO_DATE_FORMAT_FNS = 'yyyy-MM-dd';
 
+const popperContainerDocumentBody = ({ children }: { children?: React.ReactNode }) => (
+  createPortal(children, document.body)
+);
+
 export type DateTimePickerProps = {
   date?: string;
   dateFormat?: string;
@@ -51,12 +55,6 @@ export type DateTimePickerProps = {
   onChangeDate?: (...args: unknown[]) => unknown;
   onDateParseError?: (...args: unknown[]) => unknown;
 };
-
-function DocumentBodyContainer({ children }) {
-  return children ? (
-    createPortal(React.cloneElement(children, {}), document.body)
-  ) : null;
-}
 
 function DateTimePicker({
   date = '',
@@ -204,8 +202,9 @@ function DateTimePicker({
         minDate={minDate}
         name={name}
         placeholderText={getDateFormat().toUpperCase()}
+        popperClassName={isWithinModal ? 'react-datepicker__popper-container--modal' : ''}
+        popperContainer={isWithinModal ? popperContainerDocumentBody : undefined}
         selected={dateFromString()}
-        showMonthDropdown={showMonthAndYearSelects}
         showTimeSelect={showTimeSelect}
         showYearDropdown={showMonthAndYearSelects}
         timeCaption="Time"
@@ -214,10 +213,6 @@ function DateTimePicker({
         title={name}
         onCalendarClose={handleOnCalendarClose}
         onChange={handleOnChange}
-        {...(isWithinModal ? {
-          popperContainer: DocumentBodyContainer,
-          popperClassName: 'react-datepicker__popper-container--modal',
-        } : {})}
       />
     </div>
   );
