@@ -1,4 +1,5 @@
 import React, { useCallback, useState, useEffect } from 'react';
+import { createPortal } from 'react-dom';
 import DatePicker, { getDefaultLocale, registerLocale, setDefaultLocale } from 'react-datepicker';
 import {
   format,
@@ -32,6 +33,10 @@ const localeMap = {
 const STANDARD_TIME_FORMAT_FNS = 'hh:mm aa';
 const ISO_DATE_FORMAT_FNS = 'yyyy-MM-dd';
 
+const popperContainerDocumentBody = ({ children }: { children?: React.ReactNode }) => (
+  createPortal(children, document.body)
+);
+
 export type DateTimePickerProps = {
   date?: string;
   dateFormat?: string;
@@ -46,6 +51,7 @@ export type DateTimePickerProps = {
   showTimeSelect?: boolean;
   time?: string;
   timeFormat?: string;
+  isWithinModal?: boolean;
   onChangeDate?: (...args: unknown[]) => unknown;
   onDateParseError?: (...args: unknown[]) => unknown;
 };
@@ -64,6 +70,7 @@ function DateTimePicker({
   showTimeSelect = false,
   time = '',
   timeFormat = STANDARD_TIME_FORMAT_FNS,
+  isWithinModal = false,
   onChangeDate,
   onDateParseError,
 }: DateTimePickerProps) {
@@ -195,6 +202,8 @@ function DateTimePicker({
         minDate={minDate}
         name={name}
         placeholderText={getDateFormat().toUpperCase()}
+        popperClassName={isWithinModal ? 'react-datepicker__popper-container--modal' : ''}
+        popperContainer={isWithinModal ? popperContainerDocumentBody : undefined}
         selected={dateFromString()}
         showMonthDropdown={showMonthAndYearSelects}
         showTimeSelect={showTimeSelect}

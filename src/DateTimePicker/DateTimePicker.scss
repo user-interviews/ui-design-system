@@ -1,6 +1,10 @@
 @import 'react-datepicker/dist/react-datepicker.css';
 @import '../../scss/theme.scss';
 
+.react-datepicker__popper-container--modal {
+  z-index: var(--z-index-popover);
+}
+
 .date-time-picker {
   align-items: flex-start;
   display: flex;
@@ -26,13 +30,12 @@
     color: var(--ux-gray-300);
   }
 
-
   .date-time-picker {
     &__input-group {
       background-color: var(--ux-white);
       border-radius: var(--ux-border-radius);
       border: thin solid var(--ux-gray-400);
-      padding: .46875rem .75rem;
+      padding: 0.46875rem 0.75rem;
       justify-content: space-between;
       width: inherit;
     }
@@ -58,10 +61,10 @@
   }
 
   .react-datepicker__time-container
-  .react-datepicker__time
-  .react-datepicker__time-box
-  ul.react-datepicker__time-list
-  li.react-datepicker__time-list-item--selected {
+    .react-datepicker__time
+    .react-datepicker__time-box
+    ul.react-datepicker__time-list
+    li.react-datepicker__time-list-item--selected {
     background: var(--ux-blue-500);
   }
 
@@ -78,7 +81,8 @@
   }
 
   // Override form-control's default greying of read only inputs
-  input:read-only, .form-control[readonly] {
+  input:read-only,
+  .form-control[readonly] {
     background-color: var(--ux-white);
   }
 
@@ -95,21 +99,18 @@
     }
 
     &:not(:first-child) {
-      margin-top: .5rem;
+      margin-top: 0.5rem;
 
       @include media-breakpoint-up(sm) {
         margin-top: 0;
-        margin-left: .5rem;
+        margin-left: 0.5rem;
       }
     }
   }
 }
 
-
 // override some of the form group invalid styles
-.FormGroup--is-invalid
-.date-time-picker
-select {
+.FormGroup--is-invalid .date-time-picker select {
   border: thin solid var(--ux-gray-400);
   border-radius: var(--ux-border-radius);
 }
@@ -117,16 +118,17 @@ select {
 // override some of the form group invalid styles
 // inputs need more specificity to override the above styling
 .FormGroup--is-invalid
-.date-time-picker
-.react-datepicker-wrapper
-.react-datepicker__input-container
-input {
+  .date-time-picker
+  .react-datepicker-wrapper
+  .react-datepicker__input-container
+  input {
   border: thin solid var(--ux-red);
 }
 
 // Undoing some styles when this is nested within a bootstrap table
 .table .date-time-picker {
-  td, th {
+  td,
+  th {
     border-top: 0;
     padding: 0;
     vertical-align: middle;
