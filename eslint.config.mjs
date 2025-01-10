@@ -8,12 +8,21 @@ import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin';
 import importPlugin from 'eslint-plugin-import';
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y';
 import noOnlyTestsPlugin from 'eslint-plugin-no-only-tests';
+import babelPlugin from '@babel/eslint-plugin';
 import reactPlugin from 'eslint-plugin-react';
 import reactHooksPlugin from 'eslint-plugin-react-hooks';
 import typescriptEslintParser from '@typescript-eslint/parser';
 
 export default [
   includeIgnoreFile(ignorePath),
+  {
+    "files": [
+      "stories/**/*.{js,jsx}"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+    }
+  },
   {
     files: [
       "src/**/*.{js,jsx,ts,tsx}",
@@ -23,7 +32,8 @@ export default [
     ...reactPlugin.configs.flat.recommended,
     ...importPlugin.flatConfigs.recommended,
     plugins: {
-    "@typescript-eslint": typescriptEslintPlugin,
+      "@typescript-eslint": typescriptEslintPlugin,
+      "@babel": babelPlugin,
       "import": importPlugin,
       "jsx-a11y": jsxA11yPlugin,
       "no-only-tests": noOnlyTestsPlugin,
@@ -34,11 +44,11 @@ export default [
       react: {
         "version": "detect",
       },
-      "import/resolver": {
-        "webpack": {
-          "config": "config/webpack/webpack.production.config.js",
-        },
-      },
+      // "import/resolver": {
+      //   "webpack": {
+      //     "config": "config/webpack/webpack.production.config.js",
+      //   },
+      // },
     },
     languageOptions: {
       parser: typescriptEslintParser,
@@ -60,7 +70,7 @@ export default [
       }
     },
     rules: {
-      // "babel/semi": 2, // todo
+      "@babel/semi": 2,
       "import/no-extraneous-dependencies": [
         "error", {
           "devDependencies": [
@@ -149,6 +159,6 @@ export default [
       "react-hooks/rules-of-hooks": "error",
       "semi": 0
     },
-  }
+  },
 ]
 
