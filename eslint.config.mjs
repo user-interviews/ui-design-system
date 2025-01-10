@@ -163,6 +163,83 @@ export default [
       "no-shadow": "off",
       "@typescript-eslint/no-shadow": "error"
     }
+  },
+  {
+    "files": [ "*" ],
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": ["./"]
+        }
+      }
+    },
+    plugins: {
+      "@typescript-eslint": typescriptEslintPlugin,
+      "import": importPlugin,
+      "jsx-a11y": jsxA11yPlugin,
+      "react": reactPlugin,
+    },
+    "rules": {
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/no-empty-function": "off",
+      "class-methods-use-this": 0,
+      "function-paren-newline": ["error", "consistent"],
+      "func-names": ["error", "never"],
+      "implicit-arrow-linebreak": 0,
+      "jsx-a11y/label-has-associated-control": [2, {
+        "assert": "either",
+        "controlComponents": ["AsyncSelect", "SingleSelect"],
+        "depth": 25,
+        "labelAttributes": ["label"],
+        "labelComponents": []
+      }],
+      "linebreak-style": 0,
+      "no-case-declarations": "warn",
+      "no-confusing-arrow": 0,
+      "no-loop-func": 1,
+      "no-plusplus": 0,
+      "no-restricted-syntax": 0,
+      "no-undef": 0,
+      "no-underscore-dangle": ["error", { "allowAfterThis": true }],
+      "no-use-before-define": 0,
+      "operator-linebreak": ["error", "after"],
+      "prefer-destructuring": "warn",
+      "quotes": ["error", "single", { "allowTemplateLiterals": true }],
+      "radix": 0,
+      "react/jsx-filename-extension": ["error", {
+        "extensions": [".tsx", ".jsx"]
+      }],
+      "react/jsx-fragments": 0,
+      "symbol-description": 0,
+      "template-curly-spacing": "off",
+      "indent": "off",
+      "import/extensions": [
+        "error",
+        "ignorePackages",
+        {
+          "js": "never",
+          "jsx": "never",
+          "ts": "never",
+          "tsx": "never"
+        }
+      ],
+      "no-restricted-imports": ["error", {
+        "patterns": [
+          {
+            "group": ["@fortawesome/free-brands-svg-icons/*", "@fortawesome/free-brands-svg-icons"],
+            "message": "Direct imports from @fortawesome/free-brands-svg-icons is not allowed. Import from src/ib/font_awesome/brands instead."
+          },
+          {
+            "group": ["@fortawesome/pro-regular-svg-icons/*", "@fortawesome/pro-regular-svg-icons"],
+            "message": "Direct imports from @fortawesome/pro-regular-svg-icons is not allowed. Import from src/lib/font_awesome/regular instead."
+          },
+          {
+            "group": ["@fortawesome/pro-solid-svg-icons/*", "@fortawesome/pro-solid-svg-icons"],
+            "message": "Direct imports from @fortawesome/pro-solid-svg-icons is not allowed. Import from src/lib/font_awesome/solid instead."
+          }
+        ]
+      }]
+    }
   }
 ]
 
