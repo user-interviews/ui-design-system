@@ -44,11 +44,6 @@ export default [
       react: {
         "version": "detect",
       },
-      // "import/resolver": {
-      //   "webpack": {
-      //     "config": "config/webpack/webpack.production.config.js",
-      //   },
-      // },
     },
     languageOptions: {
       parser: typescriptEslintParser,
@@ -160,5 +155,14 @@ export default [
       "semi": 0
     },
   },
+  {
+    "files": [ "**/*.{ts,tsx}" ],
+    "rules": {
+      "react/require-default-props": "off",
+      "react/prop-types": "off",
+      "no-shadow": "off",
+      "@typescript-eslint/no-shadow": "error"
+    }
+  }
 ]
 
