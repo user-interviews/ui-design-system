@@ -63,7 +63,7 @@ const defaultStyles = ({ menuWidth, size }) => ({
       ...styles,
       color: systemColors.SYNTH_SUCCESS_GREEN_DARK,
       fontSize: '0.875rem',
-      fontWeight: 400,
+      fontWeight: fontWeights.regular,
       lineHeight: '1.25rem',
       paddingLeft: '8px',
     }),
@@ -80,14 +80,14 @@ const defaultStyles = ({ menuWidth, size }) => ({
     placeholder: (styles) => ({
       ...styles,
       color: systemColors.UX_GRAY_800,
-      fontWeight: '300',
+      fontWeight: fontWeights.regular,
     }),
     singleValue: (styles, { data }) => ({
       ...styles,
       color: (
         (data.colors ? data.colors.text : systemColors.UX_GRAY_900) || systemColors.UX_GRAY_900
       ),
-      fontWeight: fontWeights.light,
+      fontWeight: fontWeights.regular,
     }),
     option: (styles, {
       isDisabled,
@@ -110,7 +110,7 @@ const defaultStyles = ({ menuWidth, size }) => ({
         ...styles,
         backgroundColor: getBackgroundColor(),
         color: isDisabled ? systemColors.SYNTH_UNSELECTED_NEUTRAL : systemColors.UX_GRAY_900,
-        fontWeight: fontWeights.light,
+        fontWeight: fontWeights.regular,
         fontSize: '0.875rem',
         cursor: isDisabled ? 'default' : 'pointer',
 
