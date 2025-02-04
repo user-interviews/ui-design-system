@@ -20,19 +20,11 @@ $primary: $ux-emerald-600;
   }
 
   &.btn-primary {
-    @include btn-primary;
-
-    &:focus {
-      background: var(--ux-emerald-600);
-    }
-
-    &.show:focus {
-      background: var(--ux-emerald-700);
-    }
+    @include synthesis-btn-primary;
   }
 
   &.btn-outline-primary {
-    @include btn-outline-primary;
+    @include synthesis-btn-outline-primary;
   }
 
   &.btn-transparent {
@@ -49,17 +41,5 @@ $primary: $ux-emerald-600;
 
   &.btn-outline-transparent {
     @include btn-outline-transparent;
-  }
-}
-
-.Synthesized {
-  .DropdownToggle {
-    &.btn-primary {
-      @include synthesis-btn-primary;
-    }
-
-    &.btn-outline-primary {
-      @include synthesis-btn-outline-primary;
-    }
   }
 }

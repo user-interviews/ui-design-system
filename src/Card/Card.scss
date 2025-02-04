@@ -1,17 +1,10 @@
 @import '../../scss/theme';
 
-.Synthesized {
-  .Card {
-    border: 1px solid var(--ux-gray-400);
-    box-shadow: none;
-  }
-}
-
 .Card {
   background-color: var(--ux-white);
-  border: none;
+  border: 1px solid var(--ux-gray-400);
+  box-shadow: none;
   border-radius: var(--ux-border-radius);
-  box-shadow: var(--ux-elevations-20);
   outline-color: var(--ux-green-500);
   padding: $card-spacing;
 

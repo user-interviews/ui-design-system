@@ -20,7 +20,7 @@
 
 $synthesis-primary: $synth-primary-cta-blue;
 
-$primary: $ux-emerald-600;
+$primary: $synth-primary-cta-blue;
 
 @mixin btn-focus-outline {
   box-shadow: none !important;
@@ -39,39 +39,7 @@ $primary: $ux-emerald-600;
 }
 
 @mixin btn-primary {
-  $btn-primary-background: $primary;
-  $btn-primary-border: $primary;
-  $btn-primary-color: $ux-white;
-
-  $btn-primary-hover-background: $ux-emerald-700;
-  $btn-primary-hover-border: $ux-emerald-700;
-  $btn-primary-hover-color: $ux-white;
-
-  $btn-primary-active-background: $ux-emerald-800;
-  $btn-primary-active-border: $ux-emerald-800;
-  $btn-primary-active-color: $ux-white;
-
-  @include button-variant(
-    $btn-primary-background,
-    $btn-primary-border,
-    $btn-primary-color,
-
-    $btn-primary-hover-background,
-    $btn-primary-hover-border,
-    $btn-primary-hover-color,
-
-    $btn-primary-active-background,
-    $btn-primary-active-border,
-    $btn-primary-active-color,
-  );
-
-  &:focus-visible {
-    @include btn-focus-outline;
-  }
-
-  &:active, &:focus {
-    @include btn-remove-bootstrap-focus-outline;
-  }
+  @include synthesis-btn-primary;
 }
 
 @mixin synthesis-btn-primary {
@@ -111,40 +79,7 @@ $primary: $ux-emerald-600;
 }
 
 @mixin btn-outline-primary {
-  $btn-outline-primary-color: $primary;
-  $btn-outline-primary-color-hover: $ux-white;
-
-  $btn-outline-primary-hover-background: $ux-emerald-700;
-  $btn-outline-primary-hover-border: $ux-emerald-700;
-  $btn-outline-primary-hover-color: $ux-white;
-
-  $btn-outline-primary-border: $primary;
-
-  $btn-outline-primary-active-background: $ux-emerald-800;
-  $btn-outline-primary-active-border-color: $ux-emerald-800;
-
-  @include button-outline-variant(
-    $btn-outline-primary-color,
-    $btn-outline-primary-color-hover,
-
-    $btn-outline-primary-hover-background,
-    $btn-outline-primary-hover-border,
-    $btn-outline-primary-hover-color,
-  );
-  border-color: $btn-outline-primary-border;
-
-  &:active {
-    background-color: $btn-outline-primary-active-background;
-    border-color: $btn-outline-primary-active-border-color;
-  }
-
-  &:focus-visible {
-    @include btn-focus-outline;
-  }
-
-  &:active, &:focus {
-    @include btn-remove-bootstrap-focus-outline;
-  }
+  @include synthesis-btn-outline-primary;
 }
 
 @mixin synthesis-btn-outline-primary {

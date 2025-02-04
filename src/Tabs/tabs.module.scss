@@ -1,9 +1,8 @@
 @import '../../scss/theme.scss';
 
 .tabs {
-  --border-width: 2px;
-
-  border-bottom: var(--border-width) solid var(--ux-gray-400);
+  border-bottom: 1px solid var(--synth-div-stroke-neutral);
+  align-items: flex-end;
 
   :global(.nav-link) {
     color: var(--ux-gray-800);
@@ -16,30 +15,6 @@
     padding: 6px 12px;
   }
 
-  :global(.nav-link.active),
-  :global(.nav-link:hover),
-  :global(.nav-link:active),
-  :global(.nav-link:focus) {
-    color: var(--ux-blue-500);
-    border-bottom: var(--border-width) solid var(--ux-blue-500);
-  }
-
-  .flexWrapUnset {
-    flex-wrap: nowrap;
-  }
-  
-  .navItemButtonFullHeight {
-    :global(.nav-item .button) {
-      height: calc(100% + 2px);
-    }
-  }
-}
-
-:global(.Synthesized) .tabs {
-  border-bottom: 1px solid var(--synth-div-stroke-neutral);
-  align-items: flex-end;
-
-  :global(.nav-link),
   :global(.nav-link.disabled) {
     color: var(--synth-unselected-tab);
     border-bottom: 1px solid var(--synth-div-stroke-neutral);
@@ -57,6 +32,10 @@
   :global(.nav-link:focus) {
     color: var(--synth-text-neutral);
     border-bottom: 3px solid var(--synth-indicator-stroke-green);
+  }
+
+  .flexWrapUnset {
+    flex-wrap: nowrap;
   }
 
   .navItemButtonFullHeight {
