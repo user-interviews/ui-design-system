@@ -1,6 +1,6 @@
 #!/bin/bash
 
-volta install yarn@4.1.1
+volta install yarn@4.6.0
 volta setup
 touch .env
 
