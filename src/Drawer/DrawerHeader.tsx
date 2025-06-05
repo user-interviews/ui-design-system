@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, ReactNode } from 'react';
 import classNames from 'classnames';
 
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
@@ -13,7 +13,7 @@ import { ExpandContext } from './Drawer';
 
 type DrawerHeaderProps = {
   bordered?: boolean;
-  title?: string;
+  title?: ReactNode;
   onRequestClose: (...args: unknown[]) => unknown;
 };
 
