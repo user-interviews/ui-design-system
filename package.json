@@ -189,7 +189,7 @@
     "url": "git+https://github.com/user-interviews/ui-design-system.git"
   },
   "author": {
-    "name": "Jason Basuil",
+    "name": "User Interviews",
     "email": "design-system@userinterviews.com"
   },
   "license": "MIT",
@@ -200,8 +200,8 @@
   "homepage": "https://github.com/user-interviews/ui-design-system",
   "_id": "@user-interviews/ui-design-system@3.0",
   "volta": {
-    "node": "22.14.0",
-    "yarn": "4.6.0"
+    "node": "22.17.1",
+    "yarn": "4.9.2"
   },
-  "packageManager": "yarn@4.6.0"
+  "packageManager": "yarn@4.9.2"
 }
