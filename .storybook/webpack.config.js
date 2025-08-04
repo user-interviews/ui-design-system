@@ -13,7 +13,15 @@ module.exports = function({ config }) {
           }
         }
       },
-      'sass-loader'
+      {
+        loader: 'sass-loader',
+        options: {
+          sassOptions: {
+            quietDeps: true,
+            silenceDeprecations: ['import'],
+          },
+        },
+      }
     ],
     include: path.resolve(__dirname, '../')
   },

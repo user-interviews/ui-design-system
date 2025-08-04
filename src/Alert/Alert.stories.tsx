@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-import { action } from '@storybook/addon-actions';
 
 import { Alert, MessageTypes } from 'src/Alert';
 
@@ -75,10 +74,6 @@ export function Warning() {
   );
 }
 
-const onDismiss = (id) => {
-  action('alert dismissed')(id);
-};
-
 export function WithDismiss() {
   return (
     <Alert
@@ -86,61 +81,22 @@ export function WithDismiss() {
       message="Default message"
       removeBorderLeft={false}
       title="Default title"
-      type={MessageTypes.SUCCESS}
-      onDismiss={onDismiss}
+      type={MessageTypes.SUCCESS}  
+      onDismiss={() => {}}
     />
   );
 }
 
 export function WithCallToAction() {
   return (
-    <>
-      <p>Default CTA rendered by component</p>
-      <Alert
-        action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
-        id="8"
-        message="Success message"
-        removeBorderLeft={false}
-        title="Success title"
-        type={MessageTypes.SUCCESS}
-        onDismiss={onDismiss}
-      />
-      <Alert
-        action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
-        id="9"
-        message="Info message"
-        removeBorderLeft={false}
-        title="Info title"
-        type={MessageTypes.INFO}
-        onDismiss={onDismiss}
-      />
-      <Alert
-        action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
-        id="11"
-        message="Error message"
-        removeBorderLeft={false}
-        title="Error title"
-        type={MessageTypes.ERROR}
-        onDismiss={onDismiss}
-      />
-      <Alert
-        action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
-        id="12"
-        message="Warning message"
-        removeBorderLeft={false}
-        title="Warning title"
-        type={MessageTypes.WARNING}
-        onDismiss={onDismiss}
-      />
-      <Alert
-        action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
-        id="13"
-        message="Some context around new feature if needed"
-        removeBorderLeft={false}
-        title="New feature alert!"
-        type={MessageTypes.FEATURE}
-        onDismiss={onDismiss}
-      />
-    </>
+    <Alert
+      id="7"
+      message="Alert with call to action"
+      removeBorderLeft={false}
+      title="CTA title"
+      type={MessageTypes.INFO}
+      action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+      onDismiss={() => {}}
+    />
   );
 }

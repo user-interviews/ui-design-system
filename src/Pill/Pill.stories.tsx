@@ -1,5 +1,4 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
 import {
  faClock, faGiftCard, faGlobe, faMicrophone, faUsers,
 } from '../font_awesome/solid';
@@ -17,9 +16,7 @@ export default {
   },
 };
 
-const handleClose = (id) => {
-  action('handle close')(id);
-};
+const handleClose = () => {};
 
 export function Default() {
   return (
