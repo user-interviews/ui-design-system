@@ -90,12 +90,12 @@ export function WithDismiss() {
 export function WithCallToAction() {
   return (
     <Alert
+      action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
       id="7"
       message="Alert with call to action"
       removeBorderLeft={false}
       title="CTA title"
       type={MessageTypes.INFO}
-      action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
       onDismiss={() => {}}
     />
   );
