@@ -39,6 +39,6 @@ export const createActionHandlers = (editor: Editor) => ({
   unlink: () => editor.chain().focus().unsetLink().run(),
   bold: () => editor.chain().focus().toggleBold().run(),
   italic: () => editor.chain().focus().toggleItalic().run(),
-  unorderedList: () => editor.chain().focus().toggleBulletList().run(),
-  orderedList: () => editor.chain().focus().toggleOrderedList().run(),
+  unorderedList: () => editor.chain().focus().toggleNode('bulletList', 'paragraph').run(),
+  orderedList: () => editor.chain().focus().toggleNode('orderedList', 'paragraph').run(),
 });

@@ -234,7 +234,7 @@ const RichTextEditor = forwardRef((
         {
           !!characterLimit && (
             <p className="RichTextEditor__character-count">
-              {editor.storage.characterCount.characters()}/{characterLimit}
+              {(editor.storage as any).characterCount?.characters() || 0}/{characterLimit}
             </p>
           )
         }
