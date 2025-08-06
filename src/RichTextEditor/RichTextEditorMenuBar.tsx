@@ -5,56 +5,39 @@ import './RichTextEditorMenuBar.scss';
 import React from 'react';
 import classNames from 'classnames';
 
-import {
-  faBold,
-  faItalic,
-  faLink,
-  faListOl,
-  faListUl,
-  faUnlink,
-} from '../font_awesome/regular';
+import { faBold, faItalic, faLink, faListOl, faListUl, faUnlink } from '../font_awesome/regular';
 import IconButton from '../IconButton';
 
 import { RichTextEditorActions } from './richTextEditorActions';
 import { createActionHandlers } from './actionHandlers';
 
 type RichTextEditorMenuBarProps = {
-  availableActions: typeof RichTextEditorActions[keyof typeof RichTextEditorActions][];
+  availableActions: (typeof RichTextEditorActions)[keyof typeof RichTextEditorActions][];
   editor: Editor;
-  editable?: boolean
-}
+  editable?: boolean;
+};
 
-function RichTextEditorMenuBar({
-  availableActions,
-  editor,
-  editable = true,
-}: RichTextEditorMenuBarProps) {
+function RichTextEditorMenuBar({ availableActions, editor, editable = true }: RichTextEditorMenuBarProps) {
   const actionHandlers = createActionHandlers(editor);
 
   const actions = [
     {
       label: 'Bold',
       name: RichTextEditorActions.BOLD,
-      disabled: !editable || (
-        availableActions.includes(RichTextEditorActions.BOLD) && !editor.can()
-          .chain()
-          .focus()
-          .toggleBold()
-          .run()
-        ),
+      disabled:
+        !editable ||
+        (availableActions.includes(RichTextEditorActions.BOLD) &&
+          !editor.can().chain().focus().toggleMark('bold').run()),
       onClick: actionHandlers.bold,
       icon: faBold,
     },
     {
       label: 'Italic',
       name: RichTextEditorActions.ITALIC,
-      disabled: !editable || (
-        availableActions.includes(RichTextEditorActions.ITALIC) && !editor.can()
-          .chain()
-          .focus()
-          .toggleItalic()
-          .run()
-        ),
+      disabled:
+        !editable ||
+        (availableActions.includes(RichTextEditorActions.ITALIC) &&
+          !editor.can().chain().focus().toggleMark('italic').run()),
       onClick: actionHandlers.italic,
       icon: faItalic,
     },
@@ -68,7 +51,8 @@ function RichTextEditorMenuBar({
     {
       label: 'Unlink',
       name: RichTextEditorActions.UNLINK,
-      disabled: !editable || (availableActions.includes(RichTextEditorActions.LINK) && !editor.isActive('link')),
+      disabled:
+        !editable || (availableActions.includes(RichTextEditorActions.LINK) && !editor.isActive('link')),
       onClick: actionHandlers.unlink,
       icon: faUnlink,
     },
@@ -89,21 +73,19 @@ function RichTextEditorMenuBar({
   ];
 
   return (
-    <div className="RichTextEditorMenuBar">
-      {
-        actions
-          .filter((action) => availableActions.includes(action.name))
-          .map((action) => (
-            <IconButton
-              ariaLabel={action.label}
-              className={classNames({ 'Button--active': editor.isActive(action.name) })}
-              disabled={action.disabled}
-              icon={action.icon}
-              key={action.name}
-              onClick={action.onClick}
-            />
-          ))
-      }
+    <div className='RichTextEditorMenuBar'>
+      {actions
+        .filter((action) => availableActions.includes(action.name))
+        .map((action) => (
+          <IconButton
+            ariaLabel={action.label}
+            className={classNames({ 'Button--active': editor.isActive(action.name) })}
+            disabled={action.disabled}
+            icon={action.icon}
+            key={action.name}
+            onClick={action.onClick}
+          />
+        ))}
     </div>
   );
 }

@@ -13,12 +13,7 @@ export const createActionHandlers = (editor: Editor) => ({
 
     // empty
     if (url === '') {
-      editor
-        .chain()
-        .focus()
-        .extendMarkRange('link')
-        .unsetLink()
-        .run();
+      editor.chain().focus().extendMarkRange('link').unsetMark('link').run();
 
       return false;
     }
@@ -27,18 +22,13 @@ export const createActionHandlers = (editor: Editor) => ({
     const absoluteUrl = url.match(protocolRegex) ? url : `//${url}`;
 
     // update link
-    editor
-      .chain()
-      .focus()
-      .extendMarkRange('link')
-      .setLink({ href: absoluteUrl })
-      .run();
+    editor.chain().focus().extendMarkRange('link').setMark('link', { href: absoluteUrl }).run();
 
     return false;
   },
-  unlink: () => editor.chain().focus().unsetLink().run(),
-  bold: () => editor.chain().focus().toggleBold().run(),
-  italic: () => editor.chain().focus().toggleItalic().run(),
-  unorderedList: () => editor.chain().focus().toggleBulletList().run(),
-  orderedList: () => editor.chain().focus().toggleOrderedList().run(),
+  unlink: () => editor.chain().focus().unsetMark('link').run(),
+  bold: () => editor.chain().focus().toggleMark('bold').run(),
+  italic: () => editor.chain().focus().toggleMark('italic').run(),
+  unorderedList: () => editor.chain().focus().toggleList('bulletList', 'listItem').run(),
+  orderedList: () => editor.chain().focus().toggleList('orderedList', 'listItem').run(),
 });
