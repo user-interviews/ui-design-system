@@ -1,5 +1,4 @@
 import React from 'react';
-import { action } from '@storybook/addon-actions';
 
 import { faExclamationTriangle } from '../font_awesome/solid';
 
@@ -105,21 +104,12 @@ export function WithHover() {
   );
 }
 
-const trackingEvent = {
-  event: 'test tracking event',
-  eventData: { userId: 1 },
-};
-
-const handleShow = () => {
-  action('Track toggle open')(trackingEvent);
-};
-
 export function WithTracking() {
   return (
     <Tooltip
       placement="right"
       text="Tracked Tooltip"
-      onShow={handleShow}
+      onShow={() => {}}
     />
   );
 }

@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unstable-nested-components */
 import React, { useRef, useState } from 'react';
-import { action } from '@storybook/addon-actions';
 
 import Button from 'src/Button';
 import FormGroup from 'src/FormGroup';
@@ -13,7 +12,7 @@ import Option from './Option';
 import OptionWithDescription from './OptionWithDescription';
 import ValueContainer from './ValueContainer';
 
-const onChange = () => action('Change');
+const onChange = () => {};
 
 export default {
   title: 'Components/Selects/Single',

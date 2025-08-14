@@ -1,44 +1,33 @@
 const config = {
-  addons: [{
-    name: '@storybook/addon-docs',
-    options: {
-      jsxOptions: {
-        babelrc: true,
-        configFile: true
+  addons: [
+    '@storybook/addon-links',
+    '@storybook/addon-webpack5-compiler-babel',
+    {
+      name: "@storybook/addon-styling-webpack",
+      options: {
+        rules: [
+          {
+            test: /\.css$/,
+            sideEffects: true,
+            use: [
+              require.resolve("style-loader"),
+              {
+                loader: require.resolve("css-loader"),
+                options: {},
+              },
+            ],
+          },
+        ],
       }
     }
-  }, '@storybook/addon-a11y', '@storybook/addon-actions', '@storybook/addon-backgrounds', '@storybook/addon-controls', '@storybook/addon-links', '@storybook/addon-storysource', '@storybook/addon-webpack5-compiler-babel', ({
-    name: "@storybook/addon-styling-webpack",
-
-    options: {
-      rules: [{
-    test: /\.css$/,
-    sideEffects: true,
-    use: [
-        require.resolve("style-loader"),
-        {
-            loader: require.resolve("css-loader"),
-            options: {
-                
-                
-            },
-        },
-    ],
-  },],
-    }
-  })],
+  ],
   docs: {
     autodocs: true,
     defaultName: 'Docs',
   },
   stories: [
-    '../stories/Intro.stories.jsx',
-    '../src/**/*.stories.@(js|mdx)',
-    '../src/**/*.stories.@(ts|mdx)',
-    '../src/**/*.stories.js[x]',
-    '../src/**/*.stories.ts[x]',
-    '../stories/**/*.stories.js[x]',
-    '../stories/**/*.stories.ts[x]'
+    '../src/**/*.stories.@(js|jsx|ts|tsx)',
+    '../stories/**/*.stories.@(js|jsx)',
   ],
   framework: {
     name: '@storybook/react-webpack5',
@@ -46,6 +35,24 @@ const config = {
   },
   typescript: {
     check: true,
+  },
+  webpackFinal: async (config) => {
+    // Add MDX loader
+    config.module.rules.push({
+      test: /\.mdx?$/,
+      use: [
+        {
+          loader: require.resolve('@storybook/mdx2-csf/loader'),
+          options: {
+            mdxCompileOptions: {
+              remarkPlugins: [],
+              rehypePlugins: [],
+            },
+          },
+        },
+      ],
+    });
+    return config;
   },
 };
 
