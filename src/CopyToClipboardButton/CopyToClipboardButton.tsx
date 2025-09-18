@@ -69,10 +69,4 @@ function CopyToClipboardButton({
   );
 }
 
-CopyToClipboardButton.defaultProps = {
-  copyText: '',
-  displayText: undefined,
-  variant: ButtonVariants.NEUTRAL,
-};
-
 export default CopyToClipboardButton;
