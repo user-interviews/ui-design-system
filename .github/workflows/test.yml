@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Checkout branch
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -25,3 +27,8 @@ jobs:
 
       - name: Test
         run: yarn test
+
+      - name: Upload Coverage to OtterWise
+        uses: getOtterWise/github-action@v1
+        with:
+          token: ${{ secrets.OTTERWISE_TOKEN }}
