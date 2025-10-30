@@ -28,14 +28,19 @@ jobs:
       - name: Test
         run: yarn test
 
-      - name: Upload Coverage to OtterWise
+      - name: Upload coverage to OtterWise
         uses: getOtterWise/github-action@v1
         with:
           token: ${{ secrets.OTTERWISE_TOKEN }}
 
-      - name: Coveralls
+      - name: Upload coverage to Coveralls
         uses: coverallsapp/github-action@v2
         with:
           # github-token: ${{ secrets.GITHUB_TOKEN }}
           format: lcov
           file: ./coverage/lcov.info
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
