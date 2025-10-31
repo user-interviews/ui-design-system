@@ -74,9 +74,13 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      # Build assets
-      - run: yarn build
-      - run: npm pack
+      - name: Compile assets bundle
+        run: yarn build
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Pack bundle tarball
+        run: npm pack
 
       - name: Create Release
         id: create_release

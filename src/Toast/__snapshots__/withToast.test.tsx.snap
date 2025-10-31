@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test withToast it can create a new Toast message 1`] = `
+exports[`withToast() can create a new Toast message 1`] = `
 [
   <div
     className="Alert Alert-success"

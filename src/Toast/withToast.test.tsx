@@ -16,8 +16,8 @@ function WrappedComponent() {
   return <div />;
 }
 
-describe('test withToast', () => {
-  test('it can create a new Toast message', async () => {
+describe('withToast()', () => {
+  it('can create a new Toast message', async () => {
     const newMessage = 'This is just a test...';
     const ComponentWithToast = withToast(WrappedComponent);
     const toast = create(<ComponentWithToast />);
