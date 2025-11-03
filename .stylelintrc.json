@@ -1,0 +1,44 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "plugins": ["stylelint-scss"],
+  "rules": {
+    "color-named": "never",
+    "color-no-hex": [
+      true,
+      {
+        "message": "Use CSS custom properties (var(--ux-*)) or SCSS variables instead of hex colors. See scss/css_properties.scss for available colors."
+      }
+    ],
+    "selector-class-pattern": null,
+    "scss/at-rule-no-unknown": true,
+    "scss/dollar-variable-colon-space-after": "always",
+    "scss/dollar-variable-colon-space-before": "never",
+    "scss/no-global-function-names": null,
+    "scss/operator-no-unspaced": true,
+    "scss/comment-no-empty": null,
+    "comment-no-empty": null,
+    "declaration-property-value-no-unknown": true,
+    "function-no-unknown": [
+      true,
+      {
+        "ignoreFunctions": ["var", "darken", "lighten"]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["scss/css_properties.scss", "scss/colors/**/*.scss"],
+      "rules": {
+        "color-no-hex": null
+      }
+    }
+  ],
+  "ignoreFiles": [
+    "node_modules/**",
+    "lib/**",
+    "build/**",
+    "dist/**",
+    "public/**"
+  ]
+}
+

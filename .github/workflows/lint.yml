@@ -1,9 +1,9 @@
-name: Lint javascript
+name: Lint
 
 on: push
 
 jobs:
-  js-lint:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch

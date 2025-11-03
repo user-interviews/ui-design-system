@@ -42,7 +42,13 @@ _Installs all yarn dependencies._
 _Runs the jest test suite._
 
 `yarn lint`
-_Runs ESLint to report on any style violations._
+_Runs TypeScript, ESLint, and Stylelint to report on any code and style violations._
+
+`yarn lint:css`
+_Runs Stylelint on all CSS/SCSS files._
+
+`yarn lint:css:fix`
+_Runs Stylelint on all CSS/SCSS files and auto-fixes violations where possible._
 
 `bin/migrate-stack`
 _Installs specific Node.js and Yarn versions with Volta, creates a .env file, and adds an FONTAWESOME_NPM_AUTH_TOKEN to it._
