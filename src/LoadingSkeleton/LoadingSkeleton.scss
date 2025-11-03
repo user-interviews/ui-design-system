@@ -21,12 +21,10 @@
   --pseudo-element-display: block; /* Enable animation */
 
   background-color: var(--base-color);
-
   width: 100%;
   border-radius: var(--ux-border-radius);
   display: inline-flex;
   line-height: 1;
-
   position: relative;
   overflow: hidden;
   z-index: 1; /* Necessary for overflow: hidden to work correctly in Safari */
@@ -48,7 +46,6 @@
       var(--base-color)
   );
   transform: translateX(-100%);
-
   animation-name: react-loading-skeleton;
   animation-direction: var(--animation-direction);
   animation-duration: var(--animation-duration);

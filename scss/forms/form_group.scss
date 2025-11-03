@@ -15,10 +15,12 @@
 
     .InputLabel {
       @include synth-font-type-30--bold;
+
       margin-bottom: 8px;
 
       &__helper-text {
         @include synth-font-type-30;
+
         color: var(--ux-gray-900);
       }
     }
@@ -60,6 +62,7 @@
 
   &__helper-text {
     @include synth-font-type-20;
+
     color: var(--ux-gray-900);
     margin: 0 0 12px;
 
@@ -70,22 +73,25 @@
 
   &__invalid-feedback {
     @include synth-font-type-20--medium;
+
     color: var(--ux-red);
     padding: 6px 0;
     margin: 0;
 
     &__list {
-      @include ui-remove-list-styles();
+      @include ui-remove-list-styles;
     }
   }
 
   .form-control {
     @include synth-font-type-30;
+
     height: 36px;
   }
 
   textarea.form-control {
     @include synth-font-type-30;
+
     height: auto;
   }
 

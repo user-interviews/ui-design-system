@@ -1,10 +1,11 @@
-@import '../../scss/theme.scss';
+@import '../../scss/theme';
 
 .RichTextEditor {
   width: 100%;
 
   .RichTextEditor__character-count {
     @include synth-font-type-20;
+
     margin-top: 8px;
   }
 }

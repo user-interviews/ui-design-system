@@ -128,8 +128,9 @@
 }
 
 /* https://getbootstrap.com/docs/5.0/layout/breakpoints/#max-width */
+
 /* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (width <= 575.98px) {
   .xs_alignItems_stretch {
     align-items: stretch;
   }
@@ -256,7 +257,7 @@
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (width <= 767.98px) {
   .sm_alignItems_stretch {
     align-items: stretch;
   }
@@ -383,7 +384,7 @@
 }
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
+@media (width <= 991.98px) {
   .md_alignItems_stretch {
     align-items: stretch;
   }
@@ -510,7 +511,7 @@
 }
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
+@media (width <= 1199.98px) {
   .xl_alignItems_stretch {
     align-items: stretch;
   }
@@ -637,7 +638,7 @@
 }
 
 /* X-Large devices (large desktops, less than 1400px) */
-@media (max-width: 1399.98px) {
+@media (width <= 1399.98px) {
   .xxl_alignItems_stretch {
     align-items: stretch;
   }
@@ -764,4 +765,5 @@
 }
 
 /* XX-Large devices (larger desktops) */
+
 /* No media query since the xxl breakpoint has no upper bound on its width */

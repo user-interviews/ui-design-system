@@ -2,6 +2,7 @@
 
 .Pill {
   @include synth-font-type-20;
+
   display: inline;
   background-color: var(--ux-blue-100);
   color: var(--ux-blue-700);

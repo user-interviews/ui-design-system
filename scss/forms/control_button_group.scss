@@ -1,7 +1,6 @@
 @mixin row-control-group() {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   margin-right: -8px;
 
   &--full-width {
@@ -21,8 +20,7 @@
 
   &--compact {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
 
     .FormControlLabel--bordered {
       padding: 5px 10px;

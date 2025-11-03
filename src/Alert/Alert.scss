@@ -2,6 +2,7 @@
 
 @mixin primary-action($bg-color: none, $bg-color-hover: $ux-gray-300, $color: $synth-unselected-neutral) {
   @include synth-font-type-30--bold;
+
   background-color: $bg-color;
   border: none;
   border-left: unset;
@@ -37,7 +38,7 @@
       'icon action action close'
       ;
   
-    @media (min-width: 450px) {
+    @media (width >= 450px) {
       grid-template-areas:
       'icon content action close'
       'icon content action close'
@@ -66,7 +67,7 @@
       align-items: center;
       justify-content: flex-start;
   
-      @media (min-width: 450px) {
+      @media (width >= 450px) {
         justify-content: flex-end;
       }
     }
@@ -80,11 +81,13 @@
   
     &__title {
       @include synth-font-type-30--bold;
+
       margin-bottom: 4px;
     }
   
     &__message {
       @include synth-font-type-30;
+
       margin-bottom: 0;
     }
   }
@@ -187,7 +190,7 @@
     'icon action action close'
     ;
 
-  @media (min-width: 450px) {
+  @media (width >= 450px) {
     grid-template-areas:
     'icon content action close'
     'icon content action close'
@@ -215,7 +218,7 @@
     align-items: center;
     justify-content: flex-start;
 
-    @media (min-width: 450px) {
+    @media (width >= 450px) {
       justify-content: flex-end;
     }
   }
@@ -229,11 +232,13 @@
 
   &__title {
     @include synth-font-type-30--bold;
+
     margin-bottom: 4px;
   }
 
   &__message {
     @include synth-font-type-30;
+
     margin-bottom: 0;
   }
 }

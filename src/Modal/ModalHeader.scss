@@ -9,7 +9,9 @@
 
   &__title {
     font-family: var(--synth-font-family);
-    @include synth-font-type-60--bold();
+
+    @include synth-font-type-60--bold;
+
     margin-bottom: 0;
 
     &--has-icon {
@@ -30,7 +32,9 @@
 
   &__subtitle {
     font-family: var(--synth-font-family);
+
     @include synth-font-type-30;
+
     margin-bottom: 0;
     margin-top: var(--synth-spacing-2);
   }

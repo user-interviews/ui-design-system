@@ -1,4 +1,5 @@
-@import '../../scss/theme.scss';
+@import '../../scss/theme';
+
 // Note: react-select is largely styled via css-in-js, not SCSS. 
 // However, we need to only provide the styles below when the "Synthesized"
 // class is present on the body in rails server

@@ -9,6 +9,7 @@
         "message": "Use CSS custom properties (var(--ux-*)) or SCSS variables instead of hex colors. See scss/css_properties.scss for available colors."
       }
     ],
+    "no-descending-specificity": null,
     "selector-class-pattern": null,
     "scss/at-rule-no-unknown": true,
     "scss/dollar-variable-colon-space-after": "always",

@@ -1,7 +1,6 @@
-@import '../../scss/theme.scss';
+@import '../../scss/theme';
 
 .TableLoadingSkeleton {
-
   &__row {
     margin: 0 var(--synth-spacing-4) var(--synth-spacing-8) 0;
   }

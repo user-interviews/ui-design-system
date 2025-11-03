@@ -3,6 +3,7 @@
 
 .InputLabel, .InputLegend {
   @include synth-font-type-30--bold;
+
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -10,6 +11,7 @@
 
   &__helper-text {
     @include synth-font-type-10--uppercase;
+
     color: var(--ux-gray-900);
   }
 }
