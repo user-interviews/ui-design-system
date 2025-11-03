@@ -178,12 +178,12 @@ $primary: $ux-emerald-600;
 @mixin btn-tertiary {
   $btn-tertiary-background: transparent;
   $btn-tertiary-border: transparent;
-  $btn-tertiary-color: #000;
-  $btn-tertiary-hover-background: #F4F4F4;
+  $btn-tertiary-color: var(--synth-black);
+  $btn-tertiary-hover-background: var(--synth-alert-bg-neutral);
   $btn-tertiary-hover-border: $btn-tertiary-border;
   $btn-tertiary-hover-color: $btn-tertiary-color;
-  $btn-tertiary-active-background: #DEDEDE;
-  $btn-tertiary-active-border: #DEDEDE;
+  $btn-tertiary-active-background: var(--synth-div-stroke-neutral);
+  $btn-tertiary-active-border: var(--synth-div-stroke-neutral);
   $btn-tertiary-active-color: $btn-tertiary-hover-color;
   $btn-tertiary-disabled-background: $btn-tertiary-background;
   $btn-tertiary-disabled-border: $btn-tertiary-hover-border;
@@ -305,11 +305,11 @@ $primary: $ux-emerald-600;
   $btn-brand-google-background: $brand-color-google-alt;
   $btn-brand-google-border: $brand-color-google-alt;
   $btn-brand-google-color: $ux-white;
-  $btn-brand-google-hover-background: #2069cf;
-  $btn-brand-google-hover-border: #2069cf;
+  $btn-brand-google-hover-background: var(--synth-brand-google);
+  $btn-brand-google-hover-border: var(--synth-brand-google);
   $btn-brand-google-hover-color: $ux-white;
-  $btn-brand-google-active-background: #2069cf;
-  $btn-brand-google-active-border: #2069cf;
+  $btn-brand-google-active-background: var(--synth-brand-google);
+  $btn-brand-google-active-border: var(--synth-brand-google);
   $btn-brand-google-active-color: $ux-white;
 
   @include button-variant(

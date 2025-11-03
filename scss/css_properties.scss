@@ -164,6 +164,10 @@
   --synth-spacing-11: calc(var(--synth-spacing-base) * 11); // 44px
   --synth-spacing-12: calc(var(--synth-spacing-base) * 12); // 48px
 
+  // basic colors
+  --synth-black: #000;
+  --synth-white: #fff;
+
   // stoplight color system
   --synth-success-green-dark: #015029;
   --synth-success-green-medium: #09914f;
@@ -206,6 +210,11 @@
   --synth-font-weight-bold: 700;
   --synth-font-size-base: 0.875rem;
 
+  // brand colors
+  --synth-brand-google: #2d8cff;
+
+
+
   // By Level
   --z-index-1050: 1050;
   --z-index-1045: 1045;
@@ -236,4 +245,17 @@
   --card-width-sm: 512px;
   --card-width-md: 640px;
   --card-width-lg: 896px;
+
+
+  // external libraries - these should be standardized to use the same synth colors
+  // as other components but for now moving variable declarations here so they're all
+  // in one place
+  --react-loading-skeleton-base-color: #ebebeb;
+  --react-loading-skeleton-highlight-color: #f5f5f5;
+  --react-modal-content-box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  --react-toggle-background-color: #19AB27;
+  --react-toggle-background-color-hover: #128D15;
+  --react-toggle-thumb-border-color: #4D4D4D;
+  --react-toggle-thumb-background-color: #FAFAFA;
+  --react-toggle-thumb-box-shadow-color: #0099E0;
 }

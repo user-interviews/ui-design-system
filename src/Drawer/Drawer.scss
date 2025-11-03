@@ -3,7 +3,7 @@
 .DrawerBackgroundOverlay {
   position: fixed;
   inset: 0;
-  background: black;
+  background: var(--synth-black);
   z-index: var(--z-index-modal-backdrop);
   opacity: 0;
   pointer-events: none;

@@ -119,22 +119,22 @@
   height: 24px;
   padding: 0;
   border-radius: 30px;
-  background-color: #4D4D4D;
+  background-color: var(--react-toggle-thumb-border-color);
   transition: all 0.2s ease;
   transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
 .react-toggle:hover:not(.react-toggle--disabled) .react-toggle-track {
-  background-color: #000;
+  background-color: var(--synth-black);
 }
 
 .react-toggle--checked .react-toggle-track {
-  background-color: #19AB27;
+  background-color: var(--react-toggle-background-color);
 }
 
 .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
-  background-color: #128D15;
+  background-color: var(--react-toggle-background-color-hover);
 }
 
 .react-toggle-track-check {
@@ -186,9 +186,9 @@
   left: 1px;
   width: 22px;
   height: 22px;
-  border: 1px solid #4D4D4D;
+  border: 1px solid var(--react-toggle-thumb-border-color);
   border-radius: 50%;
-  background-color: #FAFAFA;
+  background-color: var(--react-toggle-thumb-background-color);
   box-sizing: border-box;
   box-sizing: border-box;
   box-sizing: border-box;
@@ -199,17 +199,17 @@
 
 .react-toggle--checked .react-toggle-thumb {
   left: 27px;
-  border-color: #19AB27;
+  border-color: var(--react-toggle-background-color);
 }
 
 .react-toggle--focus .react-toggle-thumb {
-  box-shadow: 0 0 3px 2px #0099E0;
-  box-shadow: 0 0 3px 2px #0099E0;
-  box-shadow: 0 0 2px 3px #0099E0;
+  box-shadow: 0 0 3px 2px var(--react-toggle-thumb-box-shadow-color);
+  box-shadow: 0 0 3px 2px var(--react-toggle-thumb-box-shadow-color);
+  box-shadow: 0 0 2px 3px var(--react-toggle-thumb-box-shadow-color);
 }
 
 .react-toggle:active:not(.react-toggle--disabled) .react-toggle-thumb {
-  box-shadow: 0 0 5px 5px #0099E0;
-  box-shadow: 0 0 5px 5px #0099E0;
-  box-shadow: 0 0 5px 5px #0099E0;
+  box-shadow: 0 0 5px 5px var(--react-toggle-thumb-box-shadow-color);
+  box-shadow: 0 0 5px 5px var(--react-toggle-thumb-box-shadow-color);
+  box-shadow: 0 0 5px 5px var(--react-toggle-thumb-box-shadow-color);
 }

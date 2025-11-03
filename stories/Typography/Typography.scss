@@ -1,7 +1,7 @@
 @import '../../scss/typography';
 
 .TypographyRow {
-  background-color: #fff;
+  background-color: var(--synth-white);
   display: flex;
   flex-wrap: wrap;
   margin: 16px;
@@ -21,7 +21,7 @@
 }
 
 .TypographyRow__Specs {
-  border-left: 1px solid #e0e0e0;
+  border-left: 1px solid var(--synth-div-stroke-neutral);
   display: block;
   flex: 0 0 37.5%;
   max-width: 33.3%;
