@@ -13,6 +13,7 @@ Synthesis is the official design system of [User Interviews](https://www.userint
 - [Getting started](#getting-started)
   - [Initial setup](#initial-setup)
   - [Available scripts](#available-scripts)
+  - [Stylelint configuration](#stylelint-configuration)
   - [Developing against rails-server](#developing-against-rails-server)
   - [Pull requests](#pull-requests)
 - [Contributing](#contributing)
@@ -52,6 +53,73 @@ _Runs Stylelint on all CSS/SCSS files and auto-fixes violations where possible._
 
 `bin/migrate-stack`
 _Installs specific Node.js and Yarn versions with Volta, creates a .env file, and adds an FONTAWESOME_NPM_AUTH_TOKEN to it._
+
+### Stylelint Configuration
+
+This project uses [Stylelint](https://stylelint.io/) to enforce consistent styling practices in CSS/SCSS files.
+
+#### Configuration Files
+- `.stylelintrc.json` - Main configuration
+- `.stylelintignore` - Files/directories to ignore
+
+#### Enforced Rules
+
+**Primary Rule: Color Variable Enforcement**
+- `color-no-hex`: **Enforced** - Prevents direct use of hex colors (e.g., `#3F6DCA`)
+- `color-named`: **Enforced** - Prevents use of named colors (e.g., `red`, `blue`)
+
+All colors must use CSS custom properties (`var(--ux-*)`) or SCSS variables. See `scss/css_properties.scss` for available colors.
+
+**Example:**
+```scss
+/* ❌ Bad */
+.component {
+  color: #3F6DCA;
+  background: white;
+}
+
+/* ✅ Good */
+.component {
+  color: var(--ux-blue);
+  background: var(--ux-white);
+}
+```
+
+#### Disabled Standard Rules
+
+The following rules from `stylelint-config-standard-scss` are **disabled** (`null`) to accommodate existing code patterns:
+
+**Selector & Naming Patterns:**
+- `selector-class-pattern` - Allows PascalCase, camelCase, kebab-case, BEM, and CSS Modules notation
+- `scss/at-mixin-pattern` - Allows existing mixin naming conventions
+
+**Code Quality (disabled for legacy code):**
+- `no-descending-specificity` - CSS specificity order not enforced
+- `no-duplicate-selectors` - Duplicate selectors allowed
+- `declaration-block-no-duplicate-properties` - Duplicate properties allowed
+- `declaration-block-no-shorthand-property-overrides` - Shorthand overrides allowed
+- `declaration-block-no-redundant-longhand-properties` - Longhand properties allowed
+
+**Property & Value Validation:**
+- `property-no-unknown` - Unknown properties allowed (for CSS Modules `:export`)
+- `property-no-deprecated` - Deprecated properties allowed (e.g., `clip`)
+- `declaration-property-value-no-unknown` - Unknown values allowed (for SCSS variables in some contexts)
+- `selector-pseudo-class-no-unknown` - Unknown pseudo-classes allowed (for CSS Modules `:global`)
+
+**Formatting & Precision:**
+- `number-max-precision` - No precision limit enforced
+- `block-no-empty` - Empty blocks allowed
+
+**SCSS Specific:**
+- `scss/no-global-function-names` - Legacy SCSS functions allowed (`darken()`, `lighten()`)
+- `scss/comment-no-empty` - Empty comments allowed
+- `comment-no-empty` - Empty comments allowed
+
+#### Color Definition Files Exemption
+
+Color definition files are exempt from `color-no-hex` to allow color declarations:
+- `scss/css_properties.scss`
+- `scss/colors/**/*.scss`
 
 ### Developing against `rails-server`
 
