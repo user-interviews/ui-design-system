@@ -1,8 +1,6 @@
-@import 'spacing';
-
 :root {
   --ux-border-radius: 4px;
-  
+
   --ux-navbar-shadow-color: #{rgba( 0, 0, 0, 0.26 )};
 
   --ux-box-shadow: #{0 2px 5px rgb( 0 0 0 / 26% )};
@@ -183,44 +181,109 @@
   --synth-spacing-11: calc(var(--synth-spacing-base) * 11); // 44px
   --synth-spacing-12: calc(var(--synth-spacing-base) * 12); // 48px
 
-  // basic colors
+  /* Synthesis Colors */
   --synth-black: #000;
   --synth-white: #fff;
 
-  // stoplight color system
-  --synth-success-green-dark: #015029;
-  --synth-success-green-medium: #09914f;
-  --synth-success-green-light: #d4f6e5;
-  --synth-error-red-dark: #c71f1f;
-  --synth-error-red-medium: #e03131;
-  --synth-error-red-light: #fae1e1;
-  --synth-warning-amber-dark: #fbda36;
-  --synth-warning-amber-medium: #ffe356;
-  --synth-warning-amber-light: #fff1ab;
-  --synth-warning-amber-alternate: #f16e00;
+  --synth-navy-100: #162c4e;
+  --synth-navy-200: #202b38;
+  --synth-navy-300: #010812;
+
+  --synth-emerald-100: #eef9f6;
+  --synth-emerald-200: #c6e2db;
+  --synth-emerald-300: #91cabb;
+  --synth-emerald-400: #158d71;
+
+  --synth-gray-100: #ffffff;
+  --synth-gray-200: #fbfbfb;
+  --synth-gray-300: #f4f4f4;
+  --synth-gray-400: #dedede;
+  --synth-gray-500: #5b5b5b;
+  --synth-gray-600: #1b1b1b;
+
+  /* Stop light colors*/
+  --synth-green-100: #d4f6e5;
+  --synth-green-200: #09914f;
+  --synth-green-300: #015029;
+
+  --synth-orange-100: #f16e00;
+  --synth-orange-200: #ab6408;
+
+  --synth-red-100: #fae1e1;
+  --synth-red-200: #e03131;
+  --synth-red-300: #c71f1f;
+
+  --synth-blue-100: #e5ecff;
+  --synth-blue-200: #0d6efd;
+  --synth-blue-300: #3f6dca;
+  --synth-blue-400: #0b2d72;
+
+  --synth-yellow-100: #fff1ab;
+  --synth-yellow-200: #ffe356;
+  --synth-yellow-300: #fbda36;
+  --synth-yellow-400: #453a00;
+
+  /* Expression colors */
+  --synth-denim-100: #d8e7f4;
+  --synth-denim-200: #225077;
+  --synth-denim-300: #0b1b28;
+
+  --synth-forest-100: #e1f4de;
+  --synth-forest-200: #317326;
+  --synth-forest-300: #10260d;
+
+  --synth-ruby-100: #f9b9b9;
+  --synth-ruby-200: #8d0c0c;
+  --synth-ruby-300: #2f0404;
+
+  --synth-gold-100: #fff6c9;
+  --synth-gold-200: #998000;
+  --synth-gold-300: #332b00;
+
+  --synth-purple-100: #faf7ff;
+  --synth-purple-200: #eee1ff;
+  --synth-purple-300: #420099;
+  --synth-purple-400: #160033;
+
+  --synth-rust-100: #ffe8ca;
+  --synth-rust-200: #995200;
+  --synth-rust-300: #331d00;
+
+  --synth-yellow-100: #fff6c9;
+  --synth-yellow-300: #332b00;
+
+  /* AI Feature Colors */
+  --ai-purple-200: #e2ccff;
+  --ai-purple-300: #994dff;
+  --ai-purple-500: #2c0066;
+
+  --ai-blue-200: #ccdaff;
+  --ai-blue-300: #3369ff;
 
   // neutrals
-  --synth-alert-bg-neutral: #f4f4f4;
-  --synth-div-stroke-neutral: #dedede;
-  --synth-header-neutral: #fbfbfb;
+  --synth-alert-bg-neutral: var(--synth-gray-300);
+  --synth-div-stroke-neutral: var(--synth-gray-400);
+  --synth-header-neutral: var(--synth-gray-200);
   --synth-page-neutral: #fdfdfd;
-  --synth-text-neutral: #1b1b1b;
-  --synth-unselected-neutral: #5b5b5b;
+  --synth-text-neutral: var(--synth-gray-600);
+  --synth-unselected-neutral: var(--synth-gray-500);
   --synth-unselected-tab: #767676;
 
   // main schema - visual hierarchy
-  --synth-accent-green: #158d71;
-  --synth-dark-background-selected-blue: #162c4e;
-  --synth-dark-background-pressed-blue: #010812;
-  --synth-hover-state: #eef9f6;
-  --synth-indicator-stroke-green: #91cabb;
-  --synth-navbar-blue: #010812;
-  --synth-primary-cta-blue: #162c4e;
-  --synth-selected-state-green: #c6e2db;
+  --synth-accent-green: var(--synth-emerald-400);
+  --synth-dark-background-selected-blue: var(--synth-navy-100);
+  --synth-dark-background-pressed-blue: var(--synth-navy-300);
+  --synth-hover-state: var(--synth-emerald-100);
+  --synth-indicator-stroke-green: var(--synth-emerald-300);
+  --synth-navbar-blue: var(--synth-navy-300);
+  --synth-primary-cta-blue: var(--synth-navy-100);
+  --synth-selected-state-green: var(--synth-emerald-200);
 
   // feedback and signifier colors
-  --synth-hyperlink-color: #3f6dca;
-  --synth-hover-blue: #e5ecff;
+  --synth-hyperlink-color: var(--synth-blue-300);
+
+  --synth-hover-blue: var(--synth-blue-100);
+
   --synth-header-gray-blue: #eef2f8;
   --synth-font-family: inter, sans-serif;
   --synth-font-weight-regular: 400;

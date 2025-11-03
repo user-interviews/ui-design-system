@@ -11,12 +11,11 @@
     }
 
     &--warning {
-      color: var(--synth-warning-amber-alternate);
+      color: var(--synth-orange-100);
     }
 
     &--error {
-      color: var(--synth-error-red-medium);
+      color: var(--synth-red-200);
     }
   }
 }
-
