@@ -178,12 +178,12 @@ $primary: $ux-emerald-600;
 @mixin btn-tertiary {
   $btn-tertiary-background: transparent;
   $btn-tertiary-border: transparent;
-  $btn-tertiary-color: var(--synth-black);
-  $btn-tertiary-hover-background: var(--synth-alert-bg-neutral);
+  $btn-tertiary-color: $synth-black;
+  $btn-tertiary-hover-background: $synth-alert-bg-neutral;
   $btn-tertiary-hover-border: $btn-tertiary-border;
   $btn-tertiary-hover-color: $btn-tertiary-color;
-  $btn-tertiary-active-background: var(--synth-div-stroke-neutral);
-  $btn-tertiary-active-border: var(--synth-div-stroke-neutral);
+  $btn-tertiary-active-background: $synth-div-stroke-neutral;
+  $btn-tertiary-active-border: $synth-div-stroke-neutral;
   $btn-tertiary-active-color: $btn-tertiary-hover-color;
   $btn-tertiary-disabled-background: $btn-tertiary-background;
   $btn-tertiary-disabled-border: $btn-tertiary-hover-border;

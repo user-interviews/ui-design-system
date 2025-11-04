@@ -2,6 +2,9 @@
 // The only reason these variables still exist is because they are currently in use by Sass mixins.
 // They can be iteratively removed as we continue to kill Sass.
 
+$synth-black: #000;
+$synth-alert-bg-neutral: #f4f4f4;
+$synth-div-stroke-neutral: #dedede;
 $synth-unselected-neutral: #5b5b5b;
 $synth-dark-background-selected-blue: #162c4e;
 $synth-dark-background-pressed-blue: #010812;
