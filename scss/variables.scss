@@ -5,19 +5,23 @@
   SYNTH_SUCCESS_GREEN_DARK: var(--synth-success-green-dark);
   SYNTH_SUCCESS_GREEN_MEDIUM: var(--synth-success-green-medium);
   SYNTH_SUCCESS_GREEN_LIGHT: var(--synth-success-green-light);
+
   SYNTH_ERROR_RED_DARK: var(--synth-error-red-dark);
   SYNTH_ERROR_RED_MEDIUM: var(--synth-error-red-medium);
   SYNTH_ERROR_RED_LIGHT: var(--synth-error-red-light);
+
   SYNTH_WARNING_AMBER_DARK: var(--synth-warning-amber-dark);
   SYNTH_WARNING_AMBER_MEDIUM: var(--synth-warning-amber-medium);
   SYNTH_WARNING_AMBER_LIGHT: var(--synth-warning-amber-light);
   SYNTH_WARNING_AMBER_ALTERNATE: var(--synth-warning-amber-alternate);
+
   SYNTH_ALERT_BG_NEUTRAL: var(--synth-alert-bg-neutral);
   SYNTH_DIV_STROKE_NEUTRAL: var(--synth-div-stroke-neutral);
   SYNTH_HEADER_NEUTRAL: var(--synth-header-neutral);
   SYNTH_PAGE_NEUTRAL: var(--synth-page-neutral);
   SYNTH_TEXT_NEUTRAL: var(--synth-text-neutral);
   SYNTH_UNSELECTED_NEUTRAL: var(--synth-unselected-neutral);
+
   SYNTH_ACCENT_GREEN: var(--synth-accent-green);
   SYNTH_DARK_BACKGROUND_SELECTED_BLUE: var(--synth-dark-background-selected-blue);
   SYNTH_HOVER_STATE: var(--synth-hover-state);
@@ -25,12 +29,16 @@
   SYNTH_NAVBAR_BLUE: var(--synth-navbar-blue);
   SYNTH_PRIMARY_CTA_BLUE: var(--synth-primary-cta-blue);
   SYNTH_SELECTED_STATE_GREEN: var(--synth-selected-state-green);
+
   SYNTH_HYPERLINK_COLOR: var(--synth-hyperlink-color);
+
   SYNTH_HOVER_BLUE: var(--synth-hover-blue);
   SYNTH_HEADER_GRAY_BLUE: var(--synth-header-gray-blue);
+
   UX_BLACK: var(--ux-black);
   UX_BLUE: var(--ux-blue);
   UX_CREAM: var(--ux-cream);
+
   UX_EMERALD: var(--ux-emerald);
   UX_GRAY: var(--ux-gray);
   UX_GREEN: var(--ux-green);
@@ -42,6 +50,7 @@
   UX_TEAL: var(--ux-teal);
   UX_YELLOW: var(--ux-yellow);
   UX_WHITE: var(--ux-white);
+
   UX_BLUE_100: var(--ux-blue-100);
   UX_BLUE_200: var(--ux-blue-200);
   UX_BLUE_300: var(--ux-blue-300);
@@ -51,6 +60,7 @@
   UX_BLUE_700: var(--ux-blue-700);
   UX_BLUE_800: var(--ux-blue-800);
   UX_BLUE_900: var(--ux-blue-900);
+
   UX_EMERALD_100: var(--ux-emerald-100);
   UX_EMERALD_200: var(--ux-emerald-200);
   UX_EMERALD_300: var(--ux-emerald-300);
@@ -60,6 +70,7 @@
   UX_EMERALD_700: var(--ux-emerald-700);
   UX_EMERALD_800: var(--ux-emerald-800);
   UX_EMERALD_900: var(--ux-emerald-900);
+
   UX_GRAY_100: var(--ux-gray-100);
   UX_GRAY_200: var(--ux-gray-200);
   UX_GRAY_300: var(--ux-gray-300);
@@ -69,6 +80,7 @@
   UX_GRAY_700: var(--ux-gray-700);
   UX_GRAY_800: var(--ux-gray-800);
   UX_GRAY_900: var(--ux-gray-900);
+
   UX_GREEN_100: var(--ux-green-100);
   UX_GREEN_200: var(--ux-green-200);
   UX_GREEN_300: var(--ux-green-300);
@@ -78,6 +90,7 @@
   UX_GREEN_700: var(--ux-green-700);
   UX_GREEN_800: var(--ux-green-800);
   UX_GREEN_900: var(--ux-green-900);
+
   UX_NAVY_100: var(--ux-navy-100);
   UX_NAVY_200: var(--ux-navy-200);
   UX_NAVY_300: var(--ux-navy-300);
@@ -87,8 +100,10 @@
   UX_NAVY_700: var(--ux-navy-700);
   UX_NAVY_800: var(--ux-navy-800);
   UX_NAVY_900: var(--ux-navy-900);
+
   UX_NEUTRAL_100: var(--ux-white);
   UX_NEUTRAL_200: var(--ux-cream);
+
   UX_NEUTRAL_300: var(--ux-neutral-300);
   UX_NEUTRAL_400: var(--ux-neutral-400);
   UX_NEUTRAL_500: var(--ux-neutral-500);
@@ -96,6 +111,7 @@
   UX_NEUTRAL_700: var(--ux-neutral-700);
   UX_NEUTRAL_800: var(--ux-neutral-800);
   UX_NEUTRAL_900: var(--ux-black);
+
   UX_ORANGE_100: var(--ux-orange-100);
   UX_ORANGE_200: var(--ux-orange-200);
   UX_ORANGE_300: var(--ux-orange-300);
@@ -105,6 +121,7 @@
   UX_ORANGE_700: var(--ux-orange-700);
   UX_ORANGE_800: var(--ux-orange-800);
   UX_ORANGE_900: var(--ux-orange-900);
+
   UX_RED_100: var(--ux-red-100);
   UX_RED_200: var(--ux-red-200);
   UX_RED_300: var(--ux-red-300);
@@ -114,6 +131,7 @@
   UX_RED_700: var(--ux-red-700);
   UX_RED_800: var(--ux-red-800);
   UX_RED_900: var(--ux-red-900);
+
   UX_SAND_100: var(--ux-sand-100);
   UX_SAND_200: var(--ux-sand-200);
   UX_SAND_300: var(--ux-sand-300);
@@ -123,6 +141,7 @@
   UX_SAND_700: var(--ux-sand-700);
   UX_SAND_800: var(--ux-sand-800);
   UX_SAND_900: var(--ux-sand-900);
+
   UX_TEAL_100: var(--ux-teal-100);
   UX_TEAL_200: var(--ux-teal-200);
   UX_TEAL_300: var(--ux-teal-300);
@@ -132,6 +151,7 @@
   UX_TEAL_700: var(--ux-teal-700);
   UX_TEAL_800: var(--ux-teal-800);
   UX_TEAL_900: var(--ux-teal-900);
+  
   UX_YELLOW_100: var(--ux-yellow-100);
   UX_YELLOW_200: var(--ux-yellow-200);
   UX_YELLOW_300: var(--ux-yellow-300);
