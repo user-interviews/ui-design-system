@@ -23,5 +23,8 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Lint
-        run: yarn lint
+      - name: Lint JavaScript/TypeScript
+        run: yarn lint:js
+
+      - name: Lint CSS/SCSS
+        run: yarn lint:css --quiet

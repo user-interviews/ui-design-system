@@ -45,6 +45,9 @@ _Runs the jest test suite._
 `yarn lint`
 _Runs TypeScript, ESLint, and Stylelint to report on any code and style violations._
 
+`yarn lint:js`
+_Runs TypeScript type checking and ESLint on JavaScript/TypeScript files._
+
 `yarn lint:css`
 _Runs Stylelint on all CSS/SCSS files._
 
