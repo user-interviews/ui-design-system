@@ -37,144 +37,144 @@
       'icon content content close'
       'icon action action close'
       ;
-  
+
     @media (width >= 450px) {
       grid-template-areas:
       'icon content action close'
       'icon content action close'
       ;
     }
-  
+
     background-color: var(--synth-alert-bg-neutral);
     border-radius: var(--ux-border-radius);
     color: var(--synth-text-neutral);
     margin-bottom: var(--synth-spacing-4);
     padding: var(--synth-spacing-4);
     position: relative;
-  
+
     &__icon {
       grid-area: icon;
     }
-  
+
     &__content {
       grid-area: content;
       margin-right: var(--synth-spacing-4);
     }
-  
+
     &__action {
       grid-area: action;
       display: flex;
       align-items: center;
       justify-content: flex-start;
-  
+
       @media (width >= 450px) {
         justify-content: flex-end;
       }
     }
-  
+
     &__close {
       grid-area: close;
       display: flex;
       align-items: flex-start;
       justify-content: flex-end;
     }
-  
+
     &__title {
       @include synth-font-type-30--bold;
 
       margin-bottom: 4px;
     }
-  
+
     &__message {
       @include synth-font-type-30;
 
       margin-bottom: 0;
     }
   }
-  
+
   .Alert-success {
     border-left: 8px solid var(--synth-accent-green);
-  
+
     .close {
       @include close-action;
     }
-  
+
     .primary-action {
       @include primary-action;
     }
-  
+
     .Alert__icon {
       color: var(--synth-accent-green);
-      
+
       .fa-check {
         color: var(--ux-gray-100);
       }
     }
   }
-  
+
   .Alert-info {
     border-left: 8px solid var(--synth-hyperlink-color);
-  
+
     .close {
       @include close-action;
     }
-  
+
     .primary-action {
       @include primary-action;
     }
-  
+
     .Alert__icon {
       color: var(--ux-blue-300);
-      
+
       .fa-info {
         color: var(--ux-blue-600);
       }
     }
   }
-  
+
   .Alert-feature {
     border: 2px solid var(--ux-teal-600);
-  
+
     .close {
       @include close-action;
     }
-  
+
     .primary-action {
       @include primary-action;
     }
-  
+
     .Alert__icon {
       color: var(--ux-teal-600);
     }
   }
-  
+
   .Alert-warning {
-    border-left: 8px solid var(--synth-warning-amber-alternate);
-  
+    border-left: 8px solid var(--synth-orange-100);
+
     .close {
       @include close-action;
     }
-  
+
     .primary-action {
       @include primary-action;
     }
-  
+
     .Alert__icon {
-      color: var(--synth-warning-amber-alternate);
+      color: var(--synth-orange-100);
     }
   }
-  
+
   .Alert-error {
     border-left: 8px solid var(--ux-red-400);
-  
+
     .close {
       @include close-action;
     }
-  
+
     .primary-action {
       @include primary-action;
     }
-  
+
     .Alert__icon {
       color: var(--ux-red);
     }
@@ -258,7 +258,7 @@
 
   .Alert__icon {
     color: var(--ux-green-400);
-    
+
     .fa-check {
       color: var(--ux-green-800);
     }
@@ -280,7 +280,7 @@
 
   .Alert__icon {
     color: var(--ux-blue-300);
-    
+
     .fa-info {
       color: var(--ux-blue-600);
     }

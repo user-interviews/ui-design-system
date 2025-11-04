@@ -2,18 +2,18 @@
 @import './colors/synthesis-palette';
 
 :export {
-  SYNTH_SUCCESS_GREEN_DARK: var(--synth-success-green-dark);
-  SYNTH_SUCCESS_GREEN_MEDIUM: var(--synth-success-green-medium);
-  SYNTH_SUCCESS_GREEN_LIGHT: var(--synth-success-green-light);
+  SYNTH_SUCCESS_GREEN_DARK: var(--synth-green-300);
+  SYNTH_SUCCESS_GREEN_MEDIUM: var(--synth-green-200);
+  SYNTH_SUCCESS_GREEN_LIGHT: var(--synth-green-100);
 
-  SYNTH_ERROR_RED_DARK: var(--synth-error-red-dark);
-  SYNTH_ERROR_RED_MEDIUM: var(--synth-error-red-medium);
-  SYNTH_ERROR_RED_LIGHT: var(--synth-error-red-light);
+  SYNTH_ERROR_RED_DARK: var(--synth-red-300);
+  SYNTH_ERROR_RED_MEDIUM: var(--synth-red-200);
+  SYNTH_ERROR_RED_LIGHT: var(--synth-red-100);
 
-  SYNTH_WARNING_AMBER_DARK: var(--synth-warning-amber-dark);
-  SYNTH_WARNING_AMBER_MEDIUM: var(--synth-warning-amber-medium);
-  SYNTH_WARNING_AMBER_LIGHT: var(--synth-warning-amber-light);
-  SYNTH_WARNING_AMBER_ALTERNATE: var(--synth-warning-amber-alternate);
+  SYNTH_WARNING_AMBER_DARK: var(--synth-yellow-300);
+  SYNTH_WARNING_AMBER_MEDIUM: var(--synth-yellow-200);
+  SYNTH_WARNING_AMBER_LIGHT: var(--synth-yellow-100);
+  SYNTH_WARNING_AMBER_ALTERNATE: var(--synth-orange-100);
 
   SYNTH_ALERT_BG_NEUTRAL: var(--synth-alert-bg-neutral);
   SYNTH_DIV_STROKE_NEUTRAL: var(--synth-div-stroke-neutral);
