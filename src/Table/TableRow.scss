@@ -1,4 +1,4 @@
-@import '../../scss/theme.scss';
+@import '../../scss/theme';
 
 .TableRow {
   &:hover:not(.TableRow--remove-hover) {
@@ -15,6 +15,7 @@
     td {
       background-color: var(--ux-blue-100);
     } 
+
     &:hover {
       td {
         background-color: var(--ux-blue-200);

@@ -4,8 +4,7 @@ $pills-spacing: 4px;
 
 .Pills {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 
   .Pill {
     margin: $pills-spacing;

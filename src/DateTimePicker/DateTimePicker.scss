@@ -1,5 +1,5 @@
 @import 'react-datepicker/dist/react-datepicker.css';
-@import '../../scss/theme.scss';
+@import '../../scss/theme';
 
 .react-datepicker__popper-container--modal {
   z-index: var(--z-index-popover);
@@ -43,6 +43,7 @@
 
   .react-datepicker {
     @include font-type-30;
+
     border: none;
     box-shadow: 0 1px 3px var(--ux-gray-400);
   }

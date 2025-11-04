@@ -1,20 +1,17 @@
-@import '../../scss/theme.scss';
+@import '../../scss/theme';
 
 .DrawerBackgroundOverlay {
   position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: black;
+  inset: 0;
+  background: var(--synth-black);
   z-index: var(--z-index-modal-backdrop);
-  opacity: 0%;
+  opacity: 0;
   pointer-events: none;
   transition: 200ms linear;
 }
 
 .DrawerBackgroundOverlay--active {
-  opacity: 50%;
+  opacity: 0.5;
   pointer-events: auto;
 }
 
@@ -46,7 +43,6 @@
   bottom: 0;
   transition: 200ms ease-out;
   z-index: var(--z-index-drawer);
-
   display: flex;
   flex-direction: column;
 

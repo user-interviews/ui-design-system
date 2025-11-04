@@ -14,12 +14,10 @@
   box-shadow: var(--ux-elevations-20);
   outline-color: var(--ux-green-500);
   padding: $card-spacing;
-
   max-width: 100%;
 
   &__divider {
-    border-top: 1px solid rgba(0,0,0,.1);
-
+    border-top: 1px solid rgb(0 0 0 / 10%);
     margin-bottom: var(--synth-spacing-2);
     margin-top: var(--synth-spacing-1);
   }
@@ -31,17 +29,20 @@
 
   &__helper-text {
     @include synth-font-type-50;
+
     color: var(--ux-gray-900);
     margin-left: var(--synth-spacing-1);
   }
 
   &__subtitle {
     @include synth-font-type-30;
+
     color: var(--ux-gray-800);
   }
 
   &__title {
     @include synth-font-type-50--bold;
+
     margin-bottom: var(--synth-spacing-1);
   }
 

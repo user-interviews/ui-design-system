@@ -2,26 +2,28 @@
 
 :root {
   --ux-border-radius: 4px;
-
+  
   --ux-navbar-shadow-color: #{rgba( 0, 0, 0, 0.26 )};
-  --ux-box-shadow: #{0 2px 5px rgba( 0, 0, 0, 0.26 )};
-  --ux-box-shadow-light: #{0 1px 1px rgba( 0, 0, 0, 0.26 )};
-  --ux-box-shadow-card: #{0 2px 4px rgba(0,0,0,0.1)};
-  --ux-box-shadow-table-sticky-column-left: 2px 0px 1px 0px rgba(0, 0, 0, 0.05);
-  --ux-box-shadow-table-sticky-column-right: -2px 0px 1px 0px rgba(0, 0, 0, 0.05);
-  --ux-box-shadow-top: 0 -2px 5px rgba( 0, 0, 0, 0.26 );
-  --ux-box-shadow-top-light: 0 -1px 1px rgba( 0, 0, 0, 0.26 );
-  --ux-drawer-box-shadow-right: -4px 4px 8px rgba(0,0,0,.1);
-  --ux-drawer-box-shadow-left: 4px 4px 8px rgba(0,0,0,.1);
 
-  --ux-elevations-00: 0rem 0rem 0rem rgba(0, 0, 0, 0.1);
-  --ux-elevations-10: 0rem 0.06rem 0.12rem rgba(0, 0, 0, 0.1);
-  --ux-elevations-20: 0rem 0.13rem 0.3rem rgba(0, 0, 0, 0.1);
-  --ux-elevations-30: 0rem 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
-  --ux-elevations-40: 0rem 0.4rem 0.8rem rgba(0, 0, 0, 0.1);
-  --ux-elevations-50: 0rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  --ux-box-shadow: #{0 2px 5px rgb( 0 0 0 / 26% )};
+  --ux-box-shadow-light: #{0 1px 1px rgb( 0 0 0 / 26% )};
+  --ux-box-shadow-card: #{0 2px 4px rgb(0 0 0 / 10%)};
+  --ux-box-shadow-table-sticky-column-left: 2px 0px 1px 0px rgb(0 0 0 / 5%);
+  --ux-box-shadow-table-sticky-column-right: -2px 0px 1px 0px rgb(0 0 0 / 5%);
+  --ux-box-shadow-top: 0 -2px 5px rgb( 0 0 0 / 26% );
+  --ux-box-shadow-top-light: 0 -1px 1px rgb( 0 0 0 / 26% );
 
-  --ux-black: #000000;
+  --ux-drawer-box-shadow-right: -4px 4px 8px rgb(0 0 0 / 10%);
+  --ux-drawer-box-shadow-left: 4px 4px 8px rgb(0 0 0 / 10%);
+
+  --ux-elevations-00: 0rem 0rem 0rem rgb(0 0 0 / 10%);
+  --ux-elevations-10: 0rem 0.06rem 0.12rem rgb(0 0 0 / 10%);
+  --ux-elevations-20: 0rem 0.13rem 0.3rem rgb(0 0 0 / 10%);
+  --ux-elevations-30: 0rem 0.3rem 0.5rem rgb(0 0 0 / 10%);
+  --ux-elevations-40: 0rem 0.4rem 0.8rem rgb(0 0 0 / 10%);
+  --ux-elevations-50: 0rem 0.5rem 1rem rgb(0 0 0 / 10%);
+
+  --ux-black: #000;
   --ux-blue: #3F6DCA;
   --ux-cream: #F8F4F2;
   --ux-emerald: #158D71;
@@ -35,7 +37,7 @@
   --ux-sand: #DABDA2;
   --ux-teal: #0E4749;
   --ux-yellow: #F3CE14;
-  --ux-white: #FFFFFF;
+  --ux-white: #FFF;
 
   --brand-color-facebook: #3577ea;
   --brand-color-google: #DB3236;
@@ -72,7 +74,7 @@
   --ux-gray-500: var(--ux-gray);
   --ux-gray-600: #818181;
   --ux-gray-700: #616161;
-  --ux-gray-800: #444444;
+  --ux-gray-800: #444;
   --ux-gray-900: #101010;
 
   --ux-green-100: #D4F6E5;
@@ -165,7 +167,6 @@
   --ux-purple-800: #34227A;
   --ux-purple-900: #120640;
 
-
   --synth-spacing-base: 4px;
 
   // Increments of 4 according to the 4 pixel grid system
@@ -182,15 +183,17 @@
   --synth-spacing-11: calc(var(--synth-spacing-base) * 11); // 44px
   --synth-spacing-12: calc(var(--synth-spacing-base) * 12); // 48px
 
+  // basic colors
+  --synth-black: #000;
+  --synth-white: #fff;
+
   // stoplight color system
   --synth-success-green-dark: #015029;
   --synth-success-green-medium: #09914f;
   --synth-success-green-light: #d4f6e5;
-
   --synth-error-red-dark: #c71f1f;
   --synth-error-red-medium: #e03131;
   --synth-error-red-light: #fae1e1;
-
   --synth-warning-amber-dark: #fbda36;
   --synth-warning-amber-medium: #ffe356;
   --synth-warning-amber-light: #fff1ab;
@@ -217,16 +220,17 @@
 
   // feedback and signifier colors
   --synth-hyperlink-color: #3f6dca;
-
   --synth-hover-blue: #e5ecff;
   --synth-header-gray-blue: #eef2f8;
-
-  --synth-font-family: Inter, sans-serif;
+  --synth-font-family: inter, sans-serif;
   --synth-font-weight-regular: 400;
   --synth-font-weight-medium: 500;
   --synth-font-weight-semibold: 600;
   --synth-font-weight-bold: 700;
   --synth-font-size-base: 0.875rem;
+
+  // brand colors
+  --synth-brand-google: #2d8cff;
 
   // By Level
   --z-index-1050: 1050;
@@ -235,10 +239,8 @@
   --z-index-1030: 1030;
   --z-index-1025: 1025;
   --z-index-1020: 1020;
-
   --z-index-115: 115;
   --z-index-100: 100;
-
   --z-index-30: 30;
   --z-index-20: 20;
   --z-index-11: 11;
@@ -252,13 +254,24 @@
   --z-index-flash: var(--z-index-1045);
   --z-index-drawer: var(--z-index-1040);
   --z-index-modal-backdrop: var(--z-index-1040); // Matches bootstrap --z-index-modal-backdrop
-  --z-index-fixed: var(--z-index-1030); //Matches bootstrap --z-index-fixed
+  --z-index-fixed: var(--z-index-1030); // Matches bootstrap --z-index-fixed
   --z-index-overlay: calc(var(--z-index-fixed) - 1); // Sits just under --z-index-fixed
   --z-index-table-cell-sticky-column: var(--z-index-10); // Sits under --z-index-table-foot-sticky-row
   --z-index-table-foot-sticky-row: var(--z-index-11); // Sits above var(--z-index-table-cell-sticky-column)
-
   --card-width-xs: 240px;
   --card-width-sm: 512px;
   --card-width-md: 640px;
   --card-width-lg: 896px;
+
+  // external libraries - these should be standardized to use the same synth colors
+  // as other components but for now moving variable declarations here so they're all
+  // in one place
+  --react-loading-skeleton-base-color: #ebebeb;
+  --react-loading-skeleton-highlight-color: #f5f5f5;
+  --react-modal-content-box-shadow: 0 4px 8px rgb(0 0 0 / 10%);
+  --react-toggle-background-color: #19AB27;
+  --react-toggle-background-color-hover: #128D15;
+  --react-toggle-thumb-border-color: #4D4D4D;
+  --react-toggle-thumb-background-color: #FAFAFA;
+  --react-toggle-thumb-box-shadow-color: #0099E0;
 }

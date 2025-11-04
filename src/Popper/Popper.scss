@@ -34,15 +34,15 @@
   }
 
   &[data-placement*='bottom'] .Popper__arrow::before {
-    border-color: transparent transparent $popper-border-color transparent;
-    border-width: 0 8px 6px 8px;
+    border-color: transparent transparent $popper-border-color;
+    border-width: 0 8px 6px;
     position: absolute;
     top: -1px;
   }
 
   &[data-placement*='bottom'] .Popper__arrow::after {
-    border-color: transparent transparent $popper-color transparent;
-    border-width: 0 8px 6px 8px;
+    border-color: transparent transparent $popper-color;
+    border-width: 0 8px 6px;
   }
 
   &[data-placement*='top'] .Popper__arrow {
@@ -53,14 +53,14 @@
 
   &[data-placement*='top'] .Popper__arrow::before {
     border-color: $popper-border-color transparent transparent transparent;
-    border-width: 6px 8px 0 8px;
+    border-width: 6px 8px 0;
     position: absolute;
     top: 1px;
   }
 
   &[data-placement*='top'] .Popper__arrow::after {
     border-color: $popper-color transparent transparent transparent;
-    border-width: 6px 8px 0 8px;
+    border-width: 6px 8px 0;
   }
 
   &[data-placement*='right'] .Popper__arrow {
@@ -101,6 +101,7 @@
 .Popper {
   @include synth-font-type-30--medium;
   @include popper-arrow($popper-color: $ux-white, $popper-border-color: $ux-gray-300);
+
   background-color: var(--ux-white);
   border-radius: var(--ux-border-radius);
   border: 1px solid $ux-gray-300;
@@ -113,16 +114,19 @@
 
   &__header {
     margin-bottom: var(--synth-spacing-1);
+
     @include synth-font-type-30--bold;
   }
 
   &--dark {
     @include popper-arrow($popper-color: $ux-gray-800);
+
     background-color: var(--ux-gray-800);
     color: var(--ux-gray-100);
 
     a, a:active, a:focus, a:hover, a:visited {
       color: var(--ux-blue-300);
+
       @include synth-font-type-30--medium;
     }
   }

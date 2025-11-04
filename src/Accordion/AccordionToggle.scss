@@ -47,6 +47,7 @@
 
   &:focus-visible {
     @include btn-focus-outline;
+
     border-radius: var(--ux-border-radius);
   }
 
@@ -95,6 +96,7 @@
 
   &__title {
     @include synth-font-type-30--bold;
+
     margin-right: 8px;
   }
 
@@ -104,6 +106,7 @@
 
   &__collapsed-text {
     @include synth-font-type-30;
+
     color: var(--ux-gray-600);
   }
 

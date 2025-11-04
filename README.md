@@ -13,6 +13,7 @@ Synthesis is the official design system of [User Interviews](https://www.userint
 - [Getting started](#getting-started)
   - [Initial setup](#initial-setup)
   - [Available scripts](#available-scripts)
+  - [Stylelint configuration](#stylelint-configuration)
   - [Developing against rails-server](#developing-against-rails-server)
   - [Pull requests](#pull-requests)
 - [Contributing](#contributing)
@@ -42,10 +43,27 @@ _Installs all yarn dependencies._
 _Runs the jest test suite._
 
 `yarn lint`
-_Runs ESLint to report on any style violations._
+_Runs TypeScript, ESLint, and Stylelint to report on any code and style violations._
+
+`yarn lint:js`
+_Runs TypeScript type checking and ESLint on JavaScript/TypeScript files._
+
+`yarn lint:css`
+_Runs Stylelint on all CSS/SCSS files._
+
+`yarn lint:css:fix`
+_Runs Stylelint on all CSS/SCSS files and auto-fixes violations where possible._
 
 `bin/migrate-stack`
 _Installs specific Node.js and Yarn versions with Volta, creates a .env file, and adds an FONTAWESOME_NPM_AUTH_TOKEN to it._
+
+### Stylelint Configuration
+
+This project uses [Stylelint](https://stylelint.io/) to enforce consistent styling practices in CSS/SCSS files.
+
+#### Configuration Files
+- `.stylelintrc.json` - Main configuration
+- `.stylelintignore` - Files/directories to ignore
 
 ### Developing against `rails-server`
 

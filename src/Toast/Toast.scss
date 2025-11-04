@@ -6,7 +6,6 @@
   bottom: 0;
   transform: translateX(-10%);
   width: 304px;
-
   z-index: var(--z-index-flash);
 
   @include media-breakpoint-down(sm) {

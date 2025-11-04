@@ -20,7 +20,7 @@
   &__circle {
     @include mod-rainbow;
 
-    &:before {
+    &::before {
       content: '';
       display: inline-block;
       height: 100%;
@@ -38,6 +38,7 @@
 
     &__initials {
       @include synth-font-type-30--bold;
+
       display: inline-block;
       vertical-align: middle;
     }
@@ -56,6 +57,7 @@
       &__circle__initials {
         @include synth-font-type-70--bold;
       }
+
       &__alert {
         height: 22px;
         width: 22px;

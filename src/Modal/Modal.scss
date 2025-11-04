@@ -1,4 +1,4 @@
-@import '../../scss/theme.scss';
+@import '../../scss/theme';
 
 .ReactModal {
   &__Body--open {
@@ -6,10 +6,10 @@
   }
 
   &__Content {
-    background-color: white;
+    background-color: var(--synth-white);
     border-radius: var(--ux-border-radius);
     box-shadow: $modal-content-box-shadow-xs;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--react-modal-content-box-shadow);
     font-weight: 400;
     max-height: 100%;
     overflow: auto;
@@ -58,7 +58,7 @@
 
   &__Overlay {
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(0 0 0 / 50%);
     display: flex;
     justify-content: center;
     opacity: 0;
@@ -66,7 +66,7 @@
     transition: opacity $ux-duration-short linear;
     z-index: var(--z-index-modal-backdrop);
 
-    @media (max-width: 512px) {
+    @media (width <= 512px) {
       padding: var(--synth-spacing-4);
     }
 

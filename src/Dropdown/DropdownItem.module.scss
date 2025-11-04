@@ -2,6 +2,7 @@
 
 .DropdownItem {
   @include synth-font-type-30;
+
   color: var(--ux-gray-900);
 
   &:hover {
