@@ -9,6 +9,8 @@
         "message": "Use CSS custom properties (var(--ux-*)) or SCSS variables instead of hex colors. See scss/css_properties.scss for available colors."
       }
     ],
+    "custom-property-empty-line-before": null,
+    "declaration-empty-line-before": null,
     "no-descending-specificity": null,
     "selector-class-pattern": null,
     "scss/at-mixin-pattern": null,
