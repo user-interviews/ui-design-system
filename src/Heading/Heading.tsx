@@ -4,12 +4,10 @@ import classNames from 'classnames';
 
 import * as styles from './Heading.module.css';
 
-export const HEADER_PROPS = {
-  size: {
-    large: 'large',
-    medium: 'medium',
-    small: 'small',
-  },
+export enum HeadingSizes {
+  LARGE = 'large',
+  MEDIUM = 'medium',
+  SMALL = 'small',
 };
 
 export interface HeadingProps {
@@ -32,7 +30,7 @@ export interface HeadingProps {
    *
    * TODO: Update this to only use the HeaderSizes keys
    */
-  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | HEADER_PROPS.size.large | HEADER_PROPS.size.medium | HEADER_PROPS.size.small;
+  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | HeadingSizes.LARGE | HeadingSizes.MEDIUM | HeadingSizes.SMALL;
   textAlign?: 'left' | 'center' | 'right';
   weight?: 'regular' | 'medium' | 'bold';
 }
@@ -45,10 +43,10 @@ const SizeToClass = {
   xl: styles.xl,
   xxl: styles.xxl,
   xxxl: styles.xxxl,
-  [HEADER_PROPS.size.large]: styles.xxxl,
-  [HEADER_PROPS.size.medium]: styles.xl,
-  [HEADER_PROPS.size.small]: styles.lg,
-}
+  [HeadingSizes.LARGE]: styles.xxxl,
+  [HeadingSizes.MEDIUM]: styles.xl,
+  [HeadingSizes.SMALL]: styles.lg,
+};
 
 /* TODO Update this so that 2 is xl and 3 is lg */
 const LevelToClass = {
@@ -64,7 +62,7 @@ const WeightToClass = {
   bold: styles.bold,
   regular: styles.regular,
   medium: styles.medium,
-}
+};
 
 export function Heading({
   children,
