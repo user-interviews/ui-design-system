@@ -9,14 +9,19 @@ runs:
       with:
         env-key: FONTAWESOME_NPM_AUTH_TOKEN
 
+    - name: Install Yarn
+      uses: nick-fields/retry@v3
+      with:
+        timeout_minutes: 5
+        max_attempts: 3
+        command: corepack enable && corepack install
+        shell: bash
+
     - name: Setup Node
       uses: actions/setup-node@v4
       with:
         cache: 'yarn'
         node-version-file: ".node-version"
-
-    - name: Setup Yarn
-      uses: volta-cli/action@v4
 
     - name: Install dependencies
       run: yarn install --frozen-lockfile
