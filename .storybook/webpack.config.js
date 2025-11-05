@@ -1,7 +1,11 @@
-const path = require('path');
-const { codecovWebpackPlugin } = require("@codecov/webpack-plugin");
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { codecovWebpackPlugin } from '@codecov/webpack-plugin';
 
-module.exports = function({ config }) {
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+export default function({ config }) {
   config.plugins = config.plugins || [];
   config.plugins.push(
     codecovWebpackPlugin({
@@ -33,4 +37,4 @@ module.exports = function({ config }) {
   });
 
   return config;
-};
+}

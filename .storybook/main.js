@@ -15,9 +15,9 @@ const config = {
     test: /\.css$/,
     sideEffects: true,
     use: [
-        require.resolve("style-loader"),
+        "style-loader",
         {
-            loader: require.resolve("css-loader"),
+            loader: "css-loader",
             options: {
                 
                 

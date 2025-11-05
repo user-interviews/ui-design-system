@@ -1,0 +1,41 @@
+[18:28:55.920] [INFO] Storybook Upgrade - v10.0.5
+[18:28:55.931] [INFO] detect-projects-spinner-start: Detecting projects...
+[18:28:55.933] [DEBUG] Finding Storybook projects...
+[18:28:55.971] [DEBUG] Found 1 Storybook projects
+[18:28:55.972] [INFO] detect-projects-spinner: Detecting projects: 1 projects
+[18:28:55.972] [DEBUG] Getting Storybook data...
+[18:28:55.972] [DEBUG] Getting Storybook info...
+[18:28:55.977] [DEBUG] Loading main config...
+[18:28:56.388] [INFO] Loading main config failed as the file does not seem to be valid ESM. Trying a temporary fix, please ensure the main config is valid ESM.
+[18:28:56.400] [DEBUG] Error: Unable to find or evaluate /home/runner/work/ui-design-system/ui-design-system/.storybook/main.js: Error: Cannot find module 'style-loader'
+Require stack:
+- /home/runner/work/ui-design-system/ui-design-system/.storybook/main.tmp..js
+[18:28:56.401] [INFO] detect-projects-spinner-stop: 1 project detected
+[18:28:56.401] [DEBUG] Found 0 valid projects and 1 error projects
+[18:28:56.402] [ERROR] Failed to get projects
+[18:28:56.409] [ERROR] Error: ❌ Storybook found errors while collecting data for the following projects:
+/.storybook:
+Error: Unable to find or evaluate ./.storybook/main.js: Error: Cannot find module 'style-loader'
+Require stack:
+- ./.storybook/main.tmp..js
+    at getStorybookData (file:///home/runner/.npm/_npx/e282a76d12632f8c/node_modules/@storybook/cli/dist/_node-chunks/chunk-GSRXOXXW.js:1207:11)
+    at async processProject (file:///home/runner/.npm/_npx/e282a76d12632f8c/node_modules/@storybook/cli/dist/_node-chunks/chunk-GSRXOXXW.js:1369:9)
+Please fix the errors and run the upgrade command again.
+    at getProjects (file:///home/runner/.npm/_npx/e282a76d12632f8c/node_modules/@storybook/cli/dist/_node-chunks/chunk-GSRXOXXW.js:1606:13)
+    at async file:///home/runner/.npm/_npx/e282a76d12632f8c/node_modules/@storybook/cli/dist/_node-chunks/run-FI53MVSP.js:11148:30
+    at async withTelemetry (file:///home/runner/.npm/_npx/e282a76d12632f8c/node_modules/storybook/dist/_node-chunks/chunk-GJU3UNCG.js:278:12)
+    at async upgrade (file:///home/runner/.npm/_npx/e282a76d12632f8c/node_modules/@storybook/cli/dist/_node-chunks/run-FI53MVSP.js:11143:3)
+    at async Command.<anonymous> (file:///home/runner/.npm/_npx/e282a76d12632f8c/node_modules/@storybook/cli/dist/_node-chunks/run-FI53MVSP.js:11393:3)
+[18:28:56.420] [INFO] Attention: Storybook now collects completely anonymous telemetry regarding usage. This information is used to shape Storybook's roadmap and prioritize features.
+[18:28:56.427] [INFO] You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+[18:28:56.434] [INFO] https://storybook.js.org/telemetry
+[18:28:56.441] [INFO] 
+[18:28:56.454] [INFO] Loading main config failed as the file does not seem to be valid ESM. Trying a temporary fix, please ensure the main config is valid ESM.
+[18:29:02.981] [ERROR] Error: ❌ Storybook found errors while collecting data for the following projects:
+/.storybook:
+Error: Unable to find or evaluate ./.storybook/main.js: Error: Cannot find module 'style-loader'
+Require stack:
+- ./.storybook/main.tmp..js
+    at getStorybookData (file:///home/runner/.npm/_npx/e282a76d12632f8c/node_modules/@storybook/cli/dist/_node-chunks/chunk-GSRXOXXW.js:1207:11)
+    at async processProject (file:///home/runner/.npm/_npx/e282a76d12632f8c/node_modules/@storybook/cli/dist/_node-chunks/chunk-GSRXOXXW.js:1369:9)
+Please fix the errors and run the upgrade command again.
