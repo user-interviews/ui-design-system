@@ -2,6 +2,9 @@ name: Lint
 
 on: push
 
+env:
+  FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+
 jobs:
   lint:
     runs-on: ubuntu-latest
@@ -16,9 +19,6 @@ jobs:
 
       - name: Setup Yarn
         uses: volta-cli/action@v4
-
-      - name: Setup env
-        run: echo "FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" > .env
 
       - name: Install dependencies
         run: yarn install

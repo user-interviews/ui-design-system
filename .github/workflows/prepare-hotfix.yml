@@ -7,6 +7,9 @@ on:
         description: "The version you want to release."
         required: true
 
+env:
+  FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+
 jobs:
   prepare-hotfix:
     name: Prepare hotfix
@@ -24,9 +27,6 @@ jobs:
 
       - name: Setup Yarn
         uses: volta-cli/action@v4
-
-      - name: Setup env
-        run: echo "FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" > .env
 
       - name: Create hotfix branch
         run: git checkout -b hotfix/${{ github.event.inputs.version }}

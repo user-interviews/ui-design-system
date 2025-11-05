@@ -9,6 +9,9 @@ on:
     branches:
       - main
 
+env:
+  FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+
 # List of jobs
 jobs:
   chromatic-deployment:
@@ -26,9 +29,6 @@ jobs:
 
       - name: Setup Yarn
         uses: volta-cli/action@v4
-
-      - name: Setup env
-        run: echo "FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" > .env
 
       - name: Install dependencies
         run: yarn install

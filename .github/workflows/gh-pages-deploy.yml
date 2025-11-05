@@ -1,7 +1,11 @@
 name: Deploy to github pages
+
 on:
   release:
     types: [published]
+
+env:
+  FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -25,9 +29,6 @@ jobs:
 
       - name: Setup Yarn
         uses: volta-cli/action@v4
-
-      - name: Setup env
-        run: echo "FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" > .env
 
       - name: Install dependencies
         run: yarn install
