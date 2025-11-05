@@ -38,7 +38,7 @@
 }
 
 .font-type-header-section {
-  @include synth-font-type-50--bold;
+  font: var(--synth-font-heading-medium);
 }
 
 .font-type-body {
