@@ -35,7 +35,7 @@ export interface HeadingProps {
   weight?: 'regular' | 'medium' | 'bold';
 }
 
-const SizeToClass = {
+const SIZE_CLASSES = {
   xs: styles.xs,
   sm: styles.sm,
   md: styles.md,
@@ -46,23 +46,23 @@ const SizeToClass = {
   [HeadingSizes.LARGE]: styles.xxxl,
   [HeadingSizes.MEDIUM]: styles.xl,
   [HeadingSizes.SMALL]: styles.lg,
-};
+} as const;
 
 /* TODO Update this so that 2 is xl and 3 is lg */
-const LevelToClass = {
+const LEVEL_CLASSES = {
   1: styles.xxxl,
   2: styles.xxl,
   3: styles.xl,
   4: styles.lg,
   5: styles.md,
   6: styles.sm,
-};
+} as const;
 
-const WeightToClass = {
+const WEIGHT_CLASSES = {
   bold: styles.bold,
   regular: styles.regular,
   medium: styles.medium,
-};
+} as const;
 
 export function Heading({
   children,
@@ -80,8 +80,8 @@ export function Heading({
       className: classNames(
         className, /* TODO Remove this and wrap all overrides into variants */
         'Heading', /* TODO Remove this once we remove anything targetting this directly */
-        size ? SizeToClass[size] : LevelToClass[level],
-        WeightToClass[weight],
+        size ? SIZE_CLASSES[size] : LEVEL_CLASSES[level],
+        WEIGHT_CLASSES[weight],
       ),
       ...props, /* TODO Remove this */
     },
