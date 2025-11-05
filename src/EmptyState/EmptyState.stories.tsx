@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Meta, StoryObj } from 'storybook/react';
+import type { Meta, StoryObj } from '@storybook/react';
 
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { faPlus } from '../font_awesome/regular';

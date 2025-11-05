@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { action } from 'storybook/actions';
+import { action } from '@storybook/test';
 
 import Button from '../Button';
 import Form from '.';

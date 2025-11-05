@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unstable-nested-components */
 import React, { useRef, useState } from 'react';
-import { action } from 'storybook/actions';
+import { action } from '@storybook/test';
 
 import Button from 'src/Button';
 import FormGroup from 'src/FormGroup';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { action } from 'storybook/actions';
+import { action } from '@storybook/test';
 
 import { faExclamationTriangle } from '../font_awesome/solid';
 
