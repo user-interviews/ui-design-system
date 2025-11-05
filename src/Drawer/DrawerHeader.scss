@@ -23,8 +23,7 @@
   }
 
   &__title {
-    @include synth-font-type-70--bold;
-
+    font: var(--synth-font-heading-large);
     color: var(--ux-gray-900);
   }
 }

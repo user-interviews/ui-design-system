@@ -55,7 +55,7 @@
 
     .Avatar {
       &__circle__initials {
-        @include synth-font-type-70--bold;
+        font: var(--synth-font-heading-large);
       }
 
       &__alert {
