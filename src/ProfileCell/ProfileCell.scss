@@ -33,9 +33,9 @@
     }
 
     &__subtitle {
-      font: var(--synt-font-subtext-regular);
       @include truncate;
 
+      font: var(--synt-font-subtext-regular);
       color: var(--ux-gray-900);
 
       * {
