@@ -28,9 +28,9 @@ export interface HeadingProps {
    * @description Sizes map to the available font-sizes from the defined list of font-types.
    * Adjust for visual hierarchy.
    *
-   * TODO: Update this to only use the HeaderSizes keys
+   * TODO: Update this to only use the HeadingSizes keys and update the types to not use string
    */
-  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | HeadingSizes.LARGE | HeadingSizes.MEDIUM | HeadingSizes.SMALL;
+  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | 'large' | 'medium' | 'small';
   textAlign?: 'left' | 'center' | 'right';
   weight?: 'regular' | 'medium' | 'bold';
 }
