@@ -37,9 +37,9 @@ const config = {
       test: /\.css$/,
       sideEffects: true,
       use: [
-        "style-loader",
+        'style-loader',
         {
-          loader: "css-loader",
+          loader: 'css-loader',
           options: {},
         },
       ],

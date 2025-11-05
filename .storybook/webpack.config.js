@@ -10,7 +10,7 @@ export default function({ config }) {
   config.plugins.push(
     codecovWebpackPlugin({
       enableBundleAnalysis: process.env.CODECOV_TOKEN !== undefined,
-      bundleName: "design-system",
+      bundleName: 'design-system',
       uploadToken: process.env.CODECOV_TOKEN,
     }),
   );
