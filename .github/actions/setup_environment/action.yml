@@ -25,7 +25,7 @@ runs:
 
     - name: Install dependencies
       run: |
-        if [ "${{ env.YARN_MUTABLE }}" = "true" ]; then
+        if [ "${{ env.ALLOW_YARN_MUTABLE }}" = "true" ]; then
           yarn install
         else
           yarn install --immutable
