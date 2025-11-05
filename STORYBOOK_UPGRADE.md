@@ -6,20 +6,25 @@ This document outlines the upgrade from Storybook v8.6.14 to v10.0.5.
 ## Changes Made
 
 ### Package Updates
-All Storybook-related packages have been updated to v10.0.5:
+Updated Storybook packages to v10.0.5 where available:
 - `@storybook/addon-a11y`: 8.6.14 → 10.0.5
-- `@storybook/addon-actions`: 8.6.14 → 10.0.5
-- `@storybook/addon-backgrounds`: 8.6.14 → 10.0.5
-- `@storybook/addon-controls`: 8.6.14 → 10.0.5
 - `@storybook/addon-docs`: 8.6.14 → 10.0.5
-- `@storybook/addon-jest`: 8.6.14 → 10.0.5
 - `@storybook/addon-links`: 8.6.14 → 10.0.5
-- `@storybook/addon-storysource`: 8.6.14 → 10.0.5
 - `@storybook/addon-styling-webpack`: 1.0.1 → 2.0.0
 - `@storybook/addon-webpack5-compiler-babel`: 3.0.6 (unchanged)
 - `@storybook/react`: 8.6.14 → 10.0.5
 - `@storybook/react-webpack5`: 8.6.14 → 10.0.5
 - `storybook`: 8.6.14 → 10.0.5
+
+### Removed Packages (Now Built-in to Storybook Core)
+Starting with Storybook 9, several essential addons were integrated into core Storybook and are no longer separate packages:
+- `@storybook/addon-actions` - Now built-in, removed from dependencies
+- `@storybook/addon-backgrounds` - Now built-in, removed from dependencies
+- `@storybook/addon-controls` - Now built-in, removed from dependencies
+- `@storybook/addon-jest` - Deprecated, removed from dependencies
+- `@storybook/addon-storysource` - Deprecated, removed from dependencies
+
+These features are now available automatically without needing to install or configure separate addons.
 
 ### Configuration Changes
 
@@ -32,6 +37,8 @@ Storybook 10 is ESM-only. All configuration files must use ESM syntax.
 
 **`.storybook/main.js`**
 - Removed `require.resolve()` calls (not needed in Storybook 10)
+- Removed built-in addons from config: `addon-actions`, `addon-backgrounds`, `addon-controls`, `addon-storysource`
+- These addons are now part of Storybook core and work automatically
 - Direct string references to loaders work fine in Storybook 10
 
 ### Breaking Changes to Be Aware Of

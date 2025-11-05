@@ -7,7 +7,7 @@ const config = {
         configFile: true
       }
     }
-  }, '@storybook/addon-a11y', '@storybook/addon-actions', '@storybook/addon-backgrounds', '@storybook/addon-controls', '@storybook/addon-links', '@storybook/addon-storysource', '@storybook/addon-webpack5-compiler-babel', ({
+  }, '@storybook/addon-a11y', '@storybook/addon-links', '@storybook/addon-webpack5-compiler-babel', ({
     name: "@storybook/addon-styling-webpack",
 
     options: {
