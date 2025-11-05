@@ -46,15 +46,15 @@
 }
 
 .font-type-subtext {
-  @include synth-font-type-20;
+  font: var(--synt-font-subtext-regular);
 }
 
 .font-type-subtext--medium {
-  @include synth-font-type-20--medium;
+  font: var(--synt-font-subtext-medium);
 }
 
 .font-type-subtext--bold {
-  @include synth-font-type-20--bold;
+  font: var(--synt-font-subtext-bold);
 }
 
 .font-type-small-caps {

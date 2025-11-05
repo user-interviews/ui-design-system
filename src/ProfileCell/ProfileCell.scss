@@ -33,7 +33,7 @@
     }
 
     &__subtitle {
-      @include synth-font-type-20;
+      font: var(--synt-font-subtext-regular);
       @include truncate;
 
       color: var(--ux-gray-900);

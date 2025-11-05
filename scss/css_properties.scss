@@ -282,7 +282,6 @@
   --synth-hover-blue: var(--synth-blue-100);
 
   --synth-header-gray-blue: #eef2f8;
-  --synth-font-size-base: 0.875rem;
 
   // brand colors
   --synth-brand-google: #2d8cff;
@@ -333,6 +332,10 @@
   /* Font variables */
   --synth-font-family: inter, sans-serif;
 
+  --synth-font-size-base: 0.875rem;
+  --synth-font-body-size: var(--synth-font-size-base) / 1.125rem;
+  --synth-font-subtext-size: 0.75rem / 1rem;
+
   --synth-font-weight-regular: 400;
   --synth-font-weight-medium: 500;
   --synth-font-weight-semibold: 600;
@@ -354,7 +357,6 @@
     1rem / 1.375rem
     var(--synth-font-family);
 
-  --synth-font-body-size: 0.875rem / 1.125rem;
   --synth-font-body-bold:
     normal
     var(--synth-font-weight-bold)
@@ -371,7 +373,6 @@
     var(--synth-font-body-size)
     var(--synth-font-family);
 
-  --synth-font-subtext-size: 0.75rem / 1rem;
   --synth-font-subtext-bold:
     normal
     var(--synth-font-weight-bold)

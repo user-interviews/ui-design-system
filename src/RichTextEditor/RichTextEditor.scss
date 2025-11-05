@@ -4,7 +4,7 @@
   width: 100%;
 
   .RichTextEditor__character-count {
-    @include synth-font-type-20;
+    font: var(--synt-font-subtext-regular);
 
     margin-top: 8px;
   }

@@ -12,10 +12,10 @@
   }
 
   &--sm {
-    @include synth-font-type-20;
+    font: var(--synt-font-subtext-regular);
   }
 
-  // Weight 
+  // Weight
 
   &--bold {
     font-weight: var(--synth-font-weight-bold);

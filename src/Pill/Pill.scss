@@ -1,7 +1,7 @@
 @import '../../scss/theme';
 
 .Pill {
-  @include synth-font-type-20;
+  font: var(--synt-font-subtext-regular);
 
   display: inline;
   background-color: var(--ux-blue-100);
@@ -20,7 +20,7 @@
     }
 
     .Pill__button--close {
-      background-color: unset; 
+      background-color: unset;
       border: none;
       color: var(--ux-blue-500);
       margin-left: var(--synth-spacing-2);
@@ -45,7 +45,7 @@
     }
 
     .Pill__button--close {
-      background-color: unset; 
+      background-color: unset;
       border: none;
       color: var(--ux-orange);
       margin-left: var(--synth-spacing-2);
@@ -70,7 +70,7 @@
     }
 
     .Pill__button--close {
-      background-color: unset; 
+      background-color: unset;
       border: none;
       color: var(--ux-green-600);
       margin-left: var(--synth-spacing-2);
@@ -95,7 +95,7 @@
     }
 
     .Pill__button--close {
-      background-color: unset; 
+      background-color: unset;
       border: none;
       color: var(--ux-yellow-600);
       margin-left: var(--synth-spacing-2);
@@ -120,7 +120,7 @@
     }
 
     .Pill__button--close {
-      background-color: unset; 
+      background-color: unset;
       border: none;
       color: var(--ux-red-900);
       margin-left: var(--synth-spacing-2);
@@ -145,7 +145,7 @@
     }
 
     .Pill__button--close {
-      background-color: unset; 
+      background-color: unset;
       border: none;
       color: var(--ux-gray-500);
       margin-left: var(--synth-spacing-2);
@@ -170,7 +170,7 @@
     }
 
     .Pill__button--close {
-      background-color: unset; 
+      background-color: unset;
       border: none;
       color: var(--ux-gray-500);
       margin-left: var(--synth-spacing-2);
