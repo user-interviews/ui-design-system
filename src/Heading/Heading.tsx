@@ -2,7 +2,15 @@ import { createElement, ReactNode } from 'react';
 
 import classNames from 'classnames';
 
-import './Heading.scss';
+import * as styles from './Heading.module.css';
+
+export const HEADER_PROPS = {
+  size: {
+    large: 'large',
+    medium: 'medium',
+    small: 'small',
+  },
+};
 
 export interface HeadingProps {
   children?: ReactNode;
@@ -21,24 +29,44 @@ export interface HeadingProps {
    * @type {string}
    * @description Sizes map to the available font-sizes from the defined list of font-types.
    * Adjust for visual hierarchy.
+   *
+   * TODO: Update this to only use the HeaderSizes keys
    */
-  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl';
+  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | HEADER_PROPS.size.large | HEADER_PROPS.size.medium | HEADER_PROPS.size.small;
   textAlign?: 'left' | 'center' | 'right';
   weight?: 'regular' | 'medium' | 'bold';
 }
 
-const LevelToSizeMap = {
-  1: 'xxxl',
-  2: 'xxl',
-  3: 'xl',
-  4: 'lg',
-  5: 'md',
-  6: 'sm',
+const SizeToClass = {
+  xs: styles.xs,
+  sm: styles.sm,
+  md: styles.md,
+  lg: styles.lg,
+  xl: styles.xl,
+  xxl: styles.xxl,
+  xxxl: styles.xxxl,
+  [HEADER_PROPS.size.large]: styles.xxxl,
+  [HEADER_PROPS.size.medium]: styles.xl,
+  [HEADER_PROPS.size.small]: styles.lg,
+}
+
+/* TODO Update this so that 2 is xl and 3 is lg */
+const LevelToClass = {
+  1: styles.xxxl,
+  2: styles.xxl,
+  3: styles.xl,
+  4: styles.lg,
+  5: styles.md,
+  6: styles.sm,
 };
 
-const getHeadingSizeClassFromLevel = (level: number) => `Heading--${LevelToSizeMap[level]}`;
+const WeightToClass = {
+  bold: styles.bold,
+  regular: styles.regular,
+  medium: styles.medium,
+}
 
-function Heading({
+export function Heading({
   children,
   className,
   level = 1,
@@ -52,18 +80,13 @@ function Heading({
     {
       style: { textAlign },
       className: classNames(
-        className,
-        'Heading',
-        !size && getHeadingSizeClassFromLevel(level),
-        {
-          [`Heading--${size}`]: !!size,
-          [`Heading--${weight}`]: !!weight,
-        },
+        className, /* TODO Remove this and wrap all overrides into variants */
+        'Heading', /* TODO Remove this once we remove anything targetting this directly */
+        size ? SizeToClass[size] : LevelToClass[level],
+        WeightToClass[weight],
       ),
-      ...props,
+      ...props, /* TODO Remove this */
     },
-children,
-);
+    children,
+  );
 }
-
-export default Heading;

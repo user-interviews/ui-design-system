@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 
 import classNames from 'classnames';
 
-import { Heading } from '../Heading';
+import { Heading, HEADING_PROPS } from '../Heading';
 import { Text } from '../Text';
 
 import './EmptyState.scss';
@@ -47,9 +47,8 @@ function EmptyState({
         <Heading
           className="EmptyState__title"
           level={4}
-          size="lg"
+          size={HEADING_PROPS.size.small}
           textAlign="center"
-          weight="bold"
         >
           {title}
         </Heading>

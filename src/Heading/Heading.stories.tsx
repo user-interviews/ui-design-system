@@ -1,7 +1,7 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Heading from './Heading';
+import { Heading } from './Heading';
 
 const meta: Meta<typeof Heading> = {
   component: Heading,

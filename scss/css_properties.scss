@@ -282,11 +282,6 @@
   --synth-hover-blue: var(--synth-blue-100);
 
   --synth-header-gray-blue: #eef2f8;
-  --synth-font-family: inter, sans-serif;
-  --synth-font-weight-regular: 400;
-  --synth-font-weight-medium: 500;
-  --synth-font-weight-semibold: 600;
-  --synth-font-weight-bold: 700;
   --synth-font-size-base: 0.875rem;
 
   // brand colors
@@ -334,4 +329,68 @@
   --react-toggle-thumb-border-color: #4D4D4D;
   --react-toggle-thumb-background-color: #FAFAFA;
   --react-toggle-thumb-box-shadow-color: #0099E0;
+
+  /* Font variables */
+  --synth-font-family: inter, sans-serif;
+
+  --synth-font-weight-regular: 400;
+  --synth-font-weight-medium: 500;
+  --synth-font-weight-semibold: 600;
+  --synth-font-weight-bold: 700;
+
+  --synth-font-heading-large:
+    normal
+    var(--synth-font-weight-bold)
+    1.5rem / 2rem
+    var(--synth-font-family);
+  --synth-font-heading-medium:
+    normal
+    var(--synth-font-weight-bold)
+    1.125rem / 1.5rem
+    var(--synth-font-family);
+  --synth-font-heading-small:
+    normal
+    var(--synth-font-weight-bold)
+    1rem / 1.375rem
+    var(--synth-font-family);
+
+  --synth-font-body-size: 0.875rem / 1.125rem;
+  --synth-font-body-bold:
+    normal
+    var(--synth-font-weight-bold)
+    var(--synth-font-body-size)
+    var(--synth-font-family);
+  --synth-font-body-medium:
+    normal
+    var(--synth-font-weight-medium)
+    var(--synth-font-body-size)
+    var(--synth-font-family);
+  --synth-font-body-regular:
+    normal
+    var(--synth-font-weight-regular)
+    var(--synth-font-body-size)
+    var(--synth-font-family);
+
+  --synth-font-subtext-size: 0.75rem / 1rem;
+  --synth-font-subtext-bold:
+    normal
+    var(--synth-font-weight-bold)
+    var(--synth-font-subtext-size)
+    var(--synth-font-family);
+  --synth-font-subtext-medium:
+    normal
+    var(--synth-font-weight-medium)
+    var(--synth-font-subtext-size)
+    var(--synth-font-family);
+  --synth-font-subtext-regular:
+    normal
+    var(--synth-font-weight-regular)
+    var(--synth-font-subtext-size)
+    var(--synth-font-family);
+
+  --synth-font-button-text:
+    normal
+    var(--synth-font-weight-semibold)
+    0.875rem / 1.125rem
+    var(--synth-font-family);
 }
