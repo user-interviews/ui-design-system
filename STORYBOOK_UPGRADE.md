@@ -11,11 +11,11 @@ Updated Storybook packages to v10.0.5 where available:
 - `@storybook/addon-docs`: 8.6.14 → 10.0.5
 - `@storybook/addon-links`: 8.6.14 → 10.0.5
 - `@storybook/addon-webpack5-compiler-babel`: 3.0.6 (unchanged)
-- `@storybook/manager-api`: Added at 10.0.5 (required for manager customization)
-- `@storybook/theming`: Added at 10.0.5 (required for theming)
 - `@storybook/react`: 8.6.14 → 10.0.5
 - `@storybook/react-webpack5`: 8.6.14 → 10.0.5
 - `storybook`: 8.6.14 → 10.0.5
+
+Note: `manager-api` and `theming` are now exported from the main `storybook` package, not as separate packages.
 
 ### Removed Packages (Now Built-in to Storybook Core)
 Starting with Storybook 9, several essential addons were integrated into core Storybook and are no longer separate packages:
@@ -32,6 +32,10 @@ These features are now available automatically without needing to install or con
 
 #### ESM Migration (Required for Storybook 10)
 Storybook 10 is ESM-only. All configuration files must use ESM syntax.
+
+**`.storybook/manager.js` and `.storybook/user-interviews-theme.js`**
+- Updated imports to use `storybook/manager-api` and `storybook/theming` instead of separate packages
+- In Storybook 10, these APIs are exported from the main `storybook` package, not as `@storybook/manager-api` or `@storybook/theming`
 
 **`.storybook/webpack.config.js`**
 - Converted from CommonJS (`require`, `module.exports`) to ESM (`import`, `export default`)
