@@ -29,13 +29,13 @@ jobs:
         run: yarn test
 
       - name: Upload coverage to OtterWise
-        if: ${{ !cancelled() && process.env.OTTERWISE_ENABLED == 'true' }}
+        if: ${{ !cancelled() && vars.OTTERWISE_ENABLED == 'true' }}
         uses: getOtterWise/github-action@v1
         with:
           token: ${{ secrets.OTTERWISE_TOKEN }}
 
       - name: Upload coverage to Coveralls
-        if: ${{ !cancelled() && process.env.COVERALLS_ENABLED == 'true' }}
+        if: ${{ !cancelled() && vars.COVERALLS_ENABLED == 'true' }}
         uses: coverallsapp/github-action@v2
         with:
           # github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -43,13 +43,13 @@ jobs:
           file: ./coverage/lcov.info
 
       - name: Upload coverage to Codecov
-        if: ${{ !cancelled() && process.env.CODECOV_ENABLED == 'true' }}
+        if: ${{ !cancelled() && vars.CODECOV_ENABLED == 'true' }}
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Upload test results to Codecov
-        if: ${{ !cancelled() && process.env.CODECOV_ENABLED == 'true' }}
+        if: ${{ !cancelled() && vars.CODECOV_ENABLED == 'true' }}
         uses: codecov/test-results-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
