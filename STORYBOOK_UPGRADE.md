@@ -10,8 +10,9 @@ Updated Storybook packages to v10.0.5 where available:
 - `@storybook/addon-a11y`: 8.6.14 → 10.0.5
 - `@storybook/addon-docs`: 8.6.14 → 10.0.5
 - `@storybook/addon-links`: 8.6.14 → 10.0.5
-- `@storybook/addon-styling-webpack`: 1.0.1 → 2.0.0
 - `@storybook/addon-webpack5-compiler-babel`: 3.0.6 (unchanged)
+- `@storybook/manager-api`: Added at 10.0.5 (required for manager customization)
+- `@storybook/theming`: Added at 10.0.5 (required for theming)
 - `@storybook/react`: 8.6.14 → 10.0.5
 - `@storybook/react-webpack5`: 8.6.14 → 10.0.5
 - `storybook`: 8.6.14 → 10.0.5
@@ -23,6 +24,7 @@ Starting with Storybook 9, several essential addons were integrated into core St
 - `@storybook/addon-controls` - Now built-in, removed from dependencies
 - `@storybook/addon-jest` - Deprecated, removed from dependencies
 - `@storybook/addon-storysource` - Deprecated, removed from dependencies
+- `@storybook/addon-styling-webpack` - Removed (incompatible with v10), CSS rules moved to webpackFinal
 
 These features are now available automatically without needing to install or configure separate addons.
 
@@ -41,6 +43,8 @@ Storybook 10 is ESM-only. All configuration files must use ESM syntax.
 - These addons are now part of Storybook core and work automatically
 - Direct string references to loaders work fine in Storybook 10
 - Added `staticDirs` configuration to serve the `public` directory
+- Removed `@storybook/addon-styling-webpack` (incompatible with v10)
+- Added `webpackFinal` function to handle CSS rules and custom webpack configuration
 
 **`package.json` scripts**
 - Updated `storybook` dev command: Changed from `storybook dev -p 9009 public` to `storybook dev --port 9009`
