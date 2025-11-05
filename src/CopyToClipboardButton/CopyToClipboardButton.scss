@@ -3,8 +3,7 @@
 
 .CopyToClipboardButton {
   &__display-text {
-    @include synth-font-type-40--bold;
-
+    font: var(--synth-font-heading-small);
     margin-left: var(--synth-spacing-2);
   }
 }

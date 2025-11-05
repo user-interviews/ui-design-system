@@ -15,8 +15,8 @@
   }
 
   &__header-action {
-    @include synth-font-type-40;
-
+    font: var(--synth-font-heading-small);
+    font-weight: var(--synth-font-weight-regular);
     border: none;
     background: transparent;
     color: var(--ux-gray-700);
