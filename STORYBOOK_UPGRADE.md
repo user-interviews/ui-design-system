@@ -40,6 +40,13 @@ Storybook 10 is ESM-only. All configuration files must use ESM syntax.
 - Removed built-in addons from config: `addon-actions`, `addon-backgrounds`, `addon-controls`, `addon-storysource`
 - These addons are now part of Storybook core and work automatically
 - Direct string references to loaders work fine in Storybook 10
+- Added `staticDirs` configuration to serve the `public` directory
+
+**`package.json` scripts**
+- Updated `storybook` dev command: Changed from `storybook dev -p 9009 public` to `storybook dev --port 9009`
+- Updated `build-storybook`: Changed from `storybook build public` to `storybook build --output-dir public`
+- Updated `build-storybook-docs`: Changed from `storybook build public --docs` to `storybook build --output-dir public --docs`
+- Storybook 10 no longer accepts positional arguments; all options must use flags
 
 ### Breaking Changes to Be Aware Of
 
@@ -47,6 +54,9 @@ Storybook 10 is ESM-only. All configuration files must use ESM syntax.
 2. **Node.js Requirements**: Node.js 20.19+ or 22.12+ required
 3. **Package Manager**: npm 10+, pnpm 9+, or yarn 4+ required
 4. **TypeScript**: Must support ES module resolution
+5. **CLI Changes**: Storybook 10 no longer accepts positional arguments
+   - The static/output directory must be configured via `staticDirs` in `main.js` or via `--output-dir` flag for build command
+   - All CLI options must use proper flags (e.g., `--port` instead of `-p`)
 
 ### No Breaking Changes for Stories
 Story files and component code should continue to work without changes.

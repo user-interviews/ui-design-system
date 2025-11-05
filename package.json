@@ -34,8 +34,8 @@
   },
   "scripts": {
     "build": "NODE_ENV=production babel src --out-dir lib --copy-files --extensions '.js,.jsx,.ts,.tsx' && tsc",
-    "build-storybook": "storybook build public",
-    "build-storybook-docs": "storybook build public --docs",
+    "build-storybook": "storybook build --output-dir public",
+    "build-storybook-docs": "storybook build --output-dir public --docs",
     "build-ts": "tsc",
     "chromatic": "npx chromatic",
     "lint": "yarn lint:js && yarn lint:css --quiet",
@@ -46,7 +46,7 @@
     "rs:link": "bin/link-rs",
     "rs:link:watch": "nodemon",
     "rs:unlink": "bin/unlink-rs",
-    "storybook": "storybook dev -p 9009 public",
+    "storybook": "storybook dev --port 9009",
     "test": "jest"
   },
   "eslintConfig": {

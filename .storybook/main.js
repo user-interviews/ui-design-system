@@ -27,6 +27,7 @@ const config = {
   },],
     }
   })],
+  staticDirs: ['../public'],
   docs: {
     autodocs: true,
     defaultName: 'Docs',
