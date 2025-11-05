@@ -1,0 +1,18 @@
+name: Ensure ENV
+description: 'Ensures the provided ENV var is set'
+
+inputs:
+  env-key:
+    description: 'The key to ensure is present'
+    required: true
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Confirm ENV
+      run: |
+        if [[ ! -v ${{ inputs.env-key }} ]]; then
+          echo Did not find ${{ inputs.env-key }} in the ENV
+          exit 1
+        fi
+      shell: bash

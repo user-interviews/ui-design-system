@@ -1,0 +1,28 @@
+name: Setup environment
+description: 'Pull code and install dependencies'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Confirm ENV
+      uses: ./.github/actions/ensure_env
+      with:
+        env-key: FONTAWESOME_NPM_AUTH_TOKEN
+
+    - name: Checkout branch
+      uses: actions/checkout@v5
+      with:
+        fetch-depth: 2 # CODECOV Fetch at least 2 commits to allow for diffs
+
+    - name: Setup Node
+      uses: actions/setup-node@v4
+      with:
+        cache: 'yarn'
+        node-version-file: ".node-version"
+
+    - name: Setup Yarn
+      uses: volta-cli/action@v4
+
+    - name: Install dependencies
+      run: yarn install --frozen-lockfile
+      shell: bash

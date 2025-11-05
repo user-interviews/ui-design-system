@@ -18,20 +18,8 @@ jobs:
     name: Deploying to gh-pages
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout branch
-        uses: actions/checkout@v4
-
-      - name: Setup node
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: ".node-version"
-          cache: "yarn"
-
-      - name: Setup Yarn
-        uses: volta-cli/action@v4
-
-      - name: Install dependencies
-        run: yarn install
+      - name: Setup environment
+        uses: ./.github/actions/setup_environment
 
       - name: Build
         run: yarn build-storybook

@@ -17,21 +17,8 @@ jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout branch
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0 # 👈 Required to retrieve git history
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: ".node-version"
-
-      - name: Setup Yarn
-        uses: volta-cli/action@v4
-
-      - name: Install dependencies
-        run: yarn install
+      - name: Setup environment
+        uses: ./.github/actions/setup_environment
 
       - name: Publish to Chromatic
         uses: chromaui/action@latest
