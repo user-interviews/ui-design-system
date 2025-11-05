@@ -17,6 +17,11 @@ jobs:
   chromatic-deployment:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout branch
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0 # 👈 Required to retrieve git history
+
       - name: Setup environment
         uses: ./.github/actions/setup_environment
 
