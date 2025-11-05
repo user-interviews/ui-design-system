@@ -21,10 +21,9 @@ $text-container-margin-top: 10px;
     z-index: 1;
 
     &__number {
-      @include synth-font-type-40--bold;
-
       color: var(--ux-emerald-600);
       float: left;
+      font: var(--synth-font-heading-small);
       line-height: 1;
       margin-top: -8px;
       padding-top: 50%;
@@ -53,7 +52,7 @@ $text-container-margin-top: 10px;
 
     // centers text container with step circle
     margin-top: $text-container-margin-top;
-    
+
     // provides padding bottom between steps
     padding-bottom: var(--synth-spacing-3);
 
@@ -62,4 +61,3 @@ $text-container-margin-top: 10px;
     }
   }
 }
-

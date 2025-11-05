@@ -28,7 +28,8 @@
   }
 
   &__helper-text {
-    @include synth-font-type-50;
+    font: var(--synth-font-heading-medium);
+    font-weight: var(--synth-font-weight-regular);
 
     color: var(--ux-gray-900);
     margin-left: var(--synth-spacing-1);
@@ -41,8 +42,7 @@
   }
 
   &__title {
-    @include synth-font-type-50--bold;
-
+    font: var(--synth-font-heading-medium);
     margin-bottom: var(--synth-spacing-1);
   }
 

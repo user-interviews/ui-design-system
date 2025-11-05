@@ -4,7 +4,8 @@
   // Size
 
   &--lg {
-    @include synth-font-type-40;
+    font: var(--synth-font-heading-small);
+    font-weight: var(--synth-font-weight-regular);
   }
 
   &--md {
@@ -12,10 +13,10 @@
   }
 
   &--sm {
-    @include synth-font-type-20;
+    font: var(--synt-font-subtext-regular);
   }
 
-  // Weight 
+  // Weight
 
   &--bold {
     font-weight: var(--synth-font-weight-bold);

@@ -33,9 +33,9 @@
     }
 
     &__subtitle {
-      @include synth-font-type-20;
       @include truncate;
 
+      font: var(--synt-font-subtext-regular);
       color: var(--ux-gray-900);
 
       * {
@@ -53,7 +53,7 @@
   &--large {
     .ProfileCell__content {
       &__name {
-        @include synth-font-type-40--bold;
+        font: var(--synth-font-heading-small);
       }
 
       &__subtitle {

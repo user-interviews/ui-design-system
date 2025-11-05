@@ -1,0 +1,48 @@
+.xxxl {
+  font: var(--synth-font-heading-large);
+}
+
+.xxl {
+  font-size: 1.25rem;
+  font-weight: var(--synth-font-weight-bold);
+  line-height: 1.625rem;
+}
+
+.xl {
+  font: var(--synth-font-heading-medium);
+}
+
+.lg {
+  font: var(--synth-font-heading-small);
+}
+
+.md {
+  font-size: var(--synth-font-size-base);
+  font-weight: var(--synth-font-weight-bold);
+  line-height: 1.25rem;
+}
+
+.sm {
+  font-size: .75rem;
+  font-weight: var(--synth-font-weight-bold);
+  line-height: 1rem;
+}
+
+.xs {
+  font-size: .625rem;
+  font-weight: var(--synth-font-weight-bold);
+  letter-spacing: 0.0625rem;
+  line-height: 0.875rem;
+}
+
+.bold {
+  font-weight: var(--synth-font-weight-bold);
+}
+
+.medium {
+  font-weight: var(--synth-font-weight-medium);
+}
+
+.regular {
+  font-weight: var(--synth-font-weight-regular);
+}

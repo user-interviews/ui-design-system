@@ -2,7 +2,13 @@ import { createElement, ReactNode } from 'react';
 
 import classNames from 'classnames';
 
-import './Heading.scss';
+import * as styles from './Heading.module.css';
+
+export enum HeadingSizes {
+  LARGE = 'large',
+  MEDIUM = 'medium',
+  SMALL = 'small',
+};
 
 export interface HeadingProps {
   children?: ReactNode;
@@ -21,24 +27,44 @@ export interface HeadingProps {
    * @type {string}
    * @description Sizes map to the available font-sizes from the defined list of font-types.
    * Adjust for visual hierarchy.
+   *
+   * TODO: Update this to only use the HeadingSizes keys and update the types to not use string
    */
-  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl';
+  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | 'large' | 'medium' | 'small';
   textAlign?: 'left' | 'center' | 'right';
   weight?: 'regular' | 'medium' | 'bold';
 }
 
-const LevelToSizeMap = {
-  1: 'xxxl',
-  2: 'xxl',
-  3: 'xl',
-  4: 'lg',
-  5: 'md',
-  6: 'sm',
-};
+const SIZE_CLASSES = {
+  xs: styles.xs,
+  sm: styles.sm,
+  md: styles.md,
+  lg: styles.lg,
+  xl: styles.xl,
+  xxl: styles.xxl,
+  xxxl: styles.xxxl,
+  [HeadingSizes.LARGE]: styles.xxxl,
+  [HeadingSizes.MEDIUM]: styles.xl,
+  [HeadingSizes.SMALL]: styles.lg,
+} as const;
 
-const getHeadingSizeClassFromLevel = (level: number) => `Heading--${LevelToSizeMap[level]}`;
+/* TODO Update this so that 2 is xl and 3 is lg */
+const LEVEL_CLASSES = {
+  1: styles.xxxl,
+  2: styles.xxl,
+  3: styles.xl,
+  4: styles.lg,
+  5: styles.md,
+  6: styles.sm,
+} as const;
 
-function Heading({
+const WEIGHT_CLASSES = {
+  bold: styles.bold,
+  regular: styles.regular,
+  medium: styles.medium,
+} as const;
+
+export function Heading({
   children,
   className,
   level = 1,
@@ -52,18 +78,13 @@ function Heading({
     {
       style: { textAlign },
       className: classNames(
-        className,
-        'Heading',
-        !size && getHeadingSizeClassFromLevel(level),
-        {
-          [`Heading--${size}`]: !!size,
-          [`Heading--${weight}`]: !!weight,
-        },
+        className, /* TODO Remove this and wrap all overrides into variants */
+        'Heading', /* TODO Remove this once we remove anything targetting this directly */
+        size ? SIZE_CLASSES[size] : LEVEL_CLASSES[level],
+        WEIGHT_CLASSES[weight],
       ),
-      ...props,
+      ...props, /* TODO Remove this */
     },
-children,
-);
+    children,
+  );
 }
-
-export default Heading;

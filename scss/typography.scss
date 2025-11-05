@@ -9,16 +9,6 @@
   @include synth-font-type-10;
 }
 
-@mixin synth-font-type-20() {
-  font-size: .75rem;
-  font-weight: var(--synth-font-weight-regular);
-  line-height: 1rem;
-}
-
-@mixin font-type-20() {
-  @include synth-font-type-20;
-}
-
 @mixin synth-font-type-30() {
   font-size: var(--synth-font-size-base);
   font-weight: var(--synth-font-weight-regular);
@@ -27,26 +17,6 @@
 
 @mixin font-type-30() {
   @include synth-font-type-30;
-}
-
-@mixin synth-font-type-40() {
-  font-size: 1rem;
-  font-weight: var(--synth-font-weight-regular);
-  line-height: 1.375rem;
-}
-
-@mixin font-type-40() {
-  @include synth-font-type-40;
-}
-
-@mixin synth-font-type-50() {
-  font-size: 1.125rem;
-  font-weight: var(--synth-font-weight-regular);
-  line-height: 1.5rem;
-}
-
-@mixin font-type-50() {
-  @include synth-font-type-50;
 }
 
 @mixin synth-font-type-60() {
@@ -59,16 +29,6 @@
   @include synth-font-type-60;
 }
 
-@mixin synth-font-type-70() {
-  font-size: 1.5rem;
-  font-weight: var(--synth-font-weight-regular);
-  line-height: 2rem;
-}
-
-@mixin font-type-70() {
-  @include synth-font-type-70;
-}
-
 @mixin synth-font-type-10--medium() {
   @include synth-font-type-10;
 
@@ -77,16 +37,6 @@
 
 @mixin font-type-10--medium() {
   @include synth-font-type-10--medium;
-}
-
-@mixin synth-font-type-20--medium() {
-  @include synth-font-type-20;
-
-  font-weight: var(--synth-font-weight-medium);
-}
-
-@mixin font-type-20--medium() {
-  @include synth-font-type-20--medium;
 }
 
 @mixin synth-font-type-30--medium() {
@@ -99,26 +49,6 @@
   @include synth-font-type-30--medium;
 }
 
-@mixin synth-font-type-40--medium() {
-  @include synth-font-type-40;
-
-  font-weight: var(--synth-font-weight-medium);
-}
-
-@mixin font-type-40--medium() {
-  @include synth-font-type-40--medium;
-}
-
-@mixin synth-font-type-50--medium() {
-  @include synth-font-type-50;
-
-  font-weight: var(--synth-font-weight-medium);
-}
-
-@mixin font-type-50--medium() {
-  @include synth-font-type-50--medium;
-}
-
 @mixin synth-font-type-60--medium() {
   @include synth-font-type-60;
 
@@ -127,16 +57,6 @@
 
 @mixin font-type-60--medium() {
   @include synth-font-type-60--medium;
-}
-
-@mixin synth-font-type-70--medium() {
-  @include synth-font-type-70;
-
-  font-weight: var(--synth-font-weight-medium);
-}
-
-@mixin font-type-70--medium() {
-  @include synth-font-type-70--medium;
 }
 
 @mixin synth-font-type-10--bold() {
@@ -149,16 +69,6 @@
   @include synth-font-type-10--bold;
 }
 
-@mixin synth-font-type-20--bold() {
-  @include synth-font-type-20;
-
-  font-weight: var(--synth-font-weight-bold);
-}
-
-@mixin font-type-20--bold() {
-  @include synth-font-type-20--bold;
-}
-
 @mixin synth-font-type-30--bold() {
   @include synth-font-type-30;
 
@@ -169,26 +79,6 @@
   @include synth-font-type-30--bold;
 }
 
-@mixin synth-font-type-40--bold() {
-  @include synth-font-type-40;
-
-  font-weight: var(--synth-font-weight-bold);
-}
-
-@mixin font-type-40--bold() {
-  @include synth-font-type-40--bold;
-}
-
-@mixin synth-font-type-50--bold() {
-  @include synth-font-type-50;
-
-  font-weight: var(--synth-font-weight-bold);
-}
-
-@mixin font-type-50--bold() {
-  @include synth-font-type-50--bold;
-}
-
 @mixin synth-font-type-60--bold() {
   @include synth-font-type-60;
 
@@ -197,16 +87,6 @@
 
 @mixin font-type-60--bold() {
   @include synth-font-type-60--bold;
-}
-
-@mixin synth-font-type-70--bold() {
-  @include synth-font-type-70;
-
-  font-weight: var(--synth-font-weight-bold);
-}
-
-@mixin font-type-70--bold() {
-  @include synth-font-type-70--bold;
 }
 
 // Uppercase fonts

@@ -49,7 +49,7 @@
   }
 
   .react-datepicker__time {
-    @include font-type-20;
+    font: var(--synt-font-subtext-regular);
   }
 
   .react-datepicker__day--selected {
