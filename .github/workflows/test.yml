@@ -2,40 +2,40 @@ name: Test javascript
 
 on: push
 
+env:
+  FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+
 jobs:
   js-test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
-          fetch-depth: 2
+          fetch-depth: 2 # CODECOV Fetch at least 2 commits to allow for diffs
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: ".node-version"
-
-      - name: Setup Yarn
-        uses: volta-cli/action@v4
-
-      - name: Setup env
-        run: echo "FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" > .env
-
-      - name: Install dependencies
-        run: yarn install
+      - name: Setup environment
+        uses: ./.github/actions/setup_environment
 
       - name: Test
+        id: test
+        if: ${{ success() }}
         run: yarn test
 
       - name: Upload coverage to OtterWise
-        if: ${{ !cancelled() && vars.OTTERWISE_ENABLED == 'true' }}
+        if: >
+          ${{ vars.OTTERWISE_ENABLED == 'true' && 
+              steps.test.outcome != 'skipped' && 
+              steps.test.outcome != 'cancelled' }}
         uses: getOtterWise/github-action@v1
         with:
           token: ${{ secrets.OTTERWISE_TOKEN }}
 
       - name: Upload coverage to Coveralls
-        if: ${{ !cancelled() && vars.COVERALLS_ENABLED == 'true' }}
+        if: >
+          ${{ vars.COVERALLS_ENABLED == 'true' &&  
+              steps.test.outcome != 'skipped' && 
+              steps.test.outcome != 'cancelled' }}
         uses: coverallsapp/github-action@v2
         with:
           # github-token: ${{ secrets.GITHUB_TOKEN }}
@@ -43,13 +43,19 @@ jobs:
           file: ./coverage/lcov.info
 
       - name: Upload coverage to Codecov
-        if: ${{ !cancelled() && vars.CODECOV_ENABLED == 'true' }}
+        if: >
+          ${{ vars.CODECOV_ENABLED == 'true' &&
+              steps.test.outcome != 'skipped' && 
+              steps.test.outcome != 'cancelled' }}
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Upload test results to Codecov
-        if: ${{ !cancelled() && vars.CODECOV_ENABLED == 'true' }}
+        if: >
+          ${{ vars.CODECOV_ENABLED == 'true' && 
+              steps.test.outcome != 'skipped' && 
+              steps.test.outcome != 'cancelled' }}
         uses: codecov/test-results-action@v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}

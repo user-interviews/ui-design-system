@@ -16,24 +16,19 @@ on:
           - prepatch
           - prerelease
 
+env:
+  FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+
 jobs:
   create-new-release:
     name: Create new release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: ".node-version"
-
-      - name: Setup Yarn
-        uses: volta-cli/action@v4
-
-      - name: Setup env
-        run: echo "FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" > .env
+      - name: Setup environment
+        uses: ./.github/actions/setup_environment
 
       - name: Bump version in package.json
         run: yarn version ${{ github.event.inputs.version }}

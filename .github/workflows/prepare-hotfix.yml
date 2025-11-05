@@ -7,26 +7,21 @@ on:
         description: "The version you want to release."
         required: true
 
+env:
+  FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+
 jobs:
   prepare-hotfix:
     name: Prepare hotfix
     runs-on: ubuntu-latest
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version-file: ".node-version"
-
-      - name: Setup Yarn
-        uses: volta-cli/action@v4
-
-      - name: Setup env
-        run: echo "FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" > .env
+      - name: Setup environment
+        uses: ./.github/actions/setup_environment
 
       - name: Create hotfix branch
         run: git checkout -b hotfix/${{ github.event.inputs.version }}
