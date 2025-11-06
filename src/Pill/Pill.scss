@@ -15,7 +15,7 @@
     color: var(--ux-blue-700);
 
     .Pill__icon--lead {
-      color: var(--ux-blue);
+      color: var(--synth-blue-300);
       margin-right: var(--synth-spacing-1);
     }
 
@@ -62,17 +62,17 @@
 
   &--green {
     background-color: var(--ux-green-100);
-    color: var(--ux-green-800);
+    color: var(--synth-green-300);
 
     .Pill__icon--lead {
-      color: var(--ux-green-600);
+      color: var(--synth-green-200);
       margin-right: var(--synth-spacing-1);
     }
 
     .Pill__button--close {
       background-color: unset;
       border: none;
-      color: var(--ux-green-600);
+      color: var(--synth-green-200);
       margin-left: var(--synth-spacing-2);
       margin-right: 0;
       padding: 0;

@@ -9,11 +9,11 @@
 }
 
 .btn-outline-secondary {
-  color: var(--ux-blue);
-  border-color: var(--ux-blue);
+  color: var(--synth-blue-300);
+  border-color: var(--synth-blue-300);
 
   &:hover {
-    background-color: var(--ux-blue);
+    background-color: var(--synth-blue-300);
     color: var(--ux-white);
   }
 }
@@ -481,7 +481,7 @@ $primary: $ux-emerald-600;
   text-decoration: none;
 
   &:disabled {
-    color: var(--ux-blue);
+    color: var(--synth-blue-300);
     opacity: 0.5;
   }
 

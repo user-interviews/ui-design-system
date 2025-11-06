@@ -28,12 +28,12 @@
 
   &--is-invalid {
     input, select, textarea {
-      border-color: var(--ux-red);
+      border-color: var(--synth-red-200);
     }
 
     .Input {
       // important because Input.scss focus style also sets this border
-      border-color: var(--ux-red-600) !important;
+      border-color: var(--synth-red-300) !important;
     }
   }
 
@@ -73,7 +73,7 @@
   &__invalid-feedback {
     font: var(--synth-font-subtext-medium);
 
-    color: var(--ux-red);
+    color: var(--synth-red-200);
     padding: 6px 0;
     margin: 0;
 

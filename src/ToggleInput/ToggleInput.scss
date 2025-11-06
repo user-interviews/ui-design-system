@@ -45,7 +45,7 @@
     }
 
     .react-toggle--checked .react-toggle-track {
-      background-color: var(--ux-green-600);
+      background-color: var(--synth-green-200);
 
       &:hover {
         background-color: var(--ux-green);
@@ -65,7 +65,7 @@
     }
 
     .react-toggle--checked .react-toggle-thumb {
-      border-color: var(--ux-green-600);
+      border-color: var(--synth-green-200);
       left: 22px;
 
       &:hover {
