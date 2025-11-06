@@ -32,19 +32,6 @@ const config = {
     check: true,
   },
   webpackFinal: async (config) => {
-    // Add CSS rules
-    config.module.rules.push({
-      test: /\.css$/,
-      sideEffects: true,
-      use: [
-        'style-loader',
-        {
-          loader: 'css-loader',
-          options: {},
-        },
-      ],
-    });
-    
     // Apply custom webpack config
     return webpackConfig({ config });
   },
