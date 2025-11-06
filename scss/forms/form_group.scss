@@ -28,7 +28,7 @@
 
   &--is-invalid {
     input, select, textarea {
-      border-color: var(--ux-red);
+      border-color: var(--synth-red-200);
     }
 
     .Input {
@@ -74,7 +74,7 @@
   &__invalid-feedback {
     @include synth-font-type-20--medium;
 
-    color: var(--ux-red);
+    color: var(--synth-red-200);
     padding: 6px 0;
     margin: 0;
 
