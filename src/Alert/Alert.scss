@@ -113,7 +113,7 @@
   }
 
   .Alert-info {
-    border-left: 8px solid var(--synth-hyperlink-color);
+    border-left: 8px solid var(--synth-blue-300);
 
     .close {
       @include close-action;
