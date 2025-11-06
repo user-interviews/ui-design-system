@@ -13,7 +13,6 @@ on:
 
 env:
   FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
-  ALLOW_YARN_MUTABLE: true
 
 jobs:
   # The job MUST be called `copilot-setup-steps` or it will not be picked up by Copilot.

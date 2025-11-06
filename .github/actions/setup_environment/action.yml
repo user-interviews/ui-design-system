@@ -24,10 +24,5 @@ runs:
         node-version-file: ".node-version"
 
     - name: Install dependencies
-      run: |
-        if [ "${{ env.ALLOW_YARN_MUTABLE }}" = "true" ]; then
-          yarn install
-        else
-          yarn install --immutable
-        fi
+      run: yarn install
       shell: bash
