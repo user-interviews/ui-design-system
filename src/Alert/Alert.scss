@@ -245,7 +245,7 @@
 
 .Alert-success {
   background-color: var(--ux-green-100);
-  color: var(--ux-green-800);
+  color: var(--synth-green-300);
   border-left: 8px solid var(--ux-green-400);
 
   .close {
@@ -260,7 +260,7 @@
     color: var(--ux-green-400);
 
     .fa-check {
-      color: var(--ux-green-800);
+      color: var(--synth-green-300);
     }
   }
 }
