@@ -32,7 +32,7 @@ export default function({ config }) {
     include: path.resolve(__dirname, '../')
   },
   {
-    test: /\\.(png|jp(e*)g|svg|gif)$/,
+    test: /\.(png|jp(e*)g|svg|gif)$/,
     use: ['file-loader'],
   });
 
