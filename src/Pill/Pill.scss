@@ -65,14 +65,14 @@
     color: var(--ux-green-800);
 
     .Pill__icon--lead {
-      color: var(--ux-green-600);
+      color: var(--synth-green-200);
       margin-right: var(--synth-spacing-1);
     }
 
     .Pill__button--close {
       background-color: unset; 
       border: none;
-      color: var(--ux-green-600);
+      color: var(--synth-green-200);
       margin-left: var(--synth-spacing-2);
       margin-right: 0;
       padding: 0;
