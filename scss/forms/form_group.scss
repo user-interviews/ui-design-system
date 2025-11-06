@@ -61,7 +61,7 @@
   }
 
   &__helper-text {
-    font: var(--synt-font-subtext-regular);
+    font: var(--synth-font-subtext-regular);
     color: var(--ux-gray-900);
     margin: 0 0 12px;
 
@@ -71,7 +71,7 @@
   }
 
   &__invalid-feedback {
-    font: var(--synt-font-subtext-medium);
+    font: var(--synth-font-subtext-medium);
 
     color: var(--ux-red);
     padding: 6px 0;
