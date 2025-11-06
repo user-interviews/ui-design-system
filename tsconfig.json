@@ -10,7 +10,7 @@
     "jsx": "react",
     "lib": ["ESNext", "DOM"],
     "module": "CommonJs",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "noEmit": false,
     "noImplicitAny": false, // TODO: set to true once all components are TS
     "noImplicitReturns": true,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { action } from '@storybook/test';
+import { fn } from '@storybook/test';
 import Button from '../Button';
 import Input from '../Input';
 import {
@@ -17,7 +17,7 @@ export default {
   },
 };
 
-const handleRequestClose = () => action('Close');
+const handleRequestClose = fn();
 
 export function Default() {
   return (

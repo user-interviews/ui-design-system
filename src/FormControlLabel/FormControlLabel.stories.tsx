@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { action } from '@storybook/test';
+import { fn } from '@storybook/test';
 
 import FormControlLabel from '.';
 import CheckboxButton from '../CheckboxButton';
@@ -12,10 +12,9 @@ export default {
 
 function FormControlLabelControlComponent(props) {
   const [value, setValue] = useState(false);
-  const onChange = (e) => {
+  const onChange = fn((e) => {
     setValue(e.target.checked);
-    action('Control onChange')(e);
-  };
+  });
 
   return (
     <FormControlLabel

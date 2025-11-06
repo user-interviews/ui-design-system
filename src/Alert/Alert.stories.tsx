@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { action } from '@storybook/test';
+import { fn } from '@storybook/test';
 
 import { Alert, MessageTypes } from 'src/Alert';
 
@@ -75,9 +75,7 @@ export function Warning() {
   );
 }
 
-const onDismiss = (id) => {
-  action('alert dismissed')(id);
-};
+const onDismiss = fn();
 
 export function WithDismiss() {
   return (

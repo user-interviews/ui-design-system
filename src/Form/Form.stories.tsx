@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { action } from '@storybook/test';
+import { fn } from '@storybook/test';
 
 import Button from '../Button';
 import Form from '.';
@@ -21,10 +21,7 @@ export default {
   },
 };
 
-const onSubmit = (event) => {
-  event.preventDefault();
-  action('form submitted')(event);
-};
+const onSubmit = fn();
 
 function InputComponent(props) {
   const [value, setValue] = useState('');

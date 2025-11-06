@@ -1,5 +1,5 @@
 import React from 'react';
-import { action } from '@storybook/test';
+import { fn } from '@storybook/test';
 
 import { faExclamationTriangle } from '../font_awesome/solid';
 
@@ -110,9 +110,7 @@ const trackingEvent = {
   eventData: { userId: 1 },
 };
 
-const handleShow = () => {
-  action('Track toggle open')(trackingEvent);
-};
+const handleShow = fn();
 
 export function WithTracking() {
   return (
