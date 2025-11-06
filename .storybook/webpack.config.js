@@ -15,33 +15,8 @@ export default function({ config }) {
     }),
   );
 
-  // Remove existing CSS/SCSS rules from Storybook
-  config.module.rules = config.module.rules.filter(rule => {
-    const test = rule.test;
-    if (!test) return true;
-    const testString = test.toString();
-    // Filter out rules that match .css or .scss files
-    return !testString.includes('css') && !testString.includes('scss');
-  });
-
-  // Add our custom CSS and SCSS rules
+  // Add our custom SCSS rules (CSS is handled by Storybook defaults)
   config.module.rules.push(
-  {
-    test: /\.css$/,
-    sideEffects: true,
-    use: [
-      'style-loader',
-      {
-        loader: 'css-loader',
-        options: {
-          modules: {
-            auto: true,
-            localIdentName: '[name]__[local]--[hash:base64:5]',
-          },
-        },
-      },
-    ],
-  },
   {
     test: /\.scss$/,
     use: [
@@ -55,7 +30,14 @@ export default function({ config }) {
           }
         }
       },
-      'sass-loader'
+      {
+        loader: 'sass-loader',
+        options: {
+          sassOptions: {
+            quietDeps: true, // Suppress deprecation warnings from dependencies
+          },
+        },
+      }
     ],
     include: path.resolve(__dirname, '../')
   },
