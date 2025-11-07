@@ -30,7 +30,7 @@ export interface HeadingProps {
    *
    * TODO: Update this to only use the HeadingSizes keys and update the types to not use string
    */
-  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | 'large' | 'medium' | 'small';
+  size: 'xs' | 'sm' | 'md' | 'xxl' | 'large' | 'medium' | 'small';
   textAlign?: 'left' | 'center' | 'right';
   weight?: 'regular' | 'medium' | 'bold';
 }
@@ -39,21 +39,18 @@ const SIZE_CLASSES = {
   xs: styles.xs,
   sm: styles.sm,
   md: styles.md,
-  lg: styles.lg,
-  xl: styles.xl,
   xxl: styles.xxl,
-  xxxl: styles.xxxl,
-  [HeadingSizes.LARGE]: styles.xxxl,
-  [HeadingSizes.MEDIUM]: styles.xl,
-  [HeadingSizes.SMALL]: styles.lg,
+  [HeadingSizes.LARGE]: styles.large,
+  [HeadingSizes.MEDIUM]: styles.medium,
+  [HeadingSizes.SMALL]: styles.small,
 } as const;
 
 /* TODO Update this so that 2 is xl and 3 is lg */
 const LEVEL_CLASSES = {
-  1: styles.xxxl,
+  1: styles.large,
   2: styles.xxl,
-  3: styles.xl,
-  4: styles.lg,
+  3: styles.medium,
+  4: styles.small,
   5: styles.md,
   6: styles.sm,
 } as const;

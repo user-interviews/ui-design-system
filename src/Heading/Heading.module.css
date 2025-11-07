@@ -1,4 +1,4 @@
-.xxxl {
+.large {
   font: var(--synth-font-heading-large);
 }
 
@@ -8,11 +8,11 @@
   line-height: 1.625rem;
 }
 
-.xl {
+.medium {
   font: var(--synth-font-heading-medium);
 }
 
-.lg {
+.small {
   font: var(--synth-font-heading-small);
 }
 
