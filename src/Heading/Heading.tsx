@@ -8,6 +8,8 @@ export enum HeadingSizes {
   LARGE = 'large',
   MEDIUM = 'medium',
   SMALL = 'small',
+  TEXT = 'text',
+  SUBTEXT = 'subtext',
 };
 
 export interface HeadingProps {
@@ -27,21 +29,18 @@ export interface HeadingProps {
    * @type {string}
    * @description Sizes map to the available font-sizes from the defined list of font-types.
    * Adjust for visual hierarchy.
-   *
-   * TODO: Update this to only use the HeadingSizes keys and update the types to not use string
    */
-  size: 'xs' | 'sm' | 'md' | 'large' | 'medium' | 'small';
+  size: HeadingSizes;
   textAlign?: 'left' | 'center' | 'right';
   weight?: 'regular' | 'medium' | 'bold';
 }
 
 const SIZE_CLASSES = {
-  xs: styles.xs,
-  sm: styles.sm,
-  md: styles.md,
   [HeadingSizes.LARGE]: styles.large,
   [HeadingSizes.MEDIUM]: styles.medium,
   [HeadingSizes.SMALL]: styles.small,
+  [HeadingSizes.TEXT]: styles.text,
+  [HeadingSizes.SUBTEXT]: styles.subtext,
 } as const;
 
 /* TODO Remove this? */
@@ -50,8 +49,8 @@ const LEVEL_CLASSES = {
   2: styles.medium,
   3: styles.medium, // This should be small?
   4: styles.small,
-  5: styles.md,
-  6: styles.sm,
+  5: styles.text,
+  6: styles.subtext,
 } as const;
 
 const WEIGHT_CLASSES = {

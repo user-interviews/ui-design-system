@@ -64,8 +64,6 @@ export const Levels: Story = {
       <Heading level={1} size={HeadingSizes.LARGE}>The fastest way to recruit research participants</Heading>
       <Heading level={3} size={HeadingSizes.MEDIUM}>The fastest way to recruit research participants</Heading>
       <Heading level={4} size={HeadingSizes.SMALL}>The fastest way to recruit research participants</Heading>
-      <Heading level={5} size="md">The fastest way to recruit research participants</Heading>
-      <Heading level={6} size="sm">The fastest way to recruit research participants</Heading>
     </>
   ),
 };
@@ -80,9 +78,8 @@ export const Sizes: Story = {
       <Heading level={2} size={HeadingSizes.LARGE}>This is a heading level 2 with size="large"</Heading>
       <Heading level={2} size={HeadingSizes.MEDIUM}>This is a heading level 2 with size="medium"</Heading>
       <Heading level={2} size={HeadingSizes.SMALL}>This is a heading level 2 with size="small"</Heading>
-      <Heading level={2} size="md">This is a heading level 2 with size="md"</Heading>
-      <Heading level={2} size="sm">This is a heading level 2 with size="sm"</Heading>
-      <Heading level={2} size="xs">This is a heading level 2 with size="xs"</Heading>
+      <Heading level={2} size={HeadingSizes.TEXT}>This is a heading level 2 with size="text"</Heading>
+      <Heading level={2} size={HeadingSizes.SUBTEXT}>This is a heading level 2 with size="subtext"</Heading>
     </>
   ),
 };

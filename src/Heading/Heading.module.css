@@ -10,23 +10,12 @@
   font: var(--synth-font-heading-small);
 }
 
-.md { /* same as text */
-  font-size: var(--synth-font-size-base);
-  font-weight: var(--synth-font-weight-bold);
-  line-height: 1.25rem;
+.text {
+  font: var(--synth-font-body-bold);
 }
 
-.sm { /* same as subtext */
-  font-size: .75rem;
-  font-weight: var(--synth-font-weight-bold);
-  line-height: 1rem;
-}
-
-.xs { /* move to subtext? */
-  font-size: .625rem;
-  font-weight: var(--synth-font-weight-bold);
-  letter-spacing: 0.0625rem;
-  line-height: 0.875rem;
+.subtext {
+  font: var(--synth-font-subtext-bold);
 }
 
 .bold {
