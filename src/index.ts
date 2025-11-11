@@ -37,7 +37,7 @@ import { FlexContainer } from './FlexContainer';
 import Form from './Form';
 import FormControlLabel from './FormControlLabel';
 import FormGroup from './FormGroup';
-import { Heading, HeadingSizes } from './Heading';
+import { Heading, HeadingSize } from './Heading';
 import IconButton from './IconButton';
 import IconCell from './IconCell';
 import Input from './Input';
@@ -147,7 +147,7 @@ export {
   FormControlLabel,
   FormGroup,
   Heading,
-  HeadingSizes,
+  HeadingSize,
   IconButton,
   IconCell,
   Input,

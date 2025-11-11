@@ -4,7 +4,7 @@ import classNames from 'classnames';
 
 import * as styles from './Heading.module.css';
 
-export enum HeadingSizes {
+export enum HeadingSize {
   LARGE = 'large',
   MEDIUM = 'medium',
   SMALL = 'small',
@@ -30,17 +30,17 @@ export interface HeadingProps {
    * @description Sizes map to the available font-sizes from the defined list of font-types.
    * Adjust for visual hierarchy.
    */
-  size: HeadingSizes;
+  size: HeadingSize;
   textAlign?: 'left' | 'center' | 'right';
   weight?: 'regular' | 'medium' | 'bold';
 }
 
 const SIZE_CLASSES = {
-  [HeadingSizes.LARGE]: styles.large,
-  [HeadingSizes.MEDIUM]: styles.medium,
-  [HeadingSizes.SMALL]: styles.small,
-  [HeadingSizes.TEXT]: styles.text,
-  [HeadingSizes.SUBTEXT]: styles.subtext,
+  [HeadingSize.LARGE]: styles.large,
+  [HeadingSize.MEDIUM]: styles.medium,
+  [HeadingSize.SMALL]: styles.small,
+  [HeadingSize.TEXT]: styles.text,
+  [HeadingSize.SUBTEXT]: styles.subtext,
 } as const;
 
 /* TODO Remove this? */
