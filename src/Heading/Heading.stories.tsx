@@ -32,7 +32,7 @@ export const Default: Story = {
 
   Adjust the font `size` with the available sizes:
 
-  `large`, `medium`, `small`
+  `large`, `medium`, `small`, `text`, `subtext`
 
   #### Best practices:
 
@@ -62,8 +62,10 @@ export const Levels: Story = {
   render: () => (
     <>
       <Heading level={1} size={HeadingSizes.LARGE}>The fastest way to recruit research participants</Heading>
-      <Heading level={3} size={HeadingSizes.MEDIUM}>The fastest way to recruit research participants</Heading>
-      <Heading level={4} size={HeadingSizes.SMALL}>The fastest way to recruit research participants</Heading>
+      <Heading level={2} size={HeadingSizes.MEDIUM}>The fastest way to recruit research participants</Heading>
+      <Heading level={3} size={HeadingSizes.SMALL}>The fastest way to recruit research participants</Heading>
+      <Heading level={4} size={HeadingSizes.TEXT}>The fastest way to recruit research participants</Heading>
+      <Heading level={5} size={HeadingSizes.SUBTEXT}>The fastest way to recruit research participants</Heading>
     </>
   ),
 };
