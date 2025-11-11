@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import FormGroup from '../FormGroup';
-import { Heading, HeadingSizes } from '../Heading';
+import { Heading, HeadingSize } from '../Heading';
 import MoneyInput from './MoneyInput';
 
 import mdx from './MoneyInput.mdx';
@@ -35,7 +35,7 @@ export function Default(args) {
         {...args}
       />
       <br />
-      <Heading level={1} size={HeadingSizes.SMALL}>Value: {value}</Heading>
+      <Heading level={1} size={HeadingSize.SMALL}>Value: {value}</Heading>
     </FormGroup>
   );
 }
@@ -69,7 +69,7 @@ export function Step(args) {
         {...args}
       />
       <br />
-      <Heading level={1} size={HeadingSizes.SMALL}>Value: {value}</Heading>
+      <Heading level={1} size={HeadingSize.SMALL}>Value: {value}</Heading>
     </FormGroup>
   );
 }
@@ -104,7 +104,7 @@ export function Prefix(args) {
         {...args}
       />
       <br />
-      <Heading level={1} size={HeadingSizes.SMALL}>Value: {value}</Heading>
+      <Heading level={1} size={HeadingSize.SMALL}>Value: {value}</Heading>
     </FormGroup>
   );
 }

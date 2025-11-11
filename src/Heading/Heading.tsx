@@ -4,10 +4,12 @@ import classNames from 'classnames';
 
 import * as styles from './Heading.module.css';
 
-export enum HeadingSizes {
+export enum HeadingSize {
   LARGE = 'large',
   MEDIUM = 'medium',
   SMALL = 'small',
+  TEXT = 'text',
+  SUBTEXT = 'subtext',
 };
 
 export interface HeadingProps {
@@ -27,35 +29,28 @@ export interface HeadingProps {
    * @type {string}
    * @description Sizes map to the available font-sizes from the defined list of font-types.
    * Adjust for visual hierarchy.
-   *
-   * TODO: Update this to only use the HeadingSizes keys and update the types to not use string
    */
-  size: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl' | 'xxxl' | 'large' | 'medium' | 'small';
+  size: HeadingSize;
   textAlign?: 'left' | 'center' | 'right';
   weight?: 'regular' | 'medium' | 'bold';
 }
 
 const SIZE_CLASSES = {
-  xs: styles.xs,
-  sm: styles.sm,
-  md: styles.md,
-  lg: styles.lg,
-  xl: styles.xl,
-  xxl: styles.xxl,
-  xxxl: styles.xxxl,
-  [HeadingSizes.LARGE]: styles.xxxl,
-  [HeadingSizes.MEDIUM]: styles.xl,
-  [HeadingSizes.SMALL]: styles.lg,
+  [HeadingSize.LARGE]: styles.large,
+  [HeadingSize.MEDIUM]: styles.medium,
+  [HeadingSize.SMALL]: styles.small,
+  [HeadingSize.TEXT]: styles.text,
+  [HeadingSize.SUBTEXT]: styles.subtext,
 } as const;
 
-/* TODO Update this so that 2 is xl and 3 is lg */
+/* TODO Remove this? */
 const LEVEL_CLASSES = {
-  1: styles.xxxl,
-  2: styles.xxl,
-  3: styles.xl,
-  4: styles.lg,
-  5: styles.md,
-  6: styles.sm,
+  1: styles.large,
+  2: styles.medium,
+  3: styles.medium, // This should be small?
+  4: styles.small,
+  5: styles.text,
+  6: styles.subtext,
 } as const;
 
 const WEIGHT_CLASSES = {
