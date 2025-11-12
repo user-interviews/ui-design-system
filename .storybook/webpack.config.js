@@ -15,7 +15,14 @@ export default function({ config }) {
     }),
   );
 
-  // Add our custom SCSS rules (CSS is handled by Storybook defaults)
+  // Filter out Storybook's default SCSS rules to avoid conflicts
+  config.module.rules = config.module.rules.filter(rule => {
+    if (!rule.test) return true;
+    const testString = rule.test.toString();
+    return !testString.includes('.scss') && !testString.includes('.sass');
+  });
+
+  // Add our custom SCSS rules with CSS module support
   config.module.rules.push(
   {
     test: /\.scss$/,
