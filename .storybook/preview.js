@@ -28,8 +28,8 @@ const preview = {
           value: colors.UX_EMERALD_600,
         },
         {
-          name: '--ux-neutral-800',
-          value: colors.UX_NEUTRAL_800,
+          name: '--ux-gray-800',
+          value: colors.UX_GRAY_800,
         }
       ],
     },
