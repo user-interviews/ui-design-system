@@ -1,31 +1,31 @@
-.large {
+.sizeLarge {
   font: var(--synth-font-heading-large);
 }
 
-.medium {
+.sizeMedium {
   font: var(--synth-font-heading-medium);
 }
 
-.small {
+.sizeSmall {
   font: var(--synth-font-heading-small);
 }
 
-.text {
+.sizeText {
   font: var(--synth-font-body-bold);
 }
 
-.subtext {
+.sizeSubtext {
   font: var(--synth-font-subtext-bold);
 }
 
-.bold {
+.weightBold {
   font-weight: var(--synth-font-weight-bold);
 }
 
-.medium {
+.weightMedium {
   font-weight: var(--synth-font-weight-medium);
 }
 
-.regular {
+.weightRegular {
   font-weight: var(--synth-font-weight-regular);
 }
