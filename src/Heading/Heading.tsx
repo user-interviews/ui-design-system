@@ -36,27 +36,27 @@ export interface HeadingProps {
 }
 
 const SIZE_CLASSES = {
-  [HeadingSize.LARGE]: styles.large,
-  [HeadingSize.MEDIUM]: styles.medium,
-  [HeadingSize.SMALL]: styles.small,
-  [HeadingSize.TEXT]: styles.text,
-  [HeadingSize.SUBTEXT]: styles.subtext,
+  [HeadingSize.LARGE]: styles.sizeLarge,
+  [HeadingSize.MEDIUM]: styles.sizeMedium,
+  [HeadingSize.SMALL]: styles.sizeSmall,
+  [HeadingSize.TEXT]: styles.sizeText,
+  [HeadingSize.SUBTEXT]: styles.sizeSubtext,
 } as const;
 
 /* TODO Remove this? */
 const LEVEL_CLASSES = {
-  1: styles.large,
-  2: styles.medium,
-  3: styles.medium, // This should be small?
-  4: styles.small,
-  5: styles.text,
-  6: styles.subtext,
+  1: styles.sizeLarge,
+  2: styles.sizeMedium,
+  3: styles.sizeMedium, // This should be small?
+  4: styles.sizeSmall,
+  5: styles.sizeText,
+  6: styles.sizeSubtext,
 } as const;
 
 const WEIGHT_CLASSES = {
-  bold: styles.bold,
-  regular: styles.regular,
-  medium: styles.medium,
+  bold: styles.weightBold,
+  regular: styles.weightRegular,
+  medium: styles.weightMedium,
 } as const;
 
 export function Heading({
