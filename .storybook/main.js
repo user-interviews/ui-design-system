@@ -1,3 +1,5 @@
+import webpackConfig from './webpack.config.js';
+
 const config = {
   addons: [{
     name: '@storybook/addon-docs',
@@ -7,26 +9,8 @@ const config = {
         configFile: true
       }
     }
-  }, '@storybook/addon-a11y', '@storybook/addon-actions', '@storybook/addon-backgrounds', '@storybook/addon-controls', '@storybook/addon-links', '@storybook/addon-storysource', '@storybook/addon-webpack5-compiler-babel', ({
-    name: "@storybook/addon-styling-webpack",
-
-    options: {
-      rules: [{
-    test: /\.css$/,
-    sideEffects: true,
-    use: [
-        require.resolve("style-loader"),
-        {
-            loader: require.resolve("css-loader"),
-            options: {
-                
-                
-            },
-        },
-    ],
-  },],
-    }
-  })],
+  }, '@storybook/addon-a11y', '@storybook/addon-links', '@storybook/addon-webpack5-compiler-babel'],
+  staticDirs: ['../public'],
   docs: {
     autodocs: true,
     defaultName: 'Docs',
@@ -46,6 +30,10 @@ const config = {
   },
   typescript: {
     check: true,
+  },
+  webpackFinal: async (config) => {
+    // Apply custom webpack config
+    return webpackConfig({ config });
   },
 };
 
