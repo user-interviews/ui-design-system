@@ -11,27 +11,30 @@ const preview = {
       </div>
     ),
   ],
+
   parameters: {
     backgrounds: {
-      default: '--ux-white',
-      values: [
-        {
+      options: {
+        "--ux-white": {
           name: '--ux-white',
           value: colors.UX_WHITE,
         },
-        {
+
+        "--ux-cream": {
           name: '--ux-cream',
           value: colors.UX_CREAM,
         },
-        {
+
+        "--ux-emerald-600": {
           name: '--ux-emerald-600',
           value: colors.UX_EMERALD_600,
         },
-        {
+
+        "--ux-neutral-800": {
           name: '--ux-neutral-800',
           value: colors.UX_NEUTRAL_800,
         }
-      ],
+      }
     },
     options: {
       storySort: {
@@ -39,7 +42,15 @@ const preview = {
         order: ['Foundations', 'Components'],
       },
     },
-  }
+  },
+
+  initialGlobals: {
+    backgrounds: {
+      value: '--ux-white'
+    }
+  },
+
+  tags: ['autodocs']
 };
 
 export default preview;
