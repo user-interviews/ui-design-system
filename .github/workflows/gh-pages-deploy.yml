@@ -3,6 +3,9 @@ name: Deploy to github pages
 on:
   release:
     types: [published]
+  push:
+    branches:
+      - main
 
 env:
   FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
