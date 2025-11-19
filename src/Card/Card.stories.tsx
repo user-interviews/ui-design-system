@@ -22,7 +22,6 @@ export function Default() {
       divided={false}
       helperText="(helper text)"
       noPadding={false}
-      size="sm"
       subTitle="Subtitle"
       title="Default card title"
     />

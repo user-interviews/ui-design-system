@@ -29,7 +29,7 @@ type CardProps = {
   loadingSkeleton?: ReactNode;
   loadingSkeletonParagraphCount?: number;
   noPadding?: boolean;
-  size: 'xs' | 'sm' | 'md' | 'lg';
+  size?: 'xs' | 'sm' | 'md' | 'lg';
   subTitle?: ReactNode;
   title?: ReactNode;
 } & ElementProps;
