@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { action } from '@storybook/addon-actions';
+import { action } from 'storybook/actions';
 
 import { Alert, MessageTypes } from 'src/Alert';
 
