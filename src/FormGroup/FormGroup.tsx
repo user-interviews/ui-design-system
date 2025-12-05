@@ -52,7 +52,7 @@ export type FormGroupProps = {
   id?: string;
   inline?: boolean;
   inputKey?: string;
-  label?: string;
+  label?: React.ReactNode;
   labelClassName?: string;
   labelHelperText?: string;
   labelHtmlFor?: string;
