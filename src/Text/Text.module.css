@@ -1,0 +1,27 @@
+.sizeLarge {
+  font: var(--synth-font-heading-small);
+}
+
+.sizeMedium {
+  font: var(--synth-font-text-regular);
+}
+
+.sizeSmall {
+  font: var(--synth-font-subtext-regular);
+}
+
+.weightBold {
+  font-weight: var(--synth-font-weight-bold);
+}
+
+.weightSemibold {
+  font-weight: var(--synth-font-weight-semibold);
+}
+
+.weightMedium {
+  font-weight: var(--synth-font-weight-medium);
+}
+
+.weightRegular {
+  font-weight: var(--synth-font-weight-regular);
+}
