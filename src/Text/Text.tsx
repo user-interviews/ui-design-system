@@ -3,7 +3,7 @@ import { createElement } from 'react';
 import classNames from 'classnames';
 
 import { TEXT_PROPS } from './Text.types';
-import './Text.scss';
+import * as styles from './Text.module.css';
 
 type ElementProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLElement>,
@@ -19,6 +19,21 @@ type TextProps = ElementProps & {
   weight?: typeof TEXT_PROPS['weight'][keyof typeof TEXT_PROPS['weight']];
 };
 
+function buildClassName(size: string, weight: string, className?: string) {
+  return classNames(
+    className,
+    {
+      [styles.sizeLarge]: size === 'lg',
+      [styles.sizeMedium]: size === 'md',
+      [styles.sizeSmall]: size === 'sm',
+      [styles.weightBold]: weight === 'bold',
+      [styles.weightSemibold]: weight === 'semibold',
+      [styles.weightMedium]: weight === 'medium',
+      [styles.weightRegular]: weight === 'regular',
+    },
+  );
+}
+
 function Text({
   as = 'p',
   children,
@@ -32,18 +47,11 @@ function Text({
     as,
     {
       style: { textAlign },
-      className: classNames(
-        className,
-        'Text',
-        {
-          [`Text--${size}`]: !!size,
-          [`Text--${weight}`]: !!weight,
-        },
-      ),
+      className: buildClassName(size, weight, className),
       ...props,
     },
-children,
-);
+    children,
+  );
 }
 
 export default Text;
