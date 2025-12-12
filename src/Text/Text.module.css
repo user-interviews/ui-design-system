@@ -1,4 +1,8 @@
 
+.text {
+  color: var(--synth-gray-600);
+}
+
 .alignLeft {
   text-align: left;
 }

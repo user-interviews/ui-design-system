@@ -28,6 +28,7 @@ function buildClassName(
   textAlign?: string,
 ) {
   return classNames(
+    styles.text,
     className,
     {
       [styles.alignLeft]: textAlign === 'left',
