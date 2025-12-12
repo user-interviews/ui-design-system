@@ -1,9 +1,22 @@
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignRight {
+  text-align: right;
+}
+
 .sizeLarge {
   font: var(--synth-font-heading-small);
 }
 
 .sizeMedium {
-  font: var(--synth-font-text-regular);
+  font: var(--synth-font-body-regular);
 }
 
 .sizeSmall {

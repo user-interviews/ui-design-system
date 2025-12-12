@@ -20,10 +20,19 @@ type TextProps = ElementProps & {
   weight?: typeof TEXT_PROPS['weight'][keyof typeof TEXT_PROPS['weight']];
 };
 
-function buildClassName(size: string, weight: string, noMargin: boolean, className?: string) {
+function buildClassName(
+  size: string,
+  weight: string,
+  noMargin: boolean,
+  className?: string,
+  textAlign?: string,
+) {
   return classNames(
     className,
     {
+      [styles.alignLeft]: textAlign === 'left',
+      [styles.alignCenter]: textAlign === 'center',
+      [styles.alignRight]: textAlign === 'right',
       [styles.sizeLarge]: size === 'lg',
       [styles.sizeMedium]: size === 'md',
       [styles.sizeSmall]: size === 'sm',
@@ -49,8 +58,7 @@ function Text({
   return createElement(
     as,
     {
-      style: { textAlign },
-      className: buildClassName(size, weight, noMargin, className),
+      className: buildClassName(size, weight, noMargin, className, textAlign),
       ...props,
     },
     children,
