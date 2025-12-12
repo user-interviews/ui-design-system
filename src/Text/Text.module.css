@@ -25,3 +25,7 @@
 .weightRegular {
   font-weight: var(--synth-font-weight-regular);
 }
+
+.noMargin {
+  margin: 0;
+}

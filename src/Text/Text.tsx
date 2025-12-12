@@ -14,12 +14,13 @@ type TextProps = ElementProps & {
   as?: React.ElementType;
   className?: string;
   children?: React.ReactNode;
+  noMargin?: boolean,
   size?: typeof TEXT_PROPS['size'][keyof typeof TEXT_PROPS['size']];
   textAlign?: typeof TEXT_PROPS['textAlign'][keyof typeof TEXT_PROPS['textAlign']];
   weight?: typeof TEXT_PROPS['weight'][keyof typeof TEXT_PROPS['weight']];
 };
 
-function buildClassName(size: string, weight: string, className?: string) {
+function buildClassName(size: string, weight: string, noMargin: boolean, className?: string) {
   return classNames(
     className,
     {
@@ -30,6 +31,7 @@ function buildClassName(size: string, weight: string, className?: string) {
       [styles.weightSemibold]: weight === 'semibold',
       [styles.weightMedium]: weight === 'medium',
       [styles.weightRegular]: weight === 'regular',
+      [styles.noMargin]: noMargin,
     },
   );
 }
@@ -38,6 +40,7 @@ function Text({
   as = 'p',
   children,
   className,
+  noMargin = false,
   size = 'md',
   textAlign,
   weight = 'regular',
@@ -47,7 +50,7 @@ function Text({
     as,
     {
       style: { textAlign },
-      className: buildClassName(size, weight, className),
+      className: buildClassName(size, weight, noMargin, className),
       ...props,
     },
     children,
