@@ -1,0 +1,48 @@
+
+.text {
+  color: var(--synth-gray-600);
+}
+
+.alignLeft {
+  text-align: left;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignRight {
+  text-align: right;
+}
+
+.sizeLarge {
+  font: var(--synth-font-heading-small);
+}
+
+.sizeMedium {
+  font: var(--synth-font-body-regular);
+}
+
+.sizeSmall {
+  font: var(--synth-font-subtext-regular);
+}
+
+.weightBold {
+  font-weight: var(--synth-font-weight-bold);
+}
+
+.weightSemibold {
+  font-weight: var(--synth-font-weight-semibold);
+}
+
+.weightMedium {
+  font-weight: var(--synth-font-weight-medium);
+}
+
+.weightRegular {
+  font-weight: var(--synth-font-weight-regular);
+}
+
+.noMargin {
+  margin: 0;
+}
