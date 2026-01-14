@@ -1,26 +1,22 @@
-import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
-import userEvent from '@testing-library/user-event';
+import React from "react";
+import { render, screen, waitFor } from "@testing-library/react";
+import userEvent from "@testing-library/user-event";
 
-import DateTimePicker, { DateTimePickerProps } from './DateTimePicker';
+import DateTimePicker, { DateTimePickerProps } from "./DateTimePicker";
 
-const PLACEHOLDER = 'YYYY-MM-DD';
+const PLACEHOLDER = "YYYY-MM-DD";
 
-const VALID_DATE = '1999-12-31';
-const INVALID_DATE = '99999';
+const VALID_DATE = "1999-12-31";
+const INVALID_DATE = "99999";
 
-describe('DateTimePicker', () => {
+describe("DateTimePicker", () => {
   function Setup(overrides: DateTimePickerProps) {
-    return (
-      <DateTimePicker
-        {...overrides}
-      />
-    );
+    return <DateTimePicker {...overrides} />;
   }
 
-  describe('when initializing', () => {
-    describe('when passed a (date) prop', () => {
-      it('sets input value', () => {
+  describe("when initializing", () => {
+    describe("when passed a (date) prop", () => {
+      it("sets input value", () => {
         render(<Setup date={VALID_DATE} />);
 
         expect(screen.getByDisplayValue(VALID_DATE)).toBeInTheDocument();
@@ -28,10 +24,10 @@ describe('DateTimePicker', () => {
     });
   });
 
-  describe('interactions', () => {
-    describe('when typing in date', () => {
-      describe('with a valid value', () => {
-        it('keeps value', async () => {
+  describe("interactions", () => {
+    describe("when typing in date", () => {
+      describe("with a valid value", () => {
+        it("keeps value", async () => {
           render(<Setup />);
 
           const input = screen.getByPlaceholderText(PLACEHOLDER);
@@ -43,15 +39,48 @@ describe('DateTimePicker', () => {
         });
       });
 
-      describe('with an invalid value', () => {
-        it('clears value', async () => {
+      describe("with an invalid value", () => {
+        it("clears value", async () => {
           render(<Setup />);
 
           const input = screen.getByPlaceholderText(PLACEHOLDER);
           userEvent.type(input, `${INVALID_DATE}{enter}`);
 
           await waitFor(() => {
-            expect(input).toHaveValue('');
+            expect(input).toHaveValue("");
+          });
+        });
+      });
+    });
+
+    describe("clearable prop", () => {
+      describe("when clearable is false (default)", () => {
+        it("does not render clear button", () => {
+          render(<Setup date={VALID_DATE} />);
+
+          expect(
+            screen.queryByRole("button", { name: /close/i })
+          ).not.toBeInTheDocument();
+        });
+      });
+
+      describe("when clearable is true", () => {
+        it("renders clear button when date is selected", () => {
+          render(<Setup date={VALID_DATE} clearable />);
+
+          expect(
+            screen.getByRole("button", { name: /close/i })
+          ).toBeInTheDocument();
+        });
+
+        it("clears the date when clear button is clicked", async () => {
+          render(<Setup date={VALID_DATE} clearable />);
+
+          const clearButton = screen.getByRole("button", { name: /close/i });
+          await userEvent.click(clearButton);
+
+          await waitFor(() => {
+            expect(screen.getByPlaceholderText(PLACEHOLDER)).toHaveValue("");
           });
         });
       });

@@ -1,43 +1,42 @@
-import React, { useCallback, useState, useEffect } from 'react';
-import { createPortal } from 'react-dom';
-import DatePicker, { getDefaultLocale, registerLocale, setDefaultLocale } from 'react-datepicker';
-import {
-  format,
-  isDate,
-  isValid,
-  parse,
-  parseISO,
-} from 'date-fns';
+import React, { useCallback, useState, useEffect } from "react";
+import { createPortal } from "react-dom";
+import DatePicker, {
+  getDefaultLocale,
+  registerLocale,
+  setDefaultLocale,
+} from "react-datepicker";
+import { format, isDate, isValid, parse, parseISO } from "date-fns";
 
-import {
-  enAU, enCA, enGB, enUS, enZA, fr, frCA, de,
-} from 'date-fns/locale';
+import { enAU, enCA, enGB, enUS, enZA, fr, frCA, de } from "date-fns/locale";
 
-import { PickerEnforcedInput } from './PickerEnforcedInput';
+import { PickerEnforcedInput } from "./PickerEnforcedInput";
 
-import './DateTimePicker.scss';
+import "./DateTimePicker.scss";
 
 const localeMap = {
-  'en-US': enUS,
-  'en-CA': enCA,
-  'en-GB': enGB,
-  'en-AU': enAU,
-  'en-ZA': enZA,
+  "en-US": enUS,
+  "en-CA": enCA,
+  "en-GB": enGB,
+  "en-AU": enAU,
+  "en-ZA": enZA,
   de,
-  'de-DE': de,
+  "de-DE": de,
   fr,
-  'fr-CA': frCA,
-  'fr-FR': fr,
+  "fr-CA": frCA,
+  "fr-FR": fr,
 };
 
-const STANDARD_TIME_FORMAT_FNS = 'hh:mm aa';
-const ISO_DATE_FORMAT_FNS = 'yyyy-MM-dd';
+const STANDARD_TIME_FORMAT_FNS = "hh:mm aa";
+const ISO_DATE_FORMAT_FNS = "yyyy-MM-dd";
 
-const popperContainerDocumentBody = ({ children }: { children?: React.ReactNode }) => (
-  createPortal(children, document.body)
-);
+const popperContainerDocumentBody = ({
+  children,
+}: {
+  children?: React.ReactNode;
+}) => createPortal(children, document.body);
 
 export type DateTimePickerProps = {
+  clearable?: boolean;
   date?: string;
   dateFormat?: string;
   disabled?: boolean;
@@ -46,7 +45,7 @@ export type DateTimePickerProps = {
   maxDate?: Date;
   minDate?: Date;
   name?: string;
-  showMonthAndYearSelects?: boolean,
+  showMonthAndYearSelects?: boolean;
   showPickerEnforcedInput?: boolean;
   showTimeSelect?: boolean;
   time?: string;
@@ -57,18 +56,19 @@ export type DateTimePickerProps = {
 };
 
 function DateTimePicker({
-  date = '',
+  clearable = false,
+  date = "",
   dateFormat = ISO_DATE_FORMAT_FNS,
   disabled = false,
   id,
-  inputClassName = 'form-control',
+  inputClassName = "form-control",
   maxDate,
   minDate,
   name,
   showMonthAndYearSelects = false,
   showPickerEnforcedInput = false,
   showTimeSelect = false,
-  time = '',
+  time = "",
   timeFormat = STANDARD_TIME_FORMAT_FNS,
   isWithinModal = false,
   onChangeDate,
@@ -90,7 +90,7 @@ function DateTimePicker({
     // we want to use the localized date format (and not mess with times)
     // https://date-fns.org/v2.0.0-alpha.18/docs/format
     // https://github.com/Hacker0x01/react-datepicker/issues/3447#issuecomment-1034623173
-    if (showPickerEnforcedInput) return 'P';
+    if (showPickerEnforcedInput) return "P";
 
     if (showTimeSelect) {
       return `${dateFormat} ${timeFormat}`;
@@ -100,18 +100,24 @@ function DateTimePicker({
 
   // converts string values into a date object
   const dateFromString = useCallback(() => {
-    if (typeof startDate === 'string' && startDate !== '') {
+    if (typeof startDate === "string" && startDate !== "") {
       if (showTimeSelect && startTime !== undefined) {
         return parse(`${startDate} ${startTime}`, getDateFormat(), new Date());
       }
       return parsedDateFromString();
     }
     return undefined;
-  }, [getDateFormat, parsedDateFromString, showTimeSelect, startDate, startTime]);
+  }, [
+    getDateFormat,
+    parsedDateFromString,
+    showTimeSelect,
+    startDate,
+    startTime,
+  ]);
 
   const resetDate = () => {
-    setStartDate('');
-    setStartTime('');
+    setStartDate("");
+    setStartTime("");
   };
 
   useEffect(() => {
@@ -135,8 +141,8 @@ function DateTimePicker({
       if (onDateParseError) {
         onDateParseError(
           new Error(
-            `bad date parse values in handleOnCalendarClose: date: ${startDate}, time: ${startTime}`,
-          ),
+            `bad date parse values in handleOnCalendarClose: date: ${startDate}, time: ${startTime}`
+          )
         );
       }
       return;
@@ -184,26 +190,35 @@ function DateTimePicker({
       <DatePicker
         adjustDateOnChange
         allowSameDay
-        className={showPickerEnforcedInput ? '' : 'date-time-picker__input-group'}
-        customInput={showPickerEnforcedInput ? (
-          <PickerEnforcedInput
-            disabled={disabled}
-            inputClassName={inputClassName}
-            name={name}
-            startDate={startDate}
-          />
-        ) : undefined}
+        className={
+          showPickerEnforcedInput ? "" : "date-time-picker__input-group"
+        }
+        customInput={
+          showPickerEnforcedInput ? (
+            <PickerEnforcedInput
+              disabled={disabled}
+              inputClassName={inputClassName}
+              name={name}
+              startDate={startDate}
+            />
+          ) : undefined
+        }
         dateFormat={getDateFormat()}
         disabled={disabled}
         dropdownMode="select"
         id={id}
+        isClearable={clearable}
         locale={getDefaultLocale()}
         maxDate={maxDate}
         minDate={minDate}
         name={name}
         placeholderText={getDateFormat().toUpperCase()}
-        popperClassName={isWithinModal ? 'react-datepicker__popper-container--modal' : ''}
-        popperContainer={isWithinModal ? popperContainerDocumentBody : undefined}
+        popperClassName={
+          isWithinModal ? "react-datepicker__popper-container--modal" : ""
+        }
+        popperContainer={
+          isWithinModal ? popperContainerDocumentBody : undefined
+        }
         selected={dateFromString()}
         showMonthDropdown={showMonthAndYearSelects}
         showTimeSelect={showTimeSelect}
