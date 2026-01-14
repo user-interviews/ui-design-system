@@ -53,6 +53,19 @@ describe("DateTimePicker", () => {
       });
     });
 
+    describe("when isWithinModal is true", () => {
+      it("renders the datepicker popper in a portal", async () => {
+        render(<Setup date={VALID_DATE} isWithinModal />);
+
+        const input = screen.getByDisplayValue(VALID_DATE);
+        await userEvent.click(input);
+
+        expect(
+          document.body.querySelector(".react-datepicker-popper")
+        ).toBeInTheDocument();
+      });
+    });
+
     describe("clearable prop", () => {
       describe("when clearable is false (default)", () => {
         it("does not render clear button", () => {
@@ -66,7 +79,7 @@ describe("DateTimePicker", () => {
 
       describe("when clearable is true", () => {
         it("renders clear button when date is selected", () => {
-          render(<Setup date={VALID_DATE} clearable />);
+          render(<Setup clearable date={VALID_DATE} />);
 
           expect(
             screen.getByRole("button", { name: /close/i })
@@ -74,7 +87,7 @@ describe("DateTimePicker", () => {
         });
 
         it("clears the date when clear button is clicked", async () => {
-          render(<Setup date={VALID_DATE} clearable />);
+          render(<Setup clearable date={VALID_DATE} />);
 
           const clearButton = screen.getByRole("button", { name: /close/i });
           await userEvent.click(clearButton);
