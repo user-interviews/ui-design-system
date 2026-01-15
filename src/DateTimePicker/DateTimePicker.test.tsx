@@ -75,6 +75,21 @@ describe('DateTimePicker', () => {
             screen.queryByRole('button', { name: /close/i })
           ).not.toBeInTheDocument();
         });
+
+        it('does not call onChangeDate when date becomes invalid', async () => {
+          const user = userEvent.setup();
+          const onChangeDate = jest.fn();
+          render(<Setup date={VALID_DATE} onChangeDate={onChangeDate} />);
+
+          const input = screen.getByDisplayValue(VALID_DATE);
+          await user.clear(input);
+          await user.type(input, INVALID_DATE);
+          await user.keyboard('{Enter}');
+
+          await waitFor(() => {
+            expect(onChangeDate).not.toHaveBeenCalled();
+          });
+        });
       });
 
       describe('when isClearable is true', () => {
@@ -87,10 +102,11 @@ describe('DateTimePicker', () => {
         });
 
         it('clears the date when clear button is clicked', async () => {
+          const user = userEvent.setup();
           render(<Setup date={VALID_DATE} isClearable />);
 
           const clearButton = screen.getByRole('button', { name: /close/i });
-          await userEvent.click(clearButton);
+          await user.click(clearButton);
 
           await waitFor(() => {
             expect(screen.getByPlaceholderText(PLACEHOLDER)).toHaveValue('');
@@ -111,6 +127,20 @@ describe('DateTimePicker', () => {
               startTime: null,
             });
           });
+        });
+      });
+    });
+
+    describe('when onChangeDate is not provided', () => {
+      it('does not error when date changes', async () => {
+        const user = userEvent.setup();
+        render(<Setup date={VALID_DATE} isClearable />);
+
+        const clearButton = screen.getByRole('button', { name: /close/i });
+        await user.click(clearButton);
+
+        await waitFor(() => {
+          expect(screen.getByPlaceholderText(PLACEHOLDER)).toHaveValue('');
         });
       });
     });
