@@ -96,6 +96,22 @@ describe('DateTimePicker', () => {
             expect(screen.getByPlaceholderText(PLACEHOLDER)).toHaveValue('');
           });
         });
+
+        it('calls onChangeDate with null values when cleared', async () => {
+          const user = userEvent.setup();
+          const onChangeDate = jest.fn();
+          render(<Setup date={VALID_DATE} isClearable onChangeDate={onChangeDate} />);
+
+          const clearButton = screen.getByRole('button', { name: /close/i });
+          await user.click(clearButton);
+
+          await waitFor(() => {
+            expect(onChangeDate).toHaveBeenCalledWith({
+              startDate: null,
+              startTime: null,
+            });
+          });
+        });
       });
     });
   });
