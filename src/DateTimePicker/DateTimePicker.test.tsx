@@ -86,14 +86,19 @@ describe('DateTimePicker', () => {
           ).toBeInTheDocument();
         });
 
-        it('clears the date when clear button is clicked', async () => {
-          render(<Setup date={VALID_DATE} isClearable />);
+        it('calls onChangeDate with null values when cleared', async () => {
+          const user = userEvent.setup();
+          const onChangeDate = jest.fn();
+          render(<Setup date={VALID_DATE} isClearable onChangeDate={onChangeDate} />);
 
           const clearButton = screen.getByRole('button', { name: /close/i });
-          await userEvent.click(clearButton);
+          await user.click(clearButton);
 
           await waitFor(() => {
-            expect(screen.getByPlaceholderText(PLACEHOLDER)).toHaveValue('');
+            expect(onChangeDate).toHaveBeenCalledWith({
+              startDate: null,
+              startTime: null,
+            });
           });
         });
       });
