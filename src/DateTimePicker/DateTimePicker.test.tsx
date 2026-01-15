@@ -11,11 +11,7 @@ const INVALID_DATE = '99999';
 
 describe('DateTimePicker', () => {
   function Setup(overrides: DateTimePickerProps) {
-    return (
-      <DateTimePicker
-        {...overrides}
-      />
-    );
+    return <DateTimePicker {...overrides} />;
   }
 
   describe('when initializing', () => {
@@ -52,6 +48,52 @@ describe('DateTimePicker', () => {
 
           await waitFor(() => {
             expect(input).toHaveValue('');
+          });
+        });
+      });
+    });
+
+    describe('when isWithinModal is true', () => {
+      it('renders the datepicker popper in a portal', async () => {
+        render(<Setup date={VALID_DATE} isWithinModal />);
+
+        const input = screen.getByDisplayValue(VALID_DATE);
+        await userEvent.click(input);
+
+        expect(
+          document.body.querySelector('.react-datepicker-popper')
+        ).toBeInTheDocument();
+      });
+    });
+
+    describe('isClearable prop', () => {
+      describe('when isClearable is false (default)', () => {
+        it('does not render clear button', () => {
+          render(<Setup date={VALID_DATE} />);
+
+          expect(
+            screen.queryByRole('button', { name: /close/i })
+          ).not.toBeInTheDocument();
+        });
+      });
+
+      describe('when isClearable is true', () => {
+        it('renders clear button when date is selected', () => {
+          render(<Setup date={VALID_DATE} isClearable />);
+
+          expect(
+            screen.getByRole('button', { name: /close/i })
+          ).toBeInTheDocument();
+        });
+
+        it('clears the date when clear button is clicked', async () => {
+          render(<Setup date={VALID_DATE} isClearable />);
+
+          const clearButton = screen.getByRole('button', { name: /close/i });
+          await userEvent.click(clearButton);
+
+          await waitFor(() => {
+            expect(screen.getByPlaceholderText(PLACEHOLDER)).toHaveValue('');
           });
         });
       });
