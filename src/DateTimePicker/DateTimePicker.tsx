@@ -163,13 +163,10 @@ function DateTimePicker({
   };
 
   const handleOnChange = (updatedDate) => {
-    if (!onChangeDate) return;
-
     if (!isValid(updatedDate)) {
-      if (isClearable) {
+      resetDate();
+      if (onChangeDate && isClearable) {
         onChangeDate({ startDate: null, startTime: null });
-      } else {
-        resetDate();
       }
       return;
     }
