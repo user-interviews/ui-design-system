@@ -1,5 +1,5 @@
 import { ArgTypes, Canvas } from '@storybook/addon-docs/blocks';
-import Alert from './Alert';
+import { Alert } from './Alert';
 import * as ComponentStories from './Alert.stories';
 
 # Alert
@@ -12,19 +12,13 @@ import * as ComponentStories from './Alert.stories';
   should be used cautiously.
 </h4>
 
-<Canvas of={ComponentStories.Success} />
+<Canvas of={ComponentStories.Info} />
 
 ## Props
 
 <ArgTypes of={Alert} />
 
 ## Stories
-
-### Success
-
-- Used when something went as planned.
-
-<Canvas of={ComponentStories.Success} />
 
 ### Info
 
