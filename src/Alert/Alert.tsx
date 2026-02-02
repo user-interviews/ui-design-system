@@ -3,7 +3,7 @@ import React, { type ReactNode, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
-import { faTimes } from '../font_awesome/solid';
+import { faTimes } from '../font_awesome/light';
 
 import { Icon } from './components';
 
