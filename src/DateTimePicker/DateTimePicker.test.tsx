@@ -31,7 +31,8 @@ describe('DateTimePicker', () => {
           render(<Setup />);
 
           const input = screen.getByPlaceholderText(PLACEHOLDER);
-          userEvent.type(input, `${VALID_DATE}{enter}`);
+          const user = userEvent.setup();
+          await user.type(input, `${VALID_DATE}{enter}`);
 
           await waitFor(() => {
             expect(input).toHaveValue(VALID_DATE);
@@ -44,7 +45,8 @@ describe('DateTimePicker', () => {
           render(<Setup />);
 
           const input = screen.getByPlaceholderText(PLACEHOLDER);
-          userEvent.type(input, `${INVALID_DATE}{enter}`);
+          const user = userEvent.setup();
+          await user.type(input, `${INVALID_DATE}{enter}`);
 
           await waitFor(() => {
             expect(input).toHaveValue('');
@@ -58,7 +60,8 @@ describe('DateTimePicker', () => {
         render(<Setup date={VALID_DATE} isWithinModal />);
 
         const input = screen.getByDisplayValue(VALID_DATE);
-        await userEvent.click(input);
+        const user = userEvent.setup();
+        await user.click(input);
 
         expect(
           document.body.querySelector('.react-datepicker-popper')
