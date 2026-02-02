@@ -86,15 +86,6 @@ export function WithCallToAction() {
       <p>Default CTA rendered by component</p>
       <Alert
         action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
-        id="8"
-        message="Success message"
-        removeBorderLeft={false}
-        title="Success title"
-        type={AlertType.INFO}
-        onDismiss={onDismiss}
-      />
-      <Alert
-        action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
         id="9"
         message="Info message"
         removeBorderLeft={false}
