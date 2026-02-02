@@ -1,4 +1,5 @@
 const config = {
+  staticDirs: ['../public'],
   addons: [{
     name: '@storybook/addon-docs',
     options: {
@@ -15,13 +16,10 @@ const config = {
     test: /\.css$/,
     sideEffects: true,
     use: [
-        require.resolve("style-loader"),
+        "style-loader",
         {
-            loader: require.resolve("css-loader"),
-            options: {
-                
-                
-            },
+            loader: "css-loader",
+            options: {},
         },
     ],
   },],

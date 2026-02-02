@@ -23,7 +23,14 @@ module.exports = function({ config }) {
           }
         }
       },
-      'sass-loader'
+      {
+        loader: 'sass-loader',
+        options: {
+          sassOptions: {
+            silenceDeprecations: ['import', 'global-builtin', 'color-functions', 'function-units'],
+          },
+        },
+      }
     ],
     include: path.resolve(__dirname, '../')
   },
