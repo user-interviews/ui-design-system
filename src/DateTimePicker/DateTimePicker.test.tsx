@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, screen, waitFor } from '@testing-library/react';
+import { act, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
 import DateTimePicker, { DateTimePickerProps } from './DateTimePicker';
@@ -14,10 +14,19 @@ describe('DateTimePicker', () => {
     return <DateTimePicker {...overrides} />;
   }
 
+  async function renderAndFlush(ui: React.ReactElement) {
+    let result: ReturnType<typeof render>;
+    await act(async () => {
+      result = render(ui);
+      await Promise.resolve();
+    });
+    return result!;
+  }
+
   describe('when initializing', () => {
     describe('when passed a (date) prop', () => {
-      it('sets input value', () => {
-        render(<Setup date={VALID_DATE} />);
+      it('sets input value', async () => {
+        await renderAndFlush(<Setup date={VALID_DATE} />);
 
         expect(screen.getByDisplayValue(VALID_DATE)).toBeInTheDocument();
       });
@@ -28,7 +37,7 @@ describe('DateTimePicker', () => {
     describe('when typing in date', () => {
       describe('with a valid value', () => {
         it('keeps value', async () => {
-          render(<Setup />);
+          await renderAndFlush(<Setup />);
 
           const input = screen.getByPlaceholderText(PLACEHOLDER);
           const user = userEvent.setup();
@@ -42,7 +51,7 @@ describe('DateTimePicker', () => {
 
       describe('with an invalid value', () => {
         it('clears value', async () => {
-          render(<Setup />);
+          await renderAndFlush(<Setup />);
 
           const input = screen.getByPlaceholderText(PLACEHOLDER);
           const user = userEvent.setup();
@@ -57,7 +66,7 @@ describe('DateTimePicker', () => {
 
     describe('when isWithinModal is true', () => {
       it('renders the datepicker popper in a portal', async () => {
-        render(<Setup date={VALID_DATE} isWithinModal />);
+        await renderAndFlush(<Setup date={VALID_DATE} isWithinModal />);
 
         const input = screen.getByDisplayValue(VALID_DATE);
         const user = userEvent.setup();
@@ -71,8 +80,8 @@ describe('DateTimePicker', () => {
 
     describe('isClearable prop', () => {
       describe('when isClearable is false (default)', () => {
-        it('does not render clear button', () => {
-          render(<Setup date={VALID_DATE} />);
+        it('does not render clear button', async () => {
+          await renderAndFlush(<Setup date={VALID_DATE} />);
 
           expect(
             screen.queryByRole('button', { name: /close/i })
@@ -81,8 +90,8 @@ describe('DateTimePicker', () => {
       });
 
       describe('when isClearable is true', () => {
-        it('renders clear button when date is selected', () => {
-          render(<Setup date={VALID_DATE} isClearable />);
+        it('renders clear button when date is selected', async () => {
+          await renderAndFlush(<Setup date={VALID_DATE} isClearable />);
 
           expect(
             screen.getByRole('button', { name: /close/i })
@@ -92,7 +101,9 @@ describe('DateTimePicker', () => {
         it('calls onChangeDate with null values when cleared', async () => {
           const user = userEvent.setup();
           const onChangeDate = jest.fn();
-          render(<Setup date={VALID_DATE} isClearable onChangeDate={onChangeDate} />);
+          await renderAndFlush(
+            <Setup date={VALID_DATE} isClearable onChangeDate={onChangeDate} />
+          );
 
           const clearButton = screen.getByRole('button', { name: /close/i });
           await user.click(clearButton);
