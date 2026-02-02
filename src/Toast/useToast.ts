@@ -1,5 +1,5 @@
 import { useCallback, useReducer } from 'react';
-import { v4 as generateUUID } from 'uuid';
+import { generateUUID } from '../utils/uuid';
 import { MessageTypes } from '../Alert/Alert';
 
 const ACTIONS = {

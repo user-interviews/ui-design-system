@@ -11,6 +11,11 @@ jest.mock('react-transition-group', () => (
     TransitionGroup: ({ children }) => children,
   }
 ));
+jest.mock('../utils/uuid', () => (
+  {
+    generateUUID: () => '1234',
+  }
+));
 
 function WrappedComponent() {
   return <div />;

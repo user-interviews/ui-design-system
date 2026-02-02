@@ -4,9 +4,9 @@ import { useToast } from '.';
 
 const GENERATED_UUID = '1234';
 
-jest.mock('uuid', () => (
+jest.mock('../utils/uuid', () => (
   {
-    v4: () => '1234',
+    generateUUID: () => '1234',
   }
 ));
 
