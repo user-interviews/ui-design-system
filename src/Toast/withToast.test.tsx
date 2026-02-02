@@ -2,7 +2,7 @@ import React from 'react';
 import { act } from '@testing-library/react';
 import { create } from 'react-test-renderer';
 
-import { MessageTypes } from '../Alert';
+import { AlertType } from '../Alert';
 import { withToast } from '.';
 
 jest.mock('react-transition-group', () => (
@@ -25,7 +25,7 @@ describe('withToast()', () => {
 
     act(() => {
       component.props.setToastMessage({
-        type: MessageTypes.SUCCESS,
+        type: AlertType.INFO,
         message: newMessage,
       });
     });

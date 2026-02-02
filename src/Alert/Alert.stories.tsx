@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import { action } from 'storybook/actions';
 
-import { Alert, MessageTypes } from 'src/Alert';
+import { Alert, AlertType } from 'src/Alert';
 
 import mdx from './Alert.mdx';
 
@@ -15,18 +15,6 @@ export default {
   },
 };
 
-export function Success() {
-  return (
-    <Alert
-      id="1"
-      message="Success message"
-      removeBorderLeft={false}
-      title="Success title"
-      type={MessageTypes.SUCCESS}
-    />
-  );
-}
-
 export function Info() {
   return (
     <Alert
@@ -34,7 +22,7 @@ export function Info() {
       message="Info message"
       removeBorderLeft={false}
       title="Info title"
-      type={MessageTypes.INFO}
+      type={AlertType.INFO}
     />
   );
 }
@@ -46,7 +34,7 @@ export function Feature() {
       message="Some context around new feature if needed."
       removeBorderLeft={false}
       title="New feature alert!"
-      type={MessageTypes.FEATURE}
+      type={AlertType.FEATURE}
     />
   );
 }
@@ -58,7 +46,7 @@ export function Error() {
       message="Error message"
       removeBorderLeft={false}
       title="Error title"
-      type={MessageTypes.ERROR}
+      type={AlertType.ERROR}
     />
   );
 }
@@ -70,7 +58,7 @@ export function Warning() {
       message="Warning message"
       removeBorderLeft={false}
       title="Warning title"
-      type={MessageTypes.WARNING}
+      type={AlertType.WARNING}
     />
   );
 }
@@ -86,7 +74,7 @@ export function WithDismiss() {
       message="Default message"
       removeBorderLeft={false}
       title="Default title"
-      type={MessageTypes.SUCCESS}
+      type={AlertType.INFO}
       onDismiss={onDismiss}
     />
   );
@@ -102,7 +90,7 @@ export function WithCallToAction() {
         message="Success message"
         removeBorderLeft={false}
         title="Success title"
-        type={MessageTypes.SUCCESS}
+        type={AlertType.INFO}
         onDismiss={onDismiss}
       />
       <Alert
@@ -111,7 +99,7 @@ export function WithCallToAction() {
         message="Info message"
         removeBorderLeft={false}
         title="Info title"
-        type={MessageTypes.INFO}
+        type={AlertType.INFO}
         onDismiss={onDismiss}
       />
       <Alert
@@ -120,7 +108,7 @@ export function WithCallToAction() {
         message="Error message"
         removeBorderLeft={false}
         title="Error title"
-        type={MessageTypes.ERROR}
+        type={AlertType.ERROR}
         onDismiss={onDismiss}
       />
       <Alert
@@ -129,7 +117,7 @@ export function WithCallToAction() {
         message="Warning message"
         removeBorderLeft={false}
         title="Warning title"
-        type={MessageTypes.WARNING}
+        type={AlertType.WARNING}
         onDismiss={onDismiss}
       />
       <Alert
@@ -138,7 +126,7 @@ export function WithCallToAction() {
         message="Some context around new feature if needed"
         removeBorderLeft={false}
         title="New feature alert!"
-        type={MessageTypes.FEATURE}
+        type={AlertType.FEATURE}
         onDismiss={onDismiss}
       />
     </>
