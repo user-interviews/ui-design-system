@@ -40,7 +40,7 @@
   }
 
   &.warning {
-    border-left-color: var(--orange-warning-alert);
+    border-left-color: var(--synth-orange-100);
   }
 
   &.error {

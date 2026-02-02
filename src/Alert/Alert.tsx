@@ -7,7 +7,7 @@ import { faTimes } from '../font_awesome/solid';
 
 import { Icon } from './components';
 
-import * as styles from './alert.module.css';
+import * as styles from './Alert.module.css';
 
 export enum AlertType {
   INFO = 'info',
