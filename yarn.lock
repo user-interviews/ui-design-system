@@ -4018,7 +4018,7 @@ __metadata:
     sass-loader: "npm:^16.0.6"
     storybook: "npm:9.1.17"
     style-loader: "npm:^4.0.0"
-    stylelint: "npm:^17.0.0"
+    stylelint: "npm:^17.1.0"
     stylelint-config-standard-scss: "npm:^17.0.0"
     stylelint-scss: "npm:^7.0.0"
     tippy.js: "npm:^6.3.7"
@@ -11921,7 +11921,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint@npm:^17.0.0":
+"stylelint@npm:^17.1.0":
   version: 17.1.0
   resolution: "stylelint@npm:17.1.0"
   dependencies:
