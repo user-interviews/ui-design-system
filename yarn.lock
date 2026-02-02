@@ -3993,6 +3993,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/semver@npm:^7":
+  version: 7.7.1
+  resolution: "@types/semver@npm:7.7.1"
+  checksum: 10c0/c938aef3bf79a73f0f3f6037c16e2e759ff40c54122ddf0b2583703393d8d3127130823facb880e694caa324eb6845628186aac1997ee8b31dc2d18fafe26268
+  languageName: node
+  linkType: hard
+
 "@types/semver@npm:^7.3.4":
   version: 7.5.8
   resolution: "@types/semver@npm:7.5.8"
@@ -4320,6 +4327,7 @@ __metadata:
     "@types/react-dom": "npm:^18.3.7"
     "@types/react-toggle": "npm:^4.0.5"
     "@types/react-transition-group": "npm:^4.4.12"
+    "@types/semver": "npm:^7"
     "@typescript-eslint/eslint-plugin": "npm:^8.54.0"
     "@typescript-eslint/parser": "npm:^8.54.0"
     babel-jest: "npm:^29.7.0"
@@ -4368,6 +4376,7 @@ __metadata:
     sanitize-html: "npm:^2.17.0"
     sass: "npm:^1.97.3"
     sass-loader: "npm:^16.0.6"
+    semver: "npm:^7.7.3"
     storybook: "npm:9.1.17"
     style-loader: "npm:^4.0.0"
     stylelint: "npm:^17.1.0"
