@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import Alert from '../Alert/Alert';
+import { Alert } from '../Alert';
 import { type Message } from './useToast';
 import { TransitionGroup } from '../TransitionGroup';
 import FadeTransition from '../FadeTransition';

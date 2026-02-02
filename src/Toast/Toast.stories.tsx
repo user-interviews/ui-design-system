@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MessageTypes } from '../Alert';
+import { AlertType } from '../Alert';
 import Button from '../Button';
 import { withToast } from '.';
 import mdx from './Toast.mdx';
@@ -16,11 +16,11 @@ export default {
 };
 
 function DummyComponent({
- action,
- type,
- message,
- title,
- setToastMessage,
+  action,
+  type,
+  message,
+  title,
+  setToastMessage,
 }: {
   action?: {
     content?: string;
@@ -30,8 +30,8 @@ function DummyComponent({
   message: string;
   title: string;
   setToastMessage: ({
- type, message, action, title,
-}) => void;
+    type, message, action, title,
+  }) => void;
 }) {
   return (
     <div>
@@ -39,11 +39,11 @@ function DummyComponent({
       <Button
         variant="primary"
         onClick={() => setToastMessage({
-        type,
-        message,
-        action,
-        title,
-      })}
+          type,
+          message,
+          action,
+          title,
+        })}
       >
         Submit
       </Button>
@@ -57,7 +57,7 @@ export function Default() {
     <ToastDummyComponent
       message="Your action was a success!"
       title="Title"
-      type={MessageTypes.SUCCESS}
+      type={AlertType.INFO}
     />
   );
 }
@@ -69,9 +69,9 @@ export function ToastCustomMessage() {
         <>
           <strong>[Some strong text]</strong> and additional text that is wrapped in a fragment.
         </>
-    )}
+      )}
       title="Normal string title"
-      type={MessageTypes.SUCCESS}
+      type={AlertType.INFO}
     />
   );
 }
@@ -83,7 +83,7 @@ export function ManualDismissToast() {
     <ManualDismissToastComponent
       message="Your action was a success!"
       title="Title"
-      type={MessageTypes.SUCCESS}
+      type={AlertType.INFO}
     />
   );
 }
@@ -94,7 +94,7 @@ export function ToastWithAction() {
       action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
       message="Your action was a success!"
       title="Title"
-      type={MessageTypes.SUCCESS}
+      type={AlertType.INFO}
     />
   );
 }

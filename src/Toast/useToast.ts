@@ -1,6 +1,6 @@
 import { useCallback, useReducer } from 'react';
 import { v4 as generateUUID } from 'uuid';
-import { MessageTypes } from '../Alert/Alert';
+import { AlertType as AlertTypeEnum } from '../Alert';
 
 const ACTIONS = {
   CLEAR_MESSAGES: 'CLEAR_MESSAGES',
@@ -13,12 +13,12 @@ type Action = {
   url: string;
 }
 
-type MessageType = typeof MessageTypes[keyof typeof MessageTypes];
+type AlertType = typeof AlertTypeEnum[keyof typeof AlertTypeEnum];
 
 export type SetMessageHandler = (
   arg0: {
     action?: Action;
-    type: MessageType;
+    type: AlertType;
     title?: string;
     message: string;
   }
@@ -26,14 +26,14 @@ export type SetMessageHandler = (
 
 export type Message = {
   id: string;
-  type: MessageType;
+  type: AlertType;
   title?: string;
   message?: string;
   action?: Action;
 }
 
 const createMessage = (
-  type: MessageType,
+  type: AlertType,
   title?: string,
   message?: string,
   action?: Action,
@@ -51,7 +51,7 @@ const messagesReducer = (
     {
       type: typeof ACTIONS.SET_MESSAGE;
       payload: {
-        type: MessageType;
+        type: AlertType;
         title?: string;
         message?: string;
         action?: Action
@@ -94,9 +94,9 @@ const useToast = (initialMessages: Message[] = []) => {
   }, []);
 
   const setMessage = useCallback((
-    arg0: MessageType | {
+    arg0: AlertType | {
       action?: Action;
-      type: MessageType;
+      type: AlertType;
       title?: string;
       message: string;
     },

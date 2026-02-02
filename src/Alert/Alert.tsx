@@ -1,165 +1,113 @@
-import React, { useEffect } from 'react';
+import React, { type ReactNode, useEffect } from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
-import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faBullhorn,
-  faCircle,
-  faCheck,
-  faExclamationTriangle,
-  faInfo,
-  faTimes,
-} from '../font_awesome/solid';
+import { faTimes } from '../font_awesome/light';
 
-import './Alert.scss';
+import { Icon } from './components';
 
-export const MessageTypes = {
-  SUCCESS: 'success',
-  INFO: 'info',
-  FEATURE: 'feature',
-  WARNING: 'warning',
-  ERROR: 'error',
-} as const;
+import * as styles from './Alert.module.css';
 
-type MessageType = typeof MessageTypes[keyof typeof MessageTypes];
+export enum AlertType {
+  INFO = 'info',
+  FEATURE = 'feature',
+  WARNING = 'warning',
+  ERROR = 'error',
+}
 
-const getAlertIcon = (type: MessageType) => {
-  switch (type) {
-    case MessageTypes.SUCCESS:
-      return (
-        <span className="fa-layers fa-fw">
-          <FontAwesomeIcon icon={faCircle as IconDefinition} transform="grow-8" />
-          <FontAwesomeIcon icon={faCheck as IconDefinition} transform="shrink-4" />
-        </span>
-);
-    case MessageTypes.INFO:
-      return (
-        <span className="fa-layers fa-fw">
-          <FontAwesomeIcon icon={faCircle as IconDefinition} transform="grow-8" />
-          <FontAwesomeIcon icon={faInfo as IconDefinition} transform="shrink-4" />
-        </span>
-      );
-    case MessageTypes.FEATURE:
-      return (<FontAwesomeIcon icon={faBullhorn as IconDefinition} transform="grow-2" />);
-    case MessageTypes.WARNING:
-      return (<FontAwesomeIcon icon={faExclamationTriangle as IconDefinition} transform="grow-2" />);
-    case MessageTypes.ERROR:
-      return (<FontAwesomeIcon icon={faExclamationTriangle as IconDefinition} transform="grow-2" />);
-    default:
-      return null;
-  }
-};
-
-const AUTO_DISMISS_TIMEOUT_SUCCESS = 3000;
-const AUTO_DISMISS_TIMEOUT_DEFAULT = 5000;
-
-const getAlertClassName = (type: MessageType) => {
-  if (!Object.values(MessageTypes).includes(type)) {
-    throw new TypeError(`Unexpected type ${type} used for an alert.`);
-  }
-
-  return `Alert Alert-${type}`;
-};
-
-type AlertProps = {
-  /**
-   Creates a CTA button on the Alert
-  */
-  action?: {
+export type AlertProps = {
+  action?:
+  | {
     url: string;
-    content: React.ReactNode;
-  } | React.ReactNode;
-  /**
-    Specifies where to open the linked document
-  */
-  actionTarget?: string;
-  /**
-   Determines whether the Alert will disappear automatically
-  */
+    content: ReactNode;
+  }
+  | ReactNode;
+  actionTarget?: '_self' | '_blank' | '_parent' | '_top';
   autoDismiss?: boolean;
   id?: string;
-  message: string | React.ReactNode;
+  message: string | ReactNode;
+  noMargin?: boolean;
   removeBorderLeft?: boolean;
-  title?: string;
-  /**
-   One of the MessageTypes
-  */
-  type: MessageType;
-  onDismiss?: (arg0?: string) => void;
+  title?: string | ReactNode;
+  type: 'info' | 'feature' | 'warning' | 'error';
+  onDismiss?: (id?: string) => void;
 };
 
-function Alert(props: AlertProps) {
-  const { autoDismiss, id, onDismiss } = props;
+// eslint-disable-next-line local-rules/max-props
+export function Alert({
+  action,
+  actionTarget,
+  autoDismiss = false,
+  id = undefined,
+  message,
+  noMargin = false,
+  removeBorderLeft = false,
+  title = undefined,
+  type,
+  onDismiss = undefined,
+}: AlertProps) {
+  function handleDismiss() {
+    if (!onDismiss) return;
+    onDismiss(id);
+  }
 
   useEffect(() => {
-    let timeout;
+    let timeout: NodeJS.Timeout;
     if (autoDismiss && onDismiss) {
-      timeout = setTimeout(() => (onDismiss(id)),
-      props.type === MessageTypes.SUCCESS ?
-      AUTO_DISMISS_TIMEOUT_SUCCESS : AUTO_DISMISS_TIMEOUT_DEFAULT);
+      timeout = setTimeout(() => onDismiss(id), 5_000);
     }
     return () => {
       clearTimeout(timeout);
     };
-  }, [autoDismiss, onDismiss, id, props.type]);
+  }, [autoDismiss, onDismiss, id, type]);
 
   return (
     <div
-      className={getAlertClassName(props.type)}
-      style={props.removeBorderLeft ? { borderLeft: 'none' } : undefined}
+      className={classNames(styles.alert, {
+        [styles.info]: type === 'info',
+        [styles.feature]: type === 'feature',
+        [styles.warning]: type === 'warning',
+        [styles.error]: type === 'error',
+        [styles.removeBorderLeft]: removeBorderLeft,
+        [styles.noMargin]: noMargin,
+      })}
     >
-      <div className="Alert__icon">
-        {getAlertIcon(props.type)}
-      </div>
-      <div className="Alert__content">
-        {
-          props.title && (
-            <div className="Alert__title">
-              {props.title}
-            </div>
-          )
-        }
-        <div
-          className="Alert__message"
-          // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
-          tabIndex={props.type === MessageTypes.ERROR ? -1 : undefined}
-        >
-          {props.message}
-        </div>
-      </div>
-      {
-        props.action && (
-        <div className="Alert__action">
-          { (typeof props.action === 'object' && 'url' in props.action) ? (
-            <a
-              className={classNames(`Alert-${(props.type)}`, 'primary-action')}
-              href={props.action.url}
-              rel="noopener noreferrer"
-              target={props.actionTarget}
-            >
-              {props.action.content}
-            </a>
-          ) : (props.action)}
-        </div>
-      )
-}
-      {
-        props.onDismiss && (
-          <div className="Alert__close">
-            <button
-              aria-label={`close ${props.type}`}
-              className="close"
-              type="button"
-              onClick={() => props.onDismiss && props.onDismiss(props.id)}
-            >
-              <FontAwesomeIcon icon={faTimes as IconDefinition} />
-            </button>
+      <div>
+        <div>
+          <Icon type={type} />
+
+          <div>
+            {title && <div className={styles.title}>{title}</div>}
+            <div className={styles.message}>{message}</div>
           </div>
-        )
-      }
+        </div>
+
+        {action &&
+          (typeof action === 'object' && 'url' in action ? (
+            <a
+              className={styles.primaryAction}
+              href={action.url}
+              rel="noopener noreferrer"
+              target={actionTarget}
+            >
+              {action.content}
+            </a>
+          ) : (
+            action
+          ))}
+      </div>
+
+      {onDismiss && (
+        <button
+          aria-label={`close ${type} alert`}
+          className={styles.close}
+          type="button"
+          onClick={handleDismiss}
+        >
+          <FontAwesomeIcon icon={faTimes} />
+        </button>
+      )}
     </div>
   );
 }
-
-export default React.memo(Alert);

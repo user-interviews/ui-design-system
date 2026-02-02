@@ -1,5 +1,5 @@
 import { renderHook, act } from '@testing-library/react';
-import { MessageTypes } from '../Alert';
+import { AlertType } from '../Alert';
 import { useToast } from '.';
 
 const GENERATED_UUID = '1234';
@@ -17,14 +17,14 @@ describe('useToast', () => {
 
     act(() => {
       result.current.setMessage({
-        type: 'success',
+        type: AlertType.INFO,
         message: newMessage,
       });
     });
 
     expect(result.current.messages).toEqual([{
       id: GENERATED_UUID,
-      type: MessageTypes.SUCCESS,
+      type: AlertType.INFO,
       message: newMessage,
       action: undefined,
       title: undefined,
@@ -37,14 +37,14 @@ describe('useToast', () => {
 
     act(() => {
       result.current.setMessage({
-        type: MessageTypes.SUCCESS,
+        type: AlertType.INFO,
         message: newMessage,
       });
     });
 
     expect(result.current.messages).toEqual([{
       id: GENERATED_UUID,
-      type: MessageTypes.SUCCESS,
+      type: AlertType.INFO,
       message: newMessage,
     }]);
 
@@ -63,7 +63,7 @@ describe('useToast', () => {
       (message) => {
         act(() => {
           result.current.setMessage({
-            type: MessageTypes.ERROR,
+            type: AlertType.ERROR,
             message,
           });
         });
@@ -73,7 +73,7 @@ describe('useToast', () => {
     expect(result.current.messages).toEqual(
       newMessages.map((message) => ({
         id: GENERATED_UUID,
-        type: MessageTypes.ERROR,
+        type: AlertType.ERROR,
         action: undefined,
         title: undefined,
         message,
@@ -84,10 +84,10 @@ describe('useToast', () => {
   test('can clear all messages', () => {
     const messages = ['A new', 'message'].map(
       (message, i) => ({
-          id: i.toString(),
-          type: MessageTypes.SUCCESS,
-          message,
-        }),
+        id: i.toString(),
+        type: AlertType.INFO,
+        message,
+      }),
     );
 
     const { result } = renderHook(() => useToast(messages));

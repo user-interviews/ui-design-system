@@ -1,0 +1,38 @@
+.layers {
+  display: inline-block;
+  height: 20px;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 20px;
+  flex-shrink: 0;
+}
+
+.layers>* {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.info .circleIcon {
+  color: #a6c0f5;
+}
+
+.info .infoIcon {
+  color: #2854af;
+}
+
+.featureIcon {
+  color: #158d71;
+}
+
+.warningIcon {
+  color: #f16e00;
+}
+
+.errorIcon {
+  color: #e44e4e;
+}

@@ -8,7 +8,10 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "jsx": "react",
-    "lib": ["ESNext", "DOM"],
+    "lib": [
+      "ESNext",
+      "DOM"
+    ],
     "module": "CommonJs",
     "moduleResolution": "Node",
     "noEmit": false,
@@ -26,8 +29,20 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "target": "es5",
-    "types": ["node", "react", "react-dom", "@testing-library/jest-dom"],
+    "types": [
+      "node",
+      "react",
+      "react-dom",
+      "@testing-library/jest-dom"
+    ],
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "build", ".storybook"],
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    ".storybook"
+  ],
 }

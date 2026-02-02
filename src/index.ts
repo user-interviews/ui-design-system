@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionToggle,
 } from './Accordion';
-import { Alert, MessageTypes } from './Alert';
+import { Alert, AlertType } from './Alert';
 import Button, { ButtonSizes, ButtonVariants } from './Button';
 import Avatar from './Avatar';
 import Card, { CardSizes } from './Card';
@@ -109,6 +109,7 @@ export {
   AccordionItem,
   AccordionToggle,
   Alert,
+  AlertType,
   Avatar,
   AsyncSelect,
   AsyncCreatableSelect,
@@ -156,7 +157,6 @@ export {
   LoadingOverlay,
   LoadingSkeleton,
   Main,
-  MessageTypes,
   Modal,
   MODAL_SIZES,
   ModalBody,

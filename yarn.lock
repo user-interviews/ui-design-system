@@ -2340,6 +2340,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fortawesome/pro-light-svg-icons@npm:^6.7.2":
+  version: 6.7.2
+  resolution: "@fortawesome/pro-light-svg-icons@npm:6.7.2"
+  dependencies:
+    "@fortawesome/fontawesome-common-types": "npm:6.7.2"
+  checksum: 10c0/7b4a468d5382e473a93c6413774f98be11b12dc76ee9dda4fcedf599de9e4791250deb90b20839ebf73fc59c207679414c73ad73ac1bb088104a32958d992e42
+  languageName: node
+  linkType: hard
+
 "@fortawesome/pro-regular-svg-icons@npm:^6.7.2":
   version: 6.7.2
   resolution: "@fortawesome/pro-regular-svg-icons@npm:6.7.2"
@@ -4284,6 +4293,7 @@ __metadata:
     "@eslint/compat": "npm:^2.0.2"
     "@fortawesome/fontawesome-svg-core": "npm:^6.7.2"
     "@fortawesome/free-brands-svg-icons": "npm:^6.7.2"
+    "@fortawesome/pro-light-svg-icons": "npm:^6.7.2"
     "@fortawesome/pro-regular-svg-icons": "npm:^6.7.2"
     "@fortawesome/pro-solid-svg-icons": "npm:^6.7.2"
     "@fortawesome/react-fontawesome": "npm:^0.2.6"
@@ -4381,6 +4391,7 @@ __metadata:
   peerDependencies:
     "@fortawesome/fontawesome-svg-core": ^6.5.1
     "@fortawesome/free-brands-svg-icons": ^6.5.1
+    "@fortawesome/pro-light-svg-icons": ^6.5.1
     "@fortawesome/pro-regular-svg-icons": ^6.5.1
     "@fortawesome/pro-solid-svg-icons": ^6.5.1
     "@fortawesome/react-fontawesome": ^0.2.0
