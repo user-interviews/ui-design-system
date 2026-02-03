@@ -7,7 +7,9 @@ import DateTimePicker, { DateTimePickerProps } from './DateTimePicker';
 const PLACEHOLDER = 'YYYY-MM-DD';
 
 const VALID_DATE = '1999-12-31';
+const VALID_DATE_CUSTOM_FORMAT = '12/31/1999';
 const INVALID_DATE = '99999';
+const VALID_TIME = '02:00 PM';
 
 describe('DateTimePicker', () => {
   function Setup(overrides: DateTimePickerProps) {
@@ -29,6 +31,35 @@ describe('DateTimePicker', () => {
         await renderAndFlush(<Setup date={VALID_DATE} />);
 
         expect(screen.getByDisplayValue(VALID_DATE)).toBeInTheDocument();
+      });
+
+      it('parses custom dateFormat', async () => {
+        await renderAndFlush(
+          <Setup
+            date={VALID_DATE_CUSTOM_FORMAT}
+            dateFormat="MM/dd/yyyy"
+          />
+        );
+
+        expect(
+          screen.getByDisplayValue(VALID_DATE_CUSTOM_FORMAT)
+        ).toBeInTheDocument();
+      });
+    });
+
+    describe('when passed date and time with showTimeSelect', () => {
+      it('sets input value with date and time', async () => {
+        await renderAndFlush(
+          <Setup
+            date={VALID_DATE}
+            showTimeSelect
+            time={VALID_TIME}
+          />
+        );
+
+        expect(
+          screen.getByDisplayValue(`${VALID_DATE} ${VALID_TIME}`)
+        ).toBeInTheDocument();
       });
     });
   });
@@ -64,6 +95,38 @@ describe('DateTimePicker', () => {
       });
     });
 
+    describe('when showTimeSelect is true', () => {
+      it('updates date and time when user selects from calendar', async () => {
+        await renderAndFlush(
+          <Setup
+            date={VALID_DATE}
+            showTimeSelect
+            time={VALID_TIME}
+          />
+        );
+
+        const input = screen.getByDisplayValue(`${VALID_DATE} ${VALID_TIME}`);
+        const user = userEvent.setup();
+        await user.click(input);
+
+        const popper = document.body.querySelector('.react-datepicker-popper');
+        expect(popper).toBeInTheDocument();
+
+        const firstAvailableDay = popper?.querySelector(
+          '.react-datepicker__day:not(.react-datepicker__day--outside-month)'
+        );
+        if (firstAvailableDay) {
+          await user.click(firstAvailableDay as HTMLElement);
+        }
+
+        await waitFor(() => {
+          const inputEl = input as HTMLInputElement;
+          expect(inputEl.value).toBeTruthy();
+          expect(inputEl.value).toMatch(/\d{4}-\d{2}-\d{2} \d{2}:\d{2} [AP]M/);
+        });
+      });
+    });
+
     describe('when isWithinModal is true', () => {
       it('renders the datepicker popper in a portal', async () => {
         await renderAndFlush(<Setup date={VALID_DATE} isWithinModal />);
@@ -76,6 +139,40 @@ describe('DateTimePicker', () => {
           document.body.querySelector('.react-datepicker-popper')
         ).toBeInTheDocument();
       });
+    });
+
+    describe('onCalendarClose', () => {
+      it('calls onChangeDate with parsed date when calendar closes with valid date', async () => {
+        const onChangeDate = jest.fn();
+        await renderAndFlush(
+          <Setup date={VALID_DATE} onChangeDate={onChangeDate} />
+        );
+
+        const input = screen.getByDisplayValue(VALID_DATE);
+        const user = userEvent.setup();
+        await user.click(input);
+        await user.keyboard('{Escape}');
+
+        await waitFor(() => {
+          expect(onChangeDate).toHaveBeenCalledWith({
+            startDate: VALID_DATE,
+            startTime: '',
+          });
+        });
+      });
+
+    });
+
+    describe('showPickerEnforcedInput', () => {
+      it('renders PickerEnforcedInput with valid date', async () => {
+        await renderAndFlush(
+          <Setup date={VALID_DATE} showPickerEnforcedInput />
+        );
+
+        const input = screen.getByDisplayValue('12/31/1999');
+        expect(input).toBeInTheDocument();
+      });
+
     });
 
     describe('isClearable prop', () => {
