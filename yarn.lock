@@ -3203,6 +3203,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@standard-schema/spec@npm:^1.0.0":
+  version: 1.1.0
+  resolution: "@standard-schema/spec@npm:1.1.0"
+  checksum: 10c0/d90f55acde4b2deb983529c87e8025fa693de1a5e8b49ecc6eb84d1fd96328add0e03d7d551442156c7432fd78165b2c26ff561b970a9a881f046abb78d6a526
+  languageName: node
+  linkType: hard
+
 "@storybook/addon-a11y@npm:9.1.17":
   version: 9.1.17
   resolution: "@storybook/addon-a11y@npm:9.1.17"
@@ -3256,6 +3263,22 @@ __metadata:
     react:
       optional: true
   checksum: 10c0/e0e38015127cbc84d5edecec1081bd84c8cb257f6139d1416d5e8ff103617df23c9f367e99a471bb72ef1e6858e138202813c1fdda6f32ab0be3c44e905dc8a0
+  languageName: node
+  linkType: hard
+
+"@storybook/addon-mcp@npm:0.2.2":
+  version: 0.2.2
+  resolution: "@storybook/addon-mcp@npm:0.2.2"
+  dependencies:
+    "@storybook/mcp": "npm:0.2.1"
+    "@tmcp/adapter-valibot": "npm:^0.1.4"
+    "@tmcp/transport-http": "npm:^0.8.0"
+    picoquery: "npm:^2.5.0"
+    tmcp: "npm:^1.16.0"
+    valibot: "npm:1.2.0"
+  peerDependencies:
+    storybook: ^9.1.16 || ^10.0.0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0
+  checksum: 10c0/b805d9a8244a383344862b9685c0a9b47447f59b24c9ddd3e91d9e83383a48c34e7d3bdfb457c9f90efd19eb62c16dd22c93c017555aa833f2d37afcca6aaf09
   languageName: node
   linkType: hard
 
@@ -3343,6 +3366,18 @@ __metadata:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
     react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0-beta
   checksum: 10c0/bbec9201a78a730195f9cf377b15856dc414a54d04e30d16c379d062425cc617bfd0d6586ba1716012cfbdab461f0c9693a6a52920f9bd09c7b4291fb116f59c
+  languageName: node
+  linkType: hard
+
+"@storybook/mcp@npm:0.2.1":
+  version: 0.2.1
+  resolution: "@storybook/mcp@npm:0.2.1"
+  dependencies:
+    "@tmcp/adapter-valibot": "npm:^0.1.4"
+    "@tmcp/transport-http": "npm:^0.8.0"
+    tmcp: "npm:^1.16.0"
+    valibot: "npm:1.2.0"
+  checksum: 10c0/d754e6936cd538da55d269403e785ad0d25d4f2558ad0a84d831552728f1e71c4ee400e8a1457c5ffb5c9dd37609498413a1660ecd3849f4098eba7eb3815273
   languageName: node
   linkType: hard
 
@@ -3712,6 +3747,45 @@ __metadata:
     "@tiptap/core": ^2.7.0
     "@tiptap/pm": ^2.7.0
   checksum: 10c0/fda4d5f4177e5190d713d0cef670a79b28e8ae4ccfb5ce8c0789f7d1ade5565d44728d2dfcd0e9e5e72a29511f86dcac25c14fa8f6d01e8eb1343b84b7b82279
+  languageName: node
+  linkType: hard
+
+"@tmcp/adapter-valibot@npm:^0.1.4":
+  version: 0.1.5
+  resolution: "@tmcp/adapter-valibot@npm:0.1.5"
+  dependencies:
+    "@standard-schema/spec": "npm:^1.0.0"
+    "@valibot/to-json-schema": "npm:^1.3.0"
+    valibot: "npm:^1.1.0"
+  peerDependencies:
+    tmcp: ^1.17.0
+    valibot: ^1.1.0
+  checksum: 10c0/176be80a74285f986ba8900116bf1ec2b97d249177b48127940b06bd08c70965a2e50d0aaa3785d4bdadd70f8e3f341fd881ce24c317a9d890cdb24ebf059399
+  languageName: node
+  linkType: hard
+
+"@tmcp/session-manager@npm:^0.2.1":
+  version: 0.2.1
+  resolution: "@tmcp/session-manager@npm:0.2.1"
+  peerDependencies:
+    tmcp: ^1.16.3
+  checksum: 10c0/dadcfe6cf0e2be2536f0969aab3782355f2ff705d0a782ee9017e644b31c7eb57a593954676c252373a7d042ec6cd026e27db27460085b1c1036f7dcb1b37af5
+  languageName: node
+  linkType: hard
+
+"@tmcp/transport-http@npm:^0.8.0":
+  version: 0.8.4
+  resolution: "@tmcp/transport-http@npm:0.8.4"
+  dependencies:
+    "@tmcp/session-manager": "npm:^0.2.1"
+    esm-env: "npm:^1.2.2"
+  peerDependencies:
+    "@tmcp/auth": ^0.3.3 || ^0.4.0
+    tmcp: ^1.18.0
+  peerDependenciesMeta:
+    "@tmcp/auth":
+      optional: true
+  checksum: 10c0/799ee9fb7e36a580dc6552b36189743efe8e621eeacdf698d184d644d1568ed41d06ff8cc197f4b0bb8a69c6bbee0e9dc7e7765a366597d2eabbf00ce9c9e01f
   languageName: node
   linkType: hard
 
@@ -4292,6 +4366,7 @@ __metadata:
     "@storybook/addon-docs": "npm:9.1.17"
     "@storybook/addon-jest": "npm:^9.1.12"
     "@storybook/addon-links": "npm:9.1.17"
+    "@storybook/addon-mcp": "npm:0.2.2"
     "@storybook/addon-styling-webpack": "npm:^2.0.0"
     "@storybook/addon-webpack5-compiler-babel": "npm:^3.0.6"
     "@storybook/react-webpack5": "npm:9.1.17"
@@ -4398,6 +4473,15 @@ __metadata:
     react-tracking: ^9.3
   languageName: unknown
   linkType: soft
+
+"@valibot/to-json-schema@npm:^1.3.0":
+  version: 1.5.0
+  resolution: "@valibot/to-json-schema@npm:1.5.0"
+  peerDependencies:
+    valibot: ^1.2.0
+  checksum: 10c0/d06aa771eda520c0e4b798f080181091e723c991b925947e7565bd5af2a0f1452bd63e491aa2afd9e76c9ae6930f26554af319bd0e7ba421b759558d8161ff91
+  languageName: node
+  linkType: hard
 
 "@vitest/expect@npm:3.2.4":
   version: 3.2.4
@@ -7111,6 +7195,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"esm-env@npm:^1.2.2":
+  version: 1.2.2
+  resolution: "esm-env@npm:1.2.2"
+  checksum: 10c0/3d25c973f2fd69c25ffff29c964399cea573fe10795ecc1d26f6f957ce0483d3254e1cceddb34bf3296a0d7b0f1d53a28992f064ba509dfe6366751e752c4166
+  languageName: node
+  linkType: hard
+
 "espree@npm:^10.0.1, espree@npm:^10.4.0":
   version: 10.4.0
   resolution: "espree@npm:10.4.0"
@@ -9265,6 +9356,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"json-rpc-2.0@npm:^1.7.1":
+  version: 1.7.1
+  resolution: "json-rpc-2.0@npm:1.7.1"
+  checksum: 10c0/260f573fd2f38c04bce63076b9293ed0c222c10bff12dd14fed8b926555af6d390c4bcc888b01dd42f28a8759056b8e4420b9f65f09e64d12d042a541fd88695
+  languageName: node
+  linkType: hard
+
 "json-schema-traverse@npm:^0.4.1":
   version: 0.4.1
   resolution: "json-schema-traverse@npm:0.4.1"
@@ -10487,6 +10585,13 @@ __metadata:
   version: 4.0.3
   resolution: "picomatch@npm:4.0.3"
   checksum: 10c0/9582c951e95eebee5434f59e426cddd228a7b97a0161a375aed4be244bd3fe8e3a31b846808ea14ef2c8a2527a6eeab7b3946a67d5979e81694654f939473ae2
+  languageName: node
+  linkType: hard
+
+"picoquery@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "picoquery@npm:2.5.0"
+  checksum: 10c0/ac22a7622ecf6f6c0d2657b04d2ca346f814ff4d343827e6ca53d2d5cecfebee18d80b1290b916d11db6f62866bec26e92bb0a0d7939bd15971e60320db8d265
   languageName: node
   linkType: hard
 
@@ -12161,6 +12266,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"sqids@npm:^0.3.0":
+  version: 0.3.0
+  resolution: "sqids@npm:0.3.0"
+  checksum: 10c0/2ce528b83f2780166b2e8025ece1e8262ee217ed51ab5656959cb6e1a885eee5b6ea86627ce6b0321d7b0eeb34a2ed455476c01c44e6e55e18cee52b3e1b9eb3
+  languageName: node
+  linkType: hard
+
 "ssri@npm:^13.0.0":
   version: 13.0.0
   resolution: "ssri@npm:13.0.0"
@@ -12749,6 +12861,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tmcp@npm:^1.16.0":
+  version: 1.19.2
+  resolution: "tmcp@npm:1.19.2"
+  dependencies:
+    "@standard-schema/spec": "npm:^1.0.0"
+    json-rpc-2.0: "npm:^1.7.1"
+    sqids: "npm:^0.3.0"
+    uri-template-matcher: "npm:^1.1.1"
+    valibot: "npm:^1.1.0"
+  checksum: 10c0/ff9a381e4b905c6be23735f921e26319b7e8918dbc39f1baeb1941c5e7c0a278436af760aae7e22a58f31cd152be6fc33c031e282ab6527cedf91c6495a5d9d3
+  languageName: node
+  linkType: hard
+
 "tmpl@npm:1.0.5":
   version: 1.0.5
   resolution: "tmpl@npm:1.0.5"
@@ -13165,6 +13290,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"uri-template-matcher@npm:^1.1.1":
+  version: 1.1.2
+  resolution: "uri-template-matcher@npm:1.1.2"
+  checksum: 10c0/27bf1880a9110b85aff4d09157869b3b37c4355f1c8212e17f698394116fc79da1896c2f03f795eb5bee0007434b448c4f3002ade257e604a1176c14b8157d12
+  languageName: node
+  linkType: hard
+
 "url-parse@npm:^1.5.3":
   version: 1.5.10
   resolution: "url-parse@npm:1.5.10"
@@ -13227,6 +13359,18 @@ __metadata:
     "@types/istanbul-lib-coverage": "npm:^2.0.1"
     convert-source-map: "npm:^2.0.0"
   checksum: 10c0/e691ba4dd0dea4a884e52c37dbda30cce6f9eeafe9b26721e449429c6bb0f4b6d1e33fabe7711d0f67f7a34c3bfd56c873f7375bba0b1534e6a2843ce99550e5
+  languageName: node
+  linkType: hard
+
+"valibot@npm:1.2.0, valibot@npm:^1.1.0":
+  version: 1.2.0
+  resolution: "valibot@npm:1.2.0"
+  peerDependencies:
+    typescript: ">=5"
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10c0/e6897ed2008fc900380a6ce39b62bc5fca45fd5e070f70571c6380ede3ba026d0b7016230215d87f7f3d672a28dbde5a0522d39830b493fdc3dccd1a59ef4ee6
   languageName: node
   linkType: hard
 
