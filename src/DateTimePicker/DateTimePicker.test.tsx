@@ -12,6 +12,18 @@ const INVALID_DATE = '99999';
 const VALID_TIME = '02:00 PM';
 
 describe('DateTimePicker', () => {
+  // react-datepicker 9.x uses ResizeObserver in its Time component (for calendar height).
+  // jsdom does not implement ResizeObserver, so we mock it here for these tests.
+  beforeAll(() => {
+    if (typeof globalThis.ResizeObserver === 'undefined') {
+      globalThis.ResizeObserver = class ResizeObserver {
+        observe() {}
+        unobserve() {}
+        disconnect() {}
+      };
+    }
+  });
+
   function Setup(overrides: DateTimePickerProps) {
     return <DateTimePicker {...overrides} />;
   }
