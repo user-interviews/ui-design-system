@@ -171,10 +171,6 @@
     "lib",
     "scss"
   ],
-  "engines": {
-    "node": "^ 22.14",
-    "yarn": "^ 4.6"
-  },
   "main": "lib/index",
   "types": "lib/index",
   "publishConfig": {
@@ -195,6 +191,10 @@
   "readme": "https://github.com/user-interviews/ui-design-system#readme",
   "homepage": "https://github.com/user-interviews/ui-design-system",
   "_id": "@user-interviews/ui-design-system@3.0",
+  "engines": {
+    "node": "^ 24.13",
+    "yarn": "^ 4.12"
+  },
   "volta": {
     "node": "24.13.0",
     "yarn": "4.12.0"
