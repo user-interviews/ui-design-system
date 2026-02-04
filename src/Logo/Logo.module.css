@@ -1,0 +1,9 @@
+.logoContainer {
+  margin: var(--synth-spacing-9) 0;
+}
+
+.logo {
+  max-height: 90px;
+  max-width: 240px;
+  margin-bottom: var(--synth-spacing-1);
+}

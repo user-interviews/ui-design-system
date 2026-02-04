@@ -45,6 +45,7 @@ import InputLabel from './InputLabel';
 import InputLegend from './InputLegend';
 import { LoadingSkeleton } from './LoadingSkeleton';
 import LoadingOverlay from './LoadingOverlay';
+import { Logo } from './Logo';
 import Main from './Main';
 import {
   Modal,
@@ -155,6 +156,7 @@ export {
   InputLegend,
   LoadingOverlay,
   LoadingSkeleton,
+  Logo,
   Main,
   MessageTypes,
   Modal,
