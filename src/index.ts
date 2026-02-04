@@ -8,6 +8,7 @@ import { Alert, MessageTypes } from './Alert';
 import Button, { ButtonSizes, ButtonVariants } from './Button';
 import Avatar from './Avatar';
 import Card, { CardSizes } from './Card';
+import { CardButton } from './CardButton';
 import { CardStack } from './CardStack';
 import CheckboxButton, { CHECKED_STATES } from './CheckboxButton';
 import CheckboxButtonGroup from './CheckboxButtonGroup';
@@ -118,6 +119,7 @@ export {
   ButtonVariants,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
+  CardButton,
   CardSizes,
   CardStack,
   CheckboxButton,
