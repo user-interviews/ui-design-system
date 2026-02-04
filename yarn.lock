@@ -4356,7 +4356,7 @@ __metadata:
     react-currency-input-field: "npm:^3.10.0"
     react-datepicker: "npm:^7.6.0"
     react-dom: "npm:^18.3.1"
-    react-hook-form: "npm:^7.54.2"
+    react-hook-form: "npm:^7.71.1"
     react-loading-skeleton: "npm:^3.5.0"
     react-modal: "npm:^3.16.3"
     react-popper: "npm:^2.3.0"
@@ -11190,12 +11190,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-hook-form@npm:^7.54.2":
-  version: 7.54.2
-  resolution: "react-hook-form@npm:7.54.2"
+"react-hook-form@npm:^7.71.1":
+  version: 7.71.1
+  resolution: "react-hook-form@npm:7.71.1"
   peerDependencies:
     react: ^16.8.0 || ^17 || ^18 || ^19
-  checksum: 10c0/6eebead2900e3d369a989e7a20429f390dc75b3897142aa3107f1f6dabb9ae64fed201ea98cdcd8676e40466c97748aeb0c0d83264f5bd3a84dbc0b8e4863415
+  checksum: 10c0/6c8fc0fa740d299481de3ed32bae98f7c6331240822c602363e5cd221746d875dc3c5e65d0039902b7f7a44dc9ac9a4932e00e9ad9af3051bed1987858ce78c7
   languageName: node
   linkType: hard
 
