@@ -12,7 +12,7 @@ export type InputLabelProps = {
   labelHelperText?: React.ReactNode;
   labelHtmlFor?: string;
   required?: boolean;
-  text: string;
+  text: React.ReactNode;
   tooltipText?: React.ReactNode;
 } & LabelProps;
 

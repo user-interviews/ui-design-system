@@ -11,11 +11,7 @@ const INVALID_DATE = '99999';
 
 describe('DateTimePicker', () => {
   function Setup(overrides: DateTimePickerProps) {
-    return (
-      <DateTimePicker
-        {...overrides}
-      />
-    );
+    return <DateTimePicker {...overrides} />;
   }
 
   describe('when initializing', () => {
@@ -35,7 +31,8 @@ describe('DateTimePicker', () => {
           render(<Setup />);
 
           const input = screen.getByPlaceholderText(PLACEHOLDER);
-          userEvent.type(input, `${VALID_DATE}{enter}`);
+          const user = userEvent.setup();
+          await user.type(input, `${VALID_DATE}{enter}`);
 
           await waitFor(() => {
             expect(input).toHaveValue(VALID_DATE);
@@ -48,10 +45,63 @@ describe('DateTimePicker', () => {
           render(<Setup />);
 
           const input = screen.getByPlaceholderText(PLACEHOLDER);
-          userEvent.type(input, `${INVALID_DATE}{enter}`);
+          const user = userEvent.setup();
+          await user.type(input, `${INVALID_DATE}{enter}`);
 
           await waitFor(() => {
             expect(input).toHaveValue('');
+          });
+        });
+      });
+    });
+
+    describe('when isWithinModal is true', () => {
+      it('renders the datepicker popper in a portal', async () => {
+        render(<Setup date={VALID_DATE} isWithinModal />);
+
+        const input = screen.getByDisplayValue(VALID_DATE);
+        const user = userEvent.setup();
+        await user.click(input);
+
+        expect(
+          document.body.querySelector('.react-datepicker-popper')
+        ).toBeInTheDocument();
+      });
+    });
+
+    describe('isClearable prop', () => {
+      describe('when isClearable is false (default)', () => {
+        it('does not render clear button', () => {
+          render(<Setup date={VALID_DATE} />);
+
+          expect(
+            screen.queryByRole('button', { name: /close/i })
+          ).not.toBeInTheDocument();
+        });
+      });
+
+      describe('when isClearable is true', () => {
+        it('renders clear button when date is selected', () => {
+          render(<Setup date={VALID_DATE} isClearable />);
+
+          expect(
+            screen.getByRole('button', { name: /close/i })
+          ).toBeInTheDocument();
+        });
+
+        it('calls onChangeDate with null values when cleared', async () => {
+          const user = userEvent.setup();
+          const onChangeDate = jest.fn();
+          render(<Setup date={VALID_DATE} isClearable onChangeDate={onChangeDate} />);
+
+          const clearButton = screen.getByRole('button', { name: /close/i });
+          await user.click(clearButton);
+
+          await waitFor(() => {
+            expect(onChangeDate).toHaveBeenCalledWith({
+              startDate: null,
+              startTime: null,
+            });
           });
         });
       });

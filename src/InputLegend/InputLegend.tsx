@@ -14,7 +14,7 @@ export type InputLegendProps = {
   className?: string;
   labelHelperText?: React.ReactNode;
   required?: boolean;
-  text: string;
+  text: React.ReactNode;
   tooltipText?: React.ReactNode;
 } & LegendProps;
 
