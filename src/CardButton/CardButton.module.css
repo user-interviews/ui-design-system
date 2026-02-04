@@ -1,6 +1,6 @@
 .CardButton {
   background: var(--ux-white);
-  border: 1px solid #d1d1d1;
+  border: 1px solid var(--ux-gray-400);
   border-radius: var(--ux-border-radius);
   color: inherit;
   padding: 2.5rem;
@@ -9,7 +9,7 @@
 }
 
 .CardButton:hover {
-  background: #fbfbfb;
+  background: var(--ux-gray-100);
   color: inherit;
   text-decoration: none;
 }
@@ -26,25 +26,25 @@
   text-align: right;
 }
 
-@media (min-width: 576px) {
+@media (width >= 576px) {
   .xs {
     max-width: var(--card-width-xs);
   }
 }
 
-@media (min-width: 576px) {
+@media (width >= 576px) {
   .sm {
     max-width: var(--card-width-sm);
   }
 }
 
-@media (min-width: 576px) {
+@media (width >= 576px) {
   .md {
     max-width: var(--card-width-md);
   }
 }
 
-@media (min-width: 576px) {
+@media (width >= 576px) {
   .lg {
     max-width: var(--card-width-lg);
   }
