@@ -8,6 +8,7 @@ import { Alert, MessageTypes } from './Alert';
 import Button, { ButtonSizes, ButtonVariants } from './Button';
 import Avatar from './Avatar';
 import Card, { CardSizes } from './Card';
+import { CardButton } from './CardButton';
 import { CardStack } from './CardStack';
 import CheckboxButton, { CHECKED_STATES } from './CheckboxButton';
 import CheckboxButtonGroup from './CheckboxButtonGroup';
@@ -45,6 +46,7 @@ import InputLabel from './InputLabel';
 import InputLegend from './InputLegend';
 import { LoadingSkeleton } from './LoadingSkeleton';
 import LoadingOverlay from './LoadingOverlay';
+import { Logo } from './Logo';
 import Main from './Main';
 import {
   Modal,
@@ -117,6 +119,7 @@ export {
   ButtonVariants,
   BUTTON_GROUP_ORIENTATIONS,
   Card,
+  CardButton,
   CardSizes,
   CardStack,
   CheckboxButton,
@@ -155,6 +158,7 @@ export {
   InputLegend,
   LoadingOverlay,
   LoadingSkeleton,
+  Logo,
   Main,
   MessageTypes,
   Modal,

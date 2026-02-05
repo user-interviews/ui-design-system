@@ -13,6 +13,15 @@ import EmptyState from './EmptyState';
 const meta: Meta<typeof EmptyState> = {
   component: EmptyState,
   title: 'Components/EmptyState',
+  tags: ['autodocs'],
+  parameters: {
+    docs: {
+      description: {
+        component:
+          'EmptyState highlights missing content and guides next steps with clear messaging and optional actions.',
+      },
+    },
+  },
 };
 
 export default meta;

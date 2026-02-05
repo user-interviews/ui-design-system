@@ -1,0 +1,5 @@
+.alignmentFrame {
+  width: 360px;
+  border: 1px dashed var(--synth-gray-400);
+  padding: var(--synth-spacing-4);
+}
