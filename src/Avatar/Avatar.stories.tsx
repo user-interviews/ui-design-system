@@ -1,121 +1,92 @@
 import React from 'react';
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
 import Avatar from '.';
-import mdx from './Avatar.mdx';
 
-export default {
+const colorIds: Array<number | undefined> = [undefined, 1, 2, 3, 4, 5, 6];
+
+const renderColorVariants = (args: React.ComponentProps<typeof Avatar>) => (
+  <div>
+    {colorIds.map((colorId) => (
+      <Avatar
+        key={`color-${colorId ?? 'default'}`}
+        {...args}
+        colorId={colorId}
+      />
+    ))}
+  </div>
+);
+
+const meta: Meta<typeof Avatar> = {
   title: 'Components/Avatar',
   component: Avatar,
+  tags: ['autodocs'],
   parameters: {
     docs: {
-      page: mdx,
+      description: {
+        component: 'Displays a user\'s initials or profile photo.',
+      },
+    },
+  },
+  argTypes: {
+    colorId: {
+      control: { type: 'number', min: 0, step: 1 },
+    },
+    image: {
+      control: 'text',
+    },
+    initials: {
+      control: 'text',
+    },
+    large: {
+      control: 'boolean',
+    },
+    showAlert: {
+      control: 'boolean',
     },
   },
 };
 
-export function Small() {
-  return (
-    <div>
-      <Avatar
-        initials="RR"
-      />
-      <Avatar
-        colorId={1}
-        initials="RR"
-      />
-      <Avatar
-        colorId={2}
-        initials="RR"
-      />
-      <Avatar
-        colorId={3}
-        initials="RR"
-      />
-      <Avatar
-        colorId={4}
-        initials="RR"
-      />
-      <Avatar
-        colorId={5}
-        initials="RR"
-      />
-      <Avatar
-        colorId={6}
-        initials="RR"
-      />
-    </div>
-  );
-}
+export default meta;
+type Story = StoryObj<typeof Avatar>;
 
-export function Large() {
-  return (
-    <div>
-      <Avatar
-        initials="RR"
-        large
-      />
-      <Avatar
-        colorId={1}
-        initials="RR"
-        large
-      />
-      <Avatar
-        colorId={2}
-        initials="RR"
-        large
-      />
-      <Avatar
-        colorId={3}
-        initials="RR"
-        large
-      />
-      <Avatar
-        colorId={4}
-        initials="RR"
-        large
-      />
-      <Avatar
-        colorId={5}
-        initials="RR"
-        large
-      />
-      <Avatar
-        colorId={6}
-        initials="RR"
-        large
-      />
-    </div>
-  );
-}
+export const Small: Story = {
+  args: {
+    initials: 'RR',
+  },
+  render: (args) => renderColorVariants(args),
+};
 
-export function WithAlert() {
-  return (
-    <div>
-      <Avatar
-        initials="RR"
-        large
-        showAlert
-      />
-      <Avatar
-        initials="RR"
-        showAlert
-      />
-    </div>
-  );
-}
+export const Large: Story = {
+  args: {
+    initials: 'RR',
+    large: true,
+  },
+  render: (args) => renderColorVariants(args),
+};
 
-export function WithImage() {
-  return (
+export const WithAlert: Story = {
+  args: {
+    initials: 'RR',
+    showAlert: true,
+  },
+  render: (args) => (
     <div>
-      <Avatar
-        image="https://avatars.dicebear.com/api/avataaars/1234.svg"
-        initials="RR"
-        large
-      />
-      <Avatar
-        image="https://avatars.dicebear.com/api/avataaars/1234.svg"
-        initials="RR"
-      />
+      <Avatar {...args} large />
+      <Avatar {...args} />
     </div>
-  );
-}
+  ),
+};
+
+export const WithImage: Story = {
+  args: {
+    image: 'https://cdn.jsdelivr.net/gh/alohe/avatars/png/vibrent_6.png',
+    initials: 'RR',
+  },
+  render: (args) => (
+    <div>
+      <Avatar {...args} large />
+      <Avatar {...args} />
+    </div>
+  ),
+};
