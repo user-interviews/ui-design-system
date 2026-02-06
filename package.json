@@ -38,7 +38,7 @@
     "build-ts": "tsc",
     "chromatic": "npx chromatic",
     "lint": "yarn lint:js && yarn lint:css --quiet",
-    "lint:js": "tsc -p tsconfig.check.json && eslint --quiet",
+    "lint:js": "tsc --noEmit && eslint --quiet",
     "lint:css": "stylelint '**/*.{css,scss}'",
     "lint:css:fix": "stylelint '**/*.{css,scss}' --fix",
     "prepublishOnly": "yarn build",
