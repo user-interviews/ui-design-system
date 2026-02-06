@@ -4454,7 +4454,7 @@ __metadata:
     react: "npm:^18.3.1"
     react-bootstrap: "npm:^2.10.10"
     react-copy-to-clipboard: "npm:^5.1.0"
-    react-currency-input-field: "npm:^3.10.0"
+    react-currency-input-field: "npm:^4.0.0"
     react-datepicker: "npm:^9.1.0"
     react-dom: "npm:^18.3.1"
     react-hook-form: "npm:^7.71.1"
@@ -11234,12 +11234,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-currency-input-field@npm:^3.10.0":
-  version: 3.10.0
-  resolution: "react-currency-input-field@npm:3.10.0"
+"react-currency-input-field@npm:^4.0.0":
+  version: 4.0.3
+  resolution: "react-currency-input-field@npm:4.0.3"
   peerDependencies:
     react: ^16.9.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
-  checksum: 10c0/251ccbacb18202e4236bab1b58b414fa12983601498ffc7c9dda8dfb92e0729d6eca73e7f00e3270165a2922ba2ac769446418d86e90f744c39caec5899751f5
+  checksum: 10c0/e291fe44b4eeba5ed620c25a1993da7b04d445e202d5eab9bd6ca2437d083be7a6349dbe58617dd593c6210a0a0e9856d1c2f9861f03c986a5b7716018702a8c
   languageName: node
   linkType: hard
 
