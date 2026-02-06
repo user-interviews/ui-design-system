@@ -1,3 +1,6 @@
+// This file has been automatically migrated to valid ESM format by Storybook.
+import { createRequire } from "node:module";
+const require = createRequire(import.meta.url);
 const config = {
   addons: [{
     name: '@storybook/addon-docs',
@@ -57,6 +60,11 @@ const config = {
   },
   typescript: {
     check: true,
+    checkOptions: {
+      typescript: {
+        configFile: '.storybook/tsconfig.json',
+      },
+    },
   },
 };
 
