@@ -101,7 +101,7 @@ function DateTimePicker({
   // converts string values into a date object
   const dateFromString = useCallback(() => {
     if (typeof startDate === 'string' && startDate !== '') {
-      if (showTimeSelect && startTime !== undefined) {
+      if (showTimeSelect && startTime !== undefined && startTime !== '') {
         return parse(`${startDate} ${startTime}`, getDateFormat(), new Date());
       }
       return parsedDateFromString();
@@ -131,6 +131,10 @@ function DateTimePicker({
       setDefaultLocale(localeLanguage);
     }
   }, [date]);
+
+  useEffect(() => {
+    setStartTime(time);
+  }, [time]);
 
   const handleOnCalendarClose = () => {
     const updated = dateFromString();
