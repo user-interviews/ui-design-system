@@ -1,43 +1,44 @@
-import React, { Component } from 'react';
-import Button from '../Button';
-import './ModalFooter.scss';
+import React from "react";
+import Button from "../Button";
+import "./ModalFooter.scss";
+import classNames from "classnames";
 
 type ModalFooterProps = {
   children?: React.ReactNode;
   closingIsDisabled?: boolean;
   dismissButtonText?: string;
+  isSticky?: boolean;
   onRequestClose?: (...args: unknown[]) => unknown;
 };
 
-export default class ModalFooter extends Component<ModalFooterProps> {
-  // Don’t pass event to props callback; the callback is not always called from
-  // event listeners:
+// Don’t pass event to props callback; the callback is not always called from
+// event listeners:
+export default function ModalFooter({
+  children,
+  closingIsDisabled,
+  dismissButtonText,
+  isSticky = false,
+  onRequestClose,
+}: ModalFooterProps) {
+  const handleCloseClick = () => onRequestClose && onRequestClose();
 
-  handleCloseClick = () => this.props.onRequestClose && this.props.onRequestClose();
+  const btnText = dismissButtonText ?? "Cancel";
 
-  // eslint-disable-next-line react/static-property-placement
-  static defaultProps: {
-    children: undefined;
-    closingIsDisabled: boolean;
-    dismissButtonText: string;
-    onRequestClose: undefined;
-  };
-
-  render() {
-    return (
-      <div className="ModalFooter">
-        {this.props.onRequestClose && (
-          <Button
-            disabled={this.props.closingIsDisabled}
-            type="button"
-            variant="transparent"
-            onClick={this.handleCloseClick}
-          >
-            {this.props.dismissButtonText || 'Cancel'}
-          </Button>
-        )}
-        {this.props.children}
-      </div>
-    );
-  }
+  return (
+    <div
+      className={classNames("ModalFooter", { ModalFooter__sticky: isSticky })}
+    >
+      {onRequestClose && (
+        <Button
+          disabled={closingIsDisabled}
+          type="button"
+          variant="transparent"
+          onClick={handleCloseClick}
+        >
+          {btnText}
+        </Button>
+      )}
+      {children}
+    </div>
+  );
 }

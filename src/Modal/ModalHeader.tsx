@@ -1,9 +1,9 @@
-import React, { Component, Fragment } from 'react';
-import classNames from 'classnames';
-import './ModalHeader.scss';
+import React from "react";
+import classNames from "classnames";
+import "./ModalHeader.scss";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExclamationTriangle } from '../font_awesome/solid';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faExclamationTriangle } from "../font_awesome/solid";
 
 type ModalHeaderProps = {
   children?: React.ReactNode;
@@ -13,50 +13,59 @@ type ModalHeaderProps = {
   titleClass?: string;
   titleId?: string;
   variant?: string;
+  isSticky?: boolean;
   onRequestClose?: (...args: unknown[]) => unknown;
 };
 
-export default class ModalHeader extends Component<ModalHeaderProps> {
-  // Don’t pass event to props callback; the callback is not always called from
-  // event listeners:
+// Don’t pass event to props callback; the callback is not always called from
+// event listeners:
+export default function ModalHeader({
+  children,
+  closingIsDisabled,
+  subtitle,
+  title,
+  titleClass,
+  titleId,
+  variant,
+  isSticky = false,
+  onRequestClose,
+}: ModalHeaderProps) {
+  const handleCloseClick = () => onRequestClose && onRequestClose();
+  const titleClassName = classNames("ModalHeader__title", titleClass);
 
-  handleCloseClick = () => this.props.onRequestClose && this.props.onRequestClose();
-
-  get titleClassName() {
-    return classNames('ModalHeader__title', this.props.titleClass);
-  }
-
-  render() {
-    return (
-      <header className="ModalHeader">
-        <div className="ModalHeader__heading">
-          {this.props.children ?
-            this.props.children : (
-              <Fragment>
-                <h1 className={this.titleClassName} id={this.props.titleId}>
-                  {this.props.variant && (
-                    <FontAwesomeIcon className={this.props.variant} icon={faExclamationTriangle} />
-                  )}
-                  {this.props.title}
-                </h1>
-                {this.props.subtitle && (
-                  <h2 className="ModalHeader__subtitle">
-                    {this.props.subtitle}
-                  </h2>
-                )}
-              </Fragment>
-            )}
-        </div>
-        {this.props.onRequestClose && (
-          <button
-            aria-label="Close"
-            className="btn btn-sm btn-close"
-            disabled={this.props.closingIsDisabled}
-            type="button"
-            onClick={this.handleCloseClick}
-          />
+  return (
+    <header
+      className={classNames("ModalHeader", {
+        ModalHeader__sticky: isSticky,
+      })}
+    >
+      <div className="ModalHeader__heading">
+        {children ? (
+          children
+        ) : (
+          <>
+            <h1 className={titleClassName} id={titleId}>
+              {variant && (
+                <FontAwesomeIcon
+                  className={variant}
+                  icon={faExclamationTriangle}
+                />
+              )}
+              {title}
+            </h1>
+            {subtitle && <h2 className="ModalHeader__subtitle">{subtitle}</h2>}
+          </>
         )}
-      </header>
-    );
-  }
+      </div>
+      {onRequestClose && (
+        <button
+          aria-label="Close"
+          className="btn btn-sm btn-close"
+          disabled={closingIsDisabled}
+          type="button"
+          onClick={handleCloseClick}
+        />
+      )}
+    </header>
+  );
 }

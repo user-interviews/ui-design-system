@@ -1,17 +1,22 @@
-@import '../../scss/theme';
+@import "../../scss/theme";
 
 .ModalFooter {
-  align-items: center;
-  background-color: var(--ux-gray-100);
-  display: flex;
-  justify-content: flex-end;
-  padding: var(--synth-spacing-4);
+    align-items: center;
+    background-color: var(--ux-gray-100);
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--synth-spacing-4);
 
-  > :not(:first-child) {
-    margin-left: var(--synth-spacing-1);
-  }
+    &__sticky {
+        position: sticky;
+        bottom: 0;
+    }
 
-  > :not(:last-child) {
-    margin-right: var(--synth-spacing-1);
-  }
+    > :not(:first-child) {
+        margin-left: var(--synth-spacing-1);
+    }
+
+    > :not(:last-child) {
+        margin-right: var(--synth-spacing-1);
+    }
 }
