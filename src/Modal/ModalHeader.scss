@@ -1,41 +1,48 @@
-@import '../../scss/theme';
+@import "../../scss/theme";
 
 .ModalHeader {
-  align-items: baseline;
-  display: flex;
-  justify-content: space-between;
-  padding: var(--synth-spacing-6);
-  padding-bottom: var(--synth-spacing-2);
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    padding: var(--synth-spacing-6);
+    padding-bottom: var(--synth-spacing-2);
+    background-color: var(--synth-white);
 
-  &__title {
-    font-family: var(--synth-font-family);
-
-    @include synth-font-type-60--bold;
-
-    margin-bottom: 0;
-
-    &--has-icon {
-      display: flex;
-      align-items: center;
+    &__sticky {
+        position: sticky;
+        top: 0;
+        z-index: 1;
     }
 
-    .warning {
-      color: var(--ux-yellow-600);
-      margin-right: var(--synth-spacing-2);
+    &__title {
+        font-family: var(--synth-font-family);
+
+        @include synth-font-type-60--bold;
+
+        margin-bottom: 0;
+
+        &--has-icon {
+            display: flex;
+            align-items: center;
+        }
+
+        .warning {
+            color: var(--ux-yellow-600);
+            margin-right: var(--synth-spacing-2);
+        }
+
+        .danger {
+            color: var(--ux-red-400);
+            margin-right: var(--synth-spacing-2);
+        }
     }
 
-    .danger {
-      color: var(--ux-red-400);
-      margin-right: var(--synth-spacing-2);
+    &__subtitle {
+        font-family: var(--synth-font-family);
+
+        @include synth-font-type-30;
+
+        margin-bottom: 0;
+        margin-top: var(--synth-spacing-2);
     }
-  }
-
-  &__subtitle {
-    font-family: var(--synth-font-family);
-
-    @include synth-font-type-30;
-
-    margin-bottom: 0;
-    margin-top: var(--synth-spacing-2);
-  }
 }
