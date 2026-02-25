@@ -7,6 +7,10 @@ import type {
 import React from 'react';
 
 import classNames from 'classnames';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faSpinnerThird } from '../font_awesome/regular';
 
 import * as styles from './CardButton.module.css';
 
@@ -23,6 +27,7 @@ type BaseCardButtonProps = {
   alignment?: 'left' | 'center' | 'right';
   children: ReactNode;
   className?: string;
+  isLoading?: boolean;
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'full';
   as: 'a' | 'button';
   datatestid?: string;
@@ -46,7 +51,7 @@ function isLinkButton(
 }
 
 export function CardButton(props: CardButtonProps) {
-  const { alignment = 'center', children, className, size, datatestid } = props;
+  const { alignment = 'center', children, className, isLoading, size, datatestid } = props;
   const classes = classNames(
     styles.CardButton,
     className,
@@ -61,6 +66,9 @@ export function CardButton(props: CardButtonProps) {
       [styles.left]: alignment === 'left',
       [styles.center]: alignment === 'center',
       [styles.right]: alignment === 'right',
+    },
+    {
+      [styles.isLoading]: isLoading,
     },
   );
 
@@ -81,9 +89,18 @@ export function CardButton(props: CardButtonProps) {
       aria-disabled={buttonProps.disabled}
       className={classes}
       data-testid={datatestid ?? ''}
+      disabled={buttonProps.disabled || isLoading}
       type={buttonProps.type ?? 'button'}
     >
       {children}
+      {isLoading && (
+        <span className={styles.loadingOverlay}>
+          <FontAwesomeIcon
+            className={styles.spinner}
+            icon={faSpinnerThird as IconDefinition}
+          />
+        </span>
+      )}
     </button>
   );
 }

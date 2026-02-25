@@ -66,3 +66,9 @@ type Story = StoryObj<typeof CardButton>;
 
 export const Default: Story = {};
 
+export const Loading: Story = {
+  args: {
+    as: 'button',
+    isLoading: true,
+  },
+};
