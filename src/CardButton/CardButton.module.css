@@ -9,14 +9,14 @@
 }
 
 .CardButton:hover:not(:disabled) {
-  background: var(--ux-gray-100);
+  background: var(--synth-gray-100);
   color: inherit;
   text-decoration: none;
 }
 
 .CardButton:disabled {
-  background: var(--ux-gray-100);
-  border-color: var(--ux-gray-400);
+  background: var(--synth-gray-100);
+  border-color: var(--synth-gray-400);
   cursor: not-allowed;
 }
 

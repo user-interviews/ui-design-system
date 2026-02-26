@@ -42,16 +42,20 @@ type CardButtonProps =
   } & ButtonProps);
 
 function isLinkButton(
-  props: CardButtonProps,
-): props is BaseCardButtonProps & { as: 'a' } & LinkProps {
-  if (props.as === 'a') {
-    return true;
-  }
-  return false;
+  as: CardButtonProps['as'],
+): as is 'a' {
+  return as === 'a';
 }
 
-export function CardButton(props: CardButtonProps) {
-  const { alignment = 'center', children, className, isLoading, size, datatestid } = props;
+export function CardButton({
+  alignment = 'center',
+  children,
+  className,
+  datatestid,
+  isLoading,
+  size,
+  ...rest
+}: CardButtonProps) {
   const classes = classNames(
     styles.CardButton,
     className,
@@ -72,8 +76,8 @@ export function CardButton(props: CardButtonProps) {
     },
   );
 
-  if (isLinkButton(props)) {
-    const { as: _as, ...linkProps } = props;
+  if (isLinkButton(rest.as)) {
+    const { as: _as, ...linkProps } = rest as BaseCardButtonProps & { as: 'a' } & LinkProps;
     return (
       <a {...linkProps} className={classes} data-testid={datatestid ?? ''}>
         {children}
@@ -81,7 +85,7 @@ export function CardButton(props: CardButtonProps) {
     );
   }
 
-  const { as: _as, ...buttonProps } = props;
+  const { as: _as, ...buttonProps } = rest as BaseCardButtonProps & { as: 'button' } & ButtonProps;
 
   return (
     <button
@@ -94,12 +98,12 @@ export function CardButton(props: CardButtonProps) {
     >
       {children}
       {isLoading && (
-        <span className={styles.loadingOverlay}>
+        <div className={styles.loadingOverlay}>
           <FontAwesomeIcon
             className={styles.spinner}
             icon={faSpinnerThird as IconDefinition}
           />
-        </span>
+        </div>
       )}
     </button>
   );
