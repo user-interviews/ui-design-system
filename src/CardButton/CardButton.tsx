@@ -7,6 +7,10 @@ import type {
 import React from 'react';
 
 import classNames from 'classnames';
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faSpinnerThird } from '../font_awesome/solid';
 
 import * as styles from './CardButton.module.css';
 
@@ -23,6 +27,7 @@ type BaseCardButtonProps = {
   alignment?: 'left' | 'center' | 'right';
   children: ReactNode;
   className?: string;
+  isLoading?: boolean;
   size?: 'xs' | 'sm' | 'md' | 'lg' | 'full';
   as: 'a' | 'button';
   datatestid?: string;
@@ -37,16 +42,20 @@ type CardButtonProps =
   } & ButtonProps);
 
 function isLinkButton(
-  props: CardButtonProps,
-): props is BaseCardButtonProps & { as: 'a' } & LinkProps {
-  if (props.as === 'a') {
-    return true;
-  }
-  return false;
+  as: CardButtonProps['as'],
+): as is 'a' {
+  return as === 'a';
 }
 
-export function CardButton(props: CardButtonProps) {
-  const { alignment = 'center', children, className, size, datatestid } = props;
+export function CardButton({
+  alignment = 'center',
+  children,
+  className,
+  datatestid,
+  isLoading,
+  size,
+  ...rest
+}: CardButtonProps) {
   const classes = classNames(
     styles.CardButton,
     className,
@@ -62,10 +71,13 @@ export function CardButton(props: CardButtonProps) {
       [styles.center]: alignment === 'center',
       [styles.right]: alignment === 'right',
     },
+    {
+      [styles.isLoading]: isLoading,
+    },
   );
 
-  if (isLinkButton(props)) {
-    const { as: _as, ...linkProps } = props;
+  if (isLinkButton(rest.as)) {
+    const { as: _as, ...linkProps } = rest as BaseCardButtonProps & { as: 'a' } & LinkProps;
     return (
       <a {...linkProps} className={classes} data-testid={datatestid ?? ''}>
         {children}
@@ -73,7 +85,7 @@ export function CardButton(props: CardButtonProps) {
     );
   }
 
-  const { as: _as, ...buttonProps } = props;
+  const { as: _as, ...buttonProps } = rest as BaseCardButtonProps & { as: 'button' } & ButtonProps;
 
   return (
     <button
@@ -81,9 +93,18 @@ export function CardButton(props: CardButtonProps) {
       aria-disabled={buttonProps.disabled}
       className={classes}
       data-testid={datatestid ?? ''}
+      disabled={buttonProps.disabled || isLoading}
       type={buttonProps.type ?? 'button'}
     >
       {children}
+      {isLoading && (
+        <div className={styles.loadingOverlay}>
+          <FontAwesomeIcon
+            className={styles.spinner}
+            icon={faSpinnerThird as IconDefinition}
+          />
+        </div>
+      )}
     </button>
   );
 }

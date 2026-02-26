@@ -8,10 +8,16 @@
   text-decoration: none;
 }
 
-.CardButton:hover {
-  background: var(--ux-gray-100);
+.CardButton:hover:not(:disabled) {
+  background: var(--synth-gray-100);
   color: inherit;
   text-decoration: none;
+}
+
+.CardButton:disabled {
+  background: var(--synth-gray-100);
+  border-color: var(--synth-gray-400);
+  cursor: not-allowed;
 }
 
 .left {
@@ -52,4 +58,30 @@
 
 .full {
   width: 100%;
+}
+
+@keyframes card-button-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.isLoading {
+  position: relative;
+  border-color: var(--synth-dark-background-selected-blue);
+}
+
+.loadingOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255 255 255 / 75%);
+  border-radius: inherit;
+}
+
+.spinner {
+  animation: card-button-spin 0.6s linear infinite;
+  font-size: 1.5rem;
+  color: var(--synth-dark-background-selected-blue);
 }
