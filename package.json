@@ -167,6 +167,9 @@
     "webpack": "^5.105.2",
     "yalc": "^1.0.0-pre.53"
   },
+  "resolutions": {
+    "@tootallnate/once": "^3.0.1"
+  },
   "description": "UI Storybook design system",
   "files": [
     "lib",
