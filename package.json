@@ -168,7 +168,9 @@
     "yalc": "^1.0.0-pre.53"
   },
   "resolutions": {
-    "@tootallnate/once": "^3.0.1"
+    "@tootallnate/once": "^3.0.1",
+    "glob/minimatch": "8.0.6",
+    "@typescript-eslint/typescript-estree/minimatch": "9.0.7"
   },
   "description": "UI Storybook design system",
   "files": [
