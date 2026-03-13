@@ -1,14 +1,14 @@
-import React from 'react';
-import propTypes from 'prop-types';
-import Async from 'react-select/async';
+import React from "react";
+import propTypes from "prop-types";
+import Async from "react-select/async";
 
-import zStack from 'src/Styles/zStack';
+import zStack from "src/Styles/zStack";
 
-import { defaultStyles, defaultTheme, SELECT_SIZES } from './styles';
+import { defaultStyles, defaultTheme, SELECT_SIZES } from "./styles";
 
 function AsyncSelect({
-  'aria-label': ariaLabel,
-  'aria-labelledby': ariaLabelledBy,
+  "aria-label": ariaLabel,
+  "aria-labelledby": ariaLabelledBy,
   cacheOptions,
   className,
   closeMenuOnSelect,
@@ -30,7 +30,7 @@ function AsyncSelect({
   noOptionsMessage,
   size = SELECT_SIZES.SMALL,
   value,
-
+  placeholder = "Search",
   onChange,
   ...props
 }) {
@@ -40,7 +40,7 @@ function AsyncSelect({
       aria-label={ariaLabel}
       aria-labelledby={ariaLabelledBy}
       cacheOptions={cacheOptions}
-      className={`${className || ''} AsyncSelect`}
+      className={`${className || ""} AsyncSelect`}
       classNamePrefix="Select"
       closeMenuOnSelect={closeMenuOnSelect}
       components={components}
@@ -58,16 +58,13 @@ function AsyncSelect({
       menuPortalTarget={modal ? document.body : undefined}
       name={name}
       noOptionsMessage={noOptionsMessage}
-      placeholder="Search"
+      placeholder={placeholder}
       shouldShowValue
       styles={{
-      ...defaultStyles({ menuWidth, size }),
-      menuPortal: (base) => (
-        modal ?
-        { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } :
-          base
-      ),
-    }}
+        ...defaultStyles({ menuWidth, size }),
+        menuPortal: (base) =>
+          modal ? { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } : base,
+      }}
       theme={defaultTheme}
       value={value}
       onBlurResetsInput={false}
@@ -78,8 +75,8 @@ function AsyncSelect({
 }
 
 AsyncSelect.propTypes = {
-  'aria-label': propTypes.string,
-  'aria-labelledby': propTypes.string,
+  "aria-label": propTypes.string,
+  "aria-labelledby": propTypes.string,
   cacheOptions: propTypes.bool,
   className: propTypes.string,
   closeMenuOnSelect: propTypes.bool,
