@@ -1,0 +1,68 @@
+.row {
+  background-color: var(--synth-white);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 16px;
+  min-height: 216px;
+
+  ul {
+    list-style: none;
+  }
+}
+
+.example {
+  flex: 0 0 62.5%;
+  max-width: 66.7%;
+  padding-right: 15%;
+  padding: 16px;
+  width: 66.7%;
+}
+
+.specs {
+  border-left: 1px solid var(--synth-div-stroke-neutral);
+  display: block;
+  flex: 0 0 37.5%;
+  max-width: 33.3%;
+  padding: 16px 24px;
+  width: 33.3%;
+
+  li {
+    min-height: 24px;
+  }
+}
+
+.synth-font-heading-large {
+  font: var(--synth-font-heading-large);
+}
+
+.synth-font-heading-medium {
+  font: var(--synth-font-heading-medium);
+}
+
+.synth-font-heading-small {
+  font: var(--synth-font-heading-small);
+}
+
+.synth-font-body-bold {
+  font: var(--synth-font-body-bold);
+}
+
+.synth-font-body-medium {
+  font: var(--synth-font-body-medium);
+}
+
+.synth-font-body-regular {
+  font: var(--synth-font-body-regular);
+}
+
+.synth-font-subtext-bold {
+  font: var(--synth-font-subtext-bold);
+}
+
+.synth-font-subtext-medium {
+  font: var(--synth-font-subtext-medium);
+}
+
+.synth-font-subtext-regular {
+  font: var(--synth-font-subtext-regular);
+}
