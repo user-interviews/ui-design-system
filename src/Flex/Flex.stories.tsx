@@ -1,9 +1,10 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import React from 'react';
 
 import Card from '../Card';
 import Flex from './Flex';
 import mdx from './Flex.mdx';
+
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
 const meta: Meta<typeof Flex> = {
   component: Flex,

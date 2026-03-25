@@ -1,14 +1,14 @@
 /* eslint-disable react/no-unstable-nested-components */
 import React, { useRef, useState } from 'react';
-import Button from 'src/Button';
-import FormGroup from 'src/FormGroup';
-import { Modal, ModalHeader, ModalBody, ModalFooter } from 'src/Modal';
-import SingleSelect from 'src/Select/SingleSelect';
 import { action } from 'storybook/actions';
 
 import Option from './Option';
 import OptionWithDescription from './OptionWithDescription';
 import ValueContainer from './ValueContainer';
+import Button from 'src/Button';
+import FormGroup from 'src/FormGroup';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'src/Modal';
+import SingleSelect from 'src/Select/SingleSelect';
 
 const onChange = () => action('Change');
 

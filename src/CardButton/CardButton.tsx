@@ -1,15 +1,16 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
+import React from 'react';
+
+import { faSpinnerThird } from '../font_awesome/solid';
+
 import type {
   DetailedHTMLProps,
   AnchorHTMLAttributes,
   ButtonHTMLAttributes,
   ReactNode,
 } from 'react';
-import React from 'react';
-
-import { faSpinnerThird } from '../font_awesome/solid';
 
 import * as styles from './CardButton.module.css';
 

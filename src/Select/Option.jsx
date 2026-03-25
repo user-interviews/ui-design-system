@@ -2,6 +2,7 @@ import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import React, { forwardRef } from 'react';
 import { components } from 'react-select';
+
 import CheckboxButton from 'src/CheckboxButton';
 
 import './Option.scss';

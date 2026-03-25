@@ -1,7 +1,8 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import React, { ComponentProps } from 'react';
 
 import { CardButton } from './CardButton';
+
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
 type CardButtonProps = ComponentProps<typeof CardButton>;
 

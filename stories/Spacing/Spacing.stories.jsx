@@ -1,9 +1,10 @@
 import classNames from 'classnames';
 import React from 'react';
+
+import mdx from './Spacing.mdx';
 import { Table, TableBody, TableCell, TableHead, TableRow } from 'src/Table';
 
 import './Spacing.scss';
-import mdx from './Spacing.mdx';
 
 /* eslint-disable object-curly-newline */
 const data = [

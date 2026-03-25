@@ -4,9 +4,9 @@ import classNames from 'classnames';
 import React, { useContext, ReactNode } from 'react';
 
 import { faTimes, faCompressAlt, faExpandAlt } from '../font_awesome/solid';
+import { ExpandContext } from './Drawer';
 
 import './DrawerHeader.scss';
-import { ExpandContext } from './Drawer';
 
 type DrawerHeaderProps = {
   bordered?: boolean;

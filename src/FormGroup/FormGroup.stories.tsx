@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FlexContainer } from 'src/FlexContainer';
 
 import FormGroup from '.';
 import { ORIENTATIONS } from '../ControlButtonGroup';
@@ -9,6 +8,7 @@ import Input from '../Input';
 import RadioButton from '../RadioButton';
 import RadioButtonGroup from '../RadioButtonGroup';
 import mdx from './FormGroup.mdx';
+import { FlexContainer } from 'src/FlexContainer';
 
 export default {
   title: 'Components/Form Elements/Form Group',

@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
-import { Alert, MessageTypes } from 'src/Alert';
 import { action } from 'storybook/actions';
 
 import mdx from './Alert.mdx';
+import { Alert, MessageTypes } from 'src/Alert';
 
 export default {
   title: 'Components/Alert',

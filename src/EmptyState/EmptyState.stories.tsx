@@ -1,11 +1,12 @@
 import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import React from 'react';
 
 import Button from '../Button';
 import { faPlus } from '../font_awesome/regular';
 import EmptyState from './EmptyState';
 import ProfileSearchImage from './profile_search.png';
+
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
 const meta: Meta<typeof EmptyState> = {
   component: EmptyState,

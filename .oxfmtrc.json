@@ -3,6 +3,21 @@
   "singleQuote": true,
   "semi": true,
   "printWidth": 100,
+  "sortImports": {
+    "order": "asc",
+    "ignoreCase": true,
+    "newlinesBetween": true,
+    "internalPattern": ["src/"],
+    "sortSideEffects": true,
+    "groups": [
+      "builtin",
+      "external",
+      ["internal", "parent", "sibling", "index"],
+      "type",
+      "style",
+      "unknown"
+    ]
+  },
   "sortPackageJson": false,
   "ignorePatterns": [
     "lib/**",

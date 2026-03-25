@@ -1,8 +1,9 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import React from 'react';
 
 import { Logo } from './Logo';
 import uiLogo from './ui_logo.svg';
+
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
 import * as styles from './Logo.stories.module.css';
 

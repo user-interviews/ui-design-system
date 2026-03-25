@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+
+import Option from './Option';
 import Button from 'src/Button';
 import FormGroup from 'src/FormGroup';
 import { Modal, ModalHeader, ModalBody, ModalFooter } from 'src/Modal';
 import AsyncSelect from 'src/Select/AsyncSelect';
-
-import Option from './Option';
 
 export default {
   title: 'Components/Selects/Async',

@@ -1,8 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import './Typography.scss';
 import { Pill, PILL_COLORS } from 'src/Pill';
+
+import './Typography.scss';
 
 function TypographyExample({ modifiers, preset }) {
   const description = 'The fastest way to recruit research participants';

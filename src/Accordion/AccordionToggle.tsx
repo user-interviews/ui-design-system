@@ -6,9 +6,9 @@ import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import AccordionContext from 'react-bootstrap/AccordionContext';
 
 import { faChevronUp } from '../font_awesome/solid';
+import { isEventKeyActive } from './utils';
 
 import './AccordionToggle.scss';
-import { isEventKeyActive } from './utils';
 
 type AccordionToggleProps = {
   borderBottom?: boolean;

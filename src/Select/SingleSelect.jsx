@@ -2,9 +2,9 @@ import classNames from 'classnames';
 import propTypes from 'prop-types';
 import React from 'react';
 import Select from 'react-select';
-import zStack from 'src/Styles/zStack';
 
 import { borderedMultiValueStyles, defaultTheme, defaultStyles, SELECT_SIZES } from './styles';
+import zStack from 'src/Styles/zStack';
 
 function SingleSelect({
   'aria-label': ariaLabel,

@@ -1,6 +1,3 @@
-import type { Editor } from '@tiptap/core';
-
-import './RichTextEditorMenuBar.scss';
 import classNames from 'classnames';
 import React from 'react';
 
@@ -8,6 +5,10 @@ import { faBold, faItalic, faLink, faListOl, faListUl, faUnlink } from '../font_
 import IconButton from '../IconButton';
 import { createActionHandlers } from './actionHandlers';
 import { RichTextEditorActions } from './richTextEditorActions';
+
+import type { Editor } from '@tiptap/core';
+
+import './RichTextEditorMenuBar.scss';
 
 type RichTextEditorMenuBarProps = {
   availableActions: (typeof RichTextEditorActions)[keyof typeof RichTextEditorActions][];

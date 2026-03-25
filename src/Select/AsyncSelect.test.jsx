@@ -1,6 +1,7 @@
 import React from 'react';
 import Async from 'react-select/async';
 import { create } from 'react-test-renderer';
+
 import { AsyncSelect, SELECT_SIZES } from 'src/Select';
 import { SIZE_SMALL_HEIGHT } from 'src/Select/styles';
 

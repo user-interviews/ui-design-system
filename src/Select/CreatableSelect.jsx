@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import Creatable from 'react-select/creatable';
-import zStack from 'src/Styles/zStack';
 
 import { borderedMultiValueStyles, defaultTheme, defaultStyles, SELECT_SIZES } from './styles';
+import zStack from 'src/Styles/zStack';
 
 function CreatableSelect({
   'aria-label': ariaLabel,

@@ -61,6 +61,26 @@
             "devDependencies": ["**/*.stories.*", "**/*.test.*"]
           }
         ],
+        "import-js/order": [
+          "warn",
+          {
+            "groups": ["builtin", "external", ["internal", "parent", "sibling", "index"], "type", "object"],
+            "pathGroups": [
+              {
+                "pattern": "src/**",
+                "group": "internal"
+              },
+              {
+                "pattern": "*.{css,scss}",
+                "patternOptions": { "matchBase": true },
+                "group": "type",
+                "position": "after"
+              }
+            ],
+            "pathGroupsExcludedImportTypes": [],
+            "newlines-between": "always"
+          }
+        ],
         "jsx-a11y/anchor-is-valid": "warn",
         "jsx-a11y/label-has-associated-control": [
           "error",

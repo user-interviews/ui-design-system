@@ -1,8 +1,9 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import './ModalFooter.scss';
 import Button from '../Button';
+
+import './ModalFooter.scss';
 
 type ModalFooterProps = {
   children?: React.ReactNode;

@@ -1,9 +1,9 @@
 import propTypes from 'prop-types';
 import React from 'react';
 import AsyncCreatable from 'react-select/async-creatable';
-import zStack from 'src/Styles/zStack';
 
 import { defaultStyles, defaultTheme, SELECT_SIZES } from './styles';
+import zStack from 'src/Styles/zStack';
 
 function AsyncCreatableSelect({
   'aria-label': ariaLabel,

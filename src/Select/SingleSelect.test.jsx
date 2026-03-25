@@ -1,6 +1,7 @@
 import React from 'react';
 import Select from 'react-select';
 import { create } from 'react-test-renderer';
+
 import { SingleSelect, SELECT_SIZES } from 'src/Select';
 import { SIZE_SMALL_HEIGHT } from 'src/Select/styles';
 

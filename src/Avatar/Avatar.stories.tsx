@@ -1,7 +1,8 @@
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
 import React from 'react';
 
 import Avatar from '.';
+
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
 const colorIds: Array<number | undefined> = [undefined, 1, 2, 3, 4, 5, 6];
 

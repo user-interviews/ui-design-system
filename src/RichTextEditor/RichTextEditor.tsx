@@ -1,7 +1,4 @@
-import type { Extension, Node as TipTapNode, Mark } from '@tiptap/core';
 import Bold from '@tiptap/extension-bold';
-
-import './RichTextEditor.scss';
 import BulletList from '@tiptap/extension-bullet-list';
 import CharacterCount from '@tiptap/extension-character-count';
 import Document from '@tiptap/extension-document';
@@ -23,7 +20,6 @@ import React, {
   type ForwardedRef,
   useEffect,
 } from 'react';
-import type { IOptions } from 'sanitize-html';
 import sanitizeHtml from 'sanitize-html';
 
 import { LoadingSkeleton } from '../LoadingSkeleton';
@@ -31,6 +27,11 @@ import { createActionHandlers } from './actionHandlers';
 import { OneLineLimit } from './oneLineLimit';
 import { RichTextEditorActions, RichTextEditorDefaultActionsArray } from './richTextEditorActions';
 import RichTextEditorMenuBar from './RichTextEditorMenuBar';
+
+import type { Extension, Node as TipTapNode, Mark } from '@tiptap/core';
+import type { IOptions } from 'sanitize-html';
+
+import './RichTextEditor.scss';
 
 const ExtendedLink = Link.extend({
   addKeyboardShortcuts() {
