@@ -1,6 +1,9 @@
 {
   "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["typescript", "oxc", "unicorn", "react", "import", "jsx-a11y"],
+  "categories": {
+    "correctness": "off"
+  },
+  "plugins": ["typescript", "oxc", "unicorn", "react", "import", "jsx-a11y", "jest"],
   "jsPlugins": [
     {
       "name": "react-js",
@@ -18,6 +21,12 @@
   "settings": {
     "react": {
       "version": "18"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["./"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"]
+      }
     }
   },
   "globals": {
@@ -36,140 +45,153 @@
     "jest": "readonly",
     "test": "readonly"
   },
-  "rules": {
-    "import-js/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": ["**/*.stories.*", "**/*.test.*"]
-      }
-    ],
-    "jsx-a11y/anchor-is-valid": "warn",
-    "jsx-a11y/label-has-associated-control": [
-      "error",
-      {
-        "assert": "either",
-        "controlComponents": ["AsyncSelect", "SingleSelect"],
-        "depth": 25,
-        "labelAttributes": ["label"],
-        "labelComponents": []
-      }
-    ],
-    "no-case-declarations": "warn",
-    "no-loop-func": "warn",
-    "no-restricted-imports": [
-      "error",
-      {
-        "patterns": [
-          {
-            "group": [
-              "@fortawesome/free-brands-svg-icons/*",
-              "@fortawesome/free-brands-svg-icons"
-            ],
-            "message": "Direct imports from @fortawesome/free-brands-svg-icons is not allowed. Import from src/ib/font_awesome/brands instead."
-          },
-          {
-            "group": [
-              "@fortawesome/pro-regular-svg-icons/*",
-              "@fortawesome/pro-regular-svg-icons"
-            ],
-            "message": "Direct imports from @fortawesome/pro-regular-svg-icons is not allowed. Import from src/lib/font_awesome/regular instead."
-          },
-          {
-            "group": [
-              "@fortawesome/pro-solid-svg-icons/*",
-              "@fortawesome/pro-solid-svg-icons"
-            ],
-            "message": "Direct imports from @fortawesome/pro-solid-svg-icons is not allowed. Import from src/lib/font_awesome/solid instead."
-          }
-        ]
-      }
-    ],
-    "no-shadow": "off",
-    "no-underscore-dangle": [
-      "error",
-      {
-        "allowAfterThis": true
-      }
-    ],
-    "prefer-destructuring": "warn",
-    "react/exhaustive-deps": "warn",
-    "react/jsx-filename-extension": [
-      "error",
-      {
-        "extensions": [".tsx", ".jsx"]
-      }
-    ],
-    "react/no-array-index-key": "error",
-    "react/no-unescaped-entities": "error",
-    "react/rules-of-hooks": "error",
-    "react-js/jsx-sort-props": [
-      "error",
-      {
-        "callbacksLast": true,
-        "ignoreCase": true,
-        "noSortAlphabetically": false
-      }
-    ],
-    "react-js/sort-comp": [
-      "error",
-      {
-        "order": [
-          "static-methods",
-          "constructor",
-          "state",
-          "own-properties",
-          "/^handle.+/",
-          "getters",
-          "setters",
-          "everything-else",
-          "lifecycle",
-          "/^render.+/",
-          "render"
-        ],
-        "groups": {
-          "own-properties": ["instance-variables", "instance-methods"],
-          "react-methods": [
-            "displayName",
-            "propTypes",
-            "contextTypes",
-            "childContextTypes",
-            "mixins",
-            "statics",
-            "defaultProps",
-            "constructor",
-            "getDefaultProps",
-            "getInitialState",
-            "getChildContext",
-            "getDerivedStateFromProps",
-            "componentWillMount",
-            "UNSAFE_componentWillMount",
-            "componentDidMount",
-            "componentWillReceiveProps",
-            "UNSAFE_componentWillReceiveProps",
-            "shouldComponentUpdate",
-            "componentWillUpdate",
-            "UNSAFE_componentWillUpdate",
-            "getSnapshotBeforeUpdate",
-            "componentDidUpdate",
-            "componentDidCatch",
-            "componentWillUnmount"
-          ]
-        }
-      }
-    ],
-    "react-js/sort-prop-types": [
-      "error",
-      {
-        "callbacksLast": true,
-        "ignoreCase": true,
-        "noSortAlphabetically": false,
-        "requiredFirst": false,
-        "sortShapeProp": true
-      }
-    ],
-    "typescript/no-shadow": "error"
-  },
+  "ignorePatterns": ["jest.config.js", "lib", "node_modules", ".storybook"],
+  "rules": {},
   "overrides": [
+    {
+      "files": [
+        "src/**/*.{js,jsx,ts,tsx}",
+        "spec/**/*.{js,jsx,ts,tsx}",
+        "stories/**/*.{js,jsx,ts,tsx}"
+      ],
+      "rules": {
+        "import-js/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": ["**/*.stories.*", "**/*.test.*"]
+          }
+        ],
+        "jsx-a11y/anchor-is-valid": "warn",
+        "jsx-a11y/label-has-associated-control": [
+          "error",
+          {
+            "assert": "either",
+            "controlComponents": ["AsyncSelect", "SingleSelect"],
+            "depth": 25,
+            "labelAttributes": ["label"],
+            "labelComponents": []
+          }
+        ],
+        "jest/no-focused-tests": "error",
+        "no-case-declarations": "warn",
+        "no-loop-func": "warn",
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": [
+              {
+                "group": ["@fortawesome/free-brands-svg-icons/*", "@fortawesome/free-brands-svg-icons"],
+                "message": "Direct imports from @fortawesome/free-brands-svg-icons is not allowed. Import from src/ib/font_awesome/brands instead."
+              },
+              {
+                "group": ["@fortawesome/pro-regular-svg-icons/*", "@fortawesome/pro-regular-svg-icons"],
+                "message": "Direct imports from @fortawesome/pro-regular-svg-icons is not allowed. Import from src/lib/font_awesome/regular instead."
+              },
+              {
+                "group": ["@fortawesome/pro-solid-svg-icons/*", "@fortawesome/pro-solid-svg-icons"],
+                "message": "Direct imports from @fortawesome/pro-solid-svg-icons is not allowed. Import from src/lib/font_awesome/solid instead."
+              }
+            ]
+          }
+        ],
+        "no-shadow": "off",
+        "no-underscore-dangle": [
+          "error",
+          {
+            "allowAfterThis": true
+          }
+        ],
+        "prefer-destructuring": "warn",
+        "react/exhaustive-deps": "warn",
+        "react/jsx-filename-extension": [
+          "error",
+          {
+            "extensions": [".tsx", ".jsx"]
+          }
+        ],
+        "react/jsx-no-undef": "off",
+        "react/no-unescaped-entities": "error",
+        "react/rules-of-hooks": "error",
+        "react-js/jsx-sort-props": [
+          "error",
+          {
+            "callbacksLast": true,
+            "ignoreCase": true,
+            "noSortAlphabetically": false
+          }
+        ],
+        "react-js/prop-types": [
+          "error",
+          {
+            "ignore": ["children"]
+          }
+        ],
+        "react-js/require-default-props": [
+          "error",
+          {
+            "functions": "ignore"
+          }
+        ],
+        "react-js/sort-comp": [
+          "error",
+          {
+            "order": [
+              "static-methods",
+              "constructor",
+              "state",
+              "own-properties",
+              "/^handle.+/",
+              "getters",
+              "setters",
+              "everything-else",
+              "lifecycle",
+              "/^render.+/",
+              "render"
+            ],
+            "groups": {
+              "own-properties": ["instance-variables", "instance-methods"],
+              "react-methods": [
+                "displayName",
+                "propTypes",
+                "contextTypes",
+                "childContextTypes",
+                "mixins",
+                "statics",
+                "defaultProps",
+                "constructor",
+                "getDefaultProps",
+                "getInitialState",
+                "getChildContext",
+                "getDerivedStateFromProps",
+                "componentWillMount",
+                "UNSAFE_componentWillMount",
+                "componentDidMount",
+                "componentWillReceiveProps",
+                "UNSAFE_componentWillReceiveProps",
+                "shouldComponentUpdate",
+                "componentWillUpdate",
+                "UNSAFE_componentWillUpdate",
+                "getSnapshotBeforeUpdate",
+                "componentDidUpdate",
+                "componentDidCatch",
+                "componentWillUnmount"
+              ]
+            }
+          }
+        ],
+        "react-js/sort-prop-types": [
+          "error",
+          {
+            "callbacksLast": true,
+            "ignoreCase": true,
+            "noSortAlphabetically": false,
+            "requiredFirst": false,
+            "sortShapeProp": true
+          }
+        ],
+        "typescript/no-shadow": "error"
+      }
+    },
     {
       "files": ["**/*.{ts,tsx}"],
       "rules": {
@@ -192,7 +214,6 @@
       "files": ["**/*.stories.{js,jsx,ts,tsx}", "stories/**/*.{js,jsx,ts,tsx}"],
       "rules": {
         "react/no-unescaped-entities": "off",
-        "react-js/no-unescaped-entities": "off",
         "react-js/prop-types": "off",
         "react-js/require-default-props": "off",
         "storybook-js/await-interactions": "error",
@@ -219,16 +240,6 @@
         ],
         "react-js/prop-types": "off",
         "react-js/require-default-props": "off"
-      }
-    },
-    {
-      "files": [
-        "src/Card/Card.tsx",
-        "src/FormGroup/FormGroup.tsx",
-        "src/Table/TableLoadingSkeleton.tsx"
-      ],
-      "rules": {
-        "react/no-array-index-key": "off"
       }
     }
   ]

@@ -38,7 +38,7 @@ describe('CheckboxButtonGroup', () => {
     );
 
     const event = { target: { value: 1, checked: true } };
-    const firstButton = checkboxButtonGroup.root.findAllByType(CheckboxButton)[0];
+    const [firstButton] = checkboxButtonGroup.root.findAllByType(CheckboxButton);
 
     await act(async () => firstButton.props.onChange(event));
     expect(checkboxButtonGroup).toMatchSnapshot();
@@ -53,7 +53,7 @@ describe('CheckboxButtonGroup', () => {
     );
 
     const event = { target: { value: 1, checked: false } };
-    const firstButton = checkboxButtonGroup.root.findAllByType(CheckboxButton)[0];
+    const [firstButton] = checkboxButtonGroup.root.findAllByType(CheckboxButton);
 
     await act(async () => firstButton.props.onChange(event));
     expect(checkboxButtonGroup).toMatchSnapshot();
