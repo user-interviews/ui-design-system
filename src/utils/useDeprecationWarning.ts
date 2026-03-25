@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 type useDeprecationWarningProps = {
   componentName: string;
-  message?: string;
+      message?: string;
 };
 
 export function useDeprecationWarning({
