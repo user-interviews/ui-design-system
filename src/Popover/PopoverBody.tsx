@@ -6,7 +6,7 @@ import './PopoverBody.scss';
 
 type PopoverBodyProps = {
   className?: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // oxlint-disable-next-line typescript/no-explicit-any
 } & any;
 
 function PopoverBody({ children, className, ...props }: PopoverBodyProps) {

@@ -32,16 +32,16 @@ function WithToast({
 }
 
 export default function withToast(
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // oxlint-disable-next-line typescript/no-explicit-any
   WrappedComponent: (...args: any[]) => React.JSX.Element,
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // oxlint-disable-next-line typescript/no-explicit-any
   hocProps?: any,
 ) {
   const wrappedComponent = (props) => (
     <WithToast WrappedComponent={WrappedComponent} {...hocProps} {...props} />
   );
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // oxlint-disable-next-line typescript/no-explicit-any
   wrappedComponent.displayName = `${(WrappedComponent as any).displayName || WrappedComponent.name}WithToast`;
   return wrappedComponent;
 }

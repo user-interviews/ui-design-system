@@ -238,6 +238,17 @@
     {
       "files": ["**/*.{ts,tsx}"],
       "rules": {
+        "@typescript-eslint/no-explicit-any": "error",
+        "react/require-default-props": "off",
+        "default-case": "off",
+        "consistent-return": "off",
+        "no-undef": "off"
+      },
+      "plugins": ["typescript"]
+    },
+    {
+      "files": ["**/*.{ts,tsx}"],
+      "rules": {
         "react-js/prop-types": "off",
         "react-js/require-default-props": "off"
       }
