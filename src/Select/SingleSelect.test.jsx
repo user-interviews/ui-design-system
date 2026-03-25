@@ -1,13 +1,11 @@
 import React from 'react';
 import Select from 'react-select';
 import { create } from 'react-test-renderer';
-
 import { SingleSelect, SELECT_SIZES } from 'src/Select';
 import { SIZE_SMALL_HEIGHT } from 'src/Select/styles';
 
-const renderSelect = (props) => create(
-  <SingleSelect inputId="single-select" options={[]} onChange={jest.fn()} {...props} />,
-);
+const renderSelect = (props) =>
+  create(<SingleSelect inputId="single-select" options={[]} onChange={jest.fn()} {...props} />);
 
 const getContentStyles = ({ styles }) => styles.control({}, { isDisabled: false });
 

@@ -32,7 +32,10 @@ export function Container({
   bsPrefix = 'container',
   ...props
 }: ContainerProps) {
-  useDeprecationWarning({ componentName: 'Container', message: 'Please use FlexContainer instead.' });
+  useDeprecationWarning({
+    componentName: 'Container',
+    message: 'Please use FlexContainer instead.',
+  });
 
   return (
     <ReactBootstrapContainer

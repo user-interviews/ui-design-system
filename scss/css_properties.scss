@@ -235,7 +235,7 @@
   --synth-page-neutral: #fdfdfd;
   --synth-text-neutral: var(--synth-gray-600);
   --synth-unselected-neutral: var(--synth-gray-500);
-  --synth-unselected-tab: #5B5B5B;
+  --synth-unselected-tab: #5b5b5b;
 
   // main schema - visual hierarchy
   --synth-accent-green: var(--synth-emerald-400);
@@ -278,13 +278,9 @@
   --z-index-popover: var(--z-index-1050);
   --z-index-flash: var(--z-index-1045);
   --z-index-drawer: var(--z-index-1040);
-  --z-index-modal-backdrop: var(
-    --z-index-1040
-  ); // Matches bootstrap --z-index-modal-backdrop
+  --z-index-modal-backdrop: var(--z-index-1040); // Matches bootstrap --z-index-modal-backdrop
   --z-index-fixed: var(--z-index-1030); // Matches bootstrap --z-index-fixed
-  --z-index-overlay: calc(
-    var(--z-index-fixed) - 1
-  ); // Sits just under --z-index-fixed
+  --z-index-overlay: calc(var(--z-index-fixed) - 1); // Sits just under --z-index-fixed
   --z-index-table-cell-sticky-column: var(
     --z-index-10
   ); // Sits under --z-index-table-foot-sticky-row
@@ -322,25 +318,25 @@
 
   --synth-font-heading-large: normal var(--synth-font-weight-bold) 1.5rem / 2rem
     var(--synth-font-family);
-  --synth-font-heading-medium: normal var(--synth-font-weight-bold) 1.125rem /
-    1.5rem var(--synth-font-family);
-  --synth-font-heading-small: normal var(--synth-font-weight-bold) 1rem /
-    1.375rem var(--synth-font-family);
+  --synth-font-heading-medium: normal var(--synth-font-weight-bold) 1.125rem / 1.5rem
+    var(--synth-font-family);
+  --synth-font-heading-small: normal var(--synth-font-weight-bold) 1rem / 1.375rem
+    var(--synth-font-family);
 
-  --synth-font-body-bold: normal var(--synth-font-weight-bold)
-    var(--synth-font-body-size) var(--synth-font-family);
-  --synth-font-body-medium: normal var(--synth-font-weight-medium)
-    var(--synth-font-body-size) var(--synth-font-family);
-  --synth-font-body-regular: normal var(--synth-font-weight-regular)
-    var(--synth-font-body-size) var(--synth-font-family);
+  --synth-font-body-bold: normal var(--synth-font-weight-bold) var(--synth-font-body-size)
+    var(--synth-font-family);
+  --synth-font-body-medium: normal var(--synth-font-weight-medium) var(--synth-font-body-size)
+    var(--synth-font-family);
+  --synth-font-body-regular: normal var(--synth-font-weight-regular) var(--synth-font-body-size)
+    var(--synth-font-family);
 
-  --synth-font-subtext-bold: normal var(--synth-font-weight-bold)
-    var(--synth-font-subtext-size) var(--synth-font-family);
-  --synth-font-subtext-medium: normal var(--synth-font-weight-medium)
-    var(--synth-font-subtext-size) var(--synth-font-family);
+  --synth-font-subtext-bold: normal var(--synth-font-weight-bold) var(--synth-font-subtext-size)
+    var(--synth-font-family);
+  --synth-font-subtext-medium: normal var(--synth-font-weight-medium) var(--synth-font-subtext-size)
+    var(--synth-font-family);
   --synth-font-subtext-regular: normal var(--synth-font-weight-regular)
     var(--synth-font-subtext-size) var(--synth-font-family);
 
-  --synth-font-button-text: normal var(--synth-font-weight-semibold) 0.875rem /
-    1.125rem var(--synth-font-family);
+  --synth-font-button-text: normal var(--synth-font-weight-semibold) 0.875rem / 1.125rem
+    var(--synth-font-family);
 }

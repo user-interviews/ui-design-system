@@ -2,7 +2,9 @@
 @mixin ui-remove-anchor-styles($color: inherit) {
   color: $color;
 
-  &:active, &:focus, &:hover {
+  &:active,
+  &:focus,
+  &:hover {
     color: $color;
     outline: none;
     text-decoration: none;

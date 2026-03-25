@@ -10,23 +10,18 @@ describe('<RichTextEditor />', () => {
       // The latest tiptap seems to be applying "textbox" role to two elements, parent and child now
       // so just going to grab the innermost one that has contenteditable attribute...
       // note that this might be a tiptap bug? so be ready if this has to be undone
-      find: () => screen.findAllByRole('textbox').then(
-        (elems) => elems.find((element) => element.hasAttribute('contenteditable')),
-      ),
+      find: () =>
+        screen
+          .findAllByRole('textbox')
+          .then((elems) => elems.find((element) => element.hasAttribute('contenteditable'))),
     },
     allButtons: {
       findAll: () => screen.findAllByRole('button'),
     },
   };
   function Setup(overrides: Omit<RichTextEditorProps, 'id' | 'onChange'> = {}) {
-  return (
-    <RichTextEditor
-      id="some-id"
-      onChange={jest.fn()}
-      {...overrides}
-    />
-  );
-}
+    return <RichTextEditor id="some-id" onChange={jest.fn()} {...overrides} />;
+  }
 
   it('renders snapshot', async () => {
     const { asFragment } = render(<Setup />);

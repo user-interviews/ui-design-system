@@ -1,6 +1,5 @@
-import React from 'react';
 import classNames from 'classnames';
-
+import React from 'react';
 import RBAccordion from 'react-bootstrap/Accordion';
 
 type AccordionProps = {
@@ -54,7 +53,7 @@ function Accordion({
       flush={flush}
       onSelect={onSelect}
     >
-      { children }
+      {children}
     </RBAccordion>
   );
 }

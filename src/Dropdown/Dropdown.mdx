@@ -7,14 +7,14 @@ import * as ComponentStories from './Dropdown.stories';
 ##
 
 <h4>
-  A Dropdown displays a list of actions or selectable options that a user can take.
-  Typically contained within a button, an action is initiated based on the selection.
+  A Dropdown displays a list of actions or selectable options that a user can take. Typically
+  contained within a button, an action is initiated based on the selection.
 </h4>
 
 <Canvas of={ComponentStories.Default} />
 
-
 ### When to not use
+
 Avoid the Dropdown component if:
 
 - Users can select one or many from the options
@@ -37,17 +37,20 @@ Avoid the Dropdown component if:
 <Canvas of={ComponentStories.Sizes} />
 
 ### Icon Default
+
 - A single icon button that opens a `<DropdownMenu>`.
 
 <Canvas of={ComponentStories.IconDefault} />
 
 ### Icon Swap
+
 - To use a different icon, add the `removeCaret` prop to remove the default icon.
 - Be sure to include an appropriate `ariaLabel`
 
 <Canvas of={ComponentStories.IconSwap} />
 
 ### Unstyled Toggle
+
 - Use the `unstyled` and `removeCaret` prop on `DropdownToggle` to remove default styling.
 
 <Canvas of={ComponentStories.UnstyledToggle} />
@@ -62,13 +65,13 @@ Avoid the Dropdown component if:
 ## Formatting
 
 ### Anatomy
-- **Toggle: ** A button to open the dropdown menu.
 
+- **Toggle: ** A button to open the dropdown menu.
 
 ## Best practices
 
-
 ### General
+
 The Dropdown component should:
 
 - Be used for secondary actions or information
@@ -82,7 +85,7 @@ The labels should:
 
 - Be clear and predictable.
 - Lead with a strong verb that encourages action.
-    - To provide enough context, use 'verb' + 'noun' format unless the action is clear with a single verb
+  - To provide enough context, use 'verb' + 'noun' format unless the action is clear with a single verb
 - Be concise.
 
 ### To Label, or Not To Label

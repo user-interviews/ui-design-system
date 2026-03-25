@@ -1,5 +1,5 @@
 @mixin synth-font-type-10() {
-  font-size: .625rem;
+  font-size: 0.625rem;
   font-weight: var(--synth-font-weight-regular);
   letter-spacing: 0.0625rem;
   line-height: 0.875rem;
@@ -114,7 +114,7 @@
 @mixin synth-font-type-10--medium-uppercase() {
   @include synth-font-type-10--uppercase;
 
-  font-weight: var(--synth-font-weight-medium)
+  font-weight: var(--synth-font-weight-medium);
 }
 
 @mixin font-type-10--medium-uppercase() {

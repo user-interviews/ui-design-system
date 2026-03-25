@@ -1,9 +1,8 @@
 import React from 'react';
 
+import Card, { CardSizes } from '.';
 import { LoadingSkeleton } from '../LoadingSkeleton';
 import { Text } from '../Text';
-import Card, { CardSizes } from '.';
-
 import mdx from './Card.mdx';
 
 export default {
@@ -31,28 +30,16 @@ export function Default() {
 export function Sizes() {
   return (
     <>
-      <Card
-        size={CardSizes.EXTRA_SMALL}
-        title="xs"
-      >
+      <Card size={CardSizes.EXTRA_SMALL} title="xs">
         <code>CardSizes.EXTRA_SMALL</code>
       </Card>
-      <Card
-        size={CardSizes.SMALL}
-        title="sm"
-      >
+      <Card size={CardSizes.SMALL} title="sm">
         <code>CardSizes.SMALL</code>
       </Card>
-      <Card
-        size={CardSizes.MEDIUM}
-        title="md"
-      >
+      <Card size={CardSizes.MEDIUM} title="md">
         <code>CardSizes.MEDIUM</code>
       </Card>
-      <Card
-        size={CardSizes.LARGE}
-        title="lg"
-      >
+      <Card size={CardSizes.LARGE} title="lg">
         <code>CardSizes.LARGE</code>
       </Card>
     </>
@@ -71,9 +58,8 @@ export function LoadingDefault() {
       title="Default card title"
     >
       <Text>
-        Powerful panel management and recruitment automation.
-        The #1 panel software for teams that research at scale. Built for ReOps,
-        loved by researchers, trusted by participants.
+        Powerful panel management and recruitment automation. The #1 panel software for teams that
+        research at scale. Built for ReOps, loved by researchers, trusted by participants.
       </Text>
     </Card>
   );
@@ -92,9 +78,8 @@ export function LoadingParagraphCount() {
       title="Default card title"
     >
       <Text>
-        Powerful panel management and recruitment automation.
-        The #1 panel software for teams that research at scale. Built for ReOps,
-        loved by researchers, trusted by participants.
+        Powerful panel management and recruitment automation. The #1 panel software for teams that
+        research at scale. Built for ReOps, loved by researchers, trusted by participants.
       </Text>
       <Text>
         From branding to invite rules, you’re in total control over how research gets done org-wide

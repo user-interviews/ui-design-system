@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuestionCircle } from '../font_awesome/solid';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 
+import { faQuestionCircle } from '../font_awesome/solid';
 import Popper from '../Popper';
 
 import './Tooltip.scss';

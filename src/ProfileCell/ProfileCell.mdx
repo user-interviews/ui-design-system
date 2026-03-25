@@ -7,25 +7,26 @@ import * as ComponentStories from './ProfileCell.stories';
 ##
 
 <h4>
-  Displays information about a user which can include an avatar, name, email, phone number, timezone (or other relevant pieces of information).
+  Displays information about a user which can include an avatar, name, email, phone number, timezone
+  (or other relevant pieces of information).
 </h4>
 
 <Canvas of={ComponentStories.Small} />
-
 
 ## Props
 
 <ArgTypes of={ProfileCell} />
 
-
 ## Stories
 
 ### Small
+
 - Typically contains one or two lines of information (e.g. name and email).
 
 <Canvas of={ComponentStories.Small} />
 
 ### Large
+
 - Can contain multiple lines of information (e.g. name, email, phone number, and timezone).
 
 <Canvas of={ComponentStories.Large} />
@@ -46,12 +47,12 @@ Use the `isLoading` prop on `ProfileCell` to create a low fidelity representatio
 
 <Canvas of={ComponentStories.Loading} />
 
-
 ## Formatting
 
 ### States
 
 ### Anatomy
+
 - **Avatar:** Displays photo or initials of a user
 - **Name:** First and last name
 - **Email**
@@ -61,7 +62,6 @@ Use the `isLoading` prop on `ProfileCell` to create a low fidelity representatio
 ### Sizing
 
 ### Alignment
-
 
 ## Best practices
 

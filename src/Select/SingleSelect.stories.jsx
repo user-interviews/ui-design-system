@@ -1,13 +1,10 @@
 /* eslint-disable react/no-unstable-nested-components */
 import React, { useRef, useState } from 'react';
-import { action } from 'storybook/actions';
-
 import Button from 'src/Button';
 import FormGroup from 'src/FormGroup';
-import {
-  Modal, ModalHeader, ModalBody, ModalFooter,
-} from 'src/Modal';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'src/Modal';
 import SingleSelect from 'src/Select/SingleSelect';
+import { action } from 'storybook/actions';
 
 import Option from './Option';
 import OptionWithDescription from './OptionWithDescription';
@@ -39,7 +36,8 @@ const options = [
   {
     label: 'Unmoderated task',
     value: 4,
-    description: 'An unmoderated task is just that—an opportunity for a user to try out a product, app, website, etc and share feedback.',
+    description:
+      'An unmoderated task is just that—an opportunity for a user to try out a product, app, website, etc and share feedback.',
   },
 ];
 
@@ -52,10 +50,7 @@ const peopleOptions = [
 
 export function Default() {
   return (
-    <FormGroup
-      label="Default select"
-      labelHtmlFor="default-select"
-    >
+    <FormGroup label="Default select" labelHtmlFor="default-select">
       <SingleSelect inputId="default-select" options={options} onChange={onChange} />
     </FormGroup>
   );
@@ -63,10 +58,7 @@ export function Default() {
 
 export function Searchable() {
   return (
-    <FormGroup
-      label="Searchable select"
-      labelHtmlFor="searchable-select"
-    >
+    <FormGroup label="Searchable select" labelHtmlFor="searchable-select">
       <SingleSelect
         closeMenuOnScroll={false}
         inputId="searchable-select"
@@ -81,10 +73,7 @@ export function Searchable() {
 
 export function Loading() {
   return (
-    <FormGroup
-      label="Loading select"
-      labelHtmlFor="loading-select"
-    >
+    <FormGroup label="Loading select" labelHtmlFor="loading-select">
       <SingleSelect inputId="loading-select" isLoading options={options} onChange={onChange} />
     </FormGroup>
   );
@@ -92,26 +81,15 @@ export function Loading() {
 
 export function MultipleSelect() {
   return (
-    <FormGroup
-      label="Multiple select"
-      labelHtmlFor="multi-select"
-    >
-      <SingleSelect
-        inputId="multi-select"
-        isMulti
-        options={options}
-        onChange={onChange}
-      />
+    <FormGroup label="Multiple select" labelHtmlFor="multi-select">
+      <SingleSelect inputId="multi-select" isMulti options={options} onChange={onChange} />
     </FormGroup>
   );
 }
 
 export function MultipleSelectBorderedPill() {
   return (
-    <FormGroup
-      label="Multiple select bordered pill"
-      labelHtmlFor="multi-select-bordered-pill"
-    >
+    <FormGroup label="Multiple select bordered pill" labelHtmlFor="multi-select-bordered-pill">
       <SingleSelect
         borderedMultiValue
         inputId="multi-select-bordered-pill"
@@ -148,19 +126,13 @@ export function InModal() {
             label="In Modal select"
             labelHtmlFor="in-modal-select"
           >
-            <SingleSelect
-              inputId="in-modal-select"
-              modal
-              options={options}
-              onChange={onChange}
-            />
+            <SingleSelect inputId="in-modal-select" modal options={options} onChange={onChange} />
           </FormGroup>
         </ModalBody>
-        <ModalFooter
-          dismissButtonText="Cancel"
-          onRequestClose={handleRequestClose}
-        >
-          <Button type="submit" variant="primary">Confirm</Button>
+        <ModalFooter dismissButtonText="Cancel" onRequestClose={handleRequestClose}>
+          <Button type="submit" variant="primary">
+            Confirm
+          </Button>
         </ModalFooter>
       </Modal>
     </>
@@ -182,15 +154,8 @@ export function GroupedOptions() {
     },
   ];
   return (
-    <FormGroup
-      label="Grouped options"
-      labelHtmlFor="grouped-options-select"
-    >
-      <SingleSelect
-        inputId="grouped-options-select"
-        options={groupedOptions}
-        onChange={onChange}
-      />
+    <FormGroup label="Grouped options" labelHtmlFor="grouped-options-select">
+      <SingleSelect inputId="grouped-options-select" options={groupedOptions} onChange={onChange} />
     </FormGroup>
   );
 }
@@ -203,15 +168,15 @@ export function CustomOptionWithDescriptionAndCheckbox() {
     >
       <SingleSelect
         components={{
-        Option: ({ ...props }) => (
-          <Option
-            {...props}
-            boldLabel
-            // eslint-disable-next-line react/prop-types
-            description={props.data.description}
-          />
-        ),
-      }}
+          Option: ({ ...props }) => (
+            <Option
+              {...props}
+              boldLabel
+              // eslint-disable-next-line react/prop-types
+              description={props.data.description}
+            />
+          ),
+        }}
         inputId="custom-option-with-description-select"
         options={options}
         onChange={onChange}
@@ -227,17 +192,29 @@ export function CustomOptionWithDescriptionAndCheckbox() {
 export function CustomOptionWithDescription() {
   const optionsWithDescriptions = [
     {
- label: 'Org Admin', value: 1, description: 'Short description of role capabilities', labelDescription: '(Full access)',
-},
+      label: 'Org Admin',
+      value: 1,
+      description: 'Short description of role capabilities',
+      labelDescription: '(Full access)',
+    },
     {
- label: 'Administrator', value: 2, description: 'Short description of role capabilities', labelDescription: '(Full access)',
-},
+      label: 'Administrator',
+      value: 2,
+      description: 'Short description of role capabilities',
+      labelDescription: '(Full access)',
+    },
     {
- label: 'Researcher', value: 3, description: 'Short description of role capabilities', labelDescription: '(Standard access)',
-},
+      label: 'Researcher',
+      value: 3,
+      description: 'Short description of role capabilities',
+      labelDescription: '(Standard access)',
+    },
     {
- label: 'Teammate', value: 4, description: 'Short description of role capabilities', labelDescription: '(Limited access)',
-},
+      label: 'Teammate',
+      value: 4,
+      description: 'Short description of role capabilities',
+      labelDescription: '(Limited access)',
+    },
   ];
 
   return (
@@ -247,11 +224,7 @@ export function CustomOptionWithDescription() {
     >
       <SingleSelect
         components={{
-          Option: (props) => (
-            <OptionWithDescription
-              {...props}
-            />
-          ),
+          Option: (props) => <OptionWithDescription {...props} />,
         }}
         inputId="custom-option-with-description-select"
         options={optionsWithDescriptions}
@@ -327,7 +300,7 @@ export function CustomOptionWithIndeterminateCheckbox() {
           Option: (props) => (
             <Option
               {...props}
-                  // eslint-disable-next-line react/prop-types
+              // eslint-disable-next-line react/prop-types
               indeterminate={props.value > 2}
               ref={createInputRef()}
             />
@@ -345,22 +318,19 @@ export function CustomOptionWithIndeterminateCheckbox() {
 
 export function CustomValueContainer() {
   return (
-    <FormGroup
-      label="Custom Value Container"
-      labelHtmlFor="custom-value-container-select"
-    >
+    <FormGroup label="Custom Value Container" labelHtmlFor="custom-value-container-select">
       <SingleSelect
         closeMenuOnSelect={false}
         components={{
-        Option,
-        ValueContainer: (props) => (
-          <ValueContainer
-            {...props}
-                /* eslint-disable react/prop-types */
-            valueText={`participant${props.getValue().length > 1 ? 's' : ''} selected`}
-          />
-        ),
-      }}
+          Option,
+          ValueContainer: (props) => (
+            <ValueContainer
+              {...props}
+              /* eslint-disable react/prop-types */
+              valueText={`participant${props.getValue().length > 1 ? 's' : ''} selected`}
+            />
+          ),
+        }}
         hideSelectedOptions={false}
         inputId="custom-value-container-select"
         isMulti

@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import React from 'react';
 
 import ControlButtonGroup, { ORIENTATIONS } from '../ControlButtonGroup';
 
@@ -33,9 +33,7 @@ export default function CheckboxButtonGroup({
     }
   };
 
-  const childChecked = (childValue) => (
-    value && value.includes(childValue)
-  );
+  const childChecked = (childValue) => value && value.includes(childValue);
 
   return (
     <div
@@ -65,11 +63,6 @@ CheckboxButtonGroup.propTypes = {
   id: PropTypes.string.isRequired,
   orientation: PropTypes.oneOf(Object.values(ORIENTATIONS)),
   parseInput: PropTypes.func,
-  value: PropTypes.arrayOf(
-    PropTypes.oneOfType([
-      PropTypes.number,
-      PropTypes.string,
-    ]),
-  ),
+  value: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
   onChange: PropTypes.func,
 };

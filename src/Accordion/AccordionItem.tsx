@@ -1,6 +1,5 @@
-import React from 'react';
 import classNames from 'classnames';
-
+import React from 'react';
 import RBAccordionItem from 'react-bootstrap/AccordionItem';
 
 import './AccordionItem.scss';
@@ -34,14 +33,14 @@ function AccordionItem({
     <RBAccordionItem
       as={as}
       className={classNames(
-      UNSAFE_className,
-      'AccordionItem',
-      variant === 'info' && 'AccordionItem--info',
-      borderless && 'AccordionItem--borderless',
-    )}
+        UNSAFE_className,
+        'AccordionItem',
+        variant === 'info' && 'AccordionItem--info',
+        borderless && 'AccordionItem--borderless',
+      )}
       eventKey={eventKey}
     >
-      { children }
+      {children}
     </RBAccordionItem>
   );
 }

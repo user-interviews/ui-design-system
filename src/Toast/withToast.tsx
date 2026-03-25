@@ -7,29 +7,18 @@ type WithToastProps = {
   autoDismiss?: boolean;
   WrappedComponent: React.ComponentType<
     unknown & {
-      setToastMessage: ReturnType<typeof useToast>['setMessage'],
+      setToastMessage: ReturnType<typeof useToast>['setMessage'];
     }
-  >
+  >;
 };
 
-function WithToast({
-  WrappedComponent,
-  autoDismiss = true,
-  ...props
-}: WithToastProps) {
+function WithToast({ WrappedComponent, autoDismiss = true, ...props }: WithToastProps) {
   const { messages, setMessage, dismissMessage } = useToast();
 
   return (
     <>
-      <Toast
-        autoDismiss={autoDismiss}
-        messages={messages}
-        onToastClosed={dismissMessage}
-      />
-      <WrappedComponent
-        setToastMessage={setMessage}
-        {...props}
-      />
+      <Toast autoDismiss={autoDismiss} messages={messages} onToastClosed={dismissMessage} />
+      <WrappedComponent setToastMessage={setMessage} {...props} />
     </>
   );
 }

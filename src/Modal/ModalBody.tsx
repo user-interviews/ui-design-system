@@ -1,5 +1,6 @@
-import React from 'react';
 import classNames from 'classnames';
+import React from 'react';
+
 import './ModalBody.scss';
 
 type ModalBodyProps = {
@@ -7,15 +8,8 @@ type ModalBodyProps = {
   className?: string;
 };
 
-function ModalBody({
-  children,
-  className,
-}: ModalBodyProps) {
-  return (
-    <div className={classNames('ModalBody', className)}>
-      {children}
-    </div>
-  );
+function ModalBody({ children, className }: ModalBodyProps) {
+  return <div className={classNames('ModalBody', className)}>{children}</div>;
 }
 
 export default ModalBody;

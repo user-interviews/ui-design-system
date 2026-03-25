@@ -1,5 +1,5 @@
-import React from 'react';
 import classNames from 'classnames';
+import React from 'react';
 
 import Tooltip from '../Tooltip';
 
@@ -30,16 +30,15 @@ function InputLegend({
     <>
       {text}
       {required && <span className="InputLegend__helper-text">&nbsp;(Required)</span>}
-      {labelHelperText && <span className="InputLegend__helper-text">&nbsp;({labelHelperText})</span>}
+      {labelHelperText && (
+        <span className="InputLegend__helper-text">&nbsp;({labelHelperText})</span>
+      )}
       {tooltipText && <Tooltip iconClasses="Tooltip__icon" placement="right" text={tooltipText} />}
     </>
   );
 
   return (
-    <legend
-      className={classNames('InputLegend', className)}
-      {...props}
-    >
+    <legend className={classNames('InputLegend', className)} {...props}>
       {inputLegendChildren}
     </legend>
   );

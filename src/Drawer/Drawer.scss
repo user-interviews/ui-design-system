@@ -18,7 +18,7 @@
 .Drawer {
   @media (min-width: $drawer-width-small) {
     &--sm {
-      width: $drawer-width-small
+      width: $drawer-width-small;
     }
   }
 

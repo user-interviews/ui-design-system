@@ -1,13 +1,8 @@
-import React, { useCallback, useState, useEffect } from 'react';
-import { createPortal } from 'react-dom';
-import DatePicker, {
-  getDefaultLocale,
-  registerLocale,
-  setDefaultLocale,
-} from 'react-datepicker';
 import { format, isDate, isValid, parse, parseISO } from 'date-fns';
-
 import { enAU, enCA, enGB, enUS, enZA, fr, frCA, de } from 'date-fns/locale';
+import React, { useCallback, useState, useEffect } from 'react';
+import DatePicker, { getDefaultLocale, registerLocale, setDefaultLocale } from 'react-datepicker';
+import { createPortal } from 'react-dom';
 
 import { PickerEnforcedInput } from './PickerEnforcedInput';
 
@@ -29,11 +24,8 @@ const localeMap = {
 const STANDARD_TIME_FORMAT_FNS = 'hh:mm aa';
 const ISO_DATE_FORMAT_FNS = 'yyyy-MM-dd';
 
-const popperContainerDocumentBody = ({
-  children,
-}: {
-  children?: React.ReactNode;
-}) => createPortal(children, document.body);
+const popperContainerDocumentBody = ({ children }: { children?: React.ReactNode }) =>
+  createPortal(children, document.body);
 
 export type DateTimePickerProps = {
   isClearable?: boolean;
@@ -107,13 +99,7 @@ function DateTimePicker({
       return parsedDateFromString();
     }
     return undefined;
-  }, [
-    getDateFormat,
-    parsedDateFromString,
-    showTimeSelect,
-    startDate,
-    startTime,
-  ]);
+  }, [getDateFormat, parsedDateFromString, showTimeSelect, startDate, startTime]);
 
   const resetDate = () => {
     setStartDate('');
@@ -197,17 +183,15 @@ function DateTimePicker({
       <DatePicker
         adjustDateOnChange
         allowSameDay
-        className={
-          showPickerEnforcedInput ? '' : 'date-time-picker__input-group'
-        }
+        className={showPickerEnforcedInput ? '' : 'date-time-picker__input-group'}
         customInput={
           showPickerEnforcedInput ? (
-          <PickerEnforcedInput
-            disabled={disabled}
-            inputClassName={inputClassName}
-            name={name}
-            startDate={startDate}
-          />
+            <PickerEnforcedInput
+              disabled={disabled}
+              inputClassName={inputClassName}
+              name={name}
+              startDate={startDate}
+            />
           ) : undefined
         }
         dateFormat={getDateFormat()}
@@ -220,12 +204,8 @@ function DateTimePicker({
         minDate={minDate}
         name={name}
         placeholderText={getDateFormat().toUpperCase()}
-        popperClassName={
-          isWithinModal ? 'react-datepicker__popper-container--modal' : ''
-        }
-        popperContainer={
-          isWithinModal ? popperContainerDocumentBody : undefined
-        }
+        popperClassName={isWithinModal ? 'react-datepicker__popper-container--modal' : ''}
+        popperContainer={isWithinModal ? popperContainerDocumentBody : undefined}
         selected={dateFromString()}
         showMonthDropdown={showMonthAndYearSelects}
         showTimeSelect={showTimeSelect}

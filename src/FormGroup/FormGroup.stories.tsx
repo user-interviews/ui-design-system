@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-
 import { FlexContainer } from 'src/FlexContainer';
-import { faSearch } from '../font_awesome/solid';
-import FormGroup from '.';
-import Input from '../Input';
-import FormControlLabel from '../FormControlLabel';
-import RadioButtonGroup from '../RadioButtonGroup';
-import { ORIENTATIONS } from '../ControlButtonGroup';
-import RadioButton from '../RadioButton';
 
+import FormGroup from '.';
+import { ORIENTATIONS } from '../ControlButtonGroup';
+import { faSearch } from '../font_awesome/solid';
+import FormControlLabel from '../FormControlLabel';
+import Input from '../Input';
+import RadioButton from '../RadioButton';
+import RadioButtonGroup from '../RadioButtonGroup';
 import mdx from './FormGroup.mdx';
 
 export default {
@@ -25,9 +24,7 @@ function InputComponent(props) {
   const [value, setValue] = useState('');
   const handleChangeValue = (event) => setValue(event.target.value);
 
-  return (
-    <Input value={value} onChange={handleChangeValue} {...props} />
-  );
+  return <Input value={value} onChange={handleChangeValue} {...props} />;
 }
 
 export function Default() {
@@ -53,11 +50,7 @@ export function WithHelperText() {
 
 export function Required() {
   return (
-    <FormGroup
-      id="with-required"
-      label="Label"
-      required
-    >
+    <FormGroup id="with-required" label="Label" required>
       <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
     </FormGroup>
   );
@@ -66,20 +59,10 @@ export function Required() {
 export function NoMargin() {
   return (
     <FlexContainer flexDirection="column" gap={4}>
-      <FormGroup
-        label="Label"
-        labelHtmlFor="no-margin-1-input"
-        noMargin
-        required
-      >
+      <FormGroup label="Label" labelHtmlFor="no-margin-1-input" noMargin required>
         <InputComponent id="no-margin-1-input" placeholder="This FormGroup has no default margin" />
       </FormGroup>
-      <FormGroup
-        label="Label"
-        labelHtmlFor="no-margin-2-input"
-        noMargin
-        required
-      >
+      <FormGroup label="Label" labelHtmlFor="no-margin-2-input" noMargin required>
         <InputComponent id="no-margin-2-input" placeholder="This FormGroup has no default margin" />
       </FormGroup>
     </FlexContainer>
@@ -88,12 +71,7 @@ export function NoMargin() {
 
 export function WithLabelTooltip() {
   return (
-    <FormGroup
-      id="with-label"
-      label="Label"
-      labelHtmlFor="input"
-      labelTooltip="Some tooltip text"
-    >
+    <FormGroup id="with-label" label="Label" labelHtmlFor="input" labelTooltip="Some tooltip text">
       <InputComponent id="input" name="with-label" />
     </FormGroup>
   );
@@ -124,7 +102,13 @@ export function WithTrailingText() {
       label="Form Group with trailing text"
       labelHtmlFor="trailing-text-input"
     >
-      <InputComponent id="trailing-text-input" name="default" placeholder="Session length" trailingText="min" type="number" />
+      <InputComponent
+        id="trailing-text-input"
+        name="default"
+        placeholder="Session length"
+        trailingText="min"
+        type="number"
+      />
     </FormGroup>
   );
 }
@@ -230,7 +214,14 @@ export function WithErrors() {
   return (
     <FormGroup
       displayErrorText
-      errors={{ test: [<div>Sorry, we’re not able to accept this type of input. For more information, click <a href="http://www.google.com">here</a></div>] }}
+      errors={{
+        test: [
+          <div>
+            Sorry, we’re not able to accept this type of input. For more information, click{' '}
+            <a href="http://www.google.com">here</a>
+          </div>,
+        ],
+      }}
       id="with-errors"
       inputKey="test"
       label="Form Group with errors"
@@ -280,7 +271,7 @@ function ButtonGroupComponent({
         value={value}
         onChange={handleChangeValue}
       >
-        { children }
+        {children}
       </ButtonGroup>
     </FormGroup>
   );

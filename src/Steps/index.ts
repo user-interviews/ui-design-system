@@ -1,7 +1,4 @@
-import Steps from './Steps';
 import Step from './Step';
+import Steps from './Steps';
 
-export {
-  Steps,
-  Step,
-};
+export { Steps, Step };

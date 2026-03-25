@@ -1,8 +1,8 @@
 import React from 'react';
 
+import { withToast } from '.';
 import { MessageTypes } from '../Alert';
 import Button from '../Button';
-import { withToast } from '.';
 import mdx from './Toast.mdx';
 
 export default {
@@ -16,11 +16,11 @@ export default {
 };
 
 function DummyComponent({
- action,
- type,
- message,
- title,
- setToastMessage,
+  action,
+  type,
+  message,
+  title,
+  setToastMessage,
 }: {
   action?: {
     content?: string;
@@ -29,21 +29,21 @@ function DummyComponent({
   type: string;
   message: string;
   title: string;
-  setToastMessage: ({
- type, message, action, title,
-}) => void;
+  setToastMessage: ({ type, message, action, title }) => void;
 }) {
   return (
     <div>
       <p>Click the button to see a toast message.</p>
       <Button
         variant="primary"
-        onClick={() => setToastMessage({
-        type,
-        message,
-        action,
-        title,
-      })}
+        onClick={() =>
+          setToastMessage({
+            type,
+            message,
+            action,
+            title,
+          })
+        }
       >
         Submit
       </Button>
@@ -65,11 +65,11 @@ export function Default() {
 export function ToastCustomMessage() {
   return (
     <ToastDummyComponent
-      message={(
+      message={
         <>
           <strong>[Some strong text]</strong> and additional text that is wrapped in a fragment.
         </>
-    )}
+      }
       title="Normal string title"
       type={MessageTypes.SUCCESS}
     />

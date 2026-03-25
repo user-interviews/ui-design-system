@@ -1,9 +1,8 @@
-import type { TabsProps as BootstrapTabProps } from 'react-bootstrap/Tabs';
-
-import React from 'react';
 import classNames from 'classnames';
-
+import React from 'react';
+import type { TabsProps as BootstrapTabProps } from 'react-bootstrap/Tabs';
 import ReactBootstrapTabs from 'react-bootstrap/Tabs';
+
 import * as styles from './tabs.module.scss';
 
 export interface TabsProps extends BootstrapTabProps {
@@ -20,16 +19,10 @@ function Tabs({
 }: TabsProps) {
   return (
     <ReactBootstrapTabs
-      className={
-        classNames(
-          className,
-          styles.tabs,
-          {
-            [styles.flexWrapUnset]: flexWrapUnset,
-            [styles.navItemButtonFullHeight]: navItemButtonFullHeight,
-          },
-        )
-      }
+      className={classNames(className, styles.tabs, {
+        [styles.flexWrapUnset]: flexWrapUnset,
+        [styles.navItemButtonFullHeight]: navItemButtonFullHeight,
+      })}
       variant="tabs"
       {...props}
     >

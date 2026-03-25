@@ -1,12 +1,19 @@
-import { ReactNode, ElementType, createElement } from 'react';
 import classNames from 'classnames';
+import { ReactNode, ElementType, createElement } from 'react';
 
 import { useDeprecationWarning } from '../utils';
 
 import * as styles from './Flex.module.scss';
 
 export interface FlexProps {
-  alignItems?: 'stretch' | 'center' | 'flex-start' | 'flex-end' | 'baseline' | 'initial' | 'inherit';
+  alignItems?:
+    | 'stretch'
+    | 'center'
+    | 'flex-start'
+    | 'flex-end'
+    | 'baseline'
+    | 'initial'
+    | 'inherit';
   alignSelf?: 'stretch' | 'center' | 'start' | 'end';
   /**
     You can use a custom element for this component other than the default `div`
@@ -28,7 +35,14 @@ export interface FlexProps {
     px
   */
   height?: string;
-  justifyContent?: 'flex-start' | 'flex-end' | 'space-between' | 'space-around' | 'center' | 'initial' | 'inherit';
+  justifyContent?:
+    | 'flex-start'
+    | 'flex-end'
+    | 'space-between'
+    | 'space-around'
+    | 'center'
+    | 'initial'
+    | 'inherit';
   justifySelf?: 'stretch' | 'center' | 'start' | 'end';
   /**
     px
@@ -76,7 +90,9 @@ function Flex({
     flexWrap && styles[`flex-wrap-${flexWrap}`],
     justifyContent && styles[`justify-content-${justifyContent}`],
     justifySelf && styles[`justify-self-${justifySelf}`],
-  ].filter(Boolean).join(' ');
+  ]
+    .filter(Boolean)
+    .join(' ');
 
   // Variable flex properties defined by consumer
   const style = {

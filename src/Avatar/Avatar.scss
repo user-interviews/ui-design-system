@@ -7,14 +7,14 @@
   width: $avatar-small-width;
 
   &__alert {
-     background-color: var(--ux-red-400);
-     border: 2px solid var(--ux-white);
-     border-radius: 50%;
-     height: 12px;
-     position: absolute;
-     top: 0;
-     right: 0;
-     width: 12px;
+    background-color: var(--ux-red-400);
+    border: 2px solid var(--ux-white);
+    border-radius: 50%;
+    height: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 12px;
   }
 
   &__circle {

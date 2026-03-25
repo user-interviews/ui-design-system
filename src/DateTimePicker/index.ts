@@ -1,5 +1,3 @@
 import DateTimePicker from './DateTimePicker';
 
-export {
-  DateTimePicker,
-};
+export { DateTimePicker };

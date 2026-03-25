@@ -1,14 +1,12 @@
-import React, { useState } from 'react';
-import classNames from 'classnames';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
-
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
+import React, { useState } from 'react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import { faCopy } from '../font_awesome/regular';
-
-import TrackedButton from '../TrackedButton';
 import Popper from '../Popper';
+import TrackedButton from '../TrackedButton';
 
 import './CopyToClipboardButton.scss';
 
@@ -21,7 +19,7 @@ type CopyToClipboardButtonProps = {
   copyText?: string;
   displayText?: string;
   trackingEvent: string;
-  variant?: typeof ButtonVariants[keyof typeof ButtonVariants];
+  variant?: (typeof ButtonVariants)[keyof typeof ButtonVariants];
 };
 
 function CopyToClipboardButton({
@@ -42,27 +40,17 @@ function CopyToClipboardButton({
       <CopyToClipboard text={copyText} onCopy={handleClickCopy}>
         <TrackedButton
           aria-label="Copy to clipboard"
-          className={classNames(
-            'CopyToClipboardButton',
-            'btn',
-{
+          className={classNames('CopyToClipboardButton', 'btn', {
             'btn-outline-secondary': variant === ButtonVariants.SECONDARY,
-            },
-          )}
+          })}
           event={trackingEvent}
           type="button"
         >
-          <Popper
-            dark
-            text="Copied!"
-            visible={copied}
-          >
+          <Popper dark text="Copied!" visible={copied}>
             <span>
               <FontAwesomeIcon icon={faCopy as IconDefinition} />
               {displayText && (
-                <span className="CopyToClipboardButton__display-text">
-                  {displayText}
-                </span>
+                <span className="CopyToClipboardButton__display-text">{displayText}</span>
               )}
             </span>
           </Popper>

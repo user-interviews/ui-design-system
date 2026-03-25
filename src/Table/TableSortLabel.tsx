@@ -1,5 +1,6 @@
-import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+
 import { faSort } from '../font_awesome/solid';
 
 import './TableSortLabel.scss';

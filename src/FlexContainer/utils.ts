@@ -1,9 +1,10 @@
 import { type FlexContainerProps } from './FlexContainer';
+
 import * as styles from './FlexContainer.module.css';
 
 export function computeBreakpointClassNames(
   props: Omit<FlexContainerProps, 'children' | 'className'>,
-  bp?: 'xs' | 'sm' | 'md' | 'lg'| 'xl' | 'xxl',
+  bp?: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl',
 ): string[] {
   if (bp) {
     const attributes = props[bp];

@@ -1,5 +1,5 @@
-import React from 'react';
 import classNames from 'classnames';
+import React from 'react';
 import ReactModal, { type ReactModalProps } from 'react-modal';
 
 import './Modal.scss';
@@ -8,14 +8,10 @@ export const MODAL_SIZES = { SMALL: 'small', MEDIUM: 'medium', LARGE: 'large' } 
 
 type ModalProps = {
   className?: string;
-  size?: typeof MODAL_SIZES[keyof typeof MODAL_SIZES];
+  size?: (typeof MODAL_SIZES)[keyof typeof MODAL_SIZES];
 } & ReactModalProps;
 
-function Modal({
-  size = 'small',
-  className,
-  ...props
-}: ModalProps) {
+function Modal({ size = 'small', className, ...props }: ModalProps) {
   let componentClassName = className;
 
   if (size === MODAL_SIZES.MEDIUM) {
@@ -24,9 +20,7 @@ function Modal({
     componentClassName = classNames(className, 'ReactModal--large');
   }
 
-  return (
-    <ReactModal {...props} className={componentClassName} />
-  );
+  return <ReactModal {...props} className={componentClassName} />;
 }
 
 export default Modal;

@@ -26,8 +26,8 @@
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
     "target": "es5",
-    "types": ["node", "react", "react-dom", "@testing-library/jest-dom"],
+    "types": ["node", "react", "react-dom", "@testing-library/jest-dom"]
   },
   "include": ["src/**/*"],
-  "exclude": ["node_modules", "dist", "build", ".storybook"],
+  "exclude": ["node_modules", "dist", "build", ".storybook"]
 }

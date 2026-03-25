@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  Row as ReactBootstrapRow,
-  type RowProps as ReactBootstrapRowProps,
-} from 'react-bootstrap';
+import { Row as ReactBootstrapRow, type RowProps as ReactBootstrapRowProps } from 'react-bootstrap';
 
 import { useDeprecationWarning } from '../utils';
 

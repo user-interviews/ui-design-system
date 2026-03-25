@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { ToggleInput } from '.';
 
+import { ToggleInput } from '.';
 import mdx from './ToggleInput.mdx';
 
 export default {
@@ -57,13 +57,7 @@ export function LabelLeft() {
   };
 
   return (
-    <ToggleInput
-      id="1"
-      isChecked={isChecked}
-      labelLeft
-      labelText="Label"
-      onToggle={handleChange}
-    />
+    <ToggleInput id="1" isChecked={isChecked} labelLeft labelText="Label" onToggle={handleChange} />
   );
 }
 

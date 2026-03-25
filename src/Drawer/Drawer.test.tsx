@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import React, { useState } from 'react';
 
 import Drawer from './Drawer';
 
@@ -43,10 +42,10 @@ function SetupDrawerWithChildren(props) {
 }
 
 interface SetupMultipleDrawersProps {
-  drawerOneVisibleDefault?: boolean
-  drawerTwoVisibleDefault?: boolean,
-  drawerThreeVisibleDefault?: boolean
-  drawerFourVisibleDefault?: boolean,
+  drawerOneVisibleDefault?: boolean;
+  drawerTwoVisibleDefault?: boolean;
+  drawerThreeVisibleDefault?: boolean;
+  drawerFourVisibleDefault?: boolean;
 }
 
 function SetupMultipleDrawers({
@@ -62,59 +61,35 @@ function SetupMultipleDrawers({
 
   return (
     <div>
-      <button
-        type="button"
-        onClick={() => setIsDrawerOneVisible((prevState) => !prevState)}
-      >
+      <button type="button" onClick={() => setIsDrawerOneVisible((prevState) => !prevState)}>
         toggle visibility drawerOne
       </button>
 
-      <button
-        type="button"
-        onClick={() => setIsDrawerTwoVisible((prevState) => !prevState)}
-      >
+      <button type="button" onClick={() => setIsDrawerTwoVisible((prevState) => !prevState)}>
         toggle visibility drawerTwo
       </button>
 
-      <button
-        type="button"
-        onClick={() => setIsDrawerThreeVisible((prevState) => !prevState)}
-      >
+      <button type="button" onClick={() => setIsDrawerThreeVisible((prevState) => !prevState)}>
         toggle visibility drawerThree
       </button>
 
-      <button
-        type="button"
-        onClick={() => setIsDrawerFourVisible((prevState) => !prevState)}
-      >
+      <button type="button" onClick={() => setIsDrawerFourVisible((prevState) => !prevState)}>
         toggle visibility drawerFour
       </button>
 
-      <Drawer
-        visible={isDrawerOneVisible}
-        onRequestClose={() => setIsDrawerOneVisible(false)}
-      >
+      <Drawer visible={isDrawerOneVisible} onRequestClose={() => setIsDrawerOneVisible(false)}>
         <div>childrenDrawerOne</div>
       </Drawer>
-      <Drawer
-        visible={isDrawerTwoVisible}
-        onRequestClose={() => setIsDrawerTwoVisible(false)}
-      >
+      <Drawer visible={isDrawerTwoVisible} onRequestClose={() => setIsDrawerTwoVisible(false)}>
         <div>childrenDrawerTwo</div>
       </Drawer>
-      <Drawer
-        visible={isDrawerThreeVisible}
-        onRequestClose={() => setIsDrawerThreeVisible(false)}
-      >
+      <Drawer visible={isDrawerThreeVisible} onRequestClose={() => setIsDrawerThreeVisible(false)}>
         <div>childrenDrawerThree</div>
       </Drawer>
 
       {/* Testing what happens when drawer unmounts */}
       {isDrawerFourVisible && (
-        <Drawer
-          visible={isDrawerFourVisible}
-          onRequestClose={() => setIsDrawerThreeVisible(false)}
-        >
+        <Drawer visible={isDrawerFourVisible} onRequestClose={() => setIsDrawerThreeVisible(false)}>
           <div>childrenDrawerFour</div>
         </Drawer>
       )}
@@ -147,7 +122,9 @@ describe('Drawer', () => {
         render(<SetupDrawerWithChildren visible={false} />);
 
         expect(elements.drawerOverlay.get()).toBeInTheDocument();
-        expect(elements.drawerOverlay.get().classList).not.toContain('DrawerBackgroundOverlay--active');
+        expect(elements.drawerOverlay.get().classList).not.toContain(
+          'DrawerBackgroundOverlay--active',
+        );
       });
 
       it('does not call onRequestClose when pressing ESC key', () => {
@@ -176,7 +153,9 @@ describe('Drawer', () => {
 
         it('body tag does not have Drawer--open', () => {
           // eslint-disable-next-line max-len
-          const { container } = render(<SetupDrawerWithChildren hasBackgroundOverlay={false} visible={false} />);
+          const { container } = render(
+            <SetupDrawerWithChildren hasBackgroundOverlay={false} visible={false} />,
+          );
           const body = container.closest('body');
 
           expect(body?.classList).not.toContain('Drawer--open');
@@ -219,10 +198,7 @@ describe('Drawer', () => {
         const onRequestClose = jest.fn();
 
         const { container } = render(
-          <SetupDrawerWithChildren
-            visible
-            onRequestClose={onRequestClose}
-          />,
+          <SetupDrawerWithChildren visible onRequestClose={onRequestClose} />,
         );
 
         const [overlay] = Array.from(container.getElementsByClassName('DrawerBackgroundOverlay'));
@@ -270,7 +246,9 @@ describe('Drawer', () => {
 
         it('body tag does not have Drawer--open', () => {
           // eslint-disable-next-line max-len
-          const { container } = render(<SetupDrawerWithChildren hasBackgroundOverlay={false} visible />);
+          const { container } = render(
+            <SetupDrawerWithChildren hasBackgroundOverlay={false} visible />,
+          );
           const body = container.closest('body');
 
           expect(body?.classList).not.toContain('Drawer--open');

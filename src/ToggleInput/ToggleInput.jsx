@@ -1,6 +1,6 @@
-import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
+import React from 'react';
 import Toggle from 'react-toggle';
 
 import './ToggleInput.scss';
@@ -20,11 +20,9 @@ function ToggleInput({
 }) {
   return (
     <label
-      className={classNames(
-      'ToggleInput__label',
-      UNSAFE_className,
-      { 'ToggleInput__label--disabled': disabled },
-    )}
+      className={classNames('ToggleInput__label', UNSAFE_className, {
+        'ToggleInput__label--disabled': disabled,
+      })}
       htmlFor={id}
     >
       {labelLeft ? <span>{labelText}</span> : null}

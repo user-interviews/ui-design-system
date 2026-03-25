@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
-import classNames from 'classnames';
-
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
+import React, { useEffect } from 'react';
+
 import {
   faBullhorn,
   faCircle,
@@ -22,7 +22,7 @@ export const MessageTypes = {
   ERROR: 'error',
 } as const;
 
-type MessageType = typeof MessageTypes[keyof typeof MessageTypes];
+type MessageType = (typeof MessageTypes)[keyof typeof MessageTypes];
 
 const getAlertIcon = (type: MessageType) => {
   switch (type) {
@@ -32,7 +32,7 @@ const getAlertIcon = (type: MessageType) => {
           <FontAwesomeIcon icon={faCircle as IconDefinition} transform="grow-8" />
           <FontAwesomeIcon icon={faCheck as IconDefinition} transform="shrink-4" />
         </span>
-);
+      );
     case MessageTypes.INFO:
       return (
         <span className="fa-layers fa-fw">
@@ -41,11 +41,11 @@ const getAlertIcon = (type: MessageType) => {
         </span>
       );
     case MessageTypes.FEATURE:
-      return (<FontAwesomeIcon icon={faBullhorn as IconDefinition} transform="grow-2" />);
+      return <FontAwesomeIcon icon={faBullhorn as IconDefinition} transform="grow-2" />;
     case MessageTypes.WARNING:
-      return (<FontAwesomeIcon icon={faExclamationTriangle as IconDefinition} transform="grow-2" />);
+      return <FontAwesomeIcon icon={faExclamationTriangle as IconDefinition} transform="grow-2" />;
     case MessageTypes.ERROR:
-      return (<FontAwesomeIcon icon={faExclamationTriangle as IconDefinition} transform="grow-2" />);
+      return <FontAwesomeIcon icon={faExclamationTriangle as IconDefinition} transform="grow-2" />;
     default:
       return null;
   }
@@ -66,10 +66,12 @@ type AlertProps = {
   /**
    Creates a CTA button on the Alert
   */
-  action?: {
-    url: string;
-    content: React.ReactNode;
-  } | React.ReactNode;
+  action?:
+    | {
+        url: string;
+        content: React.ReactNode;
+      }
+    | React.ReactNode;
   /**
     Specifies where to open the linked document
   */
@@ -95,9 +97,12 @@ function Alert(props: AlertProps) {
   useEffect(() => {
     let timeout;
     if (autoDismiss && onDismiss) {
-      timeout = setTimeout(() => (onDismiss(id)),
-      props.type === MessageTypes.SUCCESS ?
-      AUTO_DISMISS_TIMEOUT_SUCCESS : AUTO_DISMISS_TIMEOUT_DEFAULT);
+      timeout = setTimeout(
+        () => onDismiss(id),
+        props.type === MessageTypes.SUCCESS
+          ? AUTO_DISMISS_TIMEOUT_SUCCESS
+          : AUTO_DISMISS_TIMEOUT_DEFAULT,
+      );
     }
     return () => {
       clearTimeout(timeout);
@@ -109,17 +114,9 @@ function Alert(props: AlertProps) {
       className={getAlertClassName(props.type)}
       style={props.removeBorderLeft ? { borderLeft: 'none' } : undefined}
     >
-      <div className="Alert__icon">
-        {getAlertIcon(props.type)}
-      </div>
+      <div className="Alert__icon">{getAlertIcon(props.type)}</div>
       <div className="Alert__content">
-        {
-          props.title && (
-            <div className="Alert__title">
-              {props.title}
-            </div>
-          )
-        }
+        {props.title && <div className="Alert__title">{props.title}</div>}
         <div
           className="Alert__message"
           // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
@@ -128,36 +125,34 @@ function Alert(props: AlertProps) {
           {props.message}
         </div>
       </div>
-      {
-        props.action && (
+      {props.action && (
         <div className="Alert__action">
-          { (typeof props.action === 'object' && 'url' in props.action) ? (
+          {typeof props.action === 'object' && 'url' in props.action ? (
             <a
-              className={classNames(`Alert-${(props.type)}`, 'primary-action')}
+              className={classNames(`Alert-${props.type}`, 'primary-action')}
               href={props.action.url}
               rel="noopener noreferrer"
               target={props.actionTarget}
             >
               {props.action.content}
             </a>
-          ) : (props.action)}
+          ) : (
+            props.action
+          )}
         </div>
-      )
-}
-      {
-        props.onDismiss && (
-          <div className="Alert__close">
-            <button
-              aria-label={`close ${props.type}`}
-              className="close"
-              type="button"
-              onClick={() => props.onDismiss && props.onDismiss(props.id)}
-            >
-              <FontAwesomeIcon icon={faTimes as IconDefinition} />
-            </button>
-          </div>
-        )
-      }
+      )}
+      {props.onDismiss && (
+        <div className="Alert__close">
+          <button
+            aria-label={`close ${props.type}`}
+            className="close"
+            type="button"
+            onClick={() => props.onDismiss && props.onDismiss(props.id)}
+          >
+            <FontAwesomeIcon icon={faTimes as IconDefinition} />
+          </button>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,7 +1,6 @@
 import React from 'react';
 
 import IconButton from './IconButton';
-
 import mdx from './IconButton.mdx';
 
 export default {

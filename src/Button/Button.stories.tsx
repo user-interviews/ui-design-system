@@ -1,11 +1,9 @@
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import React from 'react';
 
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { faFileAlt, faCaretDown, faPaperPlane } from '../font_awesome/regular';
-import {
- faGoogle, faFacebook, faLinkedin, faTwitter,
-} from '../font_awesome/brands';
 import Button from '.';
+import { faGoogle, faFacebook, faLinkedin, faTwitter } from '../font_awesome/brands';
+import { faFileAlt, faCaretDown, faPaperPlane } from '../font_awesome/regular';
 import mdx from './Button.mdx';
 
 export default {
@@ -28,8 +26,7 @@ export function Primary() {
         variant="primary"
       >
         Confirm
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         leadingIcon={faFileAlt as IconDefinition}
         size="sm"
@@ -37,8 +34,7 @@ export function Primary() {
         variant="outline-primary"
       >
         Confirm
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         disabled
         leadingIcon={faFileAlt as IconDefinition}
@@ -47,8 +43,7 @@ export function Primary() {
         variant="primary"
       >
         Confirm
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         disabled
         leadingIcon={faFileAlt as IconDefinition}
@@ -57,24 +52,21 @@ export function Primary() {
         variant="outline-primary"
       >
         Confirm
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         leadingIcon={faFileAlt as IconDefinition}
         trailingIcon={faCaretDown as IconDefinition}
         variant="primary"
       >
         Confirm
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         leadingIcon={faFileAlt as IconDefinition}
         trailingIcon={faCaretDown as IconDefinition}
         variant="outline-primary"
       >
         Confirm
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         disabled
         leadingIcon={faFileAlt as IconDefinition}
@@ -82,8 +74,7 @@ export function Primary() {
         variant="primary"
       >
         Confirm
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         disabled
         leadingIcon={faFileAlt as IconDefinition}
@@ -106,8 +97,7 @@ export function Tertiary() {
         variant="tertiary"
       >
         Confirm
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         disabled
         leadingIcon={faFileAlt as IconDefinition}
@@ -116,16 +106,14 @@ export function Tertiary() {
         variant="tertiary"
       >
         Confirm
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         leadingIcon={faFileAlt as IconDefinition}
         trailingIcon={faCaretDown as IconDefinition}
         variant="tertiary"
       >
         Confirm
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         disabled
         leadingIcon={faFileAlt as IconDefinition}
@@ -148,8 +136,7 @@ export function Transparent() {
         variant="transparent"
       >
         Skip
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         leadingIcon={faFileAlt as IconDefinition}
         size="sm"
@@ -157,8 +144,7 @@ export function Transparent() {
         variant="outline-transparent"
       >
         Skip
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         disabled
         leadingIcon={faFileAlt as IconDefinition}
@@ -167,8 +153,7 @@ export function Transparent() {
         variant="transparent"
       >
         Skip
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         disabled
         leadingIcon={faFileAlt as IconDefinition}
@@ -177,24 +162,21 @@ export function Transparent() {
         variant="outline-transparent"
       >
         Skip
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         leadingIcon={faFileAlt as IconDefinition}
         trailingIcon={faCaretDown as IconDefinition}
         variant="transparent"
       >
         Skip
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         leadingIcon={faFileAlt as IconDefinition}
         trailingIcon={faCaretDown as IconDefinition}
         variant="outline-transparent"
       >
         Skip
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         disabled
         leadingIcon={faFileAlt as IconDefinition}
@@ -202,8 +184,7 @@ export function Transparent() {
         variant="transparent"
       >
         Skip
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         disabled
         leadingIcon={faFileAlt as IconDefinition}
@@ -219,26 +200,13 @@ export function Transparent() {
 export function Link() {
   return (
     <>
-      <Button
-        size="sm"
-        variant="link"
-      >
+      <Button size="sm" variant="link">
         Send
-      </Button>
-      {' '}
-      <Button
-        leadingIcon={faPaperPlane as IconDefinition}
-        size="sm"
-        variant="link"
-      >
+      </Button>{' '}
+      <Button leadingIcon={faPaperPlane as IconDefinition} size="sm" variant="link">
         Send
-      </Button>
-      {' '}
-      <Button
-        disabled
-        size="sm"
-        variant="link"
-      >
+      </Button>{' '}
+      <Button disabled size="sm" variant="link">
         Send
       </Button>
     </>
@@ -248,46 +216,22 @@ export function Link() {
 export function Brands() {
   return (
     <>
-      <Button
-        leadingIcon={faGoogle as IconDefinition}
-        size="sm"
-        variant="brand-google"
-      >
+      <Button leadingIcon={faGoogle as IconDefinition} size="sm" variant="brand-google">
         Google
-      </Button>
-      {' '}
-      <Button
-        disabled
-        leadingIcon={faGoogle as IconDefinition}
-        size="sm"
-        variant="brand-google"
-      >
+      </Button>{' '}
+      <Button disabled leadingIcon={faGoogle as IconDefinition} size="sm" variant="brand-google">
         Google
-      </Button>
-      {' '}
-      <Button
-        leadingIcon={faGoogle as IconDefinition}
-        variant="brand-google"
-      >
+      </Button>{' '}
+      <Button leadingIcon={faGoogle as IconDefinition} variant="brand-google">
         Google
-      </Button>
-      {' '}
-      <Button
-        disabled
-        leadingIcon={faGoogle as IconDefinition}
-        variant="brand-google"
-      >
+      </Button>{' '}
+      <Button disabled leadingIcon={faGoogle as IconDefinition} variant="brand-google">
         Google
       </Button>
       <div style={{ margin: '8px' }} />
-      <Button
-        leadingIcon={faFacebook as IconDefinition}
-        size="sm"
-        variant="brand-facebook"
-      >
+      <Button leadingIcon={faFacebook as IconDefinition} size="sm" variant="brand-facebook">
         Facebook
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         disabled
         leadingIcon={faFacebook as IconDefinition}
@@ -295,32 +239,17 @@ export function Brands() {
         variant="brand-facebook"
       >
         Facebook
-      </Button>
-      {' '}
-      <Button
-        leadingIcon={faFacebook as IconDefinition}
-        variant="brand-facebook"
-      >
+      </Button>{' '}
+      <Button leadingIcon={faFacebook as IconDefinition} variant="brand-facebook">
         Facebook
-      </Button>
-      {' '}
-      <Button
-        disabled
-        leadingIcon={faFacebook as IconDefinition}
-        variant="brand-facebook"
-      >
+      </Button>{' '}
+      <Button disabled leadingIcon={faFacebook as IconDefinition} variant="brand-facebook">
         Facebook
-      </Button>
-      {' '}
+      </Button>{' '}
       <div style={{ margin: '8px' }} />
-      <Button
-        leadingIcon={faLinkedin as IconDefinition}
-        size="sm"
-        variant="brand-linkedin"
-      >
+      <Button leadingIcon={faLinkedin as IconDefinition} size="sm" variant="brand-linkedin">
         LinkedIn
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         disabled
         leadingIcon={faLinkedin as IconDefinition}
@@ -328,52 +257,24 @@ export function Brands() {
         variant="brand-linkedin"
       >
         LinkedIn
-      </Button>
-      {' '}
-      <Button
-        leadingIcon={faLinkedin as IconDefinition}
-        variant="brand-linkedin"
-      >
+      </Button>{' '}
+      <Button leadingIcon={faLinkedin as IconDefinition} variant="brand-linkedin">
         LinkedIn
-      </Button>
-      {' '}
-      <Button
-        disabled
-        leadingIcon={faLinkedin as IconDefinition}
-        variant="brand-linkedin"
-      >
+      </Button>{' '}
+      <Button disabled leadingIcon={faLinkedin as IconDefinition} variant="brand-linkedin">
         LinkedIn
       </Button>
       <div style={{ margin: '8px' }} />
-      <Button
-        leadingIcon={faTwitter as IconDefinition}
-        size="sm"
-        variant="brand-twitter"
-      >
+      <Button leadingIcon={faTwitter as IconDefinition} size="sm" variant="brand-twitter">
         Twitter
-      </Button>
-      {' '}
-      <Button
-        disabled
-        leadingIcon={faTwitter as IconDefinition}
-        size="sm"
-        variant="brand-twitter"
-      >
+      </Button>{' '}
+      <Button disabled leadingIcon={faTwitter as IconDefinition} size="sm" variant="brand-twitter">
         Twitter
-      </Button>
-      {' '}
-      <Button
-        leadingIcon={faTwitter as IconDefinition}
-        variant="brand-twitter"
-      >
+      </Button>{' '}
+      <Button leadingIcon={faTwitter as IconDefinition} variant="brand-twitter">
         Twitter
-      </Button>
-      {' '}
-      <Button
-        disabled
-        leadingIcon={faTwitter as IconDefinition}
-        variant="brand-twitter"
-      >
+      </Button>{' '}
+      <Button disabled leadingIcon={faTwitter as IconDefinition} variant="brand-twitter">
         Twitter
       </Button>
     </>
@@ -391,8 +292,7 @@ export function Loading() {
         variant="primary"
       >
         Confirm
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         isLoading
         leadingIcon={faFileAlt as IconDefinition}
@@ -401,8 +301,7 @@ export function Loading() {
         variant="outline-primary"
       >
         Confirm
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         isLoading
         leadingIcon={faFileAlt as IconDefinition}
@@ -410,8 +309,7 @@ export function Loading() {
         variant="primary"
       >
         Confirm
-      </Button>
-      {' '}
+      </Button>{' '}
       <Button
         isLoading
         leadingIcon={faFileAlt as IconDefinition}

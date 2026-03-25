@@ -1,5 +1,4 @@
 import type { Meta, StoryObj } from '@storybook/react-webpack5';
-
 import React, { useCallback, useState } from 'react';
 
 import { Tabs, Tab } from '.';

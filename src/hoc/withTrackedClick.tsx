@@ -7,16 +7,13 @@ type TrackedComponentProps = {
   tracking: {
     getTrackingData?: (...args: unknown[]) => unknown;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    trackEvent: (arg0: {[key: string]: any}) => unknown;
+    trackEvent: (arg0: { [key: string]: any }) => unknown;
   };
   onClick?: (...args: unknown[]) => unknown;
 };
 
 export default function withTrackedClick(Target) {
-  function TrackedComponent({
-    eventData = {},
-    ...props
-  }: TrackedComponentProps) {
+  function TrackedComponent({ eventData = {}, ...props }: TrackedComponentProps) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     (TrackedComponent as any).displayName = `${Target.displayName || Target.name}WithTrackedClick`;
 

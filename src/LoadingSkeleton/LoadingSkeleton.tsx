@@ -1,6 +1,5 @@
-import React from 'react';
 import classNames from 'classnames';
-
+import React from 'react';
 import Skeleton, { SkeletonTheme, type SkeletonProps } from 'react-loading-skeleton';
 
 import colors from '../Styles/colors/palette';

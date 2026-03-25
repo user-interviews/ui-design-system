@@ -1,16 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import classNames from 'classnames';
-
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import classNames from 'classnames';
+import React, { useEffect, useState } from 'react';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import AccordionContext from 'react-bootstrap/AccordionContext';
 
 import { faChevronUp } from '../font_awesome/solid';
 
 import './AccordionToggle.scss';
-
 import { isEventKeyActive } from './utils';
 
 type AccordionToggleProps = {
@@ -82,21 +79,19 @@ function AccordionToggle({
     }
 
     if (eventKeyIsActive) {
-      setIsCollapsed(((prev) => !prev));
+      setIsCollapsed((prev) => !prev);
     }
   }, [eventKeyIsActive]);
 
   return (
     <button
-      className={
-        classNames(
-          UNSAFE_className,
-          'AccordionToggle',
-          { collapsed: isCollapsed },
-          { 'AccordionToggle--chevron-lateral': chevronLateral },
-          { 'AccordionToggle--disabled': disabled },
-        )
-      }
+      className={classNames(
+        UNSAFE_className,
+        'AccordionToggle',
+        { collapsed: isCollapsed },
+        { 'AccordionToggle--chevron-lateral': chevronLateral },
+        { 'AccordionToggle--disabled': disabled },
+      )}
       disabled={disabled}
       type="button"
       onClick={decoratedOnClick}
@@ -113,15 +108,11 @@ function AccordionToggle({
               <FontAwesomeIcon icon={leadingIcon as IconDefinition} />
             </span>
           )}
-          {title && (
-            <span className="AccordionToggle__title">{title}</span>
-          )}
+          {title && <span className="AccordionToggle__title">{title}</span>}
           {collapsedText && isCollapsed && (
             <span className="AccordionToggle__collapsed-text">{collapsedText} </span>
           )}
-          {helperText && (
-            <span className="AccordionToggle__helper-text">({helperText})</span>
-          )}
+          {helperText && <span className="AccordionToggle__helper-text">({helperText})</span>}
           {children}
         </div>
         {chevronRight && !chevronLeft && (

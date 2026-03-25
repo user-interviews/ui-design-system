@@ -1,12 +1,15 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Dropdown, DropdownDivider, DropdownToggle, DropdownItem, DropdownMenu } from '.';
 import {
- faEllipsisV, faFileAlt, faChevronDown, faTag, faEnvelope, faTrashAlt,
+  faEllipsisV,
+  faFileAlt,
+  faChevronDown,
+  faTag,
+  faEnvelope,
+  faTrashAlt,
 } from '../font_awesome/regular';
-import {
- Dropdown, DropdownDivider, DropdownToggle, DropdownItem, DropdownMenu,
-} from '.';
 import mdx from './Dropdown.mdx';
 
 export default {
@@ -24,12 +27,14 @@ export function Default() {
   return (
     <>
       <Dropdown>
-        <DropdownToggle leadingIcon={faFileAlt}>
-          Dropdown toggle
-        </DropdownToggle>
+        <DropdownToggle leadingIcon={faFileAlt}>Dropdown toggle</DropdownToggle>
         <DropdownMenu>
-          <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
-          <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
+          <DropdownItem href="#" leadingIcon={faTag}>
+            Add label
+          </DropdownItem>
+          <DropdownItem href="#" leadingIcon={faEnvelope}>
+            Compose email
+          </DropdownItem>
         </DropdownMenu>
       </Dropdown>
       <br />
@@ -38,8 +43,12 @@ export function Default() {
           Dropdown toggle
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
-          <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
+          <DropdownItem href="#" leadingIcon={faTag}>
+            Add label
+          </DropdownItem>
+          <DropdownItem href="#" leadingIcon={faEnvelope}>
+            Compose email
+          </DropdownItem>
         </DropdownMenu>
       </Dropdown>
     </>
@@ -54,8 +63,12 @@ export function Sizes() {
           Small toggle
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
-          <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
+          <DropdownItem href="#" leadingIcon={faTag}>
+            Add label
+          </DropdownItem>
+          <DropdownItem href="#" leadingIcon={faEnvelope}>
+            Compose email
+          </DropdownItem>
         </DropdownMenu>
       </Dropdown>
       <br />
@@ -64,8 +77,12 @@ export function Sizes() {
           Large toggle
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
-          <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
+          <DropdownItem href="#" leadingIcon={faTag}>
+            Add label
+          </DropdownItem>
+          <DropdownItem href="#" leadingIcon={faEnvelope}>
+            Compose email
+          </DropdownItem>
         </DropdownMenu>
       </Dropdown>
     </>
@@ -77,8 +94,12 @@ export function IconDefault() {
     <Dropdown>
       <DropdownToggle ariaLabel="dropdown toggle" variant="transparent" />
       <DropdownMenu>
-        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
-        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faTag}>
+          Add label
+        </DropdownItem>
+        <DropdownItem href="#" leadingIcon={faEnvelope}>
+          Compose email
+        </DropdownItem>
       </DropdownMenu>
     </Dropdown>
   );
@@ -91,8 +112,12 @@ export function IconSwap() {
         <FontAwesomeIcon icon={faEllipsisV} size="lg" />
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
-        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faTag}>
+          Add label
+        </DropdownItem>
+        <DropdownItem href="#" leadingIcon={faEnvelope}>
+          Compose email
+        </DropdownItem>
       </DropdownMenu>
     </Dropdown>
   );
@@ -102,19 +127,22 @@ export function UnstyledToggle() {
   return (
     <Dropdown>
       <DropdownToggle removeCaret unstyled>
-        <div style={{
-        padding: '12px',
-        backgroundColor: '#444444',
-        width: '200px',
-        display: 'flex',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        }}
+        <div
+          style={{
+            padding: '12px',
+            backgroundColor: '#444444',
+            width: '200px',
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
         >
           <div>
             <div style={{ fontSize: '18px', fontWeight: '700' }}>Team A</div>
-            <div style={{ fontSize: '12px', fontWeight: '400', backgroundColor: '#444444' }}>Organization</div>
+            <div style={{ fontSize: '12px', fontWeight: '400', backgroundColor: '#444444' }}>
+              Organization
+            </div>
           </div>
           <div style={{ marginRight: '4px' }}>
             <FontAwesomeIcon icon={faChevronDown} />
@@ -137,10 +165,16 @@ export function WithDivider() {
         Dropdown toggle
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem href="#" leadingIcon={faTag}>Add label</DropdownItem>
-        <DropdownItem href="#" leadingIcon={faEnvelope}>Compose email</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faTag}>
+          Add label
+        </DropdownItem>
+        <DropdownItem href="#" leadingIcon={faEnvelope}>
+          Compose email
+        </DropdownItem>
         <DropdownDivider />
-        <DropdownItem href="#" leadingIcon={faTrashAlt} variant="danger">Delete</DropdownItem>
+        <DropdownItem href="#" leadingIcon={faTrashAlt} variant="danger">
+          Delete
+        </DropdownItem>
       </DropdownMenu>
     </Dropdown>
   );

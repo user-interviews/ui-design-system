@@ -1,13 +1,8 @@
-import React from 'react';
-import classNames from 'classnames';
-
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import {
-  Dropdown as RBDropdown,
-  type DropdownProps as RBDropdownProps,
-} from 'react-bootstrap';
+import classNames from 'classnames';
+import React from 'react';
+import { Dropdown as RBDropdown, type DropdownProps as RBDropdownProps } from 'react-bootstrap';
 
 import * as styles from './DropdownItem.module.scss';
 
@@ -44,7 +39,7 @@ type DropdownItemProps = {
    */
   onClick?: RBDropdownProps['onClick'];
   children?: React.ReactNode;
-  variant?: 'danger'
+  variant?: 'danger';
 };
 
 function DropdownItem({
@@ -65,19 +60,20 @@ function DropdownItem({
       active={active}
       as={as}
       bsPrefix={bsPrefix}
-      className={classNames(
-      className,
-      'DropdownItem',
-      styles.DropdownItem,
-    )}
+      className={classNames(className, 'DropdownItem', styles.DropdownItem)}
       disabled={disabled}
       eventKey={eventKey}
       href={href}
       onClick={onClick}
       {...props}
     >
-      { leadingIcon && <FontAwesomeIcon className={classNames(styles.DropdownItemIcon, 'icon-left', 'fa-fw')} icon={leadingIcon} /> }
-      { children }
+      {leadingIcon && (
+        <FontAwesomeIcon
+          className={classNames(styles.DropdownItemIcon, 'icon-left', 'fa-fw')}
+          icon={leadingIcon}
+        />
+      )}
+      {children}
     </RBDropdown.Item>
   );
 }

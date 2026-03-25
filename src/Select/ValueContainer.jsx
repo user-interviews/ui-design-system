@@ -1,6 +1,6 @@
+import propTypes from 'prop-types';
 import React from 'react';
 import { components } from 'react-select';
-import propTypes from 'prop-types';
 
 // Replaceable Components
 //
@@ -12,25 +12,15 @@ import propTypes from 'prop-types';
 // See: https://react-select.com/components#replaceable-components
 
 /* eslint-disable react/prop-types */
-function ValueContainer({
-  children,
-  valueText = 'selected',
-  ...props
-}) {
+function ValueContainer({ children, valueText = 'selected', ...props }) {
   const { getValue, hasValue } = props;
   const numValues = getValue().length;
 
   if (!hasValue) {
-    return (
-      <components.ValueContainer {...props}>
-        {children}
-      </components.ValueContainer>
-    );
+    return <components.ValueContainer {...props}>{children}</components.ValueContainer>;
   }
   return (
-    <components.ValueContainer {...props}>
-      {`${numValues} ${valueText}`}
-    </components.ValueContainer>
+    <components.ValueContainer {...props}>{`${numValues} ${valueText}`}</components.ValueContainer>
   );
 }
 /* eslint-enable react/prop-types */

@@ -1,4 +1,5 @@
 import colors from '../src/Styles/colors/palette';
+
 import '../scss/global.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -15,26 +16,26 @@ const preview = {
   parameters: {
     backgrounds: {
       options: {
-        "--ux-white": {
+        '--ux-white': {
           name: '--ux-white',
           value: colors.UX_WHITE,
         },
 
-        "--ux-cream": {
+        '--ux-cream': {
           name: '--ux-cream',
           value: colors.UX_CREAM,
         },
 
-        "--ux-emerald-600": {
+        '--ux-emerald-600': {
           name: '--ux-emerald-600',
           value: colors.UX_EMERALD_600,
         },
 
-        "--ux-neutral-800": {
+        '--ux-neutral-800': {
           name: '--ux-neutral-800',
           value: colors.UX_NEUTRAL_800,
-        }
-      }
+        },
+      },
     },
     options: {
       storySort: {
@@ -46,11 +47,11 @@ const preview = {
 
   initialGlobals: {
     backgrounds: {
-      value: '--ux-white'
-    }
+      value: '--ux-white',
+    },
   },
 
-  tags: ['autodocs']
+  tags: ['autodocs'],
 };
 
 export default preview;

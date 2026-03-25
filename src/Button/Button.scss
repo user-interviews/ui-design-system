@@ -15,7 +15,8 @@
 .Button {
   @include synth-font-type-30--bold;
 
-  i, svg {
+  i,
+  svg {
     &.icon-left {
       margin-right: var(--synth-spacing-2);
     }
@@ -25,7 +26,7 @@
     }
   }
 
-  .btn-loading-spin  {
+  .btn-loading-spin {
     animation: spin infinite 0.6s linear;
   }
 

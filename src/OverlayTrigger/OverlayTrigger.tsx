@@ -1,6 +1,8 @@
 import React from 'react';
-
-import { OverlayTrigger as RBOverlayTrigger, OverlayTriggerProps as RBOverlayTriggerProps } from 'react-bootstrap';
+import {
+  OverlayTrigger as RBOverlayTrigger,
+  OverlayTriggerProps as RBOverlayTriggerProps,
+} from 'react-bootstrap';
 
 export const OVERLAY_TRIGGER_PLACEMENT = [
   'auto-start',
@@ -23,30 +25,32 @@ export const OVERLAY_TRIGGER_PLACEMENT = [
 type OverlayTriggerProps = RBOverlayTriggerProps & {
   children?: RBOverlayTriggerProps['children'];
   /**
-    * The initial visibility state of the Overlay.
-    */
+   * The initial visibility state of the Overlay.
+   */
   defaultShow?: boolean;
   /**
-    * A millisecond delay amount to show and hide the Overlay once triggered
-    */
-  delay?: number | {
-    hide?: number;
-    show?: number;
-  };
+   * A millisecond delay amount to show and hide the Overlay once triggered
+   */
+  delay?:
+    | number
+    | {
+        hide?: number;
+        show?: number;
+      };
   /**
    * An element or text to overlay next to the target.
    */
-  overlay?: RBOverlayTriggerProps['overlay'],
+  overlay?: RBOverlayTriggerProps['overlay'];
   /**
    * The placement of the Overlay in relation to it's `target`.
    */
-  placement?: typeof OVERLAY_TRIGGER_PLACEMENT[number];
+  placement?: (typeof OVERLAY_TRIGGER_PLACEMENT)[number];
   /**
-  * The visibility of the Overlay. `show` is a _controlled_ prop so should be paired
-  * with `onToggle` to avoid breaking user interactions.
-  *
-  * Manually toggling `show` does **not** wait for `delay` to change the visibility.
-  */
+   * The visibility of the Overlay. `show` is a _controlled_ prop so should be paired
+   * with `onToggle` to avoid breaking user interactions.
+   *
+   * Manually toggling `show` does **not** wait for `delay` to change the visibility.
+   */
   show?: boolean;
   /**
    * Specify which action or actions trigger Overlay visibility

@@ -1,10 +1,10 @@
-name: "Create new release"
+name: 'Create new release'
 
 on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Select the version increment"
+        description: 'Select the version increment'
         required: true
         type: choice
         options:
@@ -64,7 +64,7 @@ jobs:
         with:
           head: release/v${{ steps.extract_version.outputs.version }}
           base: main
-          title: "Merge release/v${{ steps.extract_version.outputs.version }} into main branch"
+          title: 'Merge release/v${{ steps.extract_version.outputs.version }} into main branch'
 
       - name: Install dependencies
         run: yarn install

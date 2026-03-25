@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { ORIENTATIONS } from '../ControlButtonGroup';
-import CheckboxButtonGroup from './index';
+
 import CheckboxButton from '../CheckboxButton';
+import { ORIENTATIONS } from '../ControlButtonGroup';
 import FormControlLabel from '../FormControlLabel';
 import FormGroup from '../FormGroup/FormGroup';
 import mdx from './CheckboxButtonGroup.mdx';
+import CheckboxButtonGroup from './index';
 
 export default {
   title: 'Components/Form Elements/CheckboxButtonGroup',
@@ -49,7 +50,7 @@ function CheckboxButtonGroupComponent({
         value={value}
         onChange={setValue}
       >
-        { children }
+        {children}
       </CheckboxButtonGroup>
     </FormGroup>
   );
@@ -149,27 +150,9 @@ export function BorderedRow() {
       labelHtmlFor="checkbox-button-group"
       orientation={ORIENTATIONS.ROW}
     >
-      <FormControlLabel
-        bordered
-        Control={CheckboxButton}
-        id="value-1-2"
-        text="Label 1"
-        value="1"
-      />
-      <FormControlLabel
-        bordered
-        Control={CheckboxButton}
-        id="value-2-2"
-        text="Label 2"
-        value="2"
-      />
-      <FormControlLabel
-        bordered
-        Control={CheckboxButton}
-        id="value-3-2"
-        text="Label 3"
-        value="3"
-      />
+      <FormControlLabel bordered Control={CheckboxButton} id="value-1-2" text="Label 1" value="1" />
+      <FormControlLabel bordered Control={CheckboxButton} id="value-2-2" text="Label 2" value="2" />
+      <FormControlLabel bordered Control={CheckboxButton} id="value-3-2" text="Label 3" value="3" />
     </CheckboxButtonGroupComponent>
   );
 }

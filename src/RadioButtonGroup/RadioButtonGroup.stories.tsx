@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+
 import { ORIENTATIONS } from '../ControlButtonGroup';
-import RadioButtonGroup from './index';
-import RadioButton from '../RadioButton';
 import FormControlLabel from '../FormControlLabel';
 import FormGroup from '../FormGroup/FormGroup';
+import RadioButton from '../RadioButton';
+import RadioButtonGroup from './index';
 import mdx from './RadioButtonGroup.mdx';
 
 export default {
@@ -48,7 +49,7 @@ function RadioButtonGroupComponent({
         value={value}
         onChange={setValue}
       >
-        { children }
+        {children}
       </RadioButtonGroup>
     </FormGroup>
   );
@@ -148,27 +149,9 @@ export function BorderedRow() {
       labelHtmlFor="radio-button-group"
       orientation={ORIENTATIONS.ROW}
     >
-      <FormControlLabel
-        bordered
-        Control={RadioButton}
-        id="value-1-3"
-        text="Label 1"
-        value="1"
-      />
-      <FormControlLabel
-        bordered
-        Control={RadioButton}
-        id="value-2-3"
-        text="Label 2"
-        value="2"
-      />
-      <FormControlLabel
-        bordered
-        Control={RadioButton}
-        id="value-3-3"
-        text="Label 3"
-        value="3"
-      />
+      <FormControlLabel bordered Control={RadioButton} id="value-1-3" text="Label 1" value="1" />
+      <FormControlLabel bordered Control={RadioButton} id="value-2-3" text="Label 2" value="2" />
+      <FormControlLabel bordered Control={RadioButton} id="value-3-3" text="Label 3" value="3" />
     </RadioButtonGroupComponent>
   );
 }

@@ -1,9 +1,10 @@
-import React from "react";
-import classNames from "classnames";
-import "./ModalHeader.scss";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExclamationTriangle } from "../font_awesome/solid";
+import './ModalHeader.scss';
+import React from 'react';
+
+import { faExclamationTriangle } from '../font_awesome/solid';
 
 type ModalHeaderProps = {
   children?: React.ReactNode;
@@ -31,11 +32,11 @@ export default function ModalHeader({
   onRequestClose,
 }: ModalHeaderProps) {
   const handleCloseClick = () => onRequestClose && onRequestClose();
-  const titleClassName = classNames("ModalHeader__title", titleClass);
+  const titleClassName = classNames('ModalHeader__title', titleClass);
 
   return (
     <header
-      className={classNames("ModalHeader", {
+      className={classNames('ModalHeader', {
         ModalHeader__sticky: isSticky,
       })}
     >
@@ -45,12 +46,7 @@ export default function ModalHeader({
         ) : (
           <>
             <h1 className={titleClassName} id={titleId}>
-              {variant && (
-                <FontAwesomeIcon
-                  className={variant}
-                  icon={faExclamationTriangle}
-                />
-              )}
+              {variant && <FontAwesomeIcon className={variant} icon={faExclamationTriangle} />}
               {title}
             </h1>
             {subtitle && <h2 className="ModalHeader__subtitle">{subtitle}</h2>}

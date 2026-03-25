@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  Col as ReactBootstrapCol,
-  type ColProps as ReactBootstrapColProps,
-} from 'react-bootstrap';
+import { Col as ReactBootstrapCol, type ColProps as ReactBootstrapColProps } from 'react-bootstrap';
 
 import { useDeprecationWarning } from '../utils';
 

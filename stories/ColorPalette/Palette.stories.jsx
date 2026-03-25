@@ -1,13 +1,11 @@
 import React from 'react';
-
 import { colors } from 'src/Styles';
 
 /* eslint-disable react/prop-types, react/no-array-index-key */
 function Palette({ color }) {
   return (
     <div style={{ display: 'flex', height: '320px', width: '100%' }}>
-      {
-      [...Array(9)].map((_, i) => {
+      {[...Array(9)].map((_, i) => {
         const colorNameKey = `UX_${color}_${i + 1}00`;
 
         return (
@@ -34,8 +32,7 @@ function Palette({ color }) {
             </p>
           </div>
         );
-      })
-    }
+      })}
     </div>
   );
 }

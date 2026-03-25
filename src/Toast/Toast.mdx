@@ -7,7 +7,8 @@ import * as ComponentStories from './Toast.stories';
 ##
 
 <h4>
-	Toasts communicate important messages and provide immediate feedback without disrupting the user experience.
+  Toasts communicate important messages and provide immediate feedback without disrupting the user
+  experience.
 </h4>
 
 <Canvas of={ComponentStories.Default} />
@@ -16,13 +17,14 @@ import * as ComponentStories from './Toast.stories';
 
 <ArgTypes of={Toast} />
 
-
 ## useToast
 
 This custom hook returns the following four values to aid the implementation of toast components.
 
 #### messages
+
 - Array of objects with shape:
+
 ```
 {
   type: MessageTypes.SUCCESS, (one of MessageTypes)
@@ -34,13 +36,20 @@ This custom hook returns the following four values to aid the implementation of 
   }
 }
 ```
+
 #### clearMessages
+
 - Function that resets `messages` value to an empty array.
+
 #### dismissMessage
+
 - Function that removes message from `messages` array, by `messageId`
+
 #### setMessage
+
 - Function that adds message to `messages` array.
 - Accepts parameter of object with shape:
+
 ```
 {
   type: MessageTypes.SUCCESS, (one of MessageTypes)

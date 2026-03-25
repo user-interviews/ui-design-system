@@ -1,9 +1,8 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 
-import { Pill, PILL_COLORS } from 'src/Pill';
-
 import './Typography.scss';
-import PropTypes from 'prop-types';
+import { Pill, PILL_COLORS } from 'src/Pill';
 
 function TypographyExample({ modifiers, preset }) {
   const description = 'The fastest way to recruit research participants';
@@ -12,11 +11,11 @@ function TypographyExample({ modifiers, preset }) {
     <div className="TypographyRow__Example">
       <div className={`${preset}`}>
         <p>{description}</p>
-        {
-          modifiers.map((modifier) => (
-            <p className={`${modifier}`} key={modifier}>{description}</p>
-          ))
-        }
+        {modifiers.map((modifier) => (
+          <p className={`${modifier}`} key={modifier}>
+            {description}
+          </p>
+        ))}
       </div>
     </div>
   );
@@ -30,9 +29,11 @@ TypographyExample.propTypes = {
 function TypographyTokens({ tokens }) {
   return (
     <ul>
-      {
-      tokens.map((token) => <li key={token}><Pill color={PILL_COLORS.BLUE} text={`$synth-${token}`} /></li>)
-    }
+      {tokens.map((token) => (
+        <li key={token}>
+          <Pill color={PILL_COLORS.BLUE} text={`$synth-${token}`} />
+        </li>
+      ))}
     </ul>
   );
 }
@@ -57,32 +58,12 @@ function TypographySpecs({
         <li>
           <strong>{preset}</strong>
         </li>
-        <li>
-          Type: {font}
-        </li>
-        <li>
-          Size: {size}
-        </li>
-        <li>
-          Line-height: {lineHeight}
-        </li>
-        <li>
-          Weight: {weight}
-        </li>
-        {
-        letterSpacing && (
-          <li>
-            Letter-spacing: {letterSpacing}
-          </li>
-        )
-      }
-        {
-        textTransform && (
-          <li>
-            Text-transform: {textTransform}
-          </li>
-        )
-      }
+        <li>Type: {font}</li>
+        <li>Size: {size}</li>
+        <li>Line-height: {lineHeight}</li>
+        <li>Weight: {weight}</li>
+        {letterSpacing && <li>Letter-spacing: {letterSpacing}</li>}
+        {textTransform && <li>Text-transform: {textTransform}</li>}
       </ul>
       <TypographyTokens tokens={[preset, ...modifiers]} />
     </div>
@@ -159,11 +140,9 @@ const bodyPresets = [
 export function Default() {
   return (
     <>
-      {
-      [...headingPresets, ...bodyPresets].map((preset) => (
+      {[...headingPresets, ...bodyPresets].map((preset) => (
         <TypographyStyle {...preset} key={preset.preset} />
-        ))
-    }
+      ))}
     </>
   );
 }
@@ -171,9 +150,9 @@ export function Default() {
 export function Headings() {
   return (
     <>
-      {
-      headingPresets.map((preset) => <TypographyStyle {...preset} key={preset.preset} />)
-     }
+      {headingPresets.map((preset) => (
+        <TypographyStyle {...preset} key={preset.preset} />
+      ))}
     </>
   );
 }
@@ -181,9 +160,9 @@ export function Headings() {
 export function Body() {
   return (
     <>
-      {
-      bodyPresets.map((preset) => <TypographyStyle {...preset} key={preset.preset} />)
-     }
+      {bodyPresets.map((preset) => (
+        <TypographyStyle {...preset} key={preset.preset} />
+      ))}
     </>
   );
 }

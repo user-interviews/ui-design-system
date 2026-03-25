@@ -1,6 +1,6 @@
-import ImageFile from '../public/ui-design-system-dark.svg';
 import FigmaLogo from '../public/figma-logo.svg';
 import GithubLogo from '../public/github-logo.svg';
+import ImageFile from '../public/ui-design-system-dark.svg';
 
 function Default() {
   return (
@@ -8,8 +8,8 @@ function Default() {
       <img alt="User Interviews Design System" src={ImageFile} style={{ marginBottom: '32px' }} />
       <div style={{ marginBottom: '32px', fontFamily: 'Inter' }}>
         We aim to create a system that allows us to build a user experience that is consistent,
-        flexible and scalable.  This style guide is living documentation that will be
-        updated as we continue to evolve and improve our design system.
+        flexible and scalable. This style guide is living documentation that will be updated as we
+        continue to evolve and improve our design system.
       </div>
       <a
         href="https://www.figma.com/file/471iS3QrpPtXZpS1xbsJ20/Components"

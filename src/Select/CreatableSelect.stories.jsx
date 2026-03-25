@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
-
 import Button from 'src/Button';
-import CreatableSelect from 'src/Select/CreatableSelect';
 import FormGroup from 'src/FormGroup';
-import {
-  Modal, ModalHeader, ModalBody, ModalFooter,
-} from 'src/Modal';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'src/Modal';
+import CreatableSelect from 'src/Select/CreatableSelect';
 
 export default {
   title: 'Components/Selects/Creatable',
@@ -23,10 +20,7 @@ export function Default() {
   const handleInputChange = () => {};
 
   return (
-    <FormGroup
-      label="Default creatable select"
-      labelHtmlFor="default-creatable-select"
-    >
+    <FormGroup label="Default creatable select" labelHtmlFor="default-creatable-select">
       <CreatableSelect
         inputId="default-creatable-select"
         isClearable
@@ -75,11 +69,10 @@ export function InModal() {
             />
           </FormGroup>
         </ModalBody>
-        <ModalFooter
-          dismissButtonText="Cancel"
-          onRequestClose={handleRequestClose}
-        >
-          <Button type="submit" variant="primary">Confirm</Button>
+        <ModalFooter dismissButtonText="Cancel" onRequestClose={handleRequestClose}>
+          <Button type="submit" variant="primary">
+            Confirm
+          </Button>
         </ModalFooter>
       </Modal>
     </>

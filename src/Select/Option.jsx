@@ -1,8 +1,8 @@
-import React, { forwardRef } from 'react';
 import classNames from 'classnames';
+import React, { forwardRef } from 'react';
 import { components } from 'react-select';
-
 import CheckboxButton from 'src/CheckboxButton';
+
 import './Option.scss';
 
 // Replaceable Components
@@ -35,9 +35,7 @@ const Option = forwardRef(({ indeterminate, ...props }, ref) => (
         >
           {props.label}
         </label>
-        { props.description && (
-          <span className="Description">{ props.description }</span>
-        )}
+        {props.description && <span className="Description">{props.description}</span>}
       </div>
     </div>
   </components.Option>

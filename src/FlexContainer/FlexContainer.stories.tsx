@@ -1,5 +1,5 @@
-import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react-webpack5';
+import React from 'react';
 
 import { FlexContainer } from './FlexContainer';
 
@@ -23,8 +23,9 @@ const meta: Meta<typeof FlexContainer> = {
     (Story) => (
       <div>
         {/* eslint-disable-next-line react/no-danger */}
-        <style dangerouslySetInnerHTML={{
-          __html: `
+        <style
+          dangerouslySetInnerHTML={{
+            __html: `
                 .flexContainer { border: 1px solid #666; min-height: 100px; min-width: 100px; }
               `,
           }}

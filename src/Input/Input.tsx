@@ -1,14 +1,14 @@
-import React from 'react';
-import classNames from 'classnames';
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
+import React from 'react';
 
 import './Input.scss';
 
 type InputElementProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLInputElement>,
   HTMLInputElement
->
+>;
 
 export type InputProps = InputElementProps & {
   disabled?: boolean;
@@ -72,11 +72,13 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
         {...rest}
       />
       {trailingText && (
-        <span className={`input-trailing-text ${type === 'number' ? 'input-trailing-text--input-type-number' : ''}`}>
+        <span
+          className={`input-trailing-text ${type === 'number' ? 'input-trailing-text--input-type-number' : ''}`}
+        >
           {trailingText}
         </span>
       )}
-      {(trailingIcon && trailingIconOnClick) && (
+      {trailingIcon && trailingIconOnClick && (
         <button
           aria-label={trailingIconLabel}
           className="trailing-icon-button"
@@ -88,7 +90,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
           </div>
         </button>
       )}
-      {(trailingIcon && !trailingIconOnClick) && (
+      {trailingIcon && !trailingIconOnClick && (
         <div className="input-group-text">
           <FontAwesomeIcon icon={trailingIcon} />
         </div>

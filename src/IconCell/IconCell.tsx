@@ -1,7 +1,6 @@
-import React from 'react';
-
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 
 import { useDeprecationWarning } from '../utils';
 
@@ -11,9 +10,7 @@ export type IconCellProps = {
   icon: IconDefinition;
 };
 
-function IconCell({
-  icon,
-}: IconCellProps) {
+function IconCell({ icon }: IconCellProps) {
   useDeprecationWarning({ componentName: 'IconCell' });
 
   return (

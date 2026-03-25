@@ -1,5 +1,5 @@
-import React from 'react';
 import classNames from 'classnames';
+import React from 'react';
 
 import Tooltip from '../Tooltip';
 
@@ -29,17 +29,15 @@ function InputLabel({
     <>
       {text}
       {required && <span className="InputLabel__helper-text">&nbsp;(Required)</span>}
-      {labelHelperText && <span className="InputLabel__helper-text">&nbsp;({labelHelperText})</span>}
+      {labelHelperText && (
+        <span className="InputLabel__helper-text">&nbsp;({labelHelperText})</span>
+      )}
       {tooltipText && <Tooltip iconClasses="Tooltip__icon" placement="right" text={tooltipText} />}
     </>
   );
 
   return (
-    <label
-      className={classNames('InputLabel', className)}
-      htmlFor={labelHtmlFor}
-      {...props}
-    >
+    <label className={classNames('InputLabel', className)} htmlFor={labelHtmlFor} {...props}>
       {inputLabelChildren}
     </label>
   );

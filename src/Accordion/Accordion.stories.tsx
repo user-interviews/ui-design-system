@@ -1,15 +1,8 @@
 import React from 'react';
 
-import { faCreditCard } from '../font_awesome/regular';
+import { Accordion, AccordionItem, AccordionToggle, AccordionCollapse } from '.';
 import Card from '../Card';
-
-import {
-  Accordion,
-  AccordionItem,
-  AccordionToggle,
-  AccordionCollapse,
-} from '.';
-
+import { faCreditCard } from '../font_awesome/regular';
 import mdx from './Accordion.mdx';
 
 export default {
@@ -26,11 +19,7 @@ export function Default(args) {
   return (
     <Accordion>
       <AccordionItem eventKey="0">
-        <AccordionToggle
-          eventKey="0"
-          leadingIcon={faCreditCard}
-          {...args}
-        />
+        <AccordionToggle eventKey="0" leadingIcon={faCreditCard} {...args} />
         <AccordionCollapse eventKey="0">
           <ul>
             <li>Item 1</li>
@@ -40,11 +29,7 @@ export function Default(args) {
         </AccordionCollapse>
       </AccordionItem>
       <AccordionItem eventKey="1">
-        <AccordionToggle
-          eventKey="1"
-          leadingIcon={faCreditCard}
-          {...args}
-        />
+        <AccordionToggle eventKey="1" leadingIcon={faCreditCard} {...args} />
         <AccordionCollapse eventKey="1">
           <ul>
             <li>Item 1</li>
@@ -68,11 +53,7 @@ export function AlwaysOpen(args) {
   return (
     <Accordion alwaysOpen>
       <AccordionItem eventKey="0">
-        <AccordionToggle
-          eventKey="0"
-          leadingIcon={faCreditCard}
-          {...args}
-        />
+        <AccordionToggle eventKey="0" leadingIcon={faCreditCard} {...args} />
         <AccordionCollapse eventKey="0">
           <ul>
             <li>Item 1</li>
@@ -82,11 +63,7 @@ export function AlwaysOpen(args) {
         </AccordionCollapse>
       </AccordionItem>
       <AccordionItem eventKey="1">
-        <AccordionToggle
-          eventKey="1"
-          leadingIcon={faCreditCard}
-          {...args}
-        />
+        <AccordionToggle eventKey="1" leadingIcon={faCreditCard} {...args} />
         <AccordionCollapse eventKey="1">
           <ul>
             <li>Item 1</li>
@@ -110,11 +87,7 @@ export function DefaultOpen(args) {
   return (
     <Accordion defaultActiveKey="1">
       <AccordionItem eventKey="0">
-        <AccordionToggle
-          eventKey="0"
-          leadingIcon={faCreditCard}
-          {...args}
-        />
+        <AccordionToggle eventKey="0" leadingIcon={faCreditCard} {...args} />
         <AccordionCollapse eventKey="0">
           <ul>
             <li>Item 1</li>
@@ -124,11 +97,7 @@ export function DefaultOpen(args) {
         </AccordionCollapse>
       </AccordionItem>
       <AccordionItem eventKey="1">
-        <AccordionToggle
-          eventKey="1"
-          leadingIcon={faCreditCard}
-          {...args}
-        />
+        <AccordionToggle eventKey="1" leadingIcon={faCreditCard} {...args} />
         <AccordionCollapse eventKey="1">
           <ul>
             <li>I was opened by default!</li>
@@ -150,10 +119,7 @@ export function ChevronLeft(args) {
   return (
     <Accordion>
       <AccordionItem eventKey="0">
-        <AccordionToggle
-          eventKey="0"
-          {...args}
-        />
+        <AccordionToggle eventKey="0" {...args} />
         <AccordionCollapse eventKey="0">
           <ul>
             <li>Item 1</li>
@@ -163,10 +129,7 @@ export function ChevronLeft(args) {
         </AccordionCollapse>
       </AccordionItem>
       <AccordionItem eventKey="1">
-        <AccordionToggle
-          eventKey="1"
-          {...args}
-        />
+        <AccordionToggle eventKey="1" {...args} />
         <AccordionCollapse eventKey="1">
           <ul>
             <li>Item 1</li>
@@ -190,10 +153,7 @@ export function ChevronLeftLateral(args) {
   return (
     <Accordion>
       <AccordionItem eventKey="0">
-        <AccordionToggle
-          eventKey="0"
-          {...args}
-        />
+        <AccordionToggle eventKey="0" {...args} />
         <AccordionCollapse eventKey="0">
           <ul>
             <li>Item 1</li>
@@ -203,10 +163,7 @@ export function ChevronLeftLateral(args) {
         </AccordionCollapse>
       </AccordionItem>
       <AccordionItem eventKey="1">
-        <AccordionToggle
-          eventKey="1"
-          {...args}
-        />
+        <AccordionToggle eventKey="1" {...args} />
         <AccordionCollapse eventKey="1">
           <ul>
             <li>Item 1</li>
@@ -231,10 +188,7 @@ export function ChevronLateral(args) {
   return (
     <Accordion>
       <AccordionItem eventKey="0">
-        <AccordionToggle
-          eventKey="0"
-          {...args}
-        />
+        <AccordionToggle eventKey="0" {...args} />
         <AccordionCollapse eventKey="0">
           <ul>
             <li>Item 1</li>
@@ -244,10 +198,7 @@ export function ChevronLateral(args) {
         </AccordionCollapse>
       </AccordionItem>
       <AccordionItem eventKey="1">
-        <AccordionToggle
-          eventKey="1"
-          {...args}
-        />
+        <AccordionToggle eventKey="1" {...args} />
         <AccordionCollapse eventKey="1">
           <ul>
             <li>Item 1</li>
@@ -271,10 +222,7 @@ export function CollapsedText(args) {
   return (
     <Accordion defaultActiveKey="1">
       <AccordionItem eventKey="0">
-        <AccordionToggle
-          eventKey="0"
-          {...args}
-        />
+        <AccordionToggle eventKey="0" {...args} />
         <AccordionCollapse eventKey="0">
           <ul>
             <li>Item 1</li>
@@ -284,10 +232,7 @@ export function CollapsedText(args) {
         </AccordionCollapse>
       </AccordionItem>
       <AccordionItem eventKey="1">
-        <AccordionToggle
-          eventKey="1"
-          {...args}
-        />
+        <AccordionToggle eventKey="1" {...args} />
         <AccordionCollapse eventKey="1">
           <ul>
             <li>Item 1</li>
@@ -311,11 +256,7 @@ export function Borderless(args) {
   return (
     <Accordion flush>
       <AccordionItem borderless eventKey="0">
-        <AccordionToggle
-          eventKey="0"
-          leadingIcon={faCreditCard}
-          {...args}
-        />
+        <AccordionToggle eventKey="0" leadingIcon={faCreditCard} {...args} />
         <AccordionCollapse eventKey="0">
           <ul>
             <li>Item 1</li>
@@ -325,11 +266,7 @@ export function Borderless(args) {
         </AccordionCollapse>
       </AccordionItem>
       <AccordionItem borderless eventKey="1">
-        <AccordionToggle
-          eventKey="1"
-          leadingIcon={faCreditCard}
-          {...args}
-        />
+        <AccordionToggle eventKey="1" leadingIcon={faCreditCard} {...args} />
         <AccordionCollapse eventKey="1">
           <ul>
             <li>Item 1</li>
@@ -353,12 +290,7 @@ export function BorderlessBorderBottomFlushToggles(args) {
   return (
     <Accordion flush>
       <AccordionItem borderless eventKey="0">
-        <AccordionToggle
-          borderBottom
-          eventKey="0"
-          flush
-          {...args}
-        />
+        <AccordionToggle borderBottom eventKey="0" flush {...args} />
         <AccordionCollapse eventKey="0">
           <ul>
             <li>Item 1</li>
@@ -368,12 +300,7 @@ export function BorderlessBorderBottomFlushToggles(args) {
         </AccordionCollapse>
       </AccordionItem>
       <AccordionItem borderless eventKey="1">
-        <AccordionToggle
-          borderBottom
-          eventKey="1"
-          flush
-          {...args}
-        />
+        <AccordionToggle borderBottom eventKey="1" flush {...args} />
         <AccordionCollapse eventKey="1">
           <ul>
             <li>Item 1</li>
@@ -399,13 +326,8 @@ export function InCard(args) {
       <Card noPadding size="sm">
         <Accordion defaultActiveKey="0" flush>
           <AccordionItem borderless eventKey="0">
-            <AccordionToggle
-              eventKey="0"
-              {...args}
-            />
-            <AccordionCollapse
-              eventKey="0"
-            >
+            <AccordionToggle eventKey="0" {...args} />
+            <AccordionCollapse eventKey="0">
               <p>This text is aligned with the content of other Card components</p>
               <ul>
                 <li>Item 1</li>
@@ -434,10 +356,7 @@ export function Separate(args) {
     <>
       <Accordion>
         <AccordionItem eventKey="0">
-          <AccordionToggle
-            eventKey="0"
-            {...args}
-          />
+          <AccordionToggle eventKey="0" {...args} />
           <AccordionCollapse eventKey="0">
             <ul>
               <li>I'm inside my own Accordion parent element</li>
@@ -448,10 +367,7 @@ export function Separate(args) {
       <br />
       <Accordion>
         <AccordionItem eventKey="1">
-          <AccordionToggle
-            eventKey="1"
-            {...args}
-          />
+          <AccordionToggle eventKey="1" {...args} />
           <AccordionCollapse eventKey="1">
             <ul>
               <li>I'm inside my own Accordion parent element</li>
@@ -474,10 +390,7 @@ export function Disabled(args) {
   return (
     <Accordion>
       <AccordionItem eventKey="0">
-        <AccordionToggle
-          eventKey="0"
-          {...args}
-        />
+        <AccordionToggle eventKey="0" {...args} />
         <AccordionCollapse eventKey="0">
           <ul>
             <li>Item 1</li>
@@ -501,14 +414,9 @@ export function AccordionAlert(args) {
   return (
     <Accordion>
       <AccordionItem borderless eventKey="0" variant="info">
-        <AccordionToggle
-          eventKey="0"
-          {...args}
-        />
+        <AccordionToggle eventKey="0" {...args} />
         <AccordionCollapse eventKey="0" variant="info">
-          <div>
-            Add content here.
-          </div>
+          <div>Add content here.</div>
         </AccordionCollapse>
       </AccordionItem>
     </Accordion>

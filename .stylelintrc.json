@@ -46,11 +46,5 @@
       }
     }
   ],
-  "ignoreFiles": [
-    "node_modules/**",
-    "lib/**",
-    "build/**",
-    "dist/**",
-    "public/**"
-  ]
+  "ignoreFiles": ["node_modules/**", "lib/**", "build/**", "dist/**", "public/**"]
 }

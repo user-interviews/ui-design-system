@@ -1,6 +1,10 @@
 @import '../../scss/theme';
 
-@mixin primary-action($bg-color: none, $bg-color-hover: $ux-gray-300, $color: $synth-unselected-neutral) {
+@mixin primary-action(
+  $bg-color: none,
+  $bg-color-hover: $ux-gray-300,
+  $color: $synth-unselected-neutral
+) {
   @include synth-font-type-30--bold;
 
   background-color: $bg-color;
@@ -24,7 +28,7 @@
   color: $color;
 
   &:hover {
-    color: $color-hover
+    color: $color-hover;
   }
 }
 
@@ -35,14 +39,12 @@
     grid-template-rows: auto auto;
     grid-template-areas:
       'icon content content close'
-      'icon action action close'
-      ;
+      'icon action action close';
 
     @media (width >= 450px) {
       grid-template-areas:
-      'icon content action close'
-      'icon content action close'
-      ;
+        'icon content action close'
+        'icon content action close';
     }
 
     background-color: var(--synth-gray-300);
@@ -187,14 +189,12 @@
   grid-template-rows: auto auto;
   grid-template-areas:
     'icon content content close'
-    'icon action action close'
-    ;
+    'icon action action close';
 
   @media (width >= 450px) {
     grid-template-areas:
-    'icon content action close'
-    'icon content action close'
-    ;
+      'icon content action close'
+      'icon content action close';
   }
 
   font-weight: 500;
@@ -271,7 +271,7 @@
   border-left: 8px solid var(--ux-blue-300);
 
   .close {
-    @include close-action($ux-blue-600, $ux-blue-800)
+    @include close-action($ux-blue-600, $ux-blue-800);
   }
 
   .primary-action {
@@ -307,11 +307,11 @@
   border: 2px solid var(--ux-teal-600);
 
   .close {
-    @include close-action($ux-teal-600, $ux-teal-800)
+    @include close-action($ux-teal-600, $ux-teal-800);
   }
 
   .primary-action {
-    @include primary-action($ux-teal-600, $ux-teal-700, $ux-white)
+    @include primary-action($ux-teal-600, $ux-teal-700, $ux-white);
   }
 }
 

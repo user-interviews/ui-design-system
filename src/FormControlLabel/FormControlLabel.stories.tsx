@@ -17,13 +17,7 @@ function FormControlLabelControlComponent(props) {
     action('Control onChange')(e);
   };
 
-  return (
-    <FormControlLabel
-      {...props}
-      checked={value}
-      onChange={onChange}
-    />
-  );
+  return <FormControlLabel {...props} checked={value} onChange={onChange} />;
 }
 
 export function Checkbox() {

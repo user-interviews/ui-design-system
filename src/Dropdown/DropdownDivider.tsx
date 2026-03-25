@@ -1,9 +1,6 @@
-import React from 'react';
 import classNames from 'classnames';
-
-import {
-  Dropdown as RBDropdown,
-} from 'react-bootstrap';
+import React from 'react';
+import { Dropdown as RBDropdown } from 'react-bootstrap';
 
 import './DropdownDivider.scss';
 
@@ -20,11 +17,7 @@ type DropdownDividerProps = {
   className?: string;
 };
 
-function DropdownDivider({
-  as = 'hr',
-  bsPrefix = 'dropdown',
-  className,
-}: DropdownDividerProps) {
+function DropdownDivider({ as = 'hr', bsPrefix = 'dropdown', className }: DropdownDividerProps) {
   return (
     <RBDropdown.Divider
       as={as}

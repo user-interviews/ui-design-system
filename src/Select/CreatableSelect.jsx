@@ -1,12 +1,9 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import Creatable from 'react-select/creatable';
-import PropTypes from 'prop-types';
-
 import zStack from 'src/Styles/zStack';
 
-import {
- borderedMultiValueStyles, defaultTheme, defaultStyles, SELECT_SIZES,
-} from './styles';
+import { borderedMultiValueStyles, defaultTheme, defaultStyles, SELECT_SIZES } from './styles';
 
 function CreatableSelect({
   'aria-label': ariaLabel,
@@ -53,14 +50,10 @@ function CreatableSelect({
       options={options}
       placeholder={placeholder}
       styles={{
-      ...defaultStyles({ menuWidth, size }),
-      ...borderedMultiValueStyles(borderedMultiValue),
-      menuPortal: (base) => (
-        modal ?
-        { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } :
-          base
-      ),
-    }}
+        ...defaultStyles({ menuWidth, size }),
+        ...borderedMultiValueStyles(borderedMultiValue),
+        menuPortal: (base) => (modal ? { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } : base),
+      }}
       theme={defaultTheme}
       value={value}
       onChange={onChange}

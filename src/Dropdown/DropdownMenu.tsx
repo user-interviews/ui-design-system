@@ -1,6 +1,5 @@
-import React, { type ReactNode } from 'react';
 import classNames from 'classnames';
-
+import React, { type ReactNode } from 'react';
 import { Dropdown as RBDropdown } from 'react-bootstrap';
 
 type DropdownMenuProps = {
@@ -21,7 +20,7 @@ type DropdownMenuProps = {
    */
   bsPrefix?: string;
   className?: string;
-  children: ReactNode,
+  children: ReactNode;
   /**
     Have the dropdown switch to it's opposite placement when necessary to stay on screen.
    */
@@ -82,7 +81,7 @@ function DropdownMenu({
       onSelect={onSelect}
       {...props}
     >
-      { children }
+      {children}
     </RBDropdown.Menu>
   );
 }

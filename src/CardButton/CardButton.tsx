@@ -1,3 +1,6 @@
+import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
 import type {
   DetailedHTMLProps,
   AnchorHTMLAttributes,
@@ -6,22 +9,12 @@ import type {
 } from 'react';
 import React from 'react';
 
-import classNames from 'classnames';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { faSpinnerThird } from '../font_awesome/solid';
 
 import * as styles from './CardButton.module.css';
 
-type LinkProps = DetailedHTMLProps<
-  AnchorHTMLAttributes<HTMLAnchorElement>,
-  HTMLAnchorElement
->;
-type ButtonProps = DetailedHTMLProps<
-  ButtonHTMLAttributes<HTMLButtonElement>,
-  HTMLButtonElement
->;
+type LinkProps = DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>;
+type ButtonProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
 
 type BaseCardButtonProps = {
   alignment?: 'left' | 'center' | 'right';
@@ -35,15 +28,13 @@ type BaseCardButtonProps = {
 
 type CardButtonProps =
   | (BaseCardButtonProps & {
-    as: 'a';
-  } & LinkProps)
+      as: 'a';
+    } & LinkProps)
   | (BaseCardButtonProps & {
-    as: 'button';
-  } & ButtonProps);
+      as: 'button';
+    } & ButtonProps);
 
-function isLinkButton(
-  as: CardButtonProps['as'],
-): as is 'a' {
+function isLinkButton(as: CardButtonProps['as']): as is 'a' {
   return as === 'a';
 }
 
@@ -99,10 +90,7 @@ export function CardButton({
       {children}
       {isLoading && (
         <div className={styles.loadingOverlay}>
-          <FontAwesomeIcon
-            className={styles.spinner}
-            icon={faSpinnerThird as IconDefinition}
-          />
+          <FontAwesomeIcon className={styles.spinner} icon={faSpinnerThird as IconDefinition} />
         </div>
       )}
     </button>

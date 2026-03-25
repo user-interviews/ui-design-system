@@ -1,9 +1,8 @@
 import React, { useRef } from 'react';
 
+import { RichTextEditor, RichTextEditorActions } from '.';
 import Button from '../Button';
 import { type RichTextEditorRef } from './RichTextEditor';
-import { RichTextEditor, RichTextEditorActions } from '.';
-
 import mdx from './RichTextEditor.mdx';
 
 export default {
@@ -17,12 +16,7 @@ export default {
 };
 
 export function Default() {
-  return (
-    <RichTextEditor
-      id="text-editor"
-      onChange={() => null}
-    />
-  );
+  return <RichTextEditor id="text-editor" onChange={() => null} />;
 }
 
 export function ARIAAttributes() {
@@ -46,33 +40,15 @@ export function AvailableActions() {
 }
 
 export function CharacterLimit() {
-  return (
-    <RichTextEditor
-      characterLimit={140}
-      id="text-editor"
-      onChange={() => null}
-    />
-  );
+  return <RichTextEditor characterLimit={140} id="text-editor" onChange={() => null} />;
 }
 
 export function OneLine() {
-  return (
-    <RichTextEditor
-      id="text-editor"
-      isOneLine
-      onChange={() => null}
-    />
-  );
+  return <RichTextEditor id="text-editor" isOneLine onChange={() => null} />;
 }
 
 export function Error() {
-  return (
-    <RichTextEditor
-      hasErrors
-      id="text-editor"
-      onChange={() => null}
-    />
-  );
+  return <RichTextEditor hasErrors id="text-editor" onChange={() => null} />;
 }
 
 export function SetContent() {
@@ -85,11 +61,7 @@ export function SetContent() {
   return (
     <>
       <Button onClick={handleClick}>Set content to "Oh hey"</Button>
-      <RichTextEditor
-        id="text-editor"
-        ref={ref}
-        onChange={() => null}
-      />
+      <RichTextEditor id="text-editor" ref={ref} onChange={() => null} />
     </>
   );
 }

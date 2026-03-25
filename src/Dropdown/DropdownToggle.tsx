@@ -1,9 +1,7 @@
-import React from 'react';
-import classNames from 'classnames';
-
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
+import classNames from 'classnames';
+import React from 'react';
 import { Dropdown as RBDropdown } from 'react-bootstrap';
 
 import './DropdownToggle.scss';
@@ -67,16 +65,12 @@ function DropdownToggle({
       as={as}
       bsPrefix={removeCaret ? 'DropdownToggle--no-caret' : bsPrefix}
       childBsPrefix={childBsPrefix}
-      className={classNames(
-        'DropdownToggle',
-        className,
-        { 'DropdownToggle--unstyled': unstyled },
-      )}
+      className={classNames('DropdownToggle', className, { 'DropdownToggle--unstyled': unstyled })}
       id={id}
       {...props}
     >
-      { leadingIcon && (<FontAwesomeIcon className="icon-left" icon={leadingIcon} />)}
-      { children }
+      {leadingIcon && <FontAwesomeIcon className="icon-left" icon={leadingIcon} />}
+      {children}
     </RBDropdown.Toggle>
   );
 }

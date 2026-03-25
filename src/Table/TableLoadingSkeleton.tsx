@@ -17,12 +17,12 @@ function TableLoadingSkeleton({
   return (
     <>
       {[...Array(rows)].map((_, rowIndex) => (
-        // eslint-disable-next-line react/no-array-index-key
+        // oxlint-disable-next-line react/no-array-index-key
         <Flex className="TableLoadingSkeleton" container flexDirection="row" key={rowIndex}>
           {columns.map((width, index) => (
-          // eslint-disable-next-line react/no-array-index-key
-          (<LoadingSkeleton className="TableLoadingSkeleton__row" key={index} width={width} />)
-        ))}
+            // oxlint-disable-next-line react/no-array-index-key
+            <LoadingSkeleton className="TableLoadingSkeleton__row" key={index} width={width} />
+          ))}
         </Flex>
       ))}
     </>

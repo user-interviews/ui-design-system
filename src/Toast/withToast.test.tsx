@@ -1,21 +1,17 @@
-import React from 'react';
 import { act } from '@testing-library/react';
+import React from 'react';
 import { create } from 'react-test-renderer';
 
-import { MessageTypes } from '../Alert';
 import { withToast } from '.';
+import { MessageTypes } from '../Alert';
 
-jest.mock('react-transition-group', () => (
-  {
-    CSSTransition: ({ children }) => children,
-    TransitionGroup: ({ children }) => children,
-  }
-));
-jest.mock('../utils/uuid', () => (
-  {
-    generateUUID: () => '1234',
-  }
-));
+jest.mock('react-transition-group', () => ({
+  CSSTransition: ({ children }) => children,
+  TransitionGroup: ({ children }) => children,
+}));
+jest.mock('../utils/uuid', () => ({
+  generateUUID: () => '1234',
+}));
 
 function WrappedComponent() {
   return <div />;

@@ -1,6 +1,6 @@
-import React from 'react';
 import { act, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
+import React from 'react';
 
 import DateTimePicker, { DateTimePickerProps } from './DateTimePicker';
 
@@ -46,32 +46,17 @@ describe('DateTimePicker', () => {
       });
 
       it('parses custom dateFormat', async () => {
-        await renderAndFlush(
-          <Setup
-            date={VALID_DATE_CUSTOM_FORMAT}
-            dateFormat="MM/dd/yyyy"
-          />
-        );
+        await renderAndFlush(<Setup date={VALID_DATE_CUSTOM_FORMAT} dateFormat="MM/dd/yyyy" />);
 
-        expect(
-          screen.getByDisplayValue(VALID_DATE_CUSTOM_FORMAT)
-        ).toBeInTheDocument();
+        expect(screen.getByDisplayValue(VALID_DATE_CUSTOM_FORMAT)).toBeInTheDocument();
       });
     });
 
     describe('when passed date and time with showTimeSelect', () => {
       it('sets input value with date and time', async () => {
-        await renderAndFlush(
-          <Setup
-            date={VALID_DATE}
-            showTimeSelect
-            time={VALID_TIME}
-          />
-        );
+        await renderAndFlush(<Setup date={VALID_DATE} showTimeSelect time={VALID_TIME} />);
 
-        expect(
-          screen.getByDisplayValue(`${VALID_DATE} ${VALID_TIME}`)
-        ).toBeInTheDocument();
+        expect(screen.getByDisplayValue(`${VALID_DATE} ${VALID_TIME}`)).toBeInTheDocument();
       });
     });
   });
@@ -109,13 +94,7 @@ describe('DateTimePicker', () => {
 
     describe('when showTimeSelect is true', () => {
       it('updates date and time when user selects from calendar', async () => {
-        await renderAndFlush(
-          <Setup
-            date={VALID_DATE}
-            showTimeSelect
-            time={VALID_TIME}
-          />
-        );
+        await renderAndFlush(<Setup date={VALID_DATE} showTimeSelect time={VALID_TIME} />);
 
         const input = screen.getByDisplayValue(`${VALID_DATE} ${VALID_TIME}`);
         const user = userEvent.setup();
@@ -125,7 +104,7 @@ describe('DateTimePicker', () => {
         expect(popper).toBeInTheDocument();
 
         const firstAvailableDay = popper?.querySelector(
-          '.react-datepicker__day:not(.react-datepicker__day--outside-month)'
+          '.react-datepicker__day:not(.react-datepicker__day--outside-month)',
         );
         if (firstAvailableDay) {
           await user.click(firstAvailableDay as HTMLElement);
@@ -147,18 +126,14 @@ describe('DateTimePicker', () => {
         const user = userEvent.setup();
         await user.click(input);
 
-        expect(
-          document.body.querySelector('.react-datepicker-popper')
-        ).toBeInTheDocument();
+        expect(document.body.querySelector('.react-datepicker-popper')).toBeInTheDocument();
       });
     });
 
     describe('onCalendarClose', () => {
       it('calls onChangeDate with parsed date when calendar closes with valid date', async () => {
         const onChangeDate = jest.fn();
-        await renderAndFlush(
-          <Setup date={VALID_DATE} onChangeDate={onChangeDate} />
-        );
+        await renderAndFlush(<Setup date={VALID_DATE} onChangeDate={onChangeDate} />);
 
         const input = screen.getByDisplayValue(VALID_DATE);
         const user = userEvent.setup();
@@ -172,19 +147,15 @@ describe('DateTimePicker', () => {
           });
         });
       });
-
     });
 
     describe('showPickerEnforcedInput', () => {
       it('renders PickerEnforcedInput with valid date', async () => {
-        await renderAndFlush(
-          <Setup date={VALID_DATE} showPickerEnforcedInput />
-        );
+        await renderAndFlush(<Setup date={VALID_DATE} showPickerEnforcedInput />);
 
         const input = screen.getByDisplayValue('12/31/1999');
         expect(input).toBeInTheDocument();
       });
-
     });
 
     describe('isClearable prop', () => {
@@ -192,9 +163,7 @@ describe('DateTimePicker', () => {
         it('does not render clear button', async () => {
           await renderAndFlush(<Setup date={VALID_DATE} />);
 
-          expect(
-            screen.queryByRole('button', { name: /close/i })
-          ).not.toBeInTheDocument();
+          expect(screen.queryByRole('button', { name: /close/i })).not.toBeInTheDocument();
         });
       });
 
@@ -202,17 +171,13 @@ describe('DateTimePicker', () => {
         it('renders clear button when date is selected', async () => {
           await renderAndFlush(<Setup date={VALID_DATE} isClearable />);
 
-          expect(
-            screen.getByRole('button', { name: /close/i })
-          ).toBeInTheDocument();
+          expect(screen.getByRole('button', { name: /close/i })).toBeInTheDocument();
         });
 
         it('calls onChangeDate with null values when cleared', async () => {
           const user = userEvent.setup();
           const onChangeDate = jest.fn();
-          await renderAndFlush(
-            <Setup date={VALID_DATE} isClearable onChangeDate={onChangeDate} />
-          );
+          await renderAndFlush(<Setup date={VALID_DATE} isClearable onChangeDate={onChangeDate} />);
 
           const clearButton = screen.getByRole('button', { name: /close/i });
           await user.click(clearButton);

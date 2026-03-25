@@ -1,7 +1,8 @@
-import React from "react";
-import Button from "../Button";
-import "./ModalFooter.scss";
-import classNames from "classnames";
+import classNames from 'classnames';
+import React from 'react';
+
+import './ModalFooter.scss';
+import Button from '../Button';
 
 type ModalFooterProps = {
   children?: React.ReactNode;
@@ -22,12 +23,10 @@ export default function ModalFooter({
 }: ModalFooterProps) {
   const handleCloseClick = () => onRequestClose && onRequestClose();
 
-  const btnText = dismissButtonText ?? "Cancel";
+  const btnText = dismissButtonText ?? 'Cancel';
 
   return (
-    <div
-      className={classNames("ModalFooter", { ModalFooter__sticky: isSticky })}
-    >
+    <div className={classNames('ModalFooter', { ModalFooter__sticky: isSticky })}>
       {onRequestClose && (
         <Button
           disabled={closingIsDisabled}

@@ -1,10 +1,9 @@
-import React from 'react';
-import classNames from 'classnames';
-
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Avatar from '../Avatar';
+import classNames from 'classnames';
+import React from 'react';
 
+import Avatar from '../Avatar';
 import ProfileCellSkeleton from './ProfileCellSkeleton';
 
 import './ProfileCell.scss';
@@ -21,10 +20,10 @@ type ProfileCellProps = {
     facebookProfileUrl?: string;
     imageUrl?: string;
     initials: string;
-    linkedinProfileUrl?: string
+    linkedinProfileUrl?: string;
     name: string;
     profilePictureUrl?: string;
-    profileUrl?: string,
+    profileUrl?: string;
     url?: string;
   };
 };
@@ -38,12 +37,7 @@ function ProfileCell(props: ProfileCellProps) {
   return props.isLoading ? (
     <ProfileCellSkeleton maxWidth={props.maxWidth || '100%'} />
   ) : (
-    <div
-      className={classNames(
-        'ProfileCell',
-        { 'ProfileCell--large': props.large },
-      )}
-    >
+    <div className={classNames('ProfileCell', { 'ProfileCell--large': props.large })}>
       <div className="ProfileCell__image">
         <Avatar
           colorId={props.colorId}
@@ -56,16 +50,15 @@ function ProfileCell(props: ProfileCellProps) {
       </div>
       <div className="ProfileCell__content" style={contentStyle}>
         <div className="ProfileCell__content__name__container">
-          <h5 className="ProfileCell__content__name">
-            {props.user.name}
-          </h5>
+          <h5 className="ProfileCell__content__name">{props.user.name}</h5>
           {props.trailingIcon && (
-            <FontAwesomeIcon className="ProfileCell__content__trailing_icon" icon={props.trailingIcon} />
+            <FontAwesomeIcon
+              className="ProfileCell__content__trailing_icon"
+              icon={props.trailingIcon}
+            />
           )}
         </div>
-        <div className="ProfileCell__content__subtitle">
-          {props.subtitle || ' '}
-        </div>
+        <div className="ProfileCell__content__subtitle">{props.subtitle || ' '}</div>
       </div>
     </div>
   );

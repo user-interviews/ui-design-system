@@ -3,10 +3,4 @@ import ModalBody from './ModalBody';
 import ModalFooter from './ModalFooter';
 import ModalHeader from './ModalHeader';
 
-export {
-  Modal,
-  MODAL_SIZES,
-  ModalBody,
-  ModalFooter,
-  ModalHeader,
-};
+export { Modal, MODAL_SIZES, ModalBody, ModalFooter, ModalHeader };

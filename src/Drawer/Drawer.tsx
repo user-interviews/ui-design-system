@@ -1,7 +1,5 @@
-import React, {
-  createContext, useEffect, useState, useCallback, useRef, useMemo,
-} from 'react';
 import classNames from 'classnames';
+import React, { createContext, useEffect, useState, useCallback, useRef, useMemo } from 'react';
 
 import './Drawer.scss';
 
@@ -9,9 +7,9 @@ export const ORIENTATION_LEFT = 'left';
 export const ORIENTATION_RIGHT = 'right';
 
 export const ExpandContext = createContext<{
-  expandable: boolean,
-  expanded: boolean,
-  handleExpand:() => void;
+  expandable: boolean;
+  expanded: boolean;
+  handleExpand: () => void;
 }>({
   expandable: false,
   expanded: false,
@@ -33,7 +31,7 @@ type DrawerProps = {
   expandable?: boolean;
   hasBackgroundOverlay?: boolean;
   orientation?: typeof ORIENTATION_LEFT | typeof ORIENTATION_RIGHT;
-  size?: typeof DrawerSizes[keyof typeof DrawerSizes];
+  size?: (typeof DrawerSizes)[keyof typeof DrawerSizes];
   visible: boolean;
   onRequestClose: (...args: unknown[]) => unknown;
 };
@@ -63,15 +61,23 @@ function Drawer({
     [className]: !!className,
   });
 
-  const expandContentContextValue = useMemo(() => ({
-    expandable, expanded, handleExpand,
-  }), [expandable, expanded, handleExpand]);
+  const expandContentContextValue = useMemo(
+    () => ({
+      expandable,
+      expanded,
+      handleExpand,
+    }),
+    [expandable, expanded, handleExpand],
+  );
 
-  const handleEscKeyPress = useCallback((event) => {
-    if (visible && event.key === 'Escape') {
-      onRequestClose();
-    }
-  }, [onRequestClose, visible]);
+  const handleEscKeyPress = useCallback(
+    (event) => {
+      if (visible && event.key === 'Escape') {
+        onRequestClose();
+      }
+    },
+    [onRequestClose, visible],
+  );
 
   useEffect(() => {
     window.addEventListener('keydown', handleEscKeyPress);
@@ -115,20 +121,16 @@ function Drawer({
 
   return (
     <>
-      {
-        hasBackgroundOverlay && (
-          <div
-            className={
-              classNames('DrawerBackgroundOverlay', {
-                'DrawerBackgroundOverlay--active': visible,
-              })
-            }
-            role="presentation"
-            onClick={closeOnOverlayClick ? onRequestClose : undefined}
-            onKeyDown={handleEscKeyPress}
-          />
-        )
-      }
+      {hasBackgroundOverlay && (
+        <div
+          className={classNames('DrawerBackgroundOverlay', {
+            'DrawerBackgroundOverlay--active': visible,
+          })}
+          role="presentation"
+          onClick={closeOnOverlayClick ? onRequestClose : undefined}
+          onKeyDown={handleEscKeyPress}
+        />
+      )}
       <div className={drawerClasses}>
         <ExpandContext.Provider value={expandContentContextValue}>
           {children}

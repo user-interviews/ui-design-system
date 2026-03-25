@@ -1,13 +1,13 @@
 ---
 name: "'ui-design-system' issue"
 about: Submit an issue for 'ui-design-system'
-title: "[UIDS]"
+title: '[UIDS]'
 labels: ''
 assignees: ''
-
 ---
 
 ---
+
 name: 'ui-design-system' issue
 projects: "user-interviews/15"
 about: An issue template for 'ui-design-system'

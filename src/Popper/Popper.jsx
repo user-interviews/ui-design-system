@@ -1,6 +1,6 @@
-import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
+import React from 'react';
 import { Manager, Popper as ReactPopper, Reference } from 'react-popper';
 
 import './Popper.scss';
@@ -21,54 +21,35 @@ function Popper({
 
   return (
     <Manager>
-      <Reference>
-        {({ ref }) => React.cloneElement(children, { ref })}
-      </Reference>
-      {
-        visible && (
-          <ReactPopper
-            modifiers={[
-              {
-                name: 'offset',
-                options: { offset: [0, offset] },
-              },
-            ]}
-            placement={placement}
-            strategy={strategy}
-          >
+      <Reference>{({ ref }) => React.cloneElement(children, { ref })}</Reference>
+      {visible && (
+        <ReactPopper
+          modifiers={[
             {
-              ({
-                arrowProps,
-                placement: dataPlacement,
-                ref,
-                style,
-              }) => (
-                <div
-                  className={classNames('Popper', { 'Popper--dark': dark })}
-                  data-placement={dataPlacement}
-                  ref={ref}
-                  style={style}
-                >
-                  {
-                      header && (
-                        <div className="Popper__header">
-                          {header}
-                        </div>
-                      )
-                    }
+              name: 'offset',
+              options: { offset: [0, offset] },
+            },
+          ]}
+          placement={placement}
+          strategy={strategy}
+        >
+          {({ arrowProps, placement: dataPlacement, ref, style }) => (
+            <div
+              className={classNames('Popper', { 'Popper--dark': dark })}
+              data-placement={dataPlacement}
+              ref={ref}
+              style={style}
+            >
+              {header && <div className="Popper__header">{header}</div>}
 
-                  {text}
-                  {
-                    showArrow && (
-                      <span className="Popper__arrow" ref={arrowProps.ref} style={arrowProps.style} />
-                    )
-                  }
-                </div>
-              )
-            }
-          </ReactPopper>
-        )
-      }
+              {text}
+              {showArrow && (
+                <span className="Popper__arrow" ref={arrowProps.ref} style={arrowProps.style} />
+              )}
+            </div>
+          )}
+        </ReactPopper>
+      )}
     </Manager>
   );
 }

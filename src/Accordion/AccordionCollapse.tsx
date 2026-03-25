@@ -1,6 +1,5 @@
-import React from 'react';
 import classNames from 'classnames';
-
+import React from 'react';
 import RBAccordionCollapse from 'react-bootstrap/AccordionCollapse';
 
 import './AccordionCollapse.scss';
@@ -29,19 +28,19 @@ function AccordionCollapse({
   return (
     <RBAccordionCollapse
       className={classNames(
-      UNSAFE_className,
-      'AccordionCollapse',
-      variant === 'info' && 'AccordionCollapse--info',
-    )}
+        UNSAFE_className,
+        'AccordionCollapse',
+        variant === 'info' && 'AccordionCollapse--info',
+      )}
       eventKey={eventKey}
       {...props}
     >
       <div
         className={classNames(
-        UNSAFE_className,
-        'AccordionCollapse__container',
-        variant === 'info' && 'AccordionCollapse--noTopPadding',
-      )}
+          UNSAFE_className,
+          'AccordionCollapse__container',
+          variant === 'info' && 'AccordionCollapse--noTopPadding',
+        )}
       >
         {children}
       </div>

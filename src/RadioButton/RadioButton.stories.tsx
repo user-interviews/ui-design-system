@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+
 import RadioButton from '.';
 import FormControlLabel from '../FormControlLabel';
-
 import mdx from './RadioButton.mdx';
 
 export default {
@@ -22,13 +22,7 @@ export function Default() {
   };
 
   return (
-    <RadioButton
-      checked={isChecked}
-      disabled={false}
-      id="1"
-      value={1}
-      onChange={handleChange}
-    />
+    <RadioButton checked={isChecked} disabled={false} id="1" value={1} onChange={handleChange} />
   );
 }
 
