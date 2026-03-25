@@ -267,7 +267,6 @@ export function WithErrors() {
   );
 }
 
-/* eslint-disable react/prop-types */
 function ButtonGroupComponent({
   ButtonGroup,
   bordered,

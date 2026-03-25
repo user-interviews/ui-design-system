@@ -15,7 +15,6 @@ function ToggleInput({
   labelText,
   name,
   onToggle,
-  // eslint-disable-next-line camelcase
   UNSAFE_className,
 }) {
   return (

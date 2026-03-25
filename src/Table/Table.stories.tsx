@@ -27,7 +27,6 @@ export default {
   },
 };
 
-/* eslint-disable object-curly-newline */
 const data = [
   {
     id: 1,
@@ -606,7 +605,6 @@ const editButton = () => (
     Edit
   </Button>
 );
-/* eslint-disable react/prop-types */
 function PinButton({ isPinActive, ...props }) {
   return (
     <button

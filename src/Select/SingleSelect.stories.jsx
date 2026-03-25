@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unstable-nested-components */
 import React, { useRef, useState } from 'react';
 import { action } from 'storybook/actions';
 
@@ -201,12 +200,7 @@ export function CustomOptionWithDescriptionAndCheckbox() {
       <SingleSelect
         components={{
           Option: ({ ...props }) => (
-            <Option
-              {...props}
-              boldLabel
-              // eslint-disable-next-line react/prop-types
-              description={props.data.description}
-            />
+            <Option {...props} boldLabel description={props.data.description} />
           ),
         }}
         inputId="custom-option-with-description-select"
@@ -316,7 +310,7 @@ export function CustomOptionWithIndeterminateCheckbox() {
   let inputRef;
 
   const createInputRef = () => {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
+    // oxlint-disable-next-line eslint-plugin-react-hooks/rules-of-hooks
     inputRef = useRef();
     return inputRef;
   };
@@ -332,7 +326,6 @@ export function CustomOptionWithIndeterminateCheckbox() {
           Option: (props) => (
             <Option
               {...props}
-              // eslint-disable-next-line react/prop-types
               indeterminate={props.value > 2}
               ref={createInputRef()}
             />
@@ -361,7 +354,6 @@ export function CustomValueContainer() {
           ValueContainer: (props) => (
             <ValueContainer
               {...props}
-              /* eslint-disable react/prop-types */
               valueText={`participant${props.getValue().length > 1 ? 's' : ''} selected`}
             />
           ),

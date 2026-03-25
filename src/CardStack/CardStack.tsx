@@ -7,7 +7,6 @@ import './CardStack.scss';
 
 type CardStackProps = {
   size?: (typeof CardSizes)[keyof typeof CardSizes];
-  // eslint-disable-next-line camelcase
   UNSAFE_className?: string;
   children: React.ReactNode;
 };
@@ -15,7 +14,6 @@ type CardStackProps = {
 function CardStack({
   children,
 
-  // eslint-disable-next-line camelcase
   UNSAFE_className,
 
   size,

@@ -6,7 +6,6 @@ import { Table, TableBody, TableCell, TableHead, TableRow } from 'src/Table';
 
 import './Spacing.scss';
 
-/* eslint-disable object-curly-newline */
 const data = [
   { id: 1, token: 'synth-spacing-1', px: '4' },
   { id: 2, token: 'synth-spacing-2', px: '8' },

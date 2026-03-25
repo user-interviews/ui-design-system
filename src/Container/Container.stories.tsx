@@ -284,11 +284,9 @@ export function SettingColumnWidthsInRow() {
     <Container>
       <p>
         The <code>Row</code> lets you specify column widths across 5 breakpoint
-        sizes (xs, sm, md, lg, xl and xxl).
-        {/* eslint-disable-next-line max-len */}
-        For every breakpoint, you can specify the amount of columns that will
-        fit next to each other. You can also specify auto to set the columns to
-        their natural widths.
+        sizes (xs, sm, md, lg, xl and xxl). For every breakpoint, you can
+        specify the amount of columns that will fit next to each other. You can
+        also specify auto to set the columns to their natural widths.
       </p>
       <p>
         Note that <code>Row</code> column widths will override <code>Col</code>

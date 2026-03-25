@@ -200,7 +200,6 @@ describe('Drawer', () => {
         });
 
         it('body tag does not have Drawer--open', () => {
-          // eslint-disable-next-line max-len
           const { container } = render(
             <SetupDrawerWithChildren
               hasBackgroundOverlay={false}
@@ -306,7 +305,6 @@ describe('Drawer', () => {
         });
 
         it('body tag does not have Drawer--open', () => {
-          // eslint-disable-next-line max-len
           const { container } = render(
             <SetupDrawerWithChildren hasBackgroundOverlay={false} visible />,
           );

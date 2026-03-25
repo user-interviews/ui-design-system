@@ -35,7 +35,6 @@ type AccordionToggleProps = {
   helperText?: string;
   leadingIcon?: object;
   title?: string;
-  // eslint-disable-next-line camelcase
   UNSAFE_className?: string;
 };
 
@@ -53,7 +52,6 @@ function AccordionToggle({
   leadingIcon,
   title,
 
-  // eslint-disable-next-line camelcase
   UNSAFE_className,
 }: AccordionToggleProps) {
   const { activeEventKey } = React.useContext(AccordionContext);

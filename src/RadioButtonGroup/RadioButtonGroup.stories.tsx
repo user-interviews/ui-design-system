@@ -17,7 +17,6 @@ export default {
   },
 };
 
-/* eslint-disable react/prop-types */
 function RadioButtonGroupComponent({
   bordered,
   children,
