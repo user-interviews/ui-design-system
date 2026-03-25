@@ -1,10 +1,10 @@
-name: 'Prepare hotfix'
+name: "Prepare hotfix"
 
 on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'The version you want to release.'
+        description: "The version you want to release."
         required: true
 
 env:

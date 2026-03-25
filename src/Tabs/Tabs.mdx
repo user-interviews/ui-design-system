@@ -4,7 +4,6 @@ import Tab from './Tab';
 import * as ComponentStories from './Tabs.stories';
 
 # Tabs
-
 Create dynamic tabbed interfaces, as described in the [WAI ARIA Authoring Practices](https://www.w3.org/TR/wai-aria-practices/#tabpanel). Tabs is a higher-level component for quickly creating a Nav matched with a set of TabPanes.
 
 These are wrapped and styled [React Bootstrap](https://react-bootstrap.github.io) `Tabs` and `Tab` components. Refer to [React Bootstrap `Tabs`](https://react-bootstrap.github.io/components/tabs/) documentation as the source of truth.
@@ -21,7 +20,7 @@ Since we should always be tracking user interactions it is highly recommended to
 
 <ArgTypes of={Tabs} />
 
-- **activeKey:** string which matches the `Tab` **eventKey** which should be active on initial load _and_ update this prop from the `onSelect` function
+- **activeKey:** string which matches the `Tab` **eventKey** which should be active on initial load *and* update this prop from the `onSelect` function
 - **defaultActiveKey:** The default active key that is selected on start
 - **id:** HTML id attribute, required
 - **mountOnEnter:** Wait until the first "enter" transition to mount tabs (add them to the DOM)
@@ -30,13 +29,11 @@ Since we should always be tracking user interactions it is highly recommended to
 - **onSelect:** Callback fired when a Tab is selected.
 
 ### Controlled Tabs
-
 - **activeKey:** Required
 - **defaultActiveKey:** Leave undefined
 - **onSelect:** Required
 
 ### Uncontrolled Tabs
-
 - **activeKey:** Leave undefined
 - **defaultActiveKey:** Required
 - **onSelect:** Leave undefined
