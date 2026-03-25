@@ -24,7 +24,9 @@ function OptionWithDescription({ hideDescription, ...props }) {
           {props.data.labelDescription}
         </label>
         {!hideDescription && (
-          <div className="OptionWithDescription__description">{props.data.description}</div>
+          <div className="OptionWithDescription__description">
+            {props.data.description}
+          </div>
         )}
       </div>
     </components.Option>

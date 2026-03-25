@@ -16,10 +16,16 @@ function ValueContainer({ children, valueText = 'selected', ...props }) {
   const numValues = getValue().length;
 
   if (!hasValue) {
-    return <components.ValueContainer {...props}>{children}</components.ValueContainer>;
+    return (
+      <components.ValueContainer {...props}>
+        {children}
+      </components.ValueContainer>
+    );
   }
   return (
-    <components.ValueContainer {...props}>{`${numValues} ${valueText}`}</components.ValueContainer>
+    <components.ValueContainer
+      {...props}
+    >{`${numValues} ${valueText}`}</components.ValueContainer>
   );
 }
 

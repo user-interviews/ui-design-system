@@ -5,7 +5,10 @@ import { TEXT_PROPS } from './Text.types';
 
 import './Text.scss';
 
-type ElementProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+type ElementProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLElement>,
+  HTMLElement
+>;
 
 type TextProps = ElementProps & {
   as?: React.ElementType;

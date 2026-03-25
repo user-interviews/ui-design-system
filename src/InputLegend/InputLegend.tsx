@@ -29,11 +29,21 @@ function InputLegend({
   const inputLegendChildren = (
     <>
       {text}
-      {required && <span className="InputLegend__helper-text">&nbsp;(Required)</span>}
-      {labelHelperText && (
-        <span className="InputLegend__helper-text">&nbsp;({labelHelperText})</span>
+      {required && (
+        <span className="InputLegend__helper-text">&nbsp;(Required)</span>
       )}
-      {tooltipText && <Tooltip iconClasses="Tooltip__icon" placement="right" text={tooltipText} />}
+      {labelHelperText && (
+        <span className="InputLegend__helper-text">
+          &nbsp;({labelHelperText})
+        </span>
+      )}
+      {tooltipText && (
+        <Tooltip
+          iconClasses="Tooltip__icon"
+          placement="right"
+          text={tooltipText}
+        />
+      )}
     </>
   );
 

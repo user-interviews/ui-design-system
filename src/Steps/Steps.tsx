@@ -3,7 +3,10 @@ import React from 'react';
 
 import './Steps.scss';
 
-type DivProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
+type DivProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+>;
 
 type StepsProps = DivProps & {
   children?: React.ReactNode;

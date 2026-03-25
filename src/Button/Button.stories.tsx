@@ -2,7 +2,12 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import React from 'react';
 
 import Button from '.';
-import { faGoogle, faFacebook, faLinkedin, faTwitter } from '../font_awesome/brands';
+import {
+  faGoogle,
+  faFacebook,
+  faLinkedin,
+  faTwitter,
+} from '../font_awesome/brands';
 import { faFileAlt, faCaretDown, faPaperPlane } from '../font_awesome/regular';
 import mdx from './Button.mdx';
 
@@ -203,7 +208,11 @@ export function Link() {
       <Button size="sm" variant="link">
         Send
       </Button>{' '}
-      <Button leadingIcon={faPaperPlane as IconDefinition} size="sm" variant="link">
+      <Button
+        leadingIcon={faPaperPlane as IconDefinition}
+        size="sm"
+        variant="link"
+      >
         Send
       </Button>{' '}
       <Button disabled size="sm" variant="link">
@@ -216,20 +225,37 @@ export function Link() {
 export function Brands() {
   return (
     <>
-      <Button leadingIcon={faGoogle as IconDefinition} size="sm" variant="brand-google">
+      <Button
+        leadingIcon={faGoogle as IconDefinition}
+        size="sm"
+        variant="brand-google"
+      >
         Google
       </Button>{' '}
-      <Button disabled leadingIcon={faGoogle as IconDefinition} size="sm" variant="brand-google">
+      <Button
+        disabled
+        leadingIcon={faGoogle as IconDefinition}
+        size="sm"
+        variant="brand-google"
+      >
         Google
       </Button>{' '}
       <Button leadingIcon={faGoogle as IconDefinition} variant="brand-google">
         Google
       </Button>{' '}
-      <Button disabled leadingIcon={faGoogle as IconDefinition} variant="brand-google">
+      <Button
+        disabled
+        leadingIcon={faGoogle as IconDefinition}
+        variant="brand-google"
+      >
         Google
       </Button>
       <div style={{ margin: '8px' }} />
-      <Button leadingIcon={faFacebook as IconDefinition} size="sm" variant="brand-facebook">
+      <Button
+        leadingIcon={faFacebook as IconDefinition}
+        size="sm"
+        variant="brand-facebook"
+      >
         Facebook
       </Button>{' '}
       <Button
@@ -240,14 +266,25 @@ export function Brands() {
       >
         Facebook
       </Button>{' '}
-      <Button leadingIcon={faFacebook as IconDefinition} variant="brand-facebook">
+      <Button
+        leadingIcon={faFacebook as IconDefinition}
+        variant="brand-facebook"
+      >
         Facebook
       </Button>{' '}
-      <Button disabled leadingIcon={faFacebook as IconDefinition} variant="brand-facebook">
+      <Button
+        disabled
+        leadingIcon={faFacebook as IconDefinition}
+        variant="brand-facebook"
+      >
         Facebook
       </Button>{' '}
       <div style={{ margin: '8px' }} />
-      <Button leadingIcon={faLinkedin as IconDefinition} size="sm" variant="brand-linkedin">
+      <Button
+        leadingIcon={faLinkedin as IconDefinition}
+        size="sm"
+        variant="brand-linkedin"
+      >
         LinkedIn
       </Button>{' '}
       <Button
@@ -258,23 +295,43 @@ export function Brands() {
       >
         LinkedIn
       </Button>{' '}
-      <Button leadingIcon={faLinkedin as IconDefinition} variant="brand-linkedin">
+      <Button
+        leadingIcon={faLinkedin as IconDefinition}
+        variant="brand-linkedin"
+      >
         LinkedIn
       </Button>{' '}
-      <Button disabled leadingIcon={faLinkedin as IconDefinition} variant="brand-linkedin">
+      <Button
+        disabled
+        leadingIcon={faLinkedin as IconDefinition}
+        variant="brand-linkedin"
+      >
         LinkedIn
       </Button>
       <div style={{ margin: '8px' }} />
-      <Button leadingIcon={faTwitter as IconDefinition} size="sm" variant="brand-twitter">
+      <Button
+        leadingIcon={faTwitter as IconDefinition}
+        size="sm"
+        variant="brand-twitter"
+      >
         Twitter
       </Button>{' '}
-      <Button disabled leadingIcon={faTwitter as IconDefinition} size="sm" variant="brand-twitter">
+      <Button
+        disabled
+        leadingIcon={faTwitter as IconDefinition}
+        size="sm"
+        variant="brand-twitter"
+      >
         Twitter
       </Button>{' '}
       <Button leadingIcon={faTwitter as IconDefinition} variant="brand-twitter">
         Twitter
       </Button>{' '}
-      <Button disabled leadingIcon={faTwitter as IconDefinition} variant="brand-twitter">
+      <Button
+        disabled
+        leadingIcon={faTwitter as IconDefinition}
+        variant="brand-twitter"
+      >
         Twitter
       </Button>
     </>

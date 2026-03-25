@@ -14,9 +14,19 @@ type PickerEnforcedInputProps = {
   onClick?: (...args: unknown[]) => unknown;
 };
 
-export const PickerEnforcedInput = forwardRef<HTMLInputElement, PickerEnforcedInputProps>(
+export const PickerEnforcedInput = forwardRef<
+  HTMLInputElement,
+  PickerEnforcedInputProps
+>(
   (
-    { disabled = false, inputClassName = '', name = '', onClick, startDate = '', value = '' },
+    {
+      disabled = false,
+      inputClassName = '',
+      name = '',
+      onClick,
+      startDate = '',
+      value = '',
+    },
     ref,
   ) => {
     const startDateIsValid = () => isValid(startDate);
@@ -24,7 +34,9 @@ export const PickerEnforcedInput = forwardRef<HTMLInputElement, PickerEnforcedIn
     return (
       <div className="input-group">
         <input
-          className={classNames(inputClassName, { 'is-invalid': startDateIsValid() })}
+          className={classNames(inputClassName, {
+            'is-invalid': startDateIsValid(),
+          })}
           disabled={disabled}
           id={name}
           name={name}

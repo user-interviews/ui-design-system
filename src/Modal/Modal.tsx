@@ -4,7 +4,11 @@ import ReactModal, { type ReactModalProps } from 'react-modal';
 
 import './Modal.scss';
 
-export const MODAL_SIZES = { SMALL: 'small', MEDIUM: 'medium', LARGE: 'large' } as const;
+export const MODAL_SIZES = {
+  SMALL: 'small',
+  MEDIUM: 'medium',
+  LARGE: 'large',
+} as const;
 
 type ModalProps = {
   className?: string;

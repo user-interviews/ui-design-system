@@ -23,7 +23,9 @@
   SYNTH_UNSELECTED_NEUTRAL: var(--synth-gray-500);
 
   SYNTH_ACCENT_GREEN: var(--synth-emerald-400);
-  SYNTH_DARK_BACKGROUND_SELECTED_BLUE: var(--synth-dark-background-selected-blue);
+  SYNTH_DARK_BACKGROUND_SELECTED_BLUE: var(
+    --synth-dark-background-selected-blue
+  );
   SYNTH_HOVER_STATE: var(--synth-hover-state);
   SYNTH_INDICATOR_STROKE_GREEN: var(--synth-indicator-stroke-green);
   SYNTH_NAVBAR_BLUE: var(--synth-navy-300);

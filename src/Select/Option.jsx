@@ -36,7 +36,9 @@ const Option = forwardRef(({ indeterminate, ...props }, ref) => (
         >
           {props.label}
         </label>
-        {props.description && <span className="Description">{props.description}</span>}
+        {props.description && (
+          <span className="Description">{props.description}</span>
+        )}
       </div>
     </div>
   </components.Option>

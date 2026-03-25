@@ -1,7 +1,13 @@
 import React from 'react';
 
 import IconCell from '.';
-import { faGlobe, faMailbox, faPaperPlane, faStar, faUser } from '../font_awesome/regular';
+import {
+  faGlobe,
+  faMailbox,
+  faPaperPlane,
+  faStar,
+  faUser,
+} from '../font_awesome/regular';
 import mdx from './IconCell.mdx';
 
 export default {

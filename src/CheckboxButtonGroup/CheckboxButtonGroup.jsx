@@ -63,6 +63,8 @@ CheckboxButtonGroup.propTypes = {
   id: PropTypes.string.isRequired,
   orientation: PropTypes.oneOf(Object.values(ORIENTATIONS)),
   parseInput: PropTypes.func,
-  value: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.number, PropTypes.string])),
+  value: PropTypes.arrayOf(
+    PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
+  ),
   onChange: PropTypes.func,
 };

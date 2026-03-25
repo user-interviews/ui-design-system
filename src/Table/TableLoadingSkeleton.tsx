@@ -18,10 +18,19 @@ function TableLoadingSkeleton({
     <>
       {[...Array(rows)].map((_, rowIndex) => (
         // oxlint-disable-next-line react/no-array-index-key
-        <Flex className="TableLoadingSkeleton" container flexDirection="row" key={rowIndex}>
+        <Flex
+          className="TableLoadingSkeleton"
+          container
+          flexDirection="row"
+          key={rowIndex}
+        >
           {columns.map((width, index) => (
             // oxlint-disable-next-line react/no-array-index-key
-            <LoadingSkeleton className="TableLoadingSkeleton__row" key={index} width={width} />
+            <LoadingSkeleton
+              className="TableLoadingSkeleton__row"
+              key={index}
+              width={width}
+            />
           ))}
         </Flex>
       ))}

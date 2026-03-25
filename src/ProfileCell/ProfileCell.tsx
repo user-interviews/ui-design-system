@@ -37,7 +37,11 @@ function ProfileCell(props: ProfileCellProps) {
   return props.isLoading ? (
     <ProfileCellSkeleton maxWidth={props.maxWidth || '100%'} />
   ) : (
-    <div className={classNames('ProfileCell', { 'ProfileCell--large': props.large })}>
+    <div
+      className={classNames('ProfileCell', {
+        'ProfileCell--large': props.large,
+      })}
+    >
       <div className="ProfileCell__image">
         <Avatar
           colorId={props.colorId}
@@ -58,7 +62,9 @@ function ProfileCell(props: ProfileCellProps) {
             />
           )}
         </div>
-        <div className="ProfileCell__content__subtitle">{props.subtitle || ' '}</div>
+        <div className="ProfileCell__content__subtitle">
+          {props.subtitle || ' '}
+        </div>
       </div>
     </div>
   );

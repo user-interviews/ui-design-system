@@ -22,7 +22,13 @@ export function Default() {
   };
 
   return (
-    <RadioButton checked={isChecked} disabled={false} id="1" value={1} onChange={handleChange} />
+    <RadioButton
+      checked={isChecked}
+      disabled={false}
+      id="1"
+      value={1}
+      onChange={handleChange}
+    />
   );
 }
 

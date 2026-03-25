@@ -22,7 +22,12 @@ export const createActionHandlers = (editor: Editor) => ({
     const absoluteUrl = url.match(protocolRegex) ? url : `//${url}`;
 
     // update link
-    editor.chain().focus().extendMarkRange('link').setLink({ href: absoluteUrl }).run();
+    editor
+      .chain()
+      .focus()
+      .extendMarkRange('link')
+      .setLink({ href: absoluteUrl })
+      .run();
 
     return false;
   },

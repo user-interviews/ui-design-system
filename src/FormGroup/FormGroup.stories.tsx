@@ -30,7 +30,11 @@ function InputComponent(props) {
 export function Default() {
   return (
     <FormGroup id="default">
-      <InputComponent id="default-input" name="default" placeholder="Placeholder text" />
+      <InputComponent
+        id="default-input"
+        name="default"
+        placeholder="Placeholder text"
+      />
     </FormGroup>
   );
 }
@@ -51,7 +55,11 @@ export function WithHelperText() {
 export function Required() {
   return (
     <FormGroup id="with-required" label="Label" required>
-      <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
+      <InputComponent
+        id="with-required-input"
+        name="required"
+        placeholder="Text is required"
+      />
     </FormGroup>
   );
 }
@@ -59,11 +67,27 @@ export function Required() {
 export function NoMargin() {
   return (
     <FlexContainer flexDirection="column" gap={4}>
-      <FormGroup label="Label" labelHtmlFor="no-margin-1-input" noMargin required>
-        <InputComponent id="no-margin-1-input" placeholder="This FormGroup has no default margin" />
+      <FormGroup
+        label="Label"
+        labelHtmlFor="no-margin-1-input"
+        noMargin
+        required
+      >
+        <InputComponent
+          id="no-margin-1-input"
+          placeholder="This FormGroup has no default margin"
+        />
       </FormGroup>
-      <FormGroup label="Label" labelHtmlFor="no-margin-2-input" noMargin required>
-        <InputComponent id="no-margin-2-input" placeholder="This FormGroup has no default margin" />
+      <FormGroup
+        label="Label"
+        labelHtmlFor="no-margin-2-input"
+        noMargin
+        required
+      >
+        <InputComponent
+          id="no-margin-2-input"
+          placeholder="This FormGroup has no default margin"
+        />
       </FormGroup>
     </FlexContainer>
   );
@@ -71,7 +95,12 @@ export function NoMargin() {
 
 export function WithLabelTooltip() {
   return (
-    <FormGroup id="with-label" label="Label" labelHtmlFor="input" labelTooltip="Some tooltip text">
+    <FormGroup
+      id="with-label"
+      label="Label"
+      labelHtmlFor="input"
+      labelTooltip="Some tooltip text"
+    >
       <InputComponent id="input" name="with-label" />
     </FormGroup>
   );
@@ -217,8 +246,8 @@ export function WithErrors() {
       errors={{
         test: [
           <div>
-            Sorry, we’re not able to accept this type of input. For more information, click{' '}
-            <a href="http://www.google.com">here</a>
+            Sorry, we’re not able to accept this type of input. For more
+            information, click <a href="http://www.google.com">here</a>
           </div>,
         ],
       }}

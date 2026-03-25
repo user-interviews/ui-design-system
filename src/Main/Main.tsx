@@ -6,7 +6,10 @@ import { Container } from '../Container';
 
 import './Main.scss';
 
-type ElementProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
+type ElementProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLElement>,
+  HTMLElement
+>;
 
 type MainProps = ElementProps & {
   as?: React.ElementType;
@@ -16,9 +19,22 @@ type MainProps = ElementProps & {
   id?: string;
 };
 
-function Main({ as = 'main', className, children, fluid = true, id, ...props }: MainProps) {
+function Main({
+  as = 'main',
+  className,
+  children,
+  fluid = true,
+  id,
+  ...props
+}: MainProps) {
   return (
-    <Container as={as} className={classNames(className, 'Main')} fluid={fluid} id={id} {...props}>
+    <Container
+      as={as}
+      className={classNames(className, 'Main')}
+      fluid={fluid}
+      id={id}
+      {...props}
+    >
       {children}
     </Container>
   );

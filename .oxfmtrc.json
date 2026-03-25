@@ -2,7 +2,7 @@
   "$schema": "./node_modules/oxfmt/configuration_schema.json",
   "singleQuote": true,
   "semi": true,
-  "printWidth": 100,
+  "printWidth": 80,
   "sortImports": {
     "order": "asc",
     "ignoreCase": true,

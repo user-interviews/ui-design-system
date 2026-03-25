@@ -46,7 +46,11 @@ export type FlexContainerProps = FlexProps & {
   xxl?: FlexProps;
 };
 
-export function FlexContainer({ children, className, ...props }: FlexContainerProps) {
+export function FlexContainer({
+  children,
+  className,
+  ...props
+}: FlexContainerProps) {
   return (
     <div
       className={classNames(

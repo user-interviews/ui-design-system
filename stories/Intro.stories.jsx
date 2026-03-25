@@ -5,11 +5,16 @@ import ImageFile from '../public/ui-design-system-dark.svg';
 function Default() {
   return (
     <div style={{ width: '50%', margin: '0 auto', textAlign: 'center' }}>
-      <img alt="User Interviews Design System" src={ImageFile} style={{ marginBottom: '32px' }} />
+      <img
+        alt="User Interviews Design System"
+        src={ImageFile}
+        style={{ marginBottom: '32px' }}
+      />
       <div style={{ marginBottom: '32px', fontFamily: 'Inter' }}>
-        We aim to create a system that allows us to build a user experience that is consistent,
-        flexible and scalable. This style guide is living documentation that will be updated as we
-        continue to evolve and improve our design system.
+        We aim to create a system that allows us to build a user experience that
+        is consistent, flexible and scalable. This style guide is living
+        documentation that will be updated as we continue to evolve and improve
+        our design system.
       </div>
       <a
         href="https://www.figma.com/file/471iS3QrpPtXZpS1xbsJ20/Components"

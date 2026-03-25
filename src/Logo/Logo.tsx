@@ -12,7 +12,11 @@ type LogoProps = {
 
 export function Logo({ alt, alignment = 'center', src }: LogoProps) {
   return (
-    <FlexContainer className={styles.logoContainer} flexDirection="row" justifyContent={alignment}>
+    <FlexContainer
+      className={styles.logoContainer}
+      flexDirection="row"
+      justifyContent={alignment}
+    >
       <img alt={alt} className={styles.logo} src={src} />
     </FlexContainer>
   );

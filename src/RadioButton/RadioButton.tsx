@@ -14,7 +14,19 @@ type RadioButtonProps = {
 };
 
 const RadioButton = React.forwardRef<HTMLInputElement, RadioButtonProps>(
-  ({ checked, className, disabled = false, id, name = '', value, onChange, ...rest }, ref) => (
+  (
+    {
+      checked,
+      className,
+      disabled = false,
+      id,
+      name = '',
+      value,
+      onChange,
+      ...rest
+    },
+    ref,
+  ) => (
     <input
       checked={checked}
       className={classNames(className, styles.radioButton)}

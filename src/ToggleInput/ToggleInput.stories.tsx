@@ -57,7 +57,13 @@ export function LabelLeft() {
   };
 
   return (
-    <ToggleInput id="1" isChecked={isChecked} labelLeft labelText="Label" onToggle={handleChange} />
+    <ToggleInput
+      id="1"
+      isChecked={isChecked}
+      labelLeft
+      labelText="Label"
+      onToggle={handleChange}
+    />
   );
 }
 

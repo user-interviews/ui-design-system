@@ -17,7 +17,10 @@ const getHeightProps = (size) => {
 
 function getBorderStyles(isFocused, isSelected) {
   return {
-    borderColor: isFocused || isSelected ? systemColors.UX_BLUE_500 : systemColors.inputBorderColor,
+    borderColor:
+      isFocused || isSelected
+        ? systemColors.UX_BLUE_500
+        : systemColors.inputBorderColor,
   };
 }
 
@@ -29,7 +32,9 @@ const defaultStyles = ({ menuWidth, size }) => ({
   control: (styles, { isDisabled, isFocused, isSelected }) => ({
     ...styles,
     ...getHeightProps(size),
-    backgroundColor: isDisabled ? systemColors.inputDisabledBg : styles.backgroundColor,
+    backgroundColor: isDisabled
+      ? systemColors.inputDisabledBg
+      : styles.backgroundColor,
     ...getBorderStyles(isFocused, isSelected),
     ':hover': {
       ...styles[':hover'],
@@ -82,7 +87,9 @@ const defaultStyles = ({ menuWidth, size }) => ({
   }),
   singleValue: (styles, { data }) => ({
     ...styles,
-    color: (data.colors ? data.colors.text : systemColors.UX_GRAY_900) || systemColors.UX_GRAY_900,
+    color:
+      (data.colors ? data.colors.text : systemColors.UX_GRAY_900) ||
+      systemColors.UX_GRAY_900,
     fontWeight: fontWeights.light,
   }),
   option: (styles, { isDisabled, isFocused, isSelected }) => {
@@ -101,7 +108,9 @@ const defaultStyles = ({ menuWidth, size }) => ({
     return {
       ...styles,
       backgroundColor: getBackgroundColor(),
-      color: isDisabled ? systemColors.SYNTH_UNSELECTED_NEUTRAL : systemColors.UX_GRAY_900,
+      color: isDisabled
+        ? systemColors.SYNTH_UNSELECTED_NEUTRAL
+        : systemColors.UX_GRAY_900,
       fontWeight: fontWeights.light,
       fontSize: '0.875rem',
       cursor: isDisabled ? 'default' : 'pointer',
@@ -109,7 +118,9 @@ const defaultStyles = ({ menuWidth, size }) => ({
       ':active': {
         ...styles[':active'],
         backgroundColor:
-          !isDisabled && isSelected ? systemColors.UX_GRAY_200 : styles[':active'].backgroundColor,
+          !isDisabled && isSelected
+            ? systemColors.UX_GRAY_200
+            : styles[':active'].backgroundColor,
       },
 
       ':hover': {

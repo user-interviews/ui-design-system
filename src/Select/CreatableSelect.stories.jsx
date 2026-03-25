@@ -21,7 +21,10 @@ export function Default() {
   const handleInputChange = () => {};
 
   return (
-    <FormGroup label="Default creatable select" labelHtmlFor="default-creatable-select">
+    <FormGroup
+      label="Default creatable select"
+      labelHtmlFor="default-creatable-select"
+    >
       <CreatableSelect
         inputId="default-creatable-select"
         isClearable
@@ -70,7 +73,10 @@ export function InModal() {
             />
           </FormGroup>
         </ModalBody>
-        <ModalFooter dismissButtonText="Cancel" onRequestClose={handleRequestClose}>
+        <ModalFooter
+          dismissButtonText="Cancel"
+          onRequestClose={handleRequestClose}
+        >
           <Button type="submit" variant="primary">
             Confirm
           </Button>

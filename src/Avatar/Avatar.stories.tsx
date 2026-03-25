@@ -9,7 +9,11 @@ const colorIds: Array<number | undefined> = [undefined, 1, 2, 3, 4, 5, 6];
 const renderColorVariants = (args: React.ComponentProps<typeof Avatar>) => (
   <div>
     {colorIds.map((colorId) => (
-      <Avatar key={`color-${colorId ?? 'default'}`} {...args} colorId={colorId} />
+      <Avatar
+        key={`color-${colorId ?? 'default'}`}
+        {...args}
+        colorId={colorId}
+      />
     ))}
   </div>
 );

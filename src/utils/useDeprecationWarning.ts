@@ -5,7 +5,10 @@ type useDeprecationWarningProps = {
   message?: string;
 };
 
-export function useDeprecationWarning({ componentName, message = '' }: useDeprecationWarningProps) {
+export function useDeprecationWarning({
+  componentName,
+  message = '',
+}: useDeprecationWarningProps) {
   useEffect(() => {
     const warningMessage = `Warning: ${componentName} is deprecated and will be removed in a future release.${
       message ? ` ${message}` : ''

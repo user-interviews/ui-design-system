@@ -1,7 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 
-import { Table, TableBody, TableCell, TableFoot, TableHead, TableRow, TableSortLabel } from '.';
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableFoot,
+  TableHead,
+  TableRow,
+  TableSortLabel,
+} from '.';
 import Button from '../Button';
 import Card from '../Card';
 import CheckboxButton from '../CheckboxButton';
@@ -194,11 +202,41 @@ const data = [
 ];
 
 const sortableData = [
-  { id: 1, firstName: 'Anna', lastName: 'Boston', incentivesEarned: 0, unsubscribed: false },
-  { id: 2, firstName: 'Carly', lastName: 'Dixon', incentivesEarned: 1, unsubscribed: true },
-  { id: 3, firstName: 'Erin', lastName: 'Fitzgerald', incentivesEarned: 10, unsubscribed: true },
-  { id: 4, firstName: 'Gregg', lastName: 'Harris', incentivesEarned: 20, unsubscribed: true },
-  { id: 5, firstName: 'Izzie', lastName: 'Jackson', incentivesEarned: 100, unsubscribed: false },
+  {
+    id: 1,
+    firstName: 'Anna',
+    lastName: 'Boston',
+    incentivesEarned: 0,
+    unsubscribed: false,
+  },
+  {
+    id: 2,
+    firstName: 'Carly',
+    lastName: 'Dixon',
+    incentivesEarned: 1,
+    unsubscribed: true,
+  },
+  {
+    id: 3,
+    firstName: 'Erin',
+    lastName: 'Fitzgerald',
+    incentivesEarned: 10,
+    unsubscribed: true,
+  },
+  {
+    id: 4,
+    firstName: 'Gregg',
+    lastName: 'Harris',
+    incentivesEarned: 20,
+    unsubscribed: true,
+  },
+  {
+    id: 5,
+    firstName: 'Izzie',
+    lastName: 'Jackson',
+    incentivesEarned: 100,
+    unsubscribed: false,
+  },
 ];
 
 const incentiveData = [
@@ -296,7 +334,9 @@ export function Default() {
       <TableBody>
         {data.map((row) => (
           <TableRow key={row.id}>
-            <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
+            <TableCell>
+              {row.new ? <Pill color="blue" text="New" /> : null}
+            </TableCell>
             <TableCell>{row.status}</TableCell>
             <TableCell>{row.email}</TableCell>
             <TableCell>{row.firstName}</TableCell>
@@ -331,7 +371,9 @@ export function LoadingDefault() {
       <TableBody>
         {data.map((row) => (
           <TableRow key={row.id}>
-            <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
+            <TableCell>
+              {row.new ? <Pill color="blue" text="New" /> : null}
+            </TableCell>
             <TableCell>{row.status}</TableCell>
             <TableCell>{row.email}</TableCell>
             <TableCell>{row.firstName}</TableCell>
@@ -366,7 +408,9 @@ export function LoadingCustomColumns() {
       <TableBody>
         {data.map((row) => (
           <TableRow key={row.id}>
-            <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
+            <TableCell>
+              {row.new ? <Pill color="blue" text="New" /> : null}
+            </TableCell>
             <TableCell>{row.status}</TableCell>
             <TableCell>{row.email}</TableCell>
             <TableCell>{row.firstName}</TableCell>
@@ -401,7 +445,9 @@ export function TableNoHoverState() {
       <TableBody>
         {data.map((row) => (
           <TableRow key={row.id} removeHover>
-            <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
+            <TableCell>
+              {row.new ? <Pill color="blue" text="New" /> : null}
+            </TableCell>
             <TableCell>{row.status}</TableCell>
             <TableCell>{row.email}</TableCell>
             <TableCell>{row.firstName}</TableCell>
@@ -437,7 +483,9 @@ export function TableWithFixedColumnWidths() {
             {/* TODO: Wrap this TableCell in a Popover to show overflow text
               once that component is finished */}
             <TableCell maxWidth={192}>{row.email} (with a max-width)</TableCell>
-            <TableCell minWidth={320}>{row.firstName} (with a min-width)</TableCell>
+            <TableCell minWidth={320}>
+              {row.firstName} (with a min-width)
+            </TableCell>
             <TableCell>{row.lastName}</TableCell>
             <TableCell>{row.phoneNumber}</TableCell>
             <TableCell>{row.dateAdded}</TableCell>
@@ -562,7 +610,11 @@ const editButton = () => (
 function PinButton({ isPinActive, ...props }) {
   return (
     <button
-      style={{ background: 'none', border: 'none', color: isPinActive ? '#337AB7' : '#A1A1A1' }}
+      style={{
+        background: 'none',
+        border: 'none',
+        color: isPinActive ? '#337AB7' : '#A1A1A1',
+      }}
       type="button"
       {...props}
     >
@@ -649,10 +701,18 @@ export function TableWithStickyColumnAndHeader() {
     <Table>
       <TableHead>
         <TableRow stickyRow>
-          <TableCell header stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>
+          <TableCell
+            header
+            stickyColumn={isStickyColumn}
+            stickyColumnOffsetX={0}
+            stickyLeft
+          >
             Email{' '}
             <span style={{ float: 'right' }}>
-              <PinButton isPinActive={isStickyColumn} onClick={handlePinClick} />
+              <PinButton
+                isPinActive={isStickyColumn}
+                onClick={handlePinClick}
+              />
             </span>
           </TableCell>
           <TableCell header>First name</TableCell>
@@ -673,7 +733,11 @@ export function TableWithStickyColumnAndHeader() {
       <TableBody>
         {data.map((row) => (
           <TableRow key={row.id}>
-            <TableCell stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>
+            <TableCell
+              stickyColumn={isStickyColumn}
+              stickyColumnOffsetX={0}
+              stickyLeft
+            >
               {row.email}
             </TableCell>
             <TableCell>{row.firstName}</TableCell>
@@ -705,13 +769,26 @@ export function TableWithMultipleStickyColumnsAndHeader() {
     <Table>
       <TableHead>
         <TableRow stickyRow>
-          <TableCell header stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>
+          <TableCell
+            header
+            stickyColumn={isStickyColumn}
+            stickyColumnOffsetX={0}
+            stickyLeft
+          >
             Email
           </TableCell>
-          <TableCell header stickyColumn={isStickyColumn} stickyColumnOffsetX={160} stickyLeft>
+          <TableCell
+            header
+            stickyColumn={isStickyColumn}
+            stickyColumnOffsetX={160}
+            stickyLeft
+          >
             First name{' '}
             <span style={{ float: 'right' }}>
-              <PinButton isPinActive={isStickyColumn} onClick={handlePinClick} />
+              <PinButton
+                isPinActive={isStickyColumn}
+                onClick={handlePinClick}
+              />
             </span>
           </TableCell>
           <TableCell header>Last name</TableCell>
@@ -725,7 +802,12 @@ export function TableWithMultipleStickyColumnsAndHeader() {
           <TableCell header stickyColumn={isStickyColumn}>
             Pick any
           </TableCell>
-          <TableCell header stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyRight>
+          <TableCell
+            header
+            stickyColumn={isStickyColumn}
+            stickyColumnOffsetX={0}
+            stickyRight
+          >
             Action
           </TableCell>
         </TableRow>
@@ -757,8 +839,15 @@ export function TableWithMultipleStickyColumnsAndHeader() {
             <TableCell>{row.date}</TableCell>
             <TableCell>{row.boolean ? 'True' : `-`}</TableCell>
             <TableCell>{row.decimal ? 'True' : `-`}</TableCell>
-            <TableCell stickyColumn={isStickyColumn}>{row.pickAny ? 'True' : `-`}</TableCell>
-            <TableCell alignRight stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyRight>
+            <TableCell stickyColumn={isStickyColumn}>
+              {row.pickAny ? 'True' : `-`}
+            </TableCell>
+            <TableCell
+              alignRight
+              stickyColumn={isStickyColumn}
+              stickyColumnOffsetX={0}
+              stickyRight
+            >
               {editButton()}
             </TableCell>
           </TableRow>
@@ -806,7 +895,8 @@ export function TableWithFooter() {
 
 export function TableWithMultipleSelect() {
   const [selectedRows, setSelectedRows] = useState<number[]>([]);
-  const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] = useState(false);
+  const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] =
+    useState(false);
 
   const handleCheckboxSelectSingle = (id) => {
     if (!selectedRows.includes(id)) {
@@ -833,7 +923,10 @@ export function TableWithMultipleSelect() {
       <TableHead>
         <TableRow>
           <TableCell header>
-            <CheckboxButton id="checkbox" onChange={() => handleCheckboxSelectAll(data)} />
+            <CheckboxButton
+              id="checkbox"
+              onChange={() => handleCheckboxSelectAll(data)}
+            />
           </TableCell>
           <TableCell header>Email</TableCell>
           <TableCell header>First name</TableCell>
@@ -875,7 +968,8 @@ export function TableWithMultipleSelect() {
 
 export function TableWithMultipleSelectAndMultipleStickyColumnsAndHeader() {
   const [selectedRows, setSelectedRows] = useState<number[]>([]);
-  const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] = useState(false);
+  const [isSelectAllCheckboxChecked, setIsSelectAllCheckboxChecked] =
+    useState(false);
 
   const handleCheckboxSelectSingle = (id) => {
     if (!selectedRows.includes(id)) {
@@ -907,13 +1001,29 @@ export function TableWithMultipleSelectAndMultipleStickyColumnsAndHeader() {
     <Table>
       <TableHead>
         <TableRow stickyRow>
-          <TableCell header stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>
-            <CheckboxButton id="checkbox" onChange={() => handleCheckboxSelectAll(data)} />
+          <TableCell
+            header
+            stickyColumn={isStickyColumn}
+            stickyColumnOffsetX={0}
+            stickyLeft
+          >
+            <CheckboxButton
+              id="checkbox"
+              onChange={() => handleCheckboxSelectAll(data)}
+            />
           </TableCell>
-          <TableCell header stickyColumn={isStickyColumn} stickyColumnOffsetX={61} stickyLeft>
+          <TableCell
+            header
+            stickyColumn={isStickyColumn}
+            stickyColumnOffsetX={61}
+            stickyLeft
+          >
             Email{' '}
             <span style={{ float: 'right' }}>
-              <PinButton isPinActive={isStickyColumn} onClick={handlePinClick} />
+              <PinButton
+                isPinActive={isStickyColumn}
+                onClick={handlePinClick}
+              />
             </span>
           </TableCell>
           <TableCell header>First name</TableCell>
@@ -921,7 +1031,12 @@ export function TableWithMultipleSelectAndMultipleStickyColumnsAndHeader() {
           <TableCell header>Phone number</TableCell>
           <TableCell header>Date added</TableCell>
           <TableCell header>Last invited</TableCell>
-          <TableCell header stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyRight>
+          <TableCell
+            header
+            stickyColumn={isStickyColumn}
+            stickyColumnOffsetX={0}
+            stickyRight
+          >
             Action
           </TableCell>
         </TableRow>
@@ -934,14 +1049,22 @@ export function TableWithMultipleSelectAndMultipleStickyColumnsAndHeader() {
             selected={selectedRows.includes(row.id)}
             onClick={() => handleCheckboxSelectSingle(row.id)}
           >
-            <TableCell stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyLeft>
+            <TableCell
+              stickyColumn={isStickyColumn}
+              stickyColumnOffsetX={0}
+              stickyLeft
+            >
               <CheckboxButton
                 checked={isChecked(row.id)}
                 id="checkbox"
                 onChange={() => handleCheckboxSelectSingle(row.id)}
               />
             </TableCell>
-            <TableCell stickyColumn={isStickyColumn} stickyColumnOffsetX={61} stickyLeft>
+            <TableCell
+              stickyColumn={isStickyColumn}
+              stickyColumnOffsetX={61}
+              stickyLeft
+            >
               {row.email}
             </TableCell>
             <TableCell>{row.firstName}</TableCell>
@@ -949,7 +1072,11 @@ export function TableWithMultipleSelectAndMultipleStickyColumnsAndHeader() {
             <TableCell>{row.phoneNumber}</TableCell>
             <TableCell>{row.dateAdded}</TableCell>
             <TableCell>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-            <TableCell stickyColumn={isStickyColumn} stickyColumnOffsetX={0} stickyRight>
+            <TableCell
+              stickyColumn={isStickyColumn}
+              stickyColumnOffsetX={0}
+              stickyRight
+            >
               {kebabButton()}
             </TableCell>
           </TableRow>
@@ -1041,14 +1168,20 @@ export function TableWithCompactOption() {
         <TableBody>
           {data.map((row) => (
             <TableRow key={row.id}>
-              <TableCell>{row.new ? <Pill color="blue" text="New" /> : null}</TableCell>
+              <TableCell>
+                {row.new ? <Pill color="blue" text="New" /> : null}
+              </TableCell>
               <TableCell compact={isCompact}>{row.email}</TableCell>
               <TableCell compact={isCompact}>{row.firstName}</TableCell>
               <TableCell compact={isCompact}>{row.lastName}</TableCell>
               <TableCell compact={isCompact}>{row.phoneNumber}</TableCell>
               <TableCell compact={isCompact}>{row.dateAdded}</TableCell>
-              <TableCell compact={isCompact}>{row.lastInvited ? row.lastInvited : `-`}</TableCell>
-              <TableCell compact={isCompact}>{row.lastApplied ? row.lastApplied : `-`}</TableCell>
+              <TableCell compact={isCompact}>
+                {row.lastInvited ? row.lastInvited : `-`}
+              </TableCell>
+              <TableCell compact={isCompact}>
+                {row.lastApplied ? row.lastApplied : `-`}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>

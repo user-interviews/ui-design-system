@@ -23,7 +23,9 @@ function CardStack({
 }: CardStackProps) {
   return (
     <div
-      className={classNames(UNSAFE_className, 'CardStack', { [`CardStack--${size}`]: size })}
+      className={classNames(UNSAFE_className, 'CardStack', {
+        [`CardStack--${size}`]: size,
+      })}
       {...props}
     >
       {children}

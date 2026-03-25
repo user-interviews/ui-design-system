@@ -14,7 +14,11 @@ type DrawerHeaderProps = {
   onRequestClose: (...args: unknown[]) => unknown;
 };
 
-function DrawerHeader({ bordered = true, title, onRequestClose }: DrawerHeaderProps) {
+function DrawerHeader({
+  bordered = true,
+  title,
+  onRequestClose,
+}: DrawerHeaderProps) {
   const { expandable, expanded, handleExpand } = useContext(ExpandContext);
 
   return (
@@ -30,7 +34,9 @@ function DrawerHeader({ bordered = true, title, onRequestClose }: DrawerHeaderPr
           type="button"
           onClick={handleExpand}
         >
-          <FontAwesomeIcon icon={(expanded ? faCompressAlt : faExpandAlt) as IconDefinition} />
+          <FontAwesomeIcon
+            icon={(expanded ? faCompressAlt : faExpandAlt) as IconDefinition}
+          />
         </button>
       )}
 

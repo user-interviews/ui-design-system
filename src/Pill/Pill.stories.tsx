@@ -2,7 +2,13 @@ import React from 'react';
 import { action } from 'storybook/actions';
 
 import { Pill, Pills, PILL_COLORS } from '.';
-import { faClock, faGiftCard, faGlobe, faMicrophone, faUsers } from '../font_awesome/solid';
+import {
+  faClock,
+  faGiftCard,
+  faGlobe,
+  faMicrophone,
+  faUsers,
+} from '../font_awesome/solid';
 import mdx from './Pill.mdx';
 
 export default {
@@ -90,7 +96,11 @@ export function WithClose() {
 export function WithLink() {
   return (
     <Pill color={PILL_COLORS.BLUE} id="3">
-      <a href="https://www.userinterviews.com/" rel="noreferrer" target="_blank">
+      <a
+        href="https://www.userinterviews.com/"
+        rel="noreferrer"
+        target="_blank"
+      >
         Visit our site
       </a>
     </Pill>

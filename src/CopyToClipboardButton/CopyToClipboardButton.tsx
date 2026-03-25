@@ -50,7 +50,9 @@ function CopyToClipboardButton({
             <span>
               <FontAwesomeIcon icon={faCopy as IconDefinition} />
               {displayText && (
-                <span className="CopyToClipboardButton__display-text">{displayText}</span>
+                <span className="CopyToClipboardButton__display-text">
+                  {displayText}
+                </span>
               )}
             </span>
           </Popper>

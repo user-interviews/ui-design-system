@@ -150,9 +150,27 @@ export function BorderedRow() {
       labelHtmlFor="checkbox-button-group"
       orientation={ORIENTATIONS.ROW}
     >
-      <FormControlLabel bordered Control={CheckboxButton} id="value-1-2" text="Label 1" value="1" />
-      <FormControlLabel bordered Control={CheckboxButton} id="value-2-2" text="Label 2" value="2" />
-      <FormControlLabel bordered Control={CheckboxButton} id="value-3-2" text="Label 3" value="3" />
+      <FormControlLabel
+        bordered
+        Control={CheckboxButton}
+        id="value-1-2"
+        text="Label 1"
+        value="1"
+      />
+      <FormControlLabel
+        bordered
+        Control={CheckboxButton}
+        id="value-2-2"
+        text="Label 2"
+        value="2"
+      />
+      <FormControlLabel
+        bordered
+        Control={CheckboxButton}
+        id="value-3-2"
+        text="Label 3"
+        value="3"
+      />
     </CheckboxButtonGroupComponent>
   );
 }

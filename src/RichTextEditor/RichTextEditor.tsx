@@ -25,7 +25,10 @@ import sanitizeHtml from 'sanitize-html';
 import { LoadingSkeleton } from '../LoadingSkeleton';
 import { createActionHandlers } from './actionHandlers';
 import { OneLineLimit } from './oneLineLimit';
-import { RichTextEditorActions, RichTextEditorDefaultActionsArray } from './richTextEditorActions';
+import {
+  RichTextEditorActions,
+  RichTextEditorDefaultActionsArray,
+} from './richTextEditorActions';
 import RichTextEditorMenuBar from './RichTextEditorMenuBar';
 
 import type { Extension, Node as TipTapNode, Mark } from '@tiptap/core';
@@ -220,7 +223,10 @@ const RichTextEditor = forwardRef(
             className,
             'RichTextEditor__field',
             { 'RichTextEditor__field--error': hasErrors },
-            { 'RichTextEditor__field--without-menu-bar': availableActions.length === 0 },
+            {
+              'RichTextEditor__field--without-menu-bar':
+                availableActions.length === 0,
+            },
           )}
           editor={editor}
           role="textbox"

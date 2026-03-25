@@ -29,23 +29,50 @@ const getAlertIcon = (type: MessageType) => {
     case MessageTypes.SUCCESS:
       return (
         <span className="fa-layers fa-fw">
-          <FontAwesomeIcon icon={faCircle as IconDefinition} transform="grow-8" />
-          <FontAwesomeIcon icon={faCheck as IconDefinition} transform="shrink-4" />
+          <FontAwesomeIcon
+            icon={faCircle as IconDefinition}
+            transform="grow-8"
+          />
+          <FontAwesomeIcon
+            icon={faCheck as IconDefinition}
+            transform="shrink-4"
+          />
         </span>
       );
     case MessageTypes.INFO:
       return (
         <span className="fa-layers fa-fw">
-          <FontAwesomeIcon icon={faCircle as IconDefinition} transform="grow-8" />
-          <FontAwesomeIcon icon={faInfo as IconDefinition} transform="shrink-4" />
+          <FontAwesomeIcon
+            icon={faCircle as IconDefinition}
+            transform="grow-8"
+          />
+          <FontAwesomeIcon
+            icon={faInfo as IconDefinition}
+            transform="shrink-4"
+          />
         </span>
       );
     case MessageTypes.FEATURE:
-      return <FontAwesomeIcon icon={faBullhorn as IconDefinition} transform="grow-2" />;
+      return (
+        <FontAwesomeIcon
+          icon={faBullhorn as IconDefinition}
+          transform="grow-2"
+        />
+      );
     case MessageTypes.WARNING:
-      return <FontAwesomeIcon icon={faExclamationTriangle as IconDefinition} transform="grow-2" />;
+      return (
+        <FontAwesomeIcon
+          icon={faExclamationTriangle as IconDefinition}
+          transform="grow-2"
+        />
+      );
     case MessageTypes.ERROR:
-      return <FontAwesomeIcon icon={faExclamationTriangle as IconDefinition} transform="grow-2" />;
+      return (
+        <FontAwesomeIcon
+          icon={faExclamationTriangle as IconDefinition}
+          transform="grow-2"
+        />
+      );
     default:
       return null;
   }

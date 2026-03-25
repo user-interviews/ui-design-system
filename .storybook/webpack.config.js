@@ -20,7 +20,8 @@ module.exports = function ({ config }) {
           loader: 'css-loader',
           options: {
             modules: {
-              mode: (path) => (path.endsWith('.module.scss') ? 'local' : 'global'),
+              mode: (path) =>
+                path.endsWith('.module.scss') ? 'local' : 'global',
             },
           },
         },

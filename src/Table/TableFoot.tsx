@@ -14,7 +14,12 @@ type TableFootProps = TableElementProps & {
   stickyRow?: boolean;
 };
 
-function TableFoot({ children, className, stickyRow, ...props }: TableFootProps) {
+function TableFoot({
+  children,
+  className,
+  stickyRow,
+  ...props
+}: TableFootProps) {
   return (
     <tfoot
       className={classNames('TableFoot', className, {

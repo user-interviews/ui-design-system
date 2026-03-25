@@ -14,8 +14,14 @@ import type {
 
 import * as styles from './CardButton.module.css';
 
-type LinkProps = DetailedHTMLProps<AnchorHTMLAttributes<HTMLAnchorElement>, HTMLAnchorElement>;
-type ButtonProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>;
+type LinkProps = DetailedHTMLProps<
+  AnchorHTMLAttributes<HTMLAnchorElement>,
+  HTMLAnchorElement
+>;
+type ButtonProps = DetailedHTMLProps<
+  ButtonHTMLAttributes<HTMLButtonElement>,
+  HTMLButtonElement
+>;
 
 type BaseCardButtonProps = {
   alignment?: 'left' | 'center' | 'right';
@@ -69,7 +75,9 @@ export function CardButton({
   );
 
   if (isLinkButton(rest.as)) {
-    const { as: _as, ...linkProps } = rest as BaseCardButtonProps & { as: 'a' } & LinkProps;
+    const { as: _as, ...linkProps } = rest as BaseCardButtonProps & {
+      as: 'a';
+    } & LinkProps;
     return (
       <a {...linkProps} className={classes} data-testid={datatestid ?? ''}>
         {children}
@@ -77,7 +85,9 @@ export function CardButton({
     );
   }
 
-  const { as: _as, ...buttonProps } = rest as BaseCardButtonProps & { as: 'button' } & ButtonProps;
+  const { as: _as, ...buttonProps } = rest as BaseCardButtonProps & {
+    as: 'button';
+  } & ButtonProps;
 
   return (
     <button
@@ -91,7 +101,10 @@ export function CardButton({
       {children}
       {isLoading && (
         <div className={styles.loadingOverlay}>
-          <FontAwesomeIcon className={styles.spinner} icon={faSpinnerThird as IconDefinition} />
+          <FontAwesomeIcon
+            className={styles.spinner}
+            icon={faSpinnerThird as IconDefinition}
+          />
         </div>
       )}
     </button>

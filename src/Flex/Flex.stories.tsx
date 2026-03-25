@@ -57,7 +57,11 @@ export const JustifyContent: Story = {
   render: ({ ...args }) => (
     <Flex {...args}>
       <Card size="xs" title="Card 1" />
-      <Card size="xs" subTitle={args.justifyContent} title="justify-content: " />
+      <Card
+        size="xs"
+        subTitle={args.justifyContent}
+        title="justify-content: "
+      />
       <Card size="xs" title="Card 3" />
     </Flex>
   ),

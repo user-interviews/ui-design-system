@@ -1,5 +1,12 @@
 import classNames from 'classnames';
-import React, { createContext, useEffect, useState, useCallback, useRef, useMemo } from 'react';
+import React, {
+  createContext,
+  useEffect,
+  useState,
+  useCallback,
+  useRef,
+  useMemo,
+} from 'react';
 
 import './Drawer.scss';
 
@@ -54,12 +61,15 @@ function Drawer({
 
   const handleExpand = useCallback(() => setExpanded(!expanded), [expanded]);
 
-  const drawerClasses = classNames(`Drawer Drawer--${orientation} Drawer--${size}`, {
-    'Drawer--expanded': expanded,
-    'Drawer--visible': !!visible,
-    'Drawer--behind-nav': behindNav,
-    [className]: !!className,
-  });
+  const drawerClasses = classNames(
+    `Drawer Drawer--${orientation} Drawer--${size}`,
+    {
+      'Drawer--expanded': expanded,
+      'Drawer--visible': !!visible,
+      'Drawer--behind-nav': behindNav,
+      [className]: !!className,
+    },
+  );
 
   const expandContentContextValue = useMemo(
     () => ({

@@ -61,24 +61,42 @@ export function CardPopover() {
       overlay={
         <Popover id="popover-basic">
           <PopoverCard size="sm">
-            <h3 style={{ fontSize: '1rem', fontWeight: '700', marginBottom: '24px' }}>
+            <h3
+              style={{
+                fontSize: '1rem',
+                fontWeight: '700',
+                marginBottom: '24px',
+              }}
+            >
               Popover with Card styling
             </h3>
-            <FormGroup label="Last project launched" labelHtmlFor="last-project-launched-input">
+            <FormGroup
+              label="Last project launched"
+              labelHtmlFor="last-project-launched-input"
+            >
               <Input
                 id="last-project-launched-input"
                 name="last-project-launched"
                 placeholder="MM/DD/YYYY"
               />
             </FormGroup>
-            <FormGroup label="Last applied date" labelHtmlFor="last-applied-date-input">
+            <FormGroup
+              label="Last applied date"
+              labelHtmlFor="last-applied-date-input"
+            >
               <Input
                 id="last-applied-date-input"
                 name="last-applied-date"
                 placeholder="MM/DD/YYYY"
               />
             </FormGroup>
-            <div style={{ display: 'flex', justifyContent: 'right', marginTop: '16px' }}>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'right',
+                marginTop: '16px',
+              }}
+            >
               <Button variant="primary" onClick={handleOpen}>
                 Apply
               </Button>

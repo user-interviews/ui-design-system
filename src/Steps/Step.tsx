@@ -3,7 +3,10 @@ import React from 'react';
 
 import './Step.scss';
 
-type DivProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLDivElement>, HTMLDivElement>;
+type DivProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+>;
 
 type StepProps = DivProps & {
   circleText?: string | React.ReactNode;
@@ -13,7 +16,10 @@ type StepProps = DivProps & {
 
 function Step({ className, circleText, text, ...props }: StepProps) {
   return (
-    <div className={classNames('Step', className, `Step--${circleText}`)} {...props}>
+    <div
+      className={classNames('Step', className, `Step--${circleText}`)}
+      {...props}
+    >
       <div className="Step__circle">
         <span className="Step__circle__number">{circleText}</span>
       </div>

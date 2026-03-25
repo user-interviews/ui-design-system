@@ -33,7 +33,11 @@ function LoadingOverlay({
   });
 
   return (
-    <div className={classes} data-testid={dataTestid} style={visible ? {} : { display: 'none' }}>
+    <div
+      className={classes}
+      data-testid={dataTestid}
+      style={visible ? {} : { display: 'none' }}
+    >
       {header && <p className="overlay__header">{header}</p>}
       {text && <p className={textClassName}>{text}</p>}
 

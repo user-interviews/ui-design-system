@@ -20,7 +20,12 @@ const handleRequestClose = () => action('Close');
 
 export function Default() {
   return (
-    <Modal ariaHideApp={false} className="DefaultModal" contentLabel="Default Modal" isOpen>
+    <Modal
+      ariaHideApp={false}
+      className="DefaultModal"
+      contentLabel="Default Modal"
+      isOpen
+    >
       <ModalHeader
         title="Default modal"
         titleId="default-modal"
@@ -29,7 +34,10 @@ export function Default() {
       <ModalBody>
         <p>Some content goes here.</p>
       </ModalBody>
-      <ModalFooter dismissButtonText="Cancel" onRequestClose={handleRequestClose}>
+      <ModalFooter
+        dismissButtonText="Cancel"
+        onRequestClose={handleRequestClose}
+      >
         <Button type="submit" variant="primary">
           Confirm
         </Button>
@@ -55,7 +63,10 @@ export function MediumModal() {
       <ModalBody>
         <p>Some content goes here.</p>
       </ModalBody>
-      <ModalFooter dismissButtonText="Cancel" onRequestClose={handleRequestClose}>
+      <ModalFooter
+        dismissButtonText="Cancel"
+        onRequestClose={handleRequestClose}
+      >
         <Button type="submit" variant="primary">
           Confirm
         </Button>
@@ -73,11 +84,18 @@ export function LargeModal() {
       isOpen
       size={MODAL_SIZES.LARGE}
     >
-      <ModalHeader title="Large modal" titleId="large-modal" onRequestClose={handleRequestClose} />
+      <ModalHeader
+        title="Large modal"
+        titleId="large-modal"
+        onRequestClose={handleRequestClose}
+      />
       <ModalBody>
         <p>Some content goes here.</p>
       </ModalBody>
-      <ModalFooter dismissButtonText="Cancel" onRequestClose={handleRequestClose}>
+      <ModalFooter
+        dismissButtonText="Cancel"
+        onRequestClose={handleRequestClose}
+      >
         <Button type="submit" variant="primary">
           Confirm
         </Button>
@@ -103,7 +121,10 @@ export function WithSubtitleModal() {
       <ModalBody>
         <p>Some content goes here.</p>
       </ModalBody>
-      <ModalFooter dismissButtonText="Cancel" onRequestClose={handleRequestClose}>
+      <ModalFooter
+        dismissButtonText="Cancel"
+        onRequestClose={handleRequestClose}
+      >
         <Button type="submit" variant="primary">
           Confirm
         </Button>
@@ -129,7 +150,10 @@ export function TransactionalModal() {
         <p>The user needs to take action here.</p>
         <Input id="Email" name="Email" placeholder="Email" type="text" />
       </ModalBody>
-      <ModalFooter dismissButtonText="Cancel" onRequestClose={handleRequestClose}>
+      <ModalFooter
+        dismissButtonText="Cancel"
+        onRequestClose={handleRequestClose}
+      >
         <Button type="submit" variant="primary">
           Invite
         </Button>
@@ -140,7 +164,12 @@ export function TransactionalModal() {
 
 export function WarningModal() {
   return (
-    <Modal ariaHideApp={false} className="WarningModal" contentLabel="Warning Modal" isOpen>
+    <Modal
+      ariaHideApp={false}
+      className="WarningModal"
+      contentLabel="Warning Modal"
+      isOpen
+    >
       <ModalHeader
         title="Warning modal"
         titleId="warning-modal"
@@ -150,7 +179,10 @@ export function WarningModal() {
       <ModalBody>
         <p>Are you sure you want to do this?</p>
       </ModalBody>
-      <ModalFooter dismissButtonText="Cancel" onRequestClose={handleRequestClose}>
+      <ModalFooter
+        dismissButtonText="Cancel"
+        onRequestClose={handleRequestClose}
+      >
         <Button variant="primary">Edit</Button>
       </ModalFooter>
     </Modal>
@@ -159,7 +191,12 @@ export function WarningModal() {
 
 export function DangerModal() {
   return (
-    <Modal ariaHideApp={false} className="DangerModal" contentLabel="Danger Modal" isOpen>
+    <Modal
+      ariaHideApp={false}
+      className="DangerModal"
+      contentLabel="Danger Modal"
+      isOpen
+    >
       <ModalHeader
         title="Danger modal"
         titleId="danger-modal"
@@ -169,7 +206,10 @@ export function DangerModal() {
       <ModalBody>
         <p>Are you sure you want to do this?</p>
       </ModalBody>
-      <ModalFooter dismissButtonText="Cancel" onRequestClose={handleRequestClose}>
+      <ModalFooter
+        dismissButtonText="Cancel"
+        onRequestClose={handleRequestClose}
+      >
         <Button variant="primary">Delete</Button>
       </ModalFooter>
     </Modal>

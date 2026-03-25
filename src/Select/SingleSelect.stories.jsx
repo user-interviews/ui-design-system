@@ -21,17 +21,20 @@ const options = [
   {
     label: '1-on-1 interview',
     value: 1,
-    description: 'Interviews are typically a conversation between you and a researcher.',
+    description:
+      'Interviews are typically a conversation between you and a researcher.',
   },
   {
     label: 'Focus group',
     value: 2,
-    description: 'Focus groups involve interacting with a small group of your peers.',
+    description:
+      'Focus groups involve interacting with a small group of your peers.',
   },
   {
     label: 'Multi-day study',
     value: 3,
-    description: 'Diary and multiday studies are days or weeks long commitments.',
+    description:
+      'Diary and multiday studies are days or weeks long commitments.',
   },
   {
     label: 'Unmoderated task',
@@ -51,7 +54,11 @@ const peopleOptions = [
 export function Default() {
   return (
     <FormGroup label="Default select" labelHtmlFor="default-select">
-      <SingleSelect inputId="default-select" options={options} onChange={onChange} />
+      <SingleSelect
+        inputId="default-select"
+        options={options}
+        onChange={onChange}
+      />
     </FormGroup>
   );
 }
@@ -74,7 +81,12 @@ export function Searchable() {
 export function Loading() {
   return (
     <FormGroup label="Loading select" labelHtmlFor="loading-select">
-      <SingleSelect inputId="loading-select" isLoading options={options} onChange={onChange} />
+      <SingleSelect
+        inputId="loading-select"
+        isLoading
+        options={options}
+        onChange={onChange}
+      />
     </FormGroup>
   );
 }
@@ -82,14 +94,22 @@ export function Loading() {
 export function MultipleSelect() {
   return (
     <FormGroup label="Multiple select" labelHtmlFor="multi-select">
-      <SingleSelect inputId="multi-select" isMulti options={options} onChange={onChange} />
+      <SingleSelect
+        inputId="multi-select"
+        isMulti
+        options={options}
+        onChange={onChange}
+      />
     </FormGroup>
   );
 }
 
 export function MultipleSelectBorderedPill() {
   return (
-    <FormGroup label="Multiple select bordered pill" labelHtmlFor="multi-select-bordered-pill">
+    <FormGroup
+      label="Multiple select bordered pill"
+      labelHtmlFor="multi-select-bordered-pill"
+    >
       <SingleSelect
         borderedMultiValue
         inputId="multi-select-bordered-pill"
@@ -126,10 +146,18 @@ export function InModal() {
             label="In Modal select"
             labelHtmlFor="in-modal-select"
           >
-            <SingleSelect inputId="in-modal-select" modal options={options} onChange={onChange} />
+            <SingleSelect
+              inputId="in-modal-select"
+              modal
+              options={options}
+              onChange={onChange}
+            />
           </FormGroup>
         </ModalBody>
-        <ModalFooter dismissButtonText="Cancel" onRequestClose={handleRequestClose}>
+        <ModalFooter
+          dismissButtonText="Cancel"
+          onRequestClose={handleRequestClose}
+        >
           <Button type="submit" variant="primary">
             Confirm
           </Button>
@@ -155,7 +183,11 @@ export function GroupedOptions() {
   ];
   return (
     <FormGroup label="Grouped options" labelHtmlFor="grouped-options-select">
-      <SingleSelect inputId="grouped-options-select" options={groupedOptions} onChange={onChange} />
+      <SingleSelect
+        inputId="grouped-options-select"
+        options={groupedOptions}
+        onChange={onChange}
+      />
     </FormGroup>
   );
 }
@@ -318,7 +350,10 @@ export function CustomOptionWithIndeterminateCheckbox() {
 
 export function CustomValueContainer() {
   return (
-    <FormGroup label="Custom Value Container" labelHtmlFor="custom-value-container-select">
+    <FormGroup
+      label="Custom Value Container"
+      labelHtmlFor="custom-value-container-select"
+    >
       <SingleSelect
         closeMenuOnSelect={false}
         components={{

@@ -26,7 +26,15 @@ type PillProps = {
   onClose?: (...args: unknown[]) => unknown;
 };
 
-function Pill({ children, color = 'blue', icon, id, onClose, text, ...props }: PillProps) {
+function Pill({
+  children,
+  color = 'blue',
+  icon,
+  id,
+  onClose,
+  text,
+  ...props
+}: PillProps) {
   return (
     <span
       className={classNames('Pill', {

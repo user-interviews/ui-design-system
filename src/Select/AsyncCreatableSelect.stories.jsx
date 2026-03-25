@@ -27,7 +27,9 @@ async function loadOptions(search) {
     return options;
   }
 
-  return options.filter(({ label }) => label.toLowerCase().includes(search.toLowerCase()));
+  return options.filter(({ label }) =>
+    label.toLowerCase().includes(search.toLowerCase()),
+  );
 }
 
 export function Default() {
@@ -35,7 +37,10 @@ export function Default() {
   const handleInputChange = () => {};
 
   return (
-    <FormGroup label="Default async creatable select" labelHtmlFor="default-async-creatable-select">
+    <FormGroup
+      label="Default async creatable select"
+      labelHtmlFor="default-async-creatable-select"
+    >
       <AsyncCreatableSelect
         getOptionLabel={({ label }) => label}
         getOptionValue={({ value }) => value}
@@ -80,7 +85,10 @@ export function InModal() {
           />
         </FormGroup>
       </ModalBody>
-      <ModalFooter dismissButtonText="Cancel" onRequestClose={handleRequestClose}>
+      <ModalFooter
+        dismissButtonText="Cancel"
+        onRequestClose={handleRequestClose}
+      >
         <Button type="submit" variant="primary">
           Confirm
         </Button>

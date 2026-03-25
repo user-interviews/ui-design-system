@@ -12,12 +12,20 @@ type WithToastProps = {
   >;
 };
 
-function WithToast({ WrappedComponent, autoDismiss = true, ...props }: WithToastProps) {
+function WithToast({
+  WrappedComponent,
+  autoDismiss = true,
+  ...props
+}: WithToastProps) {
   const { messages, setMessage, dismissMessage } = useToast();
 
   return (
     <>
-      <Toast autoDismiss={autoDismiss} messages={messages} onToastClosed={dismissMessage} />
+      <Toast
+        autoDismiss={autoDismiss}
+        messages={messages}
+        onToastClosed={dismissMessage}
+      />
       <WrappedComponent setToastMessage={setMessage} {...props} />
     </>
   );

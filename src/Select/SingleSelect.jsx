@@ -3,7 +3,12 @@ import propTypes from 'prop-types';
 import React from 'react';
 import Select from 'react-select';
 
-import { borderedMultiValueStyles, defaultTheme, defaultStyles, SELECT_SIZES } from './styles';
+import {
+  borderedMultiValueStyles,
+  defaultTheme,
+  defaultStyles,
+  SELECT_SIZES,
+} from './styles';
 import zStack from 'src/Styles/zStack';
 
 function SingleSelect({
@@ -60,7 +65,8 @@ function SingleSelect({
       styles={{
         ...defaultStyles({ menuWidth, size }),
         ...borderedMultiValueStyles(borderedMultiValue),
-        menuPortal: (base) => (modal ? { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } : base),
+        menuPortal: (base) =>
+          modal ? { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } : base,
       }}
       theme={defaultTheme}
       value={value}

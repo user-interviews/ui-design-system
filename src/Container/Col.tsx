@@ -1,5 +1,8 @@
 import React from 'react';
-import { Col as ReactBootstrapCol, type ColProps as ReactBootstrapColProps } from 'react-bootstrap';
+import {
+  Col as ReactBootstrapCol,
+  type ColProps as ReactBootstrapColProps,
+} from 'react-bootstrap';
 
 import { useDeprecationWarning } from '../utils';
 
@@ -65,7 +68,10 @@ export function Col({
   bsPrefix = 'col',
   ...props
 }: ColProps) {
-  useDeprecationWarning({ componentName: 'Col', message: 'Please use FlexContainer instead.' });
+  useDeprecationWarning({
+    componentName: 'Col',
+    message: 'Please use FlexContainer instead.',
+  });
 
   return (
     <ReactBootstrapCol

@@ -21,7 +21,9 @@ function Popper({
 
   return (
     <Manager>
-      <Reference>{({ ref }) => React.cloneElement(children, { ref })}</Reference>
+      <Reference>
+        {({ ref }) => React.cloneElement(children, { ref })}
+      </Reference>
       {visible && (
         <ReactPopper
           modifiers={[
@@ -44,7 +46,11 @@ function Popper({
 
               {text}
               {showArrow && (
-                <span className="Popper__arrow" ref={arrowProps.ref} style={arrowProps.style} />
+                <span
+                  className="Popper__arrow"
+                  ref={arrowProps.ref}
+                  style={arrowProps.style}
+                />
               )}
             </div>
           )}

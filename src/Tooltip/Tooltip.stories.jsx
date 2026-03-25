@@ -5,7 +5,9 @@ import Tooltip from '.';
 import { faExclamationTriangle } from '../font_awesome/solid';
 import mdx from './Tooltip.mdx';
 
-const withContainer = (story) => <div style={{ padding: '4rem' }}>{story()}</div>;
+const withContainer = (story) => (
+  <div style={{ padding: '4rem' }}>{story()}</div>
+);
 
 export default {
   title: 'Components/Tooltip',
@@ -27,7 +29,13 @@ export function Light() {
 }
 
 export function WithHeader() {
-  return <Tooltip header="Default Header" placement="right" text="Tooltip with Header" />;
+  return (
+    <Tooltip
+      header="Default Header"
+      placement="right"
+      text="Tooltip with Header"
+    />
+  );
 }
 
 export function WithHtml() {
@@ -45,7 +53,13 @@ export function WithHtml() {
 }
 
 export function NeutralIcon() {
-  return <Tooltip iconClasses="Tooltip__icon--neutral" placement="right" text="Neutral Icon" />;
+  return (
+    <Tooltip
+      iconClasses="Tooltip__icon--neutral"
+      placement="right"
+      text="Neutral Icon"
+    />
+  );
 }
 
 export function WarningIcon() {
@@ -84,5 +98,7 @@ const handleShow = () => {
 };
 
 export function WithTracking() {
-  return <Tooltip placement="right" text="Tracked Tooltip" onShow={handleShow} />;
+  return (
+    <Tooltip placement="right" text="Tracked Tooltip" onShow={handleShow} />
+  );
 }

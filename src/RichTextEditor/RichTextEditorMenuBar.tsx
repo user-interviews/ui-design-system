@@ -1,7 +1,14 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import { faBold, faItalic, faLink, faListOl, faListUl, faUnlink } from '../font_awesome/regular';
+import {
+  faBold,
+  faItalic,
+  faLink,
+  faListOl,
+  faListUl,
+  faUnlink,
+} from '../font_awesome/regular';
 import IconButton from '../IconButton';
 import { createActionHandlers } from './actionHandlers';
 import { RichTextEditorActions } from './richTextEditorActions';
@@ -56,7 +63,8 @@ function RichTextEditorMenuBar({
       name: RichTextEditorActions.UNLINK,
       disabled:
         !editable ||
-        (availableActions.includes(RichTextEditorActions.LINK) && !editor.isActive('link')),
+        (availableActions.includes(RichTextEditorActions.LINK) &&
+          !editor.isActive('link')),
       onClick: actionHandlers.unlink,
       icon: faUnlink,
     },
@@ -83,7 +91,9 @@ function RichTextEditorMenuBar({
         .map((action) => (
           <IconButton
             ariaLabel={action.label}
-            className={classNames({ 'Button--active': editor.isActive(action.name) })}
+            className={classNames({
+              'Button--active': editor.isActive(action.name),
+            })}
             disabled={action.disabled}
             icon={action.icon}
             key={action.name}

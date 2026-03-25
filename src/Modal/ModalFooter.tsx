@@ -27,7 +27,9 @@ export default function ModalFooter({
   const btnText = dismissButtonText ?? 'Cancel';
 
   return (
-    <div className={classNames('ModalFooter', { ModalFooter__sticky: isSticky })}>
+    <div
+      className={classNames('ModalFooter', { ModalFooter__sticky: isSticky })}
+    >
       {onRequestClose && (
         <Button
           disabled={closingIsDisabled}

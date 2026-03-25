@@ -88,7 +88,11 @@ export function Prefix(args) {
   };
 
   return (
-    <FormGroup helperText="Change the prefix" label="Incentive amount" labelHtmlFor="money-input-3">
+    <FormGroup
+      helperText="Change the prefix"
+      label="Incentive amount"
+      labelHtmlFor="money-input-3"
+    >
       <MoneyInput value={value} onValueChange={handleOnValueChange} {...args} />
       <br />
       <Heading level={1} size={HeadingSize.SMALL}>

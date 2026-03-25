@@ -96,7 +96,13 @@ function AccordionToggle({
       type="button"
       onClick={decoratedOnClick}
     >
-      <div className={classNames('AccordionToggle__container', { flush }, { borderBottom })}>
+      <div
+        className={classNames(
+          'AccordionToggle__container',
+          { flush },
+          { borderBottom },
+        )}
+      >
         <div className="AccordionToggle__container--content">
           {chevronLeft && (
             <span className="AccordionToggle__chevron-left">
@@ -110,9 +116,13 @@ function AccordionToggle({
           )}
           {title && <span className="AccordionToggle__title">{title}</span>}
           {collapsedText && isCollapsed && (
-            <span className="AccordionToggle__collapsed-text">{collapsedText} </span>
+            <span className="AccordionToggle__collapsed-text">
+              {collapsedText}{' '}
+            </span>
           )}
-          {helperText && <span className="AccordionToggle__helper-text">({helperText})</span>}
+          {helperText && (
+            <span className="AccordionToggle__helper-text">({helperText})</span>
+          )}
           {children}
         </div>
         {chevronRight && !chevronLeft && (

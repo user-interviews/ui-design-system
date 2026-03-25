@@ -6,7 +6,11 @@ import './FadeTransition.scss';
 
 function FadeTransition({ children, ...props }) {
   return (
-    <CSSTransition {...props} classNames="FadeTransition" timeout={{ enter: 300, exit: 200 }}>
+    <CSSTransition
+      {...props}
+      classNames="FadeTransition"
+      timeout={{ enter: 300, exit: 200 }}
+    >
       {children}
     </CSSTransition>
   );

@@ -2,7 +2,10 @@ import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 import React, { forwardRef } from 'react';
-import { Button as RBButton, type ButtonProps as RBButtonProps } from 'react-bootstrap';
+import {
+  Button as RBButton,
+  type ButtonProps as RBButtonProps,
+} from 'react-bootstrap';
 
 import { faSpinnerThird } from '../font_awesome/regular';
 
@@ -57,9 +60,13 @@ const Button = forwardRef<HTMLElement, ButtonProps>(
     >
       {!isLoading ? (
         <>
-          {leadingIcon && <FontAwesomeIcon className="icon-left" icon={leadingIcon} />}
+          {leadingIcon && (
+            <FontAwesomeIcon className="icon-left" icon={leadingIcon} />
+          )}
           {children}
-          {trailingIcon && <FontAwesomeIcon className="icon-right" icon={trailingIcon} />}
+          {trailingIcon && (
+            <FontAwesomeIcon className="icon-right" icon={trailingIcon} />
+          )}
         </>
       ) : (
         <>

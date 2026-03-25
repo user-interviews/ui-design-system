@@ -8,7 +8,10 @@ type ProfileCellSkeletonProps = {
   maxWidth?: string;
 };
 
-function ProfileCellSkeleton({ maxWidth = '100%', ...props }: ProfileCellSkeletonProps) {
+function ProfileCellSkeleton({
+  maxWidth = '100%',
+  ...props
+}: ProfileCellSkeletonProps) {
   return (
     <div className="ProfileCellSkeleton" {...props}>
       <div className="ProfileCellSkeleton__avatar">

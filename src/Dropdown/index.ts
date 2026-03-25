@@ -4,4 +4,10 @@ import DropdownItem from './DropdownItem';
 import DropdownMenu from './DropdownMenu';
 import DropdownToggle from './DropdownToggle';
 
-export { Dropdown, DropdownDivider, DropdownToggle, DropdownItem, DropdownMenu };
+export {
+  Dropdown,
+  DropdownDivider,
+  DropdownToggle,
+  DropdownItem,
+  DropdownMenu,
+};

@@ -51,8 +51,16 @@ function Avatar({
   );
 
   return (
-    <div aria-hidden={ariaHidden} className={classNames('Avatar', { 'Avatar--large': large })}>
-      <div className={classNames(['Avatar__circle', { [uiModClassName(colorId)]: !!colorId }])}>
+    <div
+      aria-hidden={ariaHidden}
+      className={classNames('Avatar', { 'Avatar--large': large })}
+    >
+      <div
+        className={classNames([
+          'Avatar__circle',
+          { [uiModClassName(colorId)]: !!colorId },
+        ])}
+      >
         {wrapIfUrlPresent(content)}
       </div>
       {showAlert && <div className="Avatar__alert" />}

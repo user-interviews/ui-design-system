@@ -58,7 +58,8 @@ function AsyncCreatableSelect({
       shouldShowValue
       styles={{
         ...defaultStyles({ menuWidth, size }),
-        menuPortal: (base) => (modal ? { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } : base),
+        menuPortal: (base) =>
+          modal ? { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } : base,
       }}
       theme={defaultTheme}
       value={value}

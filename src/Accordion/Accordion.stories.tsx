@@ -1,6 +1,11 @@
 import React from 'react';
 
-import { Accordion, AccordionItem, AccordionToggle, AccordionCollapse } from '.';
+import {
+  Accordion,
+  AccordionItem,
+  AccordionToggle,
+  AccordionCollapse,
+} from '.';
 import Card from '../Card';
 import { faCreditCard } from '../font_awesome/regular';
 import mdx from './Accordion.mdx';
@@ -328,7 +333,9 @@ export function InCard(args) {
           <AccordionItem borderless eventKey="0">
             <AccordionToggle eventKey="0" {...args} />
             <AccordionCollapse eventKey="0">
-              <p>This text is aligned with the content of other Card components</p>
+              <p>
+                This text is aligned with the content of other Card components
+              </p>
               <ul>
                 <li>Item 1</li>
                 <li>Item 2</li>

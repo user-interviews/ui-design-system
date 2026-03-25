@@ -5,7 +5,10 @@ import Tooltip from '../Tooltip';
 
 import './input_label.scss';
 
-type LabelProps = React.DetailedHTMLProps<React.HTMLAttributes<HTMLLabelElement>, HTMLLabelElement>;
+type LabelProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLLabelElement>,
+  HTMLLabelElement
+>;
 
 export type InputLabelProps = {
   className?: string;
@@ -28,16 +31,30 @@ function InputLabel({
   const inputLabelChildren = (
     <>
       {text}
-      {required && <span className="InputLabel__helper-text">&nbsp;(Required)</span>}
-      {labelHelperText && (
-        <span className="InputLabel__helper-text">&nbsp;({labelHelperText})</span>
+      {required && (
+        <span className="InputLabel__helper-text">&nbsp;(Required)</span>
       )}
-      {tooltipText && <Tooltip iconClasses="Tooltip__icon" placement="right" text={tooltipText} />}
+      {labelHelperText && (
+        <span className="InputLabel__helper-text">
+          &nbsp;({labelHelperText})
+        </span>
+      )}
+      {tooltipText && (
+        <Tooltip
+          iconClasses="Tooltip__icon"
+          placement="right"
+          text={tooltipText}
+        />
+      )}
     </>
   );
 
   return (
-    <label className={classNames('InputLabel', className)} htmlFor={labelHtmlFor} {...props}>
+    <label
+      className={classNames('InputLabel', className)}
+      htmlFor={labelHtmlFor}
+      {...props}
+    >
       {inputLabelChildren}
     </label>
   );

@@ -55,9 +55,15 @@ const FormControlLabel = React.forwardRef<HTMLElement, FormControlLabelProps>(
           {...controlProps}
         />
         {text}
-        {helperText && <span className="FormControlLabel__helper-text">&nbsp;({helperText})</span>}
+        {helperText && (
+          <span className="FormControlLabel__helper-text">
+            &nbsp;({helperText})
+          </span>
+        )}
       </span>
-      {children && <span className="FormControlLabel__children">{children}</span>}
+      {children && (
+        <span className="FormControlLabel__children">{children}</span>
+      )}
     </label>
   ),
 );

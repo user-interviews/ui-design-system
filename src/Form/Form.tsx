@@ -16,7 +16,20 @@ export type FormProps = {
 };
 
 const Form = forwardRef<HTMLFormElement, FormProps>(
-  ({ action, children, className, CSRFParam, CSRFToken, id, method, name, onSubmit }, ref) => {
+  (
+    {
+      action,
+      children,
+      className,
+      CSRFParam,
+      CSRFToken,
+      id,
+      method,
+      name,
+      onSubmit,
+    },
+    ref,
+  ) => {
     const hasMethod = method != null;
     const hasCSRF = CSRFParam && CSRFToken;
     const isGetFormMethod = method === 'GET';
@@ -31,8 +44,12 @@ const Form = forwardRef<HTMLFormElement, FormProps>(
         ref={ref}
         onSubmit={onSubmit}
       >
-        {hasCSRF && !isGetFormMethod && <input name={CSRFParam} type="hidden" value={CSRFToken} />}
-        {hasMethod && !isGetFormMethod && <input name="_method" type="hidden" value={method} />}
+        {hasCSRF && !isGetFormMethod && (
+          <input name={CSRFParam} type="hidden" value={CSRFToken} />
+        )}
+        {hasMethod && !isGetFormMethod && (
+          <input name="_method" type="hidden" value={method} />
+        )}
         {children}
       </form>
     );

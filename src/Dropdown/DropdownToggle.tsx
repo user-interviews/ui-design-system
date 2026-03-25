@@ -65,11 +65,15 @@ function DropdownToggle({
       as={as}
       bsPrefix={removeCaret ? 'DropdownToggle--no-caret' : bsPrefix}
       childBsPrefix={childBsPrefix}
-      className={classNames('DropdownToggle', className, { 'DropdownToggle--unstyled': unstyled })}
+      className={classNames('DropdownToggle', className, {
+        'DropdownToggle--unstyled': unstyled,
+      })}
       id={id}
       {...props}
     >
-      {leadingIcon && <FontAwesomeIcon className="icon-left" icon={leadingIcon} />}
+      {leadingIcon && (
+        <FontAwesomeIcon className="icon-left" icon={leadingIcon} />
+      )}
       {children}
     </RBDropdown.Toggle>
   );

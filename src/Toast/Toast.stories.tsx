@@ -67,7 +67,8 @@ export function ToastCustomMessage() {
     <ToastDummyComponent
       message={
         <>
-          <strong>[Some strong text]</strong> and additional text that is wrapped in a fragment.
+          <strong>[Some strong text]</strong> and additional text that is
+          wrapped in a fragment.
         </>
       }
       title="Normal string title"
@@ -76,7 +77,9 @@ export function ToastCustomMessage() {
   );
 }
 
-const ManualDismissToastComponent = withToast(DummyComponent, { autoDismiss: false });
+const ManualDismissToastComponent = withToast(DummyComponent, {
+  autoDismiss: false,
+});
 
 export function ManualDismissToast() {
   return (
@@ -91,7 +94,10 @@ export function ManualDismissToast() {
 export function ToastWithAction() {
   return (
     <ManualDismissToastComponent
-      action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+      action={{
+        content: 'Primary action',
+        url: 'https://www.userinterviews.com/',
+      }}
       message="Your action was a success!"
       title="Title"
       type={MessageTypes.SUCCESS}

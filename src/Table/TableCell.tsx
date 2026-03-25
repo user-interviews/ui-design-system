@@ -81,7 +81,11 @@ function TableCell({
 
   if (header) {
     return (
-      <th className={getTableCellClassName()} style={getStickyStyling()} {...props}>
+      <th
+        className={getTableCellClassName()}
+        style={getStickyStyling()}
+        {...props}
+      >
         {children}
       </th>
     );

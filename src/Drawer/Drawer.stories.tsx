@@ -3,7 +3,12 @@ import React, { useState } from 'react';
 
 import { Drawer, DrawerBody, DrawerFooter, DrawerHeader } from '.';
 import Button from '../Button';
-import { faEnvelope, faChevronLeft, faChevronRight, faTrash } from '../font_awesome/solid';
+import {
+  faEnvelope,
+  faChevronLeft,
+  faChevronRight,
+  faTrash,
+} from '../font_awesome/solid';
 import mdx from './Drawer.mdx';
 
 export default {
@@ -34,20 +39,27 @@ export function Default() {
         visible={isVisible}
         onRequestClose={toggleVisible}
       >
-        <DrawerHeader bordered title="Title goes here" onRequestClose={toggleVisible} />
+        <DrawerHeader
+          bordered
+          title="Title goes here"
+          onRequestClose={toggleVisible}
+        />
         <DrawerBody>
           <p>
-            Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi, vitae malesuada odio.
-            Sed varius libero sed erat faucibus ultrices. Suspendisse potenti. Mauris sit amet
-            sollicitudin urna. Donec porttitor, est quis aliquet condimentum, nisi felis porta odio,
-            eu luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet porta. Proin vehicula
-            at nisl a maximus. Sed lorem enim, elementum in arcu eu, lacinia consequat arcu.
-            Pellentesque non nibh viverra, imperdiet purus at, finibus turpis. Sed mattis erat a
-            risus dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque tincidunt
-            nulla urna, ut egestas massa congue a. Quisque metus felis, auctor sit amet posuere eu,
-            aliquam blandit libero. Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
-            lacus, vitae mattis felis elit in metus. Nulla ligula ligula, laoreet in dictum sit
-            amet, pretium ac est.
+            Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi,
+            vitae malesuada odio. Sed varius libero sed erat faucibus ultrices.
+            Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec
+            porttitor, est quis aliquet condimentum, nisi felis porta odio, eu
+            luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet
+            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum
+            in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
+            imperdiet purus at, finibus turpis. Sed mattis erat a risus
+            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor.
+            Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque
+            metus felis, auctor sit amet posuere eu, aliquam blandit libero.
+            Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
+            lacus, vitae mattis felis elit in metus. Nulla ligula ligula,
+            laoreet in dictum sit amet, pretium ac est.
           </p>
         </DrawerBody>
         <DrawerFooter
@@ -80,20 +92,27 @@ export function Orientation() {
         visible={isVisible}
         onRequestClose={toggleVisible}
       >
-        <DrawerHeader bordered title="Title goes here" onRequestClose={toggleVisible} />
+        <DrawerHeader
+          bordered
+          title="Title goes here"
+          onRequestClose={toggleVisible}
+        />
         <DrawerBody>
           <p>
-            Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi, vitae malesuada odio.
-            Sed varius libero sed erat faucibus ultrices. Suspendisse potenti. Mauris sit amet
-            sollicitudin urna. Donec porttitor, est quis aliquet condimentum, nisi felis porta odio,
-            eu luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet porta. Proin vehicula
-            at nisl a maximus. Sed lorem enim, elementum in arcu eu, lacinia consequat arcu.
-            Pellentesque non nibh viverra, imperdiet purus at, finibus turpis. Sed mattis erat a
-            risus dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque tincidunt
-            nulla urna, ut egestas massa congue a. Quisque metus felis, auctor sit amet posuere eu,
-            aliquam blandit libero. Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
-            lacus, vitae mattis felis elit in metus. Nulla ligula ligula, laoreet in dictum sit
-            amet, pretium ac est.
+            Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi,
+            vitae malesuada odio. Sed varius libero sed erat faucibus ultrices.
+            Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec
+            porttitor, est quis aliquet condimentum, nisi felis porta odio, eu
+            luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet
+            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum
+            in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
+            imperdiet purus at, finibus turpis. Sed mattis erat a risus
+            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor.
+            Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque
+            metus felis, auctor sit amet posuere eu, aliquam blandit libero.
+            Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
+            lacus, vitae mattis felis elit in metus. Nulla ligula ligula,
+            laoreet in dictum sit amet, pretium ac est.
           </p>
         </DrawerBody>
         <DrawerFooter
@@ -126,20 +145,27 @@ export function Expandable() {
         visible={isVisible}
         onRequestClose={toggleVisible}
       >
-        <DrawerHeader bordered title="Title goes here" onRequestClose={toggleVisible} />
+        <DrawerHeader
+          bordered
+          title="Title goes here"
+          onRequestClose={toggleVisible}
+        />
         <DrawerBody>
           <p>
-            Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi, vitae malesuada odio.
-            Sed varius libero sed erat faucibus ultrices. Suspendisse potenti. Mauris sit amet
-            sollicitudin urna. Donec porttitor, est quis aliquet condimentum, nisi felis porta odio,
-            eu luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet porta. Proin vehicula
-            at nisl a maximus. Sed lorem enim, elementum in arcu eu, lacinia consequat arcu.
-            Pellentesque non nibh viverra, imperdiet purus at, finibus turpis. Sed mattis erat a
-            risus dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque tincidunt
-            nulla urna, ut egestas massa congue a. Quisque metus felis, auctor sit amet posuere eu,
-            aliquam blandit libero. Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
-            lacus, vitae mattis felis elit in metus. Nulla ligula ligula, laoreet in dictum sit
-            amet, pretium ac est.
+            Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi,
+            vitae malesuada odio. Sed varius libero sed erat faucibus ultrices.
+            Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec
+            porttitor, est quis aliquet condimentum, nisi felis porta odio, eu
+            luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet
+            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum
+            in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
+            imperdiet purus at, finibus turpis. Sed mattis erat a risus
+            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor.
+            Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque
+            metus felis, auctor sit amet posuere eu, aliquam blandit libero.
+            Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
+            lacus, vitae mattis felis elit in metus. Nulla ligula ligula,
+            laoreet in dictum sit amet, pretium ac est.
           </p>
         </DrawerBody>
         <DrawerFooter
@@ -172,20 +198,27 @@ export function DefaultExpanded() {
         visible={isVisible}
         onRequestClose={toggleVisible}
       >
-        <DrawerHeader bordered title="Title goes here" onRequestClose={toggleVisible} />
+        <DrawerHeader
+          bordered
+          title="Title goes here"
+          onRequestClose={toggleVisible}
+        />
         <DrawerBody>
           <p>
-            Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi, vitae malesuada odio.
-            Sed varius libero sed erat faucibus ultrices. Suspendisse potenti. Mauris sit amet
-            sollicitudin urna. Donec porttitor, est quis aliquet condimentum, nisi felis porta odio,
-            eu luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet porta. Proin vehicula
-            at nisl a maximus. Sed lorem enim, elementum in arcu eu, lacinia consequat arcu.
-            Pellentesque non nibh viverra, imperdiet purus at, finibus turpis. Sed mattis erat a
-            risus dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque tincidunt
-            nulla urna, ut egestas massa congue a. Quisque metus felis, auctor sit amet posuere eu,
-            aliquam blandit libero. Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
-            lacus, vitae mattis felis elit in metus. Nulla ligula ligula, laoreet in dictum sit
-            amet, pretium ac est.
+            Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi,
+            vitae malesuada odio. Sed varius libero sed erat faucibus ultrices.
+            Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec
+            porttitor, est quis aliquet condimentum, nisi felis porta odio, eu
+            luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet
+            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum
+            in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
+            imperdiet purus at, finibus turpis. Sed mattis erat a risus
+            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor.
+            Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque
+            metus felis, auctor sit amet posuere eu, aliquam blandit libero.
+            Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
+            lacus, vitae mattis felis elit in metus. Nulla ligula ligula,
+            laoreet in dictum sit amet, pretium ac est.
           </p>
         </DrawerBody>
         <DrawerFooter
@@ -221,17 +254,20 @@ export function AdditionalActions() {
         <DrawerHeader bordered={false} onRequestClose={toggleVisible} />
         <DrawerBody>
           <p>
-            Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi, vitae malesuada odio.
-            Sed varius libero sed erat faucibus ultrices. Suspendisse potenti. Mauris sit amet
-            sollicitudin urna. Donec porttitor, est quis aliquet condimentum, nisi felis porta odio,
-            eu luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet porta. Proin vehicula
-            at nisl a maximus. Sed lorem enim, elementum in arcu eu, lacinia consequat arcu.
-            Pellentesque non nibh viverra, imperdiet purus at, finibus turpis. Sed mattis erat a
-            risus dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque tincidunt
-            nulla urna, ut egestas massa congue a. Quisque metus felis, auctor sit amet posuere eu,
-            aliquam blandit libero. Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
-            lacus, vitae mattis felis elit in metus. Nulla ligula ligula, laoreet in dictum sit
-            amet, pretium ac est.
+            Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi,
+            vitae malesuada odio. Sed varius libero sed erat faucibus ultrices.
+            Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec
+            porttitor, est quis aliquet condimentum, nisi felis porta odio, eu
+            luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet
+            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum
+            in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
+            imperdiet purus at, finibus turpis. Sed mattis erat a risus
+            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor.
+            Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque
+            metus felis, auctor sit amet posuere eu, aliquam blandit libero.
+            Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
+            lacus, vitae mattis felis elit in metus. Nulla ligula ligula,
+            laoreet in dictum sit amet, pretium ac est.
           </p>
         </DrawerBody>
         <DrawerFooter

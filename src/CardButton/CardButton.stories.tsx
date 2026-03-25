@@ -12,7 +12,13 @@ const alignmentOptions: Array<NonNullable<CardButtonProps['alignment']>> = [
   'right',
 ];
 const asOptions: Array<CardButtonProps['as']> = ['a', 'button'];
-const sizeOptions: Array<NonNullable<CardButtonProps['size']>> = ['xs', 'sm', 'md', 'lg', 'full'];
+const sizeOptions: Array<NonNullable<CardButtonProps['size']>> = [
+  'xs',
+  'sm',
+  'md',
+  'lg',
+  'full',
+];
 
 const meta: Meta<typeof CardButton> = {
   title: 'Components/CardButton',

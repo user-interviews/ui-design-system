@@ -24,7 +24,9 @@ function PopoverCard({ children, className, size = 'sm' }: PopoverCardProps) {
   const widthClass = handleWidth(size);
 
   return (
-    <PopoverBody className={classNames(styles['popover-card'], widthClass, className)}>
+    <PopoverBody
+      className={classNames(styles['popover-card'], widthClass, className)}
+    >
       {children}
     </PopoverBody>
   );

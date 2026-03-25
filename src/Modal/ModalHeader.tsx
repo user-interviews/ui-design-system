@@ -46,7 +46,12 @@ export default function ModalHeader({
         ) : (
           <>
             <h1 className={titleClassName} id={titleId}>
-              {variant && <FontAwesomeIcon className={variant} icon={faExclamationTriangle} />}
+              {variant && (
+                <FontAwesomeIcon
+                  className={variant}
+                  icon={faExclamationTriangle}
+                />
+              )}
               {title}
             </h1>
             {subtitle && <h2 className="ModalHeader__subtitle">{subtitle}</h2>}

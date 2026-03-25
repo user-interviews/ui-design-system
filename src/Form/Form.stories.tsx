@@ -38,7 +38,12 @@ export function Default() {
       <FormGroup id="first-name" label="First name" labelHtmlFor="first-name">
         <InputComponent id="first-name-input" name="first-name" type="text" />
       </FormGroup>
-      <FormGroup id="last-name" label="Last name" labelHtmlFor="last-name" required>
+      <FormGroup
+        id="last-name"
+        label="Last name"
+        labelHtmlFor="last-name"
+        required
+      >
         <InputComponent id="last-name-input" name="last-name" type="text" />
       </FormGroup>
       <FormGroup id="email" label="Email" labelHtmlFor="email">

@@ -15,7 +15,12 @@ type ToastProps = {
   onToastClosed?: (...args: unknown[]) => unknown;
 };
 
-export default function Toast({ autoDismiss, header = true, messages, onToastClosed }: ToastProps) {
+export default function Toast({
+  autoDismiss,
+  header = true,
+  messages,
+  onToastClosed,
+}: ToastProps) {
   const groupClassNames = classNames('Toast', { 'Toast--no-header': !header });
 
   return (

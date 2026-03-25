@@ -57,7 +57,10 @@ function Card({
         .fill(0)
         .map((_, i) => (
           // oxlint-disable-next-line react/no-array-index-key
-          <div className="Card__loading-skeleton-paragraphs" key={`skeleton-paragraph-${i}`}>
+          <div
+            className="Card__loading-skeleton-paragraphs"
+            key={`skeleton-paragraph-${i}`}
+          >
             <LoadingSkeleton count={3} />
           </div>
         ))}
@@ -80,7 +83,9 @@ function Card({
         {title && (
           <div className="Card__header">
             <h2 className="Card__title">{title}</h2>
-            {helperText && <span className="Card__helper-text">{helperText}</span>}
+            {helperText && (
+              <span className="Card__helper-text">{helperText}</span>
+            )}
           </div>
         )}
 

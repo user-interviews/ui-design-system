@@ -11,7 +11,20 @@ export const CHECKED_STATES = {
 };
 
 const CheckboxButton = React.forwardRef(
-  ({ checked, className, disabled, id, indeterminate, name, value, onChange, ...rest }, ref) => {
+  (
+    {
+      checked,
+      className,
+      disabled,
+      id,
+      indeterminate,
+      name,
+      value,
+      onChange,
+      ...rest
+    },
+    ref,
+  ) => {
     useEffect(() => {
       if (ref && ref.current) {
         const checkboxRef = ref.current;
@@ -42,7 +55,11 @@ CheckboxButton.propTypes = {
   id: PropTypes.string.isRequired,
   indeterminate: PropTypes.bool,
   name: PropTypes.string,
-  value: PropTypes.oneOfType([PropTypes.number, PropTypes.string, PropTypes.bool]),
+  value: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.string,
+    PropTypes.bool,
+  ]),
   onChange: PropTypes.func,
 };
 

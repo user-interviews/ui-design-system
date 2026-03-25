@@ -137,13 +137,28 @@ export const Weights: Story = {
 export const Alignment: Story = {
   render: () => (
     <>
-      <Heading level={2} size={HeadingSize.MEDIUM} textAlign="left" weight="bold">
+      <Heading
+        level={2}
+        size={HeadingSize.MEDIUM}
+        textAlign="left"
+        weight="bold"
+      >
         The fastest way to recruit research participants
       </Heading>
-      <Heading level={2} size={HeadingSize.MEDIUM} textAlign="center" weight="bold">
+      <Heading
+        level={2}
+        size={HeadingSize.MEDIUM}
+        textAlign="center"
+        weight="bold"
+      >
         The fastest way to recruit research participants
       </Heading>
-      <Heading level={2} size={HeadingSize.MEDIUM} textAlign="right" weight="bold">
+      <Heading
+        level={2}
+        size={HeadingSize.MEDIUM}
+        textAlign="right"
+        weight="bold"
+      >
         The fastest way to recruit research participants
       </Heading>
     </>

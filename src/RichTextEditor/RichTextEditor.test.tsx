@@ -13,7 +13,9 @@ describe('<RichTextEditor />', () => {
       find: () =>
         screen
           .findAllByRole('textbox')
-          .then((elems) => elems.find((element) => element.hasAttribute('contenteditable'))),
+          .then((elems) =>
+            elems.find((element) => element.hasAttribute('contenteditable')),
+          ),
     },
     allButtons: {
       findAll: () => screen.findAllByRole('button'),
@@ -48,9 +50,13 @@ describe('<RichTextEditor />', () => {
       expect(textbox).toBeInTheDocument();
 
       const buttons = await elements.allButtons.findAll();
-      const disabledButtons = buttons.filter((button) => button.hasAttribute('disabled'));
+      const disabledButtons = buttons.filter((button) =>
+        button.hasAttribute('disabled'),
+      );
 
-      expect(disabledButtons.length).toBe(RichTextEditorDefaultActionsArray.length);
+      expect(disabledButtons.length).toBe(
+        RichTextEditorDefaultActionsArray.length,
+      );
       expect(textbox).toHaveAttribute('contenteditable', 'false');
     });
   });

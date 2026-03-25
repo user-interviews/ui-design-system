@@ -113,7 +113,10 @@ export default function FormGroup({
       {children}
 
       {displayErrorText && hasErrors && (
-        <div className="FormGroup__invalid-feedback" id={`form-errors-${inputKey}`}>
+        <div
+          className="FormGroup__invalid-feedback"
+          id={`form-errors-${inputKey}`}
+        >
           {renderErrors(errorMessage)}
         </div>
       )}

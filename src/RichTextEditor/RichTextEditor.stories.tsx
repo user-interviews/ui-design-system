@@ -22,7 +22,10 @@ export function Default() {
 export function ARIAAttributes() {
   return (
     <RichTextEditor
-      ariaAttributes={{ 'aria-label': 'Rich Text Editor', 'aria-required': true }}
+      ariaAttributes={{
+        'aria-label': 'Rich Text Editor',
+        'aria-required': true,
+      }}
       id="text-editor"
       onChange={() => null}
     />
@@ -32,7 +35,10 @@ export function ARIAAttributes() {
 export function AvailableActions() {
   return (
     <RichTextEditor
-      availableActions={[RichTextEditorActions.BOLD, RichTextEditorActions.ITALIC]}
+      availableActions={[
+        RichTextEditorActions.BOLD,
+        RichTextEditorActions.ITALIC,
+      ]}
       id="text-editor"
       onChange={() => null}
     />
@@ -40,7 +46,13 @@ export function AvailableActions() {
 }
 
 export function CharacterLimit() {
-  return <RichTextEditor characterLimit={140} id="text-editor" onChange={() => null} />;
+  return (
+    <RichTextEditor
+      characterLimit={140}
+      id="text-editor"
+      onChange={() => null}
+    />
+  );
 }
 
 export function OneLine() {

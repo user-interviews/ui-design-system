@@ -1,7 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-import { Dropdown, DropdownDivider, DropdownToggle, DropdownItem, DropdownMenu } from '.';
+import {
+  Dropdown,
+  DropdownDivider,
+  DropdownToggle,
+  DropdownItem,
+  DropdownMenu,
+} from '.';
 import {
   faEllipsisV,
   faFileAlt,
@@ -108,7 +114,11 @@ export function IconDefault() {
 export function IconSwap() {
   return (
     <Dropdown>
-      <DropdownToggle ariaLabel="dropdown toggle ellipsis" removeCaret variant="transparent">
+      <DropdownToggle
+        ariaLabel="dropdown toggle ellipsis"
+        removeCaret
+        variant="transparent"
+      >
         <FontAwesomeIcon icon={faEllipsisV} size="lg" />
       </DropdownToggle>
       <DropdownMenu>
@@ -140,7 +150,13 @@ export function UnstyledToggle() {
         >
           <div>
             <div style={{ fontSize: '18px', fontWeight: '700' }}>Team A</div>
-            <div style={{ fontSize: '12px', fontWeight: '400', backgroundColor: '#444444' }}>
+            <div
+              style={{
+                fontSize: '12px',
+                fontWeight: '400',
+                backgroundColor: '#444444',
+              }}
+            >
               Organization
             </div>
           </div>

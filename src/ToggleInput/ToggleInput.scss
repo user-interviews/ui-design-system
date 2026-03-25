@@ -60,7 +60,8 @@
       right: 14px;
     }
 
-    .react-toggle--checked:hover:not(.react-toggle--disabled) .react-toggle-track {
+    .react-toggle--checked:hover:not(.react-toggle--disabled)
+      .react-toggle-track {
       background-color: var(--ux-green);
     }
 

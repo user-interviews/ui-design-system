@@ -33,7 +33,12 @@ function EmptyState({
         marginTop && `EmptyState--margin-top--${marginTop}`,
       )}
     >
-      <div className={classNames('EmptyState__content', fullWidth && 'EmptyState--full-width')}>
+      <div
+        className={classNames(
+          'EmptyState__content',
+          fullWidth && 'EmptyState--full-width',
+        )}
+      >
         {image && (
           <div className="EmptyState__image">
             <img alt="" src={image} />
@@ -58,7 +63,9 @@ function EmptyState({
 
         {primaryAction && (
           <div className="EmptyState__actions">
-            <div className="EmptyState__actions__primary-action">{primaryAction}</div>
+            <div className="EmptyState__actions__primary-action">
+              {primaryAction}
+            </div>
           </div>
         )}
       </div>
