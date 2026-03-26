@@ -1,5 +1,4 @@
 import React, { Children, cloneElement } from 'react';
-import React, { Children, cloneElement } from 'react';
 
 import classNames from 'classnames';
 

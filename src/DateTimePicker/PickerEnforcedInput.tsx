@@ -1,5 +1,4 @@
 import React, { forwardRef } from 'react';
-import React, { forwardRef } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';

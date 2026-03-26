@@ -1,5 +1,4 @@
 import React from 'react';
-import React from 'react';
 
 import propTypes from 'prop-types';
 import AsyncCreatable from 'react-select/async-creatable';

@@ -6,7 +6,6 @@ import React, {
 } from 'react';
 
 import classNames from 'classnames';
-import classNames from 'classnames';
 
 import { LoadingSkeleton } from '../LoadingSkeleton';
 

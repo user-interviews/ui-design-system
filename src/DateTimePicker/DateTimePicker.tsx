@@ -7,8 +7,6 @@ import DatePicker, {
 import { createPortal } from 'react-dom';
 
 import { format, isDate, isValid, parse, parseISO } from 'date-fns';
-import { format, isDate, isValid, parse, parseISO } from 'date-fns';
-import { enAU, enCA, enGB, enUS, enZA, fr, frCA, de } from 'date-fns/locale';
 import { enAU, enCA, enGB, enUS, enZA, fr, frCA, de } from 'date-fns/locale';
 
 import { PickerEnforcedInput } from './PickerEnforcedInput';

@@ -6,14 +6,6 @@ import React, {
   useRef,
   useMemo,
 } from 'react';
-import React, {
-  createContext,
-  useEffect,
-  useState,
-  useCallback,
-  useRef,
-  useMemo,
-} from 'react';
 
 import classNames from 'classnames';
 

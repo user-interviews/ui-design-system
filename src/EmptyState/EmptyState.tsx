@@ -1,5 +1,4 @@
 import React, { type ReactNode } from 'react';
-import React, { ReactNode } from 'react';
 
 import classNames from 'classnames';
 
