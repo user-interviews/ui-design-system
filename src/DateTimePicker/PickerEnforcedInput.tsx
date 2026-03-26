@@ -1,9 +1,9 @@
 import React, { forwardRef } from 'react';
+import React, { forwardRef } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 import { isValid } from 'date-fns';
-import React, { forwardRef } from 'react';
 
 import { faCalendarAlt } from '../font_awesome/regular';
 

@@ -1,7 +1,7 @@
 import React from 'react';
+import React from 'react';
 
 import propTypes from 'prop-types';
-import React from 'react';
 import AsyncCreatable from 'react-select/async-creatable';
 
 import { defaultStyles, defaultTheme, SELECT_SIZES } from './styles';

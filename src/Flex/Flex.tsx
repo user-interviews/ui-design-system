@@ -1,7 +1,7 @@
 import { createElement, type ReactNode, type ElementType } from 'react';
+import { ReactNode, ElementType, createElement } from 'react';
 
 import classNames from 'classnames';
-import { ReactNode, ElementType, createElement } from 'react';
 
 import { useDeprecationWarning } from '../utils';
 

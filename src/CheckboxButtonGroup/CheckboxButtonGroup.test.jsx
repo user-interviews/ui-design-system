@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import { act, create } from 'react-test-renderer';
 
+import PropTypes from 'prop-types';
 import PropTypes from 'prop-types';
 
 import CheckboxButton from 'src/CheckboxButton';

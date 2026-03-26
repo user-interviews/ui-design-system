@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import React, {
   createElement,
   type DetailedHTMLProps,
@@ -6,6 +5,7 @@ import React, {
   type ReactNode,
 } from 'react';
 
+import classNames from 'classnames';
 import classNames from 'classnames';
 
 import { LoadingSkeleton } from '../LoadingSkeleton';
