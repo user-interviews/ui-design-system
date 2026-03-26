@@ -2,7 +2,6 @@ import React from 'react';
 import { components } from 'react-select';
 
 import propTypes from 'prop-types';
-import propTypes from 'prop-types';
 
 // Replaceable Components
 //
