@@ -37,3 +37,11 @@ yarn-error.log*
 /DS/.idea
 /junit.xml
 /debug-storybook.log
+
+# Ignore Local claude configs
+.claude/local/
+.claude/settings.local.json
+.claude/**/local-*
+
+# Ignore local cursor configs
+.cursor/**/local-*
