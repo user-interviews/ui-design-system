@@ -11,9 +11,7 @@ export type IconCellProps = {
   icon: IconDefinition;
 };
 
-function IconCell({
-  icon,
-}: IconCellProps) {
+function IconCell({ icon }: IconCellProps) {
   useDeprecationWarning({ componentName: 'IconCell' });
 
   return (

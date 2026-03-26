@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import { ORIENTATIONS } from '../ControlButtonGroup';
-import CheckboxButtonGroup from './index';
+
 import CheckboxButton from '../CheckboxButton';
+import { ORIENTATIONS } from '../ControlButtonGroup';
 import FormControlLabel from '../FormControlLabel';
 import FormGroup from '../FormGroup/FormGroup';
 import mdx from './CheckboxButtonGroup.mdx';
+import CheckboxButtonGroup from './index';
 
 export default {
   title: 'Components/Form Elements/CheckboxButtonGroup',
@@ -16,7 +17,6 @@ export default {
   },
 };
 
-/* eslint-disable react/prop-types */
 function CheckboxButtonGroupComponent({
   bordered,
   children,
@@ -49,12 +49,11 @@ function CheckboxButtonGroupComponent({
         value={value}
         onChange={setValue}
       >
-        { children }
+        {children}
       </CheckboxButtonGroup>
     </FormGroup>
   );
 }
-/* eslint-enable react/prop-types */
 
 export function Default() {
   const orientation = ORIENTATIONS.COLUMN;

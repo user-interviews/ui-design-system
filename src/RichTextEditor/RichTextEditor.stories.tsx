@@ -1,9 +1,8 @@
 import React, { useRef } from 'react';
 
+import { RichTextEditor, RichTextEditorActions } from '.';
 import Button from '../Button';
 import { type RichTextEditorRef } from './RichTextEditor';
-import { RichTextEditor, RichTextEditorActions } from '.';
-
 import mdx from './RichTextEditor.mdx';
 
 export default {
@@ -17,18 +16,16 @@ export default {
 };
 
 export function Default() {
-  return (
-    <RichTextEditor
-      id="text-editor"
-      onChange={() => null}
-    />
-  );
+  return <RichTextEditor id="text-editor" onChange={() => null} />;
 }
 
 export function ARIAAttributes() {
   return (
     <RichTextEditor
-      ariaAttributes={{ 'aria-label': 'Rich Text Editor', 'aria-required': true }}
+      ariaAttributes={{
+        'aria-label': 'Rich Text Editor',
+        'aria-required': true,
+      }}
       id="text-editor"
       onChange={() => null}
     />
@@ -38,7 +35,10 @@ export function ARIAAttributes() {
 export function AvailableActions() {
   return (
     <RichTextEditor
-      availableActions={[RichTextEditorActions.BOLD, RichTextEditorActions.ITALIC]}
+      availableActions={[
+        RichTextEditorActions.BOLD,
+        RichTextEditorActions.ITALIC,
+      ]}
       id="text-editor"
       onChange={() => null}
     />
@@ -56,23 +56,11 @@ export function CharacterLimit() {
 }
 
 export function OneLine() {
-  return (
-    <RichTextEditor
-      id="text-editor"
-      isOneLine
-      onChange={() => null}
-    />
-  );
+  return <RichTextEditor id="text-editor" isOneLine onChange={() => null} />;
 }
 
 export function Error() {
-  return (
-    <RichTextEditor
-      hasErrors
-      id="text-editor"
-      onChange={() => null}
-    />
-  );
+  return <RichTextEditor hasErrors id="text-editor" onChange={() => null} />;
 }
 
 export function SetContent() {
@@ -85,11 +73,7 @@ export function SetContent() {
   return (
     <>
       <Button onClick={handleClick}>Set content to "Oh hey"</Button>
-      <RichTextEditor
-        id="text-editor"
-        ref={ref}
-        onChange={() => null}
-      />
+      <RichTextEditor id="text-editor" ref={ref} onChange={() => null} />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import classNames from 'classnames';
 
 import TableLoadingSkeleton from './TableLoadingSkeleton';
@@ -6,7 +7,7 @@ import TableLoadingSkeleton from './TableLoadingSkeleton';
 type TableElementProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLTableElement>,
   HTMLTableElement
->
+>;
 
 export type TableProps = TableElementProps & {
   children?: React.ReactNode;
@@ -25,13 +26,7 @@ function Table({
   ...props
 }: TableProps) {
   return !isLoading ? (
-    <table
-      className={classNames(
-        'Table',
-        className,
-        )}
-      {...props}
-    >
+    <table className={classNames('Table', className)} {...props}>
       {children}
     </table>
   ) : (

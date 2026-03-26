@@ -1,5 +1,9 @@
 import RichTextEditor from './RichTextEditor';
-import { RichTextEditorAllActionsArray, RichTextEditorDefaultActionsArray, RichTextEditorActions } from './richTextEditorActions';
+import {
+  RichTextEditorAllActionsArray,
+  RichTextEditorDefaultActionsArray,
+  RichTextEditorActions,
+} from './richTextEditorActions';
 
 export {
   RichTextEditorAllActionsArray,

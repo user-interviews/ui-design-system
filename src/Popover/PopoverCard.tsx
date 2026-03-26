@@ -1,5 +1,7 @@
-import React, { ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
+
 import classNames from 'classnames';
+
 import PopoverBody from './PopoverBody';
 
 import * as styles from './PopoverCard.module.scss';
@@ -19,15 +21,13 @@ interface PopoverCardProps {
   size?: 'sm' | 'md';
 }
 
-function PopoverCard({
-  children,
-  className,
-  size = 'sm',
-}: PopoverCardProps) {
+function PopoverCard({ children, className, size = 'sm' }: PopoverCardProps) {
   const widthClass = handleWidth(size);
 
   return (
-    <PopoverBody className={classNames(styles['popover-card'], widthClass, className)}>
+    <PopoverBody
+      className={classNames(styles['popover-card'], widthClass, className)}
+    >
       {children}
     </PopoverBody>
   );

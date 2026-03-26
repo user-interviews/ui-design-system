@@ -1,9 +1,10 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
 import Avatar from '.';
 
-const colorIds: Array<number | undefined> = [undefined, 1, 2, 3, 4, 5, 6];
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
+
+const colorIds: (number | undefined)[] = [undefined, 1, 2, 3, 4, 5, 6];
 
 const renderColorVariants = (args: React.ComponentProps<typeof Avatar>) => (
   <div>
@@ -24,7 +25,7 @@ const meta: Meta<typeof Avatar> = {
   parameters: {
     docs: {
       description: {
-        component: 'Displays a user\'s initials or profile photo.',
+        component: "Displays a user's initials or profile photo.",
       },
     },
   },

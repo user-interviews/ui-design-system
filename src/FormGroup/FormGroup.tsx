@@ -1,9 +1,7 @@
 import React, { createElement } from 'react';
+import { type FieldErrors, type FieldError } from 'react-hook-form';
+
 import classNames from 'classnames';
-import {
-  type FieldErrors,
-  type FieldError,
-} from 'react-hook-form';
 
 import InputLabel from '../InputLabel';
 import InputLegend from '../InputLegend';
@@ -18,8 +16,10 @@ function renderErrors(errors) {
   return (
     <ol className="FormGroup__invalid-feedback__list">
       {
-        // eslint-disable-next-line react/no-array-index-key
-        errors.map((e, idx) => <li key={idx}>{e}</li>)
+        // oxlint-disable-next-line react/no-array-index-key
+        errors.map((e, idx) => (
+          <li key={idx}>{e}</li>
+        ))
       }
     </ol>
   );
@@ -46,7 +46,7 @@ export type FormGroupProps = {
   // should be rendered as a <fieldset> element.
   // All other FormGroups will be rendered as a normal <div> by default.
   elementType?: 'div' | 'fieldset';
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // oxlint-disable-next-line typescript/no-explicit-any
   errors?: { [key: string]: React.ReactNode } | FieldErrors<any> | FieldError;
   helperText?: React.ReactNode;
   id?: string;
@@ -109,13 +109,7 @@ export default function FormGroup({
         />
       )}
 
-      {
-        helperText && (
-          <div className="FormGroup__helper-text">
-            {helperText}
-          </div>
-        )
-      }
+      {helperText && <div className="FormGroup__helper-text">{helperText}</div>}
 
       {children}
 
@@ -132,19 +126,15 @@ export default function FormGroup({
 
   return createElement(
     elementType,
-     {
-       className: classNames(
-         'FormGroup',
-         className,
-{
-           'FormGroup--is-invalid': hasErrors,
-           'FormGroup--bordered': bordered,
-           'FormGroup--inline': inline,
-           'FormGroup--no-margin': noMargin,
-         },
-       ),
-       id,
-     },
-     formGroupChildren,
-   );
+    {
+      className: classNames('FormGroup', className, {
+        'FormGroup--is-invalid': hasErrors,
+        'FormGroup--bordered': bordered,
+        'FormGroup--inline': inline,
+        'FormGroup--no-margin': noMargin,
+      }),
+      id,
+    },
+    formGroupChildren,
+  );
 }

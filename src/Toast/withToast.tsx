@@ -7,9 +7,9 @@ type WithToastProps = {
   autoDismiss?: boolean;
   WrappedComponent: React.ComponentType<
     unknown & {
-      setToastMessage: ReturnType<typeof useToast>['setMessage'],
+      setToastMessage: ReturnType<typeof useToast>['setMessage'];
     }
-  >
+  >;
 };
 
 function WithToast({
@@ -26,25 +26,22 @@ function WithToast({
         messages={messages}
         onToastClosed={dismissMessage}
       />
-      <WrappedComponent
-        setToastMessage={setMessage}
-        {...props}
-      />
+      <WrappedComponent setToastMessage={setMessage} {...props} />
     </>
   );
 }
 
 export default function withToast(
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // oxlint-disable-next-line typescript/no-explicit-any
   WrappedComponent: (...args: any[]) => React.JSX.Element,
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // oxlint-disable-next-line typescript/no-explicit-any
   hocProps?: any,
 ) {
   const wrappedComponent = (props) => (
     <WithToast WrappedComponent={WrappedComponent} {...hocProps} {...props} />
   );
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // oxlint-disable-next-line typescript/no-explicit-any
   wrappedComponent.displayName = `${(WrappedComponent as any).displayName || WrappedComponent.name}WithToast`;
   return wrappedComponent;
 }

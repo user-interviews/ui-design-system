@@ -1,15 +1,12 @@
 import React from 'react';
+
 import classNames from 'classnames';
 
-import {
- Table, TableBody, TableCell, TableHead, TableRow,
-} from 'src/Table';
+import mdx from './Spacing.mdx';
+import { Table, TableBody, TableCell, TableHead, TableRow } from 'src/Table';
 
 import './Spacing.scss';
 
-import mdx from './Spacing.mdx';
-
-/* eslint-disable object-curly-newline */
 const data = [
   { id: 1, token: 'synth-spacing-1', px: '4' },
   { id: 2, token: 'synth-spacing-2', px: '8' },
@@ -36,15 +33,17 @@ export function Spacing() {
         </TableRow>
       </TableHead>
       <TableBody>
-        {data.map(((row) => (
+        {data.map((row) => (
           <TableRow key={row.id}>
-            <TableCell><code>${row.token}</code></TableCell>
+            <TableCell>
+              <code>${row.token}</code>
+            </TableCell>
             <TableCell>{row.px}</TableCell>
             <TableCell>
               <div className={classNames('spacing-example', row.token)} />
             </TableCell>
           </TableRow>
-      )))}
+        ))}
       </TableBody>
     </Table>
   );

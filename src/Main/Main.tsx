@@ -1,8 +1,8 @@
 import React from 'react';
+import { type ContainerProps as ReactBootstrapContainerProps } from 'react-bootstrap';
+
 import classNames from 'classnames';
-import {
-  type ContainerProps as ReactBootstrapContainerProps,
-} from 'react-bootstrap';
+
 import { Container } from '../Container';
 
 import './Main.scss';
@@ -10,7 +10,7 @@ import './Main.scss';
 type ElementProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLElement>,
   HTMLElement
->
+>;
 
 type MainProps = ElementProps & {
   as?: React.ElementType;

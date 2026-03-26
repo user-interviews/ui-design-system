@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Card from '../Card';
 import { Col, Container, Row } from '.';
+import Card from '../Card';
 import mdx from './Container.mdx';
 
 export default {
@@ -20,8 +20,9 @@ export function Default() {
       <Row>
         <Col>
           <Card size="sm" title="Default container">
-            <code>{`<Container>`}</code> provides a means to center and horizontally pad your site's contents.
-            Use Container for a responsive pixel width.
+            <code>{`<Container>`}</code> provides a means to center and
+            horizontally pad your site's contents. Use Container for a
+            responsive pixel width.
           </Card>
         </Col>
       </Row>
@@ -35,7 +36,8 @@ export function FluidContainer() {
       <Row>
         <Col>
           <Card size="sm" title="Fluid container">
-            You can use <code>{`<Container fluid />`}</code> for width: 100% across all viewport and device sizes.
+            You can use <code>{`<Container fluid />`}</code> for width: 100%
+            across all viewport and device sizes.
           </Card>
         </Col>
       </Row>
@@ -49,9 +51,9 @@ export function FluidContainerWithBreakpoints() {
       <Row>
         <Col>
           <Card size="sm" title="Fluid container with breakpoints">
-            You can set breakpoints for the <code>fluid</code> prop.
-            Setting it to a breakpoint <code>['sm', 'md', 'lg', 'xl', 'xxl']</code> will set the
-            Container as fluid until the specified breakpoint.
+            You can set breakpoints for the <code>fluid</code> prop. Setting it
+            to a breakpoint <code>['sm', 'md', 'lg', 'xl', 'xxl']</code> will
+            set the Container as fluid until the specified breakpoint.
           </Card>
         </Col>
       </Row>
@@ -96,10 +98,11 @@ export function SettingOneColumnWidth() {
   return (
     <Container>
       <p>
-        Auto-layout for flexbox grid columns also means you can set the width of one column and
-        have the sibling columns automatically resize around it.
-        You may use predefined grid classes (as shown below), grid mixins, or inline widths.
-        Note that the other columns will resize no matter the width of the center column.
+        Auto-layout for flexbox grid columns also means you can set the width of
+        one column and have the sibling columns automatically resize around it.
+        You may use predefined grid classes (as shown below), grid mixins, or
+        inline widths. Note that the other columns will resize no matter the
+        width of the center column.
       </p>
       <Row>
         <Col>
@@ -143,10 +146,11 @@ export function ResponsiveGrids() {
                 <code>sm={8}</code>
               </p>
               <p>
-                The <code>Col</code> lets you specify column widths across
-                6 breakpoint sizes (xs, sm, md, lg, xl and xxl).
-                For every breakpoint, you can specify the amount of columns to span,
-                or set the prop to <code>{`<Col lg={true} />`}</code> for auto layout widths.
+                The <code>Col</code> lets you specify column widths across 6
+                breakpoint sizes (xs, sm, md, lg, xl and xxl). For every
+                breakpoint, you can specify the amount of columns to span, or
+                set the prop to <code>{`<Col lg={true} />`}</code> for auto
+                layout widths.
               </p>
             </Card>
           </Col>
@@ -168,7 +172,8 @@ export function ResponsiveGrids() {
                 <code>{`sm={true}`}</code>
               </p>
               <p>
-                Or set the prop to <code>{`<Col lg={true}/>`}</code> for auto layout widths.
+                Or set the prop to <code>{`<Col lg={true}/>`}</code> for auto
+                layout widths.
               </p>
             </Card>
           </Col>
@@ -264,7 +269,8 @@ export function OffsettingColumns() {
               <code>{`md={{ span: 6, offset: 2 }}`}</code>
             </p>
             <p>
-              For offsetting grid columns you can set an <code>offset</code> value.
+              For offsetting grid columns you can set an <code>offset</code>{' '}
+              value.
             </p>
           </Card>
         </Col>
@@ -277,16 +283,15 @@ export function SettingColumnWidthsInRow() {
   return (
     <Container>
       <p>
-        The <code>Row</code> lets you specify column widths across
-        5 breakpoint sizes (xs, sm, md, lg, xl and xxl).
-        { /* eslint-disable-next-line max-len */ }
-        For every breakpoint, you can specify the amount of columns that will fit next to each other.
-        You can also specify auto to set the columns to their natural widths.
+        The <code>Row</code> lets you specify column widths across 5 breakpoint
+        sizes (xs, sm, md, lg, xl and xxl). For every breakpoint, you can
+        specify the amount of columns that will fit next to each other. You can
+        also specify auto to set the columns to their natural widths.
       </p>
       <p>
         Note that <code>Row</code> column widths will override <code>Col</code>
-        widths set on lower breakpoints when viewed on larger screens.
-        The <code>{`<Col xs={6} />`}</code> size will be overriden by
+        widths set on lower breakpoints when viewed on larger screens. The{' '}
+        <code>{`<Col xs={6} />`}</code> size will be overriden by
         <code>{`<Row md={4} />`}</code> on medium and larger screens.
       </p>
       <Row lg={3} md={2} sm={1} xs={1}>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { components } from 'react-select';
+
 import propTypes from 'prop-types';
 
 // Replaceable Components
@@ -11,12 +12,7 @@ import propTypes from 'prop-types';
 //
 // See: https://react-select.com/components#replaceable-components
 
-/* eslint-disable react/prop-types */
-function ValueContainer({
-  children,
-  valueText = 'selected',
-  ...props
-}) {
+function ValueContainer({ children, valueText = 'selected', ...props }) {
   const { getValue, hasValue } = props;
   const numValues = getValue().length;
 
@@ -28,16 +24,22 @@ function ValueContainer({
     );
   }
   return (
-    <components.ValueContainer {...props}>
-      {`${numValues} ${valueText}`}
-    </components.ValueContainer>
+    <components.ValueContainer
+      {...props}
+    >{`${numValues} ${valueText}`}</components.ValueContainer>
   );
 }
-/* eslint-enable react/prop-types */
 
 export default ValueContainer;
 
 ValueContainer.propTypes = {
   children: propTypes.node,
+  getValue: propTypes.func.isRequired,
+  hasValue: propTypes.bool.isRequired,
   valueText: propTypes.string,
+};
+
+ValueContainer.defaultProps = {
+  children: undefined,
+  valueText: 'selected',
 };

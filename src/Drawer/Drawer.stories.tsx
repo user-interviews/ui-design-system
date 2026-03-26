@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faEnvelope, faChevronLeft, faChevronRight, faTrash,
-} from '../font_awesome/solid';
-import {
- Drawer, DrawerBody, DrawerFooter, DrawerHeader,
-} from '.';
 
+import { Drawer, DrawerBody, DrawerFooter, DrawerHeader } from '.';
 import Button from '../Button';
-
+import {
+  faEnvelope,
+  faChevronLeft,
+  faChevronRight,
+  faTrash,
+} from '../font_awesome/solid';
 import mdx from './Drawer.mdx';
 
 export default {
@@ -52,15 +52,15 @@ export function Default() {
             Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec
             porttitor, est quis aliquet condimentum, nisi felis porta odio, eu
             luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet
-            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum in
-            arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
+            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum
+            in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
             imperdiet purus at, finibus turpis. Sed mattis erat a risus
-            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque
-            tincidunt nulla urna, ut egestas massa congue a. Quisque metus felis,
-            auctor sit amet posuere eu, aliquam blandit libero. Mauris sodales,
-            velit sit amet egestas aliquet, ipsum arcu porta lacus, vitae mattis
-            felis elit in metus. Nulla ligula ligula, laoreet in dictum sit amet,
-            pretium ac est.
+            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor.
+            Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque
+            metus felis, auctor sit amet posuere eu, aliquam blandit libero.
+            Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
+            lacus, vitae mattis felis elit in metus. Nulla ligula ligula,
+            laoreet in dictum sit amet, pretium ac est.
           </p>
         </DrawerBody>
         <DrawerFooter
@@ -105,15 +105,15 @@ export function Orientation() {
             Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec
             porttitor, est quis aliquet condimentum, nisi felis porta odio, eu
             luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet
-            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum in
-            arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
+            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum
+            in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
             imperdiet purus at, finibus turpis. Sed mattis erat a risus
-            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque
-            tincidunt nulla urna, ut egestas massa congue a. Quisque metus felis,
-            auctor sit amet posuere eu, aliquam blandit libero. Mauris sodales,
-            velit sit amet egestas aliquet, ipsum arcu porta lacus, vitae mattis
-            felis elit in metus. Nulla ligula ligula, laoreet in dictum sit amet,
-            pretium ac est.
+            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor.
+            Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque
+            metus felis, auctor sit amet posuere eu, aliquam blandit libero.
+            Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
+            lacus, vitae mattis felis elit in metus. Nulla ligula ligula,
+            laoreet in dictum sit amet, pretium ac est.
           </p>
         </DrawerBody>
         <DrawerFooter
@@ -158,15 +158,15 @@ export function Expandable() {
             Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec
             porttitor, est quis aliquet condimentum, nisi felis porta odio, eu
             luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet
-            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum in
-            arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
+            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum
+            in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
             imperdiet purus at, finibus turpis. Sed mattis erat a risus
-            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque
-            tincidunt nulla urna, ut egestas massa congue a. Quisque metus felis,
-            auctor sit amet posuere eu, aliquam blandit libero. Mauris sodales,
-            velit sit amet egestas aliquet, ipsum arcu porta lacus, vitae mattis
-            felis elit in metus. Nulla ligula ligula, laoreet in dictum sit amet,
-            pretium ac est.
+            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor.
+            Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque
+            metus felis, auctor sit amet posuere eu, aliquam blandit libero.
+            Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
+            lacus, vitae mattis felis elit in metus. Nulla ligula ligula,
+            laoreet in dictum sit amet, pretium ac est.
           </p>
         </DrawerBody>
         <DrawerFooter
@@ -211,15 +211,15 @@ export function DefaultExpanded() {
             Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec
             porttitor, est quis aliquet condimentum, nisi felis porta odio, eu
             luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet
-            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum in
-            arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
+            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum
+            in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
             imperdiet purus at, finibus turpis. Sed mattis erat a risus
-            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque
-            tincidunt nulla urna, ut egestas massa congue a. Quisque metus felis,
-            auctor sit amet posuere eu, aliquam blandit libero. Mauris sodales,
-            velit sit amet egestas aliquet, ipsum arcu porta lacus, vitae mattis
-            felis elit in metus. Nulla ligula ligula, laoreet in dictum sit amet,
-            pretium ac est.
+            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor.
+            Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque
+            metus felis, auctor sit amet posuere eu, aliquam blandit libero.
+            Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
+            lacus, vitae mattis felis elit in metus. Nulla ligula ligula,
+            laoreet in dictum sit amet, pretium ac est.
           </p>
         </DrawerBody>
         <DrawerFooter
@@ -252,10 +252,7 @@ export function AdditionalActions() {
         visible={isVisible}
         onRequestClose={toggleVisible}
       >
-        <DrawerHeader
-          bordered={false}
-          onRequestClose={toggleVisible}
-        />
+        <DrawerHeader bordered={false} onRequestClose={toggleVisible} />
         <DrawerBody>
           <p>
             Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi,
@@ -263,15 +260,15 @@ export function AdditionalActions() {
             Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec
             porttitor, est quis aliquet condimentum, nisi felis porta odio, eu
             luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet
-            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum in
-            arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
+            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum
+            in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
             imperdiet purus at, finibus turpis. Sed mattis erat a risus
-            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor. Quisque
-            tincidunt nulla urna, ut egestas massa congue a. Quisque metus felis,
-            auctor sit amet posuere eu, aliquam blandit libero. Mauris sodales,
-            velit sit amet egestas aliquet, ipsum arcu porta lacus, vitae mattis
-            felis elit in metus. Nulla ligula ligula, laoreet in dictum sit amet,
-            pretium ac est.
+            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor.
+            Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque
+            metus felis, auctor sit amet posuere eu, aliquam blandit libero.
+            Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
+            lacus, vitae mattis felis elit in metus. Nulla ligula ligula,
+            laoreet in dictum sit amet, pretium ac est.
           </p>
         </DrawerBody>
         <DrawerFooter
@@ -302,10 +299,7 @@ export function Empty() {
   return (
     <>
       <Button onClick={toggleVisible}>Open</Button>
-      <Drawer
-        visible={isVisible}
-        onRequestClose={toggleVisible}
-      />
+      <Drawer visible={isVisible} onRequestClose={toggleVisible} />
     </>
   );
 }

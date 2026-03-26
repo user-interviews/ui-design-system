@@ -1,8 +1,10 @@
 import React from 'react';
+
+import { Logo } from './Logo';
+import uiLogo from './ui_logo.svg';
+
 import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
-import uiLogo from './ui_logo.svg';
-import { Logo } from './Logo';
 import * as styles from './Logo.stories.module.css';
 
 const meta: Meta<typeof Logo> = {
@@ -71,4 +73,3 @@ export const CustomAltText: Story = {
     alt: 'User Interviews logo, light background',
   },
 };
-

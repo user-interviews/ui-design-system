@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 
+import { Popover, PopoverBody, PopoverCard } from '.';
 import Button from '../Button';
 import FormGroup from '../FormGroup';
 import Input from '../Input';
-
 import { OverlayTrigger } from '../OverlayTrigger';
-import { Popover, PopoverBody, PopoverCard } from '.';
-
 import mdx from './Popover.mdx';
 
 export default {
@@ -22,13 +20,11 @@ export default {
 export function Default() {
   return (
     <OverlayTrigger
-      overlay={(
+      overlay={
         <Popover id="popover-basic">
-          <PopoverBody>
-            This is the default Popover body.
-          </PopoverBody>
+          <PopoverBody>This is the default Popover body.</PopoverBody>
         </Popover>
-    )}
+      }
       placement="auto"
       trigger="click"
     >
@@ -40,13 +36,11 @@ export function Default() {
 export function Placement() {
   return (
     <OverlayTrigger
-      overlay={(
+      overlay={
         <Popover id="popover-basic">
-          <PopoverBody>
-            This is the default Popover body.
-          </PopoverBody>
+          <PopoverBody>This is the default Popover body.</PopoverBody>
         </Popover>
-    )}
+      }
       placement="bottom"
       trigger="click"
     >
@@ -64,14 +58,18 @@ export function CardPopover() {
 
   return (
     <OverlayTrigger
-      overlay={(
-        <Popover
-          id="popover-basic"
-        >
-          <PopoverCard
-            size="sm"
-          >
-            <h3 style={{ fontSize: '1rem', fontWeight: '700', marginBottom: '24px' }}>Popover with Card styling</h3>
+      overlay={
+        <Popover id="popover-basic">
+          <PopoverCard size="sm">
+            <h3
+              style={{
+                fontSize: '1rem',
+                fontWeight: '700',
+                marginBottom: '24px',
+              }}
+            >
+              Popover with Card styling
+            </h3>
             <FormGroup
               label="Last project launched"
               labelHtmlFor="last-project-launched-input"
@@ -92,17 +90,27 @@ export function CardPopover() {
                 placeholder="MM/DD/YYYY"
               />
             </FormGroup>
-            <div style={{ display: 'flex', justifyContent: 'right', marginTop: '16px' }}>
-              <Button variant="primary" onClick={handleOpen}>Apply</Button>
+            <div
+              style={{
+                display: 'flex',
+                justifyContent: 'right',
+                marginTop: '16px',
+              }}
+            >
+              <Button variant="primary" onClick={handleOpen}>
+                Apply
+              </Button>
             </div>
           </PopoverCard>
         </Popover>
-      )}
+      }
       placement="bottom"
       show={isOpen}
       trigger="click"
     >
-      <Button variant="primary" onClick={handleOpen}>Filter</Button>
+      <Button variant="primary" onClick={handleOpen}>
+        Filter
+      </Button>
     </OverlayTrigger>
   );
 }

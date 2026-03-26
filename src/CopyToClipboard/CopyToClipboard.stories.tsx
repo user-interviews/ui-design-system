@@ -8,10 +8,5 @@ export default {
 };
 
 export function Default() {
-  return (
-    <CopyToClipboard
-      copyText="Copy me!"
-      trackingEvent="copy-text"
-    />
-  );
+  return <CopyToClipboard copyText="Copy me!" trackingEvent="copy-text" />;
 }

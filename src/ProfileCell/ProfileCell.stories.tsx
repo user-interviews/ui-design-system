@@ -1,8 +1,9 @@
 import React from 'react';
-import { faShieldCheck } from '../font_awesome/solid';
+
 import ProfileCell from '.';
-import ProfileCellSkeleton from './ProfileCellSkeleton';
+import { faShieldCheck } from '../font_awesome/solid';
 import mdx from './ProfileCell.mdx';
+import ProfileCellSkeleton from './ProfileCellSkeleton';
 
 export default {
   title: 'Components/Profile Cell',
@@ -17,15 +18,9 @@ export default {
 
 const largeSubtitle = (
   <React.Fragment>
-    <div>
-      riley@userinterviews.com
-    </div>
-    <div>
-      +1 888 888 8888
-    </div>
-    <div>
-      (-5:00) America/New York
-    </div>
+    <div>riley@userinterviews.com</div>
+    <div>+1 888 888 8888</div>
+    <div>(-5:00) America/New York</div>
   </React.Fragment>
 );
 

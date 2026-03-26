@@ -13,12 +13,7 @@ export const createActionHandlers = (editor: Editor) => ({
 
     // empty
     if (url === '') {
-      editor
-        .chain()
-        .focus()
-        .extendMarkRange('link')
-        .unsetLink()
-        .run();
+      editor.chain().focus().extendMarkRange('link').unsetLink().run();
 
       return false;
     }

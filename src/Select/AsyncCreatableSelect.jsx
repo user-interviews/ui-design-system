@@ -1,10 +1,10 @@
 import React from 'react';
+
 import propTypes from 'prop-types';
 import AsyncCreatable from 'react-select/async-creatable';
 
-import zStack from 'src/Styles/zStack';
-
 import { defaultStyles, defaultTheme, SELECT_SIZES } from './styles';
+import zStack from 'src/Styles/zStack';
 
 function AsyncCreatableSelect({
   'aria-label': ariaLabel,
@@ -58,13 +58,10 @@ function AsyncCreatableSelect({
       placeholder={placeholder}
       shouldShowValue
       styles={{
-      ...defaultStyles({ menuWidth, size }),
-      menuPortal: (base) => (
-        modal ?
-        { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } :
-          base
-      ),
-    }}
+        ...defaultStyles({ menuWidth, size }),
+        menuPortal: (base) =>
+          modal ? { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } : base,
+      }}
       theme={defaultTheme}
       value={value}
       onBlurResetsInput={false}

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 
@@ -37,19 +38,20 @@ const controlledProps = {
   },
 };
 
-const renderTabs = (props) => render(
-  <Tabs {...props}>
-    <Tab eventKey={tabOneKey} title={tabOneTitle}>
-      {tabOneContent}
-    </Tab>
-    <Tab eventKey={tabTwoKey} title={tabTwoTitle}>
-      {tabTwoContent}
-    </Tab>
-    <Tab disabled eventKey={tabThreeKey} title={tabThreeTitle}>
-      {tabThreeContent}
-    </Tab>
-  </Tabs>,
-);
+const renderTabs = (props) =>
+  render(
+    <Tabs {...props}>
+      <Tab eventKey={tabOneKey} title={tabOneTitle}>
+        {tabOneContent}
+      </Tab>
+      <Tab eventKey={tabTwoKey} title={tabTwoTitle}>
+        {tabTwoContent}
+      </Tab>
+      <Tab disabled eventKey={tabThreeKey} title={tabThreeTitle}>
+        {tabThreeContent}
+      </Tab>
+    </Tabs>,
+  );
 
 describe('Tabs', () => {
   describe('uncontrolled tabs', () => {

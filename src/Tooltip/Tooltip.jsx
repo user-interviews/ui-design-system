@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import classNames from 'classnames';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faQuestionCircle } from '../font_awesome/solid';
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
+import { faQuestionCircle } from '../font_awesome/solid';
 import Popper from '../Popper';
 
 import './Tooltip.scss';
@@ -78,7 +78,6 @@ class Tooltip extends Component {
         <span
           aria-hidden="true"
           className={classNames('Tooltip__icon', this.props.iconClasses)}
-          /* eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex */
           tabIndex="0"
           onClick={this.handleToggleTooltipClick}
           onKeyPress={this.handleToggleTooltipClick}

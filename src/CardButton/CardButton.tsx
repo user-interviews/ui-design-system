@@ -1,14 +1,14 @@
+import React from 'react';
 import type {
   DetailedHTMLProps,
   AnchorHTMLAttributes,
   ButtonHTMLAttributes,
   ReactNode,
 } from 'react';
-import React from 'react';
 
-import classNames from 'classnames';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
 
 import { faSpinnerThird } from '../font_awesome/solid';
 
@@ -35,15 +35,13 @@ type BaseCardButtonProps = {
 
 type CardButtonProps =
   | (BaseCardButtonProps & {
-    as: 'a';
-  } & LinkProps)
+      as: 'a';
+    } & LinkProps)
   | (BaseCardButtonProps & {
-    as: 'button';
-  } & ButtonProps);
+      as: 'button';
+    } & ButtonProps);
 
-function isLinkButton(
-  as: CardButtonProps['as'],
-): as is 'a' {
+function isLinkButton(as: CardButtonProps['as']): as is 'a' {
   return as === 'a';
 }
 
@@ -77,7 +75,9 @@ export function CardButton({
   );
 
   if (isLinkButton(rest.as)) {
-    const { as: _as, ...linkProps } = rest as BaseCardButtonProps & { as: 'a' } & LinkProps;
+    const { as: _as, ...linkProps } = rest as BaseCardButtonProps & {
+      as: 'a';
+    } & LinkProps;
     return (
       <a {...linkProps} className={classes} data-testid={datatestid ?? ''}>
         {children}
@@ -85,7 +85,9 @@ export function CardButton({
     );
   }
 
-  const { as: _as, ...buttonProps } = rest as BaseCardButtonProps & { as: 'button' } & ButtonProps;
+  const { as: _as, ...buttonProps } = rest as BaseCardButtonProps & {
+    as: 'button';
+  } & ButtonProps;
 
   return (
     <button

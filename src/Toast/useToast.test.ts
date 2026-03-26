@@ -1,14 +1,13 @@
 import { renderHook, act } from '@testing-library/react';
-import { MessageTypes } from '../Alert';
+
 import { useToast } from '.';
+import { MessageTypes } from '../Alert';
 
 const GENERATED_UUID = '1234';
 
-jest.mock('../utils/uuid', () => (
-  {
-    generateUUID: () => '1234',
-  }
-));
+jest.mock('../utils/uuid', () => ({
+  generateUUID: () => '1234',
+}));
 
 describe('useToast', () => {
   test('can set a new message', () => {
@@ -22,13 +21,15 @@ describe('useToast', () => {
       });
     });
 
-    expect(result.current.messages).toEqual([{
-      id: GENERATED_UUID,
-      type: MessageTypes.SUCCESS,
-      message: newMessage,
-      action: undefined,
-      title: undefined,
-    }]);
+    expect(result.current.messages).toEqual([
+      {
+        id: GENERATED_UUID,
+        type: MessageTypes.SUCCESS,
+        message: newMessage,
+        action: undefined,
+        title: undefined,
+      },
+    ]);
   });
 
   test('can dismiss an existing message', () => {
@@ -42,11 +43,13 @@ describe('useToast', () => {
       });
     });
 
-    expect(result.current.messages).toEqual([{
-      id: GENERATED_UUID,
-      type: MessageTypes.SUCCESS,
-      message: newMessage,
-    }]);
+    expect(result.current.messages).toEqual([
+      {
+        id: GENERATED_UUID,
+        type: MessageTypes.SUCCESS,
+        message: newMessage,
+      },
+    ]);
 
     act(() => {
       result.current.dismissMessage(GENERATED_UUID);
@@ -59,16 +62,14 @@ describe('useToast', () => {
     const newMessages = ['I want to say', 'so many things'];
     const { result } = renderHook(() => useToast());
 
-    newMessages.forEach(
-      (message) => {
-        act(() => {
-          result.current.setMessage({
-            type: MessageTypes.ERROR,
-            message,
-          });
+    newMessages.forEach((message) => {
+      act(() => {
+        result.current.setMessage({
+          type: MessageTypes.ERROR,
+          message,
         });
-      },
-    );
+      });
+    });
 
     expect(result.current.messages).toEqual(
       newMessages.map((message) => ({
@@ -82,13 +83,11 @@ describe('useToast', () => {
   });
 
   test('can clear all messages', () => {
-    const messages = ['A new', 'message'].map(
-      (message, i) => ({
-          id: i.toString(),
-          type: MessageTypes.SUCCESS,
-          message,
-        }),
-    );
+    const messages = ['A new', 'message'].map((message, i) => ({
+      id: i.toString(),
+      type: MessageTypes.SUCCESS,
+      message,
+    }));
 
     const { result } = renderHook(() => useToast(messages));
     expect(result.current.messages.length).toEqual(2);

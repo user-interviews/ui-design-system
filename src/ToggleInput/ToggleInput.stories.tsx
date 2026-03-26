@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { ToggleInput } from '.';
 
+import { ToggleInput } from '.';
 import mdx from './ToggleInput.mdx';
 
 export default {

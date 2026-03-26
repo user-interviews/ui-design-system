@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+
 import { ORIENTATIONS } from '../ControlButtonGroup';
-import RadioButtonGroup from './index';
-import RadioButton from '../RadioButton';
 import FormControlLabel from '../FormControlLabel';
 import FormGroup from '../FormGroup/FormGroup';
+import RadioButton from '../RadioButton';
+import RadioButtonGroup from './index';
 import mdx from './RadioButtonGroup.mdx';
 
 export default {
@@ -16,7 +17,6 @@ export default {
   },
 };
 
-/* eslint-disable react/prop-types */
 function RadioButtonGroupComponent({
   bordered,
   children,
@@ -48,12 +48,11 @@ function RadioButtonGroupComponent({
         value={value}
         onChange={setValue}
       >
-        { children }
+        {children}
       </RadioButtonGroup>
     </FormGroup>
   );
 }
-/* eslint-enable react/prop-types */
 
 export function Default() {
   const orientation = ORIENTATIONS.COLUMN;

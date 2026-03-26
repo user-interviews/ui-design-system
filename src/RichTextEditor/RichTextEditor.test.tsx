@@ -1,5 +1,6 @@
-import { render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
+
+import { render, screen, waitFor } from '@testing-library/react';
 
 import RichTextEditor, { type RichTextEditorProps } from './RichTextEditor';
 import { RichTextEditorDefaultActionsArray } from './richTextEditorActions';
@@ -10,23 +11,20 @@ describe('<RichTextEditor />', () => {
       // The latest tiptap seems to be applying "textbox" role to two elements, parent and child now
       // so just going to grab the innermost one that has contenteditable attribute...
       // note that this might be a tiptap bug? so be ready if this has to be undone
-      find: () => screen.findAllByRole('textbox').then(
-        (elems) => elems.find((element) => element.hasAttribute('contenteditable')),
-      ),
+      find: () =>
+        screen
+          .findAllByRole('textbox')
+          .then((elems) =>
+            elems.find((element) => element.hasAttribute('contenteditable')),
+          ),
     },
     allButtons: {
       findAll: () => screen.findAllByRole('button'),
     },
   };
   function Setup(overrides: Omit<RichTextEditorProps, 'id' | 'onChange'> = {}) {
-  return (
-    <RichTextEditor
-      id="some-id"
-      onChange={jest.fn()}
-      {...overrides}
-    />
-  );
-}
+    return <RichTextEditor id="some-id" onChange={jest.fn()} {...overrides} />;
+  }
 
   it('renders snapshot', async () => {
     const { asFragment } = render(<Setup />);
@@ -53,9 +51,13 @@ describe('<RichTextEditor />', () => {
       expect(textbox).toBeInTheDocument();
 
       const buttons = await elements.allButtons.findAll();
-      const disabledButtons = buttons.filter((button) => button.hasAttribute('disabled'));
+      const disabledButtons = buttons.filter((button) =>
+        button.hasAttribute('disabled'),
+      );
 
-      expect(disabledButtons.length).toBe(RichTextEditorDefaultActionsArray.length);
+      expect(disabledButtons.length).toBe(
+        RichTextEditorDefaultActionsArray.length,
+      );
       expect(textbox).toHaveAttribute('contenteditable', 'false');
     });
   });

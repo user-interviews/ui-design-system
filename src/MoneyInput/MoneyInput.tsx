@@ -1,7 +1,9 @@
 import React from 'react';
-import classNames from 'classnames';
+import CurrencyInput, {
+  type CurrencyInputProps,
+} from 'react-currency-input-field';
 
-import CurrencyInput, { type CurrencyInputProps } from 'react-currency-input-field';
+import classNames from 'classnames';
 
 import './MoneyInput.scss';
 

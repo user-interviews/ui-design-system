@@ -1,0 +1,367 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "categories": {
+    "correctness": "off"
+  },
+  "plugins": [
+    "typescript",
+    "oxc",
+    "unicorn",
+    "react",
+    "import",
+    "jsx-a11y",
+    "jest"
+  ],
+  "jsPlugins": [
+    {
+      "name": "react-js",
+      "specifier": "eslint-plugin-react"
+    },
+    {
+      "name": "import-js",
+      "specifier": "eslint-plugin-import"
+    },
+    {
+      "name": "storybook-js",
+      "specifier": "eslint-plugin-storybook"
+    }
+  ],
+  "settings": {
+    "react": {
+      "version": "18.2.0"
+    },
+    "import/resolver": {
+      "node": {
+        "paths": ["./"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx", ".json"]
+      }
+    }
+  },
+  "globals": {
+    "$": "readonly",
+    "ENV": "readonly",
+    "Cypress": "readonly",
+    "afterAll": "readonly",
+    "afterEach": "readonly",
+    "beforeAll": "readonly",
+    "beforeEach": "readonly",
+    "cy": "readonly",
+    "describe": "readonly",
+    "expect": "readonly",
+    "gon": "readonly",
+    "it": "readonly",
+    "jest": "readonly",
+    "test": "readonly"
+  },
+  "ignorePatterns": ["lib"],
+  "rules": {},
+  "overrides": [
+    {
+      "files": [
+        "src/**/*.{js,jsx,ts,tsx}",
+        "spec/**/*.{js,jsx,ts,tsx}",
+        "stories/**/*.{js,jsx,ts,tsx}"
+      ],
+      "rules": {
+        "import-js/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": ["**/*.stories.*", "**/*.test.*"]
+          }
+        ],
+        "import-js/order": [
+          "warn",
+          {
+            "groups": [
+              "builtin",
+              "external",
+              ["internal", "parent", "sibling", "index"],
+              "type",
+              "object"
+            ],
+            "pathGroups": [
+              {
+                "pattern": "react*",
+                "group": "external",
+                "position": "before"
+              },
+              {
+                "pattern": "src/**",
+                "group": "internal"
+              },
+              {
+                "pattern": "*.{css,scss}",
+                "patternOptions": { "matchBase": true },
+                "group": "type",
+                "position": "after"
+              }
+            ],
+            "pathGroupsExcludedImportTypes": [],
+            "newlines-between": "always"
+          }
+        ],
+        "jsx-a11y/anchor-is-valid": "warn",
+        "jsx-a11y/label-has-associated-control": [
+          "error",
+          {
+            "assert": "either",
+            "controlComponents": ["AsyncSelect", "SingleSelect"],
+            "depth": 25,
+            "labelAttributes": ["label"],
+            "labelComponents": []
+          }
+        ],
+        "jest/no-focused-tests": "error",
+        "no-case-declarations": "warn",
+        "no-loop-func": "warn",
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": [
+              {
+                "group": [
+                  "@fortawesome/free-brands-svg-icons/*",
+                  "@fortawesome/free-brands-svg-icons"
+                ],
+                "message": "Direct imports from @fortawesome/free-brands-svg-icons is not allowed. Import from src/ib/font_awesome/brands instead."
+              },
+              {
+                "group": [
+                  "@fortawesome/pro-regular-svg-icons/*",
+                  "@fortawesome/pro-regular-svg-icons"
+                ],
+                "message": "Direct imports from @fortawesome/pro-regular-svg-icons is not allowed. Import from src/lib/font_awesome/regular instead."
+              },
+              {
+                "group": [
+                  "@fortawesome/pro-solid-svg-icons/*",
+                  "@fortawesome/pro-solid-svg-icons"
+                ],
+                "message": "Direct imports from @fortawesome/pro-solid-svg-icons is not allowed. Import from src/lib/font_awesome/solid instead."
+              }
+            ]
+          }
+        ],
+        "no-shadow": "off",
+        "no-underscore-dangle": [
+          "error",
+          {
+            "allowAfterThis": true
+          }
+        ],
+        "prefer-destructuring": "warn",
+        "react/exhaustive-deps": "error",
+        "react/jsx-filename-extension": [
+          "error",
+          {
+            "extensions": [".tsx", ".jsx"]
+          }
+        ],
+        "react/jsx-no-undef": "off",
+        "react/no-unescaped-entities": "error",
+        "react/rules-of-hooks": "error",
+        "react-js/jsx-sort-props": [
+          "error",
+          {
+            "callbacksLast": true,
+            "ignoreCase": true,
+            "noSortAlphabetically": false
+          }
+        ],
+        "react-js/prop-types": [
+          "error",
+          {
+            "ignore": ["children"]
+          }
+        ],
+        "react-js/require-default-props": [
+          "error",
+          {
+            "functions": "ignore"
+          }
+        ],
+        "react-js/sort-comp": [
+          "error",
+          {
+            "order": [
+              "static-methods",
+              "constructor",
+              "state",
+              "own-properties",
+              "/^handle.+/",
+              "getters",
+              "setters",
+              "everything-else",
+              "lifecycle",
+              "/^render.+/",
+              "render"
+            ],
+            "groups": {
+              "own-properties": ["instance-variables", "instance-methods"],
+              "react-methods": [
+                "displayName",
+                "propTypes",
+                "contextTypes",
+                "childContextTypes",
+                "mixins",
+                "statics",
+                "defaultProps",
+                "constructor",
+                "getDefaultProps",
+                "getInitialState",
+                "getChildContext",
+                "getDerivedStateFromProps",
+                "componentWillMount",
+                "UNSAFE_componentWillMount",
+                "componentDidMount",
+                "componentWillReceiveProps",
+                "UNSAFE_componentWillReceiveProps",
+                "shouldComponentUpdate",
+                "componentWillUpdate",
+                "UNSAFE_componentWillUpdate",
+                "getSnapshotBeforeUpdate",
+                "componentDidUpdate",
+                "componentDidCatch",
+                "componentWillUnmount"
+              ]
+            }
+          }
+        ],
+        "react-js/sort-prop-types": [
+          "error",
+          {
+            "callbacksLast": true,
+            "ignoreCase": true,
+            "noSortAlphabetically": false,
+            "requiredFirst": false,
+            "sortShapeProp": true
+          }
+        ],
+        "typescript/no-shadow": "error",
+
+        "react/display-name": "error",
+        "react/forward-ref-uses-ref": "error",
+        "react/jsx-key": "error",
+        "react/jsx-curly-brace-presence": [
+          "error",
+          {
+            "children": "never",
+            "propElementValues": "always"
+          }
+        ],
+        "react/jsx-no-comment-textnodes": "error",
+        "react/jsx-no-constructed-context-values": "error",
+        "react/jsx-no-duplicate-props": "error",
+        "react/jsx-no-target-blank": "error",
+        "react/jsx-no-useless-fragment": "warn",
+        "react/no-children-prop": "error",
+        "react/no-danger-with-children": "error",
+        "react/no-deprecated": "error",
+        "react/no-direct-mutation-state": "error",
+        "react/no-find-dom-node": "error",
+        "react/no-is-mounted": "error",
+        "react/no-string-refs": "error",
+        "react/no-unknown-property": "error",
+        "react/require-render-return": "error",
+        "react/self-closing-comp": "warn",
+        "react-js/no-unstable-nested-components": [
+          "error",
+          {
+            "allowAsProps": true
+          }
+        ],
+
+        "default-param-last": "error",
+        "no-console": "error",
+        "no-unused-vars": [
+          "error",
+          {
+            "argsIgnorePattern": "^_",
+            "varsIgnorePattern": "^_",
+            "caughtErrorsIgnorePattern": "^_"
+          }
+        ]
+      }
+    },
+    {
+      "files": ["**/*.{ts,tsx}"],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "error",
+        "typescript/ban-ts-comment": [
+          "error",
+          {
+            "ts-ignore": true,
+            "ts-expect-error": "allow-with-description"
+          }
+        ],
+        "typescript/consistent-type-imports": "warn",
+        "typescript/no-wrapper-object-types": "error",
+        "typescript/no-unnecessary-type-constraint": "error",
+        "typescript/prefer-as-const": "error",
+        "typescript/no-extra-non-null-assertion": "error",
+        "typescript/no-non-null-asserted-optional-chain": "error",
+        "typescript/prefer-optional-chain": "warn",
+        "typescript/no-empty-object-type": "warn",
+        "typescript/no-unsafe-declaration-merging": "error",
+        "typescript/no-useless-empty-export": "warn",
+        "typescript/no-duplicate-enum-values": "error",
+        "typescript/array-type": ["warn", { "default": "array" }],
+        "react/require-default-props": "off",
+        "default-case": "off",
+        "consistent-return": "off",
+        "no-undef": "off"
+      },
+      "plugins": ["typescript"]
+    },
+    {
+      "files": ["**/*.{ts,tsx}"],
+      "rules": {
+        "react-js/prop-types": "off",
+        "react-js/require-default-props": "off"
+      }
+    },
+    {
+      "files": ["stories/**/*.{js,jsx}"],
+      "rules": {
+        "import-js/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": true
+          }
+        ]
+      }
+    },
+    {
+      "files": ["**/*.stories.{js,jsx,ts,tsx}", "stories/**/*.{js,jsx,ts,tsx}"],
+      "rules": {
+        "react/no-unescaped-entities": "off",
+        "react-js/prop-types": "off",
+        "react-js/require-default-props": "off",
+        "storybook-js/await-interactions": "error",
+        "storybook-js/context-in-play-function": "error",
+        "storybook-js/default-exports": "error",
+        "storybook-js/hierarchy-separator": "error",
+        "storybook-js/no-redundant-story-name": "error",
+        "storybook-js/no-renderer-packages": "error",
+        "storybook-js/no-uninstalled-addons": "error",
+        "storybook-js/prefer-pascal-case": "error",
+        "storybook-js/story-exports": "error",
+        "storybook-js/use-storybook-expect": "error",
+        "storybook-js/use-storybook-testing-library": "error"
+      }
+    },
+    {
+      "files": ["**/*.test.{js,jsx,ts,tsx}", "spec/**/*.{js,jsx,ts,tsx}"],
+      "rules": {
+        "import-js/no-extraneous-dependencies": [
+          "error",
+          {
+            "devDependencies": true
+          }
+        ],
+        "react-js/prop-types": "off",
+        "react-js/require-default-props": "off"
+      }
+    }
+  ]
+}

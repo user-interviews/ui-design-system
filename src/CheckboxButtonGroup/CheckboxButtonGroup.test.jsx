@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import { act, create } from 'react-test-renderer';
+
 import PropTypes from 'prop-types';
 
-import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 import CheckboxButton from 'src/CheckboxButton';
+import CheckboxButtonGroup from 'src/CheckboxButtonGroup';
 
 function CheckboxButtonGroupComponent({ children, defaultValues }) {
   const [value, setValue] = useState(defaultValues);
   return (
-    <CheckboxButtonGroup id="checkbox-question" value={value} onChange={setValue}>
+    <CheckboxButtonGroup
+      id="checkbox-question"
+      value={value}
+      onChange={setValue}
+    >
       {children}
     </CheckboxButtonGroup>
   );
@@ -39,7 +44,8 @@ describe('CheckboxButtonGroup', () => {
     );
 
     const event = { target: { value: 1, checked: true } };
-    const firstButton = checkboxButtonGroup.root.findAllByType((CheckboxButton))[0];
+    const [firstButton] =
+      checkboxButtonGroup.root.findAllByType(CheckboxButton);
 
     await act(async () => firstButton.props.onChange(event));
     expect(checkboxButtonGroup).toMatchSnapshot();
@@ -54,7 +60,8 @@ describe('CheckboxButtonGroup', () => {
     );
 
     const event = { target: { value: 1, checked: false } };
-    const firstButton = checkboxButtonGroup.root.findAllByType(CheckboxButton)[0];
+    const [firstButton] =
+      checkboxButtonGroup.root.findAllByType(CheckboxButton);
 
     await act(async () => firstButton.props.onChange(event));
     expect(checkboxButtonGroup).toMatchSnapshot();

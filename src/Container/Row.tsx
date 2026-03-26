@@ -68,7 +68,10 @@ export function Row({
   bsPrefix = 'row',
   ...props
 }: RowProps) {
-  useDeprecationWarning({ componentName: 'Row', message: 'Please use FlexContainer instead.' });
+  useDeprecationWarning({
+    componentName: 'Row',
+    message: 'Please use FlexContainer instead.',
+  });
 
   return (
     <ReactBootstrapRow

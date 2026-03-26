@@ -68,7 +68,10 @@ export function Col({
   bsPrefix = 'col',
   ...props
 }: ColProps) {
-  useDeprecationWarning({ componentName: 'Col', message: 'Please use FlexContainer instead.' });
+  useDeprecationWarning({
+    componentName: 'Col',
+    message: 'Please use FlexContainer instead.',
+  });
 
   return (
     <ReactBootstrapCol

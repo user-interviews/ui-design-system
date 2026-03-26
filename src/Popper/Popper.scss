@@ -1,6 +1,9 @@
 @import '../../scss/theme';
 
-@mixin popper-arrow($popper-color: $ux-gray-800, $popper-border-color: $ux-gray-800) {
+@mixin popper-arrow(
+  $popper-color: $ux-gray-800,
+  $popper-border-color: $ux-gray-800
+) {
   .Popper__arrow {
     height: 16px;
     position: absolute;
@@ -100,7 +103,10 @@
 
 .Popper {
   @include synth-font-type-30--medium;
-  @include popper-arrow($popper-color: $ux-white, $popper-border-color: $ux-gray-300);
+  @include popper-arrow(
+    $popper-color: $ux-white,
+    $popper-border-color: $ux-gray-300
+  );
 
   background-color: var(--ux-white);
   border-radius: var(--ux-border-radius);
@@ -124,11 +130,14 @@
     background-color: var(--ux-gray-800);
     color: var(--ux-gray-100);
 
-    a, a:active, a:focus, a:hover, a:visited {
+    a,
+    a:active,
+    a:focus,
+    a:hover,
+    a:visited {
       color: var(--ux-blue-300);
 
       @include synth-font-type-30--medium;
     }
   }
 }
-

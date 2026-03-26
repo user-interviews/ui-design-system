@@ -1,4 +1,5 @@
 import React, { Children, cloneElement } from 'react';
+
 import classNames from 'classnames';
 
 import './TableRow.scss';
@@ -6,7 +7,7 @@ import './TableRow.scss';
 type TableElementProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLTableRowElement>,
   HTMLTableRowElement
->
+>;
 
 type TableRowProps = TableElementProps & {
   children?: React.ReactNode;
@@ -35,15 +36,11 @@ function TableRow({
 
   return (
     <tr
-      className={classNames(
-    'TableRow',
-    className,
-    {
-      [`TableRow--selected`]: !!selected,
-      [`TableRow--clickable`]: !!clickable,
-      [`TableRow--remove-hover`]: !!removeHover,
-    },
-    )}
+      className={classNames('TableRow', className, {
+        [`TableRow--selected`]: !!selected,
+        [`TableRow--clickable`]: !!clickable,
+        [`TableRow--remove-hover`]: !!removeHover,
+      })}
       {...props}
     >
       {Children.map(children, addStickyRowProp)}

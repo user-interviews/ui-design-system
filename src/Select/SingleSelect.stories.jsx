@@ -1,17 +1,14 @@
-/* eslint-disable react/no-unstable-nested-components */
 import React, { useRef, useState } from 'react';
-import { action } from 'storybook/actions';
 
-import Button from 'src/Button';
-import FormGroup from 'src/FormGroup';
-import {
-  Modal, ModalHeader, ModalBody, ModalFooter,
-} from 'src/Modal';
-import SingleSelect from 'src/Select/SingleSelect';
+import { action } from 'storybook/actions';
 
 import Option from './Option';
 import OptionWithDescription from './OptionWithDescription';
 import ValueContainer from './ValueContainer';
+import Button from 'src/Button';
+import FormGroup from 'src/FormGroup';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'src/Modal';
+import SingleSelect from 'src/Select/SingleSelect';
 
 const onChange = () => action('Change');
 
@@ -24,22 +21,26 @@ const options = [
   {
     label: '1-on-1 interview',
     value: 1,
-    description: 'Interviews are typically a conversation between you and a researcher.',
+    description:
+      'Interviews are typically a conversation between you and a researcher.',
   },
   {
     label: 'Focus group',
     value: 2,
-    description: 'Focus groups involve interacting with a small group of your peers.',
+    description:
+      'Focus groups involve interacting with a small group of your peers.',
   },
   {
     label: 'Multi-day study',
     value: 3,
-    description: 'Diary and multiday studies are days or weeks long commitments.',
+    description:
+      'Diary and multiday studies are days or weeks long commitments.',
   },
   {
     label: 'Unmoderated task',
     value: 4,
-    description: 'An unmoderated task is just that—an opportunity for a user to try out a product, app, website, etc and share feedback.',
+    description:
+      'An unmoderated task is just that—an opportunity for a user to try out a product, app, website, etc and share feedback.',
   },
 ];
 
@@ -52,21 +53,19 @@ const peopleOptions = [
 
 export function Default() {
   return (
-    <FormGroup
-      label="Default select"
-      labelHtmlFor="default-select"
-    >
-      <SingleSelect inputId="default-select" options={options} onChange={onChange} />
+    <FormGroup label="Default select" labelHtmlFor="default-select">
+      <SingleSelect
+        inputId="default-select"
+        options={options}
+        onChange={onChange}
+      />
     </FormGroup>
   );
 }
 
 export function Searchable() {
   return (
-    <FormGroup
-      label="Searchable select"
-      labelHtmlFor="searchable-select"
-    >
+    <FormGroup label="Searchable select" labelHtmlFor="searchable-select">
       <SingleSelect
         closeMenuOnScroll={false}
         inputId="searchable-select"
@@ -81,21 +80,20 @@ export function Searchable() {
 
 export function Loading() {
   return (
-    <FormGroup
-      label="Loading select"
-      labelHtmlFor="loading-select"
-    >
-      <SingleSelect inputId="loading-select" isLoading options={options} onChange={onChange} />
+    <FormGroup label="Loading select" labelHtmlFor="loading-select">
+      <SingleSelect
+        inputId="loading-select"
+        isLoading
+        options={options}
+        onChange={onChange}
+      />
     </FormGroup>
   );
 }
 
 export function MultipleSelect() {
   return (
-    <FormGroup
-      label="Multiple select"
-      labelHtmlFor="multi-select"
-    >
+    <FormGroup label="Multiple select" labelHtmlFor="multi-select">
       <SingleSelect
         inputId="multi-select"
         isMulti
@@ -160,7 +158,9 @@ export function InModal() {
           dismissButtonText="Cancel"
           onRequestClose={handleRequestClose}
         >
-          <Button type="submit" variant="primary">Confirm</Button>
+          <Button type="submit" variant="primary">
+            Confirm
+          </Button>
         </ModalFooter>
       </Modal>
     </>
@@ -182,10 +182,7 @@ export function GroupedOptions() {
     },
   ];
   return (
-    <FormGroup
-      label="Grouped options"
-      labelHtmlFor="grouped-options-select"
-    >
+    <FormGroup label="Grouped options" labelHtmlFor="grouped-options-select">
       <SingleSelect
         inputId="grouped-options-select"
         options={groupedOptions}
@@ -203,15 +200,10 @@ export function CustomOptionWithDescriptionAndCheckbox() {
     >
       <SingleSelect
         components={{
-        Option: ({ ...props }) => (
-          <Option
-            {...props}
-            boldLabel
-            // eslint-disable-next-line react/prop-types
-            description={props.data.description}
-          />
-        ),
-      }}
+          Option: ({ ...props }) => (
+            <Option {...props} boldLabel description={props.data.description} />
+          ),
+        }}
         inputId="custom-option-with-description-select"
         options={options}
         onChange={onChange}
@@ -227,17 +219,29 @@ export function CustomOptionWithDescriptionAndCheckbox() {
 export function CustomOptionWithDescription() {
   const optionsWithDescriptions = [
     {
- label: 'Org Admin', value: 1, description: 'Short description of role capabilities', labelDescription: '(Full access)',
-},
+      label: 'Org Admin',
+      value: 1,
+      description: 'Short description of role capabilities',
+      labelDescription: '(Full access)',
+    },
     {
- label: 'Administrator', value: 2, description: 'Short description of role capabilities', labelDescription: '(Full access)',
-},
+      label: 'Administrator',
+      value: 2,
+      description: 'Short description of role capabilities',
+      labelDescription: '(Full access)',
+    },
     {
- label: 'Researcher', value: 3, description: 'Short description of role capabilities', labelDescription: '(Standard access)',
-},
+      label: 'Researcher',
+      value: 3,
+      description: 'Short description of role capabilities',
+      labelDescription: '(Standard access)',
+    },
     {
- label: 'Teammate', value: 4, description: 'Short description of role capabilities', labelDescription: '(Limited access)',
-},
+      label: 'Teammate',
+      value: 4,
+      description: 'Short description of role capabilities',
+      labelDescription: '(Limited access)',
+    },
   ];
 
   return (
@@ -247,11 +251,7 @@ export function CustomOptionWithDescription() {
     >
       <SingleSelect
         components={{
-          Option: (props) => (
-            <OptionWithDescription
-              {...props}
-            />
-          ),
+          Option: (props) => <OptionWithDescription {...props} />,
         }}
         inputId="custom-option-with-description-select"
         options={optionsWithDescriptions}
@@ -311,7 +311,7 @@ export function CustomOptionWithIndeterminateCheckbox() {
   let inputRef;
 
   const createInputRef = () => {
-    // eslint-disable-next-line react-hooks/rules-of-hooks
+    // oxlint-disable-next-line eslint-plugin-react-hooks/rules-of-hooks
     inputRef = useRef();
     return inputRef;
   };
@@ -327,7 +327,6 @@ export function CustomOptionWithIndeterminateCheckbox() {
           Option: (props) => (
             <Option
               {...props}
-                  // eslint-disable-next-line react/prop-types
               indeterminate={props.value > 2}
               ref={createInputRef()}
             />
@@ -352,15 +351,14 @@ export function CustomValueContainer() {
       <SingleSelect
         closeMenuOnSelect={false}
         components={{
-        Option,
-        ValueContainer: (props) => (
-          <ValueContainer
-            {...props}
-                /* eslint-disable react/prop-types */
-            valueText={`participant${props.getValue().length > 1 ? 's' : ''} selected`}
-          />
-        ),
-      }}
+          Option,
+          ValueContainer: (props) => (
+            <ValueContainer
+              {...props}
+              valueText={`participant${props.getValue().length > 1 ? 's' : ''} selected`}
+            />
+          ),
+        }}
         hideSelectedOptions={false}
         inputId="custom-value-container-select"
         isMulti

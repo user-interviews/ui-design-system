@@ -1,12 +1,12 @@
 import React, { useCallback, useState, useEffect } from 'react';
-import { createPortal } from 'react-dom';
 import DatePicker, {
   getDefaultLocale,
   registerLocale,
   setDefaultLocale,
 } from 'react-datepicker';
-import { format, isDate, isValid, parse, parseISO } from 'date-fns';
+import { createPortal } from 'react-dom';
 
+import { format, isDate, isValid, parse, parseISO } from 'date-fns';
 import { enAU, enCA, enGB, enUS, enZA, fr, frCA, de } from 'date-fns/locale';
 
 import { PickerEnforcedInput } from './PickerEnforcedInput';
@@ -202,12 +202,12 @@ function DateTimePicker({
         }
         customInput={
           showPickerEnforcedInput ? (
-          <PickerEnforcedInput
-            disabled={disabled}
-            inputClassName={inputClassName}
-            name={name}
-            startDate={startDate}
-          />
+            <PickerEnforcedInput
+              disabled={disabled}
+              inputClassName={inputClassName}
+              name={name}
+              startDate={startDate}
+            />
           ) : undefined
         }
         dateFormat={getDateFormat()}

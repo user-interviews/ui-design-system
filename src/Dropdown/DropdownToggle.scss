@@ -9,7 +9,8 @@ $primary: $ux-emerald-600;
     all: unset;
   }
 
-  i, svg {
+  i,
+  svg {
     &.icon-left {
       margin-right: var(--synth-spacing-2);
     }

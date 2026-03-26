@@ -7,7 +7,9 @@
 
   :global(.nav-link) {
     color: var(--ux-gray-800);
-    font: 400 0.875rem/1.25rem Inter, sans-serif;
+    font:
+      400 0.875rem/1.25rem Inter,
+      sans-serif;
     text-decoration: none;
     border: none;
     border-radius: 0;
@@ -27,7 +29,7 @@
   .flexWrapUnset {
     flex-wrap: nowrap;
   }
-  
+
   .navItemButtonFullHeight {
     :global(.nav-item .button) {
       height: calc(100% + 2px);

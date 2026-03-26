@@ -6,7 +6,7 @@ $card-stack-horizontal-padding: 12px;
   display: flex;
   flex-direction: column;
   width: 100%;
-  
+
   @include media-breakpoint-down(sm) {
     padding: 0 $card-stack-horizontal-padding;
   }
@@ -16,7 +16,7 @@ $card-stack-horizontal-padding: 12px;
   }
 
   &--xs {
-   max-width: var(--card-width-xs);
+    max-width: var(--card-width-xs);
   }
 
   &--sm {

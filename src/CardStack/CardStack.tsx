@@ -1,13 +1,13 @@
 import React from 'react';
+
 import classNames from 'classnames';
 
-import { CardSizes } from '../Card';
+import type { CardSizes } from '../Card';
 
 import './CardStack.scss';
 
 type CardStackProps = {
-  size?: typeof CardSizes[keyof typeof CardSizes];
-  // eslint-disable-next-line camelcase
+  size?: (typeof CardSizes)[keyof typeof CardSizes];
   UNSAFE_className?: string;
   children: React.ReactNode;
 };
@@ -15,7 +15,6 @@ type CardStackProps = {
 function CardStack({
   children,
 
-  // eslint-disable-next-line camelcase
   UNSAFE_className,
 
   size,
@@ -23,11 +22,9 @@ function CardStack({
 }: CardStackProps) {
   return (
     <div
-      className={classNames(
-      UNSAFE_className,
-      'CardStack',
-      { [`CardStack--${size}`]: size },
-    )}
+      className={classNames(UNSAFE_className, 'CardStack', {
+        [`CardStack--${size}`]: size,
+      })}
       {...props}
     >
       {children}

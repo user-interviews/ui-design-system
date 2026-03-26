@@ -30,7 +30,7 @@ $input-trailing-text-max-width-before-hiding: 200px;
     right: var(--synth-spacing-4);
     top: 50%;
     transform: translateY(-50%);
-    pointer-events: none; 
+    pointer-events: none;
     z-index: 3;
 
     &--input-type-number {
@@ -58,6 +58,5 @@ $input-trailing-text-max-width-before-hiding: 200px;
     &:hover {
       background-color: var(--ux-gray-200);
     }
-
   }
 }

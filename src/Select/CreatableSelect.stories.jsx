@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 
 import Button from 'src/Button';
-import CreatableSelect from 'src/Select/CreatableSelect';
 import FormGroup from 'src/FormGroup';
-import {
-  Modal, ModalHeader, ModalBody, ModalFooter,
-} from 'src/Modal';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'src/Modal';
+import CreatableSelect from 'src/Select/CreatableSelect';
 
 export default {
   title: 'Components/Selects/Creatable',
@@ -79,7 +77,9 @@ export function InModal() {
           dismissButtonText="Cancel"
           onRequestClose={handleRequestClose}
         >
-          <Button type="submit" variant="primary">Confirm</Button>
+          <Button type="submit" variant="primary">
+            Confirm
+          </Button>
         </ModalFooter>
       </Modal>
     </>

@@ -1,6 +1,6 @@
 import React from 'react';
-import classNames from 'classnames';
 
+import classNames from 'classnames';
 import RBAccordion from 'react-bootstrap/Accordion';
 
 type AccordionProps = {
@@ -25,7 +25,6 @@ type AccordionProps = {
     Renders accordion edge-to-edge with its parent container
   */
   flush?: boolean;
-  // eslint-disable-next-line camelcase
   UNSAFE_className?: string;
   /**
     Callback fired when the active item changes
@@ -41,7 +40,6 @@ function Accordion({
   children,
   flush,
   onSelect,
-  // eslint-disable-next-line camelcase
   UNSAFE_className,
 }: AccordionProps) {
   return (
@@ -54,7 +52,7 @@ function Accordion({
       flush={flush}
       onSelect={onSelect}
     >
-      { children }
+      {children}
     </RBAccordion>
   );
 }

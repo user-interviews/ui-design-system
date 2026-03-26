@@ -4,6 +4,7 @@ import React, {
   type HTMLAttributes,
   type ReactNode,
 } from 'react';
+
 import classNames from 'classnames';
 
 import { LoadingSkeleton } from '../LoadingSkeleton';
@@ -53,12 +54,17 @@ function Card({
     <>
       <LoadingSkeleton height={24} width="33%" />
       <br />
-      {Array(loadingSkeletonParagraphCount).fill(0).map((_, i) => (
-        // eslint-disable-next-line react/no-array-index-key
-        <div className="Card__loading-skeleton-paragraphs" key={`skeleton-paragraph-${i}`}>
-          <LoadingSkeleton count={3} />
-        </div>
-      ))}
+      {Array(loadingSkeletonParagraphCount)
+        .fill(0)
+        .map((_, i) => (
+          // oxlint-disable-next-line react/no-array-index-key
+          <div
+            className="Card__loading-skeleton-paragraphs"
+            key={`skeleton-paragraph-${i}`}
+          >
+            <LoadingSkeleton count={3} />
+          </div>
+        ))}
     </>
   );
 
@@ -66,30 +72,29 @@ function Card({
     elementType,
     {
       ...props,
-      className: classNames(
-        'Card',
-        { [`Card--${size}`]: size },
-        className,
-        {
-          'Card--divided': divided,
-          'Card--no-padding': noPadding,
-        },
-      ),
+      className: classNames('Card', { [`Card--${size}`]: size }, className, {
+        'Card--divided': divided,
+        'Card--no-padding': noPadding,
+      }),
     },
-    (isLoading ? (loadingSkeleton || defaultLoadingSkeleton) : (
+    isLoading ? (
+      loadingSkeleton || defaultLoadingSkeleton
+    ) : (
       <>
         {title && (
           <div className="Card__header">
             <h2 className="Card__title">{title}</h2>
-            {helperText && <span className="Card__helper-text">{helperText}</span>}
-          </div>
+            {helperText && (
+              <span className="Card__helper-text">{helperText}</span>
             )}
+          </div>
+        )}
 
-        {divided && <hr className="Card__divider" /> }
-        {subTitle && <h3 className="Card__subtitle">{subTitle}</h3> }
+        {divided && <hr className="Card__divider" />}
+        {subTitle && <h3 className="Card__subtitle">{subTitle}</h3>}
         {children}
       </>
-    )),
+    ),
   );
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import classNames from 'classnames';
 
 import './Pills.scss';
@@ -8,16 +9,9 @@ type PillsProps = {
   children?: React.ReactNode;
 };
 
-function Pills({
-  children,
-  className,
-  ...props
-}: PillsProps) {
+function Pills({ children, className, ...props }: PillsProps) {
   return (
-    <div
-      className={classNames('Pills', className)}
-      {...props}
-    >
+    <div className={classNames('Pills', className)} {...props}>
       {children}
     </div>
   );

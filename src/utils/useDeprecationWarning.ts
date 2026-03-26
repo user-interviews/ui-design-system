@@ -1,20 +1,21 @@
 import { useEffect } from 'react';
 
 type useDeprecationWarningProps = {
-  componentName: string,
-  message?: string,
-}
+  componentName: string;
+  message?: string;
+};
 
 export function useDeprecationWarning({
   componentName,
   message = '',
-} : useDeprecationWarningProps) {
+}: useDeprecationWarningProps) {
   useEffect(() => {
     const warningMessage = `Warning: ${componentName} is deprecated and will be removed in a future release.${
-      message ? ` ${message}` : ''}`;
+      message ? ` ${message}` : ''
+    }`;
 
     if (process.env.NODE_ENV === 'development') {
-      // eslint-disable-next-line no-console
+      // oxlint-disable-next-line no-console
       console.warn(warningMessage);
     }
   }, [componentName, message]);

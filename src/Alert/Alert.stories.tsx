@@ -1,9 +1,9 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+
 import { action } from 'storybook/actions';
 
-import { Alert, MessageTypes } from 'src/Alert';
-
 import mdx from './Alert.mdx';
+import { Alert, MessageTypes } from 'src/Alert';
 
 export default {
   title: 'Components/Alert',
@@ -97,7 +97,10 @@ export function WithCallToAction() {
     <>
       <p>Default CTA rendered by component</p>
       <Alert
-        action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+        action={{
+          content: 'Primary action',
+          url: 'https://www.userinterviews.com/',
+        }}
         id="8"
         message="Success message"
         removeBorderLeft={false}
@@ -106,7 +109,10 @@ export function WithCallToAction() {
         onDismiss={onDismiss}
       />
       <Alert
-        action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+        action={{
+          content: 'Primary action',
+          url: 'https://www.userinterviews.com/',
+        }}
         id="9"
         message="Info message"
         removeBorderLeft={false}
@@ -115,7 +121,10 @@ export function WithCallToAction() {
         onDismiss={onDismiss}
       />
       <Alert
-        action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+        action={{
+          content: 'Primary action',
+          url: 'https://www.userinterviews.com/',
+        }}
         id="11"
         message="Error message"
         removeBorderLeft={false}
@@ -124,7 +133,10 @@ export function WithCallToAction() {
         onDismiss={onDismiss}
       />
       <Alert
-        action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+        action={{
+          content: 'Primary action',
+          url: 'https://www.userinterviews.com/',
+        }}
         id="12"
         message="Warning message"
         removeBorderLeft={false}
@@ -133,7 +145,10 @@ export function WithCallToAction() {
         onDismiss={onDismiss}
       />
       <Alert
-        action={{ content: 'Primary action', url: 'https://www.userinterviews.com/' }}
+        action={{
+          content: 'Primary action',
+          url: 'https://www.userinterviews.com/',
+        }}
         id="13"
         message="Some context around new feature if needed"
         removeBorderLeft={false}

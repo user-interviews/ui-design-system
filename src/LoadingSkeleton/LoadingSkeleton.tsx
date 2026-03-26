@@ -1,7 +1,10 @@
 import React from 'react';
-import classNames from 'classnames';
+import Skeleton, {
+  SkeletonTheme,
+  type SkeletonProps,
+} from 'react-loading-skeleton';
 
-import Skeleton, { SkeletonTheme, type SkeletonProps } from 'react-loading-skeleton';
+import classNames from 'classnames';
 
 import colors from '../Styles/colors/palette';
 
@@ -65,7 +68,10 @@ function LoadingSkeleton({
         width={width}
         {...props}
         className={classNames('LoadingSkeleton', className)}
-        containerClassName={classNames('loadingSkeletonContainer', props.containerClassName)}
+        containerClassName={classNames(
+          'loadingSkeletonContainer',
+          props.containerClassName,
+        )}
       />
     </SkeletonTheme>
   );

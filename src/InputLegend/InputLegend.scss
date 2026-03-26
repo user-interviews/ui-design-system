@@ -1,8 +1,8 @@
 @import '../../scss/forms/input_label';
 
 .InputLegend {
-    // Ensure <legend> does not default to width: 100% 
-    // when creating inline FormGroup
-    width: unset;
-    margin-right: 12px;
+  // Ensure <legend> does not default to width: 100%
+  // when creating inline FormGroup
+  width: unset;
+  margin-right: 12px;
 }

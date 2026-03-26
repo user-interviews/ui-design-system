@@ -1,9 +1,10 @@
 import React from 'react';
-import classNames from 'classnames';
 import {
   Dropdown as RBDropdown,
   type DropdownProps as RBDropdownProps,
 } from 'react-bootstrap';
+
+import classNames from 'classnames';
 
 type DropdownProps = {
   /**
@@ -96,7 +97,7 @@ function Dropdown({
       onToggle={onToggle}
       {...props}
     >
-      { children }
+      {children}
     </RBDropdown>
   );
 }

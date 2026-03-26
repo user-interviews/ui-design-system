@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import FormGroup from '../FormGroup';
 import { Heading, HeadingSize } from '../Heading';
 import MoneyInput from './MoneyInput';
-
 import mdx from './MoneyInput.mdx';
 
 export default {
@@ -29,13 +28,11 @@ export function Default(args) {
 
   return (
     <FormGroup label="Incentive amount" labelHtmlFor="money-input-1">
-      <MoneyInput
-        value={value}
-        onValueChange={handleOnValueChange}
-        {...args}
-      />
+      <MoneyInput value={value} onValueChange={handleOnValueChange} {...args} />
       <br />
-      <Heading level={1} size={HeadingSize.SMALL}>Value: {value}</Heading>
+      <Heading level={1} size={HeadingSize.SMALL}>
+        Value: {value}
+      </Heading>
     </FormGroup>
   );
 }
@@ -63,13 +60,11 @@ export function Step(args) {
       label="Incentive amount"
       labelHtmlFor="money-input-2"
     >
-      <MoneyInput
-        value={value}
-        onValueChange={handleOnValueChange}
-        {...args}
-      />
+      <MoneyInput value={value} onValueChange={handleOnValueChange} {...args} />
       <br />
-      <Heading level={1} size={HeadingSize.SMALL}>Value: {value}</Heading>
+      <Heading level={1} size={HeadingSize.SMALL}>
+        Value: {value}
+      </Heading>
     </FormGroup>
   );
 }
@@ -98,13 +93,11 @@ export function Prefix(args) {
       label="Incentive amount"
       labelHtmlFor="money-input-3"
     >
-      <MoneyInput
-        value={value}
-        onValueChange={handleOnValueChange}
-        {...args}
-      />
+      <MoneyInput value={value} onValueChange={handleOnValueChange} {...args} />
       <br />
-      <Heading level={1} size={HeadingSize.SMALL}>Value: {value}</Heading>
+      <Heading level={1} size={HeadingSize.SMALL}>
+        Value: {value}
+      </Heading>
     </FormGroup>
   );
 }

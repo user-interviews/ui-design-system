@@ -1,13 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { TransitionGroup as ReactTransitionGroup } from 'react-transition-group';
+
+import PropTypes from 'prop-types';
 
 export function TransitionGroup({ children, className = '' }) {
   return (
-    <ReactTransitionGroup
-      aria-live="polite"
-      className={className}
-    >
+    <ReactTransitionGroup aria-live="polite" className={className}>
       {children}
     </ReactTransitionGroup>
   );

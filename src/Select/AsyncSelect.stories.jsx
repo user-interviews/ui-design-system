@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
 
-import AsyncSelect from 'src/Select/AsyncSelect';
+import Option from './Option';
 import Button from 'src/Button';
 import FormGroup from 'src/FormGroup';
-import {
-  Modal, ModalHeader, ModalBody, ModalFooter,
-} from 'src/Modal';
-
-import Option from './Option';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'src/Modal';
+import AsyncSelect from 'src/Select/AsyncSelect';
 
 export default {
   title: 'Components/Selects/Async',
@@ -23,27 +20,30 @@ const options = [
 ];
 
 async function loadOptions(search) {
-  await new Promise((resolve) => { setTimeout(resolve, 2000); });
+  await new Promise((resolve) => {
+    setTimeout(resolve, 2000);
+  });
 
   if (!search || !search.length) {
     return options;
   }
 
-  return options.filter(({ label }) => label.toLowerCase().includes(search.toLowerCase()));
+  return options.filter(({ label }) =>
+    label.toLowerCase().includes(search.toLowerCase()),
+  );
 }
 
 export function Default() {
   return (
-    <FormGroup
-      label="Default AsyncSelect"
-      labelHtmlFor="default-async-select"
-    >
+    <FormGroup label="Default AsyncSelect" labelHtmlFor="default-async-select">
       <AsyncSelect
         getOptionLabel={({ label }) => label}
         getOptionValue={({ value }) => value}
         inputId="default-async-select"
         loadOptions={loadOptions}
-        noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+        noOptionsMessage={({ inputValue }) =>
+          inputValue.length ? 'No results!' : 'Type to search...'
+        }
       />
     </FormGroup>
   );
@@ -80,7 +80,9 @@ export function InModal() {
               inputId="in-modal-async-select"
               loadOptions={loadOptions}
               modal
-              noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+              noOptionsMessage={({ inputValue }) =>
+                inputValue.length ? 'No results!' : 'Type to search...'
+              }
             />
           </FormGroup>
         </ModalBody>
@@ -88,7 +90,9 @@ export function InModal() {
           dismissButtonText="Cancel"
           onRequestClose={handleRequestClose}
         >
-          <Button type="submit" variant="primary">Confirm</Button>
+          <Button type="submit" variant="primary">
+            Confirm
+          </Button>
         </ModalFooter>
       </Modal>
     </>
@@ -97,10 +101,7 @@ export function InModal() {
 
 export function MultiSelect() {
   return (
-    <FormGroup
-      label="Async MultiSelect"
-      labelHtmlFor="async-multiselect"
-    >
+    <FormGroup label="Async MultiSelect" labelHtmlFor="async-multiselect">
       <AsyncSelect
         cacheOptions
         closeMenuOnSelect={false}
@@ -111,7 +112,9 @@ export function MultiSelect() {
         isClearable
         isMulti
         loadOptions={loadOptions}
-        noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+        noOptionsMessage={({ inputValue }) =>
+          inputValue.length ? 'No results!' : 'Type to search...'
+        }
       />
     </FormGroup>
   );

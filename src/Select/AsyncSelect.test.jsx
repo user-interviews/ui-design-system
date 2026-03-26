@@ -1,15 +1,18 @@
 import React from 'react';
-import Async from 'react-select/async';
 import { create } from 'react-test-renderer';
+
+import Async from 'react-select/async';
 
 import { AsyncSelect, SELECT_SIZES } from 'src/Select';
 import { SIZE_SMALL_HEIGHT } from 'src/Select/styles';
 
-const renderAsync = (props) => create(
-  <AsyncSelect inputId="async-select" loadOptions={jest.fn()} {...props} />,
-);
+const renderAsync = (props) =>
+  create(
+    <AsyncSelect inputId="async-select" loadOptions={jest.fn()} {...props} />,
+  );
 
-const getContentStyles = ({ styles }) => styles.control({}, { isDisabled: false });
+const getContentStyles = ({ styles }) =>
+  styles.control({}, { isDisabled: false });
 
 describe('AsyncSelect', () => {
   test('size prop set to small will set height of select', () => {

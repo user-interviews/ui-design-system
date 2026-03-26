@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
+
 import { action } from 'storybook/actions';
 
-import Button from '../Button';
 import Form from '.';
+import Button from '../Button';
 import FormControlLabel from '../FormControlLabel';
 import FormGroup from '../FormGroup';
 import Input from '../Input';
 import RadioButton from '../RadioButton';
 import RadioButtonGroup from '../RadioButtonGroup';
-
 import mdx from './Form.mdx';
 
 export default {
@@ -30,9 +30,7 @@ function InputComponent(props) {
   const [value, setValue] = useState('');
   const handleChangeValue = (event) => setValue(event.target.value);
 
-  return (
-    <Input value={value} onChange={handleChangeValue} {...props} />
-  );
+  return <Input value={value} onChange={handleChangeValue} {...props} />;
 }
 
 export function Default() {
@@ -41,7 +39,12 @@ export function Default() {
       <FormGroup id="first-name" label="First name" labelHtmlFor="first-name">
         <InputComponent id="first-name-input" name="first-name" type="text" />
       </FormGroup>
-      <FormGroup id="last-name" label="Last name" labelHtmlFor="last-name" required>
+      <FormGroup
+        id="last-name"
+        label="Last name"
+        labelHtmlFor="last-name"
+        required
+      >
         <InputComponent id="last-name-input" name="last-name" type="text" />
       </FormGroup>
       <FormGroup id="email" label="Email" labelHtmlFor="email">
@@ -71,7 +74,9 @@ export function Default() {
           text="second choice"
         />
       </RadioButtonGroup>
-      <Button type="submit" variant="primary">Save</Button>
+      <Button type="submit" variant="primary">
+        Save
+      </Button>
     </Form>
   );
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 
 import Button from '../Button';
@@ -38,35 +39,33 @@ function DrawerFooter({
 }: DrawerFooterProps) {
   return (
     <div className="DrawerFooter">
-      <div>
-        {children}
-      </div>
+      <div>{children}</div>
       <div className="DrawerFooter__actions">
         {onSecondaryAction && (
-        <Button
-          disabled={secondaryActionDisabled}
-          isLoading={isSecondaryActionLoading}
-          loadingText={secondaryActionLoadingText}
-          type="button"
-          variant="transparent"
-          onClick={onSecondaryAction}
-        >
-          {secondaryActionText}
-        </Button>
-      )}
+          <Button
+            disabled={secondaryActionDisabled}
+            isLoading={isSecondaryActionLoading}
+            loadingText={secondaryActionLoadingText}
+            type="button"
+            variant="transparent"
+            onClick={onSecondaryAction}
+          >
+            {secondaryActionText}
+          </Button>
+        )}
         {onPrimaryAction && (
-        <Button
-          disabled={primaryActionDisabled}
-          isLoading={isPrimaryActionLoading}
-          leadingIcon={primaryActionIcon}
-          loadingText={primaryActionLoadingText}
-          type="button"
-          variant={primaryActionVariant}
-          onClick={onPrimaryAction}
-        >
-          {primaryActionText}
-        </Button>
-      )}
+          <Button
+            disabled={primaryActionDisabled}
+            isLoading={isPrimaryActionLoading}
+            leadingIcon={primaryActionIcon}
+            loadingText={primaryActionLoadingText}
+            type="button"
+            variant={primaryActionVariant}
+            onClick={onPrimaryAction}
+          >
+            {primaryActionText}
+          </Button>
+        )}
       </div>
     </div>
   );

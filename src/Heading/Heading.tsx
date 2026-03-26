@@ -1,4 +1,4 @@
-import { createElement, ReactNode } from 'react';
+import { createElement, type ReactNode } from 'react';
 
 import classNames from 'classnames';
 
@@ -10,7 +10,7 @@ export enum HeadingSize {
   SMALL = 'small',
   TEXT = 'text',
   SUBTEXT = 'subtext',
-};
+}
 
 export interface HeadingProps {
   children?: ReactNode;
@@ -73,12 +73,12 @@ export function Heading({
     {
       style: { textAlign },
       className: classNames(
-        className, /* TODO Remove this and wrap all overrides into variants */
-        'Heading', /* TODO Remove this once we remove anything targetting this directly */
+        className /* TODO Remove this and wrap all overrides into variants */,
+        'Heading' /* TODO Remove this once we remove anything targetting this directly */,
         size ? SIZE_CLASSES[size] : LEVEL_CLASSES[level],
         WEIGHT_CLASSES[weight],
       ),
-      ...props, /* TODO Remove this */
+      ...props /* TODO Remove this */,
     },
     children,
   );

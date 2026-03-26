@@ -1,14 +1,14 @@
-import React from "react";
-import propTypes from "prop-types";
-import Async from "react-select/async";
+import React from 'react';
 
-import zStack from "src/Styles/zStack";
+import propTypes from 'prop-types';
+import Async from 'react-select/async';
 
-import { defaultStyles, defaultTheme, SELECT_SIZES } from "./styles";
+import { defaultStyles, defaultTheme, SELECT_SIZES } from './styles';
+import zStack from 'src/Styles/zStack';
 
 function AsyncSelect({
-  "aria-label": ariaLabel,
-  "aria-labelledby": ariaLabelledBy,
+  'aria-label': ariaLabel,
+  'aria-labelledby': ariaLabelledBy,
   cacheOptions,
   className,
   closeMenuOnSelect,
@@ -30,7 +30,7 @@ function AsyncSelect({
   noOptionsMessage,
   size = SELECT_SIZES.SMALL,
   value,
-  placeholder = "Search",
+  placeholder = 'Search',
   onChange,
   ...props
 }) {
@@ -40,7 +40,7 @@ function AsyncSelect({
       aria-label={ariaLabel}
       aria-labelledby={ariaLabelledBy}
       cacheOptions={cacheOptions}
-      className={`${className || ""} AsyncSelect`}
+      className={`${className || ''} AsyncSelect`}
       classNamePrefix="Select"
       closeMenuOnSelect={closeMenuOnSelect}
       components={components}
@@ -75,8 +75,8 @@ function AsyncSelect({
 }
 
 AsyncSelect.propTypes = {
-  "aria-label": propTypes.string,
-  "aria-labelledby": propTypes.string,
+  'aria-label': propTypes.string,
+  'aria-labelledby': propTypes.string,
   cacheOptions: propTypes.bool,
   className: propTypes.string,
   closeMenuOnSelect: propTypes.bool,

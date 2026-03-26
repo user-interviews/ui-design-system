@@ -1,7 +1,8 @@
 @import '../colors';
 @import '../typography';
 
-.InputLabel, .InputLegend {
+.InputLabel,
+.InputLegend {
   @include synth-font-type-30--bold;
 
   display: flex;
@@ -15,4 +16,3 @@
     color: var(--ux-gray-900);
   }
 }
-

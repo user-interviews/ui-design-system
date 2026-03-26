@@ -1,11 +1,12 @@
 import React, { forwardRef } from 'react';
-import classNames from 'classnames';
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   Button as RBButton,
   type ButtonProps as RBButtonProps,
 } from 'react-bootstrap';
+
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
 
 import { faSpinnerThird } from '../font_awesome/regular';
 
@@ -35,38 +36,52 @@ export type ButtonProps = RBButtonProps & {
   leadingIcon?: IconDefinition;
   loadingText?: string;
   trailingIcon?: IconDefinition;
-}
+};
 
-const Button = forwardRef<HTMLElement, ButtonProps>(({
-  children,
-  className,
-  disabled,
-  isLoading,
-  leadingIcon,
-  loadingText = 'Loading...',
-  trailingIcon,
-  ...props
-}, ref) => (
-  <RBButton
-    aria-disabled={disabled || isLoading}
-    className={classNames('Button', className)}
-    disabled={disabled || isLoading}
-    ref={ref}
-    {...props}
-  >
-    { !isLoading ? (
-      <>
-        { leadingIcon && (<FontAwesomeIcon className="icon-left" icon={leadingIcon} />)}
-        { children }
-        { trailingIcon && (<FontAwesomeIcon className="icon-right" icon={trailingIcon} />)}
-      </>
-    ) : (
-      <>
-        <FontAwesomeIcon className="icon-left btn-loading-spin" icon={faSpinnerThird as IconDefinition} />
-        {loadingText}
-      </>
-    )}
-  </RBButton>
-  ));
+const Button = forwardRef<HTMLElement, ButtonProps>(
+  (
+    {
+      children,
+      className,
+      disabled,
+      isLoading,
+      leadingIcon,
+      loadingText = 'Loading...',
+      trailingIcon,
+      ...props
+    },
+    ref,
+  ) => (
+    <RBButton
+      aria-disabled={disabled || isLoading}
+      className={classNames('Button', className)}
+      disabled={disabled || isLoading}
+      ref={ref}
+      {...props}
+    >
+      {!isLoading ? (
+        <>
+          {leadingIcon && (
+            <FontAwesomeIcon className="icon-left" icon={leadingIcon} />
+          )}
+          {children}
+          {trailingIcon && (
+            <FontAwesomeIcon className="icon-right" icon={trailingIcon} />
+          )}
+        </>
+      ) : (
+        <>
+          <FontAwesomeIcon
+            className="icon-left btn-loading-spin"
+            icon={faSpinnerThird as IconDefinition}
+          />
+          {loadingText}
+        </>
+      )}
+    </RBButton>
+  ),
+);
+
+Button.displayName = 'Button';
 
 export default Button;

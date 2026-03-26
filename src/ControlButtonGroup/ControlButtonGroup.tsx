@@ -9,7 +9,7 @@ type ControlButtonGroupProps = {
   childChecked: (...args: unknown[]) => boolean;
   children: React.ReactNode;
   handleChangeValue: React.ChangeEventHandler<HTMLInputElement>;
-  orientation?: typeof ORIENTATIONS[keyof typeof ORIENTATIONS];
+  orientation?: (typeof ORIENTATIONS)[keyof typeof ORIENTATIONS];
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
 };
 
@@ -30,11 +30,13 @@ function ControlButtonGroup({
     const childProps: {
       bordered?: boolean;
       checked?: unknown;
-      onChange?: typeof onChange,
-    } = onChange ? {
-      checked,
-      onChange: handleChangeValue,
-    } : {};
+      onChange?: typeof onChange;
+    } = onChange
+      ? {
+          checked,
+          onChange: handleChangeValue,
+        }
+      : {};
 
     const isDOMElement = typeof child.type === 'string';
 

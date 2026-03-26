@@ -1,6 +1,7 @@
 import { useCallback, useReducer } from 'react';
+
+import { type MessageTypes } from '../Alert/Alert';
 import { generateUUID } from '../utils/uuid';
-import { MessageTypes } from '../Alert/Alert';
 
 const ACTIONS = {
   CLEAR_MESSAGES: 'CLEAR_MESSAGES',
@@ -11,18 +12,16 @@ const ACTIONS = {
 type Action = {
   content: string;
   url: string;
-}
+};
 
-type MessageType = typeof MessageTypes[keyof typeof MessageTypes];
+type MessageType = (typeof MessageTypes)[keyof typeof MessageTypes];
 
-export type SetMessageHandler = (
-  arg0: {
-    action?: Action;
-    type: MessageType;
-    title?: string;
-    message: string;
-  }
-) => void;
+export type SetMessageHandler = (arg0: {
+  action?: Action;
+  type: MessageType;
+  title?: string;
+  message: string;
+}) => void;
 
 export type Message = {
   id: string;
@@ -30,7 +29,7 @@ export type Message = {
   title?: string;
   message?: string;
   action?: Action;
-}
+};
 
 const createMessage = (
   type: MessageType,
@@ -47,24 +46,25 @@ const createMessage = (
 
 const messagesReducer = (
   state: Message[],
-  args: (
-    {
-      type: typeof ACTIONS.SET_MESSAGE;
-      payload: {
-        type: MessageType;
-        title?: string;
-        message?: string;
-        action?: Action
+  args:
+    | {
+        type: typeof ACTIONS.SET_MESSAGE;
+        payload: {
+          type: MessageType;
+          title?: string;
+          message?: string;
+          action?: Action;
+        };
       }
-    } | {
-      type: typeof ACTIONS.DISMISS_MESSAGE;
-      payload: {
-        messageId: string;
+    | {
+        type: typeof ACTIONS.DISMISS_MESSAGE;
+        payload: {
+          messageId: string;
+        };
       }
-    } | {
-      type: typeof ACTIONS.CLEAR_MESSAGES
-    }
-  ),
+    | {
+        type: typeof ACTIONS.CLEAR_MESSAGES;
+      },
 ) => {
   switch (args.type) {
     case ACTIONS.SET_MESSAGE:
@@ -93,46 +93,46 @@ const useToast = (initialMessages: Message[] = []) => {
     dispatch({ type: ACTIONS.CLEAR_MESSAGES });
   }, []);
 
-  const setMessage = useCallback((
-    arg0: MessageType | {
-      action?: Action;
-      type: MessageType;
-      title?: string;
-      message: string;
-    },
-    arg1?: string,
-    arg2?: Action,
-    arg3?: string,
-  ) => {
-    if (typeof arg0 === 'string') {
-      dispatch({
-        type: ACTIONS.SET_MESSAGE,
-        payload: {
-          type: arg0,
-          message: arg1 || undefined,
-          action: arg2 || undefined,
-          title: arg3 || undefined,
-        },
-      });
-    } else {
-      const {
-        action,
-        type,
-        message,
-        title,
-      } = arg0;
+  const setMessage = useCallback(
+    (
+      arg0:
+        | MessageType
+        | {
+            action?: Action;
+            type: MessageType;
+            title?: string;
+            message: string;
+          },
+      arg1?: string,
+      arg2?: Action,
+      arg3?: string,
+    ) => {
+      if (typeof arg0 === 'string') {
+        dispatch({
+          type: ACTIONS.SET_MESSAGE,
+          payload: {
+            type: arg0,
+            message: arg1 || undefined,
+            action: arg2 || undefined,
+            title: arg3 || undefined,
+          },
+        });
+      } else {
+        const { action, type, message, title } = arg0;
 
-      dispatch({
-        type: ACTIONS.SET_MESSAGE,
-        payload: {
-          action,
-          type,
-          message,
-          title,
-        },
-      });
-    }
-  }, []);
+        dispatch({
+          type: ACTIONS.SET_MESSAGE,
+          payload: {
+            action,
+            type,
+            message,
+            title,
+          },
+        });
+      }
+    },
+    [],
+  );
 
   const dismissMessage = useCallback((messageId) => {
     dispatch({ type: ACTIONS.DISMISS_MESSAGE, payload: { messageId } });

@@ -1,7 +1,10 @@
 import React from 'react';
-import classnames from 'classnames';
+
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classnames from 'classnames';
+
+import Button, { type ButtonProps } from '../Button/Button';
 import {
   faPlusCircle,
   faMinusCircle,
@@ -13,7 +16,6 @@ import {
   faTimes,
   faExpandAlt,
 } from '../font_awesome/regular';
-import Button, { type ButtonProps } from '../Button/Button';
 
 export const IconButtonActions = {
   ADD: {
@@ -55,15 +57,16 @@ export const IconButtonActions = {
 } as const;
 
 export type IconButtonProps = (
-  {
-    action: keyof typeof IconButtonActions;
-    ariaLabel?: string;
-    icon?: never;
-  } | {
-    action?: never;
-    ariaLabel: string;
-    icon: IconDefinition;
-  }
+  | {
+      action: keyof typeof IconButtonActions;
+      ariaLabel?: string;
+      icon?: never;
+    }
+  | {
+      action?: never;
+      ariaLabel: string;
+      icon: IconDefinition;
+    }
 ) & {
   size?: 'sm' | 'lg';
 } & ButtonProps;
@@ -82,7 +85,7 @@ function IconButton({
     if (action) {
       return ariaLabel || IconButtonActions[action]?.ariaLabel;
     }
-      return ariaLabel;
+    return ariaLabel;
   };
 
   return (

@@ -1,10 +1,10 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
 import Card from '../Card';
 import Flex from './Flex';
-
 import mdx from './Flex.mdx';
+
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
 const meta: Meta<typeof Flex> = {
   component: Flex,
@@ -57,7 +57,11 @@ export const JustifyContent: Story = {
   render: ({ ...args }) => (
     <Flex {...args}>
       <Card size="xs" title="Card 1" />
-      <Card size="xs" subTitle={args.justifyContent} title="justify-content: " />
+      <Card
+        size="xs"
+        subTitle={args.justifyContent}
+        title="justify-content: "
+      />
       <Card size="xs" title="Card 3" />
     </Flex>
   ),

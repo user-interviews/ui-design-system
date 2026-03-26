@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 
-import { FlexContainer } from 'src/FlexContainer';
-import { faSearch } from '../font_awesome/solid';
 import FormGroup from '.';
-import Input from '../Input';
-import FormControlLabel from '../FormControlLabel';
-import RadioButtonGroup from '../RadioButtonGroup';
 import { ORIENTATIONS } from '../ControlButtonGroup';
+import { faSearch } from '../font_awesome/solid';
+import FormControlLabel from '../FormControlLabel';
+import Input from '../Input';
 import RadioButton from '../RadioButton';
-
+import RadioButtonGroup from '../RadioButtonGroup';
 import mdx from './FormGroup.mdx';
+import { FlexContainer } from 'src/FlexContainer';
 
 export default {
   title: 'Components/Form Elements/Form Group',
@@ -25,15 +24,17 @@ function InputComponent(props) {
   const [value, setValue] = useState('');
   const handleChangeValue = (event) => setValue(event.target.value);
 
-  return (
-    <Input value={value} onChange={handleChangeValue} {...props} />
-  );
+  return <Input value={value} onChange={handleChangeValue} {...props} />;
 }
 
 export function Default() {
   return (
     <FormGroup id="default">
-      <InputComponent id="default-input" name="default" placeholder="Placeholder text" />
+      <InputComponent
+        id="default-input"
+        name="default"
+        placeholder="Placeholder text"
+      />
     </FormGroup>
   );
 }
@@ -53,12 +54,12 @@ export function WithHelperText() {
 
 export function Required() {
   return (
-    <FormGroup
-      id="with-required"
-      label="Label"
-      required
-    >
-      <InputComponent id="with-required-input" name="required" placeholder="Text is required" />
+    <FormGroup id="with-required" label="Label" required>
+      <InputComponent
+        id="with-required-input"
+        name="required"
+        placeholder="Text is required"
+      />
     </FormGroup>
   );
 }
@@ -72,7 +73,10 @@ export function NoMargin() {
         noMargin
         required
       >
-        <InputComponent id="no-margin-1-input" placeholder="This FormGroup has no default margin" />
+        <InputComponent
+          id="no-margin-1-input"
+          placeholder="This FormGroup has no default margin"
+        />
       </FormGroup>
       <FormGroup
         label="Label"
@@ -80,7 +84,10 @@ export function NoMargin() {
         noMargin
         required
       >
-        <InputComponent id="no-margin-2-input" placeholder="This FormGroup has no default margin" />
+        <InputComponent
+          id="no-margin-2-input"
+          placeholder="This FormGroup has no default margin"
+        />
       </FormGroup>
     </FlexContainer>
   );
@@ -124,7 +131,13 @@ export function WithTrailingText() {
       label="Form Group with trailing text"
       labelHtmlFor="trailing-text-input"
     >
-      <InputComponent id="trailing-text-input" name="default" placeholder="Session length" trailingText="min" type="number" />
+      <InputComponent
+        id="trailing-text-input"
+        name="default"
+        placeholder="Session length"
+        trailingText="min"
+        type="number"
+      />
     </FormGroup>
   );
 }
@@ -230,7 +243,14 @@ export function WithErrors() {
   return (
     <FormGroup
       displayErrorText
-      errors={{ test: [<div>Sorry, we’re not able to accept this type of input. For more information, click <a href="http://www.google.com">here</a></div>] }}
+      errors={{
+        test: [
+          <div key="error-div-with-errors">
+            Sorry, we’re not able to accept this type of input. For more
+            information, click <a href="http://www.google.com">here</a>
+          </div>,
+        ],
+      }}
       id="with-errors"
       inputKey="test"
       label="Form Group with errors"
@@ -247,7 +267,6 @@ export function WithErrors() {
   );
 }
 
-/* eslint-disable react/prop-types */
 function ButtonGroupComponent({
   ButtonGroup,
   bordered,
@@ -280,12 +299,11 @@ function ButtonGroupComponent({
         value={value}
         onChange={handleChangeValue}
       >
-        { children }
+        {children}
       </ButtonGroup>
     </FormGroup>
   );
 }
-/* eslint-enable react/prop-types */
 
 export function WithRadioButtonGroup() {
   const orientation = ORIENTATIONS.COLUMN;

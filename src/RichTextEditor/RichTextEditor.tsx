@@ -1,15 +1,10 @@
-import type { IOptions } from 'sanitize-html';
-import type { Extension, Node as TipTapNode, Mark } from '@tiptap/core';
-
-import './RichTextEditor.scss';
-
 import React, {
-  forwardRef, useImperativeHandle, type AriaAttributes, type ForwardedRef, useEffect,
+  forwardRef,
+  useImperativeHandle,
+  type AriaAttributes,
+  type ForwardedRef,
+  useEffect,
 } from 'react';
-
-import classNames from 'classnames';
-
-import { EditorContent, useEditor } from '@tiptap/react';
 
 import Bold from '@tiptap/extension-bold';
 import BulletList from '@tiptap/extension-bullet-list';
@@ -24,17 +19,23 @@ import OrderedList from '@tiptap/extension-ordered-list';
 import Paragraph from '@tiptap/extension-paragraph';
 import Placeholder from '@tiptap/extension-placeholder';
 import Text from '@tiptap/extension-text';
-
+import { EditorContent, useEditor } from '@tiptap/react';
+import classNames from 'classnames';
 import sanitizeHtml from 'sanitize-html';
 
 import { LoadingSkeleton } from '../LoadingSkeleton';
-
+import { createActionHandlers } from './actionHandlers';
+import { OneLineLimit } from './oneLineLimit';
+import {
+  RichTextEditorActions,
+  RichTextEditorDefaultActionsArray,
+} from './richTextEditorActions';
 import RichTextEditorMenuBar from './RichTextEditorMenuBar';
 
-import { OneLineLimit } from './oneLineLimit';
+import type { Extension, Node as TipTapNode, Mark } from '@tiptap/core';
+import type { IOptions } from 'sanitize-html';
 
-import { RichTextEditorActions, RichTextEditorDefaultActionsArray } from './richTextEditorActions';
-import { createActionHandlers } from './actionHandlers';
+import './RichTextEditor.scss';
 
 const ExtendedLink = Link.extend({
   addKeyboardShortcuts() {
@@ -69,7 +70,7 @@ export type RichTextEditorProps = {
    Which actions to include in the taskbar. Available as constants.
    Current options are BOLD, ITALIC, LINK, UNLINK, UNORDERED_LIST and ORDERED_LIST
   */
-  availableActions?: typeof RichTextEditorActions[keyof typeof RichTextEditorActions][];
+  availableActions?: (typeof RichTextEditorActions)[keyof typeof RichTextEditorActions][];
   characterLimit?: number;
   className?: string;
   /**
@@ -94,125 +95,123 @@ export type RichTextEditorProps = {
     Callback function to call with sanitized HTML when editor state changes
   */
   onChange: (arg0: string) => void;
-}
+};
 
 export type RichTextEditorRef = {
   setContent: (content: string) => void;
-}
+};
 
-const RichTextEditor = forwardRef((
-  {
-    allowedAttributes,
-    allowedTags,
-    ariaAttributes,
-    availableActions = RichTextEditorDefaultActionsArray,
-    editable = true,
-    characterLimit,
-    className,
-    hasErrors,
-    id,
-    initialValue,
-    isOneLine,
-    onChange,
-    placeholder,
-    customExtensions = [],
-  }: RichTextEditorProps,
-  ref: ForwardedRef<RichTextEditorRef>,
-) => {
-  const oneLineExtension = isOneLine ? [OneLineLimit] : [];
-
-  const requiredExtensions = [
-    Document,
-    Text,
-    History,
-    HardBreak,
-    Paragraph,
-    ListItem,
-    Placeholder.configure({
+const RichTextEditor = forwardRef(
+  (
+    {
+      allowedAttributes,
+      allowedTags,
+      ariaAttributes,
+      availableActions = RichTextEditorDefaultActionsArray,
+      editable = true,
+      characterLimit,
+      className,
+      hasErrors,
+      id,
+      initialValue,
+      isOneLine,
+      onChange,
       placeholder,
-    }),
-    CharacterCount.configure({
-      limit: characterLimit,
-    }),
-  ];
+      customExtensions = [],
+    }: RichTextEditorProps,
+    ref: ForwardedRef<RichTextEditorRef>,
+  ) => {
+    const oneLineExtension = isOneLine ? [OneLineLimit] : [];
 
-  const optionalExtensions = [
-    {
-      name: RichTextEditorActions.BOLD,
-      config: Bold,
-    },
-    {
-      name: RichTextEditorActions.ITALIC,
-      config: Italic,
-    },
-    {
-      name: RichTextEditorActions.LINK,
-      config: ExtendedLink,
-    },
-    {
-      name: RichTextEditorActions.UNORDERED_LIST,
-      config: BulletList,
-    },
-    {
-      name: RichTextEditorActions.ORDERED_LIST,
-      config: OrderedList,
-    },
-  ].filter((extension) => availableActions.includes(extension.name))
-    .map((extension) => extension.config);
+    const requiredExtensions = [
+      Document,
+      Text,
+      History,
+      HardBreak,
+      Paragraph,
+      ListItem,
+      Placeholder.configure({
+        placeholder,
+      }),
+      CharacterCount.configure({
+        limit: characterLimit,
+      }),
+    ];
 
-  const editorExtensions = [
-    ...requiredExtensions,
-    ...optionalExtensions,
-    ...oneLineExtension,
-    ...customExtensions,
-  ];
+    const optionalExtensions = [
+      {
+        name: RichTextEditorActions.BOLD,
+        config: Bold,
+      },
+      {
+        name: RichTextEditorActions.ITALIC,
+        config: Italic,
+      },
+      {
+        name: RichTextEditorActions.LINK,
+        config: ExtendedLink,
+      },
+      {
+        name: RichTextEditorActions.UNORDERED_LIST,
+        config: BulletList,
+      },
+      {
+        name: RichTextEditorActions.ORDERED_LIST,
+        config: OrderedList,
+      },
+    ]
+      .filter((extension) => availableActions.includes(extension.name))
+      .map((extension) => extension.config);
 
-  const editor = useEditor({
-    extensions: editorExtensions,
-    content: initialValue,
-    onUpdate: ({ editor: ttEditor }) => {
-      const html = ttEditor.isEmpty ? '' : ttEditor.getHTML();
+    const editorExtensions = [
+      ...requiredExtensions,
+      ...optionalExtensions,
+      ...oneLineExtension,
+      ...customExtensions,
+    ];
 
-      // if allowAttributes or allowedTags aren't passed
-      // then use defaults from sanitize-html by not passing that key in the options
-      // https://github.com/apostrophecms/sanitize-html
+    const editor = useEditor({
+      extensions: editorExtensions,
+      content: initialValue,
+      onUpdate: ({ editor: ttEditor }) => {
+        const html = ttEditor.isEmpty ? '' : ttEditor.getHTML();
 
-      const options: IOptions = {};
+        // if allowAttributes or allowedTags aren't passed
+        // then use defaults from sanitize-html by not passing that key in the options
+        // https://github.com/apostrophecms/sanitize-html
 
-      if (allowedAttributes) {
-        options.allowedAttributes = allowedAttributes;
+        const options: IOptions = {};
+
+        if (allowedAttributes) {
+          options.allowedAttributes = allowedAttributes;
+        }
+
+        if (allowedTags) {
+          options.allowedTags = allowedTags;
+        }
+
+        const sanitizedHtml = sanitizeHtml(html, options);
+
+        onChange(sanitizedHtml);
+      },
+      editable,
+    });
+
+    useImperativeHandle(ref, () => ({
+      setContent: (content: string) => {
+        editor?.commands.setContent(content);
+        onChange(content);
+      },
+    }));
+
+    useEffect(() => {
+      if (editor) {
+        editor.setEditable(editable);
       }
+    }, [editor, editable]);
 
-      if (allowedTags) {
-        options.allowedTags = allowedTags;
-      }
-
-      const sanitizedHtml = sanitizeHtml(html, options);
-
-      onChange(sanitizedHtml);
-    },
-    editable,
-  });
-
-  useImperativeHandle(ref, () => ({
-    setContent: (content: string) => {
-      editor?.commands.setContent(content);
-      onChange(content);
-    },
-  }));
-
-  useEffect(() => {
-    if (editor) {
-      editor.setEditable(editable);
-    }
-  }, [editor, editable]);
-
-  return (
-    editor ? (
-      <div
-        className="RichTextEditor"
-        id={id}
-      >
+    return editor ? (
+      <div className="RichTextEditor" id={id}>
         {availableActions.length > 0 && (
           <RichTextEditorMenuBar
             availableActions={availableActions}
@@ -225,28 +224,30 @@ const RichTextEditor = forwardRef((
             className,
             'RichTextEditor__field',
             { 'RichTextEditor__field--error': hasErrors },
-            { 'RichTextEditor__field--without-menu-bar': availableActions.length === 0 },
+            {
+              'RichTextEditor__field--without-menu-bar':
+                availableActions.length === 0,
+            },
           )}
           editor={editor}
           role="textbox"
           {...ariaAttributes}
         />
-        {
-          !!characterLimit && (
-            <p className="RichTextEditor__character-count">
-              {editor.storage.characterCount.characters()}/{characterLimit}
-            </p>
-          )
-        }
+        {!!characterLimit && (
+          <p className="RichTextEditor__character-count">
+            {editor.storage.characterCount.characters()}/{characterLimit}
+          </p>
+        )}
       </div>
     ) : (
       <>
         <LoadingSkeleton height={40} />
         <LoadingSkeleton height={70} />
       </>
-    )
-  );
-});
+    );
+  },
+);
 
-// eslint-disable-next-line import/no-default-export
+RichTextEditor.displayName = 'RichTextEditor';
+
 export default RichTextEditor;

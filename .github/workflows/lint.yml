@@ -18,5 +18,8 @@ jobs:
       - name: Lint JavaScript/TypeScript
         run: yarn lint:js
 
+      - name: Check formatting
+        run: yarn format:check
+
       - name: Lint CSS/SCSS
         run: yarn lint:css --quiet

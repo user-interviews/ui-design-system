@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
+
 import RadioButton from '.';
 import FormControlLabel from '../FormControlLabel';
-
 import mdx from './RadioButton.mdx';
 
 export default {

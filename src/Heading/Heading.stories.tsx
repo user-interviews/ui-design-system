@@ -1,14 +1,16 @@
 import React from 'react';
-import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
 import { Heading, HeadingSize } from './Heading';
+
+import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
 const meta: Meta<typeof Heading> = {
   component: Heading,
   parameters: {
     docs: {
       description: {
-        component: 'Headings are used as the titles of each major section of a page in the interface.',
+        component:
+          'Headings are used as the titles of each major section of a page in the interface.',
       },
     },
   },
@@ -61,11 +63,21 @@ export const Default: Story = {
 export const Levels: Story = {
   render: () => (
     <>
-      <Heading level={1} size={HeadingSize.LARGE}>The fastest way to recruit research participants</Heading>
-      <Heading level={2} size={HeadingSize.MEDIUM}>The fastest way to recruit research participants</Heading>
-      <Heading level={3} size={HeadingSize.SMALL}>The fastest way to recruit research participants</Heading>
-      <Heading level={4} size={HeadingSize.TEXT}>The fastest way to recruit research participants</Heading>
-      <Heading level={5} size={HeadingSize.SUBTEXT}>The fastest way to recruit research participants</Heading>
+      <Heading level={1} size={HeadingSize.LARGE}>
+        The fastest way to recruit research participants
+      </Heading>
+      <Heading level={2} size={HeadingSize.MEDIUM}>
+        The fastest way to recruit research participants
+      </Heading>
+      <Heading level={3} size={HeadingSize.SMALL}>
+        The fastest way to recruit research participants
+      </Heading>
+      <Heading level={4} size={HeadingSize.TEXT}>
+        The fastest way to recruit research participants
+      </Heading>
+      <Heading level={5} size={HeadingSize.SUBTEXT}>
+        The fastest way to recruit research participants
+      </Heading>
     </>
   ),
 };
@@ -77,11 +89,21 @@ export const Levels: Story = {
 export const Sizes: Story = {
   render: () => (
     <>
-      <Heading level={2} size={HeadingSize.LARGE}>This is a heading level 2 with size="large"</Heading>
-      <Heading level={2} size={HeadingSize.MEDIUM}>This is a heading level 2 with size="medium"</Heading>
-      <Heading level={2} size={HeadingSize.SMALL}>This is a heading level 2 with size="small"</Heading>
-      <Heading level={2} size={HeadingSize.TEXT}>This is a heading level 2 with size="text"</Heading>
-      <Heading level={2} size={HeadingSize.SUBTEXT}>This is a heading level 2 with size="subtext"</Heading>
+      <Heading level={2} size={HeadingSize.LARGE}>
+        This is a heading level 2 with size="large"
+      </Heading>
+      <Heading level={2} size={HeadingSize.MEDIUM}>
+        This is a heading level 2 with size="medium"
+      </Heading>
+      <Heading level={2} size={HeadingSize.SMALL}>
+        This is a heading level 2 with size="small"
+      </Heading>
+      <Heading level={2} size={HeadingSize.TEXT}>
+        This is a heading level 2 with size="text"
+      </Heading>
+      <Heading level={2} size={HeadingSize.SUBTEXT}>
+        This is a heading level 2 with size="subtext"
+      </Heading>
     </>
   ),
 };
@@ -94,9 +116,15 @@ export const Sizes: Story = {
 export const Weights: Story = {
   render: () => (
     <>
-      <Heading level={2} size={HeadingSize.MEDIUM} weight="bold">The fastest way to recruit research participants</Heading>
-      <Heading level={2} size={HeadingSize.MEDIUM} weight="medium">The fastest way to recruit research participants</Heading>
-      <Heading level={2} size={HeadingSize.MEDIUM} weight="regular">The fastest way to recruit research participants</Heading>
+      <Heading level={2} size={HeadingSize.MEDIUM} weight="bold">
+        The fastest way to recruit research participants
+      </Heading>
+      <Heading level={2} size={HeadingSize.MEDIUM} weight="medium">
+        The fastest way to recruit research participants
+      </Heading>
+      <Heading level={2} size={HeadingSize.MEDIUM} weight="regular">
+        The fastest way to recruit research participants
+      </Heading>
     </>
   ),
 };
@@ -109,9 +137,30 @@ export const Weights: Story = {
 export const Alignment: Story = {
   render: () => (
     <>
-      <Heading level={2} size={HeadingSize.MEDIUM} textAlign="left" weight="bold">The fastest way to recruit research participants</Heading>
-      <Heading level={2} size={HeadingSize.MEDIUM} textAlign="center" weight="bold">The fastest way to recruit research participants</Heading>
-      <Heading level={2} size={HeadingSize.MEDIUM} textAlign="right" weight="bold">The fastest way to recruit research participants</Heading>
+      <Heading
+        level={2}
+        size={HeadingSize.MEDIUM}
+        textAlign="left"
+        weight="bold"
+      >
+        The fastest way to recruit research participants
+      </Heading>
+      <Heading
+        level={2}
+        size={HeadingSize.MEDIUM}
+        textAlign="center"
+        weight="bold"
+      >
+        The fastest way to recruit research participants
+      </Heading>
+      <Heading
+        level={2}
+        size={HeadingSize.MEDIUM}
+        textAlign="right"
+        weight="bold"
+      >
+        The fastest way to recruit research participants
+      </Heading>
     </>
   ),
 };

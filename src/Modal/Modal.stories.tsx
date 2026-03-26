@@ -1,10 +1,10 @@
 import React from 'react';
+
 import { action } from 'storybook/actions';
+
+import { Modal, ModalBody, ModalFooter, ModalHeader, MODAL_SIZES } from '.';
 import Button from '../Button';
 import Input from '../Input';
-import {
- Modal, ModalBody, ModalFooter, ModalHeader, MODAL_SIZES,
-} from '.';
 import mdx from './Modal.mdx';
 
 export default {
@@ -39,7 +39,9 @@ export function Default() {
         dismissButtonText="Cancel"
         onRequestClose={handleRequestClose}
       >
-        <Button type="submit" variant="primary">Confirm</Button>
+        <Button type="submit" variant="primary">
+          Confirm
+        </Button>
       </ModalFooter>
     </Modal>
   );
@@ -66,7 +68,9 @@ export function MediumModal() {
         dismissButtonText="Cancel"
         onRequestClose={handleRequestClose}
       >
-        <Button type="submit" variant="primary">Confirm</Button>
+        <Button type="submit" variant="primary">
+          Confirm
+        </Button>
       </ModalFooter>
     </Modal>
   );
@@ -93,7 +97,9 @@ export function LargeModal() {
         dismissButtonText="Cancel"
         onRequestClose={handleRequestClose}
       >
-        <Button type="submit" variant="primary">Confirm</Button>
+        <Button type="submit" variant="primary">
+          Confirm
+        </Button>
       </ModalFooter>
     </Modal>
   );
@@ -120,7 +126,9 @@ export function WithSubtitleModal() {
         dismissButtonText="Cancel"
         onRequestClose={handleRequestClose}
       >
-        <Button type="submit" variant="primary">Confirm</Button>
+        <Button type="submit" variant="primary">
+          Confirm
+        </Button>
       </ModalFooter>
     </Modal>
   );
@@ -147,7 +155,9 @@ export function TransactionalModal() {
         dismissButtonText="Cancel"
         onRequestClose={handleRequestClose}
       >
-        <Button type="submit" variant="primary">Invite</Button>
+        <Button type="submit" variant="primary">
+          Invite
+        </Button>
       </ModalFooter>
     </Modal>
   );

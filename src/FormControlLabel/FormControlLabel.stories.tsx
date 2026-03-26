@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import { action } from 'storybook/actions';
 
 import FormControlLabel from '.';
@@ -17,13 +18,7 @@ function FormControlLabelControlComponent(props) {
     action('Control onChange')(e);
   };
 
-  return (
-    <FormControlLabel
-      {...props}
-      checked={value}
-      onChange={onChange}
-    />
-  );
+  return <FormControlLabel {...props} checked={value} onChange={onChange} />;
 }
 
 export function Checkbox() {

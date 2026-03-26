@@ -1,11 +1,9 @@
 import React from 'react';
 
-import AsyncCreatableSelect from 'src/Select/AsyncCreatableSelect';
 import Button from 'src/Button';
 import FormGroup from 'src/FormGroup';
-import {
-  Modal, ModalHeader, ModalBody, ModalFooter,
-} from 'src/Modal';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'src/Modal';
+import AsyncCreatableSelect from 'src/Select/AsyncCreatableSelect';
 
 export default {
   title: 'Components/Selects/AsyncCreatable',
@@ -21,13 +19,17 @@ const options = [
 const handleRequestClose = () => action('Close');
 
 async function loadOptions(search) {
-  await new Promise((resolve) => { setTimeout(resolve, 2000); });
+  await new Promise((resolve) => {
+    setTimeout(resolve, 2000);
+  });
 
   if (!search || !search.length) {
     return options;
   }
 
-  return options.filter(({ label }) => label.toLowerCase().includes(search.toLowerCase()));
+  return options.filter(({ label }) =>
+    label.toLowerCase().includes(search.toLowerCase()),
+  );
 }
 
 export function Default() {
@@ -77,7 +79,9 @@ export function InModal() {
             inputId="in-modal-creatable-select"
             loadOptions={loadOptions}
             modal
-            noOptionsMessage={({ inputValue }) => inputValue.length ? 'No results!' : 'Type to search...'}
+            noOptionsMessage={({ inputValue }) =>
+              inputValue.length ? 'No results!' : 'Type to search...'
+            }
           />
         </FormGroup>
       </ModalBody>
@@ -85,7 +89,9 @@ export function InModal() {
         dismissButtonText="Cancel"
         onRequestClose={handleRequestClose}
       >
-        <Button type="submit" variant="primary">Confirm</Button>
+        <Button type="submit" variant="primary">
+          Confirm
+        </Button>
       </ModalFooter>
     </Modal>
   );

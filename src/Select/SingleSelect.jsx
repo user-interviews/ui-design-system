@@ -1,13 +1,16 @@
 import React from 'react';
-import classNames from 'classnames';
 import Select from 'react-select';
+
+import classNames from 'classnames';
 import propTypes from 'prop-types';
 
-import zStack from 'src/Styles/zStack';
-
 import {
- borderedMultiValueStyles, defaultTheme, defaultStyles, SELECT_SIZES,
+  borderedMultiValueStyles,
+  defaultTheme,
+  defaultStyles,
+  SELECT_SIZES,
 } from './styles';
+import zStack from 'src/Styles/zStack';
 
 function SingleSelect({
   'aria-label': ariaLabel,
@@ -61,14 +64,11 @@ function SingleSelect({
       options={options}
       placeholder={placeholder}
       styles={{
-      ...defaultStyles({ menuWidth, size }),
-      ...borderedMultiValueStyles(borderedMultiValue),
-      menuPortal: (base) => (
-        modal ?
-        { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } :
-          base
-      ),
-    }}
+        ...defaultStyles({ menuWidth, size }),
+        ...borderedMultiValueStyles(borderedMultiValue),
+        menuPortal: (base) =>
+          modal ? { ...base, zIndex: zStack.zIndexModalBackdrop + 1 } : base,
+      }}
       theme={defaultTheme}
       value={value}
       onChange={onChange}

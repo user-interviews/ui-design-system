@@ -1,4 +1,5 @@
 import React from 'react';
+
 import classNames from 'classnames';
 
 import './TableFoot.scss';
@@ -6,7 +7,7 @@ import './TableFoot.scss';
 type TableElementProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLTableSectionElement>,
   HTMLTableSectionElement
->
+>;
 
 type TableFootProps = TableElementProps & {
   children?: React.ReactNode;
@@ -22,13 +23,9 @@ function TableFoot({
 }: TableFootProps) {
   return (
     <tfoot
-      className={classNames(
-    'TableFoot',
-    className,
-    {
-      [`TableFoot--sticky-row`]: !!stickyRow,
-    },
-    )}
+      className={classNames('TableFoot', className, {
+        [`TableFoot--sticky-row`]: !!stickyRow,
+      })}
       {...props}
     >
       {children}

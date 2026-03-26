@@ -1,4 +1,5 @@
 import React from 'react';
+
 import classnames from 'classnames';
 
 import ControlButtonGroup, { ORIENTATIONS } from '../ControlButtonGroup';
@@ -8,7 +9,7 @@ import './RadioButtonGroup.scss';
 type RadioButtonGroupProps = {
   children: React.ReactNode;
   fullWidth?: boolean;
-  orientation?: typeof ORIENTATIONS[keyof typeof ORIENTATIONS];
+  orientation?: (typeof ORIENTATIONS)[keyof typeof ORIENTATIONS];
   value?: number | string | boolean;
   onChange?: (...args: unknown[]) => unknown;
 };
@@ -29,19 +30,16 @@ export default function RadioButtonGroup({
     }
   };
 
-  const childChecked = (childValue) => (value === childValue);
+  const childChecked = (childValue) => value === childValue;
 
   return (
     <div
-      className={classnames(
-        'RadioButtonGroup',
-        {
-          'RadioButtonGroup--row': row,
-          'RadioButtonGroup--row--full-width': row && fullWidth,
-          'RadioButtonGroup--row--compact': row && !fullWidth,
-          'RadioButtonGroup--column--full-width': column && fullWidth,
-        },
-      )}
+      className={classnames('RadioButtonGroup', {
+        'RadioButtonGroup--row': row,
+        'RadioButtonGroup--row--full-width': row && fullWidth,
+        'RadioButtonGroup--row--compact': row && !fullWidth,
+        'RadioButtonGroup--column--full-width': column && fullWidth,
+      })}
     >
       <ControlButtonGroup
         childChecked={childChecked}

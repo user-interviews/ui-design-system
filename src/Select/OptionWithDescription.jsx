@@ -1,6 +1,8 @@
 import React from 'react';
 import { components } from 'react-select';
 
+import PropTypes from 'prop-types';
+
 import './OptionWithDescription.scss';
 
 // Replaceable Components
@@ -11,7 +13,6 @@ import './OptionWithDescription.scss';
 //
 // See: https://react-select.com/components#replaceable-components
 
-/* eslint-disable react/prop-types */
 function OptionWithDescription({ hideDescription, ...props }) {
   return (
     <components.Option
@@ -24,14 +25,26 @@ function OptionWithDescription({ hideDescription, ...props }) {
           {props.data.labelDescription}
         </label>
         {!hideDescription && (
-        <div className="OptionWithDescription__description">
-          {props.data.description}
-        </div>
-      )}
+          <div className="OptionWithDescription__description">
+            {props.data.description}
+          </div>
+        )}
       </div>
     </components.Option>
   );
 }
-/* eslint-enable react/prop-types */
+
+OptionWithDescription.propTypes = {
+  data: PropTypes.shape({
+    description: PropTypes.string,
+    labelDescription: PropTypes.string,
+  }).isRequired,
+  hideDescription: PropTypes.bool,
+  label: PropTypes.string.isRequired,
+};
+
+OptionWithDescription.defaultProps = {
+  hideDescription: false,
+};
 
 export default OptionWithDescription;

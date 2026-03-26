@@ -1,8 +1,11 @@
 import React, { forwardRef } from 'react';
-import classNames from 'classnames';
 import { components } from 'react-select';
 
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
+
 import CheckboxButton from 'src/CheckboxButton';
+
 import './Option.scss';
 
 // Replaceable Components
@@ -13,7 +16,6 @@ import './Option.scss';
 //
 // See: https://react-select.com/components#replaceable-components
 
-/* eslint-disable react/prop-types */
 const Option = forwardRef(({ indeterminate, ...props }, ref) => (
   <components.Option {...props}>
     <div className="Option">
@@ -35,13 +37,28 @@ const Option = forwardRef(({ indeterminate, ...props }, ref) => (
         >
           {props.label}
         </label>
-        { props.description && (
-          <span className="Description">{ props.description }</span>
+        {props.description && (
+          <span className="Description">{props.description}</span>
         )}
       </div>
     </div>
   </components.Option>
 ));
-/* eslint-enable react/prop-types */
+
+Option.displayName = 'Option';
+
+Option.propTypes = {
+  boldLabel: PropTypes.bool,
+  description: PropTypes.string,
+  indeterminate: PropTypes.bool,
+  isSelected: PropTypes.bool.isRequired,
+  label: PropTypes.string.isRequired,
+};
+
+Option.defaultProps = {
+  boldLabel: false,
+  description: undefined,
+  indeterminate: false,
+};
 
 export default Option;

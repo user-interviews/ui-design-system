@@ -1,6 +1,8 @@
 import React from 'react';
 
-import ReactBootstrapTab, { TabProps as RBTabProps } from 'react-bootstrap/Tab';
+import ReactBootstrapTab from 'react-bootstrap/Tab';
+
+import type { TabProps as RBTabProps } from 'react-bootstrap/Tab';
 
 export type TabProps = RBTabProps & {
   disabled?: boolean;
@@ -9,10 +11,7 @@ export type TabProps = RBTabProps & {
   title: React.ReactNode;
 };
 
-function Tab({
-  disabled = false,
-  ...props
-}: TabProps) {
+function Tab({ disabled = false, ...props }: TabProps) {
   return <ReactBootstrapTab disabled={disabled} {...props} />;
 }
 

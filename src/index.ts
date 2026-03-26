@@ -5,8 +5,8 @@ import {
   AccordionToggle,
 } from './Accordion';
 import { Alert, MessageTypes } from './Alert';
-import Button, { ButtonSizes, ButtonVariants } from './Button';
 import Avatar from './Avatar';
+import Button, { ButtonSizes, ButtonVariants } from './Button';
 import Card, { CardSizes } from './Card';
 import { CardButton } from './CardButton';
 import { CardStack } from './CardStack';
@@ -44,8 +44,8 @@ import IconCell from './IconCell';
 import Input from './Input';
 import InputLabel from './InputLabel';
 import InputLegend from './InputLegend';
-import { LoadingSkeleton } from './LoadingSkeleton';
 import LoadingOverlay from './LoadingOverlay';
+import { LoadingSkeleton } from './LoadingSkeleton';
 import { Logo } from './Logo';
 import Main from './Main';
 import {
@@ -80,12 +80,8 @@ import {
   SingleSelect,
   ValueContainer,
 } from './Select';
-import { colors as COLORS } from './Styles';
 import { Step, Steps } from './Steps';
-import {
-  Tab,
-  Tabs,
-} from './Tabs';
+import { colors as COLORS } from './Styles';
 import {
   Table,
   TableBody,
@@ -96,12 +92,9 @@ import {
   TableRow,
   TableSortLabel,
 } from './Table';
+import { Tab, Tabs } from './Tabs';
 import { Text, TEXT_PROPS } from './Text';
-import {
-  Toast,
-  useToast,
-  withToast,
-} from './Toast';
+import { Toast, useToast, withToast } from './Toast';
 import { ToggleInput } from './ToggleInput';
 import Tooltip from './Tooltip';
 

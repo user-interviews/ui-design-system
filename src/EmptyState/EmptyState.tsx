@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
 
 import classNames from 'classnames';
 
@@ -27,44 +27,48 @@ function EmptyState({
   title,
 }: EmptyStateProps) {
   return (
-    <div className={classNames(
-    className,
-    'EmptyState',
-    marginTop && `EmptyState--margin-top--${marginTop}`,
-  )}
+    <div
+      className={classNames(
+        className,
+        'EmptyState',
+        marginTop && `EmptyState--margin-top--${marginTop}`,
+      )}
     >
-      <div className={classNames(
-      'EmptyState__content',
-      fullWidth && 'EmptyState--full-width',
-    )}
+      <div
+        className={classNames(
+          'EmptyState__content',
+          fullWidth && 'EmptyState--full-width',
+        )}
       >
         {image && (
-        <div className="EmptyState__image">
-          <img alt="" src={image} />
-        </div>
-      )}
+          <div className="EmptyState__image">
+            <img alt="" src={image} />
+          </div>
+        )}
         {title && (
-        <Heading
-          className="EmptyState__title"
-          level={4}
-          size={HeadingSize.SMALL}
-          textAlign="center"
-        >
-          {title}
-        </Heading>
-      )}
+          <Heading
+            className="EmptyState__title"
+            level={4}
+            size={HeadingSize.SMALL}
+            textAlign="center"
+          >
+            {title}
+          </Heading>
+        )}
 
         {subtitle && (
-        <Text className="EmptyState__subtitle" textAlign="center">{subtitle}</Text>
-      )}
+          <Text className="EmptyState__subtitle" textAlign="center">
+            {subtitle}
+          </Text>
+        )}
 
         {primaryAction && (
-        <div className="EmptyState__actions">
-          <div className="EmptyState__actions__primary-action">
-            {primaryAction}
+          <div className="EmptyState__actions">
+            <div className="EmptyState__actions__primary-action">
+              {primaryAction}
+            </div>
           </div>
-        </div>
-      )}
+        )}
       </div>
     </div>
   );

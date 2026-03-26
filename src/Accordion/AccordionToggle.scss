@@ -13,14 +13,14 @@
     &.borderBottom {
       border-bottom: 1px solid var(--ux-gray-400);
     }
-    
+
     &.flush {
       padding: 16px 4px;
     }
 
     &--right {
       grid-area: chevron-right;
-      
+
       .AccordionToggle__chevron-right {
         float: right;
       }
@@ -75,12 +75,11 @@
   }
 
   &.collapsed .AccordionToggle__chevron-right,
-  &.collapsed .AccordionToggle__chevron-left 
-    {
-      svg {
-        transition: $chevron-rotation-transition-time ease all;
-      }
+  &.collapsed .AccordionToggle__chevron-left {
+    svg {
+      transition: $chevron-rotation-transition-time ease all;
     }
+  }
 
   &__chevron-left {
     margin-right: 16px;
