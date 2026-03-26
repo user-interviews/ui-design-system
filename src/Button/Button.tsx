@@ -1,4 +1,4 @@
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 import React, { forwardRef } from 'react';
@@ -80,5 +80,7 @@ const Button = forwardRef<HTMLElement, ButtonProps>(
     </RBButton>
   ),
 );
+
+Button.displayName = 'Button';
 
 export default Button;

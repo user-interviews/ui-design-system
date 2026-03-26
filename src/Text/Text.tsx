@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import { createElement } from 'react';
 
-import { TEXT_PROPS } from './Text.types';
+import { type TEXT_PROPS } from './Text.types';
 
 import './Text.scss';
 

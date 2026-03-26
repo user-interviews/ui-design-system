@@ -1,5 +1,7 @@
 import React from 'react';
-import ReactBootstrapTab, { TabProps as RBTabProps } from 'react-bootstrap/Tab';
+import ReactBootstrapTab from 'react-bootstrap/Tab';
+
+import type { TabProps as RBTabProps } from 'react-bootstrap/Tab';
 
 export type TabProps = RBTabProps & {
   disabled?: boolean;

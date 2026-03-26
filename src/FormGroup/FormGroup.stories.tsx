@@ -245,7 +245,7 @@ export function WithErrors() {
       displayErrorText
       errors={{
         test: [
-          <div>
+          <div key="error-div-with-errors">
             Sorry, we’re not able to accept this type of input. For more
             information, click <a href="http://www.google.com">here</a>
           </div>,

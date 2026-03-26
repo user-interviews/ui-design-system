@@ -247,4 +247,6 @@ const RichTextEditor = forwardRef(
   },
 );
 
+RichTextEditor.displayName = 'RichTextEditor';
+
 export default RichTextEditor;

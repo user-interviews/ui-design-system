@@ -44,6 +44,8 @@ const Option = forwardRef(({ indeterminate, ...props }, ref) => (
   </components.Option>
 ));
 
+Option.displayName = 'Option';
+
 Option.propTypes = {
   boldLabel: PropTypes.bool,
   description: PropTypes.string,

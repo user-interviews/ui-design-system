@@ -68,4 +68,6 @@ const FormControlLabel = React.forwardRef<HTMLElement, FormControlLabelProps>(
   ),
 );
 
+FormControlLabel.displayName = 'FormControlLabel';
+
 export default FormControlLabel;

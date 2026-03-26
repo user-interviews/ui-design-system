@@ -58,3 +58,5 @@ export const PickerEnforcedInput = forwardRef<
     );
   },
 );
+
+PickerEnforcedInput.displayName = 'PickerEnforcedInput';

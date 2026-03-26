@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 
-import { CardSizes } from '../Card';
+import type { CardSizes } from '../Card';
 
 import './CardStack.scss';
 
