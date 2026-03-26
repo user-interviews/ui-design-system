@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "baseUrl": "./",
     "declaration": true,
     "emitDeclarationOnly": true,
     "esModuleInterop": true,
@@ -16,6 +15,10 @@
     "noImplicitReturns": true,
     "noImplicitThis": true,
     "outDir": "./lib",
+    "paths": {
+      "scss/*": ["./scss/*"],
+      "src/*": ["./src/*"]
+    },
     "resolveJsonModule": true,
     "rootDir": "src",
     "skipLibCheck": true,
@@ -25,7 +28,7 @@
     "strictFunctionTypes": true,
     "strictNullChecks": true,
     "strictPropertyInitialization": true,
-    "target": "es5",
+    "target": "es2015",
     "types": ["node", "react", "react-dom", "@testing-library/jest-dom"]
   },
   "include": ["src/**/*"],
