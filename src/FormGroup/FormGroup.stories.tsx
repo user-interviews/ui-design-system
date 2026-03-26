@@ -304,7 +304,6 @@ function ButtonGroupComponent({
     </FormGroup>
   );
 }
-/* eslint-enable react/prop-types */
 
 export function WithRadioButtonGroup() {
   const orientation = ORIENTATIONS.COLUMN;

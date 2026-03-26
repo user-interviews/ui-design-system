@@ -312,7 +312,6 @@ const incentiveData = [
     amount: '$250.00',
   },
 ];
-/* eslint-enable object-curly-newline */
 
 export function Default() {
   return (
@@ -620,7 +619,6 @@ function PinButton({ isPinActive, ...props }) {
     </button>
   );
 }
-/* eslint-enable react/prop-types */
 
 export function TableWithSingleActionColumn() {
   return (

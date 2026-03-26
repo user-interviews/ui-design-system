@@ -53,7 +53,6 @@ function RadioButtonGroupComponent({
     </FormGroup>
   );
 }
-/* eslint-enable react/prop-types */
 
 export function Default() {
   const orientation = ORIENTATIONS.COLUMN;
