@@ -17,7 +17,6 @@ export default {
   },
 };
 
-/* eslint-disable react/prop-types */
 function RadioButtonGroupComponent({
   bordered,
   children,
@@ -54,7 +53,6 @@ function RadioButtonGroupComponent({
     </FormGroup>
   );
 }
-/* eslint-enable react/prop-types */
 
 export function Default() {
   const orientation = ORIENTATIONS.COLUMN;

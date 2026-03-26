@@ -1,4 +1,5 @@
-import React, { ComponentProps } from 'react';
+import React from 'react';
+import type { ComponentProps } from 'react';
 
 import { CardButton } from './CardButton';
 
@@ -6,13 +7,13 @@ import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
 type CardButtonProps = ComponentProps<typeof CardButton>;
 
-const alignmentOptions: Array<NonNullable<CardButtonProps['alignment']>> = [
+const alignmentOptions: NonNullable<CardButtonProps['alignment']>[] = [
   'left',
   'center',
   'right',
 ];
-const asOptions: Array<CardButtonProps['as']> = ['a', 'button'];
-const sizeOptions: Array<NonNullable<CardButtonProps['size']>> = [
+const asOptions: CardButtonProps['as'][] = ['a', 'button'];
+const sizeOptions: NonNullable<CardButtonProps['size']>[] = [
   'xs',
   'sm',
   'md',

@@ -1,5 +1,6 @@
-import classNames from 'classnames';
 import React from 'react';
+
+import classNames from 'classnames';
 import ReactBootstrapTabs from 'react-bootstrap/Tabs';
 
 import type { TabsProps as BootstrapTabProps } from 'react-bootstrap/Tabs';

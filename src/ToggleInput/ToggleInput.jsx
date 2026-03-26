@@ -1,7 +1,8 @@
-import classNames from 'classnames';
-import PropTypes from 'prop-types';
 import React from 'react';
 import Toggle from 'react-toggle';
+
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import './ToggleInput.scss';
 
@@ -15,7 +16,6 @@ function ToggleInput({
   labelText,
   name,
   onToggle,
-  // eslint-disable-next-line camelcase
   UNSAFE_className,
 }) {
   return (

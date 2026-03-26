@@ -1,6 +1,7 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 import { TransitionGroup as ReactTransitionGroup } from 'react-transition-group';
+
+import PropTypes from 'prop-types';
 
 export function TransitionGroup({ children, className = '' }) {
   return (

@@ -1,6 +1,7 @@
-import classNames from 'classnames';
 import React from 'react';
 import { Dropdown as RBDropdown } from 'react-bootstrap';
+
+import classNames from 'classnames';
 
 import './DropdownDivider.scss';
 

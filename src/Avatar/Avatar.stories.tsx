@@ -4,7 +4,7 @@ import Avatar from '.';
 
 import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
-const colorIds: Array<number | undefined> = [undefined, 1, 2, 3, 4, 5, 6];
+const colorIds: (number | undefined)[] = [undefined, 1, 2, 3, 4, 5, 6];
 
 const renderColorVariants = (args: React.ComponentProps<typeof Avatar>) => (
   <div>

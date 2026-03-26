@@ -2,7 +2,6 @@ import React from 'react';
 
 import { colors } from 'src/Styles';
 
-/* eslint-disable react/prop-types, react/no-array-index-key */
 function Palette({ color }) {
   return (
     <div style={{ display: 'flex', height: '320px', width: '100%' }}>
@@ -37,7 +36,6 @@ function Palette({ color }) {
     </div>
   );
 }
-/* eslint-enable react/prop-types, react/no-array-index-key */
 
 export default {
   title: 'Foundations/Color Palette',

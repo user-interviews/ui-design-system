@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import { Drawer, DrawerBody, DrawerFooter, DrawerHeader } from '.';
 import Button from '../Button';
 import {

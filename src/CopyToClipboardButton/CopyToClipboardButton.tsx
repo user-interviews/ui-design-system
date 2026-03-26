@@ -1,8 +1,9 @@
+import React, { useState } from 'react';
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
-import React, { useState } from 'react';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 import { faCopy } from '../font_awesome/regular';
 import Popper from '../Popper';

@@ -1,8 +1,6 @@
 import React from 'react';
-import {
-  OverlayTrigger as RBOverlayTrigger,
-  OverlayTriggerProps as RBOverlayTriggerProps,
-} from 'react-bootstrap';
+import { OverlayTrigger as RBOverlayTrigger } from 'react-bootstrap';
+import type { OverlayTriggerProps as RBOverlayTriggerProps } from 'react-bootstrap';
 
 export const OVERLAY_TRIGGER_PLACEMENT = [
   'auto-start',

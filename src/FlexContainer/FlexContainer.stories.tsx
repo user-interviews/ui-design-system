@@ -23,7 +23,6 @@ const meta: Meta<typeof FlexContainer> = {
   decorators: [
     (Story) => (
       <div>
-        {/* eslint-disable-next-line react/no-danger */}
         <style
           dangerouslySetInnerHTML={{
             __html: `

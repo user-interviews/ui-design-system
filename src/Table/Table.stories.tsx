@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import {
   Table,
   TableBody,
@@ -27,7 +29,6 @@ export default {
   },
 };
 
-/* eslint-disable object-curly-newline */
 const data = [
   {
     id: 1,
@@ -313,7 +314,6 @@ const incentiveData = [
     amount: '$250.00',
   },
 ];
-/* eslint-enable object-curly-newline */
 
 export function Default() {
   return (
@@ -606,7 +606,6 @@ const editButton = () => (
     Edit
   </Button>
 );
-/* eslint-disable react/prop-types */
 function PinButton({ isPinActive, ...props }) {
   return (
     <button
@@ -622,7 +621,6 @@ function PinButton({ isPinActive, ...props }) {
     </button>
   );
 }
-/* eslint-enable react/prop-types */
 
 export function TableWithSingleActionColumn() {
   return (

@@ -1,7 +1,8 @@
+import React, { useEffect } from 'react';
+
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
-import React, { useEffect } from 'react';
 
 import {
   faBullhorn,
@@ -146,7 +147,6 @@ function Alert(props: AlertProps) {
         {props.title && <div className="Alert__title">{props.title}</div>}
         <div
           className="Alert__message"
-          // eslint-disable-next-line jsx-a11y/no-noninteractive-tabindex
           tabIndex={props.type === MessageTypes.ERROR ? -1 : undefined}
         >
           {props.message}

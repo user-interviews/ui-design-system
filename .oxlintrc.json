@@ -81,6 +81,11 @@
             ],
             "pathGroups": [
               {
+                "pattern": "react*",
+                "group": "external",
+                "position": "before"
+              },
+              {
                 "pattern": "src/**",
                 "group": "internal"
               },
@@ -145,7 +150,7 @@
           }
         ],
         "prefer-destructuring": "warn",
-        "react/exhaustive-deps": "warn",
+        "react/exhaustive-deps": "error",
         "react/jsx-filename-extension": [
           "error",
           {
@@ -232,8 +237,81 @@
             "sortShapeProp": true
           }
         ],
-        "typescript/no-shadow": "error"
+        "typescript/no-shadow": "error",
+
+        "react/display-name": "error",
+        "react/forward-ref-uses-ref": "error",
+        "react/jsx-key": "error",
+        "react/jsx-curly-brace-presence": [
+          "error",
+          {
+            "children": "never",
+            "propElementValues": "always"
+          }
+        ],
+        "react/jsx-no-comment-textnodes": "error",
+        "react/jsx-no-constructed-context-values": "error",
+        "react/jsx-no-duplicate-props": "error",
+        "react/jsx-no-target-blank": "error",
+        "react/jsx-no-useless-fragment": "warn",
+        "react/no-children-prop": "error",
+        "react/no-danger-with-children": "error",
+        "react/no-deprecated": "error",
+        "react/no-direct-mutation-state": "error",
+        "react/no-find-dom-node": "error",
+        "react/no-is-mounted": "error",
+        "react/no-string-refs": "error",
+        "react/no-unknown-property": "error",
+        "react/require-render-return": "error",
+        "react/self-closing-comp": "warn",
+        "react-js/no-unstable-nested-components": [
+          "error",
+          {
+            "allowAsProps": true
+          }
+        ],
+
+        "default-param-last": "error",
+        "no-console": "error",
+        "no-unused-vars": [
+          "error",
+          {
+            "argsIgnorePattern": "^_",
+            "varsIgnorePattern": "^_",
+            "caughtErrorsIgnorePattern": "^_"
+          }
+        ]
       }
+    },
+    {
+      "files": ["**/*.{ts,tsx}"],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "error",
+        "typescript/ban-ts-comment": [
+          "error",
+          {
+            "ts-ignore": true,
+            "ts-expect-error": "allow-with-description"
+          }
+        ],
+        "typescript/consistent-type-imports": "warn",
+        "typescript/no-wrapper-object-types": "error",
+        "typescript/no-unnecessary-type-constraint": "error",
+        "typescript/prefer-as-const": "error",
+        "typescript/no-extra-non-null-assertion": "error",
+        "typescript/no-non-null-asserted-optional-chain": "error",
+        "typescript/prefer-optional-chain": "warn",
+        "typescript/no-empty-object-type": "warn",
+        "typescript/no-unsafe-declaration-merging": "error",
+        "typescript/no-useless-empty-export": "warn",
+        "typescript/no-duplicate-enum-values": "error",
+        "typescript/array-type": ["warn", { "default": "array" }],
+        "react/require-default-props": "off",
+        "default-case": "off",
+        "consistent-return": "off",
+        "no-undef": "off"
+      },
+      "plugins": ["typescript"]
     },
     {
       "files": ["**/*.{ts,tsx}"],

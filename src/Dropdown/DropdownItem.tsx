@@ -1,11 +1,12 @@
-import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import classNames from 'classnames';
 import React from 'react';
 import {
   Dropdown as RBDropdown,
   type DropdownProps as RBDropdownProps,
 } from 'react-bootstrap';
+
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
 
 import * as styles from './DropdownItem.module.scss';
 

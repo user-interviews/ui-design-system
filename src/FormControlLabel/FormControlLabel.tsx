@@ -1,3 +1,5 @@
+import React from 'react';
+
 import classnames from 'classnames';
 import React from 'react';
 
@@ -7,7 +9,7 @@ type FormControlLabelProps = {
   bordered?: boolean;
   checked?: boolean;
   className?: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  // oxlint-disable-next-line typescript/no-explicit-any
   Control: React.ComponentType<any>;
   children?: React.ReactNode;
   disabled?: boolean;
@@ -67,5 +69,7 @@ const FormControlLabel = React.forwardRef<HTMLElement, FormControlLabelProps>(
     </label>
   ),
 );
+
+FormControlLabel.displayName = 'FormControlLabel';
 
 export default FormControlLabel;

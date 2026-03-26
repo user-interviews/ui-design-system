@@ -1,11 +1,12 @@
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import classNames from 'classnames';
 import React, { forwardRef } from 'react';
 import {
   Button as RBButton,
   type ButtonProps as RBButtonProps,
 } from 'react-bootstrap';
+
+import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import classNames from 'classnames';
 
 import { faSpinnerThird } from '../font_awesome/regular';
 
@@ -80,5 +81,7 @@ const Button = forwardRef<HTMLElement, ButtonProps>(
     </RBButton>
   ),
 );
+
+Button.displayName = 'Button';
 
 export default Button;

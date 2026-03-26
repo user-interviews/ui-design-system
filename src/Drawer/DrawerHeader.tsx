@@ -1,7 +1,8 @@
+import React, { useContext, type ReactNode } from 'react';
+
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
-import React, { useContext, ReactNode } from 'react';
 
 import { faTimes, faCompressAlt, faExpandAlt } from '../font_awesome/solid';
 import { ExpandContext } from './Drawer';

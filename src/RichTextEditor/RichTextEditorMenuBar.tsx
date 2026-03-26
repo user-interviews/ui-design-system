@@ -1,3 +1,5 @@
+import React from 'react';
+
 import classNames from 'classnames';
 import React from 'react';
 
@@ -104,5 +106,4 @@ function RichTextEditorMenuBar({
   );
 }
 
-// eslint-disable-next-line import/no-default-export
 export default RichTextEditorMenuBar;

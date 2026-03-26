@@ -1,7 +1,8 @@
+import React from 'react';
+
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
-import React from 'react';
 
 import './Input.scss';
 
@@ -98,5 +99,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>((props, ref) => {
     </div>
   );
 });
+
+Input.displayName = 'Input';
 
 export default Input;

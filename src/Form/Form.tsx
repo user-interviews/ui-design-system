@@ -1,3 +1,5 @@
+import React, { forwardRef } from 'react';
+
 import classNames from 'classnames';
 import React, { forwardRef } from 'react';
 
@@ -55,5 +57,7 @@ const Form = forwardRef<HTMLFormElement, FormProps>(
     );
   },
 );
+
+Form.displayName = 'Form';
 
 export default Form;

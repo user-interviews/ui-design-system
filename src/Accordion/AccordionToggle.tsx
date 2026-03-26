@@ -1,7 +1,8 @@
+import React, { useEffect, useState } from 'react';
+
 import { type IconDefinition } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
-import React, { useEffect, useState } from 'react';
 import { useAccordionButton } from 'react-bootstrap/AccordionButton';
 import AccordionContext from 'react-bootstrap/AccordionContext';
 
@@ -35,7 +36,6 @@ type AccordionToggleProps = {
   helperText?: string;
   leadingIcon?: object;
   title?: string;
-  // eslint-disable-next-line camelcase
   UNSAFE_className?: string;
 };
 
@@ -53,7 +53,6 @@ function AccordionToggle({
   leadingIcon,
   title,
 
-  // eslint-disable-next-line camelcase
   UNSAFE_className,
 }: AccordionToggleProps) {
   const { activeEventKey } = React.useContext(AccordionContext);

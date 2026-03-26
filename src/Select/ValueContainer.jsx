@@ -2,6 +2,8 @@ import propTypes from 'prop-types';
 import React from 'react';
 import { components } from 'react-select';
 
+import propTypes from 'prop-types';
+
 // Replaceable Components
 //
 // Value Container: Container responsible for loading the placeholder value and the input.

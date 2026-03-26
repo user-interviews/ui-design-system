@@ -1,5 +1,6 @@
-import classNames from 'classnames';
 import React from 'react';
+
+import classNames from 'classnames';
 import RBAccordionCollapse from 'react-bootstrap/AccordionCollapse';
 
 import './AccordionCollapse.scss';
@@ -11,7 +12,6 @@ type AccordionCollapseProps = {
    A unique key used to control this item's collapse/expand.
    */
   eventKey: string;
-  // eslint-disable-next-line camelcase
   UNSAFE_className?: string;
 };
 
@@ -20,7 +20,6 @@ function AccordionCollapse({
   children,
   eventKey,
 
-  // eslint-disable-next-line camelcase
   UNSAFE_className,
 
   ...props

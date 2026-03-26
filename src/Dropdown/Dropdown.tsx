@@ -1,9 +1,10 @@
-import classNames from 'classnames';
 import React from 'react';
 import {
   Dropdown as RBDropdown,
   type DropdownProps as RBDropdownProps,
 } from 'react-bootstrap';
+
+import classNames from 'classnames';
 
 type DropdownProps = {
   /**

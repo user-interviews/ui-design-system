@@ -2,6 +2,8 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { components } from 'react-select';
 
+import PropTypes from 'prop-types';
+
 import './OptionWithDescription.scss';
 
 // Replaceable Components

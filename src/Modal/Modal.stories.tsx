@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { action } from 'storybook/actions';
 
 import { Modal, ModalBody, ModalFooter, ModalHeader, MODAL_SIZES } from '.';

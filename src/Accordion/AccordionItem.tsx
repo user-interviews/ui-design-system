@@ -1,5 +1,6 @@
-import classNames from 'classnames';
 import React from 'react';
+
+import classNames from 'classnames';
 import RBAccordionItem from 'react-bootstrap/AccordionItem';
 
 import './AccordionItem.scss';
@@ -13,7 +14,6 @@ type AccordionItemProps = {
     Removes border from accordion item
   */
   borderless?: boolean;
-  // eslint-disable-next-line camelcase
   UNSAFE_className?: string;
   children: React.ReactNode;
   eventKey: string;
@@ -26,7 +26,6 @@ function AccordionItem({
   borderless,
   children,
   eventKey,
-  // eslint-disable-next-line camelcase
   UNSAFE_className,
 }: AccordionItemProps) {
   return (

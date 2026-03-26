@@ -1,4 +1,5 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+
 import { action } from 'storybook/actions';
 
 import mdx from './Alert.mdx';

@@ -1,6 +1,6 @@
 import { useCallback, useReducer } from 'react';
 
-import { MessageTypes } from '../Alert/Alert';
+import { type MessageTypes } from '../Alert/Alert';
 import { generateUUID } from '../utils/uuid';
 
 const ACTIONS = {

@@ -1,5 +1,6 @@
-import { render, screen, waitFor } from '@testing-library/react';
 import React from 'react';
+
+import { render, screen, waitFor } from '@testing-library/react';
 
 import RichTextEditor, { type RichTextEditorProps } from './RichTextEditor';
 import { RichTextEditorDefaultActionsArray } from './richTextEditorActions';

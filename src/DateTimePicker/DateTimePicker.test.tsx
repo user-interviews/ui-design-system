@@ -1,8 +1,12 @@
+import React from 'react';
+
 import { act, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import React from 'react';
 
-import DateTimePicker, { DateTimePickerProps } from './DateTimePicker';
+import DateTimePicker from './DateTimePicker';
+
+import type { DateTimePickerProps } from './DateTimePicker';
 
 const PLACEHOLDER = 'YYYY-MM-DD';
 

@@ -1,9 +1,8 @@
-import classNames from 'classnames';
 import React from 'react';
-import {
-  Popover as RBPopover,
-  PopoverProps as RBPopoverProps,
-} from 'react-bootstrap';
+import { Popover as RBPopover } from 'react-bootstrap';
+import type { PopoverProps as RBPopoverProps } from 'react-bootstrap';
+
+import classNames from 'classnames';
 
 import './Popover.scss';
 
@@ -22,5 +21,7 @@ const Popover = React.forwardRef<HTMLDivElement, PopoverProps>(
     </RBPopover>
   ),
 );
+
+Popover.displayName = 'Popover';
 
 export default Popover;

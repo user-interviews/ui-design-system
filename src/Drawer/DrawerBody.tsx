@@ -14,4 +14,6 @@ const DrawerBody = forwardRef<HTMLDivElement, DrawerBodyProps>(
   ),
 );
 
+DrawerBody.displayName = 'DrawerBody';
+
 export default DrawerBody;

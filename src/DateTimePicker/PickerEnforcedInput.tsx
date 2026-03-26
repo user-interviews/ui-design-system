@@ -1,3 +1,5 @@
+import React, { forwardRef } from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 import { isValid } from 'date-fns';
@@ -58,3 +60,5 @@ export const PickerEnforcedInput = forwardRef<
     );
   },
 );
+
+PickerEnforcedInput.displayName = 'PickerEnforcedInput';

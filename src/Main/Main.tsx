@@ -1,6 +1,7 @@
-import classNames from 'classnames';
 import React from 'react';
 import { type ContainerProps as ReactBootstrapContainerProps } from 'react-bootstrap';
+
+import classNames from 'classnames';
 
 import { Container } from '../Container';
 

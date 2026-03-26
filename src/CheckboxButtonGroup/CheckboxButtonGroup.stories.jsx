@@ -17,7 +17,6 @@ export default {
   },
 };
 
-/* eslint-disable react/prop-types */
 function CheckboxButtonGroupComponent({
   bordered,
   children,
@@ -55,7 +54,6 @@ function CheckboxButtonGroupComponent({
     </FormGroup>
   );
 }
-/* eslint-enable react/prop-types */
 
 export function Default() {
   const orientation = ORIENTATIONS.COLUMN;

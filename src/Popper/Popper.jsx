@@ -1,7 +1,8 @@
-import classNames from 'classnames';
-import PropTypes from 'prop-types';
 import React from 'react';
 import { Manager, Popper as ReactPopper, Reference } from 'react-popper';
+
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import './Popper.scss';
 

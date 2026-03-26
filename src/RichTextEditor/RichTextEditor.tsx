@@ -1,3 +1,11 @@
+import React, {
+  forwardRef,
+  useImperativeHandle,
+  type AriaAttributes,
+  type ForwardedRef,
+  useEffect,
+} from 'react';
+
 import Bold from '@tiptap/extension-bold';
 import BulletList from '@tiptap/extension-bullet-list';
 import CharacterCount from '@tiptap/extension-character-count';
@@ -13,13 +21,6 @@ import Placeholder from '@tiptap/extension-placeholder';
 import Text from '@tiptap/extension-text';
 import { EditorContent, useEditor } from '@tiptap/react';
 import classNames from 'classnames';
-import React, {
-  forwardRef,
-  useImperativeHandle,
-  type AriaAttributes,
-  type ForwardedRef,
-  useEffect,
-} from 'react';
 import sanitizeHtml from 'sanitize-html';
 
 import { LoadingSkeleton } from '../LoadingSkeleton';
@@ -247,5 +248,6 @@ const RichTextEditor = forwardRef(
   },
 );
 
-// eslint-disable-next-line import/no-default-export
+RichTextEditor.displayName = 'RichTextEditor';
+
 export default RichTextEditor;
