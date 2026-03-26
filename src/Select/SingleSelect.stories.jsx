@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+
 import { action } from 'storybook/actions';
 
 import Option from './Option';

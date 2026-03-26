@@ -1,5 +1,6 @@
-import classNames from 'classnames';
 import { createElement } from 'react';
+
+import classNames from 'classnames';
 
 import { type TEXT_PROPS } from './Text.types';
 

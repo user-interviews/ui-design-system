@@ -1,4 +1,3 @@
-import classNames from 'classnames';
 import React, {
   createContext,
   useEffect,
@@ -7,6 +6,8 @@ import React, {
   useRef,
   useMemo,
 } from 'react';
+
+import classNames from 'classnames';
 
 import './Drawer.scss';
 

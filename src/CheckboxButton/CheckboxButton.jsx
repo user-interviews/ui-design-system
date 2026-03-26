@@ -1,6 +1,7 @@
+import React, { useEffect } from 'react';
+
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { useEffect } from 'react';
 
 import * as styles from './CheckboxButton.module.scss';
 

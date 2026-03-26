@@ -1,7 +1,8 @@
-import classNames from 'classnames';
-import PropTypes from 'prop-types';
 import React, { forwardRef } from 'react';
 import { components } from 'react-select';
+
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import CheckboxButton from 'src/CheckboxButton';
 

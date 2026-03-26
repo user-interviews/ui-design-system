@@ -9,7 +9,14 @@
     "newlinesBetween": true,
     "internalPattern": ["src/"],
     "sortSideEffects": true,
+    "customGroups": [
+      {
+        "groupName": "react",
+        "elementNamePattern": ["react", "react-**"]
+      }
+    ],
     "groups": [
+      "react",
       "builtin",
       "external",
       ["internal", "parent", "sibling", "index"],

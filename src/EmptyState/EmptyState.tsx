@@ -1,5 +1,6 @@
-import classNames from 'classnames';
 import React, { type ReactNode } from 'react';
+
+import classNames from 'classnames';
 
 import { Heading, HeadingSize } from '../Heading';
 import { Text } from '../Text';

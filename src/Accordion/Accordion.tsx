@@ -1,5 +1,6 @@
-import classNames from 'classnames';
 import React from 'react';
+
+import classNames from 'classnames';
 import RBAccordion from 'react-bootstrap/Accordion';
 
 type AccordionProps = {

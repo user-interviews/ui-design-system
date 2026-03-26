@@ -1,6 +1,7 @@
-import classNames from 'classnames';
 import React, { createElement } from 'react';
 import { type FieldErrors, type FieldError } from 'react-hook-form';
+
+import classNames from 'classnames';
 
 import InputLabel from '../InputLabel';
 import InputLegend from '../InputLegend';

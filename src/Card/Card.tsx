@@ -1,10 +1,11 @@
-import classNames from 'classnames';
 import React, {
   createElement,
   type DetailedHTMLProps,
   type HTMLAttributes,
   type ReactNode,
 } from 'react';
+
+import classNames from 'classnames';
 
 import { LoadingSkeleton } from '../LoadingSkeleton';
 

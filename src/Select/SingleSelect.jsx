@@ -1,7 +1,8 @@
-import classNames from 'classnames';
-import propTypes from 'prop-types';
 import React from 'react';
 import Select from 'react-select';
+
+import classNames from 'classnames';
+import propTypes from 'prop-types';
 
 import {
   borderedMultiValueStyles,

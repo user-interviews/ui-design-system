@@ -1,5 +1,6 @@
-import classNames from 'classnames';
 import React, { type ReactNode } from 'react';
+
+import classNames from 'classnames';
 
 import PopoverBody from './PopoverBody';
 

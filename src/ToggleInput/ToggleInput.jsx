@@ -1,7 +1,8 @@
-import classNames from 'classnames';
-import PropTypes from 'prop-types';
 import React from 'react';
 import Toggle from 'react-toggle';
+
+import classNames from 'classnames';
+import PropTypes from 'prop-types';
 
 import './ToggleInput.scss';
 

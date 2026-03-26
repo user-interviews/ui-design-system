@@ -1,5 +1,6 @@
-import propTypes from 'prop-types';
 import React from 'react';
+
+import propTypes from 'prop-types';
 import Async from 'react-select/async';
 
 import { defaultStyles, defaultTheme, SELECT_SIZES } from './styles';

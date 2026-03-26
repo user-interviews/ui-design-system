@@ -1,6 +1,7 @@
-import classNames from 'classnames';
 import React from 'react';
 import ReactModal, { type ReactModalProps } from 'react-modal';
+
+import classNames from 'classnames';
 
 import './Modal.scss';
 

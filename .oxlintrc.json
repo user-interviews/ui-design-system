@@ -81,6 +81,16 @@
             ],
             "pathGroups": [
               {
+                "pattern": "react",
+                "group": "external",
+                "position": "before"
+              },
+              {
+                "pattern": "react-dom",
+                "group": "external",
+                "position": "before"
+              },
+              {
                 "pattern": "src/**",
                 "group": "internal"
               },

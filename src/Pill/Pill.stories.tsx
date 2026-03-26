@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { action } from 'storybook/actions';
 
 import { Pill, Pills, PILL_COLORS } from '.';

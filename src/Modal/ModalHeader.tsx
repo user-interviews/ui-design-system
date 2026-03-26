@@ -1,6 +1,7 @@
+import React from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
-import React from 'react';
 
 import { faExclamationTriangle } from '../font_awesome/solid';
 

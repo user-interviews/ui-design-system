@@ -1,5 +1,6 @@
-import classNames from 'classnames';
 import React, { Children, cloneElement } from 'react';
+
+import classNames from 'classnames';
 
 import './TableRow.scss';
 

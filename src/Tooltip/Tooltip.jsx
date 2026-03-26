@@ -1,7 +1,8 @@
+import React, { Component } from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
 
 import { faQuestionCircle } from '../font_awesome/solid';
 import Popper from '../Popper';

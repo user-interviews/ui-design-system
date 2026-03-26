@@ -1,6 +1,7 @@
-import classNames from 'classnames';
 import React from 'react';
 import { Popover as RBPopover } from 'react-bootstrap';
+
+import classNames from 'classnames';
 
 import './PopoverBody.scss';
 

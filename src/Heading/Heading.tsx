@@ -1,5 +1,6 @@
-import classNames from 'classnames';
 import { createElement, type ReactNode } from 'react';
+
+import classNames from 'classnames';
 
 import * as styles from './Heading.module.css';
 

@@ -1,6 +1,7 @@
-import { act } from '@testing-library/react';
 import React from 'react';
 import { create } from 'react-test-renderer';
+
+import { act } from '@testing-library/react';
 
 import { withToast } from '.';
 import { MessageTypes } from '../Alert';
