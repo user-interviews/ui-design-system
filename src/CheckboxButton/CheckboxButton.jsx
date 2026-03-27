@@ -65,7 +65,7 @@ CheckboxButton.propTypes = {
 };
 
 CheckboxButton.defaultProps = {
-  checked: false,
+  checked: undefined,
   className: undefined,
   disabled: false,
   indeterminate: false,
