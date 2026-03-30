@@ -160,8 +160,9 @@
     "yalc": "^1.0.0-pre.53"
   },
   "resolutions": {
-    "@tootallnate/once": "^3.0.1",
-    "undici": "6.24.0"
+    "http-proxy-agent/@tootallnate/once": "^3.0.1",
+    "@actions/github/undici": "^6.24.0",
+    "@actions/http-client/undici": "^6.24.0"
   },
   "description": "UI Storybook design system",
   "files": [
