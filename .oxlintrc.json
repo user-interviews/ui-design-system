@@ -143,12 +143,6 @@
           }
         ],
         "no-shadow": "off",
-        "no-underscore-dangle": [
-          "error",
-          {
-            "allowAfterThis": true
-          }
-        ],
         "prefer-destructuring": "warn",
         "react/exhaustive-deps": "error",
         "react/jsx-filename-extension": [
@@ -256,7 +250,6 @@
         "react/jsx-no-useless-fragment": "warn",
         "react/no-children-prop": "error",
         "react/no-danger-with-children": "error",
-        "react/no-deprecated": "error",
         "react/no-direct-mutation-state": "error",
         "react/no-find-dom-node": "error",
         "react/no-is-mounted": "error",

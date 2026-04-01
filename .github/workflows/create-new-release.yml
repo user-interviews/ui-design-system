@@ -67,7 +67,7 @@ jobs:
           title: "Merge release/v${{ steps.extract_version.outputs.version }} into main branch"
 
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --immutable --immutable-cache --check-cache
 
       - name: Compile assets bundle
         run: yarn build
