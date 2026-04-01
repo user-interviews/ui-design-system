@@ -299,7 +299,6 @@
         "typescript/no-useless-empty-export": "warn",
         "typescript/no-duplicate-enum-values": "error",
         "typescript/array-type": ["warn", { "default": "array" }],
-        "react/require-default-props": "off",
         "default-case": "off",
         "consistent-return": "off",
         "no-undef": "off"
