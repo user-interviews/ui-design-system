@@ -21,8 +21,11 @@ runs:
       uses: actions/setup-node@v6
       with:
         cache: 'yarn'
+        cache-dependency-path: |
+          yarn.lock
+          .yarnrc.yml
         node-version-file: ".node-version"
 
     - name: Install dependencies
-      run: yarn install --frozen-lockfile
+      run: yarn install --immutable --check-cache
       shell: bash

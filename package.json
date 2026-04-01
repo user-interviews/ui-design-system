@@ -32,24 +32,24 @@
     "tippy.js": "^6.3.7"
   },
   "scripts": {
-    "build": "NODE_ENV=production babel src --out-dir lib --copy-files --extensions '.js,.jsx,.ts,.tsx' && tsc",
+    "build": "NODE_ENV=production yarn exec babel src --out-dir lib --copy-files --extensions '.js,.jsx,.ts,.tsx' && yarn tsc",
     "build-storybook": "storybook build",
     "build-storybook-docs": "storybook build --docs",
-    "build-ts": "tsc",
-    "chromatic": "npx chromatic",
+    "build-ts": "yarn tsc",
+    "chromatic": "yarn exec chromatic",
     "lint": "yarn lint:js && yarn lint:css --quiet",
-    "lint:js": "tsc --noEmit && oxlint .",
-    "lint:js:fix": "oxlint . --fix",
-    "lint:css": "stylelint '**/*.{css,scss}'",
-    "lint:css:fix": "stylelint '**/*.{css,scss}' --fix",
-    "format": "oxfmt --write .",
-    "format:check": "oxfmt --check .",
+    "lint:js": "yarn tsc --noEmit && yarn exec oxlint .",
+    "lint:js:fix": "yarn exec oxlint . --fix",
+    "lint:css": "yarn exec stylelint '**/*.{css,scss}'",
+    "lint:css:fix": "yarn exec stylelint '**/*.{css,scss}' --fix",
+    "format": "yarn exec oxfmt --write .",
+    "format:check": "yarn exec oxfmt --check .",
     "prepublishOnly": "yarn build",
     "rs:link": "bin/link-rs",
     "rs:link:watch": "nodemon",
     "rs:unlink": "bin/unlink-rs",
     "storybook": "storybook dev -p 9009",
-    "test": "jest"
+    "test": "yarn jest"
   },
   "browserslist": {
     "production": [
@@ -106,7 +106,7 @@
     "@storybook/addon-jest": "^9.1.12",
     "@storybook/addon-links": "10.3.3",
     "@storybook/addon-mcp": "0.2.3",
-    "@storybook/addon-styling-webpack": "^3.0.1",
+    "@storybook/addon-styling-webpack": "^3.0.2",
     "@storybook/addon-webpack5-compiler-babel": "^4.0.1",
     "@storybook/react-webpack5": "10.3.3",
     "@testing-library/dom": "^10.4.1",
@@ -114,6 +114,8 @@
     "@testing-library/react": "^16.3.2",
     "@testing-library/user-event": "^14.6.1",
     "@types/jest": "^29.5.14",
+    "@types/node": "^24.12.0",
+    "@types/react": "^18.3.28",
     "@types/react-dom": "^18.3.7",
     "@types/react-toggle": "^4.0.5",
     "@types/react-transition-group": "^4.4.12",
@@ -136,8 +138,8 @@
     "jest-environment-jsdom": "^29.7.0",
     "jest-junit": "^16.0.0",
     "nodemon": "^3.1.14",
-    "oxfmt": "^0.42.0",
-    "oxlint": "^1.57.0",
+    "oxfmt": "^0.43.0",
+    "oxlint": "^1.58.0",
     "postcss": "^8.5.8",
     "prop-types": "^15.8.1",
     "react": "^18.3.1",
@@ -190,12 +192,12 @@
   "homepage": "https://github.com/user-interviews/ui-design-system",
   "_id": "@user-interviews/ui-design-system@3.0",
   "engines": {
-    "node": "^ 24.13",
-    "yarn": "^ 4.12"
+    "node": "^ 24.14",
+    "yarn": "^ 4.13"
   },
   "volta": {
-    "node": "24.13.0",
-    "yarn": "4.12.0"
+    "node": "24.14.1",
+    "yarn": "4.13.0"
   },
-  "packageManager": "yarn@4.12.0"
+  "packageManager": "yarn@4.13.0"
 }
