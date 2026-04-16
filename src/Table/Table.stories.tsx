@@ -506,7 +506,7 @@ export function TableOnCard() {
       title="Email Template Sets"
     >
       <div
-        id="Some table container"
+        id="some-table-container"
         style={{
           display: 'block',
           maxWidth: 'fit-content',
@@ -550,7 +550,7 @@ export function TableOnCardNoPadding() {
   return (
     <Card noPadding size="sm">
       <div
-        id="Some table container"
+        id="some-table-container"
         style={{
           display: 'block',
           maxWidth: 'fit-content',
