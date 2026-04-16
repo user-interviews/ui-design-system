@@ -1,5 +1,8 @@
 name: "Prepare hotfix"
 
+permissions:
+  contents: read
+
 on:
   workflow_dispatch:
     inputs:
@@ -14,6 +17,9 @@ jobs:
   prepare-hotfix:
     name: Prepare hotfix
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - name: Checkout branch
         uses: actions/checkout@v6

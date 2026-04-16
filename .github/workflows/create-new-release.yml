@@ -16,6 +16,10 @@ on:
           - prepatch
           - prerelease
 
+permissions:
+  contents: write
+  pull-requests: write
+
 env:
   FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
 
