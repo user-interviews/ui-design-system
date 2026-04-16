@@ -2,6 +2,9 @@ name: Test javascript
 
 on: push
 
+permissions:
+  contents: read
+
 env:
   FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
 
