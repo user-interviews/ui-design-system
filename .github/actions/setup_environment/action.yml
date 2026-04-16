@@ -10,12 +10,21 @@ runs:
         env-key: FONTAWESOME_NPM_AUTH_TOKEN
 
     - name: Install Yarn
-      uses: nick-fields/retry@v3
-      with:
-        timeout_minutes: 5
-        max_attempts: 3
-        command: corepack enable && corepack install
-        shell: bash
+      run: |
+        set -euo pipefail
+        attempts=0
+        max_attempts=3
+        until [ "$attempts" -ge "$max_attempts" ]; do
+          if corepack enable && corepack install; then
+            exit 0
+          fi
+          attempts=$((attempts + 1))
+          echo "corepack install failed (attempt ${attempts}/${max_attempts}), retrying..."
+          sleep 5
+        done
+        echo "Failed to install Yarn with Corepack after ${max_attempts} attempts."
+        exit 1
+      shell: bash
 
     - name: Setup Node
       uses: actions/setup-node@v6

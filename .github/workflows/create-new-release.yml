@@ -42,7 +42,7 @@ jobs:
         run: |
           version=$(grep '"version"' package.json | sed -E 's/.*"version": "([^"]+)".*/\1/')
           echo "Extracted version: $version"
-          echo "::set-output name=version::$version"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
 
       - name: Create version bump branch
         run: git checkout -b release/v${{ steps.extract_version.outputs.version }}
@@ -55,20 +55,16 @@ jobs:
         run: |
           git add package.json
           git commit --message "Update package.json v${{ steps.extract_version.outputs.version }}"
-
-          echo "::set-output name=commit::$(git rev-parse HEAD)"
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Publish release branch
         run: git push origin release/v${{ steps.extract_version.outputs.version }}
 
       - name: Merge version update into main branch
-        uses: thomaseizinger/create-pull-request@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          head: release/v${{ steps.extract_version.outputs.version }}
-          base: main
-          title: "Merge release/v${{ steps.extract_version.outputs.version }} into main branch"
+        run: |
+          git checkout main
+          git merge --ff-only release/v${{ steps.extract_version.outputs.version }}
+          git push origin main
 
       - name: Install dependencies
         run: yarn install --immutable --check-cache
@@ -81,26 +77,11 @@ jobs:
       - name: Pack bundle tarball
         run: npm pack
 
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
+      - name: Create release and upload asset
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: v${{ steps.extract_version.outputs.version }}
-          release_name: Release v${{ steps.extract_version.outputs.version }}
-          body_path:
-          draft: false
-          prerelease: false
-
-      # Upload assets to the release
-      - name: Upload Release Asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz
-          asset_name: user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz
-          asset_content_type: application/tar+gzip
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create \
+            "v${{ steps.extract_version.outputs.version }}" \
+            "./user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz" \
+            --title "Release v${{ steps.extract_version.outputs.version }}"
