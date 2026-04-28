@@ -42,7 +42,7 @@ jobs:
         run: |
           version=$(grep '"version"' package.json | sed -E 's/.*"version": "([^"]+)".*/\1/')
           echo "Extracted version: $version"
-          echo "::set-output name=version::$version"
+          echo "version=$version" >> $GITHUB_OUTPUT
 
       - name: Create version bump branch
         run: git checkout -b release/v${{ steps.extract_version.outputs.version }}
@@ -56,7 +56,7 @@ jobs:
           git add package.json
           git commit --message "Update package.json v${{ steps.extract_version.outputs.version }}"
 
-          echo "::set-output name=commit::$(git rev-parse HEAD)"
+          echo "commit=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
 
       - name: Publish release branch
         run: git push origin release/v${{ steps.extract_version.outputs.version }}
