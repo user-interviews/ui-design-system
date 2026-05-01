@@ -28,7 +28,7 @@ Synthesis is the official design system of [User Interviews](https://www.userint
 
 ### Initial Setup
 
-After cloning the repo, obtain a `.npmrc` file from another developer. This file contains authorization tokens for any private
+After cloning the repo, obtain a `.npmrc` file from 1password. This file contains authorization tokens for any private
 node packages.
 
 ### Available Scripts
