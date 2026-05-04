@@ -10,9 +10,11 @@ runs:
   using: 'composite'
   steps:
     - name: Confirm ENV
+      env:
+        ENV_KEY: ${{ inputs.env-key }}
       run: |
-        if [[ ! -v ${{ inputs.env-key }} ]]; then
-          echo Did not find ${{ inputs.env-key }} in the ENV
+        if [[ ! -v "$ENV_KEY" ]]; then
+          echo "Did not find $ENV_KEY in the ENV"
           exit 1
         fi
       shell: bash

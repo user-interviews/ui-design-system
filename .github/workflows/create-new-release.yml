@@ -35,7 +35,14 @@ jobs:
         uses: ./.github/actions/setup_environment
 
       - name: Bump version in package.json
-        run: yarn version ${{ github.event.inputs.version }}
+        env:
+          # Surface workflow_dispatch input as an env var so this `run:` block
+          # references "$BUMP_TYPE" instead of templating user input directly
+          # into the shell command (zizmor: template-injection). The input is
+          # already constrained by the `choice` list above, but pinning to an
+          # env var keeps the audit clean and removes the implicit trust.
+          BUMP_TYPE: ${{ github.event.inputs.version }}
+        run: yarn version "$BUMP_TYPE"
 
       - name: Extract version from package.json
         id: extract_version
@@ -48,7 +55,7 @@ jobs:
         run: git checkout -b release/v${{ steps.extract_version.outputs.version }}
 
       - name: Initialize mandatory git config
-        uses: fregante/setup-git-user@v2
+        uses: fregante/setup-git-user@024bc0b8e177d7e77203b48dab6fb45666854b35 # v2
 
       - name: Commit manifest files
         id: make-commit
@@ -62,7 +69,7 @@ jobs:
         run: git push origin release/v${{ steps.extract_version.outputs.version }}
 
       - name: Merge version update into main branch
-        uses: thomaseizinger/create-pull-request@master
+        uses: thomaseizinger/create-pull-request@955adb4634198898bc24dca0468514c63a8fc98d # 1.4.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -81,6 +88,10 @@ jobs:
       - name: Pack bundle tarball
         run: npm pack
 
+      # TODO(deprecated-action): actions/create-release was archived by
+      # GitHub in 2021 and receives no security or runner-version updates.
+      # Migrate to softprops/action-gh-release (hash-pinned per zizmor policy)
+      # or `gh release create` via a `run:` block. Tracking item to be filed.
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
@@ -93,7 +104,10 @@ jobs:
           draft: false
           prerelease: false
 
-      # Upload assets to the release
+      # TODO(deprecated-action): actions/upload-release-asset was archived
+      # alongside actions/create-release in 2021. softprops/action-gh-release
+      # uploads assets in the same step that creates the release, so the
+      # migration collapses these two steps into one.
       - name: Upload Release Asset
         id: upload-release-asset
         uses: actions/upload-release-asset@v1
