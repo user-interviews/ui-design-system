@@ -1,0 +1,68 @@
+name: Zizmor (GitHub Actions audit)
+
+# Audits .github/workflows and .github/actions for known-dangerous patterns
+# (template injection, excessive permissions, dangerous triggers, unpinned
+# uses, cache poisoning, etc.) and uploads results to the Security tab.
+#
+# See https://github.com/zizmorcore/zizmor and the audit reference at
+# https://docs.zizmor.sh/audits/ for what each finding means.
+
+on:
+  pull_request:
+    paths:
+      - .github/workflows/**
+      - .github/actions/**
+      - .github/zizmor.yml
+  push:
+    branches: [main]
+  schedule:
+    # Weekly catch-up so new audits added by zizmor releases surface even
+    # on workflows that aren't being actively edited.
+    - cron: '17 9 * * 1'
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: zizmor-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  zizmor:
+    name: Audit GitHub Actions
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      security-events: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        with:
+          persist-credentials: false
+
+      # Pass 1: advisory run. Audits at every severity, uploads results to the
+      # Security tab, and never fails the workflow. This is how medium/low
+      # findings (e.g. `artipacked` / persist-credentials, unpinned-uses on
+      # internal actions) stay visible without blocking PRs.
+      - name: Run zizmor (advisory — all severities → Security tab)
+        continue-on-error: true
+        uses: zizmorcore/zizmor-action@b1d7e1fb5de872772f31590499237e7cce841e8e # v0.5.3
+        with:
+          # Online audits (impostor-commit, ref-confusion) call the GitHub API
+          # against each `uses:` repo. The default workflow `GITHUB_TOKEN` is
+          # repo-scoped and can't read our private same-org actions, which
+          # makes those audits crash fatally with a 404/401 instead of soft-
+          # skipping. Run them locally with `GH_TOKEN=$(gh auth token) zizmor
+          # .github/`. Follow-up: provision a GitHub App / fine-grained PAT
+          # with `Contents: Read` on user-interviews/* and re-enable.
+          online-audits: false
+
+      # Pass 2: enforcement run. Only high-severity findings are reported, and
+      # this step IS allowed to fail the workflow. `advanced-security: false`
+      # avoids a duplicate SARIF upload (pass 1 already uploaded the full set).
+      - name: Run zizmor (gate — fail the workflow on high-severity findings)
+        uses: zizmorcore/zizmor-action@b1d7e1fb5de872772f31590499237e7cce841e8e # v0.5.3
+        with:
+          online-audits: false
+          min-severity: high
+          advanced-security: false

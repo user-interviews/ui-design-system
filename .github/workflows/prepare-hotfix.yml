@@ -12,6 +12,10 @@ on:
 
 env:
   FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+  # Surface workflow_dispatch input as an env var so `run:` blocks can
+  # reference "$HOTFIX_VERSION" instead of templating user input directly
+  # into shell commands (zizmor: template-injection).
+  HOTFIX_VERSION: ${{ github.event.inputs.version }}
 
 jobs:
   prepare-hotfix:
@@ -30,27 +34,27 @@ jobs:
         uses: ./.github/actions/setup_environment
 
       - name: Create hotfix branch
-        run: git checkout -b hotfix/${{ github.event.inputs.version }}
+        run: git checkout -b "hotfix/$HOTFIX_VERSION"
 
       - name: Initialize mandatory git config
-        uses: fregante/setup-git-user@v2
+        uses: fregante/setup-git-user@024bc0b8e177d7e77203b48dab6fb45666854b35 # v2
 
       - name: Bump version in package.json
-        run: yarn version --new-version ${{ github.event.inputs.version }} --no-git-tag-version
+        run: yarn version --new-version "$HOTFIX_VERSION" --no-git-tag-version
 
       - name: Commit manifest files
         id: make-commit
         run: |
           git add package.json
-          git commit --message "Prepare hotfix ${{ github.event.inputs.version }}"
+          git commit --message "Prepare hotfix $HOTFIX_VERSION"
 
-          echo "commit=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Publish hotfix branch
-        run: git push origin hotfix/${{ github.event.inputs.version }}
+        run: git push origin "hotfix/$HOTFIX_VERSION"
 
       - name: Merge hotfix into main branch
-        uses: thomaseizinger/create-pull-request@master
+        uses: thomaseizinger/create-pull-request@955adb4634198898bc24dca0468514c63a8fc98d # 1.4.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -59,7 +63,7 @@ jobs:
           title: Merge hotfix/${{ github.event.inputs.version }} into main branch
 
       - name: Merge hotfix into develop branch
-        uses: thomaseizinger/create-pull-request@master
+        uses: thomaseizinger/create-pull-request@955adb4634198898bc24dca0468514c63a8fc98d # 1.4.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:

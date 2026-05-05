@@ -26,20 +26,23 @@ jobs:
         run: yarn test
 
       - name: Upload coverage to OtterWise
+        # NOTE: do not wrap in ${{ ... }} — `if:` is already an expression
+        # context, and an extra wrap turns the result into a non-empty string
+        # ("false") that is always truthy (zizmor: unsound-condition).
         if: >
-          ${{ vars.OTTERWISE_ENABLED == 'true' && 
-              steps.test.outcome != 'skipped' && 
-              steps.test.outcome != 'cancelled' }}
-        uses: getOtterWise/github-action@v1
+          vars.OTTERWISE_ENABLED == 'true' &&
+          steps.test.outcome != 'skipped' &&
+          steps.test.outcome != 'cancelled'
+        uses: getOtterWise/github-action@739d7617d927fde5c1694f4c18b08a902948bc71 # v1
         with:
           token: ${{ secrets.OTTERWISE_TOKEN }}
 
       - name: Upload coverage to Coveralls
         if: >
-          ${{ vars.COVERALLS_ENABLED == 'true' &&  
-              steps.test.outcome != 'skipped' && 
-              steps.test.outcome != 'cancelled' }}
-        uses: coverallsapp/github-action@v2
+          vars.COVERALLS_ENABLED == 'true' &&
+          steps.test.outcome != 'skipped' &&
+          steps.test.outcome != 'cancelled'
+        uses: coverallsapp/github-action@5cbfd81b66ca5d10c19b062c04de0199c215fb6e # v2
         with:
           # github-token: ${{ secrets.GITHUB_TOKEN }}
           format: lcov
@@ -47,18 +50,18 @@ jobs:
 
       - name: Upload coverage to Codecov
         if: >
-          ${{ vars.CODECOV_ENABLED == 'true' &&
-              steps.test.outcome != 'skipped' && 
-              steps.test.outcome != 'cancelled' }}
-        uses: codecov/codecov-action@v5
+          vars.CODECOV_ENABLED == 'true' &&
+          steps.test.outcome != 'skipped' &&
+          steps.test.outcome != 'cancelled'
+        uses: codecov/codecov-action@75cd11691c0faa626561e295848008c8a7dddffe # v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 
       - name: Upload test results to Codecov
         if: >
-          ${{ vars.CODECOV_ENABLED == 'true' && 
-              steps.test.outcome != 'skipped' && 
-              steps.test.outcome != 'cancelled' }}
-        uses: codecov/test-results-action@v1
+          vars.CODECOV_ENABLED == 'true' &&
+          steps.test.outcome != 'skipped' &&
+          steps.test.outcome != 'cancelled'
+        uses: codecov/test-results-action@0fa95f0e1eeaafde2c782583b36b28ad0d8c77d3 # v1
         with:
           token: ${{ secrets.CODECOV_TOKEN }}

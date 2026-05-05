@@ -1,0 +1,7 @@
+rules:
+  unpinned-uses:
+    config:
+      policies:
+        "actions/*": ref-pin
+        "user-interviews/*": ref-pin
+        "*": hash-pin # prefer hash-pin for security with 3rd party actions
