@@ -52,21 +52,27 @@ jobs:
           echo "version=$version" >> $GITHUB_OUTPUT
 
       - name: Create version bump branch
-        run: git checkout -b release/v${{ steps.extract_version.outputs.version }}
+        env:
+          RELEASE_VERSION: ${{ steps.extract_version.outputs.version }}
+        run: git checkout -b "release/v${RELEASE_VERSION}"
 
       - name: Initialize mandatory git config
         uses: fregante/setup-git-user@024bc0b8e177d7e77203b48dab6fb45666854b35 # v2
 
       - name: Commit manifest files
         id: make-commit
+        env:
+          RELEASE_VERSION: ${{ steps.extract_version.outputs.version }}
         run: |
           git add package.json
-          git commit --message "Update package.json v${{ steps.extract_version.outputs.version }}"
+          git commit --message "Update package.json v${RELEASE_VERSION}"
 
           echo "commit=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
 
       - name: Publish release branch
-        run: git push origin release/v${{ steps.extract_version.outputs.version }}
+        env:
+          RELEASE_VERSION: ${{ steps.extract_version.outputs.version }}
+        run: git push origin "release/v${RELEASE_VERSION}"
 
       - name: Merge version update into main branch
         uses: thomaseizinger/create-pull-request@955adb4634198898bc24dca0468514c63a8fc98d # 1.4.0
@@ -88,33 +94,11 @@ jobs:
       - name: Pack bundle tarball
         run: npm pack
 
-      # TODO(deprecated-action): actions/create-release was archived by
-      # GitHub in 2021 and receives no security or runner-version updates.
-      # Migrate to softprops/action-gh-release (hash-pinned per zizmor policy)
-      # or `gh release create` via a `run:` block. Tracking item to be filed.
-      - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Release and Upload Asset
+        uses: softprops/action-gh-release@b4309332981a82ec1c5618f44dd2e27cc8bfbfda # v3.0.0
         with:
           tag_name: v${{ steps.extract_version.outputs.version }}
-          release_name: Release v${{ steps.extract_version.outputs.version }}
-          body_path:
+          name: Release v${{ steps.extract_version.outputs.version }}
           draft: false
           prerelease: false
-
-      # TODO(deprecated-action): actions/upload-release-asset was archived
-      # alongside actions/create-release in 2021. softprops/action-gh-release
-      # uploads assets in the same step that creates the release, so the
-      # migration collapses these two steps into one.
-      - name: Upload Release Asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz
-          asset_name: user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz
-          asset_content_type: application/tar+gzip
+          files: ./user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz

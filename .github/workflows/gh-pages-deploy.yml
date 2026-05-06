@@ -23,6 +23,8 @@ jobs:
     steps:
       - name: Checkout branch
         uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - name: Setup environment
         uses: ./.github/actions/setup_environment
