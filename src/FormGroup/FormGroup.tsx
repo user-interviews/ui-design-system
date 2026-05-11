@@ -38,26 +38,38 @@ function buildErrorMessage(errors, label) {
 }
 
 export type FormGroupProps = {
+  /** Bordered container styling (`FormGroup--bordered`). */
   bordered?: boolean;
   children?: React.ReactNode;
   className?: string;
+  /** Shows the invalid feedback region when `errors` resolves to a message (`true` default). */
   displayErrorText?: boolean;
-  // For accessibility purposes, FormGroups with radio or checkbox groups
-  // should be rendered as a <fieldset> element.
-  // All other FormGroups will be rendered as a normal <div> by default.
+  /** `fieldset` + `InputLegend` for grouped radios/checkboxes; `div` + `InputLabel` otherwise (`div` default). */
   elementType?: 'div' | 'fieldset';
+  /** RHF `FieldErrors` map, a single `FieldError`, or keyed messages; resolved with `inputKey` (default `''`). */
   // oxlint-disable-next-line typescript/no-explicit-any
   errors?: { [key: string]: React.ReactNode } | FieldErrors<any> | FieldError;
+  /** Helper line under the label and above the controls. */
   helperText?: React.ReactNode;
+  /** Root wrapper `id`. */
   id?: string;
+  /** Horizontal label/control layout (`FormGroup--inline`). */
   inline?: boolean;
+  /** Selects `errors[inputKey]` (falls back to `''`) for `buildErrorMessage` / `id="form-errors-…"`. */
   inputKey?: string;
+  /** Label or legend text when paired with `elementType`. */
   label?: React.ReactNode;
+  /** Class forwarded to `InputLabel` / `InputLegend`. */
   labelClassName?: string;
+  /** Secondary line on the label component. */
   labelHelperText?: string;
+  /** `htmlFor` on `InputLabel` when `elementType` is `div`. */
   labelHtmlFor?: string;
+  /** Tooltip content on the label component. */
   labelTooltip?: React.ReactNode;
+  /** Drops default vertical margin (`FormGroup--no-margin`). */
   noMargin?: boolean;
+  /** Marks the label/legend as required. */
   required?: boolean;
 };
 
