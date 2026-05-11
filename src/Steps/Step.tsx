@@ -10,8 +10,10 @@ type DivProps = React.DetailedHTMLProps<
 >;
 
 type StepProps = DivProps & {
+  /** Marker inside the circle; when a string, also used in `Step--{circleText}` modifier classes. */
   circleText?: string | React.ReactNode;
   className?: string;
+  /** Label beside the circle. */
   text?: string | React.ReactNode;
 };
 
