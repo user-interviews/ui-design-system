@@ -8,9 +8,13 @@ import './ModalFooter.scss';
 
 type ModalFooterProps = {
   children?: React.ReactNode;
+  /** Disables the dismiss control when `onRequestClose` is set. */
   closingIsDisabled?: boolean;
+  /** Cancel button label (`Cancel` default). */
   dismissButtonText?: string;
+  /** Sticky footer positioning class (`false` default). */
   isSticky?: boolean;
+  /** Invoked with no arguments on dismiss click (not an event handler). */
   onRequestClose?: (...args: unknown[]) => unknown;
 };
 

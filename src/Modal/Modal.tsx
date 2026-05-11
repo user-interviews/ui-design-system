@@ -13,6 +13,7 @@ export const MODAL_SIZES = {
 
 type ModalProps = {
   className?: string;
+  /** Adds `ReactModal--medium` / `ReactModal--large` class names. */
   size?: (typeof MODAL_SIZES)[keyof typeof MODAL_SIZES];
 } & ReactModalProps;
 
