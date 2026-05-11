@@ -71,9 +71,3 @@ export function Navy() {
 export function Neutral() {
   return <Palette color="NEUTRAL" />;
 }
-export function Sand() {
-  return <Palette color="SAND" />;
-}
-export function Teal() {
-  return <Palette color="TEAL" />;
-}
