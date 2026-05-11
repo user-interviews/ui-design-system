@@ -11,41 +11,20 @@ import colors from '../Styles/colors/palette';
 import './LoadingSkeleton.scss';
 
 export type LoadingSkeletonProps = SkeletonProps & {
-  /**
-  The border radius of the skeleton.
-  */
+  /** Corner radius on each bar (`4px` default). */
   borderRadius?: number | string;
-  /**
-  Makes the skeleton circular by setting border-radius to 50%.
-  */
+  /** Forces a circular skeleton (`border-radius: 50%`). */
   circle?: boolean;
   className?: string;
-  /**
-  A custom class name for the `<span>` that wraps the individual skeleton elements.
-  */
+  /** Extra class merged onto the library’s skeleton container span. */
   containerClassName?: string;
-  /**
-  A string that is added to the container element as a data-testid attribute.
-  Use it with screen.getByTestId('...') from React Testing Library.
-  */
+  /** `data-testid` on the skeleton container for RTL queries. */
   containerTestId?: string;
-  /**
-  The number of lines of skeletons to render. If count is a decimal number like 3.5,
-  three full skeletons and one half-width skeleton will be rendered.
-  */
+  /** Number of skeleton rows; */
   count?: number;
-  /**
-  The height of the skeleton.
-  */
   height?: number | string;
-  /**
-  By default, a `<br />` is inserted after each skeleton so that each skeleton gets its own line.
-  When inline is true, no line breaks are inserted.
-  */
+  /** Skips `<br />` between repeated skeletons (`false` default). */
   inline?: boolean;
-  /**
-  The width of the skeleton.
-  */
   width?: number | string;
 };
 
