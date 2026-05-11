@@ -32,9 +32,13 @@ export enum ButtonVariants {
 }
 
 export type ButtonProps = RBButtonProps & {
+  /** Spinner replaces `children`; also forces `disabled` and `aria-disabled`. */
   isLoading?: boolean;
+  /** Renders before `children` when not `isLoading`. */
   leadingIcon?: IconDefinition;
+  /** Shown beside the spinner while `isLoading` (default `Loading...`). */
   loadingText?: string;
+  /** Renders after `children` when not `isLoading`. */
   trailingIcon?: IconDefinition;
 };
 

@@ -35,23 +35,39 @@ const popperContainerDocumentBody = ({
   children?: React.ReactNode;
 }) => createPortal(children, document.body);
 
+/** String-driven `react-datepicker` wrapper; values round-trip via date-fns using `dateFormat` / `timeFormat`. */
 export type DateTimePickerProps = {
+  /** Shows clear UI; when cleared, calls `onChangeDate({ startDate: null, startTime: null })` if `onChangeDate` is set (default `false`). */
   isClearable?: boolean;
+  /** Current date string; kept in sync when this prop changes (`''` default). */
   date?: string;
+  /** date-fns format for the date segment (defaults to `ISO_DATE_FORMAT_FNS` in this file: `yyyy-MM-dd`). */
   dateFormat?: string;
+  /** Disables opening/editing the picker. */
   disabled?: boolean;
   id?: string;
+  /** Class on `PickerEnforcedInput` when `showPickerEnforcedInput` (`form-control` default). */
   inputClassName?: string;
+  /** Upper bound forwarded to `react-datepicker`. */
   maxDate?: Date;
+  /** Lower bound forwarded to `react-datepicker`. */
   minDate?: Date;
   name?: string;
+  /** Month/year dropdowns on the calendar (`showMonthDropdown` / `showYearDropdown`). */
   showMonthAndYearSelects?: boolean;
+  /** Uses `PickerEnforcedInput` and a localized pattern token (`P`) for `dateFormat` instead of free typing. */
   showPickerEnforcedInput?: boolean;
+  /** Enables time UI and parses `date` + `time` together. */
   showTimeSelect?: boolean;
+  /** Time string when `showTimeSelect`; synced when this prop changes (`''` default). */
   time?: string;
+  /** date-fns format for the time segment when `showTimeSelect` (default `hh:mm aa`). */
   timeFormat?: string;
+  /** Portals the calendar popper to `document.body` with modal stacking styles. */
   isWithinModal?: boolean;
+  /** On calendar close, valid picks yield `{ startDate, startTime }` strings; with `isClearable`, clear/invalid paths can pass `null` fields. */
   onChangeDate?: (...args: unknown[]) => unknown;
+  /** Called with an `Error` if parsing fails when the calendar closes. */
   onDateParseError?: (...args: unknown[]) => unknown;
 };
 

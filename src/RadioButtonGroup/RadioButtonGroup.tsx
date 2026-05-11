@@ -7,10 +7,15 @@ import ControlButtonGroup, { ORIENTATIONS } from '../ControlButtonGroup';
 import './RadioButtonGroup.scss';
 
 type RadioButtonGroupProps = {
+  /** Each child should expose a `value` prop for selection state. */
   children: React.ReactNode;
+  /** Stretches row layout when `orientation` is `row`. */
   fullWidth?: boolean;
+  /** Column vs row grouping (`ORIENTATIONS`, default `column`). */
   orientation?: (typeof ORIENTATIONS)[keyof typeof ORIENTATIONS];
+  /** Selected option’s `value` for `checked` state. */
   value?: number | string | boolean;
+  /** Receives `event.target.value` from the active radio. */
   onChange?: (...args: unknown[]) => unknown;
 };
 

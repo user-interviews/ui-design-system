@@ -6,10 +6,15 @@ export const ORIENTATIONS = {
 } as const;
 
 type ControlButtonGroupProps = {
+  /** Receives each child’s `value` and returns whether that option should appear selected. */
   childChecked: (...args: unknown[]) => boolean;
+  /** Inputs (or similar) with a `value` prop; the group may `cloneElement` to inject `checked` / `onChange` / `bordered`. */
   children: React.ReactNode;
+  /** Becomes each child’s `onChange` when `onChange` is set; should handle the change event from the control. */
   handleChangeValue: React.ChangeEventHandler<HTMLInputElement>;
+  /** `'row'` vs `'column'` (`ORIENTATIONS`, default `column`); in `'row'`, sets `bordered` on composite children if unset. */
   orientation?: (typeof ORIENTATIONS)[keyof typeof ORIENTATIONS];
+  /** When defined, controlled mode: clones pass `checked` from `childChecked` and `onChange` from `handleChangeValue`. When omitted, children are not augmented. */
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
 };
 

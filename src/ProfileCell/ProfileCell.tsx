@@ -10,13 +10,21 @@ import ProfileCellSkeleton from './ProfileCellSkeleton';
 import './ProfileCell.scss';
 
 type ProfileCellProps = {
+  /** Forwarded to `Avatar` for background hue. */
   colorId?: string | number;
+  /** Swaps the cell for `ProfileCellSkeleton`. */
   isLoading?: boolean;
+  /** Larger avatar + typography (`ProfileCell--large`). */
   large?: boolean;
+  /** Inline `max-width` on the text column (`none` when unset). */
   maxWidth?: string;
+  /** Forwarded to `Avatar` alert dot. */
   showAlert?: boolean;
+  /** Secondary line under the name (falls back to a blank placeholder). */
   subtitle?: React.ReactNode;
+  /** Icon beside the name heading. */
   trailingIcon?: IconDefinition;
+  /** Participant display data; `imageUrl` or `profilePictureUrl` feeds the avatar photo. */
   user: {
     facebookProfileUrl?: string;
     imageUrl?: string;

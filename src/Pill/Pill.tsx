@@ -20,10 +20,15 @@ export const PILL_COLORS = {
 
 type PillProps = {
   children?: React.ReactNode;
+  /** Palette token from `PILL_COLORS` (`blue` default). */
   color?: (typeof PILL_COLORS)[keyof typeof PILL_COLORS];
+  /** Leading FA icon. */
   icon?: IconDefinition;
+  /** Passed to `onClose` for keyed removal. */
   id?: string;
+  /** Primary label content (also used in close `aria-label`). */
   text?: React.ReactNode;
+  /** Renders a close button; receives `id` when clicked. */
   onClose?: (...args: unknown[]) => unknown;
 };
 

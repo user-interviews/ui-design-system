@@ -13,10 +13,15 @@ type LabelProps = React.DetailedHTMLProps<
 
 export type InputLabelProps = {
   className?: string;
+  /** Shown in parentheses after the label text. */
   labelHelperText?: React.ReactNode;
+  /** Passed to `htmlFor` to associate with an input `id`. */
   labelHtmlFor?: string;
+  /** Appends “(Required)” helper copy. */
   required?: boolean;
+  /** Primary label text. */
   text: React.ReactNode;
+  /** Renders a trailing `Tooltip` with right placement. */
   tooltipText?: React.ReactNode;
 } & LabelProps;
 

@@ -8,7 +8,9 @@ import type { TabsProps as BootstrapTabProps } from 'react-bootstrap/Tabs';
 import * as styles from './tabs.module.scss';
 
 export interface TabsProps extends BootstrapTabProps {
+  /** Module class to allow tab labels to wrap (`flex-wrap: unset`). */
   flexWrapUnset?: boolean;
+  /** Module class so nav buttons fill tab height. */
   navItemButtonFullHeight?: boolean;
 }
 

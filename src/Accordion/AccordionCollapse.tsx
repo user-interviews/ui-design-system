@@ -8,9 +8,7 @@ import './AccordionCollapse.scss';
 type AccordionCollapseProps = {
   variant?: string;
   children: React.ReactNode;
-  /**
-   A unique key used to control this item's collapse/expand.
-   */
+  /** Must match this item’s `AccordionItem` and `AccordionToggle` `eventKey`. Forwarded to React Bootstrap `AccordionCollapse`. */
   eventKey: string;
   UNSAFE_className?: string;
 };

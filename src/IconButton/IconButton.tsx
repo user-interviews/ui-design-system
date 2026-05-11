@@ -58,16 +58,19 @@ export const IconButtonActions = {
 
 export type IconButtonProps = (
   | {
+      /** Preset icon + default `aria-label` (override label with `ariaLabel`). */
       action: keyof typeof IconButtonActions;
       ariaLabel?: string;
       icon?: never;
     }
   | {
       action?: never;
+      /** Required when not using `action`. */
       ariaLabel: string;
       icon: IconDefinition;
     }
 ) & {
+  /** `sm` (default) or `lg` icon button sizing. */
   size?: 'sm' | 'lg';
 } & ButtonProps;
 

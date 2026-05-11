@@ -9,11 +9,17 @@ import './EmptyState.scss';
 
 export interface EmptyStateProps {
   className?: string;
+  /** Lets inner content span wider than the default `max-width` (`false` default). */
   fullWidth?: boolean;
+  /** Illustration URL; `<img>` uses `alt=""`. */
   image?: string;
+  /** Top spacing preset on the outer wrapper (`sm` default). */
   marginTop?: 'sm' | 'md' | 'lg' | 'none';
+  /** CTA area below the subtitle (e.g. a `Button`). */
   primaryAction?: ReactNode;
+  /** Centered `Text` body under the title. */
   subtitle?: string | ReactNode;
+  /** Centered `Heading` (level 4, small) when provided. */
   title?: ReactNode;
 }
 

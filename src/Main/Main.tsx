@@ -13,9 +13,11 @@ type ElementProps = React.DetailedHTMLProps<
 >;
 
 type MainProps = ElementProps & {
+  /** Root element type (`main` default). */
   as?: React.ElementType;
   children?: React.ReactNode;
   className?: string;
+  /** Forwarded to React Bootstrap `Container` (`true` default). */
   fluid?: ReactBootstrapContainerProps['fluid'];
   id?: string;
 };

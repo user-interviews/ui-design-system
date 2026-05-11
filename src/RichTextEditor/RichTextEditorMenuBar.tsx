@@ -19,8 +19,11 @@ import type { Editor } from '@tiptap/core';
 import './RichTextEditorMenuBar.scss';
 
 type RichTextEditorMenuBarProps = {
+  /** Subset of `RichTextEditorActions` to render (must align with parent editor extensions). */
   availableActions: (typeof RichTextEditorActions)[keyof typeof RichTextEditorActions][];
+  /** Live TipTap instance for command handlers. */
   editor: Editor;
+  /** Disables every control when false (`true` default). */
   editable?: boolean;
 };
 

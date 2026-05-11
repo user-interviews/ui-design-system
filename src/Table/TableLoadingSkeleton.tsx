@@ -6,7 +6,9 @@ import { LoadingSkeleton } from '../LoadingSkeleton';
 import './TableLoadingSkeleton.scss';
 
 type TableLoadingSkeletonProps = {
+  /** Skeleton bar widths in px per column (built-in default array when unset). */
   columns?: number[];
+  /** Number of skeleton rows (`7` default). */
   rows?: number;
 };
 

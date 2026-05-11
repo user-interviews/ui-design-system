@@ -12,8 +12,11 @@ type TableElementProps = React.DetailedHTMLProps<
 export type TableProps = TableElementProps & {
   children?: React.ReactNode;
   className?: string;
+  /** Swaps children for `TableLoadingSkeleton`. */
   isLoading?: boolean;
+  /** Pixel widths for each skeleton column (see `TableLoadingSkeleton` default). */
   loadingColumns?: number[];
+  /** Skeleton row count (`7` default on the skeleton). */
   loadingRows?: number;
 };
 

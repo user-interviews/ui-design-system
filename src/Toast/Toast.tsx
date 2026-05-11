@@ -10,9 +10,13 @@ import { type Message } from './useToast';
 import './Toast.scss';
 
 type ToastProps = {
+  /** Forwarded to each `Alert` `autoDismiss`. */
   autoDismiss?: boolean;
+  /** Toggles header styling on the toast group (`true` default). */
   header?: boolean;
+  /** Active toast payloads from `useToast`. */
   messages: Message[];
+  /** Passed to each `Alert` `onDismiss` (typically `dismissMessage`). */
   onToastClosed?: (...args: unknown[]) => unknown;
 };
 

@@ -6,16 +6,13 @@ import RBAccordionItem from 'react-bootstrap/AccordionItem';
 import './AccordionItem.scss';
 
 type AccordionItemProps = {
-  /**
-    Sets a custom element for this component
-  */
+  /** Wrapper element type. Forwarded to React Bootstrap `AccordionItem`. */
   as?: React.ElementType;
-  /**
-    Removes border from accordion item
-  */
+  /** Removes the item border. */
   borderless?: boolean;
   UNSAFE_className?: string;
   children: React.ReactNode;
+  /** Must match this item’s `AccordionToggle` and `AccordionCollapse` `eventKey`. Forwarded to React Bootstrap `AccordionItem`. */
   eventKey: string;
   variant?: string;
 };
