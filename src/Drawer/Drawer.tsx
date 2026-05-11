@@ -31,16 +31,26 @@ export const DrawerSizes = {
 } as const;
 
 type DrawerProps = {
+  /** Top padding for fixed nav clearance (`Drawer--behind-nav`; default `true`). */
   behindNav?: boolean;
+  /** Typically `DrawerHeader`, `DrawerBody`, and `DrawerFooter`. */
   children?: React.ReactNode;
   className?: string;
+  /** When true, clicking the dimmed overlay calls `onRequestClose` (default `true`). */
   closeOnOverlayClick?: boolean;
+  /** Initial expanded width when `expandable` (`false` default). */
   defaultExpanded?: boolean;
+  /** Enables expand/collapse control via `ExpandContext` (`false` default). */
   expandable?: boolean;
+  /** Renders the backdrop and toggles body scroll lock (`Drawer--open`; default `true`). */
   hasBackgroundOverlay?: boolean;
+  /** Slide edge (`ORIENTATION_LEFT` / `ORIENTATION_RIGHT`; default `right`). */
   orientation?: typeof ORIENTATION_LEFT | typeof ORIENTATION_RIGHT;
+  /** Width preset from `DrawerSizes` (default `sm`). */
   size?: (typeof DrawerSizes)[keyof typeof DrawerSizes];
+  /** Drives open/closed presentation and escape key handling while true. */
   visible: boolean;
+  /** Escape (when open), overlay (when `closeOnOverlayClick`), and header close should call this. */
   onRequestClose: (...args: unknown[]) => unknown;
 };
 

@@ -10,8 +10,10 @@ import { ExpandContext } from './Drawer';
 import './DrawerHeader.scss';
 
 type DrawerHeaderProps = {
+  /** Bottom border on the header row (`true` default). */
   bordered?: boolean;
   title?: ReactNode;
+  /** Close icon; usually the same callback passed to `Drawer`. */
   onRequestClose: (...args: unknown[]) => unknown;
 };
 
