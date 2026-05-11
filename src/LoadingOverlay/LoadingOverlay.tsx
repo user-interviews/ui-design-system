@@ -8,12 +8,18 @@ import { faSpinnerThird } from '../font_awesome/solid';
 import './LoadingOverlay.scss';
 
 type LoadingOverlayProps = {
+  /** Modifier for vertically centering content with overflow handling. */
   contentCenterOverflow?: boolean;
+  /** Aligns overlay content toward the top. */
   contentTop?: boolean;
+  /** `data-testid` on the root (`LoadingOverlay` default). */
   dataTestid?: string;
   header?: string;
+  /** Secondary line with `overlay--text` styling. */
   text?: string;
+  /** Class on the `text` paragraph. */
   textClassName?: string;
+  /** When false, root uses `display: none` instead of relying on CSS alone (`true` default). */
   visible?: boolean;
 };
 
