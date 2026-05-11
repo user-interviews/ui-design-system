@@ -20,18 +20,29 @@ export const CardSizes = {
 
 type ElementProps = DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement>;
 
+/** Root node is `elementType`; standard HTML attributes spread onto it via `ElementProps`. */
 type CardProps = {
   children?: ReactNode;
   className?: string;
+  /** Inserts an `hr` before `subTitle`/`children` and `Card--divided` (pulls title bottom margin when `title` is present). */
   divided?: boolean;
+  /** Outer element tag name for `createElement` (default `'section'`). */
   elementType?: string;
+  /** Shown beside `title` in the header row. */
   helperText?: ReactNode;
+  /** Swaps the body for `loadingSkeleton` or the default skeleton (default `false`). */
   isLoading?: boolean;
+  /** Custom loading UI; used only when `isLoading`. */
   loadingSkeleton?: ReactNode;
+  /** Paragraph skeleton groups in the default loading layout (default `1`). */
   loadingSkeletonParagraphCount?: number;
+  /** Removes outer padding (`Card--no-padding`; default `false`). */
   noPadding?: boolean;
+  /** Responsive max width via `Card--{size}` (`CardSizes` / `'xs' | 'sm' | 'md' | 'lg'`). */
   size?: 'xs' | 'sm' | 'md' | 'lg';
+  /** Optional `h3` after the optional divider, before `children`. */
   subTitle?: ReactNode;
+  /** Optional `h2` header row; enables `helperText` in that row. */
   title?: ReactNode;
 } & ElementProps;
 
