@@ -13,14 +13,22 @@ type InputElementProps = React.DetailedHTMLProps<
 
 export type InputProps = InputElementProps & {
   disabled?: boolean;
+  /** Required `id` on the native `<input>`. */
   id: string;
+  /** Icon in the leading `input-group-text`. */
   leadingIcon?: IconDefinition;
+  /** Required `name` on the native `<input>`. */
   name: string;
   placeholder?: string;
+  /** Icon after the field; pair with `trailingIconOnClick` for a button, otherwise decorative. */
   trailingIcon?: IconDefinition;
+  /** `aria-label` on the trailing icon button when `trailingIconOnClick` is set. */
   trailingIconLabel?: string;
+  /** When set with `trailingIcon`, wraps the icon in a clickable trailing control. */
   trailingIconOnClick?: (...args: unknown[]) => unknown;
+  /** `type` on that trailing control (`button` vs `submit`; default `button`). */
   trailingIconOnClickSubmit?: boolean;
+  /** Static suffix text after the input (layout class adjusts for `type="number"`). */
   trailingText?: string;
   type?: string;
   value?: string;
