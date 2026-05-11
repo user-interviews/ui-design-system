@@ -12,9 +12,13 @@ type TableElementProps = React.DetailedHTMLProps<
 type TableRowProps = TableElementProps & {
   children?: React.ReactNode;
   className?: string;
+  /** Pointer/hover affordance for interactive rows. */
   clickable?: boolean;
+  /** Suppresses hover styling. */
   removeHover?: boolean;
+  /** Selected row highlight. */
   selected?: boolean;
+  /** When true, each child receives `stickyRow` via `cloneElement`. */
   stickyRow?: boolean;
 };
 

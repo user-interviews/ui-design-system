@@ -10,18 +10,29 @@ type TableCellElementProps = React.DetailedHTMLProps<
 >;
 
 type TableCellProps = TableCellElementProps & {
+  /** Right-aligns cell content. */
   alignRight?: boolean;
   children?: React.ReactNode;
   className?: string;
+  /** Tighter padding preset. */
   compact?: boolean;
+  /** Renders `<th>` instead of `<td>` and adjusts sticky corner styling. */
   header?: boolean;
+  /** Pixel `max-width` style on `<td>` rows. */
   maxWidth?: number;
+  /** Pixel `min-width` style on `<td>` rows. */
   minWidth?: number;
+  /** Drops bottom border on the cell. */
   removeBorderBottom?: boolean;
+  /** Enables sticky column classes (pair with `stickyLeft` / `stickyRight`). */
   stickyColumn?: boolean;
+  /** Pixel offset for left/right sticky positioning. */
   stickyColumnOffsetX?: number;
+  /** Sticky column anchored left. */
   stickyLeft?: boolean;
+  /** Sticky column anchored right. */
   stickyRight?: boolean;
+  /** Sticky row styling (also injected into child cells from `TableRow`). */
   stickyRow?: boolean;
 };
 
