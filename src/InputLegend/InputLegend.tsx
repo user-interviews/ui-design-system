@@ -13,9 +13,13 @@ type LegendProps = React.DetailedHTMLProps<
 
 export type InputLegendProps = {
   className?: string;
+  /** Shown in parentheses after the legend text. */
   labelHelperText?: React.ReactNode;
+  /** Appends “(Required)” helper copy. */
   required?: boolean;
+  /** Primary legend text. */
   text: React.ReactNode;
+  /** Renders a trailing `Tooltip` with right placement. */
   tooltipText?: React.ReactNode;
 } & LegendProps;
 
