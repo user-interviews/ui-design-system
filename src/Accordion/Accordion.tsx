@@ -5,30 +5,18 @@ import RBAccordion from 'react-bootstrap/Accordion';
 
 type AccordionProps = {
   children: React.ReactNode;
-  /**
-    The current active key that corresponds to the currently expanded accordion
-  */
+  /** Controlled open panel(s); values must match each `AccordionItem` `eventKey`. Use `string[]` when `alwaysOpen`. Forwarded to React Bootstrap `Accordion`. */
   activeKey?: string | string[];
-  /**
-    Allow accordion items to stay open when another item is opened
-  */
+  /** Multiple panels may stay open; pair with `activeKey` / `defaultActiveKey` as arrays when needed. Forwarded to React Bootstrap `Accordion`. */
   alwaysOpen?: boolean;
-  /**
-    Sets a custom element for this component
-  */
+  /** Root element type. Forwarded to React Bootstrap `Accordion`. */
   as?: React.ElementType;
-  /**
-    The default active key that is expanded on start
-  */
+  /** Initial open key(s) when uncontrolled; ignored if `activeKey` is set. */
   defaultActiveKey?: string | string[];
-  /**
-    Renders accordion edge-to-edge with its parent container
-  */
+  /** Edge-to-edge (flush) styling. Forwarded to React Bootstrap `Accordion`. */
   flush?: boolean;
   UNSAFE_className?: string;
-  /**
-    Callback fired when the active item changes
-  */
+  /** Fires when the expanded item changes. Forwarded to React Bootstrap `Accordion`. */
   onSelect?: () => void;
 };
 

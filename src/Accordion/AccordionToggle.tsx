@@ -12,28 +12,26 @@ import { isEventKeyActive } from './utils';
 import './AccordionToggle.scss';
 
 type AccordionToggleProps = {
+  /** Bottom border on the header inner container. */
   borderBottom?: boolean;
-  /**
-   Set Chevron icon to open/close quarter turn from lateral
-  */
+  /** Chevron at 90° at rest; open/close rotation differs from default. */
   chevronLateral?: boolean;
-  /**
-   Aligns the Chevron icon to the left
-  */
+  /** Chevron before content; hides the trailing chevron. */
   chevronLeft?: boolean;
-  /**
-   Aligns the Chevron icon to the right (default)
-  */
+  /** Trailing chevron (default `true`). */
   chevronRight?: boolean;
   children?: React.ReactNode;
+  /** Shown only while this panel is collapsed. */
   collapsedText?: string;
-  /**
-   A unique key used to control this item's collapse/expand.
-   */
+  /** Disables the header button and mutes appearance. */
   disabled?: boolean;
+  /** Must match this item’s `AccordionItem` and `AccordionCollapse` `eventKey`. */
   eventKey: string;
+  /** Tighter horizontal padding on the header. */
   flush?: boolean;
+  /** Parenthetical text after the title. */
   helperText?: string;
+  /** Font Awesome icon definition rendered before the title. */
   leadingIcon?: object;
   title?: string;
   UNSAFE_className?: string;
