@@ -91,31 +91,26 @@ const getAlertClassName = (type: MessageType) => {
 };
 
 type AlertProps = {
-  /**
-   Creates a CTA button on the Alert
-  */
+  /** `{ url, content }` renders a styled anchor; any other `ReactNode` is rendered in the action area as-is. */
   action?:
     | {
         url: string;
         content: React.ReactNode;
       }
     | React.ReactNode;
-  /**
-    Specifies where to open the linked document
-  */
+  /** `target` on the action anchor when `action` is `{ url, content }` (e.g. `_blank`). */
   actionTarget?: string;
-  /**
-   Determines whether the Alert will disappear automatically
-  */
+  /** When true and `onDismiss` is set, calls `onDismiss` after a delay.*/
   autoDismiss?: boolean;
+  /** Passed into `onDismiss` from the close button and from auto-dismiss. */
   id?: string;
   message: string | React.ReactNode;
+  /** Removes the type-colored left border (`borderLeft: none`). */
   removeBorderLeft?: boolean;
   title?: string;
-  /**
-   One of the MessageTypes
-  */
+  /** Variant and icon (`MessageTypes`) */
   type: MessageType;
+  /** Renders the close control; combined with `autoDismiss`, also invoked after the timeout. */
   onDismiss?: (arg0?: string) => void;
 };
 
