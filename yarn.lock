@@ -3994,12 +3994,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^24.12.3":
-  version: 24.12.3
-  resolution: "@types/node@npm:24.12.3"
+"@types/node@npm:^24.12.4":
+  version: 24.12.4
+  resolution: "@types/node@npm:24.12.4"
   dependencies:
     undici-types: "npm:~7.16.0"
-  checksum: 10c0/e9db4194a0043c07e8c84c9e3ad19e4a216c708818de75ecfca858edb30d4f9f7ef1cb854959af552896eaf69ff79ea3d6e63157a6d37b0e1b809fac1c538e55
+  checksum: 10c0/d2c36b78b6050d8677769fa05a32243061675e81ddc2bb43955d91a671af3465506ef2731a24c0c9ab42b6b679bd5c1513de45bbe9ea278c2c07ee63b564b61b
   languageName: node
   linkType: hard
 
@@ -4257,7 +4257,7 @@ __metadata:
     "@tiptap/react": "npm:^2.27.2"
     "@tiptap/suggestion": "npm:^2.27.2"
     "@types/jest": "npm:^29.5.14"
-    "@types/node": "npm:^24.12.3"
+    "@types/node": "npm:^24.12.4"
     "@types/react": "npm:^18.3.28"
     "@types/react-dom": "npm:^18.3.7"
     "@types/react-toggle": "npm:^4.0.5"
@@ -4309,7 +4309,7 @@ __metadata:
     style-loader: "npm:^4.0.0"
     stylelint: "npm:^17.11.0"
     stylelint-config-standard-scss: "npm:^17.0.0"
-    stylelint-scss: "npm:^7.1.0"
+    stylelint-scss: "npm:^7.1.1"
     tippy.js: "npm:^6.3.7"
     typescript: "npm:^6.0.3"
     webpack: "npm:^5.106.2"
@@ -12303,9 +12303,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"stylelint-scss@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "stylelint-scss@npm:7.1.0"
+"stylelint-scss@npm:^7.1.1":
+  version: 7.1.1
+  resolution: "stylelint-scss@npm:7.1.1"
   dependencies:
     "@csstools/css-calc": "npm:^3.2.0"
     "@csstools/css-parser-algorithms": "npm:^4.0.0"
@@ -12320,7 +12320,7 @@ __metadata:
     postcss-value-parser: "npm:^4.2.0"
   peerDependencies:
     stylelint: ^16.8.2 || ^17.0.0
-  checksum: 10c0/12e47ce0093d7d08aa2323fdea2bb632cbc39a1470772ca237a0325285af66eeea29c67b3fff7763bfcfcc437479541238b791ce126cd9928c0b73a5ae29b228
+  checksum: 10c0/5e3c9084788debdc1d616ba8f7a49431449b7f2e7c80c7b1d311266cc2907fe4c8fc174f725b182422fa0937f168e384de8a9b8eb2c8534b9d7ddc2d08b2c874
   languageName: node
   linkType: hard
 
