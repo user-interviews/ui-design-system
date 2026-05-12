@@ -134,18 +134,18 @@
 }
 
 .Alert-feature {
-  border: 2px solid var(--ux-teal-600);
+  border: 2px solid var(--synth-accent-green);
 
   .close {
-    @include close-action($ux-teal-600, $ux-teal-800);
+    @include close-action;
   }
 
   .primary-action {
-    @include primary-action($ux-teal-600, $ux-teal-700, $ux-white);
+    @include primary-action;
   }
 
   .Alert__icon {
-    color: var(--ux-teal-600);
+    color: var(--synth-accent-green);
   }
 }
 
