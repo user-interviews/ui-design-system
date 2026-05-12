@@ -14,6 +14,88 @@ updates:
     schedule:
       interval: daily
     open-pull-requests-limit: 10
+    groups:
+      tiptap:
+        patterns:
+          - "@tiptap/*"
+      fontawesome:
+        patterns:
+          - "@fortawesome/*"
+      storybook:
+        patterns:
+          - "storybook"
+          - "@storybook/*"
+          - "chromatic"
+          - "eslint-plugin-storybook"
+      react-core:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "react-test-renderer"
+          - "@types/react"
+          - "@types/react-dom"
+      react-transition-group:
+        patterns:
+          - "react-transition-group"
+          - "@types/react-transition-group"
+      react-toggle:
+        patterns:
+          - "react-toggle"
+          - "@types/react-toggle"
+      date-handling:
+        patterns:
+          - "date-fns"
+          - "date-fns-tz"
+          - "react-datepicker"
+      bootstrap-popper:
+        patterns:
+          - "bootstrap"
+          - "react-bootstrap"
+          - "@popperjs/core"
+          - "react-popper"
+          - "tippy.js"
+      jest:
+        patterns:
+          - "jest"
+          - "jest-*"
+          - "babel-jest"
+          - "@types/jest"
+      testing-library:
+        patterns:
+          - "@testing-library/*"
+      babel:
+        patterns:
+          - "@babel/*"
+          - "babel-loader"
+          - "babel-plugin-*"
+          - "babel-preset-*"
+      webpack:
+        patterns:
+          - "webpack"
+          - "webpack-*"
+          - "@codecov/webpack-plugin"
+          - "css-loader"
+          - "file-loader"
+          - "sass"
+          - "sass-loader"
+          - "style-loader"
+          - "postcss"
+      eslint:
+        patterns:
+          - "eslint"
+          - "eslint-plugin-*"
+      stylelint:
+        patterns:
+          - "stylelint"
+          - "stylelint-*"
+      oxc:
+        patterns:
+          - "oxfmt"
+          - "oxlint"
+      typescript-types:
+        patterns:
+          - "typescript"
+          - "@types/*"
     # Only auto-open PRs for patch-level version updates
     # Minor and major bumps are left for people to evaluate manually
     allow:
