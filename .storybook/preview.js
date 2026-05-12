@@ -4,10 +4,6 @@ import '../scss/global.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const preview = {
-  decorators: [
-    (Story) => Story(),
-  ],
-
   parameters: {
     backgrounds: {
       options: {
