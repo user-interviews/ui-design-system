@@ -12,6 +12,7 @@ export const TEXT_PROPS = {
   weight: {
     regular: 'regular',
     medium: 'medium',
+    semibold: 'semibold',
     bold: 'bold',
   },
   textAlign: {
@@ -19,7 +20,7 @@ export const TEXT_PROPS = {
     center: 'center',
     right: 'right',
   },
-};
+} as const;
 
 type ElementProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLElement>,
