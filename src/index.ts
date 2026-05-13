@@ -33,7 +33,6 @@ import {
 } from './Dropdown';
 import EmptyState from './EmptyState';
 import FadeTransition from './FadeTransition';
-import { Flex } from './Flex';
 import { FlexContainer } from './FlexContainer';
 import Form from './Form';
 import FormControlLabel from './FormControlLabel';
@@ -137,7 +136,6 @@ export {
   DropdownMenu,
   EmptyState,
   FadeTransition,
-  Flex,
   FlexContainer,
   Form,
   FormControlLabel,

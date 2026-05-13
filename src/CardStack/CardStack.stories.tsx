@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Card, { CardSizes } from '../Card';
-import { Flex } from '../Flex';
+import { FlexContainer } from '../FlexContainer';
 import CardStack from './CardStack';
 import mdx from './CardStack.mdx';
 
@@ -36,7 +36,7 @@ export function Default() {
 
 export function Centered() {
   return (
-    <Flex container justifyContent="center">
+    <FlexContainer justifyContent="center">
       <CardStack size={CardSizes.SMALL}>
         <h1 style={{ fontSize: '1.5rem', fontWeight: 700 }}>CardStack</h1>
         <Card size="sm" title="Card 1">
@@ -53,6 +53,6 @@ export function Centered() {
         <Card size="sm" title="Card 2" />
         <Card size="sm" title="Card 3" />
       </CardStack>
-    </Flex>
+    </FlexContainer>
   );
 }
