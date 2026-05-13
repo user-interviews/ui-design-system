@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Flex } from '../Flex';
+import { FlexContainer } from '../FlexContainer';
 import { LoadingSkeleton } from '../LoadingSkeleton';
 
 import './TableLoadingSkeleton.scss';
@@ -20,9 +20,8 @@ function TableLoadingSkeleton({
     <>
       {[...Array(rows)].map((_, rowIndex) => (
         // oxlint-disable-next-line react/no-array-index-key
-        <Flex
+        <FlexContainer
           className="TableLoadingSkeleton"
-          container
           flexDirection="row"
           key={rowIndex}
         >
@@ -34,7 +33,7 @@ function TableLoadingSkeleton({
               width={width}
             />
           ))}
-        </Flex>
+        </FlexContainer>
       ))}
     </>
   );
