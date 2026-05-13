@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Text from './Text';
+import { Text, TEXT_PROPS } from './Text';
 import mdx from './Text.mdx';
 
 export default {
@@ -25,15 +25,11 @@ export function Default() {
 export function Sizes() {
   return (
     <>
-      <Text size="lg">
+      <Text size="sm">
         Source from a pool of more than 2.1 million participants to reach nearly
         any target audience.
       </Text>
       <Text size="md">
-        Source from a pool of more than 2.1 million participants to reach nearly
-        any target audience.
-      </Text>
-      <Text size="sm">
         Source from a pool of more than 2.1 million participants to reach nearly
         any target audience.
       </Text>
@@ -44,19 +40,19 @@ export function Sizes() {
 export function Weight() {
   return (
     <>
-      <Text weight="bold">
+      <Text weight={TEXT_PROPS.weight.bold}>
         Source from a pool of more than 2.1 million participants to reach nearly
         any target audience.
       </Text>
-      <Text weight="semibold">
+      <Text weight={TEXT_PROPS.weight.semibold}>
         Source from a pool of more than 2.1 million participants to reach nearly
         any target audience.
       </Text>
-      <Text weight="medium">
+      <Text weight={TEXT_PROPS.weight.medium}>
         Source from a pool of more than 2.1 million participants to reach nearly
         any target audience.
       </Text>
-      <Text weight="regular">
+      <Text weight={TEXT_PROPS.weight.regular}>
         Source from a pool of more than 2.1 million participants to reach nearly
         any target audience.
       </Text>

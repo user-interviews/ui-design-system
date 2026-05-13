@@ -1,50 +1,82 @@
-import { createElement } from 'react';
+import { createElement, forwardRef } from 'react';
 
 import classNames from 'classnames';
 
-import { type TEXT_PROPS } from './Text.types';
+import * as styles from './Text.module.css';
 
-import './Text.scss';
+export const TEXT_PROPS = {
+  size: {
+    sm: 'sm',
+    md: 'md',
+  },
+  weight: {
+    regular: 'regular',
+    medium: 'medium',
+    semibold: 'semibold',
+    bold: 'bold',
+  },
+  textAlign: {
+    left: 'left',
+    center: 'center',
+    right: 'right',
+  },
+} as const;
 
 type ElementProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLElement>,
   HTMLElement
 >;
 
-type TextProps = ElementProps & {
-  /** Element type to render (`p` default). */
-  as?: React.ElementType;
-  className?: string;
+export type TextProps = ElementProps & {
+  as?: Exclude<
+    keyof JSX.IntrinsicElements,
+    'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+  >;
   children?: React.ReactNode;
-  /** Maps to `Text--{size}` (`md` default). */
-  size?: (typeof TEXT_PROPS)['size'][keyof (typeof TEXT_PROPS)['size']];
-  /** Applied as inline `text-align` style. */
-  textAlign?: (typeof TEXT_PROPS)['textAlign'][keyof (typeof TEXT_PROPS)['textAlign']];
-  /** Maps to `Text--{weight}` (`regular` default). */
-  weight?: (typeof TEXT_PROPS)['weight'][keyof (typeof TEXT_PROPS)['weight']];
+  className?: string;
+  size?: 'sm' | 'md'; // TODO: refactor any usages of 'lg' to use a class
+  textAlign?: 'left' | 'center' | 'right';
+  weight?: 'regular' | 'medium' | 'semibold' | 'bold';
+  noMargin?: boolean;
 };
 
-function Text({
-  as = 'p',
-  children,
-  className,
-  size = 'md',
-  textAlign,
-  weight = 'regular',
-  ...props
-}: TextProps) {
-  return createElement(
-    as,
+export const Text = forwardRef<HTMLElement, TextProps>(
+  (
+    // oxlint-disable-next-line local-rules/max-props
     {
-      style: { textAlign },
-      className: classNames(className, 'Text', {
-        [`Text--${size}`]: !!size,
-        [`Text--${weight}`]: !!weight,
-      }),
-      ...props,
+      as = 'p',
+      children,
+      className,
+      size = 'md',
+      textAlign,
+      weight = 'regular',
+      noMargin = false,
+      ...props
     },
-    children,
-  );
-}
+    ref,
+  ) => {
+    return createElement(
+      as,
+      {
+        ref,
+        style: { textAlign },
+        className: classNames(className, styles.text, {
+          [styles.medium]: size === 'md',
+          [styles.small]: size === 'sm',
+          [styles.weightBold]: weight === 'bold',
+          [styles.weightSemibold]: weight === 'semibold',
+          [styles.weightMedium]: weight === 'medium',
+          [styles.weightRegular]: weight === 'regular',
+          [styles.noMargin]: noMargin,
+          [styles.textAlignLeft]: textAlign === 'left',
+          [styles.textAlignCenter]: textAlign === 'center',
+          [styles.textAlignRight]: textAlign === 'right',
+        }),
+        ...props,
+      },
+      children,
+    );
+  },
+);
 
-export default Text;
+Text.displayName = 'Text';
