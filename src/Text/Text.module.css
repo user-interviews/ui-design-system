@@ -1,0 +1,56 @@
+.text {
+  color: var(--synth-gray-600);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+.small {
+  font-size: var(--synth-font-size-subtext);
+  font-weight: var(--synth-font-weight-regular);
+  line-height: var(--synth-line-height-subtext);
+}
+
+.medium {
+  font-size: var(--synth-font-size-body);
+  font-weight: var(--synth-font-weight-regular);
+  line-height: var(--synth-line-height-body);
+}
+
+.large {
+  font-size: var(--synth-font-size-lg);
+  font-weight: var(--synth-font-weight-regular);
+  line-height: var(--synth-line-height-lg);
+}
+
+.weightRegular {
+  font-weight: var(--synth-font-weight-regular);
+}
+
+.weightMedium {
+  font-weight: var(--synth-font-weight-medium);
+}
+
+.weightSemibold {
+  font-weight: var(--synth-font-weight-semibold);
+}
+
+.weightBold {
+  font-weight: var(--synth-font-weight-bold);
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.textAlignLeft {
+  text-align: left;
+}
+
+.textAlignCenter {
+  text-align: center;
+}
+
+.textAlignRight {
+  text-align: right;
+}

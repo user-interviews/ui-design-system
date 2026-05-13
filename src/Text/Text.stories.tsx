@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Text from './Text';
+import { Text } from './Text';
 import mdx from './Text.mdx';
 
 export default {
@@ -25,15 +25,11 @@ export function Default() {
 export function Sizes() {
   return (
     <>
-      <Text size="lg">
+      <Text size="sm">
         Source from a pool of more than 2.1 million participants to reach nearly
         any target audience.
       </Text>
       <Text size="md">
-        Source from a pool of more than 2.1 million participants to reach nearly
-        any target audience.
-      </Text>
-      <Text size="sm">
         Source from a pool of more than 2.1 million participants to reach nearly
         any target audience.
       </Text>
