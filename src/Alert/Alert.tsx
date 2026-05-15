@@ -87,7 +87,9 @@ const getAlertClassName = (type: MessageType, noMargin?: boolean) => {
     throw new TypeError(`Unexpected type ${type} used for an alert.`);
   }
 
-  return classNames(`Alert Alert-${type}`, { 'Alert--no-margin': noMargin });
+  return classNames(`Alert Alert-${type}`, {
+    'Alert--no-margin': noMargin,
+  });
 };
 
 type AlertProps = {
@@ -99,7 +101,7 @@ type AlertProps = {
       }
     | React.ReactNode;
   /** `target` on the action anchor when `action` is `{ url, content }` (e.g. `_blank`). */
-  actionTarget?: string;
+  actionTarget?: '_self' | '_blank' | '_parent' | '_top';
   /** When true and `onDismiss` is set, calls `onDismiss` after a delay.*/
   autoDismiss?: boolean;
   /** Passed into `onDismiss` from the close button and from auto-dismiss. */
@@ -107,13 +109,13 @@ type AlertProps = {
   message: string | React.ReactNode;
   /** Drops the default bottom margin. Useful when the alert is rendered inside a flex/grid layout that controls spacing. */
   noMargin?: boolean;
-  /** Removes the type-colored left border (`borderLeft: none`). */
+  /** Drop the colored left accent (use when nested in a card/drawer). No effect on `feature`. */
   removeBorderLeft?: boolean;
-  title?: string;
+  title?: string | React.ReactNode;
   /** Variant and icon (`MessageTypes`) */
   type: MessageType;
   /** Renders the close control; combined with `autoDismiss`, also invoked after the timeout. */
-  onDismiss?: (arg0?: string) => void;
+  onDismiss?: (id?: string) => void;
 };
 
 function Alert(props: AlertProps) {
@@ -137,7 +139,11 @@ function Alert(props: AlertProps) {
   return (
     <div
       className={getAlertClassName(props.type, props.noMargin)}
-      style={props.removeBorderLeft ? { borderLeft: 'none' } : undefined}
+      style={
+        props.removeBorderLeft && props.type !== MessageTypes.FEATURE
+          ? { borderLeft: 'none' }
+          : undefined
+      }
     >
       <div className="Alert__icon">{getAlertIcon(props.type)}</div>
       <div className="Alert__content">
