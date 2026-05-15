@@ -82,12 +82,12 @@ const getAlertIcon = (type: MessageType) => {
 const AUTO_DISMISS_TIMEOUT_SUCCESS = 3000;
 const AUTO_DISMISS_TIMEOUT_DEFAULT = 5000;
 
-const getAlertClassName = (type: MessageType) => {
+const getAlertClassName = (type: MessageType, noMargin?: boolean) => {
   if (!Object.values(MessageTypes).includes(type)) {
     throw new TypeError(`Unexpected type ${type} used for an alert.`);
   }
 
-  return `Alert Alert-${type}`;
+  return classNames(`Alert Alert-${type}`, { 'Alert--no-margin': noMargin });
 };
 
 type AlertProps = {
@@ -105,6 +105,8 @@ type AlertProps = {
   /** Passed into `onDismiss` from the close button and from auto-dismiss. */
   id?: string;
   message: string | React.ReactNode;
+  /** Drops the default bottom margin. Useful when the alert is rendered inside a flex/grid layout that controls spacing. */
+  noMargin?: boolean;
   /** Removes the type-colored left border (`borderLeft: none`). */
   removeBorderLeft?: boolean;
   title?: string;
@@ -134,7 +136,7 @@ function Alert(props: AlertProps) {
 
   return (
     <div
-      className={getAlertClassName(props.type)}
+      className={getAlertClassName(props.type, props.noMargin)}
       style={props.removeBorderLeft ? { borderLeft: 'none' } : undefined}
     >
       <div className="Alert__icon">{getAlertIcon(props.type)}</div>
