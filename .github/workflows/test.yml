@@ -6,7 +6,9 @@ permissions:
   contents: read
 
 env:
+  CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
   FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+  OTTERWISE_TOKEN: ${{ secrets.OTTERWISE_TOKEN }}
 
 jobs:
   js-test:
