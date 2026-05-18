@@ -75,6 +75,27 @@ export function Warning() {
   );
 }
 
+export function NoMargin() {
+  return (
+    <>
+      <Alert
+        id="no-margin-1"
+        message="This alert drops its default bottom margin."
+        noMargin
+        title="No margin"
+        type={MessageTypes.INFO}
+      />
+      <Alert
+        id="no-margin-2"
+        message="The next alert sits flush against this one because both pass `noMargin`."
+        noMargin
+        title="Stacked without spacing"
+        type={MessageTypes.INFO}
+      />
+    </>
+  );
+}
+
 const onDismiss = (id) => {
   action('alert dismissed')(id);
 };

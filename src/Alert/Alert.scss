@@ -81,14 +81,19 @@
   }
 
   &__title {
-    @include synth-font-type-30--bold;
-
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
     margin-bottom: 4px;
   }
 
   &__message {
-    @include synth-font-type-30;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    margin-bottom: 0;
+  }
 
+  &--no-margin {
     margin-bottom: 0;
   }
 }
@@ -134,7 +139,7 @@
 }
 
 .Alert-feature {
-  border: 2px solid var(--synth-accent-green);
+  border: 1px solid var(--synth-accent-green);
 
   .close {
     @include close-action;
