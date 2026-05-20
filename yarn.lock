@@ -7631,12 +7631,11 @@ __metadata:
   linkType: hard
 
 "find-babel-config@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "find-babel-config@npm:2.1.1"
+  version: 2.1.2
+  resolution: "find-babel-config@npm:2.1.2"
   dependencies:
     json5: "npm:^2.2.3"
-    path-exists: "npm:^4.0.0"
-  checksum: 10c0/fb1f348027b83e9fe3b4163ec9c45719adab1205b2807708d660fe2a7beb5f812e0fabb6b21746cf0ef9c9fbf67bcc8e37f6cddb9d43229f0524767522d6110b
+  checksum: 10c0/c9151b23d636378eae11aa761b0af41d5f67d5479e3ebfca7b0ec7feef91723f14242d243342783b89e6c51fc5b4120086eacf5d8a1a335cf7bae4b0ac89f493
   languageName: node
   linkType: hard
 
