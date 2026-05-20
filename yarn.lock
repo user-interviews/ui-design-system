@@ -1520,17 +1520,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cacheable/utils@npm:^2.3.3":
-  version: 2.3.3
-  resolution: "@cacheable/utils@npm:2.3.3"
-  dependencies:
-    hashery: "npm:^1.3.0"
-    keyv: "npm:^5.5.5"
-  checksum: 10c0/aa6198dcbd799055465efcaa9c91b11266218bd674bc889665efe7a230ecbce17fda2502aed51bd65062f20ad3af464841a72a93e8609d579535736526e3988c
-  languageName: node
-  linkType: hard
-
-"@cacheable/utils@npm:^2.4.0":
+"@cacheable/utils@npm:^2.3.3, @cacheable/utils@npm:^2.4.0":
   version: 2.4.1
   resolution: "@cacheable/utils@npm:2.4.1"
   dependencies:
@@ -8119,7 +8109,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hashery@npm:^1.3.0, hashery@npm:^1.4.0":
+"hashery@npm:^1.4.0":
   version: 1.4.0
   resolution: "hashery@npm:1.4.0"
   dependencies:
