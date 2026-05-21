@@ -4109,8 +4109,8 @@ __metadata:
   linkType: hard
 
 "@tmcp/adapter-valibot@npm:^0.1.5":
-  version: 0.1.5
-  resolution: "@tmcp/adapter-valibot@npm:0.1.5"
+  version: 0.1.6
+  resolution: "@tmcp/adapter-valibot@npm:0.1.6"
   dependencies:
     "@standard-schema/spec": "npm:^1.0.0"
     "@valibot/to-json-schema": "npm:^1.3.0"
@@ -4118,7 +4118,7 @@ __metadata:
   peerDependencies:
     tmcp: ^1.17.0
     valibot: ^1.1.0
-  checksum: 10c0/176be80a74285f986ba8900116bf1ec2b97d249177b48127940b06bd08c70965a2e50d0aaa3785d4bdadd70f8e3f341fd881ce24c317a9d890cdb24ebf059399
+  checksum: 10c0/4261efa7318f335eb7a8787f16a4db285a3e38288c31bc3b21fe61808c7e0c2057e09675d7b86d14cbe3ba2babad2ffe1891c4498001b27f74cb22fa135eef02
   languageName: node
   linkType: hard
 
