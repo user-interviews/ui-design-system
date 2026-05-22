@@ -1,4 +1,7 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import FigmaLogo from '../public/figma-logo.svg';
+import { faGithub } from '../src/font_awesome/brands';
 import ImageFile from '../public/ui-design-system-dark.svg';
 
 function Default() {
@@ -39,6 +42,7 @@ function Default() {
         target="_blank"
         type="button"
       >
+        <FontAwesomeIcon icon={faGithub} style={{ marginRight: '8px' }} />
         <span>Github Repo</span>
       </a>
     </div>

@@ -7,8 +7,9 @@
 /* oxlint-disable no-restricted-imports */
 
 import { faFacebook } from '@fortawesome/free-brands-svg-icons/faFacebook';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons/faGoogle';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons/faLinkedin';
 import { faTwitter } from '@fortawesome/free-brands-svg-icons/faTwitter';
 
-export { faGoogle, faFacebook, faLinkedin, faTwitter };
+export { faGoogle, faFacebook, faGithub, faLinkedin, faTwitter };
