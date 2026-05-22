@@ -33,8 +33,8 @@
   },
   "scripts": {
     "build": "NODE_ENV=production yarn exec babel src --out-dir lib --copy-files --extensions '.js,.jsx,.ts,.tsx' && yarn tsc",
-    "build-storybook": "storybook build",
-    "build-storybook-docs": "storybook build --docs",
+    "build-storybook": "yarn exec storybook build",
+    "build-storybook-docs": "yarn exec storybook build --docs",
     "build-ts": "yarn tsc",
     "chromatic": "yarn exec chromatic",
     "lint": "yarn lint:js && yarn lint:css --quiet",
@@ -48,7 +48,7 @@
     "rs:link": "bin/link-rs",
     "rs:link:watch": "nodemon",
     "rs:unlink": "bin/unlink-rs",
-    "storybook": "storybook dev -p 9009",
+    "storybook": "yarn exec storybook dev -p 9009",
     "test": "yarn jest"
   },
   "browserslist": {

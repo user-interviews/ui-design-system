@@ -1,5 +1,4 @@
 import FigmaLogo from '../public/figma-logo.svg';
-import GithubLogo from '../public/github-logo.svg';
 import ImageFile from '../public/ui-design-system-dark.svg';
 
 function Default() {
@@ -40,7 +39,6 @@ function Default() {
         target="_blank"
         type="button"
       >
-        <img alt="" src={GithubLogo} style={{ marginRight: '8px' }} />
         <span>Github Repo</span>
       </a>
     </div>
