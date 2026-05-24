@@ -1,4 +1,5 @@
+@use './baseline';
+@use './button-classes';
+@use './css_properties';
+@use './theme' as *;
 @import 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap';
-@import './baseline';
-@import './css_properties';
-@import './theme';

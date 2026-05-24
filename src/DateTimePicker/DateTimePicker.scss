@@ -1,6 +1,6 @@
+@use '../../scss/bootstrap-breakpoints' as *;
+@use '../../scss/theme' as *;
 @import 'react-datepicker/dist/react-datepicker.css';
-@import '../../scss/bootstrap-breakpoints';
-@import '../../scss/theme';
 
 .react-datepicker__popper-container--modal {
   z-index: var(--z-index-popover);

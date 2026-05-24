@@ -1,4 +1,4 @@
-@import '../../scss/forms/input_label';
+@use '../../scss/forms/input_label' as *;
 
 .InputLegend {
   // Ensure <legend> does not default to width: 100%

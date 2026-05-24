@@ -1,4 +1,4 @@
-@import '../../scss/theme';
+@use '../../scss/theme' as *;
 
 .tabs {
   border-bottom: 1px solid var(--synth-div-stroke-neutral);

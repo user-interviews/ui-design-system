@@ -1,4 +1,4 @@
-@import './bootstrap-variables';
+@use './bootstrap-variables' as *;
 @import '~bootstrap/scss/mixins/box-shadow';
 @import '~bootstrap/scss/mixins/gradients';
 @import '~bootstrap/scss/mixins/buttons';

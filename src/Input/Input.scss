@@ -1,4 +1,4 @@
-@import '../../scss/theme';
+@use '../../scss/theme' as *;
 
 $input-trailing-text-spacing-for-type-number: 35px;
 $input-trailing-text-max-width-before-hiding: 200px;

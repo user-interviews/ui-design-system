@@ -1,2 +1,2 @@
-@import './bootstrap-variables';
+@use './bootstrap-variables' as *;
 @import '~bootstrap/scss/mixins/breakpoints';

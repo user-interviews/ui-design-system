@@ -1,5 +1,5 @@
-@import '../../scss/theme';
-@import '../../scss/forms/control_button_group';
+@use '../../scss/theme' as *;
+@use '../../scss/forms/control_button_group' as *;
 
 .RadioButtonGroup {
   &--row {

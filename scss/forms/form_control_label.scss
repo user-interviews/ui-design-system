@@ -1,5 +1,5 @@
-@import '../colors';
-@import '../typography';
+@use '../colors' as *;
+@use '../typography' as *;
 
 .FormControlLabel {
   @include synth-font-type-30;
