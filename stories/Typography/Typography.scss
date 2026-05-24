@@ -1,4 +1,4 @@
-@import '../../scss/typography';
+@use '../../scss/typography' as *;
 
 .TypographyRow {
   background-color: var(--synth-white);

@@ -1,5 +1,5 @@
-@import './colors/palette';
-@import './colors/synthesis-palette';
+@use './colors/palette' as *;
+@use './colors/synthesis-palette' as *;
 
 :export {
   SYNTH_SUCCESS_GREEN_DARK: var(--synth-green-300);

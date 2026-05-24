@@ -1,4 +1,4 @@
-@import '../../scss/theme';
+@use '../../scss/theme' as *;
 
 @mixin popper-arrow(
   $popper-color: $ux-gray-800,

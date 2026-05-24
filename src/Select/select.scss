@@ -1,4 +1,4 @@
-@import '../../scss/theme';
+@use '../../scss/theme' as *;
 
 // Note: react-select is largely styled via css-in-js, not SCSS.
 

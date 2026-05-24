@@ -1,4 +1,4 @@
-@import './palette';
+@use './palette' as *;
 
 $input-focus-border-color: $ux-blue-500;
 $input-color: $ux-gray-900;
