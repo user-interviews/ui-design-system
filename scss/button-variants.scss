@@ -1,3 +1,4 @@
+@use 'sass:color';
 @use './bootstrap-buttons' as *;
 @use './button-mixins' as *;
 @use './colors' as *;
@@ -236,11 +237,23 @@ $primary: $synth-primary-cta-blue;
   $btn-brand-facebook-background: $brand-color-facebook;
   $btn-brand-facebook-border: $brand-color-facebook;
   $btn-brand-facebook-color: $ux-white;
-  $btn-brand-facebook-hover-background: darken($brand-color-facebook, 5%);
-  $btn-brand-facebook-hover-border: darken($brand-color-facebook, 5%);
+  $btn-brand-facebook-hover-background: color.adjust(
+    $brand-color-facebook,
+    $lightness: -5%
+  );
+  $btn-brand-facebook-hover-border: color.adjust(
+    $brand-color-facebook,
+    $lightness: -5%
+  );
   $btn-brand-facebook-hover-color: $ux-white;
-  $btn-brand-facebook-active-background: darken($brand-color-facebook, 5%);
-  $btn-brand-facebook-active-border: darken($brand-color-facebook, 5%);
+  $btn-brand-facebook-active-background: color.adjust(
+    $brand-color-facebook,
+    $lightness: -5%
+  );
+  $btn-brand-facebook-active-border: color.adjust(
+    $brand-color-facebook,
+    $lightness: -5%
+  );
   $btn-brand-facebook-active-color: $ux-white;
 
   @include button-variant(
@@ -273,11 +286,23 @@ $primary: $synth-primary-cta-blue;
   $btn-brand-linkedin-background: $brand-color-linkedin;
   $btn-brand-linkedin-border: $brand-color-linkedin;
   $btn-brand-linkedin-color: $ux-white;
-  $btn-brand-linkedin-hover-background: darken($brand-color-linkedin, 5%);
-  $btn-brand-linkedin-hover-border: darken($brand-color-linkedin, 5%);
+  $btn-brand-linkedin-hover-background: color.adjust(
+    $brand-color-linkedin,
+    $lightness: -5%
+  );
+  $btn-brand-linkedin-hover-border: color.adjust(
+    $brand-color-linkedin,
+    $lightness: -5%
+  );
   $btn-brand-linkedin-hover-color: $ux-white;
-  $btn-brand-linkedin-active-background: darken($brand-color-linkedin, 5%);
-  $btn-brand-linkedin-active-border: darken($brand-color-linkedin, 5%);
+  $btn-brand-linkedin-active-background: color.adjust(
+    $brand-color-linkedin,
+    $lightness: -5%
+  );
+  $btn-brand-linkedin-active-border: color.adjust(
+    $brand-color-linkedin,
+    $lightness: -5%
+  );
   $btn-brand-linkedin-active-color: $ux-white;
 
   @include button-variant(
@@ -310,11 +335,23 @@ $primary: $synth-primary-cta-blue;
   $btn-brand-twitter-background: $brand-color-twitter;
   $btn-brand-twitter-border: $brand-color-twitter;
   $btn-brand-twitter-color: $ux-white;
-  $btn-brand-twitter-hover-background: darken($brand-color-twitter, 5%);
-  $btn-brand-twitter-hover-border: darken($brand-color-twitter, 5%);
+  $btn-brand-twitter-hover-background: color.adjust(
+    $brand-color-twitter,
+    $lightness: -5%
+  );
+  $btn-brand-twitter-hover-border: color.adjust(
+    $brand-color-twitter,
+    $lightness: -5%
+  );
   $btn-brand-twitter-hover-color: $ux-white;
-  $btn-brand-twitter-active-background: darken($brand-color-twitter, 5%);
-  $btn-brand-twitter-active-border: darken($brand-color-twitter, 5%);
+  $btn-brand-twitter-active-background: color.adjust(
+    $brand-color-twitter,
+    $lightness: -5%
+  );
+  $btn-brand-twitter-active-border: color.adjust(
+    $brand-color-twitter,
+    $lightness: -5%
+  );
   $btn-brand-twitter-active-color: $ux-white;
 
   @include button-variant(

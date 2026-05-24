@@ -25,7 +25,14 @@ module.exports = function ({ config }) {
             },
           },
         },
-        'sass-loader',
+        {
+          loader: 'sass-loader',
+          options: {
+            sassOptions: {
+              quietDeps: true,
+            },
+          },
+        },
       ],
       include: path.resolve(__dirname, '../'),
     },
