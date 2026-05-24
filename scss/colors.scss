@@ -1,4 +1,4 @@
-@import './colors/inputs';
-@import './colors/mod_rainbow';
-@import './colors/palette';
-@import './colors/synthesis-palette';
+@forward './colors/inputs';
+@forward './colors/mod_rainbow';
+@forward './colors/palette';
+@forward './colors/synthesis-palette';

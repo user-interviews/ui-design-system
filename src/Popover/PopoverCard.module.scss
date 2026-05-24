@@ -1,4 +1,4 @@
-@import '../../scss/theme';
+@use '../../scss/theme' as *;
 
 .popover-card {
   padding: $card-spacing;

@@ -1,5 +1,5 @@
-@import '../../scss/bootstrap-buttons';
-@import '../../scss/theme';
+@use '../../scss/button-variants' as *;
+@use '../../scss/theme' as *;
 
 .Button {
   @include synth-font-type-30--bold;
