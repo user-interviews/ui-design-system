@@ -43,6 +43,8 @@ jobs:
     steps:
       - name: Checkout branch
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Setup environment
         uses: ./.github/actions/setup_environment
@@ -55,7 +57,7 @@ jobs:
           # already constrained by the `choice` list above, but pinning to an
           # env var keeps the audit clean and removes the implicit trust.
           BUMP_TYPE: ${{ github.event.inputs.version }}
-        run: yarn version "$BUMP_TYPE"
+        run: yarn version "$BUMP_TYPE" --immediate
 
       - name: Extract release metadata from package.json
         id: extract_version
