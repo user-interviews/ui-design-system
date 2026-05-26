@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { faFigma, faGithub } from '../src/font_awesome/brands';
 import ImageFile from '../public/ui-design-system-dark.svg';
+import { faFigma, faGithub } from '../src/font_awesome/brands';
 
 function Default() {
   return (
