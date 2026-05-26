@@ -11,7 +11,7 @@ permissions:
 jobs:
   block-prerelease-prs:
     name: Block prerelease PRs to main
-    runs-on: ubuntu-latest
+    runs-on: blacksmith-2vcpu-ubuntu-2404
     steps:
       - name: Reject prerelease branches
         if: startsWith(github.head_ref, 'prerelease/')

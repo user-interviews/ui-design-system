@@ -1,0 +1,7 @@
+# Files copied into new worktrees by Worktrunk and bin/setup-worktree.
+# Entries must also be gitignored.
+/.env
+/.env.op
+/.envrc
+/.npmrc
+/lefthook-local.yml
