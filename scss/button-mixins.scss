@@ -1,3 +1,6 @@
+// Shared low-level button helpers. This file intentionally avoids Bootstrap
+// button variant mixins so broader consumers like theme.scss can use these
+// helpers without loading the Bootstrap Sass compatibility layer.
 @mixin btn-focus-outline {
   box-shadow: none !important;
   outline: 2px solid var(--ux-blue-500);
