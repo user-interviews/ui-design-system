@@ -1,6 +1,7 @@
-import FigmaLogo from '../public/figma-logo.svg';
-import GithubLogo from '../public/github-logo.svg';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import ImageFile from '../public/ui-design-system-dark.svg';
+import { faFigma, faGithub } from '../src/font_awesome/brands';
 
 function Default() {
   return (
@@ -27,7 +28,7 @@ function Default() {
         target="_blank"
         type="button"
       >
-        <img alt="" src={FigmaLogo} style={{ marginRight: '8px' }} />
+        <FontAwesomeIcon icon={faFigma} style={{ marginRight: '8px' }} />
         <span>Figma Library</span>
       </a>
       <a
@@ -40,7 +41,7 @@ function Default() {
         target="_blank"
         type="button"
       >
-        <img alt="" src={GithubLogo} style={{ marginRight: '8px' }} />
+        <FontAwesomeIcon icon={faGithub} style={{ marginRight: '8px' }} />
         <span>Github Repo</span>
       </a>
     </div>

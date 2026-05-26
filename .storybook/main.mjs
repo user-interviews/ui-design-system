@@ -1,4 +1,3 @@
-// This file has been automatically migrated to valid ESM format by Storybook.
 import { createRequire } from 'node:module';
 const require = createRequire(import.meta.url);
 const config = {
@@ -52,13 +51,8 @@ const config = {
     experimentalComponentsManifest: true,
   },
   stories: [
-    '../stories/Intro.stories.jsx',
-    '../src/**/*.stories.@(js|mdx)',
-    '../src/**/*.stories.@(ts|mdx)',
-    '../src/**/*.stories.js[x]',
-    '../src/**/*.stories.ts[x]',
-    '../stories/**/*.stories.js[x]',
-    '../stories/**/*.stories.ts[x]',
+    '../src/**/*.stories.@(js|jsx|ts|tsx)',
+    '../stories/**/*.stories.@(js|jsx|ts|tsx)',
   ],
   framework: {
     name: '@storybook/react-webpack5',
