@@ -29,6 +29,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Setup environment
         uses: ./.github/actions/setup_environment
@@ -51,7 +52,9 @@ jobs:
           echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
       - name: Publish hotfix branch
-        run: git push origin "hotfix/$HOTFIX_VERSION"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: git push "https://x-access-token:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.git" "hotfix/$HOTFIX_VERSION"
 
       - name: Merge hotfix into main branch
         uses: thomaseizinger/create-pull-request@955adb4634198898bc24dca0468514c63a8fc98d # 1.4.0

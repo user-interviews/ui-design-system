@@ -45,6 +45,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
+          persist-credentials: false
 
       - name: Setup environment
         uses: ./.github/actions/setup_environment
@@ -98,11 +99,15 @@ jobs:
 
       - name: Publish stable release branch
         if: steps.extract_version.outputs.prerelease == 'false'
-        run: git push origin "release/v$RELEASE_VERSION"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: git push "https://x-access-token:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.git" "release/v$RELEASE_VERSION"
 
       - name: Publish prerelease branch
         if: steps.extract_version.outputs.prerelease == 'true'
-        run: git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: git push "https://x-access-token:$GH_TOKEN@github.com/$GITHUB_REPOSITORY.git" "HEAD:refs/heads/$GITHUB_REF_NAME"
 
       - name: Merge version update into main branch
         if: steps.extract_version.outputs.prerelease == 'false'
