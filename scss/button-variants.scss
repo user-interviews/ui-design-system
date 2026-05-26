@@ -1,3 +1,6 @@
+// Button variant mixins that build on Bootstrap's button mixins and design
+// system colors. Keep these scoped to components that actually render variant
+// classes so Bootstrap Sass warning/compatibility surface stays contained.
 @use 'sass:color';
 @use './bootstrap-buttons' as *;
 @use './button-mixins' as *;
