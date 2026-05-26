@@ -1,10 +1,23 @@
+# Release workflow model:
+# - Stable releases are normally dispatched from main. They create a
+#   release/vX.Y.Z branch, tag/build from that version-bump commit, and open a
+#   PR back to main so package.json records the stable version.
+# - Prereleases should be dispatched from disposable prerelease/... branches.
+#   The workflow commits the prerelease version bump back to that branch so
+#   later prerelease runs can increment from the previous prerelease version.
+# - Do not merge prerelease/... branches back to main. Merge the clean feature
+#   branch when the feature is ready, then cut the final stable release.
+
 name: "Create new release"
 
 on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Select the version increment"
+        description: >-
+          Select the version increment. Use premajor/preminor/prepatch to start
+          a prerelease line; use prerelease to increment an existing
+          prerelease.
         required: true
         type: choice
         options:
@@ -30,6 +43,8 @@ jobs:
     steps:
       - name: Checkout branch
         uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
 
       - name: Setup environment
         uses: ./.github/actions/setup_environment
@@ -42,17 +57,33 @@ jobs:
           # already constrained by the `choice` list above, but pinning to an
           # env var keeps the audit clean and removes the implicit trust.
           BUMP_TYPE: ${{ github.event.inputs.version }}
-        run: yarn version "$BUMP_TYPE"
+        run: yarn version "$BUMP_TYPE" --immediate
 
-      - name: Extract version from package.json
+      - name: Extract release metadata from package.json
         id: extract_version
         run: |
-          version=$(grep '"version"' package.json | sed -E 's/.*"version": "([^"]+)".*/\1/')
+          version=$(node -p "require('./package.json').version")
           echo "Extracted version: $version"
-          echo "version=$version" >> $GITHUB_OUTPUT
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "RELEASE_VERSION=$version" >> "$GITHUB_ENV"
 
-      - name: Create version bump branch
-        run: git checkout -b release/v${{ steps.extract_version.outputs.version }}
+          if [[ "$version" == *-* ]]; then
+            echo "prerelease=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "prerelease=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Validate prerelease branch
+        if: steps.extract_version.outputs.prerelease == 'true'
+        run: |
+          if [[ "$GITHUB_REF_TYPE" != "branch" || "$GITHUB_REF_NAME" != prerelease/* ]]; then
+            echo "Prereleases must be dispatched from a disposable prerelease/... branch."
+            exit 1
+          fi
+
+      - name: Create stable release branch
+        if: steps.extract_version.outputs.prerelease == 'false'
+        run: git checkout -b "release/v$RELEASE_VERSION"
 
       - name: Initialize mandatory git config
         uses: fregante/setup-git-user@024bc0b8e177d7e77203b48dab6fb45666854b35 # v2
@@ -61,14 +92,20 @@ jobs:
         id: make-commit
         run: |
           git add package.json
-          git commit --message "Update package.json v${{ steps.extract_version.outputs.version }}"
+          git commit --message "Update package.json v$RELEASE_VERSION"
 
-          echo "commit=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+          echo "commit=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
 
-      - name: Publish release branch
-        run: git push origin release/v${{ steps.extract_version.outputs.version }}
+      - name: Publish stable release branch
+        if: steps.extract_version.outputs.prerelease == 'false'
+        run: git push origin "release/v$RELEASE_VERSION"
+
+      - name: Publish prerelease branch
+        if: steps.extract_version.outputs.prerelease == 'true'
+        run: git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
 
       - name: Merge version update into main branch
+        if: steps.extract_version.outputs.prerelease == 'false'
         uses: thomaseizinger/create-pull-request@955adb4634198898bc24dca0468514c63a8fc98d # 1.4.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -88,33 +125,14 @@ jobs:
       - name: Pack bundle tarball
         run: npm pack
 
-      # TODO(deprecated-action): actions/create-release was archived by
-      # GitHub in 2021 and receives no security or runner-version updates.
-      # Migrate to softprops/action-gh-release (hash-pinned per zizmor policy)
-      # or `gh release create` via a `run:` block. Tracking item to be filed.
       - name: Create Release
-        id: create_release
-        uses: actions/create-release@v1
+        uses: softprops/action-gh-release@b4309332981a82ec1c5618f44dd2e27cc8bfbfda # v3.0.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: v${{ steps.extract_version.outputs.version }}
-          release_name: Release v${{ steps.extract_version.outputs.version }}
-          body_path:
+          name: Release v${{ steps.extract_version.outputs.version }}
+          target_commitish: ${{ steps.make-commit.outputs.commit }}
+          files: user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz
           draft: false
-          prerelease: false
-
-      # TODO(deprecated-action): actions/upload-release-asset was archived
-      # alongside actions/create-release in 2021. softprops/action-gh-release
-      # uploads assets in the same step that creates the release, so the
-      # migration collapses these two steps into one.
-      - name: Upload Release Asset
-        id: upload-release-asset
-        uses: actions/upload-release-asset@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz
-          asset_name: user-interviews-ui-design-system-${{ steps.extract_version.outputs.version }}.tgz
-          asset_content_type: application/tar+gzip
+          prerelease: ${{ steps.extract_version.outputs.prerelease }}
