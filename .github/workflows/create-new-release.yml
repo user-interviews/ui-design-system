@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: "Select the version increment"
+        description: "Select the version increment. Use premajor/preminor/prepatch to start a prerelease line; use prerelease to increment an existing prerelease."
         required: true
         type: choice
         options:
@@ -75,6 +75,7 @@ jobs:
         run: git push origin "release/v${{ steps.extract_version.outputs.version }}"
 
       - name: Merge version update into main branch
+        if: ${{ steps.extract_version.outputs.prerelease == 'false' }}
         uses: thomaseizinger/create-pull-request@955adb4634198898bc24dca0468514c63a8fc98d # 1.4.0
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
