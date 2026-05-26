@@ -14,13 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Reject prerelease branches
-        env:
-          HEAD_REF: ${{ github.head_ref }}
+        if: startsWith(github.head_ref, 'prerelease/')
         run: |
-          if [[ "$HEAD_REF" == prerelease/* ]]; then
-            echo "::error::Do not open PRs from prerelease/... branches to main. Merge the clean feature branch instead."
-            exit 1
-          fi
+          echo "::error::Do not open PRs from prerelease/... branches to main. Merge the clean feature branch instead."
+          exit 1
 
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
