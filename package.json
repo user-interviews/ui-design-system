@@ -1,6 +1,6 @@
 {
   "name": "@user-interviews/ui-design-system",
-  "version": "8.4.0",
+  "version": "8.4.1-0",
   "dependencies": {
     "@tiptap/core": "^2.27.2",
     "@tiptap/extension-bold": "^2.27.2",
@@ -193,5 +193,6 @@
     "node": "24.14.1",
     "yarn": "4.13.0"
   },
-  "packageManager": "yarn@4.13.0"
+  "packageManager": "yarn@4.13.0",
+  "stableVersion": "8.4.0"
 }
