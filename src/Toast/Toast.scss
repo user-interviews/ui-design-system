@@ -1,4 +1,5 @@
-@import '../../scss/theme';
+@use '../../scss/bootstrap-breakpoints' as *;
+@use '../../scss/theme' as *;
 
 .Toast {
   position: fixed;

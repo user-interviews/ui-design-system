@@ -1,4 +1,4 @@
-@import '../../scss/theme';
+@use '../../scss/theme' as *;
 
 $profile-cell-avatar-small-width: $avatar-small-width;
 

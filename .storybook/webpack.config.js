@@ -1,6 +1,13 @@
 const path = require('path');
 const { codecovWebpackPlugin } = require('@codecov/webpack-plugin');
 
+const bootstrapSassFacadeImportWarningPattern =
+  /scss[\\/]bootstrap-(variables|buttons|breakpoints)\.scss/;
+
+const isBootstrapSassFacadeImportWarning = (warning) =>
+  warning.message?.includes('Sass @import rules are deprecated') &&
+  bootstrapSassFacadeImportWarningPattern.test(warning.message);
+
 module.exports = function ({ config }) {
   config.plugins = config.plugins || [];
   config.plugins.push(
@@ -25,7 +32,14 @@ module.exports = function ({ config }) {
             },
           },
         },
-        'sass-loader',
+        {
+          loader: 'sass-loader',
+          options: {
+            sassOptions: {
+              quietDeps: true,
+            },
+          },
+        },
       ],
       include: path.resolve(__dirname, '../'),
     },
@@ -34,6 +48,13 @@ module.exports = function ({ config }) {
       use: ['file-loader'],
     },
   );
+
+  config.ignoreWarnings = [
+    ...(config.ignoreWarnings || []),
+    // Keep other local @import deprecations visible; these three files are the
+    // intentional Bootstrap 5.1 Sass compatibility layer.
+    isBootstrapSassFacadeImportWarning,
+  ];
 
   return config;
 };

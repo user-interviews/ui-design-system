@@ -1,0 +1,17 @@
+.btn-link--neutral {
+  color: var(--ux-gray-500);
+
+  &:hover {
+    color: var(--ux-gray-700);
+  }
+}
+
+.btn-outline-secondary {
+  color: var(--synth-blue-300);
+  border-color: var(--synth-blue-300);
+
+  &:hover {
+    background-color: var(--synth-blue-300);
+    color: var(--ux-white);
+  }
+}

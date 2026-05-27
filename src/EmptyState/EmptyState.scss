@@ -1,4 +1,4 @@
-@import '../../scss/theme';
+@use '../../scss/theme' as *;
 
 $empty-state-max-width: 400px;
 $empty-state-margin-top-sm: 64px;

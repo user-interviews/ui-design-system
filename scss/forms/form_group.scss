@@ -1,6 +1,6 @@
-@import '../colors';
-@import '../lists';
-@import '../typography';
+@use '../colors' as *;
+@use '../lists' as *;
+@use '../typography' as *;
 
 .FormGroup {
   align-items: flex-start;

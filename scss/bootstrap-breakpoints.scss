@@ -1,0 +1,5 @@
+@use './bootstrap-variables' as *;
+
+// See bootstrap-variables.scss for why this Bootstrap @import remains and how
+// to remediate the resulting Dart Sass @import deprecation warning.
+@import '~bootstrap/scss/mixins/breakpoints';

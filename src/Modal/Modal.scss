@@ -1,4 +1,5 @@
-@import '../../scss/theme';
+@use '../../scss/bootstrap-variables' as *;
+@use '../../scss/theme' as *;
 
 .ReactModal {
   &__Body--open {

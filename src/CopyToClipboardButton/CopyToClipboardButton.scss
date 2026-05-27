@@ -1,5 +1,4 @@
-@import '../../scss/theme';
-@import '../../scss/buttons';
+@use '../../scss/button-classes';
 
 .CopyToClipboardButton {
   &__display-text {
