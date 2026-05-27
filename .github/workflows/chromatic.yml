@@ -30,6 +30,6 @@ jobs:
         uses: ./.github/actions/setup_environment
 
       - name: Publish to Chromatic
-        uses: chromaui/action@30047ab459164cf99ae8f097f6aa5c7ef4fcc869 # v13
+        uses: chromaui/action@0b8c883861c1663076150cf1f4592b19d1ff6a54 # v17.0.1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
