@@ -1,10 +1,17 @@
 # .github/workflows/chromatic.yml
 
 # Workflow name
-name: "Chromatic build on main"
+name: "Chromatic build"
 
 # Event for the workflow
 on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Run without publishing to Chromatic"
+        required: true
+        type: boolean
+        default: true
   push:
     branches:
       - main
@@ -20,6 +27,12 @@ jobs:
   chromatic-deployment:
     runs-on: blacksmith-2vcpu-ubuntu-2404
     steps:
+      - name: Validate Chromatic run mode
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run == false && github.ref_name != 'main' }}
+        run: |
+          echo "::error::Chromatic uploads are only allowed from main. Re-run with dry_run=true for $GITHUB_REF_NAME."
+          exit 1
+
       - name: Checkout branch
         uses: actions/checkout@v6
         with:
@@ -29,7 +42,8 @@ jobs:
       - name: Setup environment
         uses: ./.github/actions/setup_environment
 
-      - name: Publish to Chromatic
-        uses: chromaui/action@30047ab459164cf99ae8f097f6aa5c7ef4fcc869 # v13
+      - name: Run Chromatic
+        uses: chromaui/action@0b8c883861c1663076150cf1f4592b19d1ff6a54 # v17.0.1
         with:
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
+          dryRun: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run == true) || (github.event_name != 'workflow_dispatch' && github.ref_name != 'main') }}
