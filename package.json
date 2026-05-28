@@ -186,12 +186,12 @@
   "homepage": "https://github.com/user-interviews/ui-design-system",
   "_id": "@user-interviews/ui-design-system@3.0",
   "engines": {
-    "node": "^ 24.14",
-    "yarn": "^ 4.13"
+    "node": "^ 24.16",
+    "yarn": "^ 4.15"
   },
   "volta": {
-    "node": "24.14.1",
-    "yarn": "4.13.0"
+    "node": "24.16.0",
+    "yarn": "4.15.0"
   },
-  "packageManager": "yarn@4.13.0"
+  "packageManager": "yarn@4.15.0"
 }
