@@ -28,3 +28,4 @@ jobs:
         with:
           merge-method: squash
           pr-number: ${{ github.event.pull_request.number }}
+          use-github-auto-merge: true
