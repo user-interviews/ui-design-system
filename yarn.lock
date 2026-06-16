@@ -5505,7 +5505,7 @@ __metadata:
     chromatic: "npm:^17.4.1"
     classnames: "npm:^2.5.1"
     css-loader: "npm:^7.1.4"
-    date-fns: "npm:^4.2.1"
+    date-fns: "npm:^4.4.0"
     date-fns-tz: "npm:^3.2.0"
     eslint: "npm:^9.39.4"
     eslint-plugin-import: "npm:^2.32.0"
@@ -7543,10 +7543,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"date-fns@npm:^4.2.1":
-  version: 4.2.1
-  resolution: "date-fns@npm:4.2.1"
-  checksum: 10c0/1694c57a180a76c1001401fde85925cebb3b89594d37625063be0a571eddde278a87d3c76ecad5759c3dbeabcc34a5c5757eb6b3487d89a9a61ef48571791166
+"date-fns@npm:^4.4.0":
+  version: 4.4.0
+  resolution: "date-fns@npm:4.4.0"
+  checksum: 10c0/988f0a13db183f5dfc85c36bbb6847a9c135a9225888bbea4005876ec15539a8613c21a07370a4e7ea543918d5a1cafb423c528b42cdbbde5fdfddb178126b21
   languageName: node
   linkType: hard
 
