@@ -43,8 +43,16 @@ jobs:
       - name: Setup environment
         uses: ./.github/actions/setup_environment
 
+      # In Dependabot runtime, Dependabot secrets are already in the process env.
+      # In regular Actions runtime, fall back to Actions secrets.
+      - name: Resolve Chromatic token from Actions secrets if not already set
+        shell: bash
+        run: |
+          if [[ -z "${CHROMATIC_PROJECT_TOKEN:-}" ]]; then
+            echo "CHROMATIC_PROJECT_TOKEN=${{ secrets.CHROMATIC_PROJECT_TOKEN }}" >> $GITHUB_ENV
+          fi
+
       - name: Run Chromatic
         uses: chromaui/action@0b8c883861c1663076150cf1f4592b19d1ff6a54 # v17.0.1
         with:
-          projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           dryRun: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run == true) || (github.event_name != 'workflow_dispatch' && github.ref_name != 'main') }}
