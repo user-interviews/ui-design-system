@@ -24,6 +24,9 @@ updates:
     # Security updates bypass allow.update-types. Keep Dependabot security PRs
     # from jumping to a new major unless a person intentionally requests it.
     ignore:
+      # Keep Bootstrap upgrades manual; this library has compatibility and
+      # visual-regression risk that should be evaluated deliberately.
+      - dependency-name: "bootstrap"
       - dependency-name: "*"
         update-types:
           - "version-update:semver-major"
@@ -91,7 +94,6 @@ updates:
       bootstrap-popper:
         applies-to: version-updates
         patterns:
-          - "bootstrap"
           - "react-bootstrap"
           - "@popperjs/core"
           - "react-popper"
