@@ -34,7 +34,16 @@ const sendFile = (response, filePath) => {
 
 const server = createServer((request, response) => {
   const requestUrl = new URL(request.url || '/', url);
-  const pathname = decodeURIComponent(requestUrl.pathname);
+  let pathname;
+
+  try {
+    pathname = decodeURIComponent(requestUrl.pathname);
+  } catch {
+    response.writeHead(400);
+    response.end('Bad request');
+    return;
+  }
+
   const requestedPath = path.resolve(root, `.${pathname}`);
 
   if (
@@ -85,6 +94,7 @@ const child = spawn(
 );
 
 const exitCode = await new Promise((resolve) => {
+  child.on('error', () => resolve(1));
   child.on('exit', (code) => resolve(code ?? 1));
 });
 
