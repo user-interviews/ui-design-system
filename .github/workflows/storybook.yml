@@ -2,6 +2,8 @@ name: Storybook
 
 on:
   push:
+    branches:
+      - main
   pull_request:
 
 permissions:
