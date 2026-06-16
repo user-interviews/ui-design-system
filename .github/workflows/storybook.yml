@@ -1,0 +1,29 @@
+name: Storybook
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+env:
+  FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+
+jobs:
+  storybook:
+    runs-on: blacksmith-2vcpu-ubuntu-2404
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Setup environment
+        uses: ./.github/actions/setup_environment
+
+      - name: Install Playwright browsers
+        run: yarn exec playwright install --with-deps chromium
+
+      - name: Build and test static Storybook
+        run: yarn test-storybook:ci

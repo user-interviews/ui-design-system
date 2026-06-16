@@ -14,12 +14,19 @@ updates:
     schedule:
       interval: daily
     open-pull-requests-limit: 10
-    # Only auto-open PRs for patch-level version updates
-    # Minor and major bumps are left for people to evaluate manually
+    # Only auto-open PRs for patch/minor version updates.
+    # Major bumps are left for people to evaluate manually.
     allow:
       - dependency-name: "*"
         update-types:
           - "version-update:semver-patch"
+          - "version-update:semver-minor"
+    # Security updates bypass allow.update-types. Keep Dependabot security PRs
+    # from jumping to a new major unless a person intentionally requests it.
+    ignore:
+      - dependency-name: "*"
+        update-types:
+          - "version-update:semver-major"
     groups:
       tiptap:
         patterns:
