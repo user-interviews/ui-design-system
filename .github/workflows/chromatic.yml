@@ -5,6 +5,7 @@ name: "Chromatic build"
 
 # Event for the workflow
 on:
+  pull_request:
   workflow_dispatch:
     inputs:
       dry_run:

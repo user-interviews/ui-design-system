@@ -1,4 +1,4 @@
-name: Lint
+name: Storybook
 
 on:
   push:
@@ -13,7 +13,7 @@ env:
   FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
 
 jobs:
-  lint:
+  storybook:
     runs-on: blacksmith-2vcpu-ubuntu-2404
     steps:
       - name: Checkout branch
@@ -24,11 +24,8 @@ jobs:
       - name: Setup environment
         uses: ./.github/actions/setup_environment
 
-      - name: Lint JavaScript/TypeScript
-        run: yarn lint:js
+      - name: Install Playwright browsers
+        run: yarn exec playwright install --with-deps chromium
 
-      - name: Check formatting
-        run: yarn format:check
-
-      - name: Lint CSS/SCSS
-        run: yarn lint:css --quiet
+      - name: Build and test static Storybook
+        run: yarn test-storybook:ci

@@ -14,68 +14,122 @@ updates:
     schedule:
       interval: daily
     open-pull-requests-limit: 10
-    # Only auto-open PRs for patch-level version updates
-    # Minor and major bumps are left for people to evaluate manually
+    # Only auto-open PRs for patch/minor version updates.
+    # Major bumps are left for people to evaluate manually.
     allow:
       - dependency-name: "*"
         update-types:
           - "version-update:semver-patch"
+          - "version-update:semver-minor"
+    # Security updates bypass allow.update-types. Keep Dependabot security PRs
+    # from jumping to a new major unless a person intentionally requests it.
+    ignore:
+      # Keep Bootstrap upgrades manual; this library has compatibility and
+      # visual-regression risk that should be evaluated deliberately.
+      - dependency-name: "bootstrap"
+      - dependency-name: "*"
+        update-types:
+          - "version-update:semver-major"
     groups:
       tiptap:
+        applies-to: version-updates
         patterns:
           - "@tiptap/*"
+        update-types:
+          - "minor"
+          - "patch"
       fontawesome:
+        applies-to: version-updates
         patterns:
           - "@fortawesome/*"
+        update-types:
+          - "minor"
+          - "patch"
       storybook:
+        applies-to: version-updates
         patterns:
           - "storybook"
           - "@storybook/*"
           - "chromatic"
           - "eslint-plugin-storybook"
+        update-types:
+          - "minor"
+          - "patch"
       react-core:
+        applies-to: version-updates
         patterns:
           - "react"
           - "react-dom"
           - "react-test-renderer"
           - "@types/react"
           - "@types/react-dom"
+        update-types:
+          - "minor"
+          - "patch"
       react-transition-group:
+        applies-to: version-updates
         patterns:
           - "react-transition-group"
           - "@types/react-transition-group"
+        update-types:
+          - "minor"
+          - "patch"
       react-toggle:
+        applies-to: version-updates
         patterns:
           - "react-toggle"
           - "@types/react-toggle"
+        update-types:
+          - "minor"
+          - "patch"
       date-handling:
+        applies-to: version-updates
         patterns:
           - "date-fns"
           - "date-fns-tz"
           - "react-datepicker"
+        update-types:
+          - "minor"
+          - "patch"
       bootstrap-popper:
+        applies-to: version-updates
         patterns:
-          - "bootstrap"
           - "react-bootstrap"
           - "@popperjs/core"
           - "react-popper"
           - "tippy.js"
+        update-types:
+          - "minor"
+          - "patch"
       jest:
+        applies-to: version-updates
         patterns:
           - "jest"
           - "jest-*"
           - "babel-jest"
           - "@types/jest"
+        update-types:
+          - "minor"
+          - "patch"
       testing-library:
+        applies-to: version-updates
         patterns:
           - "@testing-library/*"
+        update-types:
+          - "minor"
+          - "patch"
       babel:
+        applies-to: version-updates
         patterns:
           - "@babel/*"
           - "babel-loader"
           - "babel-plugin-*"
           - "babel-preset-*"
+        update-types:
+          - "minor"
+          - "patch"
       webpack:
+        applies-to: version-updates
         patterns:
           - "webpack"
           - "webpack-*"
@@ -86,21 +140,46 @@ updates:
           - "sass-loader"
           - "style-loader"
           - "postcss"
+        update-types:
+          - "minor"
+          - "patch"
       eslint:
+        applies-to: version-updates
         patterns:
           - "eslint"
           - "eslint-plugin-*"
+        update-types:
+          - "minor"
+          - "patch"
       stylelint:
+        applies-to: version-updates
         patterns:
           - "stylelint"
           - "stylelint-*"
+        update-types:
+          - "minor"
+          - "patch"
       oxc:
+        applies-to: version-updates
         patterns:
           - "oxfmt"
           - "oxlint"
+        update-types:
+          - "minor"
+          - "patch"
       typescript-types:
+        applies-to: version-updates
         patterns:
           - "typescript"
           - "@types/*"
+        update-types:
+          - "minor"
+          - "patch"
+      remaining-patches:
+        applies-to: version-updates
+        patterns:
+          - "*"
+        update-types:
+          - "patch"
     cooldown:
       default-days: 7
