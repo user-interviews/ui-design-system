@@ -29,7 +29,14 @@ const sendFile = (response, filePath) => {
     'Content-Type':
       contentTypes.get(path.extname(filePath)) || 'application/octet-stream',
   });
-  createReadStream(filePath).pipe(response);
+
+  const stream = createReadStream(filePath);
+  stream.on('error', () => {
+    // If the file disappears or becomes unreadable mid-request, fail gracefully.
+    if (!response.headersSent) response.writeHead(500);
+    response.end('Internal server error');
+  });
+  stream.pipe(response);
 };
 
 const server = createServer((request, response) => {
