@@ -9,14 +9,9 @@
   --ds-line-height-line-height-md: 22px;
   --ds-line-height-line-height-lg: 24px;
   --ds-line-height-line-height-xl: 32px;
-  /* Line height for subtext */
   --ds-line-height-line-height-subtext: var(--ds-line-height-line-height-xs);
-  /* Line height for body copy */
   --ds-line-height-line-height-body: var(--ds-line-height-line-height-sm);
-  /* Line height for empty state headers */
   --ds-line-height-line-height-empty-state-header: var(--ds-line-height-line-height-md);
-  /* Line height for section headers */
   --ds-line-height-line-height-section-header: var(--ds-line-height-line-height-lg);
-  /* Line height for page headers */
   --ds-line-height-line-height-page-header: var(--ds-line-height-line-height-xl);
 }

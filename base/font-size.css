@@ -11,10 +11,7 @@
   --ds-font-size-xl: 24px;
   --ds-font-size-font-size-subtext: var(--ds-font-size-xs);
   --ds-font-size-font-size-body: var(--ds-font-size-sm);
-  /* Used for headers in empty states */
   --ds-font-size-font-size-empty-state-header: var(--ds-font-size-md);
-  /* Used for section headers */
   --ds-font-size-font-size-section-header: var(--ds-font-size-lg);
-  /* Used for page headers */
   --ds-font-size-font-size-page-header: var(--ds-font-size-xl);
 }

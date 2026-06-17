@@ -15,8 +15,6 @@
   --ds-opacity-3-xl: 0.72;
   --ds-opacity-4-xl: 0.88;
   --ds-opacity-full: 1;
-  /* Opacity used for inactive elements (usually buttons, most other inactive components use a color) */
   --ds-opacity-surface-opacity-inactive: var(--ds-opacity-3-xl);
-  /* Opacity used for overlays */
   --ds-opacity-surface-opacity-overlay: var(--ds-opacity-xl);
 }

@@ -4,8 +4,6 @@
  */
 
 :root {
-  /* Modal elevation - If there's an overlay behind the element. */
   --ds-shadow-small: 0px 1px 2px 0px #0000001a;
-  /* Elements that require slightly more elevation such as dropdown menus, toasts, popovers. These elements appear directly on top of other content, with no overlay behind them. */
   --ds-shadow-medium: 0px 2px 4px 0px #0000001a;
 }
