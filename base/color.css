@@ -1,0 +1,546 @@
+/**
+ * This file was generated automatically by Supernova.io and should not be changed manually.
+ * To modify the format or content of this file, please contact your design system team. 
+ */
+
+:root {
+  /* (new) */
+  --ds-color-navy-50: #f2f6fc;
+  /* Denim - Light (for denim expression backgrounds) */
+  --ds-color-navy-100: #d8e7f4;
+  /* (new) */
+  --ds-color-navy-200: #bfd2ee;
+  /* (new) */
+  --ds-color-navy-300: #99b7e2;
+  /* (new) */
+  --ds-color-navy-400: #7ba1d5;
+  /* (new) */
+  --ds-color-navy-500: #5c8ac8;
+  /* (new) */
+  --ds-color-navy-600: #356daf;
+  /* Denim - Medium (for denim expression icons and visuals) */
+  --ds-color-navy-700: #225077;
+  /* (new) */
+  --ds-color-navy-800: #1a3c6d;
+  /* Used for buttons (primary CTAs, secondary button outlines, etc.) */
+  --ds-color-navy-900: #162c4e;
+  /* Hover/selected button states */
+  --ds-color-navy-950: #202b38;
+  /* Denim - Dark (used for denim expression text on top of navy-100, and for the global nav background) */
+  --ds-color-navy-1000: #010812;
+  /* (new) */
+  --ds-color-emerald-50: #f5fcfa;
+  /* Used for dropdown hover states */
+  --ds-color-emerald-100: #eef9f6;
+  /* (new) */
+  --ds-color-emerald-200: #ddf0eb;
+  /* Used for dropdown selected states */
+  --ds-color-emerald-300: #c6e2db;
+  /* (new) */
+  --ds-color-emerald-400: #abd6cb;
+  /* Indicator stroke green */
+  --ds-color-emerald-500: #91cabb;
+  /* (new) */
+  --ds-color-emerald-600: #4dab93;
+  /* Accent green */
+  --ds-color-emerald-700: #158d71;
+  /* (new) */
+  --ds-color-emerald-800: #0d715a;
+  /* (new) */
+  --ds-color-emerald-900: #045443;
+  /* (new) */
+  --ds-color-emerald-950: #034033;
+  /* (new) */
+  --ds-color-emerald-1000: #022b23;
+  /* (new) */
+  --ds-color-green-50: #f0fcf6;
+  /* (new) */
+  --ds-color-green-100: #e6faf0;
+  /* Success background color */
+  --ds-color-green-200: #d4f6e5;
+  /* (new) */
+  --ds-color-green-300: #ace6c9;
+  /* (new) */
+  --ds-color-green-400: #80d6ab;
+  /* (new) */
+  --ds-color-green-500: #4ec288;
+  /* (new) */
+  --ds-color-green-600: #22a865;
+  /* Used for success visuals (like icons) */
+  --ds-color-green-700: #09914f;
+  /* (new) */
+  --ds-color-green-800: #05783e;
+  /* (new) */
+  --ds-color-green-900: #026131;
+  /* Success text (used over green-200) */
+  --ds-color-green-950: #015029;
+  /* (new) */
+  --ds-color-green-1000: #00331a;
+  /* (new) */
+  --ds-color-orange-50: #fff5e8;
+  /* (new) */
+  --ds-color-red-50: #fff2f2;
+  /* (new) */
+  --ds-color-blue-50: #f2f6ff;
+  --ds-color-neutrals-white: #ffffff;
+  /* Lightest gray, used for header/canvas backgrounds */
+  --ds-color-neutrals-50: #fbfbfb;
+  /* Used for alert backgrounds */
+  --ds-color-neutrals-100: #f4f4f4;
+  /* (new) */
+  --ds-color-neutrals-200: #ededed;
+  /* Light stroke color (form elements, cards, modals, etc.) */
+  --ds-color-neutrals-300: #dedede;
+  /* (new) */
+  --ds-color-neutrals-400: #b8b8b8;
+  /* (new) */
+  --ds-color-neutrals-500: #8f8f8f;
+  /* (new) */
+  --ds-color-neutrals-600: #7b7b7b;
+  /* Unselected gray */
+  --ds-color-neutrals-700: #5b5b5b;
+  /* (new) */
+  --ds-color-neutrals-800: #4d4d4d;
+  /* (new) */
+  --ds-color-neutrals-900: #353535;
+  /* (new) */
+  --ds-color-neutrals-950: #272727;
+  /* Default text black */
+  --ds-color-neutrals-1000: #1b1b1b;
+  /* (new) */
+  --ds-color-yellow-50: #fffbe7;
+  /* Gold - Light (gold expression background) */
+  --ds-color-yellow-100: #fff6c9;
+  /* Yellow - Light (yellow expression backgrounds) */
+  --ds-color-yellow-200: #fff1ab;
+  --ds-color-yellow-300: #ffea80;
+  /* Yellow - Medium */
+  --ds-color-yellow-400: #ffe356;
+  /* Yellow - Base (used for yellow icons and visuals, check for accessibility) */
+  --ds-color-yellow-500: #fbda36;
+  /* (new) */
+  --ds-color-yellow-600: #ccaf21;
+  /* Gold - Medium (used for gold expression icons and visuals) */
+  --ds-color-yellow-700: #998000;
+  /* (new) */
+  --ds-color-yellow-800: #736106;
+  /* Yellow - Dark (used for yellow expression text) */
+  --ds-color-yellow-900: #453a00;
+  /* Gold - Dark (used for gold expression text) */
+  --ds-color-yellow-950: #332b00;
+  /* (new) */
+  --ds-color-yellow-1000: #1f1a00;
+  /* Used for info backgrounds */
+  --ds-color-blue-100: #e5ecff;
+  /* AI Blue - Light (AI blue background) */
+  --ds-color-blue-200: #ccdaff;
+  /* (new) */
+  --ds-color-blue-300: #8aa8e5;
+  /* (new) */
+  --ds-color-blue-400: #4e8af2;
+  /* System blue, AI Blue - Medium (used for AI blue icons and visuals) */
+  --ds-color-blue-500: #0d6efd;
+  /* (new) */
+  --ds-color-blue-600: #3f6dc9;
+  /* (new) */
+  --ds-color-blue-700: #2a56ad;
+  /* (new) */
+  --ds-color-blue-800: #18408f;
+  /* Info - Dark (used for info text on top of blue-100) */
+  --ds-color-blue-900: #0b2d72;
+  /* (new) */
+  --ds-color-blue-950: #082257;
+  /* (new) */
+  --ds-color-blue-1000: #04163b;
+  /* Error background color */
+  --ds-color-red-100: #fae1e1;
+  /* Ruby - Light (ruby expression background) */
+  --ds-color-red-200: #f9b9b9;
+  /* (new) */
+  --ds-color-red-300: #f08686;
+  /* (new) */
+  --ds-color-red-400: #eb5c5c;
+  /* Error visuals (icons, visuals) */
+  --ds-color-red-500: #e03131;
+  /* (new) */
+  --ds-color-red-600: #d12828;
+  /* (new) */
+  --ds-color-red-700: #b81d1d;
+  /* Ruby - Medium (used for ruby expression icons and visuals) */
+  --ds-color-red-800: #8d0c0c;
+  /* (new) */
+  --ds-color-red-900: #760a0a;
+  /* (new) */
+  --ds-color-red-950: #5e0808;
+  /* Ruby - Dark (used for ruby expression text on top of red-200) */
+  --ds-color-red-1000: #2f0404;
+  /* Rust - Light (used for rust expression backgrounds) */
+  --ds-color-orange-100: #ffe8ca;
+  /* (new) */
+  --ds-color-orange-200: #ffdeb2;
+  /* (new) */
+  --ds-color-orange-300: #ffc57c;
+  /* (new) */
+  --ds-color-orange-400: #ffab45;
+  /* (new) */
+  --ds-color-orange-500: #ff9212;
+  /* (new) */
+  --ds-color-orange-600: #eb8209;
+  /* Used for warning visuals (such as icons) */
+  --ds-color-orange-700: #f16e00;
+  /* Used for warning text on top of white */
+  --ds-color-orange-800: #ab6408;
+  /* Rust - Medium (used for rust expression icons and visuals) */
+  --ds-color-orange-900: #995200;
+  /* (new) */
+  --ds-color-orange-950: #663800;
+  /* Rust - Dark (used for rust expression text on top of orange-100) */
+  --ds-color-orange-1000: #331d00;
+  /* (new) */
+  --ds-color-forest-50: #f1faf0;
+  /* Forest - Light (used for forest expression backgrounds) */
+  --ds-color-forest-100: #e1f4de;
+  /* (new) */
+  --ds-color-forest-200: #c5e4c0;
+  /* (new) */
+  --ds-color-forest-300: #a9d4a2;
+  /* (new) */
+  --ds-color-forest-400: #79b46f;
+  /* (new) */
+  --ds-color-forest-500: #519346;
+  /* (new) */
+  --ds-color-forest-600: #418336;
+  /* Forest - Medium (used for forest expression icons & visuals) */
+  --ds-color-forest-700: #317326;
+  /* (new) */
+  --ds-color-forest-800: #296020;
+  /* (new) */
+  --ds-color-forest-900: #204d1a;
+  /* (new) */
+  --ds-color-forest-950: #183913;
+  /* Forest - Dark (used for forest expression text on top of forest-100) */
+  --ds-color-forest-1000: #10260d;
+  /* Purple - Lightest */
+  --ds-color-purple-50: #faf7ff;
+  /* Purple - Light (used for purple expression backgrounds) */
+  --ds-color-purple-100: #eee1ff;
+  /* AI Purple - Light (used for AI purple backgrounds) */
+  --ds-color-purple-200: #e2ccff;
+  /* (new) */
+  --ds-color-purple-300: #c293ff;
+  /* (new) */
+  --ds-color-purple-400: #ac6dff;
+  /* AI Purple - Medium (used for AI purple icons and visuals) */
+  --ds-color-purple-500: #994dff;
+  /* (new) */
+  --ds-color-purple-600: #801eff;
+  /* (new) */
+  --ds-color-purple-700: #6800f0;
+  /* (new) */
+  --ds-color-purple-800: #5400c2;
+  /* Purple - Medium (used for purple expression icons and visuals) */
+  --ds-color-purple-900: #420099;
+  /* AI Purple - Dark (used for AI Purple text on top of purple-200) */
+  --ds-color-purple-950: #2c0066;
+  /* Purple - Dark (used for purple expression text on top of purple-100) */
+  --ds-color-purple-1000: #160033;
+  /* Used for design specs */
+  --ds-color-documentation-pink-specs: #df1896;
+  /* Used for code specs */
+  --ds-color-documentation-purple-code: #5440b8;
+  /* Used for Figma section/canvas backgrounds */
+  --ds-color-documentation-beige-background: #f8f8f7;
+  /* Use for header text */
+  --ds-color-typography-header-normal: var(--ds-color-neutrals-1000);
+  /* Use for body copy */
+  --ds-color-typography-body-normal: var(--ds-color-neutrals-1000);
+  /* Used for instances of subtext that require more emphasis */
+  --ds-color-typography-subtext-dark: var(--ds-color-neutrals-1000);
+  /* Use for body subcopy */
+  --ds-color-typography-body-subcopy: var(--ds-color-neutrals-800);
+  /* Used for instances of subtext that require less emphasis */
+  --ds-color-typography-subtext-light: var(--ds-color-neutrals-700);
+  /* Use for placeholder copy in inputs */
+  --ds-color-typography-body-placeholder: var(--ds-color-neutrals-700);
+  /* Use for success messaging over white */
+  --ds-color-typography-success-lighter: var(--ds-color-green-700);
+  /* Use for success messaging over light green backgrounds */
+  --ds-color-typography-success-darker: var(--ds-color-green-950);
+  /* Used for warning messaging over light orange backgrounds */
+  --ds-color-typography-warning-default: var(--ds-color-orange-1000);
+  /* Used for error messaging on white */
+  --ds-color-typography-error-default: var(--ds-color-red-600);
+  /* Used for error messaging on light red backgrounds */
+  --ds-color-typography-error-dark: var(--ds-color-red-950);
+  /* Used for hyperlinks */
+  --ds-color-typography-hyperlink-default: var(--ds-color-blue-600);
+  /* Hyperlink hover color */
+  --ds-color-typography-hyperlink-hover: var(--ds-color-blue-800);
+  /* Used for text  on top of yellow-50 or other light yellow bgs (check for accessibility) */
+  --ds-color-typography-expression-gold: var(--ds-color-yellow-950);
+  /* Used for text on top of orange-100 or other light orange bgs (check for accessibility) */
+  --ds-color-typography-expression-rust: var(--ds-color-orange-1000);
+  /* Used for text on top of red-200 or other light red bgs (check for accessibility) */
+  --ds-color-typography-expression-ruby: var(--ds-color-red-1000);
+  /* Used for text on top of forest-100 or other light forest bgs (check for accessibility) */
+  --ds-color-typography-expression-forest: var(--ds-color-forest-1000);
+  /* Used for text on top of purple-100 or other light purple bgs (check for accessibility) */
+  --ds-color-typography-expression-purple: var(--ds-color-purple-900);
+  /* Used for text on top of gray-100 or other light gray bgs (check for accessibility) */
+  --ds-color-typography-expression-gray: var(--ds-color-neutrals-1000);
+  /* Used for text on top of navy-100 or other light navy bgs (check for accessibility) */
+  --ds-color-typography-expression-denim: var(--ds-color-navy-1000);
+  /* Background color used for the whole canvas (most common) */
+  --ds-color-surface-neutral-canvas-base: var(--ds-color-neutrals-white);
+  /* Use for icons on dark backgrounds */
+  --ds-color-icon-feedback-white: var(--ds-color-neutrals-white);
+  /* Use for info icons */
+  --ds-color-icon-feedback-info: var(--ds-color-blue-600);
+  /* Use for success icons */
+  --ds-color-icon-feedback-success: var(--ds-color-green-700);
+  /* Use for warning icons */
+  --ds-color-icon-feedback-warning: var(--ds-color-orange-700);
+  /* Use for error icons */
+  --ds-color-icon-feedback-error: var(--ds-color-red-500);
+  /* Use for card borders */
+  --ds-color-border-card-normal: var(--ds-color-neutrals-300);
+  /* Card border focus state */
+  --ds-color-border-card-focus: var(--ds-color-blue-600);
+  /* Used for page dividers */
+  --ds-color-border-divider-normal: var(--ds-color-neutrals-300);
+  /* Used for borders relating to info feedback */
+  --ds-color-border-feedback-info: var(--ds-color-blue-600);
+  /* Used for borders relating to warning feedback */
+  --ds-color-border-feedback-warning: var(--ds-color-orange-700);
+  /* Used for borders relating to error feedback */
+  --ds-color-border-feedback-error: var(--ds-color-red-600);
+  /* Used for borders relating to success feedback */
+  --ds-color-border-feedback-success: var(--ds-color-green-700);
+  /* Table borders (cells, rows, columns, etc.) */
+  --ds-color-border-table-normal: var(--ds-color-neutrals-300);
+  /* For form elements with a lighter border color (inputs, etc.) */
+  --ds-color-border-form-lighter: var(--ds-color-neutrals-300);
+  /* Background color used for the canvas (typically in headers but can also be used for the whole page) */
+  --ds-color-surface-neutral-canvas-level-1: var(--ds-color-neutrals-50);
+  /* Background color used for the canvas (typically in headers but can also be used for the whole page) */
+  --ds-color-surface-neutral-canvas-level-2: var(--ds-color-neutrals-100);
+  /* Overlay color, typically used behind modals (w/ opacity) */
+  --ds-color-surface-neutral-canvas-overlay: var(--ds-color-neutrals-1000);
+  /* Slightly darker border color for form elements such as checkboxes and radio buttons */
+  --ds-color-border-form-darker: var(--ds-color-neutrals-600);
+  /* Default fill for primary buttons */
+  --ds-color-surface-action-primary-default: var(--ds-color-navy-900);
+  /* Blue expression bg */
+  --ds-color-surface-expression-blue-default: var(--ds-color-blue-50);
+  /* Denim expression bg */
+  --ds-color-surface-expression-denim-default: var(--ds-color-navy-100);
+  /* Hover fill for secondary buttons */
+  --ds-color-surface-action-secondary-hover: var(--ds-color-navy-900);
+  /* Active fill for secondary buttons */
+  --ds-color-surface-action-secondary-active: var(--ds-color-navy-1000);
+  /* Outline color for secondary buttons */
+  --ds-color-border-action-secondary-default: var(--ds-color-navy-900);
+  /* Hover/active text color for secondary buttons */
+  --ds-color-typography-action-secondary-light: var(--ds-color-neutrals-white);
+  /* Default text color for secondary buttons */
+  --ds-color-typography-action-secondary-default: var(--ds-color-navy-900);
+  /* Hover fill for primary buttons */
+  --ds-color-surface-action-primary-hover: var(--ds-color-navy-950);
+  /* Active fill for primary buttons */
+  --ds-color-surface-action-primary-active: var(--ds-color-navy-1000);
+  /* Focus fill for primary buttons */
+  --ds-color-surface-action-primary-focus: var(--ds-color-navy-900);
+  /* Inactive fill for primary buttons (w/ opacity on top) */
+  --ds-color-surface-action-primary-inactive: var(--ds-color-navy-900);
+  /* Loading fill for primary buttons (w/ opacity on top) */
+  --ds-color-surface-action-primary-loading: var(--ds-color-navy-900);
+  /* Focus border color for form elements */
+  --ds-color-border-form-focused: var(--ds-color-blue-500);
+  /* Background color used in various components and elements */
+  --ds-color-surface-neutral-base: var(--ds-color-neutrals-white);
+  /* Background color used in various components and elements */
+  --ds-color-surface-neutral-level-1: var(--ds-color-neutrals-50);
+  /* Background color used in various components and elements */
+  --ds-color-surface-neutral-level-2: var(--ds-color-neutrals-100);
+  /* Background color used in various components and elements */
+  --ds-color-surface-neutral-level-3: var(--ds-color-neutrals-200);
+  /* Text color for primary buttons */
+  --ds-color-typography-action-primary-default: var(--ds-color-neutrals-white);
+  /* Hover fill for tertiary buttons */
+  --ds-color-surface-action-tertiary-hover: var(--ds-color-neutrals-100);
+  /* Active fill for tertiary buttons */
+  --ds-color-surface-action-tertiary-active: var(--ds-color-neutrals-300);
+  /* Default text color for tertiary buttons */
+  --ds-color-typography-action-tertiary-default: var(--ds-color-neutrals-700);
+  /* Hover/active text color for tertiary buttons */
+  --ds-color-typography-action-tertiary-dark: var(--ds-color-neutrals-1000);
+  /* Default text color for link buttons */
+  --ds-color-typography-action-link-default: var(--ds-color-blue-600);
+  /* Hover text color for link buttons */
+  --ds-color-typography-action-link-medium: var(--ds-color-blue-700);
+  /* Active text color for link buttons */
+  --ds-color-typography-action-link-dark: var(--ds-color-blue-950);
+  /* Default fill for danger buttons */
+  --ds-color-surface-action-danger-default: var(--ds-color-red-600);
+  /* Hover fill for danger buttons */
+  --ds-color-surface-action-danger-hover: var(--ds-color-red-700);
+  /* Active fill for danger buttons */
+  --ds-color-surface-action-danger-active: var(--ds-color-red-800);
+  /* Focus fill for danger buttons */
+  --ds-color-surface-action-danger-focus: var(--ds-color-red-600);
+  /* Inactive fill for danger buttons */
+  --ds-color-surface-action-danger-inactive: var(--ds-color-red-600);
+  /* Loading fill for danger buttons */
+  --ds-color-surface-action-danger-loading: var(--ds-color-red-600);
+  /* Text color for danger buttons */
+  --ds-color-typography-action-danger-default: var(--ds-color-neutrals-white);
+  /* Hover fill for icon buttons */
+  --ds-color-surface-action-icon-fill-hover: var(--ds-color-neutrals-300);
+  /* Selected fill for icon buttons */
+  --ds-color-surface-action-icon-fill-selected: var(--ds-color-neutrals-400);
+  /* Default outline color for icon buttons */
+  --ds-color-border-action-icon-default: var(--ds-color-neutrals-300);
+  /* Hover outline color for icon buttons */
+  --ds-color-border-action-icon-dark: var(--ds-color-neutrals-400);
+  /* Icon color for icon buttons (default, inactive w/ opacity) */
+  --ds-color-surface-action-icon-visual-default: var(--ds-color-neutrals-700);
+  /* Hover & selected icon color for icon buttons */
+  --ds-color-surface-action-icon-visual-dark: var(--ds-color-neutrals-1000);
+  /* Forest expression bg */
+  --ds-color-surface-expression-forest-default: var(--ds-color-forest-100);
+  /* Ruby expression bg */
+  --ds-color-surface-expression-ruby-default: var(--ds-color-red-200);
+  /* Gold expression bg */
+  --ds-color-surface-expression-gold-default: var(--ds-color-yellow-50);
+  /* Purple expression bg */
+  --ds-color-surface-expression-purple-default: var(--ds-color-purple-100);
+  /* Rust expression bg */
+  --ds-color-surface-expression-rust-default: var(--ds-color-orange-100);
+  /* Gray expression bg */
+  --ds-color-surface-expression-gray-default: var(--ds-color-neutrals-200);
+  /* Use for backgrounds related to info feedback */
+  --ds-color-surface-feedback-info: var(--ds-color-blue-200);
+  /* Use for backgrounds related to success feedback */
+  --ds-color-surface-feedback-success: var(--ds-color-green-200);
+  /* Use for backgrounds related to warning feedback */
+  --ds-color-surface-feedback-warning: var(--ds-color-orange-100);
+  /* Use for backgrounds related to error feedback */
+  --ds-color-surface-feedback-error: var(--ds-color-red-100);
+  /* Used for icons with extra emphasis */
+  --ds-color-icon-neutral-extra-heavy: var(--ds-color-neutrals-1000);
+  /* Typically the default icon color */
+  --ds-color-icon-neutral-normal: var(--ds-color-neutrals-700);
+  /* Used for icons with less emphasis */
+  --ds-color-icon-neutral-light: var(--ds-color-neutrals-500);
+  --ds-color-icon-neutral-extra-light: var(--ds-color-neutrals-400);
+  /* Used for default primary nav icons (on neutral-1000 bg) */
+  --ds-color-icon-neutral-xx-light: var(--ds-color-neutrals-300);
+  /* Used for icons on dark backgrounds for the most emphasis */
+  --ds-color-icon-neutral-white: var(--ds-color-neutrals-white);
+  /* Used for icons within buttons */
+  --ds-color-icon-blues-heavy: var(--ds-color-blue-950);
+  /* Used for icons within buttons */
+  --ds-color-icon-blues-normal: var(--ds-color-blue-700);
+  /* Used for icons within buttons */
+  --ds-color-icon-blues-light: var(--ds-color-blue-600);
+  /* Used for icons within buttons */
+  --ds-color-icon-blues-extra-light: var(--ds-color-blue-500);
+  /* Hover fill for AI buttons */
+  --ds-color-surface-action-ai-hover: var(--ds-color-purple-900);
+  /* Active fill for AI buttons */
+  --ds-color-surface-action-ai-active: var(--ds-color-purple-950);
+  /* Default text color for AI buttons */
+  --ds-color-typography-action-ai-default: var(--ds-color-neutrals-1000);
+  /* Hover/active text color for AI buttons */
+  --ds-color-typography-action-ai-light: var(--ds-color-neutrals-white);
+  /* Selected fill for certain form elements (such as checkboxes and radio buttons) */
+  --ds-color-surface-interaction-form-selected: var(--ds-color-blue-500);
+  /* Hover fill for certain form elements (such as checkboxes and radio buttons) */
+  --ds-color-surface-interaction-form-hover: var(--ds-color-blue-600);
+  /* Inactive fill color for form elements */
+  --ds-color-surface-interaction-form-inactive: var(--ds-color-neutrals-400);
+  /* Use for disabled/inactive copy */
+  --ds-color-typography-body-disabled: var(--ds-color-neutrals-700);
+  /* Used for text on top of navy-100 or other light navy bgs (check for accessibility) */
+  --ds-color-typography-expression-blue: var(--ds-color-blue-900);
+  /* Default fill for dropdown options */
+  --ds-color-surface-interaction-dropdown-default: var(--ds-color-neutrals-white);
+  /* Hover fill for dropdown options */
+  --ds-color-surface-interaction-dropdown-hover: var(--ds-color-emerald-100);
+  /* Selected fill for dropdown options */
+  --ds-color-surface-interaction-dropdown-selected: var(--ds-color-emerald-200);
+  /* Disabled fill for dropdown options */
+  --ds-color-surface-interaction-dropdown-disabled: var(--ds-color-neutrals-100);
+  /* Emerald expression bg */
+  --ds-color-surface-expression-emerald-default: var(--ds-color-emerald-100);
+  /* Darkest border color for form elements (such as tags) */
+  --ds-color-border-form-darkest: var(--ds-color-neutrals-950);
+  /* Background color used in various components and elements */
+  --ds-color-surface-neutral-level-4: var(--ds-color-neutrals-300);
+  /* Green expression bg */
+  --ds-color-surface-expression-green-default: var(--ds-color-green-200);
+  /* Yellow expression bg */
+  --ds-color-surface-expression-yellow-default: var(--ds-color-yellow-100);
+  /* Inactive tab border */
+  --ds-color-border-tab-inactive: var(--ds-color-neutrals-300);
+  /* Active tab border */
+  --ds-color-border-tab-active: var(--ds-color-emerald-500);
+  /* Used for modal borders (and other components that are modal-adjacent, such as popovers) */
+  --ds-color-border-modal-normal: var(--ds-color-neutrals-300);
+  /* Default toggle color when off */
+  --ds-color-surface-interaction-toggle-off-default: var(--ds-color-neutrals-800);
+  /* Hover toggle color when off */
+  --ds-color-surface-interaction-toggle-off-hover: var(--ds-color-neutrals-1000);
+  /* Disabled toggle color */
+  --ds-color-surface-interaction-toggle-disabled: var(--ds-color-neutrals-400);
+  /* Default toggle color when on */
+  --ds-color-surface-interaction-toggle-on-default: var(--ds-color-green-700);
+  /* Hover toggle color when on */
+  --ds-color-surface-interaction-toggle-on-hover: var(--ds-color-green-800);
+  /* Use for body subcopy */
+  --ds-color-typography-navigation-global-default: var(--ds-color-neutrals-300);
+  /* Use for body subcopy */
+  --ds-color-typography-navigation-global-selected: var(--ds-color-neutrals-100);
+  /* Use for disabled/inactive copy */
+  --ds-color-typography-body-inactive: var(--ds-color-neutrals-700);
+  /* Used for warning messaging over white */
+  --ds-color-typography-warning-light: var(--ds-color-orange-800);
+  /* Used for text on top of navy-100 or other light navy bgs (check for accessibility) */
+  --ds-color-typography-expression-white: var(--ds-color-neutrals-white);
+  /* Navy expression bg */
+  --ds-color-surface-expression-navy-default: var(--ds-color-navy-900);
+  /* Used for light icons on dark backgrounds with less emphasis */
+  --ds-color-icon-neutral-xxx-light: var(--ds-color-neutrals-200);
+  /* Used for selected icons in the primary nav (less harsh than pure white) */
+  --ds-color-icon-neutral-xxxx-light: var(--ds-color-neutrals-100);
+  /* Left border for active primary navigation menu items */
+  --ds-color-border-navigation-global-active: var(--ds-color-emerald-500);
+  /* Hover state bg for primary nav menu items */
+  --ds-color-surface-interaction-navigation-primary-hover: var(--ds-color-navy-950);
+  /* Selected state bg for primary nav menu items */
+  --ds-color-surface-interaction-navigation-primary-selected: var(--ds-color-navy-950);
+  /* Primary navigation bg */
+  --ds-color-surface-interaction-navigation-primary-background: var(--ds-color-navy-1000);
+  /* Hover state bg for secondary nav menu items */
+  --ds-color-surface-interaction-navigation-secondary-hover: var(--ds-color-emerald-100);
+  /* Selected state bg for secondary nav menu items */
+  --ds-color-surface-interaction-navigation-secondary-selected: var(--ds-color-emerald-200);
+  /* Secondary navigation bg */
+  --ds-color-surface-interaction-navigation-secondary-background: var(--ds-color-neutrals-50);
+  /* Divider line between the secondary nav and the page content */
+  --ds-color-border-navigation-secondary-default: var(--ds-color-neutrals-200);
+  /* Default color for secondary menu nav items */
+  --ds-color-typography-navigation-secondary-default: var(--ds-color-neutrals-1000);
+  /* Subheader color for secondary nav menu groupings */
+  --ds-color-typography-navigation-secondary-subheader: var(--ds-color-neutrals-500);
+  /* Hover state bg for workspace nav menu items */
+  --ds-color-surface-interaction-navigation-workspace-hover: var(--ds-color-emerald-300);
+  /* Selected state bg/stroke color for workspace nav menu items */
+  --ds-color-surface-interaction-navigation-workspace-selected: var(--ds-color-emerald-300);
+  /* Workspace navigation bg */
+  --ds-color-surface-interaction-navigation-workspace-background: var(--ds-color-neutrals-50);
+  /* Divider line between the secondary nav and the page content */
+  --ds-color-border-navigation-workspace-default: var(--ds-color-neutrals-300);
+  /* Use for body copy on dark backgrounds */
+  --ds-color-typography-body-white: var(--ds-color-neutrals-white);
+}

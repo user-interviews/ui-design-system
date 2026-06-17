@@ -1,0 +1,20 @@
+/**
+ * This file was generated automatically by Supernova.io and should not be changed manually.
+ * To modify the format or content of this file, please contact your design system team. 
+ */
+
+:root {
+  --ds-font-size-xs: 12px;
+  --ds-font-size-sm: 14px;
+  --ds-font-size-md: 16px;
+  --ds-font-size-lg: 18px;
+  --ds-font-size-xl: 24px;
+  --ds-font-size-font-size-subtext: var(--ds-font-size-xs);
+  --ds-font-size-font-size-body: var(--ds-font-size-sm);
+  /* Used for headers in empty states */
+  --ds-font-size-font-size-empty-state-header: var(--ds-font-size-md);
+  /* Used for section headers */
+  --ds-font-size-font-size-section-header: var(--ds-font-size-lg);
+  /* Used for page headers */
+  --ds-font-size-font-size-page-header: var(--ds-font-size-xl);
+}

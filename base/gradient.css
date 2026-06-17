@@ -1,0 +1,13 @@
+/**
+ * This file was generated automatically by Supernova.io and should not be changed manually.
+ * To modify the format or content of this file, please contact your design system team. 
+ */
+
+:root {
+  /* Default AI button bg */
+  --ds-gradient-ai-background: linear-gradient(135deg, rgba(var(--ds-color-purple-200), 1) 0%, rgba(var(--ds-color-navy-200), 1) 100%);
+  /* Hover/Active AI button border */
+  --ds-gradient-ai-border: linear-gradient(135deg, #3369ff 0%, #994dff 100%);
+  /* Used for loading skeleton components */
+  --ds-gradient-loading-skeleton: linear-gradient(90deg, #ffffff 28.85%, #ffffff 100%);
+}
