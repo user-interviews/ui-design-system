@@ -20,7 +20,7 @@
 
   .react-datepicker__header {
     background-color: var(--ux-white);
-    border-bottom: 1px solid var(--ux-gray-200);
+    border-bottom: var(--ds-border-width-stroke-xs) solid var(--ux-gray-200);
   }
 
   .react-datepicker__day-names {
@@ -38,8 +38,8 @@
   .date-time-picker {
     &__input-group {
       background-color: var(--ux-white);
-      border-radius: var(--ux-border-radius);
-      border: thin solid var(--ux-gray-400);
+      border-radius: var(--ds-border-radius-xs);
+      border: var(--ds-border-width-stroke-xs) solid var(--ux-gray-400);
       padding: 0.46875rem 0.75rem;
       justify-content: space-between;
       width: inherit;
@@ -94,7 +94,7 @@
 
   .form-control:focus {
     box-shadow: none;
-    border: 1px solid $input-focus-border-color;
+    border: var(--ds-border-width-stroke-xs) solid $input-focus-border-color;
   }
 
   .react-datepicker {
@@ -117,8 +117,8 @@
 
 // override some of the form group invalid styles
 .FormGroup--is-invalid .date-time-picker select {
-  border: thin solid var(--ux-gray-400);
-  border-radius: var(--ux-border-radius);
+  border: var(--ds-border-width-stroke-xs) solid var(--ux-gray-400);
+  border-radius: var(--ds-border-radius-xs);
 }
 
 // override some of the form group invalid styles
@@ -128,20 +128,20 @@
   .react-datepicker-wrapper
   .react-datepicker__input-container
   input {
-  border: thin solid var(--synth-red-200);
+  border: var(--ds-border-width-stroke-xs) solid var(--synth-red-200);
 }
 
 // Undoing some styles when this is nested within a bootstrap table
 .table .date-time-picker {
   td,
   th {
-    border-top: 0;
+    border-top-width: var(--ds-border-width-stroke-none);
     padding: 0;
     vertical-align: middle;
   }
 
   thead th {
-    border-bottom: 0;
+    border-bottom-width: var(--ds-border-width-stroke-none);
     vertical-align: middle;
   }
 }
