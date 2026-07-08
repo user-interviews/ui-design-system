@@ -2,6 +2,6 @@
 
 // See bootstrap-variables.scss for why these Bootstrap @imports remain and how
 // to remediate the resulting Dart Sass @import deprecation warnings.
-@import '~bootstrap/scss/mixins/box-shadow';
-@import '~bootstrap/scss/mixins/gradients';
-@import '~bootstrap/scss/mixins/buttons';
+@import 'bootstrap/scss/mixins/box-shadow';
+@import 'bootstrap/scss/mixins/gradients';
+@import 'bootstrap/scss/mixins/buttons';
