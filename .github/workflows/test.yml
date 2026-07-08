@@ -19,7 +19,7 @@ jobs:
     runs-on: blacksmith-2vcpu-ubuntu-2404
     steps:
       - name: Checkout branch
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 2 # CODECOV Fetch at least 2 commits to allow for diffs
           persist-credentials: false
@@ -40,7 +40,7 @@ jobs:
           vars.OTTERWISE_ENABLED == 'true' &&
           steps.test.outcome != 'skipped' &&
           steps.test.outcome != 'cancelled'
-        uses: getOtterWise/github-action@739d7617d927fde5c1694f4c18b08a902948bc71 # v1
+        uses: getOtterWise/github-action@0012ecb47badfe2dd5cbc20094a881f92143650d # v1.0.3
         with:
           token: ${{ secrets.OTTERWISE_TOKEN }}
 
@@ -60,7 +60,7 @@ jobs:
           vars.CODECOV_ENABLED == 'true' &&
           steps.test.outcome != 'skipped' &&
           steps.test.outcome != 'cancelled'
-        uses: codecov/codecov-action@e79a6962e0d4c0c17b229090214935d2e33f8354 # v6.0.1
+        uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v7.0.0
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
 

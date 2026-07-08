@@ -35,7 +35,7 @@ jobs:
           exit 1
 
       - name: Checkout branch
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0 # 👈 Required to retrieve git history
           persist-credentials: false
@@ -49,10 +49,10 @@ jobs:
         shell: bash
         run: |
           if [[ -z "${CHROMATIC_PROJECT_TOKEN:-}" ]]; then
-            echo "CHROMATIC_PROJECT_TOKEN=${{ secrets.CHROMATIC_PROJECT_TOKEN }}" >> $GITHUB_ENV
+            echo "CHROMATIC_PROJECT_TOKEN=${{ secrets.CHROMATIC_PROJECT_TOKEN }}" >> "$GITHUB_ENV"
           fi
 
       - name: Run Chromatic
-        uses: chromaui/action@0b8c883861c1663076150cf1f4592b19d1ff6a54 # v17.0.1
+        uses: chromaui/action@94713c544284a14195de3b50ef24301579f1877e # v18.0.1
         with:
           dryRun: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run == true) || (github.event_name != 'workflow_dispatch' && github.ref_name != 'main') }}
