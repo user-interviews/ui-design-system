@@ -190,14 +190,14 @@
   "homepage": "https://github.com/user-interviews/ui-design-system",
   "_id": "@user-interviews/ui-design-system@3.0",
   "engines": {
-    "node": "^ 24.16",
-    "yarn": "^ 4.15"
+    "node": "^24.18",
+    "yarn": "^4.17"
   },
   "volta": {
-    "node": "24.16.0",
-    "yarn": "4.15.0"
+    "node": "24.18.0",
+    "yarn": "4.17.1"
   },
-  "packageManager": "yarn@4.15.0",
+  "packageManager": "yarn@4.17.1",
   "resolutions": {
     "js-yaml": "^4.2.0",
     "uuid@npm:^8.3.2": "^11.1.1"
