@@ -11,7 +11,7 @@ $input-trailing-text-max-width-before-hiding: 200px;
   }
 
   &:focus {
-    border: 1px solid var(--ux-blue-500);
+    border: var(--ds-border-width-stroke-xs) solid var(--ux-blue-500);
     box-shadow: $input-focus-box-shadow;
     color: $input-focus-color;
   }

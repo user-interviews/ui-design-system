@@ -2,7 +2,7 @@
 
 .AccordionItem {
   background-color: var(--ux-white);
-  border: 1px solid var(--ux-gray-400);
+  border: var(--ds-border-width-stroke-xs) solid var(--ux-gray-400);
 
   &:first-of-type {
     border-top-left-radius: var(--ds-border-radius-xs);

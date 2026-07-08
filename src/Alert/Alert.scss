@@ -99,7 +99,7 @@
 }
 
 .Alert-success {
-  border-left: 8px solid var(--synth-emerald-400);
+  border-left: var(--ds-border-width-stroke-x-xl) solid var(--synth-emerald-400);
 
   .close {
     @include close-action;
@@ -119,7 +119,7 @@
 }
 
 .Alert-info {
-  border-left: 8px solid var(--synth-blue-300);
+  border-left: var(--ds-border-width-stroke-x-xl) solid var(--synth-blue-300);
 
   .close {
     @include close-action;
@@ -139,7 +139,7 @@
 }
 
 .Alert-feature {
-  border: 1px solid var(--synth-accent-green);
+  border: var(--ds-border-width-stroke-xs) solid var(--synth-accent-green);
 
   .close {
     @include close-action;
@@ -155,7 +155,7 @@
 }
 
 .Alert-warning {
-  border-left: 8px solid var(--synth-orange-100);
+  border-left: var(--ds-border-width-stroke-x-xl) solid var(--synth-orange-100);
 
   .close {
     @include close-action;
@@ -171,7 +171,7 @@
 }
 
 .Alert-error {
-  border-left: 8px solid var(--ux-red-400);
+  border-left: var(--ds-border-width-stroke-x-xl) solid var(--ux-red-400);
 
   .close {
     @include close-action;

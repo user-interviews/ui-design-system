@@ -38,14 +38,14 @@
 
   &[data-placement*='bottom'] .Popper__arrow::before {
     border-color: transparent transparent $popper-border-color;
-    border-width: 0 8px 6px;
+    border-width: var(--ds-border-width-stroke-none) var(--ds-border-width-stroke-x-xl) var(--ds-border-width-stroke-xl);
     position: absolute;
     top: -1px;
   }
 
   &[data-placement*='bottom'] .Popper__arrow::after {
     border-color: transparent transparent $popper-color;
-    border-width: 0 8px 6px;
+    border-width: var(--ds-border-width-stroke-none) var(--ds-border-width-stroke-x-xl) var(--ds-border-width-stroke-xl);
   }
 
   &[data-placement*='top'] .Popper__arrow {
@@ -56,14 +56,14 @@
 
   &[data-placement*='top'] .Popper__arrow::before {
     border-color: $popper-border-color transparent transparent transparent;
-    border-width: 6px 8px 0;
+    border-width: var(--ds-border-width-stroke-xl) var(--ds-border-width-stroke-x-xl) var(--ds-border-width-stroke-none);
     position: absolute;
     top: 1px;
   }
 
   &[data-placement*='top'] .Popper__arrow::after {
     border-color: $popper-color transparent transparent transparent;
-    border-width: 6px 8px 0;
+    border-width: var(--ds-border-width-stroke-xl) var(--ds-border-width-stroke-x-xl) var(--ds-border-width-stroke-none);
   }
 
   &[data-placement*='right'] .Popper__arrow {
@@ -73,12 +73,12 @@
 
   &[data-placement*='right'] .Popper__arrow::before {
     border-color: transparent $popper-border-color transparent transparent;
-    border-width: 8px 6px 8px 0;
+    border-width: var(--ds-border-width-stroke-x-xl) var(--ds-border-width-stroke-xl) var(--ds-border-width-stroke-x-xl) var(--ds-border-width-stroke-none);
   }
 
   &[data-placement*='right'] .Popper__arrow::after {
     border-color: transparent $popper-color transparent transparent;
-    border-width: 8px 6px 8px 0;
+    border-width: var(--ds-border-width-stroke-x-xl) var(--ds-border-width-stroke-xl) var(--ds-border-width-stroke-x-xl) var(--ds-border-width-stroke-none);
     left: 6px;
     top: 0;
   }
@@ -90,12 +90,12 @@
 
   &[data-placement*='left'] .Popper__arrow::before {
     border-color: transparent transparent transparent $popper-border-color;
-    border-width: 8px 0 8px 6px;
+    border-width: var(--ds-border-width-stroke-x-xl) var(--ds-border-width-stroke-none) var(--ds-border-width-stroke-x-xl) var(--ds-border-width-stroke-xl);
   }
 
   &[data-placement*='left'] .Popper__arrow::after {
     border-color: transparent transparent transparent $popper-color;
-    border-width: 8px 0 8px 6px;
+    border-width: var(--ds-border-width-stroke-x-xl) var(--ds-border-width-stroke-none) var(--ds-border-width-stroke-x-xl) var(--ds-border-width-stroke-xl);
     left: 3px;
     top: 0;
   }
@@ -110,7 +110,7 @@
 
   background-color: var(--ux-white);
   border-radius: var(--ds-border-radius-xs);
-  border: 1px solid $ux-gray-300;
+  border: var(--ds-border-width-stroke-xs) solid $ux-gray-300;
   box-shadow: var(--ux-box-shadow-card);
   max-width: 240px;
   letter-spacing: normal;

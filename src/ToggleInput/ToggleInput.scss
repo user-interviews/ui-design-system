@@ -86,7 +86,7 @@
   position: relative;
   cursor: pointer;
   background-color: transparent;
-  border: 0;
+  border-width: var(--ds-border-width-stroke-none);
   padding: 0;
   -webkit-touch-callout: none;
   user-select: none;
@@ -95,7 +95,7 @@
 }
 
 .react-toggle-screenreader-only {
-  border: 0;
+  border-width: var(--ds-border-width-stroke-none);
   clip: rect(0 0 0 0);
   height: 1px;
   margin: -1px;
@@ -175,7 +175,7 @@
   left: 1px;
   width: 22px;
   height: 22px;
-  border: 1px solid var(--react-toggle-thumb-border-color);
+  border: var(--ds-border-width-stroke-xs) solid var(--react-toggle-thumb-border-color);
   border-radius: 50%;
   background-color: var(--react-toggle-thumb-background-color);
   box-sizing: border-box;
