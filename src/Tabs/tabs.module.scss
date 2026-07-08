@@ -12,7 +12,7 @@
       sans-serif;
     text-decoration: none;
     border: none;
-    border-radius: 0;
+    border-radius: var(--ds-border-radius-none);
     border-bottom: 1px solid var(--synth-div-stroke-neutral);
     position: relative;
     margin-bottom: -1px;

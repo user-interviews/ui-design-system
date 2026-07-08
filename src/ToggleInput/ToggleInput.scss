@@ -31,7 +31,7 @@
     }
 
     .react-toggle--focus {
-      border-radius: 12px;
+      border-radius: var(--ds-border-radius-lg);
       outline: 2px solid var(--ux-blue-500);
       outline-offset: 2px;
 
@@ -115,7 +115,7 @@
   width: 50px;
   height: 24px;
   padding: 0;
-  border-radius: 30px;
+  border-radius: var(--ds-border-radius-round);
   background-color: var(--react-toggle-thumb-border-color);
   transition: all 0.2s ease;
 }

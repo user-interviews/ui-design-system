@@ -20,7 +20,7 @@
   min-height: 80px;
   background: var(--synth-gray-100);
   border: 1px solid var(--ux-gray-400);
-  border-radius: 0 0 var(--ux-border-radius) var(--ux-border-radius);
+  border-radius: var(--ds-border-radius-none) var(--ds-border-radius-none) var(--ds-border-radius-xs) var(--ds-border-radius-xs);
   padding: 16px;
   transition:
     border-color 0.15s ease-in-out,
@@ -56,5 +56,5 @@
 }
 
 .RichTextEditor__field--without-menu-bar .ProseMirror {
-  border-radius: var(--ux-border-radius);
+  border-radius: var(--ds-border-radius-xs);
 }

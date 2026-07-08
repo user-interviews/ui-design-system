@@ -48,7 +48,7 @@
   &:focus-visible {
     @include btn-focus-outline;
 
-    border-radius: var(--ux-border-radius);
+    border-radius: var(--ds-border-radius-xs);
   }
 
   &:not(.collapsed) .AccordionToggle__chevron-right {

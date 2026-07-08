@@ -10,7 +10,7 @@
   background-color: $bg-color;
   border: none;
   border-left: unset;
-  border-radius: var(--ux-border-radius);
+  border-radius: var(--ds-border-radius-xs);
   color: $color;
   margin: var(--synth-spacing-2) var(--synth-spacing-4) var(--synth-spacing-2) 0;
   padding: var(--synth-spacing-2) var(--synth-spacing-4);
@@ -47,7 +47,7 @@
   }
 
   background-color: var(--synth-gray-300);
-  border-radius: var(--ux-border-radius);
+  border-radius: var(--ds-border-radius-xs);
   color: var(--synth-gray-600);
   margin-bottom: var(--synth-spacing-4);
   padding: var(--synth-spacing-4);
