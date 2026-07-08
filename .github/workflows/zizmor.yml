@@ -36,7 +36,7 @@ jobs:
       security-events: write
     steps:
       - name: Checkout
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        uses: actions/checkout@v7
         with:
           persist-credentials: false
 
@@ -46,7 +46,7 @@ jobs:
       # internal actions) stay visible without blocking PRs.
       - name: Run zizmor (advisory — all severities → Security tab)
         continue-on-error: true
-        uses: zizmorcore/zizmor-action@b1d7e1fb5de872772f31590499237e7cce841e8e # v0.5.3
+        uses: zizmorcore/zizmor-action@192e21d79ab29983730a13d1382995c2307fbcaa # v0.5.7
         with:
           # Online audits (impostor-commit, ref-confusion) call the GitHub API
           # against each `uses:` repo. The default workflow `GITHUB_TOKEN` is
@@ -61,7 +61,7 @@ jobs:
       # this step IS allowed to fail the workflow. `advanced-security: false`
       # avoids a duplicate SARIF upload (pass 1 already uploaded the full set).
       - name: Run zizmor (gate — fail the workflow on high-severity findings)
-        uses: zizmorcore/zizmor-action@b1d7e1fb5de872772f31590499237e7cce841e8e # v0.5.3
+        uses: zizmorcore/zizmor-action@192e21d79ab29983730a13d1382995c2307fbcaa # v0.5.7
         with:
           online-audits: false
           min-severity: high

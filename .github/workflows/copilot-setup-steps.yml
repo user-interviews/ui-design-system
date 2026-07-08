@@ -29,7 +29,7 @@ jobs:
     # If you do not check out your code, Copilot will do this for you.
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           persist-credentials: false
 
@@ -39,7 +39,7 @@ jobs:
         shell: bash
         run: |
           if [[ -z "${FONTAWESOME_NPM_AUTH_TOKEN:-}" ]]; then
-            echo "FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" >> $GITHUB_ENV
+            echo "FONTAWESOME_NPM_AUTH_TOKEN=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" >> "$GITHUB_ENV"
           fi
 
       - name: Install dependencies
