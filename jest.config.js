@@ -1,6 +1,8 @@
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
 
+const path = require('node:path');
+
 module.exports = {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
@@ -163,15 +165,18 @@ module.exports = {
   // A map from regular expressions to paths to transformers
   // transform: null,
   transform: {
-    '^.+\\.(js|jsx|ts|tsx)$': 'babel-jest',
+    '^.+\\.(js|jsx|ts|tsx)$': [
+      'babel-jest',
+      { configFile: path.join(__dirname, '.babelrc') },
+    ],
     // transform exported scss variables for use in javascript
     'variables.scss$': 'jest-css-modules-transform',
   },
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
-  // transformIgnorePatterns: [
-  //   "/node_modules/"
-  // ],
+  transformIgnorePatterns: [
+    '/node_modules/(?!(?:(?:sanitize-html/node_modules/)?(?:htmlparser2|dom-serializer|domelementtype|domhandler|domutils|entities))/)',
+  ],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
   // unmockedModulePathPatterns: undefined,
