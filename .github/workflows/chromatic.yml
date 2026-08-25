@@ -6,6 +6,7 @@ name: "Chromatic build"
 # Event for the workflow
 on:
   pull_request:
+  merge_group:
   workflow_dispatch:
     inputs:
       dry_run:
@@ -55,4 +56,4 @@ jobs:
       - name: Run Chromatic
         uses: chromaui/action@94713c544284a14195de3b50ef24301579f1877e # v18.0.1
         with:
-          dryRun: ${{ (github.event_name == 'workflow_dispatch' && inputs.dry_run == true) || (github.event_name != 'workflow_dispatch' && github.ref_name != 'main') }}
+          dryRun: ${{ github.event_name == 'merge_group' || (github.event_name == 'workflow_dispatch' && inputs.dry_run == true) || (github.event_name != 'workflow_dispatch' && github.ref_name != 'main') }}
