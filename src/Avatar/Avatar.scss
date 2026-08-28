@@ -8,7 +8,7 @@
 
   &__alert {
     background-color: var(--ux-red-400);
-    border: 2px solid var(--ux-white);
+    border: var(--ds-border-width-stroke-sm) solid var(--ux-white);
     border-radius: 50%;
     height: 12px;
     position: absolute;
