@@ -118,6 +118,28 @@ function RichTextEditorCharacterCount({
   );
 }
 
+function getSanitizedEditorHtml(
+  editor: Editor,
+  allowedAttributes?: IOptions['allowedAttributes'],
+  allowedTags?: string[],
+) {
+  const html = editor.isEmpty ? '' : editor.getHTML();
+
+  // If allowedAttributes or allowedTags aren't passed, use sanitize-html's
+  // defaults by leaving that key out of the options.
+  const options: IOptions = {};
+
+  if (allowedAttributes) {
+    options.allowedAttributes = allowedAttributes;
+  }
+
+  if (allowedTags) {
+    options.allowedTags = allowedTags;
+  }
+
+  return sanitizeHtml(html, options);
+}
+
 const RichTextEditor = forwardRef(
   (
     {
@@ -187,41 +209,28 @@ const RichTextEditor = forwardRef(
       ...customExtensions,
     ];
 
+    const pendingContentRef = useRef<{ content: string | null } | null>(null);
+    const hasEmittedInitialContentRef = useRef(false);
+
     const editor = useEditor({
       extensions: editorExtensions,
       content: initialValue,
       onUpdate: ({ editor: ttEditor }) => {
-        const html = ttEditor.isEmpty ? '' : ttEditor.getHTML();
-
-        // if allowAttributes or allowedTags aren't passed
-        // then use defaults from sanitize-html by not passing that key in the options
-        // https://github.com/apostrophecms/sanitize-html
-
-        const options: IOptions = {};
-
-        if (allowedAttributes) {
-          options.allowedAttributes = allowedAttributes;
-        }
-
-        if (allowedTags) {
-          options.allowedTags = allowedTags;
-        }
-
-        const sanitizedHtml = sanitizeHtml(html, options);
-
-        onChange(sanitizedHtml);
+        hasEmittedInitialContentRef.current = true;
+        onChange(
+          getSanitizedEditorHtml(ttEditor, allowedAttributes, allowedTags),
+        );
       },
       editable,
       immediatelyRender: false,
     });
-
-    const pendingContentRef = useRef<{ content: string | null } | null>(null);
 
     useImperativeHandle(
       ref,
       () => ({
         setContent: (content: string | null) => {
           if (editor) {
+            hasEmittedInitialContentRef.current = true;
             editor.commands.setContent(content, { emitUpdate: true });
             return;
           }
@@ -233,11 +242,24 @@ const RichTextEditor = forwardRef(
     );
 
     useEffect(() => {
-      if (!editor || !pendingContentRef.current) return;
+      if (!editor || hasEmittedInitialContentRef.current) return;
 
-      const { content } = pendingContentRef.current;
-      pendingContentRef.current = null;
-      editor.commands.setContent(content, { emitUpdate: true });
+      hasEmittedInitialContentRef.current = true;
+
+      if (pendingContentRef.current) {
+        const { content } = pendingContentRef.current;
+        pendingContentRef.current = null;
+        editor.commands.setContent(content, { emitUpdate: true });
+        return;
+      }
+
+      if (initialValue) {
+        onChange(
+          getSanitizedEditorHtml(editor, allowedAttributes, allowedTags),
+        );
+      }
+      // The initial value should only be emitted once, after the editor exists.
+      // oxlint-disable-next-line react-hooks/exhaustive-deps
     }, [editor]);
 
     useEffect(() => {
