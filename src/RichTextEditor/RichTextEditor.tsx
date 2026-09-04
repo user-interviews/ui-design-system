@@ -4,22 +4,19 @@ import React, {
   type AriaAttributes,
   type ForwardedRef,
   useEffect,
+  useRef,
 } from 'react';
 
 import Bold from '@tiptap/extension-bold';
-import BulletList from '@tiptap/extension-bullet-list';
-import CharacterCount from '@tiptap/extension-character-count';
 import Document from '@tiptap/extension-document';
 import HardBreak from '@tiptap/extension-hard-break';
-import History from '@tiptap/extension-history';
 import Italic from '@tiptap/extension-italic';
 import Link from '@tiptap/extension-link';
-import ListItem from '@tiptap/extension-list-item';
-import OrderedList from '@tiptap/extension-ordered-list';
+import { BulletList, ListItem, OrderedList } from '@tiptap/extension-list';
 import Paragraph from '@tiptap/extension-paragraph';
-import Placeholder from '@tiptap/extension-placeholder';
 import Text from '@tiptap/extension-text';
-import { EditorContent, useEditor } from '@tiptap/react';
+import { CharacterCount, Placeholder, UndoRedo } from '@tiptap/extensions';
+import { EditorContent, useEditor, useEditorState } from '@tiptap/react';
 import classNames from 'classnames';
 import sanitizeHtml from 'sanitize-html';
 
@@ -32,7 +29,7 @@ import {
 } from './richTextEditorActions';
 import RichTextEditorMenuBar from './RichTextEditorMenuBar';
 
-import type { Extension, Node as TipTapNode, Mark } from '@tiptap/core';
+import type { Editor, Extension, Node as TipTapNode, Mark } from '@tiptap/core';
 import type { IOptions } from 'sanitize-html';
 
 import './RichTextEditor.scss';
@@ -98,8 +95,50 @@ export type RichTextEditorProps = {
 };
 
 export type RichTextEditorRef = {
-  setContent: (content: string) => void;
+  setContent: (content: string | null) => void;
 };
+
+function RichTextEditorCharacterCount({
+  characterLimit,
+  editor,
+}: {
+  characterLimit: number;
+  editor: Editor;
+}) {
+  const characterCount = useEditorState({
+    editor,
+    selector: ({ editor: currentEditor }) =>
+      currentEditor.storage.characterCount.characters(),
+  });
+
+  return (
+    <p className="RichTextEditor__character-count">
+      {characterCount}/{characterLimit}
+    </p>
+  );
+}
+
+function getSanitizedEditorHtml(
+  editor: Editor,
+  allowedAttributes?: IOptions['allowedAttributes'],
+  allowedTags?: string[],
+) {
+  const html = editor.isEmpty ? '' : editor.getHTML();
+
+  // If allowedAttributes or allowedTags aren't passed, use sanitize-html's
+  // defaults by leaving that key out of the options.
+  const options: IOptions = {};
+
+  if (allowedAttributes) {
+    options.allowedAttributes = allowedAttributes;
+  }
+
+  if (allowedTags) {
+    options.allowedTags = allowedTags;
+  }
+
+  return sanitizeHtml(html, options);
+}
 
 const RichTextEditor = forwardRef(
   (
@@ -126,7 +165,7 @@ const RichTextEditor = forwardRef(
     const requiredExtensions = [
       Document,
       Text,
-      History,
+      UndoRedo,
       HardBreak,
       Paragraph,
       ListItem,
@@ -170,43 +209,62 @@ const RichTextEditor = forwardRef(
       ...customExtensions,
     ];
 
+    const pendingContentRef = useRef<{ content: string | null } | null>(null);
+    const hasEmittedInitialContentRef = useRef(false);
+
     const editor = useEditor({
       extensions: editorExtensions,
       content: initialValue,
       onUpdate: ({ editor: ttEditor }) => {
-        const html = ttEditor.isEmpty ? '' : ttEditor.getHTML();
-
-        // if allowAttributes or allowedTags aren't passed
-        // then use defaults from sanitize-html by not passing that key in the options
-        // https://github.com/apostrophecms/sanitize-html
-
-        const options: IOptions = {};
-
-        if (allowedAttributes) {
-          options.allowedAttributes = allowedAttributes;
-        }
-
-        if (allowedTags) {
-          options.allowedTags = allowedTags;
-        }
-
-        const sanitizedHtml = sanitizeHtml(html, options);
-
-        onChange(sanitizedHtml);
+        hasEmittedInitialContentRef.current = true;
+        onChange(
+          getSanitizedEditorHtml(ttEditor, allowedAttributes, allowedTags),
+        );
       },
       editable,
+      immediatelyRender: false,
     });
 
-    useImperativeHandle(ref, () => ({
-      setContent: (content: string) => {
-        editor?.commands.setContent(content);
-        onChange(content);
-      },
-    }));
+    useImperativeHandle(
+      ref,
+      () => ({
+        setContent: (content: string | null) => {
+          if (editor) {
+            hasEmittedInitialContentRef.current = true;
+            editor.commands.setContent(content, { emitUpdate: true });
+            return;
+          }
+
+          pendingContentRef.current = { content };
+        },
+      }),
+      [editor],
+    );
+
+    useEffect(() => {
+      if (!editor || hasEmittedInitialContentRef.current) return;
+
+      hasEmittedInitialContentRef.current = true;
+
+      if (pendingContentRef.current) {
+        const { content } = pendingContentRef.current;
+        pendingContentRef.current = null;
+        editor.commands.setContent(content, { emitUpdate: true });
+        return;
+      }
+
+      if (initialValue) {
+        onChange(
+          getSanitizedEditorHtml(editor, allowedAttributes, allowedTags),
+        );
+      }
+      // The initial value should only be emitted once, after the editor exists.
+      // oxlint-disable-next-line react-hooks/exhaustive-deps
+    }, [editor]);
 
     useEffect(() => {
       if (editor) {
-        editor.setEditable(editable);
+        editor.setEditable(editable, false);
       }
     }, [editor, editable]);
 
@@ -234,9 +292,10 @@ const RichTextEditor = forwardRef(
           {...ariaAttributes}
         />
         {!!characterLimit && (
-          <p className="RichTextEditor__character-count">
-            {editor.storage.characterCount.characters()}/{characterLimit}
-          </p>
+          <RichTextEditorCharacterCount
+            characterLimit={characterLimit}
+            editor={editor}
+          />
         )}
       </div>
     ) : (
