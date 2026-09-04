@@ -210,7 +210,9 @@ describe('<RichTextEditor />', () => {
     expect(
       await screen.findByRole('button', { name: /^link$/i }),
     ).toBeInTheDocument();
-    expect(screen.queryByRole('button', { name: /bold/i })).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole('button', { name: /bold/i }),
+    ).not.toBeInTheDocument();
     expect(
       screen.queryByRole('button', { name: /italic/i }),
     ).not.toBeInTheDocument();
