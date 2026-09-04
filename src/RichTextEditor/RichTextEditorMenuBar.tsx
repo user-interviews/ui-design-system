@@ -37,14 +37,12 @@ function RichTextEditorMenuBar({
   const editorState = useEditorState({
     editor,
     selector: ({ editor: currentEditor }) => ({
-      canToggleBold:
-        availableActions.includes(RichTextEditorActions.BOLD)
-          ? currentEditor.can().chain().focus().toggleBold().run()
-          : false,
-      canToggleItalic:
-        availableActions.includes(RichTextEditorActions.ITALIC)
-          ? currentEditor.can().chain().focus().toggleItalic().run()
-          : false,
+      canToggleBold: availableActions.includes(RichTextEditorActions.BOLD)
+        ? currentEditor.can().chain().focus().toggleBold().run()
+        : false,
+      canToggleItalic: availableActions.includes(RichTextEditorActions.ITALIC)
+        ? currentEditor.can().chain().focus().toggleItalic().run()
+        : false,
       isBoldActive: currentEditor.isActive(RichTextEditorActions.BOLD),
       isItalicActive: currentEditor.isActive(RichTextEditorActions.ITALIC),
       isLinkActive: currentEditor.isActive(RichTextEditorActions.LINK),
