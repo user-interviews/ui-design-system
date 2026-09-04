@@ -1,5 +1,6 @@
 import React from 'react';
 
+import { useEditorState } from '@tiptap/react';
 import classNames from 'classnames';
 
 import {
@@ -33,27 +34,45 @@ function RichTextEditorMenuBar({
   editable = true,
 }: RichTextEditorMenuBarProps) {
   const actionHandlers = createActionHandlers(editor);
+  const editorState = useEditorState({
+    editor,
+    selector: ({ editor: currentEditor }) => ({
+      canToggleBold:
+        availableActions.includes(RichTextEditorActions.BOLD)
+          ? currentEditor.can().chain().focus().toggleBold().run()
+          : false,
+      canToggleItalic:
+        availableActions.includes(RichTextEditorActions.ITALIC)
+          ? currentEditor.can().chain().focus().toggleItalic().run()
+          : false,
+      isBoldActive: currentEditor.isActive(RichTextEditorActions.BOLD),
+      isItalicActive: currentEditor.isActive(RichTextEditorActions.ITALIC),
+      isLinkActive: currentEditor.isActive(RichTextEditorActions.LINK),
+      isOrderedListActive: currentEditor.isActive(
+        RichTextEditorActions.ORDERED_LIST,
+      ),
+      isUnorderedListActive: currentEditor.isActive(
+        RichTextEditorActions.UNORDERED_LIST,
+      ),
+    }),
+  });
 
   const actions = [
     {
       label: 'Bold',
       name: RichTextEditorActions.BOLD,
-      disabled:
-        !editable ||
-        (availableActions.includes(RichTextEditorActions.BOLD) &&
-          !editor.can().chain().focus().toggleBold().run()),
+      disabled: !editable || !editorState.canToggleBold,
       onClick: actionHandlers.bold,
       icon: faBold,
+      active: editorState.isBoldActive,
     },
     {
       label: 'Italic',
       name: RichTextEditorActions.ITALIC,
-      disabled:
-        !editable ||
-        (availableActions.includes(RichTextEditorActions.ITALIC) &&
-          !editor.can().chain().focus().toggleItalic().run()),
+      disabled: !editable || !editorState.canToggleItalic,
       onClick: actionHandlers.italic,
       icon: faItalic,
+      active: editorState.isItalicActive,
     },
     {
       label: 'Link',
@@ -61,6 +80,7 @@ function RichTextEditorMenuBar({
       disabled: !editable,
       onClick: actionHandlers.link,
       icon: faLink,
+      active: editorState.isLinkActive,
     },
     {
       label: 'Unlink',
@@ -68,9 +88,10 @@ function RichTextEditorMenuBar({
       disabled:
         !editable ||
         (availableActions.includes(RichTextEditorActions.LINK) &&
-          !editor.isActive('link')),
+          !editorState.isLinkActive),
       onClick: actionHandlers.unlink,
       icon: faUnlink,
+      active: false,
     },
     {
       label: 'Unordered List',
@@ -78,6 +99,7 @@ function RichTextEditorMenuBar({
       disabled: !editable,
       onClick: actionHandlers.unorderedList,
       icon: faListUl,
+      active: editorState.isUnorderedListActive,
     },
     {
       label: 'Ordered List',
@@ -85,6 +107,7 @@ function RichTextEditorMenuBar({
       disabled: !editable,
       onClick: actionHandlers.orderedList,
       icon: faListOl,
+      active: editorState.isOrderedListActive,
     },
   ];
 
@@ -96,7 +119,7 @@ function RichTextEditorMenuBar({
           <IconButton
             ariaLabel={action.label}
             className={classNames({
-              'Button--active': editor.isActive(action.name),
+              'Button--active': action.active,
             })}
             disabled={action.disabled}
             icon={action.icon}
