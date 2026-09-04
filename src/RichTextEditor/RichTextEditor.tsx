@@ -4,22 +4,19 @@ import React, {
   type AriaAttributes,
   type ForwardedRef,
   useEffect,
+  useRef,
 } from 'react';
 
 import Bold from '@tiptap/extension-bold';
-import BulletList from '@tiptap/extension-bullet-list';
-import CharacterCount from '@tiptap/extension-character-count';
 import Document from '@tiptap/extension-document';
 import HardBreak from '@tiptap/extension-hard-break';
-import History from '@tiptap/extension-history';
 import Italic from '@tiptap/extension-italic';
 import Link from '@tiptap/extension-link';
-import ListItem from '@tiptap/extension-list-item';
-import OrderedList from '@tiptap/extension-ordered-list';
+import { BulletList, ListItem, OrderedList } from '@tiptap/extension-list';
 import Paragraph from '@tiptap/extension-paragraph';
-import Placeholder from '@tiptap/extension-placeholder';
 import Text from '@tiptap/extension-text';
-import { EditorContent, useEditor } from '@tiptap/react';
+import { CharacterCount, Placeholder, UndoRedo } from '@tiptap/extensions';
+import { EditorContent, useEditor, useEditorState } from '@tiptap/react';
 import classNames from 'classnames';
 import sanitizeHtml from 'sanitize-html';
 
@@ -32,7 +29,7 @@ import {
 } from './richTextEditorActions';
 import RichTextEditorMenuBar from './RichTextEditorMenuBar';
 
-import type { Extension, Node as TipTapNode, Mark } from '@tiptap/core';
+import type { Editor, Extension, Node as TipTapNode, Mark } from '@tiptap/core';
 import type { IOptions } from 'sanitize-html';
 
 import './RichTextEditor.scss';
@@ -98,8 +95,28 @@ export type RichTextEditorProps = {
 };
 
 export type RichTextEditorRef = {
-  setContent: (content: string) => void;
+  setContent: (content: string | null) => void;
 };
+
+function RichTextEditorCharacterCount({
+  characterLimit,
+  editor,
+}: {
+  characterLimit: number;
+  editor: Editor;
+}) {
+  const characterCount = useEditorState({
+    editor,
+    selector: ({ editor: currentEditor }) =>
+      currentEditor.storage.characterCount.characters(),
+  });
+
+  return (
+    <p className="RichTextEditor__character-count">
+      {characterCount}/{characterLimit}
+    </p>
+  );
+}
 
 const RichTextEditor = forwardRef(
   (
@@ -126,7 +143,7 @@ const RichTextEditor = forwardRef(
     const requiredExtensions = [
       Document,
       Text,
-      History,
+      UndoRedo,
       HardBreak,
       Paragraph,
       ListItem,
@@ -195,18 +212,37 @@ const RichTextEditor = forwardRef(
         onChange(sanitizedHtml);
       },
       editable,
+      immediatelyRender: false,
     });
 
-    useImperativeHandle(ref, () => ({
-      setContent: (content: string) => {
-        editor?.commands.setContent(content);
-        onChange(content);
-      },
-    }));
+    const pendingContentRef = useRef<{ content: string | null } | null>(null);
+
+    useImperativeHandle(
+      ref,
+      () => ({
+        setContent: (content: string | null) => {
+          if (editor) {
+            editor.commands.setContent(content, { emitUpdate: true });
+            return;
+          }
+
+          pendingContentRef.current = { content };
+        },
+      }),
+      [editor],
+    );
+
+    useEffect(() => {
+      if (!editor || !pendingContentRef.current) return;
+
+      const { content } = pendingContentRef.current;
+      pendingContentRef.current = null;
+      editor.commands.setContent(content, { emitUpdate: true });
+    }, [editor]);
 
     useEffect(() => {
       if (editor) {
-        editor.setEditable(editable);
+        editor.setEditable(editable, false);
       }
     }, [editor, editable]);
 
@@ -234,9 +270,10 @@ const RichTextEditor = forwardRef(
           {...ariaAttributes}
         />
         {!!characterLimit && (
-          <p className="RichTextEditor__character-count">
-            {editor.storage.characterCount.characters()}/{characterLimit}
-          </p>
+          <RichTextEditorCharacterCount
+            characterLimit={characterLimit}
+            editor={editor}
+          />
         )}
       </div>
     ) : (
