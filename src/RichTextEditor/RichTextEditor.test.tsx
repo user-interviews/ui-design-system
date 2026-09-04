@@ -106,6 +106,23 @@ describe('<RichTextEditor />', () => {
       expect(await screen.findByText('hello world')).toBeInTheDocument();
     });
 
+    it('emits the normalized, sanitized value once the editor is ready', async () => {
+      const onChange = jest.fn();
+
+      render(
+        <Setup
+          allowedTags={['p']}
+          initialValue="<p><strong>hello</strong></p><script>bad()<\/script>"
+          onChange={onChange}
+        />,
+      );
+
+      await waitFor(() =>
+        expect(onChange).toHaveBeenCalledWith('<p>hello</p>'),
+      );
+      expect(onChange).toHaveBeenCalledTimes(1);
+    });
+
     it('preserves list markup', async () => {
       render(
         <Setup initialValue="<ul><li><p>first</p></li><li><p>second</p></li></ul>" />,
@@ -319,6 +336,10 @@ describe('<RichTextEditor />', () => {
 
       const textbox = await elements.textbox.find();
       expect(textbox).toHaveAttribute('contenteditable', 'false');
+      await waitFor(() =>
+        expect(onChange).toHaveBeenCalledWith('<p>hello world</p>'),
+      );
+      onChange.mockClear();
 
       rerender(
         <Setup
