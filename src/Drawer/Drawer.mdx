@@ -50,6 +50,21 @@ When there is too much negative space with the content required. Consider a moda
 
 There are three `size` options, `sm` (default), `md` and `lg`.
 
+### Responsive Widths
+
+Use the Viewport toolbar to select the named Drawer breakpoints, choose a size in Controls, then open the drawer to inspect the responsive width.
+
+| Canvas width | `sm` | `md` | `lg` |
+| --- | --- | --- | --- |
+| `<512px` | 100% | 100% | 100% |
+| `512–639px` | 512px | 100% | 100% |
+| `640–889px` | 512px | 640px | 100% |
+| `≥890px` | 512px | 640px | 890px |
+
+Expanded drawers are 90% of the canvas width.
+
+<Canvas of={ComponentStories.ResponsiveWidths} />
+
 ### Orientation
 
 Pass `orientation="left"` to override the default behavior of sliding in from the right

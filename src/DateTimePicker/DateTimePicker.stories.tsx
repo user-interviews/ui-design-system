@@ -64,6 +64,7 @@ export const TimeSelection: Story = {
     if (!firstAvailableDay) throw new Error('Datepicker has no selectable day');
 
     await userEvent.click(firstAvailableDay);
+    await expect(input).not.toHaveValue(`${VALID_DATE} ${VALID_TIME}`);
     await expect((input as HTMLInputElement).value).toMatch(
       /\d{4}-\d{2}-\d{2} \d{2}:\d{2} [AP]M/,
     );
