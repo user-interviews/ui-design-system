@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
-import { expect } from 'storybook/test';
+import { expect, waitFor } from 'storybook/test';
+import { MINIMAL_VIEWPORTS } from 'storybook/viewport';
 
 import { Drawer, DrawerBody, DrawerHeader } from '.';
 import Button from '../Button';
@@ -10,7 +11,12 @@ import {
   Expandable as ExpandableExample,
   MultipleDrawers as MultipleDrawersExample,
   OverlayClickDisabled as OverlayClickDisabledExample,
+  ResponsiveWidths as ResponsiveWidthsExample,
 } from './Drawer.stories';
+import {
+  drawerBreakpointViewports,
+  drawerResponsiveWidths,
+} from './drawerResponsiveWidths';
 
 import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
@@ -22,6 +28,14 @@ const meta = {
     onRequestClose: () => {},
   },
   tags: ['!autodocs', '!dev'],
+  parameters: {
+    viewport: {
+      options: {
+        ...MINIMAL_VIEWPORTS,
+        ...drawerBreakpointViewports,
+      },
+    },
+  },
 } satisfies Meta<typeof Drawer>;
 
 export default meta;
@@ -66,6 +80,34 @@ function getDocumentBody(canvasElement: HTMLElement) {
   const { body } = ownerDocument;
 
   return body;
+}
+
+type DrawerSize = keyof typeof drawerResponsiveWidths;
+
+function responsiveWidthStory(
+  size: DrawerSize,
+  boundary: 'below' | 'above',
+): Story {
+  const width = drawerResponsiveWidths[size];
+  const viewportWidth = boundary === 'below' ? width - 1 : width + 1;
+  const expectedWidth = boundary === 'below' ? viewportWidth : width;
+
+  return {
+    ...ResponsiveWidthsExample,
+    args: { size },
+    globals: {
+      viewport: {
+        value: `drawer-${size}-${boundary}`,
+        isRotated: false,
+      },
+    },
+    play: async ({ canvas, canvasElement, userEvent }) => {
+      const drawer = getDrawer(canvasElement);
+
+      await userEvent.click(canvas.getByRole('button', { name: 'Open' }));
+      await expect(drawer).toHaveStyle({ width: `${expectedWidth}px` });
+    },
+  };
 }
 
 export const EscapeDismissal: Story = {
@@ -140,11 +182,19 @@ export const Expansion: Story = {
 
     await userEvent.click(canvas.getByRole('button', { name: 'Expand' }));
     await expect(drawer).toHaveClass('Drawer--expanded');
+    await waitFor(() => expect(drawer).toHaveStyle({ width: '1152px' }));
 
     await userEvent.click(canvas.getByRole('button', { name: 'Expand' }));
     await expect(drawer).not.toHaveClass('Drawer--expanded');
   },
 };
+
+export const SmallBelowBreakpoint = responsiveWidthStory('sm', 'below');
+export const SmallAboveBreakpoint = responsiveWidthStory('sm', 'above');
+export const MediumBelowBreakpoint = responsiveWidthStory('md', 'below');
+export const MediumAboveBreakpoint = responsiveWidthStory('md', 'above');
+export const LargeBelowBreakpoint = responsiveWidthStory('lg', 'below');
+export const LargeAboveBreakpoint = responsiveWidthStory('lg', 'above');
 
 export const TitlelessAdditionalActions: Story = {
   ...AdditionalActionsExample,

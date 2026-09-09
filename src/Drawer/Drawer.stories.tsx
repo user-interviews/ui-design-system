@@ -1,8 +1,9 @@
 import React, { useState, type ReactNode } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { MINIMAL_VIEWPORTS } from 'storybook/viewport';
 
-import { Drawer, DrawerBody, DrawerFooter, DrawerHeader } from '.';
+import { Drawer, DrawerBody, DrawerFooter, DrawerHeader, DrawerSizes } from '.';
 import Button from '../Button';
 import {
   faEnvelope,
@@ -11,8 +12,14 @@ import {
   faTrash,
 } from '../font_awesome/solid';
 import mdx from './Drawer.mdx';
+import { drawerBreakpointViewports } from './drawerResponsiveWidths';
 
 import type { Meta, StoryObj } from '@storybook/react-webpack5';
+
+const drawerViewportOptions = {
+  ...MINIMAL_VIEWPORTS,
+  ...drawerBreakpointViewports,
+};
 
 const meta = {
   title: 'Components/Drawer',
@@ -24,6 +31,9 @@ const meta = {
   parameters: {
     docs: {
       page: mdx,
+    },
+    viewport: {
+      options: drawerViewportOptions,
     },
   },
 } satisfies Meta<typeof Drawer>;
@@ -40,6 +50,7 @@ type DrawerExampleProps = {
   hasBackgroundOverlay?: boolean;
   orientation?: 'left' | 'right';
   renderFooter?: (onRequestClose: () => void) => ReactNode;
+  size?: (typeof DrawerSizes)[keyof typeof DrawerSizes];
   title?: ReactNode;
 };
 
@@ -52,6 +63,7 @@ function DrawerExample({
   hasBackgroundOverlay,
   orientation,
   renderFooter,
+  size = DrawerSizes.SMALL,
   title = 'Title goes here',
 }: DrawerExampleProps) {
   const [isVisible, setVisible] = useState(false);
@@ -68,7 +80,7 @@ function DrawerExample({
         expandable={expandable}
         hasBackgroundOverlay={hasBackgroundOverlay}
         orientation={orientation}
-        size="sm"
+        size={size}
         visible={isVisible}
         onRequestClose={toggleVisible}
       >
@@ -184,6 +196,30 @@ export const Expandable: Story = {
 
 export const DefaultExpanded: Story = {
   render: () => <DrawerExample defaultExpanded />,
+};
+
+export const ResponsiveWidths: Story = {
+  args: {
+    size: DrawerSizes.SMALL,
+  },
+  argTypes: {
+    size: {
+      control: 'select',
+      options: Object.values(DrawerSizes),
+    },
+  },
+  render: ({ size }) => (
+    <DrawerExample
+      body={
+        <p>
+          Select a Drawer breakpoint in the Viewport toolbar, choose a size in
+          Controls, then open the drawer to inspect its responsive width.
+        </p>
+      }
+      size={size}
+      title="Responsive width"
+    />
+  ),
 };
 
 export const AdditionalActions: Story = {
