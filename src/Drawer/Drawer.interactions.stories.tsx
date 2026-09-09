@@ -4,6 +4,12 @@ import { expect } from 'storybook/test';
 
 import { Drawer, DrawerBody, DrawerHeader } from '.';
 import Button from '../Button';
+import {
+  Default as DefaultExample,
+  Expandable as ExpandableExample,
+  MultipleDrawers as MultipleDrawersExample,
+  OverlayClickDisabled as OverlayClickDisabledExample,
+} from './Drawer.stories';
 
 import type { Meta, StoryObj } from '@storybook/react-webpack5';
 
@@ -14,41 +20,11 @@ const meta = {
     visible: false,
     onRequestClose: () => {},
   },
-  tags: ['!autodocs'],
+  tags: ['!autodocs', '!dev'],
 } satisfies Meta<typeof Drawer>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
-
-type DrawerTestRenderProps = {
-  closeOnOverlayClick?: boolean;
-  expandable?: boolean;
-};
-
-function DrawerTestRender({
-  closeOnOverlayClick,
-  expandable,
-}: DrawerTestRenderProps) {
-  const [isVisible, setVisible] = useState(false);
-
-  return (
-    <>
-      <Button onClick={() => setVisible(true)}>Open</Button>
-      <Drawer
-        closeOnOverlayClick={closeOnOverlayClick}
-        expandable={expandable}
-        visible={isVisible}
-        onRequestClose={() => setVisible(false)}
-      >
-        <DrawerHeader
-          title="Test Drawer"
-          onRequestClose={() => setVisible(false)}
-        />
-        <DrawerBody>Drawer content</DrawerBody>
-      </Drawer>
-    </>
-  );
-}
 
 function LifecycleCleanupRender() {
   const [isMounted, setMounted] = useState(true);
@@ -62,57 +38,17 @@ function LifecycleCleanupRender() {
   return (
     <>
       <Button onClick={openDrawer}>Open</Button>
-      <Button onClick={() => setMounted(false)}>Unmount Drawer</Button>
       {isMounted && (
         <Drawer visible={isVisible} onRequestClose={() => setVisible(false)}>
           <DrawerHeader
             title="Lifecycle Drawer"
             onRequestClose={() => setVisible(false)}
           />
+          <DrawerBody>
+            <Button onClick={() => setMounted(false)}>Unmount Drawer</Button>
+          </DrawerBody>
         </Drawer>
       )}
-    </>
-  );
-}
-
-function MultipleDrawersRender() {
-  const [isFirstVisible, setFirstVisible] = useState(false);
-  const [isSecondVisible, setSecondVisible] = useState(false);
-
-  return (
-    <>
-      <Button onClick={() => setFirstVisible(true)}>Open first drawer</Button>
-      <Drawer
-        visible={isFirstVisible}
-        onRequestClose={() => setFirstVisible(false)}
-      >
-        <DrawerHeader
-          title="First Drawer"
-          onRequestClose={() => setFirstVisible(false)}
-        />
-        <DrawerBody>
-          <Button onClick={() => setSecondVisible(true)}>
-            Open second drawer
-          </Button>
-          <Button onClick={() => setFirstVisible(false)}>
-            Close first drawer
-          </Button>
-        </DrawerBody>
-      </Drawer>
-      <Drawer
-        visible={isSecondVisible}
-        onRequestClose={() => setSecondVisible(false)}
-      >
-        <DrawerHeader
-          title="Second Drawer"
-          onRequestClose={() => setSecondVisible(false)}
-        />
-        <DrawerBody>
-          <Button onClick={() => setSecondVisible(false)}>
-            Close second drawer
-          </Button>
-        </DrawerBody>
-      </Drawer>
     </>
   );
 }
@@ -131,8 +67,8 @@ function getDocumentBody(canvasElement: HTMLElement) {
   return body;
 }
 
-export const Dismissal: Story = {
-  render: () => <DrawerTestRender />,
+export const EscapeDismissal: Story = {
+  ...DefaultExample,
   play: async ({ canvas, canvasElement, userEvent }) => {
     const drawer = getDrawer(canvasElement);
     const body = getDocumentBody(canvasElement);
@@ -147,10 +83,27 @@ export const Dismissal: Story = {
     await userEvent.keyboard('{Escape}');
     await expect(drawer).not.toHaveClass('Drawer--visible');
     await expect(body).not.toHaveClass('Drawer--open');
+  },
+};
+
+export const OverlayDismissal: Story = {
+  ...DefaultExample,
+  play: async ({ canvas, canvasElement, userEvent }) => {
+    const drawer = getDrawer(canvasElement);
+    const body = getDocumentBody(canvasElement);
 
     await userEvent.click(canvas.getByRole('button', { name: 'Open' }));
     await userEvent.click(canvas.getByRole('presentation'));
     await expect(drawer).not.toHaveClass('Drawer--visible');
+    await expect(body).not.toHaveClass('Drawer--open');
+  },
+};
+
+export const HeaderCloseDismissal: Story = {
+  ...DefaultExample,
+  play: async ({ canvas, canvasElement, userEvent }) => {
+    const drawer = getDrawer(canvasElement);
+    const body = getDocumentBody(canvasElement);
 
     await userEvent.click(canvas.getByRole('button', { name: 'Open' }));
     await userEvent.click(canvas.getByRole('button', { name: 'Close' }));
@@ -160,7 +113,7 @@ export const Dismissal: Story = {
 };
 
 export const OverlayClickDisabled: Story = {
-  render: () => <DrawerTestRender closeOnOverlayClick={false} />,
+  ...OverlayClickDisabledExample,
   play: async ({ canvas, canvasElement, userEvent }) => {
     const drawer = getDrawer(canvasElement);
     const body = getDocumentBody(canvasElement);
@@ -176,7 +129,7 @@ export const OverlayClickDisabled: Story = {
 };
 
 export const Expansion: Story = {
-  render: () => <DrawerTestRender expandable />,
+  ...ExpandableExample,
   play: async ({ canvas, canvasElement, userEvent }) => {
     const drawer = getDrawer(canvasElement);
 
@@ -207,7 +160,7 @@ export const LifecycleCleanup: Story = {
 };
 
 export const SharedBodyLock: Story = {
-  render: MultipleDrawersRender,
+  ...MultipleDrawersExample,
   play: async ({ canvas, canvasElement, userEvent }) => {
     const body = getDocumentBody(canvasElement);
     const drawers = canvasElement.querySelectorAll('.Drawer');

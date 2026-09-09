@@ -32,25 +32,27 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 type DrawerExampleProps = {
+  body?: ReactNode;
+  bordered?: boolean;
   closeOnOverlayClick?: boolean;
   defaultExpanded?: boolean;
   expandable?: boolean;
   hasBackgroundOverlay?: boolean;
   orientation?: 'left' | 'right';
-  title?: ReactNode;
-  bordered?: boolean;
   renderFooter?: (onRequestClose: () => void) => ReactNode;
+  title?: ReactNode;
 };
 
 function DrawerExample({
+  body,
+  bordered = true,
   closeOnOverlayClick,
   defaultExpanded,
   expandable,
   hasBackgroundOverlay,
   orientation,
-  title = 'Title goes here',
-  bordered = true,
   renderFooter,
+  title = 'Title goes here',
 }: DrawerExampleProps) {
   const [isVisible, setVisible] = useState(false);
 
@@ -76,22 +78,24 @@ function DrawerExample({
           onRequestClose={toggleVisible}
         />
         <DrawerBody>
-          <p>
-            Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi,
-            vitae malesuada odio. Sed varius libero sed erat faucibus ultrices.
-            Suspendisse potenti. Mauris sit amet sollicitudin urna. Donec
-            porttitor, est quis aliquet condimentum, nisi felis porta odio, eu
-            luctus dui ex id nisi. Curabitur ultrices enim in dolor laoreet
-            porta. Proin vehicula at nisl a maximus. Sed lorem enim, elementum
-            in arcu eu, lacinia consequat arcu. Pellentesque non nibh viverra,
-            imperdiet purus at, finibus turpis. Sed mattis erat a risus
-            dignissim, eu ultrices est rhoncus. Fusce nec feugiat tortor.
-            Quisque tincidunt nulla urna, ut egestas massa congue a. Quisque
-            metus felis, auctor sit amet posuere eu, aliquam blandit libero.
-            Mauris sodales, velit sit amet egestas aliquet, ipsum arcu porta
-            lacus, vitae mattis felis elit in metus. Nulla ligula ligula,
-            laoreet in dictum sit amet, pretium ac est.
-          </p>
+          {body ?? (
+            <p>
+              Proin elementum vitae nibh nec tincidunt. Donec vel placerat mi,
+              vitae malesuada odio. Sed varius libero sed erat faucibus
+              ultrices. Suspendisse potenti. Mauris sit amet sollicitudin urna.
+              Donec porttitor, est quis aliquet condimentum, nisi felis porta
+              odio, eu luctus dui ex id nisi. Curabitur ultrices enim in dolor
+              laoreet porta. Proin vehicula at nisl a maximus. Sed lorem enim,
+              elementum in arcu eu, lacinia consequat arcu. Pellentesque non
+              nibh viverra, imperdiet purus at, finibus turpis. Sed mattis erat
+              a risus dignissim, eu ultrices est rhoncus. Fusce nec feugiat
+              tortor. Quisque tincidunt nulla urna, ut egestas massa congue a.
+              Quisque metus felis, auctor sit amet posuere eu, aliquam blandit
+              libero. Mauris sodales, velit sit amet egestas aliquet, ipsum arcu
+              porta lacus, vitae mattis felis elit in metus. Nulla ligula
+              ligula, laoreet in dictum sit amet, pretium ac est.
+            </p>
+          )}
         </DrawerBody>
         {renderFooter?.(toggleVisible)}
       </Drawer>
@@ -108,6 +112,48 @@ function EmptyRender() {
     <>
       <Button onClick={toggleVisible}>Open</Button>
       <Drawer visible={isVisible} onRequestClose={toggleVisible} />
+    </>
+  );
+}
+
+function MultipleDrawersRender() {
+  const [isFirstVisible, setFirstVisible] = useState(false);
+  const [isSecondVisible, setSecondVisible] = useState(false);
+
+  return (
+    <>
+      <Button onClick={() => setFirstVisible(true)}>Open first drawer</Button>
+      <Drawer
+        visible={isFirstVisible}
+        onRequestClose={() => setFirstVisible(false)}
+      >
+        <DrawerHeader
+          title="First Drawer"
+          onRequestClose={() => setFirstVisible(false)}
+        />
+        <DrawerBody>
+          <Button onClick={() => setSecondVisible(true)}>
+            Open second drawer
+          </Button>
+          <Button onClick={() => setFirstVisible(false)}>
+            Close first drawer
+          </Button>
+        </DrawerBody>
+      </Drawer>
+      <Drawer
+        visible={isSecondVisible}
+        onRequestClose={() => setSecondVisible(false)}
+      >
+        <DrawerHeader
+          title="Second Drawer"
+          onRequestClose={() => setSecondVisible(false)}
+        />
+        <DrawerBody>
+          <Button onClick={() => setSecondVisible(false)}>
+            Close second drawer
+          </Button>
+        </DrawerBody>
+      </Drawer>
     </>
   );
 }
@@ -173,5 +219,21 @@ export const Empty: Story = {
 };
 
 export const OverlayClickDisabled: Story = {
-  render: () => <DrawerExample closeOnOverlayClick={false} />,
+  name: 'Overlay Click Does Not Dismiss',
+  render: () => (
+    <DrawerExample
+      body={
+        <p>
+          At canvas widths wider than 512px, click the shaded backdrop. This
+          drawer should remain open. Use the Close button to dismiss it.
+        </p>
+      }
+      closeOnOverlayClick={false}
+      title="Overlay clicks do not dismiss"
+    />
+  ),
+};
+
+export const MultipleDrawers: Story = {
+  render: MultipleDrawersRender,
 };
