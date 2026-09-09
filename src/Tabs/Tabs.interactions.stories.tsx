@@ -1,4 +1,4 @@
-import { expect } from 'storybook/test';
+import { expect, waitFor } from 'storybook/test';
 
 import { Tabs } from '.';
 import { Controlled as ControlledExample } from './Tabs.stories';
@@ -16,6 +16,9 @@ type Story = StoryObj<typeof meta>;
 
 export const KeyboardNavigation: Story = {
   ...ControlledExample,
+  args: {
+    id: 'keyboard-navigation',
+  },
   play: async ({ canvas, userEvent }) => {
     const tabOne = canvas.getByRole('tab', { name: 'Tab One' });
     const tabTwo = canvas.getByRole('tab', { name: 'Tab Two' });
@@ -32,25 +35,25 @@ export const KeyboardNavigation: Story = {
     await expect(disabledTab).toHaveAttribute('aria-disabled', 'true');
     await expect(disabledTab).toHaveAttribute('tabindex', '-1');
 
-    tabOne.focus();
+    await userEvent.tab();
     await expect(tabOne).toHaveFocus();
 
     await userEvent.keyboard('{ArrowRight}');
-    await expect(tabTwo).toHaveFocus();
+    await waitFor(() => expect(tabTwo).toHaveFocus());
     await expect(tabTwo).toHaveAttribute('aria-selected', 'true');
     await expect(
       canvas.getByRole('tabpanel', { name: 'Tab Two' }),
     ).toHaveTextContent('Tab Content Two');
 
     await userEvent.keyboard('{ArrowRight}');
-    await expect(tabThree).toHaveFocus();
+    await waitFor(() => expect(tabThree).toHaveFocus());
 
     await userEvent.keyboard('{ArrowRight}');
-    await expect(tabOne).toHaveFocus();
+    await waitFor(() => expect(tabOne).toHaveFocus());
     await expect(tabOne).toHaveAttribute('aria-selected', 'true');
 
     await userEvent.keyboard('{ArrowLeft}');
-    await expect(tabThree).toHaveFocus();
+    await waitFor(() => expect(tabThree).toHaveFocus());
     await expect(tabThree).toHaveAttribute('aria-selected', 'true');
   },
 };
