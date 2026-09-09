@@ -30,6 +30,12 @@ export const DrawerSizes = {
   LARGE: 'lg',
 } as const;
 
+const openDrawerIds = new Set<symbol>();
+
+function syncBackgroundScrolling() {
+  document.body.classList.toggle('Drawer--open', openDrawerIds.size > 0);
+}
+
 type DrawerProps = {
   /** Top padding for fixed nav clearance (`Drawer--behind-nav`; default `true`). */
   behindNav?: boolean;
@@ -67,7 +73,7 @@ function Drawer({
   size = 'sm',
   onRequestClose,
 }: DrawerProps) {
-  const isCurrentlyOpen = useRef(false);
+  const drawerId = useRef(Symbol('Drawer'));
   const [expanded, setExpanded] = useState(defaultExpanded);
 
   const handleExpand = useCallback(() => setExpanded(!expanded), [expanded]);
@@ -109,34 +115,15 @@ function Drawer({
   }, [handleEscKeyPress, visible]);
 
   useEffect(() => {
-    // isCurrentlyOpen ref accounts for a case where you could have multiple drawers
-    // on one page and you try to access one of them via their url. Without using ref, the
-    // Drawer--open would be potentially removed via other
-    // closed drawer because of a race condition
-    function disableBackgroundScrolling() {
-      if (visible && !isCurrentlyOpen.current) {
-        document.body.classList.add('Drawer--open');
-        isCurrentlyOpen.current = true;
-      }
+    if (!hasBackgroundOverlay || !visible) return undefined;
 
-      if (!visible && isCurrentlyOpen.current) {
-        document.body.classList.remove('Drawer--open');
-        isCurrentlyOpen.current = false;
-      }
-    }
-
-    if (hasBackgroundOverlay) {
-      disableBackgroundScrolling();
-    }
+    const currentDrawerId = drawerId.current;
+    openDrawerIds.add(currentDrawerId);
+    syncBackgroundScrolling();
 
     return () => {
-      // Cleanup function to remove the class and reset the ref.
-      // Covers the edge where you navigate to a new page
-      // from drawer via a link
-      if (hasBackgroundOverlay) {
-        document.body.classList.remove('Drawer--open');
-        isCurrentlyOpen.current = false;
-      }
+      openDrawerIds.delete(currentDrawerId);
+      syncBackgroundScrolling();
     };
   }, [hasBackgroundOverlay, visible]);
 

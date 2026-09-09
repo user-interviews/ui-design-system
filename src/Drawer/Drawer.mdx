@@ -50,6 +50,21 @@ When there is too much negative space with the content required. Consider a moda
 
 There are three `size` options, `sm` (default), `md` and `lg`.
 
+### Responsive Widths
+
+Use the Viewport toolbar to select the named Drawer breakpoints, choose a size in Controls, then open the drawer to inspect the responsive width.
+
+| Canvas width | `sm` | `md` | `lg` |
+| --- | --- | --- | --- |
+| `<512px` | 100% | 100% | 100% |
+| `512–639px` | 512px | 100% | 100% |
+| `640–889px` | 512px | 640px | 100% |
+| `≥890px` | 512px | 640px | 890px |
+
+Expanded drawers are 90% of the canvas width.
+
+<Canvas of={ComponentStories.ResponsiveWidths} />
+
 ### Orientation
 
 Pass `orientation="left"` to override the default behavior of sliding in from the right
@@ -66,6 +81,18 @@ you want the drawer to be the full width of the viewport but you want to disable
 ### Additional Actions
 
 If additional components are required to be included, pass them as children to the `DrawerFooter`. This example also doesn't have a title or a border on the header, and the background overlay is turned off to allow interaction with outside elements.
+
+### Prevent Overlay Dismissal
+
+Pass `closeOnOverlayClick={false}` when clicking the background overlay should not close the drawer. The small drawer is 512px wide, so use a canvas wider than 512px to expose and manually test the overlay.
+
+<Canvas of={ComponentStories.OverlayClickDisabled} />
+
+### Multiple Drawers
+
+Multiple drawers can be mounted and open at the same time. The background remains locked until the final overlay-backed drawer closes.
+
+<Canvas of={ComponentStories.MultipleDrawers} />
 
 ### Empty
 
