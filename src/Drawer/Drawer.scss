@@ -16,24 +16,6 @@
 }
 
 .Drawer {
-  @media (min-width: $drawer-width-small) {
-    &--sm {
-      width: $drawer-width-small;
-    }
-  }
-
-  @media (min-width: $drawer-width-medium) {
-    &--md {
-      width: $drawer-width-medium;
-    }
-  }
-
-  @media (min-width: $drawer-width-large) {
-    &--lg {
-      width: $drawer-width-large;
-    }
-  }
-
   $block: #{&};
 
   background-color: var(--ux-white);
@@ -52,6 +34,24 @@
 
   &--behind-nav {
     padding-top: 48px;
+  }
+
+  @media (min-width: $drawer-width-small) {
+    &--sm {
+      width: $drawer-width-small;
+    }
+  }
+
+  @media (min-width: $drawer-width-medium) {
+    &--md {
+      width: $drawer-width-medium;
+    }
+  }
+
+  @media (min-width: $drawer-width-large) {
+    &--lg {
+      width: $drawer-width-large;
+    }
   }
 
   &--expanded {

@@ -120,6 +120,7 @@ export const OverlayClickDisabled: Story = {
     const body = getDocumentBody(canvasElement);
 
     await userEvent.click(canvas.getByRole('button', { name: 'Open' }));
+    await expect(drawer).toHaveStyle({ width: '512px' });
     await userEvent.click(canvas.getByRole('presentation'));
     await expect(drawer).toHaveClass('Drawer--visible');
     await expect(body).toHaveClass('Drawer--open');
