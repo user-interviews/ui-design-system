@@ -209,7 +209,7 @@ export const AdditionalActions: Story = {
           </Button>
         </DrawerFooter>
       )}
-      title={undefined}
+      title={null}
     />
   ),
 };

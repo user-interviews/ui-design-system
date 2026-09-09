@@ -5,6 +5,7 @@ import { expect } from 'storybook/test';
 import { Drawer, DrawerBody, DrawerHeader } from '.';
 import Button from '../Button';
 import {
+  AdditionalActions as AdditionalActionsExample,
   Default as DefaultExample,
   Expandable as ExpandableExample,
   MultipleDrawers as MultipleDrawersExample,
@@ -141,6 +142,16 @@ export const Expansion: Story = {
 
     await userEvent.click(canvas.getByRole('button', { name: 'Expand' }));
     await expect(drawer).not.toHaveClass('Drawer--expanded');
+  },
+};
+
+export const TitlelessAdditionalActions: Story = {
+  ...AdditionalActionsExample,
+  play: async ({ canvasElement }) => {
+    const title = canvasElement.querySelector('.Drawer__title');
+    if (!title) throw new Error('Drawer title did not render');
+
+    await expect(title).toBeEmptyDOMElement();
   },
 };
 
