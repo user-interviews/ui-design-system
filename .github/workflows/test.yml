@@ -33,6 +33,11 @@ jobs:
         if: ${{ success() }}
         run: yarn test
 
+      - name: Build publish artifact
+        run: |
+          yarn build
+          yarn pack --dry-run
+
       - name: Upload coverage to OtterWise
         # NOTE: do not wrap in ${{ ... }} — `if:` is already an expression
         # context, and an extra wrap turns the result into a non-empty string

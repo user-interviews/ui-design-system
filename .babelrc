@@ -1,14 +1,27 @@
 {
+  "assumptions": {
+    "setPublicClassFields": true
+  },
   "presets": [
-    "@babel/preset-env",
+    [
+      "@babel/preset-env",
+      {
+        "bugfixes": true,
+        "modules": "commonjs"
+      }
+    ],
     ["@babel/preset-react", { "runtime": "automatic" }],
-    "@babel/preset-typescript"
+    [
+      "@babel/preset-typescript",
+      {
+        "allowDeclareFields": true,
+        "onlyRemoveTypeImports": false
+      }
+    ]
   ],
   "plugins": [
     "@babel/plugin-transform-runtime",
     "@babel/plugin-transform-object-rest-spread",
-    ["@babel/plugin-transform-private-property-in-object", { "loose": true }],
-    ["@babel/plugin-transform-private-methods", { "loose": true }],
     [
       "module-resolver",
       {
@@ -22,12 +35,7 @@
   "env": {
     "production": {
       "plugins": [
-        [
-          "@babel/plugin-transform-class-properties",
-          {
-            "loose": true
-          }
-        ],
+        "@babel/plugin-transform-class-properties",
         [
           "transform-react-remove-prop-types",
           {
@@ -37,14 +45,7 @@
       ]
     },
     "test": {
-      "plugins": [
-        [
-          "@babel/plugin-transform-class-properties",
-          {
-            "loose": true
-          }
-        ]
-      ]
+      "plugins": ["@babel/plugin-transform-class-properties"]
     }
   }
 }
