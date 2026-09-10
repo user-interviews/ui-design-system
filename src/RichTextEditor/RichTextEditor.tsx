@@ -81,7 +81,9 @@ const UnlinkOnlyLink = Link.configure({
       ...(this.parent?.() ?? []),
       new Plugin({
         props: {
-          handlePaste: (view, _event, slice) => {
+          handlePaste: (view, event, slice) => {
+            if (slice.content.size === 0) return false;
+
             const linkFreeSlice = new Slice(
               stripLinkMarks(slice.content, this.type),
               slice.openStart,
@@ -97,6 +99,11 @@ const UnlinkOnlyLink = Link.configure({
               ? view.state.tr.replaceSelectionWith(singleNode, false)
               : view.state.tr.replaceSelection(linkFreeSlice);
 
+            this.editor.emit('paste', {
+              editor: this.editor,
+              event,
+              slice: linkFreeSlice,
+            });
             view.dispatch(
               transaction
                 .scrollIntoView()

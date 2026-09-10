@@ -379,6 +379,69 @@ describe('<RichTextEditor />', () => {
     expect(textbox.querySelector('a')).not.toBeInTheDocument();
   });
 
+  it('does not delete selected content when an empty clipboard is pasted in an unlink-only editor', async () => {
+    let editor: Editor | undefined;
+    const CaptureEditor = Extension.create({
+      name: 'captureEditor',
+      onCreate() {
+        const { editor: capturedEditor } = this;
+        editor = capturedEditor;
+      },
+    });
+
+    render(
+      <Setup
+        availableActions={[RichTextEditorActions.UNLINK]}
+        customExtensions={[CaptureEditor]}
+        initialValue="<p>hello</p>"
+      />,
+    );
+
+    const textbox = await elements.textbox.find();
+    if (!textbox) throw new Error('RichTextEditor textbox was not rendered');
+
+    act(() => editor?.commands.setTextSelection({ from: 1, to: 6 }));
+    fireEvent.paste(textbox, {
+      clipboardData: { getData: () => '' },
+    });
+
+    expect(textbox).toHaveTextContent('hello');
+  });
+
+  it('notifies paste observers in unlink-only editors', async () => {
+    const onPaste = jest.fn();
+    const ObservePaste = Extension.create({
+      name: 'observePaste',
+      onCreate() {
+        this.editor.on('paste', onPaste);
+      },
+    });
+
+    render(
+      <Setup
+        availableActions={[RichTextEditorActions.UNLINK]}
+        customExtensions={[ObservePaste]}
+      />,
+    );
+
+    const textbox = await elements.textbox.find();
+    if (!textbox) throw new Error('RichTextEditor textbox was not rendered');
+
+    fireEvent.paste(textbox, {
+      clipboardData: {
+        getData: (type: string) =>
+          type === 'text/html'
+            ? '<p><a href="https://example.com">hello</a></p>'
+            : 'hello',
+      },
+    });
+
+    expect(onPaste).toHaveBeenCalledTimes(1);
+    expect(onPaste.mock.calls[0][0].slice.content.firstChild?.marks).toEqual(
+      [],
+    );
+  });
+
   it('preserves links in dragged content for unlink-only action subsets', async () => {
     let editor: Editor | undefined;
     const CaptureEditor = Extension.create({
