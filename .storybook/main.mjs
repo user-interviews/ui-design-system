@@ -19,8 +19,8 @@ const config = {
         toolsets: {
           dev: true,
           docs: true,
+          test: false,
         },
-        experimentalFormat: 'markdown',
       },
     },
     '@storybook/addon-webpack5-compiler-babel',
@@ -48,7 +48,7 @@ const config = {
     defaultName: 'Docs',
   },
   features: {
-    experimentalComponentsManifest: true,
+    componentsManifest: true,
   },
   stories: [
     '../src/**/*.stories.@(js|jsx|ts|tsx)',
