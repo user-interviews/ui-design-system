@@ -1,6 +1,12 @@
 import React, { createRef, useEffect, useRef } from 'react';
 
-import { act, render, screen, waitFor } from '@testing-library/react';
+import {
+  act,
+  fireEvent,
+  render,
+  screen,
+  waitFor,
+} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Extension, Mark, type Editor } from '@tiptap/core';
 
@@ -351,6 +357,25 @@ describe('<RichTextEditor />', () => {
     await user.paste('https://example.com');
 
     expect(textbox).toHaveTextContent('https://example.com');
+    expect(textbox.querySelector('a')).not.toBeInTheDocument();
+  });
+
+  it('does not preserve links from rich-text pastes for unlink-only action subsets', async () => {
+    render(<Setup availableActions={[RichTextEditorActions.UNLINK]} />);
+
+    const textbox = await elements.textbox.find();
+    if (!textbox) throw new Error('RichTextEditor textbox was not rendered');
+
+    fireEvent.paste(textbox, {
+      clipboardData: {
+        getData: (type: string) =>
+          type === 'text/html'
+            ? '<p><a href="https://example.com">hello</a></p>'
+            : 'hello',
+      },
+    });
+
+    expect(textbox).toHaveTextContent('hello');
     expect(textbox.querySelector('a')).not.toBeInTheDocument();
   });
 

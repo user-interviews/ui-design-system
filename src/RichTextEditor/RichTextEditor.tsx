@@ -16,6 +16,13 @@ import { BulletList, ListItem, OrderedList } from '@tiptap/extension-list';
 import Paragraph from '@tiptap/extension-paragraph';
 import Text from '@tiptap/extension-text';
 import { CharacterCount, Placeholder, UndoRedo } from '@tiptap/extensions';
+import {
+  Fragment,
+  Slice,
+  type MarkType,
+  type Node as ProseMirrorNode,
+} from '@tiptap/pm/model';
+import { Plugin } from '@tiptap/pm/state';
 import { EditorContent, useEditor, useEditorState } from '@tiptap/react';
 import classNames from 'classnames';
 import sanitizeHtml from 'sanitize-html';
@@ -44,12 +51,45 @@ const ExtendedLink = Link.extend({
   },
 });
 
+function stripLinkMarks(fragment: Fragment, linkType: MarkType) {
+  const nodes: ProseMirrorNode[] = [];
+
+  fragment.forEach((node) => {
+    const content = node.content.size
+      ? stripLinkMarks(node.content, linkType)
+      : node.content;
+
+    nodes.push(
+      node
+        .copy(content)
+        .mark(node.marks.filter((mark) => mark.type !== linkType)),
+    );
+  });
+
+  return Fragment.fromArray(nodes);
+}
+
 const UnlinkOnlyLink = Link.configure({
   autolink: false,
   linkOnPaste: false,
 }).extend({
   addPasteRules() {
     return [];
+  },
+  addProseMirrorPlugins() {
+    return [
+      ...(this.parent?.() ?? []),
+      new Plugin({
+        props: {
+          transformPasted: (slice) =>
+            new Slice(
+              stripLinkMarks(slice.content, this.type),
+              slice.openStart,
+              slice.openEnd,
+            ),
+        },
+      }),
+    ];
   },
 });
 
