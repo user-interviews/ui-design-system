@@ -111,13 +111,13 @@ jobs:
 
       - name: Merge version update into main branch
         if: steps.extract_version.outputs.prerelease == 'false'
-        uses: thomaseizinger/create-pull-request@955adb4634198898bc24dca0468514c63a8fc98d # 1.4.0
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          head: release/v${{ steps.extract_version.outputs.version }}
-          base: main
-          title: "Merge release/v${{ steps.extract_version.outputs.version }} into main branch"
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr create \
+            --head "release/v$RELEASE_VERSION" \
+            --base main \
+            --title "Merge release/v$RELEASE_VERSION into main branch"
 
       - name: Install dependencies
         run: yarn install --immutable --check-cache
