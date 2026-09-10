@@ -171,6 +171,7 @@ updates:
         applies-to: version-updates
         patterns:
           - "typescript"
+          - "@typescript/native"
           - "@types/*"
         update-types:
           - "minor"
