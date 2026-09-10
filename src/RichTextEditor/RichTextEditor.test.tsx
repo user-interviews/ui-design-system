@@ -2,7 +2,7 @@ import React, { createRef, useEffect, useRef } from 'react';
 
 import { act, render, screen, waitFor } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import { Mark } from '@tiptap/core';
+import { Extension, Mark, type Editor } from '@tiptap/core';
 
 import RichTextEditor, {
   type RichTextEditorProps,
@@ -284,10 +284,19 @@ describe('<RichTextEditor />', () => {
   it('supports unlink-only action subsets', async () => {
     const onChange = jest.fn();
     const user = userEvent.setup();
+    let editor: Editor | undefined;
+    const CaptureEditor = Extension.create({
+      name: 'captureEditor',
+      onCreate() {
+        const { editor: capturedEditor } = this;
+        editor = capturedEditor;
+      },
+    });
 
     render(
       <Setup
         availableActions={[RichTextEditorActions.UNLINK]}
+        customExtensions={[CaptureEditor]}
         initialValue='<p><a href="https://example.com">hello</a></p>'
         onChange={onChange}
       />,
@@ -297,6 +306,8 @@ describe('<RichTextEditor />', () => {
     expect(
       screen.queryByRole('button', { name: /^link$/i }),
     ).not.toBeInTheDocument();
+
+    act(() => editor?.commands.setTextSelection({ from: 1, to: 6 }));
 
     const unlinkButton = await screen.findByRole('button', {
       name: /unlink/i,
@@ -326,6 +337,52 @@ describe('<RichTextEditor />', () => {
     expect(textbox.querySelector('a')).not.toBeInTheDocument();
 
     prompt.mockRestore();
+  });
+
+  it('does not link pasted URLs for unlink-only action subsets', async () => {
+    const user = userEvent.setup();
+
+    render(<Setup availableActions={[RichTextEditorActions.UNLINK]} />);
+
+    const textbox = await elements.textbox.find();
+    if (!textbox) throw new Error('RichTextEditor textbox was not rendered');
+
+    await user.click(textbox);
+    await user.paste('https://example.com');
+
+    expect(textbox).toHaveTextContent('https://example.com');
+    expect(textbox.querySelector('a')).not.toBeInTheDocument();
+  });
+
+  it('does not extend existing links for unlink-only action subsets', async () => {
+    let editor: Editor | undefined;
+    const CaptureEditor = Extension.create({
+      name: 'captureEditor',
+      onCreate() {
+        const { editor: capturedEditor } = this;
+        editor = capturedEditor;
+      },
+    });
+
+    render(
+      <Setup
+        availableActions={[RichTextEditorActions.UNLINK]}
+        customExtensions={[CaptureEditor]}
+        initialValue='<p><a href="https://example.com">hello</a></p>'
+      />,
+    );
+
+    await screen.findByRole('link', { name: 'hello' });
+
+    act(() => {
+      editor?.commands.setTextSelection(6);
+      editor?.commands.insertContent(' world');
+    });
+
+    expect(
+      await screen.findByRole('link', { name: 'hello' }),
+    ).toHaveTextContent('hello');
+    expect(await elements.textbox.find()).toHaveTextContent('hello world');
   });
 
   it('updates toolbar and character count state after transactions', async () => {

@@ -48,8 +48,9 @@ const UnlinkOnlyLink = Link.configure({
   autolink: false,
   linkOnPaste: false,
 }).extend({
-  // Link derives inclusivity from autolink; retain it so existing links can be removed.
-  inclusive: () => true,
+  addPasteRules() {
+    return [];
+  },
 });
 
 export type RichTextEditorProps = {
