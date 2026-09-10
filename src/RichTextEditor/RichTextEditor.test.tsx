@@ -281,6 +281,34 @@ describe('<RichTextEditor />', () => {
     expect(onChange).toHaveBeenLastCalledWith('<p>hello</p>');
   });
 
+  it('supports unlink-only action subsets', async () => {
+    const onChange = jest.fn();
+    const user = userEvent.setup();
+
+    render(
+      <Setup
+        availableActions={[RichTextEditorActions.UNLINK]}
+        initialValue='<p><a href="https://example.com">hello</a></p>'
+        onChange={onChange}
+      />,
+    );
+
+    expect(await screen.findByText('hello')).toBeInTheDocument();
+    expect(
+      screen.queryByRole('button', { name: /^link$/i }),
+    ).not.toBeInTheDocument();
+
+    const unlinkButton = await screen.findByRole('button', {
+      name: /unlink/i,
+    });
+    expect(unlinkButton).toBeEnabled();
+
+    await user.click(unlinkButton);
+
+    expect(unlinkButton).toBeDisabled();
+    expect(onChange).toHaveBeenLastCalledWith('<p>hello</p>');
+  });
+
   it('updates toolbar and character count state after transactions', async () => {
     const editorRef = createRef<RichTextEditorRef>();
     const user = userEvent.setup();

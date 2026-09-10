@@ -83,10 +83,7 @@ function RichTextEditorMenuBar({
     {
       label: 'Unlink',
       name: RichTextEditorActions.UNLINK,
-      disabled:
-        !editable ||
-        (availableActions.includes(RichTextEditorActions.LINK) &&
-          !editorState.isLinkActive),
+      disabled: !editable || !editorState.isLinkActive,
       onClick: actionHandlers.unlink,
       icon: faUnlink,
       active: false,

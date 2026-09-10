@@ -199,7 +199,13 @@ const RichTextEditor = forwardRef(
         config: OrderedList,
       },
     ]
-      .filter((extension) => availableActions.includes(extension.name))
+      // The Link extension provides both the link and unlink commands.
+      .filter(
+        (extension) =>
+          availableActions.includes(extension.name) ||
+          (extension.name === RichTextEditorActions.LINK &&
+            availableActions.includes(RichTextEditorActions.UNLINK)),
+      )
       .map((extension) => extension.config);
 
     const editorExtensions = [
