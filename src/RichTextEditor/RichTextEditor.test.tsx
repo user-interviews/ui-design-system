@@ -9,6 +9,7 @@ import {
 } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Extension, Mark, type Editor } from '@tiptap/core';
+import { Plugin } from '@tiptap/pm/state';
 
 import RichTextEditor, {
   type RichTextEditorProps,
@@ -445,6 +446,43 @@ describe('<RichTextEditor />', () => {
     expect(onPaste.mock.calls[0][0].slice.content.firstChild?.marks).toEqual(
       [],
     );
+  });
+
+  it('allows custom extensions to handle pastes in unlink-only editors', async () => {
+    const handlePaste = jest.fn((view) => {
+      view.dispatch(view.state.tr.insertText('custom paste'));
+
+      return true;
+    });
+    const CustomPaste = Extension.create({
+      name: 'customPaste',
+      addProseMirrorPlugins() {
+        return [new Plugin({ props: { handlePaste } })];
+      },
+    });
+
+    render(
+      <Setup
+        availableActions={[RichTextEditorActions.UNLINK]}
+        customExtensions={[CustomPaste]}
+      />,
+    );
+
+    const textbox = await elements.textbox.find();
+    if (!textbox) throw new Error('RichTextEditor textbox was not rendered');
+
+    fireEvent.paste(textbox, {
+      clipboardData: {
+        getData: (type: string) =>
+          type === 'text/html'
+            ? '<p><a href="https://example.com">hello</a></p>'
+            : 'hello',
+      },
+    });
+
+    expect(handlePaste).toHaveBeenCalledTimes(1);
+    expect(textbox).toHaveTextContent('custom paste');
+    expect(textbox.querySelector('a')).not.toBeInTheDocument();
   });
 
   it('preserves links in dragged content for unlink-only action subsets', async () => {

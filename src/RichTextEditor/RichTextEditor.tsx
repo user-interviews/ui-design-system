@@ -7,6 +7,12 @@ import React, {
   useRef,
 } from 'react';
 
+import {
+  Extension,
+  type Editor,
+  type Node as TipTapNode,
+  type Mark,
+} from '@tiptap/core';
 import Bold from '@tiptap/extension-bold';
 import Document from '@tiptap/extension-document';
 import HardBreak from '@tiptap/extension-hard-break';
@@ -36,7 +42,6 @@ import {
 } from './richTextEditorActions';
 import RichTextEditorMenuBar from './RichTextEditorMenuBar';
 
-import type { Editor, Extension, Node as TipTapNode, Mark } from '@tiptap/core';
 import type { IOptions } from 'sanitize-html';
 
 import './RichTextEditor.scss';
@@ -76,16 +81,22 @@ const UnlinkOnlyLink = Link.configure({
   addPasteRules() {
     return [];
   },
+});
+
+const UnlinkOnlyPaste = Extension.create({
+  name: 'unlinkOnlyPaste',
   addProseMirrorPlugins() {
     return [
-      ...(this.parent?.() ?? []),
       new Plugin({
         props: {
           handlePaste: (view, event, slice) => {
             if (slice.content.size === 0) return false;
 
             const linkFreeSlice = new Slice(
-              stripLinkMarks(slice.content, this.type),
+              stripLinkMarks(
+                slice.content,
+                this.editor.schema.marks[RichTextEditorActions.LINK],
+              ),
               slice.openStart,
               slice.openEnd,
             );
@@ -237,6 +248,11 @@ const RichTextEditor = forwardRef(
     ref: ForwardedRef<RichTextEditorRef>,
   ) => {
     const oneLineExtension = isOneLine ? [OneLineLimit] : [];
+    const unlinkOnlyExtension =
+      availableActions.includes(RichTextEditorActions.UNLINK) &&
+      !availableActions.includes(RichTextEditorActions.LINK)
+        ? [UnlinkOnlyPaste]
+        : [];
 
     const requiredExtensions = [
       Document,
@@ -290,6 +306,7 @@ const RichTextEditor = forwardRef(
       ...requiredExtensions,
       ...optionalExtensions,
       ...oneLineExtension,
+      ...unlinkOnlyExtension,
       ...customExtensions,
     ];
 
