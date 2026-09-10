@@ -81,12 +81,31 @@ const UnlinkOnlyLink = Link.configure({
       ...(this.parent?.() ?? []),
       new Plugin({
         props: {
-          transformPasted: (slice) =>
-            new Slice(
+          handlePaste: (view, _event, slice) => {
+            const linkFreeSlice = new Slice(
               stripLinkMarks(slice.content, this.type),
               slice.openStart,
               slice.openEnd,
-            ),
+            );
+            const singleNode =
+              linkFreeSlice.openStart === 0 &&
+              linkFreeSlice.openEnd === 0 &&
+              linkFreeSlice.content.childCount === 1
+                ? linkFreeSlice.content.firstChild
+                : null;
+            const transaction = singleNode
+              ? view.state.tr.replaceSelectionWith(singleNode, false)
+              : view.state.tr.replaceSelection(linkFreeSlice);
+
+            view.dispatch(
+              transaction
+                .scrollIntoView()
+                .setMeta('paste', true)
+                .setMeta('uiEvent', 'paste'),
+            );
+
+            return true;
+          },
         },
       }),
     ];

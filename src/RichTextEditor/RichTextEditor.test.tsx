@@ -379,6 +379,42 @@ describe('<RichTextEditor />', () => {
     expect(textbox.querySelector('a')).not.toBeInTheDocument();
   });
 
+  it('preserves links in dragged content for unlink-only action subsets', async () => {
+    let editor: Editor | undefined;
+    const CaptureEditor = Extension.create({
+      name: 'captureEditor',
+      onCreate() {
+        const { editor: capturedEditor } = this;
+        editor = capturedEditor;
+      },
+    });
+
+    render(
+      <Setup
+        availableActions={[RichTextEditorActions.UNLINK]}
+        customExtensions={[CaptureEditor]}
+        initialValue='<p><a href="https://example.com">hello</a></p>'
+      />,
+    );
+
+    await screen.findByRole('link', { name: 'hello' });
+    const tiptapEditor = editor;
+    if (!tiptapEditor) throw new Error('RichTextEditor was not created');
+
+    const draggedSlice = tiptapEditor.state.doc.slice(1, 6);
+    let transformedSlice = draggedSlice;
+
+    tiptapEditor.view.someProp('transformPasted', (transform) => {
+      transformedSlice = transform(transformedSlice, tiptapEditor.view, false);
+    });
+
+    expect(
+      transformedSlice.content.firstChild?.marks.some(
+        (mark) => mark.type.name === 'link',
+      ),
+    ).toBe(true);
+  });
+
   it('does not extend existing links for unlink-only action subsets', async () => {
     let editor: Editor | undefined;
     const CaptureEditor = Extension.create({
