@@ -95,15 +95,16 @@ const UnlinkOnlyLink = Link.configure({
               linkFreeSlice.content.childCount === 1
                 ? linkFreeSlice.content.firstChild
                 : null;
-            const transaction = singleNode
-              ? view.state.tr.replaceSelectionWith(singleNode, false)
-              : view.state.tr.replaceSelection(linkFreeSlice);
 
             this.editor.emit('paste', {
               editor: this.editor,
               event,
               slice: linkFreeSlice,
             });
+            const transaction = singleNode
+              ? view.state.tr.replaceSelectionWith(singleNode, false)
+              : view.state.tr.replaceSelection(linkFreeSlice);
+
             view.dispatch(
               transaction
                 .scrollIntoView()

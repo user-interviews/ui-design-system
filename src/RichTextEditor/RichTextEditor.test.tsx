@@ -19,6 +19,8 @@ import {
   RichTextEditorDefaultActionsArray,
 } from './richTextEditorActions';
 
+import type { Slice } from '@tiptap/pm/model';
+
 describe('<RichTextEditor />', () => {
   const emptyRect = {
     bottom: 0,
@@ -409,7 +411,9 @@ describe('<RichTextEditor />', () => {
   });
 
   it('notifies paste observers in unlink-only editors', async () => {
-    const onPaste = jest.fn();
+    const onPaste = jest.fn(({ editor }: { editor: Editor; slice: Slice }) => {
+      editor.commands.insertContent('before ');
+    });
     const ObservePaste = Extension.create({
       name: 'observePaste',
       onCreate() {
@@ -437,6 +441,7 @@ describe('<RichTextEditor />', () => {
     });
 
     expect(onPaste).toHaveBeenCalledTimes(1);
+    expect(textbox).toHaveTextContent('before hello');
     expect(onPaste.mock.calls[0][0].slice.content.firstChild?.marks).toEqual(
       [],
     );
