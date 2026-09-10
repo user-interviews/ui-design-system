@@ -309,6 +309,25 @@ describe('<RichTextEditor />', () => {
     expect(onChange).toHaveBeenLastCalledWith('<p>hello</p>');
   });
 
+  it('does not create links for unlink-only action subsets', async () => {
+    const prompt = jest.spyOn(window, 'prompt').mockImplementation(jest.fn());
+    const user = userEvent.setup();
+
+    render(<Setup availableActions={[RichTextEditorActions.UNLINK]} />);
+
+    const textbox = await elements.textbox.find();
+    if (!textbox) throw new Error('RichTextEditor textbox was not rendered');
+
+    await user.click(textbox);
+    await user.keyboard('{Meta>}k{/Meta}');
+    await user.type(textbox, 'https://example.com ');
+
+    expect(prompt).not.toHaveBeenCalled();
+    expect(textbox.querySelector('a')).not.toBeInTheDocument();
+
+    prompt.mockRestore();
+  });
+
   it('updates toolbar and character count state after transactions', async () => {
     const editorRef = createRef<RichTextEditorRef>();
     const user = userEvent.setup();

@@ -44,6 +44,14 @@ const ExtendedLink = Link.extend({
   },
 });
 
+const UnlinkOnlyLink = Link.configure({
+  autolink: false,
+  linkOnPaste: false,
+}).extend({
+  // Link derives inclusivity from autolink; retain it so existing links can be removed.
+  inclusive: () => true,
+});
+
 export type RichTextEditorProps = {
   /**
    HTML attributes to allow while sanitizing the editor's content.
@@ -188,7 +196,9 @@ const RichTextEditor = forwardRef(
       },
       {
         name: RichTextEditorActions.LINK,
-        config: ExtendedLink,
+        config: availableActions.includes(RichTextEditorActions.LINK)
+          ? ExtendedLink
+          : UnlinkOnlyLink,
       },
       {
         name: RichTextEditorActions.UNORDERED_LIST,
