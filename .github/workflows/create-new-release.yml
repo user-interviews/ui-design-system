@@ -117,7 +117,8 @@ jobs:
           gh pr create \
             --head "release/v$RELEASE_VERSION" \
             --base main \
-            --title "Merge release/v$RELEASE_VERSION into main branch"
+            --title "Merge release/v$RELEASE_VERSION into main branch" \
+            --body "Automated version update for v$RELEASE_VERSION."
 
       - name: Install dependencies
         run: yarn install --immutable --check-cache
