@@ -56,6 +56,17 @@ export function LinkOnlyActions() {
   );
 }
 
+export function UnlinkOnlyActions() {
+  return (
+    <RichTextEditor
+      availableActions={[RichTextEditorActions.UNLINK]}
+      id="unlink-only-editor"
+      initialValue="<p><a href='https://example.com'>Existing linked text</a> followed by plain text. Select the link to unlink it, type at its boundary, paste a URL, or drag it to test unlink-only behavior.</p>"
+      onChange={() => null}
+    />
+  );
+}
+
 export function NoActions() {
   return (
     <RichTextEditor

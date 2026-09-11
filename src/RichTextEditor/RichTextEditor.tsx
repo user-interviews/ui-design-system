@@ -7,6 +7,12 @@ import React, {
   useRef,
 } from 'react';
 
+import {
+  Extension,
+  type Editor,
+  type Node as TipTapNode,
+  type Mark,
+} from '@tiptap/core';
 import Bold from '@tiptap/extension-bold';
 import Document from '@tiptap/extension-document';
 import HardBreak from '@tiptap/extension-hard-break';
@@ -16,6 +22,13 @@ import { BulletList, ListItem, OrderedList } from '@tiptap/extension-list';
 import Paragraph from '@tiptap/extension-paragraph';
 import Text from '@tiptap/extension-text';
 import { CharacterCount, Placeholder, UndoRedo } from '@tiptap/extensions';
+import {
+  Fragment,
+  Slice,
+  type MarkType,
+  type Node as ProseMirrorNode,
+} from '@tiptap/pm/model';
+import { Plugin } from '@tiptap/pm/state';
 import { EditorContent, useEditor, useEditorState } from '@tiptap/react';
 import classNames from 'classnames';
 import sanitizeHtml from 'sanitize-html';
@@ -29,7 +42,6 @@ import {
 } from './richTextEditorActions';
 import RichTextEditorMenuBar from './RichTextEditorMenuBar';
 
-import type { Editor, Extension, Node as TipTapNode, Mark } from '@tiptap/core';
 import type { IOptions } from 'sanitize-html';
 
 import './RichTextEditor.scss';
@@ -44,12 +56,79 @@ const ExtendedLink = Link.extend({
   },
 });
 
+function stripLinkMarks(fragment: Fragment, linkType: MarkType) {
+  const nodes: ProseMirrorNode[] = [];
+
+  fragment.forEach((node) => {
+    const content = node.content.size
+      ? stripLinkMarks(node.content, linkType)
+      : node.content;
+
+    nodes.push(
+      node
+        .copy(content)
+        .mark(node.marks.filter((mark) => mark.type !== linkType)),
+    );
+  });
+
+  return Fragment.fromArray(nodes);
+}
+
 const UnlinkOnlyLink = Link.configure({
   autolink: false,
   linkOnPaste: false,
 }).extend({
-  // Link derives inclusivity from autolink; retain it so existing links can be removed.
-  inclusive: () => true,
+  addPasteRules() {
+    return [];
+  },
+});
+
+const UnlinkOnlyPaste = Extension.create({
+  name: 'unlinkOnlyPaste',
+  addProseMirrorPlugins() {
+    return [
+      new Plugin({
+        props: {
+          handlePaste: (view, event, slice) => {
+            if (slice.content.size === 0) return false;
+
+            const linkFreeSlice = new Slice(
+              stripLinkMarks(
+                slice.content,
+                this.editor.schema.marks[RichTextEditorActions.LINK],
+              ),
+              slice.openStart,
+              slice.openEnd,
+            );
+            const singleNode =
+              linkFreeSlice.openStart === 0 &&
+              linkFreeSlice.openEnd === 0 &&
+              linkFreeSlice.content.childCount === 1
+                ? linkFreeSlice.content.firstChild
+                : null;
+
+            this.editor.emit('paste', {
+              editor: this.editor,
+              event,
+              slice: linkFreeSlice,
+            });
+            const transaction = singleNode
+              ? view.state.tr.replaceSelectionWith(singleNode, false)
+              : view.state.tr.replaceSelection(linkFreeSlice);
+
+            view.dispatch(
+              transaction
+                .scrollIntoView()
+                .setMeta('paste', true)
+                .setMeta('uiEvent', 'paste'),
+            );
+
+            return true;
+          },
+        },
+      }),
+    ];
+  },
 });
 
 export type RichTextEditorProps = {
@@ -169,6 +248,11 @@ const RichTextEditor = forwardRef(
     ref: ForwardedRef<RichTextEditorRef>,
   ) => {
     const oneLineExtension = isOneLine ? [OneLineLimit] : [];
+    const unlinkOnlyExtension =
+      availableActions.includes(RichTextEditorActions.UNLINK) &&
+      !availableActions.includes(RichTextEditorActions.LINK)
+        ? [UnlinkOnlyPaste]
+        : [];
 
     const requiredExtensions = [
       Document,
@@ -222,6 +306,7 @@ const RichTextEditor = forwardRef(
       ...requiredExtensions,
       ...optionalExtensions,
       ...oneLineExtension,
+      ...unlinkOnlyExtension,
       ...customExtensions,
     ];
 
