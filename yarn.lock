@@ -4252,106 +4252,106 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-arm64@npm:1.16.1":
-  version: 1.16.1
-  resolution: "@swc/core-darwin-arm64@npm:1.16.1"
+"@swc/core-darwin-arm64@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@swc/core-darwin-arm64@npm:1.16.2"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-darwin-x64@npm:1.16.1":
-  version: 1.16.1
-  resolution: "@swc/core-darwin-x64@npm:1.16.1"
+"@swc/core-darwin-x64@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@swc/core-darwin-x64@npm:1.16.2"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm-gnueabihf@npm:1.16.1":
-  version: 1.16.1
-  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.16.1"
+"@swc/core-linux-arm-gnueabihf@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@swc/core-linux-arm-gnueabihf@npm:1.16.2"
   conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-gnu@npm:1.16.1":
-  version: 1.16.1
-  resolution: "@swc/core-linux-arm64-gnu@npm:1.16.1"
+"@swc/core-linux-arm64-gnu@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@swc/core-linux-arm64-gnu@npm:1.16.2"
   conditions: os=linux & cpu=arm64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-arm64-musl@npm:1.16.1":
-  version: 1.16.1
-  resolution: "@swc/core-linux-arm64-musl@npm:1.16.1"
+"@swc/core-linux-arm64-musl@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@swc/core-linux-arm64-musl@npm:1.16.2"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-linux-ppc64-gnu@npm:1.16.1":
-  version: 1.16.1
-  resolution: "@swc/core-linux-ppc64-gnu@npm:1.16.1"
+"@swc/core-linux-ppc64-gnu@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@swc/core-linux-ppc64-gnu@npm:1.16.2"
   conditions: os=linux & cpu=ppc64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-s390x-gnu@npm:1.16.1":
-  version: 1.16.1
-  resolution: "@swc/core-linux-s390x-gnu@npm:1.16.1"
+"@swc/core-linux-s390x-gnu@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@swc/core-linux-s390x-gnu@npm:1.16.2"
   conditions: os=linux & cpu=s390x & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-gnu@npm:1.16.1":
-  version: 1.16.1
-  resolution: "@swc/core-linux-x64-gnu@npm:1.16.1"
+"@swc/core-linux-x64-gnu@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@swc/core-linux-x64-gnu@npm:1.16.2"
   conditions: os=linux & cpu=x64 & libc=glibc
   languageName: node
   linkType: hard
 
-"@swc/core-linux-x64-musl@npm:1.16.1":
-  version: 1.16.1
-  resolution: "@swc/core-linux-x64-musl@npm:1.16.1"
+"@swc/core-linux-x64-musl@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@swc/core-linux-x64-musl@npm:1.16.2"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
 
-"@swc/core-win32-arm64-msvc@npm:1.16.1":
-  version: 1.16.1
-  resolution: "@swc/core-win32-arm64-msvc@npm:1.16.1"
+"@swc/core-win32-arm64-msvc@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@swc/core-win32-arm64-msvc@npm:1.16.2"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"@swc/core-win32-ia32-msvc@npm:1.16.1":
-  version: 1.16.1
-  resolution: "@swc/core-win32-ia32-msvc@npm:1.16.1"
+"@swc/core-win32-ia32-msvc@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@swc/core-win32-ia32-msvc@npm:1.16.2"
   conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
-"@swc/core-win32-x64-msvc@npm:1.16.1":
-  version: 1.16.1
-  resolution: "@swc/core-win32-x64-msvc@npm:1.16.1"
+"@swc/core-win32-x64-msvc@npm:1.16.2":
+  version: 1.16.2
+  resolution: "@swc/core-win32-x64-msvc@npm:1.16.2"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
 "@swc/core@npm:^1.5.22":
-  version: 1.16.1
-  resolution: "@swc/core@npm:1.16.1"
+  version: 1.16.2
+  resolution: "@swc/core@npm:1.16.2"
   dependencies:
-    "@swc/core-darwin-arm64": "npm:1.16.1"
-    "@swc/core-darwin-x64": "npm:1.16.1"
-    "@swc/core-linux-arm-gnueabihf": "npm:1.16.1"
-    "@swc/core-linux-arm64-gnu": "npm:1.16.1"
-    "@swc/core-linux-arm64-musl": "npm:1.16.1"
-    "@swc/core-linux-ppc64-gnu": "npm:1.16.1"
-    "@swc/core-linux-s390x-gnu": "npm:1.16.1"
-    "@swc/core-linux-x64-gnu": "npm:1.16.1"
-    "@swc/core-linux-x64-musl": "npm:1.16.1"
-    "@swc/core-win32-arm64-msvc": "npm:1.16.1"
-    "@swc/core-win32-ia32-msvc": "npm:1.16.1"
-    "@swc/core-win32-x64-msvc": "npm:1.16.1"
+    "@swc/core-darwin-arm64": "npm:1.16.2"
+    "@swc/core-darwin-x64": "npm:1.16.2"
+    "@swc/core-linux-arm-gnueabihf": "npm:1.16.2"
+    "@swc/core-linux-arm64-gnu": "npm:1.16.2"
+    "@swc/core-linux-arm64-musl": "npm:1.16.2"
+    "@swc/core-linux-ppc64-gnu": "npm:1.16.2"
+    "@swc/core-linux-s390x-gnu": "npm:1.16.2"
+    "@swc/core-linux-x64-gnu": "npm:1.16.2"
+    "@swc/core-linux-x64-musl": "npm:1.16.2"
+    "@swc/core-win32-arm64-msvc": "npm:1.16.2"
+    "@swc/core-win32-ia32-msvc": "npm:1.16.2"
+    "@swc/core-win32-x64-msvc": "npm:1.16.2"
     "@swc/counter": "npm:^0.1.3"
     "@swc/types": "npm:^0.1.28"
   peerDependencies:
@@ -4384,7 +4384,7 @@ __metadata:
   peerDependenciesMeta:
     "@swc/helpers":
       optional: true
-  checksum: 10c0/6711717ac132d7feba331d70d266faec2197951531b1d4faaaa4ceee415f4739c8c4b5c18a48fc04fee084df37c5713b395eb91f024707efdd0aff6d155748ae
+  checksum: 10c0/8019735e27852f03b0e09ae7f8c3f00e6a2e3f49b72127e09c20cffde335fe3b776afb20bfd3b3f5c540d42667f1b7467a4e10aa11c50ff59c6f86a9513544a8
   languageName: node
   linkType: hard
 
@@ -6491,12 +6491,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"baseline-browser-mapping@npm:^2.11.12":
-  version: 2.11.13
-  resolution: "baseline-browser-mapping@npm:2.11.13"
+"baseline-browser-mapping@npm:^2.11.20":
+  version: 2.11.21
+  resolution: "baseline-browser-mapping@npm:2.11.21"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10c0/a02511614ebe0311d4831e7ba11e88e5997d5bf0733e5eadd7d97b4bb69d76f468a982862108cb90721e1a41f4ef36c1a5f9fa18569923702ad2875ca3abfe58
+  checksum: 10c0/1110ca70b60de9fa673e6d71154cbb2752225c28e069266c2f455f5a26367efc0e5b47a52afba22c9ef1e06d56a6c81aa964dda1fbc66c487e65c18a7c1e11c4
   languageName: node
   linkType: hard
 
@@ -6575,17 +6575,17 @@ __metadata:
   linkType: hard
 
 "browserslist@npm:^4.24.0, browserslist@npm:^4.28.1, browserslist@npm:^4.28.7":
-  version: 4.28.8
-  resolution: "browserslist@npm:4.28.8"
+  version: 4.28.9
+  resolution: "browserslist@npm:4.28.9"
   dependencies:
-    baseline-browser-mapping: "npm:^2.11.12"
-    caniuse-lite: "npm:^1.0.30001809"
-    electron-to-chromium: "npm:^1.5.402"
-    node-releases: "npm:^2.0.53"
-    update-browserslist-db: "npm:^1.3.0"
+    baseline-browser-mapping: "npm:^2.11.20"
+    caniuse-lite: "npm:^1.0.30001810"
+    electron-to-chromium: "npm:^1.5.420"
+    node-releases: "npm:^2.0.54"
+    update-browserslist-db: "npm:^1.3.2"
   bin:
     browserslist: cli.js
-  checksum: 10c0/047dd517c8d1f1f56a253d752c3127b8ad01c58e4cbb7e21cb5cd07ebd13e083a2237c3afb13eb60674282c9132bd4534aea2c3ff7c6f7d29be0687a00cbd537
+  checksum: 10c0/c4c7457cccb188bb904bb84566ff2d09e6f45ccf48619333111e5d60dfad456522a64e3e4af7c7608bc171371fc006f32bcc296877b0586bf80fb9f60841a110
   languageName: node
   linkType: hard
 
@@ -6702,7 +6702,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"caniuse-lite@npm:^1.0.30001809":
+"caniuse-lite@npm:^1.0.30001810":
   version: 1.0.30001810
   resolution: "caniuse-lite@npm:1.0.30001810"
   checksum: 10c0/d29bc73f33c888025d54c7ff2984372d3b350b15a6a9e174884fb40976175e9177f202e2a72c2d428dddfc032784bc8ba635a31d168fcab9fac65756d7b3d6b4
@@ -7734,10 +7734,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"electron-to-chromium@npm:^1.5.402":
-  version: 1.5.405
-  resolution: "electron-to-chromium@npm:1.5.405"
-  checksum: 10c0/6e85abde0e3c77945c3cdd6f28741cba268474a62bfbe8c59c5728438a03e689d1df74fd4526a73064f452350ef7fd0b8edb721fa979a791813b81ec2b1a0d8c
+"electron-to-chromium@npm:^1.5.420":
+  version: 1.5.422
+  resolution: "electron-to-chromium@npm:1.5.422"
+  checksum: 10c0/bd388e0d3ab94e6fe792e27eab886071050f8f7575f1ec20e30e530733d1f8270eeff7a0e75e42c9405de54addd8df3d1f9d58b40e53f0a44fbe4fb8f1e7b930
   languageName: node
   linkType: hard
 
@@ -11875,7 +11875,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-releases@npm:^2.0.53":
+"node-releases@npm:^2.0.54":
   version: 2.0.54
   resolution: "node-releases@npm:2.0.54"
   checksum: 10c0/196b54ab06fd03b742816b6ca8185c69af42735b283083036e2579682c430b8f9ff89046891fe8c625557e5885793a2032d28070100bb2e57e6d6586b2f483c1
@@ -14905,9 +14905,9 @@ __metadata:
   linkType: hard
 
 "tinyspy@npm:^4.0.3":
-  version: 4.0.4
-  resolution: "tinyspy@npm:4.0.4"
-  checksum: 10c0/a8020fc17799251e06a8398dcc352601d2770aa91c556b9531ecd7a12581161fd1c14e81cbdaff0c1306c93bfdde8ff6d1c1a3f9bbe6d91604f0fd4e01e2f1eb
+  version: 4.0.6
+  resolution: "tinyspy@npm:4.0.6"
+  checksum: 10c0/1066760cea2a18ca69b9d934b73212ff5a45414387a67270b6944591a8afe59031e3d82b48cf7ca2d16b6c640d654e3a4a5726a63f2509aec3ef2d98f62ae5b8
   languageName: node
   linkType: hard
 
@@ -15203,9 +15203,9 @@ __metadata:
   linkType: hard
 
 "undici@npm:^6.23.0, undici@npm:^6.25.0":
-  version: 6.28.0
-  resolution: "undici@npm:6.28.0"
-  checksum: 10c0/3029a70df06b38b5b2f30732932a1e92544c753cd82c8abdf0d35afad48e0ba91612e79fe3a442dbbb9434d6a9eba2b714d5ea28984c903dda2b5d5444f38354
+  version: 6.28.1
+  resolution: "undici@npm:6.28.1"
+  checksum: 10c0/9c7c277da83972f4f506d564b1d627e3e78aadf866915eab768d96fc70daeae8ff7d87d0cdb32403ae1afdf3aef0f11715e0847d66910fda62822c33c5a7e674
   languageName: node
   linkType: hard
 
@@ -15373,7 +15373,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"update-browserslist-db@npm:^1.3.0":
+"update-browserslist-db@npm:^1.3.2":
   version: 1.3.2
   resolution: "update-browserslist-db@npm:1.3.2"
   dependencies:
