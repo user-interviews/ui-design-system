@@ -26,7 +26,7 @@ const meta: Meta<typeof FlexContainer> = {
         <style
           dangerouslySetInnerHTML={{
             __html: `
-                .flexContainer { border: 1px solid #666; min-height: 100px; min-width: 100px; }
+                .flexContainer { border: var(--ds-border-width-stroke-xs) solid #666; min-height: 100px; min-width: 100px; }
               `,
           }}
         />
