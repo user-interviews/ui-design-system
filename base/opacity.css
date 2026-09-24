@@ -1,0 +1,20 @@
+/**
+ * This file was generated automatically by Supernova.io and should not be changed manually.
+ * To modify the format or content of this file, please contact your design system team. 
+ */
+
+:root {
+  --ds-opacity-none: 0;
+  --ds-opacity-2-xs: 0.04;
+  --ds-opacity-xs: 0.08;
+  --ds-opacity-sm: 0.16;
+  --ds-opacity-md: 0.24;
+  --ds-opacity-lg: 0.32;
+  --ds-opacity-xl: 0.48;
+  --ds-opacity-2-xl: 0.64;
+  --ds-opacity-3-xl: 0.72;
+  --ds-opacity-4-xl: 0.88;
+  --ds-opacity-full: 1;
+  --ds-opacity-surface-opacity-inactive: var(--ds-opacity-3-xl);
+  --ds-opacity-surface-opacity-overlay: var(--ds-opacity-xl);
+}
