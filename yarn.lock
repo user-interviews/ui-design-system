@@ -5613,11 +5613,11 @@ __metadata:
   linkType: soft
 
 "@valibot/to-json-schema@npm:^1.3.0":
-  version: 1.7.1
-  resolution: "@valibot/to-json-schema@npm:1.7.1"
+  version: 1.8.0
+  resolution: "@valibot/to-json-schema@npm:1.8.0"
   peerDependencies:
-    valibot: ^1.4.0
-  checksum: 10c0/15ef472fae3229ab0dc6860325e5c6d21e724e4edbb1794ec603bc3881925bcaf5db44b30536925141758abea155b33b640129dcbb0ddfb47414cb967a6eeae1
+    valibot: ^1.5.0
+  checksum: 10c0/8206940f4b892a34c2d78448541de926234bd97741ad72f4b75ce22bbe56172e46492d02efaf71d75cfc71cec6fa0c55d2edbd977aa4fd2cb2dc236f87005c04
   languageName: node
   linkType: hard
 
