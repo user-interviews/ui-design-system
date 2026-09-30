@@ -8539,9 +8539,9 @@ __metadata:
   linkType: hard
 
 "fast-equals@npm:^5.3.3":
-  version: 5.4.2
-  resolution: "fast-equals@npm:5.4.2"
-  checksum: 10c0/13d4f09fd919101f80072a82458c649236c4c990069bbb6bbe436b0950ea39874ba1357288bd8a9fe75985fa29ad523c4feddc81d375125bdc10dde6d803e3a8
+  version: 5.4.3
+  resolution: "fast-equals@npm:5.4.3"
+  checksum: 10c0/f918d51ae407b5da5dfa038a2b59a567355cb54cc4c66a40afff8b67769af915bdc076ec1f7f424e7a38bdf912ea7643f9de9340fd61bf6f2293b865c0f99379
   languageName: node
   linkType: hard
 
@@ -11238,9 +11238,9 @@ __metadata:
   linkType: hard
 
 "json-rpc-2.0@npm:^1.7.1":
-  version: 1.8.0
-  resolution: "json-rpc-2.0@npm:1.8.0"
-  checksum: 10c0/be61bc02fed2a877e053df18120f70af4bf44547a64847825b45aa73d296b72369cda9523462a4b2045e693b603d15a248314537c2172e5ed24b82b332392029
+  version: 1.8.1
+  resolution: "json-rpc-2.0@npm:1.8.1"
+  checksum: 10c0/aa8f0c4ffc34ccf47825653b5fdad46a5c9a3bfccf25cf08443b5861a807e0f078b89e4e2a240cd09db1200ab680a96952f8bf5e616a655c79f5e0bd1c392801
   languageName: node
   linkType: hard
 
@@ -11927,9 +11927,9 @@ __metadata:
   linkType: hard
 
 "node-releases@npm:^2.0.54":
-  version: 2.0.55
-  resolution: "node-releases@npm:2.0.55"
-  checksum: 10c0/35a779a188b3c1801820b77ea3c429d0aacac346368016a92c357dfd781f2908540fc3782b25d41647c3334dec83c976890f40d254bfd788eb5e72c3730146d1
+  version: 2.0.57
+  resolution: "node-releases@npm:2.0.57"
+  checksum: 10c0/fe5b68fba1fef524243b54828a118f13a4a40db08bb42c0b92680c3ca5c246f4ae6f139515071d46b9a3a9195945f5ac78064f5b7674c4dcc3dd6bfe933ff9e8
   languageName: node
   linkType: hard
 
@@ -13099,11 +13099,11 @@ __metadata:
   linkType: hard
 
 "prosemirror-model@npm:^1.0.0, prosemirror-model@npm:^1.21.0, prosemirror-model@npm:^1.25.11, prosemirror-model@npm:^1.25.4, prosemirror-model@npm:^1.25.8":
-  version: 1.25.11
-  resolution: "prosemirror-model@npm:1.25.11"
+  version: 1.25.12
+  resolution: "prosemirror-model@npm:1.25.12"
   dependencies:
     orderedmap: "npm:^2.0.0"
-  checksum: 10c0/e41faa477414160a602289b778189163b39a4563799defea1862183087f9ec77f02c292e3e79dd32fcc1a8878aedbdcea50f0f752ee03fe64c24ce6780b82205
+  checksum: 10c0/cec7505351ba635d9bcc4645b52f3a4499cceb8ba736ee092b1d81e74a6aa1ac9bedee21cbfe2f2647b4614579a97e86fdd1a2c5bda319a1d7028e7cbaa8ec9c
   languageName: node
   linkType: hard
 
@@ -13333,8 +13333,8 @@ __metadata:
   linkType: hard
 
 "react-docgen@npm:^8.0.2":
-  version: 8.0.3
-  resolution: "react-docgen@npm:8.0.3"
+  version: 8.0.4
+  resolution: "react-docgen@npm:8.0.4"
   dependencies:
     "@babel/core": "npm:^7.28.0"
     "@babel/traverse": "npm:^7.28.0"
@@ -13346,7 +13346,7 @@ __metadata:
     doctrine: "npm:^3.0.0"
     resolve: "npm:^1.22.1"
     strip-indent: "npm:^4.0.0"
-  checksum: 10c0/0231fb9177bc7c633f3d1f228eebb0ee90a2f0feac50b1869ef70b0a3683b400d7875547a2d5168f2619b63d4cc29d7c45ae33d3f621fc67a7fa6790ac2049f6
+  checksum: 10c0/08a97df288791b2bf4ae2edadae0818726a9cc3b4d25f5e68b3f182629bb51ba61a66c48c04146625426d040287b596f3cba411358814355260db437940b2766
   languageName: node
   linkType: hard
 
