@@ -136,7 +136,7 @@ const borderedMultiValueStyles = (borderedMultiValue) =>
     ? {
         multiValue: (styles) => ({
           ...styles,
-          border: `1px solid ${systemColors.SYNTH_DARK_BACKGROUND_SELECTED_BLUE}`,
+          border: `var(--ds-border-width-stroke-xs) solid ${systemColors.SYNTH_DARK_BACKGROUND_SELECTED_BLUE}`,
           borderRadius: '4px',
           backgroundColor: systemColors.UX_WHITE,
         }),
