@@ -59,7 +59,7 @@ const config = {
     options: { fastRefresh: true },
   },
   typescript: {
-    check: true,
+    check: process.env.CI === 'true',
     checkOptions: {
       typescript: {
         configFile: '.storybook/tsconfig.json',
