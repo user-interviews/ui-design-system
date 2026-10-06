@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { Children, forwardRef } from 'react';
 import {
   Button as RBButton,
   type ButtonProps as RBButtonProps,
@@ -45,12 +45,14 @@ export type ButtonProps = RBButtonProps & {
 // Browser translation (e.g. Chrome's Google Translate) replaces bare text nodes with
 // its own elements, so React later fails to insert/remove around the stale node when
 // the button swaps content. Text inside an element React owns is safe to translate.
+// Maps over children so mixed content like `{action} {name}` is protected too.
 const wrapText = (content: React.ReactNode) =>
-  (typeof content === 'string' && content !== '') ||
-  typeof content === 'number' ? (
-    <span>{content}</span>
-  ) : (
-    content
+  Children.map(content, (child) =>
+    (typeof child === 'string' && child !== '') || typeof child === 'number' ? (
+      <span>{child}</span>
+    ) : (
+      child
+    ),
   );
 
 const Button = forwardRef<HTMLElement, ButtonProps>(

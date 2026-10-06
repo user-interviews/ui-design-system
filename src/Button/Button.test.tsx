@@ -55,4 +55,29 @@ describe('Button', () => {
       rerender(<Button loadingText="Saving...">Save & continue</Button>);
     }).not.toThrow();
   });
+
+  it('protects each text piece of mixed children on a translated page', () => {
+    const action = 'Save';
+    const name = 'draft';
+    const { rerender } = render(
+      <Button loadingText="Saving...">
+        {action} {name}
+      </Button>,
+    );
+    const button = screen.getByRole('button', { name: 'Save draft' });
+
+    expect(
+      Array.from(button.childNodes).every((node) => node.nodeName === 'SPAN'),
+    ).toBe(true);
+
+    translateTextNodes(button);
+
+    expect(() => {
+      rerender(
+        <Button isLoading loadingText="Saving...">
+          {action} {name}
+        </Button>,
+      );
+    }).not.toThrow();
+  });
 });
