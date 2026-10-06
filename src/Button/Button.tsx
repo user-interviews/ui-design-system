@@ -45,15 +45,22 @@ export type ButtonProps = RBButtonProps & {
 // Browser translation (e.g. Chrome's Google Translate) replaces bare text nodes with
 // its own elements, so React later fails to insert/remove around the stale node when
 // the button swaps content. Text inside an element React owns is safe to translate.
-// Maps over children so mixed content like `{action} {name}` is protected too.
-const wrapText = (content: React.ReactNode) =>
-  Children.map(content, (child) =>
-    (typeof child === 'string' && child !== '') || typeof child === 'number' ? (
-      <span>{child}</span>
-    ) : (
-      child
-    ),
+const isText = (child: React.ReactNode): child is string | number =>
+  (typeof child === 'string' && child !== '') || typeof child === 'number';
+
+// All-text children like `+{count} more` join into one span so the label stays a
+// single text node; mixed text and elements wrap each text piece separately.
+const wrapText = (content: React.ReactNode) => {
+  const children = Children.toArray(content).filter((child) => child !== '');
+
+  if (children.length > 0 && children.every(isText)) {
+    return <span>{children.join('')}</span>;
+  }
+
+  return Children.map(content, (child) =>
+    isText(child) ? <span>{child}</span> : child,
   );
+};
 
 const Button = forwardRef<HTMLElement, ButtonProps>(
   (
