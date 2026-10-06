@@ -1,4 +1,4 @@
-import React, { forwardRef } from 'react';
+import React, { Children, forwardRef } from 'react';
 import {
   Button as RBButton,
   type ButtonProps as RBButtonProps,
@@ -42,6 +42,19 @@ export type ButtonProps = RBButtonProps & {
   trailingIcon?: IconDefinition;
 };
 
+// Browser translation (e.g. Chrome's Google Translate) replaces bare text nodes with
+// its own elements, so React later fails to insert/remove around the stale node when
+// the button swaps content. Text inside an element React owns is safe to translate.
+// Maps over children so mixed content like `{action} {name}` is protected too.
+const wrapText = (content: React.ReactNode) =>
+  Children.map(content, (child) =>
+    (typeof child === 'string' && child !== '') || typeof child === 'number' ? (
+      <span>{child}</span>
+    ) : (
+      child
+    ),
+  );
+
 const Button = forwardRef<HTMLElement, ButtonProps>(
   (
     {
@@ -68,7 +81,7 @@ const Button = forwardRef<HTMLElement, ButtonProps>(
           {leadingIcon && (
             <FontAwesomeIcon className="icon-left" icon={leadingIcon} />
           )}
-          {children}
+          {wrapText(children)}
           {trailingIcon && (
             <FontAwesomeIcon className="icon-right" icon={trailingIcon} />
           )}
@@ -79,7 +92,7 @@ const Button = forwardRef<HTMLElement, ButtonProps>(
             className="icon-left btn-loading-spin"
             icon={faSpinnerThird as IconDefinition}
           />
-          {loadingText}
+          {wrapText(loadingText)}
         </>
       )}
     </RBButton>
