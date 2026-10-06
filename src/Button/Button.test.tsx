@@ -21,10 +21,9 @@ describe('Button', () => {
   it('wraps text children so translation cannot detach them', () => {
     render(<Button>Confirm</Button>);
 
-    expect(screen.getByRole('button', { name: 'Confirm' }).firstChild).toHaveProperty(
-      'tagName',
-      'SPAN',
-    );
+    expect(
+      screen.getByRole('button', { name: 'Confirm' }).firstChild,
+    ).toHaveProperty('tagName', 'SPAN');
   });
 
   it('leaves element children unwrapped', () => {
@@ -34,11 +33,16 @@ describe('Button', () => {
       </Button>,
     );
 
-    expect(screen.getByRole('button').firstChild).toHaveProperty('tagName', 'STRONG');
+    expect(screen.getByRole('button').firstChild).toHaveProperty(
+      'tagName',
+      'STRONG',
+    );
   });
 
   it('toggles isLoading on a translated page without throwing', () => {
-    const { rerender } = render(<Button loadingText="Saving...">Confirm</Button>);
+    const { rerender } = render(
+      <Button loadingText="Saving...">Confirm</Button>,
+    );
     translateTextNodes(screen.getByRole('button'));
 
     expect(() => {

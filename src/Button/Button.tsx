@@ -46,7 +46,8 @@ export type ButtonProps = RBButtonProps & {
 // its own elements, so React later fails to insert/remove around the stale node when
 // the button swaps content. Text inside an element React owns is safe to translate.
 const wrapText = (content: React.ReactNode) =>
-  (typeof content === 'string' && content !== '') || typeof content === 'number' ? (
+  (typeof content === 'string' && content !== '') ||
+  typeof content === 'number' ? (
     <span>{content}</span>
   ) : (
     content
