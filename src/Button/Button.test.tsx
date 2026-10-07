@@ -56,26 +56,48 @@ describe('Button', () => {
     }).not.toThrow();
   });
 
-  it('protects each text piece of mixed children on a translated page', () => {
-    const action = 'Save';
-    const name = 'draft';
+  it('joins all-text children into one span, keeping the accessible name', () => {
+    const count = 40;
     const { rerender } = render(
-      <Button loadingText="Saving...">
-        {action} {name}
-      </Button>,
+      <Button loadingText="Saving...">+{count} more</Button>,
     );
-    const button = screen.getByRole('button', { name: 'Save draft' });
+    const button = screen.getByRole('button', { name: '+40 more' });
 
-    expect(
-      Array.from(button.childNodes).every((node) => node.nodeName === 'SPAN'),
-    ).toBe(true);
+    expect(button.childNodes).toHaveLength(1);
+    expect(button.firstChild).toHaveProperty('tagName', 'SPAN');
+    expect(button).toHaveTextContent('+40 more');
 
     translateTextNodes(button);
 
     expect(() => {
       rerender(
         <Button isLoading loadingText="Saving...">
-          {action} {name}
+          +{count} more
+        </Button>,
+      );
+    }).not.toThrow();
+  });
+
+  it('wraps each text piece of mixed text and element children', () => {
+    const { rerender } = render(
+      <Button loadingText="Saving...">
+        Save <strong>draft</strong> now
+      </Button>,
+    );
+    const button = screen.getByRole('button');
+
+    expect(Array.from(button.childNodes).map((node) => node.nodeName)).toEqual([
+      'SPAN',
+      'STRONG',
+      'SPAN',
+    ]);
+
+    translateTextNodes(button);
+
+    expect(() => {
+      rerender(
+        <Button isLoading loadingText="Saving...">
+          Save <strong>draft</strong> now
         </Button>,
       );
     }).not.toThrow();
