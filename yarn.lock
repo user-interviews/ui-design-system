@@ -4460,9 +4460,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@storybook/test-runner@npm:^0.24.5":
-  version: 0.24.5
-  resolution: "@storybook/test-runner@npm:0.24.5"
+"@storybook/test-runner@npm:^0.26.0":
+  version: 0.26.0
+  resolution: "@storybook/test-runner@npm:0.26.0"
   dependencies:
     "@babel/core": "npm:^7.22.5"
     "@babel/generator": "npm:^7.22.5"
@@ -4486,10 +4486,10 @@ __metadata:
     rimraf: "npm:^3.0.2"
     uuid: "npm:^8.3.2"
   peerDependencies:
-    storybook: ^0.0.0-0 || ^10.0.0 || ^10.0.0-0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0 || ^10.5.0-0 || ^10.6.0-0 || ^11.0.0-0
+    storybook: ^0.0.0-0 || ^10.0.0 || ^10.0.0-0 || ^10.1.0-0 || ^10.2.0-0 || ^10.3.0-0 || ^10.4.0-0 || ^10.5.0-0 || ^10.6.0-0 || ^11.0.0-0 || >=11
   bin:
     test-storybook: dist/test-storybook.js
-  checksum: 10c0/beff40bc18ad216da8cf4be65dfa4342c64f7e726a5a08ca9e7c482bdaa08426b9ef618ed0d2bf2144ba1fceb88a130cbaf59a969f238212156377188add14d7
+  checksum: 10c0/6e95019eaa28af54b3cb723831077185d89cb218a9a3cb20e9eaaaf264014ad00544b11f0da3439c642bce52e1b7c6373863bb6c632bbaf691dd8b037c5429d1
   languageName: node
   linkType: hard
 
@@ -5731,7 +5731,7 @@ __metadata:
     "@storybook/addon-styling-webpack": "npm:^3.0.2"
     "@storybook/addon-webpack5-compiler-babel": "npm:^4.0.1"
     "@storybook/react-webpack5": "npm:10.6.1"
-    "@storybook/test-runner": "npm:^0.24.5"
+    "@storybook/test-runner": "npm:^0.26.0"
     "@testing-library/dom": "npm:^10.4.2"
     "@testing-library/jest-dom": "npm:^6.9.1"
     "@testing-library/react": "npm:^16.3.3"
