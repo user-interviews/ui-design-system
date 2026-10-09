@@ -1,5 +1,7 @@
 import colors from '../src/Styles/colors/palette';
 
+// Supernova --ds-* tokens (load before legacy global.scss)
+import '../index.css';
 import '../scss/global.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

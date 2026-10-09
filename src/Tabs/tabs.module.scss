@@ -1,7 +1,7 @@
 @use '../../scss/theme' as *;
 
 .tabs {
-  border-bottom: 1px solid var(--synth-div-stroke-neutral);
+  border-bottom: var(--ds-border-width-stroke-xs) solid var(--synth-div-stroke-neutral);
   align-items: flex-end;
 
   :global(.nav-link),
@@ -12,8 +12,8 @@
       sans-serif;
     text-decoration: none;
     border: none;
-    border-radius: 0;
-    border-bottom: 1px solid var(--synth-div-stroke-neutral);
+    border-radius: var(--ds-border-radius-none);
+    border-bottom: var(--ds-border-width-stroke-xs) solid var(--synth-div-stroke-neutral);
     position: relative;
     margin-bottom: -1px;
     padding: 6px 12px;

@@ -10,7 +10,7 @@
     margin-bottom: 0;
 
     &--bordered {
-      border-bottom: 1px solid var(--ux-neutral-400);
+      border-bottom: var(--ds-border-width-stroke-xs) solid var(--ux-neutral-400);
     }
   }
 
