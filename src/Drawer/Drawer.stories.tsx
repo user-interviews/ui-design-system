@@ -222,6 +222,43 @@ export const ResponsiveWidths: Story = {
   ),
 };
 
+const scrollingDrawer: Story = {
+  render: ({ size }) => (
+    <DrawerExample
+      body={Array.from({ length: 40 }, (_, index) => `Row ${index + 1}`).map(
+        (text) => (
+          <p key={text}>{text}</p>
+        ),
+      )}
+      renderFooter={(onRequestClose) => (
+        <DrawerFooter
+          primaryActionText="Send"
+          secondaryActionText="Cancel"
+          onPrimaryAction={() => null}
+          onSecondaryAction={onRequestClose}
+        />
+      )}
+      size={size}
+      title="Scrolling drawer"
+    />
+  ),
+};
+
+export const ResponsiveSmall: Story = {
+  ...scrollingDrawer,
+  args: { size: DrawerSizes.SMALL },
+};
+
+export const ResponsiveMedium: Story = {
+  ...scrollingDrawer,
+  args: { size: DrawerSizes.MEDIUM },
+};
+
+export const ResponsiveLarge: Story = {
+  ...scrollingDrawer,
+  args: { size: DrawerSizes.LARGE },
+};
+
 export const AdditionalActions: Story = {
   render: () => (
     <DrawerExample
