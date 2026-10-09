@@ -62,6 +62,30 @@ export function Default() {
   );
 }
 
+export function RegressionVariants() {
+  return (
+    <>
+      {(['primary', 'outline-primary', 'transparent'] as const).map(
+        (variant) => (
+          <Dropdown key={variant}>
+            <DropdownToggle
+              ariaLabel={variant}
+              id={`regression-${variant}`}
+              variant={variant}
+            >
+              {variant}
+            </DropdownToggle>
+            <DropdownMenu>
+              <DropdownItem href="#first">First action</DropdownItem>
+              <DropdownItem href="#second">Second action</DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
+        ),
+      )}
+    </>
+  );
+}
+
 export function Sizes() {
   return (
     <>
