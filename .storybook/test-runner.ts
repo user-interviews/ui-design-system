@@ -1,9 +1,13 @@
 import { getStoryContext } from '@storybook/test-runner';
 import axe from 'axe-core';
+import { MINIMAL_VIEWPORTS } from 'storybook/viewport';
 
 import type { TestRunnerConfig } from '@storybook/test-runner';
 
-const defaultViewport = { height: 720, width: 1280 };
+const defaultViewport = {
+  height: 720,
+  width: Number.parseInt(MINIMAL_VIEWPORTS.desktop.styles.width, 10),
+};
 
 const config: TestRunnerConfig = {
   async preVisit(page, story) {
@@ -25,8 +29,13 @@ const config: TestRunnerConfig = {
 
     await page.addScriptTag({ content: axe.source });
     const trigger = page.locator('#storybook-root .Tooltip__icon');
-    for (const width of [1280, 720, 375]) {
-      await page.setViewportSize({ width, height: 720 });
+    for (const viewport of [
+      MINIMAL_VIEWPORTS.desktop,
+      MINIMAL_VIEWPORTS.tablet,
+      MINIMAL_VIEWPORTS.mobile1,
+    ]) {
+      const width = Number.parseInt(viewport.styles.width, 10);
+      await page.setViewportSize({ ...defaultViewport, width });
       await trigger.focus();
       await page.keyboard.press('Enter');
       await page.locator('#storybook-root .Popper').waitFor();
