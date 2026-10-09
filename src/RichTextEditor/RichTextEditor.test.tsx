@@ -162,6 +162,77 @@ describe('<RichTextEditor />', () => {
     });
   });
 
+  describe('sanitized HTML output', () => {
+    const cases = [
+      {
+        name: 'permitted formatting and HTTPS links',
+        html: '<p><strong>Safe</strong> <em>description</em> <a href="https://example.com">link</a></p>',
+        expected:
+          '<p><strong>Safe</strong> <em>description</em> <a href="https://example.com">link</a></p>',
+      },
+      {
+        name: 'scripts, event handlers and javascript links',
+        html: '<p onclick="alert(1)">Safe <script>alert(1)</script><a href="javascript:alert(1)" onmouseover="alert(1)">link</a></p>',
+        expected: '<p>Safe link</p>',
+      },
+      {
+        name: 'an entity-encoded javascript URL',
+        html: '<p>Safe <a href="java&#x73;cript:alert(1)">link</a></p>',
+        expected: '<p>Safe link</p>',
+      },
+      {
+        name: 'malformed formatting',
+        html: '<p><strong>Safe</p>',
+        expected: '<p><strong>Safe</strong></p>',
+      },
+      {
+        name: 'iframe fallback retained as escaped text',
+        html: '<iframe><p onclick="alert(1)">unsafe fallback<script>alert(1)</script></p></iframe><p>Safe</p>',
+        expected:
+          '<p>&lt;p onclick="alert(1)"&gt;unsafe fallback&lt;script&gt;alert(1)&lt;/script&gt;&lt;/p&gt;</p><p>Safe</p>',
+      },
+    ];
+
+    describe.each(['initial value', 'ref update'])('%s', (inputPath) => {
+      it.each(cases)('handles $name', async ({ html, expected }) => {
+        const onChange = jest.fn();
+        const editorRef = createRef<RichTextEditorRef>();
+        render(
+          <RichTextEditor
+            allowedAttributes={{ a: ['href'] }}
+            allowedTags={['p', 'strong', 'em', 'a']}
+            id="sanitized-editor"
+            initialValue={inputPath === 'initial value' ? html : undefined}
+            ref={editorRef}
+            onChange={onChange}
+          />,
+        );
+        expect(await elements.textbox.find()).toBeInTheDocument();
+        if (inputPath === 'ref update') {
+          act(() => editorRef.current?.setContent(html));
+        }
+        await waitFor(() =>
+          expect(onChange).toHaveBeenLastCalledWith(expected),
+        );
+        expect(onChange).toHaveBeenCalledTimes(1);
+      });
+    });
+
+    it('applies a caller attribute allowlist to otherwise valid links', async () => {
+      const onChange = jest.fn();
+      render(
+        <Setup
+          allowedAttributes={{ a: [] }}
+          initialValue='<p><a href="https://example.com">Safe link</a></p>'
+          onChange={onChange}
+        />,
+      );
+      await waitFor(() =>
+        expect(onChange).toHaveBeenCalledWith('<p><a>Safe link</a></p>'),
+      );
+    });
+  });
+
   describe('when setting content through the ref', () => {
     it('emits one sanitized change and supports clearing with null', async () => {
       const editorRef = createRef<RichTextEditorRef>();
