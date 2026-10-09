@@ -93,6 +93,29 @@ export function Primary() {
   );
 }
 
+export function RegressionVariants() {
+  return (
+    <>
+      {(['primary', 'outline-primary', 'transparent'] as const).map(
+        (variant) => (
+          <div key={variant}>
+            <Button id={`regression-${variant}`} variant={variant}>
+              {variant}
+            </Button>
+            <Button
+              disabled
+              id={`regression-${variant}-disabled`}
+              variant={variant}
+            >
+              {variant} disabled
+            </Button>
+          </div>
+        ),
+      )}
+    </>
+  );
+}
+
 export function Tertiary() {
   return (
     <>
