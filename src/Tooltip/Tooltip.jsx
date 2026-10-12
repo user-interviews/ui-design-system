@@ -48,12 +48,27 @@ class Tooltip extends Component {
     }
   };
 
+  handleKeyDown = (event) => {
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      this.handleClickOutside();
+    } else if ((event.key === 'Enter' || event.key === ' ') && !event.repeat) {
+      this.toggleTooltip(event);
+    }
+  };
+
   handleToggleTooltipClick = (event) => {
     if (this.props.withHover) return;
+    this.toggleTooltip(event);
+  };
 
+  toggleTooltip = (event) => {
     event.preventDefault();
+    if (this.clickOutsideListener) {
+      removeClickOutsideListener(this.clickOutsideListener);
+    }
     this.clickOutsideListener = addClickOutsideListener(
-      event.target.parentNode,
+      event.currentTarget.parentNode,
       this.handleClickOutside,
     );
 
@@ -61,8 +76,14 @@ class Tooltip extends Component {
   };
 
   handleToggleTooltipHover = () => {
-    this.setState((state) => ({ visible: !state.visible }), this.handleShow);
+    this.setState({ visible: true }, this.handleShow);
   };
+
+  componentWillUnmount() {
+    if (this.clickOutsideListener) {
+      removeClickOutsideListener(this.clickOutsideListener);
+    }
+  }
 
   render() {
     return (
@@ -76,13 +97,29 @@ class Tooltip extends Component {
         visible={this.state.visible}
       >
         <span
-          aria-hidden="true"
+          aria-expanded={this.state.visible}
+          aria-label={
+            typeof this.props.text === 'string'
+              ? this.props.text
+              : 'More information'
+          }
           className={classNames('Tooltip__icon', this.props.iconClasses)}
+          role="button"
           tabIndex="0"
+          // Rich content can contain links; retain its outside-click dismissal.
+          onBlur={
+            typeof this.props.text === 'string'
+              ? this.handleClickOutside
+              : undefined
+          }
           onClick={this.handleToggleTooltipClick}
-          onKeyPress={this.handleToggleTooltipClick}
-          onMouseEnter={this.props.withHover && this.handleToggleTooltipHover}
-          onMouseLeave={this.props.withHover && this.handleToggleTooltipHover}
+          onKeyDown={this.handleKeyDown}
+          onMouseEnter={
+            this.props.withHover ? this.handleToggleTooltipHover : undefined
+          }
+          onMouseLeave={
+            this.props.withHover ? this.handleClickOutside : undefined
+          }
         >
           <FontAwesomeIcon icon={this.props.icon} />
         </span>

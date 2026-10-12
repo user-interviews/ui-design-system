@@ -1,10 +1,15 @@
 import { getStoryContext } from '@storybook/test-runner';
+import axe from 'axe-core';
+import { MINIMAL_VIEWPORTS } from 'storybook/viewport';
 
 import { drawerResponsiveWidths } from '../src/Drawer/drawerResponsiveWidths';
 
 import type { TestRunnerConfig } from '@storybook/test-runner';
 
-const defaultViewport = { height: 720, width: 1280 };
+const defaultViewport = {
+  height: 720,
+  width: Number.parseInt(MINIMAL_VIEWPORTS.desktop.styles.width),
+};
 
 const config: TestRunnerConfig = {
   async preVisit(page, story) {
@@ -22,6 +27,41 @@ const config: TestRunnerConfig = {
   },
 
   async postVisit(page, story) {
+    if (story.id === 'components-tooltip--default') {
+      await page.addScriptTag({ content: axe.source });
+      const trigger = page.locator('#storybook-root .Tooltip__icon');
+      for (const viewport of [
+        MINIMAL_VIEWPORTS.desktop,
+        MINIMAL_VIEWPORTS.tablet,
+        MINIMAL_VIEWPORTS.mobile1,
+      ]) {
+        const width = Number.parseInt(viewport.styles.width);
+        await page.setViewportSize({ ...defaultViewport, width });
+        await trigger.focus();
+        await page.keyboard.press('Enter');
+        await page.locator('#storybook-root .Popper').waitFor();
+        const violations = await page.evaluate(async () => {
+          // Full-page scans belong to consuming apps; target this control's rules.
+          const result = await window.axe.run('#storybook-root', {
+            runOnly: ['aria-hidden-focus', 'aria-command-name'],
+          });
+          return result.violations;
+        });
+        expect(violations).toEqual([]);
+        await page.keyboard.press('Escape');
+        await page
+          .locator('#storybook-root .Popper')
+          .waitFor({ state: 'detached' });
+        await page.keyboard.press('Space');
+        await page.locator('#storybook-root .Popper').waitFor();
+        await page.keyboard.press('Tab');
+        await page
+          .locator('#storybook-root .Popper')
+          .waitFor({ state: 'detached' });
+      }
+      return;
+    }
+
     if (!/^components-drawer--responsive-(small|medium|large)$/.test(story.id))
       return;
 
