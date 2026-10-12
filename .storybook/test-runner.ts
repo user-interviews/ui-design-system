@@ -8,7 +8,7 @@ import type { TestRunnerConfig } from '@storybook/test-runner';
 
 const defaultViewport = {
   height: 720,
-  width: Number.parseInt(MINIMAL_VIEWPORTS.desktop.styles.width, 10),
+  width: Number.parseInt(MINIMAL_VIEWPORTS.desktop.styles.width),
 };
 
 const config: TestRunnerConfig = {
@@ -35,7 +35,7 @@ const config: TestRunnerConfig = {
         MINIMAL_VIEWPORTS.tablet,
         MINIMAL_VIEWPORTS.mobile1,
       ]) {
-        const width = Number.parseInt(viewport.styles.width, 10);
+        const width = Number.parseInt(viewport.styles.width);
         await page.setViewportSize({ ...defaultViewport, width });
         await trigger.focus();
         await page.keyboard.press('Enter');
