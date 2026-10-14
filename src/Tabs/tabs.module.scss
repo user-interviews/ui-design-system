@@ -7,9 +7,7 @@
   :global(.nav-link),
   :global(.nav-link.disabled) {
     color: var(--synth-unselected-tab);
-    font:
-      400 0.875rem/1.25rem Inter,
-      sans-serif;
+    font: 400 0.875rem/1.25rem var(--synth-font-family);
     text-decoration: none;
     border: none;
     border-radius: 0;
