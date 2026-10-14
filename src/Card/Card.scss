@@ -3,15 +3,15 @@
 
 .Card {
   background-color: var(--ux-white);
-  border: 1px solid var(--ux-gray-400);
-  border-radius: var(--ux-border-radius);
+  border: var(--ds-border-width-stroke-xs) solid var(--ux-gray-400);
+  border-radius: var(--ds-border-radius-xs);
   box-shadow: none;
   outline-color: var(--ux-green-500);
   padding: $card-spacing;
   max-width: 100%;
 
   &__divider {
-    border-top: 1px solid rgb(0 0 0 / 10%);
+    border-top: var(--ds-border-width-stroke-xs) solid rgb(0 0 0 / 10%);
     margin-bottom: var(--synth-spacing-2);
     margin-top: var(--synth-spacing-1);
   }

@@ -2,9 +2,9 @@
 
 .RichTextEditorMenuBar {
   background-color: var(--ux-gray-100);
-  border: 1px solid var(--ux-gray-400);
-  border-bottom: 0;
-  border-radius: var(--ux-border-radius) var(--ux-border-radius) 0 0;
+  border: var(--ds-border-width-stroke-xs) solid var(--ux-gray-400);
+  border-bottom-width: var(--ds-border-width-stroke-none);
+  border-radius: var(--ds-border-radius-xs) var(--ds-border-radius-xs) var(--ds-border-radius-none) var(--ds-border-radius-none);
   display: flex;
   gap: var(--synth-spacing-3);
   margin-top: var(--synth-spacing-4);

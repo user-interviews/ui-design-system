@@ -1,0 +1,16 @@
+/**
+ * This file was generated automatically by Supernova.io and should not be changed manually.
+ * To modify the format or content of this file, please contact your design system team. 
+ */
+
+:root {
+  --ds-typography-headers-header-page: var(--ds-font-weight-semibold) 24px/32px "Inter";
+  --ds-typography-headers-header-section: var(--ds-font-weight-regular) 18px/24px "Inter";
+  --ds-typography-headers-header-empty-state: var(--ds-font-weight-semibold) 16px/22px "Inter";
+  --ds-typography-text-body-semibold: var(--ds-font-weight-semibold) 14px/20px "Inter";
+  --ds-typography-text-body-medium: var(--ds-font-weight-medium) 14px/20px "Inter";
+  --ds-typography-text-body-regular: var(--ds-font-weight-regular) 14px/20px "Inter";
+  --ds-typography-text-subtext-semibold: var(--ds-font-weight-semibold) 12px/16px "Inter";
+  --ds-typography-text-subtext-medium: 500 12px/16px "Inter";
+  --ds-typography-text-subtext-regular: var(--ds-font-weight-regular) 12px/16px "Inter";
+}
