@@ -5787,7 +5787,7 @@ __metadata:
     nodemon: "npm:^3.1.14"
     oxfmt: "npm:^0.73.0"
     oxlint: "npm:^1.88.0"
-    playwright: "npm:^1.64.0"
+    playwright: "npm:^1.64.1"
     postcss: "npm:^8.5.30"
     prop-types: "npm:^15.8.1"
     react: "npm:^18.3.1"
@@ -5805,7 +5805,7 @@ __metadata:
     react-toggle: "npm:^4.1.3"
     react-tracking: "npm:^9.3.2"
     react-transition-group: "npm:^4.4.5"
-    sanitize-html: "npm:^2.18.0"
+    sanitize-html: "npm:^2.18.1"
     sass: "npm:^1.105.1"
     sass-loader: "npm:^17.0.1"
     storybook: "npm:10.6.2"
@@ -8746,9 +8746,9 @@ __metadata:
   linkType: hard
 
 "fast-equals@npm:^5.3.3":
-  version: 5.4.3
-  resolution: "fast-equals@npm:5.4.3"
-  checksum: 10c0/f918d51ae407b5da5dfa038a2b59a567355cb54cc4c66a40afff8b67769af915bdc076ec1f7f424e7a38bdf912ea7643f9de9340fd61bf6f2293b865c0f99379
+  version: 5.4.5
+  resolution: "fast-equals@npm:5.4.5"
+  checksum: 10c0/f49e3d1d35af458733c57e1670c6c0eb8e67997a514e3b98c154b743f5ebf5115013f9b6a09ea276123666838491fe2fd3f633f631000c5dee418a489a3cb645
   languageName: node
   linkType: hard
 
@@ -13024,7 +13024,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright@npm:^1.14.0, playwright@npm:^1.64.0":
+"playwright-core@npm:1.64.1":
+  version: 1.64.1
+  resolution: "playwright-core@npm:1.64.1"
+  bin:
+    playwright-core: cli.js
+  checksum: 10c0/91c4f5ed1cff4b0e18b6ac62f66770f5f1b6c204d4aebd6a321c07466dca18a70822ac692597c6059705a703f9768097ac551df179fb49294d639509148e04f3
+  languageName: node
+  linkType: hard
+
+"playwright@npm:^1.14.0":
   version: 1.64.0
   resolution: "playwright@npm:1.64.0"
   dependencies:
@@ -13032,6 +13041,17 @@ __metadata:
   bin:
     playwright: cli.js
   checksum: 10c0/f1ee856c280af2ac256225a1cc5e957847f0d2c56a039c89f02e31b0c9928c44e04311923a1b315bea16e3b26e5124e7c296644ad3c05e4c0a6aaa9584009933
+  languageName: node
+  linkType: hard
+
+"playwright@npm:^1.64.1":
+  version: 1.64.1
+  resolution: "playwright@npm:1.64.1"
+  dependencies:
+    playwright-core: "npm:1.64.1"
+  bin:
+    playwright: cli.js
+  checksum: 10c0/edf52d0a79feca37bf383e841a467aa68750684128218eac560063991c9e4b615a94901f580cd8a088bb05fd53008ab4a0e5e8d976067698b60ae5d1de2459f3
   languageName: node
   linkType: hard
 
@@ -14229,18 +14249,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sanitize-html@npm:^2.18.0":
-  version: 2.18.0
-  resolution: "sanitize-html@npm:2.18.0"
+"sanitize-html@npm:^2.18.1":
+  version: 2.18.1
+  resolution: "sanitize-html@npm:2.18.1"
   dependencies:
-    deepmerge: "npm:^4.3.1"
     escape-string-regexp: "npm:^4.0.0"
     htmlparser2: "npm:^12.0.0"
     is-plain-object: "npm:^5.1.0"
     launder: "npm:^1.7.2"
     parse-srcset: "npm:^1.0.2"
     postcss: "npm:^8.5.27"
-  checksum: 10c0/6ee0affe8980a7dffc66f5ffb4d4668e66eb921e627709e4f850060d838d940c5621c4cdcb627f36d142e5f9494d7d3be810e9a60bb0ab2d344301cc58abb05e
+  checksum: 10c0/a79474fbd6f4db7a3c54b2c7ac9de8b3046f77fcb951e3f229f456c0b9ef8903bc606e2c73bf35757f5a3bb1470bd75af051fbe6a906005b2251fd6bfbe5d952
   languageName: node
   linkType: hard
 
