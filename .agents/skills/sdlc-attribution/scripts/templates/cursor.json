@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "hooks": {
+    "afterFileEdit": [
+      {
+        "command": "sh -c 'r=\"$(git rev-parse --show-toplevel 2>/dev/null)\"; [ -n \"$r\" ] && \"$r/{SKILL_DIR}/track-ai-touch.sh\" cursor; exit 0'"
+      }
+    ]
+  }
+}

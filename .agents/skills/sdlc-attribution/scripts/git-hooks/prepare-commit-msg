@@ -1,0 +1,164 @@
+#!/usr/bin/env bash
+# Adds a Co-Authored-By trailer for each AI tool that touched a file in this
+# commit (per ai/hooks/track-ai-touch.sh, symlinked into every tool's hooks
+# dir). Companion to .githooks/post-commit, which removes records that no
+# longer describe pending content.
+#
+# The edit hook records each edit as a file of its own in
+# ai-touch/<tool>.hashes.d/, holding "hash<TAB>path". A tool is credited when
+# the content this commit stages for a path is content recorded for that path.
+# An edit that was thrown away and replaced by a person's own edit therefore
+# earns no trailer. A record is a whole file renamed into place, so there is no
+# state with a path and no hash, or a hash and no path.
+set -euo pipefail
+
+msg_file="$1"
+commit_source="${2:-}"
+
+# Opt-in trace. It is on when AI_TOUCH_DEBUG is set to anything non-empty, or when the file ai-touch-debug exists in the repository's
+# common git folder, which every worktree sees and which a bmad-loop run does not remove. When on, each decision adds one line to the
+# one shared log, ai-touch-debug.log, in that same folder. A line holds a UTC time, the hook name, the worktree's folder name in
+# brackets and the decision. The log is shared because a loop deletes a story worktree's own git folder when it cleans up. When off,
+# a normal run does a few shell tests and starts no process for the trace, and an early exit starts none at all. A trace failure is
+# swallowed and never changes what the hook does.
+trace_on=0
+trace_log=""
+trace_for() {
+  # $1: this worktree's git folder, the parent of ai-touch.
+  local gd="$1" common
+  common="$gd"
+  if [ -f "$gd/commondir" ] && read -r common < "$gd/commondir" 2>/dev/null; then
+    case "$common" in /*) ;; *) common="$gd/$common" ;; esac
+  fi
+  trace_log="$common/ai-touch-debug.log"
+  if [ -n "${AI_TOUCH_DEBUG:-}" ] || [ -f "$common/ai-touch-debug" ]; then trace_on=1; fi
+  return 0
+}
+trace_locate() {
+  # For an exit that comes before the hook has asked git where its folder is: walk up to the git folder with shell builtins only.
+  # A .git file holds "gitdir: <path>"; one that does not is skipped without a trace.
+  local d="$PWD" g line
+  while :; do
+    if [ -d "$d/.git" ]; then g="$d/.git"; break; fi
+    if [ -f "$d/.git" ]; then
+      line=""
+      read -r line < "$d/.git" 2>/dev/null || true
+      case "$line" in "gitdir: "*) g="${line#gitdir: }" ;; *) return 0 ;; esac
+      case "$g" in /*) ;; *) g="$d/$g" ;; esac
+      break
+    fi
+    [ -n "$d" ] || return 0
+    d="${d%/*}"
+  done
+  trace_for "$g"
+}
+trace() {
+  [ "$trace_on" = 1 ] || return 0
+  local wt="${toplevel:-$PWD}"
+  {
+    printf '%s %s [%s] %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "prepare-commit-msg" "${wt##*/}" "$*" >> "$trace_log" &&
+    if [ "$(( $(wc -c < "$trace_log") ))" -gt 524288 ]; then
+      tail -c 262144 "$trace_log" | sed 1d > "$trace_log.$$" && mv -f "$trace_log.$$" "$trace_log"
+    fi
+  } >/dev/null 2>&1 || true
+}
+
+case "$commit_source" in
+  merge|squash)
+    trace_locate
+    trace "source=$commit_source: nothing credited"
+    exit 0
+    ;;
+esac
+
+marker_dir="$(git rev-parse --git-path ai-touch)"
+trace_for "${marker_dir%/*}"
+if [ ! -d "$marker_dir" ]; then
+  trace "no ai-touch folder: nothing credited"
+  exit 0
+fi
+
+# One "blob hash<TAB>path" line per staged path. -z keeps a path with
+# non-ASCII or special characters exactly as it is, where the default listing
+# quotes it. A deleted path has the all-zero hash and is listed as MISSING,
+# the same word the tool's hook records for a file that is gone.
+staged=""
+while IFS= read -r -d '' meta && IFS= read -r -d '' path; do
+  # A record is one line, so a path with a newline can never match one. Skipping it here keeps its second half from being read as a
+  # path of its own.
+  case "$path" in *$'\n'*) continue ;; esac
+  # The fields of a raw diff line: old mode, new mode, old blob, new blob, status.
+  read -r _ _ _ blob _ <<< "$meta"
+  [ -n "${blob:-}" ] || continue
+  case "$blob" in *[!0]*) ;; *) blob=MISSING ;; esac
+  staged+="$blob"$'\t'"$path"$'\n'
+done < <(git diff --cached --raw -z --no-renames --no-abbrev)
+if [ -z "$staged" ]; then
+  trace "nothing staged: nothing credited"
+  exit 0
+fi
+
+trailer_for() {
+  case "$1" in
+    claude)  echo "Claude <noreply@anthropic.com>" ;;
+    codex)   echo "Codex <noreply@openai.com>" ;;
+    cursor)  echo "Cursor <noreply@cursor.com>" ;;
+    copilot) echo "Copilot <noreply@github.com>" ;;
+    *) return 1 ;;
+  esac
+}
+
+seen_folders=0
+for dir in "$marker_dir"/*.hashes.d; do
+  [ -d "$dir" ] || continue
+  tool="${dir##*/}"
+  tool="${tool%.hashes.d}"
+  seen_folders=$((seen_folders + 1))
+  if ! trailer_name="$(trailer_for "$tool")"; then
+    trace "folder for unknown tool $tool: skipped"
+    continue
+  fi
+
+  # The recorded edits and the staged paths go through one awk run, each line
+  # tagged with its source (H recorded, S staged) and read in that order. awk
+  # reads to the end, because stopping at the first match would hand the
+  # writers a SIGPIPE, and under pipefail that aborts the commit once enough
+  # files are staged. A record that post-commit deletes while this reads is
+  # ignored. It prints the number of staged paths a record matches, the number
+  # of records, the number of staged paths, and the number of staged paths
+  # that have a record for the same path with other content.
+  counts="$({
+    { find "$dir" -maxdepth 1 -type f -name 'e.*' -exec cat {} + 2>/dev/null || true; } | awk '{ print "H\t" $0 }'
+    printf '%s' "$staged" | awk '{ print "S\t" $0 }'
+  } | awk '
+    substr($0, 1, 1) == "H" { rest = substr($0, 3); i = index(rest, "\t"); if (i == 0) next; recorded_n++; recorded_path[substr(rest, i + 1)] = 1; recorded[substr(rest, i + 1) SUBSEP substr(rest, 1, i - 1)] = 1; next }
+    { rest = substr($0, 3); i = index(rest, "\t"); if (i == 0) next; blob = substr(rest, 1, i - 1); path = substr(rest, i + 1)
+      staged_n++; if ((path SUBSEP blob) in recorded) hit++; else if (path in recorded_path) other++ }
+    END { print hit + 0, recorded_n + 0, staged_n + 0, other + 0 }
+  ')"
+  read -r matched record_n staged_n other_n <<< "$counts"
+  if [ "${matched:-0}" -eq 0 ]; then
+    trace "no record matches for $tool: records=${record_n:-0} staged=${staged_n:-0} same-path-other-content=${other_n:-0}"
+    continue
+  fi
+
+  # Already credited means a Co-Authored-By line carrying this tool's noreply
+  # address. The tool's name alone is not enough: a person's name can contain it.
+  address="${trailer_name#*<}"
+  address="${address%>}"
+  if grep -i '^Co-Authored-By:' "$msg_file" | grep -qiF "<$address>"; then
+    trace "$tool already credited in the message: left as it is"
+    continue
+  fi
+
+  if git interpret-trailers --if-exists addIfDifferent \
+    --trailer "Co-Authored-By: $trailer_name" \
+    --in-place "$msg_file"; then
+    trace "credited $tool: matched $matched of $staged_n staged path(s)"
+  else
+    trace "could not add the trailer for $tool"
+  fi
+done
+if [ "$seen_folders" -eq 0 ]; then
+  trace "ai-touch holds no records folder: nothing credited"
+fi

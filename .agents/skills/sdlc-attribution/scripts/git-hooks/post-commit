@@ -1,0 +1,119 @@
+#!/usr/bin/env bash
+# Removes the edit records that no longer describe pending content, so a later,
+# unrelated commit isn't mistakenly tagged as AI-authored. A record is a file in
+# ai-touch/<tool>.hashes.d/ holding "hash<TAB>path" (see
+# ai/hooks/track-ai-touch.sh). This hook only deletes records and never rewrites
+# one, so it cannot overwrite a record that an edit hook adds while it runs.
+#
+# Each record is judged by its content, not by its path alone:
+#   - HEAD holds that content for the path: the edit is committed, so the record
+#     is spent.
+#   - The working tree or the index still holds that content: the edit is still
+#     pending, for example the rest of a partly staged file, so the record stays.
+#   - Neither: the edit was thrown away or replaced, so the record is dropped.
+set -euo pipefail
+
+# Opt-in trace. It is on when AI_TOUCH_DEBUG is set to anything non-empty, or when the file ai-touch-debug exists in the repository's
+# common git folder, which every worktree sees and which a bmad-loop run does not remove. When on, each decision adds one line to the
+# one shared log, ai-touch-debug.log, in that same folder. A line holds a UTC time, the hook name, the worktree's folder name in
+# brackets and the decision. The log is shared because a loop deletes a story worktree's own git folder when it cleans up. When off,
+# a normal run does a few shell tests and starts no process for the trace, and an early exit starts none at all. A trace failure is
+# swallowed and never changes what the hook does.
+trace_on=0
+trace_log=""
+trace_for() {
+  # $1: this worktree's git folder, the parent of ai-touch.
+  local gd="$1" common
+  common="$gd"
+  if [ -f "$gd/commondir" ] && read -r common < "$gd/commondir" 2>/dev/null; then
+    case "$common" in /*) ;; *) common="$gd/$common" ;; esac
+  fi
+  trace_log="$common/ai-touch-debug.log"
+  if [ -n "${AI_TOUCH_DEBUG:-}" ] || [ -f "$common/ai-touch-debug" ]; then trace_on=1; fi
+  return 0
+}
+trace_locate() {
+  # For an exit that comes before the hook has asked git where its folder is: walk up to the git folder with shell builtins only.
+  # A .git file holds "gitdir: <path>"; one that does not is skipped without a trace.
+  local d="$PWD" g line
+  while :; do
+    if [ -d "$d/.git" ]; then g="$d/.git"; break; fi
+    if [ -f "$d/.git" ]; then
+      line=""
+      read -r line < "$d/.git" 2>/dev/null || true
+      case "$line" in "gitdir: "*) g="${line#gitdir: }" ;; *) return 0 ;; esac
+      case "$g" in /*) ;; *) g="$d/$g" ;; esac
+      break
+    fi
+    [ -n "$d" ] || return 0
+    d="${d%/*}"
+  done
+  trace_for "$g"
+}
+trace() {
+  [ "$trace_on" = 1 ] || return 0
+  local wt="${toplevel:-$PWD}"
+  {
+    printf '%s %s [%s] %s\n' "$(date -u +%Y-%m-%dT%H:%M:%SZ)" "post-commit" "${wt##*/}" "$*" >> "$trace_log" &&
+    if [ "$(( $(wc -c < "$trace_log") ))" -gt 524288 ]; then
+      tail -c 262144 "$trace_log" | sed 1d > "$trace_log.$$" && mv -f "$trace_log.$$" "$trace_log"
+    fi
+  } >/dev/null 2>&1 || true
+}
+
+# Change folder first: --git-path answers relative to the folder it runs in.
+cd "$(git rev-parse --show-toplevel)"
+marker_dir="$(git rev-parse --git-path ai-touch)"
+trace_for "${marker_dir%/*}"
+if [ ! -d "$marker_dir" ]; then
+  trace "no ai-touch folder: nothing to clean"
+  exit 0
+fi
+
+# The same hash the edit hook records: a symlink by its link text, which is what the index holds, and a file by its content after the
+# filters git add applies.
+work_hash() {
+  if [ -L "$1" ]; then
+    readlink "$1" | tr -d '\n' | git hash-object --stdin 2>/dev/null || echo MISSING
+  elif [ -f "$1" ]; then
+    git hash-object -- "$1" 2>/dev/null || echo MISSING
+  else
+    echo MISSING
+  fi
+}
+
+seen_folders=0
+for dir in "$marker_dir"/*.hashes.d; do
+  [ -d "$dir" ] || continue
+  seen_folders=$((seen_folders + 1))
+  # What a killed edit hook left behind: a temporary file, or a reserved record name that was never filled. A record with content is
+  # never swept, however old, because its edit may still be pending.
+  find "$dir" -maxdepth 1 -type f \( -name '.w.*' -o \( -name 'e.*' -empty \) \) -mmin +60 -delete 2>/dev/null || true
+  spent=0 discarded=0 pending=0
+  for entry in "$dir"/e.*; do
+    [ -f "$entry" ] || continue
+    line="$(cat "$entry" 2>/dev/null || true)"
+    hash="${line%%$'\t'*}"
+    path="${line#*$'\t'}"
+    [ "$hash" != "$line" ] || continue  # not a record
+    # "./" makes git read the path as a path. Without it, ":0:x.txt" means stage 0 of "x.txt".
+    head="$(git rev-parse --verify -q "HEAD:./$path" 2>/dev/null || echo MISSING)"
+    if [ "$hash" = "$head" ]; then
+      rm -f "$entry"
+      spent=$((spent + 1))
+      continue
+    fi
+    index="$(git rev-parse --verify -q ":./$path" 2>/dev/null || echo MISSING)"
+    if [ "$hash" = "$index" ] || [ "$hash" = "$(work_hash "$path")" ]; then
+      pending=$((pending + 1))
+      continue
+    fi
+    rm -f "$entry"
+    discarded=$((discarded + 1))
+  done
+  tool="${dir##*/}"
+  trace "tool=${tool%.hashes.d} removed $spent spent record, $discarded discarded, kept $pending pending"
+done
+if [ "$seen_folders" -eq 0 ]; then
+  trace "no records folder: nothing to clean"
+fi

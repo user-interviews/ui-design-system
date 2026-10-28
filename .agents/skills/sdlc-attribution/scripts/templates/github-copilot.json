@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "hooks": {
+    "postToolUse": [
+      {
+        "command": "sh -c 'r=\"$(git rev-parse --show-toplevel 2>/dev/null)\"; [ -x \"$r/{SKILL_DIR}/track-ai-touch.sh\" ] && \"$r/{SKILL_DIR}/track-ai-touch.sh\" copilot; exit 0'"
+      }
+    ]
+  }
+}
