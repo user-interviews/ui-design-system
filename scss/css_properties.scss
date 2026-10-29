@@ -21,13 +21,13 @@
   --ux-elevations-40: 0rem 0.4rem 0.8rem rgb(0 0 0 / 10%);
   --ux-elevations-50: 0rem 0.5rem 1rem rgb(0 0 0 / 10%);
 
-  --ux-black: #000;
+  --ux-black: var(--mosaic-charcoal);
   --ux-blue: #3f6dca;
   --ux-cream: #f8f4f2;
   --ux-emerald: #158d71;
   --ux-gray: #a1a1a1;
   --ux-green: #04713c;
-  --ux-navy: #011936;
+  --ux-navy: var(--mosaic-dark-blue-850);
   --ux-orange: #f59c27;
   --ux-purple: #725ccc;
   --ux-red: #e03131;
@@ -70,7 +70,7 @@
   --ux-gray-600: #818181;
   --ux-gray-700: #616161;
   --ux-gray-800: #444;
-  --ux-gray-900: #101010;
+  --ux-gray-900: var(--mosaic-charcoal);
 
   --ux-green-100: #d4f6e5;
   --ux-green-200: #a3f9cf;
@@ -87,7 +87,7 @@
   --ux-navy-300: #7396ba;
   --ux-navy-400: #40669c;
   --ux-navy-500: #234574;
-  --ux-navy-600: #16325a;
+  --ux-navy-600: var(--mosaic-dark-blue-850);
   --ux-navy-700: var(--ux-navy);
   --ux-navy-800: #01152d;
   --ux-navy-900: #021020;
@@ -153,24 +153,24 @@
   --synth-spacing-12: calc(var(--synth-spacing-base) * 12); // 48px
 
   /* Synthesis Colors */
-  --synth-black: #000;
+  --synth-black: var(--mosaic-charcoal);
   --synth-white: #fff;
 
-  --synth-navy-100: #162c4e;
+  --synth-navy-100: var(--mosaic-dark-blue-850);
   --synth-navy-200: #202b38;
-  --synth-navy-300: #010812;
+  --synth-navy-300: var(--mosaic-dark-blue-850);
 
   --synth-emerald-100: #eef9f6;
   --synth-emerald-200: #c6e2db;
   --synth-emerald-300: #91cabb;
-  --synth-emerald-400: #158d71;
+  --synth-emerald-400: var(--mosaic-teal-700);
 
   --synth-gray-100: #fff;
   --synth-gray-200: #fbfbfb;
   --synth-gray-300: #f4f4f4;
   --synth-gray-400: #dedede;
   --synth-gray-500: #5b5b5b;
-  --synth-gray-600: #1b1b1b;
+  --synth-gray-600: var(--mosaic-charcoal);
 
   /* Stop light colors */
   --synth-green-100: #d4f6e5;
@@ -244,7 +244,7 @@
   --synth-hover-state: var(--synth-emerald-100);
   --synth-indicator-stroke-green: var(--synth-emerald-300);
   --synth-navbar-blue: var(--synth-navy-300);
-  --synth-primary-cta-blue: var(--synth-navy-100);
+  --synth-primary-cta-blue: var(--mosaic-teal-700);
   --synth-selected-state-green: var(--synth-emerald-200);
 
   // feedback and signifier colors
@@ -309,7 +309,7 @@
   --react-toggle-thumb-box-shadow-color: #0099e0;
 
   /* Font variables */
-  --synth-font-family: inter, sans-serif;
+  --synth-font-family: 'ut-public-sans', inter, sans-serif;
 
   // Text component specific
   --synth-font-size-subtext: 0.75rem;
