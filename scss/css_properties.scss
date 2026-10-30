@@ -1,3 +1,5 @@
+@use './colors/mosaic-palette' as *;
+
 :root {
   --ux-border-radius: 4px;
 
@@ -258,12 +260,12 @@
   --synth-brand-google: #2d8cff;
 
   /* 2026 rebrand colors */
-  --mosaic-white: #fff;
-  --mosaic-charcoal: #1d1d1d;
-  --mosaic-teal-700: #268565;
-  --mosaic-teal-800: #1b5945;
-  --mosaic-teal-900: #02241a;
-  --mosaic-dark-blue-850: #010131;
+  --mosaic-white: #{$mosaic-white};
+  --mosaic-charcoal: #{$mosaic-charcoal};
+  --mosaic-teal-700: #{$mosaic-teal-700};
+  --mosaic-teal-800: #{$mosaic-teal-800};
+  --mosaic-teal-900: #{$mosaic-teal-900};
+  --mosaic-dark-blue-850: #{$mosaic-dark-blue-850};
 
   // By Level
   --z-index-1050: 1050;
