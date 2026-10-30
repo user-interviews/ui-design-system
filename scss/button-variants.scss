@@ -12,11 +12,11 @@ $primary: $synth-primary-cta-blue;
   $btn-primary-background: $primary;
   $btn-primary-border: $primary;
   $btn-primary-color: $ux-white;
-  $btn-primary-hover-background: $synth-dark-background-selected-blue;
-  $btn-primary-hover-border: $synth-dark-background-selected-blue;
+  $btn-primary-hover-background: $mosaic-teal-800;
+  $btn-primary-hover-border: $mosaic-teal-800;
   $btn-primary-hover-color: $ux-white;
-  $btn-primary-active-background: $synth-dark-background-pressed-blue;
-  $btn-primary-active-border: $synth-dark-background-pressed-blue;
+  $btn-primary-active-background: $mosaic-teal-900;
+  $btn-primary-active-border: $mosaic-teal-900;
   $btn-primary-active-color: $ux-white;
 
   @include button-variant(
@@ -44,12 +44,12 @@ $primary: $synth-primary-cta-blue;
 @mixin btn-outline-primary {
   $btn-outline-primary-color: $primary;
   $btn-outline-primary-color-hover: $ux-white;
-  $btn-outline-primary-hover-background: $synth-dark-background-selected-blue;
-  $btn-outline-primary-hover-border: $synth-dark-background-selected-blue;
+  $btn-outline-primary-hover-background: $primary;
+  $btn-outline-primary-hover-border: $primary;
   $btn-outline-primary-hover-color: $ux-white;
   $btn-outline-primary-border: $primary;
-  $btn-outline-primary-active-background: $synth-dark-background-pressed-blue;
-  $btn-outline-primary-active-border-color: $synth-dark-background-pressed-blue;
+  $btn-outline-primary-active-background: $mosaic-teal-900;
+  $btn-outline-primary-active-border-color: $mosaic-teal-900;
 
   @include button-outline-variant(
     $btn-outline-primary-color,
