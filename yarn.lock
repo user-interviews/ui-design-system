@@ -3187,14 +3187,14 @@ __metadata:
   linkType: hard
 
 "@napi-rs/wasm-runtime@npm:^1.1.4, @napi-rs/wasm-runtime@npm:^1.1.5":
-  version: 1.2.5
-  resolution: "@napi-rs/wasm-runtime@npm:1.2.5"
+  version: 1.2.7
+  resolution: "@napi-rs/wasm-runtime@npm:1.2.7"
   dependencies:
     "@tybys/wasm-util": "npm:^0.10.3"
   peerDependencies:
-    "@emnapi/core": ^1.7.1 || ^2.0.0-alpha.4
-    "@emnapi/runtime": ^1.7.1 || ^2.0.0-alpha.4
-  checksum: 10c0/dae2bc48077df6da2d59f3c0f3e17b03b99953dbd97fd1fb1f0d261c6036b812538d5905266bd2402182e2709a778d63c8bbb3c2d7fe090fcea863f717954fce
+    "@emnapi/core": ^1.7.1 || 2.0.0-beta.2 || 2.0.0-beta.3
+    "@emnapi/runtime": ^1.7.1 || 2.0.0-beta.2 || 2.0.0-beta.3
+  checksum: 10c0/aab492b488fd86563eacda3fe356db68d273d11ec0e999793445d964dc7bbbf9e9a4b80f9c2e243d084393ee53434e668ac1e7308deb44b87b9c18926667a801
   languageName: node
   linkType: hard
 
@@ -6734,11 +6734,11 @@ __metadata:
   linkType: hard
 
 "baseline-browser-mapping@npm:^2.11.33":
-  version: 2.11.34
-  resolution: "baseline-browser-mapping@npm:2.11.34"
+  version: 2.11.35
+  resolution: "baseline-browser-mapping@npm:2.11.35"
   bin:
     baseline-browser-mapping: dist/cli.cjs
-  checksum: 10c0/294a4513440f4cacca2d84032ccff2dd284b429356af0c12574360d1e471ad1ab2383b101261193bec87891f90d2fea29cb75d3e54b2b69a060c6e726c433c58
+  checksum: 10c0/2f34ab2ed285a03860bc633cbf9cfea8974c37bb366d04e1adfa07a95ebec77a24d3daa2800d2d685b499aa9514700229b2cc7c6d49c0f5a363297e3382f7322
   languageName: node
   linkType: hard
 
@@ -8030,12 +8030,12 @@ __metadata:
   linkType: hard
 
 "enhanced-resolve@npm:^5.26.0":
-  version: 5.26.0
-  resolution: "enhanced-resolve@npm:5.26.0"
+  version: 5.26.1
+  resolution: "enhanced-resolve@npm:5.26.1"
   dependencies:
     graceful-fs: "npm:^4.2.4"
     tapable: "npm:^2.3.3"
-  checksum: 10c0/fea1f02aa89793fecfd3ab0764be988fdf10dd5147ef65548726d918e68e3b9cf84224de37387356b54eee69363e4d59d9624dd7be9a23a0b1f568c46fa7a8a2
+  checksum: 10c0/5b5594412e2e0e67d70d28c908c3f84d7809fcf7dea8d0e3716d2c9ad2b83548fab149aae8f8c6295b46b92ea865fc8f85a7eb091df0368ce0ff18b6ca2f18ce
   languageName: node
   linkType: hard
 
@@ -12064,12 +12064,12 @@ __metadata:
   linkType: hard
 
 "napi-postinstall@npm:^0.3.4":
-  version: 0.3.7
-  resolution: "napi-postinstall@npm:0.3.7"
+  version: 0.3.8
+  resolution: "napi-postinstall@npm:0.3.8"
   bin:
     napi-patch: ./lib/patch.js
     napi-postinstall: ./lib/cli.js
-  checksum: 10c0/6ac12bf21a2864614e4c57bc3d2e292deb3c34607cf05aa456e572ad5a17bdc33594942ba8194233e9aae3638a5f554c0b29c520c4a7da81969008c40d2a134d
+  checksum: 10c0/c66798be50192fad766409653a25a1d747d24119fc8a8bc6c7d9302bbaf6691e2747bdf11a65d62bb9e749f1a21ebab3b8e9833e0b67ae03b2241941e0b3c6d9
   languageName: node
   linkType: hard
 
@@ -12155,9 +12155,9 @@ __metadata:
   linkType: hard
 
 "node-releases@npm:^2.0.60":
-  version: 2.0.60
-  resolution: "node-releases@npm:2.0.60"
-  checksum: 10c0/f0c7b37cf83405291c0de87e15b5cef4af167248f8cc91b7c1c2281338c0e7e9aebfb77e0153ba335bb4c6ec5b1563431cfba93e8c83292760856012d93cb93e
+  version: 2.0.63
+  resolution: "node-releases@npm:2.0.63"
+  checksum: 10c0/857ce981b26449a6f369d72f3c9c6d82aa7255a7b16a50ff7bd8ab1baea3754e24a8f9fbbdf9ccf05e97d9525d8ebfb7430b5fd822bc530656b84d70a6660e21
   languageName: node
   linkType: hard
 
@@ -13271,11 +13271,11 @@ __metadata:
   linkType: hard
 
 "prosemirror-changeset@npm:^2.4.4":
-  version: 2.4.4
-  resolution: "prosemirror-changeset@npm:2.4.4"
+  version: 2.4.6
+  resolution: "prosemirror-changeset@npm:2.4.6"
   dependencies:
     prosemirror-transform: "npm:^1.0.0"
-  checksum: 10c0/9228d0ba05e3ab3dfb2d919acad3e1b0caeb53e90b66d7945fcb39285cb510d69f189e021cf5844d595a76d710e65359cd409df278e1ad14eeb37eb75b38f5b5
+  checksum: 10c0/c85b09b27c65234e192e3f5c153cc90f988547b03b7e59dc8acde5498557bc5862677502548315f55ad5106d050ea3bc339e25359d3944b3346f21b5d671b0df
   languageName: node
   linkType: hard
 
@@ -13399,13 +13399,13 @@ __metadata:
   linkType: hard
 
 "prosemirror-view@npm:^1.0.0, prosemirror-view@npm:^1.1.0, prosemirror-view@npm:^1.27.0, prosemirror-view@npm:^1.31.0, prosemirror-view@npm:^1.41.4, prosemirror-view@npm:^1.42.6":
-  version: 1.42.6
-  resolution: "prosemirror-view@npm:1.42.6"
+  version: 1.42.9
+  resolution: "prosemirror-view@npm:1.42.9"
   dependencies:
     prosemirror-model: "npm:^1.25.12"
     prosemirror-state: "npm:^1.0.0"
     prosemirror-transform: "npm:^1.1.0"
-  checksum: 10c0/2e3d2092bc0b7dd7fb34192c8f698e52205b7065a6513315520d7095154af76b6eb258d74587042e1f8a1c8d403c165ea6dbdd66c3eb9b90f327e009ced4e123
+  checksum: 10c0/f01f7d9e410a912754ef9d871d9132a770da4dae5779c56693712ae598c2d9795c553c960665b2e38835a664d578adf9850739a6b456e046bb059721a244f12b
   languageName: node
   linkType: hard
 
@@ -14340,11 +14340,11 @@ __metadata:
   linkType: hard
 
 "semver@npm:^5.6.0":
-  version: 5.7.2
-  resolution: "semver@npm:5.7.2"
+  version: 5.7.3
+  resolution: "semver@npm:5.7.3"
   bin:
     semver: bin/semver
-  checksum: 10c0/e4cf10f86f168db772ae95d86ba65b3fd6c5967c94d97c708ccb463b778c2ee53b914cd7167620950fc07faf5a564e6efe903836639e512a1aa15fbc9667fa25
+  checksum: 10c0/46308a549dd9d9b9dd2b89c47acce5905e81d456d1e105880c07f31a93469fcd4416c9b6cf437cbcad22093ba8371bca2ad6c4a874c6f073af3500645f236979
   languageName: node
   linkType: hard
 
