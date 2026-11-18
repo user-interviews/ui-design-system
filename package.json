@@ -2,7 +2,7 @@
   "name": "@user-interviews/ui-design-system",
   "version": "9.2.0",
   "dependencies": {
-    "@babel/runtime": "^7.29.13",
+    "@babel/runtime": "^7.29.14",
     "@floating-ui/dom": "1.8.0",
     "@tiptap/core": "^3.33.1",
     "@tiptap/extension-bold": "^3.33.1",
@@ -86,7 +86,7 @@
     "@babel/plugin-transform-class-properties": "^7.29.7",
     "@babel/plugin-transform-object-rest-spread": "^7.29.7",
     "@babel/plugin-transform-runtime": "^7.29.7",
-    "@babel/preset-env": "^7.29.7",
+    "@babel/preset-env": "^7.29.14",
     "@babel/preset-react": "^7.29.7",
     "@babel/preset-typescript": "^7.29.7",
     "@codecov/webpack-plugin": "^2.0.1",
