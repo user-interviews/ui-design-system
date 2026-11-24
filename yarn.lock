@@ -5763,7 +5763,7 @@ __metadata:
     nodemon: "npm:^3.1.14"
     oxfmt: "npm:^0.79.0"
     oxlint: "npm:^1.94.0"
-    playwright: "npm:^1.64.1"
+    playwright: "npm:^1.65.1"
     postcss: "npm:^8.5.33"
     prop-types: "npm:^15.8.1"
     react: "npm:^18.3.1"
@@ -12983,7 +12983,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright@npm:^1.14.0, playwright@npm:^1.64.1":
+"playwright-core@npm:1.65.1":
+  version: 1.65.1
+  resolution: "playwright-core@npm:1.65.1"
+  bin:
+    playwright-core: cli.js
+  checksum: 10c0/4406d4f8eff668a93aaada8382d25fcce8da5f679e9f31311888178d631ed0270eb40c0288129e41e15709c957a31932cac9753fdb332547a19bc3541d317e44
+  languageName: node
+  linkType: hard
+
+"playwright@npm:^1.14.0":
   version: 1.64.1
   resolution: "playwright@npm:1.64.1"
   dependencies:
@@ -12991,6 +13000,17 @@ __metadata:
   bin:
     playwright: cli.js
   checksum: 10c0/edf52d0a79feca37bf383e841a467aa68750684128218eac560063991c9e4b615a94901f580cd8a088bb05fd53008ab4a0e5e8d976067698b60ae5d1de2459f3
+  languageName: node
+  linkType: hard
+
+"playwright@npm:^1.65.1":
+  version: 1.65.1
+  resolution: "playwright@npm:1.65.1"
+  dependencies:
+    playwright-core: "npm:1.65.1"
+  bin:
+    playwright: cli.js
+  checksum: 10c0/30ce029c9fb2a6e88cf81b150b978fd60edb59b8af5a6460f5576f0fe6e2bb739454109f0ce4904eac63cb2cf10390518d7d71d335fd695b5897734a5af7250d
   languageName: node
   linkType: hard
 
